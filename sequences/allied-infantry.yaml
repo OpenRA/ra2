@@ -192,6 +192,55 @@ snipe:
 		Tick: 80
 	icon: snipicon
 
+spy:
+	stand:
+		Start: 0
+		Facings: 8
+	run:
+		Start: 8
+		Length: 6
+		Facings: 8
+		Tick: 120
+	idle1:
+		Start: 56
+		Length: 15
+		Tick: 100
+	idle2:
+		Start: 71
+		Length: 15
+		Tick: 100
+	prone-run:
+		Start: 86
+		Length: 6
+		Facings: 8
+		Tick: 100
+	die1:
+		Start: 134
+		Length: 14
+	die2:
+		Start: 149
+		Length: 14
+	die6: electro
+		Start: 0
+		Length: *
+		Tick: 120
+	die-crushed: death_c
+		Start: 0
+		Length: 4
+		Tick: 80
+	shoot:
+		Start: 164
+		Length: 6
+		Facings: 8
+		Tick: 80
+	prone-shoot:
+		Start: 212
+		Length: 6
+		Facings: 8
+		Tick: 80
+	icon: spyicon
+		Start: 0
+
 tany:
 	stand:
 		Facings: 8
