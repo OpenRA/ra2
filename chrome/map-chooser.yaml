@@ -1,0 +1,108 @@
+Background@MAPCHOOSER_PANEL:
+	X: (WINDOW_RIGHT - WIDTH)/2
+	Y: (WINDOW_BOTTOM - HEIGHT)/2
+	Logic: MapChooserLogic
+	Width: 858
+	Height: 600
+	Children:
+		Label@MAPCHOOSER_TITLE:
+			X: 0
+			Y: 15
+			Align: Center
+			Width: 858
+			Height: 20
+			Text: Choose Map
+			Font: Bold
+		ScrollPanel@MAP_LIST:
+			X: 20
+			Y: 67
+			Width: PARENT_RIGHT - 40
+			Height: 481
+			Children:
+				ScrollItem@MAP_TEMPLATE:
+					Width: 194
+					Height: 243
+					X: 4
+					Y: 0
+					Visible: false
+					Children:
+						MapPreview@PREVIEW:
+							X: (PARENT_RIGHT - WIDTH)/2
+							Y: 4
+							Width: 184
+							Height: 184
+							IgnoreMouseOver: true
+							IgnoreMouseInput: true
+						Label@TITLE:
+							X: 2
+							Y: PARENT_BOTTOM-48
+							Width: PARENT_RIGHT-4
+							Align: Center
+						Label@DETAILS:
+							Width: PARENT_RIGHT-4
+							X: 2
+							Y: PARENT_BOTTOM-34
+							Align: Center
+							Font: Tiny
+						Label@AUTHOR:
+							Width: PARENT_RIGHT-4
+							X: 2
+							Y: PARENT_BOTTOM-22
+							Align: Center
+							Font: Tiny
+						Label@SIZE:
+							Width: PARENT_RIGHT-4
+							X: 2
+							Y: PARENT_BOTTOM-10
+							Align: Center
+							Font: Tiny
+		Label@FILTER_DESC:
+			X: PARENT_RIGHT - 467
+			Y: 40
+			Width: 60
+			Height: 24
+			Font: Bold
+			Align: Right
+			Text: Filter:
+		TextField@MAPFILTER_INPUT:
+			X: PARENT_RIGHT - 401
+			Y: 40
+			Width: 150
+			Height: 25
+		Label@FILTER_DESC_JOINER:
+			X: PARENT_RIGHT - 250
+			Y: 40
+			Width: 30
+			Height: 24
+			Font: Bold
+			Align: Center
+			Text: in
+		DropDownButton@GAMEMODE_FILTER:
+			X: PARENT_RIGHT - 220
+			Y: 40
+			Width: 200
+			Height: 25
+		Button@RANDOMMAP_BUTTON:
+			X: 20
+			Y: PARENT_BOTTOM - 45
+			Width: 120
+			Height: 25
+			Text: Random Map
+			Font: Bold
+		Button@BUTTON_OK:
+			X: PARENT_RIGHT - 270
+			Y: PARENT_BOTTOM - 45
+			Width: 120
+			Height: 25
+			Text: Ok
+			Font: Bold
+			Key: return
+		Button@BUTTON_CANCEL:
+			X: PARENT_RIGHT - 140
+			Y: PARENT_BOTTOM - 45
+			Width: 120
+			Height: 25
+			Text: Cancel
+			Font: Bold
+			Key: escape
+

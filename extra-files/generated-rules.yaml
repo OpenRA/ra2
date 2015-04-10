@@ -1,0 +1,9665 @@
+tnkd:
+	Inherits: ^Vehicle
+	# TODO: UIName
+	Tooltip:
+		Name: Tank Destroyer
+	Buildable:
+		Prerequisites: gaweap, radar, ~<fact-type>.british, ~<fact-type>.french, ~<fact-type>.germans, ~<fact-type>.americans, ~<fact-type>.alliance, 
+	Armament@Primary:
+		Weapon: SABOT
+	Health:
+		HP: 400
+	Armor:
+		Type: Heavy
+	# TODO: Turret
+	# TODO: IsTilter
+	# TODO: Crusher
+	# TODO: TooBigToFitUnderBridge
+	# TODO: TechLevel
+	RevealsShroud:
+		Range: 8c0
+	# TODO: Speed
+	# TODO: CrateGoodie
+	# TODO: Owner
+	# TODO: RequiredHouses
+	# TODO: AllowedToStartInMultiplayer
+	Valued:
+		Cost: 900
+	# TODO: Points
+	# TODO: ROT
+	# TODO: IsSelectableCombatant
+	# TODO: Explosion
+	# TODO: VoiceSelect
+	# TODO: VoiceMove
+	# TODO: VoiceAttack
+	# TODO: DieSound
+	# TODO: MoveSound
+	# TODO: MaxDebris
+	# TODO: Locomotor
+	# TODO: MovementZone
+	# TODO: ThreatPosed
+	# TODO: DamageParticleSystems
+	# TODO: VeteranAbilities
+	# TODO: EliteAbilities
+	# TODO: Accelerates
+	# TODO: ImmuneToVeins
+	# TODO: Size
+	# TODO: ElitePrimary
+
+howi:
+	Inherits: ^Vehicle
+	# TODO: UIName
+	Tooltip:
+		Name: Howitzer
+	# TODO: Image
+	Buildable:
+		Prerequisites: gaweap, ~<fact-type>.british, ~<fact-type>.french, ~<fact-type>.germans, ~<fact-type>.americans, ~<fact-type>.alliance, 
+	Armament@Primary:
+		Weapon: HowitzerGun
+	Health:
+		HP: 200
+	Armor:
+		Type: Light
+	# TODO: Turret
+	# TODO: IsTilter
+	# TODO: Crusher
+	# TODO: TooBigToFitUnderBridge
+	# TODO: TechLevel
+	RevealsShroud:
+		Range: 8c0
+	# TODO: Speed
+	# TODO: CrateGoodie
+	# TODO: Owner
+	# TODO: RequiredHouses
+	Valued:
+		Cost: 750
+	# TODO: Points
+	# TODO: ROT
+	# TODO: IsSelectableCombatant
+	# TODO: Explosion
+	# TODO: VoiceSelect
+	# TODO: VoiceMove
+	# TODO: VoiceAttack
+	# TODO: AllowedToStartInMultiplayer
+	# TODO: MaxDebris
+	# TODO: Locomotor
+	# TODO: MovementZone
+	# TODO: ThreatPosed
+	# TODO: DamageParticleSystems
+	# TODO: VeteranAbilities
+	# TODO: EliteAbilities
+	# TODO: Accelerates
+	# TODO: ImmuneToVeins
+	# TODO: Size
+
+sapc:
+	Inherits: ^Vehicle
+	# TODO: UIName
+	Tooltip:
+		Name: Armored Transport
+	Buildable:
+		Prerequisites: nayard, ~<fact-type>.russians, ~<fact-type>.confederation, ~<fact-type>.africans, ~<fact-type>.arabs, 
+	# TODO: Image
+	Health:
+		HP: 300
+	# TODO: MoveToShroud
+	# TODO: DeployTime
+	Armor:
+		Type: Heavy
+	# TODO: Turret
+	# TODO: IsTilter
+	# TODO: TechLevel
+	RevealsShroud:
+		Range: 6c0
+	# TODO: PipScale
+	# TODO: Speed
+	# TODO: Naval
+	# TODO: Weight
+	# TODO: CrateGoodie
+	# TODO: Owner
+	# TODO: AllowedToStartInMultiplayer
+	Valued:
+		Cost: 900
+	# TODO: Points
+	# TODO: ROT
+	# TODO: Crusher
+	Cargo:
+		MaxWeight: 12
+		PipCount: 5
+		Types: Infantry
+	# TODO: Explosion
+	# TODO: VoiceSelect
+	# TODO: VoiceMove
+	# TODO: VoiceAttack
+	# TODO: DieSound
+	# TODO: MoveSound
+	# TODO: EnterTransportSound
+	# TODO: LeaveTransportSound
+	# TODO: Maxdebris
+	# TODO: SpeedType
+	# TODO: Locomotor
+	# TODO: MovementZone
+	# TODO: ThreatPosed
+	# TODO: DamageParticleSystems
+	# TODO: SpecialThreatValue
+	# TODO: ZFudgeColumn
+	# TODO: ZFudgeTunnel
+	# TODO: SizeLimit
+	# TODO: Size
+	# TODO: TooBigToFitUnderBridge
+	# TODO: Trainable
+	# TODO: StupidHunt
+
+ttnk:
+	Inherits: ^Vehicle
+	# TODO: UIName
+	Tooltip:
+		Name: Tesla Tank
+	Buildable:
+		Prerequisites: naweap, naradr, ~<fact-type>.russians, ~<fact-type>.confederation, ~<fact-type>.africans, ~<fact-type>.arabs, 
+	Armament@Primary:
+		Weapon: TankBolt
+	Health:
+		HP: 300
+	Armor:
+		Type: Heavy
+	# TODO: Turret
+	# TODO: IsTilter
+	# TODO: TooBigToFitUnderBridge
+	# TODO: TechLevel
+	RevealsShroud:
+		Range: 8c0
+	# TODO: Speed
+	# TODO: CrateGoodie
+	# TODO: Crusher
+	# TODO: Owner
+	# TODO: RequiredHouses
+	Valued:
+		Cost: 1200
+	# TODO: Points
+	# TODO: ROT
+	# TODO: IsSelectableCombatant
+	# TODO: AllowedToStartInMultiplayer
+	# TODO: Explosion
+	# TODO: VoiceSelect
+	# TODO: VoiceMove
+	# TODO: VoiceAttack
+	# TODO: DieSound
+	# TODO: MoveSound
+	# TODO: Maxdebris
+	# TODO: Locomotor
+	# TODO: MovementZone
+	# TODO: ThreatPosed
+	# TODO: DamageParticleSystems
+	# TODO: DamageSmokeOffset
+	# TODO: Weight
+	# TODO: VeteranAbilities
+	# TODO: EliteAbilities
+	# TODO: Accelerates
+	# TODO: ZFudgeColumn
+	# TODO: ZFudgeTunnel
+	# TODO: Size
+	# TODO: ElitePrimary
+
+sref:
+	Inherits: ^Vehicle
+	# TODO: UIName
+	Tooltip:
+		Name: Prism Tank
+	Buildable:
+		Prerequisites: gaweap, gatech, ~<fact-type>.british, ~<fact-type>.french, ~<fact-type>.germans, ~<fact-type>.americans, ~<fact-type>.alliance, 
+	Health:
+		HP: 150
+	Armor:
+		Type: Light
+	# TODO: Turret
+	# TODO: TurretCount
+	# TODO: WeaponCount
+	# TODO: Weapon1
+	# TODO: EliteWeapon1
+	# TODO: IsChargeTurret
+	# TODO: IsTilter
+	# TODO: TooBigToFitUnderBridge
+	# TODO: TechLevel
+	RevealsShroud:
+		Range: 8c0
+	# TODO: Speed
+	# TODO: CrateGoodie
+	# TODO: Crusher
+	# TODO: Owner
+	Valued:
+		Cost: 1200
+	# TODO: Points
+	# TODO: ROT
+	# TODO: IsSelectableCombatant
+	# TODO: AllowedToStartInMultiplayer
+	# TODO: Explosion
+	# TODO: VoiceSelect
+	# TODO: VoiceMove
+	# TODO: VoiceAttack
+	# TODO: DieSound
+	# TODO: MoveSound
+	# TODO: Maxdebris
+	# TODO: Locomotor
+	# TODO: MovementZone
+	# TODO: ThreatPosed
+	# TODO: DamageParticleSystems
+	# TODO: DamageSmokeOffset
+	# TODO: Weight
+	# TODO: VeteranAbilities
+	# TODO: EliteAbilities
+	# TODO: Accelerates
+	# TODO: ZFudgeColumn
+	# TODO: ZFudgeTunnel
+	# TODO: Size
+
+xcomet:
+	Inherits: ^Vehicle
+	# TODO: UIName
+	Tooltip:
+		Name: Placeholder
+	# TODO: Image
+	Buildable:
+		Prerequisites: gaweap, gatech, ~<fact-type>.british, ~<fact-type>.french, ~<fact-type>.germans, ~<fact-type>.americans, ~<fact-type>.alliance, 
+	Armament@Primary:
+		Weapon: CometFragment
+	Armament@Secondary:
+		Weapon: TeslaFragment
+	# TODO: ElitePrimary
+	Health:
+		HP: 300
+	Armor:
+		Type: Heavy
+	# TODO: Turret
+	# TODO: IsTilter
+	# TODO: TooBigToFitUnderBridge
+	# TODO: TechLevel
+	RevealsShroud:
+		Range: 8c0
+	# TODO: Speed
+	# TODO: CrateGoodie
+	# TODO: Crusher
+	# TODO: Owner
+	Valued:
+		Cost: 2000
+	# TODO: Points
+	# TODO: ROT
+	# TODO: IsSelectableCombatant
+	# TODO: AllowedToStartInMultiplayer
+	# TODO: Explosion
+	# TODO: Maxdebris
+	# TODO: Locomotor
+	# TODO: MovementZone
+	# TODO: ThreatPosed
+	# TODO: DamageParticleSystems
+	# TODO: DamageSmokeOffset
+	# TODO: Weight
+	# TODO: VeteranAbilities
+	# TODO: Accelerates
+	# TODO: ZFudgeColumn
+	# TODO: ZFudgeTunnel
+	# TODO: Size
+
+propa:
+	Inherits: ^Vehicle
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 Propaganda Truck
+	Buildable:
+		Prerequisites: naweap, ~<fact-type>.russians, ~<fact-type>.confederation, ~<fact-type>.africans, ~<fact-type>.arabs, 
+	Health:
+		HP: 100
+	Armor:
+		Type: Light
+	# TODO: DeployTime
+	# TODO: TechLevel
+	RevealsShroud:
+		Range: 8c0
+	# TODO: PipScale
+	# TODO: Speed
+	# TODO: CrateGoodie
+	# TODO: Owner
+	# TODO: AllowedToStartInMultiplayer
+	Valued:
+		Cost: 0
+	# TODO: Points
+	# TODO: ROT
+	# TODO: Crusher
+	# TODO: Turret
+	Cargo:
+		MaxWeight: 5
+		PipCount: 5
+		Types: Infantry
+	# TODO: IsSelectableCombatant
+	# TODO: Explosion
+	# TODO: DieSound
+	# TODO: AmbientSound
+	# TODO: Maxdebris
+	# TODO: DebrisTypes
+	# TODO: DebrisMaximums
+	# TODO: Locomotor
+	# TODO: MovementZone
+	# TODO: ThreatPosed
+	# TODO: DamageParticleSystems
+	# TODO: SpecialThreatValue
+	# TODO: ZFudgeColumn
+	# TODO: ZFudgeTunnel
+	# TODO: ImmuneToRadiation
+	# TODO: ImmuneToPsionics
+	# TODO: Size
+	# TODO: SizeLimit
+	# TODO: Trainable
+
+cona:
+	Inherits: ^Vehicle
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 Construction Excavator
+	Buildable:
+		Prerequisites: naweap, ~<fact-type>.russians, ~<fact-type>.confederation, ~<fact-type>.africans, ~<fact-type>.arabs, 
+	Health:
+		HP: 100
+	Armor:
+		Type: Light
+	# TODO: DeployTime
+	# TODO: TechLevel
+	RevealsShroud:
+		Range: 8c0
+	# TODO: PipScale
+	# TODO: Speed
+	# TODO: CrateGoodie
+	# TODO: Owner
+	# TODO: AllowedToStartInMultiplayer
+	Valued:
+		Cost: 0
+	# TODO: Points
+	# TODO: ROT
+	# TODO: Crusher
+	# TODO: Turret
+	# TODO: IsSelectableCombatant
+	# TODO: Explosion
+	# TODO: VoiceSelect
+	# TODO: DieSound
+	# TODO: MoveSound
+	# TODO: Maxdebris
+	# TODO: DebrisTypes
+	# TODO: DebrisMaximums
+	# TODO: Locomotor
+	# TODO: MovementZone
+	# TODO: ThreatPosed
+	# TODO: DamageParticleSystems
+	# TODO: SpecialThreatValue
+	# TODO: ZFudgeColumn
+	# TODO: ZFudgeTunnel
+	# TODO: ImmuneToRadiation
+	# TODO: ImmuneToPsionics
+	# TODO: Size
+	# TODO: SizeLimit
+	# TODO: Insignificant
+
+cop:
+	Inherits: ^Vehicle
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 Pig
+	Buildable:
+		Prerequisites: naweap, ~<fact-type>.russians, ~<fact-type>.confederation, ~<fact-type>.africans, ~<fact-type>.arabs, 
+	Health:
+		HP: 100
+	Armor:
+		Type: Light
+	# TODO: DeployTime
+	# TODO: TechLevel
+	RevealsShroud:
+		Range: 8c0
+	# TODO: PipScale
+	# TODO: Speed
+	# TODO: CrateGoodie
+	# TODO: Owner
+	# TODO: AllowedToStartInMultiplayer
+	Valued:
+		Cost: 0
+	# TODO: Points
+	# TODO: ROT
+	# TODO: Crusher
+	# TODO: Turret
+	# TODO: IsSelectableCombatant
+	# TODO: Explosion
+	# TODO: VoiceSelect
+	# TODO: VoiceMove
+	# TODO: DieSound
+	# TODO: Maxdebris
+	# TODO: DebrisTypes
+	# TODO: DebrisMaximums
+	# TODO: Locomotor
+	# TODO: MovementZone
+	# TODO: ThreatPosed
+	# TODO: DamageParticleSystems
+	# TODO: SpecialThreatValue
+	# TODO: ZFudgeColumn
+	# TODO: ZFudgeTunnel
+	# TODO: ImmuneToRadiation
+	# TODO: ImmuneToPsionics
+	# TODO: Size
+	# TODO: SizeLimit
+	# TODO: Insignificant
+	# TODO: AmbientSound
+	# TODO: Trainable
+
+euroc:
+	Inherits: ^Vehicle
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 European Car A
+	Buildable:
+		Prerequisites: naweap, ~<fact-type>.russians, ~<fact-type>.confederation, ~<fact-type>.africans, ~<fact-type>.arabs, 
+	Health:
+		HP: 100
+	Armor:
+		Type: Light
+	# TODO: DeployTime
+	# TODO: TechLevel
+	RevealsShroud:
+		Range: 8c0
+	# TODO: PipScale
+	# TODO: Speed
+	# TODO: CrateGoodie
+	# TODO: Owner
+	# TODO: AllowedToStartInMultiplayer
+	Valued:
+		Cost: 0
+	# TODO: Points
+	# TODO: ROT
+	# TODO: Crusher
+	# TODO: Turret
+	# TODO: IsSelectableCombatant
+	# TODO: Explosion
+	# TODO: VoiceSelect
+	# TODO: VoiceMove
+	# TODO: DieSound
+	# TODO: Maxdebris
+	# TODO: DebrisTypes
+	# TODO: DebrisMaximums
+	# TODO: Locomotor
+	# TODO: MovementZone
+	# TODO: ThreatPosed
+	# TODO: DamageParticleSystems
+	# TODO: SpecialThreatValue
+	# TODO: ZFudgeColumn
+	# TODO: ZFudgeTunnel
+	# TODO: ImmuneToRadiation
+	# TODO: ImmuneToPsionics
+	# TODO: Size
+	# TODO: SizeLimit
+	# TODO: Insignificant
+	# TODO: Trainable
+
+limo:
+	Inherits: ^Vehicle
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 Limo
+	Buildable:
+		Prerequisites: naweap, ~<fact-type>.russians, ~<fact-type>.confederation, ~<fact-type>.africans, ~<fact-type>.arabs, 
+	Health:
+		HP: 100
+	Armor:
+		Type: Light
+	# TODO: DeployTime
+	# TODO: TechLevel
+	RevealsShroud:
+		Range: 8c0
+	# TODO: PipScale
+	# TODO: Speed
+	# TODO: CrateGoodie
+	# TODO: Owner
+	# TODO: AllowedToStartInMultiplayer
+	Valued:
+		Cost: 0
+	# TODO: Points
+	# TODO: ROT
+	# TODO: Crusher
+	# TODO: Turret
+	# TODO: IsSelectableCombatant
+	# TODO: Explosion
+	# TODO: VoiceSelect
+	# TODO: VoiceMove
+	# TODO: DieSound
+	# TODO: Maxdebris
+	# TODO: DebrisTypes
+	# TODO: DebrisMaximums
+	# TODO: Locomotor
+	# TODO: MovementZone
+	# TODO: ThreatPosed
+	# TODO: DamageParticleSystems
+	# TODO: SpecialThreatValue
+	# TODO: ZFudgeColumn
+	# TODO: ZFudgeTunnel
+	# TODO: ImmuneToRadiation
+	# TODO: ImmuneToPsionics
+	# TODO: Size
+	# TODO: SizeLimit
+	# TODO: Insignificant
+	# TODO: Trainable
+
+stang:
+	Inherits: ^Vehicle
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 Sports Car
+	Buildable:
+		Prerequisites: naweap, ~<fact-type>.russians, ~<fact-type>.confederation, ~<fact-type>.africans, ~<fact-type>.arabs, 
+	Health:
+		HP: 100
+	Armor:
+		Type: Light
+	# TODO: DeployTime
+	# TODO: TechLevel
+	RevealsShroud:
+		Range: 8c0
+	# TODO: PipScale
+	# TODO: Speed
+	# TODO: CrateGoodie
+	# TODO: Owner
+	# TODO: AllowedToStartInMultiplayer
+	Valued:
+		Cost: 0
+	# TODO: Points
+	# TODO: ROT
+	# TODO: Crusher
+	# TODO: Turret
+	# TODO: IsSelectableCombatant
+	# TODO: Explosion
+	# TODO: VoiceSelect
+	# TODO: VoiceMove
+	# TODO: DieSound
+	# TODO: Maxdebris
+	# TODO: DebrisTypes
+	# TODO: DebrisMaximums
+	# TODO: Locomotor
+	# TODO: MovementZone
+	# TODO: ThreatPosed
+	# TODO: DamageParticleSystems
+	# TODO: SpecialThreatValue
+	# TODO: ZFudgeColumn
+	# TODO: ZFudgeTunnel
+	# TODO: ImmuneToRadiation
+	# TODO: ImmuneToPsionics
+	# TODO: Size
+	# TODO: SizeLimit
+	# TODO: Insignificant
+	# TODO: Trainable
+
+suvb:
+	Inherits: ^Vehicle
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 SUV Black
+	Buildable:
+		Prerequisites: naweap, ~<fact-type>.russians, ~<fact-type>.confederation, ~<fact-type>.africans, ~<fact-type>.arabs, 
+	Health:
+		HP: 100
+	Armor:
+		Type: Light
+	# TODO: DeployTime
+	# TODO: TechLevel
+	RevealsShroud:
+		Range: 8c0
+	# TODO: PipScale
+	# TODO: Speed
+	# TODO: CrateGoodie
+	# TODO: Owner
+	# TODO: AllowedToStartInMultiplayer
+	Valued:
+		Cost: 0
+	# TODO: Points
+	# TODO: ROT
+	# TODO: Crusher
+	# TODO: Turret
+	# TODO: IsSelectableCombatant
+	# TODO: Explosion
+	# TODO: VoiceSelect
+	# TODO: VoiceMove
+	# TODO: DieSound
+	# TODO: Maxdebris
+	# TODO: DebrisTypes
+	# TODO: DebrisMaximums
+	# TODO: Locomotor
+	# TODO: MovementZone
+	# TODO: ThreatPosed
+	# TODO: DamageParticleSystems
+	# TODO: SpecialThreatValue
+	# TODO: ZFudgeColumn
+	# TODO: ZFudgeTunnel
+	# TODO: ImmuneToRadiation
+	# TODO: ImmuneToPsionics
+	# TODO: Size
+	# TODO: SizeLimit
+	# TODO: Insignificant
+	# TODO: Trainable
+
+suvw:
+	Inherits: ^Vehicle
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 SUV White
+	Buildable:
+		Prerequisites: naweap, ~<fact-type>.russians, ~<fact-type>.confederation, ~<fact-type>.africans, ~<fact-type>.arabs, 
+	Health:
+		HP: 100
+	Armor:
+		Type: Light
+	# TODO: DeployTime
+	# TODO: TechLevel
+	RevealsShroud:
+		Range: 8c0
+	# TODO: PipScale
+	# TODO: Speed
+	# TODO: CrateGoodie
+	# TODO: Owner
+	# TODO: AllowedToStartInMultiplayer
+	Valued:
+		Cost: 0
+	# TODO: Points
+	# TODO: ROT
+	# TODO: Crusher
+	# TODO: Turret
+	# TODO: IsSelectableCombatant
+	# TODO: Explosion
+	# TODO: VoiceSelect
+	# TODO: VoiceMove
+	# TODO: DieSound
+	# TODO: Maxdebris
+	# TODO: DebrisTypes
+	# TODO: DebrisMaximums
+	# TODO: Locomotor
+	# TODO: MovementZone
+	# TODO: ThreatPosed
+	# TODO: DamageParticleSystems
+	# TODO: SpecialThreatValue
+	# TODO: ZFudgeColumn
+	# TODO: ZFudgeTunnel
+	# TODO: ImmuneToRadiation
+	# TODO: ImmuneToPsionics
+	# TODO: Size
+	# TODO: SizeLimit
+	# TODO: Insignificant
+	# TODO: Trainable
+
+taxi:
+	Inherits: ^Vehicle
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 Taxi
+	Buildable:
+		Prerequisites: naweap, ~<fact-type>.russians, ~<fact-type>.confederation, ~<fact-type>.africans, ~<fact-type>.arabs, 
+	Health:
+		HP: 100
+	Armor:
+		Type: Light
+	# TODO: DeployTime
+	# TODO: TechLevel
+	RevealsShroud:
+		Range: 8c0
+	# TODO: PipScale
+	# TODO: Speed
+	# TODO: CrateGoodie
+	# TODO: Owner
+	# TODO: AllowedToStartInMultiplayer
+	Valued:
+		Cost: 0
+	# TODO: Points
+	# TODO: ROT
+	# TODO: Crusher
+	# TODO: Turret
+	# TODO: IsSelectableCombatant
+	# TODO: Explosion
+	# TODO: VoiceSelect
+	# TODO: VoiceMove
+	# TODO: DieSound
+	# TODO: Maxdebris
+	# TODO: DebrisTypes
+	# TODO: DebrisMaximums
+	# TODO: Locomotor
+	# TODO: MovementZone
+	# TODO: ThreatPosed
+	# TODO: DamageParticleSystems
+	# TODO: SpecialThreatValue
+	# TODO: ZFudgeColumn
+	# TODO: ZFudgeTunnel
+	# TODO: ImmuneToRadiation
+	# TODO: ImmuneToPsionics
+	# TODO: Size
+	# TODO: SizeLimit
+	# TODO: Insignificant
+	# TODO: Trainable
+
+ptruck:
+	Inherits: ^Vehicle
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 Pickup Truck
+	Buildable:
+		Prerequisites: naweap, ~<fact-type>.russians, ~<fact-type>.confederation, ~<fact-type>.africans, ~<fact-type>.arabs, 
+	Health:
+		HP: 100
+	Armor:
+		Type: Light
+	# TODO: DeployTime
+	# TODO: TechLevel
+	RevealsShroud:
+		Range: 8c0
+	# TODO: PipScale
+	# TODO: Speed
+	# TODO: CrateGoodie
+	# TODO: Owner
+	# TODO: AllowedToStartInMultiplayer
+	Valued:
+		Cost: 0
+	# TODO: Points
+	# TODO: ROT
+	# TODO: Crusher
+	# TODO: Turret
+	# TODO: IsSelectableCombatant
+	# TODO: Explosion
+	# TODO: VoiceSelect
+	# TODO: VoiceMove
+	# TODO: DieSound
+	# TODO: Maxdebris
+	# TODO: DebrisTypes
+	# TODO: DebrisMaximums
+	# TODO: Locomotor
+	# TODO: MovementZone
+	# TODO: ThreatPosed
+	# TODO: DamageParticleSystems
+	# TODO: SpecialThreatValue
+	# TODO: ZFudgeColumn
+	# TODO: ZFudgeTunnel
+	# TODO: ImmuneToRadiation
+	# TODO: ImmuneToPsionics
+	# TODO: Size
+	# TODO: SizeLimit
+	# TODO: Insignificant
+	# TODO: Trainable
+
+cruise:
+	Inherits: ^Ship
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 Cruise Ship
+	Buildable:
+		Prerequisites: naweap, ~<fact-type>.russians, ~<fact-type>.confederation, ~<fact-type>.africans, ~<fact-type>.arabs, 
+	Health:
+		HP: 300
+	# TODO: Naval
+	Armor:
+		Type: Light
+	# TODO: DeployTime
+	# TODO: TechLevel
+	RevealsShroud:
+		Range: 8c0
+	# TODO: PipScale
+	# TODO: Speed
+	# TODO: CrateGoodie
+	# TODO: Owner
+	# TODO: AllowedToStartInMultiplayer
+	Valued:
+		Cost: 500
+	# TODO: Points
+	# TODO: ROT
+	# TODO: Crusher
+	# TODO: Turret
+	# TODO: IsSelectableCombatant
+	# TODO: Explosion
+	# TODO: VoiceMove
+	# TODO: DieSound
+	# TODO: Maxdebris
+	# TODO: DebrisTypes
+	# TODO: DebrisMaximums
+	# TODO: Locomotor
+	# TODO: SpeedType
+	# TODO: MovementZone
+	# TODO: ThreatPosed
+	# TODO: DamageParticleSystems
+	# TODO: SpecialThreatValue
+	# TODO: TooBigToFitUnderBridge
+	# TODO: ZFudgeColumn
+	# TODO: ZFudgeTunnel
+	# TODO: ImmuneToRadiation
+	# TODO: ImmuneToPsionics
+	# TODO: Size
+	# TODO: SizeLimit
+	# TODO: Insignificant
+	# TODO: AmbientSound
+	# TODO: Trainable
+	# TODO: Weight
+
+tug:
+	Inherits: ^Ship
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 Tug Boat
+	Buildable:
+		Prerequisites: naweap, ~<fact-type>.russians, ~<fact-type>.confederation, ~<fact-type>.africans, ~<fact-type>.arabs, 
+	Health:
+		HP: 200
+	# TODO: Naval
+	Armor:
+		Type: Light
+	# TODO: DeployTime
+	# TODO: TechLevel
+	RevealsShroud:
+		Range: 8c0
+	# TODO: PipScale
+	# TODO: Speed
+	# TODO: CrateGoodie
+	# TODO: Owner
+	# TODO: AllowedToStartInMultiplayer
+	Valued:
+		Cost: 500
+	# TODO: Points
+	# TODO: ROT
+	# TODO: Crusher
+	# TODO: Turret
+	# TODO: IsSelectableCombatant
+	# TODO: Explosion
+	# TODO: DieSound
+	# TODO: Maxdebris
+	# TODO: DebrisTypes
+	# TODO: DebrisMaximums
+	# TODO: Locomotor
+	# TODO: SpeedType
+	# TODO: MovementZone
+	# TODO: ThreatPosed
+	# TODO: DamageParticleSystems
+	# TODO: SpecialThreatValue
+	# TODO: TooBigToFitUnderBridge
+	# TODO: ZFudgeColumn
+	# TODO: ZFudgeTunnel
+	# TODO: ImmuneToRadiation
+	# TODO: ImmuneToPsionics
+	# TODO: Size
+	# TODO: SizeLimit
+	# TODO: Insignificant
+	# TODO: Trainable
+	# TODO: AmbientSound
+
+cdest:
+	Inherits: ^Ship
+	# TODO: UIName
+	Tooltip:
+		Name: Coast Guard Boat
+	Armament@Primary:
+		Weapon: 155mm
+	Armament@Secondary:
+		Weapon: ASWLauncher
+	# TODO: NavalTargeting
+	# TODO: Spawns
+	# TODO: SpawnsNumber
+	# TODO: SpawnRegenRate
+	# TODO: SpawnReloadRate
+	# TODO: NoSpawnAlt
+	# TODO: FireAngle
+	# TODO: ToProtect
+	Health:
+		HP: 600
+	# TODO: Naval
+	Armor:
+		Type: Light
+	# TODO: TechLevel
+	RevealsShroud:
+		Range: 7c0
+	# TODO: Speed
+	# TODO: Owner
+	# TODO: AllowedToStartInMultiplayer
+	Valued:
+		Cost: 1000
+	# TODO: Turret
+	# TODO: Points
+	# TODO: ROT
+	# TODO: Crusher
+	# TODO: Weight
+	# TODO: Crewed
+	# TODO: Explosion
+	# TODO: SinkingSound
+	# TODO: Locomotor
+	# TODO: SpeedType
+	# TODO: MovementZone
+	# TODO: ThreatPosed
+	# TODO: DamageParticleSystems
+	# TODO: VeteranAbilities
+	# TODO: EliteAbilities
+	# TODO: TooBigToFitUnderBridge
+	# TODO: Sensors
+	# TODO: SensorsSight
+	# TODO: OpportunityFire
+	# TODO: ElitePrimary
+
+orca:
+	Inherits: ^Aircraft
+	# TODO: UIName
+	Tooltip:
+		Name: Intruder
+	# TODO: Image
+	Buildable:
+		Prerequisites: radar, ~<fact-type>.british, ~<fact-type>.french, ~<fact-type>.germans, ~<fact-type>.americans, 
+	Armament@Primary:
+		Weapon: Maverick
+	# TODO: CanPassiveAquire
+	# TODO: CanRetaliate
+	Health:
+		HP: 150
+	Armor:
+		Type: Light
+	# TODO: TechLevel
+	RevealsShroud:
+		Range: 8c0
+	# TODO: RadarInvisible
+	# TODO: Landable
+	# TODO: MoveToShroud
+	# TODO: Dock
+	# TODO: PipScale
+	# TODO: Speed
+	# TODO: PitchSpeed
+	# TODO: PitchAngle
+	# TODO: OmniFire
+	# TODO: Owner
+	# TODO: ForbiddenHouses
+	Valued:
+		Cost: 1200
+	# TODO: Points
+	# TODO: ROT
+	# TODO: Ammo
+	# TODO: Crewed
+	# TODO: ConsideredAircraft
+	# TODO: AirportBound
+	# TODO: GuardRange
+	# TODO: Explosion
+	# TODO: Maxdebris
+	# TODO: IsSelectableCombatant
+	# TODO: VoiceSelect
+	# TODO: VoiceMove
+	# TODO: VoiceAttack
+	# TODO: VoiceCrashing
+	# TODO: MoveSound
+	# TODO: CrashingSound
+	# TODO: ImpactLandSound
+	# TODO: Locomotor
+	# TODO: MovementZone
+	# TODO: ThreatPosed
+	# TODO: DamageParticleSystems
+	# TODO: AuxSound1
+	# TODO: AuxSound2
+	# TODO: VeteranAbilities
+	# TODO: EliteAbilities
+	# TODO: Fighter
+	# TODO: AllowedToStartInMultiplayer
+	# TODO: ImmuneToPsionics
+	# TODO: ElitePrimary
+	# TODO: PreventAttackMove
+
+hind:
+	Inherits: ^Aircraft
+	# TODO: UIName
+	Tooltip:
+		Name: Hind Transport
+	Buildable:
+		Prerequisites: naweap, ~<fact-type>.russians, ~<fact-type>.confederation, ~<fact-type>.africans, ~<fact-type>.arabs, 
+	Armament@Primary:
+		Weapon: BlackHawkCannon
+	Health:
+		HP: 300
+	# TODO: JumpJet
+	Armor:
+		Type: Light
+	# TODO: TechLevel
+	RevealsShroud:
+		Range: 7c0
+	# TODO: RadarInvisible
+	# TODO: Carryall
+	# TODO: Landable
+	# TODO: PipScale
+	Cargo:
+		MaxWeight: 10
+		PipCount: 5
+		Types: Infantry
+	# TODO: Speed
+	# TODO: PitchSpeed
+	# TODO: JumpjetSpeed
+	# TODO: JumpjetClimb
+	# TODO: JumpjetCrash
+	# TODO: JumpJetAccel
+	# TODO: JumpJetTurnRate
+	# TODO: JumpjetHeight
+	# TODO: JumpjetWobbles
+	# TODO: JumpjetDeviation
+	# TODO: Owner
+	# TODO: RequiredHouses
+	Valued:
+		Cost: 1000
+	# TODO: Points
+	# TODO: ROT
+	# TODO: Crewed
+	# TODO: ConsideredAircraft
+	# TODO: Explosion
+	# TODO: Maxdebris
+	# TODO: VoiceSelect
+	# TODO: VoiceMove
+	# TODO: VoiceAttack
+	# TODO: CrashingSound
+	# TODO: ImpactLandSound
+	# TODO: Locomotor
+	# TODO: MovementZone
+	# TODO: DamageParticleSystems
+	# TODO: AuxSound1
+	# TODO: AuxSound2
+	# TODO: ThreatPosed
+	# TODO: SpecialThreatValue
+	# TODO: VeteranAbilities
+	# TODO: EliteAbilities
+	# TODO: Size
+	# TODO: SizeLimit
+	# TODO: HoverAttack
+	# TODO: AllowedToStartInMultiplayer
+	# TODO: Crashable
+	# TODO: SpeedType
+	# TODO: PreventAttackMove
+
+shad:
+	Inherits: ^Aircraft
+	# TODO: UIName
+	Tooltip:
+		Name: BlackHawk Transport
+	Buildable:
+		Prerequisites: gaweap, ~<fact-type>.british, ~<fact-type>.french, ~<fact-type>.germans, ~<fact-type>.americans, ~<fact-type>.alliance, 
+	Armament@Primary:
+		Weapon: BlackHawkCannon
+	Health:
+		HP: 175
+	# TODO: JumpJet
+	Armor:
+		Type: Light
+	# TODO: TechLevel
+	RevealsShroud:
+		Range: 7c0
+	# TODO: RadarInvisible
+	# TODO: Landable
+	# TODO: PipScale
+	Cargo:
+		MaxWeight: 5
+		PipCount: 5
+		Types: Infantry
+	# TODO: Speed
+	# TODO: PitchSpeed
+	# TODO: JumpjetSpeed
+	# TODO: JumpjetClimb
+	# TODO: JumpjetCrash
+	# TODO: JumpJetAccel
+	# TODO: JumpJetTurnRate
+	# TODO: JumpjetHeight
+	# TODO: JumpjetWobbles
+	# TODO: JumpjetDeviation
+	# TODO: Owner
+	Valued:
+		Cost: 1000
+	# TODO: Points
+	# TODO: ROT
+	# TODO: Crewed
+	# TODO: ConsideredAircraft
+	# TODO: Explosion
+	# TODO: Maxdebris
+	# TODO: VoiceSelect
+	# TODO: VoiceMove
+	# TODO: VoiceAttack
+	# TODO: VoiceCrashing
+	# TODO: CrashingSound
+	# TODO: ImpactLandSound
+	# TODO: Locomotor
+	# TODO: MovementZone
+	# TODO: DamageParticleSystems
+	# TODO: ThreatPosed
+	# TODO: SpecialThreatValue
+	# TODO: VeteranAbilities
+	# TODO: EliteAbilities
+	# TODO: Size
+	# TODO: SizeLimit
+	# TODO: HoverAttack
+	# TODO: AllowedToStartInMultiplayer
+	# TODO: Crashable
+	# TODO: CanPassiveAquire
+	# TODO: SpeedType
+	# TODO: MoveSound
+	# TODO: EnterTransportSound
+	# TODO: LeaveTransportSound
+	# TODO: ElitePrimary
+	# TODO: PreventAttackMove
+	# TODO: TooBigToFitUnderBridge
+	# TODO: Trainable
+
+zep:
+	Inherits: ^Aircraft
+	# TODO: UIName
+	Tooltip:
+		Name: Kirov Airship
+	Buildable:
+		Prerequisites: naweap, natech, ~<fact-type>.russians, ~<fact-type>.confederation, ~<fact-type>.africans, ~<fact-type>.arabs, 
+	Armament@Primary:
+		Weapon: BlimpBomb
+	Health:
+		HP: 2000
+	Armor:
+		Type: Light
+	# TODO: TechLevel
+	RevealsShroud:
+		Range: 8c0
+	# TODO: RadarInvisible
+	# TODO: MoveToShroud
+	# TODO: BalloonHover
+	# TODO: Speed
+	# TODO: JumpjetSpeed
+	# TODO: JumpjetClimb
+	# TODO: JumpjetCrash
+	# TODO: JumpJetAccel
+	# TODO: JumpJetTurnRate
+	# TODO: JumpjetHeight
+	# TODO: JumpjetNoWobbles
+	# TODO: Crashable
+	# TODO: PitchSpeed
+	# TODO: PitchAngle
+	# TODO: Owner
+	Valued:
+		Cost: 2000
+	# TODO: Points
+	# TODO: ROT
+	# TODO: SpeedType
+	# TODO: Crewed
+	# TODO: ConsideredAircraft
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: IsSelectableCombatant
+	# TODO: VoiceSelect
+	# TODO: VoiceMove
+	# TODO: VoiceAttack
+	# TODO: VoiceCrashing
+	# TODO: CreateSound
+	# TODO: CrashingSound
+	# TODO: ImpactLandSound
+	# TODO: Locomotor
+	# TODO: MovementZone
+	# TODO: ThreatPosed
+	# TODO: DamageParticleSystems
+	# TODO: AuxSound1
+	# TODO: AuxSound2
+	# TODO: AllowedToStartInMultiplayer
+	# TODO: VeteranAbilities
+	# TODO: EliteAbilities
+	# TODO: SelfHealing
+	# TODO: MoveSound
+	# TODO: ElitePrimary
+	# TODO: Parasiteable
+	# TODO: Size
+
+hornet:
+	Inherits: ^Aircraft
+	# TODO: UIName
+	Tooltip:
+		Name: Hornet
+	Armament@Primary:
+		Weapon: HornetBomb
+	Armament@Secondary:
+		Weapon: HornetCollision
+	Health:
+		HP: 75
+	Armor:
+		Type: Light
+	# TODO: Spawned
+	# TODO: TechLevel
+	RevealsShroud:
+		Range: 2c0
+	# TODO: RadarInvisible
+	# TODO: Landable
+	# TODO: MoveToShroud
+	# TODO: PipScale
+	# TODO: Speed
+	# TODO: PitchSpeed
+	# TODO: PitchAngle
+	# TODO: Owner
+	Valued:
+		Cost: 50
+	# TODO: Points
+	# TODO: ROT
+	# TODO: Ammo
+	# TODO: Crewed
+	# TODO: GuardRange
+	# TODO: Explosion
+	# TODO: Maxdebris
+	# TODO: CrashingSound
+	# TODO: ImpactLandSound
+	# TODO: Locomotor
+	# TODO: MovementZone
+	# TODO: MovementRestrictedTo
+	# TODO: ThreatPosed
+	# TODO: DamageParticleSystems
+	# TODO: AuxSound1
+	# TODO: AuxSound2
+	# TODO: ImmuneToPsionics
+	# TODO: VeteranAbilities
+	# TODO: EliteAbilities
+	# TODO: ElitePrimary
+
+dmisl:
+	Inherits: ^Aircraft
+	# TODO: UIName
+	Tooltip:
+		Name: Dread Missile
+	# TODO: FireAngle
+	Health:
+		HP: 50
+	Armor:
+		Type: Special_2
+	# TODO: Spawned
+	# TODO: MissileSpawn
+	# TODO: TechLevel
+	RevealsShroud:
+		Range: 0c0
+	# TODO: RadarInvisible
+	# TODO: Landable
+	# TODO: MoveToShroud
+	# TODO: Ammo
+	# TODO: Speed
+	# TODO: Owner
+	Valued:
+		Cost: 50
+	# TODO: Points
+	# TODO: ROT
+	# TODO: Crewed
+	# TODO: Explodes
+	# TODO: GuardRange
+	# TODO: Explosion
+	# TODO: Maxdebris
+	# TODO: Locomotor
+	# TODO: MovementZone
+	# TODO: ThreatPosed
+	# TODO: DamageParticleSystems
+	# TODO: AuxSound1
+	# TODO: ImmuneToPsionics
+	# TODO: NoShadow
+	# TODO: Selectable
+	# TODO: Trainable
+
+asw:
+	Inherits: ^Aircraft
+	# TODO: UIName
+	Tooltip:
+		Name: Osprey
+	Armament@Primary:
+		Weapon: ASWBomb
+	Armament@Secondary:
+		Weapon: ASWCollision
+	# TODO: NavalTargeting
+	# TODO: LandTargeting
+	Health:
+		HP: 30
+	Armor:
+		Type: Light
+	# TODO: Spawned
+	# TODO: TechLevel
+	RevealsShroud:
+		Range: 2c0
+	# TODO: RadarInvisible
+	# TODO: Landable
+	# TODO: MoveToShroud
+	# TODO: PipScale
+	# TODO: Speed
+	# TODO: PitchSpeed
+	# TODO: PitchAngle
+	# TODO: Owner
+	Valued:
+		Cost: 50
+	# TODO: Points
+	# TODO: Ammo
+	# TODO: Crewed
+	# TODO: GuardRange
+	# TODO: Explosion
+	# TODO: Maxdebris
+	# TODO: CrashingSound
+	# TODO: ImpactLandSound
+	# TODO: Locomotor
+	# TODO: MovementZone
+	# TODO: MovementRestrictedTo
+	# TODO: ThreatPosed
+	# TODO: DamageParticleSystems
+	# TODO: AuxSound1
+	# TODO: AuxSound2
+	# TODO: ImmuneToPsionics
+
+v3rocket:
+	Inherits: ^Aircraft
+	# TODO: UIName
+	Tooltip:
+		Name: V3 Rocket
+	# TODO: FireAngle
+	Health:
+		HP: 50
+	Armor:
+		Type: Special_2
+	# TODO: Spawned
+	# TODO: MissileSpawn
+	# TODO: TechLevel
+	RevealsShroud:
+		Range: 1c0
+	# TODO: RadarInvisible
+	# TODO: Landable
+	# TODO: MoveToShroud
+	# TODO: Ammo
+	# TODO: Speed
+	# TODO: Owner
+	Valued:
+		Cost: 50
+	# TODO: Points
+	# TODO: ROT
+	# TODO: Crewed
+	# TODO: Explodes
+	# TODO: GuardRange
+	# TODO: Explosion
+	# TODO: Maxdebris
+	# TODO: Locomotor
+	# TODO: MovementZone
+	# TODO: ThreatPosed
+	# TODO: DamageParticleSystems
+	# TODO: AuxSound1
+	# TODO: ImmuneToPsionics
+	# TODO: NoShadow
+	# TODO: Selectable
+	# TODO: Trainable
+
+pdplane:
+	Inherits: ^Aircraft
+	# TODO: UIName
+	Tooltip:
+		Name: Cargo Plane
+	Health:
+		HP: 400
+	Armor:
+		Type: Light
+	# TODO: TechLevel
+	Armament@Primary:
+		Weapon: ParaDropWeapon
+	# TODO: Spawned
+	# TODO: LeadershipRating
+	# TODO: Selectable
+	# TODO: RadarInvisible
+	RevealsShroud:
+		Range: 0c0
+	# TODO: Landable
+	# TODO: MoveToShroud
+	# TODO: PitchAngle
+	# TODO: Speed
+	# TODO: Owner
+	# TODO: Points
+	# TODO: ROT
+	# TODO: Crewed
+	# TODO: Ammo
+	# TODO: Explosion
+	# TODO: Maxdebris
+	# TODO: Locomotor
+	# TODO: MovementZone
+	# TODO: ThreatPosed
+	# TODO: DamageParticleSystems
+	# TODO: ImmuneToPsionics
+	# TODO: CanPassiveAquire
+	# TODO: CanRetaliate
+	# TODO: MoveSound
+	# TODO: CrashingSound
+	# TODO: ImpactLandSound
+
+cargoplane:
+	Inherits: ^Aircraft
+	# TODO: Image
+	# TODO: UIName
+	Tooltip:
+		Name: Transport Plane
+	Health:
+		HP: 400
+	Armor:
+		Type: Light
+	# TODO: TechLevel
+	# TODO: LeadershipRating
+	# TODO: RadarInvisible
+	RevealsShroud:
+		Range: 0c0
+	# TODO: Landable
+	# TODO: MoveToShroud
+	# TODO: PitchAngle
+	# TODO: Speed
+	# TODO: Owner
+	# TODO: Points
+	# TODO: ROT
+	# TODO: Crewed
+	# TODO: Explosion
+	# TODO: Maxdebris
+	# TODO: Locomotor
+	# TODO: MovementZone
+	# TODO: ThreatPosed
+	# TODO: DamageParticleSystems
+	# TODO: ImmuneToPsionics
+	# TODO: CanPassiveAquire
+	# TODO: CanRetaliate
+	# TODO: MoveSound
+	# TODO: CrashingSound
+	# TODO: ImpactLandSound
+
+beag:
+	Inherits: ^Aircraft
+	# TODO: UIName
+	Tooltip:
+		Name: Black Eagle
+	Buildable:
+		Prerequisites: radar, ~<fact-type>.british, ~<fact-type>.french, ~<fact-type>.germans, ~<fact-type>.americans, ~<fact-type>.alliance, 
+	Armament@Primary:
+		Weapon: Maverick2
+	# TODO: CanPassiveAquire
+	# TODO: CanRetaliate
+	Health:
+		HP: 200
+	Armor:
+		Type: Light
+	# TODO: TechLevel
+	RevealsShroud:
+		Range: 8c0
+	# TODO: RadarInvisible
+	# TODO: Landable
+	# TODO: MoveToShroud
+	# TODO: Dock
+	# TODO: PipScale
+	# TODO: Speed
+	# TODO: PitchSpeed
+	# TODO: PitchAngle
+	# TODO: OmniFire
+	# TODO: Owner
+	# TODO: RequiredHouses
+	Valued:
+		Cost: 1200
+	# TODO: Points
+	# TODO: ROT
+	# TODO: Ammo
+	# TODO: Crewed
+	# TODO: ConsideredAircraft
+	# TODO: AirportBound
+	# TODO: GuardRange
+	# TODO: Explosion
+	# TODO: Maxdebris
+	# TODO: IsSelectableCombatant
+	# TODO: VoiceSelect
+	# TODO: VoiceMove
+	# TODO: VoiceAttack
+	# TODO: VoiceCrashing
+	# TODO: MoveSound
+	# TODO: CrashingSound
+	# TODO: ImpactLandSound
+	# TODO: Locomotor
+	# TODO: MovementZone
+	# TODO: ThreatPosed
+	# TODO: DamageParticleSystems
+	# TODO: VeteranAbilities
+	# TODO: EliteAbilities
+	# TODO: Fighter
+	# TODO: AllowedToStartInMultiplayer
+	# TODO: ImmuneToPsionics
+	# TODO: ElitePrimary
+	# TODO: PreventAttackMove
+
+gatech:
+	Inherits: ^Building
+	Tooltip:
+		Name: Allied Battle Lab
+	# TODO: BuildCat
+	Buildable:
+		Prerequisites: gaweap, radar, gacnst, ~<fact-type>.british, ~<fact-type>.french, ~<fact-type>.germans, ~<fact-type>.americans, ~<fact-type>.alliance, ~<fact-type>.russians, ~<fact-type>.confederation, ~<fact-type>.africans, ~<fact-type>.arabs, 
+	Health:
+		HP: 500
+	Armor:
+		Type: Wood
+	# TODO: TechLevel
+	# TODO: Adjacent
+	RevealsShroud:
+		Range: 6c0
+	# TODO: Owner
+	# TODO: AIBasePlanningSide
+	Valued:
+		Cost: 2000
+	# TODO: Points
+	# TODO: Power
+	# TODO: Capturable
+	# TODO: Crewed
+	# TODO: Explosion
+	# TODO: DebrisAnims
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: ThreatPosed
+	# TODO: DamageSmokeOffset
+	# TODO: AIBuildThis
+	# TODO: TogglePower
+	# TODO: Spyable
+	# TODO: ProtectWithWall
+
+gaweap:
+	Inherits: ^Building
+	Tooltip:
+		Name: Allied War Factory
+	# TODO: BuildCat
+	# TODO: WeaponsFactory
+	Buildable:
+		Prerequisites: proc, gapile, gacnst, ~<fact-type>.british, ~<fact-type>.french, ~<fact-type>.germans, ~<fact-type>.americans, ~<fact-type>.alliance, ~<fact-type>.russians, ~<fact-type>.confederation, ~<fact-type>.africans, ~<fact-type>.arabs, 
+	# TODO: Factory
+	# TODO: DeployTime
+	Health:
+		HP: 1000
+	Armor:
+		Type: Wood
+	# TODO: TechLevel
+	RevealsShroud:
+		Range: 4c0
+	# TODO: Adjacent
+	# TODO: Owner
+	# TODO: AIBasePlanningSide
+	Valued:
+		Cost: 2000
+	# TODO: Points
+	# TODO: Power
+	# TODO: Capturable
+	# TODO: Crewed
+	# TODO: Bib
+	# TODO: Explosion
+	# TODO: DebrisAnims
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: ThreatPosed
+	# TODO: DamageParticleSystems
+	# TODO: DamageSmokeOffset
+	# TODO: AIBuildThis
+	# TODO: ExitCoord
+	# TODO: Spyable
+
+naweap:
+	Inherits: ^Building
+	Tooltip:
+		Name: Soviet War Factory
+	# TODO: BuildCat
+	# TODO: WeaponsFactory
+	Buildable:
+		Prerequisites: proc, nahand, nacnst, ~<fact-type>.british, ~<fact-type>.french, ~<fact-type>.germans, ~<fact-type>.americans, ~<fact-type>.alliance, ~<fact-type>.russians, ~<fact-type>.confederation, ~<fact-type>.africans, ~<fact-type>.arabs, 
+	# TODO: Factory
+	# TODO: DeployTime
+	Health:
+		HP: 1000
+	# TODO: Adjacent
+	Armor:
+		Type: Wood
+	# TODO: TechLevel
+	RevealsShroud:
+		Range: 4c0
+	# TODO: Owner
+	# TODO: AIBasePlanningSide
+	Valued:
+		Cost: 2000
+	# TODO: Points
+	# TODO: Power
+	# TODO: Capturable
+	# TODO: Crewed
+	# TODO: Bib
+	# TODO: Explosion
+	# TODO: NaturalSmokeLocation
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: DebrisAnim
+	# TODO: ThreatPosed
+	# TODO: DamageParticleSystems
+	# TODO: DamageSmokeOffset
+	# TODO: AIBuildThis
+	# TODO: ExitCoord
+	# TODO: Spyable
+
+gacnst:
+	Inherits: ^Building
+	Tooltip:
+		Name: Allied Construction Yard
+	# TODO: ConstructionYard
+	Health:
+		HP: 1000
+	Armor:
+		Type: Concrete
+	# TODO: TechLevel
+	# TODO: Adjacent
+	# TODO: Factory
+	# TODO: UndeploysInto
+	RevealsShroud:
+		Range: 8c0
+	# TODO: Owner
+	Valued:
+		Cost: 3000
+	# TODO: Points
+	# TODO: Power
+	# TODO: Capturable
+	# TODO: Crewed
+	# TODO: Explosion
+	# TODO: DebrisAnims
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: ThreatPosed
+	# TODO: DamageSmokeOffset
+	# TODO: AIBuildThis
+	# TODO: TogglePower
+	# TODO: ProtectWithWall
+	# TODO: EligibileForAllyBuilding
+
+nacnst:
+	Inherits: ^Building
+	Tooltip:
+		Name: Soviet Construction Yard
+	# TODO: ConstructionYard
+	Health:
+		HP: 1000
+	Armor:
+		Type: Concrete
+	# TODO: TechLevel
+	# TODO: Adjacent
+	# TODO: Factory
+	# TODO: UndeploysInto
+	RevealsShroud:
+		Range: 8c0
+	# TODO: Owner
+	Valued:
+		Cost: 3000
+	# TODO: Points
+	# TODO: Power
+	# TODO: Capturable
+	# TODO: Crewed
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: DebrisAnim
+	# TODO: ThreatPosed
+	# TODO: DamageParticleSystems
+	# TODO: DamageSmokeOffset
+	# TODO: AIBuildThis
+	# TODO: TogglePower
+	# TODO: ProtectWithWall
+	# TODO: EligibileForAllyBuilding
+
+garefn:
+	Inherits: ^Building
+	Tooltip:
+		Name: Allied Ore Refinery
+	# TODO: BuildCat
+	# TODO: DockUnload
+	# TODO: Refinery
+	# TODO: NumberOfDocks
+	# TODO: Bib
+	Buildable:
+		Prerequisites: power, gacnst, ~<fact-type>.british, ~<fact-type>.french, ~<fact-type>.germans, ~<fact-type>.americans, ~<fact-type>.alliance, ~<fact-type>.russians, ~<fact-type>.confederation, ~<fact-type>.africans, ~<fact-type>.arabs, 
+	Health:
+		HP: 1000
+	# TODO: Adjacent
+	Armor:
+		Type: Wood
+	# TODO: TechLevel
+	# TODO: FreeUnit
+	RevealsShroud:
+		Range: 6c0
+	# TODO: Owner
+	# TODO: AIBasePlanningSide
+	Valued:
+		Cost: 2000
+	# TODO: Soylent
+	# TODO: Points
+	# TODO: Power
+	# TODO: Storage
+	# TODO: Capturable
+	# TODO: Crewed
+	# TODO: Explosion
+	# TODO: HalfDamageSmokeLocation1
+	# TODO: DebrisAnims
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: PipScale
+	# TODO: ThreatPosed
+	# TODO: DamageSmokeOffset
+	# TODO: AIBuildThis
+	# TODO: TogglePower
+	# TODO: RefnSmokeOffsetOne
+	# TODO: RefnSmokeOffsetTwo
+	# TODO: Spyable
+	# TODO: NumberImpassableRows
+
+narefn:
+	Inherits: ^Building
+	Tooltip:
+		Name: Soviet Ore Refinery
+	# TODO: BuildCat
+	# TODO: DockUnload
+	# TODO: Refinery
+	# TODO: NumberOfDocks
+	# TODO: Bib
+	# TODO: NumberImpassableRows
+	Buildable:
+		Prerequisites: power, nacnst, ~<fact-type>.british, ~<fact-type>.french, ~<fact-type>.germans, ~<fact-type>.americans, ~<fact-type>.alliance, ~<fact-type>.russians, ~<fact-type>.confederation, ~<fact-type>.africans, ~<fact-type>.arabs, 
+	Health:
+		HP: 1000
+	# TODO: Adjacent
+	Armor:
+		Type: Wood
+	# TODO: TechLevel
+	# TODO: FreeUnit
+	RevealsShroud:
+		Range: 6c0
+	# TODO: Owner
+	# TODO: AIBasePlanningSide
+	Valued:
+		Cost: 2000
+	# TODO: Soylent
+	# TODO: Points
+	# TODO: Power
+	# TODO: Storage
+	# TODO: Capturable
+	# TODO: Crewed
+	# TODO: Explosion
+	# TODO: HalfDamageSmokeLocation1
+	# TODO: MaxDebris
+	# TODO: PipScale
+	# TODO: ThreatPosed
+	# TODO: DamageParticleSystems
+	# TODO: DamageSmokeOffset
+	# TODO: AIBuildThis
+	# TODO: TogglePower
+	# TODO: RefnSmokeOffsetOne
+	# TODO: RefnSmokeOffsetTwo
+	# TODO: Spyable
+
+gaorep:
+	Inherits: ^Building
+	Tooltip:
+		Name: Allied Ore Processor
+	# TODO: BuildCat
+	Buildable:
+		Prerequisites: gatech, proc, gacnst, ~<fact-type>.british, ~<fact-type>.french, ~<fact-type>.germans, ~<fact-type>.americans, ~<fact-type>.alliance, ~<fact-type>.russians, ~<fact-type>.confederation, ~<fact-type>.africans, ~<fact-type>.arabs, 
+	# TODO: TechLevel
+	Health:
+		HP: 900
+	# TODO: Adjacent
+	# TODO: Points
+	# TODO: Power
+	RevealsShroud:
+		Range: 5c0
+	Armor:
+		Type: Wood
+	Valued:
+		Cost: 2500
+	# TODO: Soylent
+	# TODO: Owner
+	# TODO: AIBasePlanningSide
+	# TODO: Explosion
+	# TODO: DebrisAnims
+	# TODO: Maxdebris
+	# TODO: MinDebris
+	# TODO: HalfDamageSmokeLocation1
+	# TODO: DamageSmokeOffset
+	# TODO: ThreatPosed
+	# TODO: Capturable
+	# TODO: Crewed
+	# TODO: OrePurifier
+	# TODO: AIBuildThis
+	# TODO: TogglePower
+	# TODO: Powered
+	# TODO: BuildLimit
+
+gayard:
+	Inherits: ^Building
+	Tooltip:
+		Name: Allied Shipyard
+	# TODO: BuildCat
+	Buildable:
+		Prerequisites: proc, power, gacnst, ~<fact-type>.british, ~<fact-type>.french, ~<fact-type>.germans, ~<fact-type>.americans, ~<fact-type>.alliance, ~<fact-type>.russians, ~<fact-type>.confederation, ~<fact-type>.africans, ~<fact-type>.arabs, 
+	# TODO: WeaponsFactory
+	# TODO: Factory
+	Health:
+		HP: 1500
+	Armor:
+		Type: Concrete
+	# TODO: Naval
+	# TODO: WaterBound
+	# TODO: TechLevel
+	# TODO: Adjacent
+	RevealsShroud:
+		Range: 10c0
+	# TODO: Owner
+	# TODO: AIBasePlanningSide
+	Valued:
+		Cost: 1000
+	# TODO: Points
+	# TODO: Power
+	# TODO: Powered
+	# TODO: BaseNormal
+	# TODO: Crewed
+	# TODO: Explodes
+	# TODO: Capturable
+	# TODO: Explosion
+	# TODO: DebrisAnims
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: ThreatPosed
+	# TODO: DamageSmokeOffset
+	# TODO: AIBuildThis
+	# TODO: UnitRepair
+	# TODO: NumberOfDocks
+	# TODO: AmbientSound
+	# TODO: NumberImpassableRows
+	# TODO: TargetCoordOffset
+
+nayard:
+	Inherits: ^Building
+	Tooltip:
+		Name: Soviet Shipyard
+	# TODO: BuildCat
+	Buildable:
+		Prerequisites: proc, power, nacnst, ~<fact-type>.british, ~<fact-type>.french, ~<fact-type>.germans, ~<fact-type>.americans, ~<fact-type>.alliance, ~<fact-type>.russians, ~<fact-type>.confederation, ~<fact-type>.africans, ~<fact-type>.arabs, 
+	# TODO: WeaponsFactory
+	# TODO: Factory
+	Health:
+		HP: 1500
+	Armor:
+		Type: Concrete
+	# TODO: Naval
+	# TODO: WaterBound
+	# TODO: TechLevel
+	# TODO: Adjacent
+	RevealsShroud:
+		Range: 10c0
+	# TODO: Owner
+	# TODO: AIBasePlanningSide
+	Valued:
+		Cost: 1000
+	# TODO: Points
+	# TODO: Power
+	# TODO: Powered
+	# TODO: BaseNormal
+	# TODO: Crewed
+	# TODO: Explodes
+	# TODO: Capturable
+	# TODO: Explosion
+	# TODO: DebrisAnims
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: ThreatPosed
+	# TODO: DamageSmokeOffset
+	# TODO: AIBuildThis
+	# TODO: UnitRepair
+	# TODO: NumberOfDocks
+	# TODO: AmbientSound
+	# TODO: NumberImpassableRows
+	# TODO: TargetCoordOffset
+
+gaairc:
+	Inherits: ^Building
+	Tooltip:
+		Name: Airforce Command Headquarters
+	# TODO: BuildCat
+	Buildable:
+		Prerequisites: garefn, gacnst, ~<fact-type>.british, ~<fact-type>.french, ~<fact-type>.germans, ~<fact-type>.americans, ~<fact-type>.alliance, ~<fact-type>.russians, ~<fact-type>.confederation, ~<fact-type>.africans, ~<fact-type>.arabs, 
+	Health:
+		HP: 600
+	Armor:
+		Type: Steel
+	# TODO: Adjacent
+	# TODO: TechLevel
+	RevealsShroud:
+		Range: 5c0
+	# TODO: UnitReload
+	# TODO: Helipad
+	# TODO: Owner
+	# TODO: ForbiddenHouses
+	# TODO: AIBasePlanningSide
+	Valued:
+		Cost: 1000
+	# TODO: Points
+	# TODO: Power
+	# TODO: Factory
+	# TODO: Capturable
+	# TODO: Crewed
+	# TODO: Explosion
+	# TODO: DebrisAnims
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: ThreatPosed
+	# TODO: DamageSmokeOffset
+	# TODO: AIBuildThis
+	# TODO: NumberOfDocks
+	# TODO: HasStupidGuardMode
+	# TODO: Radar
+	# TODO: Spyable
+
+amradr:
+	Inherits: ^Building
+	Tooltip:
+		Name: American Airforce Command Headquarters
+	# TODO: Image
+	# TODO: BuildCat
+	Buildable:
+		Prerequisites: garefn, gacnst, ~<fact-type>.british, ~<fact-type>.french, ~<fact-type>.germans, ~<fact-type>.americans, ~<fact-type>.alliance, ~<fact-type>.russians, ~<fact-type>.confederation, ~<fact-type>.africans, ~<fact-type>.arabs, 
+	Health:
+		HP: 600
+	Armor:
+		Type: Steel
+	# TODO: Adjacent
+	# TODO: TechLevel
+	RevealsShroud:
+		Range: 5c0
+	# TODO: UnitReload
+	# TODO: Helipad
+	# TODO: Owner
+	# TODO: RequiredHouses
+	# TODO: AIBasePlanningSide
+	Valued:
+		Cost: 1000
+	# TODO: Points
+	# TODO: Power
+	# TODO: Factory
+	# TODO: Capturable
+	# TODO: Crewed
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: ThreatPosed
+	# TODO: DamageParticleSystems
+	# TODO: DamageSmokeOffset
+	# TODO: AIBuildThis
+	# TODO: NumberOfDocks
+	# TODO: HasStupidGuardMode
+	# TODO: Radar
+	# TODO: Spyable
+	# TODO: SuperWeapon
+
+gaspysat:
+	Inherits: ^Building
+	Tooltip:
+		Name: SpySat Uplink
+	# TODO: Image
+	# TODO: BuildCat
+	Buildable:
+		Prerequisites: gatech, gacnst, ~<fact-type>.british, ~<fact-type>.french, ~<fact-type>.germans, ~<fact-type>.americans, ~<fact-type>.alliance, ~<fact-type>.russians, ~<fact-type>.confederation, ~<fact-type>.africans, ~<fact-type>.arabs, 
+	Health:
+		HP: 1000
+	# TODO: Radar
+	# TODO: SpySat
+	Armor:
+		Type: Wood
+	# TODO: TechLevel
+	# TODO: Adjacent
+	RevealsShroud:
+		Range: 5c0
+	# TODO: Owner
+	# TODO: AIBasePlanningSide
+	Valued:
+		Cost: 1500
+	# TODO: Points
+	# TODO: Power
+	# TODO: Powered
+	# TODO: Capturable
+	# TODO: Crewed
+	# TODO: Explosion
+	# TODO: DebrisAnims
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: ThreatPosed
+	# TODO: DamageSmokeOffset
+	# TODO: AIBuildThis
+	# TODO: SpecialThreatValue
+
+gagap:
+	Inherits: ^Building
+	Tooltip:
+		Name: Gap Generator
+	# TODO: BuildCat
+	Buildable:
+		Prerequisites: gatech, gacnst, ~<fact-type>.british, ~<fact-type>.french, ~<fact-type>.germans, ~<fact-type>.americans, ~<fact-type>.alliance, ~<fact-type>.russians, ~<fact-type>.confederation, ~<fact-type>.africans, ~<fact-type>.arabs, 
+	# TODO: GapGenerator
+	# TODO: GapRadiusInCells
+	# TODO: SuperGapRadiusInCells
+	# TODO: TechLevel
+	# TODO: Adjacent
+	# TODO: HasRadialIndicator
+	Health:
+		HP: 600
+	Armor:
+		Type: Wood
+	RevealsShroud:
+		Range: 5c0
+	# TODO: Points
+	# TODO: Owner
+	# TODO: AIBasePlanningSide
+	Valued:
+		Cost: 1000
+	# TODO: Power
+	# TODO: ExtraPower
+	# TODO: Powered
+	# TODO: Capturable
+	# TODO: Crewed
+	# TODO: Explosion
+	# TODO: DebrisAnims
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: ThreatPosed
+	# TODO: DamageSmokeOffset
+	# TODO: AIBuildThis
+
+gapowr:
+	Inherits: ^Building
+	Tooltip:
+		Name: Power Plant
+	# TODO: BuildCat
+	Buildable:
+		Prerequisites: gacnst, ~<fact-type>.british, ~<fact-type>.french, ~<fact-type>.germans, ~<fact-type>.americans, ~<fact-type>.alliance, ~<fact-type>.russians, ~<fact-type>.confederation, ~<fact-type>.africans, ~<fact-type>.arabs, 
+	Health:
+		HP: 750
+	Armor:
+		Type: Wood
+	# TODO: TechLevel
+	# TODO: Adjacent
+	RevealsShroud:
+		Range: 4c0
+	# TODO: Owner
+	# TODO: AIBasePlanningSide
+	Valued:
+		Cost: 800
+	# TODO: Points
+	# TODO: Power
+	# TODO: Capturable
+	# TODO: Crewed
+	# TODO: Explosion
+	# TODO: Upgrades
+	# TODO: DebrisAnims
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: ThreatPosed
+	# TODO: DamageSmokeOffset
+	# TODO: TogglePower
+	# TODO: Spyable
+	# TODO: DieSound
+
+napowr:
+	Inherits: ^Building
+	Tooltip:
+		Name: Tesla Reactor
+	# TODO: BuildCat
+	Buildable:
+		Prerequisites: nacnst, ~<fact-type>.british, ~<fact-type>.french, ~<fact-type>.germans, ~<fact-type>.americans, ~<fact-type>.alliance, ~<fact-type>.russians, ~<fact-type>.confederation, ~<fact-type>.africans, ~<fact-type>.arabs, 
+	Health:
+		HP: 750
+	Armor:
+		Type: Wood
+	# TODO: TechLevel
+	RevealsShroud:
+		Range: 4c0
+	# TODO: Adjacent
+	# TODO: Owner
+	# TODO: AIBasePlanningSide
+	Valued:
+		Cost: 600
+	# TODO: Points
+	# TODO: Power
+	# TODO: Capturable
+	# TODO: Crewed
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: DebrisAnims
+	# TODO: ThreatPosed
+	# TODO: DamageParticleSystems
+	# TODO: DamageSmokeOffset
+	# TODO: TogglePower
+	# TODO: Spyable
+	# TODO: DieSound
+
+natech:
+	Inherits: ^Building
+	Tooltip:
+		Name: Soviet Battle Lab
+	# TODO: BuildCat
+	Buildable:
+		Prerequisites: naweap, radar, nacnst, ~<fact-type>.british, ~<fact-type>.french, ~<fact-type>.germans, ~<fact-type>.americans, ~<fact-type>.alliance, ~<fact-type>.russians, ~<fact-type>.confederation, ~<fact-type>.africans, ~<fact-type>.arabs, 
+	Health:
+		HP: 500
+	Armor:
+		Type: Wood
+	# TODO: TechLevel
+	# TODO: Adjacent
+	RevealsShroud:
+		Range: 6c0
+	# TODO: Owner
+	# TODO: AIBasePlanningSide
+	Valued:
+		Cost: 2000
+	# TODO: Points
+	# TODO: Power
+	# TODO: Capturable
+	# TODO: Crewed
+	# TODO: Explosion
+	# TODO: DebrisAnims
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: ThreatPosed
+	# TODO: DamageSmokeOffset
+	# TODO: AIBuildThis
+	# TODO: TogglePower
+	# TODO: Spyable
+	# TODO: ProtectWithWall
+
+nahand:
+	Inherits: ^Building
+	Tooltip:
+		Name: Soviet Barracks
+	# TODO: BuildCat
+	Buildable:
+		Prerequisites: power, nacnst, ~<fact-type>.british, ~<fact-type>.french, ~<fact-type>.germans, ~<fact-type>.americans, ~<fact-type>.alliance, ~<fact-type>.russians, ~<fact-type>.confederation, ~<fact-type>.africans, ~<fact-type>.arabs, 
+	Health:
+		HP: 500
+	Armor:
+		Type: Steel
+	# TODO: TechLevel
+	# TODO: Adjacent
+	RevealsShroud:
+		Range: 6c0
+	# TODO: Owner
+	# TODO: AIBasePlanningSide
+	Valued:
+		Cost: 500
+	# TODO: Points
+	# TODO: Power
+	# TODO: Factory
+	# TODO: Crewed
+	# TODO: Capturable
+	# TODO: Explosion
+	# TODO: DebrisAnims
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: ThreatPosed
+	# TODO: ExitCoord
+	# TODO: NODBarracks
+	# TODO: DamageSmokeOffset
+	# TODO: AIBuildThis
+	# TODO: Spyable
+
+naclon:
+	Inherits: ^Building
+	Tooltip:
+		Name: Cloning Vats
+	# TODO: BuildCat
+	Buildable:
+		Prerequisites: natech, nacnst, ~<fact-type>.british, ~<fact-type>.french, ~<fact-type>.germans, ~<fact-type>.americans, ~<fact-type>.alliance, ~<fact-type>.russians, ~<fact-type>.confederation, ~<fact-type>.africans, ~<fact-type>.arabs, 
+	Health:
+		HP: 1000
+	Armor:
+		Type: Wood
+	# TODO: TechLevel
+	# TODO: Adjacent
+	RevealsShroud:
+		Range: 5c0
+	# TODO: Owner
+	# TODO: AIBasePlanningSide
+	Valued:
+		Cost: 2500
+	# TODO: Points
+	# TODO: Power
+	# TODO: Cloning
+	# TODO: Crewed
+	# TODO: Capturable
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: DebrisAnim
+	# TODO: ThreatPosed
+	# TODO: ExitCoord
+	# TODO: NODBarracks
+	# TODO: DamageParticleSystems
+	# TODO: DamageSmokeOffset
+	# TODO: AIBuildThis
+	# TODO: CreateUnitSound
+	# TODO: BuildLimit
+
+gapile:
+	Inherits: ^Building
+	Tooltip:
+		Name: Allied Barracks
+	# TODO: BuildCat
+	Buildable:
+		Prerequisites: power, gacnst, ~<fact-type>.british, ~<fact-type>.french, ~<fact-type>.germans, ~<fact-type>.americans, ~<fact-type>.alliance, ~<fact-type>.russians, ~<fact-type>.confederation, ~<fact-type>.africans, ~<fact-type>.arabs, 
+	Health:
+		HP: 500
+	Armor:
+		Type: Steel
+	# TODO: Factory
+	# TODO: Adjacent
+	# TODO: TechLevel
+	RevealsShroud:
+		Range: 5c0
+	# TODO: Owner
+	# TODO: AIBasePlanningSide
+	Valued:
+		Cost: 500
+	# TODO: Points
+	# TODO: Power
+	# TODO: Crewed
+	# TODO: Capturable
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: DebrisAnims
+	# TODO: ThreatPosed
+	# TODO: ExitCoord
+	# TODO: GDIBarracks
+	# TODO: DamageParticleSystems
+	# TODO: DamageSmokeOffset
+	# TODO: AIBuildThis
+	# TODO: Spyable
+
+gadept:
+	Inherits: ^Building
+	Tooltip:
+		Name: Allied Service Depot
+	# TODO: BuildCat
+	Buildable:
+		Prerequisites: gaweap, gacnst, ~<fact-type>.british, ~<fact-type>.french, ~<fact-type>.germans, ~<fact-type>.americans, ~<fact-type>.alliance, ~<fact-type>.russians, ~<fact-type>.confederation, ~<fact-type>.africans, ~<fact-type>.arabs, 
+	Health:
+		HP: 1200
+	Armor:
+		Type: Wood
+	# TODO: TechLevel
+	# TODO: Adjacent
+	RevealsShroud:
+		Range: 5c0
+	# TODO: UnitRepair
+	# TODO: Owner
+	# TODO: AIBasePlanningSide
+	Valued:
+		Cost: 800
+	# TODO: Points
+	# TODO: Power
+	# TODO: Capturable
+	# TODO: Crewed
+	# TODO: Explosion
+	# TODO: DebrisAnims
+	# TODO: Maxdebris
+	# TODO: MinDebris
+	# TODO: ThreatPosed
+	# TODO: DamageSmokeOffset
+	# TODO: AIBuildThis
+	# TODO: HasStupidGuardMode
+	# TODO: NumberImpassableRows
+
+gagreen:
+	# TODO: UIName
+	Tooltip:
+		Name: Green Building
+	# TODO: Image
+	Health:
+		HP: 150
+	Buildable:
+		Prerequisites: gapile, ~<fact-type>.british, ~<fact-type>.french, ~<fact-type>.germans, ~<fact-type>.americans, ~<fact-type>.alliance, ~<fact-type>.russians, ~<fact-type>.confederation, ~<fact-type>.africans, ~<fact-type>.arabs, 
+	Armor:
+		Type: Wood
+	# TODO: TechLevel
+	# TODO: Adjacent
+	RevealsShroud:
+		Range: 0c0
+	# TODO: Selectable
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: Owner
+	Valued:
+		Cost: 100
+	# TODO: BaseNormal
+	# TODO: Points
+	# TODO: Repairable
+	# TODO: Explosion
+	# TODO: ThreatPosed
+	# TODO: ToTile
+	# TODO: AIBuildThis
+
+gasand:
+	Inherits: ^Building
+	Tooltip:
+		Name: Sandbags
+	# TODO: BuildCat
+	Health:
+		HP: 100
+	Buildable:
+		Prerequisites: barracks, ~<fact-type>.british, ~<fact-type>.french, ~<fact-type>.germans, ~<fact-type>.americans, ~<fact-type>.alliance, ~<fact-type>.russians, ~<fact-type>.confederation, ~<fact-type>.africans, ~<fact-type>.arabs, 
+	Armor:
+		Type: Wood
+	Crushable:
+		CrushSound: wallcrushsandbag.aud
+	# TODO: Crushable
+	# TODO: Wall
+	# TODO: TechLevel
+	# TODO: Adjacent
+	RevealsShroud:
+		Range: 0c0
+	# TODO: Nominal
+	# TODO: Selectable
+	# TODO: Owner
+	Valued:
+		Cost: 25
+	# TODO: Insignificant
+	# TODO: Points
+	# TODO: Repairable
+	# TODO: Explosion
+	# TODO: ThreatPosed
+	# TODO: BaseNormal
+	# TODO: AIBuildThis
+
+cafncb:
+	Inherits: ^Building
+	Tooltip:
+		Name: Fence Black
+	# TODO: BuildCat
+	Health:
+		HP: 100
+	Buildable:
+		Prerequisites: barracks, ~<fact-type>.british, ~<fact-type>.french, ~<fact-type>.germans, ~<fact-type>.americans, ~<fact-type>.alliance, ~<fact-type>.russians, ~<fact-type>.confederation, ~<fact-type>.africans, ~<fact-type>.arabs, 
+	Armor:
+		Type: Wood
+	Crushable:
+		CrushSound: wallcrushblack.aud
+	# TODO: Crushable
+	# TODO: Wall
+	# TODO: TechLevel
+	# TODO: Adjacent
+	RevealsShroud:
+		Range: 0c0
+	# TODO: Nominal
+	# TODO: Selectable
+	# TODO: Owner
+	Valued:
+		Cost: 25
+	# TODO: Insignificant
+	# TODO: Points
+	# TODO: Repairable
+	# TODO: Explosion
+	# TODO: ThreatPosed
+	# TODO: BaseNormal
+	# TODO: AIBuildThis
+
+cafncw:
+	Inherits: ^Building
+	Tooltip:
+		Name: Fence White
+	# TODO: BuildCat
+	Health:
+		HP: 100
+	Buildable:
+		Prerequisites: barracks, ~<fact-type>.british, ~<fact-type>.french, ~<fact-type>.germans, ~<fact-type>.americans, ~<fact-type>.alliance, ~<fact-type>.russians, ~<fact-type>.confederation, ~<fact-type>.africans, ~<fact-type>.arabs, 
+	Armor:
+		Type: Wood
+	Crushable:
+		CrushSound: wallcrushwhite.aud
+	# TODO: Crushable
+	# TODO: Wall
+	# TODO: TechLevel
+	# TODO: Adjacent
+	RevealsShroud:
+		Range: 0c0
+	# TODO: Nominal
+	# TODO: Selectable
+	# TODO: Owner
+	Valued:
+		Cost: 25
+	# TODO: Insignificant
+	# TODO: Points
+	# TODO: Repairable
+	# TODO: Explosion
+	# TODO: ThreatPosed
+	# TODO: BaseNormal
+	# TODO: AIBuildThis
+
+camex02:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 Mayan Castillo
+	# TODO: TechLevel
+	Health:
+		HP: 1000
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Concrete
+	# TODO: Explosion
+	# TODO: DebrisAnims
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	Armament@Primary:
+		Weapon: AlliedOccupyW
+	Armament@Secondary:
+		Weapon: SovietOccupyW
+	# TODO: LeaveRubble
+
+camex03:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 Mayan Minor Temple
+	# TODO: TechLevel
+	Health:
+		HP: 1000
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Concrete
+	# TODO: Explosion
+	# TODO: DebrisAnims
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: LeaveRubble
+
+camex04:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 Mayan Large Temple
+	# TODO: TechLevel
+	Health:
+		HP: 1000
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Concrete
+	# TODO: Explosion
+	# TODO: DebrisAnims
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: LeaveRubble
+
+camex05:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 Mayan Platfrom
+	# TODO: TechLevel
+	Health:
+		HP: 1000
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Concrete
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: LeaveRubble
+
+cachig06:
+	Tooltip:
+		Name: RA2 Chicago Water Tower
+	# TODO: TechLevel
+	Health:
+		HP: 1000
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Steel
+	# TODO: Explosion
+	# TODO: DestroyAnim
+	# TODO: MaxDebris
+	# TODO: CrateBeneath
+	# TODO: CrateBeneathIsMoney
+	# TODO: BaseNormal
+	# TODO: CanBeOccupied
+	# TODO: LeaveRubble
+
+gawall:
+	Inherits: ^Building
+	Tooltip:
+		Name: Allied Wall
+	# TODO: BuildCat
+	Health:
+		HP: 300
+	Buildable:
+		Prerequisites: gapile, ~<fact-type>.british, ~<fact-type>.french, ~<fact-type>.germans, ~<fact-type>.americans, ~<fact-type>.alliance, ~<fact-type>.russians, ~<fact-type>.confederation, ~<fact-type>.africans, ~<fact-type>.arabs, 
+	Armor:
+		Type: Concrete
+	# TODO: TechLevel
+	# TODO: Adjacent
+	# TODO: Wall
+	RevealsShroud:
+		Range: 1c0
+	# TODO: Selectable
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: Owner
+	# TODO: AIBasePlanningSide
+	Valued:
+		Cost: 100
+	# TODO: Points
+	# TODO: Repairable
+	# TODO: Explosion
+	# TODO: ThreatPosed
+	# TODO: BaseNormal
+	# TODO: GuardRange
+
+gagate_a:
+	Inherits: ^Building
+	Tooltip:
+		Name: RA2 Guard Border Crossing
+	# TODO: BuildCat
+	Health:
+		HP: 100
+	Buildable:
+		Prerequisites: gapile, ~<fact-type>.british, ~<fact-type>.french, ~<fact-type>.germans, ~<fact-type>.americans, ~<fact-type>.alliance, 
+	Armor:
+		Type: Wood
+	# TODO: TechLevel
+	# TODO: Selectable
+	# TODO: Capturable
+	# TODO: Insignificant
+	# TODO: Adjacent
+	# TODO: Owner
+	Valued:
+		Cost: 250
+	# TODO: Points
+	# TODO: Repairable
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: Gate
+	# TODO: DeployTime
+	# TODO: GateCloseDelay
+	# TODO: ThreatPosed
+	# TODO: BaseNormal
+	# TODO: AIBuildThis
+
+nawall:
+	Inherits: ^Building
+	Tooltip:
+		Name: Soviet Wall
+	# TODO: BuildCat
+	Health:
+		HP: 300
+	Buildable:
+		Prerequisites: nahand, ~<fact-type>.british, ~<fact-type>.french, ~<fact-type>.germans, ~<fact-type>.americans, ~<fact-type>.alliance, ~<fact-type>.russians, ~<fact-type>.confederation, ~<fact-type>.africans, ~<fact-type>.arabs, 
+	Armor:
+		Type: Concrete
+	# TODO: TechLevel
+	# TODO: Adjacent
+	# TODO: Wall
+	RevealsShroud:
+		Range: 1c0
+	# TODO: Selectable
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: Owner
+	# TODO: AIBasePlanningSide
+	Valued:
+		Cost: 100
+	# TODO: Points
+	# TODO: Repairable
+	# TODO: Explosion
+	# TODO: ThreatPosed
+	# TODO: BaseNormal
+	# TODO: GuardRange
+
+cabhut:
+	# TODO: UIName
+	Tooltip:
+		Name: Bridge repair hut
+	Health:
+		HP: 2000
+	# TODO: Immune
+	# TODO: LegalTarget
+	# TODO: Nominal
+	# TODO: TechLevel
+	# TODO: RadarInvisible
+	# TODO: Repairable
+	# TODO: Selectable
+	# TODO: Insignificant
+	# TODO: BridgeRepairHut
+	# TODO: Adjacent
+	# TODO: BaseNormal
+	# TODO: Explosion
+	# TODO: ThreatPosed
+
+tstlamp:
+	Tooltip:
+		Name: AlphaLightPost
+	# TODO: Image
+	Health:
+		HP: 600
+	Armor:
+		Type: Wood
+	# TODO: TechLevel
+	# TODO: Nominal
+	RevealsShroud:
+		Range: 0c0
+	# TODO: Points
+	# TODO: Power
+	# TODO: Crewed
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: ThreatPosed
+	# TODO: DamageParticleSystems
+	# TODO: Insignificant
+	# TODO: AlphaImage
+
+galite:
+	Tooltip:
+		Name: Light Post
+	# TODO: Image
+	Health:
+		HP: 600
+	Armor:
+		Type: Wood
+	# TODO: Owner
+	Valued:
+		Cost: 200
+	# TODO: TechLevel
+	# TODO: Nominal
+	RevealsShroud:
+		Range: 0c0
+	# TODO: Points
+	# TODO: Power
+	# TODO: Crewed
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: LightVisibility
+	# TODO: LightIntensity
+	# TODO: LightRedTint
+	# TODO: LightGreenTint
+	# TODO: LightBlueTint
+	# TODO: ThreatPosed
+	# TODO: DamageParticleSystems
+	# TODO: AlphaImage
+	# TODO: Powered
+	# TODO: AIBuildThis
+
+neglamp:
+	Tooltip:
+		Name: Negative Light Post
+	# TODO: Image
+	Health:
+		HP: 1000
+	Armor:
+		Type: Wood
+	# TODO: TechLevel
+	# TODO: InvisibleInGame
+	# TODO: Nominal
+	RevealsShroud:
+		Range: 0c0
+	# TODO: Points
+	# TODO: Power
+	# TODO: Crewed
+	# TODO: Explosion
+	# TODO: Maxdebris
+	# TODO: LightVisibility
+	# TODO: LightIntensity
+	# TODO: LightRedTint
+	# TODO: LightGreenTint
+	# TODO: LightBlueTint
+	# TODO: ThreatPosed
+	# TODO: DamageParticleSystems
+	# TODO: Insignificant
+
+ingalite:
+	Tooltip:
+		Name: Invisible Light Post
+	# TODO: Image
+	# TODO: InvisibleInGame
+	# TODO: Insignificant
+	# TODO: Selectable
+	Health:
+		HP: 6000
+	Armor:
+		Type: Wood
+	# TODO: TechLevel
+	# TODO: Nominal
+	RevealsShroud:
+		Range: 0c0
+	# TODO: Points
+	# TODO: Power
+	# TODO: Crewed
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: LightVisibility
+	# TODO: LightIntensity
+	# TODO: LightRedTint
+	# TODO: LightGreenTint
+	# TODO: LightBlueTint
+	# TODO: ThreatPosed
+	# TODO: DamageParticleSystems
+	# TODO: Powered
+
+redlamp:
+	Tooltip:
+		Name: Red Light Post
+	# TODO: Image
+	# TODO: Insignificant
+	Health:
+		HP: 600
+	Armor:
+		Type: Wood
+	# TODO: TechLevel
+	# TODO: Nominal
+	RevealsShroud:
+		Range: 0c0
+	# TODO: Points
+	# TODO: Power
+	# TODO: Crewed
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: LightVisibility
+	# TODO: LightIntensity
+	# TODO: LightRedTint
+	# TODO: LightGreenTint
+	# TODO: LightBlueTint
+	# TODO: ThreatPosed
+	# TODO: DamageParticleSystems
+	# TODO: AlphaImage
+	# TODO: Powered
+
+negred:
+	Tooltip:
+		Name: Negative Red Light
+	# TODO: Image
+	# TODO: Insignificant
+	Health:
+		HP: 6000
+	Armor:
+		Type: Wood
+	# TODO: TechLevel
+	# TODO: Nominal
+	RevealsShroud:
+		Range: 0c0
+	# TODO: Points
+	# TODO: Power
+	# TODO: Crewed
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: LightVisibility
+	# TODO: LightIntensity
+	# TODO: LightRedTint
+	# TODO: LightGreenTint
+	# TODO: LightBlueTint
+	# TODO: ThreatPosed
+	# TODO: DamageParticleSystems
+
+grenlamp:
+	Tooltip:
+		Name: Green Light Post
+	# TODO: Image
+	Health:
+		HP: 600
+	Armor:
+		Type: Wood
+	# TODO: TechLevel
+	# TODO: Nominal
+	RevealsShroud:
+		Range: 0c0
+	# TODO: Points
+	# TODO: Power
+	# TODO: Crewed
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: LightVisibility
+	# TODO: LightIntensity
+	# TODO: LightRedTint
+	# TODO: LightGreenTint
+	# TODO: LightBlueTint
+	# TODO: ThreatPosed
+	# TODO: DamageParticleSystems
+	# TODO: AlphaImage
+	# TODO: Powered
+	# TODO: Insignificant
+
+bluelamp:
+	Tooltip:
+		Name: Blue Light Post
+	# TODO: Image
+	Health:
+		HP: 600
+	Armor:
+		Type: Wood
+	# TODO: TechLevel
+	# TODO: Nominal
+	RevealsShroud:
+		Range: 0c0
+	# TODO: Points
+	# TODO: Power
+	# TODO: Crewed
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: LightVisibility
+	# TODO: LightIntensity
+	# TODO: LightRedTint
+	# TODO: LightGreenTint
+	# TODO: LightBlueTint
+	# TODO: ThreatPosed
+	# TODO: DamageParticleSystems
+	# TODO: AlphaImage
+	# TODO: Powered
+	# TODO: Insignificant
+
+yelwlamp:
+	Tooltip:
+		Name: Yellow Light Post
+	# TODO: Image
+	Health:
+		HP: 600
+	Armor:
+		Type: Wood
+	# TODO: TechLevel
+	# TODO: Nominal
+	RevealsShroud:
+		Range: 0c0
+	# TODO: Points
+	# TODO: Power
+	# TODO: Crewed
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: LightVisibility
+	# TODO: LightIntensity
+	# TODO: LightRedTint
+	# TODO: LightGreenTint
+	# TODO: LightBlueTint
+	# TODO: ThreatPosed
+	# TODO: DamageParticleSystems
+	# TODO: Powered
+	# TODO: Insignificant
+
+inyelwlamp:
+	Tooltip:
+		Name: Invisible Yellow Light Post
+	# TODO: Image
+	# TODO: Insignificant
+	# TODO: Selectable
+	# TODO: InvisibleInGame
+	Health:
+		HP: 6000
+	Armor:
+		Type: Wood
+	# TODO: TechLevel
+	# TODO: Nominal
+	RevealsShroud:
+		Range: 0c0
+	# TODO: Points
+	# TODO: Power
+	# TODO: Crewed
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: LightVisibility
+	# TODO: LightIntensity
+	# TODO: LightRedTint
+	# TODO: LightGreenTint
+	# TODO: LightBlueTint
+	# TODO: ThreatPosed
+	# TODO: DamageParticleSystems
+	# TODO: Powered
+
+purplamp:
+	Tooltip:
+		Name: Purple Light Post
+	# TODO: Image
+	Health:
+		HP: 600
+	Armor:
+		Type: Wood
+	# TODO: TechLevel
+	# TODO: Nominal
+	RevealsShroud:
+		Range: 0c0
+	# TODO: Points
+	# TODO: Power
+	# TODO: Crewed
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: LightVisibility
+	# TODO: LightIntensity
+	# TODO: LightRedTint
+	# TODO: LightGreenTint
+	# TODO: LightBlueTint
+	# TODO: ThreatPosed
+	# TODO: DamageParticleSystems
+	# TODO: AlphaImage
+	# TODO: Powered
+	# TODO: Insignificant
+
+inpurplamp:
+	Tooltip:
+		Name: Invisible Purple Light Post
+	# TODO: Image
+	# TODO: Selectable
+	# TODO: Insignificant
+	# TODO: InvisibleInGame
+	Health:
+		HP: 6000
+	Armor:
+		Type: Wood
+	# TODO: TechLevel
+	# TODO: Nominal
+	RevealsShroud:
+		Range: 0c0
+	# TODO: Points
+	# TODO: Power
+	# TODO: Crewed
+	# TODO: Explosion
+	# TODO: LightVisibility
+	# TODO: LightIntensity
+	# TODO: LightRedTint
+	# TODO: LightGreenTint
+	# TODO: LightBlueTint
+	# TODO: ThreatPosed
+	# TODO: DamageParticleSystems
+	# TODO: Powered
+
+inoranlamp:
+	Tooltip:
+		Name: Orange Light Post
+	# TODO: Image
+	# TODO: Selectable
+	# TODO: InvisibleInGame
+	Health:
+		HP: 600
+	Armor:
+		Type: Wood
+	# TODO: TechLevel
+	# TODO: Nominal
+	RevealsShroud:
+		Range: 0c0
+	# TODO: Points
+	# TODO: Power
+	# TODO: Crewed
+	# TODO: Explosion
+	# TODO: LightVisibility
+	# TODO: LightIntensity
+	# TODO: LightRedTint
+	# TODO: LightGreenTint
+	# TODO: LightBlueTint
+	# TODO: DamageParticleSystems
+	# TODO: Powered
+	# TODO: Insignificant
+
+ingrnlmp:
+	Tooltip:
+		Name: Invisible Green Light Post
+	# TODO: Image
+	# TODO: Selectable
+	# TODO: InvisibleInGame
+	# TODO: Insignificant
+	Health:
+		HP: 6000
+	Armor:
+		Type: Wood
+	# TODO: TechLevel
+	# TODO: Nominal
+	RevealsShroud:
+		Range: 0c0
+	# TODO: Points
+	# TODO: Power
+	# TODO: Crewed
+	# TODO: Explosion
+	# TODO: LightVisibility
+	# TODO: LightIntensity
+	# TODO: LightRedTint
+	# TODO: LightGreenTint
+	# TODO: LightBlueTint
+	# TODO: DamageParticleSystems
+	# TODO: Powered
+
+inredlmp:
+	Tooltip:
+		Name: Invisible Red Light Post
+	# TODO: Image
+	# TODO: Selectable
+	# TODO: Insignificant
+	# TODO: InvisibleInGame
+	Health:
+		HP: 6000
+	Armor:
+		Type: Wood
+	# TODO: TechLevel
+	# TODO: Nominal
+	RevealsShroud:
+		Range: 0c0
+	# TODO: Points
+	# TODO: Power
+	# TODO: Crewed
+	# TODO: Explosion
+	# TODO: LightVisibility
+	# TODO: LightIntensity
+	# TODO: LightRedTint
+	# TODO: LightGreenTint
+	# TODO: LightBlueTint
+	# TODO: DamageParticleSystems
+	# TODO: Powered
+
+inblulmp:
+	Tooltip:
+		Name: Invisible Blue Light Post
+	# TODO: Selectable
+	# TODO: InvisibleInGame
+	# TODO: Insignificant
+	# TODO: Image
+	Health:
+		HP: 6000
+	Armor:
+		Type: Wood
+	# TODO: TechLevel
+	# TODO: Nominal
+	RevealsShroud:
+		Range: 0c0
+	# TODO: Points
+	# TODO: Power
+	# TODO: Crewed
+	# TODO: Explosion
+	# TODO: LightVisibility
+	# TODO: LightIntensity
+	# TODO: LightRedTint
+	# TODO: LightGreenTint
+	# TODO: LightBlueTint
+	# TODO: DamageParticleSystems
+	# TODO: Powered
+
+temmorlamp:
+	Tooltip:
+		Name: InvisibleTemperateMorningLamp
+	# TODO: Selectable
+	# TODO: InvisibleInGame
+	# TODO: Insignificant
+	# TODO: Image
+	Health:
+		HP: 6000
+	Armor:
+		Type: Wood
+	# TODO: TechLevel
+	# TODO: Nominal
+	RevealsShroud:
+		Range: 0c0
+	# TODO: Points
+	# TODO: Power
+	# TODO: Crewed
+	# TODO: Explosion
+	# TODO: LightVisibility
+	# TODO: LightIntensity
+	# TODO: LightRedTint
+	# TODO: LightGreenTint
+	# TODO: LightBlueTint
+	# TODO: DamageParticleSystems
+	# TODO: Powered
+
+temdaylamp:
+	Tooltip:
+		Name: InvisibleTemperateDayLamp
+	# TODO: Selectable
+	# TODO: InvisibleInGame
+	# TODO: Insignificant
+	# TODO: Image
+	Health:
+		HP: 6000
+	Armor:
+		Type: Wood
+	# TODO: TechLevel
+	# TODO: Nominal
+	RevealsShroud:
+		Range: 0c0
+	# TODO: Points
+	# TODO: Power
+	# TODO: Crewed
+	# TODO: Explosion
+	# TODO: LightVisibility
+	# TODO: LightIntensity
+	# TODO: LightRedTint
+	# TODO: LightGreenTint
+	# TODO: LightBlueTint
+	# TODO: DamageParticleSystems
+	# TODO: Powered
+
+temduslamp:
+	Tooltip:
+		Name: InvisibleTemperateDuskLamp
+	# TODO: Selectable
+	# TODO: InvisibleInGame
+	# TODO: Insignificant
+	# TODO: Image
+	Health:
+		HP: 6000
+	Armor:
+		Type: Wood
+	# TODO: TechLevel
+	# TODO: Nominal
+	RevealsShroud:
+		Range: 0c0
+	# TODO: Points
+	# TODO: Power
+	# TODO: Crewed
+	# TODO: Explosion
+	# TODO: LightVisibility
+	# TODO: LightIntensity
+	# TODO: LightRedTint
+	# TODO: LightGreenTint
+	# TODO: LightBlueTint
+	# TODO: DamageParticleSystems
+	# TODO: Powered
+
+temnitlamp:
+	Tooltip:
+		Name: InvisibleTemperateNightLamp
+	# TODO: Selectable
+	# TODO: InvisibleInGame
+	# TODO: Insignificant
+	# TODO: Image
+	Health:
+		HP: 6000
+	Armor:
+		Type: Wood
+	# TODO: TechLevel
+	# TODO: Nominal
+	RevealsShroud:
+		Range: 0c0
+	# TODO: Points
+	# TODO: Power
+	# TODO: Crewed
+	# TODO: Explosion
+	# TODO: LightVisibility
+	# TODO: LightIntensity
+	# TODO: LightRedTint
+	# TODO: LightGreenTint
+	# TODO: LightBlueTint
+	# TODO: DamageParticleSystems
+	# TODO: Powered
+
+snomorlamp:
+	Tooltip:
+		Name: InvisibleSnowMorningLamp
+	# TODO: Selectable
+	# TODO: InvisibleInGame
+	# TODO: Insignificant
+	# TODO: Image
+	Health:
+		HP: 6000
+	Armor:
+		Type: Wood
+	# TODO: TechLevel
+	# TODO: Nominal
+	RevealsShroud:
+		Range: 0c0
+	# TODO: Points
+	# TODO: Power
+	# TODO: Crewed
+	# TODO: Explosion
+	# TODO: LightVisibility
+	# TODO: LightIntensity
+	# TODO: LightRedTint
+	# TODO: LightGreenTint
+	# TODO: LightBlueTint
+	# TODO: DamageParticleSystems
+	# TODO: Powered
+
+snodaylamp:
+	Tooltip:
+		Name: InvisibleSnowDayLamp
+	# TODO: Selectable
+	# TODO: InvisibleInGame
+	# TODO: Insignificant
+	# TODO: Image
+	Health:
+		HP: 6000
+	Armor:
+		Type: Wood
+	# TODO: TechLevel
+	# TODO: Nominal
+	RevealsShroud:
+		Range: 0c0
+	# TODO: Points
+	# TODO: Power
+	# TODO: Crewed
+	# TODO: Explosion
+	# TODO: LightVisibility
+	# TODO: LightIntensity
+	# TODO: LightRedTint
+	# TODO: LightGreenTint
+	# TODO: LightBlueTint
+	# TODO: DamageParticleSystems
+	# TODO: Powered
+
+snoduslamp:
+	Tooltip:
+		Name: InvisibleSnowDuskLamp
+	# TODO: Selectable
+	# TODO: InvisibleInGame
+	# TODO: Insignificant
+	# TODO: Image
+	Health:
+		HP: 6000
+	Armor:
+		Type: Wood
+	# TODO: TechLevel
+	# TODO: Nominal
+	RevealsShroud:
+		Range: 0c0
+	# TODO: Points
+	# TODO: Power
+	# TODO: Crewed
+	# TODO: Explosion
+	# TODO: LightVisibility
+	# TODO: LightIntensity
+	# TODO: LightRedTint
+	# TODO: LightGreenTint
+	# TODO: LightBlueTint
+	# TODO: DamageParticleSystems
+	# TODO: Powered
+
+snonitlamp:
+	Tooltip:
+		Name: InvisibleSnowNightLamp
+	# TODO: Selectable
+	# TODO: InvisibleInGame
+	# TODO: Insignificant
+	# TODO: Image
+	Health:
+		HP: 6000
+	Armor:
+		Type: Wood
+	# TODO: TechLevel
+	# TODO: Nominal
+	RevealsShroud:
+		Range: 0c0
+	# TODO: Points
+	# TODO: Power
+	# TODO: Crewed
+	# TODO: Explosion
+	# TODO: LightVisibility
+	# TODO: LightIntensity
+	# TODO: LightRedTint
+	# TODO: LightGreenTint
+	# TODO: LightBlueTint
+	# TODO: DamageParticleSystems
+	# TODO: Powered
+
+nairon:
+	Inherits: ^Building
+	Tooltip:
+		Name: Iron Curtain Device
+	# TODO: BuildCat
+	# TODO: Image
+	Buildable:
+		Prerequisites: natech, nacnst, ~<fact-type>.british, ~<fact-type>.french, ~<fact-type>.germans, ~<fact-type>.americans, ~<fact-type>.alliance, ~<fact-type>.russians, ~<fact-type>.confederation, ~<fact-type>.africans, ~<fact-type>.arabs, 
+	# TODO: TechLevel
+	Health:
+		HP: 750
+	# TODO: Powered
+	# TODO: Adjacent
+	Armor:
+		Type: Concrete
+	RevealsShroud:
+		Range: 4c0
+	# TODO: Nominal
+	# TODO: Owner
+	# TODO: AIBasePlanningSide
+	Valued:
+		Cost: 2500
+	# TODO: Points
+	# TODO: Power
+	# TODO: Crewed
+	# TODO: Capturable
+	# TODO: RevealToAll
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: DebrisAnims
+	# TODO: SuperWeapon
+	# TODO: ThreatPosed
+	# TODO: AIBuildThis
+	# TODO: ProtectWithWall
+	# TODO: Spyable
+	# TODO: ChargedAnimTime
+	# TODO: BuildLimit
+
+gaweat:
+	Inherits: ^Building
+	Tooltip:
+		Name: Weather Controller
+	# TODO: Image
+	# TODO: BuildCat
+	Buildable:
+		Prerequisites: gatech, gacnst, ~<fact-type>.british, ~<fact-type>.french, ~<fact-type>.germans, ~<fact-type>.americans, ~<fact-type>.alliance, ~<fact-type>.russians, ~<fact-type>.confederation, ~<fact-type>.africans, ~<fact-type>.arabs, 
+	# TODO: TechLevel
+	Health:
+		HP: 1000
+	# TODO: Powered
+	# TODO: Adjacent
+	Armor:
+		Type: Concrete
+	RevealsShroud:
+		Range: 5c0
+	# TODO: Owner
+	# TODO: AIBasePlanningSide
+	Valued:
+		Cost: 5000
+	# TODO: Points
+	# TODO: Power
+	# TODO: Crewed
+	# TODO: Capturable
+	# TODO: RevealToAll
+	# TODO: Explosion
+	# TODO: SuperWeapon
+	# TODO: Nominal
+	# TODO: ThreatPosed
+	# TODO: AIBuildThis
+	# TODO: Spyable
+	# TODO: ChargedAnimTime
+	# TODO: ProtectWithWall
+	# TODO: BuildLimit
+	# TODO: DebrisAnims
+	# TODO: MaxDebris
+	# TODO: MinDebris
+
+gacsph:
+	Inherits: ^Building
+	Tooltip:
+		Name: Chrono Sphere
+	# TODO: BuildCat
+	Buildable:
+		Prerequisites: gatech, gacnst, ~<fact-type>.british, ~<fact-type>.french, ~<fact-type>.germans, ~<fact-type>.americans, ~<fact-type>.alliance, ~<fact-type>.russians, ~<fact-type>.confederation, ~<fact-type>.africans, ~<fact-type>.arabs, 
+	# TODO: TechLevel
+	Health:
+		HP: 750
+	# TODO: Powered
+	# TODO: Adjacent
+	Armor:
+		Type: Concrete
+	RevealsShroud:
+		Range: 5c0
+	# TODO: Owner
+	# TODO: AIBasePlanningSide
+	Valued:
+		Cost: 2500
+	# TODO: Points
+	# TODO: Power
+	# TODO: Crewed
+	# TODO: Capturable
+	# TODO: RevealToAll
+	# TODO: Explosion
+	# TODO: SuperWeapon
+	# TODO: Nominal
+	# TODO: ThreatPosed
+	# TODO: AIBuildThis
+	# TODO: ProtectWithWall
+	# TODO: Spyable
+	# TODO: ChargedAnimTime
+	# TODO: BuildLimit
+	# TODO: DebrisAnims
+	# TODO: MaxDebris
+	# TODO: MinDebris
+
+gadumy:
+	Inherits: ^Building
+	Tooltip:
+		Name: Dummy ChronoSphere
+	# TODO: BuildCat
+	# TODO: Image
+	Buildable:
+		Prerequisites: gatech, ~<fact-type>.british, ~<fact-type>.french, ~<fact-type>.germans, ~<fact-type>.americans, ~<fact-type>.alliance, 
+	# TODO: TechLevel
+	Health:
+		HP: 1000
+	# TODO: Powered
+	# TODO: Adjacent
+	Armor:
+		Type: Wood
+	RevealsShroud:
+		Range: 5c0
+	# TODO: Owner
+	Valued:
+		Cost: 2800
+	# TODO: Points
+	# TODO: Power
+	# TODO: Crewed
+	# TODO: Capturable
+	# TODO: RevealToAll
+	# TODO: Explosion
+	# TODO: SuperWeapon
+	# TODO: ThreatPosed
+	# TODO: AIBuildThis
+	# TODO: Spyable
+
+naradr:
+	Inherits: ^Building
+	Tooltip:
+		Name: Radar Tower
+	# TODO: BuildCat
+	Buildable:
+		Prerequisites: narefn, nacnst, ~<fact-type>.british, ~<fact-type>.french, ~<fact-type>.germans, ~<fact-type>.americans, ~<fact-type>.alliance, ~<fact-type>.russians, ~<fact-type>.confederation, ~<fact-type>.africans, ~<fact-type>.arabs, 
+	Health:
+		HP: 1000
+	# TODO: Radar
+	Armor:
+		Type: Wood
+	# TODO: TechLevel
+	# TODO: Adjacent
+	RevealsShroud:
+		Range: 10c0
+	# TODO: Owner
+	# TODO: AIBasePlanningSide
+	Valued:
+		Cost: 1000
+	# TODO: Points
+	# TODO: Power
+	# TODO: Powered
+	# TODO: Capturable
+	# TODO: Crewed
+	# TODO: Explosion
+	# TODO: DebrisAnim
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: ThreatPosed
+	# TODO: DamageParticleSystems
+	# TODO: DamageSmokeOffset
+	# TODO: AIBuildThis
+	# TODO: Spyable
+
+napsis:
+	Inherits: ^Building
+	Tooltip:
+		Name: Psychic Sensor
+	# TODO: BuildCat
+	Buildable:
+		Prerequisites: natech, nacnst, ~<fact-type>.british, ~<fact-type>.french, ~<fact-type>.germans, ~<fact-type>.americans, ~<fact-type>.alliance, ~<fact-type>.russians, ~<fact-type>.confederation, ~<fact-type>.africans, ~<fact-type>.arabs, 
+	Health:
+		HP: 750
+	Armor:
+		Type: Wood
+	# TODO: TechLevel
+	# TODO: Adjacent
+	RevealsShroud:
+		Range: 10c0
+	# TODO: PsychicDetectionRadius
+	# TODO: Owner
+	# TODO: AIBasePlanningSide
+	Valued:
+		Cost: 1000
+	# TODO: Points
+	# TODO: Power
+	# TODO: Powered
+	# TODO: Capturable
+	# TODO: Crewed
+	# TODO: Explosion
+	# TODO: DebrisAnim
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: ThreatPosed
+	# TODO: DamageParticleSystems
+	# TODO: DamageSmokeOffset
+	# TODO: AIBuildThis
+	# TODO: HasRadialIndicator
+	# TODO: ConcentricRadialIndicator
+	# TODO: DetectDisguise
+	# TODO: DetectDisguiseRange
+	# TODO: SensorArray
+	# TODO: SensorsSight
+
+tesla:
+	Inherits: ^Building
+	Tooltip:
+		Name: Tesla Coil
+	# TODO: Image
+	# TODO: BuildCat
+	Buildable:
+		Prerequisites: power, radar, nacnst, ~<fact-type>.british, ~<fact-type>.french, ~<fact-type>.germans, ~<fact-type>.americans, ~<fact-type>.alliance, ~<fact-type>.russians, ~<fact-type>.confederation, ~<fact-type>.africans, ~<fact-type>.arabs, 
+	Health:
+		HP: 600
+	Armor:
+		Type: Steel
+	# TODO: TechLevel
+	# TODO: Adjacent
+	RevealsShroud:
+		Range: 8c0
+	# TODO: Owner
+	# TODO: AIBasePlanningSide
+	Valued:
+		Cost: 1500
+	# TODO: Points
+	# TODO: Power
+	# TODO: Crewed
+	# TODO: Capturable
+	# TODO: Overpowerable
+	# TODO: Explosion
+	Armament@Primary:
+		Weapon: CoilBolt
+	Armament@Secondary:
+		Weapon: OPCoilBolt
+	# TODO: Turret
+	# TODO: TurretAnimZAdjust
+	# TODO: DebrisAnim
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: ThreatPosed
+	# TODO: DamageParticleSystems
+	# TODO: DamageSmokeOffset
+	# TODO: IsBaseDefense
+	# TODO: BaseNormal
+	# TODO: Powered
+	# TODO: HasStupidGuardMode
+	# TODO: WorkingSound
+	# TODO: NotWorkingSound
+
+atesla:
+	Inherits: ^Building
+	Tooltip:
+		Name: Prism Cannon
+	# TODO: Image
+	# TODO: BuildCat
+	Buildable:
+		Prerequisites: power, radar, gacnst, ~<fact-type>.british, ~<fact-type>.french, ~<fact-type>.germans, ~<fact-type>.americans, ~<fact-type>.alliance, ~<fact-type>.russians, ~<fact-type>.confederation, ~<fact-type>.africans, ~<fact-type>.arabs, 
+	Health:
+		HP: 600
+	Armor:
+		Type: Steel
+	# TODO: TechLevel
+	# TODO: Adjacent
+	RevealsShroud:
+		Range: 8c0
+	# TODO: Owner
+	# TODO: AIBasePlanningSide
+	Valued:
+		Cost: 1500
+	# TODO: Points
+	# TODO: Power
+	# TODO: Crewed
+	# TODO: Capturable
+	# TODO: Overpowerable
+	# TODO: Explosion
+	Armament@Primary:
+		Weapon: PrismShot
+	Armament@Secondary:
+		Weapon: PrismSupport
+	# TODO: Turret
+	# TODO: TurretAnimZAdjust
+	# TODO: DebrisAnim
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: ThreatPosed
+	# TODO: DamageParticleSystems
+	# TODO: DamageSmokeOffset
+	# TODO: IsBaseDefense
+	# TODO: BaseNormal
+	# TODO: Powered
+	# TODO: HasStupidGuardMode
+	# TODO: WorkingSound
+	# TODO: NotWorkingSound
+
+namisl:
+	Inherits: ^Building
+	Tooltip:
+		Name: Nuclear Missile Silo
+	# TODO: BuildCat
+	# TODO: SuperWeapon
+	Buildable:
+		Prerequisites: natech, nacnst, ~<fact-type>.british, ~<fact-type>.french, ~<fact-type>.germans, ~<fact-type>.americans, ~<fact-type>.alliance, ~<fact-type>.russians, ~<fact-type>.confederation, ~<fact-type>.africans, ~<fact-type>.arabs, 
+	Health:
+		HP: 1000
+	Armor:
+		Type: Concrete
+	# TODO: TechLevel
+	# TODO: Adjacent
+	RevealsShroud:
+		Range: 4c0
+	# TODO: Owner
+	# TODO: AIBasePlanningSide
+	Valued:
+		Cost: 5000
+	# TODO: Points
+	# TODO: Power
+	# TODO: Crewed
+	# TODO: Capturable
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: DebrisAnim
+	# TODO: ThreatPosed
+	# TODO: DamageParticleSystems
+	# TODO: SpecialThreatValue
+	# TODO: NukeSilo
+	# TODO: Nominal
+	# TODO: RevealToAll
+	# TODO: HasStupidGuardMode
+	# TODO: Spyable
+	# TODO: ChargedAnimTime
+	# TODO: AIBuildThis
+	# TODO: ProtectWithWall
+	# TODO: BuildLimit
+
+nalasr:
+	Inherits: ^Building
+	Tooltip:
+		Name: Sentry Gun
+	# TODO: BuildCat
+	Health:
+		HP: 400
+	Armor:
+		Type: Steel
+	Buildable:
+		Prerequisites: barracks, nacnst, ~<fact-type>.british, ~<fact-type>.french, ~<fact-type>.germans, ~<fact-type>.americans, ~<fact-type>.alliance, ~<fact-type>.russians, ~<fact-type>.confederation, ~<fact-type>.africans, ~<fact-type>.arabs, 
+	# TODO: TechLevel
+	# TODO: Adjacent
+	# TODO: ROT
+	RevealsShroud:
+		Range: 7c0
+	# TODO: DetectDisguise
+	# TODO: Owner
+	# TODO: AIBasePlanningSide
+	Valued:
+		Cost: 500
+	# TODO: BaseNormal
+	# TODO: Points
+	# TODO: Power
+	# TODO: Crewed
+	# TODO: Capturable
+	# TODO: Explosion
+	# TODO: DebrisAnims
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	Armament@Primary:
+		Weapon: Vulcan
+	# TODO: Powered
+	# TODO: Turret
+	# TODO: TurretAnim
+	# TODO: TurretAnimIsVoxel
+	# TODO: TurretAnimY
+	# TODO: TurretAnimZAdjust
+	# TODO: ThreatPosed
+	# TODO: IsBaseDefense
+	# TODO: HasStupidGuardMode
+
+gapill:
+	Inherits: ^Building
+	Tooltip:
+		Name: Pill Box
+	# TODO: BuildCat
+	Health:
+		HP: 400
+	Armor:
+		Type: Steel
+	Buildable:
+		Prerequisites: barracks, gacnst, ~<fact-type>.british, ~<fact-type>.french, ~<fact-type>.germans, ~<fact-type>.americans, ~<fact-type>.alliance, ~<fact-type>.russians, ~<fact-type>.confederation, ~<fact-type>.africans, ~<fact-type>.arabs, 
+	# TODO: TechLevel
+	# TODO: Adjacent
+	# TODO: ROT
+	RevealsShroud:
+		Range: 7c0
+	# TODO: DetectDisguise
+	# TODO: Owner
+	# TODO: AIBasePlanningSide
+	Valued:
+		Cost: 500
+	# TODO: BaseNormal
+	# TODO: Points
+	# TODO: Power
+	# TODO: Crewed
+	# TODO: Capturable
+	# TODO: Explosion
+	# TODO: DebrisAnim
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	Armament@Primary:
+		Weapon: Vulcan2
+	# TODO: ThreatPosed
+	# TODO: DamageParticleSystems
+	# TODO: IsBaseDefense
+	# TODO: HasStupidGuardMode
+
+nasam:
+	Inherits: ^Building
+	Tooltip:
+		Name: Patriot Missile
+	# TODO: BuildCat
+	Health:
+		HP: 900
+	Armor:
+		Type: Steel
+	# TODO: TechLevel
+	Buildable:
+		Prerequisites: barracks, gacnst, ~<fact-type>.british, ~<fact-type>.french, ~<fact-type>.germans, ~<fact-type>.americans, ~<fact-type>.alliance, ~<fact-type>.russians, ~<fact-type>.confederation, ~<fact-type>.africans, ~<fact-type>.arabs, 
+	# TODO: Adjacent
+	RevealsShroud:
+		Range: 10c0
+	# TODO: Owner
+	# TODO: AIBasePlanningSide
+	Valued:
+		Cost: 1000
+	# TODO: BaseNormal
+	# TODO: Points
+	# TODO: Power
+	# TODO: Crewed
+	Armament@Primary:
+		Weapon: RedEye2
+	# TODO: LandTargeting
+	# TODO: NavalTargeting
+	# TODO: Capturable
+	# TODO: Explosion
+	# TODO: DebrisAnims
+	# TODO: Maxdebris
+	# TODO: MinDebris
+	# TODO: ThreatPosed
+	# TODO: IsBaseDefense
+	# TODO: Powered
+	# TODO: Turret
+	# TODO: TurretAnim
+	# TODO: TurretAnimIsVoxel
+	# TODO: TurretAnimZAdjust
+	# TODO: HasStupidGuardMode
+	# TODO: WorkingSound
+	# TODO: NotWorkingSound
+	# TODO: VHPScan
+
+caoutp:
+	# TODO: UIName
+	Tooltip:
+		Name: Tech Outpost
+	# TODO: TechLevel
+	Health:
+		HP: 2000
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: Points
+	Armor:
+		Type: Concrete
+	# TODO: Explosion
+	# TODO: DebrisAnims
+	# TODO: Maxdebris
+	# TODO: MinDebris
+	Armament@Primary:
+		Weapon: HoverMissile
+	# TODO: UnitRepair
+	# TODO: IsBase
+	# TODO: Turret
+	# TODO: TurretAnim
+	# TODO: TurretAnimX
+	# TODO: TurretAnimY
+	# TODO: TurretAnimIsVoxel
+	# TODO: TurretAnimZAdjust
+	# TODO: FireAngle
+	# TODO: Capturable
+	# TODO: NeedsEngineer
+	# TODO: Unsellable
+	# TODO: NumberOfDocks
+	# TODO: LeaveRubble
+	# TODO: NumberImpassableRows
+
+nadept:
+	Inherits: ^Building
+	Tooltip:
+		Name: Soviet Service Depot
+	# TODO: BuildCat
+	Buildable:
+		Prerequisites: naweap, nacnst, ~<fact-type>.british, ~<fact-type>.french, ~<fact-type>.germans, ~<fact-type>.americans, ~<fact-type>.alliance, ~<fact-type>.russians, ~<fact-type>.confederation, ~<fact-type>.africans, ~<fact-type>.arabs, 
+	Health:
+		HP: 1200
+	Armor:
+		Type: Wood
+	# TODO: TechLevel
+	# TODO: Adjacent
+	RevealsShroud:
+		Range: 5c0
+	# TODO: UnitRepair
+	# TODO: Owner
+	# TODO: AIBasePlanningSide
+	Valued:
+		Cost: 800
+	# TODO: Points
+	# TODO: Power
+	# TODO: Capturable
+	# TODO: Crewed
+	# TODO: Explosion
+	# TODO: DebrisAnim
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: ThreatPosed
+	# TODO: DamageParticleSystems
+	# TODO: DamageSmokeOffset
+	# TODO: AIBuildThis
+	# TODO: NumberOfDocks
+	# TODO: HasStupidGuardMode
+	# TODO: NumberImpassableRows
+
+cathosp:
+	# TODO: UIName
+	Tooltip:
+		Name: Tech Hospital
+	# TODO: Image
+	# TODO: TechLevel
+	Health:
+		HP: 800
+	# TODO: LegalTarget
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Concrete
+	# TODO: Hospital
+	# TODO: Explosion
+	# TODO: Maxdebris
+	# TODO: DamageParticleSystems
+	# TODO: IsBase
+	# TODO: Capturable
+	# TODO: NeedsEngineer
+	# TODO: Unsellable
+
+cahosp:
+	# TODO: UIName
+	Tooltip:
+		Name: Civilian Hospital
+	# TODO: TechLevel
+	Health:
+		HP: 800
+	# TODO: LegalTarget
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Concrete
+	# TODO: Hospital
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: DebrisAnim
+	# TODO: DamageParticleSystems
+	# TODO: BaseNormal
+	# TODO: LeaveRubble
+	# TODO: IsBase
+	# TODO: Capturable
+	# TODO: NeedsEngineer
+	# TODO: Unsellable
+
+caairp:
+	# TODO: UIName
+	Tooltip:
+		Name: Tech Airport
+	# TODO: TechLevel
+	Health:
+		HP: 800
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: Points
+	Armor:
+		Type: Concrete
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: DebrisAnim
+	# TODO: DamageParticleSystems
+	# TODO: Capturable
+	# TODO: NeedsEngineer
+	# TODO: Unsellable
+	# TODO: Ammo
+	# TODO: SuperWeapon
+	# TODO: LeaveRubble
+
+caoild:
+	# TODO: UIName
+	Tooltip:
+		Name: Tech Oil Derrick
+	# TODO: TechLevel
+	Health:
+		HP: 1000
+	# TODO: Insignificant
+	# TODO: Nominal
+	RevealsShroud:
+		Range: 4c0
+	# TODO: Points
+	Armor:
+		Type: Steel
+	# TODO: Explosion
+	# TODO: DebrisAnims
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: Capturable
+	# TODO: NeedsEngineer
+	# TODO: Unsellable
+	# TODO: Explodes
+	# TODO: DeathWeapon
+	# TODO: ProduceCashStartup
+	# TODO: ProduceCashAmount
+	# TODO: ProduceCashDelay
+	# TODO: WorkingSound
+	# TODO: LeaveRubble
+
+caarmr:
+	# TODO: UIName
+	Tooltip:
+		Name: Civilian Armory
+	# TODO: TechLevel
+	Health:
+		HP: 800
+	# TODO: Immune
+	# TODO: LegalTarget
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Concrete
+	# TODO: Armory
+	# TODO: PipScale
+	# TODO: Ammo
+	# TODO: Explosion
+	# TODO: Maxdebris
+	# TODO: DamageParticleSystems
+	# TODO: BaseNormal
+
+city01:
+	# TODO: UIName
+	Tooltip:
+		Name: Connelly Court Apts.
+	# TODO: TechLevel
+	Health:
+		HP: 1000
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Wood
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: DamageParticleSystems
+	# TODO: BaseNormal
+
+city02:
+	# TODO: UIName
+	Tooltip:
+		Name: Lightner's Luxury Suites
+	# TODO: TechLevel
+	Health:
+		HP: 1000
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Steel
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: DamageParticleSystems
+	# TODO: BaseNormal
+
+city03:
+	# TODO: UIName
+	Tooltip:
+		Name: Office Building
+	# TODO: TechLevel
+	Health:
+		HP: 1000
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Steel
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: DamageParticleSystems
+	# TODO: BaseNormal
+
+city04:
+	# TODO: UIName
+	Tooltip:
+		Name: Westwood Stock Exchange
+	# TODO: TechLevel
+	Health:
+		HP: 1000
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Steel
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: DamageParticleSystems
+	# TODO: BaseNormal
+
+city05:
+	# TODO: UIName
+	Tooltip:
+		Name: Daily Sun Times
+	# TODO: TechLevel
+	Health:
+		HP: 1000
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Steel
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: DamageParticleSystems
+	# TODO: BaseNormal
+
+city06:
+	# TODO: UIName
+	Tooltip:
+		Name: YEO-CA Cola Corp.
+	# TODO: TechLevel
+	Health:
+		HP: 1000
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Steel
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: DamageParticleSystems
+	# TODO: BaseNormal
+
+capars01:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 Paris Tower
+	# TODO: TechLevel
+	Health:
+		HP: 3000
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Steel
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: DebrisAnim
+	# TODO: BaseNormal
+	Armament@Primary:
+		Weapon: EiffelBolt
+	# TODO: Power
+	# TODO: Powered
+	# TODO: Overpowerable
+	# TODO: DestroyAnim
+	# TODO: LeaveRubble
+	# TODO: DieSound
+
+cacity01:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 Building
+	# TODO: TechLevel
+	Health:
+		HP: 1000
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Steel
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 4c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	Armament@Primary:
+		Weapon: AlliedOccupyW
+	Armament@Secondary:
+		Weapon: SovietOccupyW
+
+cacity02:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 Building
+	# TODO: TechLevel
+	Health:
+		HP: 1000
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Steel
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 4c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	Armament@Primary:
+		Weapon: AlliedOccupyW
+	Armament@Secondary:
+		Weapon: SovietOccupyW
+
+cacity03:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 Building
+	# TODO: TechLevel
+	Health:
+		HP: 1000
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Steel
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 4c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	Armament@Primary:
+		Weapon: AlliedOccupyW
+	Armament@Secondary:
+		Weapon: SovietOccupyW
+
+cacity04:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 Building
+	# TODO: TechLevel
+	Health:
+		HP: 1000
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Steel
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 4c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	Armament@Primary:
+		Weapon: AlliedOccupyW
+	Armament@Secondary:
+		Weapon: SovietOccupyW
+
+canewy01:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 Building
+	# TODO: TechLevel
+	Health:
+		HP: 1000
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Steel
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 4c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	Armament@Primary:
+		Weapon: AlliedOccupyW
+	Armament@Secondary:
+		Weapon: SovietOccupyW
+	# TODO: LeaveRubble
+
+canewy04:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 Statue of Liberty
+	# TODO: TechLevel
+	Health:
+		HP: 1000
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Concrete
+	# TODO: Explosion
+	# TODO: DestroyAnim
+	# TODO: MaxDebris
+	# TODO: CrateBeneath
+	# TODO: CrateBeneathIsMoney
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 4c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: LeaveRubble
+	# TODO: DieSound
+
+canewy05:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 World Trade Center
+	# TODO: TechLevel
+	Health:
+		HP: 1000
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Radar
+	# TODO: SpySat
+	# TODO: Points
+	Armor:
+		Type: Concrete
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 4c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	Armament@Primary:
+		Weapon: AlliedOccupyW
+	Armament@Secondary:
+		Weapon: SovietOccupyW
+
+caswst01:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 Southwest Building
+	# TODO: TechLevel
+	Health:
+		HP: 1000
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Steel
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: DebrisAnim
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 4c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	Armament@Primary:
+		Weapon: AlliedOccupyW
+	Armament@Secondary:
+		Weapon: SovietOccupyW
+	# TODO: LeaveRubble
+
+catech01:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 Communications
+	# TODO: TechLevel
+	Health:
+		HP: 400
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Steel
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: DebrisAnim
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 4c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	Armament@Primary:
+		Weapon: AlliedOccupyW
+	Armament@Secondary:
+		Weapon: SovietOccupyW
+	# TODO: LeaveRubble
+
+catexs01:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 Texs01 Building
+	# TODO: TechLevel
+	Health:
+		HP: 1000
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Steel
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: DebrisAnim
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 4c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	Armament@Primary:
+		Weapon: AlliedOccupyW
+	Armament@Secondary:
+		Weapon: SovietOccupyW
+	# TODO: LeaveRubble
+
+catexs02:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 Alamo
+	# TODO: TechLevel
+	Health:
+		HP: 2000
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Concrete
+	# TODO: Explosion
+	# TODO: DebrisAnims
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	Armament@Primary:
+		Weapon: AlliedOccupyW
+	Armament@Secondary:
+		Weapon: SovietOccupyW
+	# TODO: LeaveRubble
+
+cawash01:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 White House
+	# TODO: TechLevel
+	Health:
+		HP: 1000
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Concrete
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: DebrisAnim
+	# TODO: DestroyAnim
+	# TODO: CrateBeneath
+	# TODO: CrateBeneathIsMoney
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: LeaveRubble
+	# TODO: DieSound
+
+cawash05:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 Wash Building 5
+	# TODO: TechLevel
+	Health:
+		HP: 1000
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Steel
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: DebrisAnim
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	Armament@Primary:
+		Weapon: AlliedOccupyW
+	Armament@Secondary:
+		Weapon: SovietOccupyW
+	# TODO: LeaveRubble
+
+cawash06:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 Wash Building 6
+	# TODO: TechLevel
+	Health:
+		HP: 1000
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Steel
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	Armament@Primary:
+		Weapon: AlliedOccupyW
+	Armament@Secondary:
+		Weapon: SovietOccupyW
+	# TODO: LeaveRubble
+	# TODO: DieSound
+
+cawash04:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 Wash Building 4
+	# TODO: TechLevel
+	Health:
+		HP: 1000
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Steel
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: DebrisAnim
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	Armament@Primary:
+		Weapon: AlliedOccupyW
+	Armament@Secondary:
+		Weapon: SovietOccupyW
+	# TODO: LeaveRubble
+
+cawash03:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 Wash Building 3
+	# TODO: TechLevel
+	Health:
+		HP: 1000
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Steel
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: DebrisAnim
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	Armament@Primary:
+		Weapon: AlliedOccupyW
+	Armament@Secondary:
+		Weapon: SovietOccupyW
+	# TODO: LeaveRubble
+
+cawash07:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 Wash Building 7
+	# TODO: TechLevel
+	Health:
+		HP: 1000
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Steel
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: DebrisAnim
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	Armament@Primary:
+		Weapon: AlliedOccupyW
+	Armament@Secondary:
+		Weapon: SovietOccupyW
+	# TODO: LeaveRubble
+
+cawash11:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 Wash Building 11
+	# TODO: TechLevel
+	Health:
+		HP: 1000
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Steel
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: DebrisAnim
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	Armament@Primary:
+		Weapon: AlliedOccupyW
+	Armament@Secondary:
+		Weapon: SovietOccupyW
+	# TODO: LeaveRubble
+
+cawsh12:
+	Tooltip:
+		Name: RA2 Washington Monument
+	# TODO: UIName
+	# TODO: TechLevel
+	Health:
+		HP: 1000
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Concrete
+	# TODO: Explosion
+	# TODO: DestroyAnim
+	# TODO: DebrisAnims
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: CrateBeneath
+	# TODO: CrateBeneathIsMoney
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: LeaveRubble
+	# TODO: DieSound
+
+cawash14:
+	# TODO: UIName
+	Tooltip:
+		Name: Jefferson Memorial
+	# TODO: TechLevel
+	Health:
+		HP: 1000
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Concrete
+	# TODO: Explosion
+	# TODO: DestroyAnim
+	# TODO: MaxDebris
+	# TODO: CrateBeneath
+	# TODO: CrateBeneathIsMoney
+	# TODO: BaseNormal
+	# TODO: CanBeOccupied
+	# TODO: LeaveRubble
+	# TODO: DieSound
+
+cawash08:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 Wash Building 8
+	# TODO: TechLevel
+	Health:
+		HP: 1000
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Steel
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: DebrisAnim
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	Armament@Primary:
+		Weapon: AlliedOccupyW
+	Armament@Secondary:
+		Weapon: SovietOccupyW
+	# TODO: LeaveRubble
+
+cawash09:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 Wash Building 9
+	# TODO: TechLevel
+	Health:
+		HP: 1000
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Steel
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: DebrisAnim
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	Armament@Primary:
+		Weapon: AlliedOccupyW
+	Armament@Secondary:
+		Weapon: SovietOccupyW
+	# TODO: LeaveRubble
+
+cawash10:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 Wash Building 10
+	# TODO: TechLevel
+	Health:
+		HP: 1000
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Steel
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: DebrisAnim
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	Armament@Primary:
+		Weapon: AlliedOccupyW
+	Armament@Secondary:
+		Weapon: SovietOccupyW
+	# TODO: LeaveRubble
+
+cawash13:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 Wash Building 13
+	# TODO: TechLevel
+	Health:
+		HP: 1000
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Steel
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: DebrisAnim
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	Armament@Primary:
+		Weapon: AlliedOccupyW
+	Armament@Secondary:
+		Weapon: SovietOccupyW
+	# TODO: LeaveRubble
+
+caeur1:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 Euro Cottage A
+	# TODO: TechLevel
+	Health:
+		HP: 300
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Wood
+	# TODO: Explosion
+	# TODO: DebrisAnims
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	Armament@Primary:
+		Weapon: AlliedOccupyW
+	Armament@Secondary:
+		Weapon: SovietOccupyW
+	# TODO: LeaveRubble
+
+caeur2:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 Euro Cottage B
+	# TODO: TechLevel
+	Health:
+		HP: 300
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Wood
+	# TODO: Explosion
+	# TODO: DebrisAnims
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	Armament@Primary:
+		Weapon: AlliedOccupyW
+	Armament@Secondary:
+		Weapon: SovietOccupyW
+	# TODO: LeaveRubble
+
+camiam02:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 Miami Hotel 02
+	# TODO: TechLevel
+	Health:
+		HP: 1000
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Steel
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: DebrisAnim
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	Armament@Primary:
+		Weapon: AlliedOccupyW
+	Armament@Secondary:
+		Weapon: SovietOccupyW
+	# TODO: LeaveRubble
+
+caprs03:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 Paris Louvre
+	# TODO: TechLevel
+	Health:
+		HP: 500
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Concrete
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: DebrisAnim
+	# TODO: CrateBeneath
+	# TODO: CrateBeneathIsMoney
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	Armament@Primary:
+		Weapon: AlliedOccupyW
+	Armament@Secondary:
+		Weapon: SovietOccupyW
+	# TODO: LeaveRubble
+	# TODO: DieSound
+
+canwy05:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 NY Building 05
+	# TODO: TechLevel
+	Health:
+		HP: 1000
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Steel
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: DebrisAnim
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	Armament@Primary:
+		Weapon: AlliedOccupyW
+	Armament@Secondary:
+		Weapon: SovietOccupyW
+	# TODO: LeaveRubble
+
+caeur04:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 Euro Building 04
+	# TODO: TechLevel
+	Health:
+		HP: 400
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Steel
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: DebrisAnim
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	Armament@Primary:
+		Weapon: AlliedOccupyW
+	Armament@Secondary:
+		Weapon: SovietOccupyW
+	# TODO: LeaveRubble
+
+camex01:
+	Tooltip:
+		Name: RA2 Mayan Prism Pyramid
+	# TODO: UIName
+	# TODO: TechLevel
+	Health:
+		HP: 2000
+	# TODO: Nominal
+	# TODO: Points
+	Armor:
+		Type: Concrete
+	# TODO: Explosion
+	# TODO: DebrisAnims
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 12c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	Armament@Primary:
+		Weapon: MayanPrism
+	# TODO: LeaveRubble
+
+mayan:
+	Tooltip:
+		Name: Mayan Prism Pyramid
+	# TODO: UIName
+	# TODO: Image
+	Armament@Primary:
+		Weapon: MayanPrism
+	# TODO: TechLevel
+	Health:
+		HP: 2000
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Concrete
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+
+carus02a:
+	Tooltip:
+		Name: RA2 Russain Kremlin Wall LTower
+	# TODO: TechLevel
+	Health:
+		HP: 800
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Steel
+	# TODO: Explosion
+	# TODO: DebrisAnims
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: BaseNormal
+
+carus02b:
+	Tooltip:
+		Name: RA2 Russain Kremlin Wall STower
+	Health:
+		HP: 500
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Steel
+	# TODO: Explosion
+	# TODO: DebrisAnims
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: BaseNormal
+
+carus02c:
+	Tooltip:
+		Name: RA2 Russain Kremlin Wall North
+	Health:
+		HP: 1000
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Concrete
+	# TODO: Explosion
+	# TODO: DebrisAnims
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: BaseNormal
+	# TODO: Crushable
+
+carus02d:
+	Tooltip:
+		Name: RA2 Russain Kremlin Wall East
+	Health:
+		HP: 1000
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Concrete
+	# TODO: Explosion
+	# TODO: DebrisAnims
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: BaseNormal
+	# TODO: Crushable
+
+carus02e:
+	Tooltip:
+		Name: RA2 Russain Kremlin Wall South
+	Health:
+		HP: 1000
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Concrete
+	# TODO: Explosion
+	# TODO: DebrisAnims
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: BaseNormal
+	# TODO: Crushable
+
+carus02f:
+	Tooltip:
+		Name: RA2 Russain Kremlin Wall West
+	Health:
+		HP: 1000
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Concrete
+	# TODO: Explosion
+	# TODO: DebrisAnims
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: BaseNormal
+	# TODO: Crushable
+
+canewy06:
+	Tooltip:
+		Name: RA2 Wall Street Office
+	# TODO: UIName
+	# TODO: TechLevel
+	Health:
+		HP: 1000
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Steel
+	# TODO: Explosion
+	# TODO: DebrisAnims
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	Armament@Primary:
+		Weapon: AlliedOccupyW
+	Armament@Secondary:
+		Weapon: SovietOccupyW
+	# TODO: LeaveRubble
+
+canewy07:
+	Tooltip:
+		Name: RA2 Wall Street Office Var 2
+	# TODO: UIName
+	# TODO: TechLevel
+	Health:
+		HP: 1000
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Steel
+	# TODO: Explosion
+	# TODO: DebrisAnims
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	Armament@Primary:
+		Weapon: AlliedOccupyW
+	Armament@Secondary:
+		Weapon: SovietOccupyW
+	# TODO: LeaveRubble
+
+canewy08:
+	Tooltip:
+		Name: RA2 Wall Street Office Var 3
+	# TODO: UIName
+	# TODO: TechLevel
+	Health:
+		HP: 1000
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Steel
+	# TODO: Explosion
+	# TODO: DebrisAnims
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	Armament@Primary:
+		Weapon: AlliedOccupyW
+	Armament@Secondary:
+		Weapon: SovietOccupyW
+	# TODO: LeaveRubble
+
+capars02:
+	Tooltip:
+		Name: RA2 Large Paris Building Var 1
+	# TODO: UIName
+	# TODO: TechLevel
+	Health:
+		HP: 1000
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Steel
+	# TODO: Explosion
+	# TODO: DebrisAnims
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	Armament@Primary:
+		Weapon: AlliedOccupyW
+	Armament@Secondary:
+		Weapon: SovietOccupyW
+	# TODO: LeaveRubble
+
+capars08:
+	Tooltip:
+		Name: RA2 Large Paris Building Var 2
+	# TODO: UIName
+	# TODO: TechLevel
+	Health:
+		HP: 1000
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Steel
+	# TODO: Explosion
+	# TODO: DebrisAnims
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	Armament@Primary:
+		Weapon: AlliedOccupyW
+	Armament@Secondary:
+		Weapon: SovietOccupyW
+	# TODO: LeaveRubble
+
+capars09:
+	Tooltip:
+		Name: RA2 Large Paris Building Var 3
+	# TODO: UIName
+	# TODO: TechLevel
+	Health:
+		HP: 1000
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Steel
+	# TODO: Explosion
+	# TODO: DebrisAnims
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	Armament@Primary:
+		Weapon: AlliedOccupyW
+	Armament@Secondary:
+		Weapon: SovietOccupyW
+	# TODO: LeaveRubble
+
+carus03:
+	Tooltip:
+		Name: RA2 Russain Kremlin Palace
+	# TODO: UIName
+	# TODO: TechLevel
+	Health:
+		HP: 1000
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Concrete
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: DebrisAnim
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	Armament@Primary:
+		Weapon: AlliedOccupyW
+	Armament@Secondary:
+		Weapon: SovietOccupyW
+	# TODO: LeaveRubble
+
+canewy10:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 NY Building 10
+	# TODO: TechLevel
+	Health:
+		HP: 1000
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Steel
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: DebrisAnim
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	Armament@Primary:
+		Weapon: AlliedOccupyW
+	Armament@Secondary:
+		Weapon: SovietOccupyW
+	# TODO: LeaveRubble
+
+canewy11:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 NY Building 11
+	# TODO: TechLevel
+	Health:
+		HP: 1000
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Steel
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: DebrisAnim
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	Armament@Primary:
+		Weapon: AlliedOccupyW
+	Armament@Secondary:
+		Weapon: SovietOccupyW
+	# TODO: LeaveRubble
+
+canewy12:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 NY Building 12
+	# TODO: TechLevel
+	Health:
+		HP: 1000
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Steel
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: DebrisAnim
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	Armament@Primary:
+		Weapon: AlliedOccupyW
+	Armament@Secondary:
+		Weapon: SovietOccupyW
+	# TODO: LeaveRubble
+
+canewy13:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 NY Building 13
+	# TODO: TechLevel
+	Health:
+		HP: 1000
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Steel
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: DebrisAnim
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	Armament@Primary:
+		Weapon: AlliedOccupyW
+	Armament@Secondary:
+		Weapon: SovietOccupyW
+	# TODO: LeaveRubble
+
+canewy14:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 NY Building 14
+	# TODO: TechLevel
+	Health:
+		HP: 1000
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Steel
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: DebrisAnim
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	Armament@Primary:
+		Weapon: AlliedOccupyW
+	Armament@Secondary:
+		Weapon: SovietOccupyW
+	# TODO: LeaveRubble
+
+canewy15:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 NY Building 15
+	# TODO: TechLevel
+	Health:
+		HP: 1000
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Steel
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: DebrisAnim
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	Armament@Primary:
+		Weapon: AlliedOccupyW
+	Armament@Secondary:
+		Weapon: SovietOccupyW
+	# TODO: LeaveRubble
+
+canewy16:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 NY Building 16
+	# TODO: TechLevel
+	Health:
+		HP: 1000
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Steel
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: DebrisAnim
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	Armament@Primary:
+		Weapon: AlliedOccupyW
+	Armament@Secondary:
+		Weapon: SovietOccupyW
+	# TODO: LeaveRubble
+
+canewy17:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 NY Building 17
+	# TODO: TechLevel
+	Health:
+		HP: 1000
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Steel
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: DebrisAnim
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	Armament@Primary:
+		Weapon: AlliedOccupyW
+	Armament@Secondary:
+		Weapon: SovietOccupyW
+	# TODO: LeaveRubble
+
+canewy18:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 NY Building 18
+	# TODO: TechLevel
+	Health:
+		HP: 1000
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Steel
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: DebrisAnim
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	Armament@Primary:
+		Weapon: AlliedOccupyW
+	Armament@Secondary:
+		Weapon: SovietOccupyW
+	# TODO: LeaveRubble
+
+capars04:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 Paris Building 4
+	# TODO: TechLevel
+	Health:
+		HP: 500
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Steel
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: DebrisAnim
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	Armament@Primary:
+		Weapon: AlliedOccupyW
+	Armament@Secondary:
+		Weapon: SovietOccupyW
+	# TODO: LeaveRubble
+
+capars05:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 Paris Building 5
+	# TODO: TechLevel
+	Health:
+		HP: 500
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Steel
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: DebrisAnim
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	Armament@Primary:
+		Weapon: AlliedOccupyW
+	Armament@Secondary:
+		Weapon: SovietOccupyW
+	# TODO: LeaveRubble
+
+capars06:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 Paris Building 6
+	# TODO: TechLevel
+	Health:
+		HP: 500
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Steel
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: DebrisAnim
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	Armament@Primary:
+		Weapon: AlliedOccupyW
+	Armament@Secondary:
+		Weapon: SovietOccupyW
+	# TODO: LeaveRubble
+
+capars07:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 Euro Phone Booth
+	# TODO: TechLevel
+	Health:
+		HP: 100
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Wood
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+
+cawash15:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 Lincoln Memorial
+	# TODO: TechLevel
+	Health:
+		HP: 1000
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Concrete
+	# TODO: Explosion
+	# TODO: DestroyAnim
+	# TODO: MaxDebris
+	# TODO: CrateBeneath
+	# TODO: CrateBeneathIsMoney
+	# TODO: BaseNormal
+	# TODO: CanBeOccupied
+	# TODO: LeaveRubble
+
+capars10:
+	Tooltip:
+		Name: RA2 Paris Bistro Var 1
+	# TODO: UIName
+	# TODO: TechLevel
+	Health:
+		HP: 1000
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Wood
+	# TODO: Explosion
+	# TODO: DebrisAnims
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	Armament@Primary:
+		Weapon: AlliedOccupyW
+	Armament@Secondary:
+		Weapon: SovietOccupyW
+	# TODO: LeaveRubble
+	# TODO: DieSound
+
+capars13:
+	Tooltip:
+		Name: RA2 Paris Bistro Var 2
+	# TODO: UIName
+	# TODO: TechLevel
+	Health:
+		HP: 1000
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Concrete
+	# TODO: Explosion
+	# TODO: DebrisAnims
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	Armament@Primary:
+		Weapon: AlliedOccupyW
+	Armament@Secondary:
+		Weapon: SovietOccupyW
+	# TODO: LeaveRubble
+	# TODO: DieSound
+
+capars14:
+	Tooltip:
+		Name: RA2 Paris Bistro Var 3
+	# TODO: UIName
+	# TODO: TechLevel
+	Health:
+		HP: 1000
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Concrete
+	# TODO: Explosion
+	# TODO: DebrisAnims
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	Armament@Primary:
+		Weapon: AlliedOccupyW
+	Armament@Secondary:
+		Weapon: SovietOccupyW
+	# TODO: LeaveRubble
+	# TODO: DieSound
+
+cagas01:
+	Tooltip:
+		Name: RA2 Generic Gas Station
+	# TODO: UIName
+	# TODO: TechLevel
+	Health:
+		HP: 1000
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Wood
+	# TODO: Explosion
+	# TODO: DebrisAnims
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	Armament@Primary:
+		Weapon: AlliedOccupyW
+	Armament@Secondary:
+		Weapon: SovietOccupyW
+	# TODO: LeaveRubble
+
+capars11:
+	Tooltip:
+		Name: RA2 Paris Arc de Triumphe
+	# TODO: UIName
+	# TODO: TechLevel
+	Health:
+		HP: 1000
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Concrete
+	# TODO: Explosion
+	# TODO: DestroyAnim
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: DebrisAnim
+	# TODO: CrateBeneath
+	# TODO: CrateBeneathIsMoney
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: LeaveRubble
+	# TODO: DieSound
+
+capars12:
+	Tooltip:
+		Name: RA2 Paris Notre Dame
+	# TODO: UIName
+	# TODO: TechLevel
+	Health:
+		HP: 1000
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Concrete
+	# TODO: Explosion
+	# TODO: DebrisAnims
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: CrateBeneath
+	# TODO: CrateBeneathIsMoney
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	Armament@Primary:
+		Weapon: AlliedOccupyW
+	Armament@Secondary:
+		Weapon: SovietOccupyW
+	# TODO: LeaveRubble
+	# TODO: DieSound
+
+cafarm06:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 Lighthouse
+	# TODO: TechLevel
+	Health:
+		HP: 500
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Steel
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: DebrisAnim
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	Armament@Primary:
+		Weapon: AlliedOccupyW
+	Armament@Secondary:
+		Weapon: SovietOccupyW
+	# TODO: LeaveRubble
+
+camiam04:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 Lifeguard Hut
+	# TODO: TechLevel
+	Health:
+		HP: 200
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Wood
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: DebrisAnim
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	Armament@Primary:
+		Weapon: AlliedOccupyW
+	Armament@Secondary:
+		Weapon: SovietOccupyW
+
+napsyb:
+	Inherits: ^Building
+	Tooltip:
+		Name: RA2 Psychic Beacon
+	# TODO: BuildCat
+	Buildable:
+		Prerequisites: natech, ~<fact-type>.russians, ~<fact-type>.confederation, ~<fact-type>.africans, ~<fact-type>.arabs, 
+	Health:
+		HP: 750
+	Armor:
+		Type: Wood
+	# TODO: TechLevel
+	# TODO: Adjacent
+	RevealsShroud:
+		Range: 10c0
+	# TODO: Owner
+	Valued:
+		Cost: 1000
+	# TODO: Points
+	# TODO: Power
+	# TODO: Powered
+	# TODO: Capturable
+	# TODO: Crewed
+	# TODO: Explosion
+	# TODO: DebrisAnim
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: ThreatPosed
+	# TODO: DamageParticleSystems
+	# TODO: DamageSmokeOffset
+	# TODO: AIBuildThis
+	# TODO: HasRadialIndicator
+	# TODO: DetectDisguise
+	# TODO: BaseNormal
+	# TODO: AmbientSound
+	# TODO: DieSound
+
+napsya:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 Psychic Amplifier
+	# TODO: TechLevel
+	Health:
+		HP: 1000
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	# TODO: Power
+	# TODO: Powered
+	Armor:
+		Type: Concrete
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: DebrisAnim
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: AmbientSound
+	# TODO: DieSound
+
+caind01:
+	Tooltip:
+		Name: RA2 Generic Industrial building
+	# TODO: UIName
+	# TODO: TechLevel
+	Health:
+		HP: 1000
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Steel
+	# TODO: Explosion
+	# TODO: DebrisAnims
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	Armament@Primary:
+		Weapon: AlliedOccupyW
+	Armament@Secondary:
+		Weapon: SovietOccupyW
+	# TODO: LeaveRubble
+
+cacolo01:
+	Tooltip:
+		Name: RA2 Air Force Academy Chapel Colorado
+	# TODO: UIName
+	# TODO: TechLevel
+	Health:
+		HP: 1000
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Concrete
+	# TODO: Explosion
+	# TODO: DebrisAnims
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: CrateBeneath
+	# TODO: CrateBeneathIsMoney
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: LeaveRubble
+
+canwy09:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 NY Building 09
+	# TODO: TechLevel
+	Health:
+		HP: 400
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Steel
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: DebrisAnim
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	Armament@Primary:
+		Weapon: AlliedOccupyW
+	Armament@Secondary:
+		Weapon: SovietOccupyW
+	# TODO: LeaveRubble
+
+canwy22:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 NY Building 22
+	# TODO: TechLevel
+	Health:
+		HP: 400
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Steel
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: DebrisAnim
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	Armament@Primary:
+		Weapon: AlliedOccupyW
+	Armament@Secondary:
+		Weapon: SovietOccupyW
+	# TODO: LeaveRubble
+
+canwy23:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 NY Building 23
+	# TODO: TechLevel
+	Health:
+		HP: 400
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Steel
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: DebrisAnim
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	Armament@Primary:
+		Weapon: AlliedOccupyW
+	Armament@Secondary:
+		Weapon: SovietOccupyW
+	# TODO: LeaveRubble
+
+canwy24:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 NY Building 24
+	# TODO: TechLevel
+	Health:
+		HP: 400
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Steel
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: DebrisAnim
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	Armament@Primary:
+		Weapon: AlliedOccupyW
+	Armament@Secondary:
+		Weapon: SovietOccupyW
+	# TODO: LeaveRubble
+
+canwy25:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 NY Building 25
+	# TODO: TechLevel
+	Health:
+		HP: 400
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Steel
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: DebrisAnim
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	Armament@Primary:
+		Weapon: AlliedOccupyW
+	Armament@Secondary:
+		Weapon: SovietOccupyW
+	# TODO: LeaveRubble
+
+canwy26:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 NY Building 26
+	# TODO: TechLevel
+	Health:
+		HP: 400
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Steel
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: DebrisAnim
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	Armament@Primary:
+		Weapon: AlliedOccupyW
+	Armament@Secondary:
+		Weapon: SovietOccupyW
+	# TODO: LeaveRubble
+
+catexs03:
+	Tooltip:
+		Name: RA2 San Antonio Office building
+	# TODO: UIName
+	# TODO: TechLevel
+	Health:
+		HP: 1000
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Steel
+	# TODO: Explosion
+	# TODO: DebrisAnims
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	Armament@Primary:
+		Weapon: AlliedOccupyW
+	Armament@Secondary:
+		Weapon: SovietOccupyW
+	# TODO: LeaveRubble
+
+catexs04:
+	Tooltip:
+		Name: RA2 San Antonio Office building Var 2
+	# TODO: UIName
+	# TODO: TechLevel
+	Health:
+		HP: 1000
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Steel
+	# TODO: Explosion
+	# TODO: DebrisAnims
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	Armament@Primary:
+		Weapon: AlliedOccupyW
+	Armament@Secondary:
+		Weapon: SovietOccupyW
+	# TODO: LeaveRubble
+
+catexs05:
+	Tooltip:
+		Name: RA2 San Antonio Office building Var 3
+	# TODO: UIName
+	# TODO: TechLevel
+	Health:
+		HP: 1000
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Steel
+	# TODO: Explosion
+	# TODO: DebrisAnims
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	Armament@Primary:
+		Weapon: AlliedOccupyW
+	Armament@Secondary:
+		Weapon: SovietOccupyW
+	# TODO: LeaveRubble
+
+carus02g:
+	Tooltip:
+		Name: RA2 Russain Kremlin Wall Clock Tower
+	# TODO: TechLevel
+	Health:
+		HP: 1000
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Concrete
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	Armament@Primary:
+		Weapon: AlliedOccupyW
+	Armament@Secondary:
+		Weapon: SovietOccupyW
+
+cachig04:
+	Tooltip:
+		Name: RA2 Chicago Associates Center
+	# TODO: UIName
+	# TODO: TechLevel
+	Health:
+		HP: 1000
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Concrete
+	# TODO: Explosion
+	# TODO: DestroyAnim
+	# TODO: DebrisAnims
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	Armament@Primary:
+		Weapon: AlliedOccupyW
+	Armament@Secondary:
+		Weapon: SovietOccupyW
+	# TODO: LeaveRubble
+
+camiam03:
+	Tooltip:
+		Name: RA2 Miami Hotel 03
+	# TODO: UIName
+	# TODO: TechLevel
+	Health:
+		HP: 1000
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Steel
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: DebrisAnim
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	Armament@Primary:
+		Weapon: AlliedOccupyW
+	Armament@Secondary:
+		Weapon: SovietOccupyW
+	# TODO: LeaveRubble
+
+camiam01:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 Miami Hotel 01
+	# TODO: TechLevel
+	Health:
+		HP: 1000
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Steel
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: DebrisAnim
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	Armament@Primary:
+		Weapon: AlliedOccupyW
+	Armament@Secondary:
+		Weapon: SovietOccupyW
+	# TODO: LeaveRubble
+
+carus07:
+	Tooltip:
+		Name: RA2 Russain Red Square Circle Thing
+	# TODO: UIName
+	# TODO: TechLevel
+	Health:
+		HP: 1000
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Concrete
+	# TODO: Explosion
+	# TODO: DebrisAnims
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: CrateBeneath
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	Armament@Primary:
+		Weapon: AlliedOccupyW
+	Armament@Secondary:
+		Weapon: SovietOccupyW
+	# TODO: LeaveRubble
+
+catexs06:
+	Tooltip:
+		Name: RA2 Texas Office Building
+	# TODO: UIName
+	# TODO: TechLevel
+	Health:
+		HP: 1000
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Steel
+	# TODO: Explosion
+	# TODO: DebrisAnims
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	Armament@Primary:
+		Weapon: AlliedOccupyW
+	Armament@Secondary:
+		Weapon: SovietOccupyW
+	# TODO: LeaveRubble
+
+catexs07:
+	Tooltip:
+		Name: RA2 Texas Office Building var2
+	# TODO: UIName
+	# TODO: TechLevel
+	Health:
+		HP: 1000
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Steel
+	# TODO: Explosion
+	# TODO: DebrisAnims
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	Armament@Primary:
+		Weapon: AlliedOccupyW
+	Armament@Secondary:
+		Weapon: SovietOccupyW
+	# TODO: LeaveRubble
+
+catexs08:
+	Tooltip:
+		Name: RA2 Texas Office Building var3
+	# TODO: UIName
+	# TODO: TechLevel
+	Health:
+		HP: 1000
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Steel
+	# TODO: Explosion
+	# TODO: DebrisAnims
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	Armament@Primary:
+		Weapon: AlliedOccupyW
+	Armament@Secondary:
+		Weapon: SovietOccupyW
+	# TODO: LeaveRubble
+
+cachig01:
+	Tooltip:
+		Name: RA2 Chigo Brick Building
+	# TODO: UIName
+	# TODO: TechLevel
+	Health:
+		HP: 1000
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Steel
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: DebrisAnim
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	Armament@Primary:
+		Weapon: AlliedOccupyW
+	Armament@Secondary:
+		Weapon: SovietOccupyW
+	# TODO: LeaveRubble
+
+cachig02:
+	Tooltip:
+		Name: RA2 Chigo Brick Building var2
+	# TODO: UIName
+	# TODO: TechLevel
+	Health:
+		HP: 1000
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Steel
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: DebrisAnim
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	Armament@Primary:
+		Weapon: AlliedOccupyW
+	Armament@Secondary:
+		Weapon: SovietOccupyW
+	# TODO: LeaveRubble
+
+cachig03:
+	Tooltip:
+		Name: RA2 Chigo Office Building
+	# TODO: UIName
+	# TODO: TechLevel
+	Health:
+		HP: 1000
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Steel
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: DebrisAnim
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	Armament@Primary:
+		Weapon: AlliedOccupyW
+	Armament@Secondary:
+		Weapon: SovietOccupyW
+	# TODO: LeaveRubble
+
+cawash16:
+	Tooltip:
+		Name: RA2 Smithsonian Castle
+	# TODO: UIName
+	# TODO: TechLevel
+	Health:
+		HP: 1000
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Concrete
+	# TODO: Explosion
+	# TODO: DebrisAnims
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: LeaveRubble
+
+cawash17:
+	Tooltip:
+		Name: RA2 Smithsonian Natural History Museum
+	# TODO: UIName
+	# TODO: TechLevel
+	Health:
+		HP: 1000
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Concrete
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: DebrisAnim
+	# TODO: CrateBeneath
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	Armament@Primary:
+		Weapon: AlliedOccupyW
+	Armament@Secondary:
+		Weapon: SovietOccupyW
+	# TODO: LeaveRubble
+
+cachig05:
+	Tooltip:
+		Name: RA2 Chicago Sears Tower
+	# TODO: UIName
+	# TODO: TechLevel
+	Health:
+		HP: 1000
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Radar
+	# TODO: SpySat
+	# TODO: Points
+	Armor:
+		Type: Concrete
+	# TODO: Explosion
+	# TODO: DebrisAnims
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	Armament@Primary:
+		Weapon: AlliedOccupyW
+	Armament@Secondary:
+		Weapon: SovietOccupyW
+	# TODO: LeaveRubble
+
+cawash19:
+	Tooltip:
+		Name: RA2 Iwo Jima Memorial
+	# TODO: UIName
+	# TODO: TechLevel
+	Health:
+		HP: 500
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Concrete
+	# TODO: Explosion
+	# TODO: DebrisAnims
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: LeaveRubble
+
+carus08:
+	Tooltip:
+		Name: RA2 Russain Gum Corner
+	Health:
+		HP: 1000
+	# TODO: TechLevel
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Steel
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: DebrisAnim
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	Armament@Primary:
+		Weapon: AlliedOccupyW
+	Armament@Secondary:
+		Weapon: SovietOccupyW
+	# TODO: LeaveRubble
+
+carus09:
+	Tooltip:
+		Name: RA2 Russian Gum Middle
+	# TODO: TechLevel
+	Health:
+		HP: 1000
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Steel
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: DebrisAnim
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	Armament@Primary:
+		Weapon: AlliedOccupyW
+	Armament@Secondary:
+		Weapon: SovietOccupyW
+	# TODO: LeaveRubble
+
+carus10:
+	Tooltip:
+		Name: RA2 Russian Gum Wall N_S
+	# TODO: TechLevel
+	Health:
+		HP: 1000
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Steel
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: DebrisAnim
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	Armament@Primary:
+		Weapon: AlliedOccupyW
+	Armament@Secondary:
+		Weapon: SovietOccupyW
+	# TODO: LeaveRubble
+
+carus11:
+	Tooltip:
+		Name: RA2 Russian Gum Wall E_W
+	# TODO: TechLevel
+	Health:
+		HP: 1000
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Steel
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: DebrisAnim
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	Armament@Primary:
+		Weapon: AlliedOccupyW
+	Armament@Secondary:
+		Weapon: SovietOccupyW
+	# TODO: LeaveRubble
+
+canewy20:
+	Tooltip:
+		Name: RA2 Warehouse
+	# TODO: UIName
+	# TODO: TechLevel
+	Health:
+		HP: 1000
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Steel
+	# TODO: Explosion
+	# TODO: DebrisAnims
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	Armament@Primary:
+		Weapon: AlliedOccupyW
+	Armament@Secondary:
+		Weapon: SovietOccupyW
+	# TODO: LeaveRubble
+
+canewy21:
+	Tooltip:
+		Name: RA2 Warehouse B
+	# TODO: UIName
+	# TODO: TechLevel
+	Health:
+		HP: 1000
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Steel
+	# TODO: Explosion
+	# TODO: DebrisAnims
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	Armament@Primary:
+		Weapon: AlliedOccupyW
+	Armament@Secondary:
+		Weapon: SovietOccupyW
+	# TODO: LeaveRubble
+
+carus04:
+	Tooltip:
+		Name: RA2 Moscow City A
+	# TODO: UIName
+	# TODO: TechLevel
+	Health:
+		HP: 1000
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Steel
+	# TODO: Explosion
+	# TODO: DebrisAnims
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	Armament@Primary:
+		Weapon: AlliedOccupyW
+	Armament@Secondary:
+		Weapon: SovietOccupyW
+	# TODO: LeaveRubble
+
+carus05:
+	Tooltip:
+		Name: RA2 Moscow City B
+	# TODO: UIName
+	# TODO: TechLevel
+	Health:
+		HP: 1000
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Steel
+	# TODO: Explosion
+	# TODO: DebrisAnims
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	Armament@Primary:
+		Weapon: AlliedOccupyW
+	Armament@Secondary:
+		Weapon: SovietOccupyW
+	# TODO: LeaveRubble
+
+carus06:
+	Tooltip:
+		Name: RA2 Moscow City C
+	# TODO: UIName
+	# TODO: TechLevel
+	Health:
+		HP: 1000
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Steel
+	# TODO: Explosion
+	# TODO: DebrisAnims
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	Armament@Primary:
+		Weapon: AlliedOccupyW
+	Armament@Secondary:
+		Weapon: SovietOccupyW
+	# TODO: LeaveRubble
+
+camsc01:
+	Tooltip:
+		Name: RA2 Hot Dog Stand
+	# TODO: UIName
+	# TODO: TechLevel
+	Health:
+		HP: 400
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Wood
+	# TODO: Explosion
+	# TODO: DebrisAnims
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+
+camsc02:
+	Tooltip:
+		Name: RA2 Beach Umbrellas A
+	# TODO: UIName
+	# TODO: TechLevel
+	Health:
+		HP: 50
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Wood
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+
+camsc03:
+	Tooltip:
+		Name: RA2 Beach Umbrellas B
+	# TODO: UIName
+	# TODO: TechLevel
+	Health:
+		HP: 1
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Wood
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+
+camsc04:
+	Tooltip:
+		Name: RA2 Beach Towels A
+	# TODO: UIName
+	# TODO: TechLevel
+	Health:
+		HP: 1
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Wood
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+
+camsc05:
+	Tooltip:
+		Name: RA2 Beach Towels B
+	# TODO: UIName
+	# TODO: TechLevel
+	Health:
+		HP: 1
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Wood
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+
+camsc06:
+	Tooltip:
+		Name: RA2 Camp Fire
+	# TODO: UIName
+	# TODO: TechLevel
+	Health:
+		HP: 10
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Wood
+	# TODO: Explosion
+	# TODO: DebrisAnims
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: AmbientSound
+	# TODO: DamageSmokeOffset
+
+camsc07:
+	Tooltip:
+		Name: RA2 Thatched Hut Chief
+	# TODO: UIName
+	# TODO: TechLevel
+	Health:
+		HP: 600
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Concrete
+	# TODO: Explosion
+	# TODO: DebrisAnims
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	Armament@Primary:
+		Weapon: AlliedOccupyW
+	Armament@Secondary:
+		Weapon: SovietOccupyW
+
+camsc08:
+	Tooltip:
+		Name: RA2 Thatched Hut A
+	# TODO: UIName
+	# TODO: TechLevel
+	Health:
+		HP: 200
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Wood
+	# TODO: Explosion
+	# TODO: DebrisAnims
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	Armament@Primary:
+		Weapon: AlliedOccupyW
+	Armament@Secondary:
+		Weapon: SovietOccupyW
+
+camsc09:
+	Tooltip:
+		Name: RA2 Thatched Hut B
+	# TODO: UIName
+	# TODO: TechLevel
+	Health:
+		HP: 200
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Wood
+	# TODO: Explosion
+	# TODO: DebrisAnims
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	Armament@Primary:
+		Weapon: AlliedOccupyW
+
+cawash18:
+	Tooltip:
+		Name: RA2 White House Fountain
+	# TODO: UIName
+	# TODO: TechLevel
+	Health:
+		HP: 200
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Concrete
+	# TODO: Explosion
+	# TODO: DebrisAnims
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: AmbientSound
+
+caeuro05:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 European Statue
+	# TODO: TechLevel
+	Health:
+		HP: 400
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Concrete
+	# TODO: Explosion
+	# TODO: DebrisAnims
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: LeaveRubble
+
+capark01:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 Park Bench
+	# TODO: TechLevel
+	Health:
+		HP: 1
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Wood
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+
+capark02:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 Swing Set
+	# TODO: TechLevel
+	Health:
+		HP: 1
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Wood
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+
+capark03:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 Merry Go Round
+	# TODO: TechLevel
+	Health:
+		HP: 1
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Wood
+	# TODO: Explosion
+	# TODO: DebrisAnims
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+
+cahse02:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 American House 02
+	# TODO: TechLevel
+	Health:
+		HP: 400
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Wood
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	Armament@Primary:
+		Weapon: AlliedOccupyW
+	Armament@Secondary:
+		Weapon: SovietOccupyW
+	# TODO: LeaveRubble
+
+cahse03:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 American House 03
+	# TODO: TechLevel
+	Health:
+		HP: 400
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Wood
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	Armament@Primary:
+		Weapon: AlliedOccupyW
+	Armament@Secondary:
+		Weapon: SovietOccupyW
+	# TODO: LeaveRubble
+
+cahse04:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 American House 04
+	# TODO: TechLevel
+	Health:
+		HP: 400
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Wood
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	Armament@Primary:
+		Weapon: AlliedOccupyW
+	Armament@Secondary:
+		Weapon: SovietOccupyW
+	# TODO: LeaveRubble
+
+castl01:
+	Tooltip:
+		Name: RA2 St Louis Building A
+	# TODO: UIName
+	# TODO: TechLevel
+	Health:
+		HP: 1000
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Steel
+	# TODO: Explosion
+	# TODO: DebrisAnims
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	Armament@Primary:
+		Weapon: AlliedOccupyW
+	Armament@Secondary:
+		Weapon: SovietOccupyW
+	# TODO: LeaveRubble
+
+castl02:
+	Tooltip:
+		Name: RA2 St Louis Building B
+	# TODO: UIName
+	# TODO: TechLevel
+	Health:
+		HP: 1000
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Steel
+	# TODO: Explosion
+	# TODO: DebrisAnims
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	Armament@Primary:
+		Weapon: AlliedOccupyW
+	Armament@Secondary:
+		Weapon: SovietOccupyW
+	# TODO: LeaveRubble
+
+castl03:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 St Louis Building C
+	# TODO: TechLevel
+	Health:
+		HP: 1000
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Steel
+	# TODO: Explosion
+	# TODO: DebrisAnims
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	Armament@Primary:
+		Weapon: AlliedOccupyW
+	Armament@Secondary:
+		Weapon: SovietOccupyW
+	# TODO: LeaveRubble
+
+castl04:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 St Louis Building 04 -Arch
+	# TODO: TechLevel
+	Health:
+		HP: 1000
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Steel
+	# TODO: Explosion
+	# TODO: DestroyAnim
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: DebrisAnim
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	Armament@Primary:
+		Weapon: AlliedOccupyW
+	Armament@Secondary:
+		Weapon: SovietOccupyW
+	# TODO: LeaveRubble
+
+cahse05:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 American Mobile Home A
+	# TODO: TechLevel
+	Health:
+		HP: 300
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Wood
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: DebrisAnim
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	Armament@Primary:
+		Weapon: AlliedOccupyW
+	Armament@Secondary:
+		Weapon: SovietOccupyW
+	# TODO: LeaveRubble
+
+cahse06:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 American Mobile Home B
+	# TODO: TechLevel
+	Health:
+		HP: 300
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Wood
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: DebrisAnim
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	Armament@Primary:
+		Weapon: AlliedOccupyW
+	Armament@Secondary:
+		Weapon: SovietOccupyW
+	# TODO: LeaveRubble
+
+cahse07:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 American House 07
+	# TODO: TechLevel
+	Health:
+		HP: 600
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Wood
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: DebrisAnim
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	Armament@Primary:
+		Weapon: AlliedOccupyW
+	Armament@Secondary:
+		Weapon: SovietOccupyW
+	# TODO: LeaveRubble
+
+camiam05:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 Miami Hotel 05
+	# TODO: TechLevel
+	Health:
+		HP: 1000
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Steel
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: DebrisAnim
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	Armament@Primary:
+		Weapon: AlliedOccupyW
+	Armament@Secondary:
+		Weapon: SovietOccupyW
+	# TODO: LeaveRubble
+
+camiam06:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 Miami Hotel 06
+	# TODO: TechLevel
+	Health:
+		HP: 1000
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Steel
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: DebrisAnim
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	Armament@Primary:
+		Weapon: AlliedOccupyW
+	Armament@Secondary:
+		Weapon: SovietOccupyW
+	# TODO: LeaveRubble
+
+camiam07:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 Miami Hotel 07
+	# TODO: TechLevel
+	Health:
+		HP: 1000
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Steel
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: DebrisAnim
+	# TODO: CrateBeneath
+	# TODO: CrateBeneathIsMoney
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	Armament@Primary:
+		Weapon: AlliedOccupyW
+	Armament@Secondary:
+		Weapon: SovietOccupyW
+	# TODO: LeaveRubble
+
+castrt01:
+	Tooltip:
+		Name: RA2 Traffic Light
+	# TODO: TechLevel
+	Health:
+		HP: 1000
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Steel
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+
+castrt02:
+	Tooltip:
+		Name: RA2 Traffic Light
+	# TODO: TechLevel
+	Health:
+		HP: 1000
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Steel
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+
+castrt03:
+	Tooltip:
+		Name: RA2 Traffic Light
+	# TODO: TechLevel
+	Health:
+		HP: 1000
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Steel
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+
+castrt04:
+	Tooltip:
+		Name: RA2 Traffic Light
+	# TODO: TechLevel
+	Health:
+		HP: 1000
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Steel
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+
+castrt05:
+	Tooltip:
+		Name: RA2 Bus Stop
+	# TODO: TechLevel
+	Health:
+		HP: 1000
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Steel
+	# TODO: Explosion
+	# TODO: DebrisAnims
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: MaxNumberOccupants
+
+caarmy01:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 Wash Army Tent
+	# TODO: TechLevel
+	Health:
+		HP: 200
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Wood
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	Armament@Primary:
+		Weapon: AlliedOccupyW
+	Armament@Secondary:
+		Weapon: SovietOccupyW
+	# TODO: DamageSound
+	# TODO: DieSound
+
+caarmy02:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 Wash Army Tent
+	# TODO: TechLevel
+	Health:
+		HP: 200
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Wood
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	Armament@Primary:
+		Weapon: AlliedOccupyW
+	Armament@Secondary:
+		Weapon: SovietOccupyW
+	# TODO: DamageSound
+	# TODO: DieSound
+
+caarmy03:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 Wash Army Tent
+	# TODO: TechLevel
+	Health:
+		HP: 200
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Wood
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	Armament@Primary:
+		Weapon: AlliedOccupyW
+	Armament@Secondary:
+		Weapon: SovietOccupyW
+	# TODO: DamageSound
+	# TODO: DieSound
+
+caarmy04:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 Wash Army Tent
+	# TODO: TechLevel
+	Health:
+		HP: 200
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Wood
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	Armament@Primary:
+		Weapon: AlliedOccupyW
+	Armament@Secondary:
+		Weapon: SovietOccupyW
+	# TODO: DamageSound
+	# TODO: DieSound
+
+causfgl:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 US Flag Left
+	# TODO: TechLevel
+	Health:
+		HP: 20
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Steel
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	# TODO: DistributedFire
+	# TODO: DamageSound
+	# TODO: DieSound
+
+cagard01:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 Guard Shack
+	# TODO: TechLevel
+	Health:
+		HP: 100
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Steel
+	# TODO: Explosion
+	# TODO: DebrisAnims
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: DistributedFire
+
+carus01:
+	Tooltip:
+		Name: RA2 Russian Basil's Cathedral
+	# TODO: UIName
+	# TODO: TechLevel
+	Health:
+		HP: 1000
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Concrete
+	# TODO: Explosion
+	# TODO: DestroyAnim
+	# TODO: DebrisAnims
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: CrateBeneath
+	# TODO: CrateBeneathIsMoney
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	Armament@Primary:
+		Weapon: AlliedOccupyW
+	Armament@Secondary:
+		Weapon: SovietOccupyW
+	# TODO: LeaveRubble
+	# TODO: DieSound
+
+cafarm01:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 Farm
+	# TODO: TechLevel
+	Health:
+		HP: 400
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Wood
+	# TODO: Explosion
+	# TODO: DebrisAnims
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 4c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	Armament@Primary:
+		Weapon: AlliedOccupyW
+	Armament@Secondary:
+		Weapon: SovietOccupyW
+
+cafarm02:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 Farm Silo
+	# TODO: TechLevel
+	Health:
+		HP: 400
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Wood
+	# TODO: Explosion
+	# TODO: DebrisAnims
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: Selectable
+	# TODO: BaseNormal
+
+cafrma:
+	Tooltip:
+		Name: RA2 Farmhouse
+	# TODO: UIName
+	# TODO: TechLevel
+	Health:
+		HP: 400
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Wood
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: DebrisAnim
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 4c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	Armament@Primary:
+		Weapon: AlliedOccupyW
+	Armament@Secondary:
+		Weapon: SovietOccupyW
+
+cafrmb:
+	Tooltip:
+		Name: RA2 Outhouse
+	# TODO: UIName
+	# TODO: TechLevel
+	Health:
+		HP: 50
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Wood
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: DebrisAnim
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 4c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	Armament@Primary:
+		Weapon: AlliedOccupyW
+	Armament@Secondary:
+		Weapon: SovietOccupyW
+	# TODO: DamageSound
+	# TODO: DieSound
+
+calit01e:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 Light
+	# TODO: TechLevel
+	Health:
+		HP: 50
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Steel
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: Selectable
+	# TODO: BaseNormal
+
+calit01n:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 Light
+	# TODO: TechLevel
+	Health:
+		HP: 50
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Steel
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: Selectable
+	# TODO: BaseNormal
+
+calit01s:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 Light
+	# TODO: TechLevel
+	Health:
+		HP: 50
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Steel
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: Selectable
+	# TODO: BaseNormal
+
+calit01w:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 Light
+	# TODO: TechLevel
+	Health:
+		HP: 50
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Steel
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: Selectable
+	# TODO: BaseNormal
+
+calit03e:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 Light3E
+	# TODO: TechLevel
+	Health:
+		HP: 50
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Steel
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: Selectable
+	# TODO: BaseNormal
+
+calit03n:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 Light3N
+	# TODO: TechLevel
+	Health:
+		HP: 50
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Steel
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: Selectable
+	# TODO: BaseNormal
+
+calit03s:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 Light3S
+	# TODO: TechLevel
+	Health:
+		HP: 50
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Steel
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: Selectable
+	# TODO: BaseNormal
+
+calit03w:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 Light3W
+	# TODO: TechLevel
+	Health:
+		HP: 50
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Steel
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: Selectable
+	# TODO: BaseNormal
+
+calit02l:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 Light2L
+	# TODO: TechLevel
+	Health:
+		HP: 50
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Steel
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: Selectable
+	# TODO: BaseNormal
+
+calit02r:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 Light2R
+	# TODO: TechLevel
+	Health:
+		HP: 50
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Steel
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: Selectable
+	# TODO: BaseNormal
+
+cahse01:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 American House 01
+	# TODO: TechLevel
+	Health:
+		HP: 600
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Wood
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: DebrisAnim
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	Armament@Primary:
+		Weapon: AlliedOccupyW
+	Armament@Secondary:
+		Weapon: SovietOccupyW
+	# TODO: LeaveRubble
+
+cawt01:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 Water Tower
+	# TODO: TechLevel
+	Health:
+		HP: 400
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Steel
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: DebrisAnim
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	# TODO: DistributedFire
+	# TODO: DamageSound
+
+cats01:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 Twin Silos
+	# TODO: TechLevel
+	Health:
+		HP: 300
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Steel
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: DebrisAnim
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	# TODO: DistributedFire
+
+cabarn02:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 Barn 02
+	# TODO: TechLevel
+	Health:
+		HP: 500
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Wood
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: DebrisAnim
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	Armament@Primary:
+		Weapon: AlliedOccupyW
+	Armament@Secondary:
+		Weapon: SovietOccupyW
+	# TODO: LeaveRubble
+
+cawa2a:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 Wash Pent A
+	# TODO: TechLevel
+	Health:
+		HP: 600
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Concrete
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: DebrisAnim
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	Armament@Primary:
+		Weapon: AlliedOccupyW
+	Armament@Secondary:
+		Weapon: SovietOccupyW
+	# TODO: LeaveRubble
+
+cawa2b:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 Wash Pent B
+	# TODO: TechLevel
+	Health:
+		HP: 600
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Concrete
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: DebrisAnim
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	Armament@Primary:
+		Weapon: AlliedOccupyW
+	Armament@Secondary:
+		Weapon: SovietOccupyW
+	# TODO: LeaveRubble
+
+cawa2c:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 Wash Pent C
+	# TODO: TechLevel
+	Health:
+		HP: 600
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Concrete
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: DebrisAnim
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	Armament@Primary:
+		Weapon: AlliedOccupyW
+	Armament@Secondary:
+		Weapon: SovietOccupyW
+	# TODO: LeaveRubble
+
+cawa2d:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 Wash Pent D
+	# TODO: TechLevel
+	Health:
+		HP: 600
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Concrete
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: DebrisAnim
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	Armament@Primary:
+		Weapon: AlliedOccupyW
+	Armament@Secondary:
+		Weapon: SovietOccupyW
+	# TODO: LeaveRubble
+
+camisc01:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 Barrels
+	# TODO: TechLevel
+	Health:
+		HP: 5
+	# TODO: EligibleForDelayKill
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Concrete
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: Selectable
+	# TODO: BaseNormal
+	# TODO: Explodes
+	# TODO: DeathWeapon
+	# TODO: Repairable
+	# TODO: CanC4
+	# TODO: DamageSound
+
+camisc02:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 Barrel
+	# TODO: TechLevel
+	Health:
+		HP: 5
+	# TODO: EligibleForDelayKill
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Concrete
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: Selectable
+	# TODO: BaseNormal
+	# TODO: Explodes
+	# TODO: DeathWeapon
+	# TODO: Repairable
+	# TODO: CanC4
+	# TODO: DamageSound
+
+camisc03:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 Harvard's Office
+	# TODO: TechLevel
+	Health:
+		HP: 100
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Concrete
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: DebrisAnim
+	# TODO: Selectable
+	# TODO: BaseNormal
+	# TODO: DamageSound
+	# TODO: DieSound
+
+camisc04:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 Mail Box
+	# TODO: TechLevel
+	Health:
+		HP: 10
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Concrete
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: Selectable
+	# TODO: BaseNormal
+	# TODO: DamageSound
+	# TODO: DieSound
+
+camisc05:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 Stack O Pipes
+	# TODO: TechLevel
+	Health:
+		HP: 10
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Concrete
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: Selectable
+	# TODO: BaseNormal
+	# TODO: DamageSound
+	# TODO: DieSound
+
+camisc06:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 V3 Rack
+	# TODO: TechLevel
+	Health:
+		HP: 10
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Concrete
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: Selectable
+	# TODO: BaseNormal
+	# TODO: CanBeOccupied
+	# TODO: CanC4
+	# TODO: DamageSound
+
+camsc10:
+	Tooltip:
+		Name: RA2 McBurger Kong
+	# TODO: UIName
+	# TODO: TechLevel
+	Health:
+		HP: 1000
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: Points
+	Armor:
+		Type: Wood
+	# TODO: Explosion
+	# TODO: DebrisAnims
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	Armament@Primary:
+		Weapon: AlliedOccupyW
+	Armament@Secondary:
+		Weapon: SovietOccupyW
+	# TODO: LeaveRubble
+
+camsc11:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 Tires
+	# TODO: TechLevel
+	Health:
+		HP: 10
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Concrete
+	# TODO: Explosion
+	# TODO: DebrisAnims
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: Selectable
+	# TODO: BaseNormal
+	# TODO: CanBeOccupied
+
+camsc12:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 Bullseye
+	# TODO: TechLevel
+	Health:
+		HP: 100
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Wood
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: Selectable
+	# TODO: BaseNormal
+	# TODO: CanBeOccupied
+
+camsc12a:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 Bullseye 2
+	# TODO: Image
+	# TODO: TechLevel
+	Health:
+		HP: 100
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Wood
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: Selectable
+	# TODO: BaseNormal
+	# TODO: CanBeOccupied
+	Valued:
+		Cost: 600
+
+calab:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 Einstein's Lab
+	# TODO: TechLevel
+	Health:
+		HP: 1000
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Steel
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	Armament@Primary:
+		Weapon: AlliedOccupyW
+	Armament@Secondary:
+		Weapon: SovietOccupyW
+	# TODO: LeaveRubble
+
+camov01:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 Drive In Movie Screen
+	# TODO: TechLevel
+	Health:
+		HP: 500
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Steel
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: DebrisAnim
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+
+camov02:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 Drive In Movie Concession Stand
+	# TODO: TechLevel
+	Health:
+		HP: 1000
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Steel
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: DebrisAnim
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	Armament@Primary:
+		Weapon: AlliedOccupyW
+	Armament@Secondary:
+		Weapon: SovietOccupyW
+	# TODO: LeaveRubble
+
+cabunk01:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 Concrete Bunker 01
+	# TODO: TechLevel
+	Health:
+		HP: 2000
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Steel
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: DebrisAnim
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	Armament@Primary:
+		Weapon: AlliedOccupyW
+	Armament@Secondary:
+		Weapon: SovietOccupyW
+	# TODO: LeaveRubble
+
+cabunk02:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 Concrete Bunker 02
+	# TODO: TechLevel
+	Health:
+		HP: 2000
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Steel
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: DebrisAnim
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	Armament@Primary:
+		Weapon: AlliedOccupyW
+	Armament@Secondary:
+		Weapon: SovietOccupyW
+	# TODO: LeaveRubble
+
+camsc13:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 Derelict Tank
+	# TODO: TechLevel
+	Health:
+		HP: 800
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Concrete
+	# TODO: Explosion
+	# TODO: DebrisAnims
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: Selectable
+	# TODO: BaseNormal
+	# TODO: CanBeOccupied
+
+castl05a:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 Busch Stadium A
+	# TODO: TechLevel
+	Health:
+		HP: 600
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Concrete
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: DebrisAnim
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: LeaveRubble
+	# TODO: Height
+
+castl05b:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 Busch Stadium B
+	# TODO: TechLevel
+	Health:
+		HP: 600
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Concrete
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: DebrisAnim
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: LeaveRubble
+
+castl05c:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 Busch Stadium C
+	# TODO: TechLevel
+	Health:
+		HP: 600
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Concrete
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: DebrisAnim
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: LeaveRubble
+
+castl05d:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 Busch Stadium D
+	# TODO: TechLevel
+	Health:
+		HP: 600
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Concrete
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: DebrisAnim
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: LeaveRubble
+
+castl05e:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 Busch Stadium E
+	# TODO: TechLevel
+	Health:
+		HP: 600
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Concrete
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: DebrisAnim
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: LeaveRubble
+
+castl05f:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 Busch Stadium F
+	# TODO: TechLevel
+	Health:
+		HP: 600
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Concrete
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: DebrisAnim
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: LeaveRubble
+
+castl05g:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 Busch Stadium G
+	# TODO: TechLevel
+	Health:
+		HP: 600
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Concrete
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: DebrisAnim
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: LeaveRubble
+
+castl05h:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 Busch Stadium H
+	# TODO: TechLevel
+	Health:
+		HP: 600
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Concrete
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: DebrisAnim
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: LeaveRubble
+
+capol01e:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 Telephone Pole
+	# TODO: TechLevel
+	Health:
+		HP: 20
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Concrete
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: Selectable
+	# TODO: BaseNormal
+
+capol01n:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 Telephone Pole
+	# TODO: TechLevel
+	Health:
+		HP: 20
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Concrete
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: Selectable
+	# TODO: BaseNormal
+
+capol01s:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 Telephone Pole
+	# TODO: TechLevel
+	Health:
+		HP: 20
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Concrete
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: Selectable
+	# TODO: BaseNormal
+	# TODO: DamageSound
+	# TODO: DieSound
+
+capol01w:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 Telephone Pole
+	# TODO: TechLevel
+	Health:
+		HP: 20
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Concrete
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: Selectable
+	# TODO: BaseNormal
+	# TODO: DamageSound
+	# TODO: DieSound
+
+casin01e:
+	Tooltip:
+		Name: RA2 Stop!
+	# TODO: TechLevel
+	Health:
+		HP: 5
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Concrete
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: Selectable
+	# TODO: BaseNormal
+	# TODO: DamageSound
+	# TODO: DieSound
+
+casin01w:
+	Tooltip:
+		Name: RA2 Stop!
+	# TODO: TechLevel
+	Health:
+		HP: 5
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Concrete
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: Selectable
+	# TODO: BaseNormal
+	# TODO: DamageSound
+	# TODO: DieSound
+
+casin01s:
+	Tooltip:
+		Name: RA2 Stop!
+	# TODO: TechLevel
+	Health:
+		HP: 5
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Concrete
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: Selectable
+	# TODO: BaseNormal
+
+casin01n:
+	Tooltip:
+		Name: RA2 Stop!
+	# TODO: TechLevel
+	Health:
+		HP: 5
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Concrete
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: Selectable
+	# TODO: BaseNormal
+	# TODO: DamageSound
+	# TODO: DieSound
+
+cakrmw:
+	Inherits: ^Building
+	Tooltip:
+		Name: RA2 Kremlen Walls
+	# TODO: BuildCat
+	Health:
+		HP: 300
+	Buildable:
+		Prerequisites: barracks, ~<fact-type>.british, ~<fact-type>.french, ~<fact-type>.germans, ~<fact-type>.americans, ~<fact-type>.alliance, ~<fact-type>.russians, ~<fact-type>.confederation, ~<fact-type>.africans, ~<fact-type>.arabs, 
+	Armor:
+		Type: Wood
+	Crushable:
+		CrushSound: wallcrushkremlin.aud
+	# TODO: Crushable
+	# TODO: Wall
+	# TODO: TechLevel
+	# TODO: Adjacent
+	RevealsShroud:
+		Range: 0c0
+	# TODO: Nominal
+	# TODO: Selectable
+	# TODO: Owner
+	Valued:
+		Cost: 25
+	# TODO: Insignificant
+	# TODO: Points
+	# TODO: Repairable
+	# TODO: Explosion
+	# TODO: ThreatPosed
+	# TODO: BaseNormal
+	# TODO: AIBuildThis
+
+carufgl:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 RU Flag Left
+	# TODO: TechLevel
+	Health:
+		HP: 20
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Steel
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	# TODO: DistributedFire
+	# TODO: DamageSound
+	# TODO: DieSound
+
+cafrfgl:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 FR Flag Left
+	# TODO: TechLevel
+	Health:
+		HP: 20
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Steel
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	# TODO: DistributedFire
+	# TODO: DamageSound
+	# TODO: DieSound
+
+cairfgl:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 IR Flag Left
+	# TODO: TechLevel
+	Health:
+		HP: 20
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Steel
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	# TODO: DistributedFire
+
+cacufgl:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 CU Flag Left
+	# TODO: TechLevel
+	Health:
+		HP: 20
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Steel
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	# TODO: DistributedFire
+	# TODO: DamageSound
+	# TODO: DieSound
+
+caskfgl:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 SK Flag Left
+	# TODO: TechLevel
+	Health:
+		HP: 20
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Steel
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	# TODO: DistributedFire
+	# TODO: DamageSound
+	# TODO: DieSound
+
+calbfgl:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 LB Flag Left
+	# TODO: TechLevel
+	Health:
+		HP: 20
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Steel
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	# TODO: DistributedFire
+	# TODO: DamageSound
+	# TODO: DieSound
+
+cagefgl:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 GE Flag Left
+	# TODO: TechLevel
+	Health:
+		HP: 20
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Steel
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	# TODO: DistributedFire
+	# TODO: DamageSound
+	# TODO: DieSound
+
+caukfgl:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 UK Flag Left
+	# TODO: TechLevel
+	Health:
+		HP: 20
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Steel
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	# TODO: DistributedFire
+	# TODO: DamageSound
+	# TODO: DieSound
+
+capofgl:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 PO Flag Left
+	# TODO: TechLevel
+	Health:
+		HP: 20
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Steel
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: MaxNumberOccupants
+	# TODO: DistributedFire
+	# TODO: DamageSound
+	# TODO: DieSound
+
+camiam08:
+	# TODO: UIName
+	Tooltip:
+		Name: RA2 Arizona Memorial
+	# TODO: TechLevel
+	Health:
+		HP: 1000
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Steel
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: DebrisAnim
+	# TODO: BaseNormal
+	RevealsShroud:
+		Range: 6c0
+	# TODO: ClickRepairable
+	# TODO: CanBeOccupied
+	# TODO: LeaveRubble
+
+ufo:
+	Tooltip:
+		Name: Scrin Ship
+	# TODO: TechLevel
+	Health:
+		HP: 1000
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Concrete
+	# TODO: Explosion
+	# TODO: MaxDebris
+	# TODO: PlaceAnywhere
+	# TODO: BaseNormal
+
+ammocrat:
+	# TODO: UIName
+	Tooltip:
+		Name: Ammo Crates
+	# TODO: Image
+	# TODO: Selectable
+	# TODO: TechLevel
+	Health:
+		HP: 1
+	# TODO: EligibleForDelayKill
+	# TODO: Insignificant
+	# TODO: Nominal
+	# TODO: RadarInvisible
+	# TODO: Points
+	Armor:
+		Type: Wood
+	# TODO: Explosion
+	# TODO: Maxdebris
+	# TODO: PlaceAnywhere
+	# TODO: BaseNormal
+	# TODO: ThreatPosed
+	# TODO: SpecialThreatValue
+	# TODO: Explodes
+	# TODO: DeathWeapon
+	# TODO: CanC4
+	# TODO: DamageSound
+
+gtgcan:
+	Inherits: ^Building
+	Tooltip:
+		Name: Grand Cannon
+	# TODO: BuildCat
+	Health:
+		HP: 900
+	Armor:
+		Type: Steel
+	# TODO: TechLevel
+	Buildable:
+		Prerequisites: radar, gacnst, ~<fact-type>.british, ~<fact-type>.french, ~<fact-type>.germans, ~<fact-type>.americans, ~<fact-type>.alliance, 
+	# TODO: Adjacent
+	RevealsShroud:
+		Range: 10c0
+	# TODO: Owner
+	Valued:
+		Cost: 2000
+	# TODO: RequiredHouses
+	# TODO: Points
+	# TODO: Power
+	# TODO: Crewed
+	# TODO: ROT
+	Armament@Primary:
+		Weapon: GrandCannonWeapon
+	# TODO: Capturable
+	# TODO: Explosion
+	# TODO: DebrisAnims
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: Powered
+	# TODO: Turret
+	# TODO: TurretAnim
+	# TODO: TurretAnimIsVoxel
+	# TODO: TurretAnimX
+	# TODO: TurretAnimY
+	# TODO: TurretAnimZAdjust
+	# TODO: TurretRecoil
+	# TODO: TurretTravel
+	# TODO: BarrelTravel
+	# TODO: BarrelCompressFrames
+	# TODO: BarrelHoldFrames
+	# TODO: BarrelRecoverFrames
+	# TODO: TurretRotateSound
+	# TODO: WorkingSound
+	# TODO: NotWorkingSound
+	# TODO: BaseNormal
+	# TODO: AIBuildThis
+
+nanrct:
+	Inherits: ^Building
+	Tooltip:
+		Name: Nuclear Reactor
+	# TODO: BuildCat
+	Health:
+		HP: 1000
+	Armor:
+		Type: Concrete
+	# TODO: TechLevel
+	Buildable:
+		Prerequisites: natech, nacnst, ~<fact-type>.british, ~<fact-type>.french, ~<fact-type>.germans, ~<fact-type>.americans, ~<fact-type>.alliance, ~<fact-type>.russians, ~<fact-type>.confederation, ~<fact-type>.africans, ~<fact-type>.arabs, 
+	# TODO: Adjacent
+	RevealsShroud:
+		Range: 5c0
+	# TODO: Owner
+	# TODO: AIBasePlanningSide
+	Valued:
+		Cost: 1000
+	# TODO: Points
+	# TODO: Power
+	# TODO: Crewed
+	# TODO: Capturable
+	# TODO: DamageSmokeOffset
+	# TODO: MaxDebris
+	# TODO: MinDebris
+	# TODO: DebrisAnims
+	# TODO: DamageParticleSystems
+	# TODO: Powered
+	# TODO: IsImmuneToRadiation
+	# TODO: Explodes
+	# TODO: DeathWeapon
+	# TODO: DeathWeaponDamageModifier
+	# TODO: Spyable
+
+naflak:
+	Inherits: ^Building
+	Tooltip:
+		Name: Flak Cannon
+	# TODO: BuildCat
+	Health:
+		HP: 900
+	Armor:
+		Type: Steel
+	# TODO: TechLevel
+	Buildable:
+		Prerequisites: barracks, nacnst, ~<fact-type>.british, ~<fact-type>.french, ~<fact-type>.germans, ~<fact-type>.americans, ~<fact-type>.alliance, ~<fact-type>.russians, ~<fact-type>.confederation, ~<fact-type>.africans, ~<fact-type>.arabs, 
+	# TODO: Adjacent
+	RevealsShroud:
+		Range: 5c0
+	# TODO: Owner
+	# TODO: AIBasePlanningSide
+	Valued:
+		Cost: 1000
+	# TODO: BaseNormal
+	# TODO: Points
+	# TODO: Power
+	# TODO: Crewed
+	Armament@Primary:
+		Weapon: FlakWeapon
+	# TODO: LandTargeting
+	# TODO: NavalTargeting
+	# TODO: Capturable
+	# TODO: Explosion
+	# TODO: DebrisAnims
+	# TODO: Maxdebris
+	# TODO: MinDebris
+	# TODO: ThreatPosed
+	# TODO: IsBaseDefense
+	# TODO: Powered
+	# TODO: ROT
+	# TODO: Turret
+	# TODO: TurretAnim
+	# TODO: TurretAnimIsVoxel
+	# TODO: TurretAnimX
+	# TODO: TurretAnimY
+	# TODO: TurretAnimZAdjust
+	# TODO: HasStupidGuardMode
+	# TODO: WorkingSound
+	# TODO: NotWorkingSound
+

@@ -1,0 +1,69 @@
+bus:
+	Inherits: ^Vehicle
+	Valued:
+		Cost: 800
+	Tooltip:
+		Name: School Bus
+	Mobile:
+		ROT: 5
+		Speed: 113
+	Health:
+		HP: 100
+	Armor:
+		Type: Light
+	RevealsShroud:
+		Range: 5c0
+	Cargo:
+		Types: Infantry
+		MaxWeight: 20
+		PipCount: 5
+	RenderSprites:
+	Selectable:
+		Bounds: 64, 52, 0, -6
+		Voice: CarVoice
+	RenderVoxels:
+	WithVoxelBody:
+
+pick:
+	Inherits: ^Vehicle
+	Valued:
+		Cost: 800
+	Tooltip:
+		Name: Pickup Truck
+	Mobile:
+		ROT: 5
+		Speed: 113
+	Health:
+		HP: 100
+	Armor:
+		Type: Light
+	RevealsShroud:
+		Range: 5c0
+	RenderSprites:
+	Selectable:
+		Bounds: 64, 52, 0, -6
+		Voice: CarVoice
+	RenderVoxels:
+	WithVoxelBody:
+
+car:
+	Inherits: ^Vehicle
+	Valued:
+		Cost: 800
+	Tooltip:
+		Name: Automobile
+	Mobile:
+		ROT: 5
+		Speed: 113
+	Health:
+		HP: 100
+	Armor:
+		Type: Light
+	RevealsShroud:
+		Range: 5c0
+	RenderSprites:
+	Selectable:
+		Bounds: 64, 52, 0, -6
+		Voice: CarVoice
+	RenderVoxels:
+	WithVoxelBody:

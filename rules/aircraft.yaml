@@ -1,0 +1,34 @@
+zep:
+	Inherits: ^Aircraft
+	Valued:
+		Cost: 2000
+	Tooltip:
+		Name: Kirov Airship
+	Buildable:
+		Queue: Aircraft
+		BuildPaletteOrder: 20
+		Prerequisites: ~naweap, ~natech
+	Selectable:
+		Voice: KirovVoice
+	Helicopter:
+		CruiseAltitude: 5600
+		ROT: 5
+		Speed: 50
+	Health:
+		HP: 2000
+	Armor:
+		Type: Light
+	RevealsShroud:
+		Range: 8c0
+#	Armament: # Causes hang when attacking at 0 range
+#		Weapon: BlimpBomb
+#	AttackFrontal:
+#	AutoTarget:
+	RenderSprites:
+	RenderVoxels:
+	WithVoxelBody:
+	Hovers:
+		OffsetModifier: -10
+	Explodes:
+		Weapon: UnitExplode
+		Chance: 75

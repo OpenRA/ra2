@@ -1,0 +1,110 @@
+e2:
+	Inherits: ^Infantry
+	Buildable:
+		Queue: Infantry
+		Prerequisites: ~nahand
+		BuildPaletteOrder: 10
+	Valued:
+		Cost: 100
+	Tooltip:
+		Name: Conscript
+		Description: Basic foot-soldier.
+	Selectable:
+		Voice: ConscriptVoice
+		Bounds: 20, 30, 0, -11
+	Health:
+		HP: 125
+	Mobile:
+		Speed: 34
+	Passenger:
+		PipType: Green
+	RevealsShroud:
+		Range: 5c0
+	AttackFrontal:
+	Armament@primary:
+		Weapon: M1Carbine
+		UpgradeTypes: eliteweapon
+		UpgradeMaxEnabledLevel: 0
+		UpgradeMaxAcceptedLevel: 1
+	Armament@elite:
+		Weapon: M1CarbineE
+		UpgradeTypes: eliteweapon
+		UpgradeMinEnabledLevel: 1
+	WithInfantryBody:
+
+flakt:
+	Inherits: ^Infantry
+	Buildable:
+		Queue: Infantry
+		Prerequisites: ~naradr, ~nahand
+		BuildPaletteOrder: 20
+	Valued:
+		Cost: 100
+	Tooltip:
+		Name: Flak Trooper
+		Description: Anti-Air/Anti-Infantry unit. \n  Strong vs Aircraft, Infantry\n  Weak vs Vehicles
+	Selectable:
+		Voice: FlakTrooperVoice
+		Bounds: 20, 30, 0, -11
+	Health:
+		HP: 100
+	Mobile:
+		Speed: 34
+	Passenger:
+		PipType: Green
+	RevealsShroud:
+		Range: 5c0
+	AttackFrontal:
+	Armament@primary:
+		Weapon: FlakGuyGun
+		UpgradeTypes: eliteweapon
+		UpgradeMaxEnabledLevel: 0
+		UpgradeMaxAcceptedLevel: 1
+	Armament@secondary:
+		Weapon: FlakGuyAAGun
+		UpgradeTypes: eliteweapon
+		UpgradeMaxEnabledLevel: 0
+		UpgradeMaxAcceptedLevel: 1
+	Armament@primary-elite:
+		Weapon: FlakGuyGunE
+		UpgradeTypes: eliteweapon
+		UpgradeMinEnabledLevel: 1
+	Armament@secondary-elite:
+		Weapon: FlakGuyAAGunE
+		UpgradeTypes: eliteweapon
+		UpgradeMinEnabledLevel: 1
+	WithInfantryBody:
+		IdleAnimation:
+
+
+terror:
+	Inherits: ^Infantry
+	Buildable:
+		Queue: Infantry
+		BuildAtProductionType: Infantry
+		BuildPaletteOrder: 120
+		Prerequisites: ~naradr, ~infantry.cuba
+	Valued:
+		Cost: 200
+	Tooltip:
+		Name: Terrorist
+		Description: The Terrorist carries C4 charges taped to his body and kamikazes enemies \nblowing them up quickly and efficiently.
+	Selectable:
+		Voice: TerroristVoice
+		Bounds: 20, 30, 0, -11
+	Health:
+		HP: 75
+	Mobile:
+		Speed: 71
+	RevealsShroud:
+		Range: 6c0
+	Armor:
+		Type: Flak
+	Passenger:
+		PipType: Red
+	Explodes:
+		Weapon: TerrorBomb
+		EmptyWeapon: TerrorBomb
+	DemoTruck:
+	AttackFrontal:
+	WithInfantryBody:
