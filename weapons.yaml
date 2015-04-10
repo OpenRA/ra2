@@ -1190,3 +1190,37 @@ Medusa:
 		Explosion: small_watersplash
 		ImpactSound: gexpwasa.wav
 		ValidImpactTypes: Water
+
+Comet:
+	ValidTargets: Ground, Water
+	ReloadDelay: 100
+	Range: 10c0
+	Report: vpriatta.wav
+	Projectile: LaserZap
+		BeamWidth: 5
+		BeamDuration: 15
+		UsePlayerColor: true
+	Warhead@1Dam: SpreadDamage
+		Spread: 800
+		Damage: 100
+		DeathType: 1
+		Versus:
+			None: 100
+			Flak: 100
+			Plate: 100
+			Light: 75
+			Medium: 50
+			Heavy: 50
+			Wood: 200
+			Steel: 200
+			Concrete: 200
+	Warhead@2Eff: CreateEffect
+		Explosion: medium_clsn
+		ImpactSound: gexp14a.wav
+		InvalidImpactTypes: Water
+	Warhead@3EffWater: CreateEffect
+		Explosion: small_watersplash
+		ImpactSound: gexpwasa.wav
+		ValidImpactTypes: Water
+	Warhead@4Smu: LeaveSmudge
+		SmudgeType: SmallCrater, SmallScorch

@@ -153,3 +153,42 @@ tnkd:
 	RenderVoxels:
 		NormalsPalette: ts-normals
 	WithVoxelBody:
+
+sref:
+	Inherits: ^Vehicle
+	Buildable:
+		Queue: Vehicle
+		BuildPaletteOrder: 100
+		Prerequisites: ~gatech, gaweap
+	Valued:
+		Cost: 1200
+	Tooltip:
+		Name: Prism Tank
+		Description: Fires deadly beams of light\n  Strong vs Infantry, Vehicles\n  Weak vs Aircraft
+	Selectable:
+		Voice: AlliedVehicleVoice
+		Bounds: 30,30
+	Health:
+		HP: 150
+	Armor:
+		Type: Heavy
+	Mobile:
+		ROT: 6
+		Speed: 60
+	RevealsShroud:
+		Range: 8c0
+	Turreted:
+		ROT: 10
+		Offset: -30,0,85
+	Armament:
+		Weapon: Comet
+		LocalOffset: 640,0,427
+	AttackTurreted:
+	AutoTarget:
+	Explodes:
+		Weapon: UnitExplodeSmall
+		EmptyWeapon: UnitExplodeSmall
+	RenderSprites:
+	RenderVoxels:
+	WithVoxelTurret:
+	WithVoxelBody:
