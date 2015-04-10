@@ -130,7 +130,7 @@ tnkd:
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 20
- 		Prerequisites: ~vehicles.germany
+		Prerequisites: ~vehicles.germany
 	Mobile:
 		Speed: 70
 		ROT: 5
@@ -153,6 +153,53 @@ tnkd:
 	RenderVoxels:
 		NormalsPalette: ts-normals
 	WithVoxelBody:
+
+fv:
+	Inherits: ^Vehicle
+	Valued:
+		Cost: 600
+	Tooltip:
+		Name: Infantry Fighting Vehicle
+		Description: Multi-Purpose Vehicle.\nSpecial Ability: Armament depends on passenger.
+	Buildable:
+		Queue: Vehicle
+		BuildPaletteOrder: 30
+		Prerequisites: ~gaweap
+	Mobile:
+		Speed: 128
+		ROT: 5
+	Health:
+		HP: 200
+	Armor:
+		Type: Light
+	RevealsShroud:
+		Range: 8c0
+	Turreted:
+		ROT: 5
+	Armament@primary:
+		Weapon: HoverMissile
+		LocalOffset: 640, 0, 384
+		UpgradeTypes: eliteweapon
+		UpgradeMaxEnabledLevel: 0
+		UpgradeMaxAcceptedLevel: 1
+	Armament@elite:
+		Weapon: HoverMissileE
+		LocalOffset: 640, 0, 384
+		UpgradeTypes: eliteweapon
+		UpgradeMinEnabledLevel: 1
+	AttackTurreted:
+	AutoTarget:
+	Cargo:
+		Types: Infantry
+		MaxWeight: 1
+		PipCount: 1
+	RenderSprites:
+	Selectable:
+		Bounds: 64, 52, 0, -6
+		Voice: AlliedVehicleVoice
+	RenderVoxels:
+	WithVoxelBody:
+	WithVoxelTurret:
 
 sref:
 	Inherits: ^Vehicle

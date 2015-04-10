@@ -1191,6 +1191,96 @@ Medusa:
 		ImpactSound: gexpwasa.wav
 		ValidImpactTypes: Water
 
+HoverMissile:
+	ReloadDelay: 50
+	Burst: 2
+	Range: 6c0
+	Report: vifvatta.wav
+	ValidTargets: Ground, Air
+	Projectile: Missile
+		Speed: 213
+		Arm: 2
+		Blockable: false
+		Shadow: true
+		Inaccuracy: 128
+		Image: DRAGON
+		RateOfTurn: 8
+		RangeLimit: 35
+	Warhead@1Dam: SpreadDamage
+		Spread: 128
+		Damage: 25
+		DeathType: 2
+		ValidTargets: Ground, Air
+		Versus:
+			None: 100
+			Flak: 90
+			Plate: 80
+			Light: 70
+			Medium: 35
+			Heavy: 35
+			Wood: 75
+			Steel: 40
+			Concrete: 20
+	Warhead@2Eff: CreateEffect
+		Explosion: small_clsn
+		ImpactSound: expnew12.aud
+		InvalidImpactTypes: Water, Air
+	Warhead@3EffWater: CreateEffect
+		Explosion: small_watersplash
+		ImpactSound: ssplash3.aud
+		ValidImpactTypes: Water
+	Warhead@4EffAir: CreateEffect
+		Explosion: small_twlt
+		ImpactSound: expnew12.aud
+		ValidImpactTypes: Air
+	Warhead@5: LeaveSmudge
+		SmudgeType: SmallCrater
+
+HoverMissileE:
+	ReloadDelay: 50
+	Burst: 4
+	Range: 6c0
+	Report: vifvatta.wav
+	ValidTargets: Ground, Air
+	Projectile: Missile
+		Speed: 213
+		Arm: 2
+		Blockable: false
+		Shadow: true
+		Inaccuracy: 128
+		Image: DRAGON
+		RateOfTurn: 8
+		RangeLimit: 35
+	Warhead@1Dam: SpreadDamage
+		Spread: 128
+		Damage: 80
+		DeathType: 2
+		ValidTargets: Ground, Air
+		Versus:
+			None: 100
+			Flak: 90
+			Plate: 80
+			Light: 70
+			Medium: 35
+			Heavy: 35
+			Wood: 75
+			Steel: 40
+			Concrete: 20
+	Warhead@2Eff: CreateEffect
+		Explosion: small_clsn
+		ImpactSound: expnew12.aud
+		InvalidImpactTypes: Water, Air
+	Warhead@3EffWater: CreateEffect
+		Explosion: small_watersplash
+		ImpactSound: ssplash3.aud
+		ValidImpactTypes: Water
+	Warhead@4EffAir: CreateEffect
+		Explosion: small_twlt
+		ImpactSound: expnew12.aud
+		ValidImpactTypes: Air
+	Warhead@5: LeaveSmudge
+		SmudgeType: SmallCrater
+
 Comet:
 	ValidTargets: Ground, Water
 	ReloadDelay: 100
