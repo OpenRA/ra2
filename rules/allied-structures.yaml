@@ -93,9 +93,6 @@ gapile:
 		Description: Trains infantry.
 	ProvidesCustomPrerequisite:
 		Prerequisite: barracks
-	ProvidesCustomPrerequisite@allies:
-		Race: allies, america, germany, england, france, korea
-		Prerequisite: infantry.allies
 	ProvidesCustomPrerequisite@england:
 		Prerequisite: infantry.england
 		Race: england

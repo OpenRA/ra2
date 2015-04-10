@@ -150,7 +150,7 @@ spy:
 		Queue: Infantry
 		BuildAtProductionType: Infantry
 		BuildPaletteOrder: 90
-		Prerequisites: ~gatech, ~infantry.allies
+		Prerequisites: gatech, gapile
 	Valued:
 		Cost: 500
 	DisguiseToolTip:
