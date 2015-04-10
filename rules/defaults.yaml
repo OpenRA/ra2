@@ -5,7 +5,7 @@
 	Selectable:
 		Priority: 3
 	TargetableBuilding:
-		TargetTypes: Ground, C4, DetonateAttack
+		TargetTypes: Ground, C4, DetonateAttack, SpyInfiltrate
 	Building:
 		Dimensions: 1,1
 		Footprint: x
@@ -177,7 +177,7 @@
 	Selectable:
 		Voice: Infantry
 	TargetableUnit:
-		TargetTypes: Ground, Infantry, DetonateAttack
+		TargetTypes: Ground, Infantry, DetonateAttack, Disguise
 	RenderSprites:
 	WithInfantryBody:
 		IdleSequences: idle1,idle2

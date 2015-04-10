@@ -144,6 +144,40 @@ snipe:
 		Weapon: awp
 	AttackFrontal:
 
+spy:
+	Inherits: ^Infantry
+	Buildable:
+		Queue: Infantry
+		BuildAtProductionType: Infantry
+		BuildPaletteOrder: 90
+		Prerequisites: ~gatech, ~infantry.allies
+	Valued:
+		Cost: 500
+	DisguiseToolTip:
+		Name: Spy
+		GenericName: Soldier
+		Description: Infiltrates enemy structures for intel or\nsabotage. Exact effect depends on the\nbuilding infiltrated.\n  Strong vs Nothing\n  Weak vs Everything\n  Special Ability: Disguises
+	Selectable:
+		Voice: SpyVoice
+		Bounds: 12,17,0,-9
+	Health:
+		HP: 25
+	Mobile:
+		Speed: 56
+	RevealsShroud:
+		Range: 5c0
+	Passenger:
+		PipType: Yellow
+	TakeCover:
+	Disguise:
+	Infiltrates:
+		Types: SpyInfiltrate
+	-AutoTarget:
+	-WithInfantryBody:
+	WithDisguisingInfantryBody:
+		IdleAnimations: idle1,idle2
+		StandAnimations: stand
+
 tany:
 	Inherits: ^Infantry
 	Buildable:
