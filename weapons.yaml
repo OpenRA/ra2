@@ -1166,9 +1166,45 @@ RadBeamWeaponE:
 			Wood: 0
 			Steel: 0
 			Concrete: 0
+
 155mm:
 	ReloadDelay: 110
 	Range: 8c0
+	Report: vdesatta.wav, vrdesattb.wav
+	Projectile: Bullet
+		Speed: 40c0
+		Image: 120mm
+		Shadow: true
+		Angle: 62
+	Warhead@1Dam: SpreadDamage
+		Spread: 128
+		Damage: 60
+		DeathType: 2
+		Versus:
+			None: 100
+			Flak: 80
+			Plate: 60
+			Light: 100
+			Medium: 60
+			Heavy: 60
+			Wood: 100
+			Steel: 80
+			Concrete: 60
+	Warhead@2Eff: CreateEffect
+		Explosion: medium_clsn
+		ImpactSound: gexp14a.wav
+		InvalidImpactTypes: Water
+	Warhead@3EffWater: CreateEffect
+		Explosion: small_watersplash
+		ImpactSound: gexpwasa.wav
+		ValidImpactTypes: Water
+	Warhead@4Smu: LeaveSmudge
+		SmudgeType: SmallCrater, SmallScorch
+
+155mmE:
+	ReloadDelay: 110
+	Range: 8c0
+	Burst: 2
 	Report: vdesatta.wav, vrdesattb.wav
 	Projectile: Bullet
 		Speed: 40c0
