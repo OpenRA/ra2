@@ -194,7 +194,6 @@ snipe:
 
 spy:
 	stand:
-		Start: 0
 		Facings: 8
 	run:
 		Start: 8
@@ -221,11 +220,9 @@ spy:
 		Start: 149
 		Length: 14
 	die6: electro
-		Start: 0
 		Length: *
 		Tick: 120
 	die-crushed: death_c
-		Start: 0
 		Length: 4
 		Tick: 80
 	shoot:
@@ -239,7 +236,6 @@ spy:
 		Facings: 8
 		Tick: 80
 	icon: spyicon
-		Start: 0
 
 tany:
 	stand:

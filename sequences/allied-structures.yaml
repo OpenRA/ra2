@@ -229,7 +229,6 @@ gayard:
 		Start: 2
 		ShadowStart: 5
 	idle-crane: ggyard_a
-		Start: 0
 		Length: 15
 		ShadowStart: 30
 	damaged-idle-crane: ggyard_a
@@ -237,7 +236,6 @@ gayard:
 		Length: 15
 		ShadowStart: 45
 	idle-waves: ggyard_c
-		Start: 0
 		Length: 15
 		ShadowStart: 30
 	damaged-idle-waves: ggyard_c
@@ -245,7 +243,6 @@ gayard:
 		Length: 15
 		ShadowStart: 30
 	make: gtyardmk
-		Start: 0
 		Length: 25
 		ShadowStart: 25
 		TilesetOverrides:
@@ -478,7 +475,6 @@ gtgcan:
 			URBAN: URBAN
 		ZOffset: 0
 	muzzle: gcmuzzle
-		Start: 0
 		Length: *
 		Offset: 0,0
 		UseTilesetCode: false
@@ -501,7 +497,6 @@ gaspysat:
 		ShadowStart: 4
 		Tick: 180
 	idle-dish: ggspst_a
-		Start: 0
 		Length: 16
 		Tick: 180
 	damaged-idle-dish: ggspst_a

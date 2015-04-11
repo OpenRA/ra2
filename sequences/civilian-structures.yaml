@@ -45,7 +45,6 @@ gasand:
 
 cawash01:
 	idle: cgwash01
-		Start: 0
 		ShadowStart: 4
 		Offset: 0, -60
 	damaged-idle: cgwash01
@@ -55,7 +54,6 @@ cawash01:
 
 cawash03:
 	idle: cuwash03
-		Start: 0
 		ShadowStart: 4
 		Offset: -15, -53
 	damaged-idle: cuwash03
@@ -65,7 +63,6 @@ cawash03:
 
 cawash04:
 	idle: cuwash04
-		Start: 0
 		ShadowStart: 4
 		Offset: 0, -60
 	damaged-idle: cuwash04
@@ -75,7 +72,6 @@ cawash04:
 
 cawash05:
 	idle: cuwash05
-		Start: 0
 		ShadowStart: 4
 		Offset: -30, -45
 	damaged-idle: cuwash05
@@ -85,7 +81,6 @@ cawash05:
 
 cawash07:
 	idle: cuwash07
-		Start: 0
 		ShadowStart: 4
 		Offset: 0, -45
 	damaged-idle: cuwash07
@@ -95,7 +90,6 @@ cawash07:
 		
 cawash09:
 	idle: cuwash09
-		Start: 0
 		ShadowStart: 4
 		Offset: 0, -45
 	damaged-idle: cuwash09
@@ -105,7 +99,6 @@ cawash09:
 
 cawash10:
 	idle: cuwash10
-		Start: 0
 		ShadowStart: 4
 		Offset: 0, -60
 	damaged-idle: cuwash10
@@ -115,7 +108,6 @@ cawash10:
 
 cawash11:
 	idle: cuwash11
-		Start: 0
 		ShadowStart: 4
 		Offset: 0, -60
 	damaged-idle: cuwash11
@@ -125,7 +117,6 @@ cawash11:
 		
 cawash13:
 	idle: cuwash13
-		Start: 0
 		ShadowStart: 4
 		Offset: 15, -53
 	damaged-idle: cuwash13
@@ -135,7 +126,6 @@ cawash13:
 		
 cawash14:
 	idle: cgwash14
-		Start: 0
 		ShadowStart: 4
 		Offset: 0, -45
 	damaged-idle: cgwash14
@@ -145,7 +135,6 @@ cawash14:
 
 canewy01:
 	idle: cunewy01
-		Start: 0
 		ShadowStart: 4
 		Offset: 0, -60
 	damaged-idle: cunewy01
@@ -155,7 +144,6 @@ canewy01:
 		
 cawsh12:
 	idle: cgwsh12
-		Start: 0
 		ShadowStart: 4
 		Offset: 0, -45
 	damaged-idle: cgwsh12
@@ -165,7 +153,6 @@ cawsh12:
 
 caarmy01:
 	idle: cuarmy01
-		Start: 0
 		ShadowStart: 4
 		Offset: -15, -38
 	damaged-idle: cuarmy01
@@ -175,7 +162,6 @@ caarmy01:
 
 cawa2a:
 	idle: cuwa2a
-		Start: 0
 		ShadowStart: 4
 		Offset: 0, -45
 	damaged-idle: cuwa2a
@@ -185,7 +171,6 @@ cawa2a:
 
 cawa2b:
 	idle: cuwa2b
-		Start: 0
 		ShadowStart: 4
 		Offset: 0, -45
 	damaged-idle: cuwa2b
@@ -195,7 +180,6 @@ cawa2b:
 
 cawa2c:
 	idle: cuwa2c
-		Start: 0
 		ShadowStart: 4
 		Offset: 0, -45
 	damaged-idle: cuwa2c
@@ -205,7 +189,6 @@ cawa2c:
 
 cawa2d:
 	idle: cuwa2d
-		Start: 0
 		ShadowStart: 4
 		Offset: 0, -45
 	damaged-idle: cuwa2d
@@ -215,7 +198,6 @@ cawa2d:
 
 cafarm01:
 	idle: cufarm01
-		Start: 0
 		ShadowStart: 4
 		Offset: 0, -30
 	damaged-idle: cufarm01
@@ -225,7 +207,6 @@ cafarm01:
 
 cafarm02:
 	idle: cufarm02
-		Start: 0
 		ShadowStart: 4
 		Offset: 0, -16
 	damaged-idle: cufarm02
@@ -235,7 +216,6 @@ cafarm02:
 
 causfgl:
 	idle: cuusfgl
-		Start: 0
 		ShadowStart: 4
 		Offset: 0, -15
 	damaged-idle: cuusfgl
@@ -245,17 +225,14 @@ causfgl:
 
 camisc01:
 	idle: cumisc01
-		Start: 0
 		ShadowStart: 4
 		Offset: 0, -15
 	damaged-idle: cumisc01
-		Start: 0
 		ShadowStart: 4
 		Offset: 0, -15
 
 camisc02:
 	idle: cumisc02
-		Start: 0
 		ShadowStart: 4
 		Offset: 0, -15
 	damaged-idle: cumisc02
@@ -265,7 +242,6 @@ camisc02:
 
 camisc03:
 	idle: cumisc03
-		Start: 0
 		ShadowStart: 4
 		Offset: 0, -15
 	damaged-idle: cumisc03
@@ -275,7 +251,6 @@ camisc03:
 
 camisc04:
 	idle: cumisc04
-		Start: 0
 		ShadowStart: 4
 		Offset: 0, -15
 	damaged-idle: cumisc04
@@ -285,7 +260,6 @@ camisc04:
 
 casin01s:
 	idle: cusin01s
-		Start: 0
 		ShadowStart: 4
 		Offset: 0, 0
 	damaged-idle: cusin01s
@@ -295,7 +269,6 @@ casin01s:
 
 casin01n:
 	idle: cusin01n
-		Start: 0
 		ShadowStart: 4
 		Offset: 0, 0
 	damaged-idle: cusin01n
@@ -305,30 +278,24 @@ casin01n:
 
 calit01e:
 	idle: culit01e
-		Start: 0
 		ShadowStart: 0
 		Offset: 0, 0
 	damaged-idle: culit01e
-		Start: 0
 		ShadowStart: 1
 		Offset: 0, 0
 
 calit01w:
 	idle: culit01w
-		Start: 0
 		ShadowStart: 1
 		Offset: 0, 0
 	damaged-idle: culit01w
-		Start: 0
 		ShadowStart: 1
 		Offset: 0, 0
 
 capol01w:
 	idle: cupol01w
-		Start: 0
 		ShadowStart: 0
 		Offset: 0, 0
 	damaged-idle: cupol01w
-		Start: 0
 		ShadowStart: 0
 		Offset: 0, 0

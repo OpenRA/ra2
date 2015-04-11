@@ -1,6 +1,5 @@
 caoild:
 	idle: cuoild
-		Start: 0
 		ShadowStart: 4
 		Offset: 0, -30
 	damaged-idle: cuoild
@@ -8,7 +7,6 @@ caoild:
 		ShadowStart: 5
 		Offset: 0, -30
 	idle-pump: cuoild_a
-		Start: 0
 		Length: 32
 		ShadowStart: 64
 		Offset: 0, -30

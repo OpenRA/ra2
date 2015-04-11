@@ -1,6 +1,5 @@
 cow:
 	stand:
-		Start: 0
 		Facings: 8
 		ShadowStart: 116
 	run:
@@ -32,12 +31,9 @@ cow:
 		Length: 15
 		ShadowStart: 217
 	die6: electro
-		Start: 0
 		Length: *
 		Tick: 120
 	die-crushed: death_c
-		Start: 0
 		Length: 4
 		Tick: 80
 	icon: xxicon
-		Start: 0

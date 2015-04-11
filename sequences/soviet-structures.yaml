@@ -221,7 +221,6 @@ nayard:
 		Start: 2
 		ShadowStart: 5
 	idle-crane: ngyard_a
-		Start: 0
 		Length: 15
 		ShadowStart: 30
 	damaged-idle-crane: ngyard_a
@@ -229,7 +228,6 @@ nayard:
 		Length: 15
 		ShadowStart: 45
 	idle-waves: ngyard_c
-		Start: 0
 		Length: 15
 		ShadowStart: 30
 	damaged-idle-waves: ngyard_c
@@ -244,7 +242,6 @@ nayard:
 		Length: 15
 		ZOffset: 256
 	make: ntyardmk
-		Start: 0
 		Length: 25
 		ShadowStart: 25
 		TilesetOverrides:
@@ -433,15 +430,12 @@ napsis:
 # TODO: ngmisl is not a valid shp
 # namisl:
 # 	idle: ngmisl
-# 		Start: 0
 # 	damaged-idle: ngmisl
 # 		Start: 1
 # 	critical-idle: ngmisl
 # 		Start: 2
 # 	make: ntmisl
-# 		Start: 0
 # 	icon: msslicon
-# 		Start: 0
 
 nairon:
 	Defaults:
