@@ -83,7 +83,7 @@ terror:
 		Queue: Infantry
 		BuildAtProductionType: Infantry
 		BuildPaletteOrder: 120
-		Prerequisites: ~naradr, ~infantry.cuba
+		Prerequisites: naradr, ~infantry.cuba
 	Valued:
 		Cost: 200
 	Tooltip:
@@ -106,5 +106,50 @@ terror:
 		Weapon: TerrorBomb
 		EmptyWeapon: TerrorBomb
 	DemoTruck:
+	AttackFrontal:
+	WithInfantryBody:
+
+deso:
+	Inherits: ^Infantry
+	Buildable:
+		Queue: Infantry
+		BuildAtProductionType: Infantry
+		BuildPaletteOrder: 120
+		Prerequisites: naradr, ~infantry.iraq
+	Valued:
+		Cost: 200
+	Tooltip:
+		Name: Desolator
+		Description: Carries a radiation-emitting weapon.\nCan deploy for area-of-effect damage.
+	Selectable:
+		Voice: DesolatorVoice
+		Bounds: 20, 30, 0, -11
+	Health:
+		HP: 150
+	Mobile:
+		Speed: 41
+	RevealsShroud:
+		Range: 6c0
+	Armor:
+		Type: Plate
+	Passenger:
+		PipType: Red
+	Armament@primary:
+		Weapon: RadBeamWeapon
+		UpgradeTypes: eliteweapon
+		UpgradeMaxEnabledLevel: 0
+		UpgradeMaxAcceptedLevel: 1
+	Armament@elite:
+		Weapon: RadBeamWeaponE
+		UpgradeTypes: eliteweapon
+		UpgradeMinEnabledLevel: 1
+	# Armament@deployed:
+	# 	Weapon: RadEruptionWeapon
+	# Armament@deployed-elite:
+	# 	Weapon: RadEruptionWeaponE
+	# Armament@ifv:
+	# 	Weapon: CRRadBeamWeapon
+	# Armament@ifv-elite:
+	# 	Weapon: CRRadBeamWeaponE
 	AttackFrontal:
 	WithInfantryBody:

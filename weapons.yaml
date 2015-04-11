@@ -1117,6 +1117,55 @@ awp:
 			Steel: 0
 			Concrete: 0
 
+RadBeamWeapon:
+	ValidTargets: Ground
+	Damage: 125
+	Range: 6c0
+	ReloadDelay: 100
+	Report: vpriatta.wav
+	Projectile: LaserZap # TODO: Beam
+		BeamWidth: 2
+		BeamDuration: 7
+		Color: 185, 0, 255, 0
+	Warhead@1Dam: SpreadDamage
+		DeathType: 2
+		Spread: 42
+		Damage: 125
+		Versus:
+			None: 100
+			Flak: 100
+			Plate: 100
+			Light: 20
+			Medium: 15
+			Heavy: 10
+			Wood: 0
+			Steel: 0
+			Concrete: 0
+
+RadBeamWeaponE:
+	ValidTargets: Ground
+	Damage: 200
+	Range: 8c0
+	ReloadDelay: 100
+	Report: vpriatta.wav
+	Projectile: LaserZap # TODO: Beam
+		BeamWidth: 2
+		BeamDuration: 7
+		Color: 185, 0, 255, 0
+	Warhead@1Dam: SpreadDamage
+		DeathType: 2
+		Spread: 42
+		Damage: 125
+		Versus:
+			None: 100
+			Flak: 100
+			Plate: 100
+			Light: 20
+			Medium: 15
+			Heavy: 10
+			Wood: 0
+			Steel: 0
+			Concrete: 0
 155mm:
 	ReloadDelay: 110
 	Range: 8c0
