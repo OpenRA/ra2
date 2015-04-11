@@ -42,7 +42,7 @@ flakt:
 		Cost: 100
 	Tooltip:
 		Name: Flak Trooper
-		Description: Anti-Air/Anti-Infantry unit. \n  Strong vs Aircraft, Infantry\n  Weak vs Vehicles
+		Description: Anti-Air/Anti-Infantry unit.\nStrong vs Aircraft, Infantry\nWeak vs Vehicles
 	Selectable:
 		Voice: FlakTrooperVoice
 		Bounds: 20, 30, 0, -11
@@ -88,7 +88,7 @@ terror:
 		Cost: 200
 	Tooltip:
 		Name: Terrorist
-		Description: The Terrorist carries C4 charges taped to his body and kamikazes enemies \nblowing them up quickly and efficiently.
+		Description: The Terrorist carries C4 charges taped to his body and kamikazes enemies\nblowing them up quickly and efficiently.
 	Selectable:
 		Voice: TerroristVoice
 		Bounds: 20, 30, 0, -11

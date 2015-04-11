@@ -8,7 +8,7 @@ lcrf:
 		Cost: 900
 	Tooltip:
 		Name: Amphibious Transport
-		Description: General-purpose naval transport.\nCan carry infantry and vehicles.\n  Unarmed
+		Description: General-purpose naval transport.\nCan carry infantry and vehicles.\nUnarmed
 	Selectable:
 		Bounds: 60, 80, 0, -6
 		Voice: AlliedNavalVoice
@@ -53,7 +53,7 @@ dest:
 		Cost: 1000
 	Tooltip:
 		Name: Destroyer
-		Description: Allied Main Battle Ship armed with cannons and\n an Osprey helicopter.\nCan detect submarines and sea animals.\n  Strong vs Ships\n  Weak vs Everything
+		Description: Allied Main Battle Ship armed with cannons and\n an Osprey helicopter.\nCan detect submarines and sea animals.\nStrong vs Ships\nWeak vs Everything
 	Health:
 		HP: 600
 	Armor:
@@ -102,7 +102,7 @@ aegis:
 		Cost: 1200
 	Tooltip:
 		Name: Aegis Cruiser
-		Description: Anti-Air naval unit. \n  Strong vs Aircraft
+		Description: Anti-Air naval unit.\nStrong vs Aircraft
 	Selectable:
 		Bounds: 60, 80, 0, -6
 		Voice: AlliedNavalVoice

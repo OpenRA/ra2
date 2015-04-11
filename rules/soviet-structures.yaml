@@ -252,7 +252,7 @@ nayard:
 		Cost: 1000
 	Tooltip:
 		Name: Naval Yard
-		Description: Produces and repairs ships,\nsubmarines,transports, and other naval units.
+		Description: Produces and repairs ships,\nsubmarines, transports, and other naval units.
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 50

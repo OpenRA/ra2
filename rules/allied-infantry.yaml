@@ -8,7 +8,7 @@ engineer:
 		Cost: 500
 	Tooltip:
 		Name: Engineer
-		Description: Captures enemy structures.\n  Strong vs Nothing\n  Weak vs Everything
+		Description: Captures enemy structures.\nStrong vs Nothing\nWeak vs Everything
 	Selectable:
 		Bounds: 20, 30, 0, -11
 		# TODO: what do we do with soviet engineers?
@@ -41,7 +41,7 @@ dog:
 		Cost: 200
 	Tooltip:
 		Name: Attack Dog
-		Description: Anti-infantry unit.\nCan detect cloaked units and spies.\n  Strong vs Infantry\n  Weak vs Vehicles
+		Description: Anti-infantry unit.\nCan detect cloaked units and spies.\nStrong vs Infantry\nWeak vs Vehicles
 	Selectable:
 		Voice: DogVoice
 		Bounds: 30, 24, 0, -5
@@ -120,7 +120,7 @@ snipe:
 		Cost: 600
 	Tooltip:
 		Name: Sniper
-		Description: Special anti-infantry unit.\n  Strong vs Infantry\n  Weak vs Vehicles
+		Description: Special anti-infantry unit.\nStrong vs Infantry\nWeak vs Vehicles
 	Buildable:
 		Queue: Infantry
 		BuildPaletteOrder: 80
@@ -156,7 +156,7 @@ spy:
 	DisguiseToolTip:
 		Name: Spy
 		GenericName: Soldier
-		Description: Infiltrates enemy structures for intel or\nsabotage. Exact effect depends on the\nbuilding infiltrated.\n  Strong vs Nothing\n  Weak vs Everything\n  Special Ability: Disguises
+		Description: Infiltrates enemy structures for intel or\nsabotage. Exact effect depends on the\nbuilding infiltrated.\nStrong vs Nothing\nWeak vs Everything\nSpecial Ability: Disguises
 	Selectable:
 		Voice: SpyVoice
 		Bounds: 12,17,0,-9
@@ -190,7 +190,7 @@ tany:
 		Cost: 1000
 	Tooltip:
 		Name: Tanya
-		Description: Elite commando infantry, armed with \ndual pistols and C4.\n  Strong vs Infantry, Buildings\n  Weak vs Vehicles\n  Special Ability: Destroy Building with C4\n\nMaximum 1 can be trained
+		Description: Elite commando infantry, armed with \ndual pistols and C4.\nStrong vs Infantry, Buildings\nWeak vs Vehicles\nSpecial Ability: Destroy Building with C4\n\nMaximum 1 can be trained
 	Selectable:
 		Voice: TanyaVoice
 		Bounds: 20, 30, 0, -11

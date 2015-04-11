@@ -8,7 +8,7 @@ sapc:
 		Cost: 900
 	Tooltip:
 		Name: Amphibious Transport
-		Description: General-purpose naval transport.\nCan carry infantry and vehicles.\n  Unarmed
+		Description: General-purpose naval transport.\nCan carry infantry and vehicles.\nUnarmed
 	Selectable:
 		Bounds: 60, 80, 0, -6
 	Health:
@@ -52,7 +52,7 @@ sub:
 		Cost: 1000
 	Tooltip:
 		Name: Typhoon Attack Sub
-		Description: Submerged anti-ship unit armed with\ntorpedoes.\nCan detect other submarines and Giant Squids.\n  Strong vs Ships\n  Weak vs Everything\n  Special Ability: Submerge
+		Description: Submerged anti-ship unit armed with\ntorpedoes.\nCan detect other submarines and Giant Squids.\nStrong vs Ships\nWeak vs Everything\nSpecial Ability: Submerge
 	Health:
 		HP: 600
 	Armor:
@@ -102,7 +102,7 @@ hyd:
 		Cost: 900
 	Tooltip:
 		Name: Sea Scorpion
-		Description: Anti-Air/Anti-Infantry naval unit. \n  Strong vs Aircraft, Infantry\n  Weak vs Vehicles, Naval Units
+		Description: Anti-Air/Anti-Infantry naval unit.\nStrong vs Aircraft, Infantry\nWeak vs Vehicles, Naval Units
 	Selectable:
 		Bounds: 50, 30, 0, -6
 	Health:

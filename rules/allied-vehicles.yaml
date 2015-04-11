@@ -126,7 +126,7 @@ tnkd:
 		Cost: 900
 	Tooltip:
 		Name: Tank Destroyer
-		Description: Special anti-armor unit.\nStrong vs. Vehicles\nWeak vs. Everything Else
+		Description: Special anti-armor unit.\nStrong vs. Vehicles\nWeak vs. Everything else
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 20
@@ -211,7 +211,7 @@ sref:
 		Cost: 1200
 	Tooltip:
 		Name: Prism Tank
-		Description: Fires deadly beams of light\n  Strong vs Infantry, Vehicles\n  Weak vs Aircraft
+		Description: Fires deadly beams of light\nStrong vs Infantry, Vehicles\nWeak vs Aircraft
 	Selectable:
 		Voice: AlliedVehicleVoice
 		Bounds: 30,30

@@ -99,7 +99,7 @@ htk:
 		Cost: 500
 	Tooltip:
 		Name: Flak Track
-		Description: Infantry Transport and Anti-Air/Anti-Infantry vehicle. \n  Strong vs Aircraft, Infantry\n  Weak vs Vehicles
+		Description: Infantry Transport and Anti-Air/Anti-Infantry vehicle.\nStrong vs Aircraft, Infantry\nWeak vs Vehicles
 	Selectable:
 		Bounds: 50, 40, 0, -6
 		Voice: SovietVehicleVoice
