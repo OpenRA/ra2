@@ -159,7 +159,7 @@ spy:
 		Description: Infiltrates enemy structures for intel or\nsabotage. Exact effect depends on the\nbuilding infiltrated.\nStrong vs Nothing\nWeak vs Everything\nSpecial Ability: Disguises
 	Selectable:
 		Voice: SpyVoice
-		Bounds: 12,17,0,-9
+		Bounds: 24, 28, -1, -8
 	Health:
 		HP: 25
 	Mobile:
