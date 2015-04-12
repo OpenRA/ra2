@@ -1122,7 +1122,7 @@ RadBeamWeapon:
 	Damage: 125
 	Range: 6c0
 	ReloadDelay: 100
-	Report: vpriatta.wav
+	Report: idesat1a.wav
 	Projectile: LaserZap # TODO: Beam
 		BeamWidth: 2
 		BeamDuration: 7
@@ -1147,7 +1147,7 @@ RadBeamWeaponE:
 	Damage: 200
 	Range: 8c0
 	ReloadDelay: 100
-	Report: vpriatta.wav
+	Report: idesat1a.wav
 	Projectile: LaserZap # TODO: Beam
 		BeamWidth: 2
 		BeamDuration: 7
