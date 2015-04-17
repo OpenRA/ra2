@@ -124,7 +124,7 @@ snipe:
 	Buildable:
 		Queue: Infantry
 		BuildPaletteOrder: 80
-		Prerequisites: ~radar, ~infantry.england
+		Prerequisites: radar, ~infantry.england
 	Selectable:
 		Voice: SniperVoice
 		Bounds: 20, 30, 0, -11
@@ -184,7 +184,7 @@ tany:
 		Queue: Infantry
 		BuildAtProductionType: Infantry
 		BuildPaletteOrder: 120
-		Prerequisites: ~gatech, ~gapile
+		Prerequisites: gatech, ~infantry.allies
 		BuildLimit: 1
 	Valued:
 		Cost: 1000
