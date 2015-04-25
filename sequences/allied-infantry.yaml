@@ -53,7 +53,6 @@ engineer:
 		Tick: 120
 	die-crushed: death_c
 		Length: 4
-	# Todo: add other die sequences
 	icon: engnicon
 
 adog:
@@ -140,6 +139,16 @@ e1:
 		Length: 6
 		Facings: 8
 		Tick: 80
+	deployed:
+		Start: 292
+		Facings: 8
+	deploy:
+		Start: 300
+		Length: 15
+	shoot-deployed:
+		Start: 315
+		Length: 6
+		Facings: 8
 	icon: giicon
 
 snipe:
