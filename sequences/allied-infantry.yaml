@@ -219,6 +219,11 @@ spy:
 	die2:
 		Start: 149
 		Length: 14
+	die5: flameguy
+		Start: 48
+		Length: 59
+		Tick: 80
+# TODO: This is just the death sequence; normally flameguy would run a bit around before dying
 	die6: electro
 		Length: *
 		Tick: 120

@@ -39,7 +39,6 @@ dog:
 		Facings: 64
 	icon: dogicon
 
-
 e2:
 	Defaults: cons
 	stand:
@@ -174,6 +173,7 @@ terror:
 		Start: 48
 		Length: 59
 		Tick: 80
+# TODO: This is just the death sequence; normally flameguy would run a bit around before dying
 	die6: electro
 		Length: *
 		Tick: 120
@@ -224,6 +224,7 @@ deso:
 		Start: 48
 		Length: 59
 		Tick: 80
+# TODO: This is just the death sequence; normally flameguy would run a bit around before dying
 	die6: electro
 		Length: *
 		Tick: 120
