@@ -1427,3 +1427,27 @@ vulcan2:
 	Warhead@3EffWater: CreateEffect
 		Explosion: piff
 		ValidImpactTypes: Water
+
+PrismShot:
+	ReloadDelay: 1
+	Range: 8c0
+	MinRange: 0c256
+	Charges: true
+	Report: bpriat1a.wav
+	Projectile: LaserZap
+		BeamWidth: 7
+		UsePlayerColor: true
+	Warhead@1Dam: SpreadDamage
+		Spread: 42
+		Damage: 120
+		DeathType: 6
+		Versus:
+			None: 200
+			Flak: 100
+			Plate: 100
+			Light: 100
+			Medium: 100
+			Heavy: 50
+			Wood: 50
+			Steel: 50
+			Concrete: 50

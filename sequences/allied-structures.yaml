@@ -587,3 +587,44 @@ gacsph:
 	icon: csphicon
 		Offset: 0,0
 		UseTilesetCode: false
+
+atesla:
+	Defaults:
+		Offset: 1,-15
+		UseTilesetCode: true
+		TilesetOverrides:
+			TEMPERAT: GENERIC
+			URBAN: GENERIC
+	idle-normal: ggpris
+		ShadowStart: 3
+	damaged-idle-normal: ggpris
+		Start: 1
+		ShadowStart: 4
+	idle: ggpris_b
+		Length: 9
+		Tick: 100
+		ShadowStart: 18
+	damaged-idle: ggpris_b
+		Start: 9
+		Length: 9
+		Tick: 180
+		ShadowStart: 27
+	active: ggpris_a
+		Length: 10
+		Tick: 100
+		ShadowStart: 20
+	damaged-active: ggpris_a
+		Start: 10
+		Length: 10
+		Tick: 100
+		ShadowStart: 30
+	icon: prisicon
+		Offset: 0,0
+		UseTilesetCode: false
+	make: gtprismk
+		Length: 8
+		ShadowStart: 8
+		Tick: 160
+		TilesetOverrides:
+			TEMPERAT: TEMPERAT
+			URBAN: URBAN
