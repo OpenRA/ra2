@@ -451,8 +451,8 @@ gapill:
 		Range: 7c0
 	Selectable:
 		Bounds: 50, 30, 0, -4
-	Armament: # TODO: convert and use the correct weapon
-		Weapon: M60
+	Armament:
+		Weapon: vulcan2
 		LocalOffset: 768,85,512
 		MuzzleSequence: muzzle # TODO: this isn't rendered?
 		MuzzleSplitFacings: 8
@@ -464,6 +464,7 @@ gapill:
 	WithRangeCircle:
 		Range: 6c0
 		Type: pillbox
+	AutoTarget:
 
 nasam:
 	Inherits: ^VoxelLighting

@@ -1399,3 +1399,31 @@ Comet:
 		ValidImpactTypes: Water
 	Warhead@4Smu: LeaveSmudge
 		SmudgeType: SmallCrater, SmallScorch
+
+vulcan2:
+	ReloadDelay: 26
+	Range: 5c512
+	Report: bpilatta.wav, bpilattb.wav, bpilattc.wav, bpilattd.wav, bpilattc.wav
+	Projectile: Bullet
+		Speed: 100c0
+	Warhead@1Dam: SpreadDamage
+		Spread: 64
+		Damage: 50
+		DeathType: 1
+		ProneModifier: 70
+		Versus:
+			None: 100
+			Flak: 80
+			Plate: 70
+			Light: 50
+			Medium: 25
+			Heavy: 25
+			Wood: 75
+			Steel: 50
+			Concrete: 25
+	Warhead@2Eff: CreateEffect
+		Explosion: piff
+		InvalidImpactTypes: Water
+	Warhead@3EffWater: CreateEffect
+		Explosion: piff
+		ValidImpactTypes: Water
