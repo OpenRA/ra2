@@ -115,6 +115,7 @@ ChromeLayout:
 	./mods/ra2/chrome/ingame-observerstats.yaml
 	./mods/ra2/chrome/ingame-debug.yaml
 	./mods/ra2/chrome/ingame-leavemap.yaml
+	./mods/ra2/chrome/ingame-perf.yaml
 	./mods/ra2/chrome/mainmenu.yaml
 	./mods/ra2/chrome/settings.yaml
 	./mods/ra2/chrome/credits.yaml
