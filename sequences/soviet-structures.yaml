@@ -185,6 +185,30 @@ naweap:
 	damaged-idle: ngweap
 		Start: 2
 		ShadowStart: 4
+# TODO: door and top sequences out-commented in the rules file
+	build-door: ngweap_1
+		ShadowStart: 2
+		ZOffset: -5000
+	damaged-build-door: ngweap_1
+		Start: 1
+		ShadowStart: 3
+		ZOffset: -5000
+	build-top: ngweap_2
+		ShadowStart: 2
+	damaged-build-top: ngweap_2
+		Start: 1
+		ShadowStart: 3
+# TODO: ngweap_3 and ngweap_4 are used for producing flying actors
+	build-air-open: ngweap_3
+		ShadowStart: 2
+	damaged-air-open: ngweap_3
+		Start: 1
+		ShadowStart: 3
+	build-air-inside: ngweap_4
+		ShadowStart: 2
+	damaged-air-inside: ngweap_4
+		Start: 1
+		ShadowStart: 3
 	idle-ramp: ngweapbb
 		ShadowStart: 3
 	damaged-idle-ramp: ngweapbb

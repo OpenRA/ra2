@@ -287,12 +287,14 @@ gaweap:
 	ProductionBar:
 	WithIdleOverlay@flag:
 		Sequence: idle-flag
-	WithIdleOverlay@door:
-		Sequence: idle-door
 	WithIdleOverlay@fan:
 		Sequence: overlay-fan
 	WithIdleOverlay@ramp:
 		Sequence: idle-ramp
+	WithProductionDoorOverlay@top:
+		Sequence: build-top
+	WithProductionDoorOverlay@ramp:
+		Sequence: build-ramp
 	Power:
 		Amount: -25
 

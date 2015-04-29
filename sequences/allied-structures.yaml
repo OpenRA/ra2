@@ -187,15 +187,39 @@ gaweap:
 		TilesetOverrides:
 			TEMPERAT: GENERIC
 			URBAN: GENERIC
-	idle: ggweap_2
-		ShadowStart: 2
-	idle-door: ggweap_1
-		ShadowStart: 2
-	idle-ramp: ggweapbb
+	idle: ggweap
 		ShadowStart: 2
 	damaged-idle: ggweap
 		Start: 2
 		ShadowStart: 5
+	build-ramp: ggweap_1
+		ShadowStart: 2
+		ZOffset: -5000
+	damaged-build-ramp: ggweap_1
+		Start: 1
+		ShadowStart: 3
+		ZOffset: -5000
+	build-top: ggweap_2
+		ShadowStart: 2
+	damaged-build-top: ggweap_2
+		Start: 1
+		ShadowStart: 3
+# TODO: ggweap_3 and ggweap_4 are used for producing flying actors
+	build-air-open: ggweap_3
+		ShadowStart: 2
+	damaged-air-open: ggweap_3
+		Start: 1
+		ShadowStart: 3
+	build-air-inside: ggweap_4
+		ShadowStart: 2
+	damaged-air-inside: ggweap_4
+		Start: 1
+		ShadowStart: 3
+	idle-ramp: ggweapbb
+		ShadowStart: 2
+	damaged-idle-ramp: ggweapbb
+		Start: 1
+		ShadowStart: 3
 	idle-flag: ggweap_a
 		Length: 14
 		ShadowStart: 31

@@ -243,6 +243,10 @@ naweap:
 		Sequence: idle-lights
 	WithIdleOverlay@ramp:
 		Sequence: idle-ramp
+	#WithProductionDoorOverlay@top: # TODO
+	#	Sequence: build-top
+	#WithProductionDoorOverlay@door:
+	#	Sequence: build-door
 	Power:
 		Amount: -25
 
