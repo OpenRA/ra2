@@ -38,6 +38,10 @@ nacnst:
 	WithIdleOverlay@SIDE:
 		Sequence: idle-side
 	WithBuildingPlacedAnimation:
+	WithDeathAnimation:
+		DeathSequence: dead
+		UseDeathTypeSuffix: false
+	-WithBuildingExplosion:
 
 napowr:
 	Inherits: ^Building
@@ -616,3 +620,7 @@ tesla:
 		Type: teslacoil
 	Power:
 		Amount: -75
+	WithDeathAnimation:
+		DeathSequence: dead
+		UseDeathTypeSuffix: false
+	-WithBuildingExplosion:

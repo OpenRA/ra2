@@ -30,6 +30,10 @@ gacnst:
 		Start: 20
 		Length: 20
 		Tick: 150
+	dead: ggcnstdm
+		Length: 30
+		ShadowStart: 30
+		Tick: 100
 	icon: cnsticon
 		Offset: 0,0
 		UseTilesetCode: false
@@ -84,6 +88,10 @@ gapile:
 		Start:16
 		Length: 16
 		ShadowStart: 48
+	dead: ggpiledm
+		Length: 25
+		ShadowStart: 25
+		Tick: 100
 	make: gtpilemk
 		Length: 25
 		ShadowStart: 25
@@ -602,6 +610,10 @@ gacsph:
 	damaged-idle-dome: ggcsph_e
 		Start: 1
 		ShadowStart: 3
+	dead: ggcsphdm
+		Length: 25
+		ShadowStart: 25
+		Tick: 50
 	make: gtcsphmk
 		Length: 25
 		ShadowStart: 25
@@ -642,6 +654,10 @@ atesla:
 		Length: 10
 		Tick: 100
 		ShadowStart: 30
+	dead: ggprisdm
+		Length: 21
+		ShadowStart: 21
+		Tick: 100
 	icon: prisicon
 		Offset: 0,0
 		UseTilesetCode: false

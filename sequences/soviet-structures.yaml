@@ -39,6 +39,10 @@ nacnst:
 		Start: 21
 		Length: 21
 		Tick: 150
+	dead: ngcnstdm
+		Length: 25
+		ShadowStart: 25
+		Tick: 100
 	icon: facticon
 		Offset: 0,0
 		UseTilesetCode: false
@@ -524,6 +528,10 @@ tesla:
 	damaged-active: ngtsla_b
 		Start: 10
 		Length: 10
+		Tick: 100
+	dead: ngtsladm
+		Length: 20
+		ShadowStart: 20
 		Tick: 100
 	make: nttslamk
 		Length: 25
