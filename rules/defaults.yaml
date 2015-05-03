@@ -186,6 +186,11 @@
 	AutoTarget:
 	AttackMove:
 	TakeCover:
+		DamageModifiers:
+			Prone50Percent: 50
+			Prone70Percent: 70
+			Prone100Percent: 100
+		DamageTriggers: TriggerProne
 	Passenger:
 		CargoType: Infantry
 	HiddenUnderFog:
