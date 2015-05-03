@@ -375,12 +375,12 @@ gaorep:
 	idle-glow: ggorep_a
 		Length: 8
 		ShadowStart: 16
-		Tick: 900
+		Tick: 180
 	damaged-idle-glow: ggorep_a
 		Start: 8
 		Length: 8
 		ShadowStart: 24
-		Tick: 900
+		Tick: 180
 	make: gtorepmk
 		Length: 25
 		ShadowStart: 25
