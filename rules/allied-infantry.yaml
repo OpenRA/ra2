@@ -184,7 +184,7 @@ tany:
 		Queue: Infantry
 		BuildAtProductionType: Infantry
 		BuildPaletteOrder: 120
-		Prerequisites: gatech, ~infantry.allies
+		Prerequisites: gatech, ~gapile
 		BuildLimit: 1
 	Valued:
 		Cost: 1000
