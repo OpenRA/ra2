@@ -4,6 +4,7 @@ gacnst:
 		Queue: Building
 		BuildPaletteOrder: 1000
 		Prerequisites: ~disabled
+	ProvidesPrerequisite@default:
 	Building:
 		Footprint: xxxx xxxx xxxx xxxx
 		Dimensions: 4,4
@@ -35,12 +36,12 @@ gacnst:
 		Sequence: idle-fans
 		PauseOnLowPower: true
 	WithBuildingPlacedOverlay:
-	ProvidesCustomPrerequisite:
+	ProvidesPrerequisite:
 		Prerequisite: structures.allies
-	ProvidesCustomPrerequisite@america:
+	ProvidesPrerequisite@america:
 		Prerequisite: structures.america
 		Race: america
-	ProvidesCustomPrerequisite@france:
+	ProvidesPrerequisite@france:
 		Prerequisite: structures.france
 		Race: france
 	Power:
@@ -63,8 +64,9 @@ gapowr:
 	Tooltip:
 		Name: Power Plant
 		Description: Provides power for other structures.
-	ProvidesCustomPrerequisite:
+	ProvidesPrerequisite:
 		Prerequisite: power
+	ProvidesPrerequisite@default:
 	Building:
 		Footprint: xx xx
 		Dimensions: 2,2
@@ -95,11 +97,12 @@ gapile:
 	Tooltip:
 		Name: Barracks
 		Description: Trains infantry.
-	ProvidesCustomPrerequisite:
+	ProvidesPrerequisite:
 		Prerequisite: barracks
-	ProvidesCustomPrerequisite@england:
+	ProvidesPrerequisite@england:
 		Prerequisite: infantry.england
 		Race: england
+	ProvidesPrerequisite@default:
 	Building:
 		Footprint: xxx xxx
 		Dimensions: 3,2
@@ -142,8 +145,9 @@ garefn:
 	Tooltip:
 		Name: Ore Refinery
 		Description: Processes ore into credits.
-	ProvidesCustomPrerequisite:
+	ProvidesPrerequisite:
 		Prerequisite: refinery
+	ProvidesPrerequisite@default:
 	Building:
 		Footprint: xxx= xxx= xxx=
 		Dimensions: 4,3
@@ -190,13 +194,14 @@ gaairc:
 	Tooltip:
 		Name: Airforce Command Headquarters
 		Description: Provides radar\nSupports 4 aircraft.
-	ProvidesCustomPrerequisite:
+	ProvidesPrerequisite:
 		Prerequisite: radar
-	ProvidesCustomPrerequisite@allies:
+	ProvidesPrerequisite@allies:
 		Prerequisite: aircraft.allies
-	ProvidesCustomPrerequisite@korea:
+	ProvidesPrerequisite@korea:
 		Prerequisite: aircraft.korea
 		Race: korea
+	ProvidesPrerequisite@default:
 	Building:
 		Footprint: xxx xxx
 		Dimensions: 3,2
@@ -269,11 +274,12 @@ gaweap:
 	Tooltip:
 		Name: War Factory
 		Description: Produces vehicles.
-	ProvidesCustomPrerequisite:
+	ProvidesPrerequisite:
 		Prerequisite: factory
-	ProvidesCustomPrerequisite@germany:
+	ProvidesPrerequisite@germany:
 		Prerequisite: vehicles.germany
 		Race: germany
+	ProvidesPrerequisite@default:
 	Building:
 		Footprint: xxxxx xxxxx xxxxx
 		Dimensions: 5,3
@@ -316,6 +322,7 @@ gayard:
 		Prerequisites: power, refinery, ~structures.allies
 	TargetableBuilding:
 		TargetTypes: Ground, Water, C4
+	ProvidesPrerequisite@default:
 	Building:
 		Footprint: xxxx xxxx xxxx xxxx
 		Dimensions: 4,4
@@ -367,6 +374,7 @@ gadept:
 	Tooltip:
 		Name: Service Depot
 		Description: Repairs vehicles and removes Terror Drones (for a price).
+	ProvidesPrerequisite@default:
 	Building:
 		Footprint: x== x== x==
 		Dimensions: 3,3
@@ -403,6 +411,7 @@ gatech:
 	Tooltip:
 		Name: Battle Lab
 		Description: Allows deployment of advanced units.
+	ProvidesPrerequisite@default:
 	Building:
 		Footprint: xx xx xx
 		Dimensions: 3,2
@@ -428,6 +437,7 @@ gawall:
 	Tooltip:
 		Name: Allied Wall
 		Description: Light wall.\nCrushable by vehicles.
+	ProvidesPrerequisite@default:
 	Building:
 		Footprint: x
 		Dimensions: 1, 1
@@ -447,6 +457,7 @@ gapill:
 	Tooltip:
 		Name: Pill Box
 		Description: Automated anti-infantry defense.
+	ProvidesPrerequisite@default:
 	Building:
 		Footprint: x
 		Dimensions: 1, 1
@@ -484,6 +495,7 @@ nasam:
 	Tooltip:
 		Name: Patriot Missile System
 		Description: Automated anti-aircraft defense.
+	ProvidesPrerequisite@default:
 	Building:
 		Footprint: x
 		Dimensions: 1, 1
@@ -525,6 +537,7 @@ gtgcan:
 	Tooltip:
 		Name: Grand Cannon
 		Description: Automated anti-tank defense.
+	ProvidesPrerequisite@default:
 	Building:
 		Footprint: xx xx
 		Dimensions: 2, 2
@@ -575,6 +588,7 @@ gaorep:
 	Tooltip:
 		Name: Allied Ore Processor
 		Description: Refines all forms of income by 25%.
+	ProvidesPrerequisite@default:
 	Building:
 		Footprint: xxx xxx xxx
 		Dimensions: 3,3
@@ -603,6 +617,7 @@ gaspysat:
 	Tooltip:
 		Name: Spy Satellite Uplink
 		Description: Reveals the entire battlefield.
+	ProvidesPrerequisite@default:
 	Building:
 		Footprint: xx xx
 		Dimensions: 2,2
@@ -633,6 +648,7 @@ gagap:
 		Prerequisites: ~gatech, ~structures.allies
 	Selectable:
 		Bounds: 50, 114, -16, -38
+	ProvidesPrerequisite@default:
 	Building:
 		Footprint: _ x
 		Dimensions: 1,2
@@ -664,6 +680,7 @@ gaweat:
 	Tooltip:
 		Name: Weather Controller
 		Description: Play God with deadly weather!
+	ProvidesPrerequisite@default:
 	Building:
 		Footprint: xxx xxx xxx
 		Dimensions: 3,3
@@ -691,6 +708,7 @@ gacsph:
 	Tooltip:
 		Name: Chronosphere
 		Description: Allows teleporting units in a 3x3 array.
+	ProvidesPrerequisite@default:
 	Building:
 		Footprint: xxx xxx xxx xxx
 		Dimensions: 4,3
@@ -734,6 +752,7 @@ atesla:
 	Tooltip:
 		Name: Prism Cannon
 		Description: Advanced base defense.\nRequires power to operate.\n  Strong vs Infantry, Vehicles\n  Weak vs Aircraft
+	ProvidesPrerequisite@default:
 	Building:
 		Footprint: x
 		Dimensions: 1, 1
