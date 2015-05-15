@@ -106,7 +106,7 @@ htk:
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 20
- 		Prerequisites: naweap
+ 		Prerequisites: ~naweap
 	Mobile:
 		Speed: 75
 		ROT: 15
