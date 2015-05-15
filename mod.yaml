@@ -53,6 +53,7 @@ Rules:
 	./mods/ra2/rules/ai.yaml
 	./mods/ra2/rules/player.yaml
 	./mods/ra2/rules/world.yaml
+	./mods/ra2/rules/palettes.yaml
 	./mods/ra2/rules/defaults.yaml
 	./mods/ra2/rules/allied-infantry.yaml
 	./mods/ra2/rules/soviet-infantry.yaml
