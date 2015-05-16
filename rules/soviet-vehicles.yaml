@@ -3,7 +3,7 @@ smcv:
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 110
-		Prerequisites: ~naweap
+		Prerequisites: ~naweap, nadept
 	Valued:
 		Cost: 3000
 	Tooltip:
@@ -236,7 +236,7 @@ dtruck:
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 110
-		Prerequisites: ~naradr, ~vehicles.libya
+		Prerequisites: naradr, ~vehicles.libya
 	Valued:
 		Cost: 3000
 	Tooltip:

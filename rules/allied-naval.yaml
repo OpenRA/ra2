@@ -97,7 +97,7 @@ aegis:
 	Buildable:
 		Queue: Ship
 		BuildPaletteOrder: 30
-		Prerequisites: ~radar, gayard
+		Prerequisites: radar, ~gayard
 	Valued:
 		Cost: 1200
 	Tooltip:

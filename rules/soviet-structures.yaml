@@ -179,7 +179,7 @@ naradr:
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 40
-		Prerequisites: power, ~narefn, ~structures.soviets
+		Prerequisites: power, narefn, ~structures.soviets
 	Valued:
 		Cost: 1000
 	Tooltip:
@@ -216,7 +216,7 @@ naweap:
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 50
-		Prerequisites: ~narefn, ~structures.soviets
+		Prerequisites: refinery, ~structures.soviets
 	Selectable:
 		Bounds: 196, 178, -6, -48
 	Valued:
@@ -224,8 +224,6 @@ naweap:
 	Tooltip:
 		Name: War Factory
 		Description: Produces vehicles.
-	ProvidesPrerequisite:
-		Prerequisite: factory
 	ProvidesPrerequisite@libya:
 		Prerequisite: vehicles.libya
 		Race: libya
@@ -319,7 +317,7 @@ nadept:
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 60
-		Prerequisites: ~naweap, ~structures.soviets
+		Prerequisites: naweap, ~structures.soviets
 	Selectable:
 		Bounds: 156, 150, 0, -38
 	Valued:
@@ -327,7 +325,8 @@ nadept:
 	Tooltip:
 		Name: Service Depot
 		Description: Repairs vehicles and removes Terror Drones (for a price).
-	ProvidesPrerequisite@default:
+	ProvidesPrerequisite:
+		Prerequisite: repairpad
 	Building:
 		Footprint: x=== x=== x===
 		Dimensions: 4,3
@@ -356,8 +355,8 @@ nanrct:
 	Inherits: ^Building
 	Buildable:
 		Queue: Building
-		BuildPaletteOrder: 150
-		Prerequisites: ~natech, ~structures.soviets
+		BuildPaletteOrder: 160
+		Prerequisites: natech, ~structures.soviets
 	Valued:
 		Cost: 1000
 	Tooltip:
@@ -389,8 +388,8 @@ natech:
 	Inherits: ^Building
 	Buildable:
 		Queue: Building
-		BuildPaletteOrder: 160
-		Prerequisites: ~naweap, ~naradr, ~structures.soviets
+		BuildPaletteOrder: 150
+		Prerequisites: naweap, naradr, ~structures.soviets
 	Valued:
 		Cost: 2000
 	Tooltip:
@@ -416,7 +415,7 @@ naclon:
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 170
-		Prerequisites: ~natech, ~structures.soviets
+		Prerequisites: natech, ~structures.soviets
 		BuildLimit: 1
 	Valued:
 		Cost: 2500
@@ -453,7 +452,7 @@ napsis:
 	Buildable:
 		Queue: Support
 		BuildPaletteOrder: 40
-		Prerequisites: ~natech, ~structures.soviets
+		Prerequisites: natech, ~structures.soviets
 	Valued:
 		Cost: 2000
 	Tooltip:
@@ -511,7 +510,7 @@ nairon:
 	Buildable:
 		Queue: Support
 		BuildPaletteOrder: 60
-		Prerequisites: ~natech, ~structures.soviets
+		Prerequisites: natech, ~structures.soviets
 		BuildLimit: 1
 	Valued:
 		Cost: 2500
@@ -539,7 +538,7 @@ nawall:
 	Buildable:
 		Queue: Support
 		BuildPaletteOrder: 10
-		Prerequisites: ~barracks, ~structures.soviets
+		Prerequisites: barracks, ~structures.soviets
 	Valued:
 		Cost: 100
 	Tooltip:
@@ -559,7 +558,7 @@ naflak:
 	Buildable:
 		Queue: Support
 		BuildPaletteOrder: 30
-		Prerequisites: ~barracks, ~structures.soviets
+		Prerequisites: barracks, ~structures.soviets
 	Valued:
 		Cost: 1000
 	Tooltip:
@@ -600,7 +599,7 @@ tesla:
 	Buildable:
 		Queue: Support
 		BuildPaletteOrder: 30
-		Prerequisites: ~naradr, ~structures.soviets
+		Prerequisites: naradr, ~structures.soviets
 	Valued:
 		Cost: 1500
 	Tooltip:

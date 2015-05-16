@@ -3,7 +3,6 @@ engineer:
 	Buildable:
 		Queue: Infantry
 		BuildPaletteOrder: 60
-		Prerequisites: ~barracks
 	Valued:
 		Cost: 500
 	Tooltip:
@@ -36,7 +35,6 @@ dog:
 	Buildable:
 		Queue: Infantry
 		BuildPaletteOrder: 50
-		Prerequisites: ~barracks
 	Valued:
 		Cost: 200
 	Tooltip:

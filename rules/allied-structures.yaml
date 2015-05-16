@@ -188,7 +188,7 @@ gaairc:
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 40
-		Prerequisites: ~garefn, ~structures.allies, ~!structures.america
+		Prerequisites: garefn, ~structures.allies, ~!structures.america
 	Valued:
 		Cost: 1000
 	Tooltip:
@@ -256,7 +256,7 @@ amradr:
 	Tooltip:
 		Name: American Airforce Command Headquarters
 	Buildable:
-		Prerequisites: ~garefn, ~structures.america
+		Prerequisites: garefn, ~structures.america
 	RenderBuilding:
 		Image: gaairc
 #	ParatroopersPower: # TODO
@@ -266,7 +266,7 @@ gaweap:
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 50
-		Prerequisites: garefn, ~gapile, ~structures.allies
+		Prerequisites: garefn, gapile, ~structures.allies
 	Selectable:
 		Bounds: 212, 158, -7, -28
 	Valued:
@@ -274,8 +274,6 @@ gaweap:
 	Tooltip:
 		Name: War Factory
 		Description: Produces vehicles.
-	ProvidesPrerequisite:
-		Prerequisite: factory
 	ProvidesPrerequisite@germany:
 		Prerequisite: vehicles.germany
 		Race: germany
@@ -366,7 +364,7 @@ gadept:
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 60
-		Prerequisites: ~gaweap, ~structures.allies
+		Prerequisites: gaweap, ~structures.allies
 	Selectable:
 		Bounds: 144, 88, -12, -16
 	Valued:
@@ -397,6 +395,8 @@ gadept:
 		Sequence: repair
 	Power:
 		Amount: -25
+	ProvidesPrerequisite:
+		Prerequisite: repairpad
 
 gatech:
 	Inherits: ^Building
@@ -431,7 +431,7 @@ gawall:
 	Buildable:
 		Queue: Support
 		BuildPaletteOrder: 10
-		Prerequisites: ~barracks, ~structures.allies
+		Prerequisites: barracks, ~structures.allies
 	Valued:
 		Cost: 100
 	Tooltip:
@@ -451,7 +451,7 @@ gapill:
 	Buildable:
 		Queue: Support
 		BuildPaletteOrder: 20
-		Prerequisites: ~barracks, ~structures.allies
+		Prerequisites: barracks, ~structures.allies
 	Valued:
 		Cost: 500
 	Tooltip:
@@ -489,7 +489,7 @@ nasam:
 	Buildable:
 		Queue: Support
 		BuildPaletteOrder: 30
-		Prerequisites: ~barracks, ~structures.allies
+		Prerequisites: barracks, ~structures.allies
 	Valued:
 		Cost: 1000
 	Tooltip:
@@ -531,7 +531,7 @@ gtgcan:
 	Buildable:
 		Queue: Support
 		BuildPaletteOrder: 30
-		Prerequisites: ~radar, ~structures.france
+		Prerequisites: radar, ~structures.france
 	Valued:
 		Cost: 2000
 	Tooltip:
@@ -579,7 +579,7 @@ gaorep:
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 80
-		Prerequisites: garefn, ~gatech, ~structures.allies
+		Prerequisites: garefn, gatech, ~structures.allies
 		BuildLimit: 1
 	Selectable:
 		Bounds: 134, 102, -10, -21
@@ -609,7 +609,7 @@ gaspysat:
 	Buildable:
 		Queue: Support
 		BuildPaletteOrder: 90
-		Prerequisites: ~gatech, ~structures.allies
+		Prerequisites: gatech, ~structures.allies
 	Selectable:
 		Bounds: 96, 98, -4, -30
 	Valued:
@@ -645,7 +645,7 @@ gagap:
 	Buildable:
 		Queue: Support
 		BuildPaletteOrder: 100
-		Prerequisites: ~gatech, ~structures.allies
+		Prerequisites: gatech, ~structures.allies
 	Selectable:
 		Bounds: 50, 114, -16, -38
 	ProvidesPrerequisite@default:
@@ -672,7 +672,7 @@ gaweat:
 	Buildable:
 		Queue: Support
 		BuildPaletteOrder: 110
-		Prerequisites: ~gatech, ~structures.allies
+		Prerequisites: gatech, ~structures.allies
 	Selectable:
 		Bounds: 116, 106, -2, -26
 	Valued:
@@ -700,7 +700,7 @@ gacsph:
 	Buildable:
 		Queue: Support
 		BuildPaletteOrder: 120
-		Prerequisites: ~gatech, ~structures.allies
+		Prerequisites: gatech, ~structures.allies
 	Selectable:
 		Bounds: 176, 110, -5, -14
 	Valued:
@@ -802,17 +802,12 @@ barracks:
 		Name: Infantry Production
 		Description: Infantry Production
 
-factory:
-	Tooltip:
-		Name: Vehicle Production
-		Description: Vehicle Production
-
 radar:
 	Tooltip:
 		Name: Radar
 		Description: Radar
 
-tech:
+repairpad:
 	Tooltip:
-		Name: Tech Center
-		Description: Tech Center
+		Name: Service Depot
+		Description: Service Depot

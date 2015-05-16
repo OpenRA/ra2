@@ -3,7 +3,7 @@ amcv:
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 110
-		Prerequisites: ~gaweap
+		Prerequisites: ~gaweap, gadept
 	Valued:
 		Cost: 3000
 	Tooltip:
@@ -206,7 +206,7 @@ sref:
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 100
-		Prerequisites: ~gatech, gaweap
+		Prerequisites: gatech, ~gaweap
 	Valued:
 		Cost: 1200
 	Tooltip:

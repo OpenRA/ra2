@@ -7,7 +7,7 @@ zep:
 	Buildable:
 		Queue: Aircraft
 		BuildPaletteOrder: 20
-		Prerequisites: ~naweap, ~natech
+		Prerequisites: ~naweap, natech
 	Selectable:
 		Voice: KirovVoice
 	Helicopter:
