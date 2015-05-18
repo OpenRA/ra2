@@ -205,8 +205,15 @@ tany:
 		Type: Flak
 	Passenger:
 		PipType: Red
-	Armament:
+	Armament@primary:
 		Weapon: DoublePistols
+		UpgradeTypes: eliteweapon
+		UpgradeMaxEnabledLevel: 0
+		UpgradeMaxAcceptedLevel: 1
+	Armament@elite:
+		Weapon: DoublePistolsE
+		UpgradeTypes: eliteweapon
+		UpgradeMinEnabledLevel: 1
 	AttackFrontal:
 	WithInfantryBody:
 	AnnounceOnBuild:
