@@ -40,7 +40,7 @@ cmin:
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 10
-		Prerequisites: ~gaweap
+		Prerequisites: ~gaweap, refinery
 		InitialActivity: FindResources
 	Valued:
 		Cost: 1400

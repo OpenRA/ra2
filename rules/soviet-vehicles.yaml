@@ -41,7 +41,7 @@ harv:
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 10
-		Prerequisites: ~naweap
+		Prerequisites: ~naweap, refinery
 		InitialActivity: FindResources
 	Valued:
 		Cost: 1400
