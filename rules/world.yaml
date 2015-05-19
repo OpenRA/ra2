@@ -1,16 +1,13 @@
-World:
+^BaseWorld:
 	Inherits: ^Palettes
-	ChatCommands:
-	DevCommands:
-	PlayerCommands:
-	HelpCommand:
-	ScreenMap:
 	ActorMap:
+	ScreenMap:
+	TerrainGeometryOverlay:
 	LoadWidgetAtGameStart:
-		Widget: INGAME_ROOT
-	BuildingInfluence:
-	ProductionQueueFromSelection:
-		ProductionPaletteWidget: PRODUCTION_PALETTE
+	ShroudRenderer:
+		FogVariants: shroud
+		Index: 255, 16, 32, 48, 64, 80, 96, 112, 128, 144, 160, 176, 192, 208, 224, 240, 20, 40, 56, 65, 97, 130, 148, 194, 24, 33, 66, 132, 28, 41, 67, 134, 1, 2, 4, 8, 3, 6, 12, 9, 7, 14, 13, 11, 5, 10, 15, 255
+		UseExtendedIndex: true
 	Country@random:
 		Name: Random
 		Race: Random
@@ -62,6 +59,36 @@ World:
 		Name: Russia
 		Race: russia
 		Side: Soviets
+	ResourceType@Tiberium:
+		ResourceType: 1
+		Palette: ore
+		EditorSprite: waypoint # TODO: editor can't handle the real ones
+		Variants: tib01, tib02, tib03, tib04, tib05, tib06, tib07, tib08, tib09, tib10, tib11, tib12, tib13, tib14, tib15, tib16, tib17, tib18, tib19, tib20
+		MaxDensity: 12
+		ValuePerUnit: 50
+		Name: Tiberium
+		PipColor: Yellow
+		AllowedTerrainTypes: Clear
+		AllowUnderActors: false
+		TerrainType: Tiberium
+
+World:
+	Inherits: ^BaseWorld
+	ChatCommands:
+	DevCommands:
+	PlayerCommands:
+	HelpCommand:
+	ScreenShaker:
+	BuildingInfluence:
+	ProductionQueueFromSelection:
+		ProductionPaletteWidget: PRODUCTION_PALETTE
+	#CrateSpawner:
+	#	DeliveryAircraft: pdbplane
+	#	QuantizedFacings: 16
+	#	Minimum: 1
+	#	Maximum: 3
+	#	SpawnInterval: 120
+	#	WaterChance: .2
 	DomainIndex:
 	SmudgeLayer@SMALLSCORCH:
 		Type: SmallScorch
@@ -92,20 +119,7 @@ World:
 		Sequence: largecraters
 	ResourceLayer:
 	ResourceClaimLayer:
-	ResourceType@Tiberium:
-		ResourceType: 1
-		Palette: ore
-		EditorSprite: waypoint # TODO: editor can't handle the real ones
-		Variants: tib01, tib02, tib03, tib04, tib05, tib06, tib07, tib08, tib09, tib10, tib11, tib12, tib13, tib14, tib15, tib16, tib17, tib18, tib19, tib20
-		MaxDensity: 12
-		ValuePerUnit: 50
-		Name: Tiberium
-		PipColor: Yellow
-		AllowedTerrainTypes: Clear
-		AllowUnderActors: false
-		TerrainType: Tiberium
 	PathfinderDebugOverlay:
-	TerrainGeometryOverlay:
 	SpawnMapActors:
 	CreateMPPlayers:
 	MPStartUnits@AMCV:
@@ -116,7 +130,7 @@ World:
 		ClassName: Light
 		Races: allies, america, germany, england, france, korea
 		BaseActor: amcv
-		SupportActors: dog,dog,dog,engineer,engineer
+		SupportActors: dog,e1,e1
 		InnerSupportRadius: 3
 		OuterSupportRadius: 5
 	MPStartUnits@lightsoviets:
@@ -124,7 +138,7 @@ World:
 		CLassName: Light
 		Races: soviets, cuba, libya, iraq, russia
 		BaseActor: smcv
-		SupportActors: dog,dog,dog,engineer,engineer
+		SupportActors: dog,e2,e2,e2
 		InnerSupportRadius: 3
 		OuterSupportRadius: 5
 	MPStartUnits@SMCV:
@@ -135,7 +149,12 @@ World:
 	PathFinder:
 	ValidateOrder:
 	DebugPauseState:
-	ScreenShaker:
 	RadarPings:
 	StartGameNotification:
+	ObjectivesPanel:
+		PanelName: SKIRMISH_STATS
 
+EditorWorld:
+	Inherits: ^BaseWorld
+	EditorActorLayer:
+	EditorResourceLayer:

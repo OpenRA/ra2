@@ -138,6 +138,7 @@ ChromeLayout:
 	./mods/ra2/chrome/color-picker.yaml
 	./mods/ra2/chrome/install.yaml
 	./mods/ra2/chrome/dropdowns.yaml
+	./mods/ra/chrome/editor.yaml
 
 Weapons:
 	./mods/ra2/weapons.yaml
