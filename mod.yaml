@@ -208,6 +208,9 @@ Fonts:
 	BigBold:
 		Font:./mods/common/FreeSansBold.ttf
 		Size:24
+	MediumBold:
+		Font:./mods/common/FreeSansBold.ttf
+		Size:18
 	Small:
 		Font:./mods/common/FreeSans.ttf
 		Size:12
