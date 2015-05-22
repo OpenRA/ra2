@@ -76,6 +76,41 @@ flakt:
 	WithInfantryBody:
 		IdleAnimation:
 
+shk:
+	Inherits: ^Infantry
+	Buildable:
+		Queue: Infantry
+		BuildAtProductionType: Infantry
+		Prerequisites: nahand
+	Valued:
+		Cost: 500
+	Tooltip:
+		Name: Shock Trooper
+		Description: 2000 volts coming up!
+	Selectable:
+		Voice: DesolatorVoice # TODO: I don't know how to setup voices.
+		Bounds: 20, 30, 0, -11
+	Health:
+		HP: 130
+	Mobile:
+		Speed: 51
+	RevealsShroud:
+		Range: 6c0
+	Armor:
+		Type: Plate
+	Passenger:
+		PipType: Red
+	AttackFrontal:
+	Armament@primary:
+		Weapon: ElectricBolt
+		UpgradeTypes: eliteweapon
+		UpgradeMaxEnabledLevel: 0
+		UpgradeMaxAcceptedLevel: 1
+	Armament@elite:
+		Weapon: ElectricBoltE
+		UpgradeTypes: eliteweapon
+		UpgradeMinEnabledLevel: 1
+	WithInfantryBody:
 
 terror:
 	Inherits: ^Infantry

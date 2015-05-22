@@ -1532,3 +1532,39 @@ PrismShot:
 	Warhead@3EffWater: CreateEffect
 		Explosion: piff
 		ValidImpactTypes: Water
+
+ElectricBolt:
+	Damage: 50
+	Range: 3c0
+	MinRange: 0c256 # defaulted
+	# TODO: Rate of fire
+	# TODO: Report
+	Warhead@1Dam: SpreadDamage
+		Versus:
+			None: 100
+			Flak: 100
+			Plate: 100
+			Light: 85
+			Medium: 100
+			Heavy: 100
+			Wood: 50
+			Steel: 50
+			Concrete: 50
+
+ElectricBoltE:
+	Damage: 50
+	Range: 5c0
+	MinRange: 0c256 # defaulted
+	# TODO: Rate of fire
+	# TODO: Report
+	Warhead@1Dam: SpreadDamage
+		Versus:
+			None: 100
+			Flak: 100
+			Plate: 100
+			Light: 85
+			Medium: 100
+			Heavy: 100
+			Wood: 50
+			Steel: 50
+			Concrete: 50
