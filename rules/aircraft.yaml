@@ -32,3 +32,4 @@ zep:
 	Explodes:
 		Weapon: UnitExplode
 		Chance: 75
+	AnnounceOnBuild:

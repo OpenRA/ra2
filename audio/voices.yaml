@@ -102,8 +102,8 @@ SpyVoice:
 	DefaultVariant: .wav
 	Voices:
 		Select: ispysea, ispyseb, ispysec, ispysed
-		Move: ispymoa, ispymob, ispymoc, ispymod, ispymoe
-		Attack: ispyata, ispyatb, ispyatc, ispyatd
+		Move: ispyata, ispymob, ispymoc, ispymod, ispymoe
+		Attack: ispyatb, ispyatd
 		Feedback: ispyfea, ispyfeb
 		Die: ispydia, ispydib, ispydic
 		Zapped: igenzapa
@@ -254,7 +254,8 @@ YuriVoice:
 KirovVoice:
 	DefaultVariant: .wav
 	Voices:
-		Select: vkirsea, vkirseb, vkirsec, vkirsed
+		Build: vkirsea
+		Select: vkirseb, vkirsec, vkirsed
 		Move: vkirmoa, vkirmob, vkirmoc
 		Attack: vkirata, vkiratb, vkiratc, vkiratd
 		Feedback: vkirfea, vkirfeb, vkirfec
@@ -264,10 +265,11 @@ KirovVoice:
 DemolitionTruckVoice:
 	DefaultVariant: .wav
 	Voices:
-		Select: vdemsea, vdemseb, vdemsec, vdemsed
-		Move: vdemmoa, vdemmob, vdemmoc, vdemsed
-		Attack: vdemata, vdematb, vdematc, vdematd, vdemate
 		Build: vdemsea
+		Select: vdemsea, vdemseb, vdemsec, vdemsed
+		Move: vdemmoa, vdemmob, vdemmoc
+		Attack: vdemata, vdematb, vdematc, vdematd, vdemate
+		Die: vdemdiea
 		Burned: ienadia #gotta put something as temp else game crashes
 
 TerrorDroneVoice:
