@@ -142,6 +142,8 @@ ChromeLayout:
 
 Weapons:
 	./mods/ra2/weapons.yaml
+	./mods/ra2/weapons/allied-infantry.yaml
+	./mods/ra2/weapons/soviet-infantry.yaml
 
 Voices:
 	./mods/ra2/audio/voices.yaml
