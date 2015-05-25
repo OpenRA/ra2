@@ -88,7 +88,7 @@ shk:
 		Name: Shock Trooper
 		Description: 2000 volts coming up!
 	Selectable:
-		Voice: DesolatorVoice # TODO: I don't know how to setup voices.
+		Voice: TeslaTrooperVoice
 		Bounds: 20, 30, 0, -11
 	Health:
 		HP: 130

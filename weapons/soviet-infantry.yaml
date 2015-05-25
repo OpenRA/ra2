@@ -211,12 +211,15 @@ FlakGuyAAGunE:
 
 # Shock Trooper
 ElectricBolt:
-	Damage: 50
 	Range: 3c0
-	MinRange: 0c256 # defaulted
-	# TODO: Rate of fire
-	# TODO: Report
+	ReloadDelay: 60
+	Report: itesatta.wav
+	Projectile: TeslaZap
+		Speed: 100c0
 	Warhead@1Dam: SpreadDamage
+		Spread: 120
+		Damage: 50
+		DeathType: 6
 		Versus:
 			None: 100
 			Flak: 100
@@ -229,12 +232,15 @@ ElectricBolt:
 			Concrete: 50
 
 ElectricBoltE:
-	Damage: 50
 	Range: 5c0
-	MinRange: 0c256 # defaulted
-	# TODO: Rate of fire
-	# TODO: Report
+	ReloadDelay: 40
+	Report: itesat2a.wav, itesat2b.wav
+	Projectile: TeslaZap
+		Speed: 100c0
 	Warhead@1Dam: SpreadDamage
+		Spread: 120
+		Damage: 50
+		DeathType: 6
 		Versus:
 			None: 100
 			Flak: 100
