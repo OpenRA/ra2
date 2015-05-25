@@ -217,3 +217,53 @@ tany:
 	AttackFrontal:
 	WithInfantryBody:
 	AnnounceOnBuild:
+
+jumpjet:
+	Inherits: ^Infantry
+	Buildable:
+		Queue: Infantry
+		BuildAtProductionType: Infantry
+		BuildPaletteOrder: 60
+		Prerequisites: ~gapile, radar
+	Valued:
+		Cost: 600
+	Tooltip:
+		Name: Rocketeer
+		Description: Airborne soldier.\n  Strong vs Infantry, Aircraft\n  Weak vs Vehicles
+	Selectable:
+		Voice: RocketeerVoice
+		Bounds: 20, 30, 0, -11
+	Health:
+		HP: 125
+	-Mobile:
+	RevealsShroud:
+		Range: 8c0
+	Armor:
+		Type: None
+	Armament@primary:
+		Weapon: 20mm
+		UpgradeTypes: eliteweapon
+		UpgradeMaxEnabledLevel: 0
+		UpgradeMaxAcceptedLevel: 1
+	Armament@elite:
+		Weapon: 20mmE
+		UpgradeTypes: eliteweapon
+		UpgradeMinEnabledLevel: 1
+	AttackFrontal:
+	Helicopter:
+		CruiseAltitude: 4096
+		LandWhenIdle: false
+		InitialFacing: 20
+		ROT: 10
+		Speed: 100
+		AltitudeVelocity: 83
+	WithInfantryBody:
+		MoveSequence: fly
+		AttackSequence: shoot-air # doesn't work?
+		IdleSequences: idle-air
+		StandSequence: stand-air
+	Hovers:
+		OffsetModifier: -45
+	TargetableUnit:
+		TargetTypes: Air, Disguise
+	WithShadow:

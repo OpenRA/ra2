@@ -1473,3 +1473,62 @@ PrismShot:
 			Wood: 50
 			Steel: 50
 			Concrete: 50
+
+20mm:
+	ReloadDelay: 20
+	Range: 5c0
+	Report: irocatta.wav
+	ValidTargets: Ground, Air
+	Projectile: Bullet
+		Speed: 100c0
+	Warhead@1Dam: SpreadDamage
+		Spread: 64
+		Damage: 25
+		DeathType: 1
+		Versus:
+			None: 100
+			Flak: 100
+			Plate: 70
+			Light: 60
+			Medium: 40
+			Heavy: 40
+			Wood: 75
+			Steel: 50
+			Concrete: 25
+		DamageTypes: Prone70Percent, TriggerProne
+	Warhead@2Eff: CreateEffect
+		Explosion: piff
+		InvalidImpactTypes: Water
+	Warhead@3EffWater: CreateEffect
+		Explosion: piff
+		ValidImpactTypes: Water
+
+20mme:
+	ReloadDelay: 20
+	Range: 5c0
+	Burst: 2
+	Report: irocatta.wav
+	ValidTargets: Ground, Air
+	Projectile: Bullet
+		Speed: 100c0
+	Warhead@1Dam: SpreadDamage
+		Spread: 64
+		Damage: 25
+		DeathType: 1
+		ProneModifier: 70
+		Versus:
+			None: 100
+			Flak: 100
+			Plate: 70
+			Light: 60
+			Medium: 40
+			Heavy: 40
+			Wood: 75
+			Steel: 50
+			Concrete: 25
+	Warhead@2Eff: CreateEffect
+		Explosion: piff
+		InvalidImpactTypes: Water
+	Warhead@3EffWater: CreateEffect
+		Explosion: piff
+		ValidImpactTypes: Water
