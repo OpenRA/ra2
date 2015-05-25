@@ -30,7 +30,7 @@ gacnst:
 		Start: 20
 		Length: 20
 		Tick: 150
-	dead: ggcnstdm
+	dead: ggcnstdm # SHP broken & unused
 		Length: 30
 		ShadowStart: 30
 		Tick: 100
@@ -88,7 +88,7 @@ gapile:
 		Start:16
 		Length: 16
 		ShadowStart: 48
-	dead: ggpiledm
+	dead: ggpiledm # SHP broken & unused
 		Length: 25
 		ShadowStart: 25
 		Tick: 100
@@ -610,7 +610,7 @@ gacsph:
 	damaged-idle-dome: ggcsph_e
 		Start: 1
 		ShadowStart: 3
-	dead: ggcsphdm
+	dead: ggcsphdm # SHP broken & unused
 		Length: 25
 		ShadowStart: 25
 		Tick: 50
@@ -654,7 +654,7 @@ atesla:
 		Length: 10
 		Tick: 100
 		ShadowStart: 30
-	dead: ggprisdm
+	dead: ggprisdm # SHP broken & unused
 		Length: 21
 		ShadowStart: 21
 		Tick: 100

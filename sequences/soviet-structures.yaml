@@ -39,7 +39,7 @@ nacnst:
 		Start: 21
 		Length: 21
 		Tick: 150
-	dead: ngcnstdm
+	dead: ngcnstdm # SHP broken & unused
 		Length: 25
 		ShadowStart: 25
 		Tick: 100
@@ -529,7 +529,7 @@ tesla:
 		Start: 10
 		Length: 10
 		Tick: 100
-	dead: ngtsladm
+	dead: ngtsladm # SHP broken & unused
 		Length: 20
 		ShadowStart: 20
 		Tick: 100

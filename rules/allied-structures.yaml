@@ -46,10 +46,6 @@ gacnst:
 		Race: france
 	Power:
 		Amount: 0
-	WithDeathAnimation:
-		DeathSequence: dead
-		UseDeathTypeSuffix: false
-	-WithBuildingExplosion:
 
 gapowr:
 	Inherits: ^Building
@@ -127,10 +123,6 @@ gapile:
 		Sequence: idle-flag
 	Power:
 		Amount: -10
-	WithDeathAnimation:
-		DeathSequence: dead
-		UseDeathTypeSuffix: false
-	-WithBuildingExplosion:
 
 garefn:
 	Inherits: ^Building
@@ -736,10 +728,6 @@ gacsph:
 		# TODO: not all cargo types died: KillCargo: true
 	#	DisplayRadarPing: false
 		# TODO: Support rectangle selection, not radius-only: Range: 3x3
-	WithDeathAnimation:
-		DeathSequence: dead
-		UseDeathTypeSuffix: false
-	-WithBuildingExplosion:
 
 atesla:
 	Inherits: ^Building
@@ -782,10 +770,6 @@ atesla:
 	WithRangeCircle:
 		Range: 8c0
 		Type: prismcannon
-	WithDeathAnimation:
-		DeathSequence: dead
-		UseDeathTypeSuffix: false
-	-WithBuildingExplosion:
 
 power:
 	Tooltip:
