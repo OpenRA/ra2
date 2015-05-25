@@ -303,25 +303,25 @@ tany:
 
 jumpjet:
 	Defaults: rock
-	stand:
-		Facings: 8
-	run:
-		Start: 8
 		Length: 6
 		Facings: 8
+	stand:
+		Length: 1
+	run:
+		Start: 8
 		Tick: 120
 	idle1:
 		Start: 56
 		Length: 15
+		Facings: 1
 		Tick: 100
 	idle2:
 		Start: 71
 		Length: 15
+		Facings: 1
 		Tick: 100
 	prone-run:
 		Start: 86
-		Length: 6
-		Facings: 8
 		Tick: 100
 	die1: # copied from die-air
 	#	Start: 134
@@ -340,32 +340,25 @@ jumpjet:
 	die5: flameguy
 		Start: 48
 		Length: 59
+		Facings: 1
 		Tick: 80
 # TODO: This is just the death sequence; normally flameguy would run a bit around before dying
 	die6: electro
 		Length: *
+		Facings: 1
 		Tick: 120
 	die-crushed: death_c
 		Length: 4
+		Facings: 1
 		Tick: 80
 	shoot:
 		Start: 164
-		Length: 6
-		Facings: 8
 		Tick: 80
 	prone-shoot:
 		Start: 212
-		Length: 6
-		Facings: 8
 		Tick: 80
-	stand-air:
+	fly:
 		Start: 292
-		Facings: 8
-	fly: # the same as stand-air
-		Start: 292
-		Length: 6
-		Facings: 8
-		Tick: 120
 	die-air:
 		Start: 340
 		Length: 16
@@ -373,11 +366,12 @@ jumpjet:
 		Tick: 80
 	shoot-air:
 		Start: 370
-		Length: 6
-		Facings: 8
 		Tick: 80
 	idle-air:
 		Start: 418
 		Length: 9
+		Facings: 1
 		Tick: 100
 	icon: jjeticon
+		Length: 1
+		Facings: 1

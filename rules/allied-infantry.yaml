@@ -258,10 +258,10 @@ jumpjet:
 		Speed: 100
 		AltitudeVelocity: 83
 	WithInfantryBody:
+		StandSequence: fly
 		MoveSequence: fly
 		AttackSequence: shoot-air # doesn't work?
 		IdleSequences: idle-air
-		StandSequence: stand-air
 	Hovers:
 		OffsetModifier: -45
 	TargetableUnit:
