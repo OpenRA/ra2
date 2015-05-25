@@ -184,7 +184,7 @@ demobomb:
 		Size: 2
 		Delay: 15
 
-coilbolt:
+CoilBolt:
 	ReloadDelay: 3
 	Charges: true
 	Range: 8c0
@@ -206,7 +206,7 @@ coilbolt:
 			Steel: 50
 			Concrete: 50
 
-opcoilbolt: # when overcharged by 3 Tesla Troopers
+OPCoilBolt:
 	ReloadDelay: 3
 	Charges: true
 	Range: 8c512

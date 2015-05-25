@@ -619,10 +619,20 @@ tesla:
 		Bounds: 44, 88, -2, -33
 	RenderBuildingCharge:
 		ChargeAudio: tslachg2.aud
-	Armament:
+	Armament@primary:
 		Weapon: CoilBolt
 		LocalOffset: 0,0,2200
+		UpgradeTypes: charged
+		UpgradeMaxEnabledLevel: 2
+		UpgradeMaxAcceptedLevel: 3
+	Armament@charged:
+		Weapon: OPCoilBolt
+		LocalOffset: 0,0,2200
+		UpgradeTypes: charged
+		UpgradeMinEnabledLevel: 3
+		UpgradeMaxAcceptedLevel: 3
 	AttackCharge:
+		Armaments: primary, charged
 		MaxCharges: 3
 		ReloadTime: 120
 	AutoTarget:

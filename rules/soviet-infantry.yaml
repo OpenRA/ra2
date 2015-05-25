@@ -111,6 +111,9 @@ shk:
 		UpgradeTypes: eliteweapon
 		UpgradeMinEnabledLevel: 1
 	WithInfantryBody:
+	UpgradeActorsNear:
+		Upgrades: charged
+		Range: 1536
 
 terror:
 	Inherits: ^Infantry
