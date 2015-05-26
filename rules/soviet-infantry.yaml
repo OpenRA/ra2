@@ -113,7 +113,7 @@ shk:
 	WithInfantryBody:
 	UpgradeActorsNear:
 		Upgrades: charged
-		Range: 1536
+		Range: 1c256
 
 terror:
 	Inherits: ^Infantry
