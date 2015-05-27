@@ -47,7 +47,7 @@ harv:
 		Cost: 1400
 	Tooltip:
 		Name: War Miner
-		Description: Gathers Ore.
+		Description: Gathers Ore.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
 	Selectable:
 		Voice: SovietVehicleVoice
 		Bounds: 64, 52, 0, -6
@@ -99,7 +99,7 @@ htk:
 		Cost: 500
 	Tooltip:
 		Name: Flak Track
-		Description: Infantry Transport and Anti-Air/Anti-Infantry vehicle.\nStrong vs Aircraft, Infantry\nWeak vs Vehicles
+		Description: Infantry Transport and Anti-Air/Anti-Infantry vehicle.\n  Strong vs Aircraft, Infantry\n  Weak vs Vehicles
 	Selectable:
 		Bounds: 50, 40, 0, -6
 		Voice: SovietVehicleVoice
@@ -143,7 +143,7 @@ htnk:
 		Cost: 900
 	Tooltip:
 		Name: Rhino Heavy Tank
-		Description: Soviet Main Battle Tank.\nStrong vs. Vehicles\nWeak vs. Infantry, Aircraft
+		Description: Soviet Main Battle Tank.\n  Strong vs Vehicles\n  Weak vs Infantry, Aircraft
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 30
@@ -189,7 +189,7 @@ apoc:
 		Cost: 1750
 	Tooltip:
 		Name: Apocalypse Tank
-		Description: Soviet Advanced Battle Tank with Double Barrel\nand Anti-Aircraft Missile Launcher.\n\nStrong vs. Vehicles, Aircraft\nWeak vs. Infantry
+		Description: Soviet Advanced Battle Tank with Double Barrel\nand Anti-Aircraft Missile Launcher.\n  Strong vs Vehicles, Aircraft\n  Weak vs Infantry
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 60
@@ -241,7 +241,7 @@ dtruck:
 		Cost: 3000
 	Tooltip:
 		Name: Demolition Truck
-		Description: Demolition Truck, actively armed with explosives.
+		Description: Demolition Truck, actively armed with nuclear explosives.
 	Selectable:
 		Voice: DemolitionTruckVoice
 		Bounds: 64, 52, 0, -6

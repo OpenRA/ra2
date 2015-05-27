@@ -46,7 +46,7 @@ cmin:
 		Cost: 1400
 	Tooltip:
 		Name: Chrono Miner
-		Description: Gathers Ore.
+		Description: Gathers Ore.\n  Unarmed\nSpecial ability: Can teleport to own refineries
 	Selectable:
 		Voice: AlliedVehicleVoice
 		Bounds: 64, 52, 0, -6
@@ -81,7 +81,7 @@ mtnk:
 		Cost: 700
 	Tooltip:
 		Name: Grizzly Battle Tank
-		Description: Allied Main Battle Tank.\nStrong vs. Vehicles\nWeak vs. Infantry, Aircraft
+		Description: Allied Main Battle Tank.\n  Strong vs Vehicles, Ships\n  Weak vs Infantry, Aircraft
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 20
@@ -126,7 +126,7 @@ tnkd:
 		Cost: 900
 	Tooltip:
 		Name: Tank Destroyer
-		Description: Special anti-armor unit.\nStrong vs. Vehicles\nWeak vs. Everything else
+		Description: Special anti-armor unit.\n  Strong vs Vehicles, Ships\n  Weak vs Infantry, Aircraft
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 20
@@ -160,7 +160,7 @@ fv:
 		Cost: 600
 	Tooltip:
 		Name: Infantry Fighting Vehicle
-		Description: Multi-Purpose Vehicle.\nSpecial Ability: Armament depends on passenger.
+		Description: Multi-Purpose Vehicle.\nWithout crago:\n  Strong vs Infantry, Aircraft\n  Weak vs Vehicles, Ships\nSpecial Ability: Armament depends on passenger.
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 30
@@ -211,7 +211,7 @@ sref:
 		Cost: 1200
 	Tooltip:
 		Name: Prism Tank
-		Description: Fires deadly beams of light\nStrong vs Infantry, Vehicles\nWeak vs Aircraft
+		Description: Fires deadly beams of light\n  Strong vs Infantry, Vehicles\n  Weak vs Aircraft
 	Selectable:
 		Voice: AlliedVehicleVoice
 		Bounds: 30,30

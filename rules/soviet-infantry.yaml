@@ -8,7 +8,7 @@ e2:
 		Cost: 100
 	Tooltip:
 		Name: Conscript
-		Description: Basic foot-soldier.
+		Description: Cheap standart infantry.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
 	Selectable:
 		Voice: ConscriptVoice
 		Bounds: 20, 30, 0, -11
@@ -42,7 +42,7 @@ flakt:
 		Cost: 100
 	Tooltip:
 		Name: Flak Trooper
-		Description: Anti-Air/Anti-Infantry unit.\nStrong vs Aircraft, Infantry\nWeak vs Vehicles
+		Description: Anti-Air/Anti-Infantry unit.\n  Strong vs Aircraft, Infantry\n  Weak vs Vehicles
 	Selectable:
 		Voice: FlakTrooperVoice
 		Bounds: 20, 30, 0, -11
@@ -86,7 +86,7 @@ shk:
 		Cost: 500
 	Tooltip:
 		Name: Shock Trooper
-		Description: 2000 volts coming up!
+		Description: Special armored unit using electricity.\n  Strong vs Infantry, Light armor\n  Weak vs Tanks, Aircraft\nSpecial ability: Charge tesla coils (3 Tesla Troopers required)
 	Selectable:
 		Voice: TeslaTrooperVoice
 		Bounds: 20, 30, 0, -11
@@ -126,7 +126,7 @@ terror:
 		Cost: 200
 	Tooltip:
 		Name: Terrorist
-		Description: The Terrorist carries C4 charges taped to his body and kamikazes enemies\nblowing them up quickly and efficiently.
+		Description: Carries C4 charges taped to his body and kamikazes enemies\nblowing them up quickly and efficiently.\n  Strong vs Ground units\n  Weak vs Aircraft
 	Selectable:
 		Voice: TerroristVoice
 		Bounds: 20, 30, 0, -11
@@ -158,7 +158,7 @@ deso:
 		Cost: 200
 	Tooltip:
 		Name: Desolator
-		Description: Carries a radiation-emitting weapon.\nCan deploy for area-of-effect damage.
+		Description: Carries a radiation-emitting weapon.\nCan deploy for area-of-effect damage.\n  Strong vs Infantry, Light armor\n  Weak vs Tanks, Aircraft
 	Selectable:
 		Voice: DesolatorVoice
 		Bounds: 20, 30, 0, -11
