@@ -78,62 +78,62 @@ Actors:
 	Actor0: caoild
 		Location: 160,-9
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor1: caoild
 		Location: 150,1
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor2: caoild
 		Location: 84,-66
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor3: caoild
 		Location: 94,-76
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor4: caoild
 		Location: 136,-23
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor5: caoild
 		Location: 159,-44
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor6: caoild
 		Location: 143,-57
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor7: caoild
 		Location: 124,-66
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor8: caoild
 		Location: 107,-52
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor9: caoild
 		Location: 85,-28
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor10: caoild
 		Location: 101,-17
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor11: caoild
 		Location: 112,-1
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor12: tibtre02
 		Location: 18,10

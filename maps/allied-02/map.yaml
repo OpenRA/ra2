@@ -78,302 +78,302 @@ Actors:
 	Actor0: gacnst
 		Location: 64,-24
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor1: garefn
 		Location: 57,-11
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor2: gapile
 		Location: 65,-11
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor3: gaweap
 		Location: 57,-15
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor4: naflak
 		Location: 69,-22
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor5: nacnst
 		Location: 115,-61
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor6: caarmy01
 		Location: 120,9
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor7: camisc02
 		Location: 122,-63
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor8: camisc01
 		Location: 123,-63
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor9: napowr
 		Location: 111,-63
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor10: napowr
 		Location: 111,-65
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor11: camisc01
 		Location: 122,-61
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor12: gaairc
 		Location: 57,-18
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor13: gapowr
 		Location: 64,-13
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor14: camisc03
 		Location: 146,-38
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor15: naflak
 		Location: 121,-46
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor16: naflak
 		Location: 69,-11
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor17: naflak
 		Location: 108,-46
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor18: napowr
 		Location: 119,-56
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor19: napowr
 		Location: 119,-54
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor20: nahand
 		Location: 117,-51
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor21: htnk
 		Location: 113,-37
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 224
 	Actor22: htnk
 		Location: 116,-37
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 224
 	Actor23: htnk
 		Location: 91,-33
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 224
 	Actor24: harv
 		Location: 112,-50
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor25: cmin
 		Location: 61,-10
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 160
 	Actor26: e2
 		Location: 69,-17
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 98
 	Actor27: tany
 		Location: 120,13
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 98
 	Actor28: e1
 		Location: 120,11
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 98
 	Actor29: e1
 		Location: 122,11
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 99
 	Actor30: engineer
 		Location: 122,13
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 100
 	Actor31: engineer
 		Location: 122,13
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 99
 	Actor32: engineer
 		Location: 123,13
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 99
 	Actor33: e2
 		Location: 109,-64
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 100
 	Actor34: e2
 		Location: 110,-62
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 99
 	Actor35: e2
 		Location: 108,-64
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 100
 	Actor36: e2
 		Location: 110,-43
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 99
 	Actor37: e2
 		Location: 118,-43
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 99
 	Actor38: e2
 		Location: 108,-62
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 100
 	Actor39: dog
 		Location: 110,-61
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 100
 	Actor40: e2
 		Location: 21,5
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 99
 	Actor41: e2
 		Location: 19,5
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 100
 	Actor42: e2
 		Location: 20,7
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 100
 	Actor43: dog
 		Location: 21,7
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 98
 	Actor44: e2
 		Location: 116,-57
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 100
 	Actor45: e2
 		Location: 118,-56
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 99
 	Actor46: e2
 		Location: 117,-57
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 99
 	Actor47: e2
 		Location: 117,-55
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 98
 	Actor48: e2
 		Location: 117,-56
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 99
 	Actor49: e2
 		Location: 89,-33
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 100
 	Actor50: e2
 		Location: 89,-34
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 98
 	Actor51: e2
 		Location: 88,-33
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 98
 	Actor52: e2
 		Location: 149,-35
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 100
 	Actor53: e2
 		Location: 151,-35
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 100
 	Actor54: e2
 		Location: 113,-38
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 98
 	Actor55: e2
 		Location: 114,-38
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 100
 	Actor56: e2
 		Location: 113,-38
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 99
 	Actor57: e2
 		Location: 115,-38
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 98
 	Actor58: e2
 		Location: 114,-37
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 99
 	Actor59: e2
 		Location: 115,-37
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 98
 	Actor60: tree20
 		Location: 117,11

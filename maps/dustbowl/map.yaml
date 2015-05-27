@@ -48,122 +48,122 @@ Actors:
 	Actor0: cafarm01
 		Location: 96,16
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor1: cafarm02
 		Location: 73,16
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor2: caoild
 		Location: 113,17
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor3: caoild
 		Location: 116,12
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor4: camisc01
 		Location: 102,29
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor5: camisc02
 		Location: 102,30
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor6: camisc02
 		Location: 103,32
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor7: camisc03
 		Location: 96,8
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor8: cafarm02
 		Location: 105,23
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor9: cafarm01
 		Location: 63,33
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor10: cafarm02
 		Location: 55,38
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor11: cafarm02
 		Location: 57,38
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor12: camisc03
 		Location: 58,39
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor13: camisc03
 		Location: 69,31
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor14: caoild
 		Location: 33,-2
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor15: caoild
 		Location: 26,0
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor16: cafarm01
 		Location: 94,-26
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor17: camisc03
 		Location: 101,-13
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor18: causfgl
 		Location: 86,-24
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor19: cafarm02
 		Location: 75,-19
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor20: cafarm01
 		Location: 71,-13
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor21: cafarm01
 		Location: 54,-4
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor22: camisc03
 		Location: 45,-12
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor23: camisc03
 		Location: 60,-19
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor24: tree07
 		Location: 74,16

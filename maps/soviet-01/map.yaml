@@ -78,532 +78,532 @@ Actors:
 	Actor0: cawash04
 		Location: 74,33
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor1: cawash04
 		Location: 74,24
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor2: gacnst
 		Location: 61,34
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor3: gapowr
 		Location: 67,37
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor4: gapowr
 		Location: 56,32
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor5: gapowr
 		Location: 55,22
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor6: gapile
 		Location: 66,33
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor7: garefn
 		Location: 56,36
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor8: gapile
 		Location: 50,-4
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor9: gapile
 		Location: 66,-4
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor10: gapowr
 		Location: 102,27
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor11: gapowr
 		Location: 102,32
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor12: gapowr
 		Location: 93,26
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor13: gapowr
 		Location: 93,34
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor14: gapill
 		Location: 60,-2
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor15: gapill
 		Location: 58,-2
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor16: gapill
 		Location: 70,31
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor17: nasam
 		Location: 103,37
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor18: nasam
 		Location: 93,37
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor19: causfgl
 		Location: 96,34
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor20: causfgl
 		Location: 100,34
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor21: causfgl
 		Location: 101,38
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor22: causfgl
 		Location: 95,38
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor23: cawa2a
 		Location: 59,-19
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor24: cawa2b
 		Location: 59,-15
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor25: cawa2d
 		Location: 55,-19
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor26: causfgl
 		Location: 55,-3
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor27: causfgl
 		Location: 63,-3
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor28: causfgl
 		Location: 55,-22
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor29: causfgl
 		Location: 55,-9
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor30: causfgl
 		Location: 63,-22
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor31: causfgl
 		Location: 63,-9
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor32: camisc04
 		Location: 104,60
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor33: camisc04
 		Location: 94,48
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor34: cawash07
 		Location: 109,58
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor35: gapill
 		Location: 70,29
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor36: cawash04
 		Location: 53,2
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor37: cawash04
 		Location: 62,2
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor38: camisc04
 		Location: 97,57
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor39: camisc03
 		Location: 93,43
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor40: nasam
 		Location: 67,28
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor41: nasam
 		Location: 61,28
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor42: cawa2c
 		Location: 55,-15
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor43: nasam
 		Location: 53,-10
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor44: nasam
 		Location: 53,-21
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor45: nasam
 		Location: 65,-10
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor46: nasam
 		Location: 65,-21
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor47: causfgl
 		Location: 52,-12
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor48: causfgl
 		Location: 52,-19
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor49: causfgl
 		Location: 66,-12
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor50: causfgl
 		Location: 66,-19
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor51: gapill
 		Location: 58,-9
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor52: gapill
 		Location: 60,-9
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor53: causfgl
 		Location: 69,38
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor54: causfgl
 		Location: 69,20
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor55: causfgl
 		Location: 55,20
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor56: causfgl
 		Location: 55,38
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor57: cawash10
 		Location: 68,2
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor58: cawash10
 		Location: 47,2
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor59: camisc03
 		Location: 33,10
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor60: camisc04
 		Location: 38,16
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor61: camisc03
 		Location: 95,52
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor62: cawash07
 		Location: 69,62
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor63: cawash07
 		Location: 66,62
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor64: cawash05
 		Location: 96,77
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor65: cawash10
 		Location: 48,23
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor66: cawash05
 		Location: 48,36
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor67: cawash05
 		Location: 48,39
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor68: cawash07
 		Location: 38,33
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor69: cawash05
 		Location: 36,21
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor70: gapile
 		Location: 97,27
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor71: caoild
 		Location: 27,-12
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor72: caoild
 		Location: 27,-15
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor73: camisc03
 		Location: 24,-4
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor74: smcv
 		Location: 107,86
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 96
 	Actor75: e1
 		Location: 60,20
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 98
 	Actor76: e1
 		Location: 68,20
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 100
 	Actor77: e1
 		Location: 64,28
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 98
 	Actor78: e1
 		Location: 58,-4
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 98
 	Actor79: e1
 		Location: 64,-16
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 99
 	Actor80: e1
 		Location: 60,-4
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 98
 	Actor81: e1
 		Location: 97,49
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 99
 	Actor82: e1
 		Location: 98,50
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 99
 	Actor83: e1
 		Location: 56,26
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 100
 	Actor84: e1
 		Location: 58,20
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 98
 	Actor85: e1
 		Location: 53,-15
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 98
 	Actor86: e1
 		Location: 99,49
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 99
 	Actor87: e1
 		Location: 69,29
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 100
 	Actor88: e1
 		Location: 69,31
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 98
 	Actor89: e1
 		Location: 69,31
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 100
 	Actor90: e1
 		Location: 69,29
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 98
 	Actor91: e1
 		Location: 63,-18
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 100
 	Actor92: e1
 		Location: 63,-13
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 99
 	Actor93: e1
 		Location: 59,-11
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 99
 	Actor94: e1
 		Location: 56,-11
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 99
 	Actor95: e1
 		Location: 54,-19
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 99
 	Actor96: e1
 		Location: 58,-21
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 100
 	Actor97: e1
 		Location: 57,31
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 98
 	Actor98: e1
 		Location: 48,28
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 100
 	Actor99: e1
 		Location: 59,3
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 99
 	Actor100: e1
 		Location: 98,30
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 98
 	Actor101: e1
 		Location: 97,30
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 98
 	Actor102: e1
 		Location: 103,35
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 98
 	Actor103: e1
 		Location: 98,36
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 98
 	Actor104: e1
 		Location: 98,25
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 99
 	Actor105: e1
 		Location: 92,32
 		Owner: Neutral
-		Health: 1
+		Health: 100
 		Facing: 100
 	Actor106: tree11
 		Location: 66,41
