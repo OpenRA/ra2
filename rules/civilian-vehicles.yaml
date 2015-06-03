@@ -20,9 +20,10 @@ bus:
 	RenderSprites:
 	Selectable:
 		Bounds: 64, 52, 0, -6
-		Voice: CarVoice
 	RenderVoxels:
 	WithVoxelBody:
+	Voiced:
+		VoiceSet: CarVoice
 
 pick:
 	Inherits: ^Vehicle
@@ -42,9 +43,10 @@ pick:
 	RenderSprites:
 	Selectable:
 		Bounds: 64, 52, 0, -6
-		Voice: CarVoice
 	RenderVoxels:
 	WithVoxelBody:
+	Voiced:
+		VoiceSet: CarVoice
 
 car:
 	Inherits: ^Vehicle
@@ -64,6 +66,8 @@ car:
 	RenderSprites:
 	Selectable:
 		Bounds: 64, 52, 0, -6
-		Voice: CarVoice
 	RenderVoxels:
 	WithVoxelBody:
+	Voiced:
+		VoiceSet: CarVoice
+

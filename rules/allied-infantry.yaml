@@ -10,8 +10,6 @@ engineer:
 		Description: Captures enemy structures.\n  Unarmed
 	Selectable:
 		Bounds: 20, 30, 0, -11
-		# TODO: what do we do with soviet engineers?
-		Voice: AlliedEngineerVoice
 	Health:
 		HP: 75
 	Mobile:
@@ -26,6 +24,9 @@ engineer:
 	WithInfantryBody:
 	RevealsShroud:
 		Range: 4c0
+	Voiced:
+		# TODO: what do we do with soviet engineers?
+		VoiceSet: AlliedEngineerVoice
 # BombSight=4 ; detecting ivan's little friends
 # Todo: engineers can defuse ivan's bombs, but don't get consumed
 # IRC: http://logs.ihptru.net/?year=2015&month=02&day=16#22:02:01
@@ -41,7 +42,6 @@ dog:
 		Name: Attack Dog
 		Description: Anti-infantry unit.\nCan detect cloaked units and spies.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
 	Selectable:
-		Voice: DogVoice
 		Bounds: 30, 24, 0, -5
 	Health:
 		HP: 100
@@ -66,6 +66,8 @@ dog:
 	IgnoresDisguise:
 	DetectCloaked:
 		Range: 5
+	Voiced:
+		VoiceSet: DogVoice
 # ImmuneToRadiation=no
 # ImmuneToPsionics=yes
 # IFVMode=0
@@ -82,7 +84,6 @@ e1:
 		Name: G.I.
 		Description: General-purpose infantry.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
 	Selectable:
-		Voice: GIVoice
 		Bounds: 20, 30, 0, -11
 	Health:
 		HP: 125
@@ -111,6 +112,8 @@ e1:
 		UpgradeTypes: eliteparaweapon
 		UpgradeMinEnabledLevel: 1
 	WithInfantryBody:
+	Voiced:
+		VoiceSet: GIVoice
 
 snipe:
 	Inherits: ^Infantry
@@ -124,7 +127,6 @@ snipe:
 		BuildPaletteOrder: 80
 		Prerequisites: radar, ~infantry.england
 	Selectable:
-		Voice: SniperVoice
 		Bounds: 20, 30, 0, -11
 	Mobile:
 		Speed: 35
@@ -141,6 +143,8 @@ snipe:
 	Armament@PRIMARY:
 		Weapon: awp
 	AttackFrontal:
+	Voiced:
+		VoiceSet: SniperVoice
 
 spy:
 	Inherits: ^Infantry
@@ -156,7 +160,6 @@ spy:
 		GenericName: Soldier
 		Description: Infiltrates enemy structures for intel or\nsabotage. Exact effect depends on the\nbuilding infiltrated.\n  Unarmed\nSpecial Ability: Disguises
 	Selectable:
-		Voice: SpyVoice
 		Bounds: 24, 28, -1, -8
 	Health:
 		HP: 25
@@ -175,6 +178,8 @@ spy:
 	WithDisguisingInfantryBody:
 		IdleAnimations: idle1,idle2
 		StandAnimations: stand
+	Voiced:
+		VoiceSet: SpyVoice
 
 tany:
 	Inherits: ^Infantry
@@ -190,7 +195,6 @@ tany:
 		Name: Tanya
 		Description: Elite commando infantry, armed with \ndual pistols and C4.\n  Strong vs Infantry, Buildings\n  Weak vs Vehicles, Aircraft\nSpecial Ability: Destroy Building with C4\n\nMaximum 1 can be trained.
 	Selectable:
-		Voice: TanyaVoice
 		Bounds: 20, 30, 0, -11
 	Health:
 		HP: 125
@@ -217,6 +221,8 @@ tany:
 	AttackFrontal:
 	WithInfantryBody:
 	AnnounceOnBuild:
+	Voiced:
+		VoiceSet: TanyaVoice
 
 jumpjet:
 	Inherits: ^Infantry
@@ -231,7 +237,6 @@ jumpjet:
 		Name: Rocketeer
 		Description: Airborne soldier.\n  Strong vs Infantry, Aircraft\n  Weak vs Vehicles
 	Selectable:
-		Voice: RocketeerVoice
 		Bounds: 20, 30, 0, -11
 	Health:
 		HP: 125
@@ -267,3 +272,6 @@ jumpjet:
 	TargetableUnit:
 		TargetTypes: Air, Disguise
 	WithShadow:
+	Voiced:
+		VoiceSet: RocketeerVoice
+

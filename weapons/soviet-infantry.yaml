@@ -8,7 +8,6 @@ M1Carbine:
 	Warhead@1Dam: SpreadDamage
 		Spread: 64
 		Damage: 15
-		DeathType: 1
 		Versus:
 			None: 100
 			Flak: 80
@@ -19,7 +18,7 @@ M1Carbine:
 			Wood: 75
 			Steel: 50
 			Concrete: 25
-		DamageTypes: Prone70Percent, TriggerProne
+		DamageTypes: Prone70Percent, TriggerProne, DeathType1
 	Warhead@2Eff: CreateEffect
 		Explosion: piff
 		InvalidImpactTypes: Water
@@ -36,7 +35,6 @@ M1CarbineE:
 	Warhead@1Dam: SpreadDamage
 		Spread: 64
 		Damage: 20
-		DeathType: 1
 		Versus:
 			None: 100
 			Flak: 80
@@ -47,7 +45,7 @@ M1CarbineE:
 			Wood: 75
 			Steel: 50
 			Concrete: 25
-		DamageTypes: Prone70Percent, TriggerProne
+		DamageTypes: Prone70Percent, TriggerProne, DeathType1
 	Warhead@2Eff: CreateEffect
 		Explosion: piff
 		InvalidImpactTypes: Water
@@ -67,7 +65,6 @@ RadBeamWeapon:
 		BeamDuration: 7
 		Color: 185, 0, 255, 0
 	Warhead@1Dam: SpreadDamage
-		DeathType: 2
 		Spread: 42
 		Damage: 125
 		Versus:
@@ -80,6 +77,7 @@ RadBeamWeapon:
 			Wood: 0
 			Steel: 0
 			Concrete: 0
+		DamageTypes: DeathType2
 
 RadBeamWeaponE:
 	ValidTargets: Ground
@@ -92,7 +90,6 @@ RadBeamWeaponE:
 		BeamDuration: 7
 		Color: 185, 0, 255, 0
 	Warhead@1Dam: SpreadDamage
-		DeathType: 2
 		Spread: 42
 		Damage: 125
 		Versus:
@@ -105,6 +102,7 @@ RadBeamWeaponE:
 			Wood: 0
 			Steel: 0
 			Concrete: 0
+		DamageTypes: DeathType2
 
 # Flak Trooper
 FlakGuyGun:
@@ -116,7 +114,6 @@ FlakGuyGun:
 	Warhead@1Dam: SpreadDamage
 		Spread: 64
 		Damage: 20
-		DeathType: 1
 		Versus:
 			None: 150
 			Flak: 100
@@ -127,10 +124,10 @@ FlakGuyGun:
 			Wood: 30
 			Steel: 20
 			Concrete: 10
-		DamageTypes: Prone100Percent, TriggerProne
+		DamageTypes: Prone100Percent, TriggerProne, DeathType1
 	Warhead@2Eff: CreateEffect
 		Explosion: flak_puff
-			
+
 FlakGuyGunE:
 	ReloadDelay: 25
 	Range: 5c0
@@ -141,7 +138,6 @@ FlakGuyGunE:
 	Warhead@1Dam: SpreadDamage
 		Spread: 64
 		Damage: 20
-		DeathType: 1
 		Versus:
 			None: 150
 			Flak: 100
@@ -152,7 +148,7 @@ FlakGuyGunE:
 			Wood: 30
 			Steel: 20
 			Concrete: 10
-		DamageTypes: Prone100Percent, TriggerProne
+		DamageTypes: Prone100Percent, TriggerProne, DeathType1
 	Warhead@2Eff: CreateEffect
 		Explosion: flak_puff
 
@@ -167,7 +163,6 @@ FlakGuyAAGun:
 	Warhead@1Dam: SpreadDamage
 		Spread: 120
 		Damage: 20
-		DeathType: 1
 		ValidTargets: Air
 		Versus:
 			None: 150
@@ -179,9 +174,10 @@ FlakGuyAAGun:
 			Wood: 0
 			Steel: 0
 			Concrete: 0
+		DamageTypes: DeathType1
 	Warhead@2Eff: CreateEffect
 		Explosion: flak_puff_AA
-			
+
 FlakGuyAAGunE:
 	ReloadDelay: 25
 	Range: 8c0
@@ -194,7 +190,6 @@ FlakGuyAAGunE:
 	Warhead@1Dam: SpreadDamage
 		Spread: 120
 		Damage: 8
-		DeathType: 1
 		ValidTargets: Air
 		Versus:
 			None: 150
@@ -206,6 +201,7 @@ FlakGuyAAGunE:
 			Wood: 0
 			Steel: 0
 			Concrete: 0
+		DamageTypes: DeathType1
 	Warhead@2Eff: CreateEffect
 		Explosion: flak_puff_AA
 
@@ -219,7 +215,6 @@ ElectricBolt:
 	Warhead@1Dam: SpreadDamage
 		Spread: 120
 		Damage: 50
-		DeathType: 6
 		Versus:
 			None: 100
 			Flak: 100
@@ -230,6 +225,7 @@ ElectricBolt:
 			Wood: 50
 			Steel: 50
 			Concrete: 50
+		DamageTypes: DeathType6
 
 ElectricBoltE:
 	Range: 5c0
@@ -240,7 +236,6 @@ ElectricBoltE:
 	Warhead@1Dam: SpreadDamage
 		Spread: 120
 		Damage: 50
-		DeathType: 6
 		Versus:
 			None: 100
 			Flak: 100
@@ -251,3 +246,5 @@ ElectricBoltE:
 			Wood: 50
 			Steel: 50
 			Concrete: 50
+		DamageTypes: DeathType6
+

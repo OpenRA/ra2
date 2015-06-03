@@ -8,7 +8,6 @@ M60:
 	Warhead@1Dam: SpreadDamage
 		Spread: 64
 		Damage: 20
-		DeathType: 1
 		Versus:
 			None: 100
 			Flak: 80
@@ -19,7 +18,7 @@ M60:
 			Wood: 75
 			Steel: 50
 			Concrete: 25
-		DamageTypes: Prone70Percent, TriggerProne
+		DamageTypes: Prone70Percent, TriggerProne, DeathType1
 	Warhead@2Eff: CreateEffect
 		Explosion: piff
 		InvalidImpactTypes: Water
@@ -36,7 +35,6 @@ M60E:
 	Warhead@1Dam: SpreadDamage
 		Spread: 64
 		Damage: 25
-		DeathType: 1
 		Versus:
 			None: 100
 			Flak: 80
@@ -47,7 +45,7 @@ M60E:
 			Wood: 75
 			Steel: 50
 			Concrete: 25
-		DamageTypes: Prone70Percent, TriggerProne
+		DamageTypes: Prone70Percent, TriggerProne, DeathType1
 	Warhead@2Eff: CreateEffect
 		Explosion: piff
 		InvalidImpactTypes: Water
@@ -64,7 +62,6 @@ para:
 	Warhead@1Dam: SpreadDamage
 		Spread: 64
 		Damage: 15
-		DeathType: 1
 		Versus:
 			None: 100
 			Flak: 100
@@ -75,7 +72,7 @@ para:
 			Wood: 75
 			Steel: 50
 			Concrete: 25
-		DamageTypes: Prone50Percent, TriggerProne
+		DamageTypes: Prone50Percent, TriggerProne, DeathType1
 	Warhead@2Eff: CreateEffect
 		Explosion: piff
 		InvalidImpactTypes: Water
@@ -92,7 +89,6 @@ paraE:
 	Warhead@1Dam: SpreadDamage
 		Spread: 64
 		Damage: 25
-		DeathType: 1
 		Versus:
 			None: 100
 			Flak: 100
@@ -103,7 +99,7 @@ paraE:
 			Wood: 75
 			Steel: 50
 			Concrete: 25
-		DamageTypes: Prone50Percent, TriggerProne
+		DamageTypes: Prone50Percent, TriggerProne, DeathType1
 	Warhead@2Eff: CreateEffect
 		Explosion: piff
 		InvalidImpactTypes: Water
@@ -120,7 +116,6 @@ DoublePistols:
 		Speed: 100c0
 	Warhead@1Dam: SpreadDamage
 		Damage: 125
-		DeathType: 1
 		Versus:
 			None: 200
 			Flak: 100
@@ -131,6 +126,7 @@ DoublePistols:
 			Wood: 0
 			Steel: 0
 			Concrete: 0
+		DamageTypes: DeathType1
 	Warhead@2Eff: CreateEffect
 		Explosion: piff
 		InvalidImpactTypes: Water
@@ -146,7 +142,6 @@ DoublePistolsE:
 		Speed: 100c0
 	Warhead@1Dam: SpreadDamage
 		Damage: 125
-		DeathType: 1
 		Versus:
 			None: 200
 			Flak: 100
@@ -157,6 +152,7 @@ DoublePistolsE:
 			Wood: 0
 			Steel: 0
 			Concrete: 0
+		DamageTypes: DeathType1
 	Warhead@2Eff: CreateEffect
 		Explosion: piff
 		InvalidImpactTypes: Water
@@ -173,7 +169,6 @@ awp:
 	Projectile: Bullet
 		Speed: 6c682
 	Warhead@1Dam: SpreadDamage
-		DeathType: 2
 		Spread: 42
 		Damage: 125
 		Versus:
@@ -186,6 +181,7 @@ awp:
 			Wood: 0
 			Steel: 0
 			Concrete: 0
+		DamageTypes: DeathType2
 
 # Rocketeer
 20mm:
@@ -198,7 +194,6 @@ awp:
 	Warhead@1Dam: SpreadDamage
 		Spread: 64
 		Damage: 25
-		DeathType: 1
 		Versus:
 			None: 100
 			Flak: 100
@@ -209,7 +204,7 @@ awp:
 			Wood: 75
 			Steel: 50
 			Concrete: 25
-		DamageTypes: Prone70Percent, TriggerProne
+		DamageTypes: Prone70Percent, TriggerProne, DeathType1
 	Warhead@2Eff: CreateEffect
 		Explosion: piff
 		InvalidImpactTypes: Water
@@ -228,7 +223,6 @@ awp:
 	Warhead@1Dam: SpreadDamage
 		Spread: 64
 		Damage: 25
-		DeathType: 1
 		ProneModifier: 70
 		Versus:
 			None: 100
@@ -240,9 +234,11 @@ awp:
 			Wood: 75
 			Steel: 50
 			Concrete: 25
+		DamageTypes: DeathType1
 	Warhead@2Eff: CreateEffect
 		Explosion: piff
 		InvalidImpactTypes: Water
 	Warhead@3EffWater: CreateEffect
 		Explosion: piff
 		ValidImpactTypes: Water
+

@@ -14,6 +14,8 @@ cow:
 		Speed: 40
 	Selectable:
 		Bounds: 45, 25, 0, -8
-		Voice: CowVoice
 	TargetableUnit:
 		TargetTypes: Ground
+	Voiced:
+		VoiceSet: CowVoice
+

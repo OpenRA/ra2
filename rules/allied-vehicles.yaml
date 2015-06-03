@@ -10,7 +10,6 @@ amcv:
 		Name: Mobile Construction Vehicle
 		Description: Deploys into a Construction Yard.
 	Selectable:
-		Voice: AlliedVehicleVoice
 		Bounds: 68, 56, 0, -7
 	Health:
 		HP: 1000
@@ -34,6 +33,8 @@ amcv:
 	RenderSprites:
 	RenderVoxels:
 	WithVoxelBody:
+	Voiced:
+		VoiceSet: AlliedVehicleVoice
 
 cmin:
 	Inherits: ^Vehicle
@@ -48,7 +49,6 @@ cmin:
 		Name: Chrono Miner
 		Description: Gathers Ore.\n  Unarmed\nSpecial ability: Can teleport to own refineries
 	Selectable:
-		Voice: AlliedVehicleVoice
 		Bounds: 64, 52, 0, -6
 	Harvester:
 		Capacity: 20
@@ -74,6 +74,8 @@ cmin:
 	RenderSprites:
 	RenderVoxels:
 	WithVoxelUnloadBody:
+	Voiced:
+		VoiceSet: AlliedVehicleVoice
 
 mtnk:
 	Inherits: ^Vehicle
@@ -85,7 +87,7 @@ mtnk:
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 20
- 		Prerequisites: ~gaweap
+		Prerequisites: ~gaweap
 	Mobile:
 		Speed: 90
 		ROT: 5
@@ -114,12 +116,13 @@ mtnk:
 	RenderSprites:
 	Selectable:
 		Bounds: 64, 52, 0, -6
-		Voice: AlliedVehicleVoice
 	RenderVoxels:
 	WithVoxelBody:
 	WithVoxelTurret:
 	WithVoxelBarrel:
-	
+	Voiced:
+		VoiceSet: AlliedVehicleVoice
+
 tnkd:
 	Inherits: ^Vehicle
 	Valued:
@@ -149,10 +152,11 @@ tnkd:
 	RenderSprites:
 	Selectable:
 		Bounds: 64, 52, 0, -6
-		Voice: AlliedVehicleVoice
 	RenderVoxels:
 		NormalsPalette: ts-normals
 	WithVoxelBody:
+	Voiced:
+		VoiceSet: AlliedVehicleVoice
 
 fv:
 	Inherits: ^Vehicle
@@ -196,10 +200,11 @@ fv:
 	RenderSprites:
 	Selectable:
 		Bounds: 64, 52, 0, -6
-		Voice: AlliedVehicleVoice
 	RenderVoxels:
 	WithVoxelBody:
 	WithVoxelTurret:
+	Voiced:
+		VoiceSet: AlliedVehicleVoice
 
 sref:
 	Inherits: ^Vehicle
@@ -213,7 +218,6 @@ sref:
 		Name: Prism Tank
 		Description: Fires deadly beams of light\n  Strong vs Infantry, Vehicles\n  Weak vs Aircraft
 	Selectable:
-		Voice: AlliedVehicleVoice
 		Bounds: 30,30
 	Health:
 		HP: 150
@@ -239,3 +243,6 @@ sref:
 	RenderVoxels:
 	WithVoxelTurret:
 	WithVoxelBody:
+	Voiced:
+		VoiceSet: AlliedVehicleVoice
+

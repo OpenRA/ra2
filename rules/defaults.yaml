@@ -118,7 +118,7 @@
 		LightPitch: 150
 		LightAmbientColor: -0.5,-0.5,-0.5
 		LightDiffuseColor: 1.4,1.4,1.4
-	
+
 ^Wall:
 	AppearsOnRadar:
 	Building:
@@ -175,7 +175,6 @@
 	SelectionDecorations:
 		Palette: pips
 	Selectable:
-		Voice: Infantry
 	TargetableUnit:
 		TargetTypes: Ground, Infantry, DetonateAttack, Disguise
 	RenderSprites:
@@ -183,6 +182,13 @@
 		IdleSequences: idle1,idle2
 		StandSequences: stand
 	WithDeathAnimation:
+		DeathTypes:
+			DeathType1: 1
+			DeathType2: 2
+			DeathType3: 3
+			DeathType4: 4
+			DeathType5: 5
+			DeathType6: 6
 	AutoTarget:
 	AttackMove:
 	TakeCover:
@@ -228,24 +234,25 @@
 	Huntable:
 	ScriptTriggers:
 	DeathSounds@NORMAL:
-		DeathTypes: 1, 2, 3
+		DeathTypes: DeathType1, DeathType2, DeathType3
 	DeathSounds@BURNED:
 		DeathSound: Burned
-		DeathTypes: 5
+		DeathTypes: DeathType5
 	DeathSounds@ZAPPED:
 		DeathSound: Zapped
-		DeathTypes: 6
+		DeathTypes: DeathType6
 	UpgradeManager:
 	MustBeDestroyed:
 		RequiredForShortGame: true
 	Cloneable:
 		Types: infantry
+	Voiced:
+		VoiceSet: Infantry
 # TODO: Soylet (for grinding in cloning vats and YR)
 
 ^CivilianInfantry:
 	Inherits: ^Infantry
 	Selectable:
-		Voice: Civilian
 		Bounds: 100,170,0,0
 	Valued:
 		Cost: 10
@@ -264,6 +271,8 @@
 	MustBeDestroyed:
 		RequiredForShortGame: true
 	-TakeCover:
+	Voiced:
+		VoiceSet: Civilian
 
 ^Vehicle:
 	AppearsOnRadar:
@@ -283,7 +292,6 @@
 		Palette: pips
 	Selectable:
 		Bounds: 32,32
-		Voice: Vehicle
 	TargetableUnit:
 		TargetTypes: Ground, Repair, DetonateAttack
 	Repairable:
@@ -336,6 +344,8 @@
 	UpgradeManager:
 	MustBeDestroyed:
 		RequiredForShortGame: true
+	Voiced:
+		VoiceSet: Vehicle
 # TODO: Soylet (for grinding)
 
 ^Aircraft:
@@ -347,7 +357,6 @@
 	SelectionDecorations:
 		Palette: pips
 	Selectable:
-		Voice: Heli
 	Helicopter:
 		RepairBuildings:
 		RearmBuildings:
@@ -389,6 +398,8 @@
 		LightPitch: 150
 		LightAmbientColor: -0.5,-0.5,-0.5
 		LightDiffuseColor: 1.4,1.4,1.4
+	Voiced:
+		VoiceSet: Heli
 
 ^Ship:
 	AppearsOnRadar:
@@ -401,7 +412,6 @@
 		Palette: pips
 	Selectable:
 		Bounds: 32,32
-		Voice: SovietNavalVoice
 	TargetableUnit:
 		TargetTypes: Ground, Water, Repair
 	Repairable:
@@ -455,6 +465,8 @@
 	UpgradeManager:
 	MustBeDestroyed:
 		RequiredForShortGame: true
+	Voiced:
+		VoiceSet: SovietNavalVoice
 
 ^OreDrill:
 	Tooltip:
@@ -496,3 +508,4 @@
 	BodyOrientation:
 	Tooltip:
 		Name: Rock
+

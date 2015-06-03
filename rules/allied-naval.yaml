@@ -11,7 +11,6 @@ lcrf:
 		Description: General-purpose naval transport.\nCan carry infantry and vehicles.\n  Unarmed
 	Selectable:
 		Bounds: 60, 80, 0, -6
-		Voice: AlliedNavalVoice
 	Health:
 		HP: 300
 	Armor:
@@ -42,6 +41,8 @@ lcrf:
 		EmptyWeapon: UnitExplode
 	WithVoxelBody:
 	RenderSprites:
+	Voiced:
+		VoiceSet: AlliedNavalVoice
 
 dest:
 	Inherits: ^Ship
@@ -62,10 +63,9 @@ dest:
 		ROT: 5
 		Speed: 105
 	RevealsShroud:
-		Range: 7c0	
+		Range: 7c0
 	Selectable:
 		Bounds: 80, 80, 0, -6
-		Voice: AlliedNavalVoice
 	Armament@primary:
 		Weapon: 155mm
 		LocalOffset: 768,0,0 # Not true, copy-pasted from SUB.
@@ -91,6 +91,8 @@ dest:
 		EmptyWeapon: UnitExplode
 	WithVoxelBody:
 	RenderSprites:
+	Voiced:
+		VoiceSet: AlliedNavalVoice
 
 aegis:
 	Inherits: ^Ship
@@ -105,7 +107,6 @@ aegis:
 		Description: Anti-Air naval unit.\n  Strong vs Aircraft\n  Grounds units, Ships
 	Selectable:
 		Bounds: 60, 80, 0, -6
-		Voice: AlliedNavalVoice
 	Health:
 		HP: 800
 	Armor:
@@ -124,3 +125,6 @@ aegis:
 		EmptyWeapon: UnitExplode
 	WithVoxelBody:
 	RenderSprites:
+	Voiced:
+		VoiceSet: AlliedNavalVoice
+

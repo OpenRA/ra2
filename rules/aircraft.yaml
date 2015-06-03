@@ -9,7 +9,6 @@ zep:
 		BuildPaletteOrder: 20
 		Prerequisites: ~naweap, natech
 	Selectable:
-		Voice: KirovVoice
 	Helicopter:
 		CruiseAltitude: 5600
 		ROT: 5
@@ -33,3 +32,6 @@ zep:
 		Weapon: UnitExplode
 		Chance: 75
 	AnnounceOnBuild:
+	Voiced:
+		VoiceSet: KirovVoice
+

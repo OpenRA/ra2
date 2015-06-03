@@ -3,13 +3,12 @@ UnitExplode:
 		Spread: 426
 		Damage: 50
 		Falloff: 1000, 368, 135, 50, 18, 7, 0
-		DeathType: 2
 		Versus:
 			None: 90
 			Wood: 75
 			Light: 60
 			Heavy: 25
-		DamageTypes: Prone50Percent, TriggerProne
+		DamageTypes: Prone50Percent, TriggerProne, DeathType2
 	Warhead@2Eff: CreateEffect
 		Explosion: large_twlt
 		ImpactSound: expnew09.wav
@@ -18,13 +17,12 @@ UnitExplodeSmall:
 	Warhead@1Dam: SpreadDamage
 		Spread: 426
 		Damage: 40
-		DeathType: 2
 		Versus:
 			None: 90
 			Wood: 75
 			Light: 60
 			Heavy: 25
-		DamageTypes: Prone50Percent, TriggerProne
+		DamageTypes: Prone50Percent, TriggerProne, DeathType2
 	Warhead@2Eff: CreateEffect
 		Explosion: medium_brnl
 		ImpactSound: expnew13.wav
@@ -37,7 +35,6 @@ DogJaw:
 	Warhead@1Dam: SpreadDamage
 		Spread: 213
 		Damage: 100
-		DeathType: 1
 		ValidTargets: Infantry
 		Versus:
 			None: 100
@@ -49,6 +46,7 @@ DogJaw:
 			Wood: 0
 			Steel: 0
 			Concrete: 0
+		DamageTypes: DeathType1
 
 RedEye2:
 	ReloadDelay: 60
@@ -68,7 +66,6 @@ RedEye2:
 	Warhead@1Dam: SpreadDamage
 		Spread: 120
 		Damage: 75
-		DeathType: 1
 		ValidTargets: Air
 		Versus:
 			None: 100
@@ -80,6 +77,7 @@ RedEye2:
 			Wood: 0
 			Steel: 0
 			Concrete: 0
+		DamageTypes: DeathType1
 	Warhead@2Eff: CreateEffect
 		Explosion: small_bang
 		ImpactSound: gexp10a.wav #TODO Need to find right impact sound
@@ -95,7 +93,6 @@ demobomb:
 		Spread: 1c0
 		Damage: 150
 		Falloff: 1000, 368, 135, 50, 18, 7, 0
-		DeathType: 5
 		ValidTargets: Ground, Water, Air
 		Versus:
 			None: 100
@@ -108,7 +105,7 @@ demobomb:
 			Steel: 150
 			Concrete: 10
 		AffectsParent: true
-		DamageTypes: Prone50Percent, TriggerProne
+		DamageTypes: Prone50Percent, TriggerProne, DeathType5
 	Warhead@2Res_impact: DestroyResource
 		Size: 1
 	Warhead@3Eff_impact: CreateEffect
@@ -118,7 +115,6 @@ demobomb:
 		Spread: 2c0
 		Damage: 60
 		Falloff: 1000, 368, 135, 50, 18, 7, 0
-		DeathType: 5
 		Delay: 5
 		ValidTargets: Ground, Water, Air
 		Versus:
@@ -131,7 +127,7 @@ demobomb:
 			Wood: 80
 			Steel: 150
 			Concrete: 10
-		DamageTypes: Prone50Percent, TriggerProne
+		DamageTypes: Prone50Percent, TriggerProne, DeathType5
 	Warhead@5Res_areanuke1: DestroyResource
 		Size: 2
 		Delay: 5
@@ -141,7 +137,6 @@ demobomb:
 		Spread: 3c0
 		Damage: 60
 		Falloff: 1000, 368, 135, 50, 18, 7, 0
-		DeathType: 5
 		Delay: 10
 		ValidTargets: Ground, Water, Air
 		Versus:
@@ -154,7 +149,7 @@ demobomb:
 			Wood: 80
 			Steel: 150
 			Concrete: 10
-		DamageTypes: Prone50Percent, TriggerProne
+		DamageTypes: Prone50Percent, TriggerProne, DeathType5
 	Warhead@8Res_areanuke2: DestroyResource
 		Size: 3
 		Delay: 10
@@ -162,7 +157,6 @@ demobomb:
 		Spread: 4c0
 		Damage: 60
 		Falloff: 1000, 368, 135, 50, 18, 7, 0
-		DeathType: 5
 		Delay: 15
 		ValidTargets: Ground, Water, Air
 		Versus:
@@ -175,7 +169,7 @@ demobomb:
 			Wood: 80
 			Steel: 150
 			Concrete: 10
-		DamageTypes: Prone50Percent, TriggerProne
+		DamageTypes: Prone50Percent, TriggerProne, DeathType5
 	Warhead@10Res_areanuke3: DestroyResource
 		Size: 4
 		Delay: 15
@@ -194,7 +188,6 @@ CoilBolt:
 	Warhead@1Dam: SpreadDamage
 		Spread: 42
 		Damage: 200
-		DeathType: 6
 		Versus:
 			None: 100
 			Flak: 100
@@ -205,6 +198,7 @@ CoilBolt:
 			Wood: 50
 			Steel: 50
 			Concrete: 50
+		DamageTypes: DeathType6
 
 OPCoilBolt:
 	ReloadDelay: 3
@@ -216,7 +210,6 @@ OPCoilBolt:
 	Warhead@1Dam: SpreadDamage
 		Spread: 42
 		Damage: 300
-		DeathType: 6
 		Versus:
 			None: 100
 			Flak: 100
@@ -227,6 +220,7 @@ OPCoilBolt:
 			Wood: 50
 			Steel: 50
 			Concrete: 50
+		DamageTypes: DeathType6
 
 20mmrapid:
 	ReloadDelay: 20
@@ -237,7 +231,6 @@ OPCoilBolt:
 	Warhead@1Dam: SpreadDamage
 		Spread: 64
 		Damage: 30
-		DeathType: 1
 		Versus:
 			None: 100
 			Flak: 80
@@ -248,7 +241,7 @@ OPCoilBolt:
 			Wood: 20
 			Steel: 15
 			Concrete: 10
-		DamageTypes: Prone70Percent, TriggerProne
+		DamageTypes: Prone70Percent, TriggerProne, DeathType1
 	Warhead@2Eff: CreateEffect
 		Explosion: piff
 		InvalidImpactTypes: Water
@@ -268,7 +261,6 @@ OPCoilBolt:
 	Warhead@1Dam: SpreadDamage
 		Spread: 128
 		Damage: 50
-		DeathType: 3
 		Versus:
 			None: 100
 			Flak: 90
@@ -279,7 +271,7 @@ OPCoilBolt:
 			Wood: 50
 			Steel: 40
 			Concrete: 25
-		DamageTypes: Prone70Percent, TriggerProne
+		DamageTypes: Prone70Percent, TriggerProne, DeathType3
 	Warhead@2Eff: CreateEffect
 		Explosion: medium_clsn
 		ImpactSound: gexp14a.wav
@@ -288,7 +280,6 @@ OPCoilBolt:
 		Explosion: small_watersplash
 		ImpactSound: gexpwasa.wav
 		ValidImpactTypes: Water
-
 
 105mm:
 	ReloadDelay: 60
@@ -302,7 +293,6 @@ OPCoilBolt:
 	Warhead@1Dam: SpreadDamage
 		Spread: 128
 		Damage: 65
-		DeathType: 2
 		Versus:
 			None: 25
 			Flak: 25
@@ -313,7 +303,7 @@ OPCoilBolt:
 			Wood: 65
 			Steel: 45
 			Concrete: 60
-		DamageTypes: Prone50Percent, TriggerProne
+		DamageTypes: Prone50Percent, TriggerProne, DeathType2
 	Warhead@2Eff: CreateEffect
 		Explosion: medium_clsn
 		ImpactSound: gexp14a.wav
@@ -339,7 +329,6 @@ OPCoilBolt:
 	Warhead@1Dam: SpreadDamage
 		Spread: 128
 		Damage: 55
-		DeathType: 2
 		Versus:
 			None: 100
 			Flak: 100
@@ -350,7 +339,7 @@ OPCoilBolt:
 			Wood: 65
 			Steel: 45
 			Concrete: 60
-		DamageTypes: Prone50Percent, TriggerProne
+		DamageTypes: Prone50Percent, TriggerProne, DeathType2
 	Warhead@2Eff: CreateEffect
 		Explosion: elite_explosion
 		ImpactSound: gexpapoa.wav
@@ -371,7 +360,6 @@ TerrorBomb:
 	Warhead@1Dam: SpreadDamage
 		Spread: 426
 		Damage: 400
-		DeathType: 5
 		Falloff: 1024, 1024, 512, 512, 256, 256, 0
 		Versus:
 			None: 150
@@ -384,7 +372,7 @@ TerrorBomb:
 			Steel: 150
 			Concrete: 30
 		AffectsParent: true
-		DamageTypes: Prone70Percent, TriggerProne
+		DamageTypes: Prone70Percent, TriggerProne, DeathType5
 	Warhead@2Eff: CreateEffect
 		Explosion: terrorist_explosion
 
@@ -402,7 +390,6 @@ GrandCannonWeapon:
 	Warhead@1Dam: SpreadDamage
 		Spread: 128
 		Damage: 150
-		DeathType: 1
 		Versus:
 			None: 100
 			Flak: 100
@@ -413,7 +400,7 @@ GrandCannonWeapon:
 			Wood: 50
 			Steel: 100
 			Concrete: 50
-		DamageTypes: Prone50Percent, TriggerProne
+		DamageTypes: Prone50Percent, TriggerProne, DeathType1
 	Warhead@2Eff: CreateEffect
 		Explosion: medium_explosion
 		ImpactSound: gexp14a.wav
@@ -430,7 +417,6 @@ GrandCannonWeapon:
 	Warhead@1Dam: SpreadDamage
 		Spread: 128
 		Damage: 90
-		DeathType: 2
 		Versus:
 			None: 25
 			Flak: 25
@@ -441,7 +427,7 @@ GrandCannonWeapon:
 			Wood: 65
 			Steel: 45
 			Concrete: 60
-		DamageTypes: Prone50Percent, TriggerProne
+		DamageTypes: Prone50Percent, TriggerProne, DeathType2
 	Warhead@2Eff: CreateEffect
 		Explosion: medium_clsn
 		ImpactSound: gexp14a.wav
@@ -467,7 +453,6 @@ GrandCannonWeapon:
 	Warhead@1Dam: SpreadDamage
 		Spread: 128
 		Damage: 85
-		DeathType: 2
 		Versus:
 			None: 100
 			Flak: 100
@@ -478,7 +463,7 @@ GrandCannonWeapon:
 			Wood: 50
 			Steel: 100
 			Concrete: 50
-		DamageTypes: Prone50Percent, TriggerProne
+		DamageTypes: Prone50Percent, TriggerProne, DeathType2
 	Warhead@2Eff: CreateEffect
 		Explosion: elite_explosion
 		ImpactSound: gexpapoa.wav
@@ -503,7 +488,6 @@ GrandCannonWeapon:
 	Warhead@1Dam: SpreadDamage
 		Spread: 128
 		Damage: 100
-		DeathType: 2
 		Versus:
 			None: 25
 			Flak: 25
@@ -514,7 +498,7 @@ GrandCannonWeapon:
 			Wood: 100
 			Steel: 100
 			Concrete: 70
-		DamageTypes: Prone50Percent, TriggerProne
+		DamageTypes: Prone50Percent, TriggerProne, DeathType2
 	Warhead@2Eff: CreateEffect
 		Explosion: apoc_explosion
 		ImpactSound: gexpapoa.wav
@@ -540,7 +524,6 @@ GrandCannonWeapon:
 	Warhead@1Dam: SpreadDamage
 		Spread: 128
 		Damage: 100
-		DeathType: 2
 		Versus:
 			None: 100
 			Flak: 100
@@ -551,7 +534,7 @@ GrandCannonWeapon:
 			Wood: 100
 			Steel: 100
 			Concrete: 70
-		DamageTypes: Prone50Percent, TriggerProne
+		DamageTypes: Prone50Percent, TriggerProne, DeathType2
 	Warhead@2Eff: CreateEffect
 		Explosion: elite_explosion
 		ImpactSound: gexpapoa.wav
@@ -583,7 +566,6 @@ MammothTusk:
 	Warhead@1Dam: SpreadDamage
 		Spread: 171
 		Damage: 80
-		DeathType: 3
 		ValidTargets: Air
 		Versus:
 			None: 100
@@ -595,6 +577,7 @@ MammothTusk:
 			Wood: 75
 			Steel: 40
 			Concrete: 20
+		DamageTypes: DeathType3
 	Warhead@2Eff: CreateEffect
 		Explosion: medium_bang
 		ImpactSound: gexp10a.wav
@@ -616,7 +599,6 @@ BlimpBomb:
 	Warhead@1Dam: SpreadDamage
 		Spread: 400
 		Damage: 250
-		DeathType: 1
 		ValidTargets: Building, Ground, Water
 		Versus:
 			None: 100
@@ -628,7 +610,7 @@ BlimpBomb:
 			Wood: 85
 			Steel: 75
 			Concrete: 50
-		DamageTypes: Prone70Percent, TriggerProne
+		DamageTypes: Prone70Percent, TriggerProne, DeathType1
 	Warhead@2Eff: CreateEffect
 		Explosion: medium_clsn
 		ImpactSound: gexp14a.wav
@@ -650,7 +632,6 @@ FlakTrackGun:
 	Warhead@1Dam: SpreadDamage
 		Spread: 64
 		Damage: 25
-		DeathType: 1
 		Versus:
 			None: 150
 			Flak: 100
@@ -661,7 +642,7 @@ FlakTrackGun:
 			Wood: 30
 			Steel: 20
 			Concrete: 10
-		DamageTypes: Prone100Percent, TriggerProne
+		DamageTypes: Prone100Percent, TriggerProne, DeathType1
 	Warhead@2Eff: CreateEffect
 		Explosion: flak_puff
 
@@ -675,7 +656,6 @@ FlakTrackAAGun:
 	Warhead@1Dam: SpreadDamage
 		Spread: 120
 		Damage: 35
-		DeathType: 1
 		ValidTargets: Air
 		Versus:
 			None: 150
@@ -687,7 +667,7 @@ FlakTrackAAGun:
 			Wood: 0
 			Steel: 0
 			Concrete: 0
-		DamageTypes: Prone50Percent, TriggerProne
+		DamageTypes: Prone50Percent, TriggerProne, DeathType1
 	Warhead@2Eff: CreateEffect
 		Explosion: flak_puff_AA
 
@@ -701,7 +681,6 @@ FlakWeapon:
 	Warhead@1Dam: SpreadDamage
 		Spread: 120
 		Damage: 40
-		DeathType: 1
 		ValidTargets: Air
 		Versus:
 			None: 150
@@ -713,6 +692,7 @@ FlakWeapon:
 			Wood: 0
 			Steel: 0
 			Concrete: 0
+		DamageTypes: DeathType1
 	Warhead@2Eff: CreateEffect
 		Explosion: flak_puff_AA
 
@@ -729,7 +709,6 @@ sabot:
 	Warhead@1Dam: SpreadDamage
 		Spread: 190
 		Damage: 150
-		DeathType: 1
 		Versus:
 			None: 2
 			Flak: 2
@@ -740,7 +719,7 @@ sabot:
 			Wood: 2
 			Steel: 2
 			Concrete: 2
-		DamageTypes: Prone50Percent, TriggerProne
+		DamageTypes: Prone50Percent, TriggerProne, DeathType1
 	Warhead@2Eff: CreateEffect
 		Explosion: medium_clsn
 		ImpactSound: gexp14a.wav
@@ -770,7 +749,6 @@ SubTorpedo:
 	Warhead@1Dam: SpreadDamage
 		Spread: 426
 		Damage: 100
-		DeathType: 4
 		ValidTargets: Water, Underwater, Bridge
 		Versus:
 			None: 25
@@ -782,6 +760,7 @@ SubTorpedo:
 			Wood: 65
 			Steel: 65
 			Concrete: 60
+		DamageTypes: DeathType4
 	Warhead@2EffWater: CreateEffect
 		Explosion: large_watersplash
 		ImpactSound: gexpwasa.wav
@@ -803,7 +782,6 @@ SubTorpedo:
 	Warhead@1Dam: SpreadDamage
 		Spread: 128
 		Damage: 60
-		DeathType: 2
 		Versus:
 			None: 100
 			Flak: 80
@@ -814,7 +792,7 @@ SubTorpedo:
 			Wood: 100
 			Steel: 80
 			Concrete: 60
-		DamageTypes: Prone50Percent, TriggerProne
+		DamageTypes: Prone50Percent, TriggerProne, DeathType2
 	Warhead@2Eff: CreateEffect
 		Explosion: medium_clsn
 		ImpactSound: gexp14a.wav
@@ -839,7 +817,6 @@ SubTorpedo:
 	Warhead@1Dam: SpreadDamage
 		Spread: 128
 		Damage: 60
-		DeathType: 2
 		Versus:
 			None: 100
 			Flak: 80
@@ -850,7 +827,7 @@ SubTorpedo:
 			Wood: 100
 			Steel: 80
 			Concrete: 60
-		DamageTypes: Prone50Percent, TriggerProne
+		DamageTypes: Prone50Percent, TriggerProne, DeathType2
 	Warhead@2Eff: CreateEffect
 		Explosion: medium_clsn
 		ImpactSound: gexp14a.wav
@@ -881,7 +858,6 @@ Medusa:
 	Warhead@1Dam: SpreadDamage
 		Spread: 60
 		Damage: 100
-		DeathType: 1
 		ValidTargets: Air
 		Versus:
 			None: 100
@@ -893,6 +869,7 @@ Medusa:
 			Wood: 0
 			Steel: 0
 			Concrete: 0
+		DamageTypes: DeathType1
 	Warhead@2Eff: CreateEffect
 		Explosion: small_bang
 		ImpactSound: gexp10a.wav #TODO Need to find right impact sound
@@ -920,7 +897,6 @@ HoverMissile:
 	Warhead@1Dam: SpreadDamage
 		Spread: 128
 		Damage: 25
-		DeathType: 2
 		ValidTargets: Ground, Air
 		Versus:
 			None: 100
@@ -932,7 +908,7 @@ HoverMissile:
 			Wood: 75
 			Steel: 40
 			Concrete: 20
-		DamageTypes: Prone50Percent, TriggerProne
+		DamageTypes: Prone50Percent, TriggerProne, DeathType2
 	Warhead@2Eff: CreateEffect
 		Explosion: small_clsn
 		ImpactSound: expnew12.aud
@@ -966,7 +942,6 @@ HoverMissileE:
 	Warhead@1Dam: SpreadDamage
 		Spread: 128
 		Damage: 80
-		DeathType: 2
 		ValidTargets: Ground, Air
 		Versus:
 			None: 100
@@ -978,7 +953,7 @@ HoverMissileE:
 			Wood: 75
 			Steel: 40
 			Concrete: 20
-		DamageTypes: Prone50Percent, TriggerProne
+		DamageTypes: Prone50Percent, TriggerProne, DeathType2
 	Warhead@2Eff: CreateEffect
 		Explosion: small_clsn
 		ImpactSound: expnew12.aud
@@ -1006,7 +981,6 @@ Comet:
 	Warhead@1Dam: SpreadDamage
 		Spread: 800
 		Damage: 100
-		DeathType: 1
 		Versus:
 			None: 100
 			Flak: 100
@@ -1017,7 +991,7 @@ Comet:
 			Wood: 200
 			Steel: 200
 			Concrete: 200
-		DamageTypes: Prone50Percent, TriggerProne
+		DamageTypes: Prone50Percent, TriggerProne, DeathType1
 	Warhead@2Eff: CreateEffect
 		Explosion: medium_clsn
 		ImpactSound: gexp14a.wav
@@ -1038,7 +1012,6 @@ vulcan2:
 	Warhead@1Dam: SpreadDamage
 		Spread: 64
 		Damage: 50
-		DeathType: 1
 		Versus:
 			None: 100
 			Flak: 80
@@ -1049,7 +1022,7 @@ vulcan2:
 			Wood: 75
 			Steel: 50
 			Concrete: 25
-		DamageTypes: Prone70Percent, TriggerProne
+		DamageTypes: Prone70Percent, TriggerProne, DeathType1
 	Warhead@2Eff: CreateEffect
 		Explosion: piff
 		InvalidImpactTypes: Water
@@ -1069,7 +1042,6 @@ PrismShot:
 	Warhead@1Dam: SpreadDamage
 		Spread: 42
 		Damage: 120
-		DeathType: 6
 		Versus:
 			None: 200
 			Flak: 100
@@ -1080,3 +1052,5 @@ PrismShot:
 			Wood: 50
 			Steel: 50
 			Concrete: 50
+		DamageTypes: DeathType6
+

@@ -10,7 +10,6 @@ smcv:
 		Name: Mobile Construction Vehicle
 		Description: Deploys into a Construction Yard.
 	Selectable:
-		Voice: SovietVehicleVoice
 		Bounds: 64, 52, 0, -6
 	Health:
 		HP: 1000
@@ -35,6 +34,8 @@ smcv:
 	RenderSprites:
 	RenderVoxels:
 	WithVoxelBody:
+	Voiced:
+		VoiceSet: SovietVehicleVoice
 
 harv:
 	Inherits: ^Vehicle
@@ -49,7 +50,6 @@ harv:
 		Name: War Miner
 		Description: Gathers Ore.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
 	Selectable:
-		Voice: SovietVehicleVoice
 		Bounds: 64, 52, 0, -6
 	Harvester:
 		Capacity: 20
@@ -92,6 +92,8 @@ harv:
 	RenderVoxels:
 	WithVoxelTurret:
 	WithVoxelUnloadBody:
+	Voiced:
+		VoiceSet: SovietVehicleVoice
 
 htk:
 	Inherits: ^Vehicle
@@ -102,11 +104,10 @@ htk:
 		Description: Infantry Transport and Anti-Air/Anti-Infantry vehicle.\n  Strong vs Aircraft, Infantry\n  Weak vs Vehicles
 	Selectable:
 		Bounds: 50, 40, 0, -6
-		Voice: SovietVehicleVoice
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 20
- 		Prerequisites: ~naweap
+		Prerequisites: ~naweap
 	Mobile:
 		Speed: 75
 		ROT: 15
@@ -136,6 +137,8 @@ htk:
 	RenderVoxels:
 	WithVoxelTurret:
 	WithVoxelBody:
+	Voiced:
+		VoiceSet: SovietVehicleVoice
 
 htnk:
 	Inherits: ^Vehicle
@@ -147,7 +150,7 @@ htnk:
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 30
- 		Prerequisites: ~naweap
+		Prerequisites: ~naweap
 	Mobile:
 		Speed: 75
 		ROT: 5
@@ -176,12 +179,13 @@ htnk:
 	RenderSprites:
 	Selectable:
 		Bounds: 64, 52, 0, -6
-		Voice: SovietVehicleVoice
 	RenderVoxels:
 		NormalsPalette: ts-normals
 	WithVoxelBody:
 	WithVoxelTurret:
 	WithVoxelBarrel:
+	Voiced:
+		VoiceSet: SovietVehicleVoice
 
 apoc:
 	Inherits: ^Vehicle
@@ -193,7 +197,7 @@ apoc:
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 60
- 		Prerequisites: ~naweap, natech
+		Prerequisites: ~naweap, natech
 	Mobile:
 		Speed: 45
 		ROT: 5
@@ -225,11 +229,12 @@ apoc:
 	RenderSprites:
 	Selectable:
 		Bounds: 64, 52, 0, -6
-		Voice: SovietVehicleVoice
 	RenderVoxels:
 	WithVoxelBody:
 	WithVoxelTurret:
 	WithVoxelBarrel:
+	Voiced:
+		VoiceSet: SovietVehicleVoice
 
 dtruck:
 	Inherits: ^Vehicle
@@ -243,7 +248,6 @@ dtruck:
 		Name: Demolition Truck
 		Description: Demolition Truck, actively armed with nuclear explosives.
 	Selectable:
-		Voice: DemolitionTruckVoice
 		Bounds: 64, 52, 0, -6
 	Health:
 		HP: 150
@@ -265,3 +269,6 @@ dtruck:
 	RenderVoxels:
 	WithVoxelBody:
 	AnnounceOnBuild:
+	Voiced:
+		VoiceSet: DemolitionTruckVoice
+

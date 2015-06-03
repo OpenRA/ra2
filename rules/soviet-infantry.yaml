@@ -10,7 +10,6 @@ e2:
 		Name: Conscript
 		Description: Cheap standart infantry.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
 	Selectable:
-		Voice: ConscriptVoice
 		Bounds: 20, 30, 0, -11
 	Health:
 		HP: 125
@@ -31,6 +30,8 @@ e2:
 		UpgradeTypes: eliteweapon
 		UpgradeMinEnabledLevel: 1
 	WithInfantryBody:
+	Voiced:
+		VoiceSet: ConscriptVoice
 
 flakt:
 	Inherits: ^Infantry
@@ -44,7 +45,6 @@ flakt:
 		Name: Flak Trooper
 		Description: Anti-Air/Anti-Infantry unit.\n  Strong vs Aircraft, Infantry\n  Weak vs Vehicles
 	Selectable:
-		Voice: FlakTrooperVoice
 		Bounds: 20, 30, 0, -11
 	Health:
 		HP: 100
@@ -75,6 +75,8 @@ flakt:
 		UpgradeMinEnabledLevel: 1
 	WithInfantryBody:
 		IdleAnimation:
+	Voiced:
+		VoiceSet: FlakTrooperVoice
 
 shk:
 	Inherits: ^Infantry
@@ -88,7 +90,6 @@ shk:
 		Name: Shock Trooper
 		Description: Special armored unit using electricity.\n  Strong vs Infantry, Light armor\n  Weak vs Tanks, Aircraft\nSpecial ability: Charge tesla coils (3 Tesla Troopers required)
 	Selectable:
-		Voice: TeslaTrooperVoice
 		Bounds: 20, 30, 0, -11
 	Health:
 		HP: 130
@@ -114,6 +115,8 @@ shk:
 	UpgradeActorsNear:
 		Upgrades: charged
 		Range: 1c256
+	Voiced:
+		VoiceSet: TeslaTrooperVoice
 
 terror:
 	Inherits: ^Infantry
@@ -128,7 +131,6 @@ terror:
 		Name: Terrorist
 		Description: Carries C4 charges taped to his body and kamikazes enemies\nblowing them up quickly and efficiently.\n  Strong vs Ground units\n  Weak vs Aircraft
 	Selectable:
-		Voice: TerroristVoice
 		Bounds: 20, 30, 0, -11
 	Health:
 		HP: 75
@@ -146,6 +148,8 @@ terror:
 	DemoTruck:
 	AttackFrontal:
 	WithInfantryBody:
+	Voiced:
+		VoiceSet: TerroristVoice
 
 deso:
 	Inherits: ^Infantry
@@ -160,7 +164,6 @@ deso:
 		Name: Desolator
 		Description: Carries a radiation-emitting weapon.\nCan deploy for area-of-effect damage.\n  Strong vs Infantry, Light armor\n  Weak vs Tanks, Aircraft
 	Selectable:
-		Voice: DesolatorVoice
 		Bounds: 20, 30, 0, -11
 	Health:
 		HP: 150
@@ -191,3 +194,6 @@ deso:
 	# 	Weapon: CRRadBeamWeaponE
 	AttackFrontal:
 	WithInfantryBody:
+	Voiced:
+		VoiceSet: DesolatorVoice
+

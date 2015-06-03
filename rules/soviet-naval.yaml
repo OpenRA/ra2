@@ -91,7 +91,7 @@ sub:
 	-MustBeDestroyed:
 	WithVoxelBody:
 	RenderSprites:
-	
+
 hyd:
 	Inherits: ^Ship
 	Buildable:
@@ -124,3 +124,4 @@ hyd:
 		EmptyWeapon: UnitExplode
 	WithVoxelBody:
 	RenderSprites:
+
