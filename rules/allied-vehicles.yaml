@@ -246,3 +246,56 @@ sref:
 	Voiced:
 		VoiceSet: AlliedVehicleVoice
 
+mgtk:
+	Inherits: ^Vehicle
+	Buildable:
+		Queue: Vehicle
+		BuildPaletteOrder: 90
+		Prerequisites: gatech, ~gaweap
+	Valued:
+		Cost: 1000
+	Tooltip:
+		Name: Mirage Tank
+		Description: As tree disguised tank.\n  Strong vs Infantry, Vehicles\n  Weak vs Aircraft
+	Selectable:
+		Bounds: 64, 52, 0, -6
+	Health:
+		HP: 200
+	Armor:
+		Type: Light
+	Mobile:
+		ROT: 5
+		Speed: 105
+	RevealsShroud:
+		Range: 9c0
+	Armament@primary:
+		Weapon: MirageGun
+		LocalOffset: 640, 0, 427
+		UpgradeTypes: eliteweapon
+		UpgradeMaxEnabledLevel: 0
+		UpgradeMaxAcceptedLevel: 1
+	Armament@elite:
+		Weapon: MirageGunE
+		LocalOffset: 640, 0, 427
+		UpgradeTypes: eliteweapon
+		UpgradeMinEnabledLevel: 1
+	AttackFrontal:
+	AutoTarget:
+	Explodes:
+		Weapon: UnitExplodeSmall
+		EmptyWeapon: UnitExplodeSmall
+	RenderSprites:
+	RenderVoxels:
+	WithVoxelBody:
+	Voiced:
+		VoiceSet: AlliedVehicleVoice
+	#Disguised
+	#CrateGoodie=yes
+	#IsTilter=yes
+	#TooBigToFitUnderBridge=true
+	#CanApproachTarget=no ; gs 9/15 Re-put in.  But now this will not apply to an Attack Mission.  Best of both worlds, and Dustin kicks butt
+	#Explosion=TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60
+	#MaxDebris=2
+	#ThreatPosed=15	; This value MUST be 0 for all building addons
+	#DamageParticleSystems=SparkSys;gs the sparks look cool, but the smoke gives it away too easily, SmallGreySSys
+	#Accelerates=false

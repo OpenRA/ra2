@@ -46,6 +46,9 @@ flata:
 fv:
 	icon: fvicon
 
+mgtk:
+	icon: rtnkicon
+
 gtgcan:
 	icon: gcanicon
 

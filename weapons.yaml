@@ -1055,3 +1055,70 @@ PrismShot:
 			Concrete: 50
 		DamageTypes: ElectroDeath
 
+MirageGun:
+	ReloadDelay: 70
+	Range: 7c0
+	Report: vmiratta.wav
+	Projectile: Bullet # InvisibleLow
+		Speed: 100c0 # 40c0?
+		Image: 120mm #
+		Angle: 62 #
+		# Bright=true
+	Warhead@1Dam: SpreadDamage
+		Spread: 64
+		Damage: 100
+		Versus:
+			None: 100
+			Flak: 100
+			Plate: 80
+			Light: 100
+			Medium: 100
+			Heavy: 100
+			Wood: 30
+			Steel: 20
+			Concrete: 20
+		DamageTypes: FlameDeath
+	Warhead@2Eff: CreateEffect
+		Explosion: medium_clsn
+		ImpactSound: gexp14a.wav
+		InvalidImpactTypes: Water
+	Warhead@3EffWater: CreateEffect
+		Explosion: small_watersplash
+		ImpactSound: gexpwasa.wav
+		ValidImpactTypes: Water
+	Warhead@4Smu: LeaveSmudge
+		SmudgeType: SmallCrater, SmallScorch
+
+MirageGunE:
+	ReloadDelay: 80
+	Range: 9c0
+	Report: vmiratta.wav
+	Projectile: Bullet # InvisibleLow
+		Speed: 100c0 # 40c0?
+		Image: 120mm #
+		Angle: 62 #
+		# Bright=true
+	Warhead@1Dam: SpreadDamage
+		Spread: 64
+		Damage: 150
+		Versus:
+			None: 100
+			Flak: 100
+			Plate: 80
+			Light: 100
+			Medium: 100
+			Heavy: 100
+			Wood: 30
+			Steel: 20
+			Concrete: 20
+		DamageTypes: FlameDeath
+	Warhead@2Eff: CreateEffect
+		Explosion: medium_clsn
+		ImpactSound: gexp14a.wav
+		InvalidImpactTypes: Water
+	Warhead@3EffWater: CreateEffect
+		Explosion: small_watersplash
+		ImpactSound: gexpwasa.wav
+		ValidImpactTypes: Water
+	Warhead@4Smu: LeaveSmudge
+		SmudgeType: SmallCrater, SmallScorch
