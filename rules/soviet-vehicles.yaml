@@ -3,7 +3,7 @@ smcv:
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 110
-		Prerequisites: ~naweap, nadept
+		Prerequisites: ~naweap, repairpad
 	Valued:
 		Cost: 3000
 	Tooltip:
