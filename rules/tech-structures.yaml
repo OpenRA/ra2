@@ -1,7 +1,7 @@
 caoild:
 	Inherits: ^TechBuilding
 	Selectable:
-		#Bounds: TODO
+		Bounds: 96, 104, -2, -26
 	Building:
 		Footprint: xx xx
 		Dimensions: 2, 2
@@ -22,3 +22,4 @@ caoild:
 		Type: Steel
 	WithIdleOverlay@pump:
 		Sequence: idle-pump
+	GivesBuildableArea:
