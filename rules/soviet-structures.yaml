@@ -592,7 +592,7 @@ tesla:
 		Cost: 1500
 	Tooltip:
 		Name: Tesla Coil
-		Description: Tesla Coil
+		Description: Advanced base defense.\nRequires power to operate.\n  Strong vs Infantry, Vehicles\n  Weak vs Aircraft
 	Building:
 		Footprint: x
 		Dimensions: 1, 1
@@ -625,11 +625,8 @@ tesla:
 	AutoTarget:
 	-RenderBuilding:
 	RequiresPower:
-	CanPowerDown:
-	DisabledOverlay:
 	WithRangeCircle:
 		Range: 8c0
 		Type: teslacoil
 	Power:
 		Amount: -75
-

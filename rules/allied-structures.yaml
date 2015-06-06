@@ -746,6 +746,8 @@ atesla:
 		Weapon: PrismShot
 		LocalOffset: 0,0,2500
 	AttackCharge:
+		Armaments: primary
+		MaxCharges: 3
 		ReloadTime: 60
 	Power:
 		Amount: -75
