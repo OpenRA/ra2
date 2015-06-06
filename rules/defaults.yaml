@@ -1,5 +1,50 @@
-^Building:
+^ExistsInWorld:
 	AppearsOnRadar:
+	UpdatesPlayerStatistics:
+	CombatDebugOverlay:
+	DrawLineToTarget:
+	GivesExperience:
+	BodyOrientation:
+	ScriptTriggers:
+	UpgradeManager:
+	Huntable:
+
+^GainsExperience:
+	GainsExperience:
+		ChevronPalette: ra
+		Upgrades:
+			500: firepower, damage, speed, reload
+			1000: firepower, damage, speed, reload, selfheal, eliteweapon
+	GainsStatUpgrades:
+		CostThreshold: 5, 10 # Was only Infantry before?
+		FirepowerModifier: 110, 130
+		DamageModifier: 83, 66
+		SpeedModifier: 120, 150
+		ReloadModifier: 90, 75
+	SelfHealing@ELITE:
+		Step: 2
+		Ticks: 100
+		HealIfBelow: 1
+		DamageCooldown: 125
+		UpgradeTypes: selfheal
+		UpgradeMinEnabledLevel: 1
+
+^IronCurtainable:
+	UpgradeOverlay@IRONCURTAIN:
+		UpgradeTypes: invulnerability
+		UpgradeMinEnabledLevel: 1
+	InvulnerabilityUpgrade@IRONCURTAIN:
+		UpgradeTypes: invulnerability
+		UpgradeMinEnabledLevel: 1
+		UpgradeMaxAcceptedLevel: 2
+	TimedUpgradeBar:
+		Upgrade: invulnerability
+	# Exception of type `System.InvalidOperationException`: Palette `invuln` does not exist
+
+^Building:
+	Inherits@1: ^ExistsInWorld
+	#Inherits@2: ^IronCurtainable
+	-DrawLineToTarget:
 	SelectionDecorations:
 		Palette: pips
 	Selectable:
@@ -31,7 +76,6 @@
 		Races: cuba, libya, iraq, russia
 	MustBeDestroyed:
 		RequiredForShortGame: true
-	GivesExperience:
 	CaptureNotification:
 	EditorAppearance:
 		RelativeToTopLeft: true
@@ -42,23 +86,10 @@
 		SellSounds: uselbuil.wav
 	AcceptsSupplies:
 	GivesBounty:
-	UpdatesPlayerStatistics:
-	CombatDebugOverlay:
 	Guardable:
 		Range: 3
-	BodyOrientation:
-	Huntable:
 	Demolishable:
-	ScriptTriggers:
 	WithMakeAnimation:
-	# Exception of type `System.InvalidOperationException`: Palette `invuln` does not exist
-	# UpgradeOverlay@IRONCURTAIN:
-	# 	RequiresUpgrade: invulnerability
-	# InvulnerabilityUpgrade@IRONCURTAIN:
-	# 	RequiresUpgrade: invulnerability
-	# TimedUpgradeBar:
-	# 	Upgrade: invulnerability
-	UpgradeManager:
 
 ^SupportBuilding:
 	Inherits: ^Building
@@ -120,7 +151,10 @@
 		LightDiffuseColor: 1.4,1.4,1.4
 
 ^Wall:
-	AppearsOnRadar:
+	Inherits: ^ExistsInWorld
+	-CombatDebugOverlay:
+	-DrawLineToTarget:
+	-UpgradeManager:
 	Building:
 		Dimensions: 1,1
 		Footprint: x
@@ -139,7 +173,6 @@
 		TargetTypes: Ground, Wall, C4, DetonateAttack
 	RenderBuildingWall:
 		Type: wall
-	GivesExperience:
 	EditorAppearance:
 		RelativeToTopLeft: yes
 		UseTerrainPalette: yes
@@ -148,13 +181,12 @@
 		Types: Wall
 	Sellable:
 		SellSounds: uselbuil.wav
-	UpdatesPlayerStatistics:
-	BodyOrientation:
 	Demolishable:
-	ScriptTriggers:
 
 ^Infantry:
-	AppearsOnRadar:
+	Inherits@1: ^ExistsInWorld
+	Inherits@2: ^GainsExperience
+	#Inherits@3: ^IronCurtainable
 	Health:
 		Radius: 128
 	Armor:
@@ -200,39 +232,14 @@
 	Passenger:
 		CargoType: Infantry
 	HiddenUnderFog:
-	GainsExperience:
-		ChevronPalette: ra
-		Upgrades:
-			500: firepower, damage, speed, reload
-			1000: firepower, damage, speed, reload, selfheal, eliteweapon
-	GainsStatUpgrades:
-		CostThreshold: 5, 10
-		FirepowerModifier: 110, 130
-		DamageModifier: 83, 66
-		SpeedModifier: 120, 150
-		ReloadModifier: 90, 75
-	SelfHealing@ELITE:
-		Step: 2
-		Ticks: 100
-		HealIfBelow: 1
-		DamageCooldown: 125
-		UpgradeTypes: selfheal
-		UpgradeMinEnabledLevel: 1
-	GivesExperience:
-	DrawLineToTarget:
 	ActorLostNotification:
 	ProximityCaptor:
 		Types: Infantry
 	GivesBounty:
 	Crushable:
 		CrushSound: igensqua.wav
-	UpdatesPlayerStatistics:
-	CombatDebugOverlay:
 	Guard:
 	Guardable:
-	BodyOrientation:
-	Huntable:
-	ScriptTriggers:
 	DeathSounds@NORMAL:
 		DeathTypes: ExplosionDeath, BulletDeath, DeathType3
 	# TODO: DeathSounds@RadioActiveDeath:
@@ -242,7 +249,6 @@
 	DeathSounds@ZAPPED:
 		DeathSound: Zapped
 		DeathTypes: ElectroDeath
-	UpgradeManager:
 	MustBeDestroyed:
 		RequiredForShortGame: true
 	Cloneable:
@@ -276,7 +282,9 @@
 		VoiceSet: Civilian
 
 ^Vehicle:
-	AppearsOnRadar:
+	Inherits@1: ^ExistsInWorld
+	Inherits@2: ^GainsExperience
+	#Inherits@3: ^IronCurtainable
 	Mobile:
 		Crushes: crate
 		TerrainSpeeds:
@@ -301,38 +309,15 @@
 		CargoType: Vehicle
 	AttackMove:
 	HiddenUnderFog:
-	GainsExperience:
-		ChevronPalette: ra
-		Upgrades:
-			500: firepower, damage, speed, reload
-			1000: firepower, damage, speed, reload, selfheal, eliteweapon
-	GainsStatUpgrades:
-		FirepowerModifier: 110, 130
-		DamageModifier: 83, 66
-		SpeedModifier: 120, 150
-		ReloadModifier: 90, 75
-	SelfHealing@ELITE:
-		Step: 2
-		Ticks: 100
-		HealIfBelow: 1
-		DamageCooldown: 125
-		UpgradeTypes: selfheal
-		UpgradeMinEnabledLevel: 1
-	GivesExperience:
-	DrawLineToTarget:
 	ActorLostNotification:
 	ProximityCaptor:
 		Types: Vehicle
 	GivesBounty:
-	UpdatesPlayerStatistics:
-	CombatDebugOverlay:
 	Guard:
 	Guardable:
 	BodyOrientation:
 		QuantizedFacings: 32
 		CameraPitch: 90
-	Huntable:
-	ScriptTriggers:
 	Explodes:
 		Weapon: UnitExplodeSmall
 		EmptyWeapon: UnitExplodeSmall
@@ -342,7 +327,6 @@
 		LightPitch: 150
 		LightAmbientColor: -0.5,-0.5,-0.5
 		LightDiffuseColor: 1.4,1.4,1.4
-	UpgradeManager:
 	MustBeDestroyed:
 		RequiredForShortGame: true
 	Voiced:
@@ -350,7 +334,9 @@
 # TODO: Soylet (for grinding)
 
 ^Aircraft:
-	AppearsOnRadar:
+	Inherits@1: ^ExistsInWorld
+	Inherits@2: ^GainsExperience
+	#Inherits@3: ^IronCurtainable
 		UseLocation: true
 	TargetableAircraft:
 		TargetTypes: Air
@@ -364,34 +350,11 @@
 		LandWhenIdle: false
 	HiddenUnderFog:
 	AttackMove:
-	GainsExperience:
-		ChevronPalette: ra
-		Upgrades:
-			500: firepower, damage, speed, reload
-			1000: firepower, damage, speed, reload, selfheal, eliteweapon
-	GainsStatUpgrades:
-		FirepowerModifier: 110, 130
-		DamageModifier: 83, 66
-		SpeedModifier: 120, 150
-		ReloadModifier: 90, 75
-	SelfHealing@ELITE:
-		Step: 2
-		Ticks: 100
-		HealIfBelow: 1
-		DamageCooldown: 125
-		UpgradeTypes: selfheal
-		UpgradeMinEnabledLevel: 1
-	GivesExperience:
-	DrawLineToTarget:
 	ActorLostNotification:
-	CombatDebugOverlay:
 	BodyOrientation:
 		CameraPitch: 90
-	Huntable:
-	ScriptTriggers:
 	Guard:
 	Guardable:
-	UpgradeManager:
 	MustBeDestroyed:
 	RenderVoxels:
 		Scale: 11.7
@@ -403,7 +366,9 @@
 		VoiceSet: Heli
 
 ^Ship:
-	AppearsOnRadar:
+	Inherits@1: ^ExistsInWorld
+	Inherits@2: ^GainsExperience
+	#Inherits@3: ^IronCurtainable
 	Mobile:
 		Crushes: crate
 		TerrainSpeeds:
@@ -419,32 +384,11 @@
 		RepairBuildings: gayard, nayard
 	AttackMove:
 	HiddenUnderFog:
-	GainsExperience:
-		ChevronPalette: ra
-		Upgrades:
-			500: firepower, damage, speed, reload
-			1000: firepower, damage, speed, reload, selfheal, eliteweapon
-	GainsStatUpgrades:
-		FirepowerModifier: 110, 130
-		DamageModifier: 83, 66
-		SpeedModifier: 120, 150
-		ReloadModifier: 90, 75
-	SelfHealing@ELITE:
-		Step: 2
-		Ticks: 100
-		HealIfBelow: 1
-		DamageCooldown: 125
-		UpgradeTypes: selfheal
-		UpgradeMinEnabledLevel: 1
-	GivesExperience:
-	DrawLineToTarget:
 	ActorLostNotification:
 		Notification: NavalUnitLost
 	ProximityCaptor:
 		Types: Ship
 	GivesBounty:
-	UpdatesPlayerStatistics:
-	CombatDebugOverlay:
 	Guard:
 	Guardable:
 	BodyOrientation:
@@ -452,8 +396,6 @@
 		CameraPitch: 90
 	Tooltip:
 		GenericName: Ship
-	Huntable:
-	ScriptTriggers:
 	Explodes:
 		Weapon: UnitExplodeSmall
 		EmptyWeapon: UnitExplodeSmall
@@ -463,7 +405,6 @@
 		LightPitch: 150
 		LightAmbientColor: -0.5,-0.5,-0.5
 		LightDiffuseColor: 1.4,1.4,1.4
-	UpgradeManager:
 	MustBeDestroyed:
 		RequiredForShortGame: true
 	Voiced:
