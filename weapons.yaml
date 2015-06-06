@@ -1032,9 +1032,8 @@ vulcan2:
 		ValidImpactTypes: Water
 
 PrismShot:
-	ReloadDelay: 1
+	ReloadDelay: 60
 	Range: 8c0
-	MinRange: 0c256
 	Charges: true
 	Report: bpriat1a.wav
 	Projectile: LaserZap
