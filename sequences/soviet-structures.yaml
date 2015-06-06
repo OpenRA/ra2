@@ -517,9 +517,14 @@ tesla:
 		TilesetOverrides:
 			TEMPERAT: GENERIC
 			URBAN: GENERIC
-	idle: ngtsla_a
+	idle: ngtsla
+		Length: 1
+	damaged-idle: ngtsla
+		Start: 1
+		Length: 1
+	idle-powered: ngtsla_a
 		Length: 10
-	damaged-idle: ngtsla_a
+	damaged-idle-powered: ngtsla_a
 		Start: 10
 		Length: 10
 	active: ngtsla_b

@@ -630,3 +630,6 @@ tesla:
 		Type: teslacoil
 	Power:
 		Amount: -75
+	WithIdleOverlay@powered:
+		Sequence: idle-powered
+		PauseOnLowPower: true # Actually disabled
