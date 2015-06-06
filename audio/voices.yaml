@@ -28,7 +28,6 @@ AlliedVehicleVoice:
 		Select: vgrasea, vgraseb, vgrasec, vgrased, vgrasee
 		Move: vgramoa, vgramob, vgramoc, vgramod, vgramoe, vgramof
 		Attack: vgraata, vgraatb, vgraatc, vgraatd, vgraate
-		Burned: ienadia #gotta put something as temp else game crashes
 
 SovietVehicleVoice:
 	DefaultVariant: .wav
@@ -36,7 +35,6 @@ SovietVehicleVoice:
 		Select: vgrssea, vgrsseb, vgrssec
 		Move: vgrsmoa, vgrsmob, vgrsmoc
 		Attack: vgrsata, vgrsatb, vgrsatc, vgrsatd
-		Burned: ienadia #gotta put something as temp else game crashes
 
 AlliedNavalVoice:
 	DefaultVariant: .wav
@@ -44,7 +42,6 @@ AlliedNavalVoice:
 		Select: vwaasea, vwaaseb, vwaasec, vwaased
 		Move: vwaamoa, vwaamob, vwaamoc, vwaamod, vwaamoe
 		Attack: vwaaata, vwaaatb, vwaaatc
-		Burned: ienadia #gotta put something as temp else game crashes
 
 SovietNavalVoice:
 	DefaultVariant: .wav
@@ -52,7 +49,6 @@ SovietNavalVoice:
 		Select: vwassea, vwasseb, vwassec
 		Move: vwasmoa, vwasmob, vwasmoc, vwasmod
 		Attack: vwasata, vwasatb, vwasatc
-		Burned: ienadia #gotta put something as temp else game crashes
 
 GIVoice:
 	DefaultVariant: .wav
@@ -159,7 +155,6 @@ DolphinVoice:
 		Move: vdolmova, vdolmovb
 		Attack: vdolatca, vdolatcb, vdolatcc
 		Die: vdoldiea, vdoldieb
-		Burned: ienadia #gotta put something as temp else game crashes
 
 HarrierVoice:
 	DefaultVariant: .wav
@@ -168,7 +163,6 @@ HarrierVoice:
 		Move: vintmoa, vintmob, vintmoc, vintmod
 		Attack: vintata, vintatb, vintatc, vintatd, vintate
 		Die: vintdia, vintdib, vintdic
-		Burned: ienadia #gotta put something as temp else game crashes
 
 BlackEagleVoice:
 	DefaultVariant: .wav
@@ -177,7 +171,6 @@ BlackEagleVoice:
 		Move: vblemoa, vblemob, vblemoc
 		Attack: vbleata, vbleatb, vbleatc
 		Die: vbledia, vbledib, vbledic, vbledid, vbledie
-		Burned: ienadia #gotta put something as temp else game crashes
 
 NighthawkVoice:
 	DefaultVariant: .wav
@@ -186,7 +179,6 @@ NighthawkVoice:
 		Move: vblhmoa, vblhmob, vblhmoc, vblhmod
 		Attack: vblhata, vblhatb, vblhatc, vblhatd
 		Die: vblhdia, vblhdib, vblhdic
-		Burned: ienadia #gotta put something as temp else game crashes
 
 FlakTrooperVoice:
 	DefaultVariant: .wav
@@ -270,7 +262,6 @@ DemolitionTruckVoice:
 		Move: vdemmoa, vdemmob, vdemmoc
 		Attack: vdemata, vdematb, vdematc, vdematd, vdemate
 		Die: vdemdiea
-		Burned: ienadia #gotta put something as temp else game crashes
 
 TerrorDroneVoice:
 	DefaultVariant: .wav
@@ -279,7 +270,6 @@ TerrorDroneVoice:
 		Move: vtermova
 		Attack: vteratta
 		Die: vterdiea, vterdieb
-		Burned: ienadia #gotta put something as temp else game crashes
 
 GiantSquidVoice:
 	DefaultVariant: .wav
@@ -288,7 +278,6 @@ GiantSquidVoice:
 		Move: vsqumova, vsqumovb
 		Attack: vsquat1a
 		Die: vsqudiea
-		Burned: ienadia #gotta put something as temp else game crashes
 
 AlligatorVoice:
 	DefaultVariant: .wav
@@ -314,7 +303,6 @@ CarVoice:
 	Voices:
 		Select: gcarsela
 		Move: gcarsela
-		Burned: ienadia #gotta put something as temp else game crashes
 
 ChimpanzeeVoice:
 	DefaultVariant: .wav
