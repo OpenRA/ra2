@@ -397,7 +397,7 @@ gatech:
 		BuildPaletteOrder: 70
 		Prerequisites: radar, gaweap, ~structures.allies
 	Selectable:
-		Bounds: 122, 216, 0, -75
+		Bounds: 122, 216, 0, -81
 	Valued:
 		Cost: 2000
 	Tooltip:

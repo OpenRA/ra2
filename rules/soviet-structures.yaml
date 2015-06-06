@@ -58,7 +58,7 @@ napowr:
 		Footprint: xxx xxx
 		Dimensions: 3,2
 	Selectable:
-		Bounds: 126, 94, 2, -11
+		Bounds: 126, 94, 2, -16
 	Health:
 		HP: 750
 	Armor:
@@ -97,7 +97,7 @@ nahand:
 		Footprint: xx xx
 		Dimensions: 2,2
 	Selectable:
-		Bounds: 94, 168, 0, -55
+		Bounds: 94, 168, 0, -58
 	Health:
 		HP: 500
 	Armor:
@@ -126,7 +126,7 @@ narefn:
 		BuildPaletteOrder: 30
 		Prerequisites: power, ~structures.soviets
 	Selectable:
-		Bounds: 170, 150, -6, -30
+		Bounds: 170, 150, -6, -33
 	Valued:
 		Cost: 2000
 	Tooltip:
@@ -188,7 +188,7 @@ naradr:
 		Footprint: xx xx
 		Dimensions: 2,2
 	Selectable:
-		Bounds: 95, 130, 0, -35
+		Bounds: 95, 130, 0, -40
 	Health:
 		HP: 1000
 	Armor:
