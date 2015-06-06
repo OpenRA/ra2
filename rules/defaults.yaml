@@ -286,7 +286,7 @@
 	Inherits@2: ^GainsExperience
 	#Inherits@3: ^IronCurtainable
 	Mobile:
-		Crushes: crate
+		Crushes: crate, wall
 		TerrainSpeeds:
 			Clear: 100
 			Rough: 100
@@ -307,6 +307,7 @@
 		RepairBuildings: gadept,nadept
 	Passenger:
 		CargoType: Vehicle
+		Weight: 3
 	AttackMove:
 	HiddenUnderFog:
 	ActorLostNotification:
