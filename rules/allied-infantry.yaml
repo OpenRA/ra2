@@ -269,8 +269,10 @@ jumpjet:
 		IdleSequences: idle-air
 	Hovers:
 		OffsetModifier: -45
-	TargetableUnit:
+	-TargetableUnit:
+	TargetableAircraft:
 		TargetTypes: Air, Disguise
+		GroundedTargetTypes: Ground, Infantry, DetonateAttack, Disguise
 	WithShadow:
 	Voiced:
 		VoiceSet: RocketeerVoice
