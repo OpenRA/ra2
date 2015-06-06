@@ -90,8 +90,8 @@
 		Name: ts-normals
 		Type: TiberianSun
 	MenuPaletteEffect:
-	PaletteFromPaletteWithAlpha@effect25alpha:
-		Name: effect25alpha
+	PaletteFromPaletteWithAlpha@effect75alpha:
+		Name: effect75alpha
 		BasePalette: ra
 		Alpha: 0.75
 
