@@ -260,7 +260,7 @@ KirovVoice:
 		Attack: vkirata, vkiratb, vkiratc, vkiratd
 		Feedback: vkirfea, vkirfeb, vkirfec
 		Die: vkirdia, vkirdib, vkirdic, vkirdid
-		Burned: ienadia #gotta put something as temp else game crashes
+		Kill: vkirdia, vkirdib, vkirdic, vkirdid
 
 DemolitionTruckVoice:
 	DefaultVariant: .wav

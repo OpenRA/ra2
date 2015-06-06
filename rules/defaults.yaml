@@ -469,6 +469,56 @@
 	Voiced:
 		VoiceSet: SovietNavalVoice
 
+^Husk:
+	Husk:
+		AllowedTerrain: Clear, Rough, Road, Ore, Gems, Beach
+	RenderUnit:
+	Health:
+		HP: 280
+	Armor:
+		Type: Heavy
+	HiddenUnderFog:
+	Burns:
+		Damage: 2
+	ProximityCaptor:
+		Types: Husk
+	BodyOrientation:
+	Chronoshiftable:
+	TargetableUnit:
+		TargetTypes: Ground
+		RequiresForceFire: true
+	Tooltip:
+		GenericName: Destroyed Vehicle
+	AutoTargetIgnore:
+	Capturable:
+		Type: husk
+		AllowAllies: true
+		CaptureThreshold: 1.0
+	TransformOnCapture:
+		ForceHealthPercentage: 25
+	DisabledOverlay:
+	ScriptTriggers:
+
+^HelicopterHusk:
+	Inherits: ^Husk
+	-Husk:
+	-Burns:
+	FallsToEarth:
+	-TargetableUnit:
+	-Capturable:
+	-TransformOnCapture:
+
+^PlaneHusk:
+	Inherits: ^Husk
+	-Husk:
+	-Burns:
+	FallsToEarth:
+		Spins: False
+		Moves: True
+	-TargetableUnit:
+	-Capturable:
+	-TransformOnCapture:
+
 ^OreDrill:
 	Tooltip:
 		Name: Ore Drill

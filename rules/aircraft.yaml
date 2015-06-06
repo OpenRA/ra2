@@ -5,7 +5,7 @@ zep:
 	Tooltip:
 		Name: Kirov Airship
 	Buildable:
-		Queue: Aircraft
+		Queue: Vehicle
 		BuildPaletteOrder: 20
 		Prerequisites: ~naweap, natech
 	Selectable:
@@ -13,16 +13,19 @@ zep:
 		CruiseAltitude: 5600
 		ROT: 5
 		Speed: 50
+	TargetableAircraft:
+		TargetTypes: Air
+		GroundedTargetTypes: Ground
 	Health:
 		HP: 2000
 	Armor:
 		Type: Light
 	RevealsShroud:
 		Range: 8c0
-#	Armament: # Causes hang when attacking at 0 range
-#		Weapon: BlimpBomb
-#	AttackFrontal:
-#	AutoTarget:
+	Armament:
+		Weapon: BlimpBomb
+	AttackFrontal:
+	AutoTarget:
 	RenderSprites:
 	RenderVoxels:
 	WithVoxelBody:
@@ -32,6 +35,27 @@ zep:
 		Weapon: UnitExplode
 		Chance: 75
 	AnnounceOnBuild:
+	AnnounceOnKill: # Does not work?
 	Voiced:
 		VoiceSet: KirovVoice
+	LeavesHusk:
+		HuskActor: zephusk
 
+zephusk:
+	Inherits: ^HelicopterHusk
+	Tooltip:
+		Name: Kirov Airship
+	-RenderUnit:
+	RenderSprites:
+		Image: zep
+	RenderVoxels:
+		Image: zep
+	WithVoxelBody:
+	WithShadow:
+	Helicopter:
+		ROT: 10
+		Speed: 50
+	RevealsShroud:
+		Range: 8c0
+	FallsToEarth:
+		Velocity: 200

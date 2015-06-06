@@ -590,6 +590,7 @@ MammothTusk:
 BlimpBomb:
 	ReloadDelay: 45
 	Range: 1c20
+	MinRange: 0c001 # Causes hang when attacking at 0 range
 	Report: vkiratta.wav
 	Projectile: GravityBomb
 		Velocity: 50
