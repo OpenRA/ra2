@@ -216,9 +216,9 @@ sref:
 		Cost: 1200
 	Tooltip:
 		Name: Prism Tank
-		Description: Fires deadly beams of light\n  Strong vs Infantry, Vehicles\n  Weak vs Aircraft
+		Description: Fires deadly beams of light.\n  Strong vs Infantry, Vehicles\n  Weak vs Aircraft
 	Selectable:
-		Bounds: 30,30
+		Bounds: 64, 52, 0, -10
 	Health:
 		HP: 150
 	Armor:
@@ -231,9 +231,17 @@ sref:
 	Turreted:
 		ROT: 10
 		Offset: -30,0,85
-	Armament:
+	Armament@primary:
 		Weapon: Comet
-		LocalOffset: 640,0,427
+		LocalOffset: 640, 0, 427
+		UpgradeTypes: eliteweapon
+		UpgradeMaxEnabledLevel: 0
+		UpgradeMaxAcceptedLevel: 1
+	Armament@elite:
+		Weapon: SuperComet
+		LocalOffset: 640, 0, 427
+		UpgradeTypes: eliteweapon
+		UpgradeMinEnabledLevel: 1
 	AttackTurreted:
 	AutoTarget:
 	Explodes:
