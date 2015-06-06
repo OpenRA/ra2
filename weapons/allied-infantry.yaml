@@ -18,7 +18,7 @@ M60:
 			Wood: 75
 			Steel: 50
 			Concrete: 25
-		DamageTypes: Prone70Percent, TriggerProne, DeathType1
+		DamageTypes: Prone70Percent, TriggerProne, BulletDeath
 	Warhead@2Eff: CreateEffect
 		Explosion: piff
 		InvalidImpactTypes: Water
@@ -45,7 +45,7 @@ M60E:
 			Wood: 75
 			Steel: 50
 			Concrete: 25
-		DamageTypes: Prone70Percent, TriggerProne, DeathType1
+		DamageTypes: Prone70Percent, TriggerProne, BulletDeath
 	Warhead@2Eff: CreateEffect
 		Explosion: piff
 		InvalidImpactTypes: Water
@@ -72,7 +72,7 @@ para:
 			Wood: 75
 			Steel: 50
 			Concrete: 25
-		DamageTypes: Prone50Percent, TriggerProne, DeathType1
+		DamageTypes: Prone50Percent, TriggerProne, BulletDeath
 	Warhead@2Eff: CreateEffect
 		Explosion: piff
 		InvalidImpactTypes: Water
@@ -99,7 +99,7 @@ paraE:
 			Wood: 75
 			Steel: 50
 			Concrete: 25
-		DamageTypes: Prone50Percent, TriggerProne, DeathType1
+		DamageTypes: Prone50Percent, TriggerProne, BulletDeath
 	Warhead@2Eff: CreateEffect
 		Explosion: piff
 		InvalidImpactTypes: Water
@@ -126,7 +126,7 @@ DoublePistols:
 			Wood: 0
 			Steel: 0
 			Concrete: 0
-		DamageTypes: DeathType1
+		DamageTypes: BulletDeath
 	Warhead@2Eff: CreateEffect
 		Explosion: piff
 		InvalidImpactTypes: Water
@@ -152,7 +152,7 @@ DoublePistolsE:
 			Wood: 0
 			Steel: 0
 			Concrete: 0
-		DamageTypes: DeathType1
+		DamageTypes: BulletDeath
 	Warhead@2Eff: CreateEffect
 		Explosion: piff
 		InvalidImpactTypes: Water
@@ -181,7 +181,7 @@ awp:
 			Wood: 0
 			Steel: 0
 			Concrete: 0
-		DamageTypes: DeathType2
+		DamageTypes: ExplosionDeath
 
 # Rocketeer
 20mm:
@@ -204,7 +204,7 @@ awp:
 			Wood: 75
 			Steel: 50
 			Concrete: 25
-		DamageTypes: Prone70Percent, TriggerProne, DeathType1
+		DamageTypes: Prone70Percent, TriggerProne, BulletDeath
 	Warhead@2Eff: CreateEffect
 		Explosion: piff
 		InvalidImpactTypes: Water
@@ -234,7 +234,7 @@ awp:
 			Wood: 75
 			Steel: 50
 			Concrete: 25
-		DamageTypes: DeathType1
+		DamageTypes: BulletDeath
 	Warhead@2Eff: CreateEffect
 		Explosion: piff
 		InvalidImpactTypes: Water

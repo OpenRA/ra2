@@ -43,6 +43,10 @@ engineer:
 		Start: 149
 		Length: 15
 		Tick: 80
+	die4: nukedie
+		Length: *
+		Tick: 50
+		# Problem: Palette = effect
 	die5: flameguy
 		Start: 48
 		Length: 59
@@ -77,9 +81,9 @@ adog:
 	die2:
 		Start: 102
 		Length: 14
-	die3:
-		Start: 117
-		Length: 14
+	#die3:
+	#	Start: 117 # 166 is start of the jump anim?!
+	#	Length: 14
 	die4: # todo: copy of die1
 		Start: 87
 		Length: 14
@@ -121,9 +125,15 @@ e1:
 	die1:
 		Start: 134
 		Length: 14
+		Tick: 80
 	die2:
 		Start: 149
 		Length: 14
+		Tick: 80
+	die4: nukedie
+		Length: *
+		Tick: 50
+		# Problem: Palette = effect
 	die5: flameguy
 		Start: 48
 		Length: 59
@@ -178,6 +188,10 @@ snipe:
 	die2:
 		Start: 149
 		Length: 14
+	die4: nukedie
+		Length: *
+		Tick: 50
+		# Problem: Palette = effect
 	die5: flameguy
 		Start: 48
 		Length: 59
@@ -228,6 +242,10 @@ spy:
 	die2:
 		Start: 149
 		Length: 14
+	die4: nukedie
+		Length: *
+		Tick: 50
+		# Problem: Palette = effect
 	die5: flameguy
 		Start: 48
 		Length: 59
@@ -278,6 +296,10 @@ tany:
 	die2:
 		Start: 149
 		Length: 14
+	die4: nukedie
+		Length: *
+		Tick: 50
+		# Problem: Palette = effect
 	die5: flameguy
 		Start: 48
 		Length: 59
@@ -337,6 +359,11 @@ jumpjet:
 		Length: 15
 		Facings: 2
 		Tick: 80
+	die4: nukedie
+		Length: *
+		Tick: 50
+		Facings: 1
+		# Problem: Palette = effect
 	die5: flameguy
 		Start: 48
 		Length: 59

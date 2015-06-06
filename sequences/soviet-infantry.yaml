@@ -20,9 +20,9 @@ dog:
 	die2:
 		Start: 102
 		Length: 14
-	die3:
-		Start: 117
-		Length: 14
+	#die3:
+	#	Start: 117 # 166 is start of the jump anim?!
+	#	Length: 14
 	die4: # todo: copy of die1
 		Start: 87
 		Length: 14
@@ -67,6 +67,10 @@ e2:
 	die2:
 		Start: 149
 		Length: 14
+	die4: nukedie
+		Length: *
+		Tick: 50
+		# Problem: Palette = effect
 	die5: flameguy
 		Start: 48
 		Length: 59
@@ -118,6 +122,10 @@ flakt:
 	die2:
 		Start: 149
 		Length: 15
+	die4: nukedie
+		Length: *
+		Tick: 50
+		# Problem: Palette = effect
 	die5: flameguy
 		Start: 48
 		Length: 59
@@ -167,6 +175,10 @@ shk:
 	die2:
 		Start: 149
 		Length: 14
+	die4: nukedie
+		Length: *
+		Tick: 50
+		# Problem: Palette = effect
 	die5: flameguy
 		Start: 48
 		Length: 59
@@ -217,6 +229,10 @@ terror:
 	die2:
 		Start: 149
 		Length: 14
+	die4: nukedie
+		Length: *
+		Tick: 50
+		# Problem: Palette = effect
 	die5: flameguy
 		Start: 48
 		Length: 59
@@ -268,6 +284,10 @@ deso:
 	die2:
 		Start: 149
 		Length: 14
+	die4: nukedie
+		Length: *
+		Tick: 50
+		# Problem: Palette = effect
 	die5: flameguy
 		Start: 48
 		Length: 59

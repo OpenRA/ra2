@@ -183,12 +183,12 @@
 		StandSequences: stand
 	WithDeathAnimation:
 		DeathTypes:
-			DeathType1: 1
-			DeathType2: 2
+			ExplosionDeath: 1
+			BulletDeath: 2
 			DeathType3: 3
-			DeathType4: 4
-			DeathType5: 5
-			DeathType6: 6
+			RadioActiveDeath: 4
+			FlameDeath: 5
+			ElectroDeath: 6
 	AutoTarget:
 	AttackMove:
 	TakeCover:
@@ -234,13 +234,14 @@
 	Huntable:
 	ScriptTriggers:
 	DeathSounds@NORMAL:
-		DeathTypes: DeathType1, DeathType2, DeathType3
+		DeathTypes: ExplosionDeath, BulletDeath, DeathType3
+	# TODO: DeathSounds@RadioActiveDeath:
 	DeathSounds@BURNED:
 		DeathSound: Burned
-		DeathTypes: DeathType5
+		DeathTypes: FlameDeath
 	DeathSounds@ZAPPED:
 		DeathSound: Zapped
-		DeathTypes: DeathType6
+		DeathTypes: ElectroDeath
 	UpgradeManager:
 	MustBeDestroyed:
 		RequiredForShortGame: true

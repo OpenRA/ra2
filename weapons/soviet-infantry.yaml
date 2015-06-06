@@ -18,7 +18,7 @@ M1Carbine:
 			Wood: 75
 			Steel: 50
 			Concrete: 25
-		DamageTypes: Prone70Percent, TriggerProne, DeathType1
+		DamageTypes: Prone70Percent, TriggerProne, BulletDeath
 	Warhead@2Eff: CreateEffect
 		Explosion: piff
 		InvalidImpactTypes: Water
@@ -45,7 +45,7 @@ M1CarbineE:
 			Wood: 75
 			Steel: 50
 			Concrete: 25
-		DamageTypes: Prone70Percent, TriggerProne, DeathType1
+		DamageTypes: Prone70Percent, TriggerProne, BulletDeath
 	Warhead@2Eff: CreateEffect
 		Explosion: piff
 		InvalidImpactTypes: Water
@@ -77,7 +77,7 @@ RadBeamWeapon:
 			Wood: 0
 			Steel: 0
 			Concrete: 0
-		DamageTypes: DeathType2
+		DamageTypes: RadioActiveDeath
 
 RadBeamWeaponE:
 	ValidTargets: Ground
@@ -102,7 +102,7 @@ RadBeamWeaponE:
 			Wood: 0
 			Steel: 0
 			Concrete: 0
-		DamageTypes: DeathType2
+		DamageTypes: RadioActiveDeath
 
 # Flak Trooper
 FlakGuyGun:
@@ -124,7 +124,7 @@ FlakGuyGun:
 			Wood: 30
 			Steel: 20
 			Concrete: 10
-		DamageTypes: Prone100Percent, TriggerProne, DeathType1
+		DamageTypes: Prone100Percent, TriggerProne, BulletDeath
 	Warhead@2Eff: CreateEffect
 		Explosion: flak_puff
 
@@ -148,7 +148,7 @@ FlakGuyGunE:
 			Wood: 30
 			Steel: 20
 			Concrete: 10
-		DamageTypes: Prone100Percent, TriggerProne, DeathType1
+		DamageTypes: Prone100Percent, TriggerProne, BulletDeath
 	Warhead@2Eff: CreateEffect
 		Explosion: flak_puff
 
@@ -174,7 +174,7 @@ FlakGuyAAGun:
 			Wood: 0
 			Steel: 0
 			Concrete: 0
-		DamageTypes: DeathType1
+		DamageTypes: BulletDeath
 	Warhead@2Eff: CreateEffect
 		Explosion: flak_puff_AA
 
@@ -201,7 +201,7 @@ FlakGuyAAGunE:
 			Wood: 0
 			Steel: 0
 			Concrete: 0
-		DamageTypes: DeathType1
+		DamageTypes: BulletDeath
 	Warhead@2Eff: CreateEffect
 		Explosion: flak_puff_AA
 
@@ -225,7 +225,7 @@ ElectricBolt:
 			Wood: 50
 			Steel: 50
 			Concrete: 50
-		DamageTypes: DeathType6
+		DamageTypes: ElectroDeath
 
 ElectricBoltE:
 	Range: 5c0
@@ -246,5 +246,5 @@ ElectricBoltE:
 			Wood: 50
 			Steel: 50
 			Concrete: 50
-		DamageTypes: DeathType6
+		DamageTypes: ElectroDeath
 
