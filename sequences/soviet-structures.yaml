@@ -5,11 +5,15 @@ nacnst:
 		TilesetOverrides:
 			TEMPERAT: GENERIC
 			URBAN: GENERIC
-	idle: ngcnst
-		ShadowStart: 3
-	damaged-idle: ngcnst
-		Start: 1
+	idle: ngcnst_c
+		Length: 1
 		ShadowStart: 4
+		Tick: 150
+	damaged-idle: ngcnst_c
+		Start: 1
+		Length: 1
+		ShadowStart: 5
+		Tick: 150
 	make: ntcnstmk
 		Length: 31
 		ShadowStart: 31
@@ -23,15 +27,13 @@ nacnst:
 		Start: 11
 		Length: 11
 		Tick: 150
-	idle-side: ngcnst_c
-		Length: 1
-		ShadowStart: 4
-		Tick: 150
-	damaged-idle-side: ngcnst_c
+	idle-normal: ngcnst
+		ShadowStart: 3
+		ZOffset: -1024
+	damaged-idle-normal: ngcnst
 		Start: 1
-		Length: 1
-		ShadowStart: 5
-		Tick: 150
+		ShadowStart: 4
+		ZOffset: -1024
 	build: ngcnst_b
 		Length: 21
 		Tick: 150

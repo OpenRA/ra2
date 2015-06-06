@@ -35,8 +35,8 @@ nacnst:
 		ProductionType: Support
 	WithIdleOverlay@TOP:
 		Sequence: idle-top
-	WithIdleOverlay@SIDE:
-		Sequence: idle-side
+	WithIdleOverlay@normal: # Hack: Don't glitch when placing buildings
+		Sequence: idle-normal
 	WithBuildingPlacedAnimation:
 
 napowr:
