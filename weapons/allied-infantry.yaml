@@ -194,6 +194,7 @@ awp:
 	Warhead@1Dam: SpreadDamage
 		Spread: 64
 		Damage: 25
+		ValidTargets: Ground, Air
 		Versus:
 			None: 100
 			Flak: 100
@@ -223,7 +224,7 @@ awp:
 	Warhead@1Dam: SpreadDamage
 		Spread: 64
 		Damage: 25
-		ProneModifier: 70
+		ValidTargets: Ground, Air
 		Versus:
 			None: 100
 			Flak: 100
@@ -234,7 +235,7 @@ awp:
 			Wood: 75
 			Steel: 50
 			Concrete: 25
-		DamageTypes: BulletDeath
+		DamageTypes: Prone70Percent, TriggerProne, BulletDeath
 	Warhead@2Eff: CreateEffect
 		Explosion: piff
 		InvalidImpactTypes: Water
