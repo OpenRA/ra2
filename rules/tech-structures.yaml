@@ -2,7 +2,6 @@ caoild:
 	Inherits: ^TechBuilding
 	Selectable:
 		#Bounds: TODO
-	ProvidesPrerequisite@default:
 	Building:
 		Footprint: xx xx
 		Dimensions: 2, 2

@@ -4,7 +4,6 @@ nacnst:
 		Queue: Building
 		BuildPaletteOrder: 1000
 		Prerequisites: ~disabled
-	ProvidesPrerequisite@default:
 	Building:
 		Footprint: xxxx xxxx xxxx xxxx
 		Dimensions: 4,4
@@ -53,7 +52,6 @@ napowr:
 		Description: Provides power for other structures.
 	ProvidesPrerequisite:
 		Prerequisite: power
-	ProvidesPrerequisite@default:
 	Building:
 		Footprint: xxx xxx
 		Dimensions: 3,2
@@ -360,7 +358,6 @@ nanrct:
 		Description: Provides power for other structures.
 	ProvidesPrerequisite:
 		Prerequisite: power
-	ProvidesPrerequisite@default:
 	Building:
 		Footprint: xxxx xxxx xxxx xxxx
 		Dimensions: 4,4
@@ -418,7 +415,6 @@ naclon:
 	Tooltip:
 		Name: Cloning Vats
 		Description: Clones most trained infantry.
-	ProvidesPrerequisite@default:
 	Building:
 		Footprint: xx xx
 		Dimensions: 2, 2
@@ -454,7 +450,6 @@ napsis:
 	Tooltip:
 		Name: Psychic Sensor
 		Description: Detects enemy units and strikepoints
-	ProvidesPrerequisite@default:
 	Building:
 		Footprint: xx xx
 		Dimensions: 2,2
@@ -513,7 +508,6 @@ nairon:
 	Tooltip:
 		Name: Iron Curtain Device
 		Description: Grants invulnerability to armored units.\nFries fleshy units.
-	ProvidesPrerequisite@default:
 	Building:
 		Footprint: xxx xxx xxx
 		Dimensions: 3, 3
@@ -540,7 +534,6 @@ nawall:
 	Tooltip:
 		Name: Soviet Wall
 		Description: Light wall.\nCrushable by vehicles.
-	ProvidesPrerequisite@default:
 	Building:
 		Footprint: x
 		Dimensions: 1, 1
@@ -560,7 +553,6 @@ naflak:
 	Tooltip:
 		Name: Flak Cannon
 		Description: Automated anti-aircraft defense.
-	ProvidesPrerequisite@default:
 	Building:
 		Footprint: x
 		Dimensions: 1, 1
@@ -601,7 +593,6 @@ tesla:
 	Tooltip:
 		Name: Tesla Coil
 		Description: Tesla Coil
-	ProvidesPrerequisite@default:
 	Building:
 		Footprint: x
 		Dimensions: 1, 1

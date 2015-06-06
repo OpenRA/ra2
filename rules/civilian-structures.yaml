@@ -5,7 +5,6 @@ cafncb:
 	Tooltip:
 		Name: Black Fence
 		Description: Fence.\nCrushable by vehicles.
-	ProvidesPrerequisite@default:
 	Building:
 		Footprint: x
 		Dimensions: 1, 1
@@ -21,7 +20,6 @@ cafncw:
 	Tooltip:
 		Name: White Fence
 		Description: Fence.\nCrushable by vehicles.
-	ProvidesPrerequisite@default:
 	Building:
 		Footprint: x
 		Dimensions: 1, 1
@@ -37,7 +35,6 @@ gasand:
 	Tooltip:
 		Name: Sandbags
 		Description: Fence.\nCrushable by vehicles.
-	ProvidesPrerequisite@default:
 	Building:
 		Footprint: x
 		Dimensions: 1, 1
@@ -50,7 +47,6 @@ cawash01:
 	Inherits: ^CivBuilding
 	Selectable:
 		#Bounds: TODO
-	ProvidesPrerequisite@default:
 	Building:
 		Footprint: xxxx xxxx xxxx xxxx
 		Dimensions: 4, 4
@@ -68,7 +64,6 @@ cawash03:
 	Inherits: ^CivBuilding
 	Selectable:
 		#Bounds: TODO
-	ProvidesPrerequisite@default:
 	Building:
 		Footprint: xxxx xxxx xxxx
 		Dimensions: 4, 3
@@ -83,7 +78,6 @@ cawash04:
 	Inherits: ^CivBuilding
 	Selectable:
 		#Bounds: TODO
-	ProvidesPrerequisite@default:
 	Building:
 		Footprint: xxxx xxxx xxxx xxxx
 		Dimensions: 4, 4
@@ -98,7 +92,6 @@ cawash05:
 	Inherits: ^CivBuilding
 	Selectable:
 		#Bounds: TODO
-	ProvidesPrerequisite@default:
 	Building:
 		Footprint: xxxx xxxx
 		Dimensions: 4, 2
@@ -113,7 +106,6 @@ cawash07:
 	Inherits: ^CivBuilding
 	Selectable:
 		#Bounds: TODO
-	ProvidesPrerequisite@default:
 	Building:
 		Footprint: xxx xxx xxx
 		Dimensions: 3, 3
@@ -128,7 +120,6 @@ cawash09:
 	Inherits: ^CivBuilding
 	Selectable:
 		#Bounds: TODO
-	ProvidesPrerequisite@default:
 	Building:
 		Footprint: xxx xxx xxx
 		Dimensions: 3, 3
@@ -143,7 +134,6 @@ cawash10:
 	Inherits: ^CivBuilding
 	Selectable:
 		#Bounds: TODO
-	ProvidesPrerequisite@default:
 	Building:
 		Footprint: xxxx xxxx xxxx xxxx
 		Dimensions: 4, 4
@@ -158,7 +148,6 @@ cawash11:
 	Inherits: ^CivBuilding
 	Selectable:
 		#Bounds: TODO
-	ProvidesPrerequisite@default:
 	Building:
 		Footprint: xxxx xxxx xxxx xxxx
 		Dimensions: 4, 4
@@ -173,7 +162,6 @@ cawash13:
 	Inherits: ^CivBuilding
 	Selectable:
 		#Bounds: TODO
-	ProvidesPrerequisite@default:
 	Building:
 		Footprint: xxxx xxxx xxxx
 		Dimensions: 3, 4
@@ -188,7 +176,6 @@ cawash14:
 	Inherits: ^CivBuilding
 	Selectable:
 		#Bounds: TODO
-	ProvidesPrerequisite@default:
 	Building:
 		Footprint: xxx xxx xxx
 		Dimensions: 3, 3
@@ -203,7 +190,6 @@ canewy01:
 	Inherits: ^CivBuilding
 	Selectable:
 		#Bounds: TODO
-	ProvidesPrerequisite@default:
 	Building:
 		Footprint: xxxx xxxx xxxx xxxx
 		Dimensions: 4, 4
@@ -218,7 +204,6 @@ cawsh12:
 	Inherits: ^CivBuilding
 	Selectable:
 		#Bounds: TODO
-	ProvidesPrerequisite@default:
 	Building:
 		Footprint: xxx xxx xxx
 		Dimensions: 3, 3
@@ -248,7 +233,6 @@ caarmy01:
 	Inherits: ^CivBuilding
 	Selectable:
 		#Bounds: TODO
-	ProvidesPrerequisite@default:
 	Building:
 		Footprint: xxx xxx
 		Dimensions: 3, 2
@@ -268,7 +252,6 @@ cawa2a:
 		#Bounds: TODO
 	Valued:
 		Cost: 2000
-	ProvidesPrerequisite@default:
 	Building:
 		Footprint: xxxx xxxx xxxx xxxx
 		Dimensions: 4, 4
@@ -286,7 +269,6 @@ cawa2b:
 		#Bounds: TODO
 	Valued:
 		Cost: 2000
-	ProvidesPrerequisite@default:
 	Building:
 		Footprint: xxxx xxxx xxxx xxxx
 		Dimensions: 4, 4
@@ -304,7 +286,6 @@ cawa2c:
 		#Bounds: TODO
 	Valued:
 		Cost: 2000
-	ProvidesPrerequisite@default:
 	Building:
 		Footprint: xxxx xxxx xxxx xxxx
 		Dimensions: 4, 4
@@ -322,7 +303,6 @@ cawa2d:
 		#Bounds: TODO
 	Valued:
 		Cost: 2000
-	ProvidesPrerequisite@default:
 	Building:
 		Footprint: xxxx xxxx xxxx xxxx
 		Dimensions: 4, 4
@@ -337,7 +317,6 @@ cafarm01:
 	Inherits: ^CivBuilding
 	Selectable:
 		#Bounds: TODO
-	ProvidesPrerequisite@default:
 	Building:
 		Footprint: xx xx
 		Dimensions: 2, 2
@@ -354,7 +333,6 @@ cafarm02:
 	Inherits: ^CivBuilding
 	Selectable:
 		#Bounds: TODO
-	ProvidesPrerequisite@default:
 	Building:
 		Footprint: x
 		Dimensions: 1, 1
@@ -369,7 +347,6 @@ causfgl:
 	Inherits: ^CivBuilding
 	Selectable:
 		#Bounds: TODO
-	ProvidesPrerequisite@default:
 	Building:
 		Footprint: x
 		Dimensions: 1, 1
