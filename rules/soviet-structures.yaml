@@ -66,7 +66,7 @@ napowr:
 	WithIdleOverlay@LIGHTS:
 		Sequence: idle-lights
 	Power:
-		Amount: 100
+		Amount: 150
 	ScalePowerWithHealth:
 	SoundOnDamageTransition:
 		DestroyedSounds: bpowdiea.wav, bpowdieb.wav
