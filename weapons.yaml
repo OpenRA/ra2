@@ -58,6 +58,7 @@ RedEye2:
 		Blockable: false
 		Shadow: true
 		Image: DRAGON
+		Palette: ra
 		Trail: smokey2
 		ContrailLength: 16
 		RateOfTurn: 55
@@ -256,6 +257,7 @@ OPCoilBolt:
 	Projectile: Bullet
 		Speed: 40c0
 		Image: 120mm
+		Palette: ra
 		Shadow: true
 		Angle: 62
 	Warhead@1Dam: SpreadDamage
@@ -288,6 +290,7 @@ OPCoilBolt:
 	Projectile: Bullet
 		Speed: 40c0
 		Image: 120mm
+		Palette: ra
 		Shadow: true
 		Angle: 62
 	Warhead@1Dam: SpreadDamage
@@ -324,6 +327,7 @@ OPCoilBolt:
 	Projectile: Bullet
 		Speed: 40c0
 		Image: 120mm
+		Palette: ra
 		Shadow: true
 		Angle: 62
 	Warhead@1Dam: SpreadDamage
@@ -385,6 +389,7 @@ GrandCannonWeapon:
 		Blockable: false
 		Speed: 682
 		Image: 120mm
+		Palette: ra
 		Shadow: true
 		Angle: 62
 	Warhead@1Dam: SpreadDamage
@@ -412,6 +417,7 @@ GrandCannonWeapon:
 	Projectile: Bullet
 		Speed: 40c0
 		Image: 120mm
+		Palette: ra
 		Shadow: true
 		Angle: 62
 	Warhead@1Dam: SpreadDamage
@@ -448,6 +454,7 @@ GrandCannonWeapon:
 	Projectile: Bullet
 		Speed: 40c0
 		Image: 120mm
+		Palette: ra
 		Shadow: true
 		Angle: 62
 	Warhead@1Dam: SpreadDamage
@@ -483,6 +490,7 @@ GrandCannonWeapon:
 	Projectile: Bullet
 		Speed: 40c0
 		Image: 120mm
+		Palette: ra
 		Shadow: true
 		Angle: 62
 	Warhead@1Dam: SpreadDamage
@@ -519,6 +527,7 @@ GrandCannonWeapon:
 	Projectile: Bullet
 		Speed: 40c0
 		Image: 120mm
+		Palette: ra
 		Shadow: true
 		Angle: 62
 	Warhead@1Dam: SpreadDamage
@@ -558,6 +567,7 @@ MammothTusk:
 		Shadow: true
 		Inaccuracy: 128
 		Image: DRAGON
+		Palette: ra
 		Trail: smokey2
 		ContrailLength: 8
 		RateOfTurn: 10
@@ -596,6 +606,7 @@ BlimpBomb:
 		Velocity: 50
 		Acceleration: 10
 		Image: canister
+		Palette: player
 		Arm: 10
 	Warhead@1Dam: SpreadDamage
 		Spread: 400
@@ -705,6 +716,7 @@ sabot:
 	Projectile: Bullet
 		Speed: 100c0
 		Image: 120mm
+		Palette: ra
 		Shadow: true
 		Angle: 30
 	Warhead@1Dam: SpreadDamage
@@ -778,6 +790,7 @@ SubTorpedo:
 	Projectile: Bullet
 		Speed: 40c0
 		Image: 120mm
+		Palette: ra
 		Shadow: true
 		Angle: 62
 	Warhead@1Dam: SpreadDamage
@@ -813,6 +826,7 @@ SubTorpedo:
 	Projectile: Bullet
 		Speed: 40c0
 		Image: 120mm
+		Palette: ra
 		Shadow: true
 		Angle: 62
 	Warhead@1Dam: SpreadDamage
@@ -852,6 +866,7 @@ Medusa:
 		Blockable: false
 		Shadow: true
 		Image: DRAGON
+		Palette: ra
 		ContrailLength: 35
 		RateOfTurn: 55
 		Speed: 100
@@ -893,6 +908,7 @@ HoverMissile:
 		Shadow: true
 		Inaccuracy: 128
 		Image: DRAGON
+		Palette: ra
 		RateOfTurn: 8
 		RangeLimit: 35
 	Warhead@1Dam: SpreadDamage
@@ -938,6 +954,7 @@ HoverMissileE:
 		Shadow: true
 		Inaccuracy: 128
 		Image: DRAGON
+		Palette: ra
 		RateOfTurn: 8
 		RangeLimit: 35
 	Warhead@1Dam: SpreadDamage
@@ -1095,6 +1112,7 @@ MirageGun:
 	Projectile: Bullet # InvisibleLow
 		Speed: 100c0 # 40c0?
 		Image: 120mm #
+		Palette: ra
 		Angle: 62 #
 		# Bright=true
 	Warhead@1Dam: SpreadDamage
@@ -1129,6 +1147,7 @@ MirageGunE:
 	Projectile: Bullet # InvisibleLow
 		Speed: 100c0 # 40c0?
 		Image: 120mm #
+		Palette: ra
 		Angle: 62 #
 		# Bright=true
 	Warhead@1Dam: SpreadDamage
