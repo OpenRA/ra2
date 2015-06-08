@@ -12,6 +12,8 @@ cafncb:
 		HP: 100
 	Armor:
 		Type: Wood
+	Crushable:
+		CrushClasses: fence
 
 cafncw:
 	Inherits: ^Wall
@@ -27,6 +29,8 @@ cafncw:
 		HP: 100
 	Armor:
 		Type: Wood
+	Crushable:
+		CrushClasses: fence
 
 gasand:
 	Inherits: ^Wall
@@ -42,6 +46,8 @@ gasand:
 		HP: 100
 	Armor:
 		Type: Wood
+	Crushable:
+		CrushClasses: fence
 
 cawash01:
 	Inherits: ^CivBuilding
