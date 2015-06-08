@@ -161,7 +161,7 @@ discus:
 
 canister:
 	idle:
-		Length: *
+		Length: 15
 
 dragon:
 	idle:
