@@ -289,6 +289,7 @@ mgtk:
 		UpgradeMinEnabledLevel: 1
 	AttackFrontal:
 	AutoTarget:
+		AllowMovement: false
 	Explodes:
 		Weapon: UnitExplodeSmall
 		EmptyWeapon: UnitExplodeSmall
@@ -301,7 +302,6 @@ mgtk:
 	#CrateGoodie=yes
 	#IsTilter=yes
 	#TooBigToFitUnderBridge=true
-	#CanApproachTarget=no ; gs 9/15 Re-put in.  But now this will not apply to an Attack Mission.  Best of both worlds, and Dustin kicks butt
 	#Explosion=TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60
 	#MaxDebris=2
 	#ThreatPosed=15	; This value MUST be 0 for all building addons
