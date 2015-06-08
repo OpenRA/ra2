@@ -911,6 +911,8 @@ HoverMissile:
 		Palette: ra
 		RateOfTurn: 8
 		RangeLimit: 35
+		ContrailColor: 216,216,255
+		ContrailLength: 16
 	Warhead@1Dam: SpreadDamage
 		Spread: 128
 		Damage: 25
@@ -927,16 +929,16 @@ HoverMissile:
 			Concrete: 20
 		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
 	Warhead@2Eff: CreateEffect
-		Explosion: small_clsn
-		ImpactSound: expnew12.aud
+		Explosion: small_grey_explosion
+		ImpactSound: gexpifva.wav #TODO: also gexpifvb.wav gexpifvc.wav
 		InvalidImpactTypes: Water, Air
 	Warhead@3EffWater: CreateEffect
 		Explosion: small_watersplash
-		ImpactSound: ssplash3.aud
+		ImpactSound: gexpwasa.wav
 		ValidImpactTypes: Water
 	Warhead@4EffAir: CreateEffect
-		Explosion: small_twlt
-		ImpactSound: expnew12.aud
+		Explosion: small_grey_explosion
+		ImpactSound: gexpifva.wav #TODO: also gexpifvb.wav gexpifvc.wav
 		ValidImpactTypes: Air
 	Warhead@5: LeaveSmudge
 		SmudgeType: SmallCrater
@@ -957,6 +959,8 @@ HoverMissileE:
 		Palette: ra
 		RateOfTurn: 8
 		RangeLimit: 35
+		ContrailColor: 216,216,255
+		ContrailLength: 16
 	Warhead@1Dam: SpreadDamage
 		Spread: 128
 		Damage: 80
@@ -973,16 +977,16 @@ HoverMissileE:
 			Concrete: 20
 		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
 	Warhead@2Eff: CreateEffect
-		Explosion: small_clsn
-		ImpactSound: expnew12.aud
+		Explosion: medium_grey_explosion
+		ImpactSound: gexp15a.wav
 		InvalidImpactTypes: Water, Air
 	Warhead@3EffWater: CreateEffect
 		Explosion: small_watersplash
-		ImpactSound: ssplash3.aud
+		ImpactSound: gexpwasa.wav
 		ValidImpactTypes: Water
 	Warhead@4EffAir: CreateEffect
-		Explosion: small_twlt
-		ImpactSound: expnew12.aud
+		Explosion: medium_grey_explosion
+		ImpactSound: gexp15a.wav
 		ValidImpactTypes: Air
 	Warhead@5: LeaveSmudge
 		SmudgeType: SmallCrater
