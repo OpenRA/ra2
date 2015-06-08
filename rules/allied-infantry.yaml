@@ -256,7 +256,7 @@ jumpjet:
 		UpgradeMinEnabledLevel: 1
 	AttackFrontal:
 	Helicopter:
-		CruiseAltitude: 4096
+		CruiseAltitude: 3072
 		LandWhenIdle: false
 		InitialFacing: 20
 		ROT: 10
