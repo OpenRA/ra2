@@ -187,6 +187,7 @@ awp:
 20mm:
 	ReloadDelay: 20
 	Range: 5c0
+	MinRange: 0c001 # Causes hang when attacking at 0 range
 	Report: irocatta.wav
 	ValidTargets: Ground, Air
 	Projectile: Bullet
@@ -216,6 +217,7 @@ awp:
 20mme:
 	ReloadDelay: 20
 	Range: 5c0
+	MinRange: 0c001 # Causes hang when attacking at 0 range
 	Burst: 2
 	Report: irocatta.wav
 	ValidTargets: Ground, Air
