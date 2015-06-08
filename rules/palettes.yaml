@@ -38,6 +38,9 @@
 	PaletteFromFile@effect:
 		Name: effect
 		Filename: anim.pal
+	PaletteFromFile@mousepal:
+		Name: mousepal
+		Filename: mousepal.pal
 	PaletteFromFile@colorpicker:
 		Name: colorpicker
 		Filename: unittem.pal

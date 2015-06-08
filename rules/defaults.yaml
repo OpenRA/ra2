@@ -67,6 +67,7 @@
 	RenderBuilding:
 	WithBuildingExplosion:
 	RepairableBuilding:
+		IndicatorPalette: mousepal
 	EngineerRepairable:
 	EmitInfantryOnSell@allies:
 		ActorTypes: e1, e1, e1
