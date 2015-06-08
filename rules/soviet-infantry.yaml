@@ -150,6 +150,7 @@ terror:
 	WithInfantryBody:
 	Voiced:
 		VoiceSet: TerroristVoice
+	-TakeCover:
 
 deso:
 	Inherits: ^Infantry
