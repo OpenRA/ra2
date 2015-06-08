@@ -19,7 +19,7 @@ smcv:
 		Speed: 85
 		ROT: 8
 		WaitAverage: 0
-		Crushes: wall, crate, infantry
+		Crushes: fence, crate, infantry
 	RevealsShroud:
 		Range: 4c0
 	MustBeDestroyed:
@@ -154,7 +154,7 @@ htnk:
 	Mobile:
 		Speed: 75
 		ROT: 5
-		Crushes: wall, crate, infantry
+		Crushes: fence, crate, infantry
 	Health:
 		HP: 400
 	Armor:
@@ -201,7 +201,7 @@ apoc:
 	Mobile:
 		Speed: 45
 		ROT: 5
-		Crushes: wall, crate, infantry
+		Crushes: fence, crate, infantry
 	Health:
 		HP: 800
 	Armor:
@@ -257,7 +257,7 @@ dtruck:
 		Speed: 85 # TODO
 		ROT: 8
 		WaitAverage: 0
-		Crushes: wall, crate, infantry
+		Crushes: fence, crate, infantry
 	RevealsShroud:
 		Range: 4c0
 	Explodes:

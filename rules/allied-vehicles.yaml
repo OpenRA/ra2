@@ -18,7 +18,7 @@ amcv:
 	Mobile:
 		Speed: 80
 		ROT: 5
-		Crushes: wall, crate, infantry
+		Crushes: fence, crate, infantry
 	RevealsShroud:
 		Range: 4c0
 	MustBeDestroyed:
@@ -91,7 +91,7 @@ mtnk:
 	Mobile:
 		Speed: 90
 		ROT: 5
-		Crushes: wall, crate, infantry
+		Crushes: fence, crate, infantry
 	Health:
 		HP: 300
 	Armor:
@@ -137,7 +137,7 @@ tnkd:
 	Mobile:
 		Speed: 70
 		ROT: 5
-		Crushes: wall, crate, infantry
+		Crushes: fence, crate, infantry
 	Health:
 		HP: 400
 	Armor:
