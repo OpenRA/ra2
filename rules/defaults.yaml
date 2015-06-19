@@ -11,10 +11,9 @@
 
 ^GainsExperience:
 	GainsExperience:
-		ChevronPalette: ra
 		Upgrades:
-			500: firepower, damage, speed, reload
-			1000: firepower, damage, speed, reload, selfheal, eliteweapon
+			500: rank, firepower, damage, speed, reload
+			1000: rank, firepower, damage, speed, reload, selfheal, eliteweapon
 	GainsStatUpgrades:
 		CostThreshold: 5, 10 # Was only Infantry before?
 		FirepowerModifier: 110, 130
@@ -28,6 +27,16 @@
 		DamageCooldown: 125
 		UpgradeTypes: selfheal
 		UpgradeMinEnabledLevel: 1
+	WithRankDecoration:
+		Image: rank
+		Sequence: rank
+		Palette: ra
+		ReferencePoint: Bottom, Right
+		Offset: 2, 2
+		UpgradeTypes: rank
+		ZOffset: 256
+		UpgradeMinEnabledLevel: 1
+		UpgradeMaxAcceptedLevel: 2
 
 ^IronCurtainable:
 	UpgradeOverlay@IRONCURTAIN:
