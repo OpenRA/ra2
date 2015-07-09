@@ -27,16 +27,6 @@
 		DamageCooldown: 125
 		UpgradeTypes: selfheal
 		UpgradeMinEnabledLevel: 1
-	WithRankDecoration:
-		Image: rank
-		Sequence: rank
-		Palette: ra
-		ReferencePoint: Bottom, Right
-		Offset: 2, 2
-		UpgradeTypes: rank
-		ZOffset: 256
-		UpgradeMinEnabledLevel: 1
-		UpgradeMaxAcceptedLevel: 2
 
 ^IronCurtainable:
 	UpgradeOverlay@IRONCURTAIN:
@@ -87,8 +77,6 @@
 	MustBeDestroyed:
 		RequiredForShortGame: true
 	CaptureNotification:
-	EditorAppearance:
-		RelativeToTopLeft: true
 	ShakeOnDeath:
 	ProximityCaptor:
 		Types: Building
@@ -183,9 +171,6 @@
 		TargetTypes: Ground, Wall, C4, DetonateAttack
 	RenderBuildingWall:
 		Type: wall
-	EditorAppearance:
-		RelativeToTopLeft: yes
-		UseTerrainPalette: yes
 	AutoTargetIgnore:
 	ProximityCaptor:
 		Types: Wall
