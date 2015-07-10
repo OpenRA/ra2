@@ -1,0 +1,57 @@
+Player:
+	HackyAI@TestAI:
+		Name: Test AI
+		BuildingCommonNames:
+			ConstructionYard: gacnst, nacnst
+			Refinery: garefn, narefn
+			Power: gapowr, napowr, nanrct
+			Barracks: gapile, nahand
+			VehiclesFactory: gaweap, naweap
+			Production: gapile, nahand, gaweap, naweap, gaairc
+		UnitsCommonNames:
+			Mcv: amcv, smcv
+		BuildingLimits:
+			garefn: 4
+			narefn: 4
+			gapowr: 8
+			napowr: 8
+			nanrct: 1
+			gapile: 2
+			nahand: 2
+			gaweap: 2
+			naweap: 2
+			gaairc: 2
+		BuildingFractions:
+			garefn: 30%
+			narefn: 30%
+			gapowr: 35%
+			napowr: 35%
+			gapile: 1%
+			nahand: 1%
+			gaweap: 1%
+			naweap: 1%
+			gaairc: 1%
+			amradr: 1%
+			naradr: 1%
+			gatech: 1%
+			natech: 1%
+			naclon: 1%
+			gadept: 1%
+			nadept: 1%
+			nasam: 1%
+			naflak: 1%
+			tesla: 1%
+			gtgcan: 1%
+		UnitsToBuild:
+			e1: 90%
+			e2: 90%
+			dog: 5%
+			engineer: 5%
+			terror: 1%
+			tany: 1%
+			htnk: 1%
+			mtnk: 1%
+			apoc: 1%
+			dtruck: 1%
+		SquadSize: 5
+

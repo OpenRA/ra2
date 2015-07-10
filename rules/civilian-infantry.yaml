@@ -1,0 +1,21 @@
+cow:
+	Inherits: ^Infantry
+	Tooltip:
+		Name: Cow
+	Health:
+		HP: 150
+	Valued:
+		Cost: 10
+	Armor:
+		Type: None
+	RevealsShroud:
+		Range: 4c0
+	Mobile:
+		Speed: 40
+	Selectable:
+		Bounds: 45, 25, 0, -8
+	TargetableUnit:
+		TargetTypes: Ground
+	Voiced:
+		VoiceSet: CowVoice
+

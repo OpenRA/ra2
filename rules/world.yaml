@@ -1,0 +1,153 @@
+^BaseWorld:
+	Inherits: ^Palettes
+	ActorMap:
+	ScreenMap:
+	TerrainGeometryOverlay:
+	LoadWidgetAtGameStart:
+	ShroudRenderer:
+		FogVariants: shroud
+		Index: 255, 16, 32, 48, 64, 80, 96, 112, 128, 144, 160, 176, 192, 208, 224, 240, 20, 40, 56, 65, 97, 130, 148, 194, 24, 33, 66, 132, 28, 41, 67, 134, 1, 2, 4, 8, 3, 6, 12, 9, 7, 14, 13, 11, 5, 10, 15, 255
+		UseExtendedIndex: true
+	Country@random:
+		Name: Random
+		Race: Random
+		RandomRaceMembers: random-allies, random-soviets
+		Side: Randoms
+	Country@allies:
+		Name: Allies
+		Race: random-allies
+		RandomRaceMembers: america, germany, england, france, korea
+		Side: Randoms
+	Country@soviets:
+		Name: Soviets
+		Race: random-soviets
+		RandomRaceMembers: cuba, libya, iraq, russia
+		Side: Randoms
+	Country@1:
+		Name: America
+		Race: america
+		Side: Allies
+	Country@2:
+		Name: Germany
+		Race: germany
+		Side: Allies
+	Country@3:
+		Name: England
+		Race: england
+		Side: Allies
+	Country@4:
+		Name: France
+		Race: france
+		Side: Allies
+	Country@5:
+		Name: Korea
+		Race: korea
+		Side: Allies
+	Country@6:
+		Name: Cuba
+		Race: cuba
+		Side: Soviets
+	Country@7:
+		Name: Libya
+		Race: libya
+		Side: Soviets
+	Country@8:
+		Name: Iraq
+		Race: iraq
+		Side: Soviets
+	Country@9:
+		Name: Russia
+		Race: russia
+		Side: Soviets
+	ResourceType@Tiberium:
+		ResourceType: 1
+		Palette: ore
+		Variants: tib01, tib02, tib03, tib04, tib05, tib06, tib07, tib08, tib09, tib10, tib11, tib12, tib13, tib14, tib15, tib16, tib17, tib18, tib19, tib20
+		MaxDensity: 12
+		ValuePerUnit: 50
+		Name: Tiberium
+		PipColor: Yellow
+		AllowedTerrainTypes: Clear
+		AllowUnderActors: false
+		TerrainType: Tiberium
+
+World:
+	Inherits: ^BaseWorld
+	ChatCommands:
+	DevCommands:
+	PlayerCommands:
+	HelpCommand:
+	ScreenShaker:
+	BuildingInfluence:
+	ProductionQueueFromSelection:
+		ProductionPaletteWidget: PRODUCTION_PALETTE
+	DomainIndex:
+	SmudgeLayer@SMALLSCORCH:
+		Type: SmallScorch
+		Sequence: smallscorches
+		SmokeType: smallfire
+		SmokePercentage: 50
+	SmudgeLayer@MEDIUMSCORCH:
+		Type: MediumScorch
+		Sequence: mediumscorches
+		SmokeType: mediumfire
+		SmokePercentage: 75
+	SmudgeLayer@LARGESCORCH:
+		Type: LargeScorch
+		Sequence: largescorches
+		SmokeType: largefire
+		SmokePercentage: 100
+	SmudgeLayer@SMALLCRATER:
+		Type: SmallCrater
+		SmokeType: smallsmoke
+		Sequence: smallcraters
+	SmudgeLayer@MEDIUMCRATER:
+		Type: MediumCrater
+		SmokeType: smallsmoke
+		Sequence: mediumcraters
+	SmudgeLayer@LARGECRATER:
+		Type: LargeCrater
+		SmokeType: largesmoke
+		Sequence: largecraters
+	ResourceLayer:
+	ResourceClaimLayer:
+	PathfinderDebugOverlay:
+	SpawnMapActors:
+	CreateMPPlayers:
+	MPStartUnits@AMCV:
+		Races: allies, america, germany, england, france, korea
+		BaseActor: amcv
+	MPStartUnits@lightallies:
+		Class: light
+		ClassName: Light
+		Races: allies, america, germany, england, france, korea
+		BaseActor: amcv
+		SupportActors: dog,e1,e1
+		InnerSupportRadius: 3
+		OuterSupportRadius: 5
+	MPStartUnits@lightsoviets:
+		Class: light
+		CLassName: Light
+		Races: soviets, cuba, libya, iraq, russia
+		BaseActor: smcv
+		SupportActors: dog,e2,e2,e2
+		InnerSupportRadius: 3
+		OuterSupportRadius: 5
+	MPStartUnits@SMCV:
+		Races: soviets, cuba, libya, iraq, russia
+		BaseActor: smcv
+	MPStartLocations:
+	SpawnMPUnits:
+	PathFinder:
+	ValidateOrder:
+	DebugPauseState:
+	RadarPings:
+	StartGameNotification:
+	ObjectivesPanel:
+		PanelName: SKIRMISH_STATS
+
+EditorWorld:
+	Inherits: ^BaseWorld
+	EditorActorLayer:
+	EditorResourceLayer:
+

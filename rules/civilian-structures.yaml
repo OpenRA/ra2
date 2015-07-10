@@ -1,0 +1,342 @@
+cafncb:
+	Inherits: ^Wall
+	Valued:
+		Cost: 25
+	Tooltip:
+		Name: Black Fence
+		Description: Fence.\nCrushable by vehicles.
+	Building:
+		Footprint: x
+		Dimensions: 1, 1
+	Health:
+		HP: 100
+	Armor:
+		Type: Wood
+	Crushable:
+		CrushClasses: fence
+
+cafncw:
+	Inherits: ^Wall
+	Valued:
+		Cost: 25
+	Tooltip:
+		Name: White Fence
+		Description: Fence.\nCrushable by vehicles.
+	Building:
+		Footprint: x
+		Dimensions: 1, 1
+	Health:
+		HP: 100
+	Armor:
+		Type: Wood
+	Crushable:
+		CrushClasses: fence
+
+gasand:
+	Inherits: ^Wall
+	Valued:
+		Cost: 25
+	Tooltip:
+		Name: Sandbags
+		Description: Fence.\nCrushable by vehicles.
+	Building:
+		Footprint: x
+		Dimensions: 1, 1
+	Health:
+		HP: 100
+	Armor:
+		Type: Wood
+	Crushable:
+		CrushClasses: fence
+
+cawash01:
+	Inherits: ^CivBuilding
+	Selectable:
+	Building:
+		Footprint: xxxx xxxx xxxx xxxx
+		Dimensions: 4, 4
+	Tooltip:
+		Name: White House
+	Health:
+		HP: 1000
+	Armor:
+		Type: Concrete
+	RevealsShroud:
+		Range: 6c0
+
+cawash03:
+	Inherits: ^CivBuilding
+	Selectable:
+	Building:
+		Footprint: xxxx xxxx xxxx
+		Dimensions: 4, 3
+	Health:
+		HP: 1000
+	Armor:
+		Type: Steel
+	RevealsShroud:
+		Range: 6c0
+
+cawash04:
+	Inherits: ^CivBuilding
+	Selectable:
+	Building:
+		Footprint: xxxx xxxx xxxx xxxx
+		Dimensions: 4, 4
+	Health:
+		HP: 1000
+	Armor:
+		Type: Steel
+	RevealsShroud:
+		Range: 6c0
+
+cawash05:
+	Inherits: ^CivBuilding
+	Selectable:
+	Building:
+		Footprint: xxxx xxxx
+		Dimensions: 4, 2
+	Health:
+		HP: 1000
+	Armor:
+		Type: Steel
+	RevealsShroud:
+		Range: 6c0
+
+cawash07:
+	Inherits: ^CivBuilding
+	Selectable:
+	Building:
+		Footprint: xxx xxx xxx
+		Dimensions: 3, 3
+	Health:
+		HP: 1000
+	Armor:
+		Type: Steel
+	RevealsShroud:
+		Range: 6c0
+
+cawash09:
+	Inherits: ^CivBuilding
+	Selectable:
+	Building:
+		Footprint: xxx xxx xxx
+		Dimensions: 3, 3
+	Health:
+		HP: 1000
+	Armor:
+		Type: Steel
+	RevealsShroud:
+		Range: 6c0
+
+cawash10:
+	Inherits: ^CivBuilding
+	Selectable:
+	Building:
+		Footprint: xxxx xxxx xxxx xxxx
+		Dimensions: 4, 4
+	Health:
+		HP: 1000
+	Armor:
+		Type: Steel
+	RevealsShroud:
+		Range: 6c0
+
+cawash11:
+	Inherits: ^CivBuilding
+	Selectable:
+	Building:
+		Footprint: xxxx xxxx xxxx xxxx
+		Dimensions: 4, 4
+	Health:
+		HP: 1000
+	Armor:
+		Type: Steel
+	RevealsShroud:
+		Range: 6c0
+
+cawash13:
+	Inherits: ^CivBuilding
+	Selectable:
+	Building:
+		Footprint: xxxx xxxx xxxx
+		Dimensions: 3, 4
+	Health:
+		HP: 1000
+	Armor:
+		Type: Steel
+	RevealsShroud:
+		Range: 6c0
+
+cawash14:
+	Inherits: ^CivBuilding
+	Selectable:
+	Building:
+		Footprint: xxx xxx xxx
+		Dimensions: 3, 3
+	Tooltip:
+		Name: Jefferson Memorial
+	Health:
+		HP: 1000
+	Armor:
+		Type: Concrete
+
+canewy01:
+	Inherits: ^CivBuilding
+	Selectable:
+	Building:
+		Footprint: xxxx xxxx xxxx xxxx
+		Dimensions: 4, 4
+	Health:
+		HP: 1000
+	Armor:
+		Type: Steel
+	RevealsShroud:
+		Range: 4c0
+
+cawsh12:
+	Inherits: ^CivBuilding
+	Selectable:
+	Building:
+		Footprint: xxx xxx xxx
+		Dimensions: 3, 3
+	Tooltip:
+		Name: Washington Monument
+	Health:
+		HP: 1000
+	Armor:
+		Type: Concrete
+	RevealsShroud:
+		Range: 6c0
+	Turreted:
+		ROT: 255
+	BodyOrientation:
+		QuantizedFacings: 8
+	Cargo:
+		Types: Infantry
+		MaxWeight: 5
+		PipCount: 5
+	AttackGarrisoned:
+		Armaments: M1Carbine
+		PortOffsets: 384,0,128, 224,-341,128, -224,-341,128, -384,0,128, -224,341,128, 224,341,128
+		PortYaws: 0, 176, 341, 512, 682, 853
+		PortCones: 86, 86, 86, 86, 86, 86
+
+caarmy01:
+	Inherits: ^CivBuilding
+	Selectable:
+	Building:
+		Footprint: xxx xxx
+		Dimensions: 3, 2
+	Tooltip:
+		Name: Army Tent
+	Health:
+		HP: 200
+	Armor:
+		Type: Wood
+	RevealsShroud:
+		Range: 6c0
+
+cawa2a:
+	Inherits: ^CivBuilding
+	Selectable:
+	Valued:
+		Cost: 2000
+	Building:
+		Footprint: xxxx xxxx xxxx xxxx
+		Dimensions: 4, 4
+	Health:
+		HP: 600
+	Armor:
+		Type: Concrete
+	RevealsShroud:
+		Range: 6c0
+
+cawa2b:
+	Inherits: ^CivBuilding
+	Selectable:
+	Valued:
+		Cost: 2000
+	Building:
+		Footprint: xxxx xxxx xxxx xxxx
+		Dimensions: 4, 4
+	Health:
+		HP: 600
+	Armor:
+		Type: Concrete
+	RevealsShroud:
+		Range: 6c0
+
+cawa2c:
+	Inherits: ^CivBuilding
+	Selectable:
+	Valued:
+		Cost: 2000
+	Building:
+		Footprint: xxxx xxxx xxxx xxxx
+		Dimensions: 4, 4
+	Health:
+		HP: 600
+	Armor:
+		Type: Concrete
+	RevealsShroud:
+		Range: 6c0
+
+cawa2d:
+	Inherits: ^CivBuilding
+	Selectable:
+	Valued:
+		Cost: 2000
+	Building:
+		Footprint: xxxx xxxx xxxx xxxx
+		Dimensions: 4, 4
+	Health:
+		HP: 600
+	Armor:
+		Type: Concrete
+	RevealsShroud:
+		Range: 6c0
+
+cafarm01:
+	Inherits: ^CivBuilding
+	Selectable:
+	Building:
+		Footprint: xx xx
+		Dimensions: 2, 2
+	Tooltip:
+		Name: Farm
+	Health:
+		HP: 400
+	Armor:
+		Type: Wood
+	RevealsShroud:
+		Range: 4c0
+
+cafarm02:
+	Inherits: ^CivBuilding
+	Selectable:
+	Building:
+		Footprint: x
+		Dimensions: 1, 1
+	Tooltip:
+		Name: Farm Silo
+	Health:
+		HP: 400
+	Armor:
+		Type: Wood
+
+causfgl:
+	Inherits: ^CivBuilding
+	Selectable:
+	Building:
+		Footprint: x
+		Dimensions: 1, 1
+	Tooltip:
+		Name: US Flag
+	Health:
+		HP: 20
+	Armor:
+		Type: Steel
+	RevealsShroud:
+		Range: 6c0
+

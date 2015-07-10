@@ -1,0 +1,127 @@
+sapc:
+	Inherits: ^Ship
+	Buildable:
+		Queue: Ship
+		BuildPaletteOrder: 10
+		Prerequisites: nayard
+	Valued:
+		Cost: 900
+	Tooltip:
+		Name: Amphibious Transport
+		Description: General-purpose naval transport.\nCan carry infantry and vehicles.\n  Unarmed
+	Selectable:
+		Bounds: 60, 80, 0, -6
+	Health:
+		HP: 300
+	Armor:
+		Type: Heavy
+	Mobile:
+		ROT: 10
+		Speed: 75
+		TerrainSpeeds:
+			Clear: 80
+			Rough: 80
+			Rail: 50
+			Road: 100
+			DirtRoad: 100
+			Beach: 60
+			Tiberium: 50
+			BlueTiberium: 50
+			Water: 100
+	RevealsShroud:
+		Range: 6c0
+	Cargo:
+		Types: Infantry, Vehicle
+		MaxWeight: 9
+		PipCount: 12
+		PassengerFacing: 96
+		UnloadTerrainTypes: Clear, Rough, Rail, Road, DirtRoad, Beach, Tiberium, BlueTiberium
+	Explodes:
+		Weapon: UnitExplode
+		EmptyWeapon: UnitExplode
+	WithVoxelBody:
+	RenderSprites:
+
+sub:
+	Inherits: ^Ship
+	Buildable:
+		Queue: Ship
+		BuildPaletteOrder: 30
+		Prerequisites: nayard
+	Valued:
+		Cost: 1000
+	Tooltip:
+		Name: Typhoon Attack Sub
+		Description: Submerged anti-ship unit armed with\ntorpedoes.\nCan detect other submarines and Giant Squids.\n  Strong vs Ships\n  Weak vs Ground units, Aircraft\nSpecial Ability: Submerge
+	Health:
+		HP: 600
+	Armor:
+		Type: Heavy
+	Mobile:
+		ROT: 4
+		Speed: 71
+	RevealsShroud:
+		Range: 6c0
+	-TargetableUnit:
+	TargetableSubmarine:
+		TargetTypes: Ground, Water, Repair
+		CloakedTargetTypes: Underwater, Repair
+	Cloak:
+		CloakTypes: Underwater
+		InitialDelay: 50
+		CloakDelay: 75
+		CloakSound: vnavupa.wav
+		UncloakSound: vnavupa.wav
+	Armament:
+		Weapon: SubTorpedo
+		LocalOffset: 768,0,0
+		FireDelay: 2
+	AttackFrontal:
+	Chronoshiftable:
+	RepairableNear:
+	AutoTarget:
+		InitialStance: ReturnFire
+	DetectCloaked:
+		CloakTypes: Underwater
+		Range: 4
+	RenderDetectionCircle:
+	Explodes:
+		Weapon: UnitExplode
+		EmptyWeapon: UnitExplode
+	-MustBeDestroyed:
+	WithVoxelBody:
+	RenderSprites:
+
+hyd:
+	Inherits: ^Ship
+	Buildable:
+		Queue: Ship
+		BuildPaletteOrder: 20
+		Prerequisites: naradr, nayard
+	Valued:
+		Cost: 900
+	Tooltip:
+		Name: Sea Scorpion
+		Description: Anti-Air/Anti-Infantry naval unit.\n  Strong vs Aircraft, Infantry\n  Weak vs Vehicles, Naval Units
+	Selectable:
+		Bounds: 50, 30, 0, -6
+	Health:
+		HP: 300
+	Armor:
+		Type: Heavy
+	Mobile:
+		ROT: 6
+		Speed: 75
+	RevealsShroud:
+		Range: 8c0
+	AttackFrontal:
+	Armament@primary:
+		Weapon: FlakTrackGun
+	Armament@secondary:
+		Weapon: FlakWeapon
+	Explodes:
+		Weapon: UnitExplode
+		EmptyWeapon: UnitExplode
+	WithVoxelBody:
+	RenderSprites:
+

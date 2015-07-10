@@ -1,0 +1,130 @@
+lcrf:
+	Inherits: ^Ship
+	Buildable:
+		Queue: Ship
+		BuildPaletteOrder: 10
+		Prerequisites: gayard
+	Valued:
+		Cost: 900
+	Tooltip:
+		Name: Amphibious Transport
+		Description: General-purpose naval transport.\nCan carry infantry and vehicles.\n  Unarmed
+	Selectable:
+		Bounds: 60, 80, 0, -6
+	Health:
+		HP: 300
+	Armor:
+		Type: Light
+	Mobile:
+		ROT: 10
+		Speed: 75
+		TerrainSpeeds:
+			Clear: 80
+			Rough: 80
+			Rail: 50
+			Road: 100
+			DirtRoad: 100
+			Beach: 60
+			Tiberium: 50
+			BlueTiberium: 50
+			Water: 100
+	RevealsShroud:
+		Range: 6c0
+	Cargo:
+		Types: Infantry, Vehicle
+		MaxWeight: 9
+		PipCount: 12
+		PassengerFacing: 96
+		UnloadTerrainTypes: Clear, Rough, Rail, Road, DirtRoad, Beach, Tiberium, BlueTiberium
+	Explodes:
+		Weapon: UnitExplode
+		EmptyWeapon: UnitExplode
+	WithVoxelBody:
+	RenderSprites:
+	Voiced:
+		VoiceSet: AlliedNavalVoice
+
+dest:
+	Inherits: ^Ship
+	Buildable:
+		Queue: Ship
+		BuildPaletteOrder: 40
+		Prerequisites: gayard
+	Valued:
+		Cost: 1000
+	Tooltip:
+		Name: Destroyer
+		Description: Allied Main Battle Ship armed with cannons and\n an Osprey helicopter.\nCan detect submarines and sea animals.\n  Strong vs Naval units\n  Weak vs Ground units, Aircraft
+	Health:
+		HP: 600
+	Armor:
+		Type: Heavy
+	Mobile:
+		ROT: 5
+		Speed: 105
+	RevealsShroud:
+		Range: 7c0
+	Selectable:
+		Bounds: 80, 80, 0, -6
+	Armament@primary:
+		Weapon: 155mm
+		LocalOffset: 768,0,0
+		FireDelay: 2
+		UpgradeTypes: eliteweapon
+		UpgradeMaxEnabledLevel: 0
+		UpgradeMaxAcceptedLevel: 1
+	Armament@elite:
+		Weapon: 155mmE
+		LocalOffset: 768,0,0
+		FireDelay: 2
+		UpgradeTypes: eliteweapon
+		UpgradeMinEnabledLevel: 1
+	AttackFrontal:
+	Chronoshiftable:
+	RepairableNear:
+	DetectCloaked:
+		CloakTypes: Underwater
+		Range: 4
+	RenderDetectionCircle:
+	Explodes:
+		Weapon: UnitExplode
+		EmptyWeapon: UnitExplode
+	WithVoxelBody:
+	RenderSprites:
+	Voiced:
+		VoiceSet: AlliedNavalVoice
+
+aegis:
+	Inherits: ^Ship
+	Buildable:
+		Queue: Ship
+		BuildPaletteOrder: 30
+		Prerequisites: radar, ~gayard
+	Valued:
+		Cost: 1200
+	Tooltip:
+		Name: Aegis Cruiser
+		Description: Anti-Air naval unit.\n  Strong vs Aircraft\n  Grounds units, Ships
+	Selectable:
+		Bounds: 60, 80, 0, -6
+	Health:
+		HP: 800
+	Armor:
+		Type: Light
+	Mobile:
+		ROT: 5
+		Speed: 45
+	RevealsShroud:
+		Range: 8c0
+	Armament:
+		Weapon: Medusa
+	AttackFrontal:
+	AutoTarget:
+	Explodes:
+		Weapon: UnitExplode
+		EmptyWeapon: UnitExplode
+	WithVoxelBody:
+	RenderSprites:
+	Voiced:
+		VoiceSet: AlliedNavalVoice
+

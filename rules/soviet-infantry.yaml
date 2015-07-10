@@ -1,0 +1,192 @@
+e2:
+	Inherits: ^Infantry
+	Buildable:
+		Queue: Infantry
+		Prerequisites: ~nahand
+		BuildPaletteOrder: 10
+	Valued:
+		Cost: 100
+	Tooltip:
+		Name: Conscript
+		Description: Cheap standart infantry.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
+	Selectable:
+		Bounds: 20, 30, 0, -11
+	Health:
+		HP: 125
+	Mobile:
+		Speed: 34
+	Passenger:
+		PipType: Green
+	RevealsShroud:
+		Range: 5c0
+	AttackFrontal:
+	Armament@primary:
+		Weapon: M1Carbine
+		UpgradeTypes: eliteweapon
+		UpgradeMaxEnabledLevel: 0
+		UpgradeMaxAcceptedLevel: 1
+	Armament@elite:
+		Weapon: M1CarbineE
+		UpgradeTypes: eliteweapon
+		UpgradeMinEnabledLevel: 1
+	WithInfantryBody:
+	Voiced:
+		VoiceSet: ConscriptVoice
+
+flakt:
+	Inherits: ^Infantry
+	Buildable:
+		Queue: Infantry
+		Prerequisites: naradr, ~nahand
+		BuildPaletteOrder: 20
+	Valued:
+		Cost: 100
+	Tooltip:
+		Name: Flak Trooper
+		Description: Anti-Air/Anti-Infantry unit.\n  Strong vs Aircraft, Infantry\n  Weak vs Vehicles
+	Selectable:
+		Bounds: 20, 30, 0, -11
+	Health:
+		HP: 100
+	Mobile:
+		Speed: 34
+	Passenger:
+		PipType: Green
+	RevealsShroud:
+		Range: 5c0
+	AttackFrontal:
+	Armament@primary:
+		Weapon: FlakGuyGun
+		UpgradeTypes: eliteweapon
+		UpgradeMaxEnabledLevel: 0
+		UpgradeMaxAcceptedLevel: 1
+	Armament@secondary:
+		Weapon: FlakGuyAAGun
+		UpgradeTypes: eliteweapon
+		UpgradeMaxEnabledLevel: 0
+		UpgradeMaxAcceptedLevel: 1
+	Armament@primary-elite:
+		Weapon: FlakGuyGunE
+		UpgradeTypes: eliteweapon
+		UpgradeMinEnabledLevel: 1
+	Armament@secondary-elite:
+		Weapon: FlakGuyAAGunE
+		UpgradeTypes: eliteweapon
+		UpgradeMinEnabledLevel: 1
+	WithInfantryBody:
+		IdleAnimation:
+	Voiced:
+		VoiceSet: FlakTrooperVoice
+
+shk:
+	Inherits: ^Infantry
+	Buildable:
+		Queue: Infantry
+		BuildAtProductionType: Infantry
+		Prerequisites: nahand
+	Valued:
+		Cost: 500
+	Tooltip:
+		Name: Shock Trooper
+		Description: Special armored unit using electricity.\n  Strong vs Infantry, Light armor\n  Weak vs Tanks, Aircraft\nSpecial ability: Charge tesla coils (3 Tesla Troopers required)
+	Selectable:
+		Bounds: 20, 30, 0, -11
+	Health:
+		HP: 130
+	Mobile:
+		Speed: 51
+	RevealsShroud:
+		Range: 6c0
+	Armor:
+		Type: Plate
+	Passenger:
+		PipType: Red
+	AttackFrontal:
+	Armament@primary:
+		Weapon: ElectricBolt
+		UpgradeTypes: eliteweapon
+		UpgradeMaxEnabledLevel: 0
+		UpgradeMaxAcceptedLevel: 1
+	Armament@elite:
+		Weapon: ElectricBoltE
+		UpgradeTypes: eliteweapon
+		UpgradeMinEnabledLevel: 1
+	WithInfantryBody:
+	UpgradeActorsNear:
+		Upgrades: charged
+		Range: 1c256
+	Voiced:
+		VoiceSet: TeslaTrooperVoice
+
+terror:
+	Inherits: ^Infantry
+	Buildable:
+		Queue: Infantry
+		BuildAtProductionType: Infantry
+		BuildPaletteOrder: 120
+		Prerequisites: naradr, ~infantry.cuba
+	Valued:
+		Cost: 200
+	Tooltip:
+		Name: Terrorist
+		Description: Carries C4 charges taped to his body and kamikazes enemies\nblowing them up quickly and efficiently.\n  Strong vs Ground units\n  Weak vs Aircraft
+	Selectable:
+		Bounds: 20, 30, 0, -11
+	Health:
+		HP: 75
+	Mobile:
+		Speed: 71
+	RevealsShroud:
+		Range: 6c0
+	Armor:
+		Type: Flak
+	Passenger:
+		PipType: Red
+	Explodes:
+		Weapon: TerrorBomb
+		EmptyWeapon: TerrorBomb
+	DemoTruck:
+	AttackFrontal:
+	WithInfantryBody:
+	Voiced:
+		VoiceSet: TerroristVoice
+	-TakeCover:
+
+deso:
+	Inherits: ^Infantry
+	Buildable:
+		Queue: Infantry
+		BuildAtProductionType: Infantry
+		BuildPaletteOrder: 120
+		Prerequisites: naradr, ~infantry.iraq
+	Valued:
+		Cost: 200
+	Tooltip:
+		Name: Desolator
+		Description: Carries a radiation-emitting weapon.\nCan deploy for area-of-effect damage.\n  Strong vs Infantry, Light armor\n  Weak vs Tanks, Aircraft
+	Selectable:
+		Bounds: 20, 30, 0, -11
+	Health:
+		HP: 150
+	Mobile:
+		Speed: 41
+	RevealsShroud:
+		Range: 6c0
+	Armor:
+		Type: Plate
+	Passenger:
+		PipType: Red
+	Armament@primary:
+		Weapon: RadBeamWeapon
+		UpgradeTypes: eliteweapon
+		UpgradeMaxEnabledLevel: 0
+		UpgradeMaxAcceptedLevel: 1
+	Armament@elite:
+		Weapon: RadBeamWeaponE
+		UpgradeTypes: eliteweapon
+		UpgradeMinEnabledLevel: 1
+	AttackFrontal:
+	WithInfantryBody:
+	Voiced:
+		VoiceSet: DesolatorVoice
+

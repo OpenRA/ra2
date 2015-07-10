@@ -1,0 +1,406 @@
+overlay:
+	Defaults: place
+		Offset: 0, -15
+	build-valid-temperat:
+	build-valid-snow:
+	build-valid-urban:
+	build-invalid:
+		Start: 1
+	target-select:
+	target-invalid:
+		Start: 1
+
+poweroff:
+	offline: poweroff
+		Length: *
+		Tick: 160
+
+allyrepair:
+	repair: wrench
+		Length: 7
+		Tick: 160
+
+# TODO: fix/replace them, just placeholders
+rallypoint:
+	flag: ring
+		Length: 12
+		Offset: 5, -3
+		BlendMode: Additive
+	circles: ring
+		Length: 12
+		BlendMode: Additive
+
+beacon:
+	arrow: mouse
+		Start: 6
+		Offset: 1, -12
+	circles: ring
+		Length: 12
+		BlendMode: Additive
+
+crate-effects: #Temp Null Some SHPs cannot be read by openra at this time, expect more
+	Defaults: null
+		Length: *
+	dollar: #money
+	reveal-map: #reveal
+	hide-map: #shroudx
+	fpower: #firepowr
+	armor: #armor
+	stealth: # RA2 Doesn't have it
+	heal: #healall
+	nuke: #mltimisl
+	levelup: #veteran
+	speed: #speed
+
+rank:
+	rank: pips
+		Start: 13
+		Length: 2
+
+mpspawn: # TODO: backfall to RA asset
+	idle:
+		Length: *
+
+waypoint: # TODO: backfall to RA asset
+	idle:
+		Length: *
+
+clock:
+	idle:
+		Length: *
+		BlendMode: Multiply
+
+pips:
+	medic:
+		Start: 6
+	groups: pipsra #TODO: backfall to RA asset
+		Start: 8
+		Length: 10
+	tag-primary: pipsra #TODO: backfall to RA asset
+		Start: 2
+	pip-empty: pips2
+	pip-green: pips2
+		Start: 1
+	pip-yellow: pips2
+		Start: 2
+	pip-gray: pips2
+		Start: 3
+	pip-red: pips2
+		Start: 4
+	pip-blue: pips2
+		Start: 5
+	pip-ammo: ammopips
+	pip-ammoempty: ammopips
+		Start: 1
+# TODO:
+	pip-empty-building:
+	pip-green-building:
+		Start: 1
+	pip-yellow-building:
+		Start: 2
+	pip-gray-building:
+		Start: 3
+	pip-red-building:
+		Start: 4
+	pip-blue-building:
+		Start: 5
+
+explosion:
+	Defaults:
+		Length: *
+	building: twlt070
+	ionring: ring1
+		Tick: 160
+	pulse_explosion: pulsefx2
+		BlendMode: Additive
+	huge_watersplash: h2o_exp1
+	large_watersplash: h2o_exp2
+	small_watersplash: h2o_exp3
+	piff: piff
+	piffpiff: piffpiff
+	small_explosion: explosml
+	medium_explosion: explomed
+	large_explosion: explolrg
+	tiny_bang: s_bang16
+	small_bang: s_bang24
+	medium_bang: s_bang34
+	large_bang: s_bang48
+	tiny_brnl: s_brnl20
+	small_brnl: s_brnl30
+	medium_brnl: s_brnl40
+	large_brnl: s_brnl58
+	tiny_tumu: s_tumu22
+	small_tumu: s_tumu30
+	medium_tumu: s_tumu42
+	large_tumu: s_tumu60
+	tiny_clsn: s_clsn16
+	small_clsn: s_clsn22
+	medium_clsn: s_clsn30
+	large_clsn: s_clsn42
+	verylarge_clsn: s_clsn58
+	tiny_twlt: twlt026
+	small_twlt: twlt036
+	medium_twlt: twlt050
+	large_twlt: twlt070
+	verylarge_twlt: twlt100
+	tiny_grey_explosion: xgrysml1
+	small_grey_explosion: xgrysml2
+	medium_grey_explosion: xgrymed1
+	large_grey_explosion: xgrymed2
+	nuke_explosion: nukeanim
+	demotruck_explosion: demtexp
+	elite_explosion: vtexplod
+	terrorist_explosion: mininuke
+	apoc_explosion: apocexp
+	flak_puff: htrkpuff
+	flak_puff_AA: smkpuff
+
+discus:
+	idle:
+		Length: *
+
+canister:
+	idle:
+		Length: 15
+
+dragon:
+	idle:
+		Facings: 32
+
+smokey2:
+	idle:
+		Length: *
+		
+crystal4:
+	idle:
+		Length: 15
+		ShadowStart: 15
+
+120mm:
+	idle:
+
+bbblelrg:
+	idle:
+		Length: *
+
+missile:
+	idle:
+		Facings: 32
+
+largesmoke:
+	idle: lgrysmk1
+		Length: *
+
+smallsmoke:
+	idle: sgrysmk1
+		Length: *
+
+largefire:
+	idle: fire01
+		Length: *
+
+mediumfire:
+	idle: fire02
+		Length: *
+
+smallfire:
+	idle: fire03
+		Length: *
+
+litning:
+	bright:
+		Length: 4
+	dim:
+		Start: 4
+		Length: 4
+		
+moveflsh:
+	idle: ring
+		Length: *
+		Tick: 30
+
+resources:
+	Defaults:
+		UseTilesetExtension: true
+		Length: 12
+		ShadowStart: 12
+		Offset: 0, -15
+	tib01: tib01
+	tib02: tib02
+	tib03: tib03
+	tib04: tib04
+	tib05: tib05
+	tib06: tib06
+	tib07: tib07
+	tib08: tib08
+	tib09: tib09
+	tib10: tib10
+	tib11: tib11
+	tib12: tib12
+	tib13: tib13
+	tib14: tib14
+	tib15: tib15
+	tib16: tib16
+	tib17: tib17
+	tib18: tib18
+	tib19: tib19
+	tib20: tib20
+	gem01: gem01
+		Length: 5
+		ShadowStart: 0
+	gem02: gem02
+		Length: 5
+		ShadowStart: 0
+	gem03: gem03
+		Length: 5
+		ShadowStart: 0
+	gem04: gem04
+		Length: 5
+		ShadowStart: 0
+	gem05: gem05
+		Length: 5
+		ShadowStart: 0
+	gem06: gem06
+		Length: 5
+		ShadowStart: 0
+	gem07: gem07
+		Length: 5
+		ShadowStart: 0
+	gem08: gem08
+		Length: 5
+		ShadowStart: 0
+	gem09: gem09
+		Length: 5
+		ShadowStart: 0
+	gem10: gem10
+		Length: 5
+		ShadowStart: 0
+	gem11: gem11
+		Length: 5
+		ShadowStart: 0
+	gem12: gem12
+		Length: 5
+		ShadowStart: 0
+
+shroud:
+	shroud:
+		Length: *
+	fog: fog
+		Length: *
+
+smallscorches:
+	Defaults:
+		UseTilesetExtension: true
+		Offset: 0, -15
+	sc1: burnt01
+	sc2: burnt02
+	sc3: burnt03
+	sc4: burnt04
+	sc5: burnt05
+	sc6: burnt06
+
+mediumscorches:
+	Defaults:
+		UseTilesetExtension: true
+		Offset: 0, -20
+	sc7: burnt07
+	sc8: burnt08
+	sc9: burnt09
+	sc10: burnt10
+
+largescorches:
+	Defaults:
+		UseTilesetExtension: true
+		Offset: 0, -30
+	sc11: burnt11
+	sc12: burnt12
+
+smallcraters:
+	Defaults:
+		UseTilesetExtension: true
+		Offset: 0, -15
+	cr1: crater01
+	cr2: crater02
+	cr3: crater03
+	cr4: crater04
+	cr5: crater05
+	cr6: crater06
+
+mediumcraters:
+	Defaults:
+		UseTilesetExtension: true
+		Offset: 0, -15
+	cr7: crater07
+	cr8: crater08
+	cr9: crater09
+	cr10: crater10
+
+largecraters:
+	Defaults:
+		UseTilesetExtension: true
+		Offset: 0, -30
+	cr11: crater11
+	cr12: crater12
+
+icon:
+	gps: asaticon
+
+trock01:
+	idle:
+		ShadowStart: 1
+		Offset: 0, -15
+		UseTilesetExtension: true
+
+trock02:
+	idle:
+		ShadowStart: 1
+		Offset: 0, -15
+		UseTilesetExtension: true
+
+trock03:
+	idle:
+		ShadowStart: 1
+		Offset: 0, -15
+		UseTilesetExtension: true
+
+trock04:
+	idle:
+		ShadowStart: 1
+		Offset: 0, -15
+		UseTilesetExtension: true
+
+trock05:
+	idle:
+		ShadowStart: 1
+		Offset: 0, -15
+		UseTilesetExtension: true
+
+srock01:
+	idle:
+		ShadowStart: 1
+		Offset: 0, -15
+		UseTilesetExtension: true
+
+srock02:
+	idle:
+		ShadowStart: 1
+		Offset: 0, -15
+		UseTilesetExtension: true
+
+srock03:
+	idle:
+		ShadowStart: 1
+		Offset: 0, -15
+		UseTilesetExtension: true
+
+srock04:
+	idle:
+		ShadowStart: 1
+		Offset: 0, -15
+		UseTilesetExtension: true
+
+srock05:
+	idle:
+		ShadowStart: 1
+		Offset: 0, -15
+		UseTilesetExtension: true

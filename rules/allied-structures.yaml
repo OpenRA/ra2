@@ -1,0 +1,769 @@
+gacnst:
+	Inherits: ^Building
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 1000
+		Prerequisites: ~disabled
+	Building:
+		Footprint: xxxx xxxx xxxx xxxx
+		Dimensions: 4,4
+	Selectable:
+		Bounds: 220, 155, 0, -20
+	Health:
+		HP: 1000
+	Armor:
+		Type: Concrete
+	RevealsShroud:
+		Range: 8c0
+	Valued:
+		Cost: 2500
+	Production:
+		Produces: Building,Support
+	Tooltip:
+		Name: Construction Yard
+		Description: Builds base structures.
+	BaseBuilding:
+	Transforms:
+		IntoActor: amcv
+		Offset: 1,1
+		Facing: 96
+	ProductionBar@Building:
+		ProductionType: Building
+	ProductionBar@Support:
+		ProductionType: Support
+	WithIdleOverlay@FANS:
+		Sequence: idle-fans
+		PauseOnLowPower: true
+	WithBuildingPlacedOverlay:
+	ProvidesPrerequisite:
+		Prerequisite: structures.allies
+	ProvidesPrerequisite@america:
+		Prerequisite: structures.america
+		Race: america
+	ProvidesPrerequisite@france:
+		Prerequisite: structures.france
+		Race: france
+	Power:
+		Amount: 0
+
+gapowr:
+	Inherits: ^Building
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 10
+		Prerequisites: ~structures.allies
+	Selectable:
+		Bounds: 96, 98, -2, -24
+	Valued:
+		Cost: 800
+	Tooltip:
+		Name: Power Plant
+		Description: Provides power for other structures.
+	ProvidesPrerequisite:
+		Prerequisite: power
+	Building:
+		Footprint: xx xx
+		Dimensions: 2,2
+	Health:
+		HP: 750
+	Armor:
+		Type: Wood
+	RevealsShroud:
+		Range: 4c0
+	WithIdleOverlay@GLOW:
+		Sequence: idle-glow
+	Power:
+		Amount: 200
+	ScalePowerWithHealth:
+	SoundOnDamageTransition:
+		DestroyedSounds: bpowdiea.wav, bpowdieb.wav
+
+gapile:
+	Inherits: ^Building
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 20
+		Prerequisites: power, ~structures.allies
+	Selectable:
+		Bounds: 134, 132, 0, -28
+	Valued:
+		Cost: 500
+	Tooltip:
+		Name: Barracks
+		Description: Trains infantry.
+	ProvidesPrerequisite:
+		Prerequisite: barracks
+	ProvidesPrerequisite@england:
+		Prerequisite: infantry.england
+		Race: england
+	ProvidesPrerequisite@default:
+	Building:
+		Footprint: xxx xxx
+		Dimensions: 3,2
+	Health:
+		HP: 500
+	Armor:
+		Type: Steel
+	RevealsShroud:
+		Range: 5c0
+	RallyPoint:
+	Exit@1:
+		SpawnOffset: -170,810,0
+		ExitCell: 2,2
+	Exit@2:
+		SpawnOffset: -900,220,0
+		ExitCell: 0,2
+	Production:
+		Produces: Infantry
+	PrimaryBuilding:
+	ProductionBar:
+	WithIdleOverlay@FLAG:
+		Sequence: idle-flag
+	Power:
+		Amount: -10
+
+garefn:
+	Inherits: ^Building
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 30
+		Prerequisites: power, ~structures.allies
+	Selectable:
+		Bounds: 176, 150, 0, -20
+	Valued:
+		Cost: 2000
+	Tooltip:
+		Name: Ore Refinery
+		Description: Processes ore into credits.
+	ProvidesPrerequisite:
+		Prerequisite: refinery
+	ProvidesPrerequisite@default:
+	Building:
+		Footprint: xxx= xxx= xxx=
+		Dimensions: 4,3
+	Health:
+		HP: 1000
+	Armor:
+		Type: Wood
+	RevealsShroud:
+		Range: 6c0
+	TiberianSunRefinery:
+		DockOffset: 3,1
+		ShowTicks: True
+		TickLifetime: 30
+		TickVelocity: 1
+		TickRate: 10
+		DockAngle: 160
+	StoresResources:
+		PipColor: Yellow
+		PipCount: 0
+		Capacity: 999999
+	CustomSellValue:
+		Value: 300
+	FreeActor:
+		Actor: cmin
+		SpawnOffset: 4, 1
+		Facing: 160
+	WithDockingOverlay:
+	WithIdleOverlay@BIB:
+		Sequence: idle-bib
+	WithIdleOverlay@DRILL:
+		Sequence: idle-drill
+	Power:
+		Amount: -50
+
+gaairc:
+	Inherits: ^Building
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 40
+		Prerequisites: garefn, ~structures.allies, ~!structures.america
+	Valued:
+		Cost: 1000
+	Tooltip:
+		Name: Airforce Command Headquarters
+		Description: Provides radar\nSupports 4 aircraft.
+	ProvidesPrerequisite:
+		Prerequisite: radar
+	ProvidesPrerequisite@allies:
+		Prerequisite: aircraft.allies
+	ProvidesPrerequisite@korea:
+		Prerequisite: aircraft.korea
+		Race: korea
+	ProvidesPrerequisite@default:
+	Building:
+		Footprint: xxx xxx
+		Dimensions: 3,2
+	Selectable:
+		Bounds: 142, 150, -3, -42
+	Health:
+		HP: 600
+	Armor:
+		Type: Steel
+	RequiresPower:
+	CanPowerDown:
+	ProvidesRadar:
+	RevealsShroud:
+		Range: 10c0
+	WithIdleOverlay@TOP:
+		Sequence: idle-top
+		PauseOnLowPower: true
+	WithIdleOverlay@BOTTOM:
+		Sequence: idle-bottom
+		PauseOnLowPower: true
+	WithIdleOverlay@MID:
+		Sequence: idle-mid
+		PauseOnLowPower: true
+	WithIdleOverlay@DISH:
+		Sequence: idle-dish
+		PauseOnLowPower: true
+	TargetableBuilding:
+		TargetTypes: Ground, C4, SpyInfiltrate, DetonateAttack
+	Power:
+		Amount: -50
+	Reservable:
+	Exit@1:
+		SpawnOffset: -350,350,0
+		MoveIntoWorld: false
+	Exit@2:
+		SpawnOffset: 600,220,0
+		MoveIntoWorld: false
+	Exit@3:
+		SpawnOffset: 200,820,0
+		MoveIntoWorld: false
+	Exit@4:
+		SpawnOffset: 200,-300,0
+		MoveIntoWorld: false
+	Production:
+		Produces: Aircraft
+	ProductionBar:
+	PrimaryBuilding:
+	InfiltrateForExploration:
+
+amradr:
+	Inherits: gaairc
+	Tooltip:
+		Name: American Airforce Command Headquarters
+	Buildable:
+		Prerequisites: garefn, ~structures.america
+	RenderBuilding:
+		Image: gaairc
+
+gaweap:
+	Inherits: ^Building
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 50
+		Prerequisites: garefn, gapile, ~structures.allies
+	Selectable:
+		Bounds: 212, 158, -7, -28
+	Valued:
+		Cost: 2000
+	Tooltip:
+		Name: War Factory
+		Description: Produces vehicles.
+	ProvidesPrerequisite@germany:
+		Prerequisite: vehicles.germany
+		Race: germany
+	ProvidesPrerequisite@default:
+	Building:
+		Footprint: xxxxx xxxxx xxxxx
+		Dimensions: 5,3
+	Health:
+		HP: 1000
+	Armor:
+		Type: Wood
+	RevealsShroud:
+		Range: 4c0
+	RallyPoint:
+	Exit@1:
+		ExitCell: 5,1
+	Production:
+		Produces: Vehicle, Aircraft
+	PrimaryBuilding:
+	ProductionBar:
+	WithIdleOverlay@flag:
+		Sequence: idle-flag
+	WithIdleOverlay@fan:
+		Sequence: overlay-fan
+	WithIdleOverlay@ramp:
+		Sequence: idle-ramp
+	WithProductionDoorOverlay@top:
+		Sequence: build-top
+	WithProductionDoorOverlay@ramp:
+		Sequence: build-ramp
+	Power:
+		Amount: -25
+
+gayard:
+	Inherits: ^Building
+	Valued:
+		Cost: 1000
+	Tooltip:
+		Name: Naval Yard
+		Description: Produces and repairs ships,\nsubmarines, transports, and other naval units.
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 50
+		Prerequisites: power, refinery, ~structures.allies
+	TargetableBuilding:
+		TargetTypes: Ground, Water, C4
+	ProvidesPrerequisite@default:
+	Building:
+		Footprint: xxxx xxxx xxxx xxxx
+		Dimensions: 4,4
+		Adjacent: 12
+		TerrainTypes: Water
+	-GivesBuildableArea:
+	Health:
+		HP: 1500
+	Armor:
+		Type: Concrete
+	RevealsShroud:
+		Range: 10c0
+	Exit@1:
+		SpawnOffset: 0,-113,0
+		Facing: 96
+		ExitCell: 5,4
+	Exit@2:
+		SpawnOffset: 0,-113,0
+		Facing: 160
+		ExitCell: 4,5
+	Production:
+		Produces: Ship
+	PrimaryBuilding:
+	RallyPoint:
+	RepairsUnits:
+		FinishRepairingNotification: UnitRepaired
+	ProductionBar:
+	Power:
+		Amount: -20
+	WithIdleOverlay@crane:
+		Sequence: idle-crane
+	WithIdleOverlay@waves:
+		Sequence: idle-waves
+	WithRepairOverlay:
+		Sequence: repair
+	-EmitInfantryOnSell@allies:
+	-EmitInfantryOnSell@soviets:
+
+gadept:
+	Inherits: ^Building
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 60
+		Prerequisites: gaweap, ~structures.allies
+	Selectable:
+		Bounds: 144, 88, -12, -16
+	Valued:
+		Cost: 800
+	Tooltip:
+		Name: Service Depot
+		Description: Repairs vehicles and removes Terror Drones (for a price).
+	ProvidesPrerequisite@default:
+	Building:
+		Footprint: x== x== x==
+		Dimensions: 3,3
+	Health:
+		HP: 1200
+	Armor:
+		Type: Wood
+	RevealsShroud:
+		Range: 5c0
+	Reservable:
+	RallyPoint:
+	RepairsUnits:
+		Interval: 50
+		FinishRepairingNotification: UnitRepaired
+	WithIdleOverlay@side:
+		Sequence: idle-side
+	WithIdleOverlay@bib:
+		Sequence: bib
+	WithRepairAnimation:
+		Sequence: repair
+	Power:
+		Amount: -25
+	ProvidesPrerequisite:
+		Prerequisite: repairpad
+
+gatech:
+	Inherits: ^Building
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 70
+		Prerequisites: radar, gaweap, ~structures.allies
+	Selectable:
+		Bounds: 122, 216, 0, -81
+	Valued:
+		Cost: 2000
+	Tooltip:
+		Name: Battle Lab
+		Description: Allows deployment of advanced units.
+	ProvidesPrerequisite@default:
+	Building:
+		Footprint: xx xx xx
+		Dimensions: 3,2
+	Health:
+		HP: 500
+	Armor:
+		Type: Wood
+	RevealsShroud:
+		Range: 6c0
+	WithIdleOverlay@lights:
+		Sequence: idle-lights
+	Power:
+		Amount: -100
+
+gawall:
+	Inherits: ^Wall
+	Buildable:
+		Queue: Support
+		BuildPaletteOrder: 10
+		Prerequisites: barracks, ~structures.allies
+	Valued:
+		Cost: 100
+	Tooltip:
+		Name: Allied Wall
+		Description: Light wall.\nCrushable by vehicles.
+	Building:
+		Footprint: x
+		Dimensions: 1, 1
+	Health:
+		HP: 300
+	Armor:
+		Type: Concrete
+
+gapill:
+	Inherits: ^Building
+	Buildable:
+		Queue: Support
+		BuildPaletteOrder: 20
+		Prerequisites: barracks, ~structures.allies
+	Valued:
+		Cost: 500
+	Tooltip:
+		Name: Pill Box
+		Description: Automated anti-infantry defense.
+	Building:
+		Footprint: x
+		Dimensions: 1, 1
+	Health:
+		HP: 400
+	Armor:
+		Type: Steel
+	RevealsShroud:
+		Range: 7c0
+	Selectable:
+		Bounds: 50, 30, 0, -4
+	Armament:
+		Weapon: vulcan2
+		LocalOffset: 768,85,512
+		MuzzleSequence: muzzle
+		MuzzleSplitFacings: 8
+	AttackTurreted:
+	Turreted:
+		ROT: 255
+	BodyOrientation:
+		QuantizedFacings: 8
+	WithRangeCircle:
+		Range: 6c0
+		Type: pillbox
+	AutoTarget:
+
+nasam:
+	Inherits: ^VoxelLighting
+	Buildable:
+		Queue: Support
+		BuildPaletteOrder: 30
+		Prerequisites: barracks, ~structures.allies
+	Valued:
+		Cost: 1000
+	Tooltip:
+		Name: Patriot Missile System
+		Description: Automated anti-aircraft defense.
+	Building:
+		Footprint: x
+		Dimensions: 1, 1
+	Health:
+		HP: 900
+	Armor:
+		Type: Steel
+	RevealsShroud:
+		Range: 7c0
+	Selectable:
+		Bounds: 46, 62, 0, -20
+	Turreted:
+		ROT: 10
+		InitialFacing: 224
+		Offset: 900,0,0
+	AttackTurreted:
+	Armament:
+		Weapon: RedEye2
+	BodyOrientation:
+		QuantizedFacings: 16
+	RenderVoxels:
+		NormalsPalette: ts-normals
+	WithVoxelTurret:
+	WithRangeCircle:
+		Range: 12c0
+		Type: patriot
+	AutoTarget:
+	Power:
+		Amount: -50
+
+gtgcan:
+	Inherits: ^VoxelLighting
+	Buildable:
+		Queue: Support
+		BuildPaletteOrder: 30
+		Prerequisites: radar, ~structures.france
+	Valued:
+		Cost: 2000
+	Tooltip:
+		Name: Grand Cannon
+		Description: Automated anti-tank defense.
+	Building:
+		Footprint: xx xx
+		Dimensions: 2, 2
+	Health:
+		HP: 900
+	Armor:
+		Type: Steel
+	RevealsShroud:
+		Range: 10c0
+	Selectable:
+		Bounds: 46, 62, 0, -20
+	Turreted:
+		ROT: 10
+		InitialFacing: 224
+		Offset: 400,0,0
+	AttackTurreted:
+		Recoils: true
+	Armament:
+		Weapon: GrandCannonWeapon
+		Recoil: 127
+		RecoilRecovery: 26
+		MuzzleSequence: muzzle
+	BodyOrientation:
+		QuantizedFacings: 16
+	RenderVoxels:
+		NormalsPalette: ts-normals
+	WithVoxelTurret:
+	WithVoxelBarrel:
+	AutoTarget:
+	WithMuzzleFlash:
+	WithRangeCircle:
+		Range: 15c0
+		Type: grandcannon
+	Power:
+		Amount: -100
+
+gaorep:
+	Inherits: ^Building
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 80
+		Prerequisites: garefn, gatech, ~structures.allies
+		BuildLimit: 1
+	Selectable:
+		Bounds: 134, 102, -10, -21
+	Valued:
+		Cost: 2500
+	Tooltip:
+		Name: Allied Ore Processor
+		Description: Refines all forms of income by 25%.
+	Building:
+		Footprint: xxx xxx xxx
+		Dimensions: 3,3
+	Health:
+		HP: 900
+	Armor:
+		Type: Wood
+	RevealsShroud:
+		Range: 5c0
+	WithIdleOverlay@glow:
+		Sequence: idle-glow
+	Power:
+		Amount: -200
+
+gaspysat:
+	Inherits: ^Building
+	Buildable:
+		Queue: Support
+		BuildPaletteOrder: 90
+		Prerequisites: gatech, ~structures.allies
+	Selectable:
+		Bounds: 96, 98, -4, -30
+	Valued:
+		Cost: 1500
+	Tooltip:
+		Name: Spy Satellite Uplink
+		Description: Reveals the entire battlefield.
+	Building:
+		Footprint: xx xx
+		Dimensions: 2,2
+	Health:
+		HP: 1000
+	Armor:
+		Type: Wood
+	RevealsShroud:
+		Range: 5c0
+	WithIdleOverlay@dish:
+		Sequence: idle-dish
+		PauseOnLowPower: true
+	Power:
+		Amount: -100
+	ProvidesRadar:
+	RequiresPower:
+
+gagap:
+	Inherits: ^Building
+	Valued:
+		Cost: 1000
+	Tooltip:
+		Name: Gap Generator
+		Description: Obscures the enemy's view with shroud.\nRequires power to operate.
+	Buildable:
+		Queue: Support
+		BuildPaletteOrder: 100
+		Prerequisites: gatech, ~structures.allies
+	Selectable:
+		Bounds: 50, 114, -16, -38
+	Building:
+		Footprint: _ x
+		Dimensions: 1,2
+	RequiresPower:
+	Health:
+		HP: 600
+	Armor:
+		Type: Wood
+	RevealsShroud:
+		Range: 5c0
+	CreatesShroud:
+		Range: 10c0
+	RenderShroudCircle:
+	Power:
+		Amount: -100
+	MustBeDestroyed:
+		RequiredForShortGame: false
+
+gaweat:
+	Inherits: ^Building
+	Buildable:
+		Queue: Support
+		BuildPaletteOrder: 110
+		Prerequisites: gatech, ~structures.allies
+	Selectable:
+		Bounds: 116, 106, -2, -26
+	Valued:
+		Cost: 5000
+	Tooltip:
+		Name: Weather Controller
+		Description: Play God with deadly weather!
+	Building:
+		Footprint: xxx xxx xxx
+		Dimensions: 3,3
+	Health:
+		HP: 1000
+	Armor:
+		Type: Concrete
+	RevealsShroud:
+		Range: 5c0
+	Power:
+		Amount: -200
+
+gacsph:
+	Inherits: ^Building
+	Buildable:
+		Queue: Support
+		BuildPaletteOrder: 120
+		Prerequisites: gatech, ~structures.allies
+	Selectable:
+		Bounds: 176, 110, -5, -14
+	Valued:
+		Cost: 2500
+	Tooltip:
+		Name: Chronosphere
+		Description: Allows teleporting units in a 3x3 array.
+	Building:
+		Footprint: xxx xxx xxx xxx
+		Dimensions: 4,3
+	Health:
+		HP: 750
+	Armor:
+		Type: Concrete
+	RevealsShroud:
+		Range: 5c0
+	Power:
+		Amount: -200
+	WithIdleOverlay:
+		Sequence: idle-dome
+
+atesla:
+	Inherits: ^Building
+	Buildable:
+		Queue: Support
+		BuildPaletteOrder: 35
+		Prerequisites: power, radar, ~structures.allies
+	Valued:
+		Cost: 1500
+	Tooltip:
+		Name: Prism Cannon
+		Description: Advanced base defense.\nRequires power to operate.\n  Strong vs Infantry, Vehicles\n  Weak vs Aircraft
+	Building:
+		Footprint: x
+		Dimensions: 1, 1
+	Selectable:
+		Bounds: 44, 102, 0, -40
+	Health:
+		HP: 600
+	Armor:
+		Type: Steel
+	RevealsShroud:
+		Range: 8c0
+	RenderBuildingCharge:
+		ChargeAudio: bpripow.wav
+	Armament:
+		Weapon: PrismShot
+		LocalOffset: 0,0,2500
+	AttackCharge:
+		Armaments: primary
+		MaxCharges: 3
+		ReloadTime: 60
+	Power:
+		Amount: -75
+	AutoTarget:
+	-RenderBuilding:
+	RequiresPower:
+	WithIdleOverlay@normal:
+		Sequence: idle-normal
+		PauseOnLowPower: true
+	WithRangeCircle:
+		Range: 8c0
+		Type: prismcannon
+
+power:
+	Tooltip:
+		Name: Power Plant
+		Description: Power Plant
+
+refinery:
+	Tooltip:
+		Name: Refinery
+		Description: Refinery
+
+barracks:
+	Tooltip:
+		Name: Infantry Production
+		Description: Infantry Production
+
+radar:
+	Tooltip:
+		Name: Radar
+		Description: Radar
+
+repairpad:
+	Tooltip:
+		Name: Service Depot
+		Description: Service Depot
+

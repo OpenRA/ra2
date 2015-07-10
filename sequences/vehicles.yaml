@@ -1,0 +1,149 @@
+amcv:
+	icon: mcvicon
+
+aegis:
+	icon: agisicon
+
+bus:
+	icon: xxicon
+
+car:
+	icon: xxicon
+
+carrier:
+	icon: carricon
+
+cdest:
+	icon: xxicon
+
+cona:
+	icon: xxicon
+
+cop:
+	icon: xxicon
+
+cmin:
+	harvest: oregath
+		Length: 15
+		Facings: 8
+	icon: ahrvicon
+
+cruise:
+	icon: xxicon
+
+dest:
+	icon: desticon
+
+dred:
+	icon: dredicon
+
+euroc:
+	icon: xxicon
+
+flata:
+	icon: xxicon
+
+fv:
+	icon: fvicon
+
+mgtk:
+	icon: rtnkicon
+
+gtgcan:
+	icon: gcanicon
+
+mtnk:
+	icon: gtnkicon
+
+harv:
+	harvest: oregath
+		Length: 15
+		Facings: 8
+	icon: harvicon
+
+htk:
+	icon: htkicon
+
+htnk:
+	icon: htnkicon
+
+howi:
+	icon: xxicon
+
+hyd:
+	icon: hovricon
+
+lcrf:
+	icon: landicon
+
+limo:
+	icon: xxicon
+
+ltnk:
+	icon: xxicon
+
+apoc:
+	icon: mtnkicon
+
+pick:
+	icon: xxicon
+
+propa:
+	icon: xxicon
+
+ptruck:
+	icon: xxicon
+
+rtnk:
+	icon: rtnkicon
+
+smcv:
+	icon: smcvicon
+
+sref:
+	icon: sreficon
+
+stang:
+	icon: xxicon
+
+sub:
+	icon: subicon
+
+suvb:
+	icon: xxicon
+
+suvbw:
+	icon: xxicon
+
+taxi:
+	icon: xxicon
+
+tnkd:
+	icon: tnkdicon
+
+tractor:
+	icon: xxicon
+
+sapc:
+	icon: sapcicon
+
+dtruck:
+	icon: trkaicon
+
+truckb:
+	icon: xxicon
+
+ttnk:
+	icon: ttnkicon
+
+tug:
+	icon: xxicon
+
+v3:
+	icon: v3icon
+
+vlad:
+	icon: xxicon
+
+wini:
+	icon: xxicon

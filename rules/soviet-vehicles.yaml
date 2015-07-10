@@ -1,0 +1,273 @@
+smcv:
+	Inherits: ^Vehicle
+	Buildable:
+		Queue: Vehicle
+		BuildPaletteOrder: 110
+		Prerequisites: ~naweap, repairpad
+	Valued:
+		Cost: 3000
+	Tooltip:
+		Name: Mobile Construction Vehicle
+		Description: Deploys into a Construction Yard.
+	Selectable:
+		Bounds: 64, 52, 0, -6
+	Health:
+		HP: 1000
+	Armor:
+		Type: Heavy
+	Mobile:
+		Speed: 85
+		ROT: 8
+		WaitAverage: 0
+		Crushes: fence, crate, infantry
+	RevealsShroud:
+		Range: 4c0
+	MustBeDestroyed:
+		RequiredForShortGame: true
+	BaseBuilding:
+	Transforms:
+		IntoActor: nacnst
+		Offset: -1,-1
+		Facing: 96
+		TransformSounds: uplace.wav
+		NoTransformNotification: BuildingCannotPlaceAudio
+	RenderSprites:
+	RenderVoxels:
+	WithVoxelBody:
+	Voiced:
+		VoiceSet: SovietVehicleVoice
+
+harv:
+	Inherits: ^Vehicle
+	Buildable:
+		Queue: Vehicle
+		BuildPaletteOrder: 10
+		Prerequisites: ~naweap, refinery
+	Valued:
+		Cost: 1400
+	Tooltip:
+		Name: War Miner
+		Description: Gathers Ore.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
+	Selectable:
+		Bounds: 64, 52, 0, -6
+	Harvester:
+		Capacity: 20
+		Resources: Tiberium, BlueTiberium
+		UnloadTicksPerBale: 1
+		SearchFromProcRadius: 24
+		SearchFromOrderRadius: 12
+	Health:
+		HP: 1000
+	Armor:
+		Type: Medium
+	Armament@primary:
+		Weapon: 20mmrapid
+		LocalOffset: 0,50,384, 0,-50,384
+		UpgradeTypes: eliteweapon
+		UpgradeMaxEnabledLevel: 0
+		UpgradeMaxAcceptedLevel: 1
+	Armament@elite:
+		Weapon: 20mmrapidE
+		LocalOffset: 0,50,384, 0,-50,384
+		UpgradeTypes: eliteweapon
+		UpgradeMinEnabledLevel: 1
+	AttackTurreted:
+	AutoTarget:
+	Turreted:
+		ROT: 10
+		Offset: -30,0,85
+	Mobile:
+		Speed: 85
+		ROT: 8
+		WaitAverage: 0
+		Crushes: crate, infantry
+	RevealsShroud:
+		Range: 4c0
+	WithHarvestOverlay:
+		Offset: 121,0,0
+		Palette: effect
+	GainsExperience:
+	RenderSprites:
+	RenderVoxels:
+	WithVoxelTurret:
+	WithVoxelUnloadBody:
+	Voiced:
+		VoiceSet: SovietVehicleVoice
+
+htk:
+	Inherits: ^Vehicle
+	Valued:
+		Cost: 500
+	Tooltip:
+		Name: Flak Track
+		Description: Infantry Transport and Anti-Air/Anti-Infantry vehicle.\n  Strong vs Aircraft, Infantry\n  Weak vs Vehicles
+	Selectable:
+		Bounds: 50, 40, 0, -6
+	Buildable:
+		Queue: Vehicle
+		BuildPaletteOrder: 20
+		Prerequisites: ~naweap
+	Mobile:
+		Speed: 75
+		ROT: 15
+		Crushes: crate, infantry
+	Health:
+		HP: 180
+	Armor:
+		Type: Heavy
+	RevealsShroud:
+		Range: 8c0
+	Cargo:
+		Types: Infantry
+		MaxWeight: 5
+		PipCount: 5
+		PassengerFacing: 0
+		UnloadTerrainTypes: Clear, Rough, Rail, Road, DirtRoad, Beach, Tiberium, BlueTiberium
+	AttackTurreted:
+	AutoTarget:
+	Armament@primary:
+		Weapon: FlakTrackGun
+	Armament@secondary:
+		Weapon: FlakTrackAAGun
+	Turreted:
+		ROT: 15
+		Offset: -280,-3,0
+	RenderSprites:
+	RenderVoxels:
+	WithVoxelTurret:
+	WithVoxelBody:
+	Voiced:
+		VoiceSet: SovietVehicleVoice
+
+htnk:
+	Inherits: ^Vehicle
+	Valued:
+		Cost: 900
+	Tooltip:
+		Name: Rhino Heavy Tank
+		Description: Soviet Main Battle Tank.\n  Strong vs Vehicles\n  Weak vs Infantry, Aircraft
+	Buildable:
+		Queue: Vehicle
+		BuildPaletteOrder: 30
+		Prerequisites: ~naweap
+	Mobile:
+		Speed: 75
+		ROT: 5
+		Crushes: fence, crate, infantry
+	Health:
+		HP: 400
+	Armor:
+		Type: Heavy
+	RevealsShroud:
+		Range: 8c0
+	Turreted:
+		ROT: 5
+	Armament@PRIMARY:
+		Weapon: 120mm
+		LocalOffset: 640,0,384
+		UpgradeTypes: eliteweapon
+		UpgradeMaxEnabledLevel: 0
+		UpgradeMaxAcceptedLevel: 1
+	Armament@ELITE:
+		Weapon: 120mmE
+		LocalOffset: 640,0,384
+		UpgradeTypes: eliteweapon
+		UpgradeMinEnabledLevel: 1
+	AttackTurreted:
+	AutoTarget:
+	RenderSprites:
+	Selectable:
+		Bounds: 64, 52, 0, -6
+	RenderVoxels:
+		NormalsPalette: ts-normals
+	WithVoxelBody:
+	WithVoxelTurret:
+	WithVoxelBarrel:
+	Voiced:
+		VoiceSet: SovietVehicleVoice
+
+apoc:
+	Inherits: ^Vehicle
+	Valued:
+		Cost: 1750
+	Tooltip:
+		Name: Apocalypse Tank
+		Description: Soviet Advanced Battle Tank with Double Barrel\nand Anti-Aircraft Missile Launcher.\n  Strong vs Vehicles, Aircraft\n  Weak vs Infantry
+	Buildable:
+		Queue: Vehicle
+		BuildPaletteOrder: 60
+		Prerequisites: ~naweap, natech
+	Mobile:
+		Speed: 45
+		ROT: 5
+		Crushes: fence, crate, infantry
+	Health:
+		HP: 800
+	Armor:
+		Type: Heavy
+	RevealsShroud:
+		Range: 6c0
+	Turreted:
+		ROT: 5
+	Armament@PRIMARY:
+		Weapon: 120mmx
+		LocalOffset: 640,0,384
+		UpgradeTypes: eliteweapon
+		UpgradeMaxEnabledLevel: 0
+		UpgradeMaxAcceptedLevel: 1
+	Armament@ELITE:
+		Weapon: 120mmxE
+		LocalOffset: 640,0,384
+		UpgradeTypes: eliteweapon
+		UpgradeMinEnabledLevel: 1
+	Armament@ANTIAIR:
+		Weapon: MammothTusk
+		LocalOffset: 640,0,384
+	AttackTurreted:
+	AutoTarget:
+	RenderSprites:
+	Selectable:
+		Bounds: 64, 52, 0, -6
+	RenderVoxels:
+	WithVoxelBody:
+	WithVoxelTurret:
+	WithVoxelBarrel:
+	Voiced:
+		VoiceSet: SovietVehicleVoice
+
+dtruck:
+	Inherits: ^Vehicle
+	Buildable:
+		Queue: Vehicle
+		BuildPaletteOrder: 110
+		Prerequisites: naradr, ~vehicles.libya
+	Valued:
+		Cost: 3000
+	Tooltip:
+		Name: Demolition Truck
+		Description: Demolition Truck, actively armed with nuclear explosives.
+	Selectable:
+		Bounds: 64, 52, 0, -6
+	Health:
+		HP: 150
+	Armor:
+		Type: Light
+	Mobile:
+		Speed: 85
+		ROT: 8
+		WaitAverage: 0
+		Crushes: fence, crate, infantry
+	RevealsShroud:
+		Range: 4c0
+	Explodes:
+		Weapon: demobomb
+		EmptyWeapon: demobomb
+	DemoTruck:
+	Chronoshiftable:
+	RenderSprites:
+	RenderVoxels:
+	WithVoxelBody:
+	AnnounceOnBuild:
+	Voiced:
+		VoiceSet: DemolitionTruckVoice
+

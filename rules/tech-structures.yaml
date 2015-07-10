@@ -1,0 +1,26 @@
+caoild:
+	Inherits: ^TechBuilding
+	Selectable:
+		Bounds: 96, 104, -2, -26
+	Building:
+		Footprint: xx xx
+		Dimensions: 2, 2
+	ExternalCapturable:
+	ExternalCapturableBar:
+	EngineerRepairable:
+	CashTrickler:
+		Period: 100
+		Amount: 20
+		CaptureAmount: 1000
+	Tooltip:
+		Name: Tech Oil Derrick
+	Health:
+		HP: 1000
+	RevealsShroud:
+		Range: 4c0
+	Armor:
+		Type: Steel
+	WithIdleOverlay@pump:
+		Sequence: idle-pump
+	GivesBuildableArea:
+

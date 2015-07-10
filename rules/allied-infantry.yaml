@@ -1,0 +1,273 @@
+engineer:
+	Inherits: ^Infantry
+	Buildable:
+		Queue: Infantry
+		BuildPaletteOrder: 60
+	Valued:
+		Cost: 500
+	Tooltip:
+		Name: Engineer
+		Description: Captures enemy structures.\n  Unarmed
+	Selectable:
+		Bounds: 20, 30, 0, -11
+	Health:
+		HP: 75
+	Mobile:
+		Speed: 56
+	Passenger:
+		PipType: Blue
+	EngineerRepair:
+	RepairsBridges:
+	Captures:
+		CaptureTypes: building, husk
+	-AutoTarget:
+	WithInfantryBody:
+	RevealsShroud:
+		Range: 4c0
+	Voiced:
+		VoiceSet: AlliedEngineerVoice
+
+dog:
+	Inherits: ^Infantry
+	Buildable:
+		Queue: Infantry
+		BuildPaletteOrder: 50
+	Valued:
+		Cost: 200
+	Tooltip:
+		Name: Attack Dog
+		Description: Anti-infantry unit.\nCan detect cloaked units and spies.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
+	Selectable:
+		Bounds: 30, 24, 0, -5
+	Health:
+		HP: 100
+	Mobile:
+		Speed: 99
+	Passenger:
+		PipType: Yellow
+	RevealsShroud:
+		Range: 5c0
+	Armament:
+		Weapon: DogJaw
+	AttackLeap:
+	WithInfantryBody:
+	RenderSprites:
+		Image: adog
+		RaceImages:
+			soviet: dog
+			cuba: dog
+			libya: dog
+			iraq: dog
+			russia: dog
+	IgnoresDisguise:
+	DetectCloaked:
+		Range: 5
+	Voiced:
+		VoiceSet: DogVoice
+
+e1:
+	Inherits: ^Infantry
+	Buildable:
+		Queue: Infantry
+		Prerequisites: ~gapile
+		BuildPaletteOrder: 10
+	Valued:
+		Cost: 200
+	Tooltip:
+		Name: G.I.
+		Description: General-purpose infantry.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
+	Selectable:
+		Bounds: 20, 30, 0, -11
+	Health:
+		HP: 125
+	Mobile:
+		Speed: 31
+	Passenger:
+		PipType: Green
+	RevealsShroud:
+		Range: 5c0
+	AttackFrontal:
+	Armament@primary:
+		Weapon: M60
+		UpgradeTypes: deployed
+		UpgradeMaxEnabledLevel: 0
+		UpgradeMaxAcceptedLevel: 1
+	Armament@elite:
+		Weapon: M60E
+		UpgradeTypes: eliteweapon
+		UpgradeMinEnabledLevel: 1
+	Armament@deployed:
+		Weapon: para
+		UpgradeTypes: paraweapon
+		UpgradeMinEnabledLevel: 1
+	Armament@elite-deployed:
+		Weapon: paraE
+		UpgradeTypes: eliteparaweapon
+		UpgradeMinEnabledLevel: 1
+	WithInfantryBody:
+	Voiced:
+		VoiceSet: GIVoice
+
+snipe:
+	Inherits: ^Infantry
+	Valued:
+		Cost: 600
+	Tooltip:
+		Name: Sniper
+		Description: Special anti-infantry unit.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
+	Buildable:
+		Queue: Infantry
+		BuildPaletteOrder: 80
+		Prerequisites: radar, ~infantry.england
+	Selectable:
+		Bounds: 20, 30, 0, -11
+	Mobile:
+		Speed: 35
+	Health:
+		HP: 125
+	Passenger:
+		PipType: Red
+	RevealsShroud:
+		Range: 8c0
+	Armor:
+		Type: None
+	AutoTarget:
+		InitialStance: ReturnFire
+	Armament@PRIMARY:
+		Weapon: awp
+	AttackFrontal:
+	Voiced:
+		VoiceSet: SniperVoice
+
+spy:
+	Inherits: ^Infantry
+	Buildable:
+		Queue: Infantry
+		BuildAtProductionType: Infantry
+		BuildPaletteOrder: 90
+		Prerequisites: gatech, ~gapile
+	Valued:
+		Cost: 500
+	DisguiseToolTip:
+		Name: Spy
+		GenericName: Soldier
+		Description: Infiltrates enemy structures for intel or\nsabotage. Exact effect depends on the\nbuilding infiltrated.\n  Unarmed\nSpecial Ability: Disguises
+	Selectable:
+		Bounds: 24, 28, -1, -8
+	Health:
+		HP: 25
+	Mobile:
+		Speed: 56
+	RevealsShroud:
+		Range: 5c0
+	Passenger:
+		PipType: Yellow
+	TakeCover:
+	Disguise:
+	Infiltrates:
+		Types: SpyInfiltrate
+	-AutoTarget:
+	-WithInfantryBody:
+	WithDisguisingInfantryBody:
+		IdleAnimations: idle1,idle2
+		StandAnimations: stand
+	Voiced:
+		VoiceSet: SpyVoice
+
+tany:
+	Inherits: ^Infantry
+	Buildable:
+		Queue: Infantry
+		BuildAtProductionType: Infantry
+		BuildPaletteOrder: 120
+		Prerequisites: gatech, ~gapile
+		BuildLimit: 1
+	Valued:
+		Cost: 1000
+	Tooltip:
+		Name: Tanya
+		Description: Elite commando infantry, armed with \ndual pistols and C4.\n  Strong vs Infantry, Buildings\n  Weak vs Vehicles, Aircraft\nSpecial Ability: Destroy Building with C4\n\nMaximum 1 can be trained.
+	Selectable:
+		Bounds: 20, 30, 0, -11
+	Health:
+		HP: 125
+	Mobile:
+		Speed: 71
+	RevealsShroud:
+		Range: 6c0
+	C4Demolition:
+		C4Delay: 45
+		Voice: Attack
+	Armor:
+		Type: Flak
+	Passenger:
+		PipType: Red
+	Armament@primary:
+		Weapon: DoublePistols
+		UpgradeTypes: eliteweapon
+		UpgradeMaxEnabledLevel: 0
+		UpgradeMaxAcceptedLevel: 1
+	Armament@elite:
+		Weapon: DoublePistolsE
+		UpgradeTypes: eliteweapon
+		UpgradeMinEnabledLevel: 1
+	AttackFrontal:
+	WithInfantryBody:
+	AnnounceOnBuild:
+	Voiced:
+		VoiceSet: TanyaVoice
+
+jumpjet:
+	Inherits: ^Infantry
+	Buildable:
+		Queue: Infantry
+		BuildAtProductionType: Infantry
+		BuildPaletteOrder: 60
+		Prerequisites: ~gapile, radar
+	Valued:
+		Cost: 600
+	Tooltip:
+		Name: Rocketeer
+		Description: Airborne soldier.\n  Strong vs Infantry, Aircraft\n  Weak vs Vehicles
+	Selectable:
+		Bounds: 20, 30, 0, -11
+	Health:
+		HP: 125
+	-Mobile:
+	RevealsShroud:
+		Range: 8c0
+		Type: CenterPosition
+	Armor:
+		Type: None
+	Armament@primary:
+		Weapon: 20mm
+		UpgradeTypes: eliteweapon
+		UpgradeMaxEnabledLevel: 0
+		UpgradeMaxAcceptedLevel: 1
+	Armament@elite:
+		Weapon: 20mmE
+		UpgradeTypes: eliteweapon
+		UpgradeMinEnabledLevel: 1
+	AttackFrontal:
+	Helicopter:
+		CruiseAltitude: 3072
+		LandWhenIdle: false
+		InitialFacing: 20
+		ROT: 10
+		Speed: 100
+		AltitudeVelocity: 83
+	WithInfantryBody:
+		StandSequence: fly
+		MoveSequence: fly
+		AttackSequence: shoot-air
+		IdleSequences: idle-air
+	Hovers:
+		OffsetModifier: -45
+	-TargetableUnit:
+	TargetableAircraft:
+		TargetTypes: Air, Disguise
+		GroundedTargetTypes: Ground, Infantry, DetonateAttack, Disguise
+	WithShadow:
+	Voiced:
+		VoiceSet: RocketeerVoice
+

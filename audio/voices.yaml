@@ -1,0 +1,380 @@
+AlliedEngineerVoice:
+	DefaultVariant: .wav
+	Voices:
+		Select: ienasea, ienaseb, ienasec, ienased
+		Move: ienamoa, ienamob, ienamoc
+		Attack: ienaata, ienaatb, ienaatc
+		Feedback: ienafea, ienafeb, ienafec
+		Die: ienadia, ienadib, ienadic, ienadid
+		Zapped: igenzapa
+		Burned: ienadia #gotta put something as temp else game crashes
+		# [EngAllPowerDown] Sounds = ienapow		
+
+SovietEngineerVoice:
+	DefaultVariant: .wav
+	Voices:
+		Select: ienssea, iensseb, ienssec
+		Move: iensmoa, iensmob, iensmoc
+		Attack: iensata, iensatb
+		Feedback: iensfea, iensfeb, iensfec
+		Die: iensdia, iensdib, iensdic
+		Zapped: igenzapa
+		Burned: ienadia #gotta put something as temp else game crashes
+		# [EngAllPowerDown] Sounds = ienspow
+
+AlliedVehicleVoice:
+	DefaultVariant: .wav
+	Voices:
+		Select: vgrasea, vgraseb, vgrasec, vgrased, vgrasee
+		Move: vgramoa, vgramob, vgramoc, vgramod, vgramoe, vgramof
+		Attack: vgraata, vgraatb, vgraatc, vgraatd, vgraate
+
+SovietVehicleVoice:
+	DefaultVariant: .wav
+	Voices:
+		Select: vgrssea, vgrsseb, vgrssec
+		Move: vgrsmoa, vgrsmob, vgrsmoc
+		Attack: vgrsata, vgrsatb, vgrsatc, vgrsatd
+
+AlliedNavalVoice:
+	DefaultVariant: .wav
+	Voices:
+		Select: vwaasea, vwaaseb, vwaasec, vwaased
+		Move: vwaamoa, vwaamob, vwaamoc, vwaamod, vwaamoe
+		Attack: vwaaata, vwaaatb, vwaaatc
+
+SovietNavalVoice:
+	DefaultVariant: .wav
+	Voices:
+		Select: vwassea, vwasseb, vwassec
+		Move: vwasmoa, vwasmob, vwasmoc, vwasmod
+		Attack: vwasata, vwasatb, vwasatc
+
+GIVoice:
+	DefaultVariant: .wav
+	Voices:
+		Select: igisea, igiseb, igisec, igised, igisee, igisef
+		Move: igimoa, igimob, igimoc, igimod, igimoe
+		Attack: igiata, igiatb, igiatc, igiatd, igiate, igiatf
+		Feedback: igifea, igifeb
+		Die: igidia, igidib, igidic, igidid, igidie
+		Zapped: igenzapa
+		Burned: ienadia #gotta put something as temp else game crashes
+
+ConscriptVoice:
+	DefaultVariant: .wav
+	Voices:
+		Select: iconsea, iconseb, iconsec
+		Move: iconmoa, iconmob, iconmoc, iconmod
+		Attack: iconata, iconatb, iconatc, iconatd
+		Feedback: iconfea, iconfeb, iconfec
+		Die: icondia, icondib, icondic, icondid, icondie
+		Zapped: igenzapa
+		Burned: ienadia #gotta put something as temp else game crashes
+
+DogVoice:
+	DefaultVariant: .wav
+	Voices:
+		Select: idogsela
+		Move: idogmova
+		Attack: idogatca, idogmova # move sound?
+		Feedback: idogfea, idogfeb, idogfec
+		Die: idogdiea
+		Zapped: igenzapa
+		Burned: ienadia #gotta put something as temp else game crashes
+
+RocketeerVoice:
+	DefaultVariant: .wav
+	Voices:
+		Select: irocsea, irocseb, irocsec, irocsed, irocsee, irocsef, irocseg
+		Move: irocmoa, irocmob, irocmoc, irocmod, irocmoe, irocmof
+		Attack: irocata, irocatb, irocatc, irocatd, irocate
+		Feedback: irocfea, irocfeb, irocfec
+		Die: irocdiea
+		Zapped: igenzapa
+		Burned: ienadia #gotta put something as temp else game crashes
+
+SpyVoice:
+	DefaultVariant: .wav
+	Voices:
+		Select: ispysea, ispyseb, ispysec, ispysed
+		Move: ispyata, ispymob, ispymoc, ispymod, ispymoe
+		Attack: ispyatb, ispyatd
+		Feedback: ispyfea, ispyfeb
+		Die: ispydia, ispydib, ispydic
+		Zapped: igenzapa
+		Burned: ienadia #gotta put something as temp else game crashes
+
+ChronoLegionnaireVoice:
+	DefaultVariant: .wav
+	Voices:
+		Select: ichrsea
+		Move: ichrseb, ichrsec, ichrsed, ichrsee
+		Attack: ichrata, ichratb, ichratc, ichratd
+		Feedback: ichrfea, ichrfeb, ichrfec
+		Die: ichrdia, ichrdib, ichrdic	
+		Zapped: igenzapa
+		Burned: ienadia #gotta put something as temp else game crashes
+
+SniperVoice:
+	DefaultVariant: .wav
+	Voices:
+		Select: isnisea, isniseb, isnisec, isnised
+		Move: isnimoa, isnimob, isnimoc, isnimod, isnimoe
+		Attack: isniata, isniatb, isniatc
+		Feedback: isnifea, isnifeb, isnifec
+		Die: isnidia, isnidib, isnidic
+		Zapped: igenzapa
+		Burned: ienadia #gotta put something as temp else game crashes
+
+SealVoice:
+	DefaultVariant: .wav
+	Voices:
+		Select: iseasea, iseaseb, iseasec, iseased
+		Move: iseamoa, iseamob, iseamoc
+		Attack: iseaata, iseaatb, iseaatc
+		Die: iseadia, iseadib, iseadic
+		Zapped: igenzapa
+		Burned: ienadia #gotta put something as temp else game crashes
+
+TanyaVoice:
+	DefaultVariant: .wav
+	Voices:
+		Build: itanatb
+		Select: itansea, itanseb, itansec, itansed, itansee
+		Move: itanmoa, itanmob, itanmoc, itanmod, itanmoe, itanmof
+		Attack: itanata, itanatb, itanatc, itanatd
+		Die: itandia, itandib, itandic
+		Zapped: igenzapa
+		Burned: ienadia #gotta put something as temp else game crashes
+
+DolphinVoice:
+	DefaultVariant: .wav
+	Voices:
+		Select: vdolsela, vdolselb
+		Move: vdolmova, vdolmovb
+		Attack: vdolatca, vdolatcb, vdolatcc
+		Die: vdoldiea, vdoldieb
+
+HarrierVoice:
+	DefaultVariant: .wav
+	Voiced:
+		Select: vintsea, vintseb, vintsec, vintsed
+		Move: vintmoa, vintmob, vintmoc, vintmod
+		Attack: vintata, vintatb, vintatc, vintatd, vintate
+		Die: vintdia, vintdib, vintdic
+
+BlackEagleVoice:
+	DefaultVariant: .wav
+	Voiced:
+		Select: vblesea, vbleseb, vblesec, vblesed, vblesef
+		Move: vblemoa, vblemob, vblemoc
+		Attack: vbleata, vbleatb, vbleatc
+		Die: vbledia, vbledib, vbledic, vbledid, vbledie
+
+NighthawkVoice:
+	DefaultVariant: .wav
+	Voices:
+		Select: vblhsea, vblhseb, vblhsec, vblhsed
+		Move: vblhmoa, vblhmob, vblhmoc, vblhmod
+		Attack: vblhata, vblhatb, vblhatc, vblhatd
+		Die: vblhdia, vblhdib, vblhdic
+
+FlakTrooperVoice:
+	DefaultVariant: .wav
+	Voices:
+		Select: iflasea, iflaseb, iflasec, iflased
+		Move: iflamoa, iflamob, iflamoc, iflamod
+		Attack: iflaata, iflaatb, iflaatc, iflaatd
+		Feedback: iflafea, iflafeb, iflafec, iflafed
+		Die: ifladia, ifladib, ifladic, ifladid, ifladie
+		Zapped: igenzapa
+		Burned: ienadia #gotta put something as temp else game crashes
+
+TeslaTrooperVoice:
+	DefaultVariant: .wav
+	Voices:
+		Select: itessea, itesseb, itessec, itessed, itessee
+		Move: itesmoa, itesmob, itesmoc, itesmod, itesmoe, itesmof
+		Attack: itesata, itesatb, itesatc, itesatd, itesate
+		Feedback: itesfea, itesfeb, itesfec
+		Die: itesdia, itesdib, itesdic, itesdid
+		Zapped: igenzapa
+		Burned: ienadia #gotta put something as temp else game crashes
+
+CrazyIvanVoice:
+	DefaultVariant: .wav
+	Voices:
+		Select: icrasea, icraseb, icrasec, icrased, icrasee, icrasef, icraseg
+		Move: icramoa, icramob, icramoc, icramod, icramoe, icramof
+		Attack: icraata, icraatb, icraatc, icraatd, icraate
+		Die: icradia, icradib
+		Zapped: igenzapa
+		Burned: ienadia #gotta put something as temp else game crashes
+
+DesolatorVoice:
+	DefaultVariant: .wav
+	Voices:
+		Select: idessea, idesseb, idessec, idessed, idessee
+		Move: idesmoa, idesmob, idesmoc, idesmod, idesmoe
+		Attack: idesata, idesatb, idesatc, idesatd, idesate, idesatf
+		Die: idesdia, idesdib, idesdic
+		Zapped: igenzapa
+		Burned: ienadia #gotta put something as temp else game crashes
+
+TerroristVoice:
+	DefaultVariant: .wav
+	Voices:
+		Select: itersea, iterseb, itersec
+		Move: itermoa, itermob, itermoc
+		Attack: iterata, iteratb, iteratc, iteratd
+		Feedback: iterfea, iterfeb, iterfec
+		Die: iterdia, iterdib, iterdic
+		Zapped: igenzapa
+		Burned: ienadia #gotta put something as temp else game crashes
+
+YuriVoice:
+	DefaultVariant: .wav
+	Voices:
+		Select: iyursea, iyurseb, iyursec, iyursed, iyursee
+		Move: iyurmoa, iyurmob, iyurmoc, iyurmod
+		Attack: iyurata, iyuratb, iyuratc, iyuratd, iyurate
+		Die: iyurdia, iyurdib, iyurdic
+		Zapped: igenzapa
+		Burned: ienadia #gotta put something as temp else game crashes
+
+KirovVoice:
+	DefaultVariant: .wav
+	Voices:
+		Build: vkirsea
+		Select: vkirseb, vkirsec, vkirsed
+		Move: vkirmoa, vkirmob, vkirmoc
+		Attack: vkirata, vkiratb, vkiratc, vkiratd
+		Feedback: vkirfea, vkirfeb, vkirfec
+		Die: vkirdia, vkirdib, vkirdic, vkirdid
+		Kill: vkirdia, vkirdib, vkirdic, vkirdid
+
+DemolitionTruckVoice:
+	DefaultVariant: .wav
+	Voices:
+		Build: vdemsea
+		Select: vdemsea, vdemseb, vdemsec, vdemsed
+		Move: vdemmoa, vdemmob, vdemmoc
+		Attack: vdemata, vdematb, vdematc, vdematd, vdemate
+		Die: vdemdiea
+
+TerrorDroneVoice:
+	DefaultVariant: .wav
+	Voices:
+		Select: vtersela, vterselb
+		Move: vtermova
+		Attack: vteratta
+		Die: vterdiea, vterdieb
+
+GiantSquidVoice:
+	DefaultVariant: .wav
+	Voices:
+		Select: vsqusela
+		Move: vsqumova, vsqumovb
+		Attack: vsquat1a
+		Die: vsqudiea
+
+AlligatorVoice:
+	DefaultVariant: .wav
+	Voices:
+		Select: galisela, galiselb
+		Move: galimova, galimovb
+		Attack: galiatta, galiattb
+		Feedback: galifeaa, galifeab
+		Die: galidiea
+		Burned: ienadia #gotta put something as temp else game crashes
+
+BearVoice:
+	DefaultVariant: .wav
+	Voices:
+		Select: gbeasela, gbeaselb
+		Move: gbeamova, gbeamovb, gbeamovc
+		Feedback: gbeafeaa, gbeafeab
+		Die: gbeadiea, gbeadieb
+		Burned: ienadia #gotta put something as temp else game crashes
+
+CarVoice:
+	DefaultVariant: .wav
+	Voices:
+		Select: gcarsela
+		Move: gcarsela
+
+ChimpanzeeVoice:
+	DefaultVariant: .wav
+	Voices:
+		Select: gchisela, gchiselb
+		Move: gchimova, gchimovb
+		Attack: gchiata, gchiatb, gchiatc
+		Feedback: gchifeaa, gchifeab
+		Die: gchidiea, gchidieb
+		Burned: ienadia #gotta put something as temp else game crashes
+
+CivilianAlliedMaleVoice:
+	DefaultVariant: .wav
+	Voices:
+		Select: iciasea, iciaseb, iciasec
+		Move: iciamoa, iciamob, iciamoc
+		Attack: iciaata, iciaatb, iciaatc
+		Feedback: iciafea, iciafeb, iciafec
+		Die: iciadia, iciadib, iciadic, iciadid
+		Zapped: igenzapa
+		Burned: ienadia #gotta put something as temp else game crashes
+
+CivilianSovietMalevVoice:
+	DefaultVariant: .wav
+	Voices:
+		Select: icissea, icisseb, icissec, icissed
+		Move: icismoa, icismob, icismoc
+		Attack: icisata, icisatb, icisatc
+		Feedback: icisfea, icisfeb, icisfec
+		Die: icisdia, icisdib, icisdic
+		Zapped: igenzapa
+		Burned: ienadia #gotta put something as temp else game crashes
+
+CivilianAlliedFemaleVoice:
+	DefaultVariant: .wav
+	Voices:
+		Select: icfasea, icfaseb, icfasec, icfased
+		Move: icfamoa, icfamob, icfamoc, icfamod
+		Attack: icfaata, icfaatb, icfaatc, icfaatd
+		Feedback: icfafea, icfafeb, icfafec
+		Die: icfadia, icfadib, icfadic
+		Zapped: igenzapa
+		Burned: ienadia #gotta put something as temp else game crashes
+
+CivilianSovietFemaleVoice:
+	DefaultVariant: .wav
+	Voices:
+		Select: icfssea, icfsseb, icfssec, icfssed, icfssee
+		Move: icfsmoa, icfsmob, icfsmoc, icfsmod
+		Attack: icfsata, icfsatb, icfsatc, icfsatd
+		Feedback: icfsfea, icfsfeb
+		Die: icfsdia, icfsdib, icfsdic
+		Zapped: igenzapa
+		Burned: ienadia #gotta put something as temp else game crashes
+
+CivilianTexanVoice:
+	DefaultVariant: .wav
+	Voices:
+		Select: ictesea, icteseb, ictesec, ictesed
+		Move: ictemoa, ictemob, ictemoc, ictemod
+		Attack: icteata, icteatb, icteatc, icteatd
+		Feedback: ictefea, ictefeb, ictefec
+		Die: ictedia, ictedib, ictedic
+		Zapped: igenzapa
+		Burned: ienadia #gotta put something as temp else game crashes
+
+CowVoice:
+	DefaultVariant: .wav
+	Voices:
+		Select: gcowsela, gcowselb, gcowselc
+		Move: gcowmova, gcowmovb
+		Feedback: gcowsela, gcowselb, gcowselc
+		Die: gcowdiea
+		Zapped: igenzapa
+		Burned: ienadia #gotta put something as temp else game crashes

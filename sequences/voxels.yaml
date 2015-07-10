@@ -1,0 +1,222 @@
+amcv:
+	idle: mcv
+
+aegis:
+	idle:
+
+asw:
+	idle:
+
+#axle	# TODO: unused debris
+#	idle:
+
+beag:
+	idle:
+
+bus:
+	idle:
+
+car:
+	idle:
+
+carrier:
+	idle:
+	
+cdest:	#coast guard boat/SP unit
+	idle:
+#Needs without weapon image cdestwo
+
+cona:
+	idle:
+
+cop:
+	idle:
+
+cmin:
+	idle:
+	unload: cmon
+
+cargoplane:
+	idle: cplane
+
+cruise:
+	idle:
+
+dest:
+	idle:
+#Needs without weapon image destwo
+
+#dmisl: #Dreadnought Missile needs voxel projectiles
+#	idle:
+
+dred:
+	idle:
+#Needs without weapon image dredwo	
+
+euroc:
+	idle:
+
+orca: #Harrier
+	idle: falc
+
+naflak:
+	turret: flaktur	
+
+flata: #Unused
+	idle:
+
+fv: #Has different turrets per unit thats inside,default is patriot
+	idle:
+	turret: fvtur
+
+gtgcan:
+	turret: gtgcantur
+	barrel: gtgcanbarl
+	
+mtnk:
+	idle: gtnk
+	turret: gtnktur
+	barrel: gtnkbarl
+
+harv:
+	idle:
+	turret: harvtur
+	unload: horv
+
+hind: #Unused
+	idle:
+
+hornet:
+	idle:
+
+htk: #Flak Track
+	idle:
+	turret: htktur
+	barrel: htkbarl
+
+htnk: #Rhino Tank
+	idle:
+	turret: htnktur
+	barrel: htnkbarl
+
+howi: #Howitzer Unused
+	idle: hwtz
+
+hyd: #Sea Scorpion
+	idle:
+
+nalasr:
+	turret: laser
+
+lcrf: #Allied transport
+	idle:
+
+limo:
+	idle:
+
+ltnk: #Light tank,Beta unit. Appears only in one mission as a prop
+	idle:
+	turret: ltnktur
+	barrel: ltnkbarl
+
+apoc: #Aplocalypse Tank
+	idle: mtnk
+	turret: mtnktur
+	barrel: mtnkbarl
+
+caoutp: #Tech outpost sam
+	turret: outp
+
+pdplane: #Paradrop plane
+	idle:
+
+pick: #Cargo Truck
+	idle:
+
+#piece: # TODO: unused debris
+#	idle:
+
+propa:
+	idle:
+
+ptruck: #Pickup Truck
+	idle:
+
+mgtk: #Mirage Tank, the tur and barrel files are beta, final has fixed turret
+	idle: rtnk
+
+nasam:
+	turret: sam
+
+shad: #Nighthawk
+	idle:
+
+smcv:
+	idle:
+
+sref: #Has 3 charge states for the turret not possible yet
+	idle:
+	turret: sreftur
+
+stang:
+	idle:
+
+sub: #Typhoon Attack Sub
+	idle:
+
+subt: #Sub Torpedo needs voxel projectiles
+	idle:
+
+suvb:
+	idle:
+
+suvbw:
+	idle:
+
+taxi:
+	idle:
+
+#tire: # TODO: unused debris
+#	idle:
+
+tnkd:
+	idle:
+
+tractor: #Unused
+	idle:
+
+sapc:
+	idle: trs
+
+dtruck:
+	idle: trucka
+
+truckb: #Psst Has crates in it :D
+	idle:
+
+ttnk:
+	idle:
+	turret: ttnktur
+
+tug: #Tug Boat
+	idle:
+
+v3:
+	idle:
+#Needs without weapon image v3wo
+
+#v3rocket: #V3 Missile needs voxel projectiles
+#	idle:
+
+vlad: #Vladimir's Dreadnought SP unit
+	idle:
+#Needs without weapon image vladwo
+
+wini: #Recreational Vehicle Not sure if used in RA2
+	idle:
+
+zep: #Kirov Reporting!
+	idle:
+
+#zbomb: #Kirov bomb needs voxel projectiles
+#	idle:

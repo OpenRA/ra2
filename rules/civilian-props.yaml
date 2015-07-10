@@ -1,0 +1,86 @@
+camisc01:
+	Inherits: ^CivBuilding
+	Selectable:
+	Building:
+		Footprint: x
+		Dimensions: 1, 1
+	Tooltip:
+		Name: Barrels
+	Health:
+		HP: 5
+	Armor:
+		Type: Concrete
+
+camisc02:
+	Inherits: ^CivBuilding
+	Selectable:
+	Building:
+		Footprint: x
+		Dimensions: 1, 1
+	Tooltip:
+		Name: Barrel
+	Health:
+		HP: 5
+	Armor:
+		Type: Concrete
+
+camisc03:
+	Inherits: ^CivBuilding
+	Building:
+		Footprint: x
+		Dimensions: 1, 1
+	Tooltip:
+		Name: Harvard's Office
+	Health:
+		HP: 100
+	Armor:
+		Type: Concrete
+
+camisc04:
+	Inherits: ^CivBuilding
+	Building:
+		Footprint: x
+		Dimensions: 1, 1
+	Tooltip:
+		Name: Mail Box
+	Health:
+		HP: 10
+	Armor:
+		Type: Concrete
+
+calit01e:
+	Inherits: ^CivBuilding
+	Building:
+		Footprint: x
+		Dimensions: 1, 1
+	Tooltip:
+		Name: Light
+	Health:
+		HP: 50
+	Armor:
+		Type: Steel
+
+calit01w:
+	Inherits: ^CivBuilding
+	Building:
+		Footprint: x
+		Dimensions: 1, 1
+	Tooltip:
+		Name: Light
+	Health:
+		HP: 50
+	Armor:
+		Type: Steel
+
+capol01w:
+	Inherits: ^CivBuilding
+	Building:
+		Footprint: x
+		Dimensions: 1, 1
+	Tooltip:
+		Name: Telephone Pole
+	Health:
+		HP: 20
+	Armor:
+		Type: Concrete
+

@@ -1,0 +1,246 @@
+M1Carbine:
+	ReloadDelay: 25
+	Range: 4c0
+	Report: iconatta.wav, iconattb.wav, iconattc.wav, iconattd.wav, iconatte.wav
+	Projectile: Bullet
+		Speed: 100c0
+	Warhead@1Dam: SpreadDamage
+		Spread: 64
+		Damage: 15
+		Versus:
+			None: 100
+			Flak: 80
+			Plate: 70
+			Light: 50
+			Medium: 25
+			Heavy: 25
+			Wood: 75
+			Steel: 50
+			Concrete: 25
+		DamageTypes: Prone70Percent, TriggerProne, BulletDeath
+	Warhead@2Eff: CreateEffect
+		Explosion: piff
+		InvalidImpactTypes: Water
+	Warhead@3EffWater: CreateEffect
+		Explosion: piff
+		ValidImpactTypes: Water
+
+M1CarbineE:
+	ReloadDelay: 20
+	Range: 5c0
+	Report: iconatta.wav, iconattb.wav, iconattc.wav, iconattd.wav, iconatte.wav
+	Projectile: Bullet
+		Speed: 100c0
+	Warhead@1Dam: SpreadDamage
+		Spread: 64
+		Damage: 20
+		Versus:
+			None: 100
+			Flak: 80
+			Plate: 70
+			Light: 50
+			Medium: 25
+			Heavy: 25
+			Wood: 75
+			Steel: 50
+			Concrete: 25
+		DamageTypes: Prone70Percent, TriggerProne, BulletDeath
+	Warhead@2Eff: CreateEffect
+		Explosion: piff
+		InvalidImpactTypes: Water
+	Warhead@3EffWater: CreateEffect
+		Explosion: piff
+		ValidImpactTypes: Water
+
+RadBeamWeapon:
+	ValidTargets: Ground
+	Damage: 125
+	Range: 6c0
+	ReloadDelay: 100
+	Report: idesat1a.wav
+	Projectile: LaserZap
+		BeamWidth: 2
+		BeamDuration: 7
+		Color: 185, 0, 255, 0
+	Warhead@1Dam: SpreadDamage
+		Spread: 42
+		Damage: 125
+		Versus:
+			None: 100
+			Flak: 100
+			Plate: 100
+			Light: 20
+			Medium: 15
+			Heavy: 10
+			Wood: 0
+			Steel: 0
+			Concrete: 0
+		DamageTypes: RadioActiveDeath
+
+RadBeamWeaponE:
+	ValidTargets: Ground
+	Damage: 200
+	Range: 8c0
+	ReloadDelay: 100
+	Report: idesat1a.wav
+	Projectile: LaserZap
+		BeamWidth: 2
+		BeamDuration: 7
+		Color: 185, 0, 255, 0
+	Warhead@1Dam: SpreadDamage
+		Spread: 42
+		Damage: 125
+		Versus:
+			None: 100
+			Flak: 100
+			Plate: 100
+			Light: 20
+			Medium: 15
+			Heavy: 10
+			Wood: 0
+			Steel: 0
+			Concrete: 0
+		DamageTypes: RadioActiveDeath
+
+FlakGuyGun:
+	ReloadDelay: 25
+	Range: 5c0
+	Report: vflaat1a.wav, vflaat1b.wav
+	Projectile: Bullet
+		Speed: 50c0
+	Warhead@1Dam: SpreadDamage
+		Spread: 64
+		Damage: 20
+		Versus:
+			None: 150
+			Flak: 100
+			Plate: 50
+			Light: 60
+			Medium: 10
+			Heavy: 10
+			Wood: 30
+			Steel: 20
+			Concrete: 10
+		DamageTypes: Prone100Percent, TriggerProne, BulletDeath
+	Warhead@2Eff: CreateEffect
+		Explosion: flak_puff
+
+FlakGuyGunE:
+	ReloadDelay: 25
+	Range: 5c0
+	Report: vflaat1a.wav, vflaat1b.wav
+	Projectile: Bullet
+		Speed: 50c0
+		Burst: 2
+	Warhead@1Dam: SpreadDamage
+		Spread: 64
+		Damage: 20
+		Versus:
+			None: 150
+			Flak: 100
+			Plate: 50
+			Light: 60
+			Medium: 10
+			Heavy: 10
+			Wood: 30
+			Steel: 20
+			Concrete: 10
+		DamageTypes: Prone100Percent, TriggerProne, BulletDeath
+	Warhead@2Eff: CreateEffect
+		Explosion: flak_puff
+
+FlakGuyAAGun:
+	ReloadDelay: 25
+	Range: 8c0
+	Report: vflaat2a.wav, vflaat2b.wav, vflaat2c.wav, vflaat2d.wav
+	ValidTargets: Air
+	Projectile: Bullet
+		Inaccuracy: 128
+		Speed: 100c0
+	Warhead@1Dam: SpreadDamage
+		Spread: 120
+		Damage: 20
+		ValidTargets: Air
+		Versus:
+			None: 150
+			Flak: 100
+			Plate: 50
+			Light: 80
+			Medium: 20
+			Heavy: 20
+			Wood: 0
+			Steel: 0
+			Concrete: 0
+		DamageTypes: BulletDeath
+	Warhead@2Eff: CreateEffect
+		Explosion: flak_puff_AA
+
+FlakGuyAAGunE:
+	ReloadDelay: 25
+	Range: 8c0
+	Report: vflaat2a.wav, vflaat2b.wav, vflaat2c.wav, vflaat2d.wav
+	ValidTargets: Air
+	Projectile: Bullet
+		Inaccuracy: 128
+		Speed: 50c0
+		Burst: 2
+	Warhead@1Dam: SpreadDamage
+		Spread: 120
+		Damage: 8
+		ValidTargets: Air
+		Versus:
+			None: 150
+			Flak: 100
+			Plate: 50
+			Light: 80
+			Medium: 20
+			Heavy: 20
+			Wood: 0
+			Steel: 0
+			Concrete: 0
+		DamageTypes: BulletDeath
+	Warhead@2Eff: CreateEffect
+		Explosion: flak_puff_AA
+
+ElectricBolt:
+	Range: 3c0
+	ReloadDelay: 60
+	Report: itesatta.wav
+	Projectile: TeslaZap
+		Speed: 100c0
+	Warhead@1Dam: SpreadDamage
+		Spread: 120
+		Damage: 50
+		Versus:
+			None: 100
+			Flak: 100
+			Plate: 100
+			Light: 85
+			Medium: 100
+			Heavy: 100
+			Wood: 50
+			Steel: 50
+			Concrete: 50
+		DamageTypes: ElectroDeath
+
+ElectricBoltE:
+	Range: 5c0
+	ReloadDelay: 40
+	Report: itesat2a.wav, itesat2b.wav
+	Projectile: TeslaZap
+		Speed: 100c0
+	Warhead@1Dam: SpreadDamage
+		Spread: 120
+		Damage: 50
+		Versus:
+			None: 100
+			Flak: 100
+			Plate: 100
+			Light: 85
+			Medium: 100
+			Heavy: 100
+			Wood: 50
+			Steel: 50
+			Concrete: 50
+		DamageTypes: ElectroDeath
+
