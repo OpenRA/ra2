@@ -45,7 +45,6 @@ zephusk:
 	Inherits: ^HelicopterHusk
 	Tooltip:
 		Name: Kirov Airship
-	-RenderUnit:
 	RenderSprites:
 		Image: zep
 	RenderVoxels:
