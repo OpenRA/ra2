@@ -198,3 +198,47 @@ deso:
 	Voiced:
 		VoiceSet: DesolatorVoice
 
+ivan:
+	Inherits: ^Infantry
+	Buildable:
+		Queue: Infantry
+		BuildAtProductionType: Infantry
+		BuildPaletteOrder: 120
+		Prerequisites: naradr, ~nahand, ~!infantry.cuba
+	Valued:
+		Cost: 600
+	Tooltip:
+		Name: Crazy Ivan
+		Description: Specialist for explosives. Can plant a Bomb on anything, even Cows.
+	Selectable:
+		Bounds: 20, 30, 0, -11
+	Voiced:
+		VoiceSet: CrazyIvanVoice
+	Health:
+		HP: 125
+	Mobile:
+		Speed: 60
+	RevealsShroud:
+		Range: 6c0
+	Armor:
+		Type: None
+	Passenger:
+		PipType: Red
+	Explodes:
+		Weapon: IvanBomber
+		EmptyWeapon: IvanBomber
+	Armament@primary:
+		Weapon: IvanBomber
+		UpgradeTypes: eliteweapon
+		UpgradeMaxEnabledLevel: 0
+		UpgradeMaxAcceptedLevel: 1
+	Armament@elite:
+		Weapon: IvanBomberE
+		UpgradeTypes: eliteweapon
+		UpgradeMinEnabledLevel: 1
+	AttackFrontal:
+		Cursor: bomb
+		OutsideRangeCursor: bomb
+	TakeCover:
+	WithInfantryBody:
+		IdleSequences: idle1,idle2

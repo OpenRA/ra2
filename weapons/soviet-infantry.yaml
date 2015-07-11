@@ -248,3 +248,68 @@ ElectricBoltE:
 			Concrete: 50
 		DamageTypes: ElectroDeath
 
+IvanBomber:
+	ReloadDelay: 50
+	Range: 1c849 # TODO
+	Report: icraatta.wav
+	Projectile: Bullet
+		Speed: 425
+		Blockable: false
+	Warhead@0Eff: CreateEffect
+		Delay: 2
+		Explosion: bombcurs
+		ExplosionPalette: mousepal
+		#ImpactSound: icraloop.wav # OpenRA goes out of memory
+	Warhead@1Dam: SpreadDamage
+		Delay: 100
+		Spread: 213
+		Damage: 400
+		Falloff: 1000, 368, 135, 50, 18, 7, 0
+		Versus:
+			None: 100
+			Flak: 100
+			Plate: 100
+			Light: 100
+			Medium: 100
+			Heavy: 250
+			Wood: 20
+			Steel: 100
+			Concrete: 100
+		DamageTypes: FlameDeath, Prone100Percent
+	Warhead@2Eff: CreateEffect
+		Delay: 100
+		Explosion: ivan_explosion
+		ImpactSound: gexpcraa.wav
+
+IvanBomberE:
+	ReloadDelay: 50
+	Range: 1c849 # TODO
+	Report: icraatta.wav
+	Projectile: Bullet
+		Speed: 425
+		Blockable: false
+	Warhead@0Eff: CreateEffect
+		Delay: 2
+		Explosion: bombcurs
+		ExplosionPalette: mousepal
+		#ImpactSound: icraloop.wav # OpenRA goes out of memory
+	Warhead@1Dam: SpreadDamage
+		Delay: 100
+		Spread: 213
+		Damage: 400
+		Falloff: 1000, 368, 135, 50, 18, 7, 0
+		Versus:
+			None: 100
+			Flak: 100
+			Plate: 100
+			Light: 100
+			Medium: 100
+			Heavy: 250
+			Wood: 20
+			Steel: 100
+			Concrete: 100
+		DamageTypes: FlameDeath, Prone100Percent
+	Warhead@2Eff: CreateEffect
+		Delay: 100
+		Explosion: ivan_explosionE
+		ImpactSound: gexpcraa.wav
