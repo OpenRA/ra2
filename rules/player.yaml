@@ -65,4 +65,9 @@ Player:
 		Name: Unrestricted
 		Prerequisites: techlevel.infonly, techlevel.low, techlevel.medium, techlevel.unrestricted
 	GlobalUpgradeManager:
+	VeteranProductionIconOverlay:
+		Offset: 2, 2
+		Image: cameo-chevron
+		Sequence: idle
+		Palette: cameo-chevron
 

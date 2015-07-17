@@ -42,6 +42,7 @@ cmin:
 		Queue: Vehicle
 		BuildPaletteOrder: 10
 		Prerequisites: ~gaweap, refinery
+		InitialActivity: FindResources
 	Valued:
 		Cost: 1400
 	Tooltip:
@@ -60,13 +61,13 @@ cmin:
 	Armor:
 		Type: Medium
 	Mobile:
-		Speed: 85
+		Speed: 85 # TODO
 		ROT: 8
 		WaitAverage: 0
 		Crushes: crate, infantry
 	RevealsShroud:
 		Range: 4c0
-	WithHarvestOverlay:
+	WithHarvestAnimation:
 		Offset: 121,0,0
 		Palette: effect
 	-GainsExperience:
@@ -121,6 +122,8 @@ mtnk:
 	WithVoxelBarrel:
 	Voiced:
 		VoiceSet: AlliedVehicleVoice
+	ProducibleWithLevel:
+		Prerequisites: warfactory.infiltrated
 
 tnkd:
 	Inherits: ^Vehicle
@@ -156,6 +159,8 @@ tnkd:
 	WithVoxelBody:
 	Voiced:
 		VoiceSet: AlliedVehicleVoice
+	ProducibleWithLevel:
+		Prerequisites: warfactory.infiltrated
 
 fv:
 	Inherits: ^Vehicle
@@ -204,6 +209,8 @@ fv:
 	WithVoxelTurret:
 	Voiced:
 		VoiceSet: AlliedVehicleVoice
+	ProducibleWithLevel:
+		Prerequisites: warfactory.infiltrated
 
 sref:
 	Inherits: ^Vehicle
@@ -252,6 +259,8 @@ sref:
 	WithVoxelBody:
 	Voiced:
 		VoiceSet: AlliedVehicleVoice
+	ProducibleWithLevel:
+		Prerequisites: warfactory.infiltrated
 
 mgtk:
 	Inherits: ^Vehicle
@@ -297,4 +306,14 @@ mgtk:
 	WithVoxelBody:
 	Voiced:
 		VoiceSet: AlliedVehicleVoice
-
+	ProducibleWithLevel:
+		Prerequisites: warfactory.infiltrated
+	#Disguised
+	#CrateGoodie=yes
+	#IsTilter=yes
+	#TooBigToFitUnderBridge=true
+	#Explosion=TWLT070,S_BANG48,S_BRNL58,S_CLSN58,S_TUMU60
+	#MaxDebris=2
+	#ThreatPosed=15	; This value MUST be 0 for all building addons
+	#DamageParticleSystems=SparkSys;gs the sparks look cool, but the smoke gives it away too easily, SmallGreySSys
+	#Accelerates=false

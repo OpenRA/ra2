@@ -25,7 +25,11 @@ engineer:
 	RevealsShroud:
 		Range: 4c0
 	Voiced:
+		# TODO: what do we do with soviet engineers?
 		VoiceSet: AlliedEngineerVoice
+# BombSight=4 ; detecting ivan's little friends
+# Todo: engineers can defuse ivan's bombs, but don't get consumed
+# IRC: http://logs.ihptru.net/?year=2015&month=02&day=16#22:02:01
 
 dog:
 	Inherits: ^Infantry
@@ -64,6 +68,11 @@ dog:
 		Range: 5
 	Voiced:
 		VoiceSet: DogVoice
+	ProducibleWithLevel:
+		Prerequisites: barracks.infiltrated
+# ImmuneToRadiation=no
+# ImmuneToPsionics=yes
+# IFVMode=0
 
 e1:
 	Inherits: ^Infantry
@@ -107,6 +116,8 @@ e1:
 	WithInfantryBody:
 	Voiced:
 		VoiceSet: GIVoice
+	ProducibleWithLevel:
+		Prerequisites: barracks.infiltrated
 
 snipe:
 	Inherits: ^Infantry
@@ -138,6 +149,8 @@ snipe:
 	AttackFrontal:
 	Voiced:
 		VoiceSet: SniperVoice
+	ProducibleWithLevel:
+		Prerequisites: barracks.infiltrated
 
 spy:
 	Inherits: ^Infantry
@@ -216,6 +229,8 @@ tany:
 	AnnounceOnBuild:
 	Voiced:
 		VoiceSet: TanyaVoice
+	ProducibleWithLevel:
+		Prerequisites: barracks.infiltrated
 
 jumpjet:
 	Inherits: ^Infantry
@@ -236,7 +251,6 @@ jumpjet:
 	-Mobile:
 	RevealsShroud:
 		Range: 8c0
-		Type: CenterPosition
 	Armor:
 		Type: None
 	Armament@primary:
@@ -259,7 +273,7 @@ jumpjet:
 	WithInfantryBody:
 		StandSequence: fly
 		MoveSequence: fly
-		AttackSequence: shoot-air
+		AttackSequence: shoot-air # doesn't work?
 		IdleSequences: idle-air
 	Hovers:
 		OffsetModifier: -45
@@ -270,4 +284,6 @@ jumpjet:
 	WithShadow:
 	Voiced:
 		VoiceSet: RocketeerVoice
+	ProducibleWithLevel:
+		Prerequisites: barracks.infiltrated
 

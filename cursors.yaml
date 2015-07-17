@@ -11,37 +11,37 @@ Cursors:
 			Start: 1
 			X: -28
 			Y: -21
-		scroll-t:
+		scroll-t: # TODO
 			Start: 2
-		scroll-tr:
+		scroll-tr: # TODO
 			Start: 3
-		scroll-r:
+		scroll-r: # TODO
 			Start: 4
-		scroll-br:
+		scroll-br: # TODO
 			Start: 5
-		scroll-b:
+		scroll-b: # TODO
 			Start: 6
-		scroll-bl:
+		scroll-bl: # TODO
 			Start: 7
-		scroll-l:
+		scroll-l: # TODO
 			Start: 8
-		scroll-tl:
+		scroll-tl: # TODO
 			Start: 9
-		scroll-t-blocked:
+		scroll-t-blocked: # TODO
 			Start: 10
-		scroll-tr-blocked:
+		scroll-tr-blocked: # TODO
 			Start: 11
-		scroll-r-blocked:
+		scroll-r-blocked: # TODO
 			Start: 12
-		scroll-br-blocked:
+		scroll-br-blocked: # TODO
 			Start: 13
-		scroll-b-blocked:
+		scroll-b-blocked: # TODO
 			Start: 14
-		scroll-bl-blocked:
+		scroll-bl-blocked: # TODO
 			Start: 15
-		scroll-l-blocked:
+		scroll-l-blocked: # TODO
 			Start: 16
-		scroll-tl-blocked:
+		scroll-tl-blocked: # TODO
 			Start: 17
 		select:
 			Start: 18
@@ -61,7 +61,7 @@ Cursors:
 		attack:
 			Start: 53
 			Length: 5
-		attackmove:
+		attackmove: # TODO Actually attack out of range
 			Start: 58
 			Length: 5
 		attack-minimap:
@@ -73,10 +73,10 @@ Cursors:
 		guard-minimap:
 			Start: 73
 			Length: 5
-		dsol-deploy:
+		dsol-deploy: # Not used in final RA2
 			Start: 78
 			Length: 10
-		drop-blocked:
+		drop-blocked: # Not used in final RA2, was reserved for Hind caryall feature
 			Start: 88
 		enter:
 			Start: 89
@@ -91,7 +91,7 @@ Cursors:
 		enter-minimap:
 			Start: 100
 			Length: 10
-		enter-blocked-minimap:
+		enter-blocked-minimap: # TODO
 			Start: 33
 		capture-minimap:
 			Start: 100
@@ -101,13 +101,13 @@ Cursors:
 			Length: 9
 		deploy-blocked:
 			Start: 119
-		undeploy:
+		undeploy: # TODO: unused
 			Start: 120
 			Length: 9
 		sell:
 			Start: 129
 			Length: 10
-		sell-minimap:
+		sell-minimap: # TODO: unused
 			Start: 139
 			Length: 10
 		sell2:
@@ -125,37 +125,37 @@ Cursors:
 			Start: 190
 		repair-blocked:
 			Start: 190
-		waypoint:
+		waypoint: # Not used in final RA2
 			Start: 191
 			Length: 8
-		disguise:
+		disguise: # Not used in final RA2
 			Start: 199
 			Length: 4
-		bomb:
+		bomb: # Ivan bomb cursor
 			Start: 204
 			Length: 5
-		mindcontrol:
+		mindcontrol: # Not used in final RA2
 			Start: 209
 			Length: 5
-		remove-squid:
+		remove-squid: # Not used in final RA2
 			Start: 214
 			Length: 5
-		squish:
+		squish: # Not used in final RA2
 			Start: 219
 			Length: 4
-		steal-plans:
+		steal-plans: # Not used in final RA2
 			Start: 224
 			Length: 5
-		sabotage:
+		sabotage: # Not used in final RA2
 			Start: 229
 			Length: 5
-		waypoint2:
+		waypoint2: # Not used in final RA2
 			Start: 234
 			Length: 5
-		deploy-sandbags:
+		deploy-sandbags: # Not used in final RA2
 			Start: 239
 			Length: 10
-		chronowave:
+		chronowave: # Could be shown under the chrono anim, MIGHT not used in final RA2
 			Start: 249
 			Length: 10
 		praradrop:
@@ -167,37 +167,37 @@ Cursors:
 		weatherstorm:
 			Start: 279
 			Length: 20
-		detonate:
+		detonate: # Not used in final RA2, Ivans could detonate bombs remotely in RA2 beta
 			Start: 299
 			Length: 10
 		c4:
 			Start: 309
 			Length: 10
-		nuke:
+		nuke: # TODO
 			Start: 319
 			Length: 10
-		water-move:
+		water-move: # Not used in final RA2
 			Start: 329
 			Length: 10
 		powerdown:
 			Start: 339
 			Length: 5
-		water-move-blocked:
+		water-move-blocked: # Not used in final RA2
 			Start: 345
 		iron-curtain:
 			Start: 346
 			Length: 5
-		heal:
+		heal: # Not used in final RA2
 			Start: 351
 			Length: 5
-		looped-patrol:
+		looped-patrol: # Removed in final RA2
 			Start: 356
 		chronoshift:
 			Start: 357
 			Length: 12
-		remove-bomb:
+		remove-bomb: # Enginers can see and remove Ivan bombs
 			Start: 369
-		generic-blocked:
+		generic-blocked:###
 			Start: 384
 		scrollclick:
 			Start: 385
@@ -217,29 +217,31 @@ Cursors:
 			Start: 392
 		scrollclick-tl:
 			Start: 393
-		guard2:
+		guard2: # Not used in final RA2
 			Start: 394
 			Length: 10
-		attackmove2:
+		attackmove2: #think it is ctrl + shift (in RA2)
 			Start: 404
 			Length: 9
-		deploy2:
+		deploy2: # Not used in final RA2
 			Start: 413
 			Length: 9
-		clone:
+		clone: # Not used in final RA2
 			Start: 422
 			Length: 9
-		mindcontrol-blocked:
+		mindcontrol-blocked: # Not used in final RA2
 			Start: 431
 		rallypoint-blocked:
 			Start: 432
 		guard-minimap2:
 			Start: 433
-		attackmove-minimap:
+		attackmove-minimap: # TODO
 			Start: 434
-		beacon-mouseover:
+		beacon-mouseover: # Shows only when mousing over already-placed beacon
 			Start: 435
 			Length: 20
+
+# RA2 doesn't use these but OpenRA requires them
 		attackoutsiderange:
 			Start: 58
 			Length: 5
@@ -249,26 +251,25 @@ Cursors:
 		move-rough:
 			Start: 31
 			Length: 10
-		attack-blocked:
+		attack-blocked: # TODO: unused
 			Start: 384
-		harvest:
+		harvest: # TODO
 			Start: 53
 			Length: 5
-		harvest-minimap:
+		harvest-minimap: # TODO
 			Start: 63
 			Length: 5
-		c4-minimap:
+		c4-minimap: # TODO
 			Start: 63
 			Length: 5
-		heal-minimap:
+		heal-minimap: # TODO
 			Start: 351
 			Length: 5
 		ability:
 			Start: 68
 			Length: 5
-		ability-minimap:
+		ability-minimap: # TODO
 			Start: 73
 			Length: 5
 		powerdown-blocked:
 			Start: 52
-

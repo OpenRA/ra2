@@ -1,3 +1,4 @@
+# Conscript, E2
 M1Carbine:
 	ReloadDelay: 25
 	Range: 4c0
@@ -52,13 +53,14 @@ M1CarbineE:
 		Explosion: piff
 		ValidImpactTypes: Water
 
+# Desolator
 RadBeamWeapon:
 	ValidTargets: Ground
 	Damage: 125
 	Range: 6c0
 	ReloadDelay: 100
 	Report: idesat1a.wav
-	Projectile: LaserZap
+	Projectile: LaserZap # TODO: Beam
 		BeamWidth: 2
 		BeamDuration: 7
 		Color: 185, 0, 255, 0
@@ -83,7 +85,7 @@ RadBeamWeaponE:
 	Range: 8c0
 	ReloadDelay: 100
 	Report: idesat1a.wav
-	Projectile: LaserZap
+	Projectile: LaserZap # TODO: Beam
 		BeamWidth: 2
 		BeamDuration: 7
 		Color: 185, 0, 255, 0
@@ -102,6 +104,7 @@ RadBeamWeaponE:
 			Concrete: 0
 		DamageTypes: RadioActiveDeath
 
+# Flak Trooper
 FlakGuyGun:
 	ReloadDelay: 25
 	Range: 5c0
@@ -202,6 +205,7 @@ FlakGuyAAGunE:
 	Warhead@2Eff: CreateEffect
 		Explosion: flak_puff_AA
 
+# Shock Trooper
 ElectricBolt:
 	Range: 3c0
 	ReloadDelay: 60
@@ -244,3 +248,68 @@ ElectricBoltE:
 			Concrete: 50
 		DamageTypes: ElectroDeath
 
+IvanBomber:
+	ReloadDelay: 50
+	Range: 1c849 # TODO
+	Report: icraatta.wav
+	Projectile: Bullet
+		Speed: 425
+		Blockable: false
+	Warhead@0Eff: CreateEffect
+		Delay: 2
+		Explosion: bombcurs
+		ExplosionPalette: mousepal
+		#ImpactSound: icraloop.wav # OpenRA goes out of memory
+	Warhead@1Dam: SpreadDamage
+		Delay: 100
+		Spread: 213
+		Damage: 400
+		Falloff: 1000, 368, 135, 50, 18, 7, 0
+		Versus:
+			None: 100
+			Flak: 100
+			Plate: 100
+			Light: 100
+			Medium: 100
+			Heavy: 250
+			Wood: 20
+			Steel: 100
+			Concrete: 100
+		DamageTypes: FlameDeath, Prone100Percent
+	Warhead@2Eff: CreateEffect
+		Delay: 100
+		Explosion: ivan_explosion
+		ImpactSound: gexpcraa.wav
+
+IvanBomberE:
+	ReloadDelay: 50
+	Range: 1c849 # TODO
+	Report: icraatta.wav
+	Projectile: Bullet
+		Speed: 425
+		Blockable: false
+	Warhead@0Eff: CreateEffect
+		Delay: 2
+		Explosion: bombcurs
+		ExplosionPalette: mousepal
+		#ImpactSound: icraloop.wav # OpenRA goes out of memory
+	Warhead@1Dam: SpreadDamage
+		Delay: 100
+		Spread: 213
+		Damage: 400
+		Falloff: 1000, 368, 135, 50, 18, 7, 0
+		Versus:
+			None: 100
+			Flak: 100
+			Plate: 100
+			Light: 100
+			Medium: 100
+			Heavy: 250
+			Wood: 20
+			Steel: 100
+			Concrete: 100
+		DamageTypes: FlameDeath, Prone100Percent
+	Warhead@2Eff: CreateEffect
+		Delay: 100
+		Explosion: ivan_explosionE
+		ImpactSound: gexpcraa.wav

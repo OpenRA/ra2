@@ -25,7 +25,7 @@ lcrf:
 			Road: 100
 			DirtRoad: 100
 			Beach: 60
-			Tiberium: 50
+			Tiberium: 50 #Used Track value from the inis
 			BlueTiberium: 50
 			Water: 100
 	RevealsShroud:
@@ -68,14 +68,14 @@ dest:
 		Bounds: 80, 80, 0, -6
 	Armament@primary:
 		Weapon: 155mm
-		LocalOffset: 768,0,0
+		LocalOffset: 768,0,0 # Not true, copy-pasted from SUB.
 		FireDelay: 2
 		UpgradeTypes: eliteweapon
 		UpgradeMaxEnabledLevel: 0
 		UpgradeMaxAcceptedLevel: 1
 	Armament@elite:
 		Weapon: 155mmE
-		LocalOffset: 768,0,0
+		LocalOffset: 768,0,0 # Not true, copy-pasted from SUB.
 		FireDelay: 2
 		UpgradeTypes: eliteweapon
 		UpgradeMinEnabledLevel: 1

@@ -25,7 +25,7 @@ sapc:
 			Road: 100
 			DirtRoad: 100
 			Beach: 60
-			Tiberium: 50
+			Tiberium: 50 #Used Track value from the inis
 			BlueTiberium: 50
 			Water: 100
 	RevealsShroud:

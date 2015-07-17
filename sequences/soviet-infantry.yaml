@@ -310,3 +310,57 @@ deso:
 		Facings: 8
 		Tick: 80
 	icon: desoicon
+
+ivan:
+	stand:
+		Facings: 8
+	run:
+		Start: 8
+		Length: 6
+		Facings: 8
+		Tick: 120
+	idle1:
+		Start: 56
+		Length: 15
+		Tick: 100
+	idle2:
+		Start: 71
+		Length: 15
+		Tick: 100
+	prone-run:
+		Start: 86
+		Length: 6
+		Facings: 8
+		Tick: 100
+	die1:
+		Start: 134
+		Length: 14
+	die2:
+		Start: 149
+		Length: 14
+	die4: nukedie
+		Length: *
+		Tick: 50
+		# Problem: Palette = effect
+	die5: flameguy
+		Start: 48
+		Length: 59
+		Tick: 80
+# TODO: This is just the death sequence; normally flameguy would run a bit around before dying
+	die6: electro
+		Length: *
+		Tick: 120
+	die-crushed: death_c
+		Length: 4
+		Tick: 80
+	shoot:
+		Start: 164
+		Length: 6
+		Facings: 8
+		Tick: 80
+	prone-shoot:
+		Start: 212
+		Length: 6
+		Facings: 8
+		Tick: 80
+	icon: ivanicon

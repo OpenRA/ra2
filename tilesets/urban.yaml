@@ -57,6 +57,7 @@ Terrain:
 		Color: 28, 64, 248
 		TargetTypes: Ground
 
+# Automatically generated. DO NOT EDIT!
 Templates:
 	Template@0:
 		Category: Lat Grass
@@ -16847,4 +16848,3 @@ Templates:
 			0: Road
 				LeftColor: 152,98,74
 				RightColor: 109,131,60
-

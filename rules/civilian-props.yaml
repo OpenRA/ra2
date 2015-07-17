@@ -1,6 +1,8 @@
+#Anything civilian that is not a building
 camisc01:
 	Inherits: ^CivBuilding
 	Selectable:
+		#Bounds: TODO
 	Building:
 		Footprint: x
 		Dimensions: 1, 1
@@ -14,6 +16,7 @@ camisc01:
 camisc02:
 	Inherits: ^CivBuilding
 	Selectable:
+		#Bounds: TODO
 	Building:
 		Footprint: x
 		Dimensions: 1, 1
@@ -47,6 +50,30 @@ camisc04:
 		HP: 10
 	Armor:
 		Type: Concrete
+
+# casin01s: #MISSING FROM RA2 FILES
+	# Inherits: ^CivBuilding
+	# Building:
+		# Footprint: x
+		# Dimensions: 1, 1
+	# Tooltip:
+		# Name: Stop!
+	# Health:
+		# HP: 5
+	# Armor:
+		# Type: Concrete
+
+# casin01n: #MISSING FROM RA2 FILES
+	# Inherits: ^CivBuilding
+	# Building:
+		# Footprint: x
+		# Dimensions: 1, 1
+	# Tooltip:
+		# Name: Stop!
+	# Health:
+		# HP: 5
+	# Armor:
+		# Type: Concrete
 
 calit01e:
 	Inherits: ^CivBuilding

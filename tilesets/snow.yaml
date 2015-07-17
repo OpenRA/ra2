@@ -57,6 +57,7 @@ Terrain:
 		Color: 28, 64, 248
 		TargetTypes: Ground
 
+# Automatically generated. DO NOT EDIT!
 Templates:
 	Template@0:
 		Category: LAT Snow
@@ -10967,4 +10968,3 @@ Templates:
 			34: Cliff
 				LeftColor: 220,234,237
 				RightColor: 222,234,237
-

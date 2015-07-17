@@ -57,6 +57,7 @@ Terrain:
 		Color: 28, 64, 248
 		TargetTypes: Ground
 
+# Automatically generated. DO NOT EDIT!
 Templates:
 	Template@0:
 		Category: Lat Grass
@@ -11517,4 +11518,3 @@ Templates:
 			17: Water
 				LeftColor: 63,66,88
 				RightColor: 63,66,89
-

@@ -62,6 +62,7 @@
 	ResourceType@Tiberium:
 		ResourceType: 1
 		Palette: ore
+		EditorSprite: waypoint # TODO: editor can't handle the real ones
 		Variants: tib01, tib02, tib03, tib04, tib05, tib06, tib07, tib08, tib09, tib10, tib11, tib12, tib13, tib14, tib15, tib16, tib17, tib18, tib19, tib20
 		MaxDensity: 12
 		ValuePerUnit: 50
@@ -81,6 +82,13 @@ World:
 	BuildingInfluence:
 	ProductionQueueFromSelection:
 		ProductionPaletteWidget: PRODUCTION_PALETTE
+	#CrateSpawner:
+	#	DeliveryAircraft: pdbplane
+	#	QuantizedFacings: 16
+	#	Minimum: 1
+	#	Maximum: 3
+	#	SpawnInterval: 120
+	#	WaterChance: .2
 	DomainIndex:
 	SmudgeLayer@SMALLSCORCH:
 		Type: SmallScorch
@@ -150,4 +158,3 @@ EditorWorld:
 	Inherits: ^BaseWorld
 	EditorActorLayer:
 	EditorResourceLayer:
-

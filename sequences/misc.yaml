@@ -70,6 +70,11 @@ clock:
 		Length: *
 		BlendMode: Multiply
 
+cameo-chevron:
+	idle:
+		Length: *
+		BlendMode: Additive
+
 pips:
 	medic:
 		Start: 6
@@ -154,6 +159,10 @@ explosion:
 	apoc_explosion: apocexp
 	flak_puff: htrkpuff
 	flak_puff_AA: smkpuff
+	bombcurs: bombcurs
+		Tick: 300
+	ivan_explosion: crivexp
+	ivan_explosionE: crivexp2
 
 discus:
 	idle:
@@ -344,6 +353,11 @@ largecraters:
 
 icon:
 	gps: asaticon
+
+bombcurs:
+	idle:
+		Length: *
+		Tick: 300
 
 trock01:
 	idle:

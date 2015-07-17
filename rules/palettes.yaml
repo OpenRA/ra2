@@ -26,6 +26,10 @@
 		Filename: cameo.pal
 		AllowModifiers: false
 		ShadowIndex: 242
+	PaletteFromFile@cameo-chevron:
+		Name: cameo-chevron
+		Filename: cameo-chevron.pal
+		AllowModifiers: false
 	PaletteFromFile@pips:
 		Name: pips
 		Filename: palette.pal

@@ -43,6 +43,7 @@ harv:
 		Queue: Vehicle
 		BuildPaletteOrder: 10
 		Prerequisites: ~naweap, refinery
+		InitialActivity: FindResources
 	Valued:
 		Cost: 1400
 	Tooltip:
@@ -77,13 +78,13 @@ harv:
 		ROT: 10
 		Offset: -30,0,85
 	Mobile:
-		Speed: 85
+		Speed: 85 # TODO
 		ROT: 8
 		WaitAverage: 0
 		Crushes: crate, infantry
 	RevealsShroud:
 		Range: 4c0
-	WithHarvestOverlay:
+	WithHarvestAnimation:
 		Offset: 121,0,0
 		Palette: effect
 	GainsExperience:
@@ -138,6 +139,8 @@ htk:
 	WithVoxelBody:
 	Voiced:
 		VoiceSet: SovietVehicleVoice
+	ProducibleWithLevel:
+		Prerequisites: warfactory.infiltrated
 
 htnk:
 	Inherits: ^Vehicle
@@ -185,6 +188,8 @@ htnk:
 	WithVoxelBarrel:
 	Voiced:
 		VoiceSet: SovietVehicleVoice
+	ProducibleWithLevel:
+		Prerequisites: warfactory.infiltrated
 
 apoc:
 	Inherits: ^Vehicle
@@ -234,6 +239,8 @@ apoc:
 	WithVoxelBarrel:
 	Voiced:
 		VoiceSet: SovietVehicleVoice
+	ProducibleWithLevel:
+		Prerequisites: warfactory.infiltrated
 
 dtruck:
 	Inherits: ^Vehicle
@@ -253,7 +260,7 @@ dtruck:
 	Armor:
 		Type: Light
 	Mobile:
-		Speed: 85
+		Speed: 85 # TODO
 		ROT: 8
 		WaitAverage: 0
 		Crushes: fence, crate, infantry

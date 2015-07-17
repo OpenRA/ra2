@@ -52,6 +52,7 @@ gasand:
 cawash01:
 	Inherits: ^CivBuilding
 	Selectable:
+		#Bounds: TODO
 	Building:
 		Footprint: xxxx xxxx xxxx xxxx
 		Dimensions: 4, 4
@@ -63,10 +64,12 @@ cawash01:
 		Type: Concrete
 	RevealsShroud:
 		Range: 6c0
-
+		
+# Wash Building 3
 cawash03:
 	Inherits: ^CivBuilding
 	Selectable:
+		#Bounds: TODO
 	Building:
 		Footprint: xxxx xxxx xxxx
 		Dimensions: 4, 3
@@ -80,6 +83,7 @@ cawash03:
 cawash04:
 	Inherits: ^CivBuilding
 	Selectable:
+		#Bounds: TODO
 	Building:
 		Footprint: xxxx xxxx xxxx xxxx
 		Dimensions: 4, 4
@@ -93,6 +97,7 @@ cawash04:
 cawash05:
 	Inherits: ^CivBuilding
 	Selectable:
+		#Bounds: TODO
 	Building:
 		Footprint: xxxx xxxx
 		Dimensions: 4, 2
@@ -106,6 +111,7 @@ cawash05:
 cawash07:
 	Inherits: ^CivBuilding
 	Selectable:
+		#Bounds: TODO
 	Building:
 		Footprint: xxx xxx xxx
 		Dimensions: 3, 3
@@ -119,6 +125,7 @@ cawash07:
 cawash09:
 	Inherits: ^CivBuilding
 	Selectable:
+		#Bounds: TODO
 	Building:
 		Footprint: xxx xxx xxx
 		Dimensions: 3, 3
@@ -132,6 +139,7 @@ cawash09:
 cawash10:
 	Inherits: ^CivBuilding
 	Selectable:
+		#Bounds: TODO
 	Building:
 		Footprint: xxxx xxxx xxxx xxxx
 		Dimensions: 4, 4
@@ -145,6 +153,7 @@ cawash10:
 cawash11:
 	Inherits: ^CivBuilding
 	Selectable:
+		#Bounds: TODO
 	Building:
 		Footprint: xxxx xxxx xxxx xxxx
 		Dimensions: 4, 4
@@ -158,6 +167,7 @@ cawash11:
 cawash13:
 	Inherits: ^CivBuilding
 	Selectable:
+		#Bounds: TODO
 	Building:
 		Footprint: xxxx xxxx xxxx
 		Dimensions: 3, 4
@@ -171,6 +181,7 @@ cawash13:
 cawash14:
 	Inherits: ^CivBuilding
 	Selectable:
+		#Bounds: TODO
 	Building:
 		Footprint: xxx xxx xxx
 		Dimensions: 3, 3
@@ -184,6 +195,7 @@ cawash14:
 canewy01:
 	Inherits: ^CivBuilding
 	Selectable:
+		#Bounds: TODO
 	Building:
 		Footprint: xxxx xxxx xxxx xxxx
 		Dimensions: 4, 4
@@ -197,6 +209,7 @@ canewy01:
 cawsh12:
 	Inherits: ^CivBuilding
 	Selectable:
+		#Bounds: TODO
 	Building:
 		Footprint: xxx xxx xxx
 		Dimensions: 3, 3
@@ -225,6 +238,7 @@ cawsh12:
 caarmy01:
 	Inherits: ^CivBuilding
 	Selectable:
+		#Bounds: TODO
 	Building:
 		Footprint: xxx xxx
 		Dimensions: 3, 2
@@ -237,9 +251,11 @@ caarmy01:
 	RevealsShroud:
 		Range: 6c0
 
+# Pentagon A
 cawa2a:
 	Inherits: ^CivBuilding
 	Selectable:
+		#Bounds: TODO
 	Valued:
 		Cost: 2000
 	Building:
@@ -252,9 +268,11 @@ cawa2a:
 	RevealsShroud:
 		Range: 6c0
 
+# Pentagon B
 cawa2b:
 	Inherits: ^CivBuilding
 	Selectable:
+		#Bounds: TODO
 	Valued:
 		Cost: 2000
 	Building:
@@ -267,9 +285,11 @@ cawa2b:
 	RevealsShroud:
 		Range: 6c0
 
+# Pentagon C
 cawa2c:
 	Inherits: ^CivBuilding
 	Selectable:
+		#Bounds: TODO
 	Valued:
 		Cost: 2000
 	Building:
@@ -282,9 +302,11 @@ cawa2c:
 	RevealsShroud:
 		Range: 6c0
 
+# Pentagon D
 cawa2d:
 	Inherits: ^CivBuilding
 	Selectable:
+		#Bounds: TODO
 	Valued:
 		Cost: 2000
 	Building:
@@ -300,6 +322,7 @@ cawa2d:
 cafarm01:
 	Inherits: ^CivBuilding
 	Selectable:
+		#Bounds: TODO
 	Building:
 		Footprint: xx xx
 		Dimensions: 2, 2
@@ -315,6 +338,7 @@ cafarm01:
 cafarm02:
 	Inherits: ^CivBuilding
 	Selectable:
+		#Bounds: TODO
 	Building:
 		Footprint: x
 		Dimensions: 1, 1
@@ -328,6 +352,7 @@ cafarm02:
 causfgl:
 	Inherits: ^CivBuilding
 	Selectable:
+		#Bounds: TODO
 	Building:
 		Footprint: x
 		Dimensions: 1, 1

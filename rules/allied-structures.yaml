@@ -121,6 +121,10 @@ gapile:
 		Sequence: idle-flag
 	Power:
 		Amount: -10
+	InfiltrateForSupportPower:
+		Proxy: barracks.infiltrated
+	TargetableBuilding:
+		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
 
 garefn:
 	Inherits: ^Building
@@ -162,8 +166,9 @@ garefn:
 		Value: 300
 	FreeActor:
 		Actor: cmin
-		SpawnOffset: 4, 1
-		Facing: 160
+	 	InitialActivity: FindResources
+	 	SpawnOffset: 4, 1 #Should be 3, 1 but causes game to crash cause harvester wants to move.
+	 	Facing: 160
 	WithDockingOverlay:
 	WithIdleOverlay@BIB:
 		Sequence: idle-bib
@@ -221,7 +226,7 @@ gaairc:
 		TargetTypes: Ground, C4, SpyInfiltrate, DetonateAttack
 	Power:
 		Amount: -50
-	Reservable:
+	Reservable: # TODO: Support Multiple
 	Exit@1:
 		SpawnOffset: -350,350,0
 		MoveIntoWorld: false
@@ -248,6 +253,7 @@ amradr:
 		Prerequisites: garefn, ~structures.america
 	RenderBuilding:
 		Image: gaairc
+#	ParatroopersPower: # TODO
 
 gaweap:
 	Inherits: ^Building
@@ -294,6 +300,10 @@ gaweap:
 		Sequence: build-ramp
 	Power:
 		Amount: -25
+	InfiltrateForSupportPower:
+		Proxy: warfactory.infiltrated
+	TargetableBuilding:
+		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
 
 gayard:
 	Inherits: ^Building
@@ -333,7 +343,7 @@ gayard:
 		Produces: Ship
 	PrimaryBuilding:
 	RallyPoint:
-	RepairsUnits:
+	RepairsUnits: # TODO: First play the animation first frames loop and then increase HP, play last when done
 		FinishRepairingNotification: UnitRepaired
 	ProductionBar:
 	Power:
@@ -375,7 +385,7 @@ gadept:
 	RepairsUnits:
 		Interval: 50
 		FinishRepairingNotification: UnitRepaired
-	WithIdleOverlay@side:
+	WithIdleOverlay@side: # Hack: don't glitch while repairing
 		Sequence: idle-side
 	WithIdleOverlay@bib:
 		Sequence: bib
@@ -458,7 +468,7 @@ gapill:
 	Armament:
 		Weapon: vulcan2
 		LocalOffset: 768,85,512
-		MuzzleSequence: muzzle
+		MuzzleSequence: muzzle # TODO: this isn't rendered?
 		MuzzleSplitFacings: 8
 	AttackTurreted:
 	Turreted:
@@ -585,6 +595,7 @@ gaorep:
 		Sequence: idle-glow
 	Power:
 		Amount: -200
+# TODO: Increase income by 25%
 
 gaspysat:
 	Inherits: ^Building
@@ -640,8 +651,8 @@ gagap:
 	RevealsShroud:
 		Range: 5c0
 	CreatesShroud:
-		Range: 10c0
-	RenderShroudCircle:
+		Range: 10c0 # Does only create 5c0 because of the sight range
+	RenderShroudCircle: # TODO: Animated one (Radar like)
 	Power:
 		Amount: -100
 	MustBeDestroyed:
@@ -671,6 +682,8 @@ gaweat:
 		Range: 5c0
 	Power:
 		Amount: -200
+# TODO: Lightning superpower -- 10m cooldown
+# TODO: Reset SW timer on infiltrate
 
 gacsph:
 	Inherits: ^Building
@@ -698,6 +711,20 @@ gacsph:
 		Amount: -200
 	WithIdleOverlay:
 		Sequence: idle-dome
+	# ChronoshiftPower:
+	#	OrderName: Chronoshift
+		# TODO: find this: Icon: chroicon
+	#	ChargeTime: 300
+	#	Description: Chronoshift
+	#	LongDesc: Teleports a group of units across\nthe map.
+		# TODO: SelectTargetSound: slcttgt1.aud
+		# TODO: InsufficientPowerSound: nopowr1.aud
+		# TODO: BeginChargeSound: chrochr1.aud
+		# TODO: EndChargeSound: chrordy1.aud
+		# TODO: Was it timed? Duration: 20
+		# TODO: not all cargo types died: KillCargo: true
+	#	DisplayRadarPing: false
+		# TODO: Support rectangle selection, not radius-only: Range: 3x3
 
 atesla:
 	Inherits: ^Building
@@ -735,7 +762,7 @@ atesla:
 	AutoTarget:
 	-RenderBuilding:
 	RequiresPower:
-	WithIdleOverlay@normal:
+	WithIdleOverlay@normal: # Hack: Don't glitch when shooting in damaged state
 		Sequence: idle-normal
 		PauseOnLowPower: true
 	WithRangeCircle:
