@@ -20,6 +20,7 @@ e2:
 	RevealsShroud:
 		Range: 5c0
 	AttackFrontal:
+		Voice: Attack
 	Armament@primary:
 		Weapon: M1Carbine
 		UpgradeTypes: eliteweapon
@@ -57,6 +58,7 @@ flakt:
 	RevealsShroud:
 		Range: 5c0
 	AttackFrontal:
+		Voice: Attack
 	Armament@primary:
 		Weapon: FlakGuyGun
 		UpgradeTypes: eliteweapon
@@ -106,6 +108,7 @@ shk:
 	Passenger:
 		PipType: Red
 	AttackFrontal:
+		Voice: Attack
 	Armament@primary:
 		Weapon: ElectricBolt
 		UpgradeTypes: eliteweapon
@@ -153,6 +156,7 @@ terror:
 		EmptyWeapon: TerrorBomb
 	DemoTruck:
 	AttackFrontal:
+		Voice: Attack
 	WithInfantryBody:
 	Voiced:
 		VoiceSet: TerroristVoice
@@ -191,15 +195,8 @@ deso:
 		Weapon: RadBeamWeaponE
 		UpgradeTypes: eliteweapon
 		UpgradeMinEnabledLevel: 1
-	# Armament@deployed:
-	# 	Weapon: RadEruptionWeapon
-	# Armament@deployed-elite:
-	# 	Weapon: RadEruptionWeaponE
-	# Armament@ifv:
-	# 	Weapon: CRRadBeamWeapon
-	# Armament@ifv-elite:
-	# 	Weapon: CRRadBeamWeaponE
 	AttackFrontal:
+		Voice: Attack
 	WithInfantryBody:
 	Voiced:
 		VoiceSet: DesolatorVoice
@@ -245,8 +242,10 @@ ivan:
 		UpgradeTypes: eliteweapon
 		UpgradeMinEnabledLevel: 1
 	AttackFrontal:
+		Voice: Attack
 		Cursor: bomb
 		OutsideRangeCursor: bomb
 	TakeCover:
 	WithInfantryBody:
 		IdleSequences: idle1,idle2
+

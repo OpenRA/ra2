@@ -35,7 +35,7 @@ nacnst:
 		ProductionType: Support
 	WithIdleOverlay@TOP:
 		Sequence: idle-top
-	WithIdleOverlay@normal: # Hack: Don't glitch when placing buildings
+	WithIdleOverlay@normal:
 		Sequence: idle-normal
 	WithBuildingPlacedAnimation:
 
@@ -161,9 +161,8 @@ narefn:
 		Value: 300
 	FreeActor:
 		Actor: harv
-	 	InitialActivity: FindResources
-	 	SpawnOffset: 4, 1 #Should be 3, 1 but causes game to crash cause harvester wants to move.
-	 	Facing: 160
+		SpawnOffset: 4, 1
+		Facing: 160
 	WithDockingOverlay:
 	WithIdleOverlay@BIB:
 		Sequence: idle-bib
@@ -249,11 +248,6 @@ naweap:
 		Sequence: idle-lights
 	WithIdleOverlay@ramp:
 		Sequence: idle-ramp
-	# todo
-	#WithProductionDoorOverlay@top:
-	#	Sequence: build-top
-	#WithProductionDoorOverlay@door:
-	#	Sequence: build-door
 	Power:
 		Amount: -25
 	InfiltrateForSupportPower:
@@ -299,7 +293,7 @@ nayard:
 		Produces: Ship
 	PrimaryBuilding:
 	RallyPoint:
-	RepairsUnits: # TODO: First play the animation first frames loop and then increase HP, play last when done
+	RepairsUnits:
 		FinishRepairingNotification: UnitRepaired
 	ProductionBar:
 	Power:
@@ -341,11 +335,11 @@ nadept:
 		Range: 5c0
 	Reservable:
 	RallyPoint:
-	RepairsUnits: # TODO: First play the animation and then increase HP
+	RepairsUnits:
 		Interval: 148
 		HpPerStep: 20
 		FinishRepairingNotification: UnitRepaired
-	WithIdleOverlay@normal: # Hack: don't glitch while repairing
+	WithIdleOverlay@normal:
 		Sequence: idle-normal
 	WithIdleOverlay@bib:
 		Sequence: bib
@@ -444,6 +438,7 @@ naclon:
 		SpawnOffset: 410,140,0
 		ExitCell: 2,0
 	Production:
+		Produces: Infantry
 	RallyPoint:
 	ClonesProducedUnits:
 		CloneableTypes: infantry
@@ -479,32 +474,6 @@ napsis:
 	Power:
 		Amount: -100
 
-# TODO: ngmisl.shp is not a valid shp
-# namisl:
-# 	Inherits: ^Building
-# 	Buildable:
-# 		Queue: Support
-# 		BuildPaletteOrder: 50
-# 		Prerequisites: ~natech, ~structures.soviets
-# 	Valued:
-# 		Cost: 5000
-# 	Tooltip:
-# 		Name: Nuclear Missile Silo
-# 		Description: Houses a nuclear warhead.
-# 	Building:
-# 		Footprint: xxx xxx xxx
-# 		Dimensions: 3, 3
-# 	Selectable:
-# 		Bounds: 82, 150, -1, -55
-# 	Health:
-# 		HP: 1000
-# 	Armor:
-# 		Type: Concrete
-# 	RevealsShroud:
-# 		Range: 4c0
-# 	Power:
-# 		Amount: -200
-
 nairon:
 	Inherits: ^Building
 	Buildable:
@@ -530,7 +499,6 @@ nairon:
 		Range: 4c0
 	Power:
 		Amount: -200
-# TODO: Iron Curtain ability
 
 nawall:
 	Inherits: ^Wall
@@ -578,6 +546,7 @@ naflak:
 		InitialFacing: 224
 		Offset: 450,0,0
 	AttackTurreted:
+		Voice: Attack
 	Armament:
 		Weapon: FlakWeapon
 	BodyOrientation:
@@ -628,6 +597,7 @@ tesla:
 		UpgradeMinEnabledLevel: 3
 		UpgradeMaxAcceptedLevel: 3
 	AttackCharge:
+		Voice: Attack
 		Armaments: primary, charged
 		MaxCharges: 3
 		ReloadTime: 120
@@ -641,4 +611,5 @@ tesla:
 		Amount: -75
 	WithIdleOverlay@powered:
 		Sequence: idle-powered
-		PauseOnLowPower: true # Actually disabled
+		PauseOnLowPower: true
+

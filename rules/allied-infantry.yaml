@@ -25,11 +25,7 @@ engineer:
 	RevealsShroud:
 		Range: 4c0
 	Voiced:
-		# TODO: what do we do with soviet engineers?
 		VoiceSet: AlliedEngineerVoice
-# BombSight=4 ; detecting ivan's little friends
-# Todo: engineers can defuse ivan's bombs, but don't get consumed
-# IRC: http://logs.ihptru.net/?year=2015&month=02&day=16#22:02:01
 
 dog:
 	Inherits: ^Infantry
@@ -54,6 +50,7 @@ dog:
 	Armament:
 		Weapon: DogJaw
 	AttackLeap:
+		Voice: Attack
 	WithInfantryBody:
 	RenderSprites:
 		Image: adog
@@ -70,9 +67,7 @@ dog:
 		VoiceSet: DogVoice
 	ProducibleWithLevel:
 		Prerequisites: barracks.infiltrated
-# ImmuneToRadiation=no
-# ImmuneToPsionics=yes
-# IFVMode=0
+	-TakeCover:
 
 e1:
 	Inherits: ^Infantry
@@ -96,6 +91,7 @@ e1:
 	RevealsShroud:
 		Range: 5c0
 	AttackFrontal:
+		Voice: Attack
 	Armament@primary:
 		Weapon: M60
 		UpgradeTypes: deployed
@@ -147,6 +143,7 @@ snipe:
 	Armament@PRIMARY:
 		Weapon: awp
 	AttackFrontal:
+		Voice: Attack
 	Voiced:
 		VoiceSet: SniperVoice
 	ProducibleWithLevel:
@@ -225,6 +222,7 @@ tany:
 		UpgradeTypes: eliteweapon
 		UpgradeMinEnabledLevel: 1
 	AttackFrontal:
+		Voice: Attack
 	WithInfantryBody:
 	AnnounceOnBuild:
 	Voiced:
@@ -234,6 +232,8 @@ tany:
 
 jumpjet:
 	Inherits: ^Infantry
+	HiddenUnderFog:
+		Type: CenterPosition
 	Buildable:
 		Queue: Infantry
 		BuildAtProductionType: Infantry
@@ -251,6 +251,7 @@ jumpjet:
 	-Mobile:
 	RevealsShroud:
 		Range: 8c0
+		Type: CenterPosition
 	Armor:
 		Type: None
 	Armament@primary:
@@ -263,6 +264,7 @@ jumpjet:
 		UpgradeTypes: eliteweapon
 		UpgradeMinEnabledLevel: 1
 	AttackFrontal:
+		Voice: Attack
 	Helicopter:
 		CruiseAltitude: 3072
 		LandWhenIdle: false
@@ -273,7 +275,7 @@ jumpjet:
 	WithInfantryBody:
 		StandSequence: fly
 		MoveSequence: fly
-		AttackSequence: shoot-air # doesn't work?
+		AttackSequence: shoot-air
 		IdleSequences: idle-air
 	Hovers:
 		OffsetModifier: -45

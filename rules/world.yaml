@@ -1,4 +1,5 @@
 ^BaseWorld:
+	AlwaysVisible:
 	Inherits: ^Palettes
 	ActorMap:
 	ScreenMap:
@@ -8,61 +9,60 @@
 		FogVariants: shroud
 		Index: 255, 16, 32, 48, 64, 80, 96, 112, 128, 144, 160, 176, 192, 208, 224, 240, 20, 40, 56, 65, 97, 130, 148, 194, 24, 33, 66, 132, 28, 41, 67, 134, 1, 2, 4, 8, 3, 6, 12, 9, 7, 14, 13, 11, 5, 10, 15, 255
 		UseExtendedIndex: true
-	Country@random:
+	Faction@random:
 		Name: Random
-		Race: Random
-		RandomRaceMembers: random-allies, random-soviets
+		InternalName: Random
+		RandomFactionMembers: random-allies, random-soviets
 		Side: Randoms
-	Country@allies:
+	Faction@allies:
 		Name: Allies
-		Race: random-allies
-		RandomRaceMembers: america, germany, england, france, korea
+		InternalName: random-allies
+		RandomFactionMembers: america, germany, england, france, korea
 		Side: Randoms
-	Country@soviets:
+	Faction@soviets:
 		Name: Soviets
-		Race: random-soviets
-		RandomRaceMembers: cuba, libya, iraq, russia
+		InternalName: random-soviets
+		RandomFactionMembers: cuba, libya, iraq, russia
 		Side: Randoms
-	Country@1:
+	Faction@1:
 		Name: America
-		Race: america
+		InternalName: america
 		Side: Allies
-	Country@2:
+	Faction@2:
 		Name: Germany
-		Race: germany
+		InternalName: germany
 		Side: Allies
-	Country@3:
+	Faction@3:
 		Name: England
-		Race: england
+		InternalName: england
 		Side: Allies
-	Country@4:
+	Faction@4:
 		Name: France
-		Race: france
+		InternalName: france
 		Side: Allies
-	Country@5:
+	Faction@5:
 		Name: Korea
-		Race: korea
+		InternalName: korea
 		Side: Allies
-	Country@6:
+	Faction@6:
 		Name: Cuba
-		Race: cuba
+		InternalName: cuba
 		Side: Soviets
-	Country@7:
+	Faction@7:
 		Name: Libya
-		Race: libya
+		InternalName: libya
 		Side: Soviets
-	Country@8:
+	Faction@8:
 		Name: Iraq
-		Race: iraq
+		InternalName: iraq
 		Side: Soviets
-	Country@9:
+	Faction@9:
 		Name: Russia
-		Race: russia
+		InternalName: russia
 		Side: Soviets
 	ResourceType@Tiberium:
 		ResourceType: 1
 		Palette: ore
-		EditorSprite: waypoint # TODO: editor can't handle the real ones
 		Variants: tib01, tib02, tib03, tib04, tib05, tib06, tib07, tib08, tib09, tib10, tib11, tib12, tib13, tib14, tib15, tib16, tib17, tib18, tib19, tib20
 		MaxDensity: 12
 		ValuePerUnit: 50
@@ -82,13 +82,6 @@ World:
 	BuildingInfluence:
 	ProductionQueueFromSelection:
 		ProductionPaletteWidget: PRODUCTION_PALETTE
-	#CrateSpawner:
-	#	DeliveryAircraft: pdbplane
-	#	QuantizedFacings: 16
-	#	Minimum: 1
-	#	Maximum: 3
-	#	SpawnInterval: 120
-	#	WaterChance: .2
 	DomainIndex:
 	SmudgeLayer@SMALLSCORCH:
 		Type: SmallScorch
@@ -158,3 +151,4 @@ EditorWorld:
 	Inherits: ^BaseWorld
 	EditorActorLayer:
 	EditorResourceLayer:
+

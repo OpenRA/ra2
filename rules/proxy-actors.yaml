@@ -1,0 +1,7 @@
+barracks.infiltrated:
+	AlwaysVisible:
+	ProvidesPrerequisite:
+
+warfactory.infiltrated:
+	AlwaysVisible:
+	ProvidesPrerequisite:

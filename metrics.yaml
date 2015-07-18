@@ -25,12 +25,12 @@ Metrics:
 	SpawnColor: 255,255,255
 	SpawnContrastColor: 0,0,0
 	SpawnLabelOffset: 0,1
-	RaceSuffix-america: allies
-	RaceSuffix-korea: allies
-	RaceSuffix-france: allies
-	RaceSuffix-germany: allies
-	RaceSuffix-england: allies
-	RaceSuffix-libya: soviets
-	RaceSuffix-cuba: soviets
-	RaceSuffix-iraq: soviets
-	RaceSuffix-russia: soviets
+	FactionSuffix-america: allies
+	FactionSuffix-korea: allies
+	FactionSuffix-france: allies
+	FactionSuffix-germany: allies
+	FactionSuffix-england: allies
+	FactionSuffix-libya: soviets
+	FactionSuffix-cuba: soviets
+	FactionSuffix-iraq: soviets
+	FactionSuffix-russia: soviets

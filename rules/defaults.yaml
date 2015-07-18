@@ -14,12 +14,6 @@
 		Upgrades:
 			500: rank, firepower, damage, speed, reload
 			1000: rank, firepower, damage, speed, reload, selfheal, eliteweapon
-	GainsStatUpgrades:
-		CostThreshold: 5, 10 # Was only Infantry before?
-		FirepowerModifier: 110, 130
-		DamageModifier: 83, 66
-		SpeedModifier: 120, 150
-		ReloadModifier: 90, 75
 	SelfHealing@ELITE:
 		Step: 2
 		Ticks: 100
@@ -27,22 +21,34 @@
 		DamageCooldown: 125
 		UpgradeTypes: selfheal
 		UpgradeMinEnabledLevel: 1
+	FirepowerMultiplier@EXPERIENCE:
+		Modifier: 110, 130
+		UpgradeTypes: firepower
+	DamageMultiplier@EXPERIENCE:
+		Modifier: 83, 66
+		UpgradeTypes: damage
+	SpeedMultiplier@EXPERIENCE:
+		Modifier: 120, 150
+		UpgradeTypes: speed
+	ReloadDelayMultiplier@EXPERIENCE:
+		Modifier: 90, 75
+		UpgradeTypes: reload
+	InaccuracyMultiplier@EXPERIENCE:
+		Modifier: 90, 80, 70, 50
+		UpgradeTypes: inaccuracy
 
 ^IronCurtainable:
 	UpgradeOverlay@IRONCURTAIN:
 		UpgradeTypes: invulnerability
 		UpgradeMinEnabledLevel: 1
-	InvulnerabilityUpgrade@IRONCURTAIN:
+	DamageMultiplier@IRONCURTAIN:
 		UpgradeTypes: invulnerability
-		UpgradeMinEnabledLevel: 1
-		UpgradeMaxAcceptedLevel: 2
+		Modifier: 0, 0
 	TimedUpgradeBar:
 		Upgrade: invulnerability
-	# Exception of type `System.InvalidOperationException`: Palette `invuln` does not exist
 
 ^Building:
 	Inherits@1: ^ExistsInWorld
-	#Inherits@2: ^IronCurtainable
 	-DrawLineToTarget:
 	SelectionDecorations:
 		Palette: pips
@@ -68,6 +74,7 @@
 	RepairableBuilding:
 		IndicatorPalette: mousepal
 	EngineerRepairable:
+		Voice: Attack
 	EmitInfantryOnSell@allies:
 		ActorTypes: e1, e1, e1
 		Races: america, germany, england, france, korea
@@ -138,7 +145,6 @@
 	Tooltip:
 		Description: Tech Building
 
-# Use this ONLY if the actor has a voxel turret
 ^VoxelLighting:
 	Inherits: ^SupportBuilding
 	RenderVoxels:
@@ -150,6 +156,7 @@
 
 ^Wall:
 	Inherits: ^ExistsInWorld
+	FrozenUnderFog:
 	-CombatDebugOverlay:
 	-DrawLineToTarget:
 	-UpgradeManager:
@@ -181,7 +188,6 @@
 ^Infantry:
 	Inherits@1: ^ExistsInWorld
 	Inherits@2: ^GainsExperience
-	#Inherits@3: ^IronCurtainable
 	Health:
 		Radius: 128
 	Armor:
@@ -189,6 +195,7 @@
 	RevealsShroud:
 		Range: 4c0
 	Mobile:
+		Voice: Attack
 		Crushes: crate
 		SharesCell: true
 		TerrainSpeeds:
@@ -218,6 +225,7 @@
 			ElectroDeath: 6
 	AutoTarget:
 	AttackMove:
+		Voice: Attack
 	TakeCover:
 		DamageModifiers:
 			Prone50Percent: 50
@@ -225,6 +233,7 @@
 			Prone100Percent: 100
 		DamageTriggers: TriggerProne
 	Passenger:
+		Voice: Attack
 		CargoType: Infantry
 	HiddenUnderFog:
 	ActorLostNotification:
@@ -234,15 +243,15 @@
 	Crushable:
 		CrushSound: igensqua.wav
 	Guard:
+		Voice: Attack
 	Guardable:
 	DeathSounds@NORMAL:
 		DeathTypes: ExplosionDeath, BulletDeath, DeathType3
-	# TODO: DeathSounds@RadioActiveDeath:
 	DeathSounds@BURNED:
-		DeathSound: Burned
+		Voice: Burned
 		DeathTypes: FlameDeath
 	DeathSounds@ZAPPED:
-		DeathSound: Zapped
+		Voice: Zapped
 		DeathTypes: ElectroDeath
 	MustBeDestroyed:
 		RequiredForShortGame: true
@@ -250,7 +259,6 @@
 		Types: infantry
 	Voiced:
 		VoiceSet: Infantry
-# TODO: Soylet (for grinding in cloning vats and YR)
 
 ^CivilianInfantry:
 	Inherits: ^Infantry
@@ -263,10 +271,12 @@
 	Health:
 		HP: 50
 	Mobile:
+		Voice: Attack
 		Speed: 71
 	RevealsShroud:
 		Range: 2c0
 	AttackFrontal:
+		Voice: Attack
 	ProximityCaptor:
 		Types: CivilianInfantry
 	ScaredyCat:
@@ -279,8 +289,8 @@
 ^Vehicle:
 	Inherits@1: ^ExistsInWorld
 	Inherits@2: ^GainsExperience
-	#Inherits@3: ^IronCurtainable
 	Mobile:
+		Voice: Attack
 		Crushes: crate
 		TerrainSpeeds:
 			Clear: 100
@@ -289,7 +299,7 @@
 			Road: 100
 			DirtRoad: 100
 			Beach: 100
-			Tiberium: 70 #Used Track value from the inis
+			Tiberium: 70
 			BlueTiberium: 70
 		ROT: 5
 	SelectionDecorations:
@@ -299,17 +309,21 @@
 	TargetableUnit:
 		TargetTypes: Ground, Repair, DetonateAttack
 	Repairable:
+		Voice: Attack
 		RepairBuildings: gadept,nadept
 	Passenger:
+		Voice: Attack
 		CargoType: Vehicle
 		Weight: 3
 	AttackMove:
+		Voice: Attack
 	HiddenUnderFog:
 	ActorLostNotification:
 	ProximityCaptor:
 		Types: Vehicle
 	GivesBounty:
 	Guard:
+		Voice: Attack
 	Guardable:
 	BodyOrientation:
 		QuantizedFacings: 32
@@ -327,12 +341,10 @@
 		RequiredForShortGame: true
 	Voiced:
 		VoiceSet: Vehicle
-# TODO: Soylet (for grinding)
 
 ^Aircraft:
 	Inherits@1: ^ExistsInWorld
 	Inherits@2: ^GainsExperience
-	#Inherits@3: ^IronCurtainable
 		UseLocation: true
 	TargetableAircraft:
 		TargetTypes: Air
@@ -345,11 +357,14 @@
 		RearmBuildings:
 		LandWhenIdle: false
 	HiddenUnderFog:
+		Type: CenterPosition
 	AttackMove:
+		Voice: Attack
 	ActorLostNotification:
 	BodyOrientation:
 		CameraPitch: 90
 	Guard:
+		Voice: Attack
 	Guardable:
 	MustBeDestroyed:
 	RenderVoxels:
@@ -364,8 +379,8 @@
 ^Ship:
 	Inherits@1: ^ExistsInWorld
 	Inherits@2: ^GainsExperience
-	#Inherits@3: ^IronCurtainable
 	Mobile:
+		Voice: Attack
 		Crushes: crate
 		TerrainSpeeds:
 			Water: 100
@@ -377,8 +392,10 @@
 	TargetableUnit:
 		TargetTypes: Ground, Water, Repair
 	Repairable:
+		Voice: Attack
 		RepairBuildings: gayard, nayard
 	AttackMove:
+		Voice: Attack
 	HiddenUnderFog:
 	ActorLostNotification:
 		Notification: NavalUnitLost
@@ -386,6 +403,7 @@
 		Types: Ship
 	GivesBounty:
 	Guard:
+		Voice: Attack
 	Guardable:
 	BodyOrientation:
 		QuantizedFacings: 32
@@ -478,6 +496,8 @@
 ^Tree:
 	RenderBuilding:
 		Palette: terrain
+	FrozenUnderFog:
+		StartsRevealed: true
 	Building:
 		Footprint: x
 		Dimensions: 1, 1
@@ -489,6 +509,8 @@
 ^Rock:
 	RenderBuilding:
 		Palette: terrain
+	FrozenUnderFog:
+		StartsRevealed: true
 	Building:
 		Footprint: x
 		Dimensions: 1, 1

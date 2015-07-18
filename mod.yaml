@@ -49,6 +49,7 @@ Packages:
 	audio.bag:CRC32
 
 Rules:
+	./mods/ra2/rules/proxy-actors.yaml
 	./mods/ra2/rules/misc.yaml
 	./mods/ra2/rules/ai.yaml
 	./mods/ra2/rules/player.yaml
@@ -118,7 +119,6 @@ ChromeLayout:
 	./mods/ra/chrome/ingame-infoscripterror.yaml
 	./mods/ra/chrome/ingame-infobriefing.yaml
 	./mods/ra/chrome/ingame-debug.yaml
-	./mods/ra/chrome/ingame-leavemap.yaml
 	./mods/ra/chrome/ingame-perf.yaml
 	./mods/ra/chrome/mainmenu.yaml
 	./mods/ra/chrome/settings.yaml

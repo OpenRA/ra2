@@ -22,9 +22,11 @@ zep:
 		Type: Light
 	RevealsShroud:
 		Range: 8c0
+		Type: CenterPosition
 	Armament:
 		Weapon: BlimpBomb
 	AttackFrontal:
+		Voice: Attack
 	AutoTarget:
 	RenderSprites:
 	RenderVoxels:
@@ -35,7 +37,7 @@ zep:
 		Weapon: UnitExplode
 		Chance: 75
 	AnnounceOnBuild:
-	AnnounceOnKill: # Does not work?
+	AnnounceOnKill:
 	Voiced:
 		VoiceSet: KirovVoice
 	LeavesHusk:
@@ -56,6 +58,7 @@ zephusk:
 		Speed: 50
 	RevealsShroud:
 		Range: 8c0
+		Type: CenterPosition
 	FallsToEarth:
 		Velocity: 200
 

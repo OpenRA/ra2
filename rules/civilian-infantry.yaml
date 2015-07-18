@@ -18,4 +18,5 @@ cow:
 		TargetTypes: Ground
 	Voiced:
 		VoiceSet: CowVoice
+	-TakeCover:
 

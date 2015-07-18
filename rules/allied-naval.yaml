@@ -25,7 +25,7 @@ lcrf:
 			Road: 100
 			DirtRoad: 100
 			Beach: 60
-			Tiberium: 50 #Used Track value from the inis
+			Tiberium: 50
 			BlueTiberium: 50
 			Water: 100
 	RevealsShroud:
@@ -68,18 +68,19 @@ dest:
 		Bounds: 80, 80, 0, -6
 	Armament@primary:
 		Weapon: 155mm
-		LocalOffset: 768,0,0 # Not true, copy-pasted from SUB.
+		LocalOffset: 768,0,0
 		FireDelay: 2
 		UpgradeTypes: eliteweapon
 		UpgradeMaxEnabledLevel: 0
 		UpgradeMaxAcceptedLevel: 1
 	Armament@elite:
 		Weapon: 155mmE
-		LocalOffset: 768,0,0 # Not true, copy-pasted from SUB.
+		LocalOffset: 768,0,0
 		FireDelay: 2
 		UpgradeTypes: eliteweapon
 		UpgradeMinEnabledLevel: 1
 	AttackFrontal:
+		Voice: Attack
 	Chronoshiftable:
 	RepairableNear:
 	DetectCloaked:
@@ -119,6 +120,7 @@ aegis:
 	Armament:
 		Weapon: Medusa
 	AttackFrontal:
+		Voice: Attack
 	AutoTarget:
 	Explodes:
 		Weapon: UnitExplode

@@ -1,17 +1,18 @@
 mpspawn:
 	Immobile:
 		OccupiesSpace: false
-	RenderEditorOnly:
 	BodyOrientation:
+	AlwaysVisible:
 
 waypoint:
 	Immobile:
 		OccupiesSpace: false
-	RenderEditorOnly:
 	BodyOrientation:
+	AlwaysVisible:
 
 ^amcv.colorpicker:
 	Inherits: amcv
+	AlwaysVisible:
 	Mobile:
 		InitialFacing: 160
 	RenderSprites:

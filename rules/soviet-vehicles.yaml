@@ -26,6 +26,7 @@ smcv:
 		RequiredForShortGame: true
 	BaseBuilding:
 	Transforms:
+		Voice: Attack
 		IntoActor: nacnst
 		Offset: -1,-1
 		Facing: 96
@@ -43,7 +44,6 @@ harv:
 		Queue: Vehicle
 		BuildPaletteOrder: 10
 		Prerequisites: ~naweap, refinery
-		InitialActivity: FindResources
 	Valued:
 		Cost: 1400
 	Tooltip:
@@ -73,21 +73,27 @@ harv:
 		UpgradeTypes: eliteweapon
 		UpgradeMinEnabledLevel: 1
 	AttackTurreted:
+		Voice: Attack
 	AutoTarget:
 	Turreted:
 		ROT: 10
 		Offset: -30,0,85
 	Mobile:
-		Speed: 85 # TODO
+		Speed: 85
 		ROT: 8
 		WaitAverage: 0
 		Crushes: crate, infantry
 	RevealsShroud:
 		Range: 4c0
-	WithHarvestAnimation:
+	WithHarvestOverlay:
 		Offset: 121,0,0
 		Palette: effect
 	GainsExperience:
+		Upgrades:
+			200: firepower, damage, speed, reload, inaccuracy, rank
+			400: firepower, damage, speed, reload, inaccuracy, rank
+			800: firepower, damage, speed, reload, inaccuracy, rank
+			1600: firepower, damage, speed, reload, inaccuracy, rank, eliteweapon, selfheal
 	RenderSprites:
 	RenderVoxels:
 	WithVoxelTurret:
@@ -125,6 +131,7 @@ htk:
 		PassengerFacing: 0
 		UnloadTerrainTypes: Clear, Rough, Rail, Road, DirtRoad, Beach, Tiberium, BlueTiberium
 	AttackTurreted:
+		Voice: Attack
 	AutoTarget:
 	Armament@primary:
 		Weapon: FlakTrackGun
@@ -177,6 +184,7 @@ htnk:
 		UpgradeTypes: eliteweapon
 		UpgradeMinEnabledLevel: 1
 	AttackTurreted:
+		Voice: Attack
 	AutoTarget:
 	RenderSprites:
 	Selectable:
@@ -229,6 +237,7 @@ apoc:
 		Weapon: MammothTusk
 		LocalOffset: 640,0,384
 	AttackTurreted:
+		Voice: Attack
 	AutoTarget:
 	RenderSprites:
 	Selectable:
@@ -260,7 +269,7 @@ dtruck:
 	Armor:
 		Type: Light
 	Mobile:
-		Speed: 85 # TODO
+		Speed: 85
 		ROT: 8
 		WaitAverage: 0
 		Crushes: fence, crate, infantry
