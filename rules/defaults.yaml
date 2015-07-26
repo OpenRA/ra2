@@ -36,6 +36,16 @@
 	InaccuracyMultiplier@EXPERIENCE:
 		Modifier: 90, 80, 70, 50
 		UpgradeTypes: inaccuracy
+	WithRankDecoration:
+		Image: rank
+		Sequence: rank
+		Palette: pips
+		ReferencePoint: Bottom, Right
+		Offset: 2, 2
+		UpgradeTypes: rank
+		ZOffset: 256
+		UpgradeMinEnabledLevel: 1
+		UpgradeMaxAcceptedLevel: 2
 
 ^IronCurtainable:
 	UpgradeOverlay@IRONCURTAIN:
