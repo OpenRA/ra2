@@ -78,7 +78,7 @@ e2:
 # TODO: This is just the death sequence; normally flameguy would run a bit around before dying
 	die6: electro
 		Length: *
-		Tick: 120
+		Tick: 80
 	die-crushed: death_c
 		Length: 4
 	shoot:
@@ -133,7 +133,7 @@ flakt:
 # TODO: This is just the death sequence; normally flameguy would run a bit around before dying
 	die6: electro
 		Length: *
-		Tick: 120
+		Tick: 80
 	die-crushed: death_c
 		Length: 4
 	shoot:
@@ -186,7 +186,7 @@ shk:
 # TODO: This is just the death sequence; normally flameguy would run a bit around before dying
 	die6: electro
 		Length: *
-		Tick: 120
+		Tick: 80
 	die-crushed: death_c
 		Length: 4
 	shoot:
@@ -240,7 +240,7 @@ terror:
 # TODO: This is just the death sequence; normally flameguy would run a bit around before dying
 	die6: electro
 		Length: *
-		Tick: 120
+		Tick: 80
 	die-crushed: death_c
 		Length: 4
 		Tick: 80
@@ -295,7 +295,7 @@ deso:
 # TODO: This is just the death sequence; normally flameguy would run a bit around before dying
 	die6: electro
 		Length: *
-		Tick: 120
+		Tick: 80
 	die-crushed: death_c
 		Length: 4
 		Tick: 80
@@ -349,7 +349,7 @@ ivan:
 # TODO: This is just the death sequence; normally flameguy would run a bit around before dying
 	die6: electro
 		Length: *
-		Tick: 120
+		Tick: 80
 	die-crushed: death_c
 		Length: 4
 		Tick: 80
