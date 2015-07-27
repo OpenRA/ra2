@@ -42,6 +42,8 @@ Rules:
 		-MPStartLocations:
 		LoadWidgetAtGameStart:
 			Widget: MAINMENU
+		LuaScript:
+			Scripts: map.lua
 
 Sequences:
 

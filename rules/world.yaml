@@ -1,6 +1,7 @@
 ^BaseWorld:
-	AlwaysVisible:
 	Inherits: ^Palettes
+	AlwaysVisible:
+	MusicPlaylist:
 	ActorMap:
 	ScreenMap:
 	TerrainGeometryOverlay:
