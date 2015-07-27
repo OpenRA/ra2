@@ -225,11 +225,15 @@
 	WithInfantryBody:
 		IdleSequences: idle1,idle2
 		StandSequences: stand
-	WithDeathAnimation:
+	WithDeathAnimation@normal:
 		DeathTypes:
 			ExplosionDeath: 1
 			BulletDeath: 2
 			DeathType3: 3
+	WithDeathAnimation@effect:
+		DeathSequencePalette: effect
+		DeathPaletteIsPlayerPalette: False
+		DeathTypes:
 			RadioActiveDeath: 4
 			FlameDeath: 5
 			ElectroDeath: 6
