@@ -26,3 +26,9 @@ motorize: Motorized
 	Extension: wav
 hm2: HM 2
 	Extension: wav
+credits: Credits
+	Filename: ra2-opt
+	Extension: wav
+score: Score
+	Filename: ra2-sco
+	Extension: wav

@@ -2,6 +2,8 @@
 	Inherits: ^Palettes
 	AlwaysVisible:
 	MusicPlaylist:
+		VictoryMusic: score
+		DefeatMusic: score
 	ActorMap:
 	ScreenMap:
 	TerrainGeometryOverlay:
