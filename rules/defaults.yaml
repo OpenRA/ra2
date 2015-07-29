@@ -234,7 +234,7 @@
 		DeathSequencePalette: effect
 		DeathPaletteIsPlayerPalette: False
 		DeathTypes:
-			RadioActiveDeath: 4
+			RadiationDeath: 4
 			FlameDeath: 5
 			ElectroDeath: 6
 	AutoTarget:

@@ -75,7 +75,7 @@ RadBeamWeapon:
 			Wood: 0
 			Steel: 0
 			Concrete: 0
-		DamageTypes: RadioActiveDeath
+		DamageTypes: RadiationDeath
 
 RadBeamWeaponE:
 	ValidTargets: Ground
@@ -100,7 +100,7 @@ RadBeamWeaponE:
 			Wood: 0
 			Steel: 0
 			Concrete: 0
-		DamageTypes: RadioActiveDeath
+		DamageTypes: RadiationDeath
 
 FlakGuyGun:
 	ReloadDelay: 25
