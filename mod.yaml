@@ -161,7 +161,8 @@ TileShape: Diamond
 SubCells:
 	Offsets: 0,0,0, -256,128,0, 0,-128,0, 256,128,0
 	DefaultIndex: 2
-
+MaximumTerrainHeight: 16
+	
 Music:
 	./mods/ra2/audio/music.yaml
 
