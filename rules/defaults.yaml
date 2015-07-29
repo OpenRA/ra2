@@ -267,6 +267,9 @@
 	DeathSounds@ZAPPED:
 		Voice: Zapped
 		DeathTypes: ElectroDeath
+	DeathSounds@RADIATION:
+		Voice: Melted
+		DeathTypes: RadiationDeath
 	MustBeDestroyed:
 		RequiredForShortGame: true
 	Cloneable:
