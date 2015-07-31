@@ -13,6 +13,7 @@ zep:
 		CruiseAltitude: 5600
 		ROT: 5
 		Speed: 50
+		Voice: Move
 	TargetableAircraft:
 		TargetTypes: Air
 		GroundedTargetTypes: Ground

@@ -36,6 +36,7 @@ sapc:
 		PipCount: 12
 		PassengerFacing: 96
 		UnloadTerrainTypes: Clear, Rough, Rail, Road, DirtRoad, Beach, Tiberium, BlueTiberium
+		Voice: Move
 	Explodes:
 		Weapon: UnitExplode
 		EmptyWeapon: UnitExplode

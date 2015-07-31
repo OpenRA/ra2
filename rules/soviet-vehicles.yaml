@@ -57,6 +57,8 @@ harv:
 		UnloadTicksPerBale: 1
 		SearchFromProcRadius: 24
 		SearchFromOrderRadius: 12
+		HarvestVoice: Move
+		DeliverVoice: Move
 	Health:
 		HP: 1000
 	Armor:
@@ -130,6 +132,7 @@ htk:
 		PipCount: 5
 		PassengerFacing: 0
 		UnloadTerrainTypes: Clear, Rough, Rail, Road, DirtRoad, Beach, Tiberium, BlueTiberium
+		Voice: Move
 	AttackTurreted:
 		Voice: Attack
 	AutoTarget:
@@ -279,6 +282,7 @@ dtruck:
 		Weapon: demobomb
 		EmptyWeapon: demobomb
 	DemoTruck:
+		Voice: Attack
 	Chronoshiftable:
 	RenderSprites:
 	RenderVoxels:

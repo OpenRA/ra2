@@ -155,6 +155,7 @@ terror:
 		Weapon: TerrorBomb
 		EmptyWeapon: TerrorBomb
 	DemoTruck:
+		Voice: Attack
 	AttackFrontal:
 		Voice: Attack
 	WithInfantryBody:

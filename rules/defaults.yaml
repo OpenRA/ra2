@@ -205,7 +205,7 @@
 	RevealsShroud:
 		Range: 4c0
 	Mobile:
-		Voice: Attack
+		Voice: Move
 		Crushes: crate
 		SharesCell: true
 		TerrainSpeeds:
@@ -243,7 +243,7 @@
 			Prone100Percent: 100
 		DamageTriggers: TriggerProne
 	Passenger:
-		Voice: Attack
+		Voice: Move
 		CargoType: Infantry
 	HiddenUnderFog:
 	ActorLostNotification:
@@ -281,7 +281,7 @@
 	Health:
 		HP: 50
 	Mobile:
-		Voice: Attack
+		Voice: Move
 		Speed: 71
 	RevealsShroud:
 		Range: 2c0
@@ -300,7 +300,7 @@
 	Inherits@1: ^ExistsInWorld
 	Inherits@2: ^GainsExperience
 	Mobile:
-		Voice: Attack
+		Voice: Move
 		Crushes: crate
 		TerrainSpeeds:
 			Clear: 100
@@ -319,10 +319,10 @@
 	TargetableUnit:
 		TargetTypes: Ground, Repair, DetonateAttack
 	Repairable:
-		Voice: Attack
+		Voice: Move
 		RepairBuildings: gadept,nadept
 	Passenger:
-		Voice: Attack
+		Voice: Move
 		CargoType: Vehicle
 		Weight: 3
 	AttackMove:
@@ -366,6 +366,7 @@
 		RepairBuildings:
 		RearmBuildings:
 		LandWhenIdle: false
+		Voice: Move
 	HiddenUnderFog:
 		Type: CenterPosition
 	AttackMove:
@@ -390,7 +391,7 @@
 	Inherits@1: ^ExistsInWorld
 	Inherits@2: ^GainsExperience
 	Mobile:
-		Voice: Attack
+		Voice: Move
 		Crushes: crate
 		TerrainSpeeds:
 			Water: 100

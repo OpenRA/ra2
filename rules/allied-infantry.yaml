@@ -272,6 +272,7 @@ jumpjet:
 		ROT: 10
 		Speed: 100
 		AltitudeVelocity: 83
+		Voice: Move
 	WithInfantryBody:
 		StandSequence: fly
 		MoveSequence: fly
