@@ -3,7 +3,7 @@ AlliedEngineerVoice:
 	Voices:
 		Select: ienasea, ienaseb, ienasec, ienased
 		Move: ienamoa, ienamob, ienamoc
-		Attack: ienaata, ienaatb, ienaatc
+		Action: ienaata, ienaatb, ienaatc
 		Feedback: ienafea, ienafeb, ienafec
 		Die: ienadia, ienadib, ienadic, ienadid
 		Zapped: igenzapa
@@ -15,7 +15,7 @@ SovietEngineerVoice:
 	Voices:
 		Select: ienssea, iensseb, ienssec
 		Move: iensmoa, iensmob, iensmoc
-		Attack: iensata, iensatb
+		Action: iensata, iensatb
 		Feedback: iensfea, iensfeb, iensfec
 		Die: iensdia, iensdib, iensdic
 		Zapped: igenzapa
@@ -99,7 +99,7 @@ SpyVoice:
 	Voices:
 		Select: ispysea, ispyseb, ispysec, ispysed
 		Move: ispyata, ispymob, ispymoc, ispymod, ispymoe
-		Attack: ispyatb, ispyatd
+		Action: ispyatb, ispyatd
 		Feedback: ispyfea, ispyfeb
 		Die: ispydia, ispydib, ispydic
 		Zapped: igenzapa
