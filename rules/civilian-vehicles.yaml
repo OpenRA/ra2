@@ -17,7 +17,7 @@ bus:
 		Types: Infantry
 		MaxWeight: 20
 		PipCount: 5
-		Voice: Move
+		UnloadVoice: Move
 	RenderSprites:
 	Selectable:
 		Bounds: 64, 52, 0, -6

@@ -132,7 +132,7 @@ htk:
 		PipCount: 5
 		PassengerFacing: 0
 		UnloadTerrainTypes: Clear, Rough, Rail, Road, DirtRoad, Beach, Tiberium, BlueTiberium
-		Voice: Move
+		UnloadVoice: Move
 	AttackTurreted:
 		Voice: Attack
 	AutoTarget:
