@@ -100,7 +100,6 @@
 	Sellable:
 		SellSounds: uselbuil.wav
 	AcceptsSupplies:
-	GivesBounty:
 	Guardable:
 		Range: 3
 	Demolishable:
@@ -124,7 +123,6 @@
 	-GivesExperience:
 	-CaptureNotification:
 	-Sellable:
-	-GivesBounty:
 	-UpdatesPlayerStatistics:
 	-CombatDebugOverlay:
 	-WithMakeAnimation:
@@ -142,7 +140,6 @@
 	-MustBeDestroyed:
 	-GivesExperience:
 	-Sellable:
-	-GivesBounty:
 	-UpdatesPlayerStatistics:
 	-CombatDebugOverlay:
 	-WithMakeAnimation:
@@ -253,7 +250,6 @@
 	ActorLostNotification:
 	ProximityCaptor:
 		Types: Infantry
-	GivesBounty:
 	Crushable:
 		CrushSound: igensqua.wav
 	Guard:
@@ -338,7 +334,6 @@
 	ActorLostNotification:
 	ProximityCaptor:
 		Types: Vehicle
-	GivesBounty:
 	Guard:
 		Voice: Attack
 	Guardable:
@@ -419,7 +414,6 @@
 		Notification: NavalUnitLost
 	ProximityCaptor:
 		Types: Ship
-	GivesBounty:
 	Guard:
 		Voice: Attack
 	Guardable:
