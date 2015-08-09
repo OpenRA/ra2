@@ -3,12 +3,16 @@ mpspawn:
 		OccupiesSpace: false
 	BodyOrientation:
 	AlwaysVisible:
+	RenderSpritesEditorOnly:
+	WithSpriteBody:
 
 waypoint:
 	Immobile:
 		OccupiesSpace: false
 	BodyOrientation:
 	AlwaysVisible:
+	RenderSpritesEditorOnly:
+	WithSpriteBody:
 
 ^amcv.colorpicker:
 	Inherits: amcv
