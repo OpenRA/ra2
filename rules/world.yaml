@@ -119,12 +119,12 @@ World:
 	SpawnMapActors:
 	CreateMPPlayers:
 	MPStartUnits@AMCV:
-		Races: allies, america, germany, england, france, korea
+		Factions: allies, america, germany, england, france, korea
 		BaseActor: amcv
 	MPStartUnits@lightallies:
 		Class: light
 		ClassName: Light
-		Races: allies, america, germany, england, france, korea
+		Factions: allies, america, germany, england, france, korea
 		BaseActor: amcv
 		SupportActors: dog,e1,e1
 		InnerSupportRadius: 3
@@ -132,13 +132,13 @@ World:
 	MPStartUnits@lightsoviets:
 		Class: light
 		CLassName: Light
-		Races: soviets, cuba, libya, iraq, russia
+		Factions: soviets, cuba, libya, iraq, russia
 		BaseActor: smcv
 		SupportActors: dog,e2,e2,e2
 		InnerSupportRadius: 3
 		OuterSupportRadius: 5
 	MPStartUnits@SMCV:
-		Races: soviets, cuba, libya, iraq, russia
+		Factions: soviets, cuba, libya, iraq, russia
 		BaseActor: smcv
 	MPStartLocations:
 	SpawnMPUnits:

@@ -41,8 +41,8 @@ zep:
 	AnnounceOnKill:
 	Voiced:
 		VoiceSet: KirovVoice
-	LeavesHusk:
-		HuskActor: zephusk
+	SpawnActorOnDeath:
+		Actor: zephusk
 
 zephusk:
 	Inherits: ^HelicopterHusk
