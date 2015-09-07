@@ -1,5 +1,5 @@
 Player:
-	HackyAI@TestAI:
+	HackyAI@testai:
 		Name: Test AI
 		BuildingCommonNames:
 			ConstructionYard: gacnst, nacnst

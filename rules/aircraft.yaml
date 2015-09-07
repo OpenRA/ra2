@@ -14,9 +14,11 @@ zep:
 		ROT: 5
 		Speed: 50
 		Voice: Move
-	TargetableAircraft:
+		AirborneUpgrades: airborne
+	Targetable@airborne:
 		TargetTypes: Air
-		GroundedTargetTypes: Ground
+		UpgradeTypes: airborne
+		UpgradeMinEnabledLevel: 1
 	Health:
 		HP: 2000
 	Armor:
@@ -43,6 +45,10 @@ zep:
 		VoiceSet: KirovVoice
 	SpawnActorOnDeath:
 		Actor: zephusk
+	Targetable@ground:
+		TargetTypes: Ground
+		UpgradeTypes: airborne
+		UpgradeMaxEnabledLevel: 0
 
 zephusk:
 	Inherits: ^HelicopterHusk
@@ -57,6 +63,7 @@ zephusk:
 	Helicopter:
 		ROT: 10
 		Speed: 50
+		AirborneUpgrades: airborne
 	RevealsShroud:
 		Range: 8c0
 		Type: CenterPosition

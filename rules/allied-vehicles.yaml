@@ -102,13 +102,13 @@ mtnk:
 		Range: 8c0
 	Turreted:
 		ROT: 5
-	Armament@PRIMARY:
+	Armament@primary:
 		Weapon: 105mm
 		LocalOffset: 640,0,384
 		UpgradeTypes: eliteweapon
 		UpgradeMaxEnabledLevel: 0
 		UpgradeMaxAcceptedLevel: 1
-	Armament@ELITE:
+	Armament@elite:
 		Weapon: 105mmE
 		LocalOffset: 640,0,384
 		UpgradeTypes: eliteweapon

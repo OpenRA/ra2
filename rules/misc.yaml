@@ -5,6 +5,7 @@ mpspawn:
 	AlwaysVisible:
 	RenderSpritesEditorOnly:
 	WithSpriteBody:
+	QuantizeFacingsFromSequence:
 
 waypoint:
 	Immobile:
@@ -13,6 +14,7 @@ waypoint:
 	AlwaysVisible:
 	RenderSpritesEditorOnly:
 	WithSpriteBody:
+	QuantizeFacingsFromSequence:
 
 ^amcv.colorpicker:
 	Inherits: amcv

@@ -26,6 +26,8 @@ engineer:
 		Range: 4c0
 	Voiced:
 		VoiceSet: AlliedEngineerVoice
+	QuantizeFacingsFromSequence:
+		Sequence: stand
 
 dog:
 	Inherits: ^Infantry
@@ -68,6 +70,8 @@ dog:
 	ProducibleWithLevel:
 		Prerequisites: barracks.infiltrated
 	-TakeCover:
+	QuantizeFacingsFromSequence:
+		Sequence: stand
 
 e1:
 	Inherits: ^Infantry
@@ -114,6 +118,8 @@ e1:
 		VoiceSet: GIVoice
 	ProducibleWithLevel:
 		Prerequisites: barracks.infiltrated
+	QuantizeFacingsFromSequence:
+		Sequence: stand
 
 snipe:
 	Inherits: ^Infantry
@@ -140,7 +146,7 @@ snipe:
 		Type: None
 	AutoTarget:
 		InitialStance: ReturnFire
-	Armament@PRIMARY:
+	Armament@primary:
 		Weapon: awp
 	AttackFrontal:
 		Voice: Attack
@@ -183,6 +189,8 @@ spy:
 		StandAnimations: stand
 	Voiced:
 		VoiceSet: SpyVoice
+	QuantizeFacingsFromSequence:
+		Sequence: stand
 
 tany:
 	Inherits: ^Infantry
@@ -229,6 +237,8 @@ tany:
 		VoiceSet: TanyaVoice
 	ProducibleWithLevel:
 		Prerequisites: barracks.infiltrated
+	QuantizeFacingsFromSequence:
+		Sequence: stand
 
 jumpjet:
 	Inherits: ^Infantry
@@ -273,6 +283,7 @@ jumpjet:
 		Speed: 100
 		AltitudeVelocity: 83
 		Voice: Move
+		AirborneUpgrades: airborne
 	WithInfantryBody:
 		StandSequence: fly
 		MoveSequence: fly
@@ -280,13 +291,20 @@ jumpjet:
 		IdleSequences: idle-air
 	Hovers:
 		OffsetModifier: -45
-	-TargetableUnit:
-	TargetableAircraft:
+	-Targetable:
+	Targetable@airborne:
 		TargetTypes: Air, Disguise
-		GroundedTargetTypes: Ground, Infantry, DetonateAttack, Disguise
+		UpgradeTypes: airborne
+		UpgradeMinEnabledLevel: 1
 	WithShadow:
 	Voiced:
 		VoiceSet: RocketeerVoice
 	ProducibleWithLevel:
 		Prerequisites: barracks.infiltrated
+	QuantizeFacingsFromSequence:
+		Sequence: stand
+	Targetable@ground:
+		TargetTypes: Ground, Infantry, DetonateAttack, Disguise
+		UpgradeTypes: airborne
+		UpgradeMaxEnabledLevel: 0
 

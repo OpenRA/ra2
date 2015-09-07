@@ -31,7 +31,7 @@ gacnst:
 		ProductionType: Building
 	ProductionBar@Support:
 		ProductionType: Support
-	WithIdleOverlay@FANS:
+	WithIdleOverlay@fans:
 		Sequence: idle-fans
 		PauseOnLowPower: true
 	WithBuildingPlacedOverlay:
@@ -70,7 +70,7 @@ gapowr:
 		Type: Wood
 	RevealsShroud:
 		Range: 4c0
-	WithIdleOverlay@GLOW:
+	WithIdleOverlay@glow:
 		Sequence: idle-glow
 	Power:
 		Amount: 200
@@ -117,13 +117,13 @@ gapile:
 		Produces: Infantry
 	PrimaryBuilding:
 	ProductionBar:
-	WithIdleOverlay@FLAG:
+	WithIdleOverlay@flag:
 		Sequence: idle-flag
 	Power:
 		Amount: -10
 	InfiltrateForSupportPower:
 		Proxy: barracks.infiltrated
-	TargetableBuilding:
+	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
 
 garefn:
@@ -169,9 +169,9 @@ garefn:
 		SpawnOffset: 4, 1
 		Facing: 160
 	WithDockingOverlay:
-	WithIdleOverlay@BIB:
+	WithIdleOverlay@bib:
 		Sequence: idle-bib
-	WithIdleOverlay@DRILL:
+	WithIdleOverlay@drill:
 		Sequence: idle-drill
 	Power:
 		Amount: -50
@@ -209,19 +209,19 @@ gaairc:
 	ProvidesRadar:
 	RevealsShroud:
 		Range: 10c0
-	WithIdleOverlay@TOP:
+	WithIdleOverlay@top:
 		Sequence: idle-top
 		PauseOnLowPower: true
-	WithIdleOverlay@BOTTOM:
+	WithIdleOverlay@bottom:
 		Sequence: idle-bottom
 		PauseOnLowPower: true
-	WithIdleOverlay@MID:
+	WithIdleOverlay@mid:
 		Sequence: idle-mid
 		PauseOnLowPower: true
-	WithIdleOverlay@DISH:
+	WithIdleOverlay@dish:
 		Sequence: idle-dish
 		PauseOnLowPower: true
-	TargetableBuilding:
+	Targetable:
 		TargetTypes: Ground, C4, SpyInfiltrate, DetonateAttack
 	Power:
 		Amount: -50
@@ -250,8 +250,11 @@ amradr:
 		Name: American Airforce Command Headquarters
 	Buildable:
 		Prerequisites: garefn, ~structures.america
-	RenderBuilding:
+	WithSpriteBody:
+	QuantizeFacingsFromSequence:
+	RenderSprites:
 		Image: gaairc
+	AutoSelectionSize:
 
 gaweap:
 	Inherits: ^Building
@@ -300,7 +303,7 @@ gaweap:
 		Amount: -25
 	InfiltrateForSupportPower:
 		Proxy: warfactory.infiltrated
-	TargetableBuilding:
+	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
 
 gayard:
@@ -314,7 +317,7 @@ gayard:
 		Queue: Building
 		BuildPaletteOrder: 50
 		Prerequisites: power, refinery, ~structures.allies
-	TargetableBuilding:
+	Targetable:
 		TargetTypes: Ground, Water, C4
 	ProvidesPrerequisite@default:
 	Building:
@@ -732,8 +735,7 @@ atesla:
 		Type: Steel
 	RevealsShroud:
 		Range: 8c0
-	RenderBuildingCharge:
-		ChargeAudio: bpripow.wav
+	WithChargeAnimation:
 	Armament:
 		Weapon: PrismShot
 		LocalOffset: 0,0,2500
@@ -745,7 +747,7 @@ atesla:
 	Power:
 		Amount: -75
 	AutoTarget:
-	-RenderBuilding:
+	-WithSpriteBody:
 	RequiresPower:
 	WithIdleOverlay@normal:
 		Sequence: idle-normal
@@ -753,6 +755,10 @@ atesla:
 	WithRangeCircle:
 		Range: 8c0
 		Type: prismcannon
+	QuantizeFacingsFromSequence:
+	RenderSprites:
+		ChargeAudio: bpripow.wav
+	AutoSelectionSize:
 
 power:
 	Tooltip:

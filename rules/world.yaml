@@ -86,30 +86,30 @@ World:
 	ProductionQueueFromSelection:
 		ProductionPaletteWidget: PRODUCTION_PALETTE
 	DomainIndex:
-	SmudgeLayer@SMALLSCORCH:
+	SmudgeLayer@smallscorch:
 		Type: SmallScorch
 		Sequence: smallscorches
 		SmokeType: smallfire
 		SmokePercentage: 50
-	SmudgeLayer@MEDIUMSCORCH:
+	SmudgeLayer@mediumscorch:
 		Type: MediumScorch
 		Sequence: mediumscorches
 		SmokeType: mediumfire
 		SmokePercentage: 75
-	SmudgeLayer@LARGESCORCH:
+	SmudgeLayer@largescorch:
 		Type: LargeScorch
 		Sequence: largescorches
 		SmokeType: largefire
 		SmokePercentage: 100
-	SmudgeLayer@SMALLCRATER:
+	SmudgeLayer@smallcrater:
 		Type: SmallCrater
 		SmokeType: smallsmoke
 		Sequence: smallcraters
-	SmudgeLayer@MEDIUMCRATER:
+	SmudgeLayer@mediumcrater:
 		Type: MediumCrater
 		SmokeType: smallsmoke
 		Sequence: mediumcraters
-	SmudgeLayer@LARGECRATER:
+	SmudgeLayer@largecrater:
 		Type: LargeCrater
 		SmokeType: largesmoke
 		Sequence: largecraters
@@ -118,7 +118,7 @@ World:
 	PathfinderDebugOverlay:
 	SpawnMapActors:
 	CreateMPPlayers:
-	MPStartUnits@AMCV:
+	MPStartUnits@amcv:
 		Factions: allies, america, germany, england, france, korea
 		BaseActor: amcv
 	MPStartUnits@lightallies:
@@ -137,7 +137,7 @@ World:
 		SupportActors: dog,e2,e2,e2
 		InnerSupportRadius: 3
 		OuterSupportRadius: 5
-	MPStartUnits@SMCV:
+	MPStartUnits@smcv:
 		Factions: soviets, cuba, libya, iraq, russia
 		BaseActor: smcv
 	MPStartLocations:

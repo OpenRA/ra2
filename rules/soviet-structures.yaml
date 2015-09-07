@@ -33,7 +33,7 @@ nacnst:
 		ProductionType: Building
 	ProductionBar@Support:
 		ProductionType: Support
-	WithIdleOverlay@TOP:
+	WithIdleOverlay@top:
 		Sequence: idle-top
 	WithIdleOverlay@normal:
 		Sequence: idle-normal
@@ -63,7 +63,7 @@ napowr:
 		Type: Wood
 	RevealsShroud:
 		Range: 4c0
-	WithIdleOverlay@LIGHTS:
+	WithIdleOverlay@lights:
 		Sequence: idle-lights
 	Power:
 		Amount: 150
@@ -118,7 +118,7 @@ nahand:
 	UpgradeManager:
 	InfiltrateForSupportPower:
 		Proxy: barracks.infiltrated
-	TargetableBuilding:
+	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
 
 narefn:
@@ -164,9 +164,9 @@ narefn:
 		SpawnOffset: 4, 1
 		Facing: 160
 	WithDockingOverlay:
-	WithIdleOverlay@BIB:
+	WithIdleOverlay@bib:
 		Sequence: idle-bib
-	WithIdleOverlay@DRILL:
+	WithIdleOverlay@drill:
 		Sequence: idle-drill
 	Power:
 		Amount: -50
@@ -199,10 +199,10 @@ naradr:
 	ProvidesRadar:
 	RevealsShroud:
 		Range: 10c0
-	WithIdleOverlay@DISH:
+	WithIdleOverlay@dish:
 		Sequence: idle-dish
 		PauseOnLowPower: true
-	TargetableBuilding:
+	Targetable:
 		TargetTypes: Ground, C4, SpyInfiltrate, DetonateAttack
 	InfiltrateForExploration:
 	Power:
@@ -252,7 +252,7 @@ naweap:
 		Amount: -25
 	InfiltrateForSupportPower:
 		Proxy: warfactory.infiltrated
-	TargetableBuilding:
+	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
 
 nayard:
@@ -266,7 +266,7 @@ nayard:
 		Queue: Building
 		BuildPaletteOrder: 50
 		Prerequisites: power, refinery, ~structures.soviets
-	TargetableBuilding:
+	Targetable:
 		TargetTypes: Ground, Water, C4
 	ProvidesPrerequisite@default:
 	Building:
@@ -304,7 +304,7 @@ nayard:
 		Sequence: idle-waves
 	WithRepairOverlay:
 		Sequence: repair
-	WithProductionOverlay@LIGHTS:
+	WithProductionOverlay@lights:
 		Sequence: production-lights
 	-EmitInfantryOnSell@allies:
 	-EmitInfantryOnSell@soviets:
@@ -372,7 +372,7 @@ nanrct:
 		Type: Concrete
 	RevealsShroud:
 		Range: 5c0
-	WithIdleOverlay@LIGHTS:
+	WithIdleOverlay@lights:
 		Sequence: idle-lights
 	Power:
 		Amount: 2000
@@ -582,8 +582,7 @@ tesla:
 		Range: 8c0
 	Selectable:
 		Bounds: 44, 88, -2, -33
-	RenderBuildingCharge:
-		ChargeAudio: tslachg2.aud
+	WithChargeAnimation:
 	Armament@primary:
 		Weapon: CoilBolt
 		LocalOffset: 0,0,2200
@@ -602,7 +601,7 @@ tesla:
 		MaxCharges: 3
 		ReloadTime: 120
 	AutoTarget:
-	-RenderBuilding:
+	-WithSpriteBody:
 	RequiresPower:
 	WithRangeCircle:
 		Range: 8c0
@@ -612,4 +611,8 @@ tesla:
 	WithIdleOverlay@powered:
 		Sequence: idle-powered
 		PauseOnLowPower: true
+	QuantizeFacingsFromSequence:
+	RenderSprites:
+		ChargeAudio: tslachg2.aud
+	AutoSelectionSize:
 

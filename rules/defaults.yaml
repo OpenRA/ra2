@@ -14,26 +14,26 @@
 		Upgrades:
 			500: rank, firepower, damage, speed, reload
 			1000: rank, firepower, damage, speed, reload, selfheal, eliteweapon
-	SelfHealing@ELITE:
+	SelfHealing@elite:
 		Step: 2
 		Ticks: 100
 		HealIfBelow: 1
 		DamageCooldown: 125
 		UpgradeTypes: selfheal
 		UpgradeMinEnabledLevel: 1
-	FirepowerMultiplier@EXPERIENCE:
+	FirepowerMultiplier@experience:
 		Modifier: 110, 130
 		UpgradeTypes: firepower
-	DamageMultiplier@EXPERIENCE:
+	DamageMultiplier@experience:
 		Modifier: 83, 66
 		UpgradeTypes: damage
-	SpeedMultiplier@EXPERIENCE:
+	SpeedMultiplier@experience:
 		Modifier: 120, 150
 		UpgradeTypes: speed
-	ReloadDelayMultiplier@EXPERIENCE:
+	ReloadDelayMultiplier@experience:
 		Modifier: 90, 75
 		UpgradeTypes: reload
-	InaccuracyMultiplier@EXPERIENCE:
+	InaccuracyMultiplier@experience:
 		Modifier: 90, 80, 70, 50
 		UpgradeTypes: inaccuracy
 	WithRankDecoration:
@@ -48,10 +48,10 @@
 		UpgradeMaxAcceptedLevel: 2
 
 ^IronCurtainable:
-	UpgradeOverlay@IRONCURTAIN:
+	UpgradeOverlay@ironcurtain:
 		UpgradeTypes: invulnerability
 		UpgradeMinEnabledLevel: 1
-	DamageMultiplier@IRONCURTAIN:
+	DamageMultiplier@ironcurtain:
 		UpgradeTypes: invulnerability
 		Modifier: 0, 0
 	TimedUpgradeBar:
@@ -64,7 +64,7 @@
 		Palette: pips
 	Selectable:
 		Priority: 3
-	TargetableBuilding:
+	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, SpyInfiltrate
 	Building:
 		Dimensions: 1,1
@@ -79,7 +79,7 @@
 	SoundOnDamageTransition:
 		DamagedSounds: gdamag1a.wav, gdamag1b.wav, gdamag1c.wav, gdamag1d.wav, gdamag1e.wav
 		DestroyedSounds: bgendiea.wav, bgendieb.wav, bgendiec.wav, bgendied.wav, bgendiee.wav, bgendief.wav
-	RenderBuilding:
+	WithSpriteBody:
 	WithBuildingExplosion:
 	RepairableBuilding:
 		IndicatorPalette: mousepal
@@ -104,6 +104,9 @@
 		Range: 3
 	Demolishable:
 	WithMakeAnimation:
+	QuantizeFacingsFromSequence:
+	RenderSprites:
+	AutoSelectionSize:
 
 ^SupportBuilding:
 	Inherits: ^Building
@@ -181,9 +184,9 @@
 		NodeTypes: wall
 	LineBuildNode:
 		Types: wall
-	TargetableBuilding:
+	Targetable:
 		TargetTypes: Ground, Wall, C4, DetonateAttack
-	RenderBuildingWall:
+	WithWallSpriteBody:
 		Type: wall
 	AutoTargetIgnore:
 	ProximityCaptor:
@@ -191,6 +194,9 @@
 	Sellable:
 		SellSounds: uselbuil.wav
 	Demolishable:
+	QuantizeFacingsFromSequence:
+	RenderSprites:
+	AutoSelectionSize:
 
 ^Infantry:
 	Inherits@1: ^ExistsInWorld
@@ -216,7 +222,7 @@
 	SelectionDecorations:
 		Palette: pips
 	Selectable:
-	TargetableUnit:
+	Targetable:
 		TargetTypes: Ground, Infantry, DetonateAttack, Disguise
 	RenderSprites:
 	WithInfantryBody:
@@ -256,15 +262,15 @@
 	Guard:
 		Voice: Attack
 	Guardable:
-	DeathSounds@NORMAL:
+	DeathSounds@normal:
 		DeathTypes: ExplosionDeath, BulletDeath, DeathType3
-	DeathSounds@BURNED:
+	DeathSounds@burned:
 		Voice: Burned
 		DeathTypes: FlameDeath
-	DeathSounds@ZAPPED:
+	DeathSounds@zapped:
 		Voice: Zapped
 		DeathTypes: ElectroDeath
-	DeathSounds@RADIATION:
+	DeathSounds@radiation:
 		Voice: Melted
 		DeathTypes: RadiationDeath
 	MustBeDestroyed:
@@ -273,6 +279,8 @@
 		Types: infantry
 	Voiced:
 		VoiceSet: Infantry
+	QuantizeFacingsFromSequence:
+		Sequence: stand
 
 ^CivilianInfantry:
 	Inherits: ^Infantry
@@ -320,7 +328,7 @@
 		Palette: pips
 	Selectable:
 		Bounds: 32,32
-	TargetableUnit:
+	Targetable:
 		TargetTypes: Ground, Repair, DetonateAttack
 	Repairable:
 		Voice: Move
@@ -359,9 +367,10 @@
 	Inherits@1: ^ExistsInWorld
 	Inherits@2: ^GainsExperience
 		UseLocation: true
-	TargetableAircraft:
+	Targetable@airborne:
 		TargetTypes: Air
-		GroundedTargetTypes: Ground, Repair
+		UpgradeTypes: airborne
+		UpgradeMinEnabledLevel: 1
 	SelectionDecorations:
 		Palette: pips
 	Selectable:
@@ -370,6 +379,7 @@
 		RearmBuildings:
 		LandWhenIdle: false
 		Voice: Move
+		AirborneUpgrades: airborne
 	HiddenUnderFog:
 		Type: CenterPosition
 	AttackMove:
@@ -389,6 +399,10 @@
 		LightDiffuseColor: 1.4,1.4,1.4
 	Voiced:
 		VoiceSet: Heli
+	Targetable@ground:
+		TargetTypes: Ground, Repair
+		UpgradeTypes: airborne
+		UpgradeMaxEnabledLevel: 0
 
 ^Ship:
 	Inherits@1: ^ExistsInWorld
@@ -403,7 +417,7 @@
 		Palette: pips
 	Selectable:
 		Bounds: 32,32
-	TargetableUnit:
+	Targetable:
 		TargetTypes: Ground, Water, Repair
 	Repairable:
 		Voice: Attack
@@ -452,7 +466,7 @@
 		Types: Husk
 	BodyOrientation:
 	Chronoshiftable:
-	TargetableUnit:
+	Targetable:
 		TargetTypes: Ground
 		RequiresForceFire: true
 	Tooltip:
@@ -472,7 +486,7 @@
 	-Husk:
 	-Burns:
 	FallsToEarth:
-	-TargetableUnit:
+	-Targetable:
 	-Capturable:
 	-TransformOnCapture:
 
@@ -483,15 +497,14 @@
 	FallsToEarth:
 		Spins: False
 		Moves: True
-	-TargetableUnit:
+	-Targetable:
 	-Capturable:
 	-TransformOnCapture:
 
 ^OreDrill:
 	Tooltip:
 		Name: Ore Drill
-	RenderBuilding:
-		Palette: player
+	WithSpriteBody:
 	Building:
 		Footprint: x
 		Dimensions: 1,1
@@ -505,10 +518,13 @@
 		ResourceType: Tiberium
 		Interval: 55
 	WithActiveAnimation:
+	QuantizeFacingsFromSequence:
+	RenderSprites:
+		Palette: player
+	AutoSelectionSize:
 
 ^Tree:
-	RenderBuilding:
-		Palette: terrain
+	WithSpriteBody:
 	FrozenUnderFog:
 		StartsRevealed: true
 	Building:
@@ -518,10 +534,13 @@
 	BodyOrientation:
 	Tooltip:
 		Name: Tree
+	QuantizeFacingsFromSequence:
+	RenderSprites:
+		Palette: terrain
+	AutoSelectionSize:
 
 ^Rock:
-	RenderBuilding:
-		Palette: terrain
+	WithSpriteBody:
 	FrozenUnderFog:
 		StartsRevealed: true
 	Building:
@@ -531,4 +550,8 @@
 	BodyOrientation:
 	Tooltip:
 		Name: Rock
+	QuantizeFacingsFromSequence:
+	RenderSprites:
+		Palette: terrain
+	AutoSelectionSize:
 

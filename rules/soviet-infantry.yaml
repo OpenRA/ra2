@@ -35,6 +35,8 @@ e2:
 		VoiceSet: ConscriptVoice
 	ProducibleWithLevel:
 		Prerequisites: barracks.infiltrated
+	QuantizeFacingsFromSequence:
+		Sequence: stand
 
 flakt:
 	Inherits: ^Infantry
@@ -83,6 +85,8 @@ flakt:
 		VoiceSet: FlakTrooperVoice
 	ProducibleWithLevel:
 		Prerequisites: barracks.infiltrated
+	QuantizeFacingsFromSequence:
+		Sequence: stand
 
 shk:
 	Inherits: ^Infantry
@@ -126,6 +130,8 @@ shk:
 		VoiceSet: TeslaTrooperVoice
 	ProducibleWithLevel:
 		Prerequisites: barracks.infiltrated
+	QuantizeFacingsFromSequence:
+		Sequence: stand
 
 terror:
 	Inherits: ^Infantry
@@ -162,6 +168,8 @@ terror:
 	Voiced:
 		VoiceSet: TerroristVoice
 	-TakeCover:
+	QuantizeFacingsFromSequence:
+		Sequence: stand
 
 deso:
 	Inherits: ^Infantry
@@ -203,6 +211,8 @@ deso:
 		VoiceSet: DesolatorVoice
 	ProducibleWithLevel:
 		Prerequisites: barracks.infiltrated
+	QuantizeFacingsFromSequence:
+		Sequence: stand
 
 ivan:
 	Inherits: ^Infantry
@@ -249,4 +259,6 @@ ivan:
 	TakeCover:
 	WithInfantryBody:
 		IdleSequences: idle1,idle2
+	QuantizeFacingsFromSequence:
+		Sequence: stand
 
