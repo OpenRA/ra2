@@ -600,6 +600,7 @@ tesla:
 		Armaments: primary, charged
 		MaxCharges: 3
 		ReloadTime: 120
+		ChargeAudio: tslachg2.aud
 	AutoTarget:
 	-WithSpriteBody:
 	RequiresPower:

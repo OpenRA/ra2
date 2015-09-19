@@ -4,10 +4,16 @@
 	CombatDebugOverlay:
 	DrawLineToTarget:
 	GivesExperience:
-	BodyOrientation:
 	ScriptTriggers:
 	UpgradeManager:
 	Huntable:
+
+^SpriteActor:
+	BodyOrientation:
+		UseClassicPerspectiveFudge: false
+	QuantizeFacingsFromSequence:
+	AutoSelectionSize:
+	RenderSprites:
 
 ^GainsExperience:
 	GainsExperience:
@@ -59,6 +65,7 @@
 
 ^Building:
 	Inherits@1: ^ExistsInWorld
+	Inherits@2: ^SpriteActor
 	-DrawLineToTarget:
 	SelectionDecorations:
 		Palette: pips
@@ -104,9 +111,6 @@
 		Range: 3
 	Demolishable:
 	WithMakeAnimation:
-	QuantizeFacingsFromSequence:
-	RenderSprites:
-	AutoSelectionSize:
 
 ^SupportBuilding:
 	Inherits: ^Building
@@ -165,7 +169,8 @@
 		LightDiffuseColor: 1.4,1.4,1.4
 
 ^Wall:
-	Inherits: ^ExistsInWorld
+	Inherits@1: ^ExistsInWorld
+	Inherits@2: ^SpriteActor
 	FrozenUnderFog:
 	-CombatDebugOverlay:
 	-DrawLineToTarget:
@@ -200,7 +205,8 @@
 
 ^Infantry:
 	Inherits@1: ^ExistsInWorld
-	Inherits@2: ^GainsExperience
+	Inherits@2: ^SpriteActor
+	Inherits@3: ^GainsExperience
 	Health:
 		Radius: 128
 	Armor:
@@ -224,7 +230,6 @@
 	Selectable:
 	Targetable:
 		TargetTypes: Ground, Infantry, DetonateAttack, Disguise
-	RenderSprites:
 	WithInfantryBody:
 		IdleSequences: idle1,idle2
 		StandSequences: stand
@@ -349,6 +354,7 @@
 	BodyOrientation:
 		QuantizedFacings: 32
 		CameraPitch: 90
+		UseClassicPerspectiveFudge: false
 	Explodes:
 		Weapon: UnitExplodeSmall
 		EmptyWeapon: UnitExplodeSmall
@@ -387,6 +393,7 @@
 	ActorLostNotification:
 	BodyOrientation:
 		CameraPitch: 90
+		UseClassicPerspectiveFudge: false
 	Guard:
 		Voice: Attack
 	Guardable:
@@ -435,6 +442,7 @@
 	BodyOrientation:
 		QuantizedFacings: 32
 		CameraPitch: 90
+		UseClassicPerspectiveFudge: false
 	Tooltip:
 		GenericName: Ship
 	Explodes:
@@ -502,6 +510,7 @@
 	-TransformOnCapture:
 
 ^OreDrill:
+	Inherits@1: ^SpriteActor
 	Tooltip:
 		Name: Ore Drill
 	WithSpriteBody:
@@ -524,6 +533,7 @@
 	AutoSelectionSize:
 
 ^Tree:
+	Inherits@1: ^SpriteActor
 	WithSpriteBody:
 	FrozenUnderFog:
 		StartsRevealed: true
@@ -540,6 +550,7 @@
 	AutoSelectionSize:
 
 ^Rock:
+	Inherits@1: ^SpriteActor
 	WithSpriteBody:
 	FrozenUnderFog:
 		StartsRevealed: true
@@ -553,5 +564,4 @@
 	QuantizeFacingsFromSequence:
 	RenderSprites:
 		Palette: terrain
-	AutoSelectionSize:
 
