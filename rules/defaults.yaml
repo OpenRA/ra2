@@ -199,9 +199,6 @@
 	Sellable:
 		SellSounds: uselbuil.wav
 	Demolishable:
-	QuantizeFacingsFromSequence:
-	RenderSprites:
-	AutoSelectionSize:
 
 ^Infantry:
 	Inherits@1: ^ExistsInWorld
