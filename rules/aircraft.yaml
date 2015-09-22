@@ -43,30 +43,30 @@ zep:
 	AnnounceOnKill:
 	Voiced:
 		VoiceSet: KirovVoice
-	SpawnActorOnDeath:
-		Actor: zephusk
+#	SpawnActorOnDeath:
+#		Actor: zephusk
 	Targetable@ground:
 		TargetTypes: Ground
 		UpgradeTypes: airborne
 		UpgradeMaxEnabledLevel: 0
 
-zephusk:
-	Inherits: ^HelicopterHusk
-	Tooltip:
-		Name: Kirov Airship
-	RenderSprites:
-		Image: zep
-	RenderVoxels:
-		Image: zep
-	WithVoxelBody:
-	WithShadow:
-	Helicopter:
-		ROT: 10
-		Speed: 50
-		AirborneUpgrades: airborne
-	RevealsShroud:
-		Range: 8c0
-		Type: CenterPosition
-	FallsToEarth:
-		Velocity: 200
+#zephusk:
+#	Inherits: ^HelicopterHusk
+#	Tooltip:
+#		Name: Kirov Airship
+#	RenderSprites:
+#		Image: zep
+#	RenderVoxels:
+#		Image: zep
+#	WithVoxelBody:
+#	WithShadow:
+#	Helicopter:
+#		ROT: 10
+#		Speed: 50
+#		AirborneUpgrades: airborne
+#	RevealsShroud:
+#		Range: 8c0
+#		Type: CenterPosition
+#	FallsToEarth:
+#		Velocity: 200
 
