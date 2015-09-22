@@ -23,4 +23,5 @@ cow:
 	AttackMove:
 		Voice: Action
 	-TakeCover:
+	-AutoTarget:
 
