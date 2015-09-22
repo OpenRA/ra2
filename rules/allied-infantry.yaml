@@ -292,6 +292,8 @@ jumpjet:
 		AltitudeVelocity: 83
 		Voice: Move
 		AirborneUpgrades: airborne
+		RepairBuildings:
+		RearmBuildings:
 	WithInfantryBody:
 		StandSequence: fly
 		MoveSequence: fly
