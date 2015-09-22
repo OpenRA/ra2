@@ -102,21 +102,21 @@ e1:
 		Voice: Attack
 	Armament@primary:
 		Weapon: M60
-		UpgradeTypes: deployed
+		UpgradeTypes: eliteweapon
 		UpgradeMaxEnabledLevel: 0
 		UpgradeMaxAcceptedLevel: 1
 	Armament@elite:
 		Weapon: M60E
 		UpgradeTypes: eliteweapon
 		UpgradeMinEnabledLevel: 1
-	Armament@deployed:
-		Weapon: para
-		UpgradeTypes: paraweapon
-		UpgradeMinEnabledLevel: 1
-	Armament@elite-deployed:
-		Weapon: paraE
-		UpgradeTypes: eliteparaweapon
-		UpgradeMinEnabledLevel: 1
+#	Armament@deployed:
+#		Weapon: para
+#		UpgradeTypes: deployed
+#		UpgradeMinEnabledLevel: 1
+#	Armament@elite-deployed:
+#		Weapon: paraE
+#		UpgradeTypes: eliteparaweapon
+#		UpgradeMinEnabledLevel: 1
 	WithInfantryBody:
 	Voiced:
 		VoiceSet: GIVoice
