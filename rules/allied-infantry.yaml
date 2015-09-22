@@ -26,6 +26,10 @@ engineer:
 		Range: 4c0
 	Voiced:
 		VoiceSet: AlliedEngineerVoice
+	Guard:
+		Voice: Action
+	AttackMove:
+		Voice: Action
 	QuantizeFacingsFromSequence:
 		Sequence: stand
 
@@ -189,6 +193,10 @@ spy:
 		StandAnimations: stand
 	Voiced:
 		VoiceSet: SpyVoice
+	Guard:
+		Voice: Action
+	AttackMove:
+		Voice: Action
 	QuantizeFacingsFromSequence:
 		Sequence: stand
 

@@ -18,5 +18,9 @@ cow:
 		TargetTypes: Ground
 	Voiced:
 		VoiceSet: CowVoice
+	Guard:
+		Voice: Action
+	AttackMove:
+		Voice: Action
 	-TakeCover:
 

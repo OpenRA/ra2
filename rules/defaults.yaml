@@ -283,7 +283,7 @@
 	Cloneable:
 		Types: infantry
 	Voiced:
-		VoiceSet: Infantry
+		VoiceSet: GIVoice
 	QuantizeFacingsFromSequence:
 		Sequence: stand
 
@@ -311,7 +311,7 @@
 		RequiredForShortGame: true
 	-TakeCover:
 	Voiced:
-		VoiceSet: Civilian
+		VoiceSet: CivilianAlliedMaleVoice
 
 ^Vehicle:
 	Inherits@1: ^ExistsInWorld
@@ -367,7 +367,7 @@
 	MustBeDestroyed:
 		RequiredForShortGame: true
 	Voiced:
-		VoiceSet: Vehicle
+		VoiceSet: AlliedVehicleVoice
 
 ^Aircraft:
 	Inherits@1: ^ExistsInWorld
@@ -405,7 +405,7 @@
 		LightAmbientColor: -0.5,-0.5,-0.5
 		LightDiffuseColor: 1.4,1.4,1.4
 	Voiced:
-		VoiceSet: Heli
+		VoiceSet: NighthawkVoice
 	Targetable@ground:
 		TargetTypes: Ground, Repair
 		UpgradeTypes: airborne
