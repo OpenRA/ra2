@@ -2294,7 +2294,7 @@ Actors:
 		Location: 89,30
 		Owner: Neutral
 	Actor662: mpspawn
-		Location: 89,30
+		Location: 89,35
 		Owner: Neutral
 	Actor663: mpspawn
 		Location: 63,23

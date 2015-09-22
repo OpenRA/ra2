@@ -27,7 +27,7 @@ Players:
 		Name: Neutral
 		OwnsWorld: True
 		NonCombatant: True
-		Faction: allies
+		Faction: Random
 	PlayerReference@Multi0:
 		Name: Multi0
 		Playable: True
@@ -51,7 +51,7 @@ Players:
 	PlayerReference@Creeps:
 		Name: Creeps
 		NonCombatant: True
-		Faction: allies
+		Faction: Random
 		Enemies: Multi0, Multi1, Multi2, Multi3
 
 Actors:
