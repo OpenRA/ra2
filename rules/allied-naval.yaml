@@ -42,6 +42,8 @@ lcrf:
 		EmptyWeapon: UnitExplode
 	WithVoxelBody:
 	RenderSprites:
+	RepairableNear:
+		Buildings: gayard, nayard
 	Voiced:
 		VoiceSet: AlliedNavalVoice
 
@@ -84,6 +86,7 @@ dest:
 		Voice: Attack
 	Chronoshiftable:
 	RepairableNear:
+		Buildings: gayard, nayard
 	DetectCloaked:
 		CloakTypes: Underwater
 		Range: 4
@@ -123,6 +126,8 @@ aegis:
 	AttackFrontal:
 		Voice: Attack
 	AutoTarget:
+	RepairableNear:
+		Buildings: gayard, nayard
 	Explodes:
 		Weapon: UnitExplode
 		EmptyWeapon: UnitExplode
