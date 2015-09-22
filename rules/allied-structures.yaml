@@ -757,26 +757,31 @@ atesla:
 		Type: prismcannon
 
 power:
+	AlwaysVisible:
 	Tooltip:
 		Name: Power Plant
 		Description: Power Plant
 
 refinery:
+	AlwaysVisible:
 	Tooltip:
 		Name: Refinery
 		Description: Refinery
 
 barracks:
+	AlwaysVisible:
 	Tooltip:
 		Name: Infantry Production
 		Description: Infantry Production
 
 radar:
+	AlwaysVisible:
 	Tooltip:
 		Name: Radar
 		Description: Radar
 
 repairpad:
+	AlwaysVisible:
 	Tooltip:
 		Name: Service Depot
 		Description: Service Depot
