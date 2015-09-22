@@ -744,10 +744,10 @@ atesla:
 		Armaments: primary
 		MaxCharges: 3
 		ReloadTime: 60
+		ChargeAudio: bpripow.wav
 	Power:
 		Amount: -75
 	AutoTarget:
-	-WithSpriteBody:
 	RequiresPower:
 	WithIdleOverlay@normal:
 		Sequence: idle-normal
@@ -755,10 +755,6 @@ atesla:
 	WithRangeCircle:
 		Range: 8c0
 		Type: prismcannon
-	QuantizeFacingsFromSequence:
-	RenderSprites:
-		ChargeAudio: bpripow.wav
-	AutoSelectionSize:
 
 power:
 	Tooltip:

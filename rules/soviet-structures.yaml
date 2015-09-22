@@ -602,7 +602,6 @@ tesla:
 		ReloadTime: 120
 		ChargeAudio: tslachg2.aud
 	AutoTarget:
-	-WithSpriteBody:
 	RequiresPower:
 	WithRangeCircle:
 		Range: 8c0
@@ -612,8 +611,4 @@ tesla:
 	WithIdleOverlay@powered:
 		Sequence: idle-powered
 		PauseOnLowPower: true
-	QuantizeFacingsFromSequence:
-	RenderSprites:
-		ChargeAudio: tslachg2.aud
-	AutoSelectionSize:
 
