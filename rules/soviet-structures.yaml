@@ -499,6 +499,18 @@ nairon:
 		Range: 4c0
 	Power:
 		Amount: -200
+	GrantUpgradePower@IRONCURTAIN:
+		Icon: gps
+		ChargeTime: 120
+		Description: Invulnerability
+		LongDesc: Makes a group of units invulnerable\nfor 20 seconds.
+		Duration: 500
+		SelectTargetSound:
+		InsufficientPowerSound:
+		BeginChargeSound:
+		EndChargeSound:
+		DisplayRadarPing: True
+		Upgrades: invulnerability
 
 nawall:
 	Inherits: ^Wall
