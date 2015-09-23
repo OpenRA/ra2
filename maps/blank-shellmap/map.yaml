@@ -8,11 +8,11 @@ Description: Placeholder
 
 Author: Matthias Mailänder
 
-Tileset: TEMPERAT
+Tileset: SNOW
 
-MapSize: 128,128
+MapSize: 130,146
 
-Bounds: 16,16,96,96
+Bounds: 1,1,128,144
 
 Visibility: Shellmap
 
@@ -27,9 +27,11 @@ Players:
 		Name: Neutral
 		OwnsWorld: True
 		NonCombatant: True
+		Faction: Random
 	PlayerReference@Creeps:
 		Name: Creeps
 		NonCombatant: True
+		Faction: Random
 
 Actors:
 
@@ -38,8 +40,6 @@ Smudges:
 Rules:
 	World:
 		-StartGameNotification:
-		-SpawnMPUnits:
-		-MPStartLocations:
 		LoadWidgetAtGameStart:
 			Widget: MAINMENU
 		MusicPlaylist:
