@@ -25,8 +25,8 @@ sapc:
 			Road: 100
 			DirtRoad: 100
 			Beach: 60
-			Tiberium: 50
-			BlueTiberium: 50
+			Ore: 50
+			Gems: 50
 			Water: 100
 	RevealsShroud:
 		Range: 6c0
@@ -35,7 +35,7 @@ sapc:
 		MaxWeight: 9
 		PipCount: 12
 		PassengerFacing: 96
-		UnloadTerrainTypes: Clear, Rough, Rail, Road, DirtRoad, Beach, Tiberium, BlueTiberium
+		UnloadTerrainTypes: Clear, Rough, Rail, Road, DirtRoad, Beach, Ore, Gems
 		UnloadVoice: Move
 	Explodes:
 		Weapon: UnitExplode

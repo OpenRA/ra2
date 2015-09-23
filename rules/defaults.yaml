@@ -220,8 +220,8 @@
 			Rail: 90
 			Road: 100
 			DirtRoad: 100
-			Tiberium: 90
-			BlueTiberium: 80
+			Ore: 90
+			Gems: 80
 	SelectionDecorations:
 		Palette: pips
 	Selectable:
@@ -323,8 +323,8 @@
 			Road: 100
 			DirtRoad: 100
 			Beach: 100
-			Tiberium: 70
-			BlueTiberium: 70
+			Ore: 70
+			Gems: 70
 		ROT: 5
 	SelectionDecorations:
 		Palette: pips
@@ -516,12 +516,12 @@
 		Dimensions: 1,1
 	AppearsOnRadar:
 	RadarColorFromTerrain:
-		Terrain: Tiberium
+		Terrain: Ore
 	BodyOrientation:
 	FrozenUnderFog:
 		StartsRevealed: true
 	SeedsResource:
-		ResourceType: Tiberium
+		ResourceType: Ore
 		Interval: 55
 	WithActiveAnimation:
 	QuantizeFacingsFromSequence:

@@ -52,7 +52,7 @@ cmin:
 		Bounds: 64, 52, 0, -6
 	Harvester:
 		Capacity: 20
-		Resources: Tiberium, BlueTiberium
+		Resources: Ore, Gems
 		UnloadTicksPerBale: 1
 		SearchFromProcRadius: 24
 		SearchFromOrderRadius: 12

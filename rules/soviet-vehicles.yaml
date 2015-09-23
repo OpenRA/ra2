@@ -53,7 +53,7 @@ harv:
 		Bounds: 64, 52, 0, -6
 	Harvester:
 		Capacity: 20
-		Resources: Tiberium, BlueTiberium
+		Resources: Ore, Gems
 		UnloadTicksPerBale: 1
 		SearchFromProcRadius: 24
 		SearchFromOrderRadius: 12
@@ -131,7 +131,7 @@ htk:
 		MaxWeight: 5
 		PipCount: 5
 		PassengerFacing: 0
-		UnloadTerrainTypes: Clear, Rough, Rail, Road, DirtRoad, Beach, Tiberium, BlueTiberium
+		UnloadTerrainTypes: Clear, Rough, Rail, Road, DirtRoad, Beach, Ore, Gems
 		UnloadVoice: Move
 	AttackTurreted:
 		Voice: Attack
