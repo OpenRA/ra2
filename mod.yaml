@@ -156,12 +156,12 @@ TileSets:
 	./mods/ra2/tilesets/snow.yaml
 	./mods/ra2/tilesets/urban.yaml
 
-TileSize: 60,30
-TileShape: Diamond
-SubCells:
-	Offsets: 0,0,0, -256,128,0, 0,-128,0, 256,128,0
-	DefaultIndex: 2
-MaximumTerrainHeight: 16
+MapGrid:
+	TileSize: 60,30
+	TileShape: Diamond
+	SubCellsOffsets: 0,0,0, -256,128,0, 0,-128,0, 256,128,0
+	SubCellDefaultIndex: 2
+	MaximumTerrainHeight: 16
 	
 Music:
 	./mods/ra2/audio/music.yaml
