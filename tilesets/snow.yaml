@@ -6,6 +6,7 @@ General:
 	HeightDebugColors: 128,0,0,0, 128,0,0,68, 128,0,0,136, 128,0,0,204, 128,0,0,255, 128,68,0,204, 128,136,0,136, 128,204,0,68, 128,255,17,0, 128,255,85,0, 128,255,153,0, 128,255,221,0, 128,221,255,0, 128,153,255,0, 128,85,255,0, 128,17,255,0
 	EditorTemplateOrder: LAT Snow, ZMM Ramps, ZMM Height Pieces, Ramps, Cliff Set, Shore Pieces, LAT Grass, Clear/Rough LAT, Cliff/Water pieces, DirtRoadsBendy, DirtRoadsJunctions, DirtRoadsStraight, Bridges, Paved Roads, Water, ZMM Cliff Set, DirtRoadSlopes, ZMM DirtRoadSlopes, Ramps Big, ZMM Slope Set Pieces, Obsolete Height Pieces, Waterfalls-A, Waterfalls-B, Waterfalls-C, Waterfalls-D, Paved Road Ends, Farmland, Ramp edge fixup, ZMM Ramp edge fixup, Paved Road Slopes, ZMM Height Pieces, Tunnels, Tunnel Side, ZMM DirtRoadsBendy, ZMM DirtRoadJunctions, ZMM DirtRoadsStraight, ZMM Shore Pieces, ZMM Waterfalls-A, ZMM Waterfalls-B, ZMM Waterfalls-C, ZMM Waterfalls-D, ZMM Cliff/Water pieces, ZMM Water, Destroyable Cliffs, LAT SnowyRock, Rock/Clear LAT, LAT Icy, Grey/Clear LAT, DirtTunnel Floor, LAT Pavement, Pavement Detail, Pavement/Clear LAT, Paved road bits, Water bridge, Wood Bridges, Plane downed
 	SheetSize: 4096
+	EnableDepth: true
 
 Terrain:
 	TerrainType@Clear:

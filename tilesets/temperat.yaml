@@ -6,6 +6,7 @@ General:
 	HeightDebugColors: 128,0,0,0, 128,0,0,68, 128,0,0,136, 128,0,0,204, 128,0,0,255, 128,68,0,204, 128,136,0,136, 128,204,0,68, 128,255,17,0, 128,255,85,0, 128,255,153,0, 128,255,221,0, 128,221,255,0, 128,153,255,0, 128,85,255,0, 128,17,255,0
 	EditorTemplateOrder: Lat Grass, ZMM Ramps, Obsolete Height Pieces, Ramps, Cliff Set, Shore Pieces, LAT Grass, thick, GrassThick Idividual, Cliff/Water pieces, DirtRoads Bendy, DirtRoads Junctions, DirtRoads Straight, Bridges, Paved Roads, Water, ZMM Cliff Set, DirtRoads Slopes, ZMM Dirt Road Slopes, Slope Set Pieces, ZSlope Set Pieces, New MM Height Pieces, Waterfalls, LAT Grass Rough, GrassRough Individual, Farm Crops, Paved Road Ends, Pavement, Pavement Individual, Paved road bits, LAT Sand, Sand Individual, Ramp edge fixup, Ramp edge fixup - Marble Madness, LAT Pavement, Paved Road Slopes, Waterfalls-B, Waterfalls-C, Waterfalls-D, Newest MM Height, Tunnel Floor, Tunnel Side, Destroyable Cliffs, Water Caves, ZMM Bendy Dirt Roads, ZMM Dirt Road Junctions, ZMM Straight Dirt Roads, ZMM Shore Pieces, ZMM Waterfalls, ZMM Waterfalls-B, ZMM Waterfalls-C, ZMM Waterfalls-D, ZMM Water Caves, ZMMCliff/Water pieces, ZMM Water, DirtTunnel Floor, Sand (beach), Sand (beach) Transitions, Water bridge, RA2 rubble farm, RA2 rubble mobile, RA2 rubble mexican, Wood Bridges, RA2 uss arizona
 	SheetSize: 4096
+	EnableDepth: true
 
 Terrain:
 	TerrainType@Clear:
