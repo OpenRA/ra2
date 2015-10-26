@@ -9,12 +9,13 @@ zep:
 		BuildPaletteOrder: 20
 		Prerequisites: ~naweap, natech
 	Selectable:
-	Helicopter:
+	Aircraft:
 		CruiseAltitude: 5600
 		ROT: 5
 		Speed: 50
 		Voice: Move
 		AirborneUpgrades: airborne
+		CanHover: True
 	Targetable@airborne:
 		TargetTypes: Air
 		UpgradeTypes: airborne

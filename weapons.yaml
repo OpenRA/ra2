@@ -59,10 +59,10 @@ RedEye2:
 		Shadow: true
 		Image: DRAGON
 		Palette: ra
-		Trail: smokey2
+		TrailImage: smokey2
 		ContrailLength: 16
-		RateOfTurn: 55
-		Speed: 100
+		HorizontalRateOfTurn: 55
+		MaximumLaunchSpeed: 100
 		LockOnProbability: 80
 	Warhead@1Dam: SpreadDamage
 		Spread: 120
@@ -568,10 +568,10 @@ MammothTusk:
 		Inaccuracy: 128
 		Image: DRAGON
 		Palette: ra
-		Trail: smokey2
+		TrailImage: smokey2
 		ContrailLength: 8
-		RateOfTurn: 10
-		Speed: 170
+		HorizontalRateOfTurn: 10
+		MaximumLaunchSpeed: 170
 		RangeLimit: 35
 	Warhead@1Dam: SpreadDamage
 		Spread: 171
@@ -753,9 +753,9 @@ SubTorpedo:
 	BurstDelay: 20
 	Projectile: Missile
 		Image: missile
-		Speed: 102
-		Trail: bbblelrg
-		RateOfTurn: 12
+		MaximumLaunchSpeed: 102
+		TrailImage: bbblelrg
+		HorizontalRateOfTurn: 12
 		RangeLimit: 160
 		BoundToTerrainType: Water
 		Palette: shadow
@@ -868,8 +868,8 @@ Medusa:
 		Image: DRAGON
 		Palette: ra
 		ContrailLength: 35
-		RateOfTurn: 55
-		Speed: 100
+		HorizontalRateOfTurn: 55
+		MaximumLaunchSpeed: 100
 		LockOnProbability: 85
 	Warhead@1Dam: SpreadDamage
 		Spread: 60
@@ -902,14 +902,14 @@ HoverMissile:
 	Report: vifvatta.wav
 	ValidTargets: Ground, Air
 	Projectile: Missile
-		Speed: 213
+		MaximumLaunchSpeed: 213
 		Arm: 2
 		Blockable: false
 		Shadow: true
 		Inaccuracy: 128
 		Image: DRAGON
 		Palette: ra
-		RateOfTurn: 8
+		HorizontalRateOfTurn: 8
 		RangeLimit: 35
 		ContrailColor: 216,216,255
 		ContrailLength: 16
@@ -950,14 +950,14 @@ HoverMissileE:
 	Report: vifvatta.wav
 	ValidTargets: Ground, Air
 	Projectile: Missile
-		Speed: 213
+		MaximumLaunchSpeed: 213
 		Arm: 2
 		Blockable: false
 		Shadow: true
 		Inaccuracy: 128
 		Image: DRAGON
 		Palette: ra
-		RateOfTurn: 8
+		HorizontalRateOfTurn: 8
 		RangeLimit: 35
 		ContrailColor: 216,216,255
 		ContrailLength: 16

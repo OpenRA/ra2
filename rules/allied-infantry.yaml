@@ -68,7 +68,7 @@ dog:
 			russia: dog
 	IgnoresDisguise:
 	DetectCloaked:
-		Range: 5
+		Range: 5c0
 	Voiced:
 		VoiceSet: DogVoice
 	ProducibleWithLevel:
@@ -292,7 +292,7 @@ jumpjet:
 		UpgradeMinEnabledLevel: 1
 	AttackFrontal:
 		Voice: Attack
-	Helicopter:
+	Aircraft:
 		CruiseAltitude: 3072
 		LandWhenIdle: false
 		InitialFacing: 20
@@ -303,6 +303,7 @@ jumpjet:
 		AirborneUpgrades: airborne
 		RepairBuildings:
 		RearmBuildings:
+		CanHover: True
 	WithInfantryBody:
 		StandSequence: fly
 		MoveSequence: fly

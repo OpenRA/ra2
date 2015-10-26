@@ -108,7 +108,7 @@
 		SellSounds: uselbuil.wav
 	AcceptsSupplies:
 	Guardable:
-		Range: 3
+		Range: 3c0
 	Demolishable:
 	WithMakeAnimation:
 
@@ -377,12 +377,13 @@
 	SelectionDecorations:
 		Palette: pips
 	Selectable:
-	Helicopter:
+	Aircraft:
 		RepairBuildings:
 		RearmBuildings:
 		LandWhenIdle: false
 		Voice: Move
 		AirborneUpgrades: airborne
+		CanHover: True
 	HiddenUnderFog:
 		Type: CenterPosition
 	AttackMove:

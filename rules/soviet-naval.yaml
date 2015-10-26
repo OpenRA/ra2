@@ -90,7 +90,7 @@ sub:
 		InitialStance: ReturnFire
 	DetectCloaked:
 		CloakTypes: Underwater
-		Range: 4
+		Range: 4c0
 	RenderDetectionCircle:
 	Explodes:
 		Weapon: UnitExplode

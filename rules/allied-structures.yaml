@@ -565,7 +565,7 @@ gtgcan:
 	WithVoxelTurret:
 	WithVoxelBarrel:
 	AutoTarget:
-	WithMuzzleFlash:
+	WithMuzzleOverlay:
 	WithRangeCircle:
 		Range: 15c0
 		Type: grandcannon

@@ -467,7 +467,7 @@ napsis:
 		Range: 10c0
 	RenderDetectionCircle:
 	DetectCloaked:
-		Range: 6
+		Range: 6c0
 	WithIdleOverlay@spin:
 		Sequence: idle-spin
 		PauseOnLowPower: true
