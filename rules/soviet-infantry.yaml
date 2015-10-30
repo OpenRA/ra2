@@ -93,7 +93,7 @@ shk:
 	Buildable:
 		Queue: Infantry
 		BuildAtProductionType: Infantry
-		Prerequisites: nahand
+		Prerequisites: ~nahand
 	Valued:
 		Cost: 500
 	Tooltip:

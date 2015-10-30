@@ -2,6 +2,7 @@ engineer:
 	Inherits: ^Infantry
 	Buildable:
 		Queue: Infantry
+		Prerequisites: ~barracks
 		BuildPaletteOrder: 60
 	Valued:
 		Cost: 500
@@ -37,6 +38,7 @@ dog:
 	Inherits: ^Infantry
 	Buildable:
 		Queue: Infantry
+		Prerequisites: ~barracks
 		BuildPaletteOrder: 50
 	Valued:
 		Cost: 200
