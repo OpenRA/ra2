@@ -109,6 +109,9 @@ pips:
 		Start: 4
 	pip-blue-building:
 		Start: 5
+	pip-disguise: pip-disguise
+		Length: *
+		Tick: 300
 
 explosion:
 	Defaults:
