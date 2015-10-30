@@ -52,7 +52,7 @@ harv:
 	Selectable:
 		Bounds: 64, 52, 0, -6
 	Harvester:
-		Capacity: 20
+		Capacity: 40
 		Resources: Ore, Gems
 		UnloadTicksPerBale: 1
 		SearchFromProcRadius: 24
