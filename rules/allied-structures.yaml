@@ -584,7 +584,7 @@ gaorep:
 	Valued:
 		Cost: 2500
 	Tooltip:
-		Name: Allied Ore Processor
+		Name: Allied Ore Purifier
 		Description: Refines all forms of income by 25%.
 	Building:
 		Footprint: xxx xxx xxx
