@@ -474,14 +474,20 @@ nairon:
 		TilesetOverrides:
 			TEMPERAT: GENERIC
 			URBAN: GENERIC
-	idle: ngiron
-		ShadowStart: 3
-	damaged-idle: ngiron
-		Start: 1
-		ShadowStart: 4
-	critical-idle: ngiron
-		Start: 2
-		ShadowStart: 5
+	idle: ngiron_a
+		Length: 11
+		ShadowStart: 22
+	damaged-idle: ngiron_a
+		Start: 11
+		Length: 11
+		ShadowStart: 33
+	active: ngiron_h
+		Length: 12
+		ShadowStart: 24
+	damaged-active: ngiron_h
+		Start: 12
+		Length: 12
+		ShadowStart: 36
 	make: ntironmk
 		Length: 25
 		ShadowStart: 25

@@ -353,6 +353,7 @@ largecraters:
 
 icon:
 	gps: asaticon
+	invuln: ircricon
 
 bombcurs:
 	idle:

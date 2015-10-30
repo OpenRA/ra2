@@ -500,7 +500,7 @@ nairon:
 	Power:
 		Amount: -200
 	GrantUpgradePower@IRONCURTAIN:
-		Icon: gps
+		Icon: invuln
 		ChargeTime: 120
 		Description: Invulnerability
 		LongDesc: Makes a group of units invulnerable\nfor 20 seconds.
@@ -511,6 +511,7 @@ nairon:
 		EndChargeSound:
 		DisplayRadarPing: True
 		Upgrades: invulnerability
+	SupportPowerChargeBar:
 
 nawall:
 	Inherits: ^Wall

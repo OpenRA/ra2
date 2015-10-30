@@ -66,6 +66,7 @@
 ^Building:
 	Inherits@1: ^ExistsInWorld
 	Inherits@2: ^SpriteActor
+	Inherits@3: ^IronCurtainable
 	-DrawLineToTarget:
 	SelectionDecorations:
 		Palette: pips
@@ -313,6 +314,7 @@
 ^Vehicle:
 	Inherits@1: ^ExistsInWorld
 	Inherits@2: ^GainsExperience
+	Inherits@3: ^IronCurtainable
 	Mobile:
 		Voice: Move
 		Crushes: crate
@@ -412,6 +414,7 @@
 ^Ship:
 	Inherits@1: ^ExistsInWorld
 	Inherits@2: ^GainsExperience
+	Inherits@3: ^IronCurtainable
 	Mobile:
 		Voice: Move
 		Crushes: crate
