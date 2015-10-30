@@ -767,8 +767,8 @@ power:
 refinery:
 	AlwaysVisible:
 	Tooltip:
-		Name: Refinery
-		Description: Refinery
+		Name: Ore Refinery
+		Description: Ore Refinery
 
 barracks:
 	AlwaysVisible:
