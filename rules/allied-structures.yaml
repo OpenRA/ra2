@@ -667,6 +667,7 @@ gaweat:
 		Queue: Support
 		BuildPaletteOrder: 110
 		Prerequisites: gatech, ~structures.allies
+		BuildLimit: 1
 	Selectable:
 		Bounds: 116, 106, -2, -26
 	Valued:
@@ -692,6 +693,7 @@ gacsph:
 		Queue: Support
 		BuildPaletteOrder: 120
 		Prerequisites: gatech, ~structures.allies
+		BuildLimit: 1
 	Selectable:
 		Bounds: 176, 110, -5, -14
 	Valued:
