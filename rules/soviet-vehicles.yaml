@@ -10,6 +10,7 @@ smcv:
 		Name: Mobile Construction Vehicle
 		Description: Deploys into a Construction Yard.
 	Selectable:
+		Priority: 4
 		Bounds: 64, 52, 0, -6
 	Health:
 		HP: 1000
@@ -50,6 +51,7 @@ harv:
 		Name: War Miner
 		Description: Gathers Ore.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
 	Selectable:
+		Priority: 7
 		Bounds: 64, 52, 0, -6
 	Harvester:
 		Capacity: 40

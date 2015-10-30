@@ -10,6 +10,7 @@ amcv:
 		Name: Mobile Construction Vehicle
 		Description: Deploys into a Construction Yard.
 	Selectable:
+		Priority: 4
 		Bounds: 68, 56, 0, -7
 	Health:
 		HP: 1000
@@ -49,6 +50,7 @@ cmin:
 		Name: Chrono Miner
 		Description: Gathers Ore.\n  Unarmed\nSpecial ability: Can teleport to own refineries
 	Selectable:
+		Priority: 7
 		Bounds: 64, 52, 0, -6
 	Harvester:
 		Capacity: 20
