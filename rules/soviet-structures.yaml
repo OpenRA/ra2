@@ -213,7 +213,7 @@ naweap:
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 50
-		Prerequisites: refinery, ~structures.soviets
+		Prerequisites: refinery, nahand, ~structures.soviets
 	Selectable:
 		Bounds: 196, 178, -6, -48
 	Valued:
