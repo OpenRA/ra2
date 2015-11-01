@@ -167,6 +167,7 @@ explosion:
 	ivan_explosion: crivexp
 	ivan_explosionE: crivexp2
 	tesla_impact: tstimpct
+	iron_fx: ironfx
 
 discus:
 	idle:
