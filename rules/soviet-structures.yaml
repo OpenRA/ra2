@@ -38,6 +38,12 @@ nacnst:
 	WithIdleOverlay@normal:
 		Sequence: idle-normal
 	WithBuildingPlacedAnimation:
+	EmitInfantryOnSell@allies:
+		ActorTypes: e1, e1, e1, engineer
+		Factions: america, germany, england, france, korea
+	EmitInfantryOnSell@soviets:
+		ActorTypes: e2, e2, e2, e2, engineer
+		Factions: cuba, libya, iraq, russia
 
 napowr:
 	Inherits: ^Building

@@ -45,6 +45,12 @@ gacnst:
 		Race: france
 	Power:
 		Amount: 0
+	EmitInfantryOnSell@allies:
+		ActorTypes: e1, e1, e1, engineer
+		Factions: america, germany, england, france, korea
+	EmitInfantryOnSell@soviets:
+		ActorTypes: e2, e2, e2, e2, engineer
+		Factions: cuba, libya, iraq, russia
 
 gapowr:
 	Inherits: ^Building
