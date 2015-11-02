@@ -411,6 +411,10 @@ natech:
 		Range: 6c0
 	Power:
 		Amount: -100
+	InfiltrateForSupportPower:
+		Proxy: soviets.tech.infiltrated
+	Targetable:
+		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
 
 naclon:
 	Inherits: ^Building

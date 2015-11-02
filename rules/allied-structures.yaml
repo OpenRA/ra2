@@ -430,6 +430,10 @@ gatech:
 		Sequence: idle-lights
 	Power:
 		Amount: -100
+	InfiltrateForSupportPower:
+		Proxy: allies.tech.infiltrated
+	Targetable:
+		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
 
 gawall:
 	Inherits: ^Wall
