@@ -61,7 +61,7 @@ RadBeamWeapon:
 	Projectile: LaserZap
 		BeamWidth: 2
 		BeamDuration: 7
-		Color: 185, 0, 255, 0
+		Color: B900FF00
 	Warhead@1Dam: SpreadDamage
 		Spread: 42
 		Damage: 125
@@ -86,7 +86,7 @@ RadBeamWeaponE:
 	Projectile: LaserZap
 		BeamWidth: 2
 		BeamDuration: 7
-		Color: 185, 0, 255, 0
+		Color: B900FF00
 	Warhead@1Dam: SpreadDamage
 		Spread: 42
 		Damage: 125

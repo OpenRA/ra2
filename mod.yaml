@@ -4,6 +4,9 @@ Metadata:
 	Version: {DEV_VERSION}
 	Author: Phrohdoh and the RA2 team
 
+RequiresMods:
+	modchooser: {DEV_VERSION}
+
 Folders:
 	.
 	./mods/ra2

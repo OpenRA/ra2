@@ -911,7 +911,7 @@ HoverMissile:
 		Palette: ra
 		HorizontalRateOfTurn: 8
 		RangeLimit: 35
-		ContrailColor: 216,216,255
+		ContrailColor: D8D8FF
 		ContrailLength: 16
 	Warhead@1Dam: SpreadDamage
 		Spread: 128
@@ -959,7 +959,7 @@ HoverMissileE:
 		Palette: ra
 		HorizontalRateOfTurn: 8
 		RangeLimit: 35
-		ContrailColor: 216,216,255
+		ContrailColor: D8D8FF
 		ContrailLength: 16
 	Warhead@1Dam: SpreadDamage
 		Spread: 128
