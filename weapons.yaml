@@ -1177,3 +1177,52 @@ MirageGunE:
 	Warhead@4Smu: LeaveSmudge
 		SmudgeType: SmallCrater, SmallScorch
 
+TankBolt:
+	Range: 4c0
+	ReloadDelay: 75
+	Burst: 2
+	BurstDelay: 75
+	Report: vtesatta.wav, vtesattb.wav
+	Projectile: TeslaZap
+		Speed: 100c0
+	Warhead@1Dam: SpreadDamage
+		Spread: 120
+		Damage: 135
+		Versus:
+			None: 100
+			Flak: 100
+			Plate: 100
+			Light: 85
+			Medium: 100
+			Heavy: 100
+			Wood: 50
+			Steel: 50
+			Concrete: 50
+		DamageTypes: ElectroDeath
+	Warhead@2Eff: CreateEffect
+		Explosion: tesla_impact
+
+TankBoltE:
+	Range: 6c0
+	ReloadDelay: 60
+	Burst: 2
+	BurstDelay: 60
+	Report: vtesatta.wav, vtesattb.wav
+	Projectile: TeslaZap
+		Speed: 100c0
+	Warhead@1Dam: SpreadDamage
+		Spread: 120
+		Damage: 150
+		Versus:
+			None: 100
+			Flak: 100
+			Plate: 100
+			Light: 85
+			Medium: 100
+			Heavy: 100
+			Wood: 50
+			Steel: 50
+			Concrete: 50
+		DamageTypes: ElectroDeath
+	Warhead@2Eff: CreateEffect
+		Explosion: tesla_impact

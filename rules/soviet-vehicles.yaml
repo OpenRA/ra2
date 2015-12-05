@@ -256,6 +256,53 @@ apoc:
 	ProducibleWithLevel:
 		Prerequisites: warfactory.infiltrated
 
+ttnk:
+	Inherits: ^Vehicle
+	Valued:
+		Cost: 1200
+	Tooltip:
+		Name: Tesla Tank
+		Description: Russian special tank armed with dual small Tesla Coils.\n  Strong vs Vehicles, Infantry\n  Weak vs Aircraft
+	Buildable:
+		Queue: Vehicle
+		BuildPaletteOrder: 50
+		Prerequisites: ~naweap, naradr, ~vehicles.russia
+	Mobile:
+		Speed: 75
+		Crushes: fence, crate, infantry
+	Health:
+		HP: 300
+	Armor:
+		Type: Heavy
+	RevealsShroud:
+		Range: 8c0
+	Turreted:
+		ROT: 5
+	Armament@primary:
+		Weapon: TankBolt
+		LocalOffset: 280,196,384, 280,-196,384
+		UpgradeTypes: eliteweapon
+		UpgradeMaxEnabledLevel: 0
+		UpgradeMaxAcceptedLevel: 1
+	Armament@elite:
+		Weapon: TankBoltE
+		LocalOffset: 280,196,384, 280,-196,384
+		UpgradeTypes: eliteweapon
+		UpgradeMinEnabledLevel: 1
+	AttackTurreted:
+		Voice: Attack
+	AutoTarget:
+	RenderSprites:
+	Selectable:
+		Bounds: 64, 52, 0, -6
+	RenderVoxels:
+	WithVoxelBody:
+	WithVoxelTurret:
+	Voiced:
+		VoiceSet: SovietVehicleVoice
+	ProducibleWithLevel:
+		Prerequisites: warfactory.infiltrated
+
 dtruck:
 	Inherits: ^Vehicle
 	Buildable:

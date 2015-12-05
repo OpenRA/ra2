@@ -166,6 +166,7 @@ explosion:
 		Tick: 300
 	ivan_explosion: crivexp
 	ivan_explosionE: crivexp2
+	tesla_impact: tstimpct
 
 discus:
 	idle:
