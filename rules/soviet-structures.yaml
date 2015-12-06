@@ -523,6 +523,33 @@ nairon:
 		Upgrades: invulnerability
 	SupportPowerChargeBar:
 
+namisl:
+	Inherits: ^Building
+	Buildable:
+		Queue: Support
+		BuildPaletteOrder: 70
+		Prerequisites: natech, ~structures.soviets
+		BuildLimit: 1
+	Valued:
+		Cost: 5000
+	Tooltip:
+		Name: Nuclear Missile Silo
+		Description: Provides an atomic bomb.\nRequires power to operate.\n  Special Ability: Atom Bomb\nMaximum 1 can be built.
+	Building:
+		Footprint: xxx xxx xxx
+		Dimensions: 3, 3
+	Selectable:
+		Bounds: 152, 104, 0, -50
+	Health:
+		HP: 1000
+	Armor:
+		Type: Concrete
+	RevealsShroud:
+		Range: 4c0
+	Power:
+		Amount: -200
+	RequiresPower:
+
 nawall:
 	Inherits: ^Wall
 	Buildable:
