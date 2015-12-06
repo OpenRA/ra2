@@ -222,6 +222,10 @@ causfgl:
 		Start: 1
 		ShadowStart: 5
 		Offset: 0, -15
+	flag: cuusfgl_a
+		Length: 16
+		ShadowStart: 16
+		Offset: 0, -15
 
 camisc01:
 	idle: cumisc01

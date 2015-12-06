@@ -329,6 +329,7 @@ cafarm02:
 causfgl:
 	Inherits: ^CivBuilding
 	Selectable:
+		Bounds: 50, 228, 0, 0
 	Building:
 		Footprint: x
 		Dimensions: 1, 1
@@ -340,4 +341,5 @@ causfgl:
 		Type: Steel
 	RevealsShroud:
 		Range: 6c0
-
+	WithIdleOverlay@flag:
+		Sequence: flag
