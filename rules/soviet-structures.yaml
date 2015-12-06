@@ -380,6 +380,9 @@ nanrct:
 		Range: 5c0
 	WithIdleOverlay@lights:
 		Sequence: idle-lights
+	Explodes:
+		Weapon: NukePayload
+		EmptyWeapon: NukePayload
 	Power:
 		Amount: 2000
 	ScalePowerWithHealth:
