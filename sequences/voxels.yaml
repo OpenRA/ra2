@@ -191,6 +191,9 @@ sapc:
 dtruck:
 	idle: trucka
 
+trucka:
+	idle:
+
 truckb: #Psst Has crates in it :D
 	idle:
 
