@@ -1,0 +1,264 @@
+e2:
+	Inherits: ^Infantry
+	Buildable:
+		Queue: Infantry
+		Prerequisites: ~nahand
+		BuildPaletteOrder: 10
+	Valued:
+		Cost: 100
+	Tooltip:
+		Name: Conscript
+		Description: Cheap standart infantry.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
+	Selectable:
+		Bounds: 20, 30, 0, -11
+	Health:
+		HP: 125
+	Mobile:
+		Speed: 34
+	Passenger:
+		PipType: Green
+	RevealsShroud:
+		Range: 5c0
+	AttackFrontal:
+		Voice: Attack
+	Armament@primary:
+		Weapon: M1Carbine
+		UpgradeTypes: eliteweapon
+		UpgradeMaxEnabledLevel: 0
+		UpgradeMaxAcceptedLevel: 1
+	Armament@elite:
+		Weapon: M1CarbineE
+		UpgradeTypes: eliteweapon
+		UpgradeMinEnabledLevel: 1
+	WithInfantryBody:
+	Voiced:
+		VoiceSet: ConscriptVoice
+	ProducibleWithLevel:
+		Prerequisites: barracks.infiltrated
+	QuantizeFacingsFromSequence:
+		Sequence: stand
+
+flakt:
+	Inherits: ^Infantry
+	Buildable:
+		Queue: Infantry
+		Prerequisites: naradr, ~nahand
+		BuildPaletteOrder: 20
+	Valued:
+		Cost: 100
+	Tooltip:
+		Name: Flak Trooper
+		Description: Anti-Air/Anti-Infantry unit.\n  Strong vs Aircraft, Infantry\n  Weak vs Vehicles
+	Selectable:
+		Bounds: 20, 30, 0, -11
+	Health:
+		HP: 100
+	Mobile:
+		Speed: 34
+	Passenger:
+		PipType: Green
+	RevealsShroud:
+		Range: 5c0
+	AttackFrontal:
+		Voice: Attack
+	Armament@primary:
+		Weapon: FlakGuyGun
+		UpgradeTypes: eliteweapon
+		UpgradeMaxEnabledLevel: 0
+		UpgradeMaxAcceptedLevel: 1
+	Armament@secondary:
+		Weapon: FlakGuyAAGun
+		UpgradeTypes: eliteweapon
+		UpgradeMaxEnabledLevel: 0
+		UpgradeMaxAcceptedLevel: 1
+	Armament@primary-elite:
+		Weapon: FlakGuyGunE
+		UpgradeTypes: eliteweapon
+		UpgradeMinEnabledLevel: 1
+	Armament@secondary-elite:
+		Weapon: FlakGuyAAGunE
+		UpgradeTypes: eliteweapon
+		UpgradeMinEnabledLevel: 1
+	WithInfantryBody:
+		IdleAnimation:
+	Voiced:
+		VoiceSet: FlakTrooperVoice
+	ProducibleWithLevel:
+		Prerequisites: barracks.infiltrated
+	QuantizeFacingsFromSequence:
+		Sequence: stand
+
+shk:
+	Inherits: ^Infantry
+	Buildable:
+		Queue: Infantry
+		BuildAtProductionType: Infantry
+		Prerequisites: ~nahand
+	Valued:
+		Cost: 500
+	Tooltip:
+		Name: Shock Trooper
+		Description: Special armored unit using electricity.\n  Strong vs Infantry, Light armor\n  Weak vs Tanks, Aircraft\nSpecial ability: Charge tesla coils (3 Tesla Troopers required)
+	Selectable:
+		Bounds: 20, 30, 0, -11
+	Health:
+		HP: 130
+	Mobile:
+		Speed: 51
+	RevealsShroud:
+		Range: 6c0
+	Armor:
+		Type: Plate
+	Passenger:
+		PipType: Red
+	AttackFrontal:
+		Voice: Attack
+	Armament@primary:
+		Weapon: ElectricBolt
+		UpgradeTypes: eliteweapon
+		UpgradeMaxEnabledLevel: 0
+		UpgradeMaxAcceptedLevel: 1
+	Armament@elite:
+		Weapon: ElectricBoltE
+		UpgradeTypes: eliteweapon
+		UpgradeMinEnabledLevel: 1
+	WithInfantryBody:
+	UpgradeActorsNear:
+		Upgrades: charged
+		Range: 1c256
+	Voiced:
+		VoiceSet: TeslaTrooperVoice
+	ProducibleWithLevel:
+		Prerequisites: barracks.infiltrated
+	QuantizeFacingsFromSequence:
+		Sequence: stand
+
+terror:
+	Inherits: ^Infantry
+	Buildable:
+		Queue: Infantry
+		BuildAtProductionType: Infantry
+		BuildPaletteOrder: 120
+		Prerequisites: naradr, ~infantry.cuba
+	Valued:
+		Cost: 200
+	Tooltip:
+		Name: Terrorist
+		Description: Carries C4 charges taped to his body and kamikazes enemies\nblowing them up quickly and efficiently.\n  Strong vs Ground units\n  Weak vs Aircraft
+	Selectable:
+		Bounds: 20, 30, 0, -11
+	Health:
+		HP: 75
+	Mobile:
+		Speed: 71
+	RevealsShroud:
+		Range: 6c0
+	Armor:
+		Type: Flak
+	Passenger:
+		PipType: Red
+	Explodes:
+		Weapon: TerrorBomb
+		EmptyWeapon: TerrorBomb
+	DemoTruck:
+		Voice: Attack
+	AttackFrontal:
+		Voice: Attack
+	WithInfantryBody:
+	Voiced:
+		VoiceSet: TerroristVoice
+	-TakeCover:
+	QuantizeFacingsFromSequence:
+		Sequence: stand
+
+deso:
+	Inherits: ^Infantry
+	Buildable:
+		Queue: Infantry
+		BuildAtProductionType: Infantry
+		BuildPaletteOrder: 120
+		Prerequisites: naradr, ~infantry.iraq
+	Valued:
+		Cost: 200
+	Tooltip:
+		Name: Desolator
+		Description: Carries a radiation-emitting weapon.\nCan deploy for area-of-effect damage.\n  Strong vs Infantry, Light armor\n  Weak vs Tanks, Aircraft
+	Selectable:
+		Bounds: 20, 30, 0, -11
+	Health:
+		HP: 150
+	Mobile:
+		Speed: 41
+	RevealsShroud:
+		Range: 6c0
+	Armor:
+		Type: Plate
+	Passenger:
+		PipType: Red
+	Armament@primary:
+		Weapon: RadBeamWeapon
+		UpgradeTypes: eliteweapon
+		UpgradeMaxEnabledLevel: 0
+		UpgradeMaxAcceptedLevel: 1
+	Armament@elite:
+		Weapon: RadBeamWeaponE
+		UpgradeTypes: eliteweapon
+		UpgradeMinEnabledLevel: 1
+	AttackFrontal:
+		Voice: Attack
+	WithInfantryBody:
+	Voiced:
+		VoiceSet: DesolatorVoice
+	ProducibleWithLevel:
+		Prerequisites: barracks.infiltrated
+	QuantizeFacingsFromSequence:
+		Sequence: stand
+
+ivan:
+	Inherits: ^Infantry
+	Buildable:
+		Queue: Infantry
+		BuildAtProductionType: Infantry
+		BuildPaletteOrder: 120
+		Prerequisites: naradr, ~nahand, ~!infantry.cuba
+	Valued:
+		Cost: 600
+	Tooltip:
+		Name: Crazy Ivan
+		Description: Specialist for explosives. Can plant a Bomb on anything, even Cows.
+	Selectable:
+		Bounds: 20, 30, 0, -11
+	Voiced:
+		VoiceSet: CrazyIvanVoice
+	Health:
+		HP: 125
+	Mobile:
+		Speed: 60
+	RevealsShroud:
+		Range: 6c0
+	Armor:
+		Type: None
+	Passenger:
+		PipType: Red
+	Explodes:
+		Weapon: IvanBomber
+		EmptyWeapon: IvanBomber
+	Armament@primary:
+		Weapon: IvanBomber
+		UpgradeTypes: eliteweapon
+		UpgradeMaxEnabledLevel: 0
+		UpgradeMaxAcceptedLevel: 1
+	Armament@elite:
+		Weapon: IvanBomberE
+		UpgradeTypes: eliteweapon
+		UpgradeMinEnabledLevel: 1
+	AttackFrontal:
+		Voice: Attack
+		Cursor: bomb
+		OutsideRangeCursor: bomb
+	TakeCover:
+	WithInfantryBody:
+		IdleSequences: idle1,idle2
+	QuantizeFacingsFromSequence:
+		Sequence: stand
+

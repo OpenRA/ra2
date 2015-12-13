@@ -1,0 +1,73 @@
+zep:
+	Inherits: ^Aircraft
+	Valued:
+		Cost: 2000
+	Tooltip:
+		Name: Kirov Airship
+	Buildable:
+		Queue: Vehicle
+		BuildPaletteOrder: 20
+		Prerequisites: ~naweap, natech
+	Selectable:
+	Aircraft:
+		CruiseAltitude: 5600
+		ROT: 5
+		Speed: 50
+		Voice: Move
+		AirborneUpgrades: airborne
+		CanHover: True
+	Targetable@airborne:
+		TargetTypes: Air
+		UpgradeTypes: airborne
+		UpgradeMinEnabledLevel: 1
+	Health:
+		HP: 2000
+	Armor:
+		Type: Light
+	RevealsShroud:
+		Range: 8c0
+		Type: CenterPosition
+	Armament:
+		Weapon: BlimpBomb
+	AttackFrontal:
+		Voice: Attack
+	AutoTarget:
+	RenderSprites:
+	RenderVoxels:
+	WithVoxelBody:
+	Hovers:
+		OffsetModifier: -10
+	Explodes:
+		Weapon: UnitExplode
+		Chance: 75
+	AnnounceOnBuild:
+	AnnounceOnKill:
+	Voiced:
+		VoiceSet: KirovVoice
+#	SpawnActorOnDeath:
+#		Actor: zephusk
+	Targetable@ground:
+		TargetTypes: Ground
+		UpgradeTypes: airborne
+		UpgradeMaxEnabledLevel: 0
+
+#zephusk:
+#	Inherits: ^HelicopterHusk
+#	Tooltip:
+#		Name: Kirov Airship
+#	RenderSprites:
+#		Image: zep
+#	RenderVoxels:
+#		Image: zep
+#	WithVoxelBody:
+#	WithShadow:
+#	Helicopter:
+#		ROT: 10
+#		Speed: 50
+#		AirborneUpgrades: airborne
+#	RevealsShroud:
+#		Range: 8c0
+#		Type: CenterPosition
+#	FallsToEarth:
+#		Velocity: 200
+

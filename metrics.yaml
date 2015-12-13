@@ -1,0 +1,47 @@
+Metrics:
+	ButtonDepth: 1
+	ButtonFont: Regular
+	ButtonTextColor: FFFFFF
+	ButtonTextColorDisabled: 808080
+	ButtonTextContrast: false
+	ButtonTextContrastColor: 000000
+	ButtonBaseLine: 0
+	CheckboxPressedState: false
+	HotkeyFont: Regular
+	HotkeyColor: FFFFFF
+	HotkeyColorDisabled: 808080
+	TextfieldFont: Regular
+	TextfieldColor: FFFFFF
+	TextfieldColorDisabled: 808080
+	TextfieldColorInvalid: FFC0C0
+	TextFont: Regular
+	TextColor: FFFFFF
+	TextContrast: false
+	TextContrastColor: 000000
+	ColorPickerRemapIndices: 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31
+	ColorPickerActorType: ^amcv.colorpicker
+	SpawnFont: TinyBold
+	SpawnColor: FFFFFF
+	SpawnContrastColor: 000000
+	SpawnLabelOffset: 0,1
+	FactionSuffix-america: allies
+	FactionSuffix-korea: allies
+	FactionSuffix-france: allies
+	FactionSuffix-germany: allies
+	FactionSuffix-england: allies
+	FactionSuffix-libya: soviets
+	FactionSuffix-cuba: soviets
+	FactionSuffix-iraq: soviets
+	FactionSuffix-russia: soviets
+	IncompatibleVersionColor: D3D3D3
+	IncompatibleGameColor: A9A9A9
+	CantJoinGameColor: D3D3D3
+	ProtectedGameColor: FF0000
+	IncompatibleProtectedGameColor: B22222
+	WaitingGameColor: 00FF00
+	IncompatibleWaitingGameColor: 32CD32
+	GameStartedColor: FFA500
+	IncompatibleGameStartedColor: D2691E
+	GlobalChatTextColor: FFFFFF
+	GlobalChatNotificationColor: D3D3D3
+

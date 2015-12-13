@@ -1,0 +1,243 @@
+M60:
+	ReloadDelay: 20
+	Range: 4c0
+	Report: igiat1a.wav, igiat1b.wav, igiat1c.wav
+	Projectile: Bullet
+		Speed: 100c0
+	Warhead@1Dam: SpreadDamage
+		Spread: 64
+		Damage: 20
+		Versus:
+			None: 100
+			Flak: 80
+			Plate: 70
+			Light: 50
+			Medium: 25
+			Heavy: 25
+			Wood: 75
+			Steel: 50
+			Concrete: 25
+		DamageTypes: Prone70Percent, TriggerProne, BulletDeath
+	Warhead@2Eff: CreateEffect
+		Explosion: piff
+		InvalidImpactTypes: Water
+	Warhead@3EffWater: CreateEffect
+		Explosion: piff
+		ValidImpactTypes: Water
+
+M60E:
+	ReloadDelay: 20
+	Range: 4c0
+	Report: igiat1a.wav, igiat1b.wav, igiat1c.wav
+	Projectile: Bullet
+		Speed: 100c0
+	Warhead@1Dam: SpreadDamage
+		Spread: 64
+		Damage: 25
+		Versus:
+			None: 100
+			Flak: 80
+			Plate: 70
+			Light: 50
+			Medium: 25
+			Heavy: 25
+			Wood: 75
+			Steel: 50
+			Concrete: 25
+		DamageTypes: Prone70Percent, TriggerProne, BulletDeath
+	Warhead@2Eff: CreateEffect
+		Explosion: piff
+		InvalidImpactTypes: Water
+	Warhead@3EffWater: CreateEffect
+		Explosion: piff
+		ValidImpactTypes: Water
+
+para:
+	Range: 5c0
+	ReloadDelay: 15
+	Report: igiat2a.wav, igiat2b.wav, igiat2c.wav, igiat2d.wav, igiat2c.wav, igiat2d.wav
+	Projectile: Bullet
+		Speed: 100c0
+	Warhead@1Dam: SpreadDamage
+		Spread: 64
+		Damage: 15
+		Versus:
+			None: 100
+			Flak: 100
+			Plate: 70
+			Light: 60
+			Medium: 40
+			Heavy: 40
+			Wood: 75
+			Steel: 50
+			Concrete: 25
+		DamageTypes: Prone50Percent, TriggerProne, BulletDeath
+	Warhead@2Eff: CreateEffect
+		Explosion: piff
+		InvalidImpactTypes: Water
+	Warhead@3EffWater: CreateEffect
+		Explosion: piff
+		ValidImpactTypes: Water
+
+paraE:
+	Range: 7c0
+	ReloadDelay: 15
+	Report: igiat2a.wav, igiat2b.wav, igiat2c.wav, igiat2d.wav, igiat2c.wav, igiat2d.wav
+	Projectile: Bullet
+		Speed: 100c0
+	Warhead@1Dam: SpreadDamage
+		Spread: 64
+		Damage: 25
+		Versus:
+			None: 100
+			Flak: 100
+			Plate: 70
+			Light: 60
+			Medium: 40
+			Heavy: 40
+			Wood: 75
+			Steel: 50
+			Concrete: 25
+		DamageTypes: Prone50Percent, TriggerProne, BulletDeath
+	Warhead@2Eff: CreateEffect
+		Explosion: piff
+		InvalidImpactTypes: Water
+	Warhead@3EffWater: CreateEffect
+		Explosion: piff
+		ValidImpactTypes: Water
+
+DoublePistols:
+	ReloadDelay: 10
+	Range: 6c0
+	Report: itanatta.wav, itanattb.wav
+	Projectile: Bullet
+		Speed: 100c0
+	Warhead@1Dam: SpreadDamage
+		Damage: 125
+		Versus:
+			None: 200
+			Flak: 100
+			Plate: 100
+			Light: 0
+			Medium: 0
+			Heavy: 0
+			Wood: 0
+			Steel: 0
+			Concrete: 0
+		DamageTypes: BulletDeath
+	Warhead@2Eff: CreateEffect
+		Explosion: piff
+		InvalidImpactTypes: Water
+	Warhead@3EffWater: CreateEffect
+		Explosion: piff
+		ValidImpactTypes: Water
+
+DoublePistolsE:
+	ReloadDelay: 10
+	Range: 8c0
+	Report: itanatta.wav, itanattb.wav
+	Projectile: Bullet
+		Speed: 100c0
+	Warhead@1Dam: SpreadDamage
+		Damage: 125
+		Versus:
+			None: 200
+			Flak: 100
+			Plate: 100
+			Light: 0
+			Medium: 0
+			Heavy: 0
+			Wood: 0
+			Steel: 0
+			Concrete: 0
+		DamageTypes: BulletDeath
+	Warhead@2Eff: CreateEffect
+		Explosion: piff
+		InvalidImpactTypes: Water
+	Warhead@3EffWater: CreateEffect
+		Explosion: piff
+		ValidImpactTypes: Water
+
+awp:
+	ValidTargets: Infantry
+	ReloadDelay: 100
+	Range: 14c0
+	Report: isniatta.wav
+	Projectile: Bullet
+		Speed: 6c682
+	Warhead@1Dam: SpreadDamage
+		Spread: 42
+		Damage: 125
+		Versus:
+			None: 200
+			Flak: 100
+			Plate: 100
+			Light: 0
+			Medium: 0
+			Heavy: 0
+			Wood: 0
+			Steel: 0
+			Concrete: 0
+		DamageTypes: ExplosionDeath
+
+20mm:
+	ReloadDelay: 20
+	Range: 5c0
+	MinRange: 0c001
+	Report: irocatta.wav
+	ValidTargets: Ground, Air
+	Projectile: Bullet
+		Speed: 100c0
+	Warhead@1Dam: SpreadDamage
+		Spread: 64
+		Damage: 25
+		ValidTargets: Ground, Air
+		Versus:
+			None: 100
+			Flak: 100
+			Plate: 70
+			Light: 60
+			Medium: 40
+			Heavy: 40
+			Wood: 75
+			Steel: 50
+			Concrete: 25
+		DamageTypes: Prone70Percent, TriggerProne, BulletDeath
+	Warhead@2Eff: CreateEffect
+		Explosion: piff
+		InvalidImpactTypes: Water
+	Warhead@3EffWater: CreateEffect
+		Explosion: piff
+		ValidImpactTypes: Water
+
+20mme:
+	ReloadDelay: 20
+	Range: 5c0
+	MinRange: 0c001
+	Burst: 2
+	Report: irocatta.wav
+	ValidTargets: Ground, Air
+	Projectile: Bullet
+		Speed: 100c0
+	Warhead@1Dam: SpreadDamage
+		Spread: 64
+		Damage: 25
+		ValidTargets: Ground, Air
+		Versus:
+			None: 100
+			Flak: 100
+			Plate: 70
+			Light: 60
+			Medium: 40
+			Heavy: 40
+			Wood: 75
+			Steel: 50
+			Concrete: 25
+		DamageTypes: Prone70Percent, TriggerProne, BulletDeath
+	Warhead@2Eff: CreateEffect
+		Explosion: piff
+		InvalidImpactTypes: Water
+	Warhead@3EffWater: CreateEffect
+		Explosion: piff
+		ValidImpactTypes: Water
+

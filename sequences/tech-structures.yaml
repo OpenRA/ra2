@@ -1,0 +1,22 @@
+caoild:
+	idle: cuoild
+		ShadowStart: 4
+		Offset: 0, -30
+	damaged-idle: cuoild
+		Start: 1
+		ShadowStart: 5
+		Offset: 0, -30
+	idle-pump: cuoild_a
+		Length: 32
+		ShadowStart: 64
+		Offset: 0, -30
+	damaged-idle-pump: cuoild_a
+		Start: 32
+		Length: 32
+		ShadowStart: 96
+		Offset: 0, -30
+
+caoutp:
+	icon: xxicon
+		Offset: 0,0
+		UseTilesetCode: false

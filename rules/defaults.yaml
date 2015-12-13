@@ -1,0 +1,569 @@
+^ExistsInWorld:
+	AppearsOnRadar:
+	UpdatesPlayerStatistics:
+	CombatDebugOverlay:
+	DrawLineToTarget:
+	GivesExperience:
+	ScriptTriggers:
+	UpgradeManager:
+	Huntable:
+
+^SpriteActor:
+	BodyOrientation:
+		UseClassicPerspectiveFudge: false
+	QuantizeFacingsFromSequence:
+	AutoSelectionSize:
+	RenderSprites:
+
+^GainsExperience:
+	GainsExperience:
+		Upgrades:
+			500: rank, firepower, damage, speed, reload
+			1000: rank, firepower, damage, speed, reload, selfheal, eliteweapon
+	SelfHealing@elite:
+		Step: 2
+		Ticks: 100
+		HealIfBelow: 1
+		DamageCooldown: 125
+		UpgradeTypes: selfheal
+		UpgradeMinEnabledLevel: 1
+	FirepowerMultiplier@experience:
+		Modifier: 110, 130
+		UpgradeTypes: firepower
+	DamageMultiplier@experience:
+		Modifier: 83, 66
+		UpgradeTypes: damage
+	SpeedMultiplier@experience:
+		Modifier: 120, 150
+		UpgradeTypes: speed
+	ReloadDelayMultiplier@experience:
+		Modifier: 90, 75
+		UpgradeTypes: reload
+	InaccuracyMultiplier@experience:
+		Modifier: 90, 80, 70, 50
+		UpgradeTypes: inaccuracy
+	WithRankDecoration:
+		Image: rank
+		Sequence: rank
+		Palette: pips
+		ReferencePoint: Bottom, Right
+		Offset: 2, 2
+		UpgradeTypes: rank
+		ZOffset: 256
+		UpgradeMinEnabledLevel: 1
+		UpgradeMaxAcceptedLevel: 2
+
+^IronCurtainable:
+	UpgradeOverlay@ironcurtain:
+		UpgradeTypes: invulnerability
+		UpgradeMinEnabledLevel: 1
+	DamageMultiplier@ironcurtain:
+		UpgradeTypes: invulnerability
+		Modifier: 0, 0
+	TimedUpgradeBar:
+		Upgrade: invulnerability
+
+^Building:
+	Inherits@1: ^ExistsInWorld
+	Inherits@2: ^SpriteActor
+	Inherits@3: ^IronCurtainable
+	-DrawLineToTarget:
+	SelectionDecorations:
+		Palette: pips
+	Selectable:
+		Priority: 3
+	Targetable:
+		TargetTypes: Ground, C4, DetonateAttack, SpyInfiltrate
+	Building:
+		Dimensions: 1,1
+		Footprint: x
+		BuildSounds: uplace.wav
+		UndeploySounds: uselbuil.wav
+		TerrainTypes: Clear, Road, DirtRoad, Rough
+		Adjacent: 4
+	FrozenUnderFog:
+	GivesBuildableArea:
+	Capturable:
+	SoundOnDamageTransition:
+		DamagedSounds: gdamag1a.wav, gdamag1b.wav, gdamag1c.wav, gdamag1d.wav, gdamag1e.wav
+		DestroyedSounds: bgendiea.wav, bgendieb.wav, bgendiec.wav, bgendied.wav, bgendiee.wav, bgendief.wav
+	WithSpriteBody:
+	WithBuildingExplosion:
+	RepairableBuilding:
+		IndicatorPalette: mousepal
+	EngineerRepairable:
+		Voice: Attack
+	EmitInfantryOnSell@allies:
+		ActorTypes: e1, e1, e1
+		Factions: america, germany, england, france, korea
+	EmitInfantryOnSell@soviets:
+		ActorTypes: e2, e2, e2, e2
+		Factions: cuba, libya, iraq, russia
+	MustBeDestroyed:
+		RequiredForShortGame: true
+	CaptureNotification:
+	ShakeOnDeath:
+	ProximityCaptor:
+		Types: Building
+	Sellable:
+		SellSounds: uselbuil.wav
+	AcceptsSupplies:
+	Guardable:
+		Range: 3c0
+	Demolishable:
+	WithMakeAnimation:
+
+^SupportBuilding:
+	Inherits: ^Building
+	AutoTarget:
+		EnableStances: false
+	-Capturable:
+	-CaptureNotification:
+	-MustBeDestroyed:
+	-ShakeOnDeath:
+	-GivesBuildableArea:
+
+^CivBuilding:
+	Inherits: ^Building
+	-GivesBuildableArea:
+	-Capturable:
+	-MustBeDestroyed:
+	-GivesExperience:
+	-CaptureNotification:
+	-Sellable:
+	-UpdatesPlayerStatistics:
+	-CombatDebugOverlay:
+	-WithMakeAnimation:
+	Health:
+		HP: 900
+	Armor:
+		Type: Wood
+	RevealsShroud:
+		Range: 4c0
+	Tooltip:
+		Name: Civilian Building
+
+^TechBuilding:
+	Inherits: ^Building
+	-MustBeDestroyed:
+	-GivesExperience:
+	-Sellable:
+	-UpdatesPlayerStatistics:
+	-CombatDebugOverlay:
+	-WithMakeAnimation:
+	Health:
+		HP: 900
+	Armor:
+		Type: Wood
+	RevealsShroud:
+		Range: 4c0
+	Tooltip:
+		Description: Tech Building
+
+^VoxelLighting:
+	Inherits: ^SupportBuilding
+	RenderVoxels:
+		Scale: 11.7
+		LightYaw: 800
+		LightPitch: 150
+		LightAmbientColor: -0.5,-0.5,-0.5
+		LightDiffuseColor: 1.4,1.4,1.4
+
+^Wall:
+	Inherits@1: ^ExistsInWorld
+	Inherits@2: ^SpriteActor
+	FrozenUnderFog:
+	-CombatDebugOverlay:
+	-DrawLineToTarget:
+	-UpgradeManager:
+	Building:
+		Dimensions: 1,1
+		Footprint: x
+		BuildSounds: uplace.wav
+		Adjacent: 7
+		TerrainTypes: Clear, Rough, Road, DirtRoad
+	Crushable:
+		CrushClasses: wall
+	BlocksProjectiles:
+	LineBuild:
+		Range: 8
+		NodeTypes: wall
+	LineBuildNode:
+		Types: wall
+	Targetable:
+		TargetTypes: Ground, Wall, C4, DetonateAttack
+	WithWallSpriteBody:
+		Type: wall
+	AutoTargetIgnore:
+	ProximityCaptor:
+		Types: Wall
+	Sellable:
+		SellSounds: uselbuil.wav
+	Demolishable:
+
+^Infantry:
+	Inherits@1: ^ExistsInWorld
+	Inherits@2: ^SpriteActor
+	Inherits@3: ^GainsExperience
+	Health:
+		Radius: 128
+	Armor:
+		Type: None
+	RevealsShroud:
+		Range: 4c0
+	Mobile:
+		Voice: Move
+		Crushes: crate
+		SharesCell: true
+		TerrainSpeeds:
+			Clear: 100
+			Rough: 100
+			Rail: 90
+			Road: 100
+			DirtRoad: 100
+			Ore: 90
+			Gems: 80
+	SelectionDecorations:
+		Palette: pips
+	Selectable:
+	Targetable:
+		TargetTypes: Ground, Infantry, DetonateAttack, Disguise
+	WithInfantryBody:
+		IdleSequences: idle1,idle2
+		StandSequences: stand
+		AttackSequence: shoot
+	WithDeathAnimation@normal:
+		DeathTypes:
+			ExplosionDeath: 1
+			BulletDeath: 2
+			DeathType3: 3
+	WithDeathAnimation@effect:
+		DeathSequencePalette: effect
+		DeathPaletteIsPlayerPalette: False
+		DeathTypes:
+			RadiationDeath: 4
+			FlameDeath: 5
+			ElectroDeath: 6
+	AutoTarget:
+	AttackMove:
+		Voice: Attack
+	TakeCover:
+		DamageModifiers:
+			Prone50Percent: 50
+			Prone70Percent: 70
+			Prone100Percent: 100
+		DamageTriggers: TriggerProne
+	Passenger:
+		Voice: Move
+		CargoType: Infantry
+	HiddenUnderFog:
+	ActorLostNotification:
+	ProximityCaptor:
+		Types: Infantry
+	Crushable:
+		CrushSound: igensqua.wav
+	Guard:
+		Voice: Attack
+	Guardable:
+	DeathSounds@normal:
+		DeathTypes: ExplosionDeath, BulletDeath, DeathType3
+	DeathSounds@burned:
+		Voice: Burned
+		DeathTypes: FlameDeath
+	DeathSounds@zapped:
+		Voice: Zapped
+		DeathTypes: ElectroDeath
+	DeathSounds@radiation:
+		Voice: Melted
+		DeathTypes: RadiationDeath
+	MustBeDestroyed:
+		RequiredForShortGame: true
+	Cloneable:
+		Types: infantry
+	Voiced:
+		VoiceSet: GIVoice
+	QuantizeFacingsFromSequence:
+		Sequence: stand
+
+^CivilianInfantry:
+	Inherits: ^Infantry
+	Selectable:
+		Bounds: 100,170,0,0
+	Valued:
+		Cost: 10
+	Tooltip:
+		Name: Civilian
+	Health:
+		HP: 50
+	Mobile:
+		Voice: Move
+		Speed: 71
+	RevealsShroud:
+		Range: 2c0
+	AttackFrontal:
+		Voice: Attack
+	ProximityCaptor:
+		Types: CivilianInfantry
+	ScaredyCat:
+	MustBeDestroyed:
+		RequiredForShortGame: true
+	-TakeCover:
+	Voiced:
+		VoiceSet: CivilianAlliedMaleVoice
+
+^Vehicle:
+	Inherits@1: ^ExistsInWorld
+	Inherits@2: ^GainsExperience
+	Inherits@3: ^IronCurtainable
+	Mobile:
+		Voice: Move
+		Crushes: crate
+		TerrainSpeeds:
+			Clear: 100
+			Rough: 100
+			Rail: 50
+			Road: 100
+			DirtRoad: 100
+			Beach: 100
+			Ore: 70
+			Gems: 70
+		ROT: 5
+	SelectionDecorations:
+		Palette: pips
+	Selectable:
+		Bounds: 32,32
+	Targetable:
+		TargetTypes: Ground, Repair, DetonateAttack
+	Repairable:
+		Voice: Move
+		RepairBuildings: gadept,nadept
+	Passenger:
+		Voice: Move
+		CargoType: Vehicle
+		Weight: 3
+	AttackMove:
+		Voice: Attack
+	HiddenUnderFog:
+	ActorLostNotification:
+	ProximityCaptor:
+		Types: Vehicle
+	Guard:
+		Voice: Attack
+	Guardable:
+	BodyOrientation:
+		QuantizedFacings: 0
+		CameraPitch: 90
+		UseClassicPerspectiveFudge: false
+	Explodes:
+		Weapon: UnitExplodeSmall
+		EmptyWeapon: UnitExplodeSmall
+	RenderVoxels:
+		Scale: 11.7
+		LightYaw: 800
+		LightPitch: 150
+		LightAmbientColor: -0.5,-0.5,-0.5
+		LightDiffuseColor: 1.4,1.4,1.4
+	MustBeDestroyed:
+		RequiredForShortGame: true
+	Voiced:
+		VoiceSet: AlliedVehicleVoice
+
+^Aircraft:
+	Inherits@1: ^ExistsInWorld
+	Inherits@2: ^GainsExperience
+		UseLocation: true
+	Targetable@airborne:
+		TargetTypes: Air
+		UpgradeTypes: airborne
+		UpgradeMinEnabledLevel: 1
+	SelectionDecorations:
+		Palette: pips
+	Selectable:
+	Aircraft:
+		RepairBuildings:
+		RearmBuildings:
+		LandWhenIdle: false
+		Voice: Move
+		AirborneUpgrades: airborne
+		CanHover: True
+	HiddenUnderFog:
+		Type: CenterPosition
+	AttackMove:
+		Voice: Attack
+	ActorLostNotification:
+	BodyOrientation:
+		QuantizedFacings: 0
+		CameraPitch: 90
+		UseClassicPerspectiveFudge: false
+	Guard:
+		Voice: Attack
+	Guardable:
+	MustBeDestroyed:
+	RenderVoxels:
+		Scale: 11.7
+		LightYaw: 800
+		LightPitch: 150
+		LightAmbientColor: -0.5,-0.5,-0.5
+		LightDiffuseColor: 1.4,1.4,1.4
+	Voiced:
+		VoiceSet: NighthawkVoice
+	Targetable@ground:
+		TargetTypes: Ground, Repair
+		UpgradeTypes: airborne
+		UpgradeMaxEnabledLevel: 0
+
+^Ship:
+	Inherits@1: ^ExistsInWorld
+	Inherits@2: ^GainsExperience
+	Inherits@3: ^IronCurtainable
+	Mobile:
+		Voice: Move
+		Crushes: crate
+		TerrainSpeeds:
+			Water: 100
+		ROT: 5
+	SelectionDecorations:
+		Palette: pips
+	Selectable:
+		Bounds: 32,32
+	Targetable:
+		TargetTypes: Ground, Water, Repair
+	Repairable:
+		Voice: Attack
+		RepairBuildings: gayard, nayard
+	AttackMove:
+		Voice: Attack
+	HiddenUnderFog:
+	ActorLostNotification:
+		Notification: NavalUnitLost
+	ProximityCaptor:
+		Types: Ship
+	Guard:
+		Voice: Attack
+	Guardable:
+	BodyOrientation:
+		QuantizedFacings: 0
+		CameraPitch: 90
+		UseClassicPerspectiveFudge: false
+	Tooltip:
+		GenericName: Ship
+	Explodes:
+		Weapon: UnitExplodeSmall
+		EmptyWeapon: UnitExplodeSmall
+	RenderVoxels:
+		Scale: 11.7
+		LightYaw: 800
+		LightPitch: 150
+		LightAmbientColor: -0.5,-0.5,-0.5
+		LightDiffuseColor: 1.4,1.4,1.4
+	MustBeDestroyed:
+		RequiredForShortGame: true
+	Voiced:
+		VoiceSet: SovietNavalVoice
+
+^Husk:
+	Husk:
+		AllowedTerrain: Clear, Rough, Road, Ore, Gems, Beach
+	RenderSprites:
+	Health:
+		HP: 280
+	Armor:
+		Type: Heavy
+	HiddenUnderFog:
+	Burns:
+		Damage: 2
+	ProximityCaptor:
+		Types: Husk
+	BodyOrientation:
+	Chronoshiftable:
+	Targetable:
+		TargetTypes: Ground
+		RequiresForceFire: true
+	Tooltip:
+		GenericName: Destroyed Vehicle
+	AutoTargetIgnore:
+	Capturable:
+		Type: husk
+		AllowAllies: true
+		CaptureThreshold: 1.0
+	TransformOnCapture:
+		ForceHealthPercentage: 25
+	DisabledOverlay:
+	ScriptTriggers:
+
+^HelicopterHusk:
+	Inherits: ^Husk
+	-Husk:
+	-Burns:
+	FallsToEarth:
+	-Targetable:
+	-Capturable:
+	-TransformOnCapture:
+
+^PlaneHusk:
+	Inherits: ^Husk
+	-Husk:
+	-Burns:
+	FallsToEarth:
+		Spins: False
+		Moves: True
+	-Targetable:
+	-Capturable:
+	-TransformOnCapture:
+
+^OreDrill:
+	Inherits@1: ^SpriteActor
+	Tooltip:
+		Name: Ore Drill
+	WithSpriteBody:
+	Building:
+		Footprint: x
+		Dimensions: 1,1
+	AppearsOnRadar:
+	RadarColorFromTerrain:
+		Terrain: Ore
+	BodyOrientation:
+	FrozenUnderFog:
+		StartsRevealed: true
+	SeedsResource:
+		ResourceType: Ore
+		Interval: 55
+	WithActiveAnimation:
+	QuantizeFacingsFromSequence:
+	RenderSprites:
+		Palette: player
+	AutoSelectionSize:
+
+^Tree:
+	Inherits@1: ^SpriteActor
+	WithSpriteBody:
+	FrozenUnderFog:
+		StartsRevealed: true
+	Building:
+		Footprint: x
+		Dimensions: 1, 1
+	AppearsOnRadar:
+	BodyOrientation:
+	Tooltip:
+		Name: Tree
+	QuantizeFacingsFromSequence:
+	RenderSprites:
+		Palette: terrain
+	AutoSelectionSize:
+
+^Rock:
+	Inherits@1: ^SpriteActor
+	WithSpriteBody:
+	FrozenUnderFog:
+		StartsRevealed: true
+	Building:
+		Footprint: x
+		Dimensions: 1, 1
+	AppearsOnRadar:
+	BodyOrientation:
+	Tooltip:
+		Name: Rock
+	QuantizeFacingsFromSequence:
+	RenderSprites:
+		Palette: terrain
+
