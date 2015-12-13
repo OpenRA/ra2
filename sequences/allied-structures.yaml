@@ -1,0 +1,670 @@
+gacnst:
+	Defaults:
+		Offset: 3, -60
+		UseTilesetCode: true
+		TilesetOverrides:
+			TEMPERAT: GENERIC
+			URBAN: GENERIC
+	idle: ggcnst
+		ShadowStart: 3
+	make: ggcnstmk
+		Length: 29
+		ShadowStart: 29
+		TilesetOverrides:
+			TEMPERAT: TEMPERAT
+			URBAN: URBAN
+	damaged-idle: ggcnst
+		Start: 1
+		ShadowStart: 4
+	idle-fans: ggcnst_a
+		Length: 6
+		Tick: 150
+	damaged-idle-fans: ggcnst_a
+		Start: 5
+		Length: 6
+		Tick: 150
+	crane-overlay: ggcnst_b
+		Length: 20
+		Tick: 150
+	damaged-crane-overlay: ggcnst_b
+		Start: 20
+		Length: 20
+		Tick: 150
+	dead: ggcnstdm # SHP broken & unused
+		Length: 30
+		ShadowStart: 30
+		Tick: 100
+	icon: cnsticon
+		Offset: 0,0
+		UseTilesetCode: false
+
+gapowr:
+	Defaults:
+		Offset: 0, -31
+		UseTilesetCode: true
+		TilesetOverrides:
+			TEMPERAT: GENERIC
+			URBAN: GENERIC
+	idle: ggpowr
+		ShadowStart: 3
+	damaged-idle: gtpowr
+		Start: 1
+		ShadowStart: 4
+	idle-glow: ggpowr_a
+		Length: 8
+		ShadowStart: 16
+		Tick: 150
+	damaged-idle-glow: ggpowr_a
+		Start: 8
+		Length: 8
+		ShadowStart: 24
+		Tick: 150
+	make: gtpowrmk
+		Length: 25
+		ShadowStart: 25
+		TilesetOverrides:
+			TEMPERAT: TEMPERAT
+			URBAN: URBAN
+	icon: powricon
+		Offset: 0,0
+		UseTilesetCode: false
+
+gapile:
+	Defaults:
+		Offset: -15, -38
+		UseTilesetCode: true
+		TilesetOverrides:
+			TEMPERAT: GENERIC
+			URBAN: GENERIC
+	idle: ggpile
+		ShadowStart: 3
+	damaged-idle: ggpile
+		Start: 1
+		ShadowStart: 4
+	idle-flag: ggpile_a
+		Length: 16
+		ShadowStart: 32
+	damaged-idle-flag: ggpile_a
+		Start:16
+		Length: 16
+		ShadowStart: 48
+	dead: ggpiledm # SHP broken & unused
+		Length: 25
+		ShadowStart: 25
+		Tick: 100
+	make: gtpilemk
+		Length: 25
+		ShadowStart: 25
+		TilesetOverrides:
+			TEMPERAT: TEMPERAT
+			URBAN: URBAN
+	icon: brrkicon
+		Offset: 0,0
+		UseTilesetCode: false
+
+garefn:
+	Defaults:
+		Offset: -12, -52
+		UseTilesetCode: true
+		TilesetOverrides:
+			TEMPERAT: GENERIC
+			URBAN: GENERIC
+	idle: ggrefn
+		ShadowStart: 3
+	damaged-idle: ggrefn
+		Start: 1
+		ShadowStart: 4
+	make: gurefnmk
+		Length: 25
+		ShadowStart: 25
+		TilesetOverrides:
+			TEMPERAT: TEMPERAT
+			URBAN: URBAN
+	idle-drill: ggrefnl1
+		Length: 6
+		Tick: 1500
+	idle-bib: ggrefnbb
+		ShadowStart: 2
+		ZOffset: -512
+	damaged-idle-bib: ggrefnbb
+		Start: 1
+		ShadowStart: 3
+		ZOffset: -512
+	docking-overlay: ggrefnor
+		Length: 20
+		ShadowStart: 20
+	icon: reficon
+		Offset: 0,0
+		UseTilesetCode: false
+
+gaairc:
+	Defaults:
+		Offset: -14, -38
+		UseTilesetCode: true
+		TilesetOverrides:
+			TEMPERAT: GENERIC
+			URBAN: GENERIC
+	idle: ggairc
+		Length: 1
+	damaged-idle: ggairc
+		Start: 1
+		Length: 2
+	idle-top: gaairc_c
+		Length: 16
+		ShadowStart: 16
+		Tick: 320
+	idle-bottom: ggaircbb
+		Length: 1
+		ZOffset: -512
+	damage-idle-bottom: ggaircbb
+		Start: 1
+		Length: 1
+		ZOffset: -512
+	idle-dish: ggairc_a
+		Length: 4
+		Tick: 120
+		ZOffset: -512
+	damaged-idle-dish: ggairc_a
+		Start: 5
+		Length: 4
+		Tick: 120
+		ZOffset: -512
+	idle-mid: ggairc_b
+		Length: 6
+		Tick: 120
+		ZOffset: -512
+	damage-idle-mid: ggairc_b
+		Start: 7
+		Length: 6
+		Tick: 120
+		ZOffset: -512
+	make: gtaircmk
+		Length: 24
+		ShadowStart: 25
+		TilesetOverrides:
+			TEMPERAT: TEMPERAT
+			URBAN: URBAN
+	icon: heliicon
+		Offset: 0,0
+		UseTilesetCode: false
+
+gaweap:
+	Defaults:
+		Offset: -30, -60
+		UseTilesetCode: true
+		TilesetOverrides:
+			TEMPERAT: GENERIC
+			URBAN: GENERIC
+	idle: ggweap
+		ShadowStart: 2
+	damaged-idle: ggweap
+		Start: 2
+		ShadowStart: 5
+	build-ramp: ggweap_1
+		ShadowStart: 2
+		ZOffset: -5000
+	damaged-build-ramp: ggweap_1
+		Start: 1
+		ShadowStart: 3
+		ZOffset: -5000
+	build-top: ggweap_2
+		ShadowStart: 2
+	damaged-build-top: ggweap_2
+		Start: 1
+		ShadowStart: 3
+# TODO: ggweap_3 and ggweap_4 are used for producing flying actors
+	build-air-open: ggweap_3
+		ShadowStart: 2
+	damaged-air-open: ggweap_3
+		Start: 1
+		ShadowStart: 3
+	build-air-inside: ggweap_4
+		ShadowStart: 2
+	damaged-air-inside: ggweap_4
+		Start: 1
+		ShadowStart: 3
+	idle-ramp: ggweapbb
+		ShadowStart: 2
+	damaged-idle-ramp: ggweapbb
+		Start: 1
+		ShadowStart: 3
+	idle-flag: ggweap_a
+		Length: 14
+		ShadowStart: 31
+	damaged-idle-flag: ggweap_a
+		Start: 15
+		Length: 14
+		ShadowStart: 45
+	overlay-fan: ggweap_b
+		Length: 5
+		ShadowStart: 6
+	make: gtweapmk
+		Length: 24
+		ShadowStart: 25
+		TilesetOverrides:
+			TEMPERAT: TEMPERAT
+			URBAN: URBAN
+	icon: gwepicon
+		Offset: 0,0
+		UseTilesetCode: false
+
+gayard:
+	Defaults:
+		Offset: 0, -45
+		UseTilesetCode: true
+		TilesetOverrides:
+			TEMPERAT: GENERIC
+			URBAN: GENERIC
+	idle: ggyard
+		ShadowStart: 4
+	damaged-idle: ggyard
+		Start: 2
+		ShadowStart: 5
+	idle-crane: ggyard_a
+		Length: 15
+		ShadowStart: 30
+	damaged-idle-crane: ggyard_a
+		Start: 15
+		Length: 15
+		ShadowStart: 45
+	idle-waves: ggyard_c
+		Length: 15
+		ShadowStart: 30
+	damaged-idle-waves: ggyard_c
+		Start: 30
+		Length: 15
+		ShadowStart: 30
+	make: gtyardmk
+		Length: 25
+		ShadowStart: 25
+		TilesetOverrides:
+			TEMPERAT: TEMPERAT
+			URBAN: URBAN
+	repair: ggyard_s
+		Length: 18
+		ShadowStart: 36
+	damaged-repair: ggyard_s
+		Start: 18
+		Length: 18
+		ShadowStart: 54
+	icon: ayaricon
+		Offset: 0,0
+		UseTilesetCode: false
+
+gadept:
+	Defaults:
+		Offset: 7, -40
+		UseTilesetCode: true
+		TilesetOverrides:
+			TEMPERAT: GENERIC
+			URBAN: GENERIC
+	idle: ggdept_d
+		ShadowStart: 2
+	damaged-idle: ggdept_d
+		Start: 1
+		ShadowStart: 3
+	idle-side: ggdept
+		ShadowStart: 3
+	damaged-idle-side: ggdept
+		Start: 1
+		Length: 2
+		ShadowStart: 4
+	bib: ggdeptbb
+		ShadowStart: 3
+		ZOffset: -512
+	make: gtdeptmk
+		Length: 25
+		ShadowStart: 25
+		TilesetOverrides:
+			TEMPERAT: TEMPERAT
+			URBAN: URBAN
+	repair: ggdept_c
+		Length: 10
+		ShadowStart: 20
+		Tick: 180
+	damaged-repair: ggdept_c
+		Start: 10
+		Length: 10
+		ShadowStart: 30
+		Tick: 180
+	icon: fixicon
+		Offset: 0,0
+		UseTilesetCode: false
+
+gatech:
+	Defaults:
+		Offset: -15, -40
+		UseTilesetCode: true
+		TilesetOverrides:
+			TEMPERAT: GENERIC
+			URBAN: GENERIC
+	idle: ggtech
+		ShadowStart: 3
+	damaged-idle: ggtech
+		Start: 1
+		ShadowStart: 4
+	idle-lights: ggtech_a
+		Length: 12
+		ShadowStart: 24
+	damaged-idle-ights: ggtech_a
+		Start: 12
+		Length: 12
+		ShadowStart: 36
+	make: gttechmk
+		Length: 25
+		ShadowStart: 25
+		TilesetOverrides:
+			TEMPERAT: TEMPERAT
+			URBAN: URBAN
+	icon: techicon
+		Offset: 0,0
+		UseTilesetCode: false
+
+gaorep:
+	Defaults:
+		Offset: 0, -45
+		UseTilesetCode: true
+		TilesetOverrides:
+			TEMPERAT: GENERIC
+			URBAN: GENERIC
+	idle: ggorep
+		ShadowStart: 3
+	damaged-idle: ggorep
+		Start: 1
+		ShadowStart: 4
+	idle-glow: ggorep_a
+		Length: 8
+		ShadowStart: 16
+		Tick: 180
+	damaged-idle-glow: ggorep_a
+		Start: 8
+		Length: 8
+		ShadowStart: 24
+		Tick: 180
+	make: gtorepmk
+		Length: 25
+		ShadowStart: 25
+		TilesetOverrides:
+			TEMPERAT: TEMPERAT
+			URBAN: URBAN
+	icon: gorep
+		Offset: 0,0
+		UseTilesetCode: false
+
+gawall:
+	Defaults:
+		Offset: 0, -12
+		UseTilesetCode: true
+	idle: gtwall
+		Length: 16
+		ShadowStart: 32
+	damaged-idle: gtwall
+		Start: 16
+		Length: 16
+		ShadowStart: 48
+	icon: wallicon
+		Offset: 0,0
+		UseTilesetCode: false
+
+gapill:
+	Defaults:
+		Offset: 0, -15
+		UseTilesetCode: true
+		TilesetOverrides:
+			TEMPERAT: GENERIC
+			URBAN: GENERIC
+	idle: ggpill
+		ShadowStart: 3
+	damaged-idle: ggpill
+		Start: 1
+		ShadowStart: 4
+	critical-idle: ggpill
+		Start: 2
+		ShadowStart: 5
+	muzzle0: mgun-n
+		Length: *
+		UseTilesetCode: false
+	muzzle1: mgun-nw
+		Length: *
+		UseTilesetCode: false
+	muzzle2: mgun-w
+		Length: *
+		UseTilesetCode: false
+	muzzle3: mgun-sw
+		Length: *
+		UseTilesetCode: false
+	muzzle4: mgun-s
+		Length: *
+		UseTilesetCode: false
+	muzzle5: mgun-se
+		Length: *
+		UseTilesetCode: false
+	muzzle6: mgun-e
+		Length: *
+		UseTilesetCode: false
+	muzzle7: mgun-ne
+		Length: *
+		UseTilesetCode: false
+	make: gtpillmk
+		Length: 8
+		ShadowStart: 8
+		TilesetOverrides:
+			TEMPERAT: TEMPERAT
+			URBAN: URBAN
+	icon: pillicon
+		Offset: 0,0
+		UseTilesetCode: false
+
+nasam:
+	Defaults:
+		Offset: 0, -15
+		ZOffset: -512
+		UseTilesetCode: true
+		TilesetOverrides:
+			TEMPERAT: GENERIC
+			URBAN: GENERIC
+	idle: ngsam
+		ShadowStart: 3
+	damaged-idle: ngsam
+		Start: 1
+		ShadowStart: 4
+	critical-idle: ngsam
+		Start: 2
+		ShadowStart: 5
+	make: ntsammk
+		Length: 8
+		ShadowStart: 8
+		TilesetOverrides:
+			TEMPERAT: TEMPERAT
+			URBAN: URBAN
+		ZOffset: 0
+	icon: samicon
+		Offset: 0,0
+		UseTilesetCode: false
+
+gtgcan:
+	Defaults:
+		Offset: 0, -30
+		ZOffset: -512
+		UseTilesetCode: true
+		TilesetOverrides:
+			TEMPERAT: GENERIC
+			URBAN: GENERIC
+	idle: gggcan
+		ShadowStart: 3
+	damaged-idle: gggcan
+		Start: 1
+		ShadowStart: 4
+	critical-idle: gggcan
+		Start: 2
+		ShadowStart: 5
+		Offset: 0, -30
+	make: gtgcanmk
+		Length: 12
+		ShadowStart: 12
+		TilesetOverrides:
+			TEMPERAT: TEMPERAT
+			URBAN: URBAN
+		ZOffset: 0
+	muzzle: gcmuzzle
+		Length: *
+		Offset: 0,0
+		UseTilesetCode: false
+	icon: gcanicon
+		Offset: 0,0
+		UseTilesetCode: false
+
+gaspysat:
+	Defaults:
+		Offset: 0, -31
+		UseTilesetCode: true
+		TilesetOverrides:
+			TEMPERAT: GENERIC
+			URBAN: GENERIC
+	idle: ggspst
+		ShadowStart: 3
+		Tick: 180
+	damaged-idle: ggspst
+		Start: 1
+		ShadowStart: 4
+		Tick: 180
+	idle-dish: ggspst_a
+		Length: 16
+		Tick: 180
+	damaged-idle-dish: ggspst_a
+		Start: 16
+		Length: 16
+		Tick: 180
+	make: gtspstmk
+		Length: 25
+		ShadowStart: 25
+		Tick: 90
+		TilesetOverrides:
+			TEMPERAT: TEMPERAT
+			URBAN: URBAN
+	icon: asaticon
+		Offset: 0,0
+		UseTilesetCode: false
+
+gagap:
+	Defaults:
+		Offset: -15, -7
+		UseTilesetCode: true
+		TilesetOverrides:
+			TEMPERAT: GENERIC
+			URBAN: GENERIC
+	idle: gggap
+		Length: 1
+		ShadowStart: 3
+	damaged-idle: gggap
+		Start: 2
+		Length: 1
+		ShadowStart: 4
+	make: gtgapmk
+		Length: 9
+		ShadowStart: 9
+		Tick: 90
+		TilesetOverrides:
+			TEMPERAT: TEMPERAT
+			URBAN: URBAN
+	icon: gapicon
+		Offset: 0,0
+		UseTilesetCode: false
+
+gaweat:
+	Defaults:
+		Offset: 0, -45
+		UseTilesetCode: true
+		TilesetOverrides:
+			TEMPERAT: GENERIC
+			URBAN: GENERIC
+	idle: ggweth
+		ShadowStart: 3
+	damaged-idle: ggweth
+		Start: 1
+		ShadowStart: 4
+	make: guwethmk
+		Length: 25
+		ShadowStart: 25
+		TilesetOverrides:
+			TEMPERAT: TEMPERAT
+			URBAN: URBAN
+	icon: wethicon
+		Offset: 0,0
+		UseTilesetCode: false
+
+gacsph:
+	Defaults:
+		Offset: -15, -50
+		UseTilesetCode: true
+		TilesetOverrides:
+			TEMPERAT: GENERIC
+			URBAN: GENERIC
+	idle: ggcsph
+		ShadowStart: 3
+	damaged-idle: ggcsph
+		Start: 1
+		ShadowStart: 4
+	idle-dome: ggcsph_e
+		ShadowStart: 2
+	damaged-idle-dome: ggcsph_e
+		Start: 1
+		ShadowStart: 3
+	dead: ggcsphdm # SHP broken & unused
+		Length: 25
+		ShadowStart: 25
+		Tick: 50
+	make: gtcsphmk
+		Length: 25
+		ShadowStart: 25
+		TilesetOverrides:
+			TEMPERAT: TEMPERAT
+			URBAN: URBAN
+	icon: csphicon
+		Offset: 0,0
+		UseTilesetCode: false
+
+atesla:
+	Defaults:
+		Offset: 1,-15
+		UseTilesetCode: true
+		TilesetOverrides:
+			TEMPERAT: GENERIC
+			URBAN: GENERIC
+	idle-normal: ggpris
+		ShadowStart: 3
+	damaged-idle-normal: ggpris
+		Start: 1
+		ShadowStart: 4
+	idle: ggpris_b
+		Length: 9
+		Tick: 100
+		ShadowStart: 18
+	damaged-idle: ggpris_b
+		Start: 9
+		Length: 9
+		Tick: 180
+		ShadowStart: 27
+	active: ggpris_a
+		Length: 10
+		Tick: 100
+		ShadowStart: 20
+	damaged-active: ggpris_a
+		Start: 10
+		Length: 10
+		Tick: 100
+		ShadowStart: 30
+	dead: ggprisdm # SHP broken & unused
+		Length: 21
+		ShadowStart: 21
+		Tick: 100
+	icon: prisicon
+		Offset: 0,0
+		UseTilesetCode: false
+	make: gtprismk
+		Length: 8
+		ShadowStart: 8
+		Tick: 160
+		TilesetOverrides:
+			TEMPERAT: TEMPERAT
+			URBAN: URBAN
