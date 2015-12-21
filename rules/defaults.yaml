@@ -535,7 +535,8 @@
 	AutoSelectionSize:
 
 ^Tree:
-	Inherits@1: ^SpriteActor
+	Inherits@1: ^ExistsInWorld
+	Inherits@2: ^SpriteActor
 	WithSpriteBody:
 	FrozenUnderFog:
 		StartsRevealed: true
@@ -550,6 +551,12 @@
 	RenderSprites:
 		Palette: terrain
 	AutoSelectionSize:
+	Targetable:
+		TargetTypes: Ground, Wall, DetonateAttack
+	Health:
+		HP: 200
+	Armor:
+		Type: Wood
 
 ^Rock:
 	Inherits@1: ^SpriteActor
