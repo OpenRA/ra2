@@ -81,18 +81,16 @@ namespace OpenRA.Mods.RA2.Traits
 			var targetPosition = self.World.Map.CenterOfCell(order.TargetLocation);
 
 			Action detonateWeapon = () => self.World.AddFrameEndTask(w =>
-			{
-				info.WeaponInfo.Impact(Target.FromCell(w, order.TargetLocation), self, Enumerable.Empty<int>());
-			});
+				info.WeaponInfo.Impact(Target.FromCell(w, order.TargetLocation), self, Enumerable.Empty<int>()));
 			self.World.AddFrameEndTask(w => w.Add(new DelayedAction(info.ActivationDelay, detonateWeapon)));
 
 			if (info.CameraActor != null)
 			{
 				var camera = self.World.CreateActor(false, info.CameraActor, new TypeDictionary
-					{
+				{
 						new LocationInit(order.TargetLocation),
 						new OwnerInit(self.Owner),
-					});
+				});
 
 				camera.QueueActivity(new Wait(info.CameraSpawnAdvance + info.CameraRemoveDelay));
 				camera.QueueActivity(new RemoveSelf());

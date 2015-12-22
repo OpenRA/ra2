@@ -22,10 +22,13 @@ namespace OpenRA.Mods.RA2.Traits
 	{
 		[Desc("The number of ticks between each check to see if we can teleport to the refinery.")]
 		public readonly int CheckTeleportDelay = 10;
+
 		[Desc("The visual effect to play upon teleporting.")]
 		public readonly string TeleportEffect = null;
+
 		[Desc("The palette for the teleport visual effect.")]
 		public readonly string TeleportPalette = null;
+
 		[Desc("The sound for the teleport.")]
 		public readonly string TeleportSound = null;
 
@@ -97,13 +100,13 @@ namespace OpenRA.Mods.RA2.Traits
 			if (pos.CanEnterCell(dest.Value))
 			{
 				if (Info.TeleportSound != null)
-				{
+
 					Game.Sound.Play(Info.TeleportSound, self.OccupiesSpace.CenterPosition);
-				}
+
 				if (Info.TeleportEffect != null && Info.TeleportPalette != null)
-				{
+
 					world.AddFrameEndTask(w => w.Add(new Explosion(w, self.OccupiesSpace.CenterPosition, Info.TeleportEffect, Info.TeleportPalette)));
-				}
+
 				self.CancelActivity();
 				self.QueueActivity(new SimpleTeleport(dest.Value));
 				self.QueueActivity(nextActivity);
