@@ -455,7 +455,7 @@ gawall:
 		Type: Concrete
 
 gapill:
-	Inherits: ^Building
+	Inherits: ^SupportBuilding
 	Buildable:
 		Queue: Support
 		BuildPaletteOrder: 20
@@ -641,7 +641,7 @@ gaspysat:
 	RequiresPower:
 
 gagap:
-	Inherits: ^Building
+	Inherits: ^SupportBuilding
 	Valued:
 		Cost: 1000
 	Tooltip:
@@ -670,6 +670,7 @@ gagap:
 		Amount: -100
 	MustBeDestroyed:
 		RequiredForShortGame: false
+	-AutoTarget:
 
 gaweat:
 	Inherits: ^Building
@@ -726,7 +727,7 @@ gacsph:
 		Sequence: idle-dome
 
 atesla:
-	Inherits: ^Building
+	Inherits: ^SupportBuilding
 	Buildable:
 		Queue: Support
 		BuildPaletteOrder: 35
