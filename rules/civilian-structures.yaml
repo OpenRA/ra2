@@ -48,6 +48,23 @@ gasand:
 		Type: Wood
 	Crushable:
 		CrushClasses: fence
+  
+cafncp:
+	Inherits: ^Wall
+	Valued:
+		Cost: 25
+	Tooltip:
+		Name: Prison Camp Fence
+		Description: Fence.\nCrushable by vehicles.
+	Building:
+		Footprint: x
+		Dimensions: 1, 1
+	Health:
+		HP: 100
+	Armor:
+		Type: Wood
+	Crushable:
+		CrushClasses: fence
 
 cawash01:
 	Inherits: ^CivBuilding
