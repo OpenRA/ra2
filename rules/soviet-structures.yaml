@@ -614,7 +614,7 @@ naflak:
 		Amount: -50
 
 tesla:
-	Inherits: ^Building
+	Inherits: ^SupportBuilding
 	Buildable:
 		Queue: Support
 		BuildPaletteOrder: 30
