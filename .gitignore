@@ -19,6 +19,7 @@ _ReSharper.*/
 *.mix
 
 # binaries
+/*.exe
 /*.dll
 /*.dll.config
 /*.so
