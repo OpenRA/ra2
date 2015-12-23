@@ -40,8 +40,6 @@ Smudges:
 Rules:
 	World:
 		-StartGameNotification:
-		LoadWidgetAtGameStart:
-			Widget: MAINMENU
 		MusicPlaylist:
 			StartingMusic: grinder
 			LoopStartingMusic: true
