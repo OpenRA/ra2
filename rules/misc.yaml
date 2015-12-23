@@ -16,6 +16,26 @@ waypoint:
 	WithSpriteBody:
 	QuantizeFacingsFromSequence:
 
+clock:
+	AlwaysVisible:
+	Immobile:
+		OccupiesSpace: false
+	Health:
+		HP: 1000
+	RevealsShroud:
+		Range: 10c0
+		Type: CenterPosition
+	BodyOrientation:
+		QuantizedFacings: 1
+	WithSpriteBody:
+	RenderSpritesEditorOnly:
+		Image: clock
+
+clock.paradrop:
+	Inherits: clock
+	RevealsShroud:
+		Range: 6c0
+
 ^amcv.colorpicker:
 	Inherits: amcv
 	AlwaysVisible:

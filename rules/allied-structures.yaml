@@ -261,6 +261,20 @@ amradr:
 	RenderSprites:
 		Image: gaairc
 	AutoSelectionSize:
+	ProvidesPrerequisite@america:
+		Prerequisite: aircraft.america
+	ParatroopersPower@paratroopers:
+		OrderName: AmericanParatroopers
+		Prerequisites: aircraft.america
+		Icon: paradrop
+		ChargeTime: 360
+		Description: American Paratroopers
+		LongDesc: A Cargo Plane drops eight GIs\nanywhere on the map.
+		DropItems: e1,e1,e1,e1,e1,e1,e1,e1
+		AllowImpassableCells: false
+		QuantizedFacings: 8
+		UnitType: pdplane
+		CameraActor: clock.paradrop
 
 gaweap:
 	Inherits: ^Building

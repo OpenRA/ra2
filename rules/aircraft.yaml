@@ -71,3 +71,34 @@ zep:
 #	FallsToEarth:
 #		Velocity: 200
 
+pdplane:
+	Inherits: ^Aircraft
+	Valued:
+		Cost: 2000
+	-Selectable:
+	-Voiced:
+	-GainsExperience:
+	RejectsOrders:
+	Tooltip:
+		Name: Cargo Plane
+	Aircraft:
+		CruiseAltitude: 5600
+		ROT: 5
+		Speed: 100
+		AirborneUpgrades: airborne
+		CanHover: True
+	Hovers:
+		OffsetModifier: -10
+	Health:
+		HP: 1000
+	RevealsShroud:
+		Range: 6c0
+		Type: CenterPosition
+	RenderSprites:
+	RenderVoxels:
+	WithVoxelBody:
+	Cargo:
+		MaxWeight: 10
+	ParaDrop:
+		DropRange: 4c0
+		ChuteSound: sparadra.wav

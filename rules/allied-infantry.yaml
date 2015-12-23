@@ -120,12 +120,18 @@ e1:
 #		UpgradeTypes: eliteparaweapon
 #		UpgradeMinEnabledLevel: 1
 	WithInfantryBody:
+		UpgradeTypes: parachute
+		UpgradeMaxEnabledLevel: 0
 	Voiced:
 		VoiceSet: GIVoice
 	ProducibleWithLevel:
 		Prerequisites: barracks.infiltrated
 	QuantizeFacingsFromSequence:
 		Sequence: stand
+	WithSpriteBody@PARACHUTE:
+ 		Sequence: paradrop
+		UpgradeTypes: parachute
+		UpgradeMinEnabledLevel: 1
 
 snipe:
 	Inherits: ^Infantry

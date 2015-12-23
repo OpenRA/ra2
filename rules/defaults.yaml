@@ -228,6 +228,8 @@
 	Selectable:
 	Targetable:
 		TargetTypes: Ground, Infantry, DetonateAttack, Disguise
+		UpgradeTypes: parachute
+		UpgradeMaxEnabledLevel: 0
 	WithInfantryBody:
 		IdleSequences: idle1,idle2
 		StandSequences: stand
@@ -284,6 +286,20 @@
 		VoiceSet: GIVoice
 	QuantizeFacingsFromSequence:
 		Sequence: stand
+	Parachutable:
+		FallRate: 26
+		KilledOnImpassableTerrain: true
+		GroundCorpseSequence:
+		GroundCorpsePalette:
+		WaterCorpseSequence:
+		WaterCorpsePalette:
+	WithParachute:
+		UpgradeTypes: parachute
+		UpgradeMinEnabledLevel: 1
+		Image: parach
+		OpeningSequence: open
+		Sequence: idle
+		ClosingSequence: close
 
 ^CivilianInfantry:
 	Inherits: ^Infantry
