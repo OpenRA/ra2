@@ -42,8 +42,6 @@ sapc:
 		EmptyWeapon: UnitExplode
 	WithVoxelBody:
 	RenderSprites:
-	RepairableNear:
-		Buildings: gayard, nayard
 
 sub:
 	Inherits: ^Ship
@@ -84,8 +82,6 @@ sub:
 	AttackFrontal:
 		Voice: Attack
 	Chronoshiftable:
-	RepairableNear:
-		Buildings: gayard, nayard
 	AutoTarget:
 		InitialStance: ReturnFire
 	DetectCloaked:
@@ -136,6 +132,3 @@ hyd:
 		EmptyWeapon: UnitExplode
 	WithVoxelBody:
 	RenderSprites:
-	RepairableNear:
-		Buildings: gayard, nayard
-
