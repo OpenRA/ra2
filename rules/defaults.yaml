@@ -411,6 +411,7 @@
 		TargetTypes: Ground, Repair
 		UpgradeTypes: airborne
 		UpgradeMaxEnabledLevel: 0
+	DeathSounds:
 
 ^Ship:
 	Inherits@1: ^ExistsInWorld
