@@ -213,6 +213,9 @@
 		Type: Wood
 	Crushable:
 		CrushClasses: fence
+	SoundOnDamageTransition:
+		DamagedSounds: gblacrua.wav, gblacrub.wav
+		DestroyedSounds: gblacrua.wav, gblacrub.wav
 
 ^Infantry:
 	Inherits@1: ^ExistsInWorld

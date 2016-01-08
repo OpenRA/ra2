@@ -15,7 +15,10 @@ gasand:
 	Tooltip:
 		Name: Sandbags
 		Description: Sandbags.\nCrushable by vehicles.
-  
+	SoundOnDamageTransition:
+		DamagedSounds: gsancrua.wav, gsancrub.wav
+		DestroyedSounds: gsancrua.wav, gsancrub.wav
+
 cafncp:
 	Inherits: ^Fence
 	Tooltip:
