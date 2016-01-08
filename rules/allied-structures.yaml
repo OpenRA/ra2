@@ -441,18 +441,9 @@ gawall:
 		Queue: Support
 		BuildPaletteOrder: 10
 		Prerequisites: barracks, ~structures.allies
-	Valued:
-		Cost: 100
 	Tooltip:
 		Name: Allied Wall
 		Description: Light wall.\nCrushable by vehicles.
-	Building:
-		Footprint: x
-		Dimensions: 1, 1
-	Health:
-		HP: 300
-	Armor:
-		Type: Concrete
 
 gapill:
 	Inherits: ^SupportBuilding
