@@ -1,70 +1,26 @@
 cafncb:
-	Inherits: ^Wall
-	Valued:
-		Cost: 25
+	Inherits: ^Fence
 	Tooltip:
 		Name: Black Fence
 		Description: Fence.\nCrushable by vehicles.
-	Building:
-		Footprint: x
-		Dimensions: 1, 1
-	Health:
-		HP: 100
-	Armor:
-		Type: Wood
-	Crushable:
-		CrushClasses: fence
 
 cafncw:
-	Inherits: ^Wall
-	Valued:
-		Cost: 25
+	Inherits: ^Fence
 	Tooltip:
 		Name: White Fence
 		Description: Fence.\nCrushable by vehicles.
-	Building:
-		Footprint: x
-		Dimensions: 1, 1
-	Health:
-		HP: 100
-	Armor:
-		Type: Wood
-	Crushable:
-		CrushClasses: fence
 
 gasand:
-	Inherits: ^Wall
-	Valued:
-		Cost: 25
+	Inherits: ^Fence
 	Tooltip:
 		Name: Sandbags
-		Description: Fence.\nCrushable by vehicles.
-	Building:
-		Footprint: x
-		Dimensions: 1, 1
-	Health:
-		HP: 100
-	Armor:
-		Type: Wood
-	Crushable:
-		CrushClasses: fence
+		Description: Sandbags.\nCrushable by vehicles.
   
 cafncp:
-	Inherits: ^Wall
-	Valued:
-		Cost: 25
+	Inherits: ^Fence
 	Tooltip:
 		Name: Prison Camp Fence
 		Description: Fence.\nCrushable by vehicles.
-	Building:
-		Footprint: x
-		Dimensions: 1, 1
-	Health:
-		HP: 100
-	Armor:
-		Type: Wood
-	Crushable:
-		CrushClasses: fence
 
 cawash01:
 	Inherits: ^CivBuilding

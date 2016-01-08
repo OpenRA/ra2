@@ -182,8 +182,6 @@
 		BuildSounds: uplace.wav
 		Adjacent: 7
 		TerrainTypes: Clear, Rough, Road, DirtRoad
-	Crushable:
-		CrushClasses: wall
 	BlocksProjectiles:
 	LineBuild:
 		Range: 8
@@ -195,11 +193,26 @@
 	WithWallSpriteBody:
 		Type: wall
 	AutoTargetIgnore:
-	ProximityCaptor:
-		Types: Wall
 	Sellable:
 		SellSounds: uselbuil.wav
 	Demolishable:
+	Valued:
+		Cost: 100
+	Health:
+		HP: 300
+	Armor:
+		Type: Concrete
+
+^Fence:
+	Inherits: ^Wall
+	Valued:
+		Cost: 25
+	Health:
+		HP: 100
+	Armor:
+		Type: Wood
+	Crushable:
+		CrushClasses: fence
 
 ^Infantry:
 	Inherits@1: ^ExistsInWorld
