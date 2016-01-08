@@ -20,6 +20,7 @@ engineer:
 	EngineerRepair:
 	RepairsBridges:
 	Captures:
+		Sabotage: false
 		CaptureTypes: building, husk
 	-AutoTarget:
 	WithInfantryBody:
