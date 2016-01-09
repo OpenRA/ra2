@@ -92,10 +92,10 @@ nahand:
 		Prerequisite: barracks
 	ProvidesPrerequisite@cuba:
 		Prerequisite: infantry.cuba
-		Race: cuba
+		Factions: cuba
 	ProvidesPrerequisite@iraq:
 		Prerequisite: infantry.iraq
-		Race: iraq
+		Factions: iraq
 	ProvidesPrerequisite@default:
 	Building:
 		Footprint: xx xx
@@ -229,10 +229,10 @@ naweap:
 		Description: Produces vehicles.
 	ProvidesPrerequisite@libya:
 		Prerequisite: vehicles.libya
-		Race: libya
+		Factions: libya
 	ProvidesPrerequisite@russia:
 		Prerequisite: vehicles.russia
-		Race: russia
+		Factions: russia
 	ProvidesPrerequisite@default:
 	Building:
 		Footprint: xxxxx xxxxx xxxxx
