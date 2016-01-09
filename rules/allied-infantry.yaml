@@ -63,7 +63,7 @@ dog:
 	WithInfantryBody:
 	RenderSprites:
 		Image: adog
-		RaceImages:
+		FactionImages:
 			soviet: dog
 			cuba: dog
 			libya: dog

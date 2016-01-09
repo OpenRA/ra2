@@ -39,10 +39,10 @@ gacnst:
 		Prerequisite: structures.allies
 	ProvidesPrerequisite@america:
 		Prerequisite: structures.america
-		Race: america
+		Factions: america
 	ProvidesPrerequisite@france:
 		Prerequisite: structures.france
-		Race: france
+		Factions: france
 	Power:
 		Amount: 0
 	EmitInfantryOnSell@allies:
@@ -101,7 +101,7 @@ gapile:
 		Prerequisite: barracks
 	ProvidesPrerequisite@england:
 		Prerequisite: infantry.england
-		Race: england
+		Factions: england
 	ProvidesPrerequisite@default:
 	Building:
 		Footprint: xxx xxx
@@ -199,7 +199,7 @@ gaairc:
 		Prerequisite: aircraft.allies
 	ProvidesPrerequisite@korea:
 		Prerequisite: aircraft.korea
-		Race: korea
+		Factions: korea
 	ProvidesPrerequisite@default:
 	Building:
 		Footprint: xxx xxx
@@ -277,7 +277,7 @@ gaweap:
 		Description: Produces vehicles.
 	ProvidesPrerequisite@germany:
 		Prerequisite: vehicles.germany
-		Race: germany
+		Factions: germany
 	ProvidesPrerequisite@default:
 	Building:
 		Footprint: xxxxx xxxxx xxxxx
