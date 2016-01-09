@@ -3,7 +3,7 @@ lcrf:
 	Buildable:
 		Queue: Ship
 		BuildPaletteOrder: 10
-		Prerequisites: gayard
+		Prerequisites: ~gayard
 	Valued:
 		Cost: 900
 	Tooltip:
@@ -50,7 +50,7 @@ dest:
 	Buildable:
 		Queue: Ship
 		BuildPaletteOrder: 40
-		Prerequisites: gayard
+		Prerequisites: ~gayard
 	Valued:
 		Cost: 1000
 	Tooltip:
