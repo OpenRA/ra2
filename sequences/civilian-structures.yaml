@@ -58,6 +58,21 @@ cafncp:
 		Offset: 0,0
 		UseTilesetCode: false
 
+cakrmw:
+	Defaults:
+		Offset: 0, -12
+		UseTilesetCode: true
+	idle: ctkrmw
+		Length: 16
+		ShadowStart: 32
+	damaged-idle: ctkrmw
+		Start: 16
+		Length: 16
+		ShadowStart: 48
+	icon: wallicon
+		Offset: 0,0
+		UseTilesetCode: false
+
 cawash01:
 	idle: cgwash01
 		ShadowStart: 4
