@@ -5,8 +5,6 @@ caoild:
 	Building:
 		Footprint: xx xx
 		Dimensions: 2, 2
-	ExternalCapturable:
-	ExternalCapturableBar:
 	EngineerRepairable:
 	CashTrickler:
 		Period: 100
