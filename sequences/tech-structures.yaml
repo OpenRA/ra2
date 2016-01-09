@@ -16,6 +16,15 @@ caoild:
 		ShadowStart: 96
 		Offset: 0, -30
 
+cahosp:
+	idle: cuhosp
+		ShadowStart: 4
+		Offset: -30, -75
+	damaged-idle: cuhosp
+		Start: 1
+		ShadowStart: 5
+		Offset: -30, -75
+
 caoutp:
 	icon: xxicon
 		Offset: 0,0
