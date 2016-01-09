@@ -3,7 +3,7 @@ sapc:
 	Buildable:
 		Queue: Ship
 		BuildPaletteOrder: 10
-		Prerequisites: nayard
+		Prerequisites: ~nayard
 	Valued:
 		Cost: 900
 	Tooltip:
@@ -48,7 +48,7 @@ sub:
 	Buildable:
 		Queue: Ship
 		BuildPaletteOrder: 30
-		Prerequisites: nayard
+		Prerequisites: ~nayard
 	Valued:
 		Cost: 1000
 	Tooltip:
@@ -104,7 +104,7 @@ hyd:
 	Buildable:
 		Queue: Ship
 		BuildPaletteOrder: 20
-		Prerequisites: naradr, nayard
+		Prerequisites: naradr, ~nayard
 	Valued:
 		Cost: 900
 	Tooltip:
