@@ -220,7 +220,7 @@ ivan:
 		Queue: Infantry
 		BuildAtProductionType: Infantry
 		BuildPaletteOrder: 120
-		Prerequisites: naradr, ~nahand, ~!infantry.cuba
+		Prerequisites: naradr, ~nahand
 	Valued:
 		Cost: 600
 	Tooltip:
@@ -261,4 +261,3 @@ ivan:
 		IdleSequences: idle1,idle2
 	QuantizeFacingsFromSequence:
 		Sequence: stand
-
