@@ -504,3 +504,39 @@ cacolo01:
 		Start: 1
 		ShadowStart: 5
 		Offset: -15, -53
+
+caind01:
+	idle: cuind01
+		ShadowStart: 4
+		Offset: 0, -53
+	damaged-idle: cuind01
+		Start: 1
+		ShadowStart: 5
+		Offset: 0, -53
+
+calab:
+	idle: culab
+		ShadowStart: 4
+		Offset: 15, -45
+	damaged-idle: culab
+		Start: 1
+		ShadowStart: 5
+		Offset: 15, -45
+
+cagas01:
+	idle: cugas01
+		ShadowStart: 4
+		Offset: 0, -45
+	damaged-idle: cugas01
+		Start: 1
+		ShadowStart: 5
+		Offset: 0, -45
+
+catech01:
+	idle: cutech01
+		ShadowStart: 4
+		Offset: 0, -45
+	damaged-idle: cutech01
+		Start: 1
+		ShadowStart: 5
+		Offset: 0, -45
