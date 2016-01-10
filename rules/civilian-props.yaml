@@ -30,7 +30,7 @@ camisc03:
 		Footprint: x
 		Dimensions: 1, 1
 	Tooltip:
-		Name: Harvard's Office
+		Name: Dumpster
 	Health:
 		HP: 100
 	Armor:
