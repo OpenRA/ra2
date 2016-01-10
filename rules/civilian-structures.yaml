@@ -25,6 +25,14 @@ cafncp:
 		Name: Prison Camp Fence
 		Description: Fence.\nCrushable by vehicles.
 
+cakrmw:
+	Inherits: ^Wall
+	Tooltip:
+		Name: Kremlin Walls
+		Description: Walls of the Kremlin.
+	Armor:
+		Type: Wood
+
 cawash01:
 	Inherits: ^CivBuilding
 	Selectable:
