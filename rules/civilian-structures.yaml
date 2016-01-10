@@ -372,3 +372,59 @@ cacolo01:
 		Type: Concrete
 	RevealsShroud:
 		Range: 6c0
+
+caind01:
+	Inherits: ^CivBuilding
+	Building:
+		Footprint: xxxx xxxx xxxx xxxx
+		Dimensions: 4, 4
+	Tooltip:
+		Name: Factory
+	Health:
+		HP: 1000
+	Armor:
+		Type: Steel
+	RevealsShroud:
+		Range: 6c0
+
+calab:
+	Inherits: ^CivBuilding
+	Building:
+		Footprint: xxx xxx xxx xxx
+		Dimensions: 3, 4
+	Tooltip:
+		Name: Einstein's Lab
+	Health:
+		HP: 1000
+	Armor:
+		Type: Steel
+	RevealsShroud:
+		Range: 6c0
+
+cagas01:
+	Inherits: ^CivBuilding
+	Building:
+		Footprint: xxx xxx xxx
+		Dimensions: 3, 3
+	Tooltip:
+		Name: Gas Station
+	Health:
+		HP: 1000
+	Armor:
+		Type: Wood
+	RevealsShroud:
+		Range: 6c0
+
+catech01:
+	Inherits: ^CivBuilding
+	Building:
+		Footprint: xxx xxx xxx
+		Dimensions: 3, 3
+	Tooltip:
+		Name: Communications Center
+	Health:
+		HP: 400
+	Armor:
+		Type: Steel
+	RevealsShroud:
+		Range: 4c0
