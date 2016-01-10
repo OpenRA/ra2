@@ -199,6 +199,7 @@ LobbyDefaults:
 	Shroud: true
 	Fog: true
 	ShortGame: false
+	TechLevel: Unrestricted
 
 ChromeMetrics:
 	./mods/ra2/metrics.yaml
