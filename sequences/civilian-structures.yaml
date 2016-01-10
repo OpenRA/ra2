@@ -242,6 +242,123 @@ causfgl:
 		ShadowStart: 16
 		Offset: 0, -15
 
+carufgl:
+	idle: curufgl
+		ShadowStart: 4
+		Offset: 0, -15
+	damaged-idle: curufgl
+		Start: 1
+		ShadowStart: 5
+		Offset: 0, -15
+	flag: curufgl_a
+		Length: 16
+		ShadowStart: 16
+		Offset: 0, -15
+
+cairfgl:
+	idle: cuirfgl
+		ShadowStart: 4
+		Offset: 0, -15
+	damaged-idle: cuirfgl
+		Start: 1
+		ShadowStart: 5
+		Offset: 0, -15
+	flag: cuirfgl_a
+		Length: 16
+		ShadowStart: 16
+		Offset: 0, -15
+
+capofgl:
+	idle: cuusfgl # Polish flag is only in isosnow.mix
+		ShadowStart: 4
+		Offset: 0, -15
+	damaged-idle: cuusfgl
+		Start: 1
+		ShadowStart: 5
+		Offset: 0, -15
+	flag: capofgl_a
+		Length: 16
+		ShadowStart: 16
+		Offset: 0, -15
+
+caskfgl:
+	idle: cuskfgl
+		ShadowStart: 4
+		Offset: 0, -15
+	damaged-idle: cuskfgl
+		Start: 1
+		ShadowStart: 5
+		Offset: 0, -15
+	flag: cuskfgl_a
+		Length: 16
+		ShadowStart: 16
+		Offset: 0, -15
+
+calbfgl:
+	idle: culbfgl
+		ShadowStart: 4
+		Offset: 0, -15
+	damaged-idle: culbfgl
+		Start: 1
+		ShadowStart: 5
+		Offset: 0, -15
+	flag: culbfgl_a
+		Length: 16
+		ShadowStart: 16
+		Offset: 0, -15
+
+cafrfgl:
+	idle: cufrfgl
+		ShadowStart: 4
+		Offset: 0, -15
+	damaged-idle: cufrfgl
+		Start: 1
+		ShadowStart: 5
+		Offset: 0, -15
+	flag: cufrfgl_a
+		Length: 16
+		ShadowStart: 16
+		Offset: 0, -15
+
+cagefgl:
+	idle: cugefgl
+		ShadowStart: 4
+		Offset: 0, -15
+	damaged-idle: cugefgl
+		Start: 1
+		ShadowStart: 5
+		Offset: 0, -15
+	flag: cugefgl_a
+		Length: 16
+		ShadowStart: 16
+		Offset: 0, -15
+
+cacufgl:
+	idle: cucufgl
+		ShadowStart: 4
+		Offset: 0, -15
+	damaged-idle: cucufgl
+		Start: 1
+		ShadowStart: 5
+		Offset: 0, -15
+	flag: cucufgl_a
+		Length: 16
+		ShadowStart: 16
+		Offset: 0, -15
+
+caukfgl:
+	idle: cuukfgl
+		ShadowStart: 4
+		Offset: 0, -15
+	damaged-idle: cuukfgl
+		Start: 1
+		ShadowStart: 5
+		Offset: 0, -15
+	flag: cuukfgl_a
+		Length: 16
+		ShadowStart: 16
+		Offset: 0, -15
+
 camisc01:
 	idle: cumisc01
 		ShadowStart: 4

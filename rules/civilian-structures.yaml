@@ -303,19 +303,50 @@ cafarm02:
 		Type: Wood
 
 causfgl:
-	Inherits: ^CivBuilding
-	Selectable:
-		Bounds: 50, 228, 0, 0
-	Building:
-		Footprint: x
-		Dimensions: 1, 1
+	Inherits: ^Flag
 	Tooltip:
 		Name: US Flag
-	Health:
-		HP: 20
-	Armor:
-		Type: Steel
-	RevealsShroud:
-		Range: 6c0
-	WithIdleOverlay@flag:
-		Sequence: flag
+
+carufgl:
+	Inherits: ^Flag
+		Name: Russian Flag
+
+cairfgl:
+	Inherits: ^Flag
+	Tooltip:
+		Name: Iraqi Flag
+
+capofgl:
+	Inherits: ^Flag
+	Tooltip:
+		Name: Polish Flag
+
+caskfgl:
+	Inherits: ^Flag
+	Tooltip:
+		Name: South Korean Flag
+
+calbfgl:
+	Inherits: ^Flag
+	Tooltip:
+		Name: Libyan Flag
+
+cafrfgl:
+	Inherits: ^Flag
+	Tooltip:
+		Name: French Flag
+
+cagefgl:
+	Inherits: ^Flag
+	Tooltip:
+		Name: German Flag
+
+cacufgl:
+	Inherits: ^Flag
+	Tooltip:
+		Name: Cuban Flag
+
+caukfgl:
+	Inherits: ^Flag
+	Tooltip:
+		Name: British Flag
