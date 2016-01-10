@@ -74,6 +74,7 @@ Rules:
 	./mods/ra2/rules/aircraft.yaml
 	./mods/ra2/rules/civilian-props.yaml
 	./mods/ra2/rules/trees.yaml
+	./mods/ra2/rules/civilian-naval.yaml
 
 Sequences:
 	./mods/ra2/sequences/aircraft.yaml
