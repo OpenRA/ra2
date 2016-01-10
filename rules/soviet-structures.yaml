@@ -486,6 +486,8 @@ napsis:
 		PauseOnLowPower: true
 	Power:
 		Amount: -100
+	RequiresPower:
+	CanPowerDown:
 
 nairon:
 	Inherits: ^Building
@@ -525,6 +527,8 @@ nairon:
 		DisplayRadarPing: True
 		Upgrades: invulnerability
 	SupportPowerChargeBar:
+	RequiresPower:
+	CanPowerDown:
 
 namisl:
 	Inherits: ^Building
@@ -552,6 +556,7 @@ namisl:
 	Power:
 		Amount: -200
 	RequiresPower:
+	CanPowerDown:
 
 nawall:
 	Inherits: ^Wall
@@ -603,6 +608,8 @@ naflak:
 	AutoTarget:
 	Power:
 		Amount: -50
+	RequiresPower:
+	CanPowerDown:
 
 tesla:
 	Inherits: ^SupportBuilding
@@ -655,4 +662,5 @@ tesla:
 	WithIdleOverlay@powered:
 		Sequence: idle-powered
 		PauseOnLowPower: true
+	CanPowerDown:
 
