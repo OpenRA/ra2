@@ -233,6 +233,8 @@ Fonts:
 
 SupportsMapsFrom: ra2
 
+SoundFormats: Aud, Wav
+
 SpriteFormats: ShpTS, TmpTS, ShpTD
 
 SpriteSequenceFormat: TilesetSpecificSpriteSequence
