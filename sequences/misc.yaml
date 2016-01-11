@@ -1,7 +1,7 @@
 overlay:
 	Defaults: place
 		Offset: 0, -15
-	build-valid-temperat:
+	build-valid-temperate:
 	build-valid-snow:
 	build-valid-urban:
 	build-invalid:
