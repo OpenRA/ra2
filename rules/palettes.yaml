@@ -5,7 +5,7 @@
 	PlayerHighlightPalette:
 	PaletteFromFile@playertem:
 		Name: player
-		Tileset: TEMPERAT
+		Tileset: TEMPERATE
 		Filename: unittem.pal
 		ShadowIndex: 1
 	PaletteFromFile@playerurb:
