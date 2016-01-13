@@ -656,3 +656,41 @@ tesla:
 		Sequence: idle-powered
 		PauseOnLowPower: true
 
+nalasr:
+	Inherits: ^VoxelLighting
+	Buildable:
+		Queue: Support
+		BuildPaletteOrder: 30
+		Prerequisites: barracks, ~structures.soviets
+	Valued:
+		Cost: 500
+	Tooltip:
+		Name: Sentry Gun
+		Description: Automated anti-infantry defense.
+	Building:
+		Footprint: x
+		Dimensions: 1, 1
+	Health:
+		HP: 400
+	Armor:
+		Type: Steel
+	RevealsShroud:
+		Range: 7c0
+	Selectable:
+		Bounds: 50, 30, 0, -4
+	Turreted:
+		ROT: 10
+		InitialFacing: 224
+		Offset: 450,0,0
+	AttackTurreted:
+		Voice: Attack
+	Armament:
+		Weapon: vulcan
+	BodyOrientation:
+		QuantizedFacings: 16
+	RenderVoxels:
+	WithVoxelTurret:
+	WithRangeCircle:
+		Range: 6c0
+		Type: pillbox
+	AutoTarget:
