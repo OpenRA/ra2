@@ -22,3 +22,20 @@ caoild:
 		Sequence: idle-pump
 	GivesBuildableArea:
 
+cahosp:
+	Inherits: ^TechBuilding
+	Building:
+		Footprint: xxxx xxxx xxxx xxxx xxxx xxxx
+		Dimensions: 6, 4
+	Tooltip:
+		Name: Civilian Hospital
+	Health:
+		HP: 800
+	RevealsShroud:
+		Range: 6c0
+	Armor:
+		Type: Concrete
+	GivesBuildableArea:
+	RepairsUnits:
+		StartRepairingNotification:
+	RallyPoint:
