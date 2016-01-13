@@ -524,6 +524,8 @@ nasam:
 	AutoTarget:
 	Power:
 		Amount: -50
+	RequiresPower:
+	CanPowerDown:
 
 gtgcan:
 	Inherits: ^VoxelLighting
@@ -573,6 +575,8 @@ gtgcan:
 		Type: grandcannon
 	Power:
 		Amount: -100
+	RequiresPower:
+	CanPowerDown:
 
 gaorep:
 	Inherits: ^Building
@@ -631,6 +635,7 @@ gaspysat:
 		Amount: -100
 	ProvidesRadar:
 	RequiresPower:
+	CanPowerDown:
 
 gagap:
 	Inherits: ^SupportBuilding
@@ -663,6 +668,7 @@ gagap:
 	MustBeDestroyed:
 		RequiredForShortGame: false
 	-AutoTarget:
+	CanPowerDown:
 
 gaweat:
 	Inherits: ^Building
@@ -689,6 +695,8 @@ gaweat:
 		Range: 5c0
 	Power:
 		Amount: -200
+	RequiresPower:
+	CanPowerDown:
 
 gacsph:
 	Inherits: ^Building
@@ -717,6 +725,8 @@ gacsph:
 		Amount: -200
 	WithIdleOverlay:
 		Sequence: idle-dome
+	RequiresPower:
+	CanPowerDown:
 
 atesla:
 	Inherits: ^SupportBuilding
@@ -760,6 +770,7 @@ atesla:
 	WithRangeCircle:
 		Range: 8c0
 		Type: prismcannon
+	CanPowerDown:
 
 power:
 	AlwaysVisible:
