@@ -525,6 +525,27 @@ nawall:
 		UseTilesetCode: false
 
 nalasr:
+	Defaults:
+		Offset: 0, -20
+		UseTilesetCode: true
+		TilesetOverrides:
+			TEMPERAT: GENERIC
+			URBAN: GENERIC
+	idle: nalasr
+		ShadowStart: 3
+	damaged-idle: nalasr
+		Start: 1
+		ShadowStart: 4
+	critical-idle: nalasr
+		Start: 2
+		ShadowStart: 5
+	make: nalasrmk
+		Length: 9
+		ShadowStart: 9
+		TilesetOverrides:
+			TEMPERAT: TEMPERAT
+			URBAN: URBAN
+		ZOffset: 0
 	icon: plticon
 		Offset: 0,0
 		UseTilesetCode: false
