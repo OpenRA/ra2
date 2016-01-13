@@ -300,6 +300,9 @@
 		VoiceSet: GIVoice
 	QuantizeFacingsFromSequence:
 		Sequence: stand
+	Repairable:
+		RepairBuildings: cahosp
+		Voice: Move
 
 ^CivilianInfantry:
 	Inherits: ^Infantry
