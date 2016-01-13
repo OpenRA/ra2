@@ -160,6 +160,24 @@
 	Tooltip:
 		Description: Tech Building
 
+^Flag:
+	Inherits: ^CivBuilding
+	Selectable:
+		Bounds: 50, 228, 0, 0
+	Building:
+		Footprint: x
+		Dimensions: 1, 1
+	Tooltip:
+		Name: Flag
+	Health:
+		HP: 20
+	Armor:
+		Type: Steel
+	RevealsShroud:
+		Range: 6c0
+	WithIdleOverlay@flag:
+		Sequence: flag
+
 ^VoxelLighting:
 	Inherits: ^SupportBuilding
 	RenderVoxels:
