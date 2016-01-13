@@ -166,8 +166,11 @@ explosion:
 		Tick: 300
 	ivan_explosion: crivexp
 	ivan_explosionE: crivexp2
+	ironcurtain: ironblst
 	tesla_impact: tstimpct
 	iron_fx: ironfx
+	warpin: warpin
+	warpout: warpout
 
 discus:
 	idle:
@@ -424,3 +427,11 @@ srock05:
 		ShadowStart: 1
 		Offset: 0, -15
 		UseTilesetExtension: true
+
+warpin:
+	idle: warpin
+		Length: 10
+
+warpout:
+	idle: warpout
+		Length: 21

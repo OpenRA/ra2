@@ -492,13 +492,24 @@ nairon:
 		Start: 11
 		Length: 11
 		ShadowStart: 33
-	active: ngiron_h
-		Length: 12
-		ShadowStart: 24
-	damaged-active: ngiron_h
-		Start: 12
-		Length: 12
-		ShadowStart: 36
+	active:
+		Combine:
+			ngiron_f:
+				Length: 10
+				ShadowStart: 42
+			ngiron_h:
+				Length: 12
+				ShadowStart: 24
+	damaged-active:
+		Combine:
+			ngiron_f:
+				Start: 21
+				Length: 10
+				ShadowStart: 63
+			ngiron_h:
+				Start: 12
+				Length: 12
+				ShadowStart: 36
 	make: ntironmk
 		Length: 25
 		ShadowStart: 25

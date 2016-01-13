@@ -1332,3 +1332,18 @@ NukePayload:
 		SmudgeType: LargeScorch
 		Size: 3
 		Delay: 15
+
+IronCurtain:
+	Warhead@Invuln: GrantUpgrade
+		Range: 1c384
+		Duration: 500
+		Upgrades: invulnerability
+		AffectsParent: true
+	Warhead@2Dam: HealthPercentageDamage
+		ValidTargets: Infantry
+		Spread: 1c384
+		Damage: 100
+		DamageTypes: BulletDeath
+	Warhead@3Eff: CreateEffect
+		Explosion: ironcurtain
+		ImpactSound: siroon.wav

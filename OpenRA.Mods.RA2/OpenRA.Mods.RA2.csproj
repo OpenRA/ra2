@@ -27,7 +27,17 @@
     <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
     <DefineConstants>TRACE</DefineConstants>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <OutputPath>..\</OutputPath>
+  </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Traits\ChronoResourceDelivery.cs" />
+    <Compile Include="Traits\SupportPowers\DetonateWeaponPower.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Eluant">
+      <HintPath>thirdparty\Eluant.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp">
       <RequiredTargetFramework>4.0</RequiredTargetFramework>
     </Reference>

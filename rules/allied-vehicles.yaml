@@ -60,6 +60,10 @@ cmin:
 		SearchFromOrderRadius: 12
 		HarvestVoice: Move
 		DeliverVoice: Move
+	ChronoResourceDelivery:
+		TeleportEffect: warpout
+		TeleportPalette: effect
+		TeleportSound: vchrtele.wav
 	Health:
 		HP: 1000
 	Armor:
