@@ -359,6 +359,7 @@ largecraters:
 icon:
 	gps: asaticon
 	invuln: ircricon
+	paradrop: paraicon
 
 bombcurs:
 	idle:
@@ -424,3 +425,14 @@ srock05:
 		ShadowStart: 1
 		Offset: 0, -15
 		UseTilesetExtension: true
+
+parach:
+	open:
+		Start: 0
+		Length: 19
+	idle:
+		Start: 19
+		Length: 20
+	close:
+		Start: 40
+		Length: 29
