@@ -10,6 +10,8 @@ camisc01:
 		HP: 5
 	Armor:
 		Type: Concrete
+	SoundOnDamageTransition:
+		DamagedSounds:  bmetdama.wav, bmetdamb.wav, bmetdamc.wav
 
 camisc02:
 	Inherits: ^CivBuilding
@@ -23,6 +25,8 @@ camisc02:
 		HP: 5
 	Armor:
 		Type: Concrete
+	SoundOnDamageTransition:
+		DamagedSounds:  bmetdama.wav, bmetdamb.wav, bmetdamc.wav
 
 camisc03:
 	Inherits: ^CivBuilding
@@ -35,6 +39,9 @@ camisc03:
 		HP: 100
 	Armor:
 		Type: Concrete
+	SoundOnDamageTransition:
+		DamagedSounds:  bmetdama.wav, bmetdamb.wav, bmetdamc.wav
+		DestroyedSounds: bmetdama.wav, bmetdamb.wav, bmetdamc.wav
 
 camisc04:
 	Inherits: ^CivBuilding
@@ -47,6 +54,9 @@ camisc04:
 		HP: 10
 	Armor:
 		Type: Concrete
+	SoundOnDamageTransition:
+		DamagedSounds:  bmetdama.wav, bmetdamb.wav, bmetdamc.wav
+		DestroyedSounds: bmetdama.wav, bmetdamb.wav, bmetdamc.wav
 
 camisc05:
 	Inherits: ^CivBuilding
@@ -56,6 +66,9 @@ camisc05:
 		HP: 10
 	Armor:
 		Type: Concrete
+	SoundOnDamageTransition:
+		DamagedSounds:  bmetdama.wav, bmetdamb.wav, bmetdamc.wav
+		DestroyedSounds: bmetdama.wav, bmetdamb.wav, bmetdamc.wav
 
 camisc06:
 	Inherits: ^CivBuilding
@@ -70,6 +83,8 @@ camisc06:
 		Type: Concrete
 	WithBuildingExplosion:
 		Sequences: terrorist_explosion
+	SoundOnDamageTransition:
+		DamagedSounds:  bmetdama.wav, bmetdamb.wav, bmetdamc.wav
 
 camsc11:
 	Inherits: ^CivBuilding
@@ -136,4 +151,3 @@ capol01w:
 		HP: 20
 	Armor:
 		Type: Concrete
-
