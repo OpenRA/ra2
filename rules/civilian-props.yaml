@@ -1,9 +1,5 @@
 camisc01:
 	Inherits: ^CivBuilding
-	Selectable:
-	Building:
-		Footprint: x
-		Dimensions: 1, 1
 	Tooltip:
 		Name: Barrels
 	Health:
@@ -15,10 +11,6 @@ camisc01:
 
 camisc02:
 	Inherits: ^CivBuilding
-	Selectable:
-	Building:
-		Footprint: x
-		Dimensions: 1, 1
 	Tooltip:
 		Name: Barrel
 	Health:
@@ -30,9 +22,6 @@ camisc02:
 
 camisc03:
 	Inherits: ^CivBuilding
-	Building:
-		Footprint: x
-		Dimensions: 1, 1
 	Tooltip:
 		Name: Dumpster
 	Health:
@@ -45,9 +34,6 @@ camisc03:
 
 camisc04:
 	Inherits: ^CivBuilding
-	Building:
-		Footprint: x
-		Dimensions: 1, 1
 	Tooltip:
 		Name: Mailbox
 	Health:
@@ -118,9 +104,6 @@ camsc13:
 
 calit01e:
 	Inherits: ^CivBuilding
-	Building:
-		Footprint: x
-		Dimensions: 1, 1
 	Tooltip:
 		Name: Light
 	Health:
@@ -130,9 +113,6 @@ calit01e:
 
 calit01w:
 	Inherits: ^CivBuilding
-	Building:
-		Footprint: x
-		Dimensions: 1, 1
 	Tooltip:
 		Name: Light
 	Health:
@@ -142,9 +122,6 @@ calit01w:
 
 capol01w:
 	Inherits: ^CivBuilding
-	Building:
-		Footprint: x
-		Dimensions: 1, 1
 	Tooltip:
 		Name: Telephone Pole
 	Health:
