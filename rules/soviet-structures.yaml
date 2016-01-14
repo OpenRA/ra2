@@ -685,11 +685,11 @@ nalasr:
 	RevealsShroud:
 		Range: 7c0
 	Selectable:
-		Bounds: 50, 30, 0, -4
+		Bounds: 50, 30, 0, -12
 	Turreted:
 		ROT: 10
 		InitialFacing: 224
-		Offset: 450,0,0
+		Offset: 320,0,0
 	AttackTurreted:
 		Voice: Attack
 	Armament:
