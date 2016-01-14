@@ -508,7 +508,7 @@ nasam:
 	Turreted:
 		ROT: 10
 		InitialFacing: 224
-		Offset: 900,0,0
+		Offset: 550,0,0
 	AttackTurreted:
 		Voice: Attack
 	Armament:
