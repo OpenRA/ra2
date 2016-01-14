@@ -42,9 +42,62 @@ camisc04:
 		Footprint: x
 		Dimensions: 1, 1
 	Tooltip:
-		Name: Mail Box
+		Name: Mailbox
 	Health:
 		HP: 10
+	Armor:
+		Type: Concrete
+
+camisc05:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Pipes
+	Health:
+		HP: 10
+	Armor:
+		Type: Concrete
+
+camisc06:
+	Inherits: ^CivBuilding
+	Building:
+		Footprint: xx
+		Dimensions: 2, 1
+	Tooltip:
+		Name: V3 Ammunition
+	Health:
+		HP: 10
+	Armor:
+		Type: Concrete
+	WithBuildingExplosion:
+		Sequences: terrorist_explosion
+
+camsc11:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Tires
+	Health:
+		HP: 10
+	Armor:
+		Type: Concrete
+
+camsc12:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Practice Target
+	Health:
+		HP: 10
+	Armor:
+		Type: Concrete
+
+camsc13:
+	Inherits: ^CivBuilding
+	Building:
+		Footprint: x x
+		Dimensions: 1, 2
+	Tooltip:
+		Name: Derelict Tank
+	Health:
+		HP: 800
 	Armor:
 		Type: Concrete
 

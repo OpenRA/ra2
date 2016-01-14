@@ -409,6 +409,51 @@ camisc04:
 		ShadowStart: 5
 		Offset: 0, -15
 
+camisc05:
+	idle: cumisc05
+		ShadowStart: 2
+		Offset: 0, -15
+	damaged-idle: cumisc05
+		Start: 1
+		ShadowStart: 3
+		Offset: 0, -15
+
+camisc06:
+	idle: cumisc06
+		ShadowStart: 4
+		Offset: -15, -22
+	damaged-idle: cumisc06
+		Start: 1
+		ShadowStart: 5
+		Offset: -15, -22
+
+camsc11:
+	idle: cumsc11
+		ShadowStart: 4
+		Offset: 0, -15
+	damaged-idle: cumsc11
+		Start: 1
+		ShadowStart: 5
+		Offset: 0, -15
+
+camsc12:
+	idle: cumsc12
+		ShadowStart: 4
+		Offset: 0, -15
+	damaged-idle: cumsc12
+		Start: 1
+		ShadowStart: 5
+		Offset: 0, -15
+
+camsc13:
+	idle: cumsc13
+		ShadowStart: 4
+		Offset: 15, -22
+	damaged-idle: cumsc13
+		Start: 1
+		ShadowStart: 5
+		Offset: 15, -22
+
 casin01s:
 	idle: cusin01s
 		ShadowStart: 4
