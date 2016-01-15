@@ -32,16 +32,16 @@
       <RequiredTargetFramework>4.0</RequiredTargetFramework>
     </Reference>
     <Reference Include="OpenRA.Game">
-      <HintPath>thirdparty\OpenRA.Game.exe</HintPath>
+      <HintPath>dependencies\OpenRA.Game.exe</HintPath>
     </Reference>
     <Reference Include="OpenRA.Mods.Common">
-      <HintPath>thirdparty\OpenRA.Mods.Common.dll</HintPath>
+      <HintPath>dependencies\OpenRA.Mods.Common.dll</HintPath>
     </Reference>
     <Reference Include="OpenRA.Mods.RA">
-      <HintPath>thirdparty\OpenRA.Mods.RA.dll</HintPath>
+      <HintPath>dependencies\OpenRA.Mods.RA.dll</HintPath>
     </Reference>
     <Reference Include="OpenRA.Mods.TS">
-      <HintPath>thirdparty\OpenRA.Mods.TS.dll</HintPath>
+      <HintPath>dependencies\OpenRA.Mods.TS.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core">
