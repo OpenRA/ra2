@@ -358,3 +358,17 @@ caukfgl:
 	Inherits: ^Flag
 	Tooltip:
 		Name: British Flag
+
+cacolo01:
+	Inherits: ^CivBuilding
+	Building:
+		Footprint: xxxxx xxxxx xxxxx
+		Dimensions: 5, 3
+	Tooltip:
+		Name: Air Force Academy Chapel
+	Health:
+		HP: 1000
+	Armor:
+		Type: Concrete
+	RevealsShroud:
+		Range: 6c0
