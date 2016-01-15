@@ -9,19 +9,19 @@ RequiresMods:
 
 Folders:
 	.
-	./mods/ra2
-	./mods/ra2/bits
-	./mods/ra2/bits/cameos
-	./mods/ra2/bits/vehicles
-	./mods/ra2/bits/structures
-	./mods/ra2/bits/temperate
-	./mods/ra2/bits/themes
-	./mods/ra2/bits/animations
-	./mods/ra2/uibits
+	ra2:
+	ra2:bits
+	ra2:bits/cameos
+	ra2:bits/vehicles
+	ra2:bits/structures
+	ra2:bits/temperate
+	ra2:bits/themes
+	ra2:bits/animations
+	ra2:uibits
 	~^Content/ra2
 
 MapFolders:
-	./mods/ra2/maps@System
+	ra2:maps@System
 	~^maps/ra2@User
 
 Packages:
@@ -52,65 +52,65 @@ Packages:
 	audio.bag@CRC32
 
 Rules:
-	./mods/ra2/rules/proxy-actors.yaml
-	./mods/ra2/rules/misc.yaml
-	./mods/ra2/rules/ai.yaml
-	./mods/ra2/rules/player.yaml
-	./mods/ra2/rules/world.yaml
-	./mods/ra2/rules/palettes.yaml
-	./mods/ra2/rules/defaults.yaml
-	./mods/ra2/rules/allied-infantry.yaml
-	./mods/ra2/rules/soviet-infantry.yaml
-	./mods/ra2/rules/civilian-infantry.yaml
-	./mods/ra2/rules/allied-structures.yaml
-	./mods/ra2/rules/soviet-structures.yaml
-	./mods/ra2/rules/civilian-structures.yaml
-	./mods/ra2/rules/tech-structures.yaml
-	./mods/ra2/rules/allied-vehicles.yaml
-	./mods/ra2/rules/soviet-vehicles.yaml
-	./mods/ra2/rules/civilian-vehicles.yaml
-	./mods/ra2/rules/allied-naval.yaml
-	./mods/ra2/rules/soviet-naval.yaml
-	./mods/ra2/rules/aircraft.yaml
-	./mods/ra2/rules/civilian-props.yaml
-	./mods/ra2/rules/trees.yaml
-	./mods/ra2/rules/civilian-naval.yaml
+	ra2:rules/proxy-actors.yaml
+	ra2:rules/misc.yaml
+	ra2:rules/ai.yaml
+	ra2:rules/player.yaml
+	ra2:rules/world.yaml
+	ra2:rules/palettes.yaml
+	ra2:rules/defaults.yaml
+	ra2:rules/allied-infantry.yaml
+	ra2:rules/soviet-infantry.yaml
+	ra2:rules/civilian-infantry.yaml
+	ra2:rules/allied-structures.yaml
+	ra2:rules/soviet-structures.yaml
+	ra2:rules/civilian-structures.yaml
+	ra2:rules/tech-structures.yaml
+	ra2:rules/allied-vehicles.yaml
+	ra2:rules/soviet-vehicles.yaml
+	ra2:rules/civilian-vehicles.yaml
+	ra2:rules/allied-naval.yaml
+	ra2:rules/soviet-naval.yaml
+	ra2:rules/aircraft.yaml
+	ra2:rules/civilian-props.yaml
+	ra2:rules/trees.yaml
+	ra2:rules/civilian-naval.yaml
 
 Sequences:
-	./mods/ra2/sequences/aircraft.yaml
-	./mods/ra2/sequences/allied-infantry.yaml
-	./mods/ra2/sequences/soviet-infantry.yaml
-	./mods/ra2/sequences/civilian-infantry.yaml
-	./mods/ra2/sequences/misc.yaml
-	./mods/ra2/sequences/allied-structures.yaml
-	./mods/ra2/sequences/soviet-structures.yaml
-	./mods/ra2/sequences/civilian-structures.yaml
-	./mods/ra2/sequences/tech-structures.yaml
-	./mods/ra2/sequences/vehicles.yaml
-	./mods/ra2/sequences/trees.yaml
+	ra2:sequences/aircraft.yaml
+	ra2:sequences/allied-infantry.yaml
+	ra2:sequences/soviet-infantry.yaml
+	ra2:sequences/civilian-infantry.yaml
+	ra2:sequences/misc.yaml
+	ra2:sequences/allied-structures.yaml
+	ra2:sequences/soviet-structures.yaml
+	ra2:sequences/civilian-structures.yaml
+	ra2:sequences/tech-structures.yaml
+	ra2:sequences/vehicles.yaml
+	ra2:sequences/trees.yaml
 
 VoxelSequences:
-	./mods/ra2/sequences/voxels.yaml
+	ra2:sequences/voxels.yaml
 
 Cursors:
-	./mods/ra2/cursors.yaml
+	ra2:cursors.yaml
 
 Chrome:
-	./mods/ra2/chrome.yaml
+	ra2:chrome.yaml
 
 Assemblies:
 	./mods/common/OpenRA.Mods.Common.dll
 	./mods/ra/OpenRA.Mods.RA.dll
 	./mods/ts/OpenRA.Mods.TS.dll
-	./mods/ra2/OpenRA.Mods.RA2.dll
+	ra2:OpenRA.Mods.RA2.dll
 
 ChromeLayout:
-	./mods/ra2/chrome/ingame-player.yaml
-	./mods/ra2/chrome/ingame-infoobjectives.yaml
-	./mods/ra2/chrome/ingame-infostats.yaml
-	./mods/ra2/chrome/ingame-observerstats.yaml
-	./mods/ra2/chrome/musicplayer.yaml
-	./mods/ra2/chrome/tooltips.yaml
+	ra2:chrome/ingame-player.yaml
+	ra2:chrome/ingame-infoobjectives.yaml
+	ra2:chrome/ingame-infostats.yaml
+	ra2:chrome/ingame-observerstats.yaml
+	ra2:chrome/musicplayer.yaml
+	ra2:chrome/tooltips.yaml
 	# NOTE: Use RA chrome until RA2 has its own UI
 	./mods/ra/chrome/ingame.yaml
 	./mods/ra/chrome/ingame-observer.yaml
@@ -149,20 +149,20 @@ ChromeLayout:
 	./mods/ra/chrome/editor.yaml
 
 Weapons:
-	./mods/ra2/weapons.yaml
-	./mods/ra2/weapons/allied-infantry.yaml
-	./mods/ra2/weapons/soviet-infantry.yaml
+	ra2:weapons.yaml
+	ra2:weapons/allied-infantry.yaml
+	ra2:weapons/soviet-infantry.yaml
 
 Voices:
-	./mods/ra2/audio/voices.yaml
+	ra2:audio/voices.yaml
 
 Notifications:
-	./mods/ra2/audio/notifications.yaml
+	ra2:audio/notifications.yaml
 
 TileSets:
-	./mods/ra2/tilesets/temperat.yaml
-	./mods/ra2/tilesets/snow.yaml
-	./mods/ra2/tilesets/urban.yaml
+	ra2:tilesets/temperat.yaml
+	ra2:tilesets/snow.yaml
+	ra2:tilesets/urban.yaml
 
 MapGrid:
 	Type: RectangularIsometric
@@ -172,13 +172,13 @@ MapGrid:
 	MaximumTerrainHeight: 16
 
 Music:
-	./mods/ra2/audio/music.yaml
+	ra2:audio/music.yaml
 
 Translations:
-	./mods/ra2/languages/english.yaml
+	ra2:languages/english.yaml
 
 LoadScreen: LogoStripeLoadScreen
-	Image: ./mods/ra2/uibits/loadscreen.png
+	Image: ra2:uibits/loadscreen.png
 	Text: Carving wooden nickels..., Preparing paratroopers..., Welcoming you to Texas..., Optimizing helium mix..., Receiving thoughts..., Igniting boosters...
 
 ContentInstaller:
@@ -203,7 +203,7 @@ LobbyDefaults:
 	TechLevel: Unrestricted
 
 ChromeMetrics:
-	./mods/ra2/metrics.yaml
+	ra2:metrics.yaml
 
 Fonts:
 	Regular:
@@ -232,6 +232,8 @@ Fonts:
 		Size:10
 
 SupportsMapsFrom: ra2
+
+SoundFormats: Aud, Wav
 
 SpriteFormats: ShpTS, TmpTS, ShpTD
 

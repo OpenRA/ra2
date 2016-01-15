@@ -566,7 +566,7 @@
 	SeedsResource:
 		ResourceType: Ore
 		Interval: 55
-	WithActiveAnimation:
+	WithIdleAnimation:
 	QuantizeFacingsFromSequence:
 	RenderSprites:
 		Palette: player
@@ -604,4 +604,3 @@
 	QuantizeFacingsFromSequence:
 	RenderSprites:
 		Palette: terrain
-
