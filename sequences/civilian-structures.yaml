@@ -495,3 +495,12 @@ capol01w:
 	damaged-idle: cupol01w
 		ShadowStart: 0
 		Offset: 0, 0
+
+cacolo01:
+	idle: cucolo01
+		ShadowStart: 4
+		Offset: -15, -53
+	damaged-idle: cucolo01
+		Start: 1
+		ShadowStart: 5
+		Offset: -15, -53
