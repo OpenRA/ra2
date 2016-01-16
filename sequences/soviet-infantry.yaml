@@ -20,9 +20,6 @@ dog:
 	die2:
 		Start: 102
 		Length: 14
-	#die3:
-	#	Start: 117 # 166 is start of the jump anim?!
-	#	Length: 14
 	die4: # todo: copy of die1
 		Start: 87
 		Length: 14
