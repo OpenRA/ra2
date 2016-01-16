@@ -160,7 +160,7 @@ terror:
 	Explodes:
 		Weapon: TerrorBomb
 		EmptyWeapon: TerrorBomb
-	DemoTruck:
+	AttackSuicides:
 		Voice: Attack
 	AttackFrontal:
 		Voice: Attack
