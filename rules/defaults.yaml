@@ -270,7 +270,6 @@
 		DeathTypes:
 			ExplosionDeath: 1
 			BulletDeath: 2
-			DeathType3: 3
 	WithDeathAnimation@effect:
 		DeathSequencePalette: effect
 		DeathPaletteIsPlayerPalette: False
@@ -300,7 +299,7 @@
 		Voice: Attack
 	Guardable:
 	DeathSounds@normal:
-		DeathTypes: ExplosionDeath, BulletDeath, DeathType3
+		DeathTypes: ExplosionDeath, BulletDeath
 	DeathSounds@burned:
 		Voice: Burned
 		DeathTypes: FlameDeath
