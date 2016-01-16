@@ -72,7 +72,7 @@
 		ValuePerUnit: 50
 		Name: Ore
 		PipColor: Yellow
-		AllowedTerrainTypes: Clear
+		AllowedTerrainTypes: Clear, Rough
 		AllowUnderActors: false
 		TerrainType: Ore
 	ResourceType@Gems:
@@ -83,7 +83,7 @@
 		ValuePerUnit: 250
 		Name: Gems
 		PipColor: Red
-		AllowedTerrainTypes: Clear
+		AllowedTerrainTypes: Clear, Rough
 		AllowUnderActors: false
 		TerrainType: Gems
 
