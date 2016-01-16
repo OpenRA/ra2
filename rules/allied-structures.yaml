@@ -123,6 +123,14 @@ gapile:
 	Production:
 		Produces: Infantry
 	PrimaryBuilding:
+	WithDecoration@primary:
+		RequiresSelection: true
+		Image: pips
+		Sequence: tag-primary
+		ReferencePoint: Top
+		ZOffset: 256
+		UpgradeTypes: primary
+		UpgradeMinEnabledLevel: 1
 	ProductionBar:
 	WithIdleOverlay@flag:
 		Sequence: idle-flag
@@ -249,6 +257,14 @@ gaairc:
 		Produces: Aircraft
 	ProductionBar:
 	PrimaryBuilding:
+	WithDecoration@primary:
+		RequiresSelection: true
+		Image: pips
+		Sequence: tag-primary
+		ReferencePoint: Top
+		ZOffset: 256
+		UpgradeTypes: primary
+		UpgradeMinEnabledLevel: 1
 	InfiltrateForExploration:
 
 amradr:
@@ -295,6 +311,14 @@ gaweap:
 	Production:
 		Produces: Vehicle, Aircraft
 	PrimaryBuilding:
+	WithDecoration@primary:
+		RequiresSelection: true
+		Image: pips
+		Sequence: tag-primary
+		ReferencePoint: Top
+		ZOffset: 256
+		UpgradeTypes: primary
+		UpgradeMinEnabledLevel: 1
 	ProductionBar:
 	WithIdleOverlay@flag:
 		Sequence: idle-flag
@@ -350,6 +374,14 @@ gayard:
 	Production:
 		Produces: Ship
 	PrimaryBuilding:
+	WithDecoration@primary:
+		RequiresSelection: true
+		Image: pips
+		Sequence: tag-primary
+		ReferencePoint: Top
+		ZOffset: 256
+		UpgradeTypes: primary
+		UpgradeMinEnabledLevel: 1
 	RallyPoint:
 	RepairsUnits:
 		FinishRepairingNotification: UnitRepaired
