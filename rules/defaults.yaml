@@ -604,3 +604,18 @@
 	QuantizeFacingsFromSequence:
 	RenderSprites:
 		Palette: terrain
+
+^Crate:
+	Inherits@1: ^SpriteActor
+	HiddenUnderFog:
+	Tooltip:
+		Name: Crate
+		GenericName: Crate
+	Crate:
+		TerrainTypes: Clear, Rough, Road, Ore, Gems
+	RenderSprites:
+		Palette: terrain
+		Image: crate
+	WithCrateBody:
+		LandSequence: land
+		WaterSequence: water
