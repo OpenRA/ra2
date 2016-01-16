@@ -250,6 +250,14 @@ naweap:
 	Production:
 		Produces: Vehicle, Aircraft
 	PrimaryBuilding:
+	WithDecoration@primary:
+		RequiresSelection: true
+		Image: pips
+		Sequence: tag-primary
+		ReferencePoint: Top
+		ZOffset: 256
+		UpgradeTypes: primary
+		UpgradeMinEnabledLevel: 1
 	ProductionBar:
 	WithIdleOverlay@lights:
 		Sequence: idle-lights
@@ -299,6 +307,14 @@ nayard:
 	Production:
 		Produces: Ship
 	PrimaryBuilding:
+	WithDecoration@primary:
+		RequiresSelection: true
+		Image: pips
+		Sequence: tag-primary
+		ReferencePoint: Top
+		ZOffset: 256
+		UpgradeTypes: primary
+		UpgradeMinEnabledLevel: 1
 	RallyPoint:
 	RepairsUnits:
 		FinishRepairingNotification: UnitRepaired
