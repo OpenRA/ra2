@@ -101,7 +101,7 @@ Cursors:
 			Length: 9
 		deploy-blocked:
 			Start: 119
-		undeploy:
+		undeploy-silver:
 			Start: 120
 			Length: 9
 		sell:
@@ -289,4 +289,7 @@ Cursors:
 			Start: 392
 		joystick-tl-blocked:
 			Start: 393
-
+	undeploy.shp: cursor
+		undeploy:
+			Start: 0
+			Length: 7
