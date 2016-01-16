@@ -3,7 +3,7 @@ nacnst:
 		Offset: 4, -58
 		UseTilesetCode: true
 		TilesetOverrides:
-			TEMPERAT: GENERIC
+			TEMPERATE: GENERIC
 			URBAN: GENERIC
 	idle: ngcnst_c
 		Length: 1
@@ -18,7 +18,7 @@ nacnst:
 		Length: 31
 		ShadowStart: 31
 		TilesetOverrides:
-			TEMPERAT: TEMPERAT
+			TEMPERATE: TEMPERATE
 			URBAN: URBAN
 	idle-top: ngcnst_a
 		Length: 11
@@ -54,7 +54,7 @@ napowr:
 		Offset: -15, -37
 		UseTilesetCode: true
 		TilesetOverrides:
-			TEMPERAT: GENERIC
+			TEMPERATE: GENERIC
 			URBAN: GENERIC
 	idle: ngpowr
 		ShadowStart: 3
@@ -79,7 +79,7 @@ napowr:
 		Length: 26
 		ShadowStart: 26
 		TilesetOverrides:
-			TEMPERAT: TEMPERAT
+			TEMPERATE: TEMPERATE
 			URBAN: URBAN
 	icon: npwricon
 		Offset: 0,0
@@ -90,7 +90,7 @@ nahand:
 		Offset: 1, -31
 		UseTilesetCode: true
 		TilesetOverrides:
-			TEMPERAT: GENERIC
+			TEMPERATE: GENERIC
 			URBAN: GENERIC
 	idle: nghand
 		ShadowStart: 3
@@ -104,7 +104,7 @@ nahand:
 		Length: 24
 		ShadowStart: 24
 		TilesetOverrides:
-			TEMPERAT: TEMPERAT
+			TEMPERATE: TEMPERATE
 			URBAN: URBAN
 	icon: handicon
 		Offset: 0,0
@@ -115,7 +115,7 @@ narefn:
 		Offset: -13, -53
 		UseTilesetCode: true
 		TilesetOverrides:
-			TEMPERAT: GENERIC
+			TEMPERATE: GENERIC
 			URBAN: GENERIC
 	idle: ngrefn
 		ShadowStart: 3
@@ -126,7 +126,7 @@ narefn:
 		Length: 26
 		ShadowStart: 26
 		TilesetOverrides:
-			TEMPERAT: TEMPERAT
+			TEMPERATE: TEMPERATE
 			URBAN: URBAN
 	idle-drill: ngrefnl1
 		Length: 3
@@ -150,7 +150,7 @@ naradr:
 		Offset: 2, -31
 		UseTilesetCode: true
 		TilesetOverrides:
-			TEMPERAT: GENERIC
+			TEMPERATE: GENERIC
 			URBAN: GENERIC
 	idle: ngradr
 		ShadowStart: 3
@@ -173,7 +173,7 @@ naradr:
 		Length: 30
 		ShadowStart: 30
 		TilesetOverrides:
-			TEMPERAT: TEMPERAT
+			TEMPERATE: TEMPERATE
 			URBAN: URBAN
 	icon: nradicon
 		Offset: 0,0
@@ -184,7 +184,7 @@ naweap:
 		Offset: -30, -60
 		UseTilesetCode: true
 		TilesetOverrides:
-			TEMPERAT: GENERIC
+			TEMPERATE: GENERIC
 			URBAN: GENERIC
 	idle: ngweap
 		ShadowStart: 3
@@ -232,7 +232,7 @@ naweap:
 		Length: 24
 		ShadowStart: 25
 		TilesetOverrides:
-			TEMPERAT: TEMPERAT
+			TEMPERATE: TEMPERATE
 			URBAN: URBAN
 	icon: nwepicon
 		Offset: 0,0
@@ -243,7 +243,7 @@ nayard:
 		Offset: 0, -45
 		UseTilesetCode: true
 		TilesetOverrides:
-			TEMPERAT: GENERIC
+			TEMPERATE: GENERIC
 			URBAN: GENERIC
 	idle: ngyard
 		ShadowStart: 4
@@ -275,7 +275,7 @@ nayard:
 		Length: 25
 		ShadowStart: 25
 		TilesetOverrides:
-			TEMPERAT: TEMPERAT
+			TEMPERATE: TEMPERATE
 			URBAN: URBAN
 	repair: ngyard_s
 		Length: 18
@@ -293,7 +293,7 @@ nadept:
 		Offset: -15, -53
 		UseTilesetCode: true
 		TilesetOverrides:
-			TEMPERAT: GENERIC
+			TEMPERATE: GENERIC
 			URBAN: GENERIC
 	idle: ngdept_b
 		Length: 10
@@ -318,7 +318,7 @@ nadept:
 		Length: 25
 		ShadowStart: 25
 		TilesetOverrides:
-			TEMPERAT: TEMPERAT
+			TEMPERATE: TEMPERATE
 			URBAN: URBAN
 	repair: ngdept_c
 		Length: 50
@@ -338,7 +338,7 @@ nanrct:
 		Offset: -12, -56
 		UseTilesetCode: true
 		TilesetOverrides:
-			TEMPERAT: GENERIC
+			TEMPERATE: GENERIC
 			URBAN: GENERIC
 	idle: ngnrct
 		ShadowStart: 3
@@ -363,7 +363,7 @@ nanrct:
 		Length: 25
 		ShadowStart: 25
 		TilesetOverrides:
-			TEMPERAT: TEMPERAT
+			TEMPERATE: TEMPERATE
 			URBAN: URBAN
 	icon: nrcticon
 		Offset: 0,0
@@ -374,7 +374,7 @@ natech:
 		Offset: 0, -45
 		UseTilesetCode: true
 		TilesetOverrides:
-			TEMPERAT: GENERIC
+			TEMPERATE: GENERIC
 			URBAN: GENERIC
 	idle: ngtech
 		ShadowStart: 3
@@ -388,7 +388,7 @@ natech:
 		Length: 25
 		ShadowStart: 25
 		TilesetOverrides:
-			TEMPERAT: TEMPERAT
+			TEMPERATE: TEMPERATE
 			URBAN: URBAN
 	icon: ntchicon
 		Offset: 0,0
@@ -399,7 +399,7 @@ naclon:
 		Offset: 0, -30
 		UseTilesetCode: true
 		TilesetOverrides:
-			TEMPERAT: GENERIC
+			TEMPERATE: GENERIC
 			URBAN: GENERIC
 	idle: ngclon_a
 		Length: 11
@@ -417,7 +417,7 @@ naclon:
 		Length: 25
 		ShadowStart: 25
 		TilesetOverrides:
-			TEMPERAT: TEMPERAT
+			TEMPERATE: TEMPERATE
 			URBAN: URBAN
 	icon: clonicon
 		Offset: 0,0
@@ -428,7 +428,7 @@ napsis:
 		Offset: 1, -30
 		UseTilesetCode: true
 		TilesetOverrides:
-			TEMPERAT: GENERIC
+			TEMPERATE: GENERIC
 			URBAN: GENERIC
 	idle: ngpsis
 		ShadowStart: 3
@@ -451,7 +451,7 @@ napsis:
 		Length: 24
 		ShadowStart: 24
 		TilesetOverrides:
-			TEMPERAT: TEMPERAT
+			TEMPERATE: TEMPERATE
 			URBAN: URBAN
 	icon: psisicon
 		Offset: 0,0
@@ -473,7 +473,7 @@ namisl:
 		Length: 26
 		ShadowStart: 26
 		TilesetOverrides:
-			TEMPERAT: TEMPERAT
+			TEMPERATE: TEMPERATE
 			URBAN: URBAN
 		Offset: 0, -42
 	icon: msslicon
@@ -483,7 +483,7 @@ nairon:
 		Offset: 0, -45
 		UseTilesetCode: true
 		TilesetOverrides:
-			TEMPERAT: GENERIC
+			TEMPERATE: GENERIC
 			URBAN: GENERIC
 	idle: ngiron_a
 		Length: 11
@@ -503,7 +503,7 @@ nairon:
 		Length: 25
 		ShadowStart: 25
 		TilesetOverrides:
-			TEMPERAT: TEMPERAT
+			TEMPERATE: TEMPERATE
 			URBAN: URBAN
 	icon: ironicon
 		Offset: 0,0
@@ -529,7 +529,7 @@ nalasr:
 		Offset: 0, -20
 		UseTilesetCode: true
 		TilesetOverrides:
-			TEMPERAT: GENERIC
+			TEMPERATE: GENERIC
 			URBAN: GENERIC
 	idle: nalasr
 		ShadowStart: 3
@@ -543,7 +543,7 @@ nalasr:
 		Length: 9
 		ShadowStart: 9
 		TilesetOverrides:
-			TEMPERAT: TEMPERAT
+			TEMPERATE: TEMPERATE
 			URBAN: URBAN
 		ZOffset: 0
 	icon: plticon
@@ -555,7 +555,7 @@ tesla:
 		Offset: 0, -15
 		UseTilesetCode: true
 		TilesetOverrides:
-			TEMPERAT: GENERIC
+			TEMPERATE: GENERIC
 			URBAN: GENERIC
 	idle: ngtsla
 		Length: 1
@@ -582,7 +582,7 @@ tesla:
 		Length: 25
 		ShadowStart: 25
 		TilesetOverrides:
-			TEMPERAT: TEMPERAT
+			TEMPERATE: TEMPERATE
 			URBAN: URBAN
 	icon: tslaicon
 		Offset: 0,0
@@ -594,7 +594,7 @@ naflak:
 		ZOffset: -512
 		UseTilesetCode: true
 		TilesetOverrides:
-			TEMPERAT: GENERIC
+			TEMPERATE: GENERIC
 			URBAN: GENERIC
 	idle: ngflak
 		ShadowStart: 3
@@ -608,7 +608,7 @@ naflak:
 		Length: 9
 		ShadowStart: 9
 		TilesetOverrides:
-			TEMPERAT: TEMPERAT
+			TEMPERATE: TEMPERATE
 			URBAN: URBAN
 		ZOffset: 0
 	icon: flakicon

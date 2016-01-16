@@ -239,13 +239,13 @@ SpriteFormats: ShpTS, TmpTS, ShpTD
 
 SpriteSequenceFormat: TilesetSpecificSpriteSequence
 	TilesetExtensions:
-		TEMPERAT: .tem
+		TEMPERATE: .tem
 		SNOW: .sno
 		URBAN: .urb
 	TilesetCodes:
 		GENERIC: g
 		SNOW: a
-		TEMPERAT: t
+		TEMPERATE: t
 		URBAN: u
 
 GameSpeeds:
