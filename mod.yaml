@@ -110,8 +110,7 @@ ChromeLayout:
 	ra2:chrome/ingame-infostats.yaml
 	ra2:chrome/ingame-observerstats.yaml
 	ra2:chrome/musicplayer.yaml
-	ra2:chrome/tooltips.yaml
-	# NOTE: Use RA chrome until RA2 has its own UI
+	./mods/ra/chrome/tooltips.yaml
 	./mods/ra/chrome/ingame.yaml
 	./mods/ra/chrome/ingame-observer.yaml
 	./mods/ra/chrome/ingame-chat.yaml
