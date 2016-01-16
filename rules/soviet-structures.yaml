@@ -170,7 +170,7 @@ narefn:
 		Actor: harv
 		SpawnOffset: 4, 1
 		Facing: 160
-	WithDockingOverlay:
+	WithDockedOverlay:
 	WithIdleOverlay@bib:
 		Sequence: idle-bib
 	WithIdleOverlay@drill:

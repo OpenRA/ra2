@@ -183,7 +183,7 @@ garefn:
 		Actor: cmin
 		SpawnOffset: 4, 1
 		Facing: 160
-	WithDockingOverlay:
+	WithDockedOverlay:
 	WithIdleOverlay@bib:
 		Sequence: idle-bib
 	WithIdleOverlay@drill:
@@ -834,4 +834,3 @@ repairpad:
 	Tooltip:
 		Name: Service Depot
 		Description: Service Depot
-
