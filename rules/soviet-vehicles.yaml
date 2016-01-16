@@ -330,7 +330,7 @@ dtruck:
 	Explodes:
 		Weapon: demobomb
 		EmptyWeapon: demobomb
-	DemoTruck:
+	AttackSuicides:
 		Voice: Attack
 	Chronoshiftable:
 	RenderSprites:
@@ -339,4 +339,3 @@ dtruck:
 	AnnounceOnBuild:
 	Voiced:
 		VoiceSet: DemolitionTruckVoice
-
