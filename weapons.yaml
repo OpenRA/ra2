@@ -273,7 +273,7 @@ OPCoilBolt:
 			Wood: 50
 			Steel: 40
 			Concrete: 25
-		DamageTypes: Prone70Percent, TriggerProne, DeathType3
+		DamageTypes: Prone70Percent, TriggerProne, ExplosionDeath
 	Warhead@2Eff: CreateEffect
 		Explosion: medium_clsn
 		ImpactSound: gexp14a.wav
@@ -587,7 +587,7 @@ MammothTusk:
 			Wood: 75
 			Steel: 40
 			Concrete: 20
-		DamageTypes: DeathType3
+		DamageTypes: ExplosionDeath
 	Warhead@2Eff: CreateEffect
 		Explosion: medium_bang
 		ImpactSound: gexp10a.wav
