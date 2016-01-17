@@ -109,7 +109,7 @@ ChromeLayout:
 	ra2:chrome/ingame-infoobjectives.yaml
 	ra2:chrome/ingame-infostats.yaml
 	ra2:chrome/ingame-observerstats.yaml
-	ra2:chrome/musicplayer.yaml
+	./mods/ra/chrome/musicplayer.yaml
 	./mods/ra/chrome/tooltips.yaml
 	./mods/ra/chrome/ingame.yaml
 	./mods/ra/chrome/ingame-observer.yaml
