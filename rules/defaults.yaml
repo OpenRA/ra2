@@ -89,6 +89,7 @@
 		DestroyedSounds: bgendiea.wav, bgendieb.wav, bgendiec.wav, bgendied.wav, bgendiee.wav, bgendief.wav
 	WithSpriteBody:
 	WithBuildingExplosion:
+		Sequences: building, large_bang, large_brnl, verylarge_clsn, large_tumu
 	RepairableBuilding:
 		IndicatorPalette: mousepal
 	EngineerRepairable:
