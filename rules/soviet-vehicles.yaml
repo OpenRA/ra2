@@ -332,7 +332,6 @@ dtruck:
 		EmptyWeapon: demobomb
 	AttackSuicides:
 		Voice: Attack
-	Chronoshiftable:
 	RenderSprites:
 	RenderVoxels:
 	WithVoxelBody:

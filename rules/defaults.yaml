@@ -404,6 +404,9 @@
 		RequiredForShortGame: true
 	Voiced:
 		VoiceSet: AlliedVehicleVoice
+	Chronoshiftable:
+		ChronoshiftSound: schrmov.wav
+		ReturnToOrigin: false
 
 ^Aircraft:
 	Inherits@1: ^ExistsInWorld
@@ -498,6 +501,9 @@
 		RequiredForShortGame: true
 	Voiced:
 		VoiceSet: SovietNavalVoice
+	Chronoshiftable:
+		ChronoshiftSound: schrmov.wav
+		ReturnToOrigin: false
 
 ^Husk:
 	Husk:
@@ -513,7 +519,6 @@
 	ProximityCaptor:
 		Types: Husk
 	BodyOrientation:
-	Chronoshiftable:
 	Targetable:
 		TargetTypes: Ground
 		RequiresForceFire: true
