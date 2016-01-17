@@ -81,7 +81,6 @@ sub:
 		FireDelay: 2
 	AttackFrontal:
 		Voice: Attack
-	Chronoshiftable:
 	AutoTarget:
 		InitialStance: ReturnFire
 	DetectCloaked:
