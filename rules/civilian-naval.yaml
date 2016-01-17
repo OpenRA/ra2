@@ -73,7 +73,6 @@ cdest:
 		UpgradeTypes: eliteweapon
 		UpgradeMinEnabledLevel: 1
 	AttackFrontal:
-	Chronoshiftable:
 	DetectCloaked:
 		CloakTypes: Underwater
 		Range: 4c0
