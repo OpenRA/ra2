@@ -321,6 +321,8 @@
 	Repairable:
 		RepairBuildings: cahosp
 		Voice: Move
+	Chronoshiftable:
+		ExplodeInstead: true
 
 ^CivilianInfantry:
 	Inherits: ^Infantry
