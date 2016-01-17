@@ -760,6 +760,17 @@ gacsph:
 		Sequence: idle-dome
 	RequiresPower:
 	CanPowerDown:
+	ChronoshiftPower@chronoshift:
+		OrderName: Chronoshift
+		Icon: chrono
+		ChargeTime: 120
+		Description: Chronoshift
+		LongDesc: Teleports a group of units across\nthe map.
+		# Those sounds don't work: OpenRA/OpenRA#10540
+		# They also want to be played successive
+		#SelectTargetSound: schrlo1.wav, schrlo2a.wav schrlo2b.wav, schrlo2c.wav, schrlo3.wav
+		EndChargeSound: schropen.wav
+		DisplayRadarPing: True
 
 atesla:
 	Inherits: ^SupportBuilding

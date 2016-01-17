@@ -82,7 +82,6 @@ dest:
 		UpgradeMinEnabledLevel: 1
 	AttackFrontal:
 		Voice: Attack
-	Chronoshiftable:
 	DetectCloaked:
 		CloakTypes: Underwater
 		Range: 4c0
