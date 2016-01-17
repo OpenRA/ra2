@@ -1,3 +1,81 @@
+shad:
+	Inherits: ^Aircraft
+	Tooltip:
+		Name: Night Hawk
+		Description: Infantry Transport Helicopter\nUndetectable by radar.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
+	Health:
+		HP: 175
+	Armor:
+		Type: Light
+	Armament:
+		Weapon: BlackHawkCannon
+	Voiced:
+		VoiceSet: NighthawkVoice
+	Buildable:
+		Queue: Vehicle
+		BuildPaletteOrder: 20
+		Prerequisites: ~gaweap
+	Valued:
+		Cost: 1000
+	RevealsShroud:
+		Range: 7c0
+		Type: CenterPosition
+	-AppearsOnRadar:
+	AttackFrontal:
+		Voice: Attack
+	Aircraft:
+		CruiseAltitude: 3072
+		LandWhenIdle: true
+		LandableTerrainTypes: Clear, Rough, Road, DirtRoad
+		ROT: 10
+		Speed: 100
+		AltitudeVelocity: 120
+		CruisingUpgrades: cruising
+	RenderSprites:
+	WithVoxelWalkerBody:
+		TickRate: 1
+	Hovers@CRUISING:
+		UpgradeTypes: cruising
+		UpgradeMinEnabledLevel: 1
+		OffsetModifier: -45
+	Cargo:
+		Types: Infantry
+		MaxWeight: 5
+		PipCount: 5
+		UnloadVoice: Move
+	SpawnActorOnDeath:
+		Actor: shadhusk
+
+shadhusk:
+	Tooltip:
+		Name: Night Hawk Down
+		GenericName: Destroyed Helicopter
+	Armor:
+		Type: Light
+	Health:
+		HP: 140
+	Aircraft:
+		ROT: 5
+		Speed: 140
+		AirborneUpgrades: airborne
+		CanHover: True
+		Voice: Move
+	FallsToEarth:
+		Velocity: 100
+	RevealsShroud:
+		Range: 7c0
+		Type: CenterPosition
+	HiddenUnderFog:
+		Type: CenterPosition
+	RenderVoxels:
+		Image: shad
+	WithVoxelBody:
+	AutoTargetIgnore:
+	BodyOrientation:
+		QuantizedFacings: 0
+		CameraPitch: 90
+		UseClassicPerspectiveFudge: false
+
 zep:
 	Inherits: ^Aircraft
 	Valued:
