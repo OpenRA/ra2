@@ -9,6 +9,9 @@ overlay:
 	target-select:
 	target-invalid:
 		Start: 1
+	target-valid-snow: place
+		Start: 2
+	target-valid-temperate: place
 
 poweroff:
 	offline: poweroff
@@ -359,6 +362,7 @@ largecraters:
 icon:
 	gps: asaticon
 	invuln: ircricon
+	chrono: chroicon
 
 bombcurs:
 	idle:
