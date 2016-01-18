@@ -330,4 +330,4 @@ jumpjet:
 		TargetTypes: Ground, Infantry, DetonateAttack, Disguise
 		UpgradeTypes: airborne
 		UpgradeMaxEnabledLevel: 0
-
+	-Passenger:
