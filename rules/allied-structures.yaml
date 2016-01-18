@@ -570,7 +570,7 @@ gtgcan:
 		Cost: 2000
 	Tooltip:
 		Name: Grand Cannon
-		Description: Automated anti-tank defense.
+		Description: Automated, long ranged anti-ground defense.
 	Building:
 		Footprint: xx xx
 		Dimensions: 2, 2
