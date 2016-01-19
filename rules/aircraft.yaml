@@ -148,3 +148,86 @@ zep:
 #	FallsToEarth:
 #		Velocity: 200
 
+orca:
+	Inherits: ^Plane
+	Valued:
+		Cost: 1200
+	Tooltip:
+		Name: Harrier
+		Description: Fast assault fighter\n  Strong vs Buildings, Vehicles\n  Weak vs Infantry, Aircraft
+	Buildable:
+		Queue: Aircraft
+		BuildPaletteOrder: 20
+		Prerequisites: ~aircraft.allies
+	Aircraft:
+		ROT: 3
+		Speed: 140
+		RearmBuildings: gaairc, amradr
+	Selectable:
+		Bounds: 30,24
+	Health:
+		HP: 150
+	Armor:
+		Type: Light
+	RevealsShroud:
+		Range: 8c0
+		Type: CenterPosition
+	Armament:
+		Weapon: Maverick
+	AttackPlane:
+		FacingTolerance: 20
+		Voice: Attack
+	Voiced:
+		VoiceSet: HarrierVoice
+	AmmoPool:
+		Ammo: 1
+		PipCount: 1
+		PipType: Ammo
+		PipTypeEmpty: AmmoEmpty
+	AutoTarget:
+	RenderSprites:
+		Image: falc
+	RenderVoxels:
+		Image: falc
+	SpawnActorOnDeath:
+		Actor: orcahusk
+
+orcahusk:
+	Inherits: ^PlaneHusk
+	Tooltip:
+		Name: Destroyed Harrier
+	Aircraft:
+		ROT: 5
+		Speed: 140
+	RenderVoxels:
+		Image: falc
+
+beag:
+	Inherits: orca
+	Tooltip:
+		Name: Black Eagle
+	Buildable:
+		Prerequisites: ~aircraft.korea
+	SpawnActorOnDeath:
+		Actor: beaghusk
+	Armament:
+		Weapon: Maverick2
+	Health:
+		HP: 200
+	Voiced:
+		VoiceSet: BlackEagleVoice
+	RenderSprites:
+		Image: beag
+	RenderVoxels:
+		Image: beag
+
+beaghusk:
+	Inherits: ^PlaneHusk
+	Tooltip:
+		Name: Destroyed Black Eagle
+	Aircraft:
+		ROT: 5
+		Speed: 140
+	RenderVoxels:
+		Image: beag
+
