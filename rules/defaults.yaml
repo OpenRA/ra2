@@ -422,8 +422,6 @@
 		Palette: pips
 	Selectable:
 	Aircraft:
-		RepairBuildings:
-		RearmBuildings:
 		LandWhenIdle: false
 		Voice: Move
 		AirborneUpgrades: airborne
@@ -447,8 +445,6 @@
 		LightPitch: 150
 		LightAmbientColor: -0.5,-0.5,-0.5
 		LightDiffuseColor: 1.4,1.4,1.4
-	Voiced:
-		VoiceSet: NighthawkVoice
 	Targetable@ground:
 		TargetTypes: Ground, Repair
 		UpgradeTypes: airborne
