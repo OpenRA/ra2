@@ -619,6 +619,72 @@ MammothTusk:
 		ImpactSound: gexpwasa.wav
 		ValidImpactTypes: Water
 
+Maverick:
+	ReloadDelay: 10
+	Range: 6c0
+	Report: vintatta.wav
+	ValidTargets: Ground, Water
+	Projectile: Missile
+		MaximumLaunchSpeed: 373
+		Arm: 2
+		Blockable: false
+		Shadow: true
+		Inaccuracy: 128
+		Image: DRAGON
+		Palette: ra
+		HorizontalRateOfTurn: 8
+		RangeLimit: 35
+		ContrailColor: D8D8FF
+		ContrailLength: 16
+	Warhead@1Dam: SpreadDamage
+		Spread: 58
+		Damage: 200
+		Falloff: 1000, 368, 135, 50, 18, 7, 0
+		Versus:
+			Concrete: 75
+		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
+	Warhead@2Eff: CreateEffect
+		Explosion: verylarge_clsn
+		ImpactSound: gexp14a.wav
+		InvalidImpactTypes: Water
+	Warhead@3EffWater: CreateEffect
+		Explosion: huge_watersplash
+		ImpactSound: gexpwala.wav
+		ValidImpactTypes: Water
+
+Maverick2:
+	ReloadDelay: 10
+	Range: 6c0
+	Report: vblaatta.wav
+	ValidTargets: Ground, Water
+	Projectile: Missile
+		MaximumLaunchSpeed: 373
+		Arm: 2
+		Blockable: false
+		Shadow: true
+		Inaccuracy: 128
+		Image: DRAGON
+		Palette: ra
+		HorizontalRateOfTurn: 8
+		RangeLimit: 35
+		ContrailColor: D8D8FF
+		ContrailLength: 16
+	Warhead@1Dam: SpreadDamage
+		Spread: 58
+		Damage: 200
+		Falloff: 1000, 368, 135, 50, 18, 7, 0
+		Versus:
+			Concrete: 75
+		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
+	Warhead@2Eff: CreateEffect
+		Explosion: verylarge_clsn
+		ImpactSound: gexp14a.wav
+		InvalidImpactTypes: Water
+	Warhead@3EffWater: CreateEffect
+		Explosion: huge_watersplash
+		ImpactSound: gexpwala.wav
+		ValidImpactTypes: Water
+
 BlimpBomb:
 	ReloadDelay: 45
 	Range: 1c20

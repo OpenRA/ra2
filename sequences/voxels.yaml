@@ -56,8 +56,8 @@ dred:
 euroc:
 	idle:
 
-orca: #Harrier
-	idle: falc
+falc:
+	idle:
 
 naflak:
 	turret: flaktur
