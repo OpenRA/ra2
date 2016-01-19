@@ -26,6 +26,11 @@
 		Filename: cameo.pal
 		AllowModifiers: false
 		ShadowIndex: 242
+	PaletteFromFile@ts-chrome:
+		Name: ts-chrome
+		Filename: tscameo.pal
+		AllowModifiers: false
+		ShadowIndex: 242
 	PaletteFromFile@cameo-chevron:
 		Name: cameo-chevron
 		Filename: cameo-chevron.pal
