@@ -45,6 +45,9 @@
 	PaletteFromFile@mousepal:
 		Name: mousepal
 		Filename: mousepal.pal
+	PaletteFromFile@ts-mousepal:
+		Name: ts-mousepal
+		Filename: ts-mousepal.pal
 	PaletteFromFile@colorpicker:
 		Name: colorpicker
 		Filename: unittem.pal
