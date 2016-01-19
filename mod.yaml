@@ -183,8 +183,9 @@ LoadScreen: LogoStripeLoadScreen
 ContentInstaller:
 	TestFiles: ^Content/ra2/ra2.mix, ^Content/ra2/language.mix
 	# TODO: Installing from CD doesn't work (because CAB)
-	#PackageToExtractFromCD: INSTALL\Game1.CAB:CRC32
-	#ExtractFilesFromCD: ra2.mix, language.mix, theme.mix,
+	PackageToExtractFromCD: INSTALL\Game1.CAB:CRC32
+	ExtractFilesFromCD:
+		.: THEME.mix, ra2.mix, language.mix
 
 ServerTraits:
 	LobbyCommands
