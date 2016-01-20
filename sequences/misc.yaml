@@ -9,9 +9,12 @@ overlay:
 	target-select:
 	target-invalid:
 		Start: 1
-	target-valid-snow: place
+	target-valid-snow:
 		Start: 2
-	target-valid-temperate: place
+	target-valid-temperate:
+		Start: 2
+	target-valid-urban:
+		Start: 2
 
 poweroff:
 	offline: poweroff
