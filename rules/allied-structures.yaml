@@ -222,6 +222,7 @@ gaairc:
 		Type: Steel
 	RequiresPower:
 	CanPowerDown:
+		IndicatorPalette: ts-mousepal
 	ProvidesRadar:
 	RevealsShroud:
 		Range: 10c0
@@ -560,6 +561,7 @@ nasam:
 		Amount: -50
 	RequiresPower:
 	CanPowerDown:
+		IndicatorPalette: ts-mousepal
 
 gtgcan:
 	Inherits: ^VoxelLighting
@@ -611,6 +613,7 @@ gtgcan:
 		Amount: -100
 	RequiresPower:
 	CanPowerDown:
+		IndicatorPalette: ts-mousepal
 
 gaorep:
 	Inherits: ^Building
@@ -670,6 +673,7 @@ gaspysat:
 	ProvidesRadar:
 	RequiresPower:
 	CanPowerDown:
+		IndicatorPalette: ts-mousepal
 
 gagap:
 	Inherits: ^SupportBuilding
@@ -703,6 +707,7 @@ gagap:
 		RequiredForShortGame: false
 	-AutoTarget:
 	CanPowerDown:
+		IndicatorPalette: ts-mousepal
 
 gaweat:
 	Inherits: ^Building
@@ -731,6 +736,7 @@ gaweat:
 		Amount: -200
 	RequiresPower:
 	CanPowerDown:
+		IndicatorPalette: ts-mousepal
 
 gacsph:
 	Inherits: ^Building
@@ -761,6 +767,7 @@ gacsph:
 		Sequence: idle-dome
 	RequiresPower:
 	CanPowerDown:
+		IndicatorPalette: ts-mousepal
 	ChronoshiftPower@chronoshift:
 		OrderName: Chronoshift
 		Icon: chrono
@@ -816,6 +823,7 @@ atesla:
 		Range: 8c0
 		Type: prismcannon
 	CanPowerDown:
+		IndicatorPalette: ts-mousepal
 
 power:
 	AlwaysVisible:

@@ -204,6 +204,7 @@ naradr:
 		Type: Wood
 	RequiresPower:
 	CanPowerDown:
+		IndicatorPalette: ts-mousepal
 	ProvidesRadar:
 	RevealsShroud:
 		Range: 10c0
@@ -506,6 +507,7 @@ napsis:
 		Amount: -100
 	RequiresPower:
 	CanPowerDown:
+		IndicatorPalette: ts-mousepal
 
 nairon:
 	Inherits: ^Building
@@ -547,6 +549,7 @@ nairon:
 	SupportPowerChargeBar:
 	RequiresPower:
 	CanPowerDown:
+		IndicatorPalette: ts-mousepal
 
 namisl:
 	Inherits: ^Building
@@ -575,6 +578,7 @@ namisl:
 		Amount: -200
 	RequiresPower:
 	CanPowerDown:
+		IndicatorPalette: ts-mousepal
 
 nawall:
 	Inherits: ^Wall
@@ -628,6 +632,7 @@ naflak:
 		Amount: -50
 	RequiresPower:
 	CanPowerDown:
+		IndicatorPalette: ts-mousepal
 
 tesla:
 	Inherits: ^SupportBuilding
@@ -681,6 +686,7 @@ tesla:
 		Sequence: idle-powered
 		PauseOnLowPower: true
 	CanPowerDown:
+		IndicatorPalette: ts-mousepal
 
 nalasr:
 	Inherits: ^VoxelLighting
