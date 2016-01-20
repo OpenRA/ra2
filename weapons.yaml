@@ -795,7 +795,7 @@ SubTorpedo:
 			Wood: 65
 			Steel: 65
 			Concrete: 60
-		DamageTypes: DeathType4
+		DamageTypes: ExplosionDeath
 	Warhead@2EffWater: CreateEffect
 		Explosion: large_watersplash
 		ImpactSound: gexpwasa.wav
