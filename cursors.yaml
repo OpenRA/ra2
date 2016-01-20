@@ -273,7 +273,7 @@ Cursors:
 			Start: 73
 			Length: 5
 		powerdown-blocked:
-			Start: 52
+			Start: 342
 		joystick-all:
 			Start: 385
 		joystick-t-blocked:
