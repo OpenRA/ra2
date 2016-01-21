@@ -536,15 +536,6 @@
 	DisabledOverlay:
 	ScriptTriggers:
 
-^HelicopterHusk:
-	Inherits: ^Husk
-	-Husk:
-	-Burns:
-	FallsToEarth:
-	-Targetable:
-	-Capturable:
-	-TransformOnCapture:
-
 ^PlaneHusk:
 	Inherits: ^Husk
 	-Husk:
