@@ -192,10 +192,7 @@ Cursors:
 			Length: 5
 		looped-patrol:
 			Start: 356
-		chrono-select:
-			Start: 357
-			Length: 12
-		chrono-target:
+		chronosphere:
 			Start: 357
 			Length: 12
 		remove-bomb:

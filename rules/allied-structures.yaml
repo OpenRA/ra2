@@ -780,6 +780,8 @@ gacsph:
 		EndChargeSound: schropen.wav
 		DisplayRadarPing: True
 		KillCargo: False
+		SelectionCursor: chronosphere
+		TargetCursor: chronosphere
 
 atesla:
 	Inherits: ^SupportBuilding
