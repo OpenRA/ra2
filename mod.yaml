@@ -2,7 +2,7 @@ Metadata:
 	Title: Red Alert 2
 	Description: The Soviet Union is back!\nThis time to conquer the United States...
 	Version: {DEV_VERSION}
-	Author: Phrohdoh and the RA2 team
+	Author: RA2 team
 
 RequiresMods:
 	modchooser: {DEV_VERSION}
