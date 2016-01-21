@@ -779,6 +779,7 @@ gacsph:
 		#SelectTargetSound: schrlo1.wav, schrlo2a.wav schrlo2b.wav, schrlo2c.wav, schrlo3.wav
 		EndChargeSound: schropen.wav
 		DisplayRadarPing: True
+		KillCargo: False
 
 atesla:
 	Inherits: ^SupportBuilding
