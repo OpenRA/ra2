@@ -542,10 +542,9 @@ nairon:
 		Description: Invulnerability
 		LongDesc: Makes a group of units invulnerable\nfor 20 seconds.
 		Duration: 500
-		SelectTargetSound:
-		InsufficientPowerSound:
-		BeginChargeSound:
-		EndChargeSound:
+		# TODO: This are actually no speech notifications
+		EndChargeSound: siroread.wav
+		GrantUpgradeSound: siroon.wav
 		DisplayRadarPing: True
 		Upgrades: invulnerability
 	SupportPowerChargeBar:
