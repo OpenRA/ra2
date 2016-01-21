@@ -85,6 +85,7 @@ gapowr:
 	ScalePowerWithHealth:
 	SoundOnDamageTransition:
 		DestroyedSounds: bpowdiea.wav, bpowdieb.wav
+	PowerTooltip:
 
 gapile:
 	Inherits: ^Building
