@@ -88,6 +88,28 @@ RedEye2:
 		ImpactSound: gexpwasa.wav
 		ValidImpactTypes: Water
 
+BlackHawkCannon:
+	ValidTargets: Ground, Water
+	ReloadDelay: 40
+	Range: 6c0
+	Report: vblhatta.wav, vblhattb.wav
+	Projectile: Bullet
+		Speed: 100c0
+	Warhead@1Dam: SpreadDamage
+		Spread: 64
+		Damage: 25
+		Versus:
+			None: 150
+			Flak: 100
+			Plate: 50
+			Light: 60
+			Medium: 10
+			Heavy: 10
+			Wood: 30
+			Steel: 20
+			Concrete: 10
+		DamageTypes: Prone100Percent, TriggerProne, BulletDeath
+
 demobomb:
 	ValidTargets: Ground, Water, Air
 	Warhead@1Dam_impact: SpreadDamage
