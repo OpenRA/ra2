@@ -472,7 +472,7 @@ naclon:
 		SpawnOffset: 410,140,0
 		ExitCell: 2,0
 	Production:
-		Produces: Infantry
+		Produces:
 	RallyPoint:
 	ClonesProducedUnits:
 		CloneableTypes: infantry
