@@ -78,6 +78,7 @@ napowr:
 	ScalePowerWithHealth:
 	SoundOnDamageTransition:
 		DestroyedSounds: bpowdiea.wav, bpowdieb.wav
+	PowerTooltip:
 
 nahand:
 	Inherits: ^Building
@@ -407,6 +408,7 @@ nanrct:
 	ScalePowerWithHealth:
 	SoundOnDamageTransition:
 		DestroyedSounds: bpowdiea.wav, bpowdieb.wav
+	PowerTooltip:
 
 natech:
 	Inherits: ^Building
