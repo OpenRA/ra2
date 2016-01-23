@@ -244,6 +244,22 @@ ElectricBoltE:
 			Concrete: 50
 		DamageTypes: ElectroDeath
 
+AssaultBolt:
+	ReloadDelay: 70
+	Range: 2c0
+	Report: iteschaa.wav
+	Charges: yes
+	ValidStances: Ally
+	ValidTargets: TeslaBoost
+	Projectile: TeslaZap
+		Image: litningupg
+	Warhead@charge: GrantUpgrade
+		Range: 42
+		Duration: 75
+		Upgrades: charged
+		ValidStances: Ally
+		ValidTargets: TeslaBoost
+
 IvanBomber:
 	ReloadDelay: 50
 	Range: 1c849
