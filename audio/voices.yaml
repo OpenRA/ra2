@@ -169,7 +169,7 @@ DolphinVoice:
 
 HarrierVoice:
 	DefaultVariant: .wav
-	Voiced:
+	Voices:
 		Select: vintsea, vintseb, vintsec, vintsed
 		Move: vintmoa, vintmob, vintmoc, vintmod
 		Attack: vintata, vintatb, vintatc, vintatd, vintate
@@ -177,7 +177,7 @@ HarrierVoice:
 
 BlackEagleVoice:
 	DefaultVariant: .wav
-	Voiced:
+	Voices:
 		Select: vblesea, vbleseb, vblesec, vblesed, vblesef
 		Move: vblemoa, vblemob, vblemoc
 		Attack: vbleata, vbleatb, vbleatc
