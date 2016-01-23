@@ -1,52 +1,48 @@
 camisc01:
 	Inherits: ^CivBuilding
-	Selectable:
-	Building:
-		Footprint: x
-		Dimensions: 1, 1
 	Tooltip:
 		Name: Barrels
 	Health:
 		HP: 5
 	Armor:
 		Type: Concrete
+	SoundOnDamageTransition:
+		DamagedSounds:  bmetdama.wav, bmetdamb.wav, bmetdamc.wav
 
 camisc02:
 	Inherits: ^CivBuilding
-	Selectable:
-	Building:
-		Footprint: x
-		Dimensions: 1, 1
 	Tooltip:
 		Name: Barrel
 	Health:
 		HP: 5
 	Armor:
 		Type: Concrete
+	SoundOnDamageTransition:
+		DamagedSounds:  bmetdama.wav, bmetdamb.wav, bmetdamc.wav
 
 camisc03:
 	Inherits: ^CivBuilding
-	Building:
-		Footprint: x
-		Dimensions: 1, 1
 	Tooltip:
 		Name: Dumpster
 	Health:
 		HP: 100
 	Armor:
 		Type: Concrete
+	SoundOnDamageTransition:
+		DamagedSounds:  bmetdama.wav, bmetdamb.wav, bmetdamc.wav
+		DestroyedSounds: bmetdama.wav, bmetdamb.wav, bmetdamc.wav
 
 camisc04:
 	Inherits: ^CivBuilding
-	Building:
-		Footprint: x
-		Dimensions: 1, 1
 	Tooltip:
 		Name: Mailbox
 	Health:
 		HP: 10
 	Armor:
 		Type: Concrete
+	SoundOnDamageTransition:
+		DamagedSounds:  bmetdama.wav, bmetdamb.wav, bmetdamc.wav
+		DestroyedSounds: bmetdama.wav, bmetdamb.wav, bmetdamc.wav
 
 camisc05:
 	Inherits: ^CivBuilding
@@ -56,6 +52,9 @@ camisc05:
 		HP: 10
 	Armor:
 		Type: Concrete
+	SoundOnDamageTransition:
+		DamagedSounds:  bmetdama.wav, bmetdamb.wav, bmetdamc.wav
+		DestroyedSounds: bmetdama.wav, bmetdamb.wav, bmetdamc.wav
 
 camisc06:
 	Inherits: ^CivBuilding
@@ -70,6 +69,8 @@ camisc06:
 		Type: Concrete
 	WithBuildingExplosion:
 		Sequences: terrorist_explosion
+	SoundOnDamageTransition:
+		DamagedSounds:  bmetdama.wav, bmetdamb.wav, bmetdamc.wav
 
 camsc11:
 	Inherits: ^CivBuilding
@@ -103,9 +104,6 @@ camsc13:
 
 calit01e:
 	Inherits: ^CivBuilding
-	Building:
-		Footprint: x
-		Dimensions: 1, 1
 	Tooltip:
 		Name: Light
 	Health:
@@ -115,9 +113,6 @@ calit01e:
 
 calit01w:
 	Inherits: ^CivBuilding
-	Building:
-		Footprint: x
-		Dimensions: 1, 1
 	Tooltip:
 		Name: Light
 	Health:
@@ -127,13 +122,9 @@ calit01w:
 
 capol01w:
 	Inherits: ^CivBuilding
-	Building:
-		Footprint: x
-		Dimensions: 1, 1
 	Tooltip:
 		Name: Telephone Pole
 	Health:
 		HP: 20
 	Armor:
 		Type: Concrete
-
