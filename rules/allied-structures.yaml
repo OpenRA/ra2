@@ -812,7 +812,6 @@ atesla:
 		LocalOffset: 0,0,2500
 	AttackCharge:
 		Voice: Attack
-		MaxCharges: 3
 		ReloadTime: 60
 		ChargeAudio: bpripow.wav
 	Power:
