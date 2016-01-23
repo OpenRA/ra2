@@ -50,15 +50,27 @@ crate-effects: #Temp Null Some SHPs cannot be read by openra at this time, expec
 	Defaults: null
 		Length: *
 	dollar: #money
-	reveal-map: #reveal
+	reveal-map: reveal
 	hide-map: #shroudx
 	fpower: #firepowr
 	armor: #armor
 	stealth: # RA2 Doesn't have it
 	heal: #healall
 	nuke: #mltimisl
-	levelup: #veteran
+	levelup: veteran
 	speed: #speed
+
+crate:
+	idle:
+		Offset: 0, -12
+		UseTilesetExtension: true
+	land:
+		Offset: 0, -12
+		ShadowStart: 1
+	water: wcrate
+		ShadowStart: 1
+		Offset: 0, -12
+		UseTilesetExtension: true
 
 rank:
 	rank: pips
