@@ -94,11 +94,12 @@ shk:
 		Queue: Infantry
 		BuildAtProductionType: Infantry
 		Prerequisites: ~nahand
+		BuildPaletteOrder: 30
 	Valued:
 		Cost: 500
 	Tooltip:
-		Name: Shock Trooper
-		Description: Special armored unit using electricity.\n  Strong vs Infantry, Light armor\n  Weak vs Tanks, Aircraft\nSpecial ability: Charge tesla coils (3 Tesla Troopers required)
+		Name: Tesla Trooper
+		Description: Special armored unit using electricity.\n  Strong vs Infantry, Light armor\n  Weak vs Tanks, Aircraft\nSpecial ability: Charge tesla coils
 	Selectable:
 		Bounds: 20, 30, 0, -11
 	Health:
