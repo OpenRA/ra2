@@ -63,10 +63,12 @@ crate-effects: #Temp Null Some SHPs cannot be read by openra at this time, expec
 crate:
 	idle:
 		Offset: 0, -12
+		ShadowStart: 1
 		UseTilesetExtension: true
 	land:
 		Offset: 0, -12
 		ShadowStart: 1
+		UseTilesetExtension: true
 	water: wcrate
 		ShadowStart: 1
 		Offset: 0, -12
