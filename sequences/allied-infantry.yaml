@@ -97,6 +97,28 @@ adog:
 		Facings: 64
 	icon: adogicon
 
+dlph:
+	stand:
+		Start: 48
+		Facings: -8
+	run:
+		Start: 0
+		Length: 6
+		Facings: -8
+		Tick: 80
+	idle1:
+		Start: 103
+		Length: 12
+		Tick: 120
+	die: # TODO
+		Start: 116
+		Length: 14
+	shoot:
+		Start: 56
+		Length: 6
+		Facings: 8
+	icon: dlphicon
+
 e1:
 	Defaults: gi
 	stand:

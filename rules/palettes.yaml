@@ -73,6 +73,10 @@
 		G: 0
 		B: 0
 		A: 140
+	PaletteFromPlayerPaletteWithAlpha@cloak:
+		BaseName: cloak
+		BasePalette: player
+		Alpha: 0.55
 	PaletteFromRGBA@invuln:
 		Name: invuln
 		R: 128

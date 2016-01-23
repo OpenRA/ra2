@@ -129,3 +129,79 @@ aegis:
 	Voiced:
 		VoiceSet: AlliedNavalVoice
 
+dlph:
+	Inherits@1: ^ExistsInWorld
+	Inherits@2: ^SpriteActor
+	Inherits@3: ^GainsExperience
+	Buildable:
+		Queue: Ship
+		BuildPaletteOrder: 30
+		Prerequisites: gatech, ~gayard
+	Valued:
+		Cost: 500
+	Tooltip:
+		Name: Dolphin
+		Description: Trained dolphin\narmed with sonic beams.\n  Strong vs Ships
+	Armor:
+		Type: Light
+	Health:
+		HP: 200
+	Mobile:
+		ROT: 6
+		Speed: 90
+		TerrainSpeeds:
+			Water: 100
+		Voice: Move
+	SelectionDecorations:
+		Palette: pips
+	Selectable:
+	Voiced:
+		VoiceSet: DolphinVoice
+	Armament:
+		Weapon: SonicZap
+	AttackFrontal:
+		Voice: Attack
+	AutoTarget:
+	RevealsShroud:
+		Range: 4c0
+	Cloak:
+		CloakTypes: Underwater
+		InitialDelay: 50
+		CloakDelay: 75
+		CloakSound: vnavupa.wav
+		UncloakSound: vnavupa.wav
+		WhileCloakedUpgrades: underwater
+		UncloakOn: Damage
+	Targetable:
+		TargetTypes: Ground, Water
+		UpgradeTypes: underwater
+		UpgradeMaxEnabledLevel: 0
+	Targetable@underwater:
+		TargetTypes: Underwater
+		UpgradeTypes: underwater
+		UpgradeMinEnabledLevel: 1
+		IsPlayerPalette: true
+	DetectCloaked:
+		CloakTypes: Underwater
+		Range: 4c0
+	HiddenUnderFog:
+	ActorLostNotification:
+		Notification: NavalUnitLost
+	Guard:
+		Voice: Attack
+	Guardable:
+	DeathSounds:
+	MustBeDestroyed:
+		RequiredForShortGame: true
+	QuantizeFacingsFromSequence:
+		Sequence: stand
+	Chronoshiftable:
+		ExplodeInstead: true
+	RenderDetectionCircle:
+	RenderSprites:
+	WithInfantryBody:
+		IdleSequences: idle1
+		StandSequences: stand
+		AttackSequence: shoot
+	WithDeathAnimation:
+		UseDeathTypeSuffix: false
