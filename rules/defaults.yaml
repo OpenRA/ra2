@@ -178,6 +178,9 @@
 		Range: 6c0
 	WithIdleOverlay@flag:
 		Sequence: flag
+	SoundOnDamageTransition:
+		DamagedSounds:  bmetdama.wav, bmetdamb.wav, bmetdamc.wav
+		DestroyedSounds: bmetdama.wav, bmetdamb.wav, bmetdamc.wav
 
 ^VoxelLighting:
 	Inherits: ^SupportBuilding
