@@ -189,6 +189,12 @@ World:
 		SupportActors: dog,e2,e2,e2,e2,e2,htnk,htnk,htk,engineer
 		InnerSupportRadius: 3
 		OuterSupportRadius: 5
+	CrateSpawner:
+		Minimum: 1
+		Maximum: 3
+		SpawnInterval: 3000
+		WaterChance: 25
+		InitialSpawnDelay: 1000
 	MPStartLocations:
 	SpawnMPUnits:
 	PathFinder:
