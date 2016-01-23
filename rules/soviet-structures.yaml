@@ -657,18 +657,20 @@ tesla:
 		Range: 8c0
 	Selectable:
 		Bounds: 44, 88, -2, -33
+	Targetable:
+		TargetTypes: Ground, C4, DetonateAttack, Structure, TeslaBoost
 	WithChargeAnimation:
 	Armament@primary:
 		Weapon: CoilBolt
 		LocalOffset: 0,0,2200
 		UpgradeTypes: charged
-		UpgradeMaxEnabledLevel: 2
+		UpgradeMaxEnabledLevel: 1
 		UpgradeMaxAcceptedLevel: 3
 	Armament@charged:
 		Weapon: OPCoilBolt
 		LocalOffset: 0,0,2200
 		UpgradeTypes: charged
-		UpgradeMinEnabledLevel: 3
+		UpgradeMinEnabledLevel: 2
 		UpgradeMaxAcceptedLevel: 3
 	AttackCharge:
 		Voice: Attack
@@ -678,6 +680,9 @@ tesla:
 		ChargeAudio: tslachg2.aud
 	AutoTarget:
 	RequiresPower:
+		UpgradeTypes: charged
+		UpgradeMaxEnabledLevel: 2
+		UpgradeMaxAcceptedLevel: 3
 	WithRangeCircle:
 		Range: 8c0
 		Type: teslacoil
