@@ -51,6 +51,7 @@ Player:
 	FrozenActorLayer:
 	BaseAttackNotifier:
 	HarvesterAttackNotifier:
+		Notification: OreMinerUnderAttack
 	PlayerStatistics:
 	PlaceBeacon:
 	ProvidesTechPrerequisite@infonly:
