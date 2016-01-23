@@ -263,17 +263,21 @@ gayard:
 	idle-crane: ggyard_a
 		Length: 15
 		ShadowStart: 30
+		Tick: 200
 	damaged-idle-crane: ggyard_a
 		Start: 15
 		Length: 15
 		ShadowStart: 45
+		Tick: 200
 	idle-waves: ggyard_c
 		Length: 15
 		ShadowStart: 30
+		Tick: 200
 	damaged-idle-waves: ggyard_c
 		Start: 30
 		Length: 15
 		ShadowStart: 30
+		Tick: 200
 	make: gtyardmk
 		Length: 25
 		ShadowStart: 25

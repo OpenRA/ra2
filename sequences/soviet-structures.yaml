@@ -253,17 +253,21 @@ nayard:
 	idle-crane: ngyard_a
 		Length: 15
 		ShadowStart: 30
+		Tick: 200
 	damaged-idle-crane: ngyard_a
 		Start: 15
 		Length: 15
 		ShadowStart: 45
+		Tick: 200
 	idle-waves: ngyard_c
 		Length: 15
 		ShadowStart: 30
+		Tick: 200
 	damaged-idle-waves: ngyard_c
 		Start: 30
 		Length: 15
 		ShadowStart: 30
+		Tick: 200
 	production-lights: ngyard_b
 		Length: 15
 		ZOffset: 256

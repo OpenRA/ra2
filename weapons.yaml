@@ -861,7 +861,7 @@ SubTorpedo:
 			Wood: 65
 			Steel: 65
 			Concrete: 60
-		DamageTypes: DeathType4
+		DamageTypes: ExplosionDeath
 	Warhead@2EffWater: CreateEffect
 		Explosion: large_watersplash
 		ImpactSound: gexpwasa.wav
@@ -870,6 +870,43 @@ SubTorpedo:
 		Explosion: medium_clsn
 		ImpactSound: gexpwasb.wav
 		InvalidImpactTypes: Water, WaterHit
+
+SonicZap:
+	ReloadDelay: 180
+	Range: 6c0
+	Charges: yes
+	Report: vdolatta.wav
+	Burst: 2
+	Projectile: AreaBeam
+		Speed: 1c0
+		Duration: 10
+		DamageInterval: 5 # Roughly 18 impacts.
+		Width: 0c512
+		Shape: Flat
+		ZOffset: 2047
+		BeyondTargetRange: 0c256
+		Blockable: true
+		Color: 00FFFFC8
+	Warhead@1Dam: SpreadDamage
+		Range: 0, 32
+		Falloff: 100, 100
+		Damage: 4
+		AffectsParent: false
+		ValidStances: Neutral, Enemy
+		Versus:
+			Heavy: 80
+			Concrete: 60
+		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
+	Warhead@2Dam: SpreadDamage
+		Range: 0, 32
+		Falloff: 50, 50
+		Damage: 4
+		AffectsParent: false
+		ValidStances: Ally
+		Versus:
+			Heavy: 80
+			Concrete: 60
+		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
 
 155mm:
 	ReloadDelay: 110
