@@ -1239,7 +1239,7 @@ vulcan2:
 		ValidImpactTypes: Water
 
 PrismShot:
-	ReloadDelay: 60
+	ReloadDelay: 1
 	Range: 8c0
 	Charges: true
 	Report: bpriat1a.wav
