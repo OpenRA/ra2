@@ -26,7 +26,8 @@ _ReSharper.*/
 /*.dylib
 /*.pdb
 /*.mdb
-OpenRA.Mods.RA2/thirdparty/*
+OpenRA.Mods.RA2/dependencies/*.dll
+OpenRA.Mods.RA2/dependencies/*.exe
 *.mmdb.gz
 
 # backup files by various editors
