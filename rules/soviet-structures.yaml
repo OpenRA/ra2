@@ -215,6 +215,8 @@ naradr:
 	RequiresPower:
 	CanPowerDown:
 		IndicatorPalette: ts-mousepal
+		PowerupSpeech: BuildingOnline
+		PowerdownSpeech: BuildingOffline
 	ProvidesRadar:
 	RevealsShroud:
 		Range: 10c0
@@ -523,6 +525,8 @@ napsis:
 	RequiresPower:
 	CanPowerDown:
 		IndicatorPalette: ts-mousepal
+		PowerupSpeech: BuildingOnline
+		PowerdownSpeech: BuildingOffline
 
 nairon:
 	Inherits: ^Building
@@ -564,6 +568,8 @@ nairon:
 	RequiresPower:
 	CanPowerDown:
 		IndicatorPalette: ts-mousepal
+		PowerupSpeech: BuildingOnline
+		PowerdownSpeech: BuildingOffline
 
 namisl:
 	Inherits: ^Building
@@ -593,6 +599,8 @@ namisl:
 	RequiresPower:
 	CanPowerDown:
 		IndicatorPalette: ts-mousepal
+		PowerupSpeech: BuildingOnline
+		PowerdownSpeech: BuildingOffline
 
 nawall:
 	Inherits: ^Wall
@@ -647,6 +655,8 @@ naflak:
 	RequiresPower:
 	CanPowerDown:
 		IndicatorPalette: ts-mousepal
+		PowerupSpeech: BuildingOnline
+		PowerdownSpeech: BuildingOffline
 
 tesla:
 	Inherits: ^SupportBuilding
@@ -706,6 +716,8 @@ tesla:
 		PauseOnLowPower: true
 	CanPowerDown:
 		IndicatorPalette: ts-mousepal
+		PowerupSpeech: BuildingOnline
+		PowerdownSpeech: BuildingOffline
 
 nalasr:
 	Inherits: ^VoxelLighting
