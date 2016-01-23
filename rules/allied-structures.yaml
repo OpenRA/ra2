@@ -312,7 +312,7 @@ gaweap:
 	Exit@1:
 		ExitCell: 5,1
 	Production:
-		Produces: Vehicle, Aircraft
+		Produces: Vehicle
 	PrimaryBuilding:
 	WithDecoration@primary:
 		RequiresSelection: true
