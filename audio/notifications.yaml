@@ -14,7 +14,6 @@ Speech:
 		AllianceBroken: 044
 		AllianceFormed: 043
 		AllianceRequested: 101
-		AirUnitLost: 064
 		ArmorUpgraded: 067
 		ArmorTechnologyStolen: 082
 		AtomBombDetected: 001
@@ -69,7 +68,6 @@ Speech:
 		LowPower: 053
 		MissionAccomplished: 013
 		MissionFailed: 014
-		NavalUnitLost: 064
 		NewMissionObjectiveReceived: 083
 		NewObjectiveReceived: 104
 		NewOptions: 049
