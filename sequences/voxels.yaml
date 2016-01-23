@@ -65,9 +65,12 @@ naflak:
 flata: #Unused
 	idle:
 
-fv: #Has different turrets per unit thats inside,default is patriot
+fv:
 	idle:
-	turret: fvtur
+	turret-missile: fvtur
+	turret-mg: fvtur1
+	turret-repair: fvtur2
+	turret-hitech: fvtur3
 
 gtgcan:
 	turret: gtgcantur
