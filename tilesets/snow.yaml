@@ -32,6 +32,7 @@ Terrain:
 		Type: Water
 		Color: 745537
 		TargetTypes: Water
+		IsWater: True
 	TerrainType@DirtRoad:
 		Type: DirtRoad
 		AcceptsSmudgeType: SmallCrater, MediumCrater, LargeCrater, SmallScorch, MediumScorch, LargeScorch
