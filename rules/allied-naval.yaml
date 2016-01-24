@@ -172,6 +172,7 @@ dlph:
 		UncloakSound: vnavupa.wav
 		WhileCloakedUpgrades: underwater
 		UncloakOn: Damage
+		IsPlayerPalette: true
 	Targetable:
 		TargetTypes: Ground, Water
 		UpgradeTypes: underwater

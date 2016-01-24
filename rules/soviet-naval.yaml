@@ -75,6 +75,7 @@ sub:
 		CloakSound: vnavupa.wav
 		UncloakSound: vnavupa.wav
 		WhileCloakedUpgrades: underwater
+		IsPlayerPalette: true
 	Armament:
 		Weapon: SubTorpedo
 		LocalOffset: 768,0,0
