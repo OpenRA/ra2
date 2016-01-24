@@ -73,7 +73,7 @@
 	Selectable:
 		Priority: 3
 	Targetable:
-		TargetTypes: Ground, C4, DetonateAttack, SpyInfiltrate
+		TargetTypes: Ground, C4, DetonateAttack, Structure
 	Building:
 		Dimensions: 1,1
 		Footprint: x
