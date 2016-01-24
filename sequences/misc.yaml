@@ -79,11 +79,11 @@ rank:
 		Start: 13
 		Length: 2
 
-mpspawn: # TODO: backfall to RA asset
+mpspawn:
 	idle:
 		Length: *
 
-waypoint: # TODO: backfall to RA asset
+waypoint:
 	idle:
 		Length: *
 
