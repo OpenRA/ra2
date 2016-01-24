@@ -82,10 +82,14 @@ gapowr:
 		Sequence: idle-glow
 	Power:
 		Amount: 200
+	InfiltrateForPowerOutage:
+	AffectedByPowerOutage:
 	ScalePowerWithHealth:
 	SoundOnDamageTransition:
 		DestroyedSounds: bpowdiea.wav, bpowdieb.wav
 	PowerTooltip:
+	Targetable:
+		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
 
 gapile:
 	Inherits: ^Building
@@ -181,6 +185,9 @@ garefn:
 		Capacity: 999999
 	CustomSellValue:
 		Value: 300
+	InfiltrateForCash:
+		Percentage: 50
+		Notification: CreditsStolen
 	FreeActor:
 		Actor: cmin
 		SpawnOffset: 4, 1
@@ -192,6 +199,8 @@ garefn:
 		Sequence: idle-drill
 	Power:
 		Amount: -50
+	Targetable:
+		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
 
 gaairc:
 	Inherits: ^Building
@@ -240,7 +249,7 @@ gaairc:
 		Sequence: idle-dish
 		PauseOnLowPower: true
 	Targetable:
-		TargetTypes: Ground, C4, SpyInfiltrate, DetonateAttack
+		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
 	Power:
 		Amount: -50
 	Reservable:

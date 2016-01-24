@@ -75,10 +75,14 @@ napowr:
 		Sequence: idle-lights
 	Power:
 		Amount: 150
+	InfiltrateForPowerOutage:
+	AffectedByPowerOutage:
 	ScalePowerWithHealth:
 	SoundOnDamageTransition:
 		DestroyedSounds: bpowdiea.wav, bpowdieb.wav
 	PowerTooltip:
+	Targetable:
+		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
 
 nahand:
 	Inherits: ^Building
@@ -168,6 +172,9 @@ narefn:
 		Capacity: 999999
 	CustomSellValue:
 		Value: 300
+	InfiltrateForCash:
+		Percentage: 50
+		Notification: CreditsStolen
 	FreeActor:
 		Actor: harv
 		SpawnOffset: 4, 1
@@ -179,6 +186,8 @@ narefn:
 		Sequence: idle-drill
 	Power:
 		Amount: -50
+	Targetable:
+		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
 
 naradr:
 	Inherits: ^Building
@@ -213,7 +222,7 @@ naradr:
 		Sequence: idle-dish
 		PauseOnLowPower: true
 	Targetable:
-		TargetTypes: Ground, C4, SpyInfiltrate, DetonateAttack
+		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
 	InfiltrateForExploration:
 	Power:
 		Amount: -50
@@ -405,10 +414,14 @@ nanrct:
 		EmptyWeapon: NukePayload
 	Power:
 		Amount: 2000
+	InfiltrateForPowerOutage:
+	AffectedByPowerOutage:
 	ScalePowerWithHealth:
 	SoundOnDamageTransition:
 		DestroyedSounds: bpowdiea.wav, bpowdieb.wav
 	PowerTooltip:
+	Targetable:
+		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
 
 natech:
 	Inherits: ^Building
