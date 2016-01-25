@@ -40,26 +40,12 @@ Container@PLAYER_WIDGETS:
 					X: 0
 					Y: 0
 					Children:
-						MenuButton@DIPLOMACY_BUTTON:
-							Logic: AddFactionSuffixLogic
-							MenuContainer: INGAME_DIPLOMACY_BG
-							HideIngameUI: false
-							Pause: false
-							Key: P
-							X: 16
-							Y: 21
-							Width: 69
-							Height: 23
-							Background: diplomacy-button
-							TooltipText: Diplomacy
-							TooltipContainer: TOOLTIP_CONTAINER
-							VisualHeight: 0
 						MenuButton@DEBUG_BUTTON:
 							Logic: AddFactionSuffixLogic
 							Key: escape Shift
-							X: 85
+							X: 16
 							Y: 21
-							Width: 62
+							Width: 100
 							Height: 23
 							Background: debug-button
 							TooltipText: Debug Menu
@@ -68,9 +54,9 @@ Container@PLAYER_WIDGETS:
 						MenuButton@OPTIONS_BUTTON:
 							Logic: AddFactionSuffixLogic
 							Key: escape
-							X: 147
+							X: 116
 							Y: 21
-							Width: 69
+							Width: 100
 							Height: 23
 							Background: options-button
 							TooltipText: Options
@@ -80,7 +66,7 @@ Container@PLAYER_WIDGETS:
 							Logic: RepairOrderButtonLogic, AddFactionSuffixLogic
 							X: 32
 							Y: 212
-							Width: 44
+							Width: 56
 							Height: 34
 							Background: repair-button
 							TooltipText: Repair
@@ -91,26 +77,11 @@ Container@PLAYER_WIDGETS:
 									X: 6
 									Y: 7
 									ImageCollection: order-icons
-						Button@POWER_BUTTON:
-							Logic: PowerdownOrderButtonLogic, AddFactionSuffixLogic
-							X: 76
-							Y: 212
-							Width: 41
-							Height: 34
-							Background: power-button
-							TooltipText: Power Down
-							TooltipContainer: TOOLTIP_CONTAINER
-							VisualHeight: 0
-							Children:
-								Image@ICON:
-									X: 6
-									Y: 7
-									ImageCollection: order-icons
 						Button@BEACON_BUTTON:
 							Logic: BeaconOrderButtonLogic, AddFactionSuffixLogic
-							X: 117
+							X: 88
 							Y: 212
-							Width: 41
+							Width: 57
 							Height: 34
 							Background: beacon-button
 							TooltipText: Place Beacon
@@ -123,9 +94,9 @@ Container@PLAYER_WIDGETS:
 									ImageCollection: order-icons
 						Button@SELL_BUTTON:
 							Logic: SellOrderButtonLogic, AddFactionSuffixLogic
-							X: 158
+							X: 145
 							Y: 212
-							Width: 43
+							Width: 56
 							Height: 34
 							Background: sell-button
 							TooltipText: Sell
@@ -226,7 +197,7 @@ Container@PLAYER_WIDGETS:
 						Image@BOTTOM_CAP:
 							Logic: AddFactionSuffixLogic
 							Width: 234
-							Height: 66
+							Height: 42
 							ClickThrough: false
 							ImageCollection: sidebar
 							ImageName: background-bottom
