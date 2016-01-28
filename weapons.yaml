@@ -1116,6 +1116,187 @@ HoverMissileE:
 	Warhead@5: LeaveSmudge
 		SmudgeType: SmallCrater
 
+RepairBullet:
+	ReloadDelay: 80
+	Range: 1c819
+	Report: vifvrepa.wav
+	ValidTargets: Repair
+	Projectile: Bullet
+		Speed: 1c682
+	Warhead@1Dam: SpreadDamage
+		Spread: 213
+		Damage: -50
+		ValidTargets: Repair
+
+CRM60:
+	ReloadDelay: 15
+	Range: 6c0
+	Report: vifvat2a.wav, vifvat2b.wav, vifvat2c.wav
+	Projectile: Bullet
+		Speed: 100c0
+	Warhead@1Dam: SpreadDamage
+		Spread: 64
+		Damage: 20
+		Versus:
+			None: 100
+			Flak: 80
+			Plate: 70
+			Light: 50
+			Medium: 25
+			Heavy: 25
+			Wood: 75
+			Steel: 50
+			Concrete: 25
+		DamageTypes: Prone70Percent, TriggerProne, BulletDeath
+	Warhead@2Eff: CreateEffect
+		Explosion: piff
+		InvalidImpactTypes: Water
+	Warhead@3EffWater: CreateEffect
+		Explosion: piff
+		ValidImpactTypes: Water
+
+CRMP5:
+	ReloadDelay: 10
+	Range: 6c0
+	Report: itanatta.wav, itanattb.wav
+	Projectile: Bullet
+		Speed: 100c0
+	Warhead@1Dam: SpreadDamage
+		Damage: 125
+		Versus:
+			None: 200
+			Flak: 100
+			Plate: 100
+			Light: 0
+			Medium: 0
+			Heavy: 0
+			Wood: 0
+			Steel: 0
+			Concrete: 0
+		DamageTypes: BulletDeath
+	Warhead@2Eff: CreateEffect
+		Explosion: piff
+		InvalidImpactTypes: Water
+	Warhead@3EffWater: CreateEffect
+		Explosion: piff
+		ValidImpactTypes: Water
+
+CRFlakGuyGun:
+	ReloadDelay: 15
+	Range: 7c0
+	Report: vflaat1a.wav, vflaat1b.wav
+	Projectile: Bullet
+		Speed: 50c0
+	Warhead@1Dam: SpreadDamage
+		Spread: 64
+		Damage: 30
+		Versus:
+			None: 150
+			Flak: 100
+			Plate: 50
+			Light: 60
+			Medium: 10
+			Heavy: 10
+			Wood: 30
+			Steel: 20
+			Concrete: 10
+		DamageTypes: Prone100Percent, TriggerProne, BulletDeath
+	Warhead@2Eff: CreateEffect
+		Explosion: flak_puff
+
+AWPE:
+	ValidTargets: Infantry
+	ReloadDelay: 60
+	Range: 14c0
+	Report: isniatta.wav
+	Projectile: Bullet
+		Speed: 6c682
+	Warhead@1Dam: SpreadDamage
+		Spread: 42
+		Damage: 125
+		Versus:
+			None: 200
+			Flak: 100
+			Plate: 100
+			Light: 0
+			Medium: 0
+			Heavy: 0
+			Wood: 0
+			Steel: 0
+			Concrete: 0
+		DamageTypes: ExplosionDeath
+
+CRElectricBolt:
+	Range: 6c0
+	ReloadDelay: 45
+	Report: itesatta.wav
+	Projectile: TeslaZap
+		Speed: 100c0
+	Warhead@1Dam: SpreadDamage
+		Spread: 120
+		Damage: 60
+		Versus:
+			None: 100
+			Flak: 100
+			Plate: 100
+			Light: 85
+			Medium: 100
+			Heavy: 100
+			Wood: 50
+			Steel: 50
+			Concrete: 50
+		DamageTypes: ElectroDeath
+
+CRRadBeamWeapon:
+	ValidTargets: Ground
+	Damage: 175
+	Range: 7c0
+	ReloadDelay: 30
+	Report: idesat1a.wav
+	Projectile: LaserZap
+		BeamWidth: 2
+		BeamDuration: 7
+		Color: B900FF00
+	Warhead@1Dam: SpreadDamage
+		Spread: 42
+		Damage: 175
+		Versus:
+			None: 100
+			Flak: 100
+			Plate: 100
+			Light: 20
+			Medium: 15
+			Heavy: 10
+			Wood: 0
+			Steel: 0
+			Concrete: 0
+		DamageTypes: RadiationDeath
+
+CRTerrorBomb:
+	ReloadDelay: 20
+	Range: 4c0
+	Report: gexpbara.wav, gexpbarb.wav, gexpbarc.wav
+	Projectile: Bullet
+		Speed: 1c682
+	Warhead@1Dam: SpreadDamage
+		Spread: 426
+		Damage: 425
+		Falloff: 1024, 1024, 512, 512, 256, 256, 0
+		Versus:
+			None: 150
+			Flak: 100
+			Plate: 100
+			Light: 90
+			Medium: 50
+			Heavy: 50
+			Wood: 100
+			Steel: 150
+			Concrete: 30
+		AffectsParent: true
+		DamageTypes: Prone70Percent, TriggerProne, FlameDeath
+	Warhead@2Eff: CreateEffect
+		Explosion: terrorist_explosion
+
 Comet:
 	ValidTargets: Ground, Water
 	ReloadDelay: 100
