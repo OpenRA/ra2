@@ -20,6 +20,7 @@ engineer:
 		GrantUpgrades: ifv-repair
 	EngineerRepair:
 	RepairsBridges:
+		RepairNotification: BridgeRepaired
 	Captures:
 		Sabotage: false
 		CaptureTypes: building, husk
