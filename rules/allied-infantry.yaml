@@ -17,6 +17,7 @@ engineer:
 		Speed: 56
 	Passenger:
 		PipType: Blue
+		GrantUpgrades: ifv-repair
 	EngineerRepair:
 	RepairsBridges:
 	Captures:
@@ -99,6 +100,7 @@ e1:
 		Speed: 31
 	Passenger:
 		PipType: Green
+		GrantUpgrades: ifv-machinegun
 	RevealsShroud:
 		Range: 5c0
 	AttackFrontal:
@@ -147,6 +149,7 @@ snipe:
 		HP: 125
 	Passenger:
 		PipType: Red
+		GrantUpgrades: ifv-sniper
 	RevealsShroud:
 		Range: 8c0
 	Armor:
@@ -240,6 +243,7 @@ tany:
 		Type: Flak
 	Passenger:
 		PipType: Red
+		GrantUpgrades: ifv-hero
 	Armament@primary:
 		Weapon: DoublePistols
 		UpgradeTypes: eliteweapon
