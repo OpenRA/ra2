@@ -3,10 +3,6 @@ mono: 4.2.1
 
 sudo: false
 
-cache:
-  directories:
-  - OpenRA/thirdparty/download
-
 addons:
   apt:
     packages:
