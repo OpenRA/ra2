@@ -227,9 +227,10 @@ OPCoilBolt:
 	ReloadDelay: 3
 	Charges: true
 	Range: 8c512
-	Report: btesat1a.wav
+	Report: btesat2a.wav
 	Projectile: TeslaZap
 		Speed: 100c0
+		Image: litningupg
 	Warhead@1Dam: SpreadDamage
 		Spread: 42
 		Damage: 300
