@@ -187,7 +187,6 @@ dlph:
 		Range: 4c0
 	HiddenUnderFog:
 	ActorLostNotification:
-		Notification: NavalUnitLost
 	Guard:
 		Voice: Attack
 	Guardable:

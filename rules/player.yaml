@@ -50,7 +50,9 @@ Player:
 	Shroud:
 	FrozenActorLayer:
 	BaseAttackNotifier:
+		AllyNotification: OurAllyIsUnderAttack
 	HarvesterAttackNotifier:
+		Notification: OreMinerUnderAttack
 	PlayerStatistics:
 	PlaceBeacon:
 	ProvidesTechPrerequisite@infonly:
@@ -71,4 +73,3 @@ Player:
 		Image: cameo-chevron
 		Sequence: idle
 		Palette: cameo-chevron
-

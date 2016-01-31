@@ -233,6 +233,8 @@ gaairc:
 	RequiresPower:
 	CanPowerDown:
 		IndicatorPalette: ts-mousepal
+		PowerupSpeech: BuildingOnline
+		PowerdownSpeech: BuildingOffline
 	ProvidesRadar:
 	RevealsShroud:
 		Range: 10c0
@@ -572,6 +574,8 @@ nasam:
 	RequiresPower:
 	CanPowerDown:
 		IndicatorPalette: ts-mousepal
+		PowerupSpeech: BuildingOnline
+		PowerdownSpeech: BuildingOffline
 
 gtgcan:
 	Inherits: ^VoxelLighting
@@ -624,6 +628,8 @@ gtgcan:
 	RequiresPower:
 	CanPowerDown:
 		IndicatorPalette: ts-mousepal
+		PowerupSpeech: BuildingOnline
+		PowerdownSpeech: BuildingOffline
 
 gaorep:
 	Inherits: ^Building
@@ -684,6 +690,8 @@ gaspysat:
 	RequiresPower:
 	CanPowerDown:
 		IndicatorPalette: ts-mousepal
+		PowerupSpeech: BuildingOnline
+		PowerdownSpeech: BuildingOffline
 
 gagap:
 	Inherits: ^SupportBuilding
@@ -718,6 +726,8 @@ gagap:
 	-AutoTarget:
 	CanPowerDown:
 		IndicatorPalette: ts-mousepal
+		PowerupSpeech: BuildingOnline
+		PowerdownSpeech: BuildingOffline
 
 gaweat:
 	Inherits: ^Building
@@ -747,6 +757,8 @@ gaweat:
 	RequiresPower:
 	CanPowerDown:
 		IndicatorPalette: ts-mousepal
+		PowerupSpeech: BuildingOnline
+		PowerdownSpeech: BuildingOffline
 
 gacsph:
 	Inherits: ^Building
@@ -778,6 +790,8 @@ gacsph:
 	RequiresPower:
 	CanPowerDown:
 		IndicatorPalette: ts-mousepal
+		PowerupSpeech: BuildingOnline
+		PowerdownSpeech: BuildingOffline
 	ChronoshiftPower@chronoshift:
 		OrderName: Chronoshift
 		Icon: chrono
@@ -835,6 +849,8 @@ atesla:
 		Type: prismcannon
 	CanPowerDown:
 		IndicatorPalette: ts-mousepal
+		PowerupSpeech: BuildingOnline
+		PowerdownSpeech: BuildingOffline
 
 power:
 	AlwaysVisible:

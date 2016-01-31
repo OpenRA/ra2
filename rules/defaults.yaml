@@ -513,7 +513,6 @@
 		Voice: Attack
 	HiddenUnderFog:
 	ActorLostNotification:
-		Notification: NavalUnitLost
 	ProximityCaptor:
 		Types: Ship
 	Guard:
