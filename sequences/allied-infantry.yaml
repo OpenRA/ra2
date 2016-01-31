@@ -46,7 +46,6 @@ engineer:
 	die4: nukedie
 		Length: *
 		Tick: 50
-		# Problem: Palette = effect
 	die5: flameguy
 		Start: 48
 		Length: 59
@@ -152,7 +151,6 @@ e1:
 	die4: nukedie
 		Length: *
 		Tick: 50
-		# Problem: Palette = effect
 	die5: flameguy
 		Start: 48
 		Length: 59
@@ -210,7 +208,6 @@ snipe:
 	die4: nukedie
 		Length: *
 		Tick: 50
-		# Problem: Palette = effect
 	die5: flameguy
 		Start: 48
 		Length: 59
@@ -264,7 +261,6 @@ spy:
 	die4: nukedie
 		Length: *
 		Tick: 50
-		# Problem: Palette = effect
 	die5: flameguy
 		Start: 48
 		Length: 59
@@ -318,7 +314,6 @@ tany:
 	die4: nukedie
 		Length: *
 		Tick: 50
-		# Problem: Palette = effect
 	die5: flameguy
 		Start: 48
 		Length: 59
@@ -382,7 +377,6 @@ jumpjet:
 		Length: *
 		Tick: 50
 		Facings: 1
-		# Problem: Palette = effect
 	die5: flameguy
 		Start: 48
 		Length: 59
