@@ -24,7 +24,6 @@ engineer:
 		Sabotage: false
 		CaptureTypes: building, husk
 	-AutoTarget:
-	WithInfantryBody:
 	RevealsShroud:
 		Range: 4c0
 	Voiced:
@@ -61,7 +60,6 @@ dog:
 		Weapon: DogJaw
 	AttackLeap:
 		Voice: Attack
-	WithInfantryBody:
 	RenderSprites:
 		Image: adog
 		FactionImages:
@@ -255,7 +253,6 @@ tany:
 		UpgradeMinEnabledLevel: 1
 	AttackFrontal:
 		Voice: Attack
-	WithInfantryBody:
 	AnnounceOnBuild:
 	Voiced:
 		VoiceSet: TanyaVoice
