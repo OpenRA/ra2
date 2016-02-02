@@ -29,6 +29,7 @@ AlliedVehicleVoice:
 	Voices:
 		Select: vgrasea, vgraseb, vgrasec, vgrased, vgrasee
 		Move: vgramoa, vgramob, vgramoc, vgramod, vgramoe, vgramof
+		MoveStart: vmcvstaa
 		Attack: vgraata, vgraatb, vgraatc, vgraatd, vgraate
 
 SovietVehicleVoice:
@@ -36,6 +37,7 @@ SovietVehicleVoice:
 	Voices:
 		Select: vgrssea, vgrsseb, vgrssec
 		Move: vgrsmoa, vgrsmob, vgrsmoc
+		MoveStart: vmcvstaa
 		Attack: vgrsata, vgrsatb, vgrsatc, vgrsatd
 
 AlliedNavalVoice:
