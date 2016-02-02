@@ -7,24 +7,10 @@ Metadata:
 RequiresMods:
 	modchooser: {DEV_VERSION}
 
-Folders:
+Packages:
+	~^Content/ra2
 	.
 	ra2:
-	ra2:bits
-	ra2:bits/cameos
-	ra2:bits/vehicles
-	ra2:bits/structures
-	ra2:bits/temperate
-	ra2:bits/themes
-	ra2:bits/animations
-	ra2:uibits
-	~^Content/ra2
-
-MapFolders:
-	ra2:maps@System
-	~^maps/ra2@User
-
-Packages:
 	~ra2.mix
 	~language.mix
 	~multi.mix
@@ -50,6 +36,18 @@ Packages:
 	urb.mix
 	urban.mix
 	audio.bag
+	ra2:bits
+	ra2:bits/cameos
+	ra2:bits/vehicles
+	ra2:bits/structures
+	ra2:bits/temperate
+	ra2:bits/themes
+	ra2:bits/animations
+	ra2:uibits
+
+MapFolders:
+	ra2:maps@System
+	~^maps/ra2@User
 
 Rules:
 	ra2:rules/proxy-actors.yaml
