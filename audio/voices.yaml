@@ -142,6 +142,7 @@ SealVoice:
 		Select: iseasea, iseaseb, iseasec, iseased
 		Move: iseamoa, iseamob, iseamoc
 		Attack: iseaata, iseaatb, iseaatc
+		SpecialAttack: iseaexa, iseaexb
 		Die: iseadia, iseadib, iseadic
 		Zapped: igenzapa
 		Burned: ienadia #gotta put something as temp else game crashes

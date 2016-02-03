@@ -25,7 +25,6 @@ engineer:
 		Sabotage: false
 		CaptureTypes: building, husk
 	-AutoTarget:
-	WithInfantryBody:
 	RevealsShroud:
 		Range: 4c0
 	Voiced:
@@ -62,7 +61,6 @@ dog:
 		Weapon: DogJaw
 	AttackLeap:
 		Voice: Attack
-	WithInfantryBody:
 	RenderSprites:
 		Image: adog
 		FactionImages:
@@ -216,6 +214,54 @@ spy:
 	QuantizeFacingsFromSequence:
 		Sequence: stand
 
+ghost:
+	Inherits: ^Infantry
+	Buildable:
+		Queue: Infantry
+		BuildAtProductionType: Infantry
+		BuildPaletteOrder: 110
+		Prerequisites: ~disabled
+	Valued:
+		Cost: 1000
+	Tooltip:
+		Name: Navy SEAL
+		Description: Elite commando infantry, armed with\na sub machine gun and C4.\n  Strong vs Infantry, Buildings\n  Weak vs Vehicles, Aircraft\nSpecial Ability: Destroy Building with C4
+	Selectable:
+		Bounds: 20, 30, 0, -11
+	Health:
+		HP: 125
+	Mobile:
+		Speed: 71
+	RevealsShroud:
+		Range: 8c0
+	C4Demolition:
+		C4Delay: 45
+		Voice: SpecialAttack
+	Armor:
+		Type: Flak
+	Passenger:
+		PipType: Red
+		GrantUpgrades: ifv-hero
+	Armament@primary:
+		Weapon: MP5
+		UpgradeTypes: eliteweapon
+		UpgradeMaxEnabledLevel: 0
+		UpgradeMaxAcceptedLevel: 1
+	Armament@elite:
+		Weapon: MP5E
+		UpgradeTypes: eliteweapon
+		UpgradeMinEnabledLevel: 1
+	AttackFrontal:
+		Voice: Attack
+	RenderSprites:
+		Image: seal
+	Voiced:
+		VoiceSet: SealVoice
+	ProducibleWithLevel:
+		Prerequisites: barracks.infiltrated
+	QuantizeFacingsFromSequence:
+		Sequence: stand
+
 tany:
 	Inherits: ^Infantry
 	Buildable:
@@ -256,7 +302,6 @@ tany:
 		UpgradeMinEnabledLevel: 1
 	AttackFrontal:
 		Voice: Attack
-	WithInfantryBody:
 	AnnounceOnBuild:
 	Voiced:
 		VoiceSet: TanyaVoice
