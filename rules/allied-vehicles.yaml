@@ -36,7 +36,7 @@ amcv:
 	RenderVoxels:
 	WithVoxelBody:
 	Voiced:
-		VoiceSet: AlliedVehicleVoice
+		VoiceSet: AlliedConstructionVehicleVoice
 
 cmin:
 	Inherits: ^Vehicle
@@ -79,7 +79,7 @@ cmin:
 	RenderVoxels:
 	WithVoxelUnloadBody:
 	Voiced:
-		VoiceSet: AlliedVehicleVoice
+		VoiceSet: ChronoMinerVoice
 
 mtnk:
 	Inherits: ^Vehicle
