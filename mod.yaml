@@ -38,10 +38,8 @@ Packages:
 	audio.bag
 	ra2:bits
 	ra2:bits/cameos
-	ra2:bits/vehicles
 	ra2:bits/structures
 	ra2:bits/temperate
-	ra2:bits/themes
 	ra2:bits/animations
 	ra2:uibits
 
