@@ -177,7 +177,7 @@ narefn:
 		Notification: CreditsStolen
 	FreeActor:
 		Actor: harv
-		SpawnOffset: 4, 1
+		SpawnOffset: 3, 1
 		Facing: 160
 	WithDockedOverlay:
 	WithIdleOverlay@bib:
