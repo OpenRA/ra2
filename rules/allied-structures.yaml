@@ -190,7 +190,7 @@ garefn:
 		Notification: CreditsStolen
 	FreeActor:
 		Actor: cmin
-		SpawnOffset: 4, 1
+		SpawnOffset: 3, 1
 		Facing: 160
 	WithDockedOverlay:
 	WithIdleOverlay@bib:
