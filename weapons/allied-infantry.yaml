@@ -106,6 +106,60 @@ paraE:
 		Explosion: piff
 		ValidImpactTypes: Water
 
+MP5:
+	ReloadDelay: 10
+	Range: 6c0
+	Report: iseaatta.wav, iseaattb.wav
+	Projectile: Bullet
+		Speed: 100c0
+	Warhead@1Dam: SpreadDamage
+		Spread: 64
+		Damage: 125
+		Versus:
+			None: 100
+			Flak: 80
+			Plate: 70
+			Light: 50
+			Medium: 25
+			Heavy: 25
+			Wood: 75
+			Steel: 50
+			Concrete: 25
+		DamageTypes: Prone70Percent, TriggerProne, BulletDeath
+	Warhead@2Eff: CreateEffect
+		Explosion: piff
+		InvalidImpactTypes: Water
+	Warhead@3EffWater: CreateEffect
+		Explosion: piff
+		ValidImpactTypes: Water
+
+MP5E:
+	ReloadDelay: 10
+	Range: 6c0
+	Report: iseaatta.wav, iseaattb.wav
+	Projectile: Bullet
+		Speed: 100c0
+	Warhead@1Dam: SpreadDamage
+		Spread: 64
+		Damage: 125
+		Versus:
+			None: 100
+			Flak: 80
+			Plate: 70
+			Light: 50
+			Medium: 25
+			Heavy: 25
+			Wood: 75
+			Steel: 50
+			Concrete: 25
+		DamageTypes: Prone70Percent, TriggerProne, BulletDeath
+	Warhead@2Eff: CreateEffect
+		Explosion: piff
+		InvalidImpactTypes: Water
+	Warhead@3EffWater: CreateEffect
+		Explosion: piff
+		ValidImpactTypes: Water
+
 DoublePistols:
 	ReloadDelay: 10
 	Range: 6c0
