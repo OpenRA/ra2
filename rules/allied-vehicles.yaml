@@ -26,7 +26,7 @@ amcv:
 		RequiredForShortGame: true
 	BaseBuilding:
 	Transforms:
-		Voice: Move
+		Voice: MoveStart
 		IntoActor: gacnst
 		Offset: -1,-1
 		Facing: 96
