@@ -27,8 +27,13 @@ engineer:
 	-AutoTarget:
 	RevealsShroud:
 		Range: 4c0
-	Voiced:
+	-Voiced:
+	Voiced@ALLIED:
 		VoiceSet: AlliedEngineerVoice
+		Factions: america, germany, england, france, korea
+	Voiced@SOVIET:
+		VoiceSet: SovietEngineerVoice
+		Factions: cuba, libya, iraq, russia
 	Guard:
 		Voice: Action
 	AttackMove:
