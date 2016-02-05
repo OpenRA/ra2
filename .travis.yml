@@ -16,7 +16,7 @@ script:
  - mv OpenRA/ra2 ~/.openra/mods/ra2
  - git clone https://github.com/OpenRA/OpenRA.git
  - cd OpenRA
- - travis_retry make all-dependencies
+ - travis_retry make dependencies
  - make all
  - mono --debug OpenRA.Utility.exe ra2 --check-yaml
 
