@@ -3,10 +3,15 @@ mono: 4.2.1
 
 sudo: false
 
+cache:
+  directories:
+  - ~/.openra/Content
+
 addons:
   apt:
     packages:
     - liblua5.1-0
+    - p7zip-full
 
 script:
  - cd OpenRA.Mods.RA2
@@ -18,7 +23,9 @@ script:
  - cd OpenRA
  - travis_retry make dependencies
  - make all
+ - travis_retry ~/.openra/mods/ra2/fetch-content.sh
  - mono --debug OpenRA.Utility.exe ra2 --check-yaml
+ - mono --debug OpenRA.Utility.exe ra2 --check-sequence-sprites
 
 branches:
  only:
