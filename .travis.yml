@@ -6,7 +6,7 @@ sudo: false
 addons:
   apt:
     packages:
-    - lua5.1
+    - liblua5.1-0
 
 script:
  - cd OpenRA.Mods.RA2
