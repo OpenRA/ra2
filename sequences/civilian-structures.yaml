@@ -454,24 +454,6 @@ camsc13:
 		ShadowStart: 5
 		Offset: 15, -22
 
-casin01s:
-	idle: cusin01s
-		ShadowStart: 4
-		Offset: 0, 0
-	damaged-idle: cusin01s
-		Start: 1
-		ShadowStart: 5
-		Offset: 0, 0
-
-casin01n:
-	idle: cusin01n
-		ShadowStart: 4
-		Offset: 0, 0
-	damaged-idle: cusin01n
-		Start: 1
-		ShadowStart: 5
-		Offset: 0, 0
-
 calit01e:
 	idle: culit01e
 		ShadowStart: 0

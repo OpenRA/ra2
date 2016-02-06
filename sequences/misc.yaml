@@ -141,8 +141,6 @@ explosion:
 	building: twlt070
 	ionring: ring1
 		Tick: 160
-	pulse_explosion: pulsefx2
-		BlendMode: Additive
 	huge_watersplash: h2o_exp1
 	large_watersplash: h2o_exp2
 	small_watersplash: h2o_exp3
@@ -206,11 +204,6 @@ dragon:
 smokey2:
 	idle:
 		Length: *
-
-crystal4:
-	idle:
-		Length: 15
-		ShadowStart: 15
 
 120mm:
 	idle:
