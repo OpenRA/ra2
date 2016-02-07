@@ -303,7 +303,7 @@ nadept:
 		Length: 10
 		ShadowStart: 20
 		Tick: 180
-	damaged-idle: ngdept_d
+	damaged-idle: ngdept_b
 		Start: 10
 		Length: 10
 		ShadowStart: 29
