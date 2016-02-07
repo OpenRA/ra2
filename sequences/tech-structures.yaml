@@ -28,6 +28,15 @@ cahosp:
 		Start: 1
 		ShadowStart: 5
 		Offset: -30, -75
+	idle-overlay: cahosp_a
+		Length: 2
+		Offset: -30, -75
+		Tick: 400
+	damaged-idle-overlay: cahosp_a
+		Start: 2
+		Length: 2
+		Offset: -30, -75
+		Tick: 400
 
 caoutp:
 	icon: xxicon

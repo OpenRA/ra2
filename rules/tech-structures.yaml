@@ -39,3 +39,4 @@ cahosp:
 	RepairsUnits:
 		StartRepairingNotification:
 	RallyPoint:
+	WithIdleOverlay:
