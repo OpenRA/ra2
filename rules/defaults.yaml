@@ -617,6 +617,34 @@
 	Armor:
 		Type: Wood
 
+^StreetSign:
+	Inherits: ^Tree
+	Tooltip:
+		Name: Street Sign
+
+^TrafficLight:
+	Inherits: ^Tree
+	Tooltip:
+		Name: Traffic Light
+
+^StreetLight:
+	Inherits: ^Tree
+	Tooltip:
+		Name: Street Light
+	Armor:
+		Type: steel
+	Health:
+		HP: 50
+
+^TelephonePole:
+	Inherits: ^Tree
+	Tooltip:
+		Name: Utility Pole
+	Health:
+		HP: 20
+	Armor:
+		Type: Concrete
+
 ^Rock:
 	Inherits@1: ^SpriteActor
 	WithSpriteBody:

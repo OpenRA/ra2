@@ -19,19 +19,129 @@ gasand:
 		DamagedSounds: gsancrua.wav, gsancrub.wav
 		DestroyedSounds: gsancrua.wav, gsancrub.wav
 
+cabhut:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Bridge repair hut
+	Health:
+		HP: 2000
+
 cafncp:
 	Inherits: ^Fence
 	Tooltip:
 		Name: Prison Camp Fence
 		Description: Fence.\nCrushable by vehicles.
 
-cakrmw:
-	Inherits: ^Wall
+cahse01:
+	Inherits: ^CivBuilding
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 600
+	Building:
+		Dimensions: 3,2
+		Footprint: xxx xxx
+
+
+cahse02:
+	Inherits: ^CivBuilding
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 400
+	Building:
+		Dimensions: 3,2
+		Footprint: xxx xxx
+
+cahse03:
+	Inherits: ^CivBuilding
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 400
+	Building:
+		Dimensions: 3,4
+		Footprint: xxx xxx xxx xxx
+
+cahse04:
+	Inherits: ^CivBuilding
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 400
+	Building:
+		Dimensions: 3,2
+		Footprint: xxx xxx
+
+cahse05:
+	Inherits: ^CivBuilding
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 300
+	Building:
+		Dimensions: 1,2
+		Footprint: x x
+
+cahse06:
+	Inherits: ^CivBuilding
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 300
+	Building:
+		Dimensions: 2,1
+		Footprint: xx
+
+cahse07:
+	Inherits: ^CivBuilding
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 600
+	Building:
+		Dimensions: 2,3
+		Footprint: xx xx xx
+
+cawt01:
+	Inherits: ^CivBuilding
 	Tooltip:
-		Name: Kremlin Walls
-		Description: Walls of the Kremlin.
+		Name: Water Tower
 	Armor:
-		Type: Wood
+		Type: steel
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 400
+	Building:
+		Dimensions: 1,1
+		Footprint: x
+
+cats01:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Twin Silos
+	Armor:
+		Type: steel
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 300
+	Building:
+		Dimensions: 2,2
+		Footprint: xx xx
+
+cabarn02:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Barn
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 500
+	Building:
+		Dimensions: 2,2
+		Footprint: xx xx
 
 cawash01:
 	Inherits: ^CivBuilding
@@ -45,6 +155,19 @@ cawash01:
 		HP: 1000
 	Armor:
 		Type: Concrete
+	RevealsShroud:
+		Range: 6c0
+
+cawash02:
+	Inherits: ^CivBuilding
+	Selectable:
+	Building:
+		Footprint: xxxx xxxx xxxx
+		Dimensions: 4, 3
+	Health:
+		HP: 1000
+	Armor:
+		Type: Steel
 	RevealsShroud:
 		Range: 6c0
 
@@ -87,6 +210,18 @@ cawash05:
 	RevealsShroud:
 		Range: 6c0
 
+cawash06:
+	Inherits: ^CivBuilding
+	Armor:
+		Type: steel
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 1000
+	Building:
+		Dimensions: 4,4
+		Footprint: xxxx xxxx xxxx xxxx
+
 cawash07:
 	Inherits: ^CivBuilding
 	Selectable:
@@ -99,6 +234,18 @@ cawash07:
 		Type: Steel
 	RevealsShroud:
 		Range: 6c0
+
+cawash08:
+	Inherits: ^CivBuilding
+	Armor:
+		Type: steel
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 1000
+	Building:
+		Dimensions: 3,4
+		Footprint: xxx xxx xxx xxx
 
 cawash09:
 	Inherits: ^CivBuilding
@@ -139,45 +286,6 @@ cawash11:
 	RevealsShroud:
 		Range: 6c0
 
-cawash13:
-	Inherits: ^CivBuilding
-	Selectable:
-	Building:
-		Footprint: xxxx xxxx xxxx
-		Dimensions: 3, 4
-	Health:
-		HP: 1000
-	Armor:
-		Type: Steel
-	RevealsShroud:
-		Range: 6c0
-
-cawash14:
-	Inherits: ^CivBuilding
-	Selectable:
-	Building:
-		Footprint: xxx xxx xxx
-		Dimensions: 3, 3
-	Tooltip:
-		Name: Jefferson Memorial
-	Health:
-		HP: 1000
-	Armor:
-		Type: Concrete
-
-canewy01:
-	Inherits: ^CivBuilding
-	Selectable:
-	Building:
-		Footprint: xxxx xxxx xxxx xxxx
-		Dimensions: 4, 4
-	Health:
-		HP: 1000
-	Armor:
-		Type: Steel
-	RevealsShroud:
-		Range: 4c0
-
 cawsh12:
 	Inherits: ^CivBuilding
 	Selectable:
@@ -207,6 +315,325 @@ cawsh12:
 		PortYaws: 0, 176, 341, 512, 682, 853
 		PortCones: 86, 86, 86, 86, 86, 86
 
+cawash13:
+	Inherits: ^CivBuilding
+	Armor:
+		Type: steel
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 1000
+	Building:
+		Dimensions: 3,4
+		Footprint: xxx xxx xxx xxx
+
+cawash14:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Jefferson Memorial
+	Armor:
+		Type: concrete
+	Health:
+		HP: 1000
+	Building:
+		Dimensions: 3,3
+		Footprint: xxx xxx xxx
+
+cawash15:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Lincoln Memorial
+	Armor:
+		Type: concrete
+	Health:
+		HP: 1000
+	Building:
+		Dimensions: 3,4
+		Footprint: xxx xxx xxx xxx
+
+cawash16:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Smithsonian Castle
+	Armor:
+		Type: concrete
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 1000
+	Building:
+		Dimensions: 5,3
+		Footprint: xxxxx xxxxx xxxxx
+
+cawash17:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Smithsonian Natural History Museum
+	Armor:
+		Type: concrete
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 1000
+	Building:
+		Dimensions: 6,4
+		Footprint: xxxxxx xxxxxx xxxxxx xxxxxx
+
+cawash18:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: White House Fountain
+	Armor:
+		Type: concrete
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 200
+	Building:
+		Dimensions: 2,2
+		Footprint: xx xx
+
+cawash19:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Iwo Jima Memorial
+	Armor:
+		Type: concrete
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 500
+	Building:
+		Dimensions: 4,4
+		Footprint: xxxx xxxx xxxx xxxx
+
+canewy01:
+	Inherits: ^CivBuilding
+	Selectable:
+	Building:
+		Footprint: xxxx xxxx xxxx xxxx
+		Dimensions: 4, 4
+	Health:
+		HP: 1000
+	Armor:
+		Type: Steel
+	RevealsShroud:
+		Range: 4c0
+
+canewy04:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Statue of Liberty
+	Armor:
+		Type: concrete
+	RevealsShroud:
+		Range: 4c0
+	Health:
+		HP: 1000
+	Building:
+		Dimensions: 3,3
+		Footprint: xxx xxx xxx
+
+canewy05:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: World Trade Center
+	Armor:
+		Type: concrete
+	RevealsShroud:
+		Range: 4c0
+	Health:
+		HP: 1000
+	Building:
+		Dimensions: 2,2
+		Footprint: xx xx
+
+canewy06:
+	Inherits: ^CivBuilding
+	Armor:
+		Type: steel
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 1000
+	Building:
+		Dimensions: 3,3
+		Footprint: xxx xxx xxx
+
+canewy07:
+	Inherits: ^CivBuilding
+	Armor:
+		Type: steel
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 1000
+	Building:
+		Dimensions: 3,3
+		Footprint: xxx xxx xxx
+
+canewy08:
+	Inherits: ^CivBuilding
+	Armor:
+		Type: steel
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 1000
+	Building:
+		Dimensions: 3,3
+		Footprint: xxx xxx xxx
+
+canewy10:
+	Inherits: ^CivBuilding
+	Armor:
+		Type: steel
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 1000
+	Building:
+		Dimensions: 3,2
+		Footprint: xxx xxx
+
+canewy11:
+	Inherits: ^CivBuilding
+	Armor:
+		Type: steel
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 1000
+	Building:
+		Dimensions: 3,2
+		Footprint: xxx xxx
+
+canewy12:
+	Inherits: ^CivBuilding
+	Armor:
+		Type: steel
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 1000
+	Building:
+		Dimensions: 2,3
+		Footprint: xx xx xx
+
+canewy13:
+	Inherits: ^CivBuilding
+	Armor:
+		Type: steel
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 1000
+	Building:
+		Dimensions: 3,3
+		Footprint: xxx xxx xxx
+
+canewy14:
+	Inherits: ^CivBuilding
+	Armor:
+		Type: steel
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 1000
+	Building:
+		Dimensions: 3,3
+		Footprint: xxx xxx xxx
+
+canewy15:
+	Inherits: ^CivBuilding
+	Armor:
+		Type: steel
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 1000
+	Building:
+		Dimensions: 3,3
+		Footprint: xxx xxx xxx
+
+canewy16:
+	Inherits: ^CivBuilding
+	Armor:
+		Type: steel
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 1000
+	Building:
+		Dimensions: 2,2
+		Footprint: xx xx
+
+canewy17:
+	Inherits: ^CivBuilding
+	Armor:
+		Type: steel
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 1000
+	Building:
+		Dimensions: 2,2
+		Footprint: xx xx
+
+canewy18:
+	Inherits: ^CivBuilding
+	Armor:
+		Type: steel
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 1000
+	Building:
+		Dimensions: 2,2
+		Footprint: xx xx
+
+canewy20:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Warehouse
+	Armor:
+		Type: steel
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 1000
+	Building:
+		Dimensions: 3,5
+		Footprint: xxx xxx xxx xxx xxx
+
+canewy21:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Warehouse
+	Armor:
+		Type: steel
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 1000
+	Building:
+		Dimensions: 5,3
+		Footprint: xxxxx xxxxx xxxxx
+
+caswst01:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Southwest Building
+	Armor:
+		Type: steel
+	RevealsShroud:
+		Range: 4c0
+	Health:
+		HP: 1000
+	Building:
+		Dimensions: 2,3
+		Footprint: xx xx xx
+
 caarmy01:
 	Inherits: ^CivBuilding
 	Selectable:
@@ -217,10 +644,45 @@ caarmy01:
 		Name: Army Tent
 	Health:
 		HP: 200
-	Armor:
-		Type: Wood
 	RevealsShroud:
 		Range: 6c0
+
+caarmy02:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Army Tent
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 200
+	Building:
+		Dimensions: 1,1
+		Footprint: x
+
+
+caarmy03:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Army Tent
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 200
+	Building:
+		Dimensions: 1,1
+		Footprint: x
+
+caarmy04:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Army Tent
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 200
+	Building:
+		Dimensions: 1,1
+		Footprint: x
 
 cawa2a:
 	Inherits: ^CivBuilding
@@ -292,8 +754,6 @@ cafarm01:
 		Name: Farm
 	Health:
 		HP: 400
-	Armor:
-		Type: Wood
 	RevealsShroud:
 		Range: 4c0
 
@@ -307,8 +767,20 @@ cafarm02:
 		Name: Farm Silo
 	Health:
 		HP: 400
+
+cafarm06:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Lighthouse
 	Armor:
-		Type: Wood
+		Type: steel
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 500
+	Building:
+		Dimensions: 2,2
+		Footprint: xx xx
 
 causfgl:
 	Inherits: ^Flag
@@ -410,21 +882,1153 @@ cagas01:
 		Name: Gas Station
 	Health:
 		HP: 1000
-	Armor:
-		Type: Wood
 	RevealsShroud:
 		Range: 6c0
 
-catech01:
+galite:
 	Inherits: ^CivBuilding
-	Building:
-		Footprint: xxx xxx xxx
-		Dimensions: 3, 3
 	Tooltip:
-		Name: Communications Center
+		Name: Light Post
+	Valued:
+		Cost: 200
+	RevealsShroud:
+		Range: 0c0
 	Health:
-		HP: 400
+		HP: 600
+	Power:
+		Amount: 0
+	Building:
+		Dimensions: 1,1
+		Footprint: x
+	RenderSprites:
+		Image: galite
+	WithSpriteBody:
+	AutoSelectionSize:
+	BodyOrientation:
+		UseClassicPerspectiveFudge: False
+		QuantizedFacings: 1
+	FrozenUnderFog:
+
+cacity01:
+	Inherits: ^CivBuilding
 	Armor:
-		Type: Steel
+		Type: steel
 	RevealsShroud:
 		Range: 4c0
+	Health:
+		HP: 1000
+	Building:
+		Dimensions: 4,4
+		Footprint: xxxx xxxx xxxx xxxx
+	RenderSprites:
+		PlayerPalette:
+		Palette: city
+
+cacity02:
+	Inherits: ^CivBuilding
+	Armor:
+		Type: steel
+	RevealsShroud:
+		Range: 4c0
+	Health:
+		HP: 1000
+	Building:
+		Dimensions: 5,4
+		Footprint: xxxxx xxxxx xxxxx xxxxx
+	RenderSprites:
+		PlayerPalette:
+		Palette: city
+
+cacity03:
+	Inherits: ^CivBuilding
+	Armor:
+		Type: steel
+	RevealsShroud:
+		Range: 4c0
+	Health:
+		HP: 1000
+	Building:
+		Dimensions: 3,3
+		Footprint: xxx xxx xxx
+	RenderSprites:
+		PlayerPalette:
+		Palette: city
+
+cacity04:
+	Inherits: ^CivBuilding
+	Armor:
+		Type: steel
+	RevealsShroud:
+		Range: 4c0
+	Health:
+		HP: 1000
+	Building:
+		Dimensions: 4,4
+		Footprint: xxxx xxxx xxxx xxxx
+	RenderSprites:
+		PlayerPalette:
+		Palette: city
+
+city05:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Battersea Power Station
+	Armor:
+		Type: steel
+	RevealsShroud:
+		Range: 4c0
+	Health:
+		HP: 1000
+	Building:
+		Dimensions: 4,4
+		Footprint: xxxx xxxx xxxx xxxx
+	RenderSprites:
+		PlayerPalette:
+		Palette: city
+
+catexs01:
+	Inherits: ^CivBuilding
+	Armor:
+		Type: steel
+	RevealsShroud:
+		Range: 4c0
+	Health:
+		HP: 1000
+	Building:
+		Dimensions: 2,2
+		Footprint: xx xx
+
+
+catexs02:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Alamo
+	Armor:
+		Type: concrete
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 2000
+	Building:
+		Dimensions: 4,4
+		Footprint: xxxx xxxx xxxx xxxx
+
+catexs03:
+	Inherits: ^CivBuilding
+	Armor:
+		Type: steel
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 1000
+	Building:
+		Dimensions: 3,3
+		Footprint: xxx xxx xxx
+
+catexs04:
+	Inherits: ^CivBuilding
+	Armor:
+		Type: steel
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 1000
+	Building:
+		Dimensions: 3,3
+		Footprint: xxx xxx xxx
+
+catexs05:
+	Inherits: ^CivBuilding
+	Armor:
+		Type: steel
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 1000
+	Building:
+		Dimensions: 3,3
+		Footprint: xxx xxx xxx
+
+catexs06:
+	Inherits: ^CivBuilding
+	Armor:
+		Type: steel
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 1000
+	Building:
+		Dimensions: 3,3
+		Footprint: xxx xxx xxx
+
+catexs07:
+	Inherits: ^CivBuilding
+	Armor:
+		Type: steel
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 1000
+	Building:
+		Dimensions: 3,3
+		Footprint: xxx xxx xxx
+
+catexs08:
+	Inherits: ^CivBuilding
+	Armor:
+		Type: steel
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 1000
+	Building:
+		Dimensions: 2,3
+		Footprint: xx xx xx
+
+capars01:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Eiffel Tower
+	Armor:
+		Type: steel
+	Health:
+		HP: 3000
+	Power:
+		Amount: -100
+	Building:
+		Dimensions: 4,4
+		Footprint: xxxx xxxx xxxx xxxx
+
+capars02:
+	Inherits: ^CivBuilding
+	Armor:
+		Type: steel
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 1000
+	Building:
+		Dimensions: 6,4
+		Footprint: xxxxxx xxxxxx xxxxxx xxxxxx
+
+capars04:
+	Inherits: ^CivBuilding
+	Armor:
+		Type: steel
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 500
+	Building:
+		Dimensions: 3,3
+		Footprint: xxx xxx xxx
+
+capars05:
+	Inherits: ^CivBuilding
+	Armor:
+		Type: steel
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 500
+	Building:
+		Dimensions: 3,3
+		Footprint: xxx xxx xxx
+
+capars06:
+	Inherits: ^CivBuilding
+	Armor:
+		Type: steel
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 500
+	Building:
+		Dimensions: 3,3
+		Footprint: xxx xxx xxx
+
+capars07:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Phone Booth
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 100
+	Building:
+		Dimensions: 1,1
+		Footprint: x
+
+capars08:
+	Inherits: ^CivBuilding
+	Armor:
+		Type: steel
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 1000
+	Building:
+		Dimensions: 6,4
+		Footprint: xxxxxx xxxxxx xxxxxx xxxxxx
+
+capars09:
+	Inherits: ^CivBuilding
+	Armor:
+		Type: steel
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 1000
+	Building:
+		Dimensions: 6,4
+		Footprint: xxxxxx xxxxxx xxxxxx xxxxxx
+
+capars10:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Bistro
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 1000
+	Building:
+		Dimensions: 4,3
+		Footprint: xxxx xxxx xxxx
+
+capars11:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Arc de Triumphe
+	Armor:
+		Type: concrete
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 1000
+	Building:
+		Dimensions: 3,4
+		Footprint: xxx xxx xxx xxx
+
+capars12:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Notre Dame
+	Armor:
+		Type: concrete
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 1000
+	Building:
+		Dimensions: 3,5
+		Footprint: xxx xxx xxx xxx xxx
+
+capars13:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Bistro
+	Armor:
+		Type: concrete
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 1000
+	Building:
+		Dimensions: 3,4
+		Footprint: xxx xxx xxx xxx
+
+capars14:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Bistro
+	Armor:
+		Type: concrete
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 1000
+	Building:
+		Dimensions: 4,3
+		Footprint: xxxx xxxx xxxx
+
+cafrma:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Farmhouse
+	RevealsShroud:
+		Range: 4c0
+	Health:
+		HP: 400
+	Building:
+		Dimensions: 2,2
+		Footprint: xx xx
+
+cafrmb:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Outhouse
+	RevealsShroud:
+		Range: 4c0
+	Health:
+		HP: 50
+	Building:
+		Dimensions: 1,1
+		Footprint: x
+
+caprs03:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Louvre
+	Armor:
+		Type: concrete
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 500
+	Building:
+		Dimensions: 6,4
+		Footprint: xxxxxx xxxxxx xxxxxx xxxxxx
+
+cagard01:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Guard Shack
+	Armor:
+		Type: steel
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 100
+	Building:
+		Dimensions: 1,1
+		Footprint: x
+
+carus01:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Basil's Cathedral
+	Armor:
+		Type: concrete
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 1000
+	Building:
+		Dimensions: 4,4
+		Footprint: xxxx xxxx xxxx xxxx
+
+carus02g:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Kremlin Wall Clock Tower
+	Armor:
+		Type: concrete
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 1000
+	Building:
+		Dimensions: 1,1
+		Footprint: x
+
+carus03:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Kremlin Palace
+	Armor:
+		Type: concrete
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 1000
+	Building:
+		Dimensions: 2,5
+		Footprint: xx xx xx xx xx
+
+carus04:
+	Inherits: ^CivBuilding
+	Armor:
+		Type: steel
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 1000
+	Building:
+		Dimensions: 4,4
+		Footprint: xxxx xxxx xxxx xxxx
+
+carus05:
+	Inherits: ^CivBuilding
+	Armor:
+		Type: steel
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 1000
+	Building:
+		Dimensions: 4,4
+		Footprint: xxxx xxxx xxxx xxxx
+
+carus06:
+	Inherits: ^CivBuilding
+	Armor:
+		Type: steel
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 1000
+	Building:
+		Dimensions: 4,4
+		Footprint: xxxx xxxx xxxx xxxx
+
+carus08:
+	Inherits: ^CivBuilding
+	Armor:
+		Type: steel
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 1000
+	Building:
+		Dimensions: 1,1
+		Footprint: x
+
+carus09:
+	Inherits: ^CivBuilding
+	Armor:
+		Type: steel
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 1000
+	Building:
+		Dimensions: 2,1
+		Footprint: xx
+
+carus10:
+	Inherits: ^CivBuilding
+	Armor:
+		Type: steel
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 1000
+	Building:
+		Dimensions: 1,2
+		Footprint: x x
+
+carus11:
+	Inherits: ^CivBuilding
+	Armor:
+		Type: steel
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 1000
+	Building:
+		Dimensions: 2,1
+		Footprint: xx
+
+camiam01:
+	Inherits: ^CivBuilding
+	Armor:
+		Type: steel
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 1000
+	Building:
+		Dimensions: 4,2
+		Footprint: xxxx xxxx
+
+camiam02:
+	Inherits: ^CivBuilding
+	Armor:
+		Type: steel
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 1000
+	Building:
+		Dimensions: 4,2
+		Footprint: xxxx xxxx
+
+camiam03:
+	Inherits: ^CivBuilding
+	Armor:
+		Type: steel
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 1000
+	Building:
+		Dimensions: 2,3
+		Footprint: xx xx xx
+
+camiam04:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Lifeguard Hut
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 200
+	Building:
+		Dimensions: 1,1
+		Footprint: x
+
+camiam05:
+	Inherits: ^CivBuilding
+	Armor:
+		Type: steel
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 1000
+	Building:
+		Dimensions: 3,4
+		Footprint: xxx xxx xxx xxx
+
+camiam06:
+	Inherits: ^CivBuilding
+	Armor:
+		Type: steel
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 1000
+	Building:
+		Dimensions: 4,4
+		Footprint: xxxx xxxx xxxx xxxx
+
+camiam07:
+	Inherits: ^CivBuilding
+	Armor:
+		Type: steel
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 1000
+	Building:
+		Dimensions: 4,4
+		Footprint: xxxx xxxx xxxx xxxx
+
+
+camiam08:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Arizona Memorial
+	Armor:
+		Type: steel
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 1000
+	Building:
+		Dimensions: 3,1
+		Footprint: xxx
+
+canwy05:
+	Inherits: ^CivBuilding
+	Armor:
+		Type: steel
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 1000
+	Building:
+		Dimensions: 4,4
+		Footprint: xxxx xxxx xxxx xxxx
+
+canwy09:
+	Inherits: ^CivBuilding
+	Armor:
+		Type: steel
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 400
+	Building:
+		Dimensions: 2,3
+		Footprint: xx xx xx
+
+canwy22:
+	Inherits: ^CivBuilding
+	Armor:
+		Type: steel
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 400
+	Building:
+		Dimensions: 3,3
+		Footprint: xxx xxx xxx
+
+canwy23:
+	Inherits: ^CivBuilding
+	Armor:
+		Type: steel
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 400
+	Building:
+		Dimensions: 3,2
+		Footprint: xxx xxx
+
+canwy24:
+	Inherits: ^CivBuilding
+	Armor:
+		Type: steel
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 400
+	Building:
+		Dimensions: 3,3
+		Footprint: xxx xxx xxx
+
+canwy25:
+	Inherits: ^CivBuilding
+	Armor:
+		Type: steel
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 400
+	Building:
+		Dimensions: 3,3
+		Footprint: xxx xxx xxx
+
+canwy26:
+	Inherits: ^CivBuilding
+	Armor:
+		Type: steel
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 400
+	Building:
+		Dimensions: 5,3
+		Footprint: xxxxx xxxxx xxxxx
+
+camex01:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Mayan Pyramid
+	Armor:
+		Type: concrete
+	RevealsShroud:
+		Range: 12c0
+	Health:
+		HP: 2000
+	Building:
+		Dimensions: 3,2
+		Footprint: xxx xxx
+
+camex02:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Mayan Castillo
+	Armor:
+		Type: concrete
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 1000
+	Building:
+		Dimensions: 6,4
+		Footprint: xxxxxx xxxxxx xxxxxx xxxxxx
+
+camex03:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Mayan Minor Temple
+	Armor:
+		Type: concrete
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 1000
+	Building:
+		Dimensions: 3,3
+		Footprint: xxx xxx xxx
+
+camex04:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Mayan Large Temple
+	Armor:
+		Type: concrete
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 1000
+	Building:
+		Dimensions: 4,4
+		Footprint: xxxx xxxx xxxx xxxx
+
+camex05:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Mayan Platfrom
+	Armor:
+		Type: concrete
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 1000
+	Building:
+		Dimensions: 2,2
+		Footprint: xx xx
+
+caeur1:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Cottage
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 300
+	Building:
+		Dimensions: 2,2
+		Footprint: xx xx
+
+caeur2:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Cottage
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 300
+	Building:
+		Dimensions: 2,2
+		Footprint: xx xx
+
+caeur04:
+	Inherits: ^CivBuilding
+	Armor:
+		Type: steel
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 400
+	Building:
+		Dimensions: 4,3
+		Footprint: xxxx xxxx xxxx
+
+cachig01:
+	Inherits: ^CivBuilding
+	Armor:
+		Type: steel
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 1000
+	Building:
+		Dimensions: 3,2
+		Footprint: xxx xxx
+
+cachig02:
+	Inherits: ^CivBuilding
+	Armor:
+		Type: steel
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 1000
+	Building:
+		Dimensions: 2,3
+		Footprint: xx xx xx
+
+cachig03:
+	Inherits: ^CivBuilding
+	Armor:
+		Type: steel
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 1000
+	Building:
+		Dimensions: 3,2
+		Footprint: xxx xxx
+
+
+cachig04:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Associates Center
+	Armor:
+		Type: concrete
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 1000
+	Building:
+		Dimensions: 2,2
+		Footprint: xx xx
+
+cachig05:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Sears Tower
+	Armor:
+		Type: concrete
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 1000
+	Building:
+		Dimensions: 4,4
+		Footprint: xxxx xxxx xxxx xxxx
+
+cachig06:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Water Tower
+	Armor:
+		Type: steel
+	Health:
+		HP: 1000
+	Building:
+		Dimensions: 2,2
+		Footprint: xx xx
+
+castl01:
+	Inherits: ^CivBuilding
+	Armor:
+		Type: steel
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 1000
+	Building:
+		Dimensions: 4,4
+		Footprint: xxxx xxxx xxxx xxxx
+
+castl02:
+	Inherits: ^CivBuilding
+	Armor:
+		Type: steel
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 1000
+	Building:
+		Dimensions: 4,4
+		Footprint: xxxx xxxx xxxx xxxx
+
+castl03:
+	Inherits: ^CivBuilding
+	Armor:
+		Type: steel
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 1000
+	Building:
+		Dimensions: 4,4
+		Footprint: xxxx xxxx xxxx xxxx
+
+castl04:
+	Inherits: ^CivBuilding
+	Armor:
+		Type: steel
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 1000
+	Building:
+		Dimensions: 2,6
+		Footprint: xx xx xx xx xx xx
+
+castl05a:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Busch Stadium
+	Armor:
+		Type: concrete
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 600
+	Building:
+		Dimensions: 4,4
+		Footprint: xxxx xxxx xxxx xxxx
+
+castl05b:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Busch Stadium
+	Armor:
+		Type: concrete
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 600
+	Building:
+		Dimensions: 4,4
+		Footprint: xxxx xxxx xxxx xxxx
+
+castl05c:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Busch Stadium
+	Armor:
+		Type: concrete
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 600
+	Building:
+		Dimensions: 4,4
+		Footprint: xxxx xxxx xxxx xxxx
+
+castl05d:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Busch Stadium
+	Armor:
+		Type: concrete
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 600
+	Building:
+		Dimensions: 4,4
+		Footprint: xxxx xxxx xxxx xxxx
+
+castl05e:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Busch Stadium
+	Armor:
+		Type: concrete
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 600
+	Building:
+		Dimensions: 4,4
+		Footprint: xxxx xxxx xxxx xxxx
+
+castl05f:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Busch StadiumF
+	Armor:
+		Type: concrete
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 600
+	Building:
+		Dimensions: 4,4
+		Footprint: xxxx xxxx xxxx xxxx
+
+castl05g:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Busch Stadium
+	Armor:
+		Type: concrete
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 600
+	Building:
+		Dimensions: 4,4
+		Footprint: xxxx xxxx xxxx xxxx
+
+castl05h:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Busch Stadium
+	Armor:
+		Type: concrete
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 600
+	Building:
+		Dimensions: 4,4
+		Footprint: xxxx xxxx xxxx xxxx
+
+camsc07:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Thatched Hut Chief
+	Armor:
+		Type: concrete
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 600
+	Building:
+		Dimensions: 2,2
+		Footprint: xx xx
+
+camsc08:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Thatched Hut
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 200
+	Building:
+		Dimensions: 1,1
+		Footprint: x
+
+camsc09:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Thatched Hut
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 200
+	Building:
+		Dimensions: 1,1
+		Footprint: x
+
+camsc10:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: McBurger Kong
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 1000
+	Building:
+		Dimensions: 4,4
+		Footprint: xxxx xxxx xxxx xxxx
+
+cabunk01:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Concrete Bunker
+	Armor:
+		Type: steel
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 2000
+	Building:
+		Dimensions: 2,2
+		Footprint: xx xx
+
+cabunk02:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Concrete Bunker
+	Armor:
+		Type: steel
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 2000
+	Building:
+		Dimensions: 2,2
+		Footprint: xx xx
