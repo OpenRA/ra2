@@ -462,25 +462,25 @@ napsis:
 		UseTilesetCode: false
 
 namisl:
+	Defaults:
+		Offset: 0, -42
 	idle: ngmisl_e
 		ShadowStart: 2
-		Offset: 0, -42
 	damaged-idle: ngmisl_e
 		Start: 1
 		ShadowStart: 3
-		Offset: 0, -42
 	critical-idle: ngmisl_e
 		Start: 1
 		ShadowStart: 3
-		Offset: 0, -42
 	make: ntmislmk
+		UseTilesetCode: true
 		Length: 26
 		ShadowStart: 26
 		TilesetOverrides:
 			TEMPERATE: TEMPERATE
 			URBAN: URBAN
-		Offset: 0, -42
 	icon: msslicon
+		Offset: 0,0
 
 nairon:
 	Defaults:
