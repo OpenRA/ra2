@@ -173,7 +173,7 @@ subt: #Sub Torpedo needs voxel projectiles
 suvb:
 	idle:
 
-suvbw:
+suvw:
 	idle:
 
 taxi:
