@@ -182,112 +182,132 @@ cawsh12:
 		Offset: 0, -45
 
 caarmy01:
-	idle: cuarmy01
+	Defaults:
+		UseTilesetCode: true
+	idle:
 		ShadowStart: 4
 		Offset: -15, -38
-	damaged-idle: cuarmy01
+	damaged-idle:
 		Start: 1
 		ShadowStart: 5
 		Offset: -15, -38
 
 cawa2a:
-	idle: cuwa2a
+	Defaults:
+		UseTilesetCode: true
+	idle:
 		ShadowStart: 4
 		Offset: 0, -45
-	damaged-idle: cuwa2a
+	damaged-idle:
 		Start: 1
 		ShadowStart: 5
 		Offset: 0, -45
 
 cawa2b:
-	idle: cuwa2b
+	Defaults:
+		UseTilesetCode: true
+	idle:
 		ShadowStart: 4
 		Offset: 0, -45
-	damaged-idle: cuwa2b
+	damaged-idle:
 		Start: 1
 		ShadowStart: 5
 		Offset: 0, -45
 
 cawa2c:
-	idle: cuwa2c
+	Defaults:
+		UseTilesetCode: true
+	idle:
 		ShadowStart: 4
 		Offset: 0, -45
-	damaged-idle: cuwa2c
+	damaged-idle:
 		Start: 1
 		ShadowStart: 5
 		Offset: 0, -45
 
 cawa2d:
-	idle: cuwa2d
+	Defaults:
+		UseTilesetCode: true
+	idle:
 		ShadowStart: 4
 		Offset: 0, -45
-	damaged-idle: cuwa2d
+	damaged-idle:
 		Start: 1
 		ShadowStart: 5
 		Offset: 0, -45
 
 cafarm01:
-	idle: cufarm01
+	Defaults:
+		UseTilesetCode: true
+	idle:
 		ShadowStart: 4
 		Offset: 0, -30
-	damaged-idle: cufarm01
+	damaged-idle:
 		Start: 1
 		ShadowStart: 5
 		Offset: 0, -30
 
 cafarm02:
-	idle: cufarm02
+	Defaults:
+		UseTilesetCode: true
+	idle:
 		ShadowStart: 4
 		Offset: 0, -16
-	damaged-idle: cufarm02
+	damaged-idle:
 		Start: 1
 		ShadowStart: 5
 		Offset: 0, -15
 
 causfgl:
-	idle: cuusfgl
+	Defaults:
+		UseTilesetCode: true
+	idle:
 		ShadowStart: 4
 		Offset: 0, -15
-	damaged-idle: cuusfgl
+	damaged-idle:
 		Start: 1
 		ShadowStart: 5
 		Offset: 0, -15
-	flag: cuusfgl_a
+	flag: causfgl_a
 		Length: 16
 		ShadowStart: 16
 		Offset: 0, -15
 
 carufgl:
-	idle: curufgl
+	Defaults:
+		UseTilesetCode: true
+	idle:
 		ShadowStart: 4
 		Offset: 0, -15
-	damaged-idle: curufgl
+	damaged-idle:
 		Start: 1
 		ShadowStart: 5
 		Offset: 0, -15
-	flag: curufgl_a
+	flag: carufgl_a
 		Length: 16
 		ShadowStart: 16
 		Offset: 0, -15
 
 cairfgl:
-	idle: cuirfgl
+	Defaults:
+		UseTilesetCode: true
+	idle:
 		ShadowStart: 4
 		Offset: 0, -15
-	damaged-idle: cuirfgl
+	damaged-idle:
 		Start: 1
 		ShadowStart: 5
 		Offset: 0, -15
-	flag: cuirfgl_a
+	flag: cairfgl_a
 		Length: 16
 		ShadowStart: 16
 		Offset: 0, -15
 
 capofgl:
-	idle: cuusfgl # Polish flag is only in isosnow.mix
+	idle: capofgl
 		ShadowStart: 4
 		Offset: 0, -15
-	damaged-idle: cuusfgl
+	damaged-idle: capofgl
 		Start: 1
 		ShadowStart: 5
 		Offset: 0, -15
@@ -297,10 +317,12 @@ capofgl:
 		Offset: 0, -15
 
 caskfgl:
-	idle: cuskfgl
+	Defaults:
+		UseTilesetCode: true
+	idle:
 		ShadowStart: 4
 		Offset: 0, -15
-	damaged-idle: cuskfgl
+	damaged-idle:
 		Start: 1
 		ShadowStart: 5
 		Offset: 0, -15
@@ -310,10 +332,12 @@ caskfgl:
 		Offset: 0, -15
 
 calbfgl:
-	idle: culbfgl
+	Defaults:
+		UseTilesetCode: true
+	idle:
 		ShadowStart: 4
 		Offset: 0, -15
-	damaged-idle: culbfgl
+	damaged-idle:
 		Start: 1
 		ShadowStart: 5
 		Offset: 0, -15
@@ -323,10 +347,12 @@ calbfgl:
 		Offset: 0, -15
 
 cafrfgl:
-	idle: cufrfgl
+	Defaults:
+		UseTilesetCode: true
+	idle:
 		ShadowStart: 4
 		Offset: 0, -15
-	damaged-idle: cufrfgl
+	damaged-idle:
 		Start: 1
 		ShadowStart: 5
 		Offset: 0, -15
@@ -336,10 +362,12 @@ cafrfgl:
 		Offset: 0, -15
 
 cagefgl:
-	idle: cugefgl
+	Defaults:
+		UseTilesetCode: true
+	idle:
 		ShadowStart: 4
 		Offset: 0, -15
-	damaged-idle: cugefgl
+	damaged-idle:
 		Start: 1
 		ShadowStart: 5
 		Offset: 0, -15
@@ -349,10 +377,12 @@ cagefgl:
 		Offset: 0, -15
 
 cacufgl:
-	idle: cucufgl
+	Defaults:
+		UseTilesetCode: true
+	idle:
 		ShadowStart: 4
 		Offset: 0, -15
-	damaged-idle: cucufgl
+	damaged-idle:
 		Start: 1
 		ShadowStart: 5
 		Offset: 0, -15
@@ -362,10 +392,12 @@ cacufgl:
 		Offset: 0, -15
 
 caukfgl:
-	idle: cuukfgl
+	Defaults:
+		UseTilesetCode: true
+	idle:
 		ShadowStart: 4
 		Offset: 0, -15
-	damaged-idle: cuukfgl
+	damaged-idle:
 		Start: 1
 		ShadowStart: 5
 		Offset: 0, -15
@@ -375,81 +407,99 @@ caukfgl:
 		Offset: 0, -15
 
 camisc01:
-	idle: cumisc01
+	Defaults:
+		UseTilesetCode: true
+	idle:
 		ShadowStart: 4
 		Offset: 0, -15
-	damaged-idle: cumisc01
+	damaged-idle:
 		ShadowStart: 4
 		Offset: 0, -15
 
 camisc02:
-	idle: cumisc02
+	Defaults:
+		UseTilesetCode: true
+	idle:
 		ShadowStart: 4
 		Offset: 0, -15
-	damaged-idle: cumisc02
+	damaged-idle:
 		Start: 1
 		ShadowStart: 5
 		Offset: 0, -15
 
 camisc03:
-	idle: cumisc03
+	Defaults:
+		UseTilesetCode: true
+	idle:
 		ShadowStart: 4
 		Offset: 0, -15
-	damaged-idle: cumisc03
+	damaged-idle:
 		Start: 1
 		ShadowStart: 5
 		Offset: 0, -15
 
 camisc04:
-	idle: cumisc04
+	Defaults:
+		UseTilesetCode: true
+	idle:
 		ShadowStart: 4
 		Offset: 0, -15
-	damaged-idle: cumisc04
+	damaged-idle:
 		Start: 1
 		ShadowStart: 5
 		Offset: 0, -15
 
 camisc05:
-	idle: cumisc05
+	Defaults:
+		UseTilesetCode: true
+	idle:
 		ShadowStart: 2
 		Offset: 0, -15
-	damaged-idle: cumisc05
+	damaged-idle:
 		Start: 1
 		ShadowStart: 3
 		Offset: 0, -15
 
 camisc06:
-	idle: cumisc06
+	Defaults:
+		UseTilesetCode: true
+	idle:
 		ShadowStart: 4
 		Offset: -15, -22
-	damaged-idle: cumisc06
+	damaged-idle:
 		Start: 1
 		ShadowStart: 5
 		Offset: -15, -22
 
 camsc11:
-	idle: cumsc11
+	Defaults:
+		UseTilesetCode: true
+	idle:
 		ShadowStart: 4
 		Offset: 0, -15
-	damaged-idle: cumsc11
+	damaged-idle:
 		Start: 1
 		ShadowStart: 5
 		Offset: 0, -15
 
 camsc12:
-	idle: cumsc12
+	Defaults:
+		UseTilesetCode: true
+	idle:
 		ShadowStart: 4
 		Offset: 0, -15
-	damaged-idle: cumsc12
+	damaged-idle:
 		Start: 1
 		ShadowStart: 5
 		Offset: 0, -15
 
 camsc13:
-	idle: cumsc13
+	Defaults:
+		UseTilesetCode: true
+	idle:
 		ShadowStart: 4
 		Offset: 15, -22
-	damaged-idle: cumsc13
+	damaged-idle:
 		Start: 1
 		ShadowStart: 5
 		Offset: 15, -22
@@ -479,37 +529,45 @@ capol01w:
 		Offset: 0, 0
 
 cacolo01:
-	idle: cucolo01
+	Defaults:
+		UseTilesetCode: true
+	idle:
 		ShadowStart: 4
 		Offset: -15, -53
-	damaged-idle: cucolo01
+	damaged-idle:
 		Start: 1
 		ShadowStart: 5
 		Offset: -15, -53
 
 caind01:
-	idle: cuind01
+	Defaults:
+		UseTilesetCode: true
+	idle:
 		ShadowStart: 4
 		Offset: 0, -53
-	damaged-idle: cuind01
+	damaged-idle:
 		Start: 1
 		ShadowStart: 5
 		Offset: 0, -53
 
 calab:
-	idle: culab
+	Defaults:
+		UseTilesetCode: true
+	idle:
 		ShadowStart: 4
 		Offset: 15, -45
-	damaged-idle: culab
+	damaged-idle:
 		Start: 1
 		ShadowStart: 5
 		Offset: 15, -45
 
 cagas01:
-	idle: cugas01
+	Defaults:
+		UseTilesetCode: true
+	idle:
 		ShadowStart: 4
 		Offset: 0, -45
-	damaged-idle: cugas01
+	damaged-idle:
 		Start: 1
 		ShadowStart: 5
 		Offset: 0, -45
