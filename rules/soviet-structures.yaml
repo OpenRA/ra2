@@ -4,7 +4,6 @@ nacnst:
 		Queue: Building
 		BuildPaletteOrder: 1000
 		Prerequisites: ~disabled
-		IconPalette: ts-chrome
 	Building:
 		Footprint: xxxx xxxx xxxx xxxx
 		Dimensions: 4,4
