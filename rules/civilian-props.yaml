@@ -102,29 +102,372 @@ camsc13:
 	Armor:
 		Type: Concrete
 
-calit01e:
+ammocrat:
 	Inherits: ^CivBuilding
 	Tooltip:
-		Name: Light
+		Name: Ammo Crates
+	Health:
+		HP: 1
+	RenderSprites:
+		Image: ammo01
+
+casin01e:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Roadblock
+	Armor:
+		Type: concrete
+	Health:
+		HP: 5
+
+casin01n:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Roadblock
+	Armor:
+		Type: concrete
+	Health:
+		HP: 5
+
+casin01s:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Roadblock
+	Armor:
+		Type: concrete
+	Health:
+		HP: 5
+
+casin01w:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Roadblock
+	Armor:
+		Type: concrete
+	Health:
+		HP: 5
+
+camsc01:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Hot Dog Stand
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 400
+
+camsc02:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Beach Umbrellas
+	RevealsShroud:
+		Range: 6c0
 	Health:
 		HP: 50
-	Armor:
-		Type: Steel
 
-calit01w:
+camsc03:
 	Inherits: ^CivBuilding
 	Tooltip:
-		Name: Light
+		Name: Beach Umbrellas
+	RevealsShroud:
+		Range: 6c0
 	Health:
-		HP: 50
-	Armor:
-		Type: Steel
+		HP: 1
 
-capol01w:
+camsc04:
 	Inherits: ^CivBuilding
 	Tooltip:
-		Name: Telephone Pole
+		Name: Beach Towels
+	RevealsShroud:
+		Range: 6c0
 	Health:
-		HP: 20
+		HP: 1
+
+camsc05:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Beach TowelsB
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 1
+
+camsc06:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Camp Fire
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 10
+
+caeuro05:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Statue
+	Armor:
+		Type: concrete
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 400
+	Building:
+		Dimensions: 2,2
+		Footprint: xx xx
+
+capark01:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Park Bench
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 1
+
+capark02:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Swing Set
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 1
+	Building:
+		Dimensions: 2,1
+		Footprint: xx
+
+capark03:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Merry Go Round
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 1
+	Building:
+		Dimensions: 2,2
+		Footprint: xx xx
+
+castrt01:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Traffic Light
+	Armor:
+		Type: steel
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 1000
+
+castrt02:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Traffic Light
+	Armor:
+		Type: steel
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 1000
+
+castrt03:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Traffic Light
+	Armor:
+		Type: steel
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 1000
+
+castrt04:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Traffic Light
+	Armor:
+		Type: steel
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 1000
+
+castrt05:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Bus Stop
+	Armor:
+		Type: steel
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 1000
+
+camov01:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Drive In Movie Screen
+	Armor:
+		Type: steel
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 500
+	Building:
+		Dimensions: 1,4
+		Footprint: x x x x
+	WithIdleOverlay:
+
+camov02:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Drive In Movie Concession Stand
+	Armor:
+		Type: steel
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 1000
+	Building:
+		Dimensions: 2,2
+		Footprint: xx xx
+	WithIdleOverlay:
+
+pole01:
+	Inherits: ^TelephonePole
+	Tooltip:
+		Name: Utility Pole
+
+pole02:
+	Inherits: ^TelephonePole
+	Tooltip:
+		Name: Utility Pole
+
+hdstn01:
+	Inherits: ^Tree
+	Tooltip:
+		Name: AlringtonStones
+
+lt_gen01:
+	Inherits: ^StreetLight
+
+lt_gen02:
+	Inherits: ^StreetLight
+
+lt_gen03:
+	Inherits: ^StreetLight
+
+lt_gen04:
+	Inherits: ^StreetLight
+
+lt_sgn01:
+	Inherits: ^StreetLight
+
+lt_sgn02:
+	Inherits: ^StreetLight
+
+lt_sgn03:
+	Inherits: ^StreetLight
+
+lt_sgn04:
+	Inherits: ^StreetLight
+
+lt_eur01:
+	Inherits: ^StreetLight
+
+lt_eur02:
+	Inherits: ^StreetLight
+
+trff01:
+	Inherits: ^TrafficLight
+
+trff02:
+	Inherits: ^TrafficLight
+
+trff03:
+	Inherits: ^TrafficLight
+
+trff04:
+	Inherits: ^TrafficLight
+
+sign01:
+	Inherits: ^StreetSign
+
+sign02:
+	Inherits: ^StreetSign
+
+sign03:
+	Inherits: ^StreetSign
+
+sign04:
+	Inherits: ^StreetSign
+
+sign05:
+	Inherits: ^StreetSign
+
+sign06:
+	Inherits: ^StreetSign
+
+spkr01:
+	Inherits: ^Tree
+	Tooltip:
+		Name: Drive-In Speaker
+
+carus02a:
+	Inherits: ^CivBuilding
+	Armor:
+		Type: steel
+	Health:
+		HP: 800
+
+carus02b:
+	Inherits: ^CivBuilding
+	Armor:
+		Type: steel
+	Health:
+		HP: 500
+
+carus02c:
+	Inherits: ^CivBuilding
+	Armor:
+		Type: concrete
+	Health:
+		HP: 1000
+
+carus02d:
+	Inherits: ^CivBuilding
+	Armor:
+		Type: concrete
+	Health:
+		HP: 1000
+
+carus02e:
+	Inherits: ^CivBuilding
+	Armor:
+		Type: concrete
+	Health:
+		HP: 1000
+
+carus02f:
+	Inherits: ^CivBuilding
+	Armor:
+		Type: concrete
+	Health:
+		HP: 1000
+
+carus07:
+	Inherits: ^CivBuilding
+	Armor:
+		Type: concrete
+	RevealsShroud:
+		Range: 6c0
+	Health:
+		HP: 1000
+
+cakrmw:
+	Inherits: ^Wall
+	Tooltip:
+		Name: Kremlin Walls
+		Description: Walls of the Kremlin.
 	Armor:
 		Type: Concrete

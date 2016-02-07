@@ -109,11 +109,29 @@ cawash05:
 		ShadowStart: 5
 		Offset: -30, -45
 
+cawash06:
+	idle: cuwash06
+		ShadowStart: 5
+		Offset: -30, -45
+	damaged-idle: cuwash06
+		Start: 1
+		ShadowStart: 7
+		Offset: -30, -45
+
 cawash07:
 	idle: cuwash07
 		ShadowStart: 4
 		Offset: 0, -45
 	damaged-idle: cuwash07
+		Start: 1
+		ShadowStart: 5
+		Offset: 0, -45
+
+cawash08:
+	idle: cuwash08
+		ShadowStart: 4
+		Offset: 0, -45
+	damaged-idle: cuwash08
 		Start: 1
 		ShadowStart: 5
 		Offset: 0, -45
@@ -145,6 +163,15 @@ cawash11:
 		ShadowStart: 5
 		Offset: 0, -60
 
+cawsh12:
+	idle: cgwsh12
+		ShadowStart: 4
+		Offset: 0, -45
+	damaged-idle: cgwsh12
+		Start: 1
+		ShadowStart: 5
+		Offset: 0, -45
+
 cawash13:
 	idle: cuwash13
 		ShadowStart: 4
@@ -163,6 +190,48 @@ cawash14:
 		ShadowStart: 5
 		Offset: 0, -45
 
+cawash15:
+	idle: cgwash14
+		ShadowStart: 4
+		Offset: 0, -45
+	damaged-idle: cgwash14
+		Start: 1
+		ShadowStart: 5
+		Offset: 0, -45
+
+cawash16:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 1
+		ShadowStart: 5
+
+cawash17:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 1
+		ShadowStart: 5
+
+cawash18:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 3
+
+cawash19:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 1
+		ShadowStart: 5
+
 canewy01:
 	idle: cunewy01
 		ShadowStart: 4
@@ -172,14 +241,143 @@ canewy01:
 		ShadowStart: 5
 		Offset: 0, -60
 
-cawsh12:
-	idle: cgwsh12
+canewy04:
+	Defaults:
+	idle: cgnewy04
+	damaged-idle: cgnewy04
+		Start: 1
+
+canewy05:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 3
+
+canewy06:
+	Defaults:
+		UseTilesetCode: true
+	idle:
 		ShadowStart: 4
-		Offset: 0, -45
-	damaged-idle: cgwsh12
+	damaged-idle:
 		Start: 1
 		ShadowStart: 5
-		Offset: 0, -45
+
+canewy07:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 1
+		ShadowStart: 5
+
+canewy08:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 1
+		ShadowStart: 5
+
+canewy10:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 1
+		ShadowStart: 5
+
+canewy11:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 1
+		ShadowStart: 5
+
+canewy12:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 1
+		ShadowStart: 5
+
+canewy13:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 1
+		ShadowStart: 5
+
+canewy14:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 1
+		ShadowStart: 5
+
+canewy15:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 1
+		ShadowStart: 5
+
+canewy16:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 1
+		ShadowStart: 5
+
+canewy17:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 1
+		ShadowStart: 5
+
+canewy18:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 1
+		ShadowStart: 5
+
+canewy20:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 1
+		ShadowStart: 5
+
+canewy21:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 1
+		ShadowStart: 5
 
 caarmy01:
 	Defaults:
@@ -191,6 +389,30 @@ caarmy01:
 		Start: 1
 		ShadowStart: 5
 		Offset: -15, -38
+
+caarmy02:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 2
+
+caarmy03:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 2
+
+caarmy04:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 2
 
 cawa2a:
 	Defaults:
@@ -257,6 +479,40 @@ cafarm02:
 		Start: 1
 		ShadowStart: 5
 		Offset: 0, -15
+
+cafarm06:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 2
+		ShadowStart: 5
+
+cafrma:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 2
+		ShadowStart: 5
+
+cafrmb:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 2
+
+cabarn02:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 2
 
 causfgl:
 	Defaults:
@@ -471,6 +727,50 @@ camisc06:
 		ShadowStart: 5
 		Offset: -15, -22
 
+camsc07:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 4
+		Offset: -15, -22
+	damaged-idle:
+		Start: 1
+		ShadowStart: 5
+		Offset: -15, -22
+
+camsc08:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 4
+		Offset: -15, -22
+	damaged-idle:
+		Start: 1
+		ShadowStart: 5
+		Offset: -15, -22
+
+camsc09:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 4
+		Offset: -15, -22
+	damaged-idle:
+		Start: 1
+		ShadowStart: 5
+		Offset: -15, -22
+
+camsc10:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 4
+		Offset: -15, -22
+	damaged-idle:
+		Start: 1
+		ShadowStart: 5
+		Offset: -15, -22
+
 camsc11:
 	Defaults:
 		UseTilesetCode: true
@@ -504,29 +804,252 @@ camsc13:
 		ShadowStart: 5
 		Offset: 15, -22
 
-calit01e:
-	idle: culit01e
-		ShadowStart: 0
-		Offset: 0, 0
-	damaged-idle: culit01e
-		ShadowStart: 1
-		Offset: 0, 0
+camiam01:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 2
+		ShadowStart: 5
 
-calit01w:
-	idle: culit01w
-		ShadowStart: 1
-		Offset: 0, 0
-	damaged-idle: culit01w
-		ShadowStart: 1
-		Offset: 0, 0
+camiam02:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 2
+		ShadowStart: 5
 
-capol01w:
-	idle: cupol01w
-		ShadowStart: 0
-		Offset: 0, 0
-	damaged-idle: cupol01w
-		ShadowStart: 0
-		Offset: 0, 0
+camiam03:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 2
+		ShadowStart: 5
+
+camiam04:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 2
+		ShadowStart: 5
+
+camiam05:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 2
+		ShadowStart: 5
+
+camiam06:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 2
+		ShadowStart: 5
+
+camiam07:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 2
+		ShadowStart: 5
+
+camiam08:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 2
+		ShadowStart: 5
+
+castrt01:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 3
+
+castrt02:
+	idle:
+		ShadowStart: 3
+
+castrt03:
+	idle:
+		ShadowStart: 3
+
+castrt04:
+	idle:
+		ShadowStart: 3
+
+castrt05:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 3
+
+camex01:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 2
+		ShadowStart: 5
+
+camex02:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 2
+		ShadowStart: 5
+
+camex03:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 2
+		ShadowStart: 5
+
+camex04:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 2
+		ShadowStart: 5
+
+camex05:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 2
+		ShadowStart: 5
+
+castl01:
+	Defaults:
+		UseTilesetCode: true
+	idle: custl01
+		ShadowStart: 4
+	damaged-idle: custl01
+		Start: 1
+		ShadowStart: 5
+
+castl02:
+	Defaults:
+		UseTilesetCode: true
+	idle: custl02
+		ShadowStart: 4
+	damaged-idle: custl02
+		Start: 1
+		ShadowStart: 5
+
+castl03:
+	Defaults:
+		UseTilesetCode: true
+	idle: custl03
+		ShadowStart: 4
+	damaged-idle: custl03
+		Start: 1
+		ShadowStart: 5
+
+castl04:
+	idle: cgstl04
+		ShadowStart: 3
+	damaged-idle: cgstl04
+		Start: 1
+		ShadowStart: 4
+
+castl05a:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 1
+		ShadowStart: 5
+
+castl05b:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 1
+		ShadowStart: 5
+
+castl05c:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 1
+		ShadowStart: 5
+
+castl05d:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 1
+		ShadowStart: 5
+
+castl05e:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 1
+		ShadowStart: 5
+
+castl05f:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 1
+		ShadowStart: 5
+
+castl05g:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 1
+		ShadowStart: 5
+
+castl05h:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 1
+		ShadowStart: 5
 
 cacolo01:
 	Defaults:
@@ -572,11 +1095,668 @@ cagas01:
 		ShadowStart: 5
 		Offset: 0, -45
 
-catech01:
-	idle: cutech01
+cahse01:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 2
+	damaged-idle:
+		Start: 1
 		ShadowStart: 4
-		Offset: 0, -45
-	damaged-idle: cutech01
+
+cahse02:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 2
+	damaged-idle:
+		Start: 1
+		ShadowStart: 4
+
+cahse03:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 2
+	damaged-idle:
+		Start: 1
+		ShadowStart: 4
+
+cahse04:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 2
+	damaged-idle:
+		Start: 1
+		ShadowStart: 4
+
+cahse05:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+
+cahse06:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 2
+	damaged-idle:
+		Start: 1
+		ShadowStart: 4
+
+cahse07:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 2
+	damaged-idle:
+		Start: 1
+		ShadowStart: 4
+
+cawt01:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 2
+	damaged-idle:
+		Start: 1
+		ShadowStart: 3
+
+cabunk01:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 4
+	damaged-idle:
 		Start: 1
 		ShadowStart: 5
-		Offset: 0, -45
+
+cabunk02:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 1
+		ShadowStart: 5
+
+carus01:
+	idle: cgrus01
+		ShadowStart: 4
+	damaged-idle: cgrus01
+		Start: 1
+		ShadowStart: 5
+
+carus02a:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 1
+		ShadowStart: 5
+
+carus02b:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 1
+		ShadowStart: 5
+
+carus02c:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 1
+		ShadowStart: 5
+
+carus02d:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 1
+		ShadowStart: 5
+
+carus02e:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 1
+		ShadowStart: 5
+
+carus02f:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 1
+		ShadowStart: 5
+
+carus02g:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 1
+		ShadowStart: 5
+
+carus03:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 1
+		ShadowStart: 5
+
+carus04:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 1
+		ShadowStart: 5
+
+carus05:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 1
+		ShadowStart: 5
+
+carus07:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 1
+		ShadowStart: 5
+
+carus06:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 1
+		ShadowStart: 5
+
+carus08:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 1
+		ShadowStart: 5
+
+carus09:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 1
+		ShadowStart: 5
+
+carus10:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 1
+		ShadowStart: 5
+
+carus11:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 1
+		ShadowStart: 5
+
+cachig01:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 1
+		ShadowStart: 5
+
+cachig02:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 1
+		ShadowStart: 5
+
+cachig03:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 1
+		ShadowStart: 5
+
+cachig04:
+	idle: cgchig04
+		ShadowStart: 4
+	damaged-idle: cgchig04
+		Start: 1
+		ShadowStart: 5
+
+cachig05:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 1
+		ShadowStart: 5
+
+cachig06:
+	idle: cgchig06
+		ShadowStart: 4
+	damaged-idle: cgchig06
+		Start: 1
+		ShadowStart: 5
+
+catexs01:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 1
+		ShadowStart: 5
+
+catexs02:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 1
+		ShadowStart: 5
+
+catexs03:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 1
+		ShadowStart: 5
+
+catexs04:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 1
+		ShadowStart: 5
+
+catexs05:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 1
+		ShadowStart: 5
+
+catexs06:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 1
+		ShadowStart: 5
+
+catexs07:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 1
+		ShadowStart: 5
+
+catexs08:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 1
+		ShadowStart: 5
+
+canwy05:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 1
+		ShadowStart: 5
+
+canwy09:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 1
+		ShadowStart: 5
+
+canwy22:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 1
+		ShadowStart: 5
+
+canwy23:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 1
+		ShadowStart: 5
+
+canwy24:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 1
+		ShadowStart: 5
+
+canwy25:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 1
+		ShadowStart: 5
+
+canwy26:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 1
+		ShadowStart: 5
+
+camov01:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 3
+	damaged-idle:
+		Start: 1
+		ShadowStart: 4
+	idle-overlay: camov01_a
+		Length: 30
+		Tick: 200
+	damaged-idle-overlay: camov01_a
+		Start: 30
+		Length: 30
+		Tick: 200
+
+camov02:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 1
+		ShadowStart: 5
+	idle-overlay: camov02_a
+		Length: 2
+		Tick: 200
+	damaged-idle-overlay: camov02_a
+		Start: 2
+		Length: 2
+		Tick: 200
+
+capars01:
+	idle: cgpars01
+		ShadowStart: 4
+	damaged-idle: cgpars01
+		Start: 1
+		ShadowStart: 5
+
+capars02:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 1
+		ShadowStart: 5
+
+capars04:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 1
+		ShadowStart: 5
+
+capars05:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 1
+		ShadowStart: 5
+
+capars06:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 1
+		ShadowStart: 5
+
+capars07:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 1
+		ShadowStart: 5
+
+capars08:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 1
+		ShadowStart: 5
+
+capars09:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 1
+		ShadowStart: 5
+
+capars10:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 1
+		ShadowStart: 5
+
+capars11:
+	idle: cgpars11
+		ShadowStart: 4
+	damaged-idle: cgpars11
+		Start: 1
+		ShadowStart: 5
+
+capars12:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 1
+		ShadowStart: 5
+
+capars13:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 1
+		ShadowStart: 5
+
+capars14:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 1
+		ShadowStart: 5
+
+cats01:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 3
+	damaged-idle:
+		Start: 1
+		ShadowStart: 4
+
+cagard01:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 3
+	damaged-idle:
+		Start: 1
+		ShadowStart: 4
+
+caeur1:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 1
+		ShadowStart: 5
+
+caeur2:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 1
+		ShadowStart: 5
+
+caeur04:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 1
+		ShadowStart: 5
+
+caprs03:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 1
+		ShadowStart: 5
+
+caswst01:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 1
+		ShadowStart: 5
+
+cacity01:
+	idle:
+		ShadowStart: 3
+
+cacity02:
+	idle:
+		ShadowStart: 3
+
+cacity03:
+	idle:
+		ShadowStart: 3
+
+cacity04:
+	idle:
+		ShadowStart: 3
+
+city01:
+	idle:
+		ShadowStart: 2
+
+city02:
+	idle:
+		ShadowStart: 2
+
+city03:
+	idle:
+		ShadowStart: 2
+
+city04:
+	idle:
+		ShadowStart: 2
+
+city05:
+	idle:
+		ShadowStart: 2
