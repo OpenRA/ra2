@@ -1,26 +1,30 @@
 caoild:
-	idle: cuoild
+	Defaults:
+		UseTilesetCode: true
+	idle:
 		ShadowStart: 4
 		Offset: 0, -30
-	damaged-idle: cuoild
+	damaged-idle:
 		Start: 1
 		ShadowStart: 5
 		Offset: 0, -30
-	idle-pump: cuoild_a
+	idle-pump: caoild_a
 		Length: 32
 		ShadowStart: 64
 		Offset: 0, -30
-	damaged-idle-pump: cuoild_a
+	damaged-idle-pump: caoild_a
 		Start: 32
 		Length: 32
 		ShadowStart: 96
 		Offset: 0, -30
 
 cahosp:
-	idle: cuhosp
+	Defaults:
+		UseTilesetCode: true
+	idle:
 		ShadowStart: 4
 		Offset: -30, -75
-	damaged-idle: cuhosp
+	damaged-idle:
 		Start: 1
 		ShadowStart: 5
 		Offset: -30, -75
