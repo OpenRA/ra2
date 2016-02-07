@@ -34,7 +34,7 @@ gacnst:
 		Length: 30
 		ShadowStart: 30
 		Tick: 100
-	icon: cnsticon
+	icon: acnsicon
 		Offset: 0,0
 		UseTilesetCode: false
 
