@@ -14,28 +14,28 @@ Packages:
 	~ra2.mix
 	~language.mix
 	~multi.mix
-	audio.mix
-	cache.mix
-	cameo.mix
-	conquer.mix
-	generic.mix
-	isogen.mix
-	isosnow.mix
-	isotemp.mix
-	isourb.mix
+	~audio.mix
+	~cache.mix
+	~cameo.mix
+	~conquer.mix
+	~generic.mix
+	~isogen.mix
+	~isosnow.mix
+	~isotemp.mix
+	~isourb.mix
 	~load.mix
-	local.mix
+	~local.mix
 	~neutral.mix
-	sidec01.mix
-	sidec02.mix
-	sno.mix
-	snow.mix
-	tem.mix
-	temperat.mix
+	~sidec01.mix
+	~sidec02.mix
+	~sno.mix
+	~snow.mix
+	~tem.mix
+	~temperat.mix
 	~theme.mix
-	urb.mix
-	urban.mix
-	audio.bag
+	~urb.mix
+	~urban.mix
+	~audio.bag
 	ra2:bits
 	ra2:bits/cameos
 	ra2:bits/structures
