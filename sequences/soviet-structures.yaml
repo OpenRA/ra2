@@ -45,7 +45,7 @@ nacnst:
 		Length: 25
 		ShadowStart: 25
 		Tick: 100
-	icon: facticon
+	icon: scnsicon
 		Offset: 0,0
 		UseTilesetCode: false
 
