@@ -177,7 +177,8 @@ LoadScreen: LogoStripeLoadScreen
 
 ContentInstaller:
 	TestFiles: ^Content/ra2/ra2.mix, ^Content/ra2/language.mix
-	# TODO: Installing from CD doesn't work (because CAB)
+	InstallShieldCABFileIds: 466, 471, 472, 474, 479, 481
+	# TODO: Installing from the original CD doesn't work, because Microsoft CAB isn't supported yet.
 	PackageToExtractFromCD: INSTALL\Game1.CAB
 	ExtractFilesFromCD:
 		.: THEME.mix, ra2.mix, language.mix
