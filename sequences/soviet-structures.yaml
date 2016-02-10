@@ -563,19 +563,25 @@ tesla:
 			URBAN: GENERIC
 	idle: ngtsla
 		Length: 1
+		ShadowStart: 3
 	damaged-idle: ngtsla
 		Start: 1
 		Length: 1
+		ShadowStart: 4
 	idle-powered: ngtsla_a
 		Length: 10
+		ShadowStart: 20
 	damaged-idle-powered: ngtsla_a
 		Start: 10
 		Length: 10
+		ShadowStart: 30
 	active: ngtsla_b
 		Length: 10
+		ShadowStart: 20
 		Tick: 100
 	damaged-active: ngtsla_b
 		Start: 10
+		ShadowStart: 20
 		Length: 10
 		Tick: 100
 	dead: ngtsladm # SHP broken & unused
