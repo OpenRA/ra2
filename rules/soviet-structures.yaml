@@ -681,7 +681,7 @@ tesla:
 		Bounds: 44, 88, -2, -33
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, TeslaBoost
-	WithChargeAnimation:
+	WithChargeOverlay:
 	Armament@primary:
 		Weapon: CoilBolt
 		LocalOffset: 0,0,2200
