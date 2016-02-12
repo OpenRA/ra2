@@ -166,6 +166,11 @@ e1:
 		Length: 6
 		Facings: 8
 		Tick: 80
+	prone-shoot:
+		Start: 212
+		Length: 6
+		Facings: 8
+		Tick: 80
 	deployed:
 		Start: 292
 		Facings: 8
