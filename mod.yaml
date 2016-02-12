@@ -45,7 +45,7 @@ Packages:
 
 MapFolders:
 	ra2:maps@System
-	~^maps/ra2@User
+	~^maps/ra2/{DEV_VERSION}@User
 
 Rules:
 	ra2:rules/proxy-actors.yaml
