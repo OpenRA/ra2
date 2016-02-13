@@ -579,11 +579,13 @@ tesla:
 		Length: 10
 		ShadowStart: 20
 		Tick: 100
+		ZOffset: 10
 	damaged-active: ngtsla_b
 		Start: 10
 		ShadowStart: 20
 		Length: 10
 		Tick: 100
+		ZOffset: 10
 	dead: ngtsladm # SHP broken & unused
 		Length: 20
 		ShadowStart: 20
