@@ -231,7 +231,7 @@ gaairc:
 		Type: Steel
 	RequiresPower:
 	CanPowerDown:
-		IndicatorPalette: ts-mousepal
+		IndicatorPalette: ts-mouse
 		PowerupSpeech: BuildingOnline
 		PowerdownSpeech: BuildingOffline
 	ProvidesRadar:
@@ -572,7 +572,7 @@ nasam:
 		Amount: -50
 	RequiresPower:
 	CanPowerDown:
-		IndicatorPalette: ts-mousepal
+		IndicatorPalette: ts-mouse
 		PowerupSpeech: BuildingOnline
 		PowerdownSpeech: BuildingOffline
 
@@ -626,7 +626,7 @@ gtgcan:
 		Amount: -100
 	RequiresPower:
 	CanPowerDown:
-		IndicatorPalette: ts-mousepal
+		IndicatorPalette: ts-mouse
 		PowerupSpeech: BuildingOnline
 		PowerdownSpeech: BuildingOffline
 
@@ -688,7 +688,7 @@ gaspysat:
 	ProvidesRadar:
 	RequiresPower:
 	CanPowerDown:
-		IndicatorPalette: ts-mousepal
+		IndicatorPalette: ts-mouse
 		PowerupSpeech: BuildingOnline
 		PowerdownSpeech: BuildingOffline
 
@@ -724,7 +724,7 @@ gagap:
 		RequiredForShortGame: false
 	-AutoTarget:
 	CanPowerDown:
-		IndicatorPalette: ts-mousepal
+		IndicatorPalette: ts-mouse
 		PowerupSpeech: BuildingOnline
 		PowerdownSpeech: BuildingOffline
 
@@ -755,7 +755,7 @@ gaweat:
 		Amount: -200
 	RequiresPower:
 	CanPowerDown:
-		IndicatorPalette: ts-mousepal
+		IndicatorPalette: ts-mouse
 		PowerupSpeech: BuildingOnline
 		PowerdownSpeech: BuildingOffline
 
@@ -788,7 +788,7 @@ gacsph:
 		Sequence: idle-dome
 	RequiresPower:
 	CanPowerDown:
-		IndicatorPalette: ts-mousepal
+		IndicatorPalette: ts-mouse
 		PowerupSpeech: BuildingOnline
 		PowerdownSpeech: BuildingOffline
 	ChronoshiftPower@chronoshift:
@@ -847,7 +847,7 @@ atesla:
 		Range: 8c0
 		Type: prismcannon
 	CanPowerDown:
-		IndicatorPalette: ts-mousepal
+		IndicatorPalette: ts-mouse
 		PowerupSpeech: BuildingOnline
 		PowerdownSpeech: BuildingOffline
 
