@@ -119,6 +119,7 @@ gapile:
 	RevealsShroud:
 		Range: 5c0
 	RallyPoint:
+		Offset: 2,3
 		Palette: mouse
 		IsPlayerPalette: false
 	Exit@1:
@@ -321,6 +322,7 @@ gaweap:
 	RevealsShroud:
 		Range: 4c0
 	RallyPoint:
+		Offset: 6,1
 		Palette: mouse
 		IsPlayerPalette: false
 	Exit@1:
@@ -400,6 +402,7 @@ gayard:
 		UpgradeTypes: primary
 		UpgradeMinEnabledLevel: 1
 	RallyPoint:
+		Offset: 5,1
 		Palette: mouse
 		IsPlayerPalette: false
 	RepairsUnits:

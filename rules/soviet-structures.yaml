@@ -124,6 +124,7 @@ nahand:
 		Produces: Infantry
 	PrimaryBuilding:
 	RallyPoint:
+		Offset: 3,3
 		Palette: mouse
 		IsPlayerPalette: false
 	ProductionBar:
@@ -260,6 +261,7 @@ naweap:
 	RevealsShroud:
 		Range: 4c0
 	RallyPoint:
+		Offset: 6,1
 		Palette: mouse
 		IsPlayerPalette: false
 	Exit@1:
@@ -333,6 +335,7 @@ nayard:
 		UpgradeTypes: primary
 		UpgradeMinEnabledLevel: 1
 	RallyPoint:
+		Offset: 5,1
 		Palette: mouse
 		IsPlayerPalette: false
 	RepairsUnits:
@@ -496,6 +499,7 @@ naclon:
 	Production:
 		Produces:
 	RallyPoint:
+		Offset: 3,3
 		Palette: mouse
 		IsPlayerPalette: false
 	ClonesProducedUnits:
