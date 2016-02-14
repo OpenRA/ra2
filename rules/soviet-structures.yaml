@@ -213,7 +213,7 @@ naradr:
 		Type: Wood
 	RequiresPower:
 	CanPowerDown:
-		IndicatorPalette: ts-mousepal
+		IndicatorPalette: ts-mouse
 		PowerupSpeech: BuildingOnline
 		PowerdownSpeech: BuildingOffline
 	ProvidesRadar:
@@ -523,7 +523,7 @@ napsis:
 		Amount: -100
 	RequiresPower:
 	CanPowerDown:
-		IndicatorPalette: ts-mousepal
+		IndicatorPalette: ts-mouse
 		PowerupSpeech: BuildingOnline
 		PowerdownSpeech: BuildingOffline
 
@@ -566,7 +566,7 @@ nairon:
 	SupportPowerChargeBar:
 	RequiresPower:
 	CanPowerDown:
-		IndicatorPalette: ts-mousepal
+		IndicatorPalette: ts-mouse
 		PowerupSpeech: BuildingOnline
 		PowerdownSpeech: BuildingOffline
 
@@ -597,7 +597,7 @@ namisl:
 		Amount: -200
 	RequiresPower:
 	CanPowerDown:
-		IndicatorPalette: ts-mousepal
+		IndicatorPalette: ts-mouse
 		PowerupSpeech: BuildingOnline
 		PowerdownSpeech: BuildingOffline
 
@@ -653,7 +653,7 @@ naflak:
 		Amount: -50
 	RequiresPower:
 	CanPowerDown:
-		IndicatorPalette: ts-mousepal
+		IndicatorPalette: ts-mouse
 		PowerupSpeech: BuildingOnline
 		PowerdownSpeech: BuildingOffline
 
@@ -714,7 +714,7 @@ tesla:
 		Sequence: idle-powered
 		PauseOnLowPower: true
 	CanPowerDown:
-		IndicatorPalette: ts-mousepal
+		IndicatorPalette: ts-mouse
 		PowerupSpeech: BuildingOnline
 		PowerdownSpeech: BuildingOffline
 
