@@ -122,6 +122,11 @@ e1:
 	Defaults: gi
 	stand:
 		Facings: 8
+	prone-stand:
+		Start: 260
+		Length: 2
+		Facings: 8
+		Tick: 100
 	run:
 		Start: 8
 		Length: 6
