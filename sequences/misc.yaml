@@ -28,15 +28,16 @@ allyrepair:
 		Length: 7
 		Tick: 160
 
-# TODO: fix/replace them, just placeholders
 rallypoint:
-	flag: ring
-		Length: 12
-		Offset: 5, -3
-		BlendMode: Additive
-	circles: ring
-		Length: 12
-		BlendMode: Additive
+	flag: mouse
+		Start: 269
+		Length: 10
+		Offset: 2,-12
+		ZOffset: -1023
+	circles: mouse
+		Start: 249
+		Length: 10
+		ZOffset: -2047
 
 beacon:
 	arrow: mouse

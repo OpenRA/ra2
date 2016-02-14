@@ -119,6 +119,8 @@ gapile:
 	RevealsShroud:
 		Range: 5c0
 	RallyPoint:
+		Palette: mouse
+		IsPlayerPalette: false
 	Exit@1:
 		SpawnOffset: -170,810,0
 		ExitCell: 2,2
@@ -319,6 +321,8 @@ gaweap:
 	RevealsShroud:
 		Range: 4c0
 	RallyPoint:
+		Palette: mouse
+		IsPlayerPalette: false
 	Exit@1:
 		ExitCell: 5,1
 	Production:
@@ -396,6 +400,8 @@ gayard:
 		UpgradeTypes: primary
 		UpgradeMinEnabledLevel: 1
 	RallyPoint:
+		Palette: mouse
+		IsPlayerPalette: false
 	RepairsUnits:
 		FinishRepairingNotification: UnitRepaired
 	ProductionBar:
@@ -435,6 +441,8 @@ gadept:
 		Range: 5c0
 	Reservable:
 	RallyPoint:
+		Palette: mouse
+		IsPlayerPalette: false
 	RepairsUnits:
 		Interval: 50
 		FinishRepairingNotification: UnitRepaired
