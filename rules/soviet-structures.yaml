@@ -124,6 +124,9 @@ nahand:
 		Produces: Infantry
 	PrimaryBuilding:
 	RallyPoint:
+		Offset: 3,3
+		Palette: mouse
+		IsPlayerPalette: false
 	ProductionBar:
 	Power:
 		Amount: -10
@@ -213,7 +216,7 @@ naradr:
 		Type: Wood
 	RequiresPower:
 	CanPowerDown:
-		IndicatorPalette: ts-mousepal
+		IndicatorPalette: ts-mouse
 		PowerupSpeech: BuildingOnline
 		PowerdownSpeech: BuildingOffline
 	ProvidesRadar:
@@ -258,6 +261,9 @@ naweap:
 	RevealsShroud:
 		Range: 4c0
 	RallyPoint:
+		Offset: 6,1
+		Palette: mouse
+		IsPlayerPalette: false
 	Exit@1:
 		ExitCell: 5,1
 	Production:
@@ -329,6 +335,9 @@ nayard:
 		UpgradeTypes: primary
 		UpgradeMinEnabledLevel: 1
 	RallyPoint:
+		Offset: 5,1
+		Palette: mouse
+		IsPlayerPalette: false
 	RepairsUnits:
 		FinishRepairingNotification: UnitRepaired
 	ProductionBar:
@@ -371,6 +380,8 @@ nadept:
 		Range: 5c0
 	Reservable:
 	RallyPoint:
+		Palette: mouse
+		IsPlayerPalette: false
 	RepairsUnits:
 		Interval: 148
 		HpPerStep: 20
@@ -488,6 +499,9 @@ naclon:
 	Production:
 		Produces:
 	RallyPoint:
+		Offset: 3,3
+		Palette: mouse
+		IsPlayerPalette: false
 	ClonesProducedUnits:
 		CloneableTypes: infantry
 
@@ -523,7 +537,7 @@ napsis:
 		Amount: -100
 	RequiresPower:
 	CanPowerDown:
-		IndicatorPalette: ts-mousepal
+		IndicatorPalette: ts-mouse
 		PowerupSpeech: BuildingOnline
 		PowerdownSpeech: BuildingOffline
 
@@ -566,7 +580,7 @@ nairon:
 	SupportPowerChargeBar:
 	RequiresPower:
 	CanPowerDown:
-		IndicatorPalette: ts-mousepal
+		IndicatorPalette: ts-mouse
 		PowerupSpeech: BuildingOnline
 		PowerdownSpeech: BuildingOffline
 
@@ -597,7 +611,7 @@ namisl:
 		Amount: -200
 	RequiresPower:
 	CanPowerDown:
-		IndicatorPalette: ts-mousepal
+		IndicatorPalette: ts-mouse
 		PowerupSpeech: BuildingOnline
 		PowerdownSpeech: BuildingOffline
 
@@ -653,7 +667,7 @@ naflak:
 		Amount: -50
 	RequiresPower:
 	CanPowerDown:
-		IndicatorPalette: ts-mousepal
+		IndicatorPalette: ts-mouse
 		PowerupSpeech: BuildingOnline
 		PowerdownSpeech: BuildingOffline
 
@@ -714,7 +728,7 @@ tesla:
 		Sequence: idle-powered
 		PauseOnLowPower: true
 	CanPowerDown:
-		IndicatorPalette: ts-mousepal
+		IndicatorPalette: ts-mouse
 		PowerupSpeech: BuildingOnline
 		PowerdownSpeech: BuildingOffline
 
