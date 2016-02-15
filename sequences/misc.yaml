@@ -40,12 +40,10 @@ rallypoint:
 		ZOffset: -2047
 
 beacon:
-	arrow: mouse
-		Start: 6
-		Offset: 1, -12
-	circles: ring
-		Length: 12
-		BlendMode: Additive
+	idle: pbeacon
+		Length: 20
+		Tick: 200
+		ZOffset: 2047
 
 crate-effects: #Temp Null Some SHPs cannot be read by openra at this time, expect more
 	Defaults: null
