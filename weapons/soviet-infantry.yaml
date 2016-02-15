@@ -270,7 +270,7 @@ IvanBomber:
 	Warhead@0Eff: CreateEffect
 		Delay: 2
 		Explosion: bombcurs
-		ExplosionPalette: mousepal
+		ExplosionPalette: mouse
 	Warhead@1Dam: SpreadDamage
 		Delay: 100
 		Spread: 213

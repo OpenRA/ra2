@@ -48,10 +48,10 @@
 		Name: effect
 		Filename: anim.pal
 	PaletteFromFile@mousepal:
-		Name: mousepal
+		Name: mouse
 		Filename: mousepal.pal
 	PaletteFromFile@ts-mousepal:
-		Name: ts-mousepal
+		Name: ts-mouse
 		Filename: ts-mousepal.pal
 	PaletteFromFile@colorpicker:
 		Name: colorpicker

@@ -119,6 +119,9 @@ gapile:
 	RevealsShroud:
 		Range: 5c0
 	RallyPoint:
+		Offset: 2,3
+		Palette: mouse
+		IsPlayerPalette: false
 	Exit@1:
 		SpawnOffset: -170,810,0
 		ExitCell: 2,2
@@ -231,7 +234,7 @@ gaairc:
 		Type: Steel
 	RequiresPower:
 	CanPowerDown:
-		IndicatorPalette: ts-mousepal
+		IndicatorPalette: ts-mouse
 		PowerupSpeech: BuildingOnline
 		PowerdownSpeech: BuildingOffline
 	ProvidesRadar:
@@ -319,6 +322,9 @@ gaweap:
 	RevealsShroud:
 		Range: 4c0
 	RallyPoint:
+		Offset: 6,1
+		Palette: mouse
+		IsPlayerPalette: false
 	Exit@1:
 		ExitCell: 5,1
 	Production:
@@ -396,6 +402,9 @@ gayard:
 		UpgradeTypes: primary
 		UpgradeMinEnabledLevel: 1
 	RallyPoint:
+		Offset: 5,1
+		Palette: mouse
+		IsPlayerPalette: false
 	RepairsUnits:
 		FinishRepairingNotification: UnitRepaired
 	ProductionBar:
@@ -435,6 +444,8 @@ gadept:
 		Range: 5c0
 	Reservable:
 	RallyPoint:
+		Palette: mouse
+		IsPlayerPalette: false
 	RepairsUnits:
 		Interval: 50
 		FinishRepairingNotification: UnitRepaired
@@ -572,7 +583,7 @@ nasam:
 		Amount: -50
 	RequiresPower:
 	CanPowerDown:
-		IndicatorPalette: ts-mousepal
+		IndicatorPalette: ts-mouse
 		PowerupSpeech: BuildingOnline
 		PowerdownSpeech: BuildingOffline
 
@@ -626,7 +637,7 @@ gtgcan:
 		Amount: -100
 	RequiresPower:
 	CanPowerDown:
-		IndicatorPalette: ts-mousepal
+		IndicatorPalette: ts-mouse
 		PowerupSpeech: BuildingOnline
 		PowerdownSpeech: BuildingOffline
 
@@ -688,7 +699,7 @@ gaspysat:
 	ProvidesRadar:
 	RequiresPower:
 	CanPowerDown:
-		IndicatorPalette: ts-mousepal
+		IndicatorPalette: ts-mouse
 		PowerupSpeech: BuildingOnline
 		PowerdownSpeech: BuildingOffline
 
@@ -724,7 +735,7 @@ gagap:
 		RequiredForShortGame: false
 	-AutoTarget:
 	CanPowerDown:
-		IndicatorPalette: ts-mousepal
+		IndicatorPalette: ts-mouse
 		PowerupSpeech: BuildingOnline
 		PowerdownSpeech: BuildingOffline
 
@@ -755,7 +766,7 @@ gaweat:
 		Amount: -200
 	RequiresPower:
 	CanPowerDown:
-		IndicatorPalette: ts-mousepal
+		IndicatorPalette: ts-mouse
 		PowerupSpeech: BuildingOnline
 		PowerdownSpeech: BuildingOffline
 
@@ -788,7 +799,7 @@ gacsph:
 		Sequence: idle-dome
 	RequiresPower:
 	CanPowerDown:
-		IndicatorPalette: ts-mousepal
+		IndicatorPalette: ts-mouse
 		PowerupSpeech: BuildingOnline
 		PowerdownSpeech: BuildingOffline
 	ChronoshiftPower@chronoshift:
@@ -847,7 +858,7 @@ atesla:
 		Range: 8c0
 		Type: prismcannon
 	CanPowerDown:
-		IndicatorPalette: ts-mousepal
+		IndicatorPalette: ts-mouse
 		PowerupSpeech: BuildingOnline
 		PowerdownSpeech: BuildingOffline
 

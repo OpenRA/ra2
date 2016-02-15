@@ -91,7 +91,7 @@
 	WithBuildingExplosion:
 		Sequences: building, large_bang, large_brnl, verylarge_clsn, large_tumu
 	RepairableBuilding:
-		IndicatorPalette: mousepal
+		IndicatorPalette: mouse
 	EngineerRepairable:
 		Voice: Attack
 	EmitInfantryOnSell@allies:
