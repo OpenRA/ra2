@@ -202,6 +202,7 @@ LobbyDefaults:
 	TechLevel: Unrestricted
 
 ChromeMetrics:
+	common|metrics.yaml
 	ra2|metrics.yaml
 
 Fonts:
