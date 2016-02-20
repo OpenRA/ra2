@@ -357,6 +357,7 @@ jumpjet:
 		RepairBuildings:
 		RearmBuildings:
 		CanHover: True
+		IdealSeparation: 512
 	WithInfantryBody:
 		StandSequence: fly
 		MoveSequence: fly
