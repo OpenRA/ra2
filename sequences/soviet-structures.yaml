@@ -188,22 +188,25 @@ naweap:
 			URBAN: GENERIC
 	idle: ngweap
 		ShadowStart: 3
+		ZOffset: -1536
 	damaged-idle: ngweap
-		Start: 2
+		Start: 1
 		ShadowStart: 4
-# TODO: door and top sequences out-commented in the rules file
+		ZOffset: -1536
 	build-door: ngweap_1
 		ShadowStart: 2
-		ZOffset: -5000
+		ZOffset: -1024
 	damaged-build-door: ngweap_1
 		Start: 1
 		ShadowStart: 3
-		ZOffset: -5000
+		ZOffset: -1024
 	build-top: ngweap_2
 		ShadowStart: 2
+		ZOffset: 1024
 	damaged-build-top: ngweap_2
 		Start: 1
 		ShadowStart: 3
+		ZOffset: 1024
 # TODO: ngweap_3 and ngweap_4 are used for producing flying actors
 	build-air-open: ngweap_3
 		ShadowStart: 2
@@ -221,6 +224,7 @@ naweap:
 	damaged-bib: ngweapbb
 		Start: 1
 		ShadowStart: 3
+		ZOffset: -1024
 	idle-lights: ngweap_a
 		Length: 13
 		ShadowStart: 13
