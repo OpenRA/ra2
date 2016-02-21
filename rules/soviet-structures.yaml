@@ -287,6 +287,10 @@ naweap:
 		UpgradeTypes: primary
 		UpgradeMinEnabledLevel: 1
 	ProductionBar:
+	WithExitOverlay@door:
+		Sequence: build-door
+	WithExitOverlay@top-vehicles:
+		Sequence: build-top
 	WithIdleOverlay@lights:
 		Sequence: idle-lights
 	WithIdleOverlay@bib:
