@@ -208,3 +208,6 @@ dlph:
 		AttackSequence: shoot
 	WithDeathAnimation:
 		UseDeathTypeSuffix: false
+	Repairable:
+		Voice: Attack
+		RepairBuildings: gayard, nayard

@@ -207,3 +207,6 @@ sqd:
 	WithInfantryBody:
 		StandSequences: stand
 		AttackSequence: punch
+	Repairable:
+		Voice: Attack
+		RepairBuildings: gayard, nayard
