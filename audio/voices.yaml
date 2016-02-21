@@ -318,7 +318,6 @@ AlligatorVoice:
 		Attack: galiatta, galiattb
 		Feedback: galifeaa, galifeab
 		Die: galidiea
-		Burned: ienadia #gotta put something as temp else game crashes
 
 BearVoice:
 	DefaultVariant: .wav
