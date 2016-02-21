@@ -324,9 +324,9 @@ BearVoice:
 	Voices:
 		Select: gbeasela, gbeaselb
 		Move: gbeamova, gbeamovb, gbeamovc
+		Attack: gbeaatta, gbeaattb
 		Feedback: gbeafeaa, gbeafeab
 		Die: gbeadiea, gbeadieb
-		Burned: ienadia #gotta put something as temp else game crashes
 
 CarVoice:
 	DefaultVariant: .wav
