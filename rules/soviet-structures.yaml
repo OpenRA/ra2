@@ -289,8 +289,8 @@ naweap:
 	ProductionBar:
 	WithIdleOverlay@lights:
 		Sequence: idle-lights
-	WithIdleOverlay@ramp:
-		Sequence: idle-ramp
+	WithIdleOverlay@bib:
+		Sequence: bib
 	Power:
 		Amount: -25
 	InfiltrateForSupportPower:
