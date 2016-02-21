@@ -196,7 +196,7 @@ gaweap:
 			TEMPERATE: GENERIC
 			URBAN: GENERIC
 	idle: ggweap
-		ShadowStart: 2
+		ShadowStart: 3
 	damaged-idle: ggweap
 		Start: 2
 		ShadowStart: 5
