@@ -197,21 +197,23 @@ gaweap:
 			URBAN: GENERIC
 	idle: ggweap
 		ShadowStart: 3
+		ZOffset: -1024
 	damaged-idle: ggweap
 		Start: 1
 		ShadowStart: 4
+		ZOffset: -1024
 	build-ramp: ggweap_1
 		ShadowStart: 2
-		ZOffset: -5000
 	damaged-build-ramp: ggweap_1
 		Start: 1
 		ShadowStart: 3
-		ZOffset: -5000
 	build-top: ggweap_2
 		ShadowStart: 2
+		ZOffset: 1024
 	damaged-build-top: ggweap_2
 		Start: 1
 		ShadowStart: 3
+		ZOffset: 1024
 # TODO: ggweap_3 and ggweap_4 are used for producing flying actors
 	build-air-open: ggweap_3
 		ShadowStart: 2
@@ -225,9 +227,11 @@ gaweap:
 		ShadowStart: 3
 	bib: ggweapbb
 		ShadowStart: 2
+		ZOffset: -1024
 	damaged-bib: ggweapbb
 		Start: 1
 		ShadowStart: 3
+		ZOffset: -1024
 	idle-flag: ggweap_a
 		Length: 14
 		ShadowStart: 31
