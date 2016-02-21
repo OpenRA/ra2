@@ -62,3 +62,35 @@ all:
 	DeathSounds@radiation:
 		Voice: Die
 	-TakeCover:
+
+polarb:
+	Inherits: ^Infantry
+	Tooltip:
+		Name: Polar Bear
+	Health:
+		HP: 200
+	Valued:
+		Cost: 10
+	Armor:
+		Type: None
+	RevealsShroud:
+		Range: 2c0
+	Mobile:
+		Speed: 40
+	Selectable:
+		Bounds: 45, 25, 0, -8
+	Targetable:
+		TargetTypes: Ground
+	Voiced:
+		VoiceSet: BearVoice
+	AttackFrontal:
+		Voice: Attack
+	Armament:
+		Weapon: BearBite
+	DeathSounds@burned:
+		Voice: Die
+	DeathSounds@zapped:
+		Voice: Die
+	DeathSounds@radiation:
+		Voice: Die
+	-TakeCover:

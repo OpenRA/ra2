@@ -1651,3 +1651,15 @@ AlligatorBite:
 		Spread: 213
 		Damage: 30
 		DamageTypes: BulletDeath
+
+BearBite:
+	ReloadDelay: 30
+	Range: 1c512
+	Report: gbeaatta.wav, gbeaattb.wav
+	ValidTargets: Ground
+	Projectile: Bullet
+		Speed: 100
+	Warhead@1Dam: SpreadDamage
+		Spread: 213
+		Damage: 30
+		DamageTypes: BulletDeath
