@@ -24,6 +24,8 @@ cow:
 		Voice: Die
 	DeathSounds@radiation:
 		Voice: Die
+	AmbientSound:
+		SoundFile: gcowsela.wav #, gcowselb.wav, gcowselc.wav
 	-TakeCover:
 	-AutoTarget:
 	-AttackMove:
