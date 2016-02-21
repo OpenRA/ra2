@@ -412,9 +412,5 @@ CowVoice:
 	Voices:
 		Select: gcowsela, gcowselb, gcowselc
 		Move: gcowmova, gcowmovb
-		Action: gcowmova, gcowmovb
 		Feedback: gcowsela, gcowselb, gcowselc
 		Die: gcowdiea
-		Zapped: igenzapa
-		Burned: ienadia #gotta put something as temp else game crashes
-		Melted: igenmela, igenmelb, igenmelc

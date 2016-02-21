@@ -18,10 +18,14 @@ cow:
 		TargetTypes: Ground
 	Voiced:
 		VoiceSet: CowVoice
-	Guard:
-		Voice: Action
-	AttackMove:
-		Voice: Action
+	DeathSounds@burned:
+		Voice: Die
+	DeathSounds@zapped:
+		Voice: Die
+	DeathSounds@radiation:
+		Voice: Die
 	-TakeCover:
 	-AutoTarget:
+	-AttackMove:
+	-Guard:
 
