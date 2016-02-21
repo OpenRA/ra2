@@ -360,9 +360,9 @@ gaweap:
 		Sequence: idle-flag
 	WithIdleOverlay@fan:
 		Sequence: overlay-fan
-	WithIdleOverlay@ramp:
-		Sequence: idle-ramp
-	WithProductionDoorOverlay@top:
+	WithIdleOverlay@bib:
+		Sequence: bib
+	WithProductionOverlay@top:
 		Sequence: build-top
 	WithProductionDoorOverlay@ramp:
 		Sequence: build-ramp
