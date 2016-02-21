@@ -198,8 +198,8 @@ gaweap:
 	idle: ggweap
 		ShadowStart: 3
 	damaged-idle: ggweap
-		Start: 2
-		ShadowStart: 5
+		Start: 1
+		ShadowStart: 4
 	build-ramp: ggweap_1
 		ShadowStart: 2
 		ZOffset: -5000
