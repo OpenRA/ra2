@@ -223,9 +223,9 @@ gaweap:
 	damaged-air-inside: ggweap_4
 		Start: 1
 		ShadowStart: 3
-	idle-ramp: ggweapbb
+	bib: ggweapbb
 		ShadowStart: 2
-	damaged-idle-ramp: ggweapbb
+	damaged-bib: ggweapbb
 		Start: 1
 		ShadowStart: 3
 	idle-flag: ggweap_a
