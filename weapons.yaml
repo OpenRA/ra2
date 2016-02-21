@@ -874,6 +874,7 @@ SonicZap:
 	ReloadDelay: 180
 	Range: 6c0
 	Report: vdolatta.wav
+	ValidTargets: Water, Underwater
 	Burst: 2
 	Projectile: AreaBeam
 		Speed: 1c0
@@ -895,6 +896,7 @@ SonicZap:
 			Heavy: 80
 			Concrete: 60
 		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
+		ValidTargets: Water, Underwater
 	Warhead@2Dam: SpreadDamage
 		Range: 0, 32
 		Falloff: 50, 50
@@ -905,6 +907,7 @@ SonicZap:
 			Heavy: 80
 			Concrete: 60
 		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
+		ValidTargets: Water, Underwater
 
 SquidPunch:
 	ReloadDelay: 32
