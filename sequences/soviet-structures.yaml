@@ -215,9 +215,10 @@ naweap:
 	damaged-air-inside: ngweap_4
 		Start: 1
 		ShadowStart: 3
-	idle-ramp: ngweapbb
+	bib: ngweapbb
 		ShadowStart: 3
-	damaged-idle-ramp: ngweapbb
+		ZOffset: -1024
+	damaged-bib: ngweapbb
 		Start: 1
 		ShadowStart: 3
 	idle-lights: ngweap_a
