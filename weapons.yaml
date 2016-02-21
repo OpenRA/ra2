@@ -1639,3 +1639,15 @@ NukePayload:
 		SmudgeType: LargeScorch
 		Size: 3
 		Delay: 15
+
+AlligatorBite:
+	ReloadDelay: 30
+	Range: 1c512
+	Report: galiatta.wav, galiattb.wav
+	ValidTargets: Ground
+	Projectile: Bullet
+		Speed: 100
+	Warhead@1Dam: SpreadDamage
+		Spread: 213
+		Damage: 30
+		DamageTypes: BulletDeath
