@@ -344,7 +344,6 @@ ChimpanzeeVoice:
 		Attack: gchiata, gchiatb, gchiatc
 		Feedback: gchifeaa, gchifeab
 		Die: gchidiea, gchidieb
-		Burned: ienadia #gotta put something as temp else game crashes
 
 CivilianAlliedMaleVoice:
 	DefaultVariant: .wav

@@ -94,3 +94,35 @@ polarb:
 	DeathSounds@radiation:
 		Voice: Die
 	-TakeCover:
+
+josh:
+	Inherits: ^Infantry
+	Tooltip:
+		Name: Monkey
+	Health:
+		HP: 200
+	Valued:
+		Cost: 10
+	Armor:
+		Type: None
+	RevealsShroud:
+		Range: 2c0
+	Mobile:
+		Speed: 40
+	Selectable:
+		Bounds: 45, 25, 0, -8
+	Targetable:
+		TargetTypes: Ground
+	Voiced:
+		VoiceSet: ChimpanzeeVoice
+	AttackFrontal:
+		Voice: Attack
+	Armament:
+		Weapon: ChimpBite
+	DeathSounds@burned:
+		Voice: Die
+	DeathSounds@zapped:
+		Voice: Die
+	DeathSounds@radiation:
+		Voice: Die
+	-TakeCover:
