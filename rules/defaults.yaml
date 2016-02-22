@@ -413,6 +413,26 @@
 		ChronoshiftSound: schrmov.wav
 		ReturnToOrigin: false
 
+^CivVehicle:
+	Inherits: ^Vehicle
+	Tooltip:
+		GenericName: Civilian Vehicle
+	Valued:
+		Cost: 800
+	Mobile:
+		Speed: 113
+	Health:
+		HP: 100
+	Armor:
+		Type: Light
+	RevealsShroud:
+		Range: 5c0
+	Selectable:
+		Bounds: 64, 52, 0, -6
+	WithVoxelBody:
+	Voiced:
+		VoiceSet: CarVoice
+
 ^Aircraft:
 	Inherits@1: ^ExistsInWorld
 	Inherits@2: ^GainsExperience
@@ -616,6 +636,34 @@
 		HP: 200
 	Armor:
 		Type: Wood
+
+^StreetSign:
+	Inherits: ^Tree
+	Tooltip:
+		Name: Street Sign
+
+^TrafficLight:
+	Inherits: ^Tree
+	Tooltip:
+		Name: Traffic Light
+
+^StreetLight:
+	Inherits: ^Tree
+	Tooltip:
+		Name: Street Light
+	Armor:
+		Type: steel
+	Health:
+		HP: 50
+
+^TelephonePole:
+	Inherits: ^Tree
+	Tooltip:
+		Name: Utility Pole
+	Health:
+		HP: 20
+	Armor:
+		Type: Concrete
 
 ^Rock:
 	Inherits@1: ^SpriteActor
