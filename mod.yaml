@@ -85,6 +85,7 @@ Sequences:
 	ra2|sequences/allied-structures.yaml
 	ra2|sequences/soviet-structures.yaml
 	ra2|sequences/civilian-structures.yaml
+	ra2|sequences/civilian-props.yaml
 	ra2|sequences/tech-structures.yaml
 	ra2|sequences/vehicles.yaml
 	ra2|sequences/trees.yaml
