@@ -1,0 +1,121 @@
+cow:
+	stand:
+		Facings: 8
+		ShadowStart: 116
+	run:
+		Start: 8
+		Length: 6
+		Facings: 8
+		ShadowStart: 124
+		Tick: 120
+	idle1:
+		Start: 56
+		Length: 15
+		ShadowStart: 172
+		Tick: 100
+	idle2:
+		Start: 71
+		Length: 15
+		ShadowStart: 187
+		Tick: 100
+	die1:
+		Start: 86
+		Length: 15
+		ShadowStart: 202
+	die2:
+		Start: 101
+		Length: 15
+		ShadowStart: 217
+	die5:
+		Start: 101
+		Length: 15
+		ShadowStart: 217
+	die6: electro
+		Length: *
+		Tick: 80
+	die-crushed: death_c
+		Length: 4
+		Tick: 80
+	icon: xxicon
+
+all:
+	stand:
+		Facings: 8
+		ShadowStart: 164
+	run:
+		Start: 8
+		Length: 6
+		Facings: 8
+		ShadowStart: 172
+		Tick: 120
+	shoot:
+		Start: 116
+		Length: 6
+		Facings: 8
+	idle1:
+		Start: 56
+		Length: 15
+	idle2:
+		Start: 71
+		Length: 15
+	die1:
+		Start: 86
+		Length: 15
+		ShadowStart: 202
+	die2:
+		Start: 101
+		Length: 15
+		ShadowStart: 217
+	icon: xxicon
+
+polarb:
+	stand:
+		Facings: 8
+	run:
+		Start: 8
+		Length: 6
+		Facings: 8
+		Tick: 120
+	shoot:
+		Start: 116
+		Length: 6
+		Facings: 8
+	idle1:
+		Start: 56
+		Length: 15
+	idle2:
+		Start: 71
+		Length: 15
+	die1:
+		Start: 86
+		Length: 15
+	die2:
+		Start: 101
+		Length: 15
+	icon: xxicon
+
+josh:
+	stand:
+		Facings: 8
+	run:
+		Start: 8
+		Length: 6
+		Facings: 8
+		Tick: 120
+	shoot:
+		Start: 116
+		Length: 6
+		Facings: 8
+	idle1:
+		Start: 56
+		Length: 15
+	idle2:
+		Start: 71
+		Length: 15
+	die1:
+		Start: 86
+		Length: 15
+	die2:
+		Start: 101
+		Length: 15
+	icon: xxicon
