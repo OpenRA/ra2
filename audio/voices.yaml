@@ -318,16 +318,15 @@ AlligatorVoice:
 		Attack: galiatta, galiattb
 		Feedback: galifeaa, galifeab
 		Die: galidiea
-		Burned: ienadia #gotta put something as temp else game crashes
 
 BearVoice:
 	DefaultVariant: .wav
 	Voices:
 		Select: gbeasela, gbeaselb
 		Move: gbeamova, gbeamovb, gbeamovc
+		Attack: gbeaatta, gbeaattb
 		Feedback: gbeafeaa, gbeafeab
 		Die: gbeadiea, gbeadieb
-		Burned: ienadia #gotta put something as temp else game crashes
 
 CarVoice:
 	DefaultVariant: .wav
@@ -345,7 +344,6 @@ ChimpanzeeVoice:
 		Attack: gchiata, gchiatb, gchiatc
 		Feedback: gchifeaa, gchifeab
 		Die: gchidiea, gchidieb
-		Burned: ienadia #gotta put something as temp else game crashes
 
 CivilianAlliedMaleVoice:
 	DefaultVariant: .wav
@@ -412,9 +410,5 @@ CowVoice:
 	Voices:
 		Select: gcowsela, gcowselb, gcowselc
 		Move: gcowmova, gcowmovb
-		Action: gcowmova, gcowmovb
 		Feedback: gcowsela, gcowselb, gcowselc
 		Die: gcowdiea
-		Zapped: igenzapa
-		Burned: ienadia #gotta put something as temp else game crashes
-		Melted: igenmela, igenmelb, igenmelc
