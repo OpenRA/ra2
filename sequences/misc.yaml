@@ -79,6 +79,7 @@ rank:
 	rank: pips
 		Start: 13
 		Length: 2
+		Offset: 2, 2
 
 mpspawn:
 	idle:
@@ -135,6 +136,7 @@ pips:
 	pip-disguise: pip-disguise
 		Length: *
 		Tick: 300
+		Offset: 6, -2
 
 explosion:
 	Defaults:

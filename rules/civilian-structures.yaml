@@ -42,7 +42,6 @@ cahse01:
 		Dimensions: 3,2
 		Footprint: xxx xxx
 
-
 cahse02:
 	Inherits: ^CivBuilding
 	RevealsShroud:
@@ -301,7 +300,7 @@ cawsh12:
 	RevealsShroud:
 		Range: 6c0
 	Turreted:
-		ROT: 255
+		TurnSpeed: 255
 	BodyOrientation:
 		QuantizedFacings: 8
 	Cargo:
@@ -659,7 +658,6 @@ caarmy02:
 		Dimensions: 1,1
 		Footprint: x
 
-
 caarmy03:
 	Inherits: ^CivBuilding
 	Tooltip:
@@ -997,7 +995,6 @@ catexs01:
 	Building:
 		Dimensions: 2,2
 		Footprint: xx xx
-
 
 catexs02:
 	Inherits: ^CivBuilding
@@ -1513,7 +1510,6 @@ camiam07:
 		Dimensions: 4,4
 		Footprint: xxxx xxxx xxxx xxxx
 
-
 camiam08:
 	Inherits: ^CivBuilding
 	Tooltip:
@@ -1753,7 +1749,6 @@ cachig03:
 	Building:
 		Dimensions: 3,2
 		Footprint: xxx xxx
-
 
 cachig04:
 	Inherits: ^CivBuilding

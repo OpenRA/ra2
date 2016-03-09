@@ -1,10 +1,8 @@
-MapFormat: 8
+MapFormat: 9
 
 RequiresMod: ra2
 
 Title: Breakaway
-
-Description: automated conversion
 
 Author: Westwood Studios
 
@@ -17,10 +15,6 @@ Bounds: 2,4,86,176
 Visibility: Lobby
 
 Type: Conquest
-
-Videos:
-
-Options:
 
 Players:
 	PlayerReference@Neutral:

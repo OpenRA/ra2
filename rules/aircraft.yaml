@@ -27,7 +27,7 @@ shad:
 		CruiseAltitude: 3072
 		LandWhenIdle: true
 		LandableTerrainTypes: Clear, Rough, Road, DirtRoad
-		ROT: 10
+		TurnSpeed: 10
 		Speed: 100
 		AltitudeVelocity: 120
 		CruisingUpgrades: cruising
@@ -55,7 +55,7 @@ shadhusk:
 	Health:
 		HP: 140
 	Aircraft:
-		ROT: 5
+		TurnSpeed: 5
 		Speed: 140
 		AirborneUpgrades: airborne
 		CanHover: True
@@ -89,7 +89,7 @@ zep:
 	Selectable:
 	Aircraft:
 		CruiseAltitude: 5600
-		ROT: 5
+		TurnSpeed: 5
 		Speed: 50
 		Voice: Move
 		AirborneUpgrades: airborne
@@ -160,7 +160,7 @@ orca:
 		BuildPaletteOrder: 20
 		Prerequisites: ~aircraft.allies
 	Aircraft:
-		ROT: 3
+		TurnSpeed: 3
 		Speed: 140
 		RearmBuildings: gaairc, amradr
 	Selectable:
@@ -197,7 +197,7 @@ orcahusk:
 	Tooltip:
 		Name: Destroyed Harrier
 	Aircraft:
-		ROT: 5
+		TurnSpeed: 5
 		Speed: 140
 	RenderVoxels:
 		Image: falc
@@ -226,8 +226,7 @@ beaghusk:
 	Tooltip:
 		Name: Destroyed Black Eagle
 	Aircraft:
-		ROT: 5
+		TurnSpeed: 5
 		Speed: 140
 	RenderVoxels:
 		Image: beag
-
