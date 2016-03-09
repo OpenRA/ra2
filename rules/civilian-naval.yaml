@@ -5,7 +5,7 @@ tug:
 	Tooltip:
 		Name: Tug Boat
 	Mobile:
-		ROT: 2
+		TurnSpeed: 2
 		Speed: 60
 	Health:
 		HP: 200
@@ -28,7 +28,7 @@ cruise:
 	Tooltip:
 		Name: Cruise Ship
 	Mobile:
-		ROT: 1
+		TurnSpeed: 1
 		Speed: 60
 	Health:
 		HP: 300
@@ -53,7 +53,7 @@ cdest:
 	Armor:
 		Type: Light
 	Mobile:
-		ROT: 5
+		TurnSpeed: 5
 		Speed: 105
 	RevealsShroud:
 		Range: 7c0

@@ -148,6 +148,14 @@ gapile:
 		Proxy: barracks.infiltrated
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
+	WithDecoration@primary:
+		RequiresSelection: true
+		Image: pips
+		Sequence: tag-primary
+		ReferencePoint: Top
+		ZOffset: 256
+		UpgradeTypes: primary
+		UpgradeMinEnabledLevel: 1
 
 garefn:
 	Inherits: ^Building
@@ -190,6 +198,7 @@ garefn:
 	InfiltrateForCash:
 		Percentage: 50
 		Notification: CreditsStolen
+		Minimum: 500
 	FreeActor:
 		Actor: cmin
 		SpawnOffset: 3, 1
@@ -282,6 +291,14 @@ gaairc:
 		UpgradeTypes: primary
 		UpgradeMinEnabledLevel: 1
 	InfiltrateForExploration:
+	WithDecoration@primary:
+		RequiresSelection: true
+		Image: pips
+		Sequence: tag-primary
+		ReferencePoint: Top
+		ZOffset: 256
+		UpgradeTypes: primary
+		UpgradeMinEnabledLevel: 1
 
 amradr:
 	Inherits: gaairc
@@ -355,6 +372,14 @@ gaweap:
 		Proxy: warfactory.infiltrated
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
+	WithDecoration@primary:
+		RequiresSelection: true
+		Image: pips
+		Sequence: tag-primary
+		ReferencePoint: Top
+		ZOffset: 256
+		UpgradeTypes: primary
+		UpgradeMinEnabledLevel: 1
 
 gayard:
 	Inherits: ^Building
@@ -418,6 +443,14 @@ gayard:
 		Sequence: repair
 	-EmitInfantryOnSell@allies:
 	-EmitInfantryOnSell@soviets:
+	WithDecoration@primary:
+		RequiresSelection: true
+		Image: pips
+		Sequence: tag-primary
+		ReferencePoint: Top
+		ZOffset: 256
+		UpgradeTypes: primary
+		UpgradeMinEnabledLevel: 1
 
 gadept:
 	Inherits: ^Building
@@ -532,7 +565,7 @@ gapill:
 	AttackTurreted:
 		Voice: Attack
 	Turreted:
-		ROT: 255
+		TurnSpeed: 255
 	BodyOrientation:
 		QuantizedFacings: 8
 	WithRangeCircle:
@@ -563,7 +596,7 @@ nasam:
 	Selectable:
 		Bounds: 46, 62, 0, -20
 	Turreted:
-		ROT: 10
+		TurnSpeed: 10
 		InitialFacing: 224
 		Offset: 550,0,0
 	AttackTurreted:
@@ -610,7 +643,7 @@ gtgcan:
 	Selectable:
 		Bounds: 46, 62, 0, -20
 	Turreted:
-		ROT: 10
+		TurnSpeed: 10
 		InitialFacing: 224
 		Offset: 400,0,0
 	AttackTurreted:

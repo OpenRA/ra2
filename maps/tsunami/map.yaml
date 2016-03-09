@@ -1,10 +1,8 @@
-MapFormat: 8
+MapFormat: 9
 
 RequiresMod: ra2
 
 Title: Tsunami
-
-Description: Describe your map here
 
 Author: Westwood Studios
 
@@ -17,10 +15,6 @@ Bounds: 2,5,90,186
 Visibility: Lobby
 
 Type: Conquest
-
-Videos:
-
-Options:
 
 Players:
 	PlayerReference@Neutral:

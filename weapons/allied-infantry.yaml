@@ -19,10 +19,10 @@ M60:
 			Concrete: 25
 		DamageTypes: Prone70Percent, TriggerProne, BulletDeath
 	Warhead@2Eff: CreateEffect
-		Explosion: piff
+		Explosions: piff
 		InvalidImpactTypes: Water
 	Warhead@3EffWater: CreateEffect
-		Explosion: piff
+		Explosions: piff
 		ValidImpactTypes: Water
 
 M60E:
@@ -46,10 +46,10 @@ M60E:
 			Concrete: 25
 		DamageTypes: Prone70Percent, TriggerProne, BulletDeath
 	Warhead@2Eff: CreateEffect
-		Explosion: piff
+		Explosions: piff
 		InvalidImpactTypes: Water
 	Warhead@3EffWater: CreateEffect
-		Explosion: piff
+		Explosions: piff
 		ValidImpactTypes: Water
 
 para:
@@ -73,10 +73,10 @@ para:
 			Concrete: 25
 		DamageTypes: Prone50Percent, TriggerProne, BulletDeath
 	Warhead@2Eff: CreateEffect
-		Explosion: piff
+		Explosions: piff
 		InvalidImpactTypes: Water
 	Warhead@3EffWater: CreateEffect
-		Explosion: piff
+		Explosions: piff
 		ValidImpactTypes: Water
 
 paraE:
@@ -100,10 +100,10 @@ paraE:
 			Concrete: 25
 		DamageTypes: Prone50Percent, TriggerProne, BulletDeath
 	Warhead@2Eff: CreateEffect
-		Explosion: piff
+		Explosions: piff
 		InvalidImpactTypes: Water
 	Warhead@3EffWater: CreateEffect
-		Explosion: piff
+		Explosions: piff
 		ValidImpactTypes: Water
 
 MP5:
@@ -127,10 +127,10 @@ MP5:
 			Concrete: 25
 		DamageTypes: Prone70Percent, TriggerProne, BulletDeath
 	Warhead@2Eff: CreateEffect
-		Explosion: piff
+		Explosions: piff
 		InvalidImpactTypes: Water
 	Warhead@3EffWater: CreateEffect
-		Explosion: piff
+		Explosions: piff
 		ValidImpactTypes: Water
 
 MP5E:
@@ -154,10 +154,10 @@ MP5E:
 			Concrete: 25
 		DamageTypes: Prone70Percent, TriggerProne, BulletDeath
 	Warhead@2Eff: CreateEffect
-		Explosion: piff
+		Explosions: piff
 		InvalidImpactTypes: Water
 	Warhead@3EffWater: CreateEffect
-		Explosion: piff
+		Explosions: piff
 		ValidImpactTypes: Water
 
 DoublePistols:
@@ -180,10 +180,10 @@ DoublePistols:
 			Concrete: 0
 		DamageTypes: BulletDeath
 	Warhead@2Eff: CreateEffect
-		Explosion: piff
+		Explosions: piff
 		InvalidImpactTypes: Water
 	Warhead@3EffWater: CreateEffect
-		Explosion: piff
+		Explosions: piff
 		ValidImpactTypes: Water
 
 DoublePistolsE:
@@ -206,10 +206,10 @@ DoublePistolsE:
 			Concrete: 0
 		DamageTypes: BulletDeath
 	Warhead@2Eff: CreateEffect
-		Explosion: piff
+		Explosions: piff
 		InvalidImpactTypes: Water
 	Warhead@3EffWater: CreateEffect
-		Explosion: piff
+		Explosions: piff
 		ValidImpactTypes: Water
 
 awp:
@@ -258,10 +258,10 @@ awp:
 			Concrete: 25
 		DamageTypes: Prone70Percent, TriggerProne, BulletDeath
 	Warhead@2Eff: CreateEffect
-		Explosion: piff
+		Explosions: piff
 		InvalidImpactTypes: Water
 	Warhead@3EffWater: CreateEffect
-		Explosion: piff
+		Explosions: piff
 		ValidImpactTypes: Water
 
 20mme:
@@ -289,9 +289,8 @@ awp:
 			Concrete: 25
 		DamageTypes: Prone70Percent, TriggerProne, BulletDeath
 	Warhead@2Eff: CreateEffect
-		Explosion: piff
+		Explosions: piff
 		InvalidImpactTypes: Water
 	Warhead@3EffWater: CreateEffect
-		Explosion: piff
+		Explosions: piff
 		ValidImpactTypes: Water
-

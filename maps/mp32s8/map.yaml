@@ -1,10 +1,8 @@
-MapFormat: 8
+MapFormat: 9
 
 RequiresMod: ra2
 
 Title: Heck Freezes Over
-
-Description: Describe your map here
 
 Author: Westwood Studios
 
@@ -17,10 +15,6 @@ Bounds: 3,5,84,190
 Visibility: Lobby
 
 Type: Conquest
-
-Videos:
-
-Options:
 
 Players:
 	PlayerReference@Neutral:
