@@ -1,4 +1,4 @@
-MapFormat: 9
+MapFormat: 10
 
 RequiresMod: ra2
 
@@ -1194,8 +1194,6 @@ Actors:
 		Location: 132,39
 		Owner: Neutral
 
-Smudges:
-
 Rules:
 	World:
 		GlobalLightingPaletteEffect:
@@ -1203,17 +1201,3 @@ Rules:
 			Red: 0.75
 			Green: 0.6
 			Blue: 0.8
-
-Sequences:
-
-VoxelSequences:
-
-Weapons:
-
-Voices:
-
-Music:
-
-Notifications:
-
-Translations:

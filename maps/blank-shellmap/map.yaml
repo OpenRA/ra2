@@ -1,4 +1,4 @@
-MapFormat: 9
+MapFormat: 10
 
 RequiresMod: ra2
 
@@ -29,25 +29,9 @@ Players:
 
 Actors:
 
-Smudges:
-
 Rules:
 	World:
 		-StartGameNotification:
 		MusicPlaylist:
 			StartingMusic: grinder
 			LoopStartingMusic: true
-
-Sequences:
-
-VoxelSequences:
-
-Weapons:
-
-Voices:
-
-Music:
-
-Notifications:
-
-Translations:
