@@ -1,10 +1,8 @@
-MapFormat: 8
+MapFormat: 10
 
 RequiresMod: ra2
 
 Title: Round
-
-Description: Describe your map here
 
 Author: Westwood Studios
 
@@ -17,10 +15,6 @@ Bounds: 2,4,64,144
 Visibility: Lobby
 
 Type: Conquest
-
-Videos:
-
-Options:
 
 Players:
 	PlayerReference@Neutral:
@@ -872,24 +866,8 @@ Actors:
 		Location: 87,34
 		Owner: Neutral
 
-Smudges:
-
 Rules:
 	World:
 		GlobalLightingPaletteEffect:
 			Ambient: 0.68
 			Green: 0.75
-
-Sequences:
-
-VoxelSequences:
-
-Weapons:
-
-Voices:
-
-Music:
-
-Notifications:
-
-Translations:

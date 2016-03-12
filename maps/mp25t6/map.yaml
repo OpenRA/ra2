@@ -1,10 +1,8 @@
-MapFormat: 8
+MapFormat: 10
 
 RequiresMod: ra2
 
 Title: DEFCON 6
-
-Description: Describe your map here
 
 Author: Westwood Studios
 
@@ -17,10 +15,6 @@ Bounds: 2,4,102,212
 Visibility: Lobby
 
 Type: Conquest
-
-Videos:
-
-Options:
 
 Players:
 	PlayerReference@Neutral:
@@ -1752,25 +1746,9 @@ Actors:
 		Location: 190,35
 		Owner: Neutral
 
-Smudges:
-
 Rules:
 	World:
 		GlobalLightingPaletteEffect:
 			Ambient: 0.85
 			Green: 0.92
 			Blue: 0.75
-
-Sequences:
-
-VoxelSequences:
-
-Weapons:
-
-Voices:
-
-Music:
-
-Notifications:
-
-Translations:

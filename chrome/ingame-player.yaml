@@ -75,7 +75,7 @@ Container@PLAYER_WIDGETS:
 							Background: options-button
 							TooltipText: Options
 							TooltipContainer: TOOLTIP_CONTAINER
-							VisualHeight: 0	
+							VisualHeight: 0
 						Button@REPAIR_BUTTON:
 							Logic: RepairOrderButtonLogic, AddFactionSuffixLogic
 							X: 32

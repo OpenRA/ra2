@@ -90,4 +90,3 @@ taxi:
 	Inherits: ^CivVehicle
 	Tooltip:
 		Name: Taxi
-

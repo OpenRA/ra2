@@ -1,10 +1,8 @@
-MapFormat: 8
+MapFormat: 10
 
 RequiresMod: ra2
 
 Title: Blank
-
-Description: Placeholder
 
 Author: Matthias Mailänder
 
@@ -17,10 +15,6 @@ Bounds: 1,1,128,144
 Visibility: Shellmap
 
 Type: Shellmap
-
-Videos:
-
-Options:
 
 Players:
 	PlayerReference@Neutral:
@@ -35,25 +29,9 @@ Players:
 
 Actors:
 
-Smudges:
-
 Rules:
 	World:
 		-StartGameNotification:
 		MusicPlaylist:
 			StartingMusic: grinder
 			LoopStartingMusic: true
-
-Sequences:
-
-VoxelSequences:
-
-Weapons:
-
-Voices:
-
-Music:
-
-Notifications:
-
-Translations:

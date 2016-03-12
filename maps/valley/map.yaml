@@ -1,10 +1,8 @@
-MapFormat: 8
+MapFormat: 10
 
 RequiresMod: ra2
 
 Title: Valley
-
-Description: Describe your map here
 
 Author: Westwood Studios
 
@@ -17,10 +15,6 @@ Bounds: 2,4,101,198
 Visibility: Lobby
 
 Type: Conquest
-
-Videos:
-
-Options:
 
 Players:
 	PlayerReference@Neutral:
@@ -1200,8 +1194,6 @@ Actors:
 		Location: 132,39
 		Owner: Neutral
 
-Smudges:
-
 Rules:
 	World:
 		GlobalLightingPaletteEffect:
@@ -1209,17 +1201,3 @@ Rules:
 			Red: 0.75
 			Green: 0.6
 			Blue: 0.8
-
-Sequences:
-
-VoxelSequences:
-
-Weapons:
-
-Voices:
-
-Music:
-
-Notifications:
-
-Translations:
