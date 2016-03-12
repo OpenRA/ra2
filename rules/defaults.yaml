@@ -47,7 +47,6 @@
 		Sequence: rank
 		Palette: pips
 		ReferencePoint: Bottom, Right
-		Offset: 2, 2
 		UpgradeTypes: rank
 		ZOffset: 256
 		UpgradeMinEnabledLevel: 1
@@ -179,7 +178,7 @@
 	WithIdleOverlay@flag:
 		Sequence: flag
 	SoundOnDamageTransition:
-		DamagedSounds:  bmetdama.wav, bmetdamb.wav, bmetdamc.wav
+		DamagedSounds: bmetdama.wav, bmetdamb.wav, bmetdamc.wav
 		DestroyedSounds: bmetdama.wav, bmetdamb.wav, bmetdamc.wav
 
 ^VoxelLighting:
@@ -244,7 +243,8 @@
 	Inherits@2: ^SpriteActor
 	Inherits@3: ^GainsExperience
 	Health:
-		Radius: 128
+		Shape: Circle
+			Radius: 128
 	Armor:
 		Type: None
 	RevealsShroud:
@@ -369,7 +369,7 @@
 			Beach: 100
 			Ore: 70
 			Gems: 70
-		ROT: 5
+		TurnSpeed: 5
 	SelectionDecorations:
 		Palette: pips
 	Selectable:
@@ -519,7 +519,7 @@
 		Crushes: crate
 		TerrainSpeeds:
 			Water: 100
-		ROT: 5
+		TurnSpeed: 5
 	SelectionDecorations:
 		Palette: pips
 	Selectable:

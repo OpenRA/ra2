@@ -135,6 +135,14 @@ nahand:
 		Proxy: barracks.infiltrated
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
+	WithDecoration@primary:
+		RequiresSelection: true
+		Image: pips
+		Sequence: tag-primary
+		ReferencePoint: Top
+		ZOffset: 256
+		UpgradeTypes: primary
+		UpgradeMinEnabledLevel: 1
 
 narefn:
 	Inherits: ^Building
@@ -177,6 +185,7 @@ narefn:
 	InfiltrateForCash:
 		Percentage: 50
 		Notification: CreditsStolen
+		Minimum: 500
 	FreeActor:
 		Actor: harv
 		SpawnOffset: 3, 1
@@ -288,6 +297,14 @@ naweap:
 		Proxy: warfactory.infiltrated
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
+	WithDecoration@primary:
+		RequiresSelection: true
+		Image: pips
+		Sequence: tag-primary
+		ReferencePoint: Top
+		ZOffset: 256
+		UpgradeTypes: primary
+		UpgradeMinEnabledLevel: 1
 
 nayard:
 	Inherits: ^Building
@@ -353,6 +370,14 @@ nayard:
 		Sequence: production-lights
 	-EmitInfantryOnSell@allies:
 	-EmitInfantryOnSell@soviets:
+	WithDecoration@primary:
+		RequiresSelection: true
+		Image: pips
+		Sequence: tag-primary
+		ReferencePoint: Top
+		ZOffset: 256
+		UpgradeTypes: primary
+		UpgradeMinEnabledLevel: 1
 
 nadept:
 	Inherits: ^Building
@@ -648,7 +673,7 @@ naflak:
 	Selectable:
 		Bounds: 46, 62, 0, -20
 	Turreted:
-		ROT: 10
+		TurnSpeed: 10
 		InitialFacing: 224
 		Offset: 450,0,0
 	AttackTurreted:
@@ -755,7 +780,7 @@ nalasr:
 	Selectable:
 		Bounds: 50, 30, 0, -12
 	Turreted:
-		ROT: 10
+		TurnSpeed: 10
 		InitialFacing: 224
 		Offset: 320,0,0
 	AttackTurreted:

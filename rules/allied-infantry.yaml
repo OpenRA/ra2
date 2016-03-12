@@ -201,7 +201,6 @@ spy:
 		Sequence: pip-disguise
 		Palette: pips
 		ReferencePoint: Top, Right
-		Offset: 6, -2
 		ZOffset: 256
 		UpgradeTypes: disguise
 		UpgradeMinEnabledLevel: 1
@@ -349,7 +348,7 @@ jumpjet:
 		CruiseAltitude: 3072
 		LandWhenIdle: false
 		InitialFacing: 20
-		ROT: 10
+		TurnSpeed: 10
 		Speed: 100
 		AltitudeVelocity: 83
 		Voice: Move

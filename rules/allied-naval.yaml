@@ -16,7 +16,7 @@ lcrf:
 	Armor:
 		Type: Light
 	Mobile:
-		ROT: 10
+		TurnSpeed: 10
 		Speed: 75
 		TerrainSpeeds:
 			Clear: 80
@@ -28,6 +28,8 @@ lcrf:
 			Ore: 50
 			Gems: 50
 			Water: 100
+		UpgradeMaxEnabledLevel: 0
+		UpgradeTypes: notmobile
 	RevealsShroud:
 		Range: 6c0
 	Cargo:
@@ -37,6 +39,7 @@ lcrf:
 		PassengerFacing: 96
 		UnloadTerrainTypes: Clear, Rough, Rail, Road, DirtRoad, Beach, Ore, Gems
 		UnloadVoice: Move
+		LoadingUpgrades: notmobile
 	Explodes:
 		Weapon: UnitExplode
 		EmptyWeapon: UnitExplode
@@ -61,7 +64,7 @@ dest:
 	Armor:
 		Type: Heavy
 	Mobile:
-		ROT: 5
+		TurnSpeed: 5
 		Speed: 105
 	RevealsShroud:
 		Range: 7c0
@@ -112,7 +115,7 @@ aegis:
 	Armor:
 		Type: Light
 	Mobile:
-		ROT: 5
+		TurnSpeed: 5
 		Speed: 45
 	RevealsShroud:
 		Range: 8c0
@@ -147,7 +150,7 @@ dlph:
 	Health:
 		HP: 200
 	Mobile:
-		ROT: 6
+		TurnSpeed: 6
 		Speed: 90
 		TerrainSpeeds:
 			Water: 100

@@ -16,7 +16,7 @@ sapc:
 	Armor:
 		Type: Heavy
 	Mobile:
-		ROT: 10
+		TurnSpeed: 10
 		Speed: 75
 		TerrainSpeeds:
 			Clear: 80
@@ -28,6 +28,8 @@ sapc:
 			Ore: 50
 			Gems: 50
 			Water: 100
+		UpgradeMaxEnabledLevel: 0
+		UpgradeTypes: notmobile
 	RevealsShroud:
 		Range: 6c0
 	Cargo:
@@ -37,6 +39,7 @@ sapc:
 		PassengerFacing: 96
 		UnloadTerrainTypes: Clear, Rough, Rail, Road, DirtRoad, Beach, Ore, Gems
 		UnloadVoice: Move
+		LoadingUpgrades: notmobile
 	Explodes:
 		Weapon: UnitExplode
 		EmptyWeapon: UnitExplode
@@ -59,7 +62,7 @@ sub:
 	Armor:
 		Type: Heavy
 	Mobile:
-		ROT: 4
+		TurnSpeed: 4
 		Speed: 71
 	RevealsShroud:
 		Range: 6c0
@@ -117,7 +120,7 @@ hyd:
 	Armor:
 		Type: Heavy
 	Mobile:
-		ROT: 6
+		TurnSpeed: 6
 		Speed: 75
 	RevealsShroud:
 		Range: 8c0
