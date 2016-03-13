@@ -254,3 +254,15 @@ ammo01:
 cabhut:
 	idle:
 		ShadowStart: 3
+
+gagate_a:
+	Defaults:
+		UseTilesetCode: true
+		Offset: 0, -15
+	idle:
+		Length: 10
+		ShadowStart: 21
+	make: gagate_a
+		Start: 10
+		Length: -10
+		ShadowStart: 30
