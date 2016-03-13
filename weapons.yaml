@@ -1606,3 +1606,18 @@ ChimpBite:
 		Spread: 213
 		Damage: 30
 		DamageTypes: BulletDeath
+
+atomic:
+	Inherits: NukePayload
+	Warhead@0Eff_impact: CreateEffect
+		Explosion: nuke_ball
+		ImpactSound: snukintr.wav
+	Warhead@1Dam_impact: SpreadDamage
+		DamageTypes: RadiationDeath
+		Delay: 25
+	Warhead@2Res_impact: DestroyResource
+		Delay: 25
+	Warhead@3Eff_impact: CreateEffect
+		Delay: 25
+	Warhead@4Smu_areanuke: LeaveSmudge
+		Delay: 25

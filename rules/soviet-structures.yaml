@@ -639,6 +639,22 @@ namisl:
 		IndicatorPalette: ts-mouse
 		PowerupSpeech: BuildingOnline
 		PowerdownSpeech: BuildingOffline
+	NukePower:
+		Cursor: nuke
+		Icon: abomb
+		ChargeTime: 540
+		Description: Atom Bomb
+		LongDesc: Launches a devastating atomic bomb\nat a target location.
+		EndChargeSound: snukread.wav
+		LaunchSound: snuklaun.wav
+		MissileWeapon: atomic
+		MissilePalette: player
+		DisplayTimer: True
+		DisplayBeacon: True
+		DisplayRadarPing: True
+		CameraActor: camera
+		CameraRemoveDelay: 70
+		FlashType: Nuke
 
 nawall:
 	Inherits: ^Wall
