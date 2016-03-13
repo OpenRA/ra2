@@ -16,6 +16,13 @@ overlay:
 	target-valid-urban:
 		Start: 2
 
+editor-overlay:
+	Defaults: place
+		Offset: 0, -15
+	copy:
+	paste:
+		Start: 1
+
 poweroff:
 	offline: poweroff
 		Length: *
