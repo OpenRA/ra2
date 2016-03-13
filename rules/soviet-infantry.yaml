@@ -1,5 +1,6 @@
 e2:
-	Inherits: ^Infantry
+	Inherits@1: ^Infantry
+	Inherits@2: ^Parachutable
 	Buildable:
 		Queue: Infantry
 		Prerequisites: ~nahand

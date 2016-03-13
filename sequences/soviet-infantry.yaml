@@ -93,6 +93,8 @@ e2:
 		Length: 6
 		Facings: 8
 		Tick: 80
+	paradrop:
+		Start: 292
 	icon: e2icon
 
 flakt:

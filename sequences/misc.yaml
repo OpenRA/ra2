@@ -101,6 +101,16 @@ clock:
 		Length: *
 		BlendMode: Multiply
 
+parach:
+	open:
+		Length: 19
+	idle:
+		Start: 19
+		Length: 20
+	close:
+		Start: 40
+		Length: 29
+
 cameo-chevron:
 	idle:
 		Length: *
@@ -394,6 +404,8 @@ icon:
 	invuln: ircricon
 	chrono: chroicon
 	abomb: nukeicon
+	paradrop: paraicon
+	airborne: aparicon
 
 atomic:
 	up: nkmslup
