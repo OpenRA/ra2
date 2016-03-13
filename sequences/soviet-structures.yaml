@@ -472,6 +472,14 @@ namisl:
 	critical-idle: ngmisl_e
 		Start: 1
 		ShadowStart: 3
+	# TODO: ngmisl_f is actually the open sequence
+	active: ngmisl_f
+		Length: 16
+		ShadowStart: 32
+	damaged-active: ngmisl_f
+		Start: 17
+		Length: 16
+		ShadowStart: 48
 	make: ntmislmk
 		UseTilesetCode: true
 		Length: 26
