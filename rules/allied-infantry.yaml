@@ -96,7 +96,9 @@ e1:
 	Health:
 		HP: 125
 	Mobile:
-		Speed: 31
+		UpgradeTypes: undeployed
+		UpgradeMinEnabledLevel: 1
+		Speed: 41
 	Passenger:
 		PipType: Green
 		GrantUpgrades: ifv-machinegun
@@ -108,26 +110,38 @@ e1:
 		Weapon: M60
 		UpgradeTypes: eliteweapon
 		UpgradeMaxEnabledLevel: 0
-		UpgradeMaxAcceptedLevel: 1
+		UpgradeMaxAcceptedLevel: 0
 	Armament@elite:
 		Weapon: M60E
-		UpgradeTypes: eliteweapon
+		UpgradeTypes: eliteweapon, undeployed
 		UpgradeMinEnabledLevel: 1
-#	Armament@deployed:
-#		Weapon: para
-#		UpgradeTypes: deployed
-#		UpgradeMinEnabledLevel: 1
-#	Armament@elite-deployed:
-#		Weapon: paraE
-#		UpgradeTypes: eliteparaweapon
-#		UpgradeMinEnabledLevel: 1
-	WithInfantryBody:
+	Armament@deployed:
+		Weapon: para
+		UpgradeTypes: deployed
+		UpgradeMinEnabledLevel: 1
+	Armament@elite-deployed:
+		Weapon: paraE
+		UpgradeTypes: deployed, eliteweapon
+		UpgradeMinEnabledLevel: 1
 	Voiced:
 		VoiceSet: GIVoice
 	ProducibleWithLevel:
 		Prerequisites: barracks.infiltrated
 	QuantizeFacingsFromSequence:
 		Sequence: stand
+	DeployToUpgrade:
+		DeployedUpgrades: deployed, notmobile
+		UndeployedUpgrades: undeployed
+		DeployAnimation: deploy
+		DeploySound: igidepa.wav
+		UndeploySound: igidepb.wav
+	WithInfantryBody:
+		UpgradeTypes: undeployed
+		UpgradeMinEnabledLevel: 1
+	WithFacingSpriteBody@DEPLOYED:
+		Sequence: deployed
+		UpgradeTypes: undeployed
+		UpgradeMaxEnabledLevel: 0
 
 snipe:
 	Inherits: ^Infantry
