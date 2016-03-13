@@ -14,15 +14,18 @@ addons:
     - p7zip-full
 
 script:
- - cd OpenRA.Mods.RA2
- - xbuild
- - cd ../../..
+ - cd ../..
  - mkdir -p ~/.openra/mods
  - mv OpenRA/ra2 ~/.openra/mods/ra2
  - git clone https://github.com/OpenRA/OpenRA.git
  - cd OpenRA
  - travis_retry make dependencies
  - make all
+ - ln -sf ~/build/OpenRA/OpenRA.Game.exe ~/.openra/mods/ra2/OpenRA.Mods.RA2/dependencies
+ - ln -sf ~/build/OpenRA/mods/common/OpenRA.Mods.Common.dll ~/.openra/mods/ra2/OpenRA.Mods.RA2/dependencies
+ - ln -sf ~/build/OpenRA/mods/ra/OpenRA.Mods.RA.dll ~/.openra/mods/ra2/OpenRA.Mods.RA2/dependencies
+ - ln -sf ~/build/OpenRA/mods/ts/OpenRA.Mods.TS.dll ~/.openra/mods/ra2/OpenRA.Mods.RA2/dependencies
+ - pushd ~/.openra/mods/ra2/OpenRA.Mods.RA2 && xbuild && popd
  - travis_retry ~/.openra/mods/ra2/fetch-content.sh
  - mono --debug OpenRA.Utility.exe ra2 --check-yaml
  - mono --debug OpenRA.Utility.exe ra2 --check-sequence-sprites
