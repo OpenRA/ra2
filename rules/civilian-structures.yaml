@@ -984,6 +984,20 @@ city05:
 		PlayerPalette:
 		Palette: city
 
+catech01:
+	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Communications
+	Armor:
+		Type: steel
+	RevealsShroud:
+		Range: 4c0
+	Health:
+		HP: 400
+	Building:
+		Dimensions: 3,3
+		Footprint: xxx xxx xxx
+
 catexs01:
 	Inherits: ^CivBuilding
 	Armor:
