@@ -369,11 +369,11 @@ Actors:
 		Owner: Neutral
 		Health: 100
 		Facing: 96
-#	Actor60: catech01
-#		Location: 162,-26
-#		Owner: Neutral
-#		Health: 100
-#		Facing: 96
+	Actor60: catech01
+		Location: 162,-26
+		Owner: Neutral
+		Health: 100
+		Facing: 96
 	Actor61: calab
 		Location: 170,5
 		Owner: Neutral
