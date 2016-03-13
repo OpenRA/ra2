@@ -63,6 +63,5 @@
   <ItemGroup>
     <Compile Include="Activities\ChronoResourceTeleport.cs" />
     <Compile Include="Traits\ChronoResourceDelivery.cs" />
-    <Compile Include="Stub.cs" />
   </ItemGroup>
 </Project>
