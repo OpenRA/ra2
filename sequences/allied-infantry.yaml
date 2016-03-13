@@ -101,7 +101,6 @@ dlph:
 		Start: 48
 		Facings: -8
 	run:
-		Start: 0
 		Length: 6
 		Facings: -8
 		Tick: 80
@@ -479,4 +478,65 @@ jumpjet:
 		Tick: 100
 	icon: jjeticon
 		Length: 1
+		Facings: 1
+
+cleg:
+	icon: clegicon
+		UseTilesetExtension: false
+		UseTilesetCode: false
+	stand:
+		Length: 1
+		Facings: 8
+	run:
+		Start: 117
+		Length: 6
+		Facings: 8
+	prone-stand:
+		Length: 1
+		Facings: 8
+	prone-run:
+		Length: 1
+		Facings: 8
+	prone-shoot:
+		Start: 68
+		Length: 6
+		Facings: 8
+	shoot:
+		Start: 68
+		Length: 6
+		Facings: 8
+	idle1:
+		Start: 8
+		Length: 15
+		Facings: 1
+	idle2:
+		Start: 23
+		Length: 15
+		Facings: 1
+	die1:
+		Start: 38
+		Length: 15
+	die2:
+		Start: 53
+		Length: 15
+	die3:
+		Start: 68
+		Length: 8
+	die4: nukedie
+		Length: *
+		Tick: 50
+	die5: flameguy
+		Start: 48
+		Length: 59
+		Tick: 80
+# TODO: This is just the death sequence; normally flameguy would run a bit around before dying
+	die6: electro
+		Length: *
+		Tick: 80
+	die-crushed: death_c
+		Length: 4
+		Tick: 80
+	cheer:
+		Start: 166
+		Length: 7
 		Facings: 1

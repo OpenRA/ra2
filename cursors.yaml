@@ -192,6 +192,9 @@ Cursors:
 			Length: 5
 		looped-patrol:
 			Start: 356
+		chrono-target: # TODO: unhardcode in PortableChrono
+			Start: 357
+			Length: 12
 		chronosphere:
 			Start: 357
 			Length: 12
