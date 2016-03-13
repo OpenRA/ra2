@@ -61,6 +61,8 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
+    <Compile Include="Activities\ChronoResourceTeleport.cs" />
+    <Compile Include="Traits\ChronoResourceDelivery.cs" />
     <Compile Include="Stub.cs" />
   </ItemGroup>
 </Project>
