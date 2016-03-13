@@ -230,3 +230,43 @@ beaghusk:
 		Speed: 140
 	RenderVoxels:
 		Image: beag
+
+pdplane:
+	Inherits: ^Aircraft
+	Valued:
+		Cost: 2000
+	-Selectable:
+	-GainsExperience:
+	RejectsOrders:
+	Tooltip:
+		Name: Cargo Plane
+	Aircraft:
+		CruiseAltitude: 5600
+		ROT: 5
+		Speed: 100
+		AirborneUpgrades: airborne
+	Health:
+		HP: 1000
+	RevealsShroud:
+		Range: 6c0
+		Type: CenterPosition
+	RenderSprites:
+	RenderVoxels:
+	WithVoxelBody:
+	Cargo:
+		MaxWeight: 10
+	ParaDrop:
+		DropRange: 4c0
+		ChuteSound: sparadra.wav
+	SpawnActorOnDeath:
+		Actor: pdplanehusk
+
+pdplanehusk:
+	Inherits: ^PlaneHusk
+	Tooltip:
+		Name: Destroyed Cargo Plane
+	Aircraft:
+		TurnSpeed: 5
+		Speed: 100
+	RenderVoxels:
+		Image: pdplane
