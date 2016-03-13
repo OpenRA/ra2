@@ -129,3 +129,6 @@
 		Name: effect75alpha
 		BasePalette: ra
 		Alpha: 0.75
+	FlashPaletteEffect@NUKE:
+		Type: Nuke
+		Length: 90

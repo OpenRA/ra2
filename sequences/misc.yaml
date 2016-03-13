@@ -179,6 +179,7 @@ explosion:
 	medium_grey_explosion: xgrymed1
 	large_grey_explosion: xgrymed2
 	nuke_explosion: nukeanim
+	nuke_ball: nukeball
 	demotruck_explosion: demtexp
 	elite_explosion: vtexplod
 	terrorist_explosion: mininuke
@@ -385,6 +386,11 @@ icon:
 	gps: asaticon
 	invuln: ircricon
 	chrono: chroicon
+	abomb: nukeicon
+
+atomic:
+	up: nkmslup
+	down: nkmsldn
 
 bombcurs:
 	idle:
@@ -450,3 +456,7 @@ srock05:
 		ShadowStart: 1
 		Offset: 0, -15
 		UseTilesetExtension: true
+
+camera:
+	idle:
+		Length: *

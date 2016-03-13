@@ -90,3 +90,18 @@ TROCK04:
 
 TROCK05:
 	Inherits: ^Rock
+
+CAMERA:
+	AlwaysVisible:
+	Immobile:
+		OccupiesSpace: false
+	RevealsShroud:
+		Range: 10c0
+		Type: CenterPosition
+	BodyOrientation:
+		QuantizedFacings: 1
+	WithSpriteBody:
+	RenderSpritesEditorOnly:
+		Image: camera
+	EditorOnlyTooltip:
+		Name: (reveals area to owner)
