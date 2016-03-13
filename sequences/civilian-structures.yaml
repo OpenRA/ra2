@@ -1382,6 +1382,15 @@ cachig06:
 		Start: 1
 		ShadowStart: 5
 
+catech01:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 1
+		ShadowStart: 5
+
 catexs01:
 	Defaults:
 		UseTilesetCode: true
