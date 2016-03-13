@@ -106,6 +106,15 @@ elseif ($command -eq "dependencies")
 			cp mods/ts/OpenRA.Mods.TS.dll $targetDir
 		}
 
+		if (!(Test-Path Eluant.dll))
+		{
+			echo "Unable to find the Eluant dll!"
+		}
+		else
+		{
+			cp Eluant.dll $targetDir
+		}
+
 		cd $targetDir
 		cd ../..
 		echo "Dependencies copied."
