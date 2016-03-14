@@ -649,6 +649,7 @@ namisl:
 		LaunchSound: snuklaun.wav
 		MissileWeapon: atomic
 		MissilePalette: player
+		IsPlayerPalette: true
 		DisplayTimer: True
 		DisplayBeacon: True
 		DisplayRadarPing: True
