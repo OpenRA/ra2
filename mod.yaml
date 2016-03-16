@@ -167,7 +167,7 @@ MapGrid:
 	Type: RectangularIsometric
 	TileSize: 60,30
 	SubCellsOffsets: 0,0,0, -256,128,0, 0,-128,0, 256,128,0
-	SubCellDefaultIndex: 2
+	DefaultSubCell: 2
 	MaximumTerrainHeight: 16
 
 Music:
