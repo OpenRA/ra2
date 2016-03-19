@@ -339,11 +339,12 @@ gaweap:
 	RevealsShroud:
 		Range: 4c0
 	RallyPoint:
-		Offset: 6,1
+		Offset: 5,1
 		Palette: mouse
 		IsPlayerPalette: false
 	Exit@1:
-		ExitCell: 5,1
+		SpawnOffset: -384,-384,0
+		ExitCell: 4,1
 	Production:
 		Produces: Vehicle
 	PrimaryBuilding:
@@ -360,11 +361,11 @@ gaweap:
 		Sequence: idle-flag
 	WithIdleOverlay@fan:
 		Sequence: overlay-fan
-	WithIdleOverlay@ramp:
-		Sequence: idle-ramp
-	WithProductionDoorOverlay@top:
+	WithIdleOverlay@bib:
+		Sequence: bib
+	WithExitOverlay@top-vehicles:
 		Sequence: build-top
-	WithProductionDoorOverlay@ramp:
+	WithExitOverlay@ramp:
 		Sequence: build-ramp
 	Power:
 		Amount: -25
