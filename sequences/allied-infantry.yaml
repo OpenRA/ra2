@@ -400,6 +400,8 @@ tany:
 		Length: 6
 		Facings: 8
 		Tick: 80
+	paradrop:
+		Start: 602
 	icon: tanyicon
 
 jumpjet:
