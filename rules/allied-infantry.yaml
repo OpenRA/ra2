@@ -232,6 +232,15 @@ ghost:
 		HP: 125
 	Mobile:
 		Speed: 71
+		TerrainSpeeds:
+			Clear: 100
+			Rough: 100
+			Rail: 90
+			Road: 100
+			DirtRoad: 100
+			Ore: 90
+			Gems: 80
+			Water: 70
 	RevealsShroud:
 		Range: 8c0
 	C4Demolition:
@@ -261,6 +270,8 @@ ghost:
 		Prerequisites: barracks.infiltrated
 	QuantizeFacingsFromSequence:
 		Sequence: stand
+	WithSwimSuit:
+	-TakeCover: # TODO: allow multiple sequence modifiers
 
 tany:
 	Inherits: ^Infantry
@@ -281,6 +292,15 @@ tany:
 		HP: 125
 	Mobile:
 		Speed: 71
+		TerrainSpeeds:
+			Clear: 100
+			Rough: 100
+			Rail: 90
+			Road: 100
+			DirtRoad: 100
+			Ore: 90
+			Gems: 80
+			Water: 70
 	RevealsShroud:
 		Range: 6c0
 	C4Demolition:
@@ -309,6 +329,8 @@ tany:
 		Prerequisites: barracks.infiltrated
 	QuantizeFacingsFromSequence:
 		Sequence: stand
+	-TakeCover: # TODO: allow multiple sequence modifiers
+	WithSwimSuit:
 
 jumpjet:
 	Inherits: ^Infantry

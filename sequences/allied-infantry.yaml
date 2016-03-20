@@ -299,10 +299,20 @@ spy:
 seal: # TODO: seala on SNOW
 	stand:
 		Facings: 8
+	swim-stand:
+		Start: 340
+		Facings: 8
+		Length: 6
+		Tick: 160
 	run:
 		Start: 8
 		Length: 6
 		Facings: 8
+		Tick: 120
+	swim-run:
+		Start: 388
+		Facings: 8
+		Length: 6
 		Tick: 120
 	idle1:
 		Start: 56
@@ -320,9 +330,15 @@ seal: # TODO: seala on SNOW
 	die1:
 		Start: 134
 		Length: 14
+	swim-die1:
+		Start: 512
+		Length: 22
 	die2:
 		Start: 149
 		Length: 14
+	swim-die2:
+		Start: 534
+		Length: 20
 	die4: nukedie
 		Length: *
 		Tick: 50
@@ -344,6 +360,11 @@ seal: # TODO: seala on SNOW
 		Tick: 80
 	prone-shoot:
 		Start: 212
+		Length: 6
+		Facings: 8
+		Tick: 80
+	swim-shoot:
+		Start: 436
 		Length: 6
 		Facings: 8
 		Tick: 80
@@ -357,6 +378,11 @@ tany:
 		Length: 6
 		Facings: 8
 		Tick: 120
+	swim-run:
+		Start: 506
+		Facings: 8
+		Length: 6
+		Tick: 120
 	idle1:
 		Start: 56
 		Length: 15
@@ -365,6 +391,11 @@ tany:
 		Start: 71
 		Length: 15
 		Tick: 100
+	swim-stand:
+		Start: 362
+		Facings: 8
+		Length: 6
+		Tick: 160
 	prone-run:
 		Start: 86
 		Length: 6
@@ -373,9 +404,15 @@ tany:
 	die1:
 		Start: 134
 		Length: 14
+	swim-die1:
+		Start: 323
+		Length: 28
 	die2:
 		Start: 149
 		Length: 14
+	swim-die2:
+		Start: 342
+		Length: 22
 	die4: nukedie
 		Length: *
 		Tick: 50
@@ -397,6 +434,11 @@ tany:
 		Tick: 80
 	prone-shoot:
 		Start: 212
+		Length: 6
+		Facings: 8
+		Tick: 80
+	swim-shoot:
+		Start: 554
 		Length: 6
 		Facings: 8
 		Tick: 80
