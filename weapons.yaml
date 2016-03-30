@@ -14,15 +14,9 @@ UnitExplode:
 		ImpactSounds: expnew09.wav
 
 UnitExplodeSmall:
+	Inherits: UnitExplode
 	Warhead@1Dam: SpreadDamage
-		Spread: 426
 		Damage: 40
-		Versus:
-			None: 90
-			Wood: 75
-			Light: 60
-			Heavy: 25
-		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
 	Warhead@2Eff: CreateEffect
 		Explosions: medium_brnl
 		ImpactSounds: expnew13.wav
@@ -221,28 +215,17 @@ CoilBolt:
 			Steel: 50
 			Concrete: 50
 		DamageTypes: ElectroDeath
+	Warhead@2Eff: CreateEffect
+		Explosions: tesla_impact
 
 OPCoilBolt:
-	ReloadDelay: 3
+	Inherits: CoilBolt
 	Range: 8c512
 	Report: btesat2a.wav
 	Projectile: TeslaZap
-		Speed: 100c0
 		Image: litningupg
 	Warhead@1Dam: SpreadDamage
-		Spread: 42
 		Damage: 300
-		Versus:
-			None: 100
-			Flak: 100
-			Plate: 100
-			Light: 85
-			Medium: 100
-			Heavy: 100
-			Wood: 50
-			Steel: 50
-			Concrete: 50
-		DamageTypes: ElectroDeath
 
 20mmrapid:
 	ReloadDelay: 20
@@ -265,11 +248,7 @@ OPCoilBolt:
 			Concrete: 10
 		DamageTypes: Prone70Percent, TriggerProne, BulletDeath
 	Warhead@2Eff: CreateEffect
-		Explosions: piff
-		InvalidImpactTypes: Water
-	Warhead@3EffWater: CreateEffect
-		Explosions: piff
-		ValidImpactTypes: Water
+		Explosions: piffpiff
 
 20mmrapidE:
 	ReloadDelay: 50
@@ -340,19 +319,11 @@ OPCoilBolt:
 		SmudgeType: SmallCrater, SmallScorch
 
 105mmE:
+	Inherits: 105mm
 	ReloadDelay: 75
-	Range: 5c0
-	Report: vgriatta.wav, vgriattb.wav, vgriattc.wav
 	Burst: 2
 	BurstDelay: 5
-	Projectile: Bullet
-		Speed: 40c0
-		Image: 120mm
-		Palette: ra
-		Shadow: true
-		Angle: 62
 	Warhead@1Dam: SpreadDamage
-		Spread: 128
 		Damage: 55
 		Versus:
 			None: 100
@@ -364,17 +335,12 @@ OPCoilBolt:
 			Wood: 65
 			Steel: 45
 			Concrete: 60
-		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
 	Warhead@2Eff: CreateEffect
 		Explosions: elite_explosion
 		ImpactSounds: gexpapoa.wav
-		InvalidImpactTypes: Water
 	Warhead@3EffWater: CreateEffect
 		Explosions: large_watersplash
 		ImpactSounds: gexpwala.wav
-		ValidImpactTypes: Water
-	Warhead@4Smu: LeaveSmudge
-		SmudgeType: SmallCrater, SmallScorch
 
 TerrorBomb:
 	ReloadDelay: 20
@@ -467,19 +433,11 @@ GrandCannonWeapon:
 		SmudgeType: SmallCrater, SmallScorch
 
 120mmE:
+	Inherits: 120mm
 	ReloadDelay: 80
-	Range: 5c768
-	Report: vrhiatta.wav, vrhiattb.wav, vrhiattc.wav, vrhiattd.wav
 	Burst: 2
 	BurstDelay: 5
-	Projectile: Bullet
-		Speed: 40c0
-		Image: 120mm
-		Palette: ra
-		Shadow: true
-		Angle: 62
 	Warhead@1Dam: SpreadDamage
-		Spread: 128
 		Damage: 85
 		Versus:
 			None: 100
@@ -495,13 +453,9 @@ GrandCannonWeapon:
 	Warhead@2Eff: CreateEffect
 		Explosions: elite_explosion
 		ImpactSounds: gexpapoa.wav
-		InvalidImpactTypes: Water
 	Warhead@3EffWater: CreateEffect
 		Explosions: large_watersplash
 		ImpactSounds: gexpwala.wav
-		ValidImpactTypes: Water
-	Warhead@4Smu: LeaveSmudge
-		SmudgeType: SmallCrater, SmallScorch
 
 120mmx:
 	ReloadDelay: 80
@@ -540,39 +494,19 @@ GrandCannonWeapon:
 		SmudgeType: SmallCrater, SmallScorch
 
 120mmxE:
-	ReloadDelay: 80
-	Range: 5c768
-	Report: vapoat1a.wav
+	Inherits: 120mmx
 	Burst: 4
 	BurstDelay: 5
-	Projectile: Bullet
-		Speed: 40c0
-		Image: 120mm
-		Palette: ra
-		Shadow: true
-		Angle: 62
 	Warhead@1Dam: SpreadDamage
-		Spread: 128
-		Damage: 100
 		Versus:
 			None: 100
 			Flak: 100
 			Plate: 100
-			Light: 75
-			Medium: 100
-			Heavy: 100
-			Wood: 100
-			Steel: 100
-			Concrete: 70
-		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
 	Warhead@2Eff: CreateEffect
 		Explosions: elite_explosion
-		ImpactSounds: gexpapoa.wav
-		InvalidImpactTypes: Water
 	Warhead@3EffWater: CreateEffect
 		Explosions: large_watersplash
 		ImpactSounds: gexpwala.wav
-		ValidImpactTypes: Water
 	Warhead@4Smu: LeaveSmudge
 		SmudgeType: MediumCrater, MediumScorch
 
@@ -638,7 +572,6 @@ Maverick:
 	Warhead@1Dam: SpreadDamage
 		Spread: 58
 		Damage: 200
-		Falloff: 1000, 368, 135, 50, 18, 7, 0
 		Versus:
 			Concrete: 75
 		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
@@ -652,37 +585,8 @@ Maverick:
 		ValidImpactTypes: Water
 
 Maverick2:
-	ReloadDelay: 10
-	Range: 6c0
+	Inherits: Maverick
 	Report: vblaatta.wav
-	ValidTargets: Ground, Water
-	Projectile: Missile
-		Speed: 373
-		Arm: 2
-		Blockable: false
-		Shadow: true
-		Inaccuracy: 128
-		Image: DRAGON
-		Palette: ra
-		HorizontalRateOfTurn: 8
-		RangeLimit: 35
-		ContrailColor: D8D8FF
-		ContrailLength: 16
-	Warhead@1Dam: SpreadDamage
-		Spread: 58
-		Damage: 200
-		Falloff: 1000, 368, 135, 50, 18, 7, 0
-		Versus:
-			Concrete: 75
-		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
-	Warhead@2Eff: CreateEffect
-		Explosions: verylarge_clsn
-		ImpactSounds: gexp14a.wav
-		InvalidImpactTypes: Water
-	Warhead@3EffWater: CreateEffect
-		Explosions: huge_watersplash
-		ImpactSounds: gexpwala.wav
-		ValidImpactTypes: Water
 
 BlimpBomb:
 	ReloadDelay: 45
@@ -766,34 +670,17 @@ FlakTrackAAGun:
 			Wood: 0
 			Steel: 0
 			Concrete: 0
-		DamageTypes: Prone50Percent, TriggerProne, BulletDeath
+		DamageTypes: BulletDeath
 	Warhead@2Eff: CreateEffect
 		Explosions: flak_puff_AA
 
 FlakWeapon:
+	Inherits: FlakTrackAAGun
 	ReloadDelay: 20
 	Range: 12c0
 	Report: bflaatta.wav, bflaattb.wav, bflaattc.wav, bflaattd.wav
-	ValidTargets: Air
-	Projectile: Bullet
-		Speed: 100c0
 	Warhead@1Dam: SpreadDamage
-		Spread: 120
 		Damage: 40
-		ValidTargets: Air
-		Versus:
-			None: 150
-			Flak: 80
-			Plate: 50
-			Light: 100
-			Medium: 20
-			Heavy: 20
-			Wood: 0
-			Steel: 0
-			Concrete: 0
-		DamageTypes: BulletDeath
-	Warhead@2Eff: CreateEffect
-		Explosions: flak_puff_AA
 
 sabot:
 	ValidTargets: Ground, Water
@@ -958,40 +845,8 @@ SquidPunch:
 		SmudgeType: SmallCrater, SmallScorch
 
 155mmE:
-	ReloadDelay: 110
-	Range: 8c0
+	Inherits: 155mm
 	Burst: 2
-	Report: vdesatta.wav, vrdesattb.wav
-	Projectile: Bullet
-		Speed: 40c0
-		Image: 120mm
-		Palette: ra
-		Shadow: true
-		Angle: 62
-	Warhead@1Dam: SpreadDamage
-		Spread: 128
-		Damage: 60
-		Versus:
-			None: 100
-			Flak: 80
-			Plate: 60
-			Light: 100
-			Medium: 60
-			Heavy: 60
-			Wood: 100
-			Steel: 80
-			Concrete: 60
-		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
-	Warhead@2Eff: CreateEffect
-		Explosions: medium_clsn
-		ImpactSounds: gexp14a.wav
-		InvalidImpactTypes: Water
-	Warhead@3EffWater: CreateEffect
-		Explosions: small_watersplash
-		ImpactSounds: gexpwasa.wav
-		ValidImpactTypes: Water
-	Warhead@4Smu: LeaveSmudge
-		SmudgeType: SmallCrater, SmallScorch
 
 Medusa:
 	ReloadDelay: 100
@@ -1070,65 +925,25 @@ HoverMissile:
 	Warhead@2Eff: CreateEffect
 		Explosions: small_grey_explosion
 		ImpactSounds: gexpifva.wav
-		InvalidImpactTypes: Water, Air
+		InvalidImpactTypes: Water
 	Warhead@3EffWater: CreateEffect
 		Explosions: small_watersplash
 		ImpactSounds: gexpwasa.wav
 		ValidImpactTypes: Water
-	Warhead@4EffAir: CreateEffect
-		Explosions: small_grey_explosion
-		ImpactSounds: gexpifva.wav
-		ValidImpactTypes: Air
 	Warhead@5: LeaveSmudge
 		SmudgeType: SmallCrater
 
 HoverMissileE:
-	ReloadDelay: 50
+	Inherits: HoverMissile
 	Burst: 4
-	Range: 6c0
 	Report: vifvatta.wav
 	ValidTargets: Ground, Air
-	Projectile: Missile
-		Speed: 213
-		Arm: 2
-		Blockable: false
-		Shadow: true
-		Inaccuracy: 128
-		Image: DRAGON
-		Palette: ra
-		HorizontalRateOfTurn: 8
-		RangeLimit: 35
-		ContrailColor: D8D8FF
-		ContrailLength: 16
 	Warhead@1Dam: SpreadDamage
-		Spread: 128
 		Damage: 80
-		ValidTargets: Ground, Air
-		Versus:
-			None: 100
-			Flak: 90
-			Plate: 80
-			Light: 70
-			Medium: 35
-			Heavy: 35
-			Wood: 75
-			Steel: 40
-			Concrete: 20
-		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
 	Warhead@2Eff: CreateEffect
 		Explosions: medium_grey_explosion
 		ImpactSounds: gexp15a.wav
-		InvalidImpactTypes: Water, Air
-	Warhead@3EffWater: CreateEffect
-		Explosions: small_watersplash
-		ImpactSounds: gexpwasa.wav
-		ValidImpactTypes: Water
-	Warhead@4EffAir: CreateEffect
-		Explosions: medium_grey_explosion
-		ImpactSounds: gexp15a.wav
-		ValidImpactTypes: Air
-	Warhead@5: LeaveSmudge
-		SmudgeType: SmallCrater
+		InvalidImpactTypes: Water
 
 RepairBullet:
 	ReloadDelay: 80
@@ -1141,150 +956,6 @@ RepairBullet:
 		Spread: 213
 		Damage: -50
 		ValidTargets: Repair
-
-CRM60:
-	ReloadDelay: 15
-	Range: 6c0
-	Report: vifvat2a.wav, vifvat2b.wav, vifvat2c.wav
-	Projectile: Bullet
-		Speed: 100c0
-	Warhead@1Dam: SpreadDamage
-		Spread: 64
-		Damage: 20
-		Versus:
-			None: 100
-			Flak: 80
-			Plate: 70
-			Light: 50
-			Medium: 25
-			Heavy: 25
-			Wood: 75
-			Steel: 50
-			Concrete: 25
-		DamageTypes: Prone70Percent, TriggerProne, BulletDeath
-	Warhead@2Eff: CreateEffect
-		Explosions: piff
-		InvalidImpactTypes: Water
-	Warhead@3EffWater: CreateEffect
-		Explosions: piff
-		ValidImpactTypes: Water
-
-CRMP5:
-	ReloadDelay: 10
-	Range: 6c0
-	Report: itanatta.wav, itanattb.wav
-	Projectile: Bullet
-		Speed: 100c0
-	Warhead@1Dam: SpreadDamage
-		Damage: 125
-		Versus:
-			None: 200
-			Flak: 100
-			Plate: 100
-			Light: 0
-			Medium: 0
-			Heavy: 0
-			Wood: 0
-			Steel: 0
-			Concrete: 0
-		DamageTypes: BulletDeath
-	Warhead@2Eff: CreateEffect
-		Explosions: piff
-		InvalidImpactTypes: Water
-	Warhead@3EffWater: CreateEffect
-		Explosions: piff
-		ValidImpactTypes: Water
-
-CRFlakGuyGun:
-	ReloadDelay: 15
-	Range: 7c0
-	Report: vflaat1a.wav, vflaat1b.wav
-	Projectile: Bullet
-		Speed: 50c0
-	Warhead@1Dam: SpreadDamage
-		Spread: 64
-		Damage: 30
-		Versus:
-			None: 150
-			Flak: 100
-			Plate: 50
-			Light: 60
-			Medium: 10
-			Heavy: 10
-			Wood: 30
-			Steel: 20
-			Concrete: 10
-		DamageTypes: Prone100Percent, TriggerProne, BulletDeath
-	Warhead@2Eff: CreateEffect
-		Explosions: flak_puff
-
-AWPE:
-	ValidTargets: Infantry
-	ReloadDelay: 60
-	Range: 14c0
-	Report: isniatta.wav
-	Projectile: Bullet
-		Speed: 6c682
-	Warhead@1Dam: SpreadDamage
-		Spread: 42
-		Damage: 125
-		Versus:
-			None: 200
-			Flak: 100
-			Plate: 100
-			Light: 0
-			Medium: 0
-			Heavy: 0
-			Wood: 0
-			Steel: 0
-			Concrete: 0
-		DamageTypes: ExplosionDeath
-
-CRElectricBolt:
-	Range: 6c0
-	ReloadDelay: 45
-	Report: itesatta.wav
-	Projectile: TeslaZap
-		Speed: 100c0
-	Warhead@1Dam: SpreadDamage
-		Spread: 120
-		Damage: 60
-		Versus:
-			None: 100
-			Flak: 100
-			Plate: 100
-			Light: 85
-			Medium: 100
-			Heavy: 100
-			Wood: 50
-			Steel: 50
-			Concrete: 50
-		DamageTypes: ElectroDeath
-
-CRRadBeamWeapon:
-	ValidTargets: Ground
-	Damage: 175
-	Range: 7c0
-	ReloadDelay: 30
-	Report: idesat1a.wav
-	Projectile: LaserZap
-		BeamWidth: 2
-		BeamDuration: 7
-		Color: B900FF00
-	Warhead@1Dam: SpreadDamage
-		Spread: 42
-		Damage: 175
-		Versus:
-			None: 100
-			Flak: 100
-			Plate: 100
-			Light: 20
-			Medium: 15
-			Heavy: 10
-			Wood: 0
-			Steel: 0
-			Concrete: 0
-		DamageTypes: RadiationDeath
 
 CRTerrorBomb:
 	ReloadDelay: 20
@@ -1346,43 +1017,14 @@ Comet:
 		SmudgeType: SmallCrater, SmallScorch
 
 SuperComet:
-	ValidTargets: Ground, Water
-	ReloadDelay: 100
-	Range: 10c0
-	Report: vpriatta.wav
-	Projectile: LaserZap
-		BeamWidth: 5
-		BeamDuration: 15
-		UsePlayerColor: true
+	Inherits: Comet
 	Warhead@1Dam: SpreadDamage
-		Spread: 800
 		Damage: 150
-		Versus:
-			None: 100
-			Flak: 100
-			Plate: 100
-			Light: 75
-			Medium: 50
-			Heavy: 50
-			Wood: 200
-			Steel: 200
-			Concrete: 200
-		DamageTypes: Prone50Percent, TriggerProne, ElectroDeath
-	Warhead@2Eff: CreateEffect
-		Explosions: medium_clsn
-		ImpactSounds: gexp14a.wav
-		InvalidImpactTypes: Water
-	Warhead@3EffWater: CreateEffect
-		Explosions: small_watersplash
-		ImpactSounds: gexpwasa.wav
-		ValidImpactTypes: Water
-	Warhead@4Smu: LeaveSmudge
-		SmudgeType: SmallCrater, SmallScorch
 
 vulcan:
 	ReloadDelay: 26
 	Range: 5c512
-	Report: bsenatta.wav, bsenattb.wav bsenattc.wav bsenattd.wav
+	Report: bsenatta.wav, bsenattb.wav, bsenattc.wav, bsenattd.wav
 	Projectile: Bullet
 		Speed: 100c0
 	Warhead@1Dam: SpreadDamage
@@ -1400,38 +1042,11 @@ vulcan:
 			Concrete: 25
 		DamageTypes: Prone70Percent, TriggerProne, BulletDeath
 	Warhead@2Eff: CreateEffect
-		Explosions: piff
-		InvalidImpactTypes: Water
-	Warhead@3EffWater: CreateEffect
-		Explosions: piff
-		ValidImpactTypes: Water
+		Explosions: piffpiff
 
 vulcan2:
-	ReloadDelay: 26
-	Range: 5c512
+	Inherits: vulcan
 	Report: bpilatta.wav, bpilattb.wav, bpilattc.wav, bpilattd.wav, bpilattc.wav
-	Projectile: Bullet
-		Speed: 100c0
-	Warhead@1Dam: SpreadDamage
-		Spread: 64
-		Damage: 50
-		Versus:
-			None: 100
-			Flak: 80
-			Plate: 70
-			Light: 50
-			Medium: 25
-			Heavy: 25
-			Wood: 75
-			Steel: 50
-			Concrete: 25
-		DamageTypes: Prone70Percent, TriggerProne, BulletDeath
-	Warhead@2Eff: CreateEffect
-		Explosions: piff
-		InvalidImpactTypes: Water
-	Warhead@3EffWater: CreateEffect
-		Explosions: piff
-		ValidImpactTypes: Water
 
 PrismShot:
 	ReloadDelay: 1
@@ -1484,32 +1099,11 @@ MirageGun:
 		SmudgeType: SmallScorch
 
 MirageGunE:
+	Inherits: MirageGun
 	ReloadDelay: 80
 	Range: 9c0
-	Report: vmiratta.wav
-	Projectile: Bullet
-		Speed: 100c0
-		Image: 120mm
-		Palette: ra
-		Angle: 62
 	Warhead@1Dam: SpreadDamage
-		Spread: 64
 		Damage: 150
-		Versus:
-			None: 100
-			Flak: 100
-			Plate: 80
-			Light: 100
-			Medium: 100
-			Heavy: 100
-			Wood: 30
-			Steel: 20
-			Concrete: 20
-		DamageTypes: FlameDeath
-	Warhead@2Eff: CreateEffect
-		Explosions: iron_fx
-	Warhead@4Smu: LeaveSmudge
-		SmudgeType: SmallScorch
 
 TankBolt:
 	Range: 4c0
@@ -1537,29 +1131,12 @@ TankBolt:
 		Explosions: tesla_impact
 
 TankBoltE:
+	Inherits: TankBolt
 	Range: 6c0
 	ReloadDelay: 60
-	Burst: 2
 	BurstDelay: 60
-	Report: vtesatta.wav, vtesattb.wav
-	Projectile: TeslaZap
-		Speed: 100c0
 	Warhead@1Dam: SpreadDamage
-		Spread: 120
 		Damage: 150
-		Versus:
-			None: 100
-			Flak: 100
-			Plate: 100
-			Light: 85
-			Medium: 100
-			Heavy: 100
-			Wood: 50
-			Steel: 50
-			Concrete: 50
-		DamageTypes: ElectroDeath
-	Warhead@2Eff: CreateEffect
-		Explosions: tesla_impact
 
 NukePayload:
 	ValidTargets: Ground, Water, Air
@@ -1600,28 +1177,12 @@ AlligatorBite:
 		DamageTypes: BulletDeath
 
 BearBite:
-	ReloadDelay: 30
-	Range: 1c512
+	Inherits: AlligatorBite
 	Report: gbeaatta.wav, gbeaattb.wav
-	ValidTargets: Ground
-	Projectile: Bullet
-		Speed: 100
-	Warhead@1Dam: SpreadDamage
-		Spread: 213
-		Damage: 30
-		DamageTypes: BulletDeath
 
 ChimpBite:
-	ReloadDelay: 30
-	Range: 1c512
+	Inherits: AlligatorBite
 	Report: gchiatta.wav, gchiattb.wav, gchiattc.wav
-	ValidTargets: Ground
-	Projectile: Bullet
-		Speed: 100
-	Warhead@1Dam: SpreadDamage
-		Spread: 213
-		Damage: 30
-		DamageTypes: BulletDeath
 
 atomic:
 	Inherits: NukePayload
