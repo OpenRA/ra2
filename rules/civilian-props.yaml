@@ -471,3 +471,24 @@ cakrmw:
 		Description: Walls of the Kremlin.
 	Armor:
 		Type: Concrete
+
+gagate_a:
+	Inherits: ^Building
+	Valued:
+		Cost: 250
+	Health:
+		HP: 100
+	Armor:
+		Type: Wood
+	-Building:
+	-Capturable:
+	-GivesBuildableArea:
+	-MustBeDestroyed:
+	-WithSpriteBody:
+	WithGateSpriteBody:
+	Tooltip:
+		Name: Guard Border Crossing
+	Gate:
+		Dimensions: 3,1
+		Footprint: xxx
+		TerrainTypes: Clear, Rough, Road, DirtRoad
