@@ -36,6 +36,22 @@ dog:
 		Facings: 64
 	icon: dogicon
 
+sqd:
+	stand:
+		Start: 160
+		Facings: -8
+	run:
+		Start: 0
+		Length: 20
+		Facings: -8
+		Tick: 80
+	punch:
+		Start: 168
+		Length: 14
+		Facings: -8
+		Tick: 120
+	icon: sqdicon
+
 e2:
 	Defaults: cons
 	stand:
