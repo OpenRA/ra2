@@ -835,7 +835,7 @@ SubTorpedo:
 	ReloadDelay: 75
 	Range: 7c0
 	Report: vsubatta.wav
-	ValidTargets: Water, Underwater, Bridge
+	ValidTargets: Water, Underwater
 	Burst: 1
 	BurstDelay: 20
 	Projectile: Missile
@@ -874,6 +874,7 @@ SonicZap:
 	ReloadDelay: 180
 	Range: 6c0
 	Report: vdolatta.wav
+	ValidTargets: Water, Underwater
 	Burst: 2
 	Projectile: AreaBeam
 		Speed: 1c0
@@ -895,6 +896,7 @@ SonicZap:
 			Heavy: 80
 			Concrete: 60
 		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
+		ValidTargets: Water, Underwater
 	Warhead@2Dam: SpreadDamage
 		Range: 0, 32
 		Falloff: 50, 50
@@ -905,6 +907,20 @@ SonicZap:
 			Heavy: 80
 			Concrete: 60
 		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
+		ValidTargets: Water, Underwater
+
+SquidPunch:
+	ReloadDelay: 32
+	Range: 1c856
+	Report: vsquat1a.wav
+	ValidTargets: Water, Underwater
+	Projectile: Bullet
+		Speed: 100
+	Warhead@1Dam: SpreadDamage
+		Spread: 213
+		Damage: 50
+		DamageTypes: BulletDeath
+		ValidTargets: Water, Underwater
 
 155mm:
 	ReloadDelay: 110

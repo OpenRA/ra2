@@ -135,3 +135,78 @@ hyd:
 		EmptyWeapon: UnitExplode
 	WithVoxelBody:
 	RenderSprites:
+
+sqd:
+	Inherits@1: ^ExistsInWorld
+	Inherits@2: ^SpriteActor
+	Inherits@3: ^GainsExperience
+	Buildable:
+		Queue: Ship
+		BuildPaletteOrder: 30
+		Prerequisites: natech, ~nayard
+	Valued:
+		Cost: 500
+	Tooltip:
+		Name: Giant Squid
+		Description: Ocean creature\npunches enemies in close combat.\n  Strong vs Ships
+	Armor:
+		Type: Light
+	Health:
+		HP: 200
+	SelfHealing:
+	Mobile:
+		ROT: 6
+		Speed: 90
+		TerrainSpeeds:
+			Water: 100
+		Voice: Move
+	SelectionDecorations:
+		Palette: pips
+	Selectable:
+	Voiced:
+		VoiceSet: GiantSquidVoice
+	Armament:
+		Weapon: SquidPunch
+	AttackFrontal:
+		Voice: Attack
+	AutoTarget:
+	RevealsShroud:
+		Range: 5c0
+	Cloak:
+		CloakTypes: Underwater
+		InitialDelay: 50
+		CloakDelay: 75
+		CloakSound: vnavupa.wav
+		UncloakSound: vnavupa.wav
+		WhileCloakedUpgrades: underwater
+		UncloakOn: Damage
+		IsPlayerPalette: true
+	Targetable:
+		TargetTypes: Ground, Water
+		UpgradeTypes: underwater
+		UpgradeMaxEnabledLevel: 0
+	Targetable@underwater:
+		TargetTypes: Underwater
+		UpgradeTypes: underwater
+		UpgradeMinEnabledLevel: 1
+		IsPlayerPalette: true
+	DetectCloaked:
+		CloakTypes: Underwater
+		Range: 5c0
+	HiddenUnderFog:
+	ActorLostNotification:
+	Guard:
+		Voice: Attack
+	Guardable:
+	DeathSounds:
+	QuantizeFacingsFromSequence:
+		Sequence: stand
+	Chronoshiftable:
+		ExplodeInstead: true
+	RenderDetectionCircle:
+	WithInfantryBody:
+		StandSequences: stand
+		AttackSequence: punch
+	Repairable:
+		Voice: Attack
+		RepairBuildings: gayard, nayard
