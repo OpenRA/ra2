@@ -186,6 +186,8 @@ e1:
 		Start: 315
 		Length: 6
 		Facings: 8
+	paradrop:
+		Start: 363
 	icon: giicon
 
 snipe:
