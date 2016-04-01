@@ -266,10 +266,14 @@
 	Selectable:
 	Targetable:
 		TargetTypes: Ground, Infantry, DetonateAttack, Disguise
+		UpgradeTypes: parachute
+		UpgradeMaxEnabledLevel: 0
 	WithInfantryBody:
 		IdleSequences: idle1,idle2
 		StandSequences: stand
 		AttackSequence: shoot
+		UpgradeTypes: parachute
+		UpgradeMaxEnabledLevel: 0
 	WithDeathAnimation@normal:
 		DeathTypes:
 			ExplosionDeath: 1
@@ -326,6 +330,26 @@
 		Voice: Move
 	Chronoshiftable:
 		ExplodeInstead: true
+
+^Parachutable:
+	WithSpriteBody@Parachute:
+		Sequence: paradrop
+		UpgradeTypes: parachute
+		UpgradeMinEnabledLevel: 1
+	Parachutable:
+		FallRate: 26
+		KilledOnImpassableTerrain: true
+		GroundCorpseSequence:
+		GroundCorpsePalette:
+		WaterCorpseSequence:
+		WaterCorpsePalette:
+	WithParachute:
+		UpgradeTypes: parachute
+		UpgradeMinEnabledLevel: 1
+		Image: parach
+		OpeningSequence: open
+		Sequence: idle
+		ClosingSequence: close
 
 ^CivilianInfantry:
 	Inherits: ^Infantry
