@@ -1,0 +1,914 @@
+civ1:
+	stand:
+		Facings: 8
+	run:
+		Start: 8
+		Length: 6
+		Facings: 8
+	prone-stand:
+		Start: 182
+		Facings: 8
+	prone-run:
+		Start: 182
+		Length: 6
+		Facings: 8
+	prone-shoot:
+		Facings: 8
+	shoot:
+		Start: 86
+		Length: 6
+		Facings: 8
+	idle1:
+		Start: 56
+		Length: 15
+	die1:
+		Start: 71
+		Length: 15
+	die2:
+		Length: 8
+	die4: nukedie
+		Length: *
+		Tick: 50
+	die5: flameguy
+		Start: 48
+		Length: 59
+		Tick: 80
+# TODO: This is just the death sequence; normally flameguy would run a bit around before dying
+	die6: electro
+		Length: *
+		Tick: 80
+	die-crushed: death_c
+		Length: 4
+	cheer:
+		Start: 230
+		Length: 15
+	panic-stand:
+		Start: 134
+		Length: 6
+		Facings: 8
+	panic-run:
+		Start: 134
+		Length: 6
+		Facings: 8
+
+civ2:
+	stand:
+		Facings: 8
+	run:
+		Start: 8
+		Length: 6
+		Facings: 8
+	prone-stand:
+		Start: 182
+		Facings: 8
+	prone-run:
+		Start: 182
+		Length: 6
+		Facings: 8
+	prone-shoot:
+		Facings: 8
+	shoot:
+		Start: 86
+		Length: 6
+		Facings: 8
+	idle1:
+		Start: 56
+		Length: 15
+	die1:
+		Start: 71
+		Length: 15
+	die2:
+		Length: 8
+	die4: nukedie
+		Length: *
+		Tick: 50
+	die5: flameguy
+		Start: 48
+		Length: 59
+		Tick: 80
+# TODO: This is just the death sequence; normally flameguy would run a bit around before dying
+	die6: electro
+		Length: *
+		Tick: 80
+	die-crushed: death_c
+		Length: 4
+	cheer:
+		Start: 230
+		Length: 15
+	panic-stand:
+		Start: 134
+		Length: 6
+		Facings: 8
+	panic-run:
+		Start: 134
+		Length: 6
+		Facings: 8
+
+civ3:
+	stand:
+		Facings: 8
+	run:
+		Start: 8
+		Length: 6
+		Facings: 8
+	prone-stand:
+		Start: 182
+		Facings: 8
+	prone-run:
+		Start: 180
+		Length: 6
+		Facings: 8
+	prone-shoot:
+		Facings: 8
+	shoot:
+		Start: 84
+		Length: 6
+		Facings: 8
+	idle1:
+		Start: 56
+		Length: 15
+	die1:
+		Start: 71
+		Length: 13
+	die2:
+		Length: 8
+	die4: nukedie
+		Length: *
+		Tick: 50
+	die5: flameguy
+		Start: 48
+		Length: 59
+		Tick: 80
+# TODO: This is just the death sequence; normally flameguy would run a bit around before dying
+	die6: electro
+		Length: *
+		Tick: 80
+	die-crushed: death_c
+		Length: 4
+	cheer:
+		Start: 228
+		Length: 15
+	panic-stand:
+		Start: 132
+		Length: 6
+		Facings: 8
+	panic-run:
+		Start: 132
+		Length: 6
+		Facings: 8
+
+vladimir:
+	stand:
+		Facings: 8
+	run:
+		Start: 8
+		Length: 6
+		Facings: 8
+	prone-stand:
+		Start: 86
+		Facings: 8
+	prone-run:
+		Start: 86
+		Length: 6
+		Facings: 8
+	prone-shoot:
+		Start: 212
+		Length: 6
+		Facings: 8
+	shoot:
+		Start: 164
+		Length: 6
+		Facings: 8
+	idle1:
+		Start: 56
+		Length: 15
+	idle2:
+		Start: 71
+		Length: 14
+	die1:
+		Start: 134
+		Length: 15
+		Facings: 8
+	die2:
+		Start: 149
+		Length: 15
+		Facings: 8
+	die4: nukedie
+		Length: *
+		Tick: 50
+	die5: flameguy
+		Start: 48
+		Length: 59
+		Tick: 80
+# TODO: This is just the death sequence; normally flameguy would run a bit around before dying
+	die6: electro
+		Length: *
+		Tick: 80
+	die-crushed: death_c
+		Length: 4
+	cheer:
+		Start: 56
+		Length: 15
+	panic-stand:
+		Start: 8
+		Length: 6
+		Facings: 8
+	panic-run:
+		Start: 8
+		Length: 6
+		Facings: 8
+
+pentgen:
+	stand:
+		Facings: 8
+	run:
+		Start: 8
+		Length: 6
+		Facings: 8
+	prone-stand:
+		Start: 134
+		Facings: 8
+	prone-run:
+		Start: 134
+		Length: 6
+		Facings: 8
+	prone-shoot:
+		Start: 214
+		Length: 6
+		Facings: 8
+	shoot:
+		Start: 86
+		Length: 6
+		Facings: 8
+	idle1:
+		Start: 56
+		Length: 15
+	die1:
+		Start: 71
+		Length: 15
+	die2:
+		Length: 8
+	die4: nukedie
+		Length: *
+		Tick: 50
+	die5: flameguy
+		Start: 48
+		Length: 59
+		Tick: 80
+# TODO: This is just the death sequence; normally flameguy would run a bit around before dying
+	die6: electro
+		Length: *
+		Tick: 80
+	die-crushed: death_c
+		Length: 4
+	cheer:
+		Start: 56
+		Length: 15
+	panic-stand:
+		Start: 8
+		Length: 6
+		Facings: 8
+	panic-run:
+		Start: 8
+		Length: 6
+		Facings: 8
+
+pres:
+	stand:
+		Facings: 8
+	run:
+		Start: 8
+		Length: 6
+		Facings: 8
+	prone-stand:
+		Start: 134
+		Facings: 8
+	prone-run:
+		Start: 134
+		Length: 6
+		Facings: 8
+	prone-shoot:
+		Facings: 8
+	shoot:
+		Facings: 8
+	idle1:
+		Start: 56
+		Length: 15
+	die1:
+		Start: 71
+		Length: 15
+	die2:
+		Length: 8
+	die4: nukedie
+		Length: *
+		Tick: 50
+	die5: flameguy
+		Start: 48
+		Length: 59
+		Tick: 80
+# TODO: This is just the death sequence; normally flameguy would run a bit around before dying
+	die6: electro
+		Length: *
+		Tick: 80
+	die-crushed: death_c
+		Length: 4
+	cheer:
+		Start: 56
+		Length: 15
+	panic-stand:
+		Start: 86
+		Length: 6
+		Facings: 8
+	panic-run:
+		Start: 86
+		Length: 6
+		Facings: 8
+
+ssrv:
+	stand:
+		Facings: 8
+	run:
+		Start: 8
+		Length: 6
+		Facings: 8
+	prone-stand:
+		Start: 182
+		Facings: 8
+	prone-run:
+		Start: 182
+		Length: 6
+		Facings: 8
+	prone-shoot:
+		Start: 86
+		Length: 6
+		Facings: 8
+	shoot:
+		Start: 86
+		Length: 6
+		Facings: 8
+	idle1:
+		Start: 56
+		Length: 15
+	die1:
+		Start: 71
+		Length: 15
+	die2:
+		Length: 8
+	die4: nukedie
+		Length: *
+		Tick: 50
+	die5: flameguy
+		Start: 48
+		Length: 59
+		Tick: 80
+# TODO: This is just the death sequence; normally flameguy would run a bit around before dying
+	die6: electro
+		Length: *
+		Tick: 80
+	die-crushed: death_c
+		Length: 4
+	cheer:
+		Start: 56
+		Length: 15
+	panic-stand:
+		Start: 134
+		Length: 6
+		Facings: 8
+	panic-run:
+		Start: 134
+		Length: 6
+		Facings: 8
+
+civa:
+	stand:
+		Facings: 8
+	run:
+		Start: 8
+		Length: 6
+		Facings: 8
+	prone-stand:
+		Start: 182
+		Facings: 8
+	prone-run:
+		Start: 182
+		Length: 6
+		Facings: 8
+	prone-shoot:
+		Start: 86
+		Length: 6
+		Facings: 8
+	shoot:
+		Start: 86
+		Length: 6
+		Facings: 8
+	idle1:
+		Start: 56
+		Length: 15
+	die1:
+		Start: 71
+		Length: 15
+	die2:
+		Length: 8
+	die4: nukedie
+		Length: *
+		Tick: 50
+	die5: flameguy
+		Start: 48
+		Length: 59
+		Tick: 80
+# TODO: This is just the death sequence; normally flameguy would run a bit around before dying
+	die6: electro
+		Length: *
+		Tick: 80
+	die-crushed: death_c
+		Length: 4
+	cheer:
+		Start: 56
+		Length: 15
+	panic-stand:
+		Start: 134
+		Length: 6
+		Facings: 8
+	panic-run:
+		Start: 134
+		Length: 6
+		Facings: 8
+
+civb:
+	stand:
+		Facings: 8
+	run:
+		Start: 8
+		Length: 6
+		Facings: 8
+	prone-stand:
+		Start: 182
+		Facings: 8
+	prone-run:
+		Start: 182
+		Length: 6
+		Facings: 8
+	prone-shoot:
+		Start: 86
+		Length: 6
+		Facings: 8
+	shoot:
+		Start: 86
+		Length: 6
+		Facings: 8
+	idle1:
+		Start: 56
+		Length: 15
+	die1:
+		Start: 71
+		Length: 15
+	die2:
+		Length: 8
+	die4: nukedie
+		Length: *
+		Tick: 50
+	die5: flameguy
+		Start: 48
+		Length: 59
+		Tick: 80
+# TODO: This is just the death sequence; normally flameguy would run a bit around before dying
+	die6: electro
+		Length: *
+		Tick: 80
+	die-crushed: death_c
+		Length: 4
+	cheer:
+		Start: 56
+		Length: 15
+	panic-stand:
+		Start: 134
+		Length: 6
+		Facings: 8
+	panic-run:
+		Start: 134
+		Length: 6
+		Facings: 8
+
+civc:
+	stand:
+		Facings: 8
+	run:
+		Start: 8
+		Length: 6
+		Facings: 8
+	prone-stand:
+		Start: 182
+		Facings: 8
+	prone-run:
+		Start: 182
+		Length: 6
+		Facings: 8
+	prone-shoot:
+		Start: 86
+		Length: 6
+		Facings: 8
+	shoot:
+		Start: 86
+		Length: 6
+		Facings: 8
+	idle1:
+		Start: 56
+		Length: 15
+	die1:
+		Start: 71
+		Length: 15
+	die2:
+		Length: 8
+	die4: nukedie
+		Length: *
+		Tick: 50
+	die5: flameguy
+		Start: 48
+		Length: 59
+		Tick: 80
+# TODO: This is just the death sequence; normally flameguy would run a bit around before dying
+	die6: electro
+		Length: *
+		Tick: 80
+	die-crushed: death_c
+		Length: 4
+	cheer:
+		Start: 56
+		Length: 15
+	panic-stand:
+		Start: 134
+		Length: 6
+		Facings: 8
+	panic-run:
+		Start: 134
+		Length: 6
+		Facings: 8
+
+civbbp:
+	stand:
+		Facings: 8
+	run:
+		Start: 8
+		Length: 6
+		Facings: 8
+	prone-stand:
+		Start: 134
+		Facings: 8
+	prone-run:
+		Start: 134
+		Length: 6
+		Facings: 8
+	prone-shoot:
+		Facings: 8
+	shoot:
+		Facings: 8
+	idle1:
+		Start: 56
+		Length: 15
+	die1:
+		Start: 71
+		Length: 15
+	die2:
+		Length: 8
+	die4: nukedie
+		Length: *
+		Tick: 50
+	die5: flameguy
+		Start: 48
+		Length: 59
+		Tick: 80
+# TODO: This is just the death sequence; normally flameguy would run a bit around before dying
+	die6: electro
+		Length: *
+		Tick: 80
+	die-crushed: death_c
+		Length: 4
+	cheer:
+		Start: 56
+		Length: 15
+	panic-stand:
+		Start: 86
+		Length: 6
+		Facings: 8
+	panic-run:
+		Start: 86
+		Length: 6
+		Facings: 8
+
+civbfm:
+	stand:
+		Facings: 8
+	run:
+		Start: 8
+		Length: 6
+		Facings: 8
+	prone-stand:
+		Start: 134
+		Facings: 8
+	prone-run:
+		Start: 134
+		Length: 6
+		Facings: 8
+	prone-shoot:
+		Facings: 8
+	shoot:
+		Facings: 8
+	idle1:
+		Start: 56
+		Length: 15
+	die1:
+		Start: 71
+		Length: 15
+	die2:
+		Length: 8
+	die4: nukedie
+		Length: *
+		Tick: 50
+	die5: flameguy
+		Start: 48
+		Length: 59
+		Tick: 80
+# TODO: This is just the death sequence; normally flameguy would run a bit around before dying
+	die6: electro
+		Length: *
+		Tick: 80
+	die-crushed: death_c
+		Length: 4
+	cheer:
+		Start: 56
+		Length: 15
+	panic-stand:
+		Start: 86
+		Length: 6
+		Facings: 8
+	panic-run:
+		Start: 86
+		Length: 6
+		Facings: 8
+
+civbf:
+	stand:
+		Facings: 8
+	run:
+		Start: 8
+		Length: 6
+		Facings: 8
+	prone-stand:
+		Start: 134
+		Facings: 8
+	prone-run:
+		Start: 134
+		Length: 6
+		Facings: 8
+	prone-shoot:
+		Facings: 8
+	shoot:
+		Facings: 8
+	idle1:
+		Start: 56
+		Length: 15
+	die1:
+		Start: 71
+		Length: 15
+	die2:
+		Length: 8
+	die4: nukedie
+		Length: *
+		Tick: 50
+	die5: flameguy
+		Start: 48
+		Length: 59
+		Tick: 80
+# TODO: This is just the death sequence; normally flameguy would run a bit around before dying
+	die6: electro
+		Length: *
+		Tick: 80
+	die-crushed: death_c
+		Length: 4
+	cheer:
+		Start: 56
+		Length: 15
+	panic-stand:
+		Start: 86
+		Length: 6
+		Facings: 8
+	panic-run:
+		Start: 86
+		Length: 6
+		Facings: 8
+
+civbtm:
+	stand:
+		Facings: 8
+	run:
+		Start: 8
+		Length: 6
+		Facings: 8
+	prone-stand:
+		Start: 134
+		Facings: 8
+	prone-run:
+		Start: 134
+		Length: 6
+		Facings: 8
+	prone-shoot:
+		Facings: 8
+	shoot:
+		Facings: 8
+	idle1:
+		Start: 56
+		Length: 15
+	die1:
+		Start: 71
+		Length: 15
+	die2:
+		Length: 8
+	die4: nukedie
+		Length: *
+		Tick: 50
+	die5: flameguy
+		Start: 48
+		Length: 59
+		Tick: 80
+# TODO: This is just the death sequence; normally flameguy would run a bit around before dying
+	die6: electro
+		Length: *
+		Tick: 80
+	die-crushed: death_c
+		Length: 4
+	cheer:
+		Start: 56
+		Length: 15
+	panic-stand:
+		Start: 86
+		Length: 6
+		Facings: 8
+	panic-run:
+		Start: 86
+		Length: 6
+		Facings: 8
+
+civsfm:
+	stand:
+		Facings: 8
+	run:
+		Start: 8
+		Length: 6
+		Facings: 8
+	prone-stand:
+		Start: 182
+		Facings: 8
+	prone-run:
+		Start: 182
+		Length: 6
+		Facings: 8
+	prone-shoot:
+		Start: 86
+		Length: 6
+		Facings: 8
+	shoot:
+		Start: 86
+		Length: 6
+		Facings: 8
+	idle1:
+		Start: 56
+		Length: 15
+	die1:
+		Start: 71
+		Length: 15
+	die2:
+		Length: 8
+	die4: nukedie
+		Length: *
+		Tick: 50
+	die5: flameguy
+		Start: 48
+		Length: 59
+		Tick: 80
+# TODO: This is just the death sequence; normally flameguy would run a bit around before dying
+	die6: electro
+		Length: *
+		Tick: 80
+	die-crushed: death_c
+		Length: 4
+	cheer:
+		Start: 56
+		Length: 15
+	panic-stand:
+		Start: 134
+		Length: 6
+		Facings: 8
+	panic-run:
+		Start: 134
+		Length: 6
+		Facings: 8
+
+civsf:
+	stand:
+		Facings: 8
+	run:
+		Start: 8
+		Length: 6
+		Facings: 8
+	prone-stand:
+		Start: 182
+		Facings: 8
+	prone-run:
+		Start: 182
+		Length: 6
+		Facings: 8
+	prone-shoot:
+		Start: 86
+		Length: 6
+		Facings: 8
+	shoot:
+		Start: 86
+		Length: 6
+		Facings: 8
+	idle1:
+		Start: 56
+		Length: 15
+	die1:
+		Start: 71
+		Length: 15
+	die2:
+		Length: 8
+	die4: nukedie
+		Length: *
+		Tick: 50
+	die5: flameguy
+		Start: 48
+		Length: 59
+		Tick: 80
+# TODO: This is just the death sequence; normally flameguy would run a bit around before dying
+	die6: electro
+		Length: *
+		Tick: 80
+	die-crushed: death_c
+		Length: 4
+	cheer:
+		Start: 56
+		Length: 15
+	panic-stand:
+		Start: 134
+		Length: 6
+		Facings: 8
+	panic-run:
+		Start: 134
+		Length: 6
+		Facings: 8
+
+civstm:
+	stand:
+		Facings: 8
+	run:
+		Start: 8
+		Length: 6
+		Facings: 8
+	prone-stand:
+		Start: 182
+		Facings: 8
+	prone-run:
+		Start: 182
+		Length: 6
+		Facings: 8
+	prone-shoot:
+		Start: 86
+		Length: 6
+		Facings: 8
+	shoot:
+		Start: 86
+		Length: 6
+		Facings: 8
+	idle1:
+		Start: 56
+		Length: 15
+	die1:
+		Start: 71
+		Length: 15
+	die2:
+		Length: 8
+	die4: nukedie
+		Length: *
+		Tick: 50
+	die5: flameguy
+		Start: 48
+		Length: 59
+		Tick: 80
+# TODO: This is just the death sequence; normally flameguy would run a bit around before dying
+	die6: electro
+		Length: *
+		Tick: 80
+	die-crushed: death_c
+		Length: 4
+	cheer:
+		Start: 56
+		Length: 15
+	panic-stand:
+		Start: 134
+		Length: 6
+		Facings: 8
+	panic-run:
+		Start: 134
+		Length: 6
+		Facings: 8
