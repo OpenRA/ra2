@@ -354,11 +354,11 @@
 ^CivilianInfantry:
 	Inherits: ^Infantry
 	Selectable:
-		Bounds: 100,170,0,0
+		Bounds: 20, 30, 0, -11
 	Valued:
 		Cost: 10
 	Tooltip:
-		Name: Civilian
+		GenericName: Civilian
 	Health:
 		HP: 50
 	Mobile:
@@ -376,6 +376,8 @@
 	-TakeCover:
 	Voiced:
 		VoiceSet: CivilianAlliedMaleVoice
+	WithInfantryBody:
+		IdleSequences: idle1
 
 ^Vehicle:
 	Inherits@1: ^ExistsInWorld
