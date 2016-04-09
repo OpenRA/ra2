@@ -498,6 +498,8 @@
 		UpgradeTypes: airborne
 		UpgradeMaxEnabledLevel: 0
 	DeathSounds:
+	AppearsOnRadar:
+		UseLocation: true
 
 ^Plane:
 	Inherits: ^Aircraft
