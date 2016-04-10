@@ -39,6 +39,30 @@ cahosp:
 		Tick: 400
 
 caoutp:
-	icon: xxicon
-		Offset: 0,0
-		UseTilesetCode: false
+	Defaults:
+		UseTilesetCode: true
+		Offset: -15, -50
+	idle-tower:
+		ShadowStart: 4
+	damaged-idle-tower:
+		Start: 1
+		ShadowStart: 5
+	idle: caoutp_d
+		ShadowStart: 2
+	damaged-idle: caoutp_d
+		Start: 1
+		ShadowStart: 3
+	active-crane: caoutp_a
+		Length: 10
+		Tick: 200
+		ShadowStart: 20
+	damaged-active-crane: caoutp_a
+		Start: 20
+		Length: 10
+		Tick: 200
+		ShadowStart: 30
+	bib: caoutpbb
+	damaged-bib: caoutpbb
+		Start: 1
+	flag: caoutp_f
+		Length: 16

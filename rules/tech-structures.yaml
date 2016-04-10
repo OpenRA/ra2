@@ -40,3 +40,48 @@ cahosp:
 		StartRepairingNotification:
 	RallyPoint:
 	WithIdleOverlay:
+
+caoutp:
+	Inherits: ^TechBuilding
+	Tooltip:
+		Name: Tech Outpost
+		Description: Repairs vehicles.
+	Armor:
+		Type: concrete
+	Health:
+		HP: 2000
+	Building:
+		Dimensions: 4,3
+		Footprint: xx== xx== xx==
+	Reservable:
+	RallyPoint:
+		Palette: mouse
+		IsPlayerPalette: false
+	RepairsUnits:
+		Interval: 50
+		FinishRepairingNotification: UnitRepaired
+	WithIdleOverlay@tower:
+		Sequence: idle-tower
+	WithIdleOverlay@bib:
+		Sequence: bib
+	WithIdleOverlay@flag:
+		Sequence: flag
+	WithRepairAnimation:
+		Sequence: active-crane
+	BodyOrientation:
+		QuantizedFacings: 16
+	RenderVoxels:
+		NormalsPalette: ts-normals
+	WithVoxelTurret:
+	WithRangeCircle:
+		Range: 12c0
+		Type: patriot
+	AutoTarget:
+	Turreted:
+		TurnSpeed: 10
+		InitialFacing: 224
+		Offset: 550,0,0
+	AttackTurreted:
+		Voice:
+	Armament:
+		Weapon: RedEye2
