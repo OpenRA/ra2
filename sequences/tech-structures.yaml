@@ -18,6 +18,25 @@ caoild:
 		ShadowStart: 96
 		Offset: 0, -30
 
+caairp:
+	Defaults:
+		UseTilesetCode: true
+		Offset: 7, -40
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 1
+		ShadowStart: 5
+	idle-overlay: caairp_a
+		Length: 10
+		Tick: 400
+	damaged-idle-overlay: caairp_a
+		Start: 10
+		Length: 10
+		Tick: 400
+	flag: caoutp_f
+		Length: 16
+
 cahosp:
 	Defaults:
 		UseTilesetCode: true
