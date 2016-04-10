@@ -22,6 +22,43 @@ caoild:
 		Sequence: idle-pump
 	GivesBuildableArea:
 
+caairp:
+	Inherits: ^TechBuilding
+	Tooltip:
+		Name: Tech Airport
+	Armor:
+		Type: concrete
+	Health:
+		HP: 800
+	Building:
+		Dimensions: 3,3
+		Footprint: xxx xxx xxx
+	ParatroopersPower@Allies:
+		OrderName: AlliedParatroopers
+		Icon: paradrop
+		ChargeTime: 360
+		Description: Allied Paratroopers
+		LongDesc: A Cargo Plane drops six GIs\nanywhere on the map.
+		DropItems: e1,e1,e1,e1,e1,e1
+		QuantizedFacings: 8
+		UnitType: pdplane
+		CameraActor: camera
+		Prerequisites: ~structures.allies
+	ParatroopersPower@Soviets:
+		OrderName: SovietParatroopers
+		Icon: paradrop
+		ChargeTime: 360
+		Description: Soviet Paratroopers
+		LongDesc: A Cargo Plane drops nine conscripts\nanywhere on the map.
+		DropItems: e2,e2,e2,e2,e2,e2,e2,e2,e2
+		QuantizedFacings: 8
+		UnitType: pdplane
+		CameraActor: camera
+		Prerequisites: ~structures.soviets
+	WithIdleOverlay@decoration:
+	WithIdleOverlay@flag:
+		Sequence: flag
+
 cahosp:
 	Inherits: ^TechBuilding
 	Building:
