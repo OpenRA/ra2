@@ -9,7 +9,7 @@ e2:
 		Cost: 100
 	Tooltip:
 		Name: Conscript
-		Description: Cheap standart infantry.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
+		Description: Cheap rifle infantry.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
 	Selectable:
 		Bounds: 20, 30, 0, -11
 	Health:
