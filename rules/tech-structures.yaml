@@ -33,6 +33,14 @@ caairp:
 	Building:
 		Dimensions: 3,3
 		Footprint: xxx xxx xxx
+	ProvidesPrerequisite@Allies:
+		Prerequisite: techparadrops.allies
+		Factions: america, germany, england, france, korea
+		ResetOnOwnerChange: true
+	ProvidesPrerequisite@Soviets:
+		Prerequisite: techparadrops.soviets
+		Factions: cuba, libya, iraq, russia
+		ResetOnOwnerChange: true
 	ParatroopersPower@Allies:
 		OrderName: AlliedParatroopers
 		Icon: paradrop
@@ -43,7 +51,7 @@ caairp:
 		QuantizedFacings: 8
 		UnitType: pdplane
 		CameraActor: camera
-		Prerequisites: ~structures.allies
+		Prerequisites: ~techparadrops.allies
 	ParatroopersPower@Soviets:
 		OrderName: SovietParatroopers
 		Icon: paradrop
@@ -54,7 +62,7 @@ caairp:
 		QuantizedFacings: 8
 		UnitType: pdplane
 		CameraActor: camera
-		Prerequisites: ~structures.soviets
+		Prerequisites: ~techparadrops.soviets
 	WithIdleOverlay@decoration:
 	WithIdleOverlay@flag:
 		Sequence: flag
