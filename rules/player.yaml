@@ -54,7 +54,9 @@ Player:
 	HarvesterAttackNotifier:
 		Notification: OreMinerUnderAttack
 	PlayerStatistics:
-	PlaceBeacon:
+	PlaceSimpleBeacon:
+		IsPlayerPalette: true
+		Palette: player
 	ProvidesTechPrerequisite@infonly:
 		Name: Infantry Only
 		Prerequisites: techlevel.infonly
