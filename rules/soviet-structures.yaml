@@ -660,6 +660,7 @@ namisl:
 		CameraActor: camera
 		CameraRemoveDelay: 70
 		FlashType: Nuke
+		CircleSequence:
 
 nawall:
 	Inherits: ^Wall

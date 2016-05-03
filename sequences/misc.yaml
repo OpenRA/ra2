@@ -51,6 +51,9 @@ beacon:
 		Length: 20
 		Tick: 200
 		ZOffset: 2047
+	arrow: pbeacon
+		Length: 1
+		ZOffset: 2047
 
 crate-effects: #Temp Null Some SHPs cannot be read by openra at this time, expect more
 	Defaults: null
