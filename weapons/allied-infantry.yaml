@@ -112,7 +112,7 @@ DoublePistols:
 DoublePistolsE:
 	Inherits: DoublePistols
 	Range: 8c0
-	
+
 CRMP5:
 	Inherits: DoublePistols
 
