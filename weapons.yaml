@@ -58,6 +58,7 @@ RedEye2:
 		HorizontalRateOfTurn: 55
 		Speed: 100
 		LockOnProbability: 80
+		RangeLimit: 14c409
 	Warhead@1Dam: SpreadDamage
 		Spread: 120
 		Damage: 75
@@ -527,7 +528,7 @@ MammothTusk:
 		ContrailLength: 8
 		HorizontalRateOfTurn: 10
 		Speed: 170
-		RangeLimit: 35
+		RangeLimit: 9c614
 	Warhead@1Dam: SpreadDamage
 		Spread: 171
 		Damage: 80
@@ -566,7 +567,7 @@ Maverick:
 		Image: DRAGON
 		Palette: ra
 		HorizontalRateOfTurn: 8
-		RangeLimit: 35
+		RangeLimit: 7c204
 		ContrailColor: D8D8FF
 		ContrailLength: 16
 	Warhead@1Dam: SpreadDamage
@@ -730,7 +731,7 @@ SubTorpedo:
 		Speed: 102
 		TrailImage: bbblelrg
 		HorizontalRateOfTurn: 12
-		RangeLimit: 160
+		RangeLimit: 8c409
 		BoundToTerrainType: Water
 		Palette: shadow
 	Warhead@1Dam: SpreadDamage
@@ -865,6 +866,7 @@ Medusa:
 		HorizontalRateOfTurn: 55
 		Speed: 100
 		LockOnProbability: 85
+		RangeLimit: 14c409
 	Warhead@1Dam: SpreadDamage
 		Spread: 60
 		Damage: 100
@@ -904,7 +906,7 @@ HoverMissile:
 		Image: DRAGON
 		Palette: ra
 		HorizontalRateOfTurn: 8
-		RangeLimit: 35
+		RangeLimit: 7c204
 		ContrailColor: D8D8FF
 		ContrailLength: 16
 	Warhead@1Dam: SpreadDamage
