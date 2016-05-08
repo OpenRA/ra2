@@ -121,32 +121,41 @@ zep:
 	AnnounceOnBuild:
 	Voiced:
 		VoiceSet: KirovVoice
-#	SpawnActorOnDeath:
-#		Actor: zephusk
+	SpawnActorOnDeath:
+		Actor: zephusk
 	Targetable@ground:
 		TargetTypes: Ground
 		UpgradeTypes: airborne
 		UpgradeMaxEnabledLevel: 0
 
-#zephusk:
-#	Inherits: ^HelicopterHusk
-#	Tooltip:
-#		Name: Kirov Airship
-#	RenderSprites:
-#		Image: zep
-#	RenderVoxels:
-#		Image: zep
-#	WithVoxelBody:
-#	WithShadow:
-#	Helicopter:
-#		ROT: 10
-#		Speed: 50
-#		AirborneUpgrades: airborne
-#	RevealsShroud:
-#		Range: 8c0
-#		Type: CenterPosition
-#	FallsToEarth:
-#		Velocity: 200
+zephusk:
+	Tooltip:
+		Name: Kirov Airship
+	Armor:
+		Type: Light
+	Health:
+		HP: 140
+	Aircraft:
+		TurnSpeed: 10
+		Speed: 50
+		AirborneUpgrades: airborne
+		CanHover: True
+		Voice: Move
+	FallsToEarth:
+		Spins: False # TODO: In the original they did spin, but that just looks weird.
+	RevealsShroud:
+		Range: 8c0
+		Type: CenterPosition
+	HiddenUnderFog:
+		Type: CenterPosition
+	RenderVoxels:
+		Image: zep
+	WithVoxelBody:
+	AutoTargetIgnore:
+	BodyOrientation:
+		QuantizedFacings: 0
+		CameraPitch: 90
+		UseClassicPerspectiveFudge: false
 
 orca:
 	Inherits: ^Plane
