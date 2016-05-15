@@ -203,7 +203,6 @@ dlph:
 	RenderDetectionCircle:
 	RenderSprites:
 	WithInfantryBody:
-		IdleSequences: idle1
 		StandSequences: stand
 		AttackSequence: shoot
 	WithDeathAnimation:
