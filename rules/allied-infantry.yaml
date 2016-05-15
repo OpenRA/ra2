@@ -230,6 +230,11 @@ ghost:
 		Bounds: 20, 30, 0, -11
 	Health:
 		HP: 125
+	UpgradeInWater:
+	Targetable@WaterBorne:
+		TargetTypes: Underwater
+		UpgradeTypes: water-borne
+		UpgradeMinEnabledLevel: 1
 	Mobile:
 		Speed: 71
 		TerrainSpeeds:
@@ -290,6 +295,11 @@ tany:
 		Bounds: 20, 30, 0, -11
 	Health:
 		HP: 125
+	UpgradeInWater:
+	Targetable@WaterBorne:
+		TargetTypes: Underwater
+		UpgradeTypes: water-borne
+		UpgradeMinEnabledLevel: 1
 	Mobile:
 		Speed: 71
 		TerrainSpeeds:
