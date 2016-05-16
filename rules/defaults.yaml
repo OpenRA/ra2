@@ -4,51 +4,75 @@
 	CombatDebugOverlay:
 	DrawLineToTarget:
 	GivesExperience:
-	BodyOrientation:
 	ScriptTriggers:
 	UpgradeManager:
 	Huntable:
+
+^SpriteActor:
+	BodyOrientation:
+		UseClassicPerspectiveFudge: false
+	QuantizeFacingsFromSequence:
+	AutoSelectionSize:
+	RenderSprites:
 
 ^GainsExperience:
 	GainsExperience:
 		Upgrades:
 			500: rank, firepower, damage, speed, reload
 			1000: rank, firepower, damage, speed, reload, selfheal, eliteweapon
-	GainsStatUpgrades:
-		CostThreshold: 5, 10 # Was only Infantry before?
-		FirepowerModifier: 110, 130
-		DamageModifier: 83, 66
-		SpeedModifier: 120, 150
-		ReloadModifier: 90, 75
-	SelfHealing@ELITE:
+	SelfHealing@elite:
 		Step: 2
 		Ticks: 100
 		HealIfBelow: 1
 		DamageCooldown: 125
 		UpgradeTypes: selfheal
 		UpgradeMinEnabledLevel: 1
-
-^IronCurtainable:
-	UpgradeOverlay@IRONCURTAIN:
-		UpgradeTypes: invulnerability
-		UpgradeMinEnabledLevel: 1
-	InvulnerabilityUpgrade@IRONCURTAIN:
-		UpgradeTypes: invulnerability
+	FirepowerMultiplier@experience:
+		Modifier: 110, 130
+		UpgradeTypes: firepower
+	DamageMultiplier@experience:
+		Modifier: 83, 66
+		UpgradeTypes: damage
+	SpeedMultiplier@experience:
+		Modifier: 120, 150
+		UpgradeTypes: speed
+	ReloadDelayMultiplier@experience:
+		Modifier: 90, 75
+		UpgradeTypes: reload
+	InaccuracyMultiplier@experience:
+		Modifier: 90, 80, 70, 50
+		UpgradeTypes: inaccuracy
+	WithRankDecoration:
+		Image: rank
+		Sequence: rank
+		Palette: pips
+		ReferencePoint: Bottom, Right
+		Offset: 2, 2
+		UpgradeTypes: rank
+		ZOffset: 256
 		UpgradeMinEnabledLevel: 1
 		UpgradeMaxAcceptedLevel: 2
+
+^IronCurtainable:
+	UpgradeOverlay@ironcurtain:
+		UpgradeTypes: invulnerability
+		UpgradeMinEnabledLevel: 1
+	DamageMultiplier@ironcurtain:
+		UpgradeTypes: invulnerability
+		Modifier: 0, 0
 	TimedUpgradeBar:
 		Upgrade: invulnerability
-	# Exception of type `System.InvalidOperationException`: Palette `invuln` does not exist
 
 ^Building:
 	Inherits@1: ^ExistsInWorld
-	#Inherits@2: ^IronCurtainable
+	Inherits@2: ^SpriteActor
+	Inherits@3: ^IronCurtainable
 	-DrawLineToTarget:
 	SelectionDecorations:
 		Palette: pips
 	Selectable:
 		Priority: 3
-	TargetableBuilding:
+	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, SpyInfiltrate
 	Building:
 		Dimensions: 1,1
@@ -63,17 +87,18 @@
 	SoundOnDamageTransition:
 		DamagedSounds: gdamag1a.wav, gdamag1b.wav, gdamag1c.wav, gdamag1d.wav, gdamag1e.wav
 		DestroyedSounds: bgendiea.wav, bgendieb.wav, bgendiec.wav, bgendied.wav, bgendiee.wav, bgendief.wav
-	RenderBuilding:
+	WithSpriteBody:
 	WithBuildingExplosion:
 	RepairableBuilding:
 		IndicatorPalette: mousepal
 	EngineerRepairable:
+		Voice: Attack
 	EmitInfantryOnSell@allies:
 		ActorTypes: e1, e1, e1
-		Races: america, germany, england, france, korea
+		Factions: america, germany, england, france, korea
 	EmitInfantryOnSell@soviets:
 		ActorTypes: e2, e2, e2, e2
-		Races: cuba, libya, iraq, russia
+		Factions: cuba, libya, iraq, russia
 	MustBeDestroyed:
 		RequiredForShortGame: true
 	CaptureNotification:
@@ -83,9 +108,8 @@
 	Sellable:
 		SellSounds: uselbuil.wav
 	AcceptsSupplies:
-	GivesBounty:
 	Guardable:
-		Range: 3
+		Range: 3c0
 	Demolishable:
 	WithMakeAnimation:
 
@@ -107,7 +131,6 @@
 	-GivesExperience:
 	-CaptureNotification:
 	-Sellable:
-	-GivesBounty:
 	-UpdatesPlayerStatistics:
 	-CombatDebugOverlay:
 	-WithMakeAnimation:
@@ -125,7 +148,6 @@
 	-MustBeDestroyed:
 	-GivesExperience:
 	-Sellable:
-	-GivesBounty:
 	-UpdatesPlayerStatistics:
 	-CombatDebugOverlay:
 	-WithMakeAnimation:
@@ -138,7 +160,6 @@
 	Tooltip:
 		Description: Tech Building
 
-# Use this ONLY if the actor has a voxel turret
 ^VoxelLighting:
 	Inherits: ^SupportBuilding
 	RenderVoxels:
@@ -149,7 +170,9 @@
 		LightDiffuseColor: 1.4,1.4,1.4
 
 ^Wall:
-	Inherits: ^ExistsInWorld
+	Inherits@1: ^ExistsInWorld
+	Inherits@2: ^SpriteActor
+	FrozenUnderFog:
 	-CombatDebugOverlay:
 	-DrawLineToTarget:
 	-UpgradeManager:
@@ -167,9 +190,9 @@
 		NodeTypes: wall
 	LineBuildNode:
 		Types: wall
-	TargetableBuilding:
+	Targetable:
 		TargetTypes: Ground, Wall, C4, DetonateAttack
-	RenderBuildingWall:
+	WithWallSpriteBody:
 		Type: wall
 	AutoTargetIgnore:
 	ProximityCaptor:
@@ -180,8 +203,8 @@
 
 ^Infantry:
 	Inherits@1: ^ExistsInWorld
-	Inherits@2: ^GainsExperience
-	#Inherits@3: ^IronCurtainable
+	Inherits@2: ^SpriteActor
+	Inherits@3: ^GainsExperience
 	Health:
 		Radius: 128
 	Armor:
@@ -189,6 +212,7 @@
 	RevealsShroud:
 		Range: 4c0
 	Mobile:
+		Voice: Move
 		Crushes: crate
 		SharesCell: true
 		TerrainSpeeds:
@@ -197,27 +221,32 @@
 			Rail: 90
 			Road: 100
 			DirtRoad: 100
-			Tiberium: 90
-			BlueTiberium: 80
+			Ore: 90
+			Gems: 80
 	SelectionDecorations:
 		Palette: pips
 	Selectable:
-	TargetableUnit:
+	Targetable:
 		TargetTypes: Ground, Infantry, DetonateAttack, Disguise
-	RenderSprites:
 	WithInfantryBody:
 		IdleSequences: idle1,idle2
 		StandSequences: stand
-	WithDeathAnimation:
+		AttackSequence: shoot
+	WithDeathAnimation@normal:
 		DeathTypes:
 			ExplosionDeath: 1
 			BulletDeath: 2
 			DeathType3: 3
-			RadioActiveDeath: 4
+	WithDeathAnimation@effect:
+		DeathSequencePalette: effect
+		DeathPaletteIsPlayerPalette: False
+		DeathTypes:
+			RadiationDeath: 4
 			FlameDeath: 5
 			ElectroDeath: 6
 	AutoTarget:
 	AttackMove:
+		Voice: Attack
 	TakeCover:
 		DamageModifiers:
 			Prone50Percent: 50
@@ -225,32 +254,36 @@
 			Prone100Percent: 100
 		DamageTriggers: TriggerProne
 	Passenger:
+		Voice: Move
 		CargoType: Infantry
 	HiddenUnderFog:
 	ActorLostNotification:
 	ProximityCaptor:
 		Types: Infantry
-	GivesBounty:
 	Crushable:
 		CrushSound: igensqua.wav
 	Guard:
+		Voice: Attack
 	Guardable:
-	DeathSounds@NORMAL:
+	DeathSounds@normal:
 		DeathTypes: ExplosionDeath, BulletDeath, DeathType3
-	# TODO: DeathSounds@RadioActiveDeath:
-	DeathSounds@BURNED:
-		DeathSound: Burned
+	DeathSounds@burned:
+		Voice: Burned
 		DeathTypes: FlameDeath
-	DeathSounds@ZAPPED:
-		DeathSound: Zapped
+	DeathSounds@zapped:
+		Voice: Zapped
 		DeathTypes: ElectroDeath
+	DeathSounds@radiation:
+		Voice: Melted
+		DeathTypes: RadiationDeath
 	MustBeDestroyed:
 		RequiredForShortGame: true
 	Cloneable:
 		Types: infantry
 	Voiced:
-		VoiceSet: Infantry
-# TODO: Soylet (for grinding in cloning vats and YR)
+		VoiceSet: GIVoice
+	QuantizeFacingsFromSequence:
+		Sequence: stand
 
 ^CivilianInfantry:
 	Inherits: ^Infantry
@@ -263,10 +296,12 @@
 	Health:
 		HP: 50
 	Mobile:
+		Voice: Move
 		Speed: 71
 	RevealsShroud:
 		Range: 2c0
 	AttackFrontal:
+		Voice: Attack
 	ProximityCaptor:
 		Types: CivilianInfantry
 	ScaredyCat:
@@ -274,13 +309,14 @@
 		RequiredForShortGame: true
 	-TakeCover:
 	Voiced:
-		VoiceSet: Civilian
+		VoiceSet: CivilianAlliedMaleVoice
 
 ^Vehicle:
 	Inherits@1: ^ExistsInWorld
 	Inherits@2: ^GainsExperience
-	#Inherits@3: ^IronCurtainable
+	Inherits@3: ^IronCurtainable
 	Mobile:
+		Voice: Move
 		Crushes: crate
 		TerrainSpeeds:
 			Clear: 100
@@ -289,31 +325,35 @@
 			Road: 100
 			DirtRoad: 100
 			Beach: 100
-			Tiberium: 70 #Used Track value from the inis
-			BlueTiberium: 70
+			Ore: 70
+			Gems: 70
 		ROT: 5
 	SelectionDecorations:
 		Palette: pips
 	Selectable:
 		Bounds: 32,32
-	TargetableUnit:
+	Targetable:
 		TargetTypes: Ground, Repair, DetonateAttack
 	Repairable:
+		Voice: Move
 		RepairBuildings: gadept,nadept
 	Passenger:
+		Voice: Move
 		CargoType: Vehicle
 		Weight: 3
 	AttackMove:
+		Voice: Attack
 	HiddenUnderFog:
 	ActorLostNotification:
 	ProximityCaptor:
 		Types: Vehicle
-	GivesBounty:
 	Guard:
+		Voice: Attack
 	Guardable:
 	BodyOrientation:
-		QuantizedFacings: 32
+		QuantizedFacings: 0
 		CameraPitch: 90
+		UseClassicPerspectiveFudge: false
 	Explodes:
 		Weapon: UnitExplodeSmall
 		EmptyWeapon: UnitExplodeSmall
@@ -326,30 +366,37 @@
 	MustBeDestroyed:
 		RequiredForShortGame: true
 	Voiced:
-		VoiceSet: Vehicle
-# TODO: Soylet (for grinding)
+		VoiceSet: AlliedVehicleVoice
 
 ^Aircraft:
 	Inherits@1: ^ExistsInWorld
 	Inherits@2: ^GainsExperience
-	#Inherits@3: ^IronCurtainable
 		UseLocation: true
-	TargetableAircraft:
+	Targetable@airborne:
 		TargetTypes: Air
-		GroundedTargetTypes: Ground, Repair
+		UpgradeTypes: airborne
+		UpgradeMinEnabledLevel: 1
 	SelectionDecorations:
 		Palette: pips
 	Selectable:
-	Helicopter:
+	Aircraft:
 		RepairBuildings:
 		RearmBuildings:
 		LandWhenIdle: false
+		Voice: Move
+		AirborneUpgrades: airborne
+		CanHover: True
 	HiddenUnderFog:
+		Type: CenterPosition
 	AttackMove:
+		Voice: Attack
 	ActorLostNotification:
 	BodyOrientation:
+		QuantizedFacings: 0
 		CameraPitch: 90
+		UseClassicPerspectiveFudge: false
 	Guard:
+		Voice: Attack
 	Guardable:
 	MustBeDestroyed:
 	RenderVoxels:
@@ -359,13 +406,18 @@
 		LightAmbientColor: -0.5,-0.5,-0.5
 		LightDiffuseColor: 1.4,1.4,1.4
 	Voiced:
-		VoiceSet: Heli
+		VoiceSet: NighthawkVoice
+	Targetable@ground:
+		TargetTypes: Ground, Repair
+		UpgradeTypes: airborne
+		UpgradeMaxEnabledLevel: 0
 
 ^Ship:
 	Inherits@1: ^ExistsInWorld
 	Inherits@2: ^GainsExperience
-	#Inherits@3: ^IronCurtainable
+	Inherits@3: ^IronCurtainable
 	Mobile:
+		Voice: Move
 		Crushes: crate
 		TerrainSpeeds:
 			Water: 100
@@ -374,22 +426,25 @@
 		Palette: pips
 	Selectable:
 		Bounds: 32,32
-	TargetableUnit:
+	Targetable:
 		TargetTypes: Ground, Water, Repair
 	Repairable:
+		Voice: Attack
 		RepairBuildings: gayard, nayard
 	AttackMove:
+		Voice: Attack
 	HiddenUnderFog:
 	ActorLostNotification:
 		Notification: NavalUnitLost
 	ProximityCaptor:
 		Types: Ship
-	GivesBounty:
 	Guard:
+		Voice: Attack
 	Guardable:
 	BodyOrientation:
-		QuantizedFacings: 32
+		QuantizedFacings: 0
 		CameraPitch: 90
+		UseClassicPerspectiveFudge: false
 	Tooltip:
 		GenericName: Ship
 	Explodes:
@@ -421,7 +476,7 @@
 		Types: Husk
 	BodyOrientation:
 	Chronoshiftable:
-	TargetableUnit:
+	Targetable:
 		TargetTypes: Ground
 		RequiresForceFire: true
 	Tooltip:
@@ -441,7 +496,7 @@
 	-Husk:
 	-Burns:
 	FallsToEarth:
-	-TargetableUnit:
+	-Targetable:
 	-Capturable:
 	-TransformOnCapture:
 
@@ -452,32 +507,38 @@
 	FallsToEarth:
 		Spins: False
 		Moves: True
-	-TargetableUnit:
+	-Targetable:
 	-Capturable:
 	-TransformOnCapture:
 
 ^OreDrill:
+	Inherits@1: ^SpriteActor
 	Tooltip:
 		Name: Ore Drill
-	RenderBuilding:
-		Palette: player
+	WithSpriteBody:
 	Building:
 		Footprint: x
 		Dimensions: 1,1
 	AppearsOnRadar:
 	RadarColorFromTerrain:
-		Terrain: Tiberium
+		Terrain: Ore
 	BodyOrientation:
 	FrozenUnderFog:
 		StartsRevealed: true
 	SeedsResource:
-		ResourceType: Tiberium
+		ResourceType: Ore
 		Interval: 55
 	WithActiveAnimation:
+	QuantizeFacingsFromSequence:
+	RenderSprites:
+		Palette: player
+	AutoSelectionSize:
 
 ^Tree:
-	RenderBuilding:
-		Palette: terrain
+	Inherits@1: ^SpriteActor
+	WithSpriteBody:
+	FrozenUnderFog:
+		StartsRevealed: true
 	Building:
 		Footprint: x
 		Dimensions: 1, 1
@@ -485,10 +546,16 @@
 	BodyOrientation:
 	Tooltip:
 		Name: Tree
+	QuantizeFacingsFromSequence:
+	RenderSprites:
+		Palette: terrain
+	AutoSelectionSize:
 
 ^Rock:
-	RenderBuilding:
-		Palette: terrain
+	Inherits@1: ^SpriteActor
+	WithSpriteBody:
+	FrozenUnderFog:
+		StartsRevealed: true
 	Building:
 		Footprint: x
 		Dimensions: 1, 1
@@ -496,4 +563,7 @@
 	BodyOrientation:
 	Tooltip:
 		Name: Rock
+	QuantizeFacingsFromSequence:
+	RenderSprites:
+		Palette: terrain
 

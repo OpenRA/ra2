@@ -37,4 +37,4 @@ Container@MISSION_OBJECTIVES:
 							Width: PARENT_RIGHT - 100
 							Height: 20
 							Disabled: True
-							TextColorDisabled: 255,255,255
+							TextColorDisabled: FFFFFF

@@ -3,11 +3,12 @@ AlliedEngineerVoice:
 	Voices:
 		Select: ienasea, ienaseb, ienasec, ienased
 		Move: ienamoa, ienamob, ienamoc
-		Attack: ienaata, ienaatb, ienaatc
+		Action: ienaata, ienaatb, ienaatc
 		Feedback: ienafea, ienafeb, ienafec
 		Die: ienadia, ienadib, ienadic, ienadid
 		Zapped: igenzapa
 		Burned: ienadia #gotta put something as temp else game crashes
+		Melted: igenmela, igenmelb, igenmelc
 		# [EngAllPowerDown] Sounds = ienapow		
 
 SovietEngineerVoice:
@@ -15,11 +16,12 @@ SovietEngineerVoice:
 	Voices:
 		Select: ienssea, iensseb, ienssec
 		Move: iensmoa, iensmob, iensmoc
-		Attack: iensata, iensatb
+		Action: iensata, iensatb
 		Feedback: iensfea, iensfeb, iensfec
 		Die: iensdia, iensdib, iensdic
 		Zapped: igenzapa
 		Burned: ienadia #gotta put something as temp else game crashes
+		Melted: igenmela, igenmelb, igenmelc
 		# [EngAllPowerDown] Sounds = ienspow
 
 AlliedVehicleVoice:
@@ -60,6 +62,7 @@ GIVoice:
 		Die: igidia, igidib, igidic, igidid, igidie
 		Zapped: igenzapa
 		Burned: ienadia #gotta put something as temp else game crashes
+		Melted: igenmela, igenmelb, igenmelc
 
 ConscriptVoice:
 	DefaultVariant: .wav
@@ -71,6 +74,7 @@ ConscriptVoice:
 		Die: icondia, icondib, icondic, icondid, icondie
 		Zapped: igenzapa
 		Burned: ienadia #gotta put something as temp else game crashes
+		Melted: igenmela, igenmelb, igenmelc
 
 DogVoice:
 	DefaultVariant: .wav
@@ -82,6 +86,7 @@ DogVoice:
 		Die: idogdiea
 		Zapped: igenzapa
 		Burned: ienadia #gotta put something as temp else game crashes
+		Melted: igenmela, igenmelb, igenmelc
 
 RocketeerVoice:
 	DefaultVariant: .wav
@@ -93,17 +98,19 @@ RocketeerVoice:
 		Die: irocdiea
 		Zapped: igenzapa
 		Burned: ienadia #gotta put something as temp else game crashes
+		Melted: igenmela, igenmelb, igenmelc
 
 SpyVoice:
 	DefaultVariant: .wav
 	Voices:
 		Select: ispysea, ispyseb, ispysec, ispysed
 		Move: ispyata, ispymob, ispymoc, ispymod, ispymoe
-		Attack: ispyatb, ispyatd
+		Action: ispyatb, ispyatd
 		Feedback: ispyfea, ispyfeb
 		Die: ispydia, ispydib, ispydic
 		Zapped: igenzapa
 		Burned: ienadia #gotta put something as temp else game crashes
+		Melted: igenmela, igenmelb, igenmelc
 
 ChronoLegionnaireVoice:
 	DefaultVariant: .wav
@@ -115,6 +122,7 @@ ChronoLegionnaireVoice:
 		Die: ichrdia, ichrdib, ichrdic	
 		Zapped: igenzapa
 		Burned: ienadia #gotta put something as temp else game crashes
+		Melted: igenmela, igenmelb, igenmelc
 
 SniperVoice:
 	DefaultVariant: .wav
@@ -126,6 +134,7 @@ SniperVoice:
 		Die: isnidia, isnidib, isnidic
 		Zapped: igenzapa
 		Burned: ienadia #gotta put something as temp else game crashes
+		Melted: igenmela, igenmelb, igenmelc
 
 SealVoice:
 	DefaultVariant: .wav
@@ -136,6 +145,7 @@ SealVoice:
 		Die: iseadia, iseadib, iseadic
 		Zapped: igenzapa
 		Burned: ienadia #gotta put something as temp else game crashes
+		Melted: igenmela, igenmelb, igenmelc
 
 TanyaVoice:
 	DefaultVariant: .wav
@@ -147,6 +157,7 @@ TanyaVoice:
 		Die: itandia, itandib, itandic
 		Zapped: igenzapa
 		Burned: ienadia #gotta put something as temp else game crashes
+		Melted: igenmela, igenmelb, igenmelc
 
 DolphinVoice:
 	DefaultVariant: .wav
@@ -190,6 +201,7 @@ FlakTrooperVoice:
 		Die: ifladia, ifladib, ifladic, ifladid, ifladie
 		Zapped: igenzapa
 		Burned: ienadia #gotta put something as temp else game crashes
+		Melted: igenmela, igenmelb, igenmelc
 
 TeslaTrooperVoice:
 	DefaultVariant: .wav
@@ -201,6 +213,7 @@ TeslaTrooperVoice:
 		Die: itesdia, itesdib, itesdic, itesdid
 		Zapped: igenzapa
 		Burned: ienadia #gotta put something as temp else game crashes
+		Melted: igenmela, igenmelb, igenmelc
 
 CrazyIvanVoice:
 	DefaultVariant: .wav
@@ -211,6 +224,7 @@ CrazyIvanVoice:
 		Die: icradia, icradib
 		Zapped: igenzapa
 		Burned: ienadia #gotta put something as temp else game crashes
+		Melted: igenmela, igenmelb, igenmelc
 
 DesolatorVoice:
 	DefaultVariant: .wav
@@ -221,6 +235,7 @@ DesolatorVoice:
 		Die: idesdia, idesdib, idesdic
 		Zapped: igenzapa
 		Burned: ienadia #gotta put something as temp else game crashes
+		Melted: igenmela, igenmelb, igenmelc
 
 TerroristVoice:
 	DefaultVariant: .wav
@@ -232,6 +247,7 @@ TerroristVoice:
 		Die: iterdia, iterdib, iterdic
 		Zapped: igenzapa
 		Burned: ienadia #gotta put something as temp else game crashes
+		Melted: igenmela, igenmelb, igenmelc
 
 YuriVoice:
 	DefaultVariant: .wav
@@ -242,6 +258,7 @@ YuriVoice:
 		Die: iyurdia, iyurdib, iyurdic
 		Zapped: igenzapa
 		Burned: ienadia #gotta put something as temp else game crashes
+		Melted: igenmela, igenmelb, igenmelc
 
 KirovVoice:
 	DefaultVariant: .wav
@@ -303,6 +320,8 @@ CarVoice:
 	Voices:
 		Select: gcarsela
 		Move: gcarsela
+		Action: gcarsela
+		Attack: gcarsela
 
 ChimpanzeeVoice:
 	DefaultVariant: .wav
@@ -324,6 +343,7 @@ CivilianAlliedMaleVoice:
 		Die: iciadia, iciadib, iciadic, iciadid
 		Zapped: igenzapa
 		Burned: ienadia #gotta put something as temp else game crashes
+		Melted: igenmela, igenmelb, igenmelc
 
 CivilianSovietMalevVoice:
 	DefaultVariant: .wav
@@ -335,6 +355,7 @@ CivilianSovietMalevVoice:
 		Die: icisdia, icisdib, icisdic
 		Zapped: igenzapa
 		Burned: ienadia #gotta put something as temp else game crashes
+		Melted: igenmela, igenmelb, igenmelc
 
 CivilianAlliedFemaleVoice:
 	DefaultVariant: .wav
@@ -346,6 +367,7 @@ CivilianAlliedFemaleVoice:
 		Die: icfadia, icfadib, icfadic
 		Zapped: igenzapa
 		Burned: ienadia #gotta put something as temp else game crashes
+		Melted: igenmela, igenmelb, igenmelc
 
 CivilianSovietFemaleVoice:
 	DefaultVariant: .wav
@@ -357,6 +379,7 @@ CivilianSovietFemaleVoice:
 		Die: icfsdia, icfsdib, icfsdic
 		Zapped: igenzapa
 		Burned: ienadia #gotta put something as temp else game crashes
+		Melted: igenmela, igenmelb, igenmelc
 
 CivilianTexanVoice:
 	DefaultVariant: .wav
@@ -368,13 +391,16 @@ CivilianTexanVoice:
 		Die: ictedia, ictedib, ictedic
 		Zapped: igenzapa
 		Burned: ienadia #gotta put something as temp else game crashes
+		Melted: igenmela, igenmelb, igenmelc
 
 CowVoice:
 	DefaultVariant: .wav
 	Voices:
 		Select: gcowsela, gcowselb, gcowselc
 		Move: gcowmova, gcowmovb
+		Action: gcowmova, gcowmovb
 		Feedback: gcowsela, gcowselb, gcowselc
 		Die: gcowdiea
 		Zapped: igenzapa
 		Burned: ienadia #gotta put something as temp else game crashes
+		Melted: igenmela, igenmelb, igenmelc

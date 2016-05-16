@@ -2,6 +2,7 @@ engineer:
 	Inherits: ^Infantry
 	Buildable:
 		Queue: Infantry
+		Prerequisites: ~barracks
 		BuildPaletteOrder: 60
 	Valued:
 		Cost: 500
@@ -25,16 +26,19 @@ engineer:
 	RevealsShroud:
 		Range: 4c0
 	Voiced:
-		# TODO: what do we do with soviet engineers?
 		VoiceSet: AlliedEngineerVoice
-# BombSight=4 ; detecting ivan's little friends
-# Todo: engineers can defuse ivan's bombs, but don't get consumed
-# IRC: http://logs.ihptru.net/?year=2015&month=02&day=16#22:02:01
+	Guard:
+		Voice: Action
+	AttackMove:
+		Voice: Action
+	QuantizeFacingsFromSequence:
+		Sequence: stand
 
 dog:
 	Inherits: ^Infantry
 	Buildable:
 		Queue: Infantry
+		Prerequisites: ~barracks
 		BuildPaletteOrder: 50
 	Valued:
 		Cost: 200
@@ -54,6 +58,7 @@ dog:
 	Armament:
 		Weapon: DogJaw
 	AttackLeap:
+		Voice: Attack
 	WithInfantryBody:
 	RenderSprites:
 		Image: adog
@@ -65,12 +70,14 @@ dog:
 			russia: dog
 	IgnoresDisguise:
 	DetectCloaked:
-		Range: 5
+		Range: 5c0
 	Voiced:
 		VoiceSet: DogVoice
-# ImmuneToRadiation=no
-# ImmuneToPsionics=yes
-# IFVMode=0
+	ProducibleWithLevel:
+		Prerequisites: barracks.infiltrated
+	-TakeCover:
+	QuantizeFacingsFromSequence:
+		Sequence: stand
 
 e1:
 	Inherits: ^Infantry
@@ -94,26 +101,31 @@ e1:
 	RevealsShroud:
 		Range: 5c0
 	AttackFrontal:
+		Voice: Attack
 	Armament@primary:
 		Weapon: M60
-		UpgradeTypes: deployed
+		UpgradeTypes: eliteweapon
 		UpgradeMaxEnabledLevel: 0
 		UpgradeMaxAcceptedLevel: 1
 	Armament@elite:
 		Weapon: M60E
 		UpgradeTypes: eliteweapon
 		UpgradeMinEnabledLevel: 1
-	Armament@deployed:
-		Weapon: para
-		UpgradeTypes: paraweapon
-		UpgradeMinEnabledLevel: 1
-	Armament@elite-deployed:
-		Weapon: paraE
-		UpgradeTypes: eliteparaweapon
-		UpgradeMinEnabledLevel: 1
+#	Armament@deployed:
+#		Weapon: para
+#		UpgradeTypes: deployed
+#		UpgradeMinEnabledLevel: 1
+#	Armament@elite-deployed:
+#		Weapon: paraE
+#		UpgradeTypes: eliteparaweapon
+#		UpgradeMinEnabledLevel: 1
 	WithInfantryBody:
 	Voiced:
 		VoiceSet: GIVoice
+	ProducibleWithLevel:
+		Prerequisites: barracks.infiltrated
+	QuantizeFacingsFromSequence:
+		Sequence: stand
 
 snipe:
 	Inherits: ^Infantry
@@ -140,11 +152,14 @@ snipe:
 		Type: None
 	AutoTarget:
 		InitialStance: ReturnFire
-	Armament@PRIMARY:
+	Armament@primary:
 		Weapon: awp
 	AttackFrontal:
+		Voice: Attack
 	Voiced:
 		VoiceSet: SniperVoice
+	ProducibleWithLevel:
+		Prerequisites: barracks.infiltrated
 
 spy:
 	Inherits: ^Infantry
@@ -178,8 +193,23 @@ spy:
 	WithDisguisingInfantryBody:
 		IdleAnimations: idle1,idle2
 		StandAnimations: stand
+	WithDecoration@disguise:
+		Image: pips
+		Sequence: pip-disguise
+		Palette: pips
+		ReferencePoint: Top, Right
+		Offset: 6, -2
+		ZOffset: 256
+		UpgradeTypes: disguise
+		UpgradeMinEnabledLevel: 1
 	Voiced:
 		VoiceSet: SpyVoice
+	Guard:
+		Voice: Action
+	AttackMove:
+		Voice: Action
+	QuantizeFacingsFromSequence:
+		Sequence: stand
 
 tany:
 	Inherits: ^Infantry
@@ -219,13 +249,20 @@ tany:
 		UpgradeTypes: eliteweapon
 		UpgradeMinEnabledLevel: 1
 	AttackFrontal:
+		Voice: Attack
 	WithInfantryBody:
 	AnnounceOnBuild:
 	Voiced:
 		VoiceSet: TanyaVoice
+	ProducibleWithLevel:
+		Prerequisites: barracks.infiltrated
+	QuantizeFacingsFromSequence:
+		Sequence: stand
 
 jumpjet:
 	Inherits: ^Infantry
+	HiddenUnderFog:
+		Type: CenterPosition
 	Buildable:
 		Queue: Infantry
 		BuildAtProductionType: Infantry
@@ -243,6 +280,7 @@ jumpjet:
 	-Mobile:
 	RevealsShroud:
 		Range: 8c0
+		Type: CenterPosition
 	Armor:
 		Type: None
 	Armament@primary:
@@ -255,25 +293,40 @@ jumpjet:
 		UpgradeTypes: eliteweapon
 		UpgradeMinEnabledLevel: 1
 	AttackFrontal:
-	Helicopter:
+		Voice: Attack
+	Aircraft:
 		CruiseAltitude: 3072
 		LandWhenIdle: false
 		InitialFacing: 20
 		ROT: 10
 		Speed: 100
 		AltitudeVelocity: 83
+		Voice: Move
+		AirborneUpgrades: airborne
+		RepairBuildings:
+		RearmBuildings:
+		CanHover: True
 	WithInfantryBody:
 		StandSequence: fly
 		MoveSequence: fly
-		AttackSequence: shoot-air # doesn't work?
+		AttackSequence: shoot-air
 		IdleSequences: idle-air
 	Hovers:
 		OffsetModifier: -45
-	-TargetableUnit:
-	TargetableAircraft:
+	-Targetable:
+	Targetable@airborne:
 		TargetTypes: Air, Disguise
-		GroundedTargetTypes: Ground, Infantry, DetonateAttack, Disguise
+		UpgradeTypes: airborne
+		UpgradeMinEnabledLevel: 1
 	WithShadow:
 	Voiced:
 		VoiceSet: RocketeerVoice
+	ProducibleWithLevel:
+		Prerequisites: barracks.infiltrated
+	QuantizeFacingsFromSequence:
+		Sequence: stand
+	Targetable@ground:
+		TargetTypes: Ground, Infantry, DetonateAttack, Disguise
+		UpgradeTypes: airborne
+		UpgradeMaxEnabledLevel: 0
 

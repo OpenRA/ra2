@@ -20,6 +20,7 @@ e2:
 	RevealsShroud:
 		Range: 5c0
 	AttackFrontal:
+		Voice: Attack
 	Armament@primary:
 		Weapon: M1Carbine
 		UpgradeTypes: eliteweapon
@@ -32,6 +33,10 @@ e2:
 	WithInfantryBody:
 	Voiced:
 		VoiceSet: ConscriptVoice
+	ProducibleWithLevel:
+		Prerequisites: barracks.infiltrated
+	QuantizeFacingsFromSequence:
+		Sequence: stand
 
 flakt:
 	Inherits: ^Infantry
@@ -55,6 +60,7 @@ flakt:
 	RevealsShroud:
 		Range: 5c0
 	AttackFrontal:
+		Voice: Attack
 	Armament@primary:
 		Weapon: FlakGuyGun
 		UpgradeTypes: eliteweapon
@@ -77,13 +83,17 @@ flakt:
 		IdleAnimation:
 	Voiced:
 		VoiceSet: FlakTrooperVoice
+	ProducibleWithLevel:
+		Prerequisites: barracks.infiltrated
+	QuantizeFacingsFromSequence:
+		Sequence: stand
 
 shk:
 	Inherits: ^Infantry
 	Buildable:
 		Queue: Infantry
 		BuildAtProductionType: Infantry
-		Prerequisites: nahand
+		Prerequisites: ~nahand
 	Valued:
 		Cost: 500
 	Tooltip:
@@ -102,6 +112,7 @@ shk:
 	Passenger:
 		PipType: Red
 	AttackFrontal:
+		Voice: Attack
 	Armament@primary:
 		Weapon: ElectricBolt
 		UpgradeTypes: eliteweapon
@@ -117,6 +128,10 @@ shk:
 		Range: 1c256
 	Voiced:
 		VoiceSet: TeslaTrooperVoice
+	ProducibleWithLevel:
+		Prerequisites: barracks.infiltrated
+	QuantizeFacingsFromSequence:
+		Sequence: stand
 
 terror:
 	Inherits: ^Infantry
@@ -146,11 +161,15 @@ terror:
 		Weapon: TerrorBomb
 		EmptyWeapon: TerrorBomb
 	DemoTruck:
+		Voice: Attack
 	AttackFrontal:
+		Voice: Attack
 	WithInfantryBody:
 	Voiced:
 		VoiceSet: TerroristVoice
 	-TakeCover:
+	QuantizeFacingsFromSequence:
+		Sequence: stand
 
 deso:
 	Inherits: ^Infantry
@@ -185,18 +204,15 @@ deso:
 		Weapon: RadBeamWeaponE
 		UpgradeTypes: eliteweapon
 		UpgradeMinEnabledLevel: 1
-	# Armament@deployed:
-	# 	Weapon: RadEruptionWeapon
-	# Armament@deployed-elite:
-	# 	Weapon: RadEruptionWeaponE
-	# Armament@ifv:
-	# 	Weapon: CRRadBeamWeapon
-	# Armament@ifv-elite:
-	# 	Weapon: CRRadBeamWeaponE
 	AttackFrontal:
+		Voice: Attack
 	WithInfantryBody:
 	Voiced:
 		VoiceSet: DesolatorVoice
+	ProducibleWithLevel:
+		Prerequisites: barracks.infiltrated
+	QuantizeFacingsFromSequence:
+		Sequence: stand
 
 ivan:
 	Inherits: ^Infantry
@@ -237,8 +253,12 @@ ivan:
 		UpgradeTypes: eliteweapon
 		UpgradeMinEnabledLevel: 1
 	AttackFrontal:
+		Voice: Attack
 		Cursor: bomb
 		OutsideRangeCursor: bomb
 	TakeCover:
 	WithInfantryBody:
 		IdleSequences: idle1,idle2
+	QuantizeFacingsFromSequence:
+		Sequence: stand
+

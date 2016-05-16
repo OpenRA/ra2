@@ -25,8 +25,8 @@ sapc:
 			Road: 100
 			DirtRoad: 100
 			Beach: 60
-			Tiberium: 50 #Used Track value from the inis
-			BlueTiberium: 50
+			Ore: 50
+			Gems: 50
 			Water: 100
 	RevealsShroud:
 		Range: 6c0
@@ -35,12 +35,15 @@ sapc:
 		MaxWeight: 9
 		PipCount: 12
 		PassengerFacing: 96
-		UnloadTerrainTypes: Clear, Rough, Rail, Road, DirtRoad, Beach, Tiberium, BlueTiberium
+		UnloadTerrainTypes: Clear, Rough, Rail, Road, DirtRoad, Beach, Ore, Gems
+		UnloadVoice: Move
 	Explodes:
 		Weapon: UnitExplode
 		EmptyWeapon: UnitExplode
 	WithVoxelBody:
 	RenderSprites:
+	RepairableNear:
+		Buildings: gayard, nayard
 
 sub:
 	Inherits: ^Ship
@@ -62,28 +65,32 @@ sub:
 		Speed: 71
 	RevealsShroud:
 		Range: 6c0
-	-TargetableUnit:
-	TargetableSubmarine:
+	-Targetable:
+	Targetable:
 		TargetTypes: Ground, Water, Repair
-		CloakedTargetTypes: Underwater, Repair
+		UpgradeTypes: underwater
+		UpgradeMaxEnabledLevel: 0
 	Cloak:
 		CloakTypes: Underwater
 		InitialDelay: 50
 		CloakDelay: 75
 		CloakSound: vnavupa.wav
 		UncloakSound: vnavupa.wav
+		WhileCloakedUpgrades: underwater
 	Armament:
 		Weapon: SubTorpedo
 		LocalOffset: 768,0,0
 		FireDelay: 2
 	AttackFrontal:
+		Voice: Attack
 	Chronoshiftable:
 	RepairableNear:
+		Buildings: gayard, nayard
 	AutoTarget:
 		InitialStance: ReturnFire
 	DetectCloaked:
 		CloakTypes: Underwater
-		Range: 4
+		Range: 4c0
 	RenderDetectionCircle:
 	Explodes:
 		Weapon: UnitExplode
@@ -91,6 +98,10 @@ sub:
 	-MustBeDestroyed:
 	WithVoxelBody:
 	RenderSprites:
+	Targetable@underwater:
+		TargetTypes: Underwater, Repair
+		UpgradeTypes: underwater
+		UpgradeMinEnabledLevel: 1
 
 hyd:
 	Inherits: ^Ship
@@ -115,6 +126,7 @@ hyd:
 	RevealsShroud:
 		Range: 8c0
 	AttackFrontal:
+		Voice: Attack
 	Armament@primary:
 		Weapon: FlakTrackGun
 	Armament@secondary:
@@ -124,4 +136,6 @@ hyd:
 		EmptyWeapon: UnitExplode
 	WithVoxelBody:
 	RenderSprites:
+	RepairableNear:
+		Buildings: gayard, nayard
 

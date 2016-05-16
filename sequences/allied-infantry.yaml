@@ -54,7 +54,7 @@ engineer:
 # TODO: This is just the death sequence; normally flameguy would run a bit around before dying
 	die6: electro
 		Length: *
-		Tick: 120
+		Tick: 80
 	die-crushed: death_c
 		Length: 4
 	icon: engnicon
@@ -141,7 +141,7 @@ e1:
 # TODO: This is just the death sequence; normally flameguy would run a bit around before dying
 	die6: electro
 		Length: *
-		Tick: 120
+		Tick: 80
 	die-crushed: death_c
 		Length: 4
 	shoot:
@@ -168,7 +168,7 @@ snipe:
 		Start: 8
 		Length: 6
 		Facings: 8
-		Tick: 120
+		Tick: 80
 	idle1:
 		Start: 56
 		Length: 15
@@ -199,7 +199,7 @@ snipe:
 # TODO: This is just the death sequence; normally flameguy would run a bit around before dying
 	die6: electro
 		Length: *
-		Tick: 120
+		Tick: 80
 	die-crushed: death_c
 		Length: 4
 		Tick: 80
@@ -253,7 +253,7 @@ spy:
 # TODO: This is just the death sequence; normally flameguy would run a bit around before dying
 	die6: electro
 		Length: *
-		Tick: 120
+		Tick: 80
 	die-crushed: death_c
 		Length: 4
 		Tick: 80
@@ -307,7 +307,7 @@ tany:
 # TODO: This is just the death sequence; normally flameguy would run a bit around before dying
 	die6: electro
 		Length: *
-		Tick: 120
+		Tick: 80
 	die-crushed: death_c
 		Length: 4
 		Tick: 80
@@ -373,7 +373,7 @@ jumpjet:
 	die6: electro
 		Length: *
 		Facings: 1
-		Tick: 120
+		Tick: 80
 	die-crushed: death_c
 		Length: 4
 		Facings: 1

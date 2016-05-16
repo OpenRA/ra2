@@ -1,4 +1,3 @@
-# GI, E1
 M60:
 	ReloadDelay: 20
 	Range: 4c0
@@ -107,7 +106,6 @@ paraE:
 		Explosion: piff
 		ValidImpactTypes: Water
 
-# Tanya
 DoublePistols:
 	ReloadDelay: 10
 	Range: 6c0
@@ -160,7 +158,6 @@ DoublePistolsE:
 		Explosion: piff
 		ValidImpactTypes: Water
 
-# Sniper
 awp:
 	ValidTargets: Infantry
 	ReloadDelay: 100
@@ -183,11 +180,10 @@ awp:
 			Concrete: 0
 		DamageTypes: ExplosionDeath
 
-# Rocketeer
 20mm:
 	ReloadDelay: 20
 	Range: 5c0
-	MinRange: 0c001 # Causes hang when attacking at 0 range
+	MinRange: 0c001
 	Report: irocatta.wav
 	ValidTargets: Ground, Air
 	Projectile: Bullet
@@ -217,7 +213,7 @@ awp:
 20mme:
 	ReloadDelay: 20
 	Range: 5c0
-	MinRange: 0c001 # Causes hang when attacking at 0 range
+	MinRange: 0c001
 	Burst: 2
 	Report: irocatta.wav
 	ValidTargets: Ground, Air

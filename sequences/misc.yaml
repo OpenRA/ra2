@@ -70,6 +70,11 @@ clock:
 		Length: *
 		BlendMode: Multiply
 
+cameo-chevron:
+	idle:
+		Length: *
+		BlendMode: Additive
+
 pips:
 	medic:
 		Start: 6
@@ -104,6 +109,9 @@ pips:
 		Start: 4
 	pip-blue-building:
 		Start: 5
+	pip-disguise: pip-disguise
+		Length: *
+		Tick: 300
 
 explosion:
 	Defaults:
@@ -158,6 +166,8 @@ explosion:
 		Tick: 300
 	ivan_explosion: crivexp
 	ivan_explosionE: crivexp2
+	tesla_impact: tstimpct
+	iron_fx: ironfx
 
 discus:
 	idle:
@@ -348,6 +358,7 @@ largecraters:
 
 icon:
 	gps: asaticon
+	invuln: ircricon
 
 bombcurs:
 	idle:

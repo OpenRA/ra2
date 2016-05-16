@@ -33,11 +33,17 @@ nacnst:
 		ProductionType: Building
 	ProductionBar@Support:
 		ProductionType: Support
-	WithIdleOverlay@TOP:
+	WithIdleOverlay@top:
 		Sequence: idle-top
-	WithIdleOverlay@normal: # Hack: Don't glitch when placing buildings
+	WithIdleOverlay@normal:
 		Sequence: idle-normal
 	WithBuildingPlacedAnimation:
+	EmitInfantryOnSell@allies:
+		ActorTypes: e1, e1, e1, engineer
+		Factions: america, germany, england, france, korea
+	EmitInfantryOnSell@soviets:
+		ActorTypes: e2, e2, e2, e2, engineer
+		Factions: cuba, libya, iraq, russia
 
 napowr:
 	Inherits: ^Building
@@ -63,7 +69,7 @@ napowr:
 		Type: Wood
 	RevealsShroud:
 		Range: 4c0
-	WithIdleOverlay@LIGHTS:
+	WithIdleOverlay@lights:
 		Sequence: idle-lights
 	Power:
 		Amount: 150
@@ -116,6 +122,10 @@ nahand:
 	Power:
 		Amount: -10
 	UpgradeManager:
+	InfiltrateForSupportPower:
+		Proxy: barracks.infiltrated
+	Targetable:
+		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
 
 narefn:
 	Inherits: ^Building
@@ -157,13 +167,12 @@ narefn:
 		Value: 300
 	FreeActor:
 		Actor: harv
-	 	InitialActivity: FindResources
-	 	SpawnOffset: 4, 1 #Should be 3, 1 but causes game to crash cause harvester wants to move.
-	 	Facing: 160
+		SpawnOffset: 4, 1
+		Facing: 160
 	WithDockingOverlay:
-	WithIdleOverlay@BIB:
+	WithIdleOverlay@bib:
 		Sequence: idle-bib
-	WithIdleOverlay@DRILL:
+	WithIdleOverlay@drill:
 		Sequence: idle-drill
 	Power:
 		Amount: -50
@@ -196,10 +205,10 @@ naradr:
 	ProvidesRadar:
 	RevealsShroud:
 		Range: 10c0
-	WithIdleOverlay@DISH:
+	WithIdleOverlay@dish:
 		Sequence: idle-dish
 		PauseOnLowPower: true
-	TargetableBuilding:
+	Targetable:
 		TargetTypes: Ground, C4, SpyInfiltrate, DetonateAttack
 	InfiltrateForExploration:
 	Power:
@@ -210,7 +219,7 @@ naweap:
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 50
-		Prerequisites: refinery, ~structures.soviets
+		Prerequisites: refinery, nahand, ~structures.soviets
 	Selectable:
 		Bounds: 196, 178, -6, -48
 	Valued:
@@ -245,12 +254,12 @@ naweap:
 		Sequence: idle-lights
 	WithIdleOverlay@ramp:
 		Sequence: idle-ramp
-	#WithProductionDoorOverlay@top: # TODO
-	#	Sequence: build-top
-	#WithProductionDoorOverlay@door:
-	#	Sequence: build-door
 	Power:
 		Amount: -25
+	InfiltrateForSupportPower:
+		Proxy: warfactory.infiltrated
+	Targetable:
+		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
 
 nayard:
 	Inherits: ^Building
@@ -263,7 +272,7 @@ nayard:
 		Queue: Building
 		BuildPaletteOrder: 50
 		Prerequisites: power, refinery, ~structures.soviets
-	TargetableBuilding:
+	Targetable:
 		TargetTypes: Ground, Water, C4
 	ProvidesPrerequisite@default:
 	Building:
@@ -290,7 +299,7 @@ nayard:
 		Produces: Ship
 	PrimaryBuilding:
 	RallyPoint:
-	RepairsUnits: # TODO: First play the animation first frames loop and then increase HP, play last when done
+	RepairsUnits:
 		FinishRepairingNotification: UnitRepaired
 	ProductionBar:
 	Power:
@@ -301,7 +310,7 @@ nayard:
 		Sequence: idle-waves
 	WithRepairOverlay:
 		Sequence: repair
-	WithProductionOverlay@LIGHTS:
+	WithProductionOverlay@lights:
 		Sequence: production-lights
 	-EmitInfantryOnSell@allies:
 	-EmitInfantryOnSell@soviets:
@@ -332,11 +341,11 @@ nadept:
 		Range: 5c0
 	Reservable:
 	RallyPoint:
-	RepairsUnits: # TODO: First play the animation and then increase HP
+	RepairsUnits:
 		Interval: 148
 		HpPerStep: 20
 		FinishRepairingNotification: UnitRepaired
-	WithIdleOverlay@normal: # Hack: don't glitch while repairing
+	WithIdleOverlay@normal:
 		Sequence: idle-normal
 	WithIdleOverlay@bib:
 		Sequence: bib
@@ -369,8 +378,11 @@ nanrct:
 		Type: Concrete
 	RevealsShroud:
 		Range: 5c0
-	WithIdleOverlay@LIGHTS:
+	WithIdleOverlay@lights:
 		Sequence: idle-lights
+	Explodes:
+		Weapon: NukePayload
+		EmptyWeapon: NukePayload
 	Power:
 		Amount: 2000
 	ScalePowerWithHealth:
@@ -402,6 +414,10 @@ natech:
 		Range: 6c0
 	Power:
 		Amount: -100
+	InfiltrateForSupportPower:
+		Proxy: soviets.tech.infiltrated
+	Targetable:
+		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
 
 naclon:
 	Inherits: ^Building
@@ -435,6 +451,7 @@ naclon:
 		SpawnOffset: 410,140,0
 		ExitCell: 2,0
 	Production:
+		Produces: Infantry
 	RallyPoint:
 	ClonesProducedUnits:
 		CloneableTypes: infantry
@@ -463,38 +480,12 @@ napsis:
 		Range: 10c0
 	RenderDetectionCircle:
 	DetectCloaked:
-		Range: 6
+		Range: 6c0
 	WithIdleOverlay@spin:
 		Sequence: idle-spin
 		PauseOnLowPower: true
 	Power:
 		Amount: -100
-
-# TODO: ngmisl.shp is not a valid shp
-# namisl:
-# 	Inherits: ^Building
-# 	Buildable:
-# 		Queue: Support
-# 		BuildPaletteOrder: 50
-# 		Prerequisites: ~natech, ~structures.soviets
-# 	Valued:
-# 		Cost: 5000
-# 	Tooltip:
-# 		Name: Nuclear Missile Silo
-# 		Description: Houses a nuclear warhead.
-# 	Building:
-# 		Footprint: xxx xxx xxx
-# 		Dimensions: 3, 3
-# 	Selectable:
-# 		Bounds: 82, 150, -1, -55
-# 	Health:
-# 		HP: 1000
-# 	Armor:
-# 		Type: Concrete
-# 	RevealsShroud:
-# 		Range: 4c0
-# 	Power:
-# 		Amount: -200
 
 nairon:
 	Inherits: ^Building
@@ -521,7 +512,46 @@ nairon:
 		Range: 4c0
 	Power:
 		Amount: -200
-# TODO: Iron Curtain ability
+	GrantUpgradePower@IRONCURTAIN:
+		Icon: invuln
+		ChargeTime: 120
+		Description: Invulnerability
+		LongDesc: Makes a group of units invulnerable\nfor 20 seconds.
+		Duration: 500
+		SelectTargetSound:
+		InsufficientPowerSound:
+		BeginChargeSound:
+		EndChargeSound:
+		DisplayRadarPing: True
+		Upgrades: invulnerability
+	SupportPowerChargeBar:
+
+namisl:
+	Inherits: ^Building
+	Buildable:
+		Queue: Support
+		BuildPaletteOrder: 70
+		Prerequisites: natech, ~structures.soviets
+		BuildLimit: 1
+	Valued:
+		Cost: 5000
+	Tooltip:
+		Name: Nuclear Missile Silo
+		Description: Provides an atomic bomb.\nRequires power to operate.\n  Special Ability: Atom Bomb\nMaximum 1 can be built.
+	Building:
+		Footprint: xxx xxx xxx
+		Dimensions: 3, 3
+	Selectable:
+		Bounds: 152, 104, 0, -50
+	Health:
+		HP: 1000
+	Armor:
+		Type: Concrete
+	RevealsShroud:
+		Range: 4c0
+	Power:
+		Amount: -200
+	RequiresPower:
 
 nawall:
 	Inherits: ^Wall
@@ -569,6 +599,7 @@ naflak:
 		InitialFacing: 224
 		Offset: 450,0,0
 	AttackTurreted:
+		Voice: Attack
 	Armament:
 		Weapon: FlakWeapon
 	BodyOrientation:
@@ -604,8 +635,7 @@ tesla:
 		Range: 8c0
 	Selectable:
 		Bounds: 44, 88, -2, -33
-	RenderBuildingCharge:
-		ChargeAudio: tslachg2.aud
+	WithChargeAnimation:
 	Armament@primary:
 		Weapon: CoilBolt
 		LocalOffset: 0,0,2200
@@ -619,11 +649,12 @@ tesla:
 		UpgradeMinEnabledLevel: 3
 		UpgradeMaxAcceptedLevel: 3
 	AttackCharge:
+		Voice: Attack
 		Armaments: primary, charged
 		MaxCharges: 3
 		ReloadTime: 120
+		ChargeAudio: tslachg2.aud
 	AutoTarget:
-	-RenderBuilding:
 	RequiresPower:
 	WithRangeCircle:
 		Range: 8c0
@@ -632,4 +663,5 @@ tesla:
 		Amount: -75
 	WithIdleOverlay@powered:
 		Sequence: idle-powered
-		PauseOnLowPower: true # Actually disabled
+		PauseOnLowPower: true
+

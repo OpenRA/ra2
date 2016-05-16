@@ -11,7 +11,7 @@
 	PaletteFromFile@playerurb:
 		Name: player
 		Tileset: URBAN
-		Filename: unittem.pal
+		Filename: uniturb.pal
 		ShadowIndex: 1
 	PaletteFromFile@playersno:
 		Name: player
@@ -26,6 +26,10 @@
 		Filename: cameo.pal
 		AllowModifiers: false
 		ShadowIndex: 242
+	PaletteFromFile@cameo-chevron:
+		Name: cameo-chevron
+		Filename: cameo-chevron.pal
+		AllowModifiers: false
 	PaletteFromFile@pips:
 		Name: pips
 		Filename: palette.pal
@@ -45,8 +49,8 @@
 		Name: colorpicker
 		Filename: unittem.pal
 		AllowModifiers: false
-	PaletteFromFile@ore:
-		Name: ore
+	PaletteFromFile@resource:
+		Name: resource
 		Filename: temperat.pal
 		ShadowIndex: 1
 	PaletteFromRGBA@shadow:
@@ -61,6 +65,12 @@
 		G: 0
 		B: 0
 		A: 140
+	PaletteFromRGBA@invuln:
+		Name: invuln
+		R: 128
+		G: 0
+		B: 0
+		A: 128
 	PaletteFromRGBA@highlight:
 		Name: highlight
 		R: 255
@@ -81,6 +91,7 @@
 		A: 180
 	TSShroudPalette@shroud:
 		Type: Shroud
+		Name: shroud
 	ShroudRenderer:
 		Index: 255, 16, 32, 48, 64, 80, 96, 112, 128, 144, 160, 176, 192, 208, 224, 240, 20, 40, 56, 65, 97, 130, 148, 194, 24, 33, 66, 132, 28, 41, 67, 134, 1, 2, 4, 8, 3, 6, 12, 9, 7, 14, 13, 11, 5, 10, 15, 255
 		UseExtendedIndex: true

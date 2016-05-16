@@ -9,22 +9,28 @@ zep:
 		BuildPaletteOrder: 20
 		Prerequisites: ~naweap, natech
 	Selectable:
-	Helicopter:
+	Aircraft:
 		CruiseAltitude: 5600
 		ROT: 5
 		Speed: 50
-	TargetableAircraft:
+		Voice: Move
+		AirborneUpgrades: airborne
+		CanHover: True
+	Targetable@airborne:
 		TargetTypes: Air
-		GroundedTargetTypes: Ground
+		UpgradeTypes: airborne
+		UpgradeMinEnabledLevel: 1
 	Health:
 		HP: 2000
 	Armor:
 		Type: Light
 	RevealsShroud:
 		Range: 8c0
+		Type: CenterPosition
 	Armament:
 		Weapon: BlimpBomb
 	AttackFrontal:
+		Voice: Attack
 	AutoTarget:
 	RenderSprites:
 	RenderVoxels:
@@ -35,27 +41,33 @@ zep:
 		Weapon: UnitExplode
 		Chance: 75
 	AnnounceOnBuild:
-	AnnounceOnKill: # Does not work?
+	AnnounceOnKill:
 	Voiced:
 		VoiceSet: KirovVoice
-	LeavesHusk:
-		HuskActor: zephusk
+#	SpawnActorOnDeath:
+#		Actor: zephusk
+	Targetable@ground:
+		TargetTypes: Ground
+		UpgradeTypes: airborne
+		UpgradeMaxEnabledLevel: 0
 
-zephusk:
-	Inherits: ^HelicopterHusk
-	Tooltip:
-		Name: Kirov Airship
-	RenderSprites:
-		Image: zep
-	RenderVoxels:
-		Image: zep
-	WithVoxelBody:
-	WithShadow:
-	Helicopter:
-		ROT: 10
-		Speed: 50
-	RevealsShroud:
-		Range: 8c0
-	FallsToEarth:
-		Velocity: 200
+#zephusk:
+#	Inherits: ^HelicopterHusk
+#	Tooltip:
+#		Name: Kirov Airship
+#	RenderSprites:
+#		Image: zep
+#	RenderVoxels:
+#		Image: zep
+#	WithVoxelBody:
+#	WithShadow:
+#	Helicopter:
+#		ROT: 10
+#		Speed: 50
+#		AirborneUpgrades: airborne
+#	RevealsShroud:
+#		Range: 8c0
+#		Type: CenterPosition
+#	FallsToEarth:
+#		Velocity: 200
 

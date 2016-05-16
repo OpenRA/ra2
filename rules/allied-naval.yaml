@@ -25,8 +25,8 @@ lcrf:
 			Road: 100
 			DirtRoad: 100
 			Beach: 60
-			Tiberium: 50 #Used Track value from the inis
-			BlueTiberium: 50
+			Ore: 50
+			Gems: 50
 			Water: 100
 	RevealsShroud:
 		Range: 6c0
@@ -35,12 +35,15 @@ lcrf:
 		MaxWeight: 9
 		PipCount: 12
 		PassengerFacing: 96
-		UnloadTerrainTypes: Clear, Rough, Rail, Road, DirtRoad, Beach, Tiberium, BlueTiberium
+		UnloadTerrainTypes: Clear, Rough, Rail, Road, DirtRoad, Beach, Ore, Gems
+		UnloadVoice: Move
 	Explodes:
 		Weapon: UnitExplode
 		EmptyWeapon: UnitExplode
 	WithVoxelBody:
 	RenderSprites:
+	RepairableNear:
+		Buildings: gayard, nayard
 	Voiced:
 		VoiceSet: AlliedNavalVoice
 
@@ -68,23 +71,25 @@ dest:
 		Bounds: 80, 80, 0, -6
 	Armament@primary:
 		Weapon: 155mm
-		LocalOffset: 768,0,0 # Not true, copy-pasted from SUB.
+		LocalOffset: 768,0,0
 		FireDelay: 2
 		UpgradeTypes: eliteweapon
 		UpgradeMaxEnabledLevel: 0
 		UpgradeMaxAcceptedLevel: 1
 	Armament@elite:
 		Weapon: 155mmE
-		LocalOffset: 768,0,0 # Not true, copy-pasted from SUB.
+		LocalOffset: 768,0,0
 		FireDelay: 2
 		UpgradeTypes: eliteweapon
 		UpgradeMinEnabledLevel: 1
 	AttackFrontal:
+		Voice: Attack
 	Chronoshiftable:
 	RepairableNear:
+		Buildings: gayard, nayard
 	DetectCloaked:
 		CloakTypes: Underwater
-		Range: 4
+		Range: 4c0
 	RenderDetectionCircle:
 	Explodes:
 		Weapon: UnitExplode
@@ -119,7 +124,10 @@ aegis:
 	Armament:
 		Weapon: Medusa
 	AttackFrontal:
+		Voice: Attack
 	AutoTarget:
+	RepairableNear:
+		Buildings: gayard, nayard
 	Explodes:
 		Weapon: UnitExplode
 		EmptyWeapon: UnitExplode

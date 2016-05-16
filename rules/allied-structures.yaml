@@ -31,7 +31,7 @@ gacnst:
 		ProductionType: Building
 	ProductionBar@Support:
 		ProductionType: Support
-	WithIdleOverlay@FANS:
+	WithIdleOverlay@fans:
 		Sequence: idle-fans
 		PauseOnLowPower: true
 	WithBuildingPlacedOverlay:
@@ -45,6 +45,12 @@ gacnst:
 		Race: france
 	Power:
 		Amount: 0
+	EmitInfantryOnSell@allies:
+		ActorTypes: e1, e1, e1, engineer
+		Factions: america, germany, england, france, korea
+	EmitInfantryOnSell@soviets:
+		ActorTypes: e2, e2, e2, e2, engineer
+		Factions: cuba, libya, iraq, russia
 
 gapowr:
 	Inherits: ^Building
@@ -70,7 +76,7 @@ gapowr:
 		Type: Wood
 	RevealsShroud:
 		Range: 4c0
-	WithIdleOverlay@GLOW:
+	WithIdleOverlay@glow:
 		Sequence: idle-glow
 	Power:
 		Amount: 200
@@ -117,10 +123,14 @@ gapile:
 		Produces: Infantry
 	PrimaryBuilding:
 	ProductionBar:
-	WithIdleOverlay@FLAG:
+	WithIdleOverlay@flag:
 		Sequence: idle-flag
 	Power:
 		Amount: -10
+	InfiltrateForSupportPower:
+		Proxy: barracks.infiltrated
+	Targetable:
+		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
 
 garefn:
 	Inherits: ^Building
@@ -162,13 +172,12 @@ garefn:
 		Value: 300
 	FreeActor:
 		Actor: cmin
-	 	InitialActivity: FindResources
-	 	SpawnOffset: 4, 1 #Should be 3, 1 but causes game to crash cause harvester wants to move.
-	 	Facing: 160
+		SpawnOffset: 4, 1
+		Facing: 160
 	WithDockingOverlay:
-	WithIdleOverlay@BIB:
+	WithIdleOverlay@bib:
 		Sequence: idle-bib
-	WithIdleOverlay@DRILL:
+	WithIdleOverlay@drill:
 		Sequence: idle-drill
 	Power:
 		Amount: -50
@@ -206,23 +215,23 @@ gaairc:
 	ProvidesRadar:
 	RevealsShroud:
 		Range: 10c0
-	WithIdleOverlay@TOP:
+	WithIdleOverlay@top:
 		Sequence: idle-top
 		PauseOnLowPower: true
-	WithIdleOverlay@BOTTOM:
+	WithIdleOverlay@bottom:
 		Sequence: idle-bottom
 		PauseOnLowPower: true
-	WithIdleOverlay@MID:
+	WithIdleOverlay@mid:
 		Sequence: idle-mid
 		PauseOnLowPower: true
-	WithIdleOverlay@DISH:
+	WithIdleOverlay@dish:
 		Sequence: idle-dish
 		PauseOnLowPower: true
-	TargetableBuilding:
+	Targetable:
 		TargetTypes: Ground, C4, SpyInfiltrate, DetonateAttack
 	Power:
 		Amount: -50
-	Reservable: # TODO: Support Multiple
+	Reservable:
 	Exit@1:
 		SpawnOffset: -350,350,0
 		MoveIntoWorld: false
@@ -247,9 +256,11 @@ amradr:
 		Name: American Airforce Command Headquarters
 	Buildable:
 		Prerequisites: garefn, ~structures.america
-	RenderBuilding:
+	WithSpriteBody:
+	QuantizeFacingsFromSequence:
+	RenderSprites:
 		Image: gaairc
-#	ParatroopersPower: # TODO
+	AutoSelectionSize:
 
 gaweap:
 	Inherits: ^Building
@@ -296,6 +307,10 @@ gaweap:
 		Sequence: build-ramp
 	Power:
 		Amount: -25
+	InfiltrateForSupportPower:
+		Proxy: warfactory.infiltrated
+	Targetable:
+		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
 
 gayard:
 	Inherits: ^Building
@@ -308,7 +323,7 @@ gayard:
 		Queue: Building
 		BuildPaletteOrder: 50
 		Prerequisites: power, refinery, ~structures.allies
-	TargetableBuilding:
+	Targetable:
 		TargetTypes: Ground, Water, C4
 	ProvidesPrerequisite@default:
 	Building:
@@ -335,7 +350,7 @@ gayard:
 		Produces: Ship
 	PrimaryBuilding:
 	RallyPoint:
-	RepairsUnits: # TODO: First play the animation first frames loop and then increase HP, play last when done
+	RepairsUnits:
 		FinishRepairingNotification: UnitRepaired
 	ProductionBar:
 	Power:
@@ -377,7 +392,7 @@ gadept:
 	RepairsUnits:
 		Interval: 50
 		FinishRepairingNotification: UnitRepaired
-	WithIdleOverlay@side: # Hack: don't glitch while repairing
+	WithIdleOverlay@side:
 		Sequence: idle-side
 	WithIdleOverlay@bib:
 		Sequence: bib
@@ -415,6 +430,10 @@ gatech:
 		Sequence: idle-lights
 	Power:
 		Amount: -100
+	InfiltrateForSupportPower:
+		Proxy: allies.tech.infiltrated
+	Targetable:
+		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
 
 gawall:
 	Inherits: ^Wall
@@ -460,9 +479,10 @@ gapill:
 	Armament:
 		Weapon: vulcan2
 		LocalOffset: 768,85,512
-		MuzzleSequence: muzzle # TODO: this isn't rendered?
+		MuzzleSequence: muzzle
 		MuzzleSplitFacings: 8
 	AttackTurreted:
+		Voice: Attack
 	Turreted:
 		ROT: 255
 	BodyOrientation:
@@ -499,6 +519,7 @@ nasam:
 		InitialFacing: 224
 		Offset: 900,0,0
 	AttackTurreted:
+		Voice: Attack
 	Armament:
 		Weapon: RedEye2
 	BodyOrientation:
@@ -540,6 +561,7 @@ gtgcan:
 		InitialFacing: 224
 		Offset: 400,0,0
 	AttackTurreted:
+		Voice: Attack
 		Recoils: true
 	Armament:
 		Weapon: GrandCannonWeapon
@@ -553,7 +575,7 @@ gtgcan:
 	WithVoxelTurret:
 	WithVoxelBarrel:
 	AutoTarget:
-	WithMuzzleFlash:
+	WithMuzzleOverlay:
 	WithRangeCircle:
 		Range: 15c0
 		Type: grandcannon
@@ -572,7 +594,7 @@ gaorep:
 	Valued:
 		Cost: 2500
 	Tooltip:
-		Name: Allied Ore Processor
+		Name: Allied Ore Purifier
 		Description: Refines all forms of income by 25%.
 	Building:
 		Footprint: xxx xxx xxx
@@ -587,7 +609,6 @@ gaorep:
 		Sequence: idle-glow
 	Power:
 		Amount: -200
-# TODO: Increase income by 25%
 
 gaspysat:
 	Inherits: ^Building
@@ -643,8 +664,8 @@ gagap:
 	RevealsShroud:
 		Range: 5c0
 	CreatesShroud:
-		Range: 10c0 # Does only create 5c0 because of the sight range
-	RenderShroudCircle: # TODO: Animated one (Radar like)
+		Range: 10c0
+	RenderShroudCircle:
 	Power:
 		Amount: -100
 	MustBeDestroyed:
@@ -656,6 +677,7 @@ gaweat:
 		Queue: Support
 		BuildPaletteOrder: 110
 		Prerequisites: gatech, ~structures.allies
+		BuildLimit: 1
 	Selectable:
 		Bounds: 116, 106, -2, -26
 	Valued:
@@ -674,8 +696,6 @@ gaweat:
 		Range: 5c0
 	Power:
 		Amount: -200
-# TODO: Lightning superpower -- 10m cooldown
-# TODO: Reset SW timer on infiltrate
 
 gacsph:
 	Inherits: ^Building
@@ -683,6 +703,7 @@ gacsph:
 		Queue: Support
 		BuildPaletteOrder: 120
 		Prerequisites: gatech, ~structures.allies
+		BuildLimit: 1
 	Selectable:
 		Bounds: 176, 110, -5, -14
 	Valued:
@@ -703,20 +724,6 @@ gacsph:
 		Amount: -200
 	WithIdleOverlay:
 		Sequence: idle-dome
-	# ChronoshiftPower:
-	#	OrderName: Chronoshift
-		# TODO: find this: Icon: chroicon
-	#	ChargeTime: 300
-	#	Description: Chronoshift
-	#	LongDesc: Teleports a group of units across\nthe map.
-		# TODO: SelectTargetSound: slcttgt1.aud
-		# TODO: InsufficientPowerSound: nopowr1.aud
-		# TODO: BeginChargeSound: chrochr1.aud
-		# TODO: EndChargeSound: chrordy1.aud
-		# TODO: Was it timed? Duration: 20
-		# TODO: not all cargo types died: KillCargo: true
-	#	DisplayRadarPing: false
-		# TODO: Support rectangle selection, not radius-only: Range: 3x3
 
 atesla:
 	Inherits: ^Building
@@ -740,21 +747,21 @@ atesla:
 		Type: Steel
 	RevealsShroud:
 		Range: 8c0
-	RenderBuildingCharge:
-		ChargeAudio: bpripow.wav
+	WithChargeAnimation:
 	Armament:
 		Weapon: PrismShot
 		LocalOffset: 0,0,2500
 	AttackCharge:
+		Voice: Attack
 		Armaments: primary
 		MaxCharges: 3
 		ReloadTime: 60
+		ChargeAudio: bpripow.wav
 	Power:
 		Amount: -75
 	AutoTarget:
-	-RenderBuilding:
 	RequiresPower:
-	WithIdleOverlay@normal: # Hack: Don't glitch when shooting in damaged state
+	WithIdleOverlay@normal:
 		Sequence: idle-normal
 		PauseOnLowPower: true
 	WithRangeCircle:
@@ -762,26 +769,31 @@ atesla:
 		Type: prismcannon
 
 power:
+	AlwaysVisible:
 	Tooltip:
 		Name: Power Plant
 		Description: Power Plant
 
 refinery:
+	AlwaysVisible:
 	Tooltip:
-		Name: Refinery
-		Description: Refinery
+		Name: Ore Refinery
+		Description: Ore Refinery
 
 barracks:
+	AlwaysVisible:
 	Tooltip:
 		Name: Infantry Production
 		Description: Infantry Production
 
 radar:
+	AlwaysVisible:
 	Tooltip:
 		Name: Radar
 		Description: Radar
 
 repairpad:
+	AlwaysVisible:
 	Tooltip:
 		Name: Service Depot
 		Description: Service Depot

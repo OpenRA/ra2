@@ -1,5 +1,5 @@
 Player:
-	HackyAI@TestAI:
+	HackyAI@testai:
 		Name: Test AI
 		BuildingCommonNames:
 			ConstructionYard: gacnst, nacnst
@@ -47,11 +47,22 @@ Player:
 			e2: 90%
 			dog: 5%
 			engineer: 5%
+			flakt: 3%
+			shk: 3%
 			terror: 1%
+			ivan: 1%
+			jumpjet: 2%
+			deso: 1%
 			tany: 1%
-			htnk: 1%
-			mtnk: 1%
-			apoc: 1%
+			snipe: 1%
+			htnk: 3%
+			htk: 1%
+			mtnk: 3%
+			fv: 1%
+			sref: 0.5%
+			mgtk: 0.5%
+			apoc: 0.5%
 			dtruck: 1%
+			tnkd: 1%
 		SquadSize: 5
 
