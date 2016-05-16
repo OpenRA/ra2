@@ -17,12 +17,14 @@ engineer:
 		Speed: 56
 	Passenger:
 		PipType: Blue
+		GrantUpgrades: ifv-repair
 	EngineerRepair:
 	RepairsBridges:
+		RepairNotification: BridgeRepaired
 	Captures:
+		Sabotage: false
 		CaptureTypes: building, husk
 	-AutoTarget:
-	WithInfantryBody:
 	RevealsShroud:
 		Range: 4c0
 	Voiced:
@@ -59,10 +61,9 @@ dog:
 		Weapon: DogJaw
 	AttackLeap:
 		Voice: Attack
-	WithInfantryBody:
 	RenderSprites:
 		Image: adog
-		RaceImages:
+		FactionImages:
 			soviet: dog
 			cuba: dog
 			libya: dog
@@ -80,7 +81,8 @@ dog:
 		Sequence: stand
 
 e1:
-	Inherits: ^Infantry
+	Inherits@1: ^Infantry
+	Inherits@2: ^Parachutable
 	Buildable:
 		Queue: Infantry
 		Prerequisites: ~gapile
@@ -98,6 +100,7 @@ e1:
 		Speed: 31
 	Passenger:
 		PipType: Green
+		GrantUpgrades: ifv-machinegun
 	RevealsShroud:
 		Range: 5c0
 	AttackFrontal:
@@ -146,6 +149,7 @@ snipe:
 		HP: 125
 	Passenger:
 		PipType: Red
+		GrantUpgrades: ifv-sniper
 	RevealsShroud:
 		Range: 8c0
 	Armor:
@@ -198,7 +202,6 @@ spy:
 		Sequence: pip-disguise
 		Palette: pips
 		ReferencePoint: Top, Right
-		Offset: 6, -2
 		ZOffset: 256
 		UpgradeTypes: disguise
 		UpgradeMinEnabledLevel: 1
@@ -210,6 +213,70 @@ spy:
 		Voice: Action
 	QuantizeFacingsFromSequence:
 		Sequence: stand
+
+ghost:
+	Inherits: ^Infantry
+	Buildable:
+		Queue: Infantry
+		BuildAtProductionType: Infantry
+		BuildPaletteOrder: 110
+		Prerequisites: ~disabled
+	Valued:
+		Cost: 1000
+	Tooltip:
+		Name: Navy SEAL
+		Description: Elite commando infantry, armed with\na sub machine gun and C4.\n  Strong vs Infantry, Buildings\n  Weak vs Vehicles, Aircraft\nSpecial Ability: Destroy Building with C4
+	Selectable:
+		Bounds: 20, 30, 0, -11
+	Health:
+		HP: 125
+	UpgradeInWater:
+	Targetable@WaterBorne:
+		TargetTypes: Underwater
+		UpgradeTypes: water-borne
+		UpgradeMinEnabledLevel: 1
+	Mobile:
+		Speed: 71
+		TerrainSpeeds:
+			Clear: 100
+			Rough: 100
+			Rail: 90
+			Road: 100
+			DirtRoad: 100
+			Ore: 90
+			Gems: 80
+			Water: 70
+	RevealsShroud:
+		Range: 8c0
+	C4Demolition:
+		C4Delay: 45
+		Voice: SpecialAttack
+	Armor:
+		Type: Flak
+	Passenger:
+		PipType: Red
+		GrantUpgrades: ifv-hero
+	Armament@primary:
+		Weapon: MP5
+		UpgradeTypes: eliteweapon
+		UpgradeMaxEnabledLevel: 0
+		UpgradeMaxAcceptedLevel: 1
+	Armament@elite:
+		Weapon: MP5E
+		UpgradeTypes: eliteweapon
+		UpgradeMinEnabledLevel: 1
+	AttackFrontal:
+		Voice: Attack
+	RenderSprites:
+		Image: seal
+	Voiced:
+		VoiceSet: SealVoice
+	ProducibleWithLevel:
+		Prerequisites: barracks.infiltrated
+	QuantizeFacingsFromSequence:
+		Sequence: stand
+	WithSwimSuit:
+	-TakeCover: # TODO: allow multiple sequence modifiers
 
 tany:
 	Inherits: ^Infantry
@@ -228,8 +295,22 @@ tany:
 		Bounds: 20, 30, 0, -11
 	Health:
 		HP: 125
+	UpgradeInWater:
+	Targetable@WaterBorne:
+		TargetTypes: Underwater
+		UpgradeTypes: water-borne
+		UpgradeMinEnabledLevel: 1
 	Mobile:
 		Speed: 71
+		TerrainSpeeds:
+			Clear: 100
+			Rough: 100
+			Rail: 90
+			Road: 100
+			DirtRoad: 100
+			Ore: 90
+			Gems: 80
+			Water: 70
 	RevealsShroud:
 		Range: 6c0
 	C4Demolition:
@@ -239,6 +320,7 @@ tany:
 		Type: Flak
 	Passenger:
 		PipType: Red
+		GrantUpgrades: ifv-hero
 	Armament@primary:
 		Weapon: DoublePistols
 		UpgradeTypes: eliteweapon
@@ -250,7 +332,6 @@ tany:
 		UpgradeMinEnabledLevel: 1
 	AttackFrontal:
 		Voice: Attack
-	WithInfantryBody:
 	AnnounceOnBuild:
 	Voiced:
 		VoiceSet: TanyaVoice
@@ -258,6 +339,8 @@ tany:
 		Prerequisites: barracks.infiltrated
 	QuantizeFacingsFromSequence:
 		Sequence: stand
+	-TakeCover: # TODO: allow multiple sequence modifiers
+	WithSwimSuit:
 
 jumpjet:
 	Inherits: ^Infantry
@@ -298,7 +381,7 @@ jumpjet:
 		CruiseAltitude: 3072
 		LandWhenIdle: false
 		InitialFacing: 20
-		ROT: 10
+		TurnSpeed: 10
 		Speed: 100
 		AltitudeVelocity: 83
 		Voice: Move
@@ -306,6 +389,7 @@ jumpjet:
 		RepairBuildings:
 		RearmBuildings:
 		CanHover: True
+		IdealSeparation: 512
 	WithInfantryBody:
 		StandSequence: fly
 		MoveSequence: fly
@@ -329,4 +413,4 @@ jumpjet:
 		TargetTypes: Ground, Infantry, DetonateAttack, Disguise
 		UpgradeTypes: airborne
 		UpgradeMaxEnabledLevel: 0
-
+	-Passenger:

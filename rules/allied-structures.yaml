@@ -27,6 +27,7 @@ gacnst:
 		IntoActor: amcv
 		Offset: 1,1
 		Facing: 96
+		DeployCursor: undeploy
 	ProductionBar@Building:
 		ProductionType: Building
 	ProductionBar@Support:
@@ -39,10 +40,10 @@ gacnst:
 		Prerequisite: structures.allies
 	ProvidesPrerequisite@america:
 		Prerequisite: structures.america
-		Race: america
+		Factions: america
 	ProvidesPrerequisite@france:
 		Prerequisite: structures.france
-		Race: france
+		Factions: france
 	Power:
 		Amount: 0
 	EmitInfantryOnSell@allies:
@@ -80,9 +81,14 @@ gapowr:
 		Sequence: idle-glow
 	Power:
 		Amount: 200
+	InfiltrateForPowerOutage:
+	AffectedByPowerOutage:
 	ScalePowerWithHealth:
 	SoundOnDamageTransition:
 		DestroyedSounds: bpowdiea.wav, bpowdieb.wav
+	PowerTooltip:
+	Targetable:
+		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
 
 gapile:
 	Inherits: ^Building
@@ -101,7 +107,7 @@ gapile:
 		Prerequisite: barracks
 	ProvidesPrerequisite@england:
 		Prerequisite: infantry.england
-		Race: england
+		Factions: england
 	ProvidesPrerequisite@default:
 	Building:
 		Footprint: xxx xxx
@@ -113,6 +119,9 @@ gapile:
 	RevealsShroud:
 		Range: 5c0
 	RallyPoint:
+		Offset: 2,3
+		Palette: mouse
+		IsPlayerPalette: false
 	Exit@1:
 		SpawnOffset: -170,810,0
 		ExitCell: 2,2
@@ -122,6 +131,14 @@ gapile:
 	Production:
 		Produces: Infantry
 	PrimaryBuilding:
+	WithDecoration@primary:
+		RequiresSelection: true
+		Image: pips
+		Sequence: tag-primary
+		ReferencePoint: Top
+		ZOffset: 256
+		UpgradeTypes: primary
+		UpgradeMinEnabledLevel: 1
 	ProductionBar:
 	WithIdleOverlay@flag:
 		Sequence: idle-flag
@@ -131,6 +148,14 @@ gapile:
 		Proxy: barracks.infiltrated
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
+	WithDecoration@primary:
+		RequiresSelection: true
+		Image: pips
+		Sequence: tag-primary
+		ReferencePoint: Top
+		ZOffset: 256
+		UpgradeTypes: primary
+		UpgradeMinEnabledLevel: 1
 
 garefn:
 	Inherits: ^Building
@@ -170,17 +195,23 @@ garefn:
 		Capacity: 999999
 	CustomSellValue:
 		Value: 300
+	InfiltrateForCash:
+		Percentage: 50
+		Notification: CreditsStolen
+		Minimum: 500
 	FreeActor:
 		Actor: cmin
-		SpawnOffset: 4, 1
+		SpawnOffset: 3, 1
 		Facing: 160
-	WithDockingOverlay:
+	WithDockedOverlay:
 	WithIdleOverlay@bib:
 		Sequence: idle-bib
 	WithIdleOverlay@drill:
 		Sequence: idle-drill
 	Power:
 		Amount: -50
+	Targetable:
+		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
 
 gaairc:
 	Inherits: ^Building
@@ -199,7 +230,7 @@ gaairc:
 		Prerequisite: aircraft.allies
 	ProvidesPrerequisite@korea:
 		Prerequisite: aircraft.korea
-		Race: korea
+		Factions: korea
 	ProvidesPrerequisite@default:
 	Building:
 		Footprint: xxx xxx
@@ -212,6 +243,9 @@ gaairc:
 		Type: Steel
 	RequiresPower:
 	CanPowerDown:
+		IndicatorPalette: ts-mouse
+		PowerupSpeech: BuildingOnline
+		PowerdownSpeech: BuildingOffline
 	ProvidesRadar:
 	RevealsShroud:
 		Range: 10c0
@@ -228,7 +262,7 @@ gaairc:
 		Sequence: idle-dish
 		PauseOnLowPower: true
 	Targetable:
-		TargetTypes: Ground, C4, SpyInfiltrate, DetonateAttack
+		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
 	Power:
 		Amount: -50
 	Reservable:
@@ -248,7 +282,23 @@ gaairc:
 		Produces: Aircraft
 	ProductionBar:
 	PrimaryBuilding:
+	WithDecoration@primary:
+		RequiresSelection: true
+		Image: pips
+		Sequence: tag-primary
+		ReferencePoint: Top
+		ZOffset: 256
+		UpgradeTypes: primary
+		UpgradeMinEnabledLevel: 1
 	InfiltrateForExploration:
+	WithDecoration@primary:
+		RequiresSelection: true
+		Image: pips
+		Sequence: tag-primary
+		ReferencePoint: Top
+		ZOffset: 256
+		UpgradeTypes: primary
+		UpgradeMinEnabledLevel: 1
 
 amradr:
 	Inherits: gaairc
@@ -261,6 +311,16 @@ amradr:
 	RenderSprites:
 		Image: gaairc
 	AutoSelectionSize:
+	ParatroopersPower@paratroopers:
+		OrderName: AmericanParatroopers
+		Icon: airborne
+		ChargeTime: 360
+		Description: American Paratroopers
+		LongDesc: A Cargo Plane drops eight GIs\nanywhere on the map.
+		DropItems: e1,e1,e1,e1,e1,e1,e1,e1
+		QuantizedFacings: 8
+		UnitType: pdplane
+		CameraActor: camera
 
 gaweap:
 	Inherits: ^Building
@@ -277,7 +337,7 @@ gaweap:
 		Description: Produces vehicles.
 	ProvidesPrerequisite@germany:
 		Prerequisite: vehicles.germany
-		Race: germany
+		Factions: germany
 	ProvidesPrerequisite@default:
 	Building:
 		Footprint: xxxxx xxxxx xxxxx
@@ -289,21 +349,33 @@ gaweap:
 	RevealsShroud:
 		Range: 4c0
 	RallyPoint:
+		Offset: 5,1
+		Palette: mouse
+		IsPlayerPalette: false
 	Exit@1:
-		ExitCell: 5,1
+		SpawnOffset: -384,-384,0
+		ExitCell: 4,1
 	Production:
-		Produces: Vehicle, Aircraft
+		Produces: Vehicle
 	PrimaryBuilding:
+	WithDecoration@primary:
+		RequiresSelection: true
+		Image: pips
+		Sequence: tag-primary
+		ReferencePoint: Top
+		ZOffset: 256
+		UpgradeTypes: primary
+		UpgradeMinEnabledLevel: 1
 	ProductionBar:
 	WithIdleOverlay@flag:
 		Sequence: idle-flag
 	WithIdleOverlay@fan:
 		Sequence: overlay-fan
-	WithIdleOverlay@ramp:
-		Sequence: idle-ramp
-	WithProductionDoorOverlay@top:
+	WithIdleOverlay@bib:
+		Sequence: bib
+	WithExitOverlay@top-vehicles:
 		Sequence: build-top
-	WithProductionDoorOverlay@ramp:
+	WithExitOverlay@ramp:
 		Sequence: build-ramp
 	Power:
 		Amount: -25
@@ -311,6 +383,14 @@ gaweap:
 		Proxy: warfactory.infiltrated
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
+	WithDecoration@primary:
+		RequiresSelection: true
+		Image: pips
+		Sequence: tag-primary
+		ReferencePoint: Top
+		ZOffset: 256
+		UpgradeTypes: primary
+		UpgradeMinEnabledLevel: 1
 
 gayard:
 	Inherits: ^Building
@@ -349,7 +429,18 @@ gayard:
 	Production:
 		Produces: Ship
 	PrimaryBuilding:
+	WithDecoration@primary:
+		RequiresSelection: true
+		Image: pips
+		Sequence: tag-primary
+		ReferencePoint: Top
+		ZOffset: 256
+		UpgradeTypes: primary
+		UpgradeMinEnabledLevel: 1
 	RallyPoint:
+		Offset: 5,1
+		Palette: mouse
+		IsPlayerPalette: false
 	RepairsUnits:
 		FinishRepairingNotification: UnitRepaired
 	ProductionBar:
@@ -363,6 +454,14 @@ gayard:
 		Sequence: repair
 	-EmitInfantryOnSell@allies:
 	-EmitInfantryOnSell@soviets:
+	WithDecoration@primary:
+		RequiresSelection: true
+		Image: pips
+		Sequence: tag-primary
+		ReferencePoint: Top
+		ZOffset: 256
+		UpgradeTypes: primary
+		UpgradeMinEnabledLevel: 1
 
 gadept:
 	Inherits: ^Building
@@ -389,6 +488,8 @@ gadept:
 		Range: 5c0
 	Reservable:
 	RallyPoint:
+		Palette: mouse
+		IsPlayerPalette: false
 	RepairsUnits:
 		Interval: 50
 		FinishRepairingNotification: UnitRepaired
@@ -441,21 +542,12 @@ gawall:
 		Queue: Support
 		BuildPaletteOrder: 10
 		Prerequisites: barracks, ~structures.allies
-	Valued:
-		Cost: 100
 	Tooltip:
 		Name: Allied Wall
 		Description: Light wall.\nCrushable by vehicles.
-	Building:
-		Footprint: x
-		Dimensions: 1, 1
-	Health:
-		HP: 300
-	Armor:
-		Type: Concrete
 
 gapill:
-	Inherits: ^Building
+	Inherits: ^SupportBuilding
 	Buildable:
 		Queue: Support
 		BuildPaletteOrder: 20
@@ -484,7 +576,7 @@ gapill:
 	AttackTurreted:
 		Voice: Attack
 	Turreted:
-		ROT: 255
+		TurnSpeed: 255
 	BodyOrientation:
 		QuantizedFacings: 8
 	WithRangeCircle:
@@ -515,9 +607,9 @@ nasam:
 	Selectable:
 		Bounds: 46, 62, 0, -20
 	Turreted:
-		ROT: 10
+		TurnSpeed: 10
 		InitialFacing: 224
-		Offset: 900,0,0
+		Offset: 550,0,0
 	AttackTurreted:
 		Voice: Attack
 	Armament:
@@ -533,6 +625,11 @@ nasam:
 	AutoTarget:
 	Power:
 		Amount: -50
+	RequiresPower:
+	CanPowerDown:
+		IndicatorPalette: ts-mouse
+		PowerupSpeech: BuildingOnline
+		PowerdownSpeech: BuildingOffline
 
 gtgcan:
 	Inherits: ^VoxelLighting
@@ -544,7 +641,7 @@ gtgcan:
 		Cost: 2000
 	Tooltip:
 		Name: Grand Cannon
-		Description: Automated anti-tank defense.
+		Description: Automated, long ranged anti-ground defense.
 	Building:
 		Footprint: xx xx
 		Dimensions: 2, 2
@@ -557,7 +654,7 @@ gtgcan:
 	Selectable:
 		Bounds: 46, 62, 0, -20
 	Turreted:
-		ROT: 10
+		TurnSpeed: 10
 		InitialFacing: 224
 		Offset: 400,0,0
 	AttackTurreted:
@@ -568,6 +665,7 @@ gtgcan:
 		Recoil: 127
 		RecoilRecovery: 26
 		MuzzleSequence: muzzle
+		LocalOffset: 1300,0,900
 	BodyOrientation:
 		QuantizedFacings: 16
 	RenderVoxels:
@@ -581,6 +679,11 @@ gtgcan:
 		Type: grandcannon
 	Power:
 		Amount: -100
+	RequiresPower:
+	CanPowerDown:
+		IndicatorPalette: ts-mouse
+		PowerupSpeech: BuildingOnline
+		PowerdownSpeech: BuildingOffline
 
 gaorep:
 	Inherits: ^Building
@@ -639,9 +742,13 @@ gaspysat:
 		Amount: -100
 	ProvidesRadar:
 	RequiresPower:
+	CanPowerDown:
+		IndicatorPalette: ts-mouse
+		PowerupSpeech: BuildingOnline
+		PowerdownSpeech: BuildingOffline
 
 gagap:
-	Inherits: ^Building
+	Inherits: ^SupportBuilding
 	Valued:
 		Cost: 1000
 	Tooltip:
@@ -670,6 +777,11 @@ gagap:
 		Amount: -100
 	MustBeDestroyed:
 		RequiredForShortGame: false
+	-AutoTarget:
+	CanPowerDown:
+		IndicatorPalette: ts-mouse
+		PowerupSpeech: BuildingOnline
+		PowerdownSpeech: BuildingOffline
 
 gaweat:
 	Inherits: ^Building
@@ -696,6 +808,11 @@ gaweat:
 		Range: 5c0
 	Power:
 		Amount: -200
+	RequiresPower:
+	CanPowerDown:
+		IndicatorPalette: ts-mouse
+		PowerupSpeech: BuildingOnline
+		PowerdownSpeech: BuildingOffline
 
 gacsph:
 	Inherits: ^Building
@@ -724,9 +841,28 @@ gacsph:
 		Amount: -200
 	WithIdleOverlay:
 		Sequence: idle-dome
+	RequiresPower:
+	CanPowerDown:
+		IndicatorPalette: ts-mouse
+		PowerupSpeech: BuildingOnline
+		PowerdownSpeech: BuildingOffline
+	ChronoshiftPower@chronoshift:
+		OrderName: Chronoshift
+		Icon: chrono
+		ChargeTime: 120
+		Description: Chronoshift
+		LongDesc: Teleports a group of units across\nthe map.
+		# Those sounds don't work: OpenRA/OpenRA#10540
+		# They also want to be played successive
+		#SelectTargetSound: schrlo1.wav, schrlo2a.wav schrlo2b.wav, schrlo2c.wav, schrlo3.wav
+		EndChargeSound: schropen.wav
+		DisplayRadarPing: True
+		KillCargo: False
+		SelectionCursor: chronosphere
+		TargetCursor: chronosphere
 
 atesla:
-	Inherits: ^Building
+	Inherits: ^SupportBuilding
 	Buildable:
 		Queue: Support
 		BuildPaletteOrder: 35
@@ -753,8 +889,6 @@ atesla:
 		LocalOffset: 0,0,2500
 	AttackCharge:
 		Voice: Attack
-		Armaments: primary
-		MaxCharges: 3
 		ReloadTime: 60
 		ChargeAudio: bpripow.wav
 	Power:
@@ -767,6 +901,10 @@ atesla:
 	WithRangeCircle:
 		Range: 8c0
 		Type: prismcannon
+	CanPowerDown:
+		IndicatorPalette: ts-mouse
+		PowerupSpeech: BuildingOnline
+		PowerdownSpeech: BuildingOffline
 
 power:
 	AlwaysVisible:
@@ -797,4 +935,3 @@ repairpad:
 	Tooltip:
 		Name: Service Depot
 		Description: Service Depot
-

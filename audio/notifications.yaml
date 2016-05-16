@@ -1,6 +1,6 @@
 Speech:
 	DefaultVariant: .wav
-	Prefixes: 
+	Prefixes:
 		america: ceva
 		korea: ceva
 		france: ceva
@@ -11,59 +11,120 @@ Speech:
 		iraq: csof
 		russia: csof
 	Notifications:
-		AirUnitLost: 064
+		AllianceBroken: 044
+		AllianceFormed: 043
+		AllianceRequested: 101
+		ArmorUpgraded: 067
+		ArmorTechnologyStolen: 082
 		AtomBombDetected: 001
 		AtomBombLaunchDetected: 002
 		AtomBombReady: 003
 		BaseAttack: 054
+		BeaconDetected: 041
+		BeaconPlaced: 042
+		BaseDefensesOffline: 059
 		Building: 052
 		BuildingCannotPlaceAudio: 063
 		BuildingCaptured: 072
 		BuildingInfiltrated: 073
+		BuildingInfiltratedCashStolen: 090
+		BuildingInfiltratedPowerSabotaged: 091
+		BuildingInfiltratedRadarSabotaged: 089
+		BuildingInfiltratedTechnologyStolen: 088
+		BuildingOffline: 061
+		BuildingOnline: 060
+		BridgeRepaired: 046
 		Cancelled: 051
+		CashStolen: 094
+		ChronominerOffline: 109
+		ChronosphereActivated: 008
 		ChronosphereDetected: 007
 		ChronosphereReady: 009
 		ConstructionComplete: 048
 		CreditsStolen: 094
-		FirstObjectiveMet: 017
-		HarvesterAttack: 037
+		CriticalUnitLost: 020
+		CriticalStructureLost: 021
+		EnemyAllianceFormed: 103
+		EnemyAirArmadaDetected: 096
+		EnemyArmorBattalionDetected: 098
+		EnemyBasePoweredDown: 075
+		EnemyFleetDetected: 097
+		EnemyInfantryBattalionDetected: 099
+		EnemyPowerRestored: 087
+		EstablishingBattlefieldcontrolStandBy: 016
+		FirepowerUpgraded: 068
+		FirepowerTechnologyStolen: 081
+		FiveMinutesRemaining: 029
+		FourMinutesRemaining: 030
+		IncomingTransmission: 040
 		InsufficientFunds: 050
+		IronCurtainActivated: 005
 		IronCurtainDetected: 004
 		IronCurtainReady: 006
 		Leave: 015
+		LightningStormCreated: 011
+		LightningStormReady: 012
 		Lose: 023
 		LowPower: 053
 		MissionAccomplished: 013
 		MissionFailed: 014
-		NavalUnitLost: 064
+		NewMissionObjectiveReceived: 083
+		NewObjectiveReceived: 104
 		NewOptions: 049
+		NewTechnologyAquired: 074
+		NewTerrainDiscovered: 039
+		NewRallyPointEstablished: 100
 		NoBuild: 047
+		NuclearMissileLaunched: 002
+		NuclearMissileReady: 002
+		NuclearSiloDetected: 001
+		OneMinuteRemaining: 033
 		OnHold: 056
+		OreMinerOffline: 086
+		OreMinerUnderAttack: 037
+		OurAllyIsUnderAttack: 045
+		PlayerDefeated: 026
+		PlayerResigned: 025
+		PowerSabotaged: 095
 		PrimaryBuildingSelected: 055
+		PrimaryObjectiveAchieved: 017
+		RadarSabotaged: 093
 		ReinforcementsArrived: 038
+		ReinforcementsReady: 121
 		Repairing: 057
-		SecondObjectiveMet: 018
+		Resign: 024
+		RequestingAlliance: 102
+		SecondObjectiveAchieved: 018
 		SelectTarget: 065
+		SpeedUpgraded: 069
 		StartGame: 120
+		StructureAbandoned: 108
+		StructureGarrisoned: 107
 		StructureSold: 058
+		TechBuildingCaptured: 105
+		TechBuildingLost: 106
+		TechnologyStolen: 092
 		TenMinutesRemaining: 028
-		ThirdObjectiveMet: 019
+		TertiaryObjectiveAchieved: 019
+		ThreeMinutesRemaining: 031
 		TimerStarted: 035
 		TimerStopped: 036
 		Training: 066
 		TwentyMinutesRemaining: 027
+		TwoMinutesRemaining: 032
 		UnitArmorUpgraded: 077
 		UnitFirepowerUpgraded: 076
 		UnitLost: 064
+		UnitPromoted: 079
 		UnitReady: 062
 		UnitRepaired: 070
 		UnitSold: 071
 		UnitSpeedUpgraded: 078
-		WarningOneMinuteRemaining: 033
-		WarningTwoMinutesRemaining: 032
-		WarningThreeMinutesRemaining: 031
-		WarningFourMinutesRemaining: 030
-		WarningFiveMinutesRemaining: 029
+		UnitUpgraded: 080
+		UpradeComplete: 085
+		UpgradeInProgress: 084
+		WeathercontrolDeviceDetected: 010
+		WeathercontrolDeviceOffline: 122
 		Win: 022
 
 Sounds:

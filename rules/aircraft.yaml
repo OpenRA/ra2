@@ -1,3 +1,81 @@
+shad:
+	Inherits: ^Aircraft
+	Tooltip:
+		Name: Night Hawk
+		Description: Infantry Transport Helicopter\nUndetectable by radar.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
+	Health:
+		HP: 175
+	Armor:
+		Type: Light
+	Armament:
+		Weapon: BlackHawkCannon
+	Voiced:
+		VoiceSet: NighthawkVoice
+	Buildable:
+		Queue: Vehicle
+		BuildPaletteOrder: 20
+		Prerequisites: ~gaweap
+	Valued:
+		Cost: 1000
+	RevealsShroud:
+		Range: 7c0
+		Type: CenterPosition
+	-AppearsOnRadar:
+	AttackFrontal:
+		Voice: Attack
+	Aircraft:
+		CruiseAltitude: 3072
+		LandWhenIdle: true
+		LandableTerrainTypes: Clear, Rough, Road, DirtRoad, Ore, Gems
+		TurnSpeed: 10
+		Speed: 100
+		AltitudeVelocity: 120
+		CruisingUpgrades: cruising
+	RenderSprites:
+	WithVoxelWalkerBody:
+		TickRate: 1
+	Hovers@CRUISING:
+		UpgradeTypes: cruising
+		UpgradeMinEnabledLevel: 1
+		OffsetModifier: -45
+	Cargo:
+		Types: Infantry
+		MaxWeight: 5
+		PipCount: 5
+		UnloadVoice: Move
+	SpawnActorOnDeath:
+		Actor: shadhusk
+
+shadhusk:
+	Tooltip:
+		Name: Night Hawk Down
+		GenericName: Destroyed Helicopter
+	Armor:
+		Type: Light
+	Health:
+		HP: 140
+	Aircraft:
+		TurnSpeed: 5
+		Speed: 140
+		AirborneUpgrades: airborne
+		CanHover: True
+		Voice: Move
+	FallsToEarth:
+		Velocity: 100
+	RevealsShroud:
+		Range: 7c0
+		Type: CenterPosition
+	HiddenUnderFog:
+		Type: CenterPosition
+	RenderVoxels:
+		Image: shad
+	WithVoxelBody:
+	AutoTargetIgnore:
+	BodyOrientation:
+		QuantizedFacings: 0
+		CameraPitch: 90
+		UseClassicPerspectiveFudge: false
+
 zep:
 	Inherits: ^Aircraft
 	Valued:
@@ -11,7 +89,7 @@ zep:
 	Selectable:
 	Aircraft:
 		CruiseAltitude: 5600
-		ROT: 5
+		TurnSpeed: 5
 		Speed: 50
 		Voice: Move
 		AirborneUpgrades: airborne
@@ -41,33 +119,163 @@ zep:
 		Weapon: UnitExplode
 		Chance: 75
 	AnnounceOnBuild:
-	AnnounceOnKill:
 	Voiced:
 		VoiceSet: KirovVoice
-#	SpawnActorOnDeath:
-#		Actor: zephusk
+	SpawnActorOnDeath:
+		Actor: zephusk
 	Targetable@ground:
 		TargetTypes: Ground
 		UpgradeTypes: airborne
 		UpgradeMaxEnabledLevel: 0
 
-#zephusk:
-#	Inherits: ^HelicopterHusk
-#	Tooltip:
-#		Name: Kirov Airship
-#	RenderSprites:
-#		Image: zep
-#	RenderVoxels:
-#		Image: zep
-#	WithVoxelBody:
-#	WithShadow:
-#	Helicopter:
-#		ROT: 10
-#		Speed: 50
-#		AirborneUpgrades: airborne
-#	RevealsShroud:
-#		Range: 8c0
-#		Type: CenterPosition
-#	FallsToEarth:
-#		Velocity: 200
+zephusk:
+	Tooltip:
+		Name: Kirov Airship
+	Armor:
+		Type: Light
+	Health:
+		HP: 140
+	Aircraft:
+		TurnSpeed: 10
+		Speed: 50
+		AirborneUpgrades: airborne
+		CanHover: True
+		Voice: Move
+	FallsToEarth:
+		Spins: False # TODO: In the original they did spin, but that just looks weird.
+	RevealsShroud:
+		Range: 8c0
+		Type: CenterPosition
+	HiddenUnderFog:
+		Type: CenterPosition
+	RenderVoxels:
+		Image: zep
+	WithVoxelBody:
+	AutoTargetIgnore:
+	BodyOrientation:
+		QuantizedFacings: 0
+		CameraPitch: 90
+		UseClassicPerspectiveFudge: false
 
+orca:
+	Inherits: ^Plane
+	Valued:
+		Cost: 1200
+	Tooltip:
+		Name: Harrier
+		Description: Fast assault fighter\n  Strong vs Buildings, Vehicles\n  Weak vs Infantry, Aircraft
+	Buildable:
+		Queue: Aircraft
+		BuildPaletteOrder: 20
+		Prerequisites: ~aircraft.allies
+	Aircraft:
+		TurnSpeed: 3
+		Speed: 140
+		RearmBuildings: gaairc, amradr
+	Selectable:
+		Bounds: 30,24
+	Health:
+		HP: 150
+	Armor:
+		Type: Light
+	RevealsShroud:
+		Range: 8c0
+		Type: CenterPosition
+	Armament:
+		Weapon: Maverick
+	AttackPlane:
+		FacingTolerance: 20
+		Voice: Attack
+	Voiced:
+		VoiceSet: HarrierVoice
+	AmmoPool:
+		Ammo: 1
+		PipCount: 1
+		PipType: Ammo
+		PipTypeEmpty: AmmoEmpty
+	AutoTarget:
+	RenderSprites:
+		Image: falc
+	RenderVoxels:
+		Image: falc
+	SpawnActorOnDeath:
+		Actor: orcahusk
+
+orcahusk:
+	Inherits: ^PlaneHusk
+	Tooltip:
+		Name: Destroyed Harrier
+	Aircraft:
+		TurnSpeed: 5
+		Speed: 140
+	RenderVoxels:
+		Image: falc
+
+beag:
+	Inherits: orca
+	Tooltip:
+		Name: Black Eagle
+	Buildable:
+		Prerequisites: ~aircraft.korea
+	SpawnActorOnDeath:
+		Actor: beaghusk
+	Armament:
+		Weapon: Maverick2
+	Health:
+		HP: 200
+	Voiced:
+		VoiceSet: BlackEagleVoice
+	RenderSprites:
+		Image: beag
+	RenderVoxels:
+		Image: beag
+
+beaghusk:
+	Inherits: ^PlaneHusk
+	Tooltip:
+		Name: Destroyed Black Eagle
+	Aircraft:
+		TurnSpeed: 5
+		Speed: 140
+	RenderVoxels:
+		Image: beag
+
+pdplane:
+	Inherits: ^Aircraft
+	Valued:
+		Cost: 2000
+	-Selectable:
+	-GainsExperience:
+	RejectsOrders:
+	Tooltip:
+		Name: Cargo Plane
+	Aircraft:
+		CruiseAltitude: 5600
+		ROT: 5
+		Speed: 100
+		AirborneUpgrades: airborne
+	Health:
+		HP: 1000
+	RevealsShroud:
+		Range: 6c0
+		Type: CenterPosition
+	RenderSprites:
+	RenderVoxels:
+	WithVoxelBody:
+	Cargo:
+		MaxWeight: 10
+	ParaDrop:
+		DropRange: 4c0
+		ChuteSound: sparadra.wav
+	SpawnActorOnDeath:
+		Actor: pdplanehusk
+
+pdplanehusk:
+	Inherits: ^PlaneHusk
+	Tooltip:
+		Name: Destroyed Cargo Plane
+	Aircraft:
+		TurnSpeed: 5
+		Speed: 100
+	RenderVoxels:
+		Image: pdplane

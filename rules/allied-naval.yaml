@@ -3,7 +3,7 @@ lcrf:
 	Buildable:
 		Queue: Ship
 		BuildPaletteOrder: 10
-		Prerequisites: gayard
+		Prerequisites: ~gayard
 	Valued:
 		Cost: 900
 	Tooltip:
@@ -16,7 +16,7 @@ lcrf:
 	Armor:
 		Type: Light
 	Mobile:
-		ROT: 10
+		TurnSpeed: 10
 		Speed: 75
 		TerrainSpeeds:
 			Clear: 80
@@ -28,6 +28,8 @@ lcrf:
 			Ore: 50
 			Gems: 50
 			Water: 100
+		UpgradeMaxEnabledLevel: 0
+		UpgradeTypes: notmobile
 	RevealsShroud:
 		Range: 6c0
 	Cargo:
@@ -37,13 +39,12 @@ lcrf:
 		PassengerFacing: 96
 		UnloadTerrainTypes: Clear, Rough, Rail, Road, DirtRoad, Beach, Ore, Gems
 		UnloadVoice: Move
+		LoadingUpgrades: notmobile
 	Explodes:
 		Weapon: UnitExplode
 		EmptyWeapon: UnitExplode
 	WithVoxelBody:
 	RenderSprites:
-	RepairableNear:
-		Buildings: gayard, nayard
 	Voiced:
 		VoiceSet: AlliedNavalVoice
 
@@ -52,7 +53,7 @@ dest:
 	Buildable:
 		Queue: Ship
 		BuildPaletteOrder: 40
-		Prerequisites: gayard
+		Prerequisites: ~gayard
 	Valued:
 		Cost: 1000
 	Tooltip:
@@ -63,7 +64,7 @@ dest:
 	Armor:
 		Type: Heavy
 	Mobile:
-		ROT: 5
+		TurnSpeed: 5
 		Speed: 105
 	RevealsShroud:
 		Range: 7c0
@@ -84,9 +85,6 @@ dest:
 		UpgradeMinEnabledLevel: 1
 	AttackFrontal:
 		Voice: Attack
-	Chronoshiftable:
-	RepairableNear:
-		Buildings: gayard, nayard
 	DetectCloaked:
 		CloakTypes: Underwater
 		Range: 4c0
@@ -117,7 +115,7 @@ aegis:
 	Armor:
 		Type: Light
 	Mobile:
-		ROT: 5
+		TurnSpeed: 5
 		Speed: 45
 	RevealsShroud:
 		Range: 8c0
@@ -126,8 +124,6 @@ aegis:
 	AttackFrontal:
 		Voice: Attack
 	AutoTarget:
-	RepairableNear:
-		Buildings: gayard, nayard
 	Explodes:
 		Weapon: UnitExplode
 		EmptyWeapon: UnitExplode
@@ -136,3 +132,82 @@ aegis:
 	Voiced:
 		VoiceSet: AlliedNavalVoice
 
+dlph:
+	Inherits@1: ^ExistsInWorld
+	Inherits@2: ^SpriteActor
+	Inherits@3: ^GainsExperience
+	Buildable:
+		Queue: Ship
+		BuildPaletteOrder: 30
+		Prerequisites: gatech, ~gayard
+	Valued:
+		Cost: 500
+	Tooltip:
+		Name: Dolphin
+		Description: Trained dolphin\narmed with sonic beams.\n  Strong vs Ships
+	Armor:
+		Type: Light
+	Health:
+		HP: 200
+	Mobile:
+		TurnSpeed: 6
+		Speed: 90
+		TerrainSpeeds:
+			Water: 100
+		Voice: Move
+	SelectionDecorations:
+		Palette: pips
+	Selectable:
+	Voiced:
+		VoiceSet: DolphinVoice
+	Armament:
+		Weapon: SonicZap
+	AttackFrontal:
+		Voice: Attack
+	AutoTarget:
+	RevealsShroud:
+		Range: 4c0
+	Cloak:
+		CloakTypes: Underwater
+		InitialDelay: 50
+		CloakDelay: 75
+		CloakSound: vnavupa.wav
+		UncloakSound: vnavupa.wav
+		WhileCloakedUpgrades: underwater
+		UncloakOn: Damage
+		IsPlayerPalette: true
+	Targetable:
+		TargetTypes: Ground, Water
+		UpgradeTypes: underwater
+		UpgradeMaxEnabledLevel: 0
+	Targetable@underwater:
+		TargetTypes: Underwater
+		UpgradeTypes: underwater
+		UpgradeMinEnabledLevel: 1
+		IsPlayerPalette: true
+	DetectCloaked:
+		CloakTypes: Underwater
+		Range: 4c0
+	HiddenUnderFog:
+	ActorLostNotification:
+	Guard:
+		Voice: Attack
+	Guardable:
+	DeathSounds:
+	MustBeDestroyed:
+		RequiredForShortGame: true
+	QuantizeFacingsFromSequence:
+		Sequence: stand
+	Chronoshiftable:
+		ExplodeInstead: true
+	RenderDetectionCircle:
+	RenderSprites:
+	WithInfantryBody:
+		IdleSequences: idle1
+		StandSequences: stand
+		AttackSequence: shoot
+	WithDeathAnimation:
+		UseDeathTypeSuffix: false
+	Repairable:
+		Voice: Attack
+		RepairBuildings: gayard, nayard

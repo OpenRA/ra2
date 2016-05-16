@@ -101,7 +101,7 @@ Cursors:
 			Length: 9
 		deploy-blocked:
 			Start: 119
-		undeploy:
+		undeploy-silver:
 			Start: 120
 			Length: 9
 		sell:
@@ -192,7 +192,7 @@ Cursors:
 			Length: 5
 		looped-patrol:
 			Start: 356
-		chronoshift:
+		chronosphere:
 			Start: 357
 			Length: 12
 		remove-bomb:
@@ -270,7 +270,7 @@ Cursors:
 			Start: 73
 			Length: 5
 		powerdown-blocked:
-			Start: 52
+			Start: 342
 		joystick-all:
 			Start: 385
 		joystick-t-blocked:
@@ -288,4 +288,8 @@ Cursors:
 		joystick-l-blocked:
 			Start: 392
 		joystick-tl-blocked:
-			Start: 393 
+			Start: 393
+	undeploy.shp: cursor
+		undeploy:
+			Start: 0
+			Length: 7

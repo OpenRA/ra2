@@ -158,7 +158,7 @@ tree25:
 	idle:
 		ShadowStart: 1
 		UseTilesetExtension: true
-		
+
 tree26:
 	idle:
 		ShadowStart: 1

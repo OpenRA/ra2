@@ -47,7 +47,6 @@
 		Sequence: rank
 		Palette: pips
 		ReferencePoint: Bottom, Right
-		Offset: 2, 2
 		UpgradeTypes: rank
 		ZOffset: 256
 		UpgradeMinEnabledLevel: 1
@@ -73,7 +72,7 @@
 	Selectable:
 		Priority: 3
 	Targetable:
-		TargetTypes: Ground, C4, DetonateAttack, SpyInfiltrate
+		TargetTypes: Ground, C4, DetonateAttack, Structure
 	Building:
 		Dimensions: 1,1
 		Footprint: x
@@ -89,8 +88,9 @@
 		DestroyedSounds: bgendiea.wav, bgendieb.wav, bgendiec.wav, bgendied.wav, bgendiee.wav, bgendief.wav
 	WithSpriteBody:
 	WithBuildingExplosion:
+		Sequences: building, large_bang, large_brnl, verylarge_clsn, large_tumu
 	RepairableBuilding:
-		IndicatorPalette: mousepal
+		IndicatorPalette: mouse
 	EngineerRepairable:
 		Voice: Attack
 	EmitInfantryOnSell@allies:
@@ -160,6 +160,27 @@
 	Tooltip:
 		Description: Tech Building
 
+^Flag:
+	Inherits: ^CivBuilding
+	Selectable:
+		Bounds: 50, 228, 0, 0
+	Building:
+		Footprint: x
+		Dimensions: 1, 1
+	Tooltip:
+		Name: Flag
+	Health:
+		HP: 20
+	Armor:
+		Type: Steel
+	RevealsShroud:
+		Range: 6c0
+	WithIdleOverlay@flag:
+		Sequence: flag
+	SoundOnDamageTransition:
+		DamagedSounds: bmetdama.wav, bmetdamb.wav, bmetdamc.wav
+		DestroyedSounds: bmetdama.wav, bmetdamb.wav, bmetdamc.wav
+
 ^VoxelLighting:
 	Inherits: ^SupportBuilding
 	RenderVoxels:
@@ -182,8 +203,6 @@
 		BuildSounds: uplace.wav
 		Adjacent: 7
 		TerrainTypes: Clear, Rough, Road, DirtRoad
-	Crushable:
-		CrushClasses: wall
 	BlocksProjectiles:
 	LineBuild:
 		Range: 8
@@ -195,18 +214,37 @@
 	WithWallSpriteBody:
 		Type: wall
 	AutoTargetIgnore:
-	ProximityCaptor:
-		Types: Wall
 	Sellable:
 		SellSounds: uselbuil.wav
 	Demolishable:
+	Valued:
+		Cost: 100
+	Health:
+		HP: 300
+	Armor:
+		Type: Concrete
+
+^Fence:
+	Inherits: ^Wall
+	Valued:
+		Cost: 25
+	Health:
+		HP: 100
+	Armor:
+		Type: Wood
+	Crushable:
+		CrushClasses: fence
+	SoundOnDamageTransition:
+		DamagedSounds: gblacrua.wav, gblacrub.wav
+		DestroyedSounds: gblacrua.wav, gblacrub.wav
 
 ^Infantry:
 	Inherits@1: ^ExistsInWorld
 	Inherits@2: ^SpriteActor
 	Inherits@3: ^GainsExperience
 	Health:
-		Radius: 128
+		Shape: Circle
+			Radius: 128
 	Armor:
 		Type: None
 	RevealsShroud:
@@ -228,15 +266,18 @@
 	Selectable:
 	Targetable:
 		TargetTypes: Ground, Infantry, DetonateAttack, Disguise
+		UpgradeTypes: parachute
+		UpgradeMaxEnabledLevel: 0
 	WithInfantryBody:
 		IdleSequences: idle1,idle2
 		StandSequences: stand
 		AttackSequence: shoot
+		UpgradeTypes: parachute
+		UpgradeMaxEnabledLevel: 0
 	WithDeathAnimation@normal:
 		DeathTypes:
 			ExplosionDeath: 1
 			BulletDeath: 2
-			DeathType3: 3
 	WithDeathAnimation@effect:
 		DeathSequencePalette: effect
 		DeathPaletteIsPlayerPalette: False
@@ -266,7 +307,7 @@
 		Voice: Attack
 	Guardable:
 	DeathSounds@normal:
-		DeathTypes: ExplosionDeath, BulletDeath, DeathType3
+		DeathTypes: ExplosionDeath, BulletDeath
 	DeathSounds@burned:
 		Voice: Burned
 		DeathTypes: FlameDeath
@@ -284,15 +325,40 @@
 		VoiceSet: GIVoice
 	QuantizeFacingsFromSequence:
 		Sequence: stand
+	Repairable:
+		RepairBuildings: cahosp
+		Voice: Move
+	Chronoshiftable:
+		ExplodeInstead: true
+
+^Parachutable:
+	WithSpriteBody@Parachute:
+		Sequence: paradrop
+		UpgradeTypes: parachute
+		UpgradeMinEnabledLevel: 1
+	Parachutable:
+		FallRate: 26
+		KilledOnImpassableTerrain: true
+		GroundCorpseSequence:
+		GroundCorpsePalette:
+		WaterCorpseSequence:
+		WaterCorpsePalette:
+	WithParachute:
+		UpgradeTypes: parachute
+		UpgradeMinEnabledLevel: 1
+		Image: parach
+		OpeningSequence: open
+		Sequence: idle
+		ClosingSequence: close
 
 ^CivilianInfantry:
 	Inherits: ^Infantry
 	Selectable:
-		Bounds: 100,170,0,0
+		Bounds: 20, 30, 0, -11
 	Valued:
 		Cost: 10
 	Tooltip:
-		Name: Civilian
+		GenericName: Civilian
 	Health:
 		HP: 50
 	Mobile:
@@ -310,6 +376,8 @@
 	-TakeCover:
 	Voiced:
 		VoiceSet: CivilianAlliedMaleVoice
+	WithInfantryBody:
+		IdleSequences: idle1
 
 ^Vehicle:
 	Inherits@1: ^ExistsInWorld
@@ -327,7 +395,7 @@
 			Beach: 100
 			Ore: 70
 			Gems: 70
-		ROT: 5
+		TurnSpeed: 5
 	SelectionDecorations:
 		Palette: pips
 	Selectable:
@@ -367,6 +435,29 @@
 		RequiredForShortGame: true
 	Voiced:
 		VoiceSet: AlliedVehicleVoice
+	Chronoshiftable:
+		ChronoshiftSound: schrmov.wav
+		ReturnToOrigin: false
+
+^CivVehicle:
+	Inherits: ^Vehicle
+	Tooltip:
+		GenericName: Civilian Vehicle
+	Valued:
+		Cost: 800
+	Mobile:
+		Speed: 113
+	Health:
+		HP: 100
+	Armor:
+		Type: Light
+	RevealsShroud:
+		Range: 5c0
+	Selectable:
+		Bounds: 64, 52, 0, -6
+	WithVoxelBody:
+	Voiced:
+		VoiceSet: CarVoice
 
 ^Aircraft:
 	Inherits@1: ^ExistsInWorld
@@ -380,9 +471,6 @@
 		Palette: pips
 	Selectable:
 	Aircraft:
-		RepairBuildings:
-		RearmBuildings:
-		LandWhenIdle: false
 		Voice: Move
 		AirborneUpgrades: airborne
 		CanHover: True
@@ -405,12 +493,50 @@
 		LightPitch: 150
 		LightAmbientColor: -0.5,-0.5,-0.5
 		LightDiffuseColor: 1.4,1.4,1.4
-	Voiced:
-		VoiceSet: NighthawkVoice
 	Targetable@ground:
 		TargetTypes: Ground, Repair
 		UpgradeTypes: airborne
 		UpgradeMaxEnabledLevel: 0
+	DeathSounds:
+	AppearsOnRadar:
+		UseLocation: true
+
+^Plane:
+	Inherits: ^Aircraft
+	Aircraft:
+		CruiseAltitude: 5600
+		CruisingUpgrades: cruising
+		AltitudeVelocity: 120
+	Hovers@CRUISING:
+		UpgradeTypes: cruising
+		UpgradeMinEnabledLevel: 1
+	ReturnOnIdle:
+	WithVoxelBody:
+
+^PlaneHusk:
+	RenderVoxels:
+	RenderSprites:
+	WithVoxelBody:
+	BodyOrientation:
+		QuantizedFacings: 0
+		CameraPitch: 90
+	Aircraft:
+		AirborneUpgrades: airborne
+		CruisingUpgrades: cruising
+	Health:
+		HP: 280
+	Armor:
+		Type: Heavy
+	HiddenUnderFog:
+		Type: CenterPosition
+	AutoTargetIgnore:
+	ScriptTriggers:
+	Tooltip:
+		GenericName: Destroyed Aircraft
+	FallsToEarth:
+		Spins: false
+		Moves: true
+		Velocity: 86
 
 ^Ship:
 	Inherits@1: ^ExistsInWorld
@@ -421,7 +547,7 @@
 		Crushes: crate
 		TerrainSpeeds:
 			Water: 100
-		ROT: 5
+		TurnSpeed: 5
 	SelectionDecorations:
 		Palette: pips
 	Selectable:
@@ -435,7 +561,6 @@
 		Voice: Attack
 	HiddenUnderFog:
 	ActorLostNotification:
-		Notification: NavalUnitLost
 	ProximityCaptor:
 		Types: Ship
 	Guard:
@@ -460,6 +585,9 @@
 		RequiredForShortGame: true
 	Voiced:
 		VoiceSet: SovietNavalVoice
+	Chronoshiftable:
+		ChronoshiftSound: schrmov.wav
+		ReturnToOrigin: false
 
 ^Husk:
 	Husk:
@@ -475,7 +603,6 @@
 	ProximityCaptor:
 		Types: Husk
 	BodyOrientation:
-	Chronoshiftable:
 	Targetable:
 		TargetTypes: Ground
 		RequiresForceFire: true
@@ -485,31 +612,11 @@
 	Capturable:
 		Type: husk
 		AllowAllies: true
-		CaptureThreshold: 1.0
+		CaptureThreshold: 100
 	TransformOnCapture:
 		ForceHealthPercentage: 25
 	DisabledOverlay:
 	ScriptTriggers:
-
-^HelicopterHusk:
-	Inherits: ^Husk
-	-Husk:
-	-Burns:
-	FallsToEarth:
-	-Targetable:
-	-Capturable:
-	-TransformOnCapture:
-
-^PlaneHusk:
-	Inherits: ^Husk
-	-Husk:
-	-Burns:
-	FallsToEarth:
-		Spins: False
-		Moves: True
-	-Targetable:
-	-Capturable:
-	-TransformOnCapture:
 
 ^OreDrill:
 	Inherits@1: ^SpriteActor
@@ -524,21 +631,20 @@
 		Terrain: Ore
 	BodyOrientation:
 	FrozenUnderFog:
-		StartsRevealed: true
 	SeedsResource:
 		ResourceType: Ore
 		Interval: 55
-	WithActiveAnimation:
+	WithIdleAnimation:
 	QuantizeFacingsFromSequence:
 	RenderSprites:
 		Palette: player
 	AutoSelectionSize:
 
 ^Tree:
-	Inherits@1: ^SpriteActor
+	Inherits@1: ^ExistsInWorld
+	Inherits@2: ^SpriteActor
 	WithSpriteBody:
 	FrozenUnderFog:
-		StartsRevealed: true
 	Building:
 		Footprint: x
 		Dimensions: 1, 1
@@ -550,12 +656,45 @@
 	RenderSprites:
 		Palette: terrain
 	AutoSelectionSize:
+	Targetable:
+		TargetTypes: Ground, Wall, DetonateAttack
+	Health:
+		HP: 200
+	Armor:
+		Type: Wood
+
+^StreetSign:
+	Inherits: ^Tree
+	Tooltip:
+		Name: Street Sign
+
+^TrafficLight:
+	Inherits: ^Tree
+	Tooltip:
+		Name: Traffic Light
+
+^StreetLight:
+	Inherits: ^Tree
+	Tooltip:
+		Name: Street Light
+	Armor:
+		Type: steel
+	Health:
+		HP: 50
+
+^TelephonePole:
+	Inherits: ^Tree
+	Tooltip:
+		Name: Utility Pole
+	Health:
+		HP: 20
+	Armor:
+		Type: Concrete
 
 ^Rock:
 	Inherits@1: ^SpriteActor
 	WithSpriteBody:
 	FrozenUnderFog:
-		StartsRevealed: true
 	Building:
 		Footprint: x
 		Dimensions: 1, 1
@@ -567,3 +706,17 @@
 	RenderSprites:
 		Palette: terrain
 
+^Crate:
+	Inherits@1: ^SpriteActor
+	HiddenUnderFog:
+	Tooltip:
+		Name: Crate
+		GenericName: Crate
+	Crate:
+		TerrainTypes: Clear, Rough, Road, Ore, Gems
+	RenderSprites:
+		Palette: terrain
+		Image: crate
+	WithCrateBody:
+		LandSequence: land
+		WaterSequence: water

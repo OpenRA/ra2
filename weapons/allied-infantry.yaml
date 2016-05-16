@@ -19,38 +19,18 @@ M60:
 			Concrete: 25
 		DamageTypes: Prone70Percent, TriggerProne, BulletDeath
 	Warhead@2Eff: CreateEffect
-		Explosion: piff
-		InvalidImpactTypes: Water
-	Warhead@3EffWater: CreateEffect
-		Explosion: piff
-		ValidImpactTypes: Water
+		Explosions: piffpiff
 
 M60E:
-	ReloadDelay: 20
-	Range: 4c0
-	Report: igiat1a.wav, igiat1b.wav, igiat1c.wav
-	Projectile: Bullet
-		Speed: 100c0
+	Inherits: M60
 	Warhead@1Dam: SpreadDamage
-		Spread: 64
 		Damage: 25
-		Versus:
-			None: 100
-			Flak: 80
-			Plate: 70
-			Light: 50
-			Medium: 25
-			Heavy: 25
-			Wood: 75
-			Steel: 50
-			Concrete: 25
-		DamageTypes: Prone70Percent, TriggerProne, BulletDeath
-	Warhead@2Eff: CreateEffect
-		Explosion: piff
-		InvalidImpactTypes: Water
-	Warhead@3EffWater: CreateEffect
-		Explosion: piff
-		ValidImpactTypes: Water
+
+CRM60:
+	Inherits: M60
+	ReloadDelay: 15
+	Range: 6c0
+	Report: vifvat2a.wav, vifvat2b.wav, vifvat2c.wav
 
 para:
 	Range: 5c0
@@ -73,38 +53,39 @@ para:
 			Concrete: 25
 		DamageTypes: Prone50Percent, TriggerProne, BulletDeath
 	Warhead@2Eff: CreateEffect
-		Explosion: piff
-		InvalidImpactTypes: Water
-	Warhead@3EffWater: CreateEffect
-		Explosion: piff
-		ValidImpactTypes: Water
+		Explosions: piffpiff
 
 paraE:
+	Inherits: para
 	Range: 7c0
-	ReloadDelay: 15
-	Report: igiat2a.wav, igiat2b.wav, igiat2c.wav, igiat2d.wav, igiat2c.wav, igiat2d.wav
+	Warhead@1Dam: SpreadDamage
+		Damage: 25
+
+MP5:
+	ReloadDelay: 10
+	Range: 6c0
+	Report: iseaatta.wav, iseaattb.wav
 	Projectile: Bullet
 		Speed: 100c0
 	Warhead@1Dam: SpreadDamage
 		Spread: 64
-		Damage: 25
+		Damage: 125
 		Versus:
 			None: 100
-			Flak: 100
+			Flak: 80
 			Plate: 70
-			Light: 60
-			Medium: 40
-			Heavy: 40
+			Light: 50
+			Medium: 25
+			Heavy: 25
 			Wood: 75
 			Steel: 50
 			Concrete: 25
-		DamageTypes: Prone50Percent, TriggerProne, BulletDeath
+		DamageTypes: Prone70Percent, TriggerProne, BulletDeath
 	Warhead@2Eff: CreateEffect
-		Explosion: piff
-		InvalidImpactTypes: Water
-	Warhead@3EffWater: CreateEffect
-		Explosion: piff
-		ValidImpactTypes: Water
+		Explosions: piffpiff
+
+MP5E:
+	Inherits: MP5
 
 DoublePistols:
 	ReloadDelay: 10
@@ -126,37 +107,14 @@ DoublePistols:
 			Concrete: 0
 		DamageTypes: BulletDeath
 	Warhead@2Eff: CreateEffect
-		Explosion: piff
-		InvalidImpactTypes: Water
-	Warhead@3EffWater: CreateEffect
-		Explosion: piff
-		ValidImpactTypes: Water
+		Explosions: piff
 
 DoublePistolsE:
-	ReloadDelay: 10
+	Inherits: DoublePistols
 	Range: 8c0
-	Report: itanatta.wav, itanattb.wav
-	Projectile: Bullet
-		Speed: 100c0
-	Warhead@1Dam: SpreadDamage
-		Damage: 125
-		Versus:
-			None: 200
-			Flak: 100
-			Plate: 100
-			Light: 0
-			Medium: 0
-			Heavy: 0
-			Wood: 0
-			Steel: 0
-			Concrete: 0
-		DamageTypes: BulletDeath
-	Warhead@2Eff: CreateEffect
-		Explosion: piff
-		InvalidImpactTypes: Water
-	Warhead@3EffWater: CreateEffect
-		Explosion: piff
-		ValidImpactTypes: Water
+
+CRMP5:
+	Inherits: DoublePistols
 
 awp:
 	ValidTargets: Infantry
@@ -178,7 +136,13 @@ awp:
 			Wood: 0
 			Steel: 0
 			Concrete: 0
-		DamageTypes: ExplosionDeath
+		DamageTypes: BulletDeath
+	Warhead@2Eff: CreateEffect
+		Explosions: piff
+
+AWPE:
+	Inherits: awp
+	ReloadDelay: 60
 
 20mm:
 	ReloadDelay: 20
@@ -204,40 +168,8 @@ awp:
 			Concrete: 25
 		DamageTypes: Prone70Percent, TriggerProne, BulletDeath
 	Warhead@2Eff: CreateEffect
-		Explosion: piff
-		InvalidImpactTypes: Water
-	Warhead@3EffWater: CreateEffect
-		Explosion: piff
-		ValidImpactTypes: Water
+		Explosions: piff
 
 20mme:
-	ReloadDelay: 20
-	Range: 5c0
-	MinRange: 0c001
+	Inherits: 20mm
 	Burst: 2
-	Report: irocatta.wav
-	ValidTargets: Ground, Air
-	Projectile: Bullet
-		Speed: 100c0
-	Warhead@1Dam: SpreadDamage
-		Spread: 64
-		Damage: 25
-		ValidTargets: Ground, Air
-		Versus:
-			None: 100
-			Flak: 100
-			Plate: 70
-			Light: 60
-			Medium: 40
-			Heavy: 40
-			Wood: 75
-			Steel: 50
-			Concrete: 25
-		DamageTypes: Prone70Percent, TriggerProne, BulletDeath
-	Warhead@2Eff: CreateEffect
-		Explosion: piff
-		InvalidImpactTypes: Water
-	Warhead@3EffWater: CreateEffect
-		Explosion: piff
-		ValidImpactTypes: Water
-

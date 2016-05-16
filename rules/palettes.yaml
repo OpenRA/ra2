@@ -5,8 +5,23 @@
 	PlayerHighlightPalette:
 	PaletteFromFile@playertem:
 		Name: player
-		Tileset: TEMPERAT
+		Tileset: TEMPERATE
 		Filename: unittem.pal
+		ShadowIndex: 1
+	PaletteFromFile@temperatecity:
+		Name: city
+		Tileset: TEMPERATE
+		Filename: citytem.pal
+		ShadowIndex: 1
+	PaletteFromFile@snowcity:
+		Name: city
+		Tileset: SNOW
+		Filename: citysno.pal
+		ShadowIndex: 1
+	PaletteFromFile@urbancity:
+		Name: city
+		Tileset: URBAN
+		Filename: cityurb.pal
 		ShadowIndex: 1
 	PaletteFromFile@playerurb:
 		Name: player
@@ -26,6 +41,11 @@
 		Filename: cameo.pal
 		AllowModifiers: false
 		ShadowIndex: 242
+	PaletteFromFile@ts-chrome:
+		Name: ts-chrome
+		Filename: tscameo.pal
+		AllowModifiers: false
+		ShadowIndex: 242
 	PaletteFromFile@cameo-chevron:
 		Name: cameo-chevron
 		Filename: cameo-chevron.pal
@@ -43,8 +63,11 @@
 		Name: effect
 		Filename: anim.pal
 	PaletteFromFile@mousepal:
-		Name: mousepal
+		Name: mouse
 		Filename: mousepal.pal
+	PaletteFromFile@ts-mousepal:
+		Name: ts-mouse
+		Filename: ts-mousepal.pal
 	PaletteFromFile@colorpicker:
 		Name: colorpicker
 		Filename: unittem.pal
@@ -59,12 +82,10 @@
 		G: 0
 		B: 0
 		A: 140
-	PaletteFromRGBA@cloak:
-		Name: cloak
-		R: 0
-		G: 0
-		B: 0
-		A: 140
+	PaletteFromPlayerPaletteWithAlpha@cloak:
+		BaseName: cloak
+		BasePalette: player
+		Alpha: 0.50
 	PaletteFromRGBA@invuln:
 		Name: invuln
 		R: 128
@@ -108,4 +129,6 @@
 		Name: effect75alpha
 		BasePalette: ra
 		Alpha: 0.75
-
+	FlashPaletteEffect@NUKE:
+		Type: Nuke
+		Length: 90

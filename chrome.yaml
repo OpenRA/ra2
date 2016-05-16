@@ -60,7 +60,7 @@ scrolldown-buttons-allies-disabled: chrome.png
 	background: 40,476,77,27
 
 radar-allies: chrome.png
-	insignia: 340,335,202,157	
+	insignia: 340,335,202,157
 
 repair-button-allies: chrome.png
 	background: 580,15,44,34
@@ -128,7 +128,7 @@ sell-button-allies-highlighted-pressed: chrome.png
 sell-button-allies-disabled: chrome.png
 	background: 706,219,43,34
 sell-button-allies-highlighted-disabled: chrome.png
-	background: 706,219,43,34	
+	background: 706,219,43,34
 
 buildings-button-allies: chrome.png
 	background: 340,15,30,32
@@ -145,7 +145,7 @@ buildings-button-allies-highlighted-pressed: chrome.png
 buildings-button-allies-disabled: chrome.png
 	background: 340,207,30,32
 buildings-button-allies-highlighted-disabled: chrome.png
-	background: 340,207,30,32	
+	background: 340,207,30,32
 
 support-button-allies: chrome.png
 	background: 370,15,30,32
@@ -162,7 +162,7 @@ support-button-allies-highlighted-pressed: chrome.png
 support-button-allies-disabled: chrome.png
 	background: 370,207,30,32
 support-button-allies-highlighted-disabled: chrome.png
-	background: 370,207,30,32		
+	background: 370,207,30,32
 
 infantry-button-allies: chrome.png
 	background: 370,15,30,32
@@ -179,7 +179,7 @@ infantry-button-allies-highlighted-pressed: chrome.png
 infantry-button-allies-disabled: chrome.png
 	background: 370,207,30,32
 infantry-button-allies-highlighted-disabled: chrome.png
-	background: 370,207,30,32	
+	background: 370,207,30,32
 
 vehicles-button-allies: chrome.png
 	background: 370,15,30,32
@@ -194,7 +194,7 @@ vehicles-button-allies-highlighted-hover: chrome.png
 vehicles-button-allies-highlighted-pressed: chrome.png
 	background: 370,175,30,32
 vehicles-button-allies-highlighted-disabled: chrome.png
-	background: 370,207,30,32		
+	background: 370,207,30,32
 vehicles-button-allies-disabled: chrome.png
 	background: 370,207,30,32
 
@@ -211,7 +211,7 @@ aircrafts-button-allies-highlighted-hover: chrome.png
 aircrafts-button-allies-highlighted-pressed: chrome.png
 	background: 370,175,30,32
 aircrafts-button-allies-highlighted-disabled: chrome.png
-	background: 370,207,30,32	
+	background: 370,207,30,32
 aircrafts-button-allies-disabled: chrome.png
 	background: 370,207,30,32
 
@@ -228,7 +228,7 @@ ships-button-allies-highlighted-hover: chrome.png
 ships-button-allies-highlighted-pressed: chrome.png
 	background: 400,175,30,32
 ships-button-allies-highlighted-disabled: chrome.png
-	background: 400,207,30,32	
+	background: 400,207,30,32
 ships-button-allies-disabled: chrome.png
 	background: 400,207,30,32
 
@@ -305,11 +305,11 @@ stats-button-allies-highlighted-hover: chrome.png
 stats-button-allies-highlighted-pressed: chrome.png
 	background: 985,677,30,32
 stats-button-allies-highlighted-disabled: chrome.png
-	background: 985,710,30,32	
+	background: 985,710,30,32
 stats-button-allies-disabled: chrome.png
 	background: 985,710,30,32
 
-	
+
 production-icons-allies: chrome.png
 	building: 250,110,19,19
 	building-disabled: 269,110,19,19
@@ -332,7 +332,7 @@ production-icons-allies: chrome.png
 
 # -----------------------------------------------------------------------------------
 # Soviets
-# -----------------------------------------------------------------------------------	
+# -----------------------------------------------------------------------------------
 
 sidebar-soviets: chrome.png
 	background-top: 0,512,234,275
@@ -392,7 +392,7 @@ scrolldown-buttons-soviets-disabled: chrome.png
 	background: 40,1069,77,27
 
 radar-soviets: chrome.png
-	insignia: 340,847,202,157	
+	insignia: 340,847,202,157
 
 repair-button-soviets: chrome.png
 	background: 580,527,44,34
@@ -478,7 +478,7 @@ buildings-button-soviets-disabled: chrome.png
 	background: 340,724,30,32
 buildings-button-soviets-highlighted-disabled: chrome.png
 	background: 340,724,30,32
-	
+
 support-button-soviets: chrome.png
 	background: 370,532,30,32
 support-button-soviets-hover: chrome.png
@@ -661,9 +661,9 @@ production-icons-soviets: chrome.png
 	ship-disabled: 269,717,19,19
 	ship-alert: 288,717,19,19
 
-	
 
-# -----------------------------------------------------------------------------------	
+
+# -----------------------------------------------------------------------------------
 # GENERIC
 # -----------------------------------------------------------------------------------
 
@@ -705,7 +705,7 @@ order-icons: chrome.png
 	stats-disabled: 269,414,19,19
 	stats-active: 288,414,19,19
 
-# -----------------------------------------------------------------------------------	
+# -----------------------------------------------------------------------------------
 # OBSERVER
 # -----------------------------------------------------------------------------------
 
@@ -876,9 +876,9 @@ observer-scrollitem-hover: dialog.png
 	corner-bl: 768,383,1,1
 	corner-br: 895,383,1,1
 
-# -----------------------------------------------------------------------------------	
+# -----------------------------------------------------------------------------------
 # REST OF THE UI
-# -----------------------------------------------------------------------------------	
+# -----------------------------------------------------------------------------------
 
 # Used for the main menu frame
 dialog: dialog.png
@@ -946,6 +946,8 @@ lobby-bits: spawnpoints.png
 	admin: 64,5,7,5
 	colorpicker: 5,5,22,22
 	huepicker: 71,0,7,15
+	protected: 79,0,10,13
+	protected-disabled: 90,0,10,13
 
 strategic: strategic.png
 	unowned: 0,0,32,32
@@ -1439,4 +1441,5 @@ mainmenu-border: dialog.png
 	corner-br: 728,467,40,40
 
 dropdown: dialog.png
-    separator: 512,1,1,19
+	separator: 512,1,1,19
+	observer-separator: 768,256,1,19

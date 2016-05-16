@@ -1,0 +1,85 @@
+tug:
+	Inherits: ^Ship
+	Valued:
+		Cost: 500
+	Tooltip:
+		Name: Tug Boat
+	Mobile:
+		TurnSpeed: 2
+		Speed: 60
+	Health:
+		HP: 200
+	Armor:
+		Type: Light
+	RevealsShroud:
+		Range: 8c0
+	RenderSprites:
+	Selectable:
+		Bounds: 64, 52, 0, -6
+	RenderVoxels:
+		NormalsPalette: ts-normals
+	WithVoxelBody:
+	-Voiced:
+
+cruise:
+	Inherits: ^Ship
+	Valued:
+		Cost: 500
+	Tooltip:
+		Name: Cruise Ship
+	Mobile:
+		TurnSpeed: 1
+		Speed: 60
+	Health:
+		HP: 300
+	Armor:
+		Type: Light
+	RevealsShroud:
+		Range: 8c0
+	RenderSprites:
+	Selectable:
+		Bounds: 64, 52, 0, -6
+	WithVoxelBody:
+	-Voiced:
+
+cdest:
+	Inherits: ^Ship
+	Valued:
+		Cost: 1000
+	Tooltip:
+		Name: Coast Guard Boat
+	Health:
+		HP: 600
+	Armor:
+		Type: Light
+	Mobile:
+		TurnSpeed: 5
+		Speed: 105
+	RevealsShroud:
+		Range: 7c0
+	Selectable:
+		Bounds: 80, 80, 0, -6
+	Armament@primary:
+		Weapon: 155mm
+		LocalOffset: 768,0,0
+		FireDelay: 2
+		UpgradeTypes: eliteweapon
+		UpgradeMaxEnabledLevel: 0
+		UpgradeMaxAcceptedLevel: 1
+	Armament@elite:
+		Weapon: 155mmE
+		LocalOffset: 768,0,0
+		FireDelay: 2
+		UpgradeTypes: eliteweapon
+		UpgradeMinEnabledLevel: 1
+	AttackFrontal:
+	DetectCloaked:
+		CloakTypes: Underwater
+		Range: 4c0
+	RenderDetectionCircle:
+	Explodes:
+		Weapon: UnitExplode
+		EmptyWeapon: UnitExplode
+	WithVoxelBody:
+	RenderSprites:
+	-Voiced:

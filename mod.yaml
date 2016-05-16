@@ -2,188 +2,192 @@ Metadata:
 	Title: Red Alert 2
 	Description: The Soviet Union is back!\nThis time to conquer the United States...
 	Version: {DEV_VERSION}
-	Author: Phrohdoh and the RA2 team
+	Author: the RA2 mod team
 
 RequiresMods:
 	modchooser: {DEV_VERSION}
 
-Folders:
-	.
-	./mods/ra2
-	./mods/ra2/bits
-	./mods/ra2/bits/cameos
-	./mods/ra2/bits/vehicles
-	./mods/ra2/bits/structures
-	./mods/ra2/bits/temperate
-	./mods/ra2/bits/themes
-	./mods/ra2/bits/animations
-	./mods/ra2/uibits
+Packages:
 	~^Content/ra2
+	.
+	$ra2: ra2
+	$ra: ra
+	$d2k: d2k
+	$ts: ts
+	./mods/common: common
+	~ra2.mix
+	~language.mix
+	~multi.mix
+	~audio.mix
+	~cache.mix
+	~cameo.mix
+	~conquer.mix
+	~generic.mix
+	~isogen.mix
+	~isosnow.mix
+	~isotemp.mix
+	~isourb.mix
+	~load.mix
+	~local.mix
+	~neutral.mix
+	~sidec01.mix
+	~sidec02.mix
+	~sno.mix
+	~snow.mix
+	~tem.mix
+	~temperat.mix
+	~theme.mix
+	~urb.mix
+	~urban.mix
+	~audio.bag
+	ra2|bits
+	ra2|bits/cameos
+	ra2|bits/structures
+	ra2|bits/temperate
+	ra2|bits/animations
+	ra2|uibits
 
 MapFolders:
-	./mods/ra2/maps: System
-	~^maps/ra2: User
-
-Packages:
-	~ra2.mix:CRC32
-	~language.mix:CRC32
-	~multi.mix:CRC32
-	audio.mix:CRC32
-	cache.mix:CRC32
-	cameo.mix:CRC32
-	conquer.mix:CRC32
-	generic.mix:CRC32
-	isogen.mix:CRC32
-	isosnow.mix:CRC32
-	isotemp.mix:CRC32
-	isourb.mix:CRC32
-	~load.mix:CRC32
-	local.mix:CRC32
-	~neutral.mix:CRC32
-	sidec01.mix:CRC32
-	sidec02.mix:CRC32
-	sno.mix:CRC32
-	snow.mix:CRC32
-	tem.mix:CRC32
-	temperat.mix:CRC32
-	~theme.mix:CRC32
-	urb.mix:CRC32
-	urban.mix:CRC32
-	audio.bag:CRC32
+	ra2|maps: System
+	~^maps/ra2/{DEV_VERSION}: User
 
 Rules:
-	./mods/ra2/rules/proxy-actors.yaml
-	./mods/ra2/rules/misc.yaml
-	./mods/ra2/rules/ai.yaml
-	./mods/ra2/rules/player.yaml
-	./mods/ra2/rules/world.yaml
-	./mods/ra2/rules/palettes.yaml
-	./mods/ra2/rules/defaults.yaml
-	./mods/ra2/rules/allied-infantry.yaml
-	./mods/ra2/rules/soviet-infantry.yaml
-	./mods/ra2/rules/civilian-infantry.yaml
-	./mods/ra2/rules/allied-structures.yaml
-	./mods/ra2/rules/soviet-structures.yaml
-	./mods/ra2/rules/civilian-structures.yaml
-	./mods/ra2/rules/tech-structures.yaml
-	./mods/ra2/rules/allied-vehicles.yaml
-	./mods/ra2/rules/soviet-vehicles.yaml
-	./mods/ra2/rules/civilian-vehicles.yaml
-	./mods/ra2/rules/allied-naval.yaml
-	./mods/ra2/rules/soviet-naval.yaml
-	./mods/ra2/rules/aircraft.yaml
-	./mods/ra2/rules/civilian-props.yaml
-	./mods/ra2/rules/trees.yaml
+	ra2|rules/proxy-actors.yaml
+	ra2|rules/misc.yaml
+	ra2|rules/ai.yaml
+	ra2|rules/player.yaml
+	ra2|rules/world.yaml
+	ra2|rules/palettes.yaml
+	ra2|rules/defaults.yaml
+	ra2|rules/allied-infantry.yaml
+	ra2|rules/soviet-infantry.yaml
+	ra2|rules/civilians.yaml
+	ra2|rules/animals.yaml
+	ra2|rules/allied-structures.yaml
+	ra2|rules/soviet-structures.yaml
+	ra2|rules/civilian-structures.yaml
+	ra2|rules/tech-structures.yaml
+	ra2|rules/allied-vehicles.yaml
+	ra2|rules/soviet-vehicles.yaml
+	ra2|rules/civilian-vehicles.yaml
+	ra2|rules/allied-naval.yaml
+	ra2|rules/soviet-naval.yaml
+	ra2|rules/aircraft.yaml
+	ra2|rules/civilian-props.yaml
+	ra2|rules/trees.yaml
+	ra2|rules/civilian-naval.yaml
 
 Sequences:
-	./mods/ra2/sequences/aircraft.yaml
-	./mods/ra2/sequences/allied-infantry.yaml
-	./mods/ra2/sequences/soviet-infantry.yaml
-	./mods/ra2/sequences/civilian-infantry.yaml
-	./mods/ra2/sequences/misc.yaml
-	./mods/ra2/sequences/allied-structures.yaml
-	./mods/ra2/sequences/soviet-structures.yaml
-	./mods/ra2/sequences/civilian-structures.yaml
-	./mods/ra2/sequences/tech-structures.yaml
-	./mods/ra2/sequences/vehicles.yaml
-	./mods/ra2/sequences/trees.yaml
+	ra2|sequences/misc.yaml
+	ra2|sequences/aircraft.yaml
+	ra2|sequences/allied-infantry.yaml
+	ra2|sequences/soviet-infantry.yaml
+	ra2|sequences/animals.yaml
+	ra2|sequences/allied-structures.yaml
+	ra2|sequences/soviet-structures.yaml
+	ra2|sequences/civilians.yaml
+	ra2|sequences/civilian-structures.yaml
+	ra2|sequences/civilian-props.yaml
+	ra2|sequences/tech-structures.yaml
+	ra2|sequences/vehicles.yaml
+	ra2|sequences/trees.yaml
 
 VoxelSequences:
-	./mods/ra2/sequences/voxels.yaml
+	ra2|sequences/voxels.yaml
 
 Cursors:
-	./mods/ra2/cursors.yaml
+	ra2|cursors.yaml
 
 Chrome:
-	./mods/ra2/chrome.yaml
+	ra2|chrome.yaml
 
 Assemblies:
-	./mods/common/OpenRA.Mods.Common.dll
-	./mods/ra/OpenRA.Mods.RA.dll
-	./mods/ts/OpenRA.Mods.TS.dll
+	common|OpenRA.Mods.Common.dll
+	ra|OpenRA.Mods.RA.dll
+	ts|OpenRA.Mods.TS.dll
+	ra2|OpenRA.Mods.RA2.dll
 
 ChromeLayout:
-	./mods/ra2/chrome/ingame-player.yaml
-	./mods/ra2/chrome/ingame-infoobjectives.yaml
-	./mods/ra2/chrome/ingame-infostats.yaml
-	./mods/ra2/chrome/ingame-observerstats.yaml
-	./mods/ra2/chrome/musicplayer.yaml
-	./mods/ra2/chrome/tooltips.yaml
-	# NOTE: Use RA chrome until RA2 has its own UI
-	./mods/ra/chrome/ingame.yaml
-	./mods/ra/chrome/ingame-observer.yaml
-	./mods/ra/chrome/ingame-chat.yaml
-	./mods/ra/chrome/ingame-diplomacy.yaml
-	./mods/ra/chrome/ingame-fmvplayer.yaml
-	./mods/ra/chrome/ingame-menu.yaml
-	./mods/ra/chrome/ingame-info.yaml
-	./mods/ra/chrome/ingame-infoscripterror.yaml
-	./mods/ra/chrome/ingame-infobriefing.yaml
-	./mods/ra/chrome/ingame-debug.yaml
-	./mods/ra/chrome/ingame-perf.yaml
-	./mods/ra/chrome/mainmenu.yaml
-	./mods/ra/chrome/settings.yaml
-	./mods/ra/chrome/credits.yaml
-	./mods/ra/chrome/lobby.yaml
-	./mods/ra/chrome/lobby-players.yaml
-	./mods/ra/chrome/lobby-options.yaml
-	./mods/ra/chrome/lobby-music.yaml
-	./mods/ra/chrome/lobby-mappreview.yaml
-	./mods/ra/chrome/lobby-kickdialogs.yaml
-	./mods/ra/chrome/lobby-globalchat.yaml
-	./mods/ra/chrome/multiplayer.yaml
-	./mods/ra/chrome/multiplayer-browser.yaml
-	./mods/ra/chrome/multiplayer-createserver.yaml
-	./mods/ra/chrome/multiplayer-directconnect.yaml
-	./mods/ra/chrome/multiplayer-globalchat.yaml
-	./mods/ra/chrome/map-chooser.yaml
-	./mods/ra/chrome/connection.yaml
-	./mods/ra/chrome/replaybrowser.yaml
-	./mods/ra/chrome/assetbrowser.yaml
-	./mods/ra/chrome/missionbrowser.yaml
-	./mods/ra/chrome/confirmation-dialogs.yaml
-	./mods/ra/chrome/color-picker.yaml
-	./mods/ra/chrome/dropdowns.yaml
-	./mods/ra/chrome/editor.yaml
+	ra2|chrome/ingame-player.yaml
+	ra2|chrome/ingame-infoobjectives.yaml
+	ra2|chrome/ingame-infostats.yaml
+	ra2|chrome/ingame-observerstats.yaml
+	ra|chrome/musicplayer.yaml
+	ra|chrome/tooltips.yaml
+	ra|chrome/ingame.yaml
+	d2k|chrome/ingame-observer.yaml
+	ra|chrome/ingame-chat.yaml
+	ra|chrome/ingame-fmvplayer.yaml
+	ra|chrome/ingame-menu.yaml
+	ra|chrome/ingame-info.yaml
+	ra|chrome/ingame-infoscripterror.yaml
+	ra|chrome/ingame-infobriefing.yaml
+	ra|chrome/ingame-debug.yaml
+	ra|chrome/ingame-perf.yaml
+	ra|chrome/mainmenu.yaml
+	ra|chrome/settings.yaml
+	ra|chrome/credits.yaml
+	ra|chrome/lobby.yaml
+	ra|chrome/lobby-players.yaml
+	ra|chrome/lobby-options.yaml
+	ra|chrome/lobby-music.yaml
+	ra|chrome/lobby-mappreview.yaml
+	ra|chrome/lobby-kickdialogs.yaml
+	ra|chrome/lobby-globalchat.yaml
+	ra|chrome/multiplayer.yaml
+	ra|chrome/multiplayer-browser.yaml
+	ra|chrome/multiplayer-createserver.yaml
+	ra|chrome/multiplayer-directconnect.yaml
+	ra|chrome/multiplayer-globalchat.yaml
+	ra|chrome/map-chooser.yaml
+	ra|chrome/connection.yaml
+	ra|chrome/replaybrowser.yaml
+	ra|chrome/assetbrowser.yaml
+	ra|chrome/missionbrowser.yaml
+	ra|chrome/confirmation-dialogs.yaml
+	ra|chrome/color-picker.yaml
+	ra|chrome/dropdowns.yaml
+	ra|chrome/editor.yaml
 
 Weapons:
-	./mods/ra2/weapons.yaml
-	./mods/ra2/weapons/allied-infantry.yaml
-	./mods/ra2/weapons/soviet-infantry.yaml
+	ra2|weapons.yaml
+	ra2|weapons/allied-infantry.yaml
+	ra2|weapons/soviet-infantry.yaml
 
 Voices:
-	./mods/ra2/audio/voices.yaml
+	ra2|audio/voices.yaml
 
 Notifications:
-	./mods/ra2/audio/notifications.yaml
+	ra2|audio/notifications.yaml
 
 TileSets:
-	./mods/ra2/tilesets/temperat.yaml
-	./mods/ra2/tilesets/snow.yaml
-	./mods/ra2/tilesets/urban.yaml
+	ra2|tilesets/temperat.yaml
+	ra2|tilesets/snow.yaml
+	ra2|tilesets/urban.yaml
 
 MapGrid:
 	Type: RectangularIsometric
 	TileSize: 60,30
 	SubCellsOffsets: 0,0,0, -256,128,0, 0,-128,0, 256,128,0
-	SubCellDefaultIndex: 2
+	DefaultSubCell: 2
 	MaximumTerrainHeight: 16
-	
+
 Music:
-	./mods/ra2/audio/music.yaml
+	ra2|audio/music.yaml
 
 Translations:
-	./mods/ra2/languages/english.yaml
+	ra2|languages/english.yaml
 
 LoadScreen: LogoStripeLoadScreen
-	Image: ./mods/ra2/uibits/loadscreen.png
+	Image: ra2|uibits/loadscreen.png
 	Text: Carving wooden nickels..., Preparing paratroopers..., Welcoming you to Texas..., Optimizing helium mix..., Receiving thoughts..., Igniting boosters...
 
 ContentInstaller:
 	TestFiles: ^Content/ra2/ra2.mix, ^Content/ra2/language.mix
 	# TODO: Installing from CD doesn't work (because CAB)
-	#PackageToExtractFromCD: INSTALL\Game1.CAB:CRC32
-	#ExtractFilesFromCD: ra2.mix, language.mix, theme.mix,
+	PackageToExtractFromCD: INSTALL\Game1.CAB
+	ExtractFilesFromCD:
+		.: THEME.mix, ra2.mix, language.mix
 
 ServerTraits:
 	LobbyCommands
@@ -198,49 +202,53 @@ LobbyDefaults:
 	Shroud: true
 	Fog: true
 	ShortGame: false
+	TechLevel: Unrestricted
 
 ChromeMetrics:
-	./mods/ra2/metrics.yaml
+	common|metrics.yaml
+	ra2|metrics.yaml
 
 Fonts:
 	Regular:
-		Font:./mods/common/FreeSans.ttf
+		Font: common|FreeSans.ttf
 		Size:14
 	Bold:
-		Font:./mods/common/FreeSansBold.ttf
+		Font: common|FreeSansBold.ttf
 		Size:14
 	Title:
-		Font:./mods/common/FreeSansBold.ttf
+		Font: common|FreeSansBold.ttf
 		Size:32
 	BigBold:
-		Font:./mods/common/FreeSansBold.ttf
+		Font: common|FreeSansBold.ttf
 		Size:24
 	MediumBold:
-		Font:./mods/common/FreeSansBold.ttf
+		Font: common|FreeSansBold.ttf
 		Size:18
 	Small:
-		Font:./mods/common/FreeSans.ttf
+		Font: common|FreeSans.ttf
 		Size:12
 	Tiny:
-		Font:./mods/common/FreeSans.ttf
+		Font: common|FreeSans.ttf
 		Size:10
 	TinyBold:
-		Font:./mods/common/FreeSansBold.ttf
+		Font: common|FreeSansBold.ttf
 		Size:10
 
 SupportsMapsFrom: ra2
+
+SoundFormats: Aud, Wav
 
 SpriteFormats: ShpTS, TmpTS, ShpTD
 
 SpriteSequenceFormat: TilesetSpecificSpriteSequence
 	TilesetExtensions:
-		TEMPERAT: .tem
+		TEMPERATE: .tem
 		SNOW: .sno
 		URBAN: .urb
 	TilesetCodes:
 		GENERIC: g
 		SNOW: a
-		TEMPERAT: t
+		TEMPERATE: t
 		URBAN: u
 
 GameSpeeds:

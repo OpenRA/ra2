@@ -1,5 +1,6 @@
 e2:
-	Inherits: ^Infantry
+	Inherits@1: ^Infantry
+	Inherits@2: ^Parachutable
 	Buildable:
 		Queue: Infantry
 		Prerequisites: ~nahand
@@ -8,7 +9,7 @@ e2:
 		Cost: 100
 	Tooltip:
 		Name: Conscript
-		Description: Cheap standart infantry.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
+		Description: Cheap rifle infantry.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
 	Selectable:
 		Bounds: 20, 30, 0, -11
 	Health:
@@ -17,6 +18,7 @@ e2:
 		Speed: 34
 	Passenger:
 		PipType: Green
+		GrantUpgrades: ifv-machinegun
 	RevealsShroud:
 		Range: 5c0
 	AttackFrontal:
@@ -39,7 +41,8 @@ e2:
 		Sequence: stand
 
 flakt:
-	Inherits: ^Infantry
+	Inherits@1: ^Infantry
+	Inherits@2: ^Parachutable
 	Buildable:
 		Queue: Infantry
 		Prerequisites: naradr, ~nahand
@@ -57,6 +60,7 @@ flakt:
 		Speed: 34
 	Passenger:
 		PipType: Green
+		GrantUpgrades: ifv-flak
 	RevealsShroud:
 		Range: 5c0
 	AttackFrontal:
@@ -89,16 +93,18 @@ flakt:
 		Sequence: stand
 
 shk:
-	Inherits: ^Infantry
+	Inherits@1: ^Infantry
+	Inherits@2: ^Parachutable
 	Buildable:
 		Queue: Infantry
 		BuildAtProductionType: Infantry
 		Prerequisites: ~nahand
+		BuildPaletteOrder: 30
 	Valued:
 		Cost: 500
 	Tooltip:
-		Name: Shock Trooper
-		Description: Special armored unit using electricity.\n  Strong vs Infantry, Light armor\n  Weak vs Tanks, Aircraft\nSpecial ability: Charge tesla coils (3 Tesla Troopers required)
+		Name: Tesla Trooper
+		Description: Special armored unit using electricity.\n  Strong vs Infantry, Light armor\n  Weak vs Tanks, Aircraft\nSpecial ability: Charge tesla coils
 	Selectable:
 		Bounds: 20, 30, 0, -11
 	Health:
@@ -111,6 +117,7 @@ shk:
 		Type: Plate
 	Passenger:
 		PipType: Red
+		GrantUpgrades: ifv-tesla
 	AttackFrontal:
 		Voice: Attack
 	Armament@primary:
@@ -122,6 +129,17 @@ shk:
 		Weapon: ElectricBoltE
 		UpgradeTypes: eliteweapon
 		UpgradeMinEnabledLevel: 1
+	Armament@charge:
+		Weapon: AssaultBolt
+		LocalOffset: 427,0,341
+		TargetStances: Ally
+		ForceTargetStances: None
+		Cursor: ability
+		OutsideRangeCursor: ability
+	AmmoPool:
+		PipCount: 0
+		SelfReloads: true
+		SelfReloadTicks: 70
 	WithInfantryBody:
 	UpgradeActorsNear:
 		Upgrades: charged
@@ -160,7 +178,7 @@ terror:
 	Explodes:
 		Weapon: TerrorBomb
 		EmptyWeapon: TerrorBomb
-	DemoTruck:
+	AttackSuicides:
 		Voice: Attack
 	AttackFrontal:
 		Voice: Attack
@@ -195,6 +213,7 @@ deso:
 		Type: Plate
 	Passenger:
 		PipType: Red
+		GrantUpgrades: ifv-deso
 	Armament@primary:
 		Weapon: RadBeamWeapon
 		UpgradeTypes: eliteweapon
@@ -220,7 +239,7 @@ ivan:
 		Queue: Infantry
 		BuildAtProductionType: Infantry
 		BuildPaletteOrder: 120
-		Prerequisites: naradr, ~nahand, ~!infantry.cuba
+		Prerequisites: naradr, ~nahand
 	Valued:
 		Cost: 600
 	Tooltip:
@@ -261,4 +280,3 @@ ivan:
 		IdleSequences: idle1,idle2
 	QuantizeFacingsFromSequence:
 		Sequence: stand
-

@@ -26,6 +26,9 @@ cmin:
 	harvest: oregath
 		Length: 15
 		Facings: 8
+	warpin: warpin
+	warpout: warpout
+		Length: 20
 	icon: ahrvicon
 
 cruise:

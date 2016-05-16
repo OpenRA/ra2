@@ -1,162 +1,92 @@
 bus:
-	Inherits: ^Vehicle
-	Valued:
-		Cost: 800
+	Inherits: ^CivVehicle
 	Tooltip:
 		Name: School Bus
-	Mobile:
-		ROT: 5
-		Speed: 113
-	Health:
-		HP: 100
-	Armor:
-		Type: Light
-	RevealsShroud:
-		Range: 5c0
 	Cargo:
 		Types: Infantry
 		MaxWeight: 20
 		PipCount: 5
 		UnloadVoice: Move
-	RenderSprites:
-	Selectable:
-		Bounds: 64, 52, 0, -6
-	RenderVoxels:
-	WithVoxelBody:
-	Voiced:
-		VoiceSet: CarVoice
+
+limo:
+	Inherits: ^CivVehicle
+	Tooltip:
+		Name: Presidential Limousine
+	Cargo:
+		Types: Infantry
+		MaxWeight: 20
+		PipCount: 5
+		UnloadVoice: Move
 
 pick:
-	Inherits: ^Vehicle
-	Valued:
-		Cost: 800
+	Inherits: ^CivVehicle
 	Tooltip:
 		Name: Pickup Truck
-	Mobile:
-		ROT: 5
-		Speed: 113
-	Health:
-		HP: 100
-	Armor:
-		Type: Light
-	RevealsShroud:
-		Range: 5c0
-	RenderSprites:
-	Selectable:
-		Bounds: 64, 52, 0, -6
-	RenderVoxels:
-	WithVoxelBody:
-	Voiced:
-		VoiceSet: CarVoice
 
 car:
-	Inherits: ^Vehicle
-	Valued:
-		Cost: 800
+	Inherits: ^CivVehicle
 	Tooltip:
 		Name: Automobile
-	Mobile:
-		ROT: 5
-		Speed: 113
-	Health:
-		HP: 100
-	Armor:
-		Type: Light
-	RevealsShroud:
-		Range: 5c0
-	RenderSprites:
-	Selectable:
-		Bounds: 64, 52, 0, -6
-	RenderVoxels:
-	WithVoxelBody:
-	Voiced:
-		VoiceSet: CarVoice
+
+wini:
+	Inherits: ^CivVehicle
+	Tooltip:
+		Name: Recreational Vehicle
+
+propa:
+	Inherits: ^CivVehicle
+	Tooltip:
+		Name: Propaganda Truck
 
 cop:
-	Inherits: ^Vehicle
-	Valued:
-		Cost: 800
+	Inherits: ^CivVehicle
 	Tooltip:
 		Name: Police Car
-	Mobile:
-		Speed: 113
-	Health:
-		HP: 100
-	Armor:
-		Type: Light
-	RevealsShroud:
-		Range: 5c0
-	RenderSprites:
-	Selectable:
-		Bounds: 64, 52, 0, -6
-	RenderVoxels:
-	WithVoxelBody:
-	Voiced:
-		VoiceSet: CarVoice
+
+euroc:
+	Inherits: ^CivVehicle
+	Tooltip:
+		Name: European Car
 
 cona:
-	Inherits: ^Vehicle
-	Valued:
-		Cost: 800
+	Inherits: ^CivVehicle
 	Tooltip:
 		Name: Excavator
-	Mobile:
-		Speed: 113
-	Health:
-		HP: 100
-	Armor:
-		Type: Light
-	RevealsShroud:
-		Range: 5c0
-	RenderSprites:
-	Selectable:
-		Bounds: 64, 52, 0, -6
 	RenderVoxels:
 		NormalsPalette: ts-normals
-	WithVoxelBody:
-	Voiced:
-		VoiceSet: CarVoice
 
 trucka:
-	Inherits: ^Vehicle
-	Valued:
-		Cost: 800
+	Inherits: ^CivVehicle
 	Tooltip:
 		Name: Truck
-	Mobile:
-		Speed: 113
-	Health:
-		HP: 100
-	Armor:
-		Type: Light
-	RevealsShroud:
-		Range: 5c0
-	RenderSprites:
-	Selectable:
-		Bounds: 64, 52, 0, -6
-	RenderVoxels:
-	WithVoxelBody:
-	Voiced:
-		VoiceSet: CarVoice
 
 truckb:
-	Inherits: ^Vehicle
-	Valued:
-		Cost: 800
+	Inherits: ^CivVehicle
 	Tooltip:
 		Name: Truck
-	Mobile:
-		Speed: 113
-	Health:
-		HP: 100
-	Armor:
-		Type: Light
-	RevealsShroud:
-		Range: 5c0
-	RenderSprites:
-	Selectable:
-		Bounds: 64, 52, 0, -6
-	RenderVoxels:
-	WithVoxelBody:
-	Voiced:
-		VoiceSet: CarVoice
+
+suvb:
+	Inherits: ^CivVehicle
+	Tooltip:
+		Name: Black SUV
+
+suvw:
+	Inherits: ^CivVehicle
+	Tooltip:
+		Name: White SUV
+
+stang:
+	Inherits: ^CivVehicle
+	Tooltip:
+		Name: Mustang
+		GenericName: Sports Car
+
+ptruck:
+	Inherits: ^CivVehicle
+	Tooltip:
+		Name: Pickup Truck
+
+taxi:
+	Inherits: ^CivVehicle
+	Tooltip:
+		Name: Taxi

@@ -16,6 +16,38 @@ waypoint:
 	WithSpriteBody:
 	QuantizeFacingsFromSequence:
 
+crate:
+	Inherits: ^Crate
+	Crate:
+		Lifetime: 240
+	GiveCashCrateAction@500:
+		Amount: 500
+		SelectionShares: 10
+		UseCashTick: yes
+	GiveCashCrateAction@1000:
+		Amount: 1000
+		SelectionShares: 20
+		UseCashTick: yes
+	GiveCashCrateAction@1500:
+		Amount: 1500
+		SelectionShares: 10
+		UseCashTick: yes
+	RevealMapCrateAction:
+		SelectionShares: 2
+		Effect: reveal-map
+	LevelUpCrateAction:
+		SelectionShares: 25
+	GiveMcvCrateAction@soviets:
+		SelectionShares: 0
+		NoBaseSelectionShares: 150
+		ValidFactions: cuba, libya, iraq, russia
+		Units: smcv
+	GiveMcvCrateAction@allied:
+		SelectionShares: 0
+		NoBaseSelectionShares: 150
+		ValidFactions: america, germany, england, france, korea
+		Units: amcv
+
 ^amcv.colorpicker:
 	Inherits: amcv
 	AlwaysVisible:
@@ -59,3 +91,17 @@ TROCK04:
 TROCK05:
 	Inherits: ^Rock
 
+CAMERA:
+	AlwaysVisible:
+	Immobile:
+		OccupiesSpace: false
+	RevealsShroud:
+		Range: 10c0
+		Type: CenterPosition
+	BodyOrientation:
+		QuantizedFacings: 1
+	WithSpriteBody:
+	RenderSpritesEditorOnly:
+		Image: camera
+	EditorOnlyTooltip:
+		Name: (reveals area to owner)

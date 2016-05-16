@@ -40,20 +40,6 @@ Container@PLAYER_WIDGETS:
 					X: 0
 					Y: 0
 					Children:
-						MenuButton@DIPLOMACY_BUTTON:
-							Logic: AddFactionSuffixLogic
-							MenuContainer: INGAME_DIPLOMACY_BG
-							HideIngameUI: false
-							Pause: false
-							Key: P
-							X: 16
-							Y: 21
-							Width: 69
-							Height: 23
-							Background: diplomacy-button
-							TooltipText: Diplomacy
-							TooltipContainer: TOOLTIP_CONTAINER
-							VisualHeight: 0
 						MenuButton@DEBUG_BUTTON:
 							Logic: AddFactionSuffixLogic
 							Key: escape Shift
@@ -75,7 +61,7 @@ Container@PLAYER_WIDGETS:
 							Background: options-button
 							TooltipText: Options
 							TooltipContainer: TOOLTIP_CONTAINER
-							VisualHeight: 0	
+							VisualHeight: 0
 						Button@REPAIR_BUTTON:
 							Logic: RepairOrderButtonLogic, AddFactionSuffixLogic
 							X: 32

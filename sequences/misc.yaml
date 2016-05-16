@@ -1,7 +1,7 @@
 overlay:
 	Defaults: place
 		Offset: 0, -15
-	build-valid-temperat:
+	build-valid-temperate:
 	build-valid-snow:
 	build-valid-urban:
 	build-invalid:
@@ -9,59 +9,91 @@ overlay:
 	target-select:
 	target-invalid:
 		Start: 1
+	target-valid-snow:
+		Start: 2
+	target-valid-temperate:
+		Start: 2
+	target-valid-urban:
+		Start: 2
+
+editor-overlay:
+	Defaults: place
+		Offset: 0, -15
+	copy:
+	paste:
+		Start: 1
 
 poweroff:
 	offline: poweroff
 		Length: *
 		Tick: 160
+		Offset: 0,-50
+		ZOffset: 2047
 
 allyrepair:
 	repair: wrench
 		Length: 7
 		Tick: 160
 
-# TODO: fix/replace them, just placeholders
 rallypoint:
-	flag: ring
-		Length: 12
-		Offset: 5, -3
-		BlendMode: Additive
-	circles: ring
-		Length: 12
-		BlendMode: Additive
+	flag: mouse
+		Start: 269
+		Length: 10
+		Offset: 2,-12
+		ZOffset: -1023
+	circles: mouse
+		Start: 249
+		Length: 10
+		ZOffset: -2047
 
 beacon:
-	arrow: mouse
-		Start: 6
-		Offset: 1, -12
-	circles: ring
-		Length: 12
-		BlendMode: Additive
+	idle: pbeacon
+		Length: 20
+		Tick: 200
+		ZOffset: 2047
+	arrow: pbeacon
+		Length: 1
+		ZOffset: 2047
 
 crate-effects: #Temp Null Some SHPs cannot be read by openra at this time, expect more
 	Defaults: null
 		Length: *
 	dollar: #money
-	reveal-map: #reveal
+	reveal-map: reveal
 	hide-map: #shroudx
 	fpower: #firepowr
 	armor: #armor
 	stealth: # RA2 Doesn't have it
 	heal: #healall
 	nuke: #mltimisl
-	levelup: #veteran
+	levelup: veteran
 	speed: #speed
+
+crate:
+	idle:
+		Offset: 0, -12
+		ShadowStart: 1
+		UseTilesetExtension: true
+	land:
+		Offset: 0, -12
+		ShadowStart: 1
+		UseTilesetExtension: true
+	water: wcrate
+		ShadowStart: 1
+		Offset: 0, -12
+		UseTilesetExtension: true
 
 rank:
 	rank: pips
 		Start: 13
 		Length: 2
+		Offset: 2, 2
 
-mpspawn: # TODO: backfall to RA asset
+mpspawn:
 	idle:
 		Length: *
 
-waypoint: # TODO: backfall to RA asset
+waypoint:
 	idle:
 		Length: *
 
@@ -69,6 +101,16 @@ clock:
 	idle:
 		Length: *
 		BlendMode: Multiply
+
+parach:
+	open:
+		Length: 19
+	idle:
+		Start: 19
+		Length: 20
+	close:
+		Start: 40
+		Length: 29
 
 cameo-chevron:
 	idle:
@@ -112,6 +154,7 @@ pips:
 	pip-disguise: pip-disguise
 		Length: *
 		Tick: 300
+		Offset: 6, -2
 
 explosion:
 	Defaults:
@@ -119,8 +162,6 @@ explosion:
 	building: twlt070
 	ionring: ring1
 		Tick: 160
-	pulse_explosion: pulsefx2
-		BlendMode: Additive
 	huge_watersplash: h2o_exp1
 	large_watersplash: h2o_exp2
 	small_watersplash: h2o_exp3
@@ -156,6 +197,7 @@ explosion:
 	medium_grey_explosion: xgrymed1
 	large_grey_explosion: xgrymed2
 	nuke_explosion: nukeanim
+	nuke_ball: nukeball
 	demotruck_explosion: demtexp
 	elite_explosion: vtexplod
 	terrorist_explosion: mininuke
@@ -184,11 +226,6 @@ dragon:
 smokey2:
 	idle:
 		Length: *
-		
-crystal4:
-	idle:
-		Length: 15
-		ShadowStart: 15
 
 120mm:
 	idle:
@@ -227,7 +264,14 @@ litning:
 	dim:
 		Start: 4
 		Length: 4
-		
+
+litningupg:
+	bright:
+		Length: 4
+	dim: litning
+		Start: 4
+		Length: 4
+
 moveflsh:
 	idle: ring
 		Length: *
@@ -359,6 +403,14 @@ largecraters:
 icon:
 	gps: asaticon
 	invuln: ircricon
+	chrono: chroicon
+	abomb: nukeicon
+	paradrop: paraicon
+	airborne: aparicon
+
+atomic:
+	up: nkmslup
+	down: nkmsldn
 
 bombcurs:
 	idle:
@@ -424,3 +476,7 @@ srock05:
 		ShadowStart: 1
 		Offset: 0, -15
 		UseTilesetExtension: true
+
+camera:
+	idle:
+		Length: *

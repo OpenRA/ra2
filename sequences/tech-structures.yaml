@@ -1,20 +1,61 @@
 caoild:
-	idle: cuoild
+	Defaults:
+		UseTilesetCode: true
+	idle:
 		ShadowStart: 4
 		Offset: 0, -30
-	damaged-idle: cuoild
+	damaged-idle:
 		Start: 1
 		ShadowStart: 5
 		Offset: 0, -30
-	idle-pump: cuoild_a
+	idle-pump: caoild_a
 		Length: 32
 		ShadowStart: 64
 		Offset: 0, -30
-	damaged-idle-pump: cuoild_a
+	damaged-idle-pump: caoild_a
 		Start: 32
 		Length: 32
 		ShadowStart: 96
 		Offset: 0, -30
+
+caairp:
+	Defaults:
+		UseTilesetCode: true
+		Offset: 7, -40
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 1
+		ShadowStart: 5
+	idle-overlay: caairp_a
+		Length: 10
+		Tick: 400
+	damaged-idle-overlay: caairp_a
+		Start: 10
+		Length: 10
+		Tick: 400
+	flag: caoutp_f
+		Length: 16
+
+cahosp:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 4
+		Offset: -30, -75
+	damaged-idle:
+		Start: 1
+		ShadowStart: 5
+		Offset: -30, -75
+	idle-overlay: cahosp_a
+		Length: 2
+		Offset: -30, -75
+		Tick: 400
+	damaged-idle-overlay: cahosp_a
+		Start: 2
+		Length: 2
+		Offset: -30, -75
+		Tick: 400
 
 caoutp:
 	icon: xxicon

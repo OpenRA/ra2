@@ -18,7 +18,7 @@ amcv:
 		Type: Heavy
 	Mobile:
 		Speed: 80
-		ROT: 5
+		TurnSpeed: 5
 		Crushes: fence, crate, infantry
 	RevealsShroud:
 		Range: 4c0
@@ -36,7 +36,7 @@ amcv:
 	RenderVoxels:
 	WithVoxelBody:
 	Voiced:
-		VoiceSet: AlliedVehicleVoice
+		VoiceSet: AlliedConstructionVehicleVoice
 
 cmin:
 	Inherits: ^Vehicle
@@ -60,13 +60,18 @@ cmin:
 		SearchFromOrderRadius: 12
 		HarvestVoice: Move
 		DeliverVoice: Move
+	ChronoResourceDelivery:
+		WarpInSequence: # unused
+		WarpOutSequence: warpout
+		WarpInSound: vchrtele.wav
+		WarpOutSound: vchrtele.wav
 	Health:
 		HP: 1000
 	Armor:
 		Type: Medium
 	Mobile:
 		Speed: 85
-		ROT: 8
+		TurnSpeed: 8
 		WaitAverage: 0
 		Crushes: crate, infantry
 	RevealsShroud:
@@ -79,7 +84,7 @@ cmin:
 	RenderVoxels:
 	WithVoxelUnloadBody:
 	Voiced:
-		VoiceSet: AlliedVehicleVoice
+		VoiceSet: ChronoMinerVoice
 
 mtnk:
 	Inherits: ^Vehicle
@@ -94,7 +99,7 @@ mtnk:
 		Prerequisites: ~gaweap
 	Mobile:
 		Speed: 90
-		ROT: 5
+		TurnSpeed: 5
 		Crushes: fence, crate, infantry
 	Health:
 		HP: 300
@@ -103,7 +108,7 @@ mtnk:
 	RevealsShroud:
 		Range: 8c0
 	Turreted:
-		ROT: 5
+		TurnSpeed: 5
 	Armament@primary:
 		Weapon: 105mm
 		LocalOffset: 640,0,384
@@ -143,7 +148,7 @@ tnkd:
 		Prerequisites: ~vehicles.germany
 	Mobile:
 		Speed: 70
-		ROT: 5
+		TurnSpeed: 5
 		Crushes: fence, crate, infantry
 	Health:
 		HP: 400
@@ -174,14 +179,16 @@ fv:
 		Cost: 600
 	Tooltip:
 		Name: Infantry Fighting Vehicle
-		Description: Multi-Purpose Vehicle.\nWithout crago:\n  Strong vs Infantry, Aircraft\n  Weak vs Vehicles, Ships\nSpecial Ability: Armament depends on passenger.
+		Description: Multi-Purpose Vehicle.\nWithout passenger:\n  Strong vs Infantry, Aircraft\n  Weak vs Vehicles, Ships\nSpecial Ability: Armament depends on passenger.
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 30
 		Prerequisites: ~gaweap
 	Mobile:
 		Speed: 128
-		ROT: 5
+		TurnSpeed: 5
+		UpgradeMaxEnabledLevel: 0
+		UpgradeTypes: notmobile
 	Health:
 		HP: 200
 	Armor:
@@ -189,17 +196,59 @@ fv:
 	RevealsShroud:
 		Range: 8c0
 	Turreted:
-		ROT: 5
+		TurnSpeed: 5
 	Armament@primary:
 		Weapon: HoverMissile
 		LocalOffset: 640, 0, 384
-		UpgradeTypes: eliteweapon
+		UpgradeTypes: eliteweapon, ifv-machinegun, ifv-repair, ifv-sniper, ifv-flak, ifv-tesla, ifv-deso, ifv-hero
 		UpgradeMaxEnabledLevel: 0
 		UpgradeMaxAcceptedLevel: 1
 	Armament@elite:
 		Weapon: HoverMissileE
 		LocalOffset: 640, 0, 384
 		UpgradeTypes: eliteweapon
+		UpgradeMinEnabledLevel: 1
+	Armament@machinegun:
+		Weapon: CRM60
+		LocalOffset: 188,32,600
+		UpgradeTypes: ifv-machinegun
+		MuzzleSequence: mgun_muz
+		MuzzleSplitFacings: 8
+		UpgradeMinEnabledLevel: 1
+	Armament@repair:
+		Weapon: RepairBullet
+		LocalOffset: 164,0,864
+		UpgradeTypes: ifv-repair
+		Cursor: goldwrench
+		OutsideRangeCursor: goldwrench
+		TargetStances: Ally
+		ForceTargetStances: None
+		UpgradeMinEnabledLevel: 1
+	Armament@sniper:
+		Weapon: AWPE
+		LocalOffset: 188,0,600
+		UpgradeTypes: ifv-sniper
+		UpgradeMinEnabledLevel: 1
+	Armament@hero:
+		Weapon: CRMP5
+		LocalOffset: 200,0,800
+		UpgradeTypes: ifv-hero
+		UpgradeMinEnabledLevel: 1
+	Armament@tesla:
+		Weapon: ElectricBolt
+		UpgradeTypes: ifv-tesla
+		UpgradeMinEnabledLevel: 1
+	Armament@desolator:
+		Weapon: RadBeamWeapon
+		UpgradeTypes: ifv-deso
+		UpgradeMinEnabledLevel: 1
+	Armament@flak-ground:
+		Weapon: FlakGuyGun
+		UpgradeTypes: ifv-flak
+		UpgradeMinEnabledLevel: 1
+	Armament@flak-air:
+		Weapon: FlakGuyAAGun
+		UpgradeTypes: ifv-flak
 		UpgradeMinEnabledLevel: 1
 	AttackTurreted:
 		Voice: Attack
@@ -209,12 +258,44 @@ fv:
 		MaxWeight: 1
 		PipCount: 1
 		UnloadVoice: Move
+		LoadingUpgrades: notmobile
 	RenderSprites:
 	Selectable:
 		Bounds: 64, 52, 0, -6
 	RenderVoxels:
 	WithVoxelBody:
-	WithVoxelTurret:
+	WithVoxelTurret@default:
+		Sequence: turret-missile
+		UpgradeTypes: ifv-machinegun, ifv-repair, ifv-sniper, ifv-flak, ifv-tesla, ifv-deso, ifv-hero
+		UpgradeMaxEnabledLevel: 0
+	WithVoxelTurret@machinegun:
+		Sequence: turret-mg
+		UpgradeTypes: ifv-machinegun
+		UpgradeMinEnabledLevel: 1
+	WithVoxelTurret@engineer:
+		Sequence: turret-repair
+		UpgradeTypes: ifv-repair
+		UpgradeMinEnabledLevel: 1
+	WithVoxelTurret@sniper:
+		Sequence: turret-hitech
+		UpgradeTypes: ifv-sniper
+		UpgradeMinEnabledLevel: 1
+	WithVoxelTurret@flak:
+		Sequence: turret-hitech
+		UpgradeTypes: ifv-flak
+		UpgradeMinEnabledLevel: 1
+	WithVoxelTurret@tesla:
+		Sequence: turret-hitech
+		UpgradeTypes: ifv-tesla
+		UpgradeMinEnabledLevel: 1
+	WithVoxelTurret@desolator:
+		Sequence: turret-hitech
+		UpgradeTypes: ifv-deso
+		UpgradeMinEnabledLevel: 1
+	WithVoxelTurret@hero:
+		Sequence: turret-hitech
+		UpgradeTypes: ifv-hero
+		UpgradeMinEnabledLevel: 1
 	Voiced:
 		VoiceSet: AlliedVehicleVoice
 	ProducibleWithLevel:
@@ -238,12 +319,12 @@ sref:
 	Armor:
 		Type: Heavy
 	Mobile:
-		ROT: 6
+		TurnSpeed: 6
 		Speed: 60
 	RevealsShroud:
 		Range: 8c0
 	Turreted:
-		ROT: 10
+		TurnSpeed: 10
 		Offset: -30,0,85
 	Armament@primary:
 		Weapon: Comet
@@ -289,7 +370,7 @@ mgtk:
 	Armor:
 		Type: Light
 	Mobile:
-		ROT: 5
+		TurnSpeed: 5
 		Speed: 105
 	RevealsShroud:
 		Range: 9c0
@@ -318,4 +399,3 @@ mgtk:
 		VoiceSet: AlliedVehicleVoice
 	ProducibleWithLevel:
 		Prerequisites: warfactory.infiltrated
-

@@ -1,0 +1,268 @@
+hdstn01:
+	Defaults:
+		UseTilesetExtension: true
+	idle:
+		ShadowStart: 1
+
+lt_gen01:
+	Defaults:
+		UseTilesetExtension: true
+	idle:
+		ShadowStart: 1
+
+lt_gen02:
+	Defaults:
+		UseTilesetExtension: true
+	idle:
+		ShadowStart: 1
+
+lt_gen03:
+	Defaults:
+		UseTilesetExtension: true
+	idle:
+		ShadowStart: 1
+
+lt_gen04:
+	Defaults:
+		UseTilesetExtension: true
+	idle:
+		ShadowStart: 1
+
+lt_sgn01:
+	Defaults:
+		UseTilesetExtension: true
+	idle:
+		ShadowStart: 1
+
+lt_sgn02:
+	Defaults:
+		UseTilesetExtension: true
+	idle:
+		ShadowStart: 1
+
+lt_sgn03:
+	Defaults:
+		UseTilesetExtension: true
+	idle:
+		ShadowStart: 1
+
+lt_sgn04:
+	Defaults:
+		UseTilesetExtension: true
+	idle:
+
+lt_eur01:
+	Defaults:
+		UseTilesetExtension: true
+	idle:
+		ShadowStart: 1
+
+lt_eur02:
+	Defaults:
+		UseTilesetExtension: true
+	idle:
+		ShadowStart: 1
+
+pole01:
+	Defaults:
+		UseTilesetExtension: true
+	idle:
+		ShadowStart: 1
+
+pole02:
+	Defaults:
+		UseTilesetExtension: true
+	idle:
+		ShadowStart: 1
+
+sign01:
+	Defaults:
+		UseTilesetExtension: true
+	idle:
+		ShadowStart: 1
+
+sign02:
+	Defaults:
+		UseTilesetExtension: true
+	idle:
+		ShadowStart: 1
+
+sign03:
+	Defaults:
+		UseTilesetExtension: true
+	idle:
+
+sign04:
+	Defaults:
+		UseTilesetExtension: true
+	idle:
+		ShadowStart: 1
+
+sign05:
+	Defaults:
+		UseTilesetExtension: true
+	idle:
+		ShadowStart: 1
+
+sign06:
+	Defaults:
+		UseTilesetExtension: true
+	idle:
+		ShadowStart: 1
+
+trff01:
+	Defaults:
+		UseTilesetExtension: true
+	idle:
+		ShadowStart: 1
+
+camsc01:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 3
+
+camsc02:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 3
+
+camsc03:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 3
+
+camsc04:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 3
+
+camsc05:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 3
+
+camsc06:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 3
+
+camsc11:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 3
+
+camsc12:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 3
+
+camsc13:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 3
+
+trff02:
+	Defaults:
+		UseTilesetExtension: true
+	idle:
+		ShadowStart: 1
+
+trff03:
+	Defaults:
+		UseTilesetExtension: true
+	idle:
+		ShadowStart: 1
+
+trff04:
+	Defaults:
+		UseTilesetExtension: true
+	idle:
+		ShadowStart: 1
+
+camisc01:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 3
+
+camisc02:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+
+camisc03:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 3
+
+camisc04:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 3
+
+camisc05:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 3
+
+camisc06:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 3
+
+caeuro05:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 3
+
+capark01:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 3
+
+capark02:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 3
+
+capark03:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 3
+
+ammo01:
+	idle:
+		ShadowStart: 3
+
+cabhut:
+	idle:
+		ShadowStart: 3
+
+gagate_a:
+	Defaults:
+		UseTilesetCode: true
+		Offset: 0, -15
+	idle:
+		Length: 10
+		ShadowStart: 21
+	make: gagate_a
+		Start: 10
+		Length: -10
+		ShadowStart: 30

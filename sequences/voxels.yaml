@@ -21,7 +21,7 @@ car:
 
 carrier:
 	idle:
-	
+
 cdest:	#coast guard boat/SP unit
 	idle:
 #Needs without weapon image cdestwo
@@ -51,28 +51,31 @@ dest:
 
 dred:
 	idle:
-#Needs without weapon image dredwo	
+#Needs without weapon image dredwo
 
 euroc:
 	idle:
 
-orca: #Harrier
-	idle: falc
+falc:
+	idle:
 
 naflak:
-	turret: flaktur	
+	turret: flaktur
 
 flata: #Unused
 	idle:
 
-fv: #Has different turrets per unit thats inside,default is patriot
+fv:
 	idle:
-	turret: fvtur
+	turret-missile: fvtur
+	turret-mg: fvtur1
+	turret-repair: fvtur2
+	turret-hitech: fvtur3
 
 gtgcan:
 	turret: gtgcantur
 	barrel: gtgcanbarl
-	
+
 mtnk:
 	idle: gtnk
 	turret: gtnktur
@@ -170,7 +173,7 @@ subt: #Sub Torpedo needs voxel projectiles
 suvb:
 	idle:
 
-suvbw:
+suvw:
 	idle:
 
 taxi:

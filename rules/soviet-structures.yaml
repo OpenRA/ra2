@@ -29,6 +29,7 @@ nacnst:
 		IntoActor: smcv
 		Offset: 1,1
 		Facing: 96
+		DeployCursor: undeploy
 	ProductionBar@Building:
 		ProductionType: Building
 	ProductionBar@Support:
@@ -73,9 +74,14 @@ napowr:
 		Sequence: idle-lights
 	Power:
 		Amount: 150
+	InfiltrateForPowerOutage:
+	AffectedByPowerOutage:
 	ScalePowerWithHealth:
 	SoundOnDamageTransition:
 		DestroyedSounds: bpowdiea.wav, bpowdieb.wav
+	PowerTooltip:
+	Targetable:
+		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
 
 nahand:
 	Inherits: ^Building
@@ -92,10 +98,10 @@ nahand:
 		Prerequisite: barracks
 	ProvidesPrerequisite@cuba:
 		Prerequisite: infantry.cuba
-		Race: cuba
+		Factions: cuba
 	ProvidesPrerequisite@iraq:
 		Prerequisite: infantry.iraq
-		Race: iraq
+		Factions: iraq
 	ProvidesPrerequisite@default:
 	Building:
 		Footprint: xx xx
@@ -118,6 +124,9 @@ nahand:
 		Produces: Infantry
 	PrimaryBuilding:
 	RallyPoint:
+		Offset: 3,3
+		Palette: mouse
+		IsPlayerPalette: false
 	ProductionBar:
 	Power:
 		Amount: -10
@@ -126,6 +135,14 @@ nahand:
 		Proxy: barracks.infiltrated
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
+	WithDecoration@primary:
+		RequiresSelection: true
+		Image: pips
+		Sequence: tag-primary
+		ReferencePoint: Top
+		ZOffset: 256
+		UpgradeTypes: primary
+		UpgradeMinEnabledLevel: 1
 
 narefn:
 	Inherits: ^Building
@@ -165,17 +182,23 @@ narefn:
 		Capacity: 999999
 	CustomSellValue:
 		Value: 300
+	InfiltrateForCash:
+		Percentage: 50
+		Notification: CreditsStolen
+		Minimum: 500
 	FreeActor:
 		Actor: harv
-		SpawnOffset: 4, 1
+		SpawnOffset: 3, 1
 		Facing: 160
-	WithDockingOverlay:
+	WithDockedOverlay:
 	WithIdleOverlay@bib:
 		Sequence: idle-bib
 	WithIdleOverlay@drill:
 		Sequence: idle-drill
 	Power:
 		Amount: -50
+	Targetable:
+		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
 
 naradr:
 	Inherits: ^Building
@@ -202,6 +225,9 @@ naradr:
 		Type: Wood
 	RequiresPower:
 	CanPowerDown:
+		IndicatorPalette: ts-mouse
+		PowerupSpeech: BuildingOnline
+		PowerdownSpeech: BuildingOffline
 	ProvidesRadar:
 	RevealsShroud:
 		Range: 10c0
@@ -209,7 +235,7 @@ naradr:
 		Sequence: idle-dish
 		PauseOnLowPower: true
 	Targetable:
-		TargetTypes: Ground, C4, SpyInfiltrate, DetonateAttack
+		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
 	InfiltrateForExploration:
 	Power:
 		Amount: -50
@@ -229,10 +255,10 @@ naweap:
 		Description: Produces vehicles.
 	ProvidesPrerequisite@libya:
 		Prerequisite: vehicles.libya
-		Race: libya
+		Factions: libya
 	ProvidesPrerequisite@russia:
 		Prerequisite: vehicles.russia
-		Race: russia
+		Factions: russia
 	ProvidesPrerequisite@default:
 	Building:
 		Footprint: xxxxx xxxxx xxxxx
@@ -244,22 +270,45 @@ naweap:
 	RevealsShroud:
 		Range: 4c0
 	RallyPoint:
+		Offset: 6,1
+		Palette: mouse
+		IsPlayerPalette: false
 	Exit@1:
 		ExitCell: 5,1
 	Production:
-		Produces: Vehicle, Aircraft
+		Produces: Vehicle
 	PrimaryBuilding:
+	WithDecoration@primary:
+		RequiresSelection: true
+		Image: pips
+		Sequence: tag-primary
+		ReferencePoint: Top
+		ZOffset: 256
+		UpgradeTypes: primary
+		UpgradeMinEnabledLevel: 1
 	ProductionBar:
+	WithExitOverlay@door:
+		Sequence: build-door
+	WithExitOverlay@top-vehicles:
+		Sequence: build-top
 	WithIdleOverlay@lights:
 		Sequence: idle-lights
-	WithIdleOverlay@ramp:
-		Sequence: idle-ramp
+	WithIdleOverlay@bib:
+		Sequence: bib
 	Power:
 		Amount: -25
 	InfiltrateForSupportPower:
 		Proxy: warfactory.infiltrated
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
+	WithDecoration@primary:
+		RequiresSelection: true
+		Image: pips
+		Sequence: tag-primary
+		ReferencePoint: Top
+		ZOffset: 256
+		UpgradeTypes: primary
+		UpgradeMinEnabledLevel: 1
 
 nayard:
 	Inherits: ^Building
@@ -298,7 +347,18 @@ nayard:
 	Production:
 		Produces: Ship
 	PrimaryBuilding:
+	WithDecoration@primary:
+		RequiresSelection: true
+		Image: pips
+		Sequence: tag-primary
+		ReferencePoint: Top
+		ZOffset: 256
+		UpgradeTypes: primary
+		UpgradeMinEnabledLevel: 1
 	RallyPoint:
+		Offset: 5,1
+		Palette: mouse
+		IsPlayerPalette: false
 	RepairsUnits:
 		FinishRepairingNotification: UnitRepaired
 	ProductionBar:
@@ -314,6 +374,14 @@ nayard:
 		Sequence: production-lights
 	-EmitInfantryOnSell@allies:
 	-EmitInfantryOnSell@soviets:
+	WithDecoration@primary:
+		RequiresSelection: true
+		Image: pips
+		Sequence: tag-primary
+		ReferencePoint: Top
+		ZOffset: 256
+		UpgradeTypes: primary
+		UpgradeMinEnabledLevel: 1
 
 nadept:
 	Inherits: ^Building
@@ -341,6 +409,8 @@ nadept:
 		Range: 5c0
 	Reservable:
 	RallyPoint:
+		Palette: mouse
+		IsPlayerPalette: false
 	RepairsUnits:
 		Interval: 148
 		HpPerStep: 20
@@ -385,9 +455,14 @@ nanrct:
 		EmptyWeapon: NukePayload
 	Power:
 		Amount: 2000
+	InfiltrateForPowerOutage:
+	AffectedByPowerOutage:
 	ScalePowerWithHealth:
 	SoundOnDamageTransition:
 		DestroyedSounds: bpowdiea.wav, bpowdieb.wav
+	PowerTooltip:
+	Targetable:
+		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
 
 natech:
 	Inherits: ^Building
@@ -451,8 +526,11 @@ naclon:
 		SpawnOffset: 410,140,0
 		ExitCell: 2,0
 	Production:
-		Produces: Infantry
+		Produces:
 	RallyPoint:
+		Offset: 3,3
+		Palette: mouse
+		IsPlayerPalette: false
 	ClonesProducedUnits:
 		CloneableTypes: infantry
 
@@ -486,6 +564,11 @@ napsis:
 		PauseOnLowPower: true
 	Power:
 		Amount: -100
+	RequiresPower:
+	CanPowerDown:
+		IndicatorPalette: ts-mouse
+		PowerupSpeech: BuildingOnline
+		PowerdownSpeech: BuildingOffline
 
 nairon:
 	Inherits: ^Building
@@ -518,13 +601,17 @@ nairon:
 		Description: Invulnerability
 		LongDesc: Makes a group of units invulnerable\nfor 20 seconds.
 		Duration: 500
-		SelectTargetSound:
-		InsufficientPowerSound:
-		BeginChargeSound:
-		EndChargeSound:
+		# TODO: This are actually no speech notifications
+		EndChargeSound: siroread.wav
+		GrantUpgradeSound: siroon.wav
 		DisplayRadarPing: True
 		Upgrades: invulnerability
 	SupportPowerChargeBar:
+	RequiresPower:
+	CanPowerDown:
+		IndicatorPalette: ts-mouse
+		PowerupSpeech: BuildingOnline
+		PowerdownSpeech: BuildingOffline
 
 namisl:
 	Inherits: ^Building
@@ -552,6 +639,28 @@ namisl:
 	Power:
 		Amount: -200
 	RequiresPower:
+	CanPowerDown:
+		IndicatorPalette: ts-mouse
+		PowerupSpeech: BuildingOnline
+		PowerdownSpeech: BuildingOffline
+	NukePower:
+		Cursor: nuke
+		Icon: abomb
+		ChargeTime: 540
+		Description: Atom Bomb
+		LongDesc: Launches a devastating atomic bomb\nat a target location.
+		EndChargeSound: snukread.wav
+		LaunchSound: snuklaun.wav
+		MissileWeapon: atomic
+		MissilePalette: player
+		IsPlayerPalette: true
+		DisplayTimer: True
+		DisplayBeacon: True
+		DisplayRadarPing: True
+		CameraActor: camera
+		CameraRemoveDelay: 70
+		FlashType: Nuke
+		CircleSequence:
 
 nawall:
 	Inherits: ^Wall
@@ -559,18 +668,9 @@ nawall:
 		Queue: Support
 		BuildPaletteOrder: 10
 		Prerequisites: barracks, ~structures.soviets
-	Valued:
-		Cost: 100
 	Tooltip:
 		Name: Soviet Wall
 		Description: Light wall.\nCrushable by vehicles.
-	Building:
-		Footprint: x
-		Dimensions: 1, 1
-	Health:
-		HP: 300
-	Armor:
-		Type: Concrete
 
 naflak:
 	Inherits: ^VoxelLighting
@@ -595,7 +695,7 @@ naflak:
 	Selectable:
 		Bounds: 46, 62, 0, -20
 	Turreted:
-		ROT: 10
+		TurnSpeed: 10
 		InitialFacing: 224
 		Offset: 450,0,0
 	AttackTurreted:
@@ -612,9 +712,14 @@ naflak:
 	AutoTarget:
 	Power:
 		Amount: -50
+	RequiresPower:
+	CanPowerDown:
+		IndicatorPalette: ts-mouse
+		PowerupSpeech: BuildingOnline
+		PowerdownSpeech: BuildingOffline
 
 tesla:
-	Inherits: ^Building
+	Inherits: ^SupportBuilding
 	Buildable:
 		Queue: Support
 		BuildPaletteOrder: 30
@@ -635,18 +740,20 @@ tesla:
 		Range: 8c0
 	Selectable:
 		Bounds: 44, 88, -2, -33
-	WithChargeAnimation:
+	Targetable:
+		TargetTypes: Ground, C4, DetonateAttack, Structure, TeslaBoost
+	WithChargeOverlay:
 	Armament@primary:
 		Weapon: CoilBolt
 		LocalOffset: 0,0,2200
 		UpgradeTypes: charged
-		UpgradeMaxEnabledLevel: 2
+		UpgradeMaxEnabledLevel: 1
 		UpgradeMaxAcceptedLevel: 3
 	Armament@charged:
 		Weapon: OPCoilBolt
 		LocalOffset: 0,0,2200
 		UpgradeTypes: charged
-		UpgradeMinEnabledLevel: 3
+		UpgradeMinEnabledLevel: 2
 		UpgradeMaxAcceptedLevel: 3
 	AttackCharge:
 		Voice: Attack
@@ -656,6 +763,9 @@ tesla:
 		ChargeAudio: tslachg2.aud
 	AutoTarget:
 	RequiresPower:
+		UpgradeTypes: charged
+		UpgradeMaxEnabledLevel: 2
+		UpgradeMaxAcceptedLevel: 3
 	WithRangeCircle:
 		Range: 8c0
 		Type: teslacoil
@@ -664,4 +774,46 @@ tesla:
 	WithIdleOverlay@powered:
 		Sequence: idle-powered
 		PauseOnLowPower: true
+	CanPowerDown:
+		IndicatorPalette: ts-mouse
+		PowerupSpeech: BuildingOnline
+		PowerdownSpeech: BuildingOffline
 
+nalasr:
+	Inherits: ^VoxelLighting
+	Buildable:
+		Queue: Support
+		BuildPaletteOrder: 30
+		Prerequisites: barracks, ~structures.soviets
+	Valued:
+		Cost: 500
+	Tooltip:
+		Name: Sentry Gun
+		Description: Automated anti-infantry defense.
+	Building:
+		Footprint: x
+		Dimensions: 1, 1
+	Health:
+		HP: 400
+	Armor:
+		Type: Steel
+	RevealsShroud:
+		Range: 7c0
+	Selectable:
+		Bounds: 50, 30, 0, -12
+	Turreted:
+		TurnSpeed: 10
+		InitialFacing: 224
+		Offset: 320,0,0
+	AttackTurreted:
+		Voice: Attack
+	Armament:
+		Weapon: vulcan
+	BodyOrientation:
+		QuantizedFacings: 16
+	RenderVoxels:
+	WithVoxelTurret:
+	WithRangeCircle:
+		Range: 6c0
+		Type: pillbox
+	AutoTarget:

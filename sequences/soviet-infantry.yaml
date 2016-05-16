@@ -20,9 +20,6 @@ dog:
 	die2:
 		Start: 102
 		Length: 14
-	#die3:
-	#	Start: 117 # 166 is start of the jump anim?!
-	#	Length: 14
 	die4: # todo: copy of die1
 		Start: 87
 		Length: 14
@@ -39,10 +36,31 @@ dog:
 		Facings: 64
 	icon: dogicon
 
+sqd:
+	stand:
+		Start: 160
+		Facings: -8
+	run:
+		Start: 0
+		Length: 20
+		Facings: -8
+		Tick: 80
+	punch:
+		Start: 168
+		Length: 14
+		Facings: -8
+		Tick: 120
+	icon: sqdicon
+
 e2:
 	Defaults: cons
 	stand:
 		Facings: 8
+	prone-stand:
+		Start: 260
+		Length: 2
+		Facings: 8
+		Tick: 100
 	run:
 		Start: 8
 		Length: 6
@@ -91,6 +109,8 @@ e2:
 		Length: 6
 		Facings: 8
 		Tick: 80
+	paradrop:
+		Start: 292
 	icon: e2icon
 
 flakt:
@@ -146,6 +166,8 @@ flakt:
 		Length: 6
 		Facings: 8
 		Tick: 80
+	paradrop:
+		Start: 293
 	icon: flkticon
 
 shk:
@@ -199,6 +221,8 @@ shk:
 		Length: 6
 		Facings: 8
 		Tick: 80
+	paradrop:
+		Start: 292
 	icon: shkicon
 
 terror:

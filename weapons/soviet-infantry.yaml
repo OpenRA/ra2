@@ -19,42 +19,17 @@ M1Carbine:
 			Concrete: 25
 		DamageTypes: Prone70Percent, TriggerProne, BulletDeath
 	Warhead@2Eff: CreateEffect
-		Explosion: piff
-		InvalidImpactTypes: Water
-	Warhead@3EffWater: CreateEffect
-		Explosion: piff
-		ValidImpactTypes: Water
+		Explosions: piffpiff
 
 M1CarbineE:
+	Inherits: M1Carbine
 	ReloadDelay: 20
 	Range: 5c0
-	Report: iconatta.wav, iconattb.wav, iconattc.wav, iconattd.wav, iconatte.wav
-	Projectile: Bullet
-		Speed: 100c0
 	Warhead@1Dam: SpreadDamage
-		Spread: 64
 		Damage: 20
-		Versus:
-			None: 100
-			Flak: 80
-			Plate: 70
-			Light: 50
-			Medium: 25
-			Heavy: 25
-			Wood: 75
-			Steel: 50
-			Concrete: 25
-		DamageTypes: Prone70Percent, TriggerProne, BulletDeath
-	Warhead@2Eff: CreateEffect
-		Explosion: piff
-		InvalidImpactTypes: Water
-	Warhead@3EffWater: CreateEffect
-		Explosion: piff
-		ValidImpactTypes: Water
 
 RadBeamWeapon:
 	ValidTargets: Ground
-	Damage: 125
 	Range: 6c0
 	ReloadDelay: 100
 	Report: idesat1a.wav
@@ -78,29 +53,17 @@ RadBeamWeapon:
 		DamageTypes: RadiationDeath
 
 RadBeamWeaponE:
-	ValidTargets: Ground
-	Damage: 200
+	Inherits: RadBeamWeapon
 	Range: 8c0
-	ReloadDelay: 100
-	Report: idesat1a.wav
-	Projectile: LaserZap
-		BeamWidth: 2
-		BeamDuration: 7
-		Color: B900FF00
 	Warhead@1Dam: SpreadDamage
-		Spread: 42
-		Damage: 125
-		Versus:
-			None: 100
-			Flak: 100
-			Plate: 100
-			Light: 20
-			Medium: 15
-			Heavy: 10
-			Wood: 0
-			Steel: 0
-			Concrete: 0
-		DamageTypes: RadiationDeath
+		Damage: 200
+
+CRRadBeamWeapon:
+	Inherits: RadBeamWeapon
+	Range: 7c0
+	ReloadDelay: 30
+	Warhead@1Dam: SpreadDamage
+		Damage: 175
 
 FlakGuyGun:
 	ReloadDelay: 25
@@ -123,31 +86,18 @@ FlakGuyGun:
 			Concrete: 10
 		DamageTypes: Prone100Percent, TriggerProne, BulletDeath
 	Warhead@2Eff: CreateEffect
-		Explosion: flak_puff
+		Explosions: flak_puff
 
 FlakGuyGunE:
-	ReloadDelay: 25
-	Range: 5c0
-	Report: vflaat1a.wav, vflaat1b.wav
-	Projectile: Bullet
-		Speed: 50c0
-		Burst: 2
+	Inherits: FlakGuyGun
+	Burst: 2
+
+CRFlakGuyGun:
+	Inherits: FlakGuyGun
+	ReloadDelay: 15
+	Range: 7c0
 	Warhead@1Dam: SpreadDamage
-		Spread: 64
-		Damage: 20
-		Versus:
-			None: 150
-			Flak: 100
-			Plate: 50
-			Light: 60
-			Medium: 10
-			Heavy: 10
-			Wood: 30
-			Steel: 20
-			Concrete: 10
-		DamageTypes: Prone100Percent, TriggerProne, BulletDeath
-	Warhead@2Eff: CreateEffect
-		Explosion: flak_puff
+		Damage: 30
 
 FlakGuyAAGun:
 	ReloadDelay: 25
@@ -173,34 +123,14 @@ FlakGuyAAGun:
 			Concrete: 0
 		DamageTypes: BulletDeath
 	Warhead@2Eff: CreateEffect
-		Explosion: flak_puff_AA
+		Explosions: flak_puff_AA
 
 FlakGuyAAGunE:
-	ReloadDelay: 25
-	Range: 8c0
-	Report: vflaat2a.wav, vflaat2b.wav, vflaat2c.wav, vflaat2d.wav
+	Inherits: FlakGuyAAGun
+	Burst: 2
 	ValidTargets: Air
-	Projectile: Bullet
-		Inaccuracy: 128
-		Speed: 50c0
-		Burst: 2
 	Warhead@1Dam: SpreadDamage
-		Spread: 120
-		Damage: 8
-		ValidTargets: Air
-		Versus:
-			None: 150
-			Flak: 100
-			Plate: 50
-			Light: 80
-			Medium: 20
-			Heavy: 20
-			Wood: 0
-			Steel: 0
-			Concrete: 0
-		DamageTypes: BulletDeath
-	Warhead@2Eff: CreateEffect
-		Explosion: flak_puff_AA
+		Damage: 8 # Westwood decision: Flak Trooper elite AA weapon DPS is smaller than rookie one, see line 17724 of rules.ini
 
 ElectricBolt:
 	Range: 3c0
@@ -222,27 +152,36 @@ ElectricBolt:
 			Steel: 50
 			Concrete: 50
 		DamageTypes: ElectroDeath
+	Warhead@2Eff: CreateEffect
+		Explosions: tesla_impact
 
 ElectricBoltE:
+	Inherits: ElectricBolt
 	Range: 5c0
 	ReloadDelay: 40
 	Report: itesat2a.wav, itesat2b.wav
-	Projectile: TeslaZap
-		Speed: 100c0
+
+CRElectricBolt:
+	Inherits: ElectricBolt
+	Range: 6c0
+	ReloadDelay: 45
 	Warhead@1Dam: SpreadDamage
-		Spread: 120
-		Damage: 50
-		Versus:
-			None: 100
-			Flak: 100
-			Plate: 100
-			Light: 85
-			Medium: 100
-			Heavy: 100
-			Wood: 50
-			Steel: 50
-			Concrete: 50
-		DamageTypes: ElectroDeath
+		Damage: 60
+
+AssaultBolt:
+	ReloadDelay: 70
+	Range: 2c0
+	Report: iteschaa.wav
+	ValidStances: Ally
+	ValidTargets: TeslaBoost
+	Projectile: TeslaZap
+		Image: litningupg
+	Warhead@charge: GrantUpgrade
+		Range: 42
+		Duration: 75
+		Upgrades: charged
+		ValidStances: Ally
+		ValidTargets: TeslaBoost
 
 IvanBomber:
 	ReloadDelay: 50
@@ -253,8 +192,8 @@ IvanBomber:
 		Blockable: false
 	Warhead@0Eff: CreateEffect
 		Delay: 2
-		Explosion: bombcurs
-		ExplosionPalette: mousepal
+		Explosions: bombcurs
+		ExplosionPalette: mouse
 	Warhead@1Dam: SpreadDamage
 		Delay: 100
 		Spread: 213
@@ -273,38 +212,10 @@ IvanBomber:
 		DamageTypes: FlameDeath, Prone100Percent
 	Warhead@2Eff: CreateEffect
 		Delay: 100
-		Explosion: ivan_explosion
-		ImpactSound: gexpcraa.wav
+		Explosions: ivan_explosion
+		ImpactSounds: gexpcraa.wav
 
 IvanBomberE:
-	ReloadDelay: 50
-	Range: 1c849
-	Report: icraatta.wav
-	Projectile: Bullet
-		Speed: 425
-		Blockable: false
-	Warhead@0Eff: CreateEffect
-		Delay: 2
-		Explosion: bombcurs
-		ExplosionPalette: mousepal
-	Warhead@1Dam: SpreadDamage
-		Delay: 100
-		Spread: 213
-		Damage: 400
-		Falloff: 1000, 368, 135, 50, 18, 7, 0
-		Versus:
-			None: 100
-			Flak: 100
-			Plate: 100
-			Light: 100
-			Medium: 100
-			Heavy: 250
-			Wood: 20
-			Steel: 100
-			Concrete: 100
-		DamageTypes: FlameDeath, Prone100Percent
+	Inherits: IvanBomber
 	Warhead@2Eff: CreateEffect
-		Delay: 100
-		Explosion: ivan_explosionE
-		ImpactSound: gexpcraa.wav
-
+		Explosions: ivan_explosionE
