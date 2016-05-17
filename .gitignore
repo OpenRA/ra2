@@ -68,3 +68,6 @@ OpenRA.Launcher.Mac/OpenRA.xcodeproj/*.mode1v3
 /content/
 /maps/
 /Replays/
+
+# OpenRA folder
+/OpenRA/
