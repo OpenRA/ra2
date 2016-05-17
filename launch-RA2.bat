@@ -1,0 +1,1 @@
+OpenRA\OpenRA.exe SupportDir=D:/OpenRA-RA2-ipchote/
