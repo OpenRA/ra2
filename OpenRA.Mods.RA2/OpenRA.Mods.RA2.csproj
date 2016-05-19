@@ -10,54 +10,75 @@
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <OutputPath>..</OutputPath>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
     <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CustomCommands>
+      <CustomCommands>
+        <Command type="AfterBuild" command="cp ${TargetFile} ../mods/ts" workingdir="${ProjectDir}" />
+        <Command type="AfterBuild" command="cp ${TargetFile}.mdb ../mods/ts" workingdir="${ProjectDir}" />
+      </CustomCommands>
+    </CustomCommands>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <DebugType>full</DebugType>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
-    <DebugSymbols>True</DebugSymbols>
-    <DebugType>Full</DebugType>
-    <Optimize>False</Optimize>
-    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
-    <DebugSymbols>False</DebugSymbols>
-    <DebugType>None</DebugType>
-    <Optimize>True</Optimize>
-    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Release\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Optimize>true</Optimize>
+    <CustomCommands>
+      <CustomCommands>
+        <Command type="AfterBuild" command="cp ${TargetFile} ../mods/ra2" workingdir="${ProjectDir}" />
+        <Command type="AfterBuild" command="cp ${TargetFile}.mdb ../mods/ra2" workingdir="${ProjectDir}" />
+      </CustomCommands>
+    </CustomCommands>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp">
       <RequiredTargetFramework>4.0</RequiredTargetFramework>
     </Reference>
-    <Reference Include="OpenRA.Game">
-      <HintPath>dependencies\OpenRA.Game.exe</HintPath>
-    </Reference>
-    <Reference Include="OpenRA.Mods.Common">
-      <HintPath>dependencies\OpenRA.Mods.Common.dll</HintPath>
-    </Reference>
-    <Reference Include="OpenRA.Mods.RA">
-      <HintPath>dependencies\OpenRA.Mods.RA.dll</HintPath>
-    </Reference>
-    <Reference Include="OpenRA.Mods.TS">
-      <HintPath>dependencies\OpenRA.Mods.TS.dll</HintPath>
-    </Reference>
     <Reference Include="Eluant">
-      <HintPath>dependencies\Eluant.dll</HintPath>
-    </Reference>
-    <Reference Include="Eluant">
-      <HintPath>dependencies\Eluant.dll</HintPath>
+      <HintPath>..\OpenRA\thirdparty\download\Eluant.dll</HintPath>
       <Private>False</Private>
     </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\OpenRA\OpenRA.Game\OpenRA.Game.csproj">
+      <Project>{0DFB103F-2962-400F-8C6D-E2C28CCBA633}</Project>
+      <Name>OpenRA.Game</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\OpenRA\OpenRA.Mods.Common\OpenRA.Mods.Common.csproj">
+      <Project>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Project>
+      <Name>OpenRA.Mods.Common</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\OpenRA\OpenRA.Mods.RA\OpenRA.Mods.RA.csproj">
+      <Project>{4A8A43B5-A9EF-4ED0-99DD-4BAB10A0DB6E}</Project>
+      <Name>OpenRA.Mods.RA</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\OpenRA\OpenRA.Mods.TS\OpenRA.Mods.TS.csproj">
+      <Project>{5457CBF5-4CE4-421E-A8BF-9FD6C9732E1D}</Project>
+      <Name>OpenRA.Mods.TS</Name>
+      <Private>False</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
     <Reference Include="System" />
-    <Reference Include="System.Core">
-      <RequiredTargetFramework>3.5</RequiredTargetFramework>
-    </Reference>
+    <Reference Include="System.Core" />
     <Reference Include="System.Xml" />
-    <Reference Include="System.Xml.Linq">
-      <RequiredTargetFramework>3.5</RequiredTargetFramework>
-    </Reference>
+    <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
@@ -67,4 +88,9 @@
     <Compile Include="Traits\Render\WithSwimSuit.cs" />
     <Compile Include="Traits\UpgradeInWater.cs" />
   </ItemGroup>
+  <PropertyGroup>
+    <PostBuildEvent>mkdir "$(SolutionDir)mods/ra2/"
+copy "$(TargetPath)" "$(SolutionDir)mods/ra2/"
+cd "$(SolutionDir)"</PostBuildEvent>
+  </PropertyGroup>
 </Project>
