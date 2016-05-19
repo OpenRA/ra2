@@ -60,7 +60,14 @@ elseif ($command -eq "dependencies")
 {
 	cd OpenRA.Mods.RA2\dependencies
 	$targetDir = $PWD
-	$OpenRADir = Read-Host "Enter the path to your OpenRA install"
+	if ($args.Length -eq 1)
+	{
+		$OpenRADir = Read-Host "Enter the path to your OpenRA install"
+	}
+	else
+	{
+		$OpenRADir = $command[1]
+	}
 	if (!(Test-Path $OpenRADir))
 	{
 		echo "Given directory does not exist!"
