@@ -248,8 +248,8 @@ ghost:
 			Water: 70
 	RevealsShroud:
 		Range: 8c0
-	C4Demolition:
-		C4Delay: 45
+	Demolition:
+		DetonationDelay: 45
 		Voice: SpecialAttack
 	Armor:
 		Type: Flak
@@ -313,8 +313,8 @@ tany:
 			Water: 70
 	RevealsShroud:
 		Range: 6c0
-	C4Demolition:
-		C4Delay: 45
+	Demolition:
+		DetonationDelay: 45
 		Voice: Attack
 	Armor:
 		Type: Flak
