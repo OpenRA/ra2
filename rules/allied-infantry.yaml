@@ -249,7 +249,6 @@ ghost:
 	RevealsShroud:
 		Range: 8c0
 	Demolition:
-		DetonationDelay: 45
 		Voice: SpecialAttack
 	Armor:
 		Type: Flak
@@ -314,7 +313,6 @@ tany:
 	RevealsShroud:
 		Range: 6c0
 	Demolition:
-		DetonationDelay: 45
 		Voice: Attack
 	Armor:
 		Type: Flak
