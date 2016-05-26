@@ -159,6 +159,9 @@
 		Range: 4c0
 	Tooltip:
 		Description: Tech Building
+	CaptureNotification:
+		Notification: TechBuildingCaptured
+		LoseNotification: TechBuildingLost
 
 ^Flag:
 	Inherits: ^CivBuilding
