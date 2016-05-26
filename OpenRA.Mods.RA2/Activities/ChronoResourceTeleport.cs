@@ -10,7 +10,7 @@
 #endregion
 
 using OpenRA.Activities;
-using OpenRA.Effects;
+using OpenRA.Mods.Common.Effects;
 using OpenRA.Mods.RA2.Traits;
 using OpenRA.Traits;
 
