@@ -1,6 +1,6 @@
 cafncb:
 	Defaults:
-		Offset: 0, -12
+		Offset: 0,-15
 		UseTilesetCode: true
 	idle: ctfncb
 		Length: 16
@@ -15,7 +15,7 @@ cafncb:
 
 cafncw:
 	Defaults:
-		Offset: 0, -12
+		Offset: 0,-15
 		UseTilesetCode: true
 	idle: ctfncw
 		Length: 16
@@ -30,7 +30,7 @@ cafncw:
 
 gasand:
 	Defaults:
-		Offset: 0, -12
+		Offset: 0,-15
 		UseTilesetCode: true
 	idle: gtsand
 		Length: 16
@@ -45,7 +45,7 @@ gasand:
 
 cafncp:
 	Defaults:
-		Offset: 0, -12
+		Offset: 0,-15
 		UseTilesetCode: true
 	idle: ctfncp
 		Length: 16
@@ -60,7 +60,7 @@ cafncp:
 
 cakrmw:
 	Defaults:
-		Offset: 0, -12
+		Offset: 0,-15
 		UseTilesetCode: true
 	idle: ctkrmw
 		Length: 16
@@ -74,133 +74,134 @@ cakrmw:
 		UseTilesetCode: false
 
 cawash01:
+	Defaults:
+		Offset: 0,-60
 	idle: cgwash01
 		ShadowStart: 4
-		Offset: 0, -60
 	damaged-idle: cgwash01
 		Start: 1
 		ShadowStart: 5
-		Offset: 0, -60
 
 cawash03:
+	Defaults:
+		Offset: -15,-52
 	idle: cuwash03
 		ShadowStart: 4
-		Offset: -15, -53
 	damaged-idle: cuwash03
 		Start: 1
 		ShadowStart: 5
-		Offset: -15, -53
 
 cawash04:
+	Defaults:
+		Offset: 0,-60
 	idle: cuwash04
 		ShadowStart: 4
-		Offset: 0, -60
 	damaged-idle: cuwash04
 		Start: 1
 		ShadowStart: 5
-		Offset: 0, -60
 
 cawash05:
+	Defaults:
+		Offset: -30,-45
 	idle: cuwash05
 		ShadowStart: 4
-		Offset: -30, -45
 	damaged-idle: cuwash05
 		Start: 1
 		ShadowStart: 5
-		Offset: -30, -45
 
 cawash06:
+	Defaults:
+		Offset: 0,-60
 	idle: cuwash06
 		ShadowStart: 5
-		Offset: -30, -45
 	damaged-idle: cuwash06
 		Start: 1
 		ShadowStart: 7
-		Offset: -30, -45
 
 cawash07:
+	Defaults:
+		Offset: 0,-45
 	idle: cuwash07
 		ShadowStart: 4
-		Offset: 0, -45
 	damaged-idle: cuwash07
 		Start: 1
 		ShadowStart: 5
-		Offset: 0, -45
 
 cawash08:
+	Defaults:
+		Offset: 15,-52
 	idle: cuwash08
 		ShadowStart: 4
-		Offset: 0, -45
 	damaged-idle: cuwash08
 		Start: 1
 		ShadowStart: 5
-		Offset: 0, -45
 
 cawash09:
+	Defaults:
+		Offset: 0,-45
 	idle: cuwash09
 		ShadowStart: 4
-		Offset: 0, -45
 	damaged-idle: cuwash09
 		Start: 1
 		ShadowStart: 5
-		Offset: 0, -45
 
 cawash10:
+	Defaults:
+		Offset: 0,-60
 	idle: cuwash10
 		ShadowStart: 4
-		Offset: 0, -60
 	damaged-idle: cuwash10
 		Start: 1
 		ShadowStart: 5
-		Offset: 0, -60
 
 cawash11:
+	Defaults:
+		Offset: 0,-60
 	idle: cuwash11
 		ShadowStart: 4
-		Offset: 0, -60
 	damaged-idle: cuwash11
 		Start: 1
 		ShadowStart: 5
-		Offset: 0, -60
 
 cawsh12:
+	Defaults:
+		Offset: 0,-45
 	idle: cgwsh12
 		ShadowStart: 4
-		Offset: 0, -45
 	damaged-idle: cgwsh12
 		Start: 1
 		ShadowStart: 5
-		Offset: 0, -45
 
 cawash13:
+	Defaults:
+		Offset: 15,-52
 	idle: cuwash13
 		ShadowStart: 4
-		Offset: 15, -53
 	damaged-idle: cuwash13
 		Start: 1
 		ShadowStart: 5
-		Offset: 15, -53
 
 cawash14:
+	Defaults:
+		Offset: 0,-45
 	idle: cgwash14
 		ShadowStart: 4
-		Offset: 0, -45
 	damaged-idle: cgwash14
 		Start: 1
 		ShadowStart: 5
-		Offset: 0, -45
 
 cawash15:
+	Defaults:
+		Offset: 15,-52
 	idle: cgwash14
 		ShadowStart: 4
-		Offset: 0, -45
 	damaged-idle: cgwash14
 		Start: 1
 		ShadowStart: 5
-		Offset: 0, -45
 
 cawash16:
 	Defaults:
+		Offset: -30,-60
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -210,6 +211,7 @@ cawash16:
 
 cawash17:
 	Defaults:
+		Offset: -30,-75
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -219,12 +221,14 @@ cawash17:
 
 cawash18:
 	Defaults:
+		Offset: 0,-30
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 3
 
 cawash19:
 	Defaults:
+		Offset: 0,-60
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -233,28 +237,31 @@ cawash19:
 		ShadowStart: 5
 
 canewy01:
+	Defaults:
+		Offset: 0,-60
 	idle: cunewy01
 		ShadowStart: 4
-		Offset: 0, -60
 	damaged-idle: cunewy01
 		Start: 1
 		ShadowStart: 5
-		Offset: 0, -60
 
 canewy04:
 	Defaults:
+		Offset: 0,-45
 	idle: cgnewy04
 	damaged-idle: cgnewy04
 		Start: 1
 
 canewy05:
 	Defaults:
+		Offset: 0,-30
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 3
 
 canewy06:
 	Defaults:
+		Offset: 0,-45
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -264,6 +271,7 @@ canewy06:
 
 canewy07:
 	Defaults:
+		Offset: 0,-45
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -273,6 +281,7 @@ canewy07:
 
 canewy08:
 	Defaults:
+		Offset: 0,-45
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -282,6 +291,7 @@ canewy08:
 
 canewy10:
 	Defaults:
+		Offset: -15,-37
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -291,6 +301,7 @@ canewy10:
 
 canewy11:
 	Defaults:
+		Offset: -15,-37
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -300,6 +311,7 @@ canewy11:
 
 canewy12:
 	Defaults:
+		Offset: 15,-37
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -309,6 +321,7 @@ canewy12:
 
 canewy13:
 	Defaults:
+		Offset: 0,-45
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -318,6 +331,7 @@ canewy13:
 
 canewy14:
 	Defaults:
+		Offset: 0,-45
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -327,6 +341,7 @@ canewy14:
 
 canewy15:
 	Defaults:
+		Offset: 0,-45
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -337,6 +352,7 @@ canewy15:
 canewy16:
 	Defaults:
 		UseTilesetCode: true
+		Offset: 0,-30
 	idle:
 		ShadowStart: 4
 	damaged-idle:
@@ -345,6 +361,7 @@ canewy16:
 
 canewy17:
 	Defaults:
+		Offset: 0,-30
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -354,6 +371,7 @@ canewy17:
 
 canewy18:
 	Defaults:
+		Offset: 0,-30
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -363,6 +381,7 @@ canewy18:
 
 canewy20:
 	Defaults:
+		Offset: 30,-60
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -372,6 +391,7 @@ canewy20:
 
 canewy21:
 	Defaults:
+		Offset: -30,-60
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -382,16 +402,16 @@ canewy21:
 caarmy01:
 	Defaults:
 		UseTilesetCode: true
+		Offset: -15,-37
 	idle:
 		ShadowStart: 4
-		Offset: -15, -38
 	damaged-idle:
 		Start: 1
 		ShadowStart: 5
-		Offset: -15, -38
 
 caarmy02:
 	Defaults:
+		Offset: 0,-15
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -400,6 +420,7 @@ caarmy02:
 
 caarmy03:
 	Defaults:
+		Offset: 0,-15
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -408,6 +429,7 @@ caarmy03:
 
 caarmy04:
 	Defaults:
+		Offset: 0,-15
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -416,73 +438,68 @@ caarmy04:
 
 cawa2a:
 	Defaults:
+		Offset: 0,-60
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
-		Offset: 0, -45
 	damaged-idle:
 		Start: 1
 		ShadowStart: 5
-		Offset: 0, -45
 
 cawa2b:
 	Defaults:
+		Offset: 0,-60
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
-		Offset: 0, -45
 	damaged-idle:
 		Start: 1
 		ShadowStart: 5
-		Offset: 0, -45
 
 cawa2c:
 	Defaults:
 		UseTilesetCode: true
+		Offset: 0,-60
 	idle:
 		ShadowStart: 4
-		Offset: 0, -45
 	damaged-idle:
 		Start: 1
 		ShadowStart: 5
-		Offset: 0, -45
 
 cawa2d:
 	Defaults:
 		UseTilesetCode: true
+		Offset: 0,-60
 	idle:
 		ShadowStart: 4
-		Offset: 0, -45
 	damaged-idle:
 		Start: 1
 		ShadowStart: 5
-		Offset: 0, -45
 
 cafarm01:
 	Defaults:
 		UseTilesetCode: true
+		Offset: 0,-30
 	idle:
 		ShadowStart: 4
-		Offset: 0, -30
 	damaged-idle:
 		Start: 1
 		ShadowStart: 5
-		Offset: 0, -30
 
 cafarm02:
 	Defaults:
 		UseTilesetCode: true
+		Offset: 0,-15
 	idle:
 		ShadowStart: 4
-		Offset: 0, -16
 	damaged-idle:
 		Start: 1
 		ShadowStart: 5
-		Offset: 0, -15
 
 cafarm06:
 	Defaults:
 		UseTilesetCode: true
+		Offset: 0,-30
 	idle:
 		ShadowStart: 4
 	damaged-idle:
@@ -491,6 +508,7 @@ cafarm06:
 
 cafrma:
 	Defaults:
+		Offset: 0,-30
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -500,6 +518,7 @@ cafrma:
 
 cafrmb:
 	Defaults:
+		Offset: 0,-15
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -509,6 +528,7 @@ cafrmb:
 cabarn02:
 	Defaults:
 		UseTilesetCode: true
+		Offset: 0,-30
 	idle:
 		ShadowStart: 4
 	damaged-idle:
@@ -517,295 +537,264 @@ cabarn02:
 causfgl:
 	Defaults:
 		UseTilesetCode: true
+		Offset: 0,-15
 	idle:
 		ShadowStart: 4
-		Offset: 0, -15
 	damaged-idle:
 		Start: 1
 		ShadowStart: 5
-		Offset: 0, -15
 	flag: causfgl_a
 		Length: 16
 		ShadowStart: 16
-		Offset: 0, -15
 
 carufgl:
 	Defaults:
 		UseTilesetCode: true
+		Offset: 0,-15
 	idle:
 		ShadowStart: 4
-		Offset: 0, -15
 	damaged-idle:
 		Start: 1
 		ShadowStart: 5
-		Offset: 0, -15
 	flag: carufgl_a
 		Length: 16
 		ShadowStart: 16
-		Offset: 0, -15
 
 cairfgl:
 	Defaults:
 		UseTilesetCode: true
+		Offset: 0,-15
 	idle:
 		ShadowStart: 4
-		Offset: 0, -15
 	damaged-idle:
 		Start: 1
 		ShadowStart: 5
-		Offset: 0, -15
 	flag: cairfgl_a
 		Length: 16
 		ShadowStart: 16
-		Offset: 0, -15
 
 capofgl:
+	Defaults:
+		Offset: 0,-15
 	idle: capofgl
 		ShadowStart: 4
-		Offset: 0, -15
 	damaged-idle: capofgl
 		Start: 1
 		ShadowStart: 5
-		Offset: 0, -15
 	flag: capofgl_a
 		Length: 16
 		ShadowStart: 16
-		Offset: 0, -15
 
 caskfgl:
 	Defaults:
 		UseTilesetCode: true
+		Offset: 0,-15
 	idle:
 		ShadowStart: 4
-		Offset: 0, -15
 	damaged-idle:
 		Start: 1
 		ShadowStart: 5
-		Offset: 0, -15
 	flag: cuskfgl_a
 		Length: 16
 		ShadowStart: 16
-		Offset: 0, -15
 
 calbfgl:
 	Defaults:
 		UseTilesetCode: true
+		Offset: 0,-15
 	idle:
 		ShadowStart: 4
-		Offset: 0, -15
 	damaged-idle:
 		Start: 1
 		ShadowStart: 5
-		Offset: 0, -15
 	flag: culbfgl_a
 		Length: 16
 		ShadowStart: 16
-		Offset: 0, -15
 
 cafrfgl:
 	Defaults:
 		UseTilesetCode: true
+		Offset: 0,-15
 	idle:
 		ShadowStart: 4
-		Offset: 0, -15
 	damaged-idle:
 		Start: 1
 		ShadowStart: 5
-		Offset: 0, -15
 	flag: cufrfgl_a
 		Length: 16
 		ShadowStart: 16
-		Offset: 0, -15
 
 cagefgl:
 	Defaults:
 		UseTilesetCode: true
+		Offset: 0,-15
 	idle:
 		ShadowStart: 4
-		Offset: 0, -15
 	damaged-idle:
 		Start: 1
 		ShadowStart: 5
-		Offset: 0, -15
 	flag: cugefgl_a
 		Length: 16
 		ShadowStart: 16
-		Offset: 0, -15
 
 cacufgl:
 	Defaults:
 		UseTilesetCode: true
+		Offset: 0,-15
 	idle:
 		ShadowStart: 4
-		Offset: 0, -15
 	damaged-idle:
 		Start: 1
 		ShadowStart: 5
-		Offset: 0, -15
 	flag: cucufgl_a
 		Length: 16
 		ShadowStart: 16
-		Offset: 0, -15
 
 caukfgl:
 	Defaults:
 		UseTilesetCode: true
+		Offset: 0,-15
 	idle:
 		ShadowStart: 4
-		Offset: 0, -15
 	damaged-idle:
 		Start: 1
 		ShadowStart: 5
-		Offset: 0, -15
 	flag: cuukfgl_a
 		Length: 16
 		ShadowStart: 16
-		Offset: 0, -15
 
 camisc01:
 	Defaults:
 		UseTilesetCode: true
+		Offset: 0,-15
 	idle:
 		ShadowStart: 4
-		Offset: 0, -15
 	damaged-idle:
 		ShadowStart: 4
-		Offset: 0, -15
 
 camisc02:
 	Defaults:
 		UseTilesetCode: true
+		Offset: 0,-15
 	idle:
 		ShadowStart: 4
-		Offset: 0, -15
 	damaged-idle:
 		Start: 1
 		ShadowStart: 5
-		Offset: 0, -15
 
 camisc03:
 	Defaults:
 		UseTilesetCode: true
+		Offset: 0,-15
 	idle:
 		ShadowStart: 4
-		Offset: 0, -15
 	damaged-idle:
 		Start: 1
 		ShadowStart: 5
-		Offset: 0, -15
 
 camisc04:
 	Defaults:
 		UseTilesetCode: true
+		Offset: 0,-15
 	idle:
 		ShadowStart: 4
-		Offset: 0, -15
 	damaged-idle:
 		Start: 1
 		ShadowStart: 5
-		Offset: 0, -15
 
 camisc05:
 	Defaults:
 		UseTilesetCode: true
+		Offset: 0,-15
 	idle:
 		ShadowStart: 2
-		Offset: 0, -15
 	damaged-idle:
 		Start: 1
 		ShadowStart: 3
-		Offset: 0, -15
 
 camisc06:
 	Defaults:
 		UseTilesetCode: true
+		Offset: -15,-22
 	idle:
 		ShadowStart: 4
-		Offset: -15, -22
 	damaged-idle:
 		Start: 1
 		ShadowStart: 5
-		Offset: -15, -22
 
 camsc07:
 	Defaults:
 		UseTilesetCode: true
+		Offset: 0,-30
 	idle:
 		ShadowStart: 4
-		Offset: -15, -22
 	damaged-idle:
 		Start: 1
 		ShadowStart: 5
-		Offset: -15, -22
 
 camsc08:
 	Defaults:
 		UseTilesetCode: true
+		Offset: 0,-15
 	idle:
 		ShadowStart: 4
-		Offset: -15, -22
 	damaged-idle:
 		Start: 1
 		ShadowStart: 5
-		Offset: -15, -22
 
 camsc09:
 	Defaults:
 		UseTilesetCode: true
+		Offset: 0,-15
 	idle:
 		ShadowStart: 4
-		Offset: -15, -22
 	damaged-idle:
 		Start: 1
 		ShadowStart: 5
-		Offset: -15, -22
 
 camsc10:
 	Defaults:
 		UseTilesetCode: true
+		Offset: 0,-60
 	idle:
 		ShadowStart: 4
-		Offset: -15, -22
 	damaged-idle:
 		Start: 1
 		ShadowStart: 5
-		Offset: -15, -22
 
 camsc11:
 	Defaults:
 		UseTilesetCode: true
+		Offset: 0,-15
 	idle:
 		ShadowStart: 4
-		Offset: 0, -15
 	damaged-idle:
 		Start: 1
 		ShadowStart: 5
-		Offset: 0, -15
 
 camsc12:
 	Defaults:
 		UseTilesetCode: true
+		Offset: 0,-15
 	idle:
 		ShadowStart: 4
-		Offset: 0, -15
 	damaged-idle:
 		Start: 1
 		ShadowStart: 5
-		Offset: 0, -15
 
 camsc13:
 	Defaults:
 		UseTilesetCode: true
+		Offset: 15,-22
 	idle:
 		ShadowStart: 4
-		Offset: 15, -22
 	damaged-idle:
 		Start: 1
 		ShadowStart: 5
-		Offset: 15, -22
 
 camiam01:
 	Defaults:
+		Offset: -30,-45
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -815,6 +804,7 @@ camiam01:
 
 camiam02:
 	Defaults:
+		Offset: -30,-45
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -824,6 +814,7 @@ camiam02:
 
 camiam03:
 	Defaults:
+		Offset: 15,-37
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -833,6 +824,7 @@ camiam03:
 
 camiam04:
 	Defaults:
+		Offset: 0,-15
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -842,6 +834,7 @@ camiam04:
 
 camiam05:
 	Defaults:
+		Offset: 15,-52
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -851,6 +844,7 @@ camiam05:
 
 camiam06:
 	Defaults:
+		Offset: 0,-60
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -861,6 +855,7 @@ camiam06:
 camiam07:
 	Defaults:
 		UseTilesetCode: true
+		Offset: 0,-60
 	idle:
 		ShadowStart: 4
 	damaged-idle:
@@ -869,6 +864,7 @@ camiam07:
 
 camiam08:
 	Defaults:
+		Offset: -30,-30
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -878,30 +874,39 @@ camiam08:
 
 castrt01:
 	Defaults:
+		Offset: 0,-15
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 3
 
 castrt02:
+	Defaults:
+		Offset: 0,-15
 	idle:
 		ShadowStart: 3
 
 castrt03:
+	Defaults:
+		Offset: 0,-15
 	idle:
 		ShadowStart: 3
 
 castrt04:
+	Defaults:
+		Offset: 0,-15
 	idle:
 		ShadowStart: 3
 
 castrt05:
 	Defaults:
+		Offset: 0,-15
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 3
 
 camex01:
 	Defaults:
+		Offset: -15,-37
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -911,6 +916,7 @@ camex01:
 
 camex02:
 	Defaults:
+		Offset: -30,-75
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -920,6 +926,7 @@ camex02:
 
 camex03:
 	Defaults:
+		Offset: 0,-45
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -929,6 +936,7 @@ camex03:
 
 camex04:
 	Defaults:
+		Offset: 0,-60
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -938,6 +946,7 @@ camex04:
 
 camex05:
 	Defaults:
+		Offset: 0,-30
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -948,6 +957,7 @@ camex05:
 castl01:
 	Defaults:
 		UseTilesetCode: true
+		Offset: 0,-60
 	idle: custl01
 		ShadowStart: 4
 	damaged-idle: custl01
@@ -956,6 +966,7 @@ castl01:
 
 castl02:
 	Defaults:
+		Offset: 0,-60
 		UseTilesetCode: true
 	idle: custl02
 		ShadowStart: 4
@@ -965,6 +976,7 @@ castl02:
 
 castl03:
 	Defaults:
+		Offset: 0,-60
 		UseTilesetCode: true
 	idle: custl03
 		ShadowStart: 4
@@ -973,6 +985,8 @@ castl03:
 		ShadowStart: 5
 
 castl04:
+	Defaults:
+		Offset: 60,-60
 	idle: cgstl04
 		ShadowStart: 3
 	damaged-idle: cgstl04
@@ -981,6 +995,7 @@ castl04:
 
 castl05a:
 	Defaults:
+		Offset: 0,-60
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -990,6 +1005,7 @@ castl05a:
 
 castl05b:
 	Defaults:
+		Offset: 0,-60
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -999,6 +1015,7 @@ castl05b:
 
 castl05c:
 	Defaults:
+		Offset: 0,-60
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -1008,6 +1025,7 @@ castl05c:
 
 castl05d:
 	Defaults:
+		Offset: 0,-60
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -1017,6 +1035,7 @@ castl05d:
 
 castl05e:
 	Defaults:
+		Offset: 0,-60
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -1026,6 +1045,7 @@ castl05e:
 
 castl05f:
 	Defaults:
+		Offset: 0,-60
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -1035,6 +1055,7 @@ castl05f:
 
 castl05g:
 	Defaults:
+		Offset: 0,-60
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -1044,6 +1065,7 @@ castl05g:
 
 castl05h:
 	Defaults:
+		Offset: 0,-60
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -1054,49 +1076,46 @@ castl05h:
 cacolo01:
 	Defaults:
 		UseTilesetCode: true
+		Offset: -30,-60
 	idle:
 		ShadowStart: 4
-		Offset: -15, -53
 	damaged-idle:
 		Start: 1
 		ShadowStart: 5
-		Offset: -15, -53
 
 caind01:
 	Defaults:
 		UseTilesetCode: true
+		Offset: 0,-60
 	idle:
 		ShadowStart: 4
-		Offset: 0, -53
 	damaged-idle:
 		Start: 1
 		ShadowStart: 5
-		Offset: 0, -53
 
 calab:
 	Defaults:
 		UseTilesetCode: true
+		Offset: 15,-52
 	idle:
 		ShadowStart: 4
-		Offset: 15, -45
 	damaged-idle:
 		Start: 1
 		ShadowStart: 5
-		Offset: 15, -45
 
 cagas01:
 	Defaults:
 		UseTilesetCode: true
+		Offset: 0,-45
 	idle:
 		ShadowStart: 4
-		Offset: 0, -45
 	damaged-idle:
 		Start: 1
 		ShadowStart: 5
-		Offset: 0, -45
 
 cahse01:
 	Defaults:
+		Offset: -15,-37
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 2
@@ -1106,6 +1125,7 @@ cahse01:
 
 cahse02:
 	Defaults:
+		Offset: -15,-37
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 2
@@ -1115,6 +1135,7 @@ cahse02:
 
 cahse03:
 	Defaults:
+		Offset: 15,-52
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 2
@@ -1124,6 +1145,7 @@ cahse03:
 
 cahse04:
 	Defaults:
+		Offset: -15,-37
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 2
@@ -1133,11 +1155,13 @@ cahse04:
 
 cahse05:
 	Defaults:
+		Offset: 15,-22
 		UseTilesetCode: true
 	idle:
 
 cahse06:
 	Defaults:
+		Offset: -15,-22
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 2
@@ -1147,6 +1171,7 @@ cahse06:
 
 cahse07:
 	Defaults:
+		Offset: 15,-37
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 2
@@ -1156,6 +1181,7 @@ cahse07:
 
 cawt01:
 	Defaults:
+		Offset: 0,-15
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 2
@@ -1165,6 +1191,7 @@ cawt01:
 
 cabunk01:
 	Defaults:
+		Offset: 0,-30
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -1174,6 +1201,7 @@ cabunk01:
 
 cabunk02:
 	Defaults:
+		Offset: 0,-30
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -1182,6 +1210,8 @@ cabunk02:
 		ShadowStart: 5
 
 carus01:
+	Defaults:
+		Offset: 0,-60
 	idle: cgrus01
 		ShadowStart: 4
 	damaged-idle: cgrus01
@@ -1190,6 +1220,7 @@ carus01:
 
 carus02a:
 	Defaults:
+		Offset: 0,-15
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -1199,6 +1230,7 @@ carus02a:
 
 carus02b:
 	Defaults:
+		Offset: 0,-15
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -1208,6 +1240,7 @@ carus02b:
 
 carus02c:
 	Defaults:
+		Offset: 0,-15
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -1217,6 +1250,7 @@ carus02c:
 
 carus02d:
 	Defaults:
+		Offset: 0,-15
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -1226,6 +1260,7 @@ carus02d:
 
 carus02e:
 	Defaults:
+		Offset: 0,-15
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -1235,6 +1270,7 @@ carus02e:
 
 carus02f:
 	Defaults:
+		Offset: 0,-15
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -1244,6 +1280,7 @@ carus02f:
 
 carus02g:
 	Defaults:
+		Offset: 0,-15
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -1253,6 +1290,7 @@ carus02g:
 
 carus03:
 	Defaults:
+		Offset: 45,-52
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -1262,6 +1300,7 @@ carus03:
 
 carus04:
 	Defaults:
+		Offset: 0,-60
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -1271,15 +1310,7 @@ carus04:
 
 carus05:
 	Defaults:
-		UseTilesetCode: true
-	idle:
-		ShadowStart: 4
-	damaged-idle:
-		Start: 1
-		ShadowStart: 5
-
-carus07:
-	Defaults:
+		Offset: 0,-60
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -1289,6 +1320,17 @@ carus07:
 
 carus06:
 	Defaults:
+		Offset: 0,-60
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 1
+		ShadowStart: 5
+
+carus07:
+	Defaults:
+		Offset: 0,-15
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -1298,6 +1340,7 @@ carus06:
 
 carus08:
 	Defaults:
+		Offset: 0,-15
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -1307,6 +1350,7 @@ carus08:
 
 carus09:
 	Defaults:
+		Offset: -15,-22
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -1316,6 +1360,7 @@ carus09:
 
 carus10:
 	Defaults:
+		Offset: -15,-22
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -1325,6 +1370,7 @@ carus10:
 
 carus11:
 	Defaults:
+		Offset: -15,-22
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -1334,6 +1380,7 @@ carus11:
 
 cachig01:
 	Defaults:
+		Offset: -15,-37
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -1343,6 +1390,7 @@ cachig01:
 
 cachig02:
 	Defaults:
+		Offset: 15,-37
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -1352,6 +1400,7 @@ cachig02:
 
 cachig03:
 	Defaults:
+		Offset: -15,-37
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -1360,6 +1409,8 @@ cachig03:
 		ShadowStart: 5
 
 cachig04:
+	Defaults:
+		Offset: 0,-30
 	idle: cgchig04
 		ShadowStart: 4
 	damaged-idle: cgchig04
@@ -1368,6 +1419,7 @@ cachig04:
 
 cachig05:
 	Defaults:
+		Offset: 0,-60
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -1376,6 +1428,8 @@ cachig05:
 		ShadowStart: 5
 
 cachig06:
+	Defaults:
+		Offset: 0,-30
 	idle: cgchig06
 		ShadowStart: 4
 	damaged-idle: cgchig06
@@ -1384,6 +1438,7 @@ cachig06:
 
 catech01:
 	Defaults:
+		Offset: 0,-45
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -1393,6 +1448,7 @@ catech01:
 
 catexs01:
 	Defaults:
+		Offset: 0,-30
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -1402,6 +1458,7 @@ catexs01:
 
 catexs02:
 	Defaults:
+		Offset: 0,-60
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -1411,6 +1468,7 @@ catexs02:
 
 catexs03:
 	Defaults:
+		Offset: 0,-45
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -1420,6 +1478,7 @@ catexs03:
 
 catexs04:
 	Defaults:
+		Offset: 0,-45
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -1429,6 +1488,7 @@ catexs04:
 
 catexs05:
 	Defaults:
+		Offset: 0,-45
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -1438,6 +1498,7 @@ catexs05:
 
 catexs06:
 	Defaults:
+		Offset: 0,-45
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -1447,6 +1508,7 @@ catexs06:
 
 catexs07:
 	Defaults:
+		Offset: 0,-45
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -1456,6 +1518,7 @@ catexs07:
 
 catexs08:
 	Defaults:
+		Offset: 15,-37
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -1465,6 +1528,7 @@ catexs08:
 
 canwy05:
 	Defaults:
+		Offset: 0,-60
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -1474,6 +1538,7 @@ canwy05:
 
 canwy09:
 	Defaults:
+		Offset: 15,-37
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -1483,6 +1548,7 @@ canwy09:
 
 canwy22:
 	Defaults:
+		Offset: 0,-45
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -1492,6 +1558,7 @@ canwy22:
 
 canwy23:
 	Defaults:
+		Offset: -15,-37
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -1501,6 +1568,7 @@ canwy23:
 
 canwy24:
 	Defaults:
+		Offset: 0,-45
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -1510,6 +1578,7 @@ canwy24:
 
 canwy25:
 	Defaults:
+		Offset: 0,-45
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -1519,6 +1588,7 @@ canwy25:
 
 canwy26:
 	Defaults:
+		Offset: -30,-60
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -1528,6 +1598,7 @@ canwy26:
 
 camov01:
 	Defaults:
+		Offset: 45,-37
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 3
@@ -1545,6 +1616,7 @@ camov01:
 camov02:
 	Defaults:
 		UseTilesetCode: true
+		Offset: 0,-30
 	idle:
 		ShadowStart: 4
 	damaged-idle:
@@ -1559,6 +1631,8 @@ camov02:
 		Tick: 200
 
 capars01:
+	Defaults:
+		Offset: 0,-60
 	idle: cgpars01
 		ShadowStart: 4
 	damaged-idle: cgpars01
@@ -1567,6 +1641,7 @@ capars01:
 
 capars02:
 	Defaults:
+		Offset: -30,-75
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -1576,6 +1651,7 @@ capars02:
 
 capars04:
 	Defaults:
+		Offset: 0,-45
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -1585,6 +1661,7 @@ capars04:
 
 capars05:
 	Defaults:
+		Offset: 0,-45
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -1594,6 +1671,7 @@ capars05:
 
 capars06:
 	Defaults:
+		Offset: 0,-45
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -1603,6 +1681,7 @@ capars06:
 
 capars07:
 	Defaults:
+		Offset: 0,-15
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -1612,6 +1691,7 @@ capars07:
 
 capars08:
 	Defaults:
+		Offset: -30,-75
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -1621,6 +1701,7 @@ capars08:
 
 capars09:
 	Defaults:
+		Offset: -30,-75
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -1630,6 +1711,7 @@ capars09:
 
 capars10:
 	Defaults:
+		Offset: -15,-52
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -1638,6 +1720,8 @@ capars10:
 		ShadowStart: 5
 
 capars11:
+	Defaults:
+		Offset: 15,-52
 	idle: cgpars11
 		ShadowStart: 4
 	damaged-idle: cgpars11
@@ -1646,6 +1730,7 @@ capars11:
 
 capars12:
 	Defaults:
+		Offset: 30,-60
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -1655,6 +1740,7 @@ capars12:
 
 capars13:
 	Defaults:
+		Offset: 15,-52
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -1664,6 +1750,7 @@ capars13:
 
 capars14:
 	Defaults:
+		Offset: -15,-52
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -1673,6 +1760,7 @@ capars14:
 
 cats01:
 	Defaults:
+		Offset: 0,-30
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 3
@@ -1682,6 +1770,7 @@ cats01:
 
 cagard01:
 	Defaults:
+		Offset: 0,-15
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 3
@@ -1691,6 +1780,7 @@ cagard01:
 
 caeur1:
 	Defaults:
+		Offset: 0,-30
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -1700,6 +1790,7 @@ caeur1:
 
 caeur2:
 	Defaults:
+		Offset: 0,-30
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -1709,6 +1800,7 @@ caeur2:
 
 caeur04:
 	Defaults:
+		Offset: -15,-52
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -1718,6 +1810,7 @@ caeur04:
 
 caprs03:
 	Defaults:
+		Offset: -30,-75
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -1727,6 +1820,7 @@ caprs03:
 
 caswst01:
 	Defaults:
+		Offset: 15,-37
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -1735,37 +1829,55 @@ caswst01:
 		ShadowStart: 5
 
 cacity01:
+	Defaults:
+		Offset: 0,-60
 	idle:
 		ShadowStart: 3
 
 cacity02:
+	Defaults:
+		Offset: -15,-67
 	idle:
 		ShadowStart: 3
 
 cacity03:
+	Defaults:
+		Offset: 0,-45
 	idle:
 		ShadowStart: 3
 
 cacity04:
+	Defaults:
+		Offset: 0,-60
 	idle:
 		ShadowStart: 3
 
 city01:
+	Defaults:
+		Offset: 0,-45
 	idle:
 		ShadowStart: 2
 
 city02:
+	Defaults:
+		Offset: -15,-52
 	idle:
 		ShadowStart: 2
 
 city03:
+	Defaults:
+		Offset: 0,-45
 	idle:
 		ShadowStart: 2
 
 city04:
+	Defaults:
+		Offset: 0,-60
 	idle:
 		ShadowStart: 2
 
 city05:
+	Defaults:
+		Offset: 0,-60
 	idle:
 		ShadowStart: 2
