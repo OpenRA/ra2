@@ -46,11 +46,6 @@ engineer:
 	die4: nukedie
 		Length: *
 		Tick: 50
-	die5: flameguy
-		Start: 48
-		Length: 59
-		Tick: 80
-# TODO: This is just the death sequence; normally flameguy would run a bit around before dying
 	die6: electro
 		Length: *
 		Tick: 80
@@ -156,11 +151,6 @@ e1:
 	die4: nukedie
 		Length: *
 		Tick: 50
-	die5: flameguy
-		Start: 48
-		Length: 59
-		Tick: 80
-# TODO: This is just the death sequence; normally flameguy would run a bit around before dying
 	die6: electro
 		Length: *
 		Tick: 80
@@ -220,11 +210,6 @@ snipe:
 	die4: nukedie
 		Length: *
 		Tick: 50
-	die5: flameguy
-		Start: 48
-		Length: 59
-		Tick: 80
-# TODO: This is just the death sequence; normally flameguy would run a bit around before dying
 	die6: electro
 		Length: *
 		Tick: 80
@@ -273,11 +258,6 @@ spy:
 	die4: nukedie
 		Length: *
 		Tick: 50
-	die5: flameguy
-		Start: 48
-		Length: 59
-		Tick: 80
-# TODO: This is just the death sequence; normally flameguy would run a bit around before dying
 	die6: electro
 		Length: *
 		Tick: 80
@@ -342,11 +322,6 @@ seal: # TODO: seala on SNOW
 	die4: nukedie
 		Length: *
 		Tick: 50
-	die5: flameguy
-		Start: 48
-		Length: 59
-		Tick: 80
-# TODO: This is just the death sequence; normally flameguy would run a bit around before dying
 	die6: electro
 		Length: *
 		Tick: 80
@@ -416,11 +391,6 @@ tany:
 	die4: nukedie
 		Length: *
 		Tick: 50
-	die5: flameguy
-		Start: 48
-		Length: 59
-		Tick: 80
-# TODO: This is just the death sequence; normally flameguy would run a bit around before dying
 	die6: electro
 		Length: *
 		Tick: 80

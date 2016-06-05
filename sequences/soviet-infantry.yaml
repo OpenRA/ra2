@@ -88,12 +88,6 @@ e2:
 	die4: nukedie
 		Length: *
 		Tick: 50
-		# Problem: Palette = effect
-	die5: flameguy
-		Start: 48
-		Length: 59
-		Tick: 80
-# TODO: This is just the death sequence; normally flameguy would run a bit around before dying
 	die6: electro
 		Length: *
 		Tick: 80
@@ -145,12 +139,6 @@ flakt:
 	die4: nukedie
 		Length: *
 		Tick: 50
-		# Problem: Palette = effect
-	die5: flameguy
-		Start: 48
-		Length: 59
-		Tick: 80
-# TODO: This is just the death sequence; normally flameguy would run a bit around before dying
 	die6: electro
 		Length: *
 		Tick: 80
@@ -200,12 +188,6 @@ shk:
 	die4: nukedie
 		Length: *
 		Tick: 50
-		# Problem: Palette = effect
-	die5: flameguy
-		Start: 48
-		Length: 59
-		Tick: 80
-# TODO: This is just the death sequence; normally flameguy would run a bit around before dying
 	die6: electro
 		Length: *
 		Tick: 80
@@ -256,12 +238,6 @@ terror:
 	die4: nukedie
 		Length: *
 		Tick: 50
-		# Problem: Palette = effect
-	die5: flameguy
-		Start: 48
-		Length: 59
-		Tick: 80
-# TODO: This is just the death sequence; normally flameguy would run a bit around before dying
 	die6: electro
 		Length: *
 		Tick: 80
@@ -311,12 +287,6 @@ deso:
 	die4: nukedie
 		Length: *
 		Tick: 50
-		# Problem: Palette = effect
-	die5: flameguy
-		Start: 48
-		Length: 59
-		Tick: 80
-# TODO: This is just the death sequence; normally flameguy would run a bit around before dying
 	die6: electro
 		Length: *
 		Tick: 80
@@ -365,12 +335,6 @@ ivan:
 	die4: nukedie
 		Length: *
 		Tick: 50
-		# Problem: Palette = effect
-	die5: flameguy
-		Start: 48
-		Length: 59
-		Tick: 80
-# TODO: This is just the death sequence; normally flameguy would run a bit around before dying
 	die6: electro
 		Length: *
 		Tick: 80

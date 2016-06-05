@@ -29,11 +29,6 @@ civ1:
 	die4: nukedie
 		Length: *
 		Tick: 50
-	die5: flameguy
-		Start: 48
-		Length: 59
-		Tick: 80
-# TODO: This is just the death sequence; normally flameguy would run a bit around before dying
 	die6: electro
 		Length: *
 		Tick: 80
@@ -82,11 +77,6 @@ civ2:
 	die4: nukedie
 		Length: *
 		Tick: 50
-	die5: flameguy
-		Start: 48
-		Length: 59
-		Tick: 80
-# TODO: This is just the death sequence; normally flameguy would run a bit around before dying
 	die6: electro
 		Length: *
 		Tick: 80
@@ -135,11 +125,6 @@ civ3:
 	die4: nukedie
 		Length: *
 		Tick: 50
-	die5: flameguy
-		Start: 48
-		Length: 59
-		Tick: 80
-# TODO: This is just the death sequence; normally flameguy would run a bit around before dying
 	die6: electro
 		Length: *
 		Tick: 80
@@ -196,11 +181,6 @@ vladimir:
 	die4: nukedie
 		Length: *
 		Tick: 50
-	die5: flameguy
-		Start: 48
-		Length: 59
-		Tick: 80
-# TODO: This is just the death sequence; normally flameguy would run a bit around before dying
 	die6: electro
 		Length: *
 		Tick: 80
@@ -251,11 +231,6 @@ pentgen:
 	die4: nukedie
 		Length: *
 		Tick: 50
-	die5: flameguy
-		Start: 48
-		Length: 59
-		Tick: 80
-# TODO: This is just the death sequence; normally flameguy would run a bit around before dying
 	die6: electro
 		Length: *
 		Tick: 80
@@ -302,11 +277,6 @@ pres:
 	die4: nukedie
 		Length: *
 		Tick: 50
-	die5: flameguy
-		Start: 48
-		Length: 59
-		Tick: 80
-# TODO: This is just the death sequence; normally flameguy would run a bit around before dying
 	die6: electro
 		Length: *
 		Tick: 80
@@ -357,11 +327,6 @@ ssrv:
 	die4: nukedie
 		Length: *
 		Tick: 50
-	die5: flameguy
-		Start: 48
-		Length: 59
-		Tick: 80
-# TODO: This is just the death sequence; normally flameguy would run a bit around before dying
 	die6: electro
 		Length: *
 		Tick: 80
@@ -412,11 +377,6 @@ civa:
 	die4: nukedie
 		Length: *
 		Tick: 50
-	die5: flameguy
-		Start: 48
-		Length: 59
-		Tick: 80
-# TODO: This is just the death sequence; normally flameguy would run a bit around before dying
 	die6: electro
 		Length: *
 		Tick: 80
@@ -467,11 +427,6 @@ civb:
 	die4: nukedie
 		Length: *
 		Tick: 50
-	die5: flameguy
-		Start: 48
-		Length: 59
-		Tick: 80
-# TODO: This is just the death sequence; normally flameguy would run a bit around before dying
 	die6: electro
 		Length: *
 		Tick: 80
@@ -522,11 +477,6 @@ civc:
 	die4: nukedie
 		Length: *
 		Tick: 50
-	die5: flameguy
-		Start: 48
-		Length: 59
-		Tick: 80
-# TODO: This is just the death sequence; normally flameguy would run a bit around before dying
 	die6: electro
 		Length: *
 		Tick: 80
@@ -573,11 +523,6 @@ civbbp:
 	die4: nukedie
 		Length: *
 		Tick: 50
-	die5: flameguy
-		Start: 48
-		Length: 59
-		Tick: 80
-# TODO: This is just the death sequence; normally flameguy would run a bit around before dying
 	die6: electro
 		Length: *
 		Tick: 80
@@ -624,11 +569,6 @@ civbfm:
 	die4: nukedie
 		Length: *
 		Tick: 50
-	die5: flameguy
-		Start: 48
-		Length: 59
-		Tick: 80
-# TODO: This is just the death sequence; normally flameguy would run a bit around before dying
 	die6: electro
 		Length: *
 		Tick: 80
@@ -675,11 +615,6 @@ civbf:
 	die4: nukedie
 		Length: *
 		Tick: 50
-	die5: flameguy
-		Start: 48
-		Length: 59
-		Tick: 80
-# TODO: This is just the death sequence; normally flameguy would run a bit around before dying
 	die6: electro
 		Length: *
 		Tick: 80
@@ -726,11 +661,6 @@ civbtm:
 	die4: nukedie
 		Length: *
 		Tick: 50
-	die5: flameguy
-		Start: 48
-		Length: 59
-		Tick: 80
-# TODO: This is just the death sequence; normally flameguy would run a bit around before dying
 	die6: electro
 		Length: *
 		Tick: 80
@@ -781,11 +711,6 @@ civsfm:
 	die4: nukedie
 		Length: *
 		Tick: 50
-	die5: flameguy
-		Start: 48
-		Length: 59
-		Tick: 80
-# TODO: This is just the death sequence; normally flameguy would run a bit around before dying
 	die6: electro
 		Length: *
 		Tick: 80
@@ -836,11 +761,6 @@ civsf:
 	die4: nukedie
 		Length: *
 		Tick: 50
-	die5: flameguy
-		Start: 48
-		Length: 59
-		Tick: 80
-# TODO: This is just the death sequence; normally flameguy would run a bit around before dying
 	die6: electro
 		Length: *
 		Tick: 80
@@ -891,11 +811,6 @@ civstm:
 	die4: nukedie
 		Length: *
 		Tick: 50
-	die5: flameguy
-		Start: 48
-		Length: 59
-		Tick: 80
-# TODO: This is just the death sequence; normally flameguy would run a bit around before dying
 	die6: electro
 		Length: *
 		Tick: 80
