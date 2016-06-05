@@ -88,7 +88,6 @@ e2:
 	die4: nukedie
 		Length: *
 		Tick: 50
-		# Problem: Palette = effect
 	die5: flameguy
 		Start: 48
 		Length: 59
@@ -145,7 +144,6 @@ flakt:
 	die4: nukedie
 		Length: *
 		Tick: 50
-		# Problem: Palette = effect
 	die5: flameguy
 		Start: 48
 		Length: 59
@@ -200,7 +198,6 @@ shk:
 	die4: nukedie
 		Length: *
 		Tick: 50
-		# Problem: Palette = effect
 	die5: flameguy
 		Start: 48
 		Length: 59
@@ -256,7 +253,6 @@ terror:
 	die4: nukedie
 		Length: *
 		Tick: 50
-		# Problem: Palette = effect
 	die5: flameguy
 		Start: 48
 		Length: 59
@@ -311,7 +307,6 @@ deso:
 	die4: nukedie
 		Length: *
 		Tick: 50
-		# Problem: Palette = effect
 	die5: flameguy
 		Start: 48
 		Length: 59
@@ -365,7 +360,6 @@ ivan:
 	die4: nukedie
 		Length: *
 		Tick: 50
-		# Problem: Palette = effect
 	die5: flameguy
 		Start: 48
 		Length: 59
