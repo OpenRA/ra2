@@ -283,8 +283,10 @@
 		DeathPaletteIsPlayerPalette: False
 		DeathTypes:
 			RadiationDeath: 4
-			FlameDeath: 5
 			ElectroDeath: 6
+	SpawnActorOnDeath@flames:
+		Actor: FLAMEGUY
+		DeathType: FlameDeath
 	AutoTarget:
 	AttackMove:
 		Voice: Attack
