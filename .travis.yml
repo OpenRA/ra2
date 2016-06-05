@@ -26,7 +26,7 @@ script:
  - ln -sf ~/build/OpenRA/mods/ra/OpenRA.Mods.RA.dll ~/.openra/mods/ra2/OpenRA.Mods.RA2/dependencies
  - ln -sf ~/build/OpenRA/mods/ts/OpenRA.Mods.TS.dll ~/.openra/mods/ra2/OpenRA.Mods.RA2/dependencies
  - ln -sf ~/build/OpenRA/thirdparty/download/Eluant.dll ~/.openra/mods/ra2/OpenRA.Mods.RA2/dependencies
- - pushd ~/.openra/mods/ra2/OpenRA.Mods.RA2 && xbuild && popd
+ - pushd ~/.openra/mods/ra2/OpenRA.Mods.RA2 && xbuild && cp bin/Debug/OpenRA.Mods.RA2.dll .. && popd
  - travis_retry ~/.openra/mods/ra2/fetch-content.sh
  - mono --debug OpenRA.Utility.exe ra2 --check-yaml
  - mono --debug OpenRA.Utility.exe ra2 --check-sequence-sprites
