@@ -59,6 +59,5 @@
     <Compile Include="Traits\ChronoResourceDelivery.cs" />
     <Compile Include="Traits\Render\WithExitOverlay.cs" />
     <Compile Include="Traits\Render\WithSwimSuit.cs" />
-    <Compile Include="Traits\UpgradeInWater.cs" />
   </ItemGroup>
 </Project>

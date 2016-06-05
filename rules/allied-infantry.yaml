@@ -230,7 +230,9 @@ ghost:
 		Bounds: 20, 30, 0, -11
 	Health:
 		HP: 125
-	UpgradeInWater:
+	UpgradeOnTerrain:
+		Upgrades: water-borne
+		TerrainTypes: Water
 	Targetable@WaterBorne:
 		TargetTypes: Underwater
 		UpgradeTypes: water-borne
@@ -294,7 +296,9 @@ tany:
 		Bounds: 20, 30, 0, -11
 	Health:
 		HP: 125
-	UpgradeInWater:
+	UpgradeOnTerrain:
+		Upgrades: water-borne
+		TerrainTypes: Water
 	Targetable@WaterBorne:
 		TargetTypes: Underwater
 		UpgradeTypes: water-borne
