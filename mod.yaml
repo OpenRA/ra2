@@ -182,13 +182,6 @@ LoadScreen: LogoStripeLoadScreen
 	Image: ra2|uibits/loadscreen.png
 	Text: Carving wooden nickels..., Preparing paratroopers..., Welcoming you to Texas..., Optimizing helium mix..., Receiving thoughts..., Igniting boosters...
 
-ContentInstaller:
-	TestFiles: ^Content/ra2/ra2.mix, ^Content/ra2/language.mix
-	# TODO: Installing from CD doesn't work (because CAB)
-	PackageToExtractFromCD: INSTALL\Game1.CAB
-	ExtractFilesFromCD:
-		.: THEME.mix, ra2.mix, language.mix
-
 ServerTraits:
 	LobbyCommands
 	PlayerPinger
@@ -268,3 +261,36 @@ GameSpeeds:
 		Name: Fastest
 		Timestep: 20
 		OrderLatency: 6
+
+ModContent:
+	InstallPromptMessage: Red Alert 2 requires artwork and audio from the original game.
+	HeaderMessage: The original game content must be copied from an original game disc.
+	Packages:
+		base: Base Game Files
+			TestFiles: ^Content/ra2/ra2.mix, ^Content/ra2/language.mix, ^Content/ra2/multi.mix
+			Discs: ra2, ra2-linux
+			Required: true
+		music: Base Game Music
+			TestFiles: ^Content/ra2/theme.mix
+			Discs: ra2, ra2-linux
+	Discs:
+		ra2: Red Alert 2 (Allied or Soviet Disc, English)
+			IDFiles:
+				README.txt: e125e2742509d73b20dc4aa65b22497c805cd6f5
+			Install:
+				copy: .
+					^Content/ra2/multi.mix: multi.mix
+					^Content/ra2/theme.mix: theme.mix
+				extract-mscab: INSTALL/Game1.CAB
+					^Content/ra2/ra2.mix: ra2.mix
+					^Content/ra2/language.mix: language.mix
+		ra2-linux: Red Alert 2 (Allied or Soviet Disc, English)
+			IDFiles:
+				readme.txt: e125e2742509d73b20dc4aa65b22497c805cd6f5
+			Install:
+				copy: .
+					^Content/ra2/multi.mix: multi.mix
+					^Content/ra2/theme.mix: theme.mix
+				extract-mscab: install/game1.cab
+					^Content/ra2/ra2.mix: ra2.mix
+					^Content/ra2/language.mix: language.mix
