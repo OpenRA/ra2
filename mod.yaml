@@ -267,7 +267,7 @@ ModContent:
 	HeaderMessage: The original game content must be copied from an original game disc.
 	Packages:
 		base: Base Game Files
-			TestFiles: ^Content/ra2/ra2.mix, ^Content/ra2/language.mix, ^Content/ra2/multi.mix
+			TestFiles: ^Content/ra2/ra2.mix, ^Content/ra2/language.mix
 			Discs: ra2, ra2-linux
 			Required: true
 		music: Base Game Music
@@ -279,7 +279,6 @@ ModContent:
 				README.txt: e125e2742509d73b20dc4aa65b22497c805cd6f5
 			Install:
 				copy: .
-					^Content/ra2/multi.mix: multi.mix
 					^Content/ra2/theme.mix: theme.mix
 				extract-mscab: INSTALL/Game1.CAB
 					^Content/ra2/ra2.mix: ra2.mix
@@ -289,7 +288,6 @@ ModContent:
 				readme.txt: e125e2742509d73b20dc4aa65b22497c805cd6f5
 			Install:
 				copy: .
-					^Content/ra2/multi.mix: multi.mix
 					^Content/ra2/theme.mix: theme.mix
 				extract-mscab: install/game1.cab
 					^Content/ra2/ra2.mix: ra2.mix
