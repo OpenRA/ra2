@@ -46,6 +46,7 @@ Player:
 	PlayerResources:
 	ActorGroupProxy:
 	DeveloperMode:
+		Enabled: true
 	GpsWatcher:
 	Shroud:
 	FrozenActorLayer:
