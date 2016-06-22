@@ -100,7 +100,7 @@ dlph:
 		Length: 6
 		Facings: -8
 		Tick: 80
-	idle1:
+	cheer:
 		Start: 103
 		Length: 12
 		Tick: 120
