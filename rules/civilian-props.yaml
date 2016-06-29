@@ -413,20 +413,6 @@ spkr01:
 	Tooltip:
 		Name: Drive-In Speaker
 
-carus02a:
-	Inherits: ^CivBuilding
-	Armor:
-		Type: steel
-	Health:
-		HP: 800
-
-carus02b:
-	Inherits: ^CivBuilding
-	Armor:
-		Type: steel
-	Health:
-		HP: 500
-
 carus02c:
 	Inherits: ^CivBuilding
 	Armor:

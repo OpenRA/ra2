@@ -81,6 +81,10 @@ cawash01:
 	damaged-idle: cgwash01
 		Start: 1
 		ShadowStart: 5
+	rubble: cgwash01
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 cawash03:
 	Defaults:
@@ -90,6 +94,10 @@ cawash03:
 	damaged-idle: cuwash03
 		Start: 1
 		ShadowStart: 5
+	rubble: cuwash03
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 cawash04:
 	Defaults:
@@ -99,6 +107,10 @@ cawash04:
 	damaged-idle: cuwash04
 		Start: 1
 		ShadowStart: 5
+	rubble: cuwash04
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 cawash05:
 	Defaults:
@@ -108,6 +120,10 @@ cawash05:
 	damaged-idle: cuwash05
 		Start: 1
 		ShadowStart: 5
+	rubble: cuwash05
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 cawash06:
 	Defaults:
@@ -117,6 +133,10 @@ cawash06:
 	damaged-idle: cuwash06
 		Start: 1
 		ShadowStart: 7
+	rubble: cuwash06
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 cawash07:
 	Defaults:
@@ -126,6 +146,10 @@ cawash07:
 	damaged-idle: cuwash07
 		Start: 1
 		ShadowStart: 5
+	rubble: cuwash07
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 cawash08:
 	Defaults:
@@ -135,6 +159,10 @@ cawash08:
 	damaged-idle: cuwash08
 		Start: 1
 		ShadowStart: 5
+	rubble: cuwash08
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 cawash09:
 	Defaults:
@@ -144,6 +172,10 @@ cawash09:
 	damaged-idle: cuwash09
 		Start: 1
 		ShadowStart: 5
+	rubble: cuwash09
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 cawash10:
 	Defaults:
@@ -153,6 +185,10 @@ cawash10:
 	damaged-idle: cuwash10
 		Start: 1
 		ShadowStart: 5
+	rubble: cuwash10
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 cawash11:
 	Defaults:
@@ -162,6 +198,10 @@ cawash11:
 	damaged-idle: cuwash11
 		Start: 1
 		ShadowStart: 5
+	rubble: cuwash11
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 cawsh12:
 	Defaults:
@@ -171,6 +211,10 @@ cawsh12:
 	damaged-idle: cgwsh12
 		Start: 1
 		ShadowStart: 5
+	rubble: cgwsh12
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 cawash13:
 	Defaults:
@@ -180,6 +224,10 @@ cawash13:
 	damaged-idle: cuwash13
 		Start: 1
 		ShadowStart: 5
+	rubble: cuwash13
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 cawash14:
 	Defaults:
@@ -189,15 +237,23 @@ cawash14:
 	damaged-idle: cgwash14
 		Start: 1
 		ShadowStart: 5
+	rubble: cgwash14
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 cawash15:
 	Defaults:
 		Offset: 15,-52
-	idle: cgwash14
+	idle: cgwash15
 		ShadowStart: 4
-	damaged-idle: cgwash14
+	damaged-idle: cgwash15
 		Start: 1
 		ShadowStart: 5
+	rubble: cgwash15
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 cawash16:
 	Defaults:
@@ -208,6 +264,10 @@ cawash16:
 	damaged-idle:
 		Start: 1
 		ShadowStart: 5
+	rubble:
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 cawash17:
 	Defaults:
@@ -218,6 +278,10 @@ cawash17:
 	damaged-idle:
 		Start: 1
 		ShadowStart: 5
+	rubble:
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 cawash18:
 	Defaults:
@@ -235,6 +299,10 @@ cawash19:
 	damaged-idle:
 		Start: 1
 		ShadowStart: 5
+	rubble:
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 canewy01:
 	Defaults:
@@ -244,6 +312,10 @@ canewy01:
 	damaged-idle: cunewy01
 		Start: 1
 		ShadowStart: 5
+	rubble:
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 canewy04:
 	Defaults:
@@ -268,6 +340,10 @@ canewy06:
 	damaged-idle:
 		Start: 1
 		ShadowStart: 5
+	rubble:
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 canewy07:
 	Defaults:
@@ -278,6 +354,10 @@ canewy07:
 	damaged-idle:
 		Start: 1
 		ShadowStart: 5
+	rubble:
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 canewy08:
 	Defaults:
@@ -288,6 +368,10 @@ canewy08:
 	damaged-idle:
 		Start: 1
 		ShadowStart: 5
+	rubble:
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 canewy10:
 	Defaults:
@@ -298,6 +382,10 @@ canewy10:
 	damaged-idle:
 		Start: 1
 		ShadowStart: 5
+	rubble:
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 canewy11:
 	Defaults:
@@ -308,6 +396,10 @@ canewy11:
 	damaged-idle:
 		Start: 1
 		ShadowStart: 5
+	rubble:
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 canewy12:
 	Defaults:
@@ -318,6 +410,10 @@ canewy12:
 	damaged-idle:
 		Start: 1
 		ShadowStart: 5
+	rubble:
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 canewy13:
 	Defaults:
@@ -328,6 +424,10 @@ canewy13:
 	damaged-idle:
 		Start: 1
 		ShadowStart: 5
+	rubble:
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 canewy14:
 	Defaults:
@@ -338,6 +438,10 @@ canewy14:
 	damaged-idle:
 		Start: 1
 		ShadowStart: 5
+	rubble:
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 canewy15:
 	Defaults:
@@ -348,6 +452,10 @@ canewy15:
 	damaged-idle:
 		Start: 1
 		ShadowStart: 5
+	rubble:
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 canewy16:
 	Defaults:
@@ -358,6 +466,10 @@ canewy16:
 	damaged-idle:
 		Start: 1
 		ShadowStart: 5
+	rubble:
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 canewy17:
 	Defaults:
@@ -368,6 +480,10 @@ canewy17:
 	damaged-idle:
 		Start: 1
 		ShadowStart: 5
+	rubble:
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 canewy18:
 	Defaults:
@@ -378,6 +494,10 @@ canewy18:
 	damaged-idle:
 		Start: 1
 		ShadowStart: 5
+	rubble:
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 canewy20:
 	Defaults:
@@ -388,6 +508,10 @@ canewy20:
 	damaged-idle:
 		Start: 1
 		ShadowStart: 5
+	rubble:
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 canewy21:
 	Defaults:
@@ -398,6 +522,10 @@ canewy21:
 	damaged-idle:
 		Start: 1
 		ShadowStart: 5
+	rubble:
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 caarmy01:
 	Defaults:
@@ -445,6 +573,10 @@ cawa2a:
 	damaged-idle:
 		Start: 1
 		ShadowStart: 5
+	rubble:
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 cawa2b:
 	Defaults:
@@ -455,6 +587,10 @@ cawa2b:
 	damaged-idle:
 		Start: 1
 		ShadowStart: 5
+	rubble:
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 cawa2c:
 	Defaults:
@@ -465,6 +601,10 @@ cawa2c:
 	damaged-idle:
 		Start: 1
 		ShadowStart: 5
+	rubble:
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 cawa2d:
 	Defaults:
@@ -475,6 +615,10 @@ cawa2d:
 	damaged-idle:
 		Start: 1
 		ShadowStart: 5
+	rubble:
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 cafarm01:
 	Defaults:
@@ -495,6 +639,10 @@ cafarm02:
 	damaged-idle:
 		Start: 1
 		ShadowStart: 5
+	rubble:
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 cafarm06:
 	Defaults:
@@ -505,6 +653,10 @@ cafarm06:
 	damaged-idle:
 		Start: 2
 		ShadowStart: 5
+	rubble:
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 cafrma:
 	Defaults:
@@ -533,6 +685,10 @@ cabarn02:
 		ShadowStart: 4
 	damaged-idle:
 		Start: 2
+	rubble:
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 causfgl:
 	Defaults:
@@ -761,6 +917,10 @@ camsc10:
 	damaged-idle:
 		Start: 1
 		ShadowStart: 5
+	rubble:
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 camsc11:
 	Defaults:
@@ -801,6 +961,10 @@ camiam01:
 	damaged-idle:
 		Start: 2
 		ShadowStart: 5
+	rubble:
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 camiam02:
 	Defaults:
@@ -811,6 +975,10 @@ camiam02:
 	damaged-idle:
 		Start: 2
 		ShadowStart: 5
+	rubble:
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 camiam03:
 	Defaults:
@@ -821,6 +989,10 @@ camiam03:
 	damaged-idle:
 		Start: 2
 		ShadowStart: 5
+	rubble:
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 camiam04:
 	Defaults:
@@ -841,6 +1013,10 @@ camiam05:
 	damaged-idle:
 		Start: 2
 		ShadowStart: 5
+	rubble:
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 camiam06:
 	Defaults:
@@ -851,6 +1027,10 @@ camiam06:
 	damaged-idle:
 		Start: 2
 		ShadowStart: 5
+	rubble:
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 camiam07:
 	Defaults:
@@ -861,6 +1041,10 @@ camiam07:
 	damaged-idle:
 		Start: 2
 		ShadowStart: 5
+	rubble:
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 camiam08:
 	Defaults:
@@ -871,6 +1055,10 @@ camiam08:
 	damaged-idle:
 		Start: 2
 		ShadowStart: 5
+	rubble:
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 castrt01:
 	Defaults:
@@ -913,6 +1101,10 @@ camex01:
 	damaged-idle:
 		Start: 2
 		ShadowStart: 5
+	rubble:
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 camex02:
 	Defaults:
@@ -923,6 +1115,10 @@ camex02:
 	damaged-idle:
 		Start: 2
 		ShadowStart: 5
+	rubble:
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 camex03:
 	Defaults:
@@ -933,6 +1129,10 @@ camex03:
 	damaged-idle:
 		Start: 2
 		ShadowStart: 5
+	rubble:
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 camex04:
 	Defaults:
@@ -943,6 +1143,10 @@ camex04:
 	damaged-idle:
 		Start: 2
 		ShadowStart: 5
+	rubble:
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 camex05:
 	Defaults:
@@ -953,6 +1157,10 @@ camex05:
 	damaged-idle:
 		Start: 2
 		ShadowStart: 5
+	rubble:
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 castl01:
 	Defaults:
@@ -973,6 +1181,10 @@ castl02:
 	damaged-idle: custl02
 		Start: 1
 		ShadowStart: 5
+	rubble: custl02
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 castl03:
 	Defaults:
@@ -983,6 +1195,10 @@ castl03:
 	damaged-idle: custl03
 		Start: 1
 		ShadowStart: 5
+	rubble: custl03
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 castl04:
 	Defaults:
@@ -992,6 +1208,10 @@ castl04:
 	damaged-idle: cgstl04
 		Start: 1
 		ShadowStart: 4
+	rubble: cgstl04
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 castl05a:
 	Defaults:
@@ -1002,6 +1222,10 @@ castl05a:
 	damaged-idle:
 		Start: 1
 		ShadowStart: 5
+	rubble:
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 castl05b:
 	Defaults:
@@ -1012,6 +1236,10 @@ castl05b:
 	damaged-idle:
 		Start: 1
 		ShadowStart: 5
+	rubble:
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 castl05c:
 	Defaults:
@@ -1022,6 +1250,10 @@ castl05c:
 	damaged-idle:
 		Start: 1
 		ShadowStart: 5
+	rubble:
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 castl05d:
 	Defaults:
@@ -1032,6 +1264,10 @@ castl05d:
 	damaged-idle:
 		Start: 1
 		ShadowStart: 5
+	rubble:
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 castl05e:
 	Defaults:
@@ -1042,6 +1278,10 @@ castl05e:
 	damaged-idle:
 		Start: 1
 		ShadowStart: 5
+	rubble:
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 castl05f:
 	Defaults:
@@ -1052,6 +1292,10 @@ castl05f:
 	damaged-idle:
 		Start: 1
 		ShadowStart: 5
+	rubble:
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 castl05g:
 	Defaults:
@@ -1062,6 +1306,10 @@ castl05g:
 	damaged-idle:
 		Start: 1
 		ShadowStart: 5
+	rubble:
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 castl05h:
 	Defaults:
@@ -1072,6 +1320,10 @@ castl05h:
 	damaged-idle:
 		Start: 1
 		ShadowStart: 5
+	rubble:
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 cacolo01:
 	Defaults:
@@ -1082,6 +1334,10 @@ cacolo01:
 	damaged-idle:
 		Start: 1
 		ShadowStart: 5
+	rubble:
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 caind01:
 	Defaults:
@@ -1092,6 +1348,10 @@ caind01:
 	damaged-idle:
 		Start: 1
 		ShadowStart: 5
+	rubble:
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 calab:
 	Defaults:
@@ -1102,6 +1362,10 @@ calab:
 	damaged-idle:
 		Start: 1
 		ShadowStart: 5
+	rubble:
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 cagas01:
 	Defaults:
@@ -1112,6 +1376,10 @@ cagas01:
 	damaged-idle:
 		Start: 1
 		ShadowStart: 5
+	rubble:
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 cahse01:
 	Defaults:
@@ -1122,6 +1390,10 @@ cahse01:
 	damaged-idle:
 		Start: 1
 		ShadowStart: 4
+	rubble:
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 cahse02:
 	Defaults:
@@ -1132,6 +1404,10 @@ cahse02:
 	damaged-idle:
 		Start: 1
 		ShadowStart: 4
+	rubble:
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 cahse03:
 	Defaults:
@@ -1142,6 +1418,10 @@ cahse03:
 	damaged-idle:
 		Start: 1
 		ShadowStart: 4
+	rubble:
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 cahse04:
 	Defaults:
@@ -1152,12 +1432,20 @@ cahse04:
 	damaged-idle:
 		Start: 1
 		ShadowStart: 4
+	rubble:
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 cahse05:
 	Defaults:
 		Offset: 15,-22
 		UseTilesetCode: true
 	idle:
+	rubble:
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 cahse06:
 	Defaults:
@@ -1168,6 +1456,10 @@ cahse06:
 	damaged-idle:
 		Start: 1
 		ShadowStart: 4
+	rubble:
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 cahse07:
 	Defaults:
@@ -1178,6 +1470,10 @@ cahse07:
 	damaged-idle:
 		Start: 1
 		ShadowStart: 4
+	rubble:
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 cawt01:
 	Defaults:
@@ -1198,6 +1494,10 @@ cabunk01:
 	damaged-idle:
 		Start: 1
 		ShadowStart: 5
+	rubble:
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 cabunk02:
 	Defaults:
@@ -1208,6 +1508,10 @@ cabunk02:
 	damaged-idle:
 		Start: 1
 		ShadowStart: 5
+	rubble:
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 carus01:
 	Defaults:
@@ -1217,6 +1521,10 @@ carus01:
 	damaged-idle: cgrus01
 		Start: 1
 		ShadowStart: 5
+	rubble: cgrus01
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 carus02a:
 	Defaults:
@@ -1227,6 +1535,10 @@ carus02a:
 	damaged-idle:
 		Start: 1
 		ShadowStart: 5
+	rubble:
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 carus02b:
 	Defaults:
@@ -1237,6 +1549,10 @@ carus02b:
 	damaged-idle:
 		Start: 1
 		ShadowStart: 5
+	rubble:
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 carus02c:
 	Defaults:
@@ -1287,6 +1603,10 @@ carus02g:
 	damaged-idle:
 		Start: 1
 		ShadowStart: 5
+	rubble:
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 carus03:
 	Defaults:
@@ -1297,6 +1617,10 @@ carus03:
 	damaged-idle:
 		Start: 1
 		ShadowStart: 5
+	rubble:
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 carus04:
 	Defaults:
@@ -1307,6 +1631,10 @@ carus04:
 	damaged-idle:
 		Start: 1
 		ShadowStart: 5
+	rubble:
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 carus05:
 	Defaults:
@@ -1317,6 +1645,10 @@ carus05:
 	damaged-idle:
 		Start: 1
 		ShadowStart: 5
+	rubble:
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 carus06:
 	Defaults:
@@ -1327,6 +1659,10 @@ carus06:
 	damaged-idle:
 		Start: 1
 		ShadowStart: 5
+	rubble:
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 carus07:
 	Defaults:
@@ -1337,6 +1673,10 @@ carus07:
 	damaged-idle:
 		Start: 1
 		ShadowStart: 5
+	rubble:
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 carus08:
 	Defaults:
@@ -1347,6 +1687,10 @@ carus08:
 	damaged-idle:
 		Start: 1
 		ShadowStart: 5
+	rubble:
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 carus09:
 	Defaults:
@@ -1357,6 +1701,10 @@ carus09:
 	damaged-idle:
 		Start: 1
 		ShadowStart: 5
+	rubble:
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 carus10:
 	Defaults:
@@ -1367,6 +1715,10 @@ carus10:
 	damaged-idle:
 		Start: 1
 		ShadowStart: 5
+	rubble:
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 carus11:
 	Defaults:
@@ -1377,6 +1729,10 @@ carus11:
 	damaged-idle:
 		Start: 1
 		ShadowStart: 5
+	rubble:
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 cachig01:
 	Defaults:
@@ -1387,6 +1743,10 @@ cachig01:
 	damaged-idle:
 		Start: 1
 		ShadowStart: 5
+	rubble:
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 cachig02:
 	Defaults:
@@ -1397,6 +1757,10 @@ cachig02:
 	damaged-idle:
 		Start: 1
 		ShadowStart: 5
+	rubble:
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 cachig03:
 	Defaults:
@@ -1407,6 +1771,10 @@ cachig03:
 	damaged-idle:
 		Start: 1
 		ShadowStart: 5
+	rubble:
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 cachig04:
 	Defaults:
@@ -1416,6 +1784,10 @@ cachig04:
 	damaged-idle: cgchig04
 		Start: 1
 		ShadowStart: 5
+	rubble: cgchig04
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 cachig05:
 	Defaults:
@@ -1426,6 +1798,10 @@ cachig05:
 	damaged-idle:
 		Start: 1
 		ShadowStart: 5
+	rubble:
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 cachig06:
 	Defaults:
@@ -1435,6 +1811,10 @@ cachig06:
 	damaged-idle: cgchig06
 		Start: 1
 		ShadowStart: 5
+	rubble: cgchig06
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 catech01:
 	Defaults:
@@ -1445,6 +1825,10 @@ catech01:
 	damaged-idle:
 		Start: 1
 		ShadowStart: 5
+	rubble:
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 catexs01:
 	Defaults:
@@ -1455,6 +1839,10 @@ catexs01:
 	damaged-idle:
 		Start: 1
 		ShadowStart: 5
+	rubble:
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 catexs02:
 	Defaults:
@@ -1465,6 +1853,10 @@ catexs02:
 	damaged-idle:
 		Start: 1
 		ShadowStart: 5
+	rubble:
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 catexs03:
 	Defaults:
@@ -1475,6 +1867,10 @@ catexs03:
 	damaged-idle:
 		Start: 1
 		ShadowStart: 5
+	rubble:
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 catexs04:
 	Defaults:
@@ -1485,6 +1881,10 @@ catexs04:
 	damaged-idle:
 		Start: 1
 		ShadowStart: 5
+	rubble:
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 catexs05:
 	Defaults:
@@ -1495,6 +1895,10 @@ catexs05:
 	damaged-idle:
 		Start: 1
 		ShadowStart: 5
+	rubble:
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 catexs06:
 	Defaults:
@@ -1505,6 +1909,10 @@ catexs06:
 	damaged-idle:
 		Start: 1
 		ShadowStart: 5
+	rubble:
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 catexs07:
 	Defaults:
@@ -1515,6 +1923,10 @@ catexs07:
 	damaged-idle:
 		Start: 1
 		ShadowStart: 5
+	rubble:
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 catexs08:
 	Defaults:
@@ -1525,6 +1937,10 @@ catexs08:
 	damaged-idle:
 		Start: 1
 		ShadowStart: 5
+	rubble:
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 canwy05:
 	Defaults:
@@ -1535,6 +1951,10 @@ canwy05:
 	damaged-idle:
 		Start: 1
 		ShadowStart: 5
+	rubble:
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 canwy09:
 	Defaults:
@@ -1545,6 +1965,10 @@ canwy09:
 	damaged-idle:
 		Start: 1
 		ShadowStart: 5
+	rubble:
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 canwy22:
 	Defaults:
@@ -1555,6 +1979,10 @@ canwy22:
 	damaged-idle:
 		Start: 1
 		ShadowStart: 5
+	rubble:
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 canwy23:
 	Defaults:
@@ -1565,6 +1993,10 @@ canwy23:
 	damaged-idle:
 		Start: 1
 		ShadowStart: 5
+	rubble:
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 canwy24:
 	Defaults:
@@ -1575,6 +2007,10 @@ canwy24:
 	damaged-idle:
 		Start: 1
 		ShadowStart: 5
+	rubble:
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 canwy25:
 	Defaults:
@@ -1585,6 +2021,10 @@ canwy25:
 	damaged-idle:
 		Start: 1
 		ShadowStart: 5
+	rubble:
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 canwy26:
 	Defaults:
@@ -1595,6 +2035,10 @@ canwy26:
 	damaged-idle:
 		Start: 1
 		ShadowStart: 5
+	rubble:
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 camov01:
 	Defaults:
@@ -1629,6 +2073,10 @@ camov02:
 		Start: 2
 		Length: 2
 		Tick: 200
+	rubble:
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 capars01:
 	Defaults:
@@ -1638,6 +2086,10 @@ capars01:
 	damaged-idle: cgpars01
 		Start: 1
 		ShadowStart: 5
+	rubble: cgpars01
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 capars02:
 	Defaults:
@@ -1648,6 +2100,10 @@ capars02:
 	damaged-idle:
 		Start: 1
 		ShadowStart: 5
+	rubble:
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 capars04:
 	Defaults:
@@ -1658,6 +2114,10 @@ capars04:
 	damaged-idle:
 		Start: 1
 		ShadowStart: 5
+	rubble:
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 capars05:
 	Defaults:
@@ -1668,6 +2128,10 @@ capars05:
 	damaged-idle:
 		Start: 1
 		ShadowStart: 5
+	rubble:
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 capars06:
 	Defaults:
@@ -1678,6 +2142,10 @@ capars06:
 	damaged-idle:
 		Start: 1
 		ShadowStart: 5
+	rubble:
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 capars07:
 	Defaults:
@@ -1698,6 +2166,10 @@ capars08:
 	damaged-idle:
 		Start: 1
 		ShadowStart: 5
+	rubble:
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 capars09:
 	Defaults:
@@ -1708,6 +2180,10 @@ capars09:
 	damaged-idle:
 		Start: 1
 		ShadowStart: 5
+	rubble:
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 capars10:
 	Defaults:
@@ -1718,6 +2194,10 @@ capars10:
 	damaged-idle:
 		Start: 1
 		ShadowStart: 5
+	rubble:
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 capars11:
 	Defaults:
@@ -1727,6 +2207,10 @@ capars11:
 	damaged-idle: cgpars11
 		Start: 1
 		ShadowStart: 5
+	rubble: cgpars11
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 capars12:
 	Defaults:
@@ -1737,6 +2221,10 @@ capars12:
 	damaged-idle:
 		Start: 1
 		ShadowStart: 5
+	rubble:
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 capars13:
 	Defaults:
@@ -1747,6 +2235,10 @@ capars13:
 	damaged-idle:
 		Start: 1
 		ShadowStart: 5
+	rubble:
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 capars14:
 	Defaults:
@@ -1757,6 +2249,10 @@ capars14:
 	damaged-idle:
 		Start: 1
 		ShadowStart: 5
+	rubble:
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 cats01:
 	Defaults:
@@ -1787,6 +2283,10 @@ caeur1:
 	damaged-idle:
 		Start: 1
 		ShadowStart: 5
+	rubble:
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 caeur2:
 	Defaults:
@@ -1797,6 +2297,10 @@ caeur2:
 	damaged-idle:
 		Start: 1
 		ShadowStart: 5
+	rubble:
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 caeur04:
 	Defaults:
@@ -1807,6 +2311,10 @@ caeur04:
 	damaged-idle:
 		Start: 1
 		ShadowStart: 5
+	rubble:
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 caprs03:
 	Defaults:
@@ -1817,6 +2325,10 @@ caprs03:
 	damaged-idle:
 		Start: 1
 		ShadowStart: 5
+	rubble:
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 caswst01:
 	Defaults:
@@ -1827,6 +2339,10 @@ caswst01:
 	damaged-idle:
 		Start: 1
 		ShadowStart: 5
+	rubble:
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 cacity01:
 	Defaults:
