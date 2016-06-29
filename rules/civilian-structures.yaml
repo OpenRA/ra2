@@ -144,7 +144,6 @@ cabarn02:
 
 cawash01:
 	Inherits: ^CivBuilding
-	Selectable:
 	Building:
 		Footprint: xxxx xxxx xxxx xxxx
 		Dimensions: 4, 4
@@ -159,7 +158,6 @@ cawash01:
 
 cawash02:
 	Inherits: ^CivBuilding
-	Selectable:
 	Building:
 		Footprint: xxxx xxxx xxxx
 		Dimensions: 4, 3
@@ -172,7 +170,6 @@ cawash02:
 
 cawash03:
 	Inherits: ^CivBuilding
-	Selectable:
 	Building:
 		Footprint: xxxx xxxx xxxx
 		Dimensions: 4, 3
@@ -185,7 +182,6 @@ cawash03:
 
 cawash04:
 	Inherits: ^CivBuilding
-	Selectable:
 	Building:
 		Footprint: xxxx xxxx xxxx xxxx
 		Dimensions: 4, 4
@@ -198,7 +194,6 @@ cawash04:
 
 cawash05:
 	Inherits: ^CivBuilding
-	Selectable:
 	Building:
 		Footprint: xxxx xxxx
 		Dimensions: 4, 2
@@ -223,7 +218,6 @@ cawash06:
 
 cawash07:
 	Inherits: ^CivBuilding
-	Selectable:
 	Building:
 		Footprint: xxx xxx xxx
 		Dimensions: 3, 3
@@ -248,7 +242,6 @@ cawash08:
 
 cawash09:
 	Inherits: ^CivBuilding
-	Selectable:
 	Building:
 		Footprint: xxx xxx xxx
 		Dimensions: 3, 3
@@ -261,7 +254,6 @@ cawash09:
 
 cawash10:
 	Inherits: ^CivBuilding
-	Selectable:
 	Building:
 		Footprint: xxxx xxxx xxxx xxxx
 		Dimensions: 4, 4
@@ -274,7 +266,6 @@ cawash10:
 
 cawash11:
 	Inherits: ^CivBuilding
-	Selectable:
 	Building:
 		Footprint: xxxx xxxx xxxx xxxx
 		Dimensions: 4, 4
@@ -287,7 +278,6 @@ cawash11:
 
 cawsh12:
 	Inherits: ^CivBuilding
-	Selectable:
 	Building:
 		Footprint: xxx xxx xxx
 		Dimensions: 3, 3
@@ -408,7 +398,6 @@ cawash19:
 
 canewy01:
 	Inherits: ^CivBuilding
-	Selectable:
 	Building:
 		Footprint: xxxx xxxx xxxx xxxx
 		Dimensions: 4, 4
@@ -635,7 +624,6 @@ caswst01:
 
 caarmy01:
 	Inherits: ^CivBuilding
-	Selectable:
 	Building:
 		Footprint: xxx xxx
 		Dimensions: 3, 2
@@ -684,7 +672,6 @@ caarmy04:
 
 cawa2a:
 	Inherits: ^CivBuilding
-	Selectable:
 	Valued:
 		Cost: 2000
 	Building:
@@ -699,7 +686,6 @@ cawa2a:
 
 cawa2b:
 	Inherits: ^CivBuilding
-	Selectable:
 	Valued:
 		Cost: 2000
 	Building:
@@ -714,7 +700,6 @@ cawa2b:
 
 cawa2c:
 	Inherits: ^CivBuilding
-	Selectable:
 	Valued:
 		Cost: 2000
 	Building:
@@ -729,7 +714,6 @@ cawa2c:
 
 cawa2d:
 	Inherits: ^CivBuilding
-	Selectable:
 	Valued:
 		Cost: 2000
 	Building:
@@ -744,7 +728,6 @@ cawa2d:
 
 cafarm01:
 	Inherits: ^CivBuilding
-	Selectable:
 	Building:
 		Footprint: xx xx
 		Dimensions: 2, 2
@@ -757,7 +740,6 @@ cafarm01:
 
 cafarm02:
 	Inherits: ^CivBuilding
-	Selectable:
 	Building:
 		Footprint: x
 		Dimensions: 1, 1
