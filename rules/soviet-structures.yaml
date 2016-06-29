@@ -114,12 +114,42 @@ nahand:
 		Type: Steel
 	RevealsShroud:
 		Range: 6c0
-	Exit@1:
-		SpawnOffset: -280,280,0
-		ExitCell: 0,2
-	Exit@2:
+	Exit@n1_0:
+		SpawnOffset: 0,0,0
+		ExitCell: -1, 0
+	Exit@0_n1:
+		SpawnOffset: 280,-280,0
+		ExitCell: 0, -1
+	Exit@n1_n1:
+		SpawnOffset: 0,0,0
+		ExitCell: -1, -1
+	Exit@1_n1:
+		SpawnOffset: 0,0,0
+		ExitCell: 1, -1
+	Exit@n1_1:
+		SpawnOffset: -410,-140,0
+		ExitCell: -1, 1
+	Exit@2_0:
 		SpawnOffset: 410,140,0
-		ExitCell: 2,0
+		ExitCell: 2, 0
+	Exit@2_n1:
+		SpawnOffset: 0,0,0
+		ExitCell: 2, -1
+	Exit@2_1:
+		SpawnOffset: 0,0,0
+		ExitCell: 2, 1
+	Exit@0_2:
+		SpawnOffset: 0,0,0
+		ExitCell: 0, 2
+	Exit@n1_2:
+		SpawnOffset: 0,0,0
+		ExitCell: -1, 2
+	Exit@1_2:
+		SpawnOffset: -280,280,0
+		ExitCell: 1, 2
+	Exit@2_2:
+		SpawnOffset: 0,0,0
+		ExitCell: 2, 2
 	Production:
 		Produces: Infantry
 	PrimaryBuilding:
@@ -519,12 +549,42 @@ naclon:
 		Range: 5c0
 	Power:
 		Amount: -200
-	Exit@1:
-		SpawnOffset: -280,280,0
-		ExitCell: 0,2
-	Exit@2:
+	Exit@n1_0:
+		SpawnOffset: 0,0,0
+		ExitCell: -1, 0
+	Exit@0_n1:
+		SpawnOffset: 0,0,0
+		ExitCell: 0, -1
+	Exit@n1_n1:
+		SpawnOffset: 280,-280,0
+		ExitCell: -1, -1
+	Exit@1_n1:
+		SpawnOffset: 0,0,0
+		ExitCell: 1, -1
+	Exit@n1_1:
+		SpawnOffset: -410,-140,0
+		ExitCell: -1, 1
+	Exit@2_0:
 		SpawnOffset: 410,140,0
-		ExitCell: 2,0
+		ExitCell: 2, 0
+	Exit@2_n1:
+		SpawnOffset: 0,0,0
+		ExitCell: 2, -1
+	Exit@2_1:
+		SpawnOffset: 0,0,0
+		ExitCell: 2, 1
+	Exit@0_2:
+		SpawnOffset: -280,280,0
+		ExitCell: 0, 2
+	Exit@n1_2:
+		SpawnOffset: 0,0,0
+		ExitCell: -1, 2
+	Exit@1_2:
+		SpawnOffset: 0,0,0
+		ExitCell: 1, 2
+	Exit@2_2:
+		SpawnOffset: 0,0,0
+		ExitCell: 2, 2
 	Production:
 		Produces:
 	RallyPoint:
