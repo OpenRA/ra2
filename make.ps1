@@ -60,7 +60,7 @@ elseif ($command -eq "dependencies")
 {
 	cd OpenRA.Mods.RA2\dependencies
 	$targetDir = $PWD
-	if ($args.Length -eq 1)
+	if ($args.Length -eq 0)
 	{
 		$OpenRADir = Read-Host "Enter the path to your OpenRA install"
 	}
