@@ -34,7 +34,7 @@ RadBeamWeapon:
 	ReloadDelay: 100
 	Report: idesat1a.wav
 	Projectile: LaserZap
-		BeamWidth: 2
+		Width: 20
 		BeamDuration: 7
 		Color: B900FF00
 	Warhead@1Dam: SpreadDamage
