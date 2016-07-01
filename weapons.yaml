@@ -990,7 +990,7 @@ Comet:
 	Range: 10c0
 	Report: vpriatta.wav
 	Projectile: LaserZap
-		BeamWidth: 5
+		Width: 50
 		BeamDuration: 15
 		UsePlayerColor: true
 	Warhead@1Dam: SpreadDamage
@@ -1055,7 +1055,7 @@ PrismShot:
 	Range: 8c0
 	Report: bpriat1a.wav
 	Projectile: LaserZap
-		BeamWidth: 7
+		Width: 70
 		UsePlayerColor: true
 	Warhead@1Dam: SpreadDamage
 		Spread: 42
