@@ -62,6 +62,17 @@
 	TimedUpgradeBar:
 		Upgrade: invulnerability
 
+^ChronoDisable:
+	DisableOnUpgrade@ChronoDisable:
+		UpgradeTypes: chronodisable
+		UpgradeMinEnabledLevel: 1
+	TimedUpgradeBar@ChronoDisable:
+		Upgrade: chronodisable
+		Color: FFFFFF
+	Mobile:
+		UpgradeTypes: notmobile
+		UpgradeMaxEnabledLevel: 0
+
 ^Building:
 	Inherits@1: ^ExistsInWorld
 	Inherits@2: ^SpriteActor
@@ -245,6 +256,7 @@
 	Inherits@1: ^ExistsInWorld
 	Inherits@2: ^SpriteActor
 	Inherits@3: ^GainsExperience
+	Inherits@4: ^ChronoDisable
 	Health:
 		Shape: Circle
 			Radius: 128
@@ -388,6 +400,7 @@
 	Inherits@1: ^ExistsInWorld
 	Inherits@2: ^GainsExperience
 	Inherits@3: ^IronCurtainable
+	Inherits@4: ^ChronoDisable
 	Mobile:
 		Voice: Move
 		Crushes: crate
@@ -547,6 +560,7 @@
 	Inherits@1: ^ExistsInWorld
 	Inherits@2: ^GainsExperience
 	Inherits@3: ^IronCurtainable
+	Inherits@4: ^ChronoDisable
 	Mobile:
 		Voice: Move
 		Crushes: crate

@@ -173,3 +173,21 @@ AWPE:
 20mme:
 	Inherits: 20mm
 	Burst: 2
+
+NeutronRifle:
+	ValidTargets: Ground
+	ReloadDelay: 120
+	Range: 10c0
+	Report: ichratta.wav
+	Projectile: TeslaZap
+		Speed: 100c0
+		Palette: highlight
+	Warhead@Damage: SpreadDamage
+		Spread: 64
+		Damage: 8
+	Warhead@Disable: GrantUpgrade
+		Range: 64
+		Duration: 250
+		Upgrades: chronodisable, notmobile
+	Warhead@Stars: CreateEffect
+		Explosions: chronosk

@@ -416,3 +416,42 @@ jumpjet:
 		UpgradeTypes: airborne
 		UpgradeMaxEnabledLevel: 0
 	-Passenger:
+
+cleg:
+	Inherits: ^Infantry
+	Selectable:
+		Bounds: 20, 30, 0, -11
+	Tooltip:
+		Name: Chrono Legionnaire
+		Description: High-tech soldier.\n Strong vs Infantry, Vehicles\n Weak vs Aircraft
+	Buildable:
+		Queue: Infantry
+		BuildAtProductionType: Infantry
+		BuildPaletteOrder: 100
+		Prerequisites: ~gapile, gatech
+	ProducibleWithLevel:
+		Prerequisites: barracks.infiltrated
+	Valued:
+		Cost: 1500
+	Health:
+		HP: 125
+	Mobile:
+		Speed: 51
+	RevealsShroud:
+		Range: 8c0
+	Passenger:
+		PipType: Red
+	-Crushable:
+	-TakeCover:
+	PortableChrono:
+		ChronoshiftSound: ichrmova.wav
+		DeployCursor: chronosphere
+		DeployBlockedCursor: chronosphere
+		Voice: Move
+		ChargeDelay: 300
+	Voiced:
+		VoiceSet: ChronoLegionnaireVoice
+	Armament@Temporal:
+		Weapon: NeutronRifle
+	AttackFrontal:
+		Voice: Attack
