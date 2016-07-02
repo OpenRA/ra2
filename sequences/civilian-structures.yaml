@@ -1529,7 +1529,7 @@ carus01:
 carus02a:
 	Defaults:
 		Offset: 0,-15
-		UseTilesetCode: true
+		UseTilesetCode: false
 	idle:
 		ShadowStart: 4
 	damaged-idle:
@@ -1543,7 +1543,7 @@ carus02a:
 carus02b:
 	Defaults:
 		Offset: 0,-15
-		UseTilesetCode: true
+		UseTilesetCode: false
 	idle:
 		ShadowStart: 4
 	damaged-idle:
@@ -1597,7 +1597,7 @@ carus02f:
 carus02g:
 	Defaults:
 		Offset: 0,-15
-		UseTilesetCode: true
+		UseTilesetCode: false
 	idle:
 		ShadowStart: 4
 	damaged-idle:

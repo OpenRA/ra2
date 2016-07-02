@@ -2051,6 +2051,8 @@ carus02a:
 		HP: 800
 	SpawnActorOnDeath:
 		Actor: carus02a.rubble
+	EditorTilesetFilter:
+		RequireTilesets: SNOW
 
 carus02a.rubble:
 	Inherits: ^Rubble
@@ -2059,6 +2061,8 @@ carus02a.rubble:
 		Footprint: _
 	RenderSprites:
 		Image: carus02a
+	EditorTilesetFilter:
+		RequireTilesets: SNOW
 
 carus02b:
 	Inherits: ^CivBuilding
@@ -2089,6 +2093,8 @@ carus02g:
 		HP: 1000
 	SpawnActorOnDeath:
 		Actor: carus02g.rubble
+	EditorTilesetFilter:
+		RequireTilesets: SNOW
 
 carus02g.rubble:
 	Inherits: ^Rubble
