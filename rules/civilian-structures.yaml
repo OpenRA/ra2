@@ -182,9 +182,6 @@ cawt01:
 		Range: 6c0
 	Health:
 		HP: 400
-	Building:
-		Dimensions: 1,1
-		Footprint: x
 
 cats01:
 	Inherits: ^CivBuilding
@@ -1072,9 +1069,6 @@ caarmy02:
 		Range: 6c0
 	Health:
 		HP: 200
-	Building:
-		Dimensions: 1,1
-		Footprint: x
 
 caarmy03:
 	Inherits: ^CivBuilding
@@ -1084,9 +1078,6 @@ caarmy03:
 		Range: 6c0
 	Health:
 		HP: 200
-	Building:
-		Dimensions: 1,1
-		Footprint: x
 
 caarmy04:
 	Inherits: ^CivBuilding
@@ -1096,9 +1087,6 @@ caarmy04:
 		Range: 6c0
 	Health:
 		HP: 200
-	Building:
-		Dimensions: 1,1
-		Footprint: x
 
 cawa2a:
 	Inherits: ^CivBuilding
@@ -1404,9 +1392,6 @@ galite:
 		HP: 600
 	Power:
 		Amount: 0
-	Building:
-		Dimensions: 1,1
-		Footprint: x
 	RenderSprites:
 		Image: galite
 	WithSpriteBody:
@@ -1815,9 +1800,6 @@ capars07:
 		Range: 6c0
 	Health:
 		HP: 100
-	Building:
-		Dimensions: 1,1
-		Footprint: x
 
 capars08:
 	Inherits: ^CivBuilding
@@ -2001,9 +1983,6 @@ cafrmb:
 		Range: 4c0
 	Health:
 		HP: 50
-	Building:
-		Dimensions: 1,1
-		Footprint: x
 
 caprs03:
 	Inherits: ^CivBuilding
@@ -2039,9 +2018,6 @@ cagard01:
 		Range: 6c0
 	Health:
 		HP: 100
-	Building:
-		Dimensions: 1,1
-		Footprint: x
 
 carus01:
 	Inherits: ^CivBuilding
@@ -2111,9 +2087,6 @@ carus02g:
 		Range: 6c0
 	Health:
 		HP: 1000
-	Building:
-		Dimensions: 1,1
-		Footprint: x
 	SpawnActorOnDeath:
 		Actor: carus02g.rubble
 
@@ -2220,9 +2193,6 @@ carus08:
 		Range: 6c0
 	Health:
 		HP: 1000
-	Building:
-		Dimensions: 1,1
-		Footprint: x
 	SpawnActorOnDeath:
 		Actor: carus08.rubble
 
@@ -2371,9 +2341,6 @@ camiam04:
 		Range: 6c0
 	Health:
 		HP: 200
-	Building:
-		Dimensions: 1,1
-		Footprint: x
 
 camiam05:
 	Inherits: ^CivBuilding
@@ -3243,9 +3210,6 @@ camsc08:
 		Range: 6c0
 	Health:
 		HP: 200
-	Building:
-		Dimensions: 1,1
-		Footprint: x
 
 camsc09:
 	Inherits: ^CivBuilding
@@ -3255,9 +3219,6 @@ camsc09:
 		Range: 6c0
 	Health:
 		HP: 200
-	Building:
-		Dimensions: 1,1
-		Footprint: x
 
 camsc10:
 	Inherits: ^CivBuilding
