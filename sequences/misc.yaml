@@ -34,6 +34,7 @@ allyrepair:
 	repair: wrench
 		Length: 7
 		Tick: 160
+		ZOffset: 2047
 
 rallypoint:
 	flag: mouse
