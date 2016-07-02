@@ -143,6 +143,17 @@
 	Tooltip:
 		Name: Civilian Building
 
+^Rubble:
+	Inherits@1: ^SpriteActor
+	Building:
+		Dimensions: 1,1
+		Footprint: x
+	RenderSprites:
+		Palette: terrain
+	WithSpriteBody:
+		Sequence: rubble
+	FrozenUnderFog:
+
 ^TechBuilding:
 	Inherits: ^Building
 	-MustBeDestroyed:

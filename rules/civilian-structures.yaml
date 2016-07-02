@@ -41,6 +41,16 @@ cahse01:
 	Building:
 		Dimensions: 3,2
 		Footprint: xxx xxx
+	SpawnActorOnDeath:
+		Actor: cahse01.rubble
+
+cahse01.rubble:
+	Inherits: ^Rubble
+	Building:
+		Dimensions: 3,2
+		Footprint: ___ ___
+	RenderSprites:
+		Image: cahse01
 
 cahse02:
 	Inherits: ^CivBuilding
@@ -51,6 +61,16 @@ cahse02:
 	Building:
 		Dimensions: 3,2
 		Footprint: xxx xxx
+	SpawnActorOnDeath:
+		Actor: cahse02.rubble
+
+cahse02.rubble:
+	Inherits: ^Rubble
+	Building:
+		Dimensions: 3,2
+		Footprint: ___ ___
+	RenderSprites:
+		Image: cahse02
 
 cahse03:
 	Inherits: ^CivBuilding
@@ -61,6 +81,16 @@ cahse03:
 	Building:
 		Dimensions: 3,4
 		Footprint: xxx xxx xxx xxx
+	SpawnActorOnDeath:
+		Actor: cahse03.rubble
+
+cahse03.rubble:
+	Inherits: ^Rubble
+	Building:
+		Dimensions: 3,2
+		Footprint: ___ ___
+	RenderSprites:
+		Image: cahse03
 
 cahse04:
 	Inherits: ^CivBuilding
@@ -71,6 +101,16 @@ cahse04:
 	Building:
 		Dimensions: 3,2
 		Footprint: xxx xxx
+	SpawnActorOnDeath:
+		Actor: cahse04.rubble
+
+cahse04.rubble:
+	Inherits: ^Rubble
+	Building:
+		Dimensions: 3,2
+		Footprint: ___ ___
+	RenderSprites:
+		Image: cahse04
 
 cahse05:
 	Inherits: ^CivBuilding
@@ -81,6 +121,16 @@ cahse05:
 	Building:
 		Dimensions: 1,2
 		Footprint: x x
+	SpawnActorOnDeath:
+		Actor: cahse05.rubble
+
+cahse05.rubble:
+	Inherits: ^Rubble
+	Building:
+		Dimensions: 1,2
+		Footprint: _ _
+	RenderSprites:
+		Image: cahse05
 
 cahse06:
 	Inherits: ^CivBuilding
@@ -91,6 +141,16 @@ cahse06:
 	Building:
 		Dimensions: 2,1
 		Footprint: xx
+	SpawnActorOnDeath:
+		Actor: cahse06.rubble
+
+cahse06.rubble:
+	Inherits: ^Rubble
+	Building:
+		Dimensions: 2,1
+		Footprint: __
+	RenderSprites:
+		Image: cahse06
 
 cahse07:
 	Inherits: ^CivBuilding
@@ -101,6 +161,16 @@ cahse07:
 	Building:
 		Dimensions: 2,3
 		Footprint: xx xx xx
+	SpawnActorOnDeath:
+		Actor: cahse07.rubble
+
+cahse07.rubble:
+	Inherits: ^Rubble
+	Building:
+		Dimensions: 2,3
+		Footprint: __ __ __
+	RenderSprites:
+		Image: cahse07
 
 cawt01:
 	Inherits: ^CivBuilding
@@ -112,9 +182,6 @@ cawt01:
 		Range: 6c0
 	Health:
 		HP: 400
-	Building:
-		Dimensions: 1,1
-		Footprint: x
 
 cats01:
 	Inherits: ^CivBuilding
@@ -144,7 +211,6 @@ cabarn02:
 
 cawash01:
 	Inherits: ^CivBuilding
-	Selectable:
 	Building:
 		Footprint: xxxx xxxx xxxx xxxx
 		Dimensions: 4, 4
@@ -156,10 +222,19 @@ cawash01:
 		Type: Concrete
 	RevealsShroud:
 		Range: 6c0
+	SpawnActorOnDeath:
+		Actor: cawash01.rubble
+
+cawash01.rubble:
+	Inherits: ^Rubble
+	Building:
+		Footprint: ____ ____ ____ ____
+		Dimensions: 4, 4
+	RenderSprites:
+		Image: cawash01
 
 cawash02:
 	Inherits: ^CivBuilding
-	Selectable:
 	Building:
 		Footprint: xxxx xxxx xxxx
 		Dimensions: 4, 3
@@ -169,10 +244,19 @@ cawash02:
 		Type: Steel
 	RevealsShroud:
 		Range: 6c0
+	SpawnActorOnDeath:
+		Actor: cawash02.rubble
+
+cawash02.rubble:
+	Inherits: ^Rubble
+	Building:
+		Footprint: ____ ____ ____
+		Dimensions: 4, 3
+	RenderSprites:
+		Image: cawash02
 
 cawash03:
 	Inherits: ^CivBuilding
-	Selectable:
 	Building:
 		Footprint: xxxx xxxx xxxx
 		Dimensions: 4, 3
@@ -182,10 +266,19 @@ cawash03:
 		Type: Steel
 	RevealsShroud:
 		Range: 6c0
+	SpawnActorOnDeath:
+		Actor: cawash03.rubble
+
+cawash03.rubble:
+	Inherits: ^Rubble
+	Building:
+		Footprint: ____ ____ ____
+		Dimensions: 4, 3
+	RenderSprites:
+		Image: cawash03
 
 cawash04:
 	Inherits: ^CivBuilding
-	Selectable:
 	Building:
 		Footprint: xxxx xxxx xxxx xxxx
 		Dimensions: 4, 4
@@ -195,10 +288,19 @@ cawash04:
 		Type: Steel
 	RevealsShroud:
 		Range: 6c0
+	SpawnActorOnDeath:
+		Actor: cawash04.rubble
+
+cawash04.rubble:
+	Inherits: ^Rubble
+	Building:
+		Footprint: ____ ____ ____ ____
+		Dimensions: 4, 4
+	RenderSprites:
+		Image: cawash04
 
 cawash05:
 	Inherits: ^CivBuilding
-	Selectable:
 	Building:
 		Footprint: xxxx xxxx
 		Dimensions: 4, 2
@@ -208,6 +310,16 @@ cawash05:
 		Type: Steel
 	RevealsShroud:
 		Range: 6c0
+	SpawnActorOnDeath:
+		Actor: cawash05.rubble
+
+cawash05.rubble:
+	Inherits: ^Rubble
+	Building:
+		Footprint: ____ ____
+		Dimensions: 4, 2
+	RenderSprites:
+		Image: cawash05
 
 cawash06:
 	Inherits: ^CivBuilding
@@ -220,10 +332,19 @@ cawash06:
 	Building:
 		Dimensions: 4,4
 		Footprint: xxxx xxxx xxxx xxxx
+	SpawnActorOnDeath:
+		Actor: cawash06.rubble
+
+cawash06.rubble:
+	Inherits: ^Rubble
+	Building:
+		Dimensions: 4,4
+		Footprint: ____ ____ ____ ____
+	RenderSprites:
+		Image: cawash06
 
 cawash07:
 	Inherits: ^CivBuilding
-	Selectable:
 	Building:
 		Footprint: xxx xxx xxx
 		Dimensions: 3, 3
@@ -233,6 +354,16 @@ cawash07:
 		Type: Steel
 	RevealsShroud:
 		Range: 6c0
+	SpawnActorOnDeath:
+		Actor: cawash07.rubble
+
+cawash07.rubble:
+	Inherits: ^Rubble
+	Building:
+		Footprint: ___ ___ ___
+		Dimensions: 3, 3
+	RenderSprites:
+		Image: cawash07
 
 cawash08:
 	Inherits: ^CivBuilding
@@ -245,10 +376,19 @@ cawash08:
 	Building:
 		Dimensions: 3,4
 		Footprint: xxx xxx xxx xxx
+	SpawnActorOnDeath:
+		Actor: cawash08.rubble
+
+cawash08.rubble:
+	Inherits: ^Rubble
+	Building:
+		Dimensions: 3,4
+		Footprint: ___ ___ ___ ___
+	RenderSprites:
+		Image: cawash08
 
 cawash09:
 	Inherits: ^CivBuilding
-	Selectable:
 	Building:
 		Footprint: xxx xxx xxx
 		Dimensions: 3, 3
@@ -258,10 +398,19 @@ cawash09:
 		Type: Steel
 	RevealsShroud:
 		Range: 6c0
+	SpawnActorOnDeath:
+		Actor: cawash09.rubble
+
+cawash09.rubble:
+	Inherits: ^Rubble
+	Building:
+		Footprint: ___ ___ ___
+		Dimensions: 3, 3
+	RenderSprites:
+		Image: cawash09
 
 cawash10:
 	Inherits: ^CivBuilding
-	Selectable:
 	Building:
 		Footprint: xxxx xxxx xxxx xxxx
 		Dimensions: 4, 4
@@ -271,10 +420,19 @@ cawash10:
 		Type: Steel
 	RevealsShroud:
 		Range: 6c0
+	SpawnActorOnDeath:
+		Actor: cawash10.rubble
+
+cawash10.rubble:
+	Inherits: ^Rubble
+	Building:
+		Footprint: ____ ____ ____ ____
+		Dimensions: 4, 4
+	RenderSprites:
+		Image: cawash10
 
 cawash11:
 	Inherits: ^CivBuilding
-	Selectable:
 	Building:
 		Footprint: xxxx xxxx xxxx xxxx
 		Dimensions: 4, 4
@@ -284,10 +442,19 @@ cawash11:
 		Type: Steel
 	RevealsShroud:
 		Range: 6c0
+	SpawnActorOnDeath:
+		Actor: cawash11.rubble
+
+cawash11.rubble:
+	Inherits: ^Rubble
+	Building:
+		Footprint: ____ ____ ____ ____
+		Dimensions: 4, 4
+	RenderSprites:
+		Image: cawash11
 
 cawsh12:
 	Inherits: ^CivBuilding
-	Selectable:
 	Building:
 		Footprint: xxx xxx xxx
 		Dimensions: 3, 3
@@ -313,6 +480,16 @@ cawsh12:
 		PortOffsets: 384,0,128, 224,-341,128, -224,-341,128, -384,0,128, -224,341,128, 224,341,128
 		PortYaws: 0, 176, 341, 512, 682, 853
 		PortCones: 86, 86, 86, 86, 86, 86
+	SpawnActorOnDeath:
+		Actor: cawsh12.rubble
+
+cawsh12.rubble:
+	Inherits: ^Rubble
+	Building:
+		Footprint: ___ ___ ___
+		Dimensions: 3, 3
+	RenderSprites:
+		Image: cawash12
 
 cawash13:
 	Inherits: ^CivBuilding
@@ -325,6 +502,16 @@ cawash13:
 	Building:
 		Dimensions: 3,4
 		Footprint: xxx xxx xxx xxx
+	SpawnActorOnDeath:
+		Actor: cawash13.rubble
+
+cawash13.rubble:
+	Inherits: ^Rubble
+	Building:
+		Dimensions: 3,4
+		Footprint: ___ ___ ___ ___
+	RenderSprites:
+		Image: cawash13
 
 cawash14:
 	Inherits: ^CivBuilding
@@ -337,6 +524,16 @@ cawash14:
 	Building:
 		Dimensions: 3,3
 		Footprint: xxx xxx xxx
+	SpawnActorOnDeath:
+		Actor: cawash14.rubble
+
+cawash14.rubble:
+	Inherits: ^Rubble
+	Building:
+		Dimensions: 3,3
+		Footprint: ___ ___ ___
+	RenderSprites:
+		Image: cawash14
 
 cawash15:
 	Inherits: ^CivBuilding
@@ -349,6 +546,16 @@ cawash15:
 	Building:
 		Dimensions: 3,4
 		Footprint: xxx xxx xxx xxx
+	SpawnActorOnDeath:
+		Actor: cawash15.rubble
+
+cawash15.rubble:
+	Inherits: ^Rubble
+	Building:
+		Dimensions: 3,3
+		Footprint: ___ ___ ___
+	RenderSprites:
+		Image: cawash15
 
 cawash16:
 	Inherits: ^CivBuilding
@@ -363,6 +570,16 @@ cawash16:
 	Building:
 		Dimensions: 5,3
 		Footprint: xxxxx xxxxx xxxxx
+	SpawnActorOnDeath:
+		Actor: cawash16.rubble
+
+cawash16.rubble:
+	Inherits: ^Rubble
+	Building:
+		Dimensions: 5,3
+		Footprint: _____ _____ _____
+	RenderSprites:
+		Image: cawash16
 
 cawash17:
 	Inherits: ^CivBuilding
@@ -377,6 +594,16 @@ cawash17:
 	Building:
 		Dimensions: 6,4
 		Footprint: xxxxxx xxxxxx xxxxxx xxxxxx
+	SpawnActorOnDeath:
+		Actor: cawash17.rubble
+
+cawash17.rubble:
+	Inherits: ^Rubble
+	Building:
+		Dimensions: 6,4
+		Footprint: ______ ______ ______ ______
+	RenderSprites:
+		Image: cawash17
 
 cawash18:
 	Inherits: ^CivBuilding
@@ -405,10 +632,19 @@ cawash19:
 	Building:
 		Dimensions: 4,4
 		Footprint: xxxx xxxx xxxx xxxx
+	SpawnActorOnDeath:
+		Actor: cawash19.rubble
+
+cawash19.rubble:
+	Inherits: ^Rubble
+	Building:
+		Dimensions: 4,4
+		Footprint: ____ ____ ____ ____
+	RenderSprites:
+		Image: cawash19
 
 canewy01:
 	Inherits: ^CivBuilding
-	Selectable:
 	Building:
 		Footprint: xxxx xxxx xxxx xxxx
 		Dimensions: 4, 4
@@ -418,6 +654,16 @@ canewy01:
 		Type: Steel
 	RevealsShroud:
 		Range: 4c0
+	SpawnActorOnDeath:
+		Actor: canewy01.rubble
+
+canewy01.rubble:
+	Inherits: ^Rubble
+	Building:
+		Dimensions: 4,4
+		Footprint: ____ ____ ____ ____
+	RenderSprites:
+		Image: canewy01
 
 canewy04:
 	Inherits: ^CivBuilding
@@ -432,6 +678,16 @@ canewy04:
 	Building:
 		Dimensions: 3,3
 		Footprint: xxx xxx xxx
+	SpawnActorOnDeath:
+		Actor: canewy04.rubble
+
+canewy04.rubble:
+	Inherits: ^Rubble
+	Building:
+		Dimensions: 3,3
+		Footprint: ___ ___ ___
+	RenderSprites:
+		Image: canewy04
 
 canewy05:
 	Inherits: ^CivBuilding
@@ -446,6 +702,16 @@ canewy05:
 	Building:
 		Dimensions: 2,2
 		Footprint: xx xx
+	SpawnActorOnDeath:
+		Actor: canewy05.rubble
+
+canewy05.rubble:
+	Inherits: ^Rubble
+	Building:
+		Dimensions: 2,2
+		Footprint: __ __
+	RenderSprites:
+		Image: canewy05
 
 canewy06:
 	Inherits: ^CivBuilding
@@ -458,6 +724,16 @@ canewy06:
 	Building:
 		Dimensions: 3,3
 		Footprint: xxx xxx xxx
+	SpawnActorOnDeath:
+		Actor: canewy06.rubble
+
+canewy06.rubble:
+	Inherits: ^Rubble
+	Building:
+		Dimensions: 3,3
+		Footprint: ___ ___ ___
+	RenderSprites:
+		Image: canewy06
 
 canewy07:
 	Inherits: ^CivBuilding
@@ -470,6 +746,16 @@ canewy07:
 	Building:
 		Dimensions: 3,3
 		Footprint: xxx xxx xxx
+	SpawnActorOnDeath:
+		Actor: canewy07.rubble
+
+canewy07.rubble:
+	Inherits: ^Rubble
+	Building:
+		Dimensions: 3,3
+		Footprint: ___ ___ ___
+	RenderSprites:
+		Image: canewy07
 
 canewy08:
 	Inherits: ^CivBuilding
@@ -482,6 +768,16 @@ canewy08:
 	Building:
 		Dimensions: 3,3
 		Footprint: xxx xxx xxx
+	SpawnActorOnDeath:
+		Actor: canewy08.rubble
+
+canewy08.rubble:
+	Inherits: ^Rubble
+	Building:
+		Dimensions: 3,3
+		Footprint: ___ ___ ___
+	RenderSprites:
+		Image: canewy08
 
 canewy10:
 	Inherits: ^CivBuilding
@@ -494,6 +790,16 @@ canewy10:
 	Building:
 		Dimensions: 3,2
 		Footprint: xxx xxx
+	SpawnActorOnDeath:
+		Actor: canewy10.rubble
+
+canewy10.rubble:
+	Inherits: ^Rubble
+	Building:
+		Dimensions: 3,2
+		Footprint: ___ ___
+	RenderSprites:
+		Image: canewy10
 
 canewy11:
 	Inherits: ^CivBuilding
@@ -506,6 +812,16 @@ canewy11:
 	Building:
 		Dimensions: 3,2
 		Footprint: xxx xxx
+	SpawnActorOnDeath:
+		Actor: canewy11.rubble
+
+canewy11.rubble:
+	Inherits: ^Rubble
+	Building:
+		Dimensions: 3,2
+		Footprint: ___ ___
+	RenderSprites:
+		Image: canewy11
 
 canewy12:
 	Inherits: ^CivBuilding
@@ -518,6 +834,16 @@ canewy12:
 	Building:
 		Dimensions: 2,3
 		Footprint: xx xx xx
+	SpawnActorOnDeath:
+		Actor: canewy12.rubble
+
+canewy12.rubble:
+	Inherits: ^Rubble
+	Building:
+		Dimensions: 2,3
+		Footprint: __ __ __
+	RenderSprites:
+		Image: canewy12
 
 canewy13:
 	Inherits: ^CivBuilding
@@ -530,6 +856,16 @@ canewy13:
 	Building:
 		Dimensions: 3,3
 		Footprint: xxx xxx xxx
+	SpawnActorOnDeath:
+		Actor: canewy13.rubble
+
+canewy13.rubble:
+	Inherits: ^Rubble
+	Building:
+		Dimensions: 3,3
+		Footprint: ___ ___ ___
+	RenderSprites:
+		Image: canewy13
 
 canewy14:
 	Inherits: ^CivBuilding
@@ -542,6 +878,16 @@ canewy14:
 	Building:
 		Dimensions: 3,3
 		Footprint: xxx xxx xxx
+	SpawnActorOnDeath:
+		Actor: canewy14.rubble
+
+canewy14.rubble:
+	Inherits: ^Rubble
+	Building:
+		Dimensions: 3,3
+		Footprint: ___ ___ ___
+	RenderSprites:
+		Image: canewy14
 
 canewy15:
 	Inherits: ^CivBuilding
@@ -554,6 +900,16 @@ canewy15:
 	Building:
 		Dimensions: 3,3
 		Footprint: xxx xxx xxx
+	SpawnActorOnDeath:
+		Actor: canewy15.rubble
+
+canewy15.rubble:
+	Inherits: ^Rubble
+	Building:
+		Dimensions: 3,3
+		Footprint: ___ ___ ___
+	RenderSprites:
+		Image: canewy15
 
 canewy16:
 	Inherits: ^CivBuilding
@@ -566,6 +922,16 @@ canewy16:
 	Building:
 		Dimensions: 2,2
 		Footprint: xx xx
+	SpawnActorOnDeath:
+		Actor: canewy16.rubble
+
+canewy16.rubble:
+	Inherits: ^Rubble
+	Building:
+		Dimensions: 2,2
+		Footprint: __ __
+	RenderSprites:
+		Image: canewy16
 
 canewy17:
 	Inherits: ^CivBuilding
@@ -578,6 +944,16 @@ canewy17:
 	Building:
 		Dimensions: 2,2
 		Footprint: xx xx
+	SpawnActorOnDeath:
+		Actor: canewy17.rubble
+
+canewy17.rubble:
+	Inherits: ^Rubble
+	Building:
+		Dimensions: 2,2
+		Footprint: __ __
+	RenderSprites:
+		Image: canewy17
 
 canewy18:
 	Inherits: ^CivBuilding
@@ -590,6 +966,16 @@ canewy18:
 	Building:
 		Dimensions: 2,2
 		Footprint: xx xx
+	SpawnActorOnDeath:
+		Actor: canewy18.rubble
+
+canewy18.rubble:
+	Inherits: ^Rubble
+	Building:
+		Dimensions: 2,2
+		Footprint: __ __
+	RenderSprites:
+		Image: canewy18
 
 canewy20:
 	Inherits: ^CivBuilding
@@ -604,6 +990,16 @@ canewy20:
 	Building:
 		Dimensions: 3,5
 		Footprint: xxx xxx xxx xxx xxx
+	SpawnActorOnDeath:
+		Actor: canewy20.rubble
+
+canewy20.rubble:
+	Inherits: ^Rubble
+	Building:
+		Dimensions: 3,5
+		Footprint: ___ ___ ___ ___ ___
+	RenderSprites:
+		Image: canewy20
 
 canewy21:
 	Inherits: ^CivBuilding
@@ -618,6 +1014,16 @@ canewy21:
 	Building:
 		Dimensions: 5,3
 		Footprint: xxxxx xxxxx xxxxx
+	SpawnActorOnDeath:
+		Actor: canewy21.rubble
+
+canewy21.rubble:
+	Inherits: ^Rubble
+	Building:
+		Dimensions: 5,3
+		Footprint: _____ _____ _____
+	RenderSprites:
+		Image: canewy21
 
 caswst01:
 	Inherits: ^CivBuilding
@@ -632,10 +1038,19 @@ caswst01:
 	Building:
 		Dimensions: 2,3
 		Footprint: xx xx xx
+	SpawnActorOnDeath:
+		Actor: caswst01.rubble
+
+caswst01.rubble:
+	Inherits: ^Rubble
+	Building:
+		Dimensions: 2,3
+		Footprint: __ __ __
+	RenderSprites:
+		Image: caswst01
 
 caarmy01:
 	Inherits: ^CivBuilding
-	Selectable:
 	Building:
 		Footprint: xxx xxx
 		Dimensions: 3, 2
@@ -654,9 +1069,6 @@ caarmy02:
 		Range: 6c0
 	Health:
 		HP: 200
-	Building:
-		Dimensions: 1,1
-		Footprint: x
 
 caarmy03:
 	Inherits: ^CivBuilding
@@ -666,9 +1078,6 @@ caarmy03:
 		Range: 6c0
 	Health:
 		HP: 200
-	Building:
-		Dimensions: 1,1
-		Footprint: x
 
 caarmy04:
 	Inherits: ^CivBuilding
@@ -678,13 +1087,9 @@ caarmy04:
 		Range: 6c0
 	Health:
 		HP: 200
-	Building:
-		Dimensions: 1,1
-		Footprint: x
 
 cawa2a:
 	Inherits: ^CivBuilding
-	Selectable:
 	Valued:
 		Cost: 2000
 	Building:
@@ -696,10 +1101,19 @@ cawa2a:
 		Type: Concrete
 	RevealsShroud:
 		Range: 6c0
+	SpawnActorOnDeath:
+		Actor: cawa2a.rubble
+
+cawa2a.rubble:
+	Inherits: ^Rubble
+	Building:
+		Footprint: ____ ____ ____ ____
+		Dimensions: 4, 4
+	RenderSprites:
+		Image: cawa2a
 
 cawa2b:
 	Inherits: ^CivBuilding
-	Selectable:
 	Valued:
 		Cost: 2000
 	Building:
@@ -711,10 +1125,19 @@ cawa2b:
 		Type: Concrete
 	RevealsShroud:
 		Range: 6c0
+	SpawnActorOnDeath:
+		Actor: cawa2b.rubble
+
+cawa2b.rubble:
+	Inherits: ^Rubble
+	Building:
+		Footprint: ____ ____ ____ ____
+		Dimensions: 4, 4
+	RenderSprites:
+		Image: cawa2b
 
 cawa2c:
 	Inherits: ^CivBuilding
-	Selectable:
 	Valued:
 		Cost: 2000
 	Building:
@@ -726,10 +1149,19 @@ cawa2c:
 		Type: Concrete
 	RevealsShroud:
 		Range: 6c0
+	SpawnActorOnDeath:
+		Actor: cawa2c.rubble
+
+cawa2c.rubble:
+	Inherits: ^Rubble
+	Building:
+		Footprint: ____ ____ ____ ____
+		Dimensions: 4, 4
+	RenderSprites:
+		Image: cawa2c
 
 cawa2d:
 	Inherits: ^CivBuilding
-	Selectable:
 	Valued:
 		Cost: 2000
 	Building:
@@ -741,10 +1173,19 @@ cawa2d:
 		Type: Concrete
 	RevealsShroud:
 		Range: 6c0
+	SpawnActorOnDeath:
+		Actor: cawa2d.rubble
+
+cawa2d.rubble:
+	Inherits: ^Rubble
+	Building:
+		Footprint: ____ ____ ____ ____
+		Dimensions: 4, 4
+	RenderSprites:
+		Image: cawa2d
 
 cafarm01:
 	Inherits: ^CivBuilding
-	Selectable:
 	Building:
 		Footprint: xx xx
 		Dimensions: 2, 2
@@ -757,7 +1198,6 @@ cafarm01:
 
 cafarm02:
 	Inherits: ^CivBuilding
-	Selectable:
 	Building:
 		Footprint: x
 		Dimensions: 1, 1
@@ -765,6 +1205,13 @@ cafarm02:
 		Name: Farm Silo
 	Health:
 		HP: 400
+	SpawnActorOnDeath:
+		Actor: cafarm02.rubble
+
+cafarm02.rubble:
+	Inherits: ^Rubble
+	RenderSprites:
+		Image: cafarm02
 
 cafarm06:
 	Inherits: ^CivBuilding
@@ -779,6 +1226,16 @@ cafarm06:
 	Building:
 		Dimensions: 2,2
 		Footprint: xx xx
+	SpawnActorOnDeath:
+		Actor: cafarm06.rubble
+
+cafarm06.rubble:
+	Inherits: ^Rubble
+	Building:
+		Footprint: __ __
+		Dimensions: 2, 2
+	RenderSprites:
+		Image: cafarm06
 
 causfgl:
 	Inherits: ^Flag
@@ -842,6 +1299,16 @@ cacolo01:
 		Type: Concrete
 	RevealsShroud:
 		Range: 6c0
+	SpawnActorOnDeath:
+		Actor: cacolo01.rubble
+
+cacolo01.rubble:
+	Inherits: ^Rubble
+	Building:
+		Footprint: _____ _____ _____
+		Dimensions: 5, 3
+	RenderSprites:
+		Image: cacolo01
 
 caind01:
 	Inherits: ^CivBuilding
@@ -856,6 +1323,16 @@ caind01:
 		Type: Steel
 	RevealsShroud:
 		Range: 6c0
+	SpawnActorOnDeath:
+		Actor: caind01.rubble
+
+caind01.rubble:
+	Inherits: ^Rubble
+	Building:
+		Footprint: ____ ____ ____ ____
+		Dimensions: 4, 4
+	RenderSprites:
+		Image: caind01
 
 calab:
 	Inherits: ^CivBuilding
@@ -870,6 +1347,16 @@ calab:
 		Type: Steel
 	RevealsShroud:
 		Range: 6c0
+	SpawnActorOnDeath:
+		Actor: calab.rubble
+
+calab.rubble:
+	Inherits: ^Rubble
+	Building:
+		Footprint: ___ ___ ___ ___
+		Dimensions: 3, 4
+	RenderSprites:
+		Image: calab
 
 cagas01:
 	Inherits: ^CivBuilding
@@ -882,6 +1369,16 @@ cagas01:
 		HP: 1000
 	RevealsShroud:
 		Range: 6c0
+	SpawnActorOnDeath:
+		Actor: cagas01.rubble
+
+cagas01.rubble:
+	Inherits: ^Rubble
+	Building:
+		Footprint: ___ ___ ___
+		Dimensions: 3, 3
+	RenderSprites:
+		Image: cagas01
 
 galite:
 	Inherits: ^CivBuilding
@@ -895,9 +1392,6 @@ galite:
 		HP: 600
 	Power:
 		Amount: 0
-	Building:
-		Dimensions: 1,1
-		Footprint: x
 	RenderSprites:
 		Image: galite
 	WithSpriteBody:
@@ -997,6 +1491,16 @@ catech01:
 	Building:
 		Dimensions: 3,3
 		Footprint: xxx xxx xxx
+	SpawnActorOnDeath:
+		Actor: catech01.rubble
+
+catech01.rubble:
+	Inherits: ^Rubble
+	Building:
+		Dimensions: 3,3
+		Footprint: ___ ___ ___
+	RenderSprites:
+		Image: catech01
 
 catexs01:
 	Inherits: ^CivBuilding
@@ -1009,6 +1513,16 @@ catexs01:
 	Building:
 		Dimensions: 2,2
 		Footprint: xx xx
+	SpawnActorOnDeath:
+		Actor: catexs01.rubble
+
+catexs01.rubble:
+	Inherits: ^Rubble
+	Building:
+		Dimensions: 2,2
+		Footprint: xx xx
+	RenderSprites:
+		Image: catexs01
 
 catexs02:
 	Inherits: ^CivBuilding
@@ -1023,6 +1537,16 @@ catexs02:
 	Building:
 		Dimensions: 4,4
 		Footprint: xxxx xxxx xxxx xxxx
+	SpawnActorOnDeath:
+		Actor: catexs02.rubble
+
+catexs02.rubble:
+	Inherits: ^Rubble
+	Building:
+		Dimensions: 4,4
+		Footprint: xxxx xxxx xxxx xxxx
+	RenderSprites:
+		Image: catexs02
 
 catexs03:
 	Inherits: ^CivBuilding
@@ -1035,6 +1559,16 @@ catexs03:
 	Building:
 		Dimensions: 3,3
 		Footprint: xxx xxx xxx
+	SpawnActorOnDeath:
+		Actor: catexs03.rubble
+
+catexs03.rubble:
+	Inherits: ^Rubble
+	Building:
+		Dimensions: 3,3
+		Footprint: ___ ___ ___
+	RenderSprites:
+		Image: catexs03
 
 catexs04:
 	Inherits: ^CivBuilding
@@ -1047,6 +1581,16 @@ catexs04:
 	Building:
 		Dimensions: 3,3
 		Footprint: xxx xxx xxx
+	SpawnActorOnDeath:
+		Actor: catexs04.rubble
+
+catexs04.rubble:
+	Inherits: ^Rubble
+	Building:
+		Dimensions: 3,3
+		Footprint: ___ ___ ___
+	RenderSprites:
+		Image: catexs04
 
 catexs05:
 	Inherits: ^CivBuilding
@@ -1059,6 +1603,16 @@ catexs05:
 	Building:
 		Dimensions: 3,3
 		Footprint: xxx xxx xxx
+	SpawnActorOnDeath:
+		Actor: catexs05.rubble
+
+catexs05.rubble:
+	Inherits: ^Rubble
+	Building:
+		Dimensions: 3,3
+		Footprint: ___ ___ ___
+	RenderSprites:
+		Image: catexs05
 
 catexs06:
 	Inherits: ^CivBuilding
@@ -1071,6 +1625,16 @@ catexs06:
 	Building:
 		Dimensions: 3,3
 		Footprint: xxx xxx xxx
+	SpawnActorOnDeath:
+		Actor: catexs06.rubble
+
+catexs06.rubble:
+	Inherits: ^Rubble
+	Building:
+		Dimensions: 3,3
+		Footprint: ___ ___ ___
+	RenderSprites:
+		Image: catexs06
 
 catexs07:
 	Inherits: ^CivBuilding
@@ -1083,6 +1647,16 @@ catexs07:
 	Building:
 		Dimensions: 3,3
 		Footprint: xxx xxx xxx
+	SpawnActorOnDeath:
+		Actor: catexs07.rubble
+
+catexs07.rubble:
+	Inherits: ^Rubble
+	Building:
+		Dimensions: 3,3
+		Footprint: ___ ___ ___
+	RenderSprites:
+		Image: catexs07
 
 catexs08:
 	Inherits: ^CivBuilding
@@ -1095,6 +1669,16 @@ catexs08:
 	Building:
 		Dimensions: 2,3
 		Footprint: xx xx xx
+	SpawnActorOnDeath:
+		Actor: catexs08.rubble
+
+catexs08.rubble:
+	Inherits: ^Rubble
+	Building:
+		Dimensions: 2,3
+		Footprint: xx xx xx
+	RenderSprites:
+		Image: catexs08
 
 capars01:
 	Inherits: ^CivBuilding
@@ -1109,6 +1693,16 @@ capars01:
 	Building:
 		Dimensions: 4,4
 		Footprint: xxxx xxxx xxxx xxxx
+	SpawnActorOnDeath:
+		Actor: capars01.rubble
+
+capars01.rubble:
+	Inherits: ^Rubble
+	Building:
+		Dimensions: 4,4
+		Footprint: ____ ____ ____ ____
+	RenderSprites:
+		Image: capars01
 
 capars02:
 	Inherits: ^CivBuilding
@@ -1121,6 +1715,16 @@ capars02:
 	Building:
 		Dimensions: 6,4
 		Footprint: xxxxxx xxxxxx xxxxxx xxxxxx
+	SpawnActorOnDeath:
+		Actor: capars02.rubble
+
+capars02.rubble:
+	Inherits: ^Rubble
+	Building:
+		Dimensions: 6,4
+		Footprint: ______ ______ ______ ______
+	RenderSprites:
+		Image: capars02
 
 capars04:
 	Inherits: ^CivBuilding
@@ -1133,6 +1737,16 @@ capars04:
 	Building:
 		Dimensions: 3,3
 		Footprint: xxx xxx xxx
+	SpawnActorOnDeath:
+		Actor: capars04.rubble
+
+capars04.rubble:
+	Inherits: ^Rubble
+	Building:
+		Dimensions: 3,3
+		Footprint: ___ ___ ___
+	RenderSprites:
+		Image: capars04
 
 capars05:
 	Inherits: ^CivBuilding
@@ -1145,6 +1759,16 @@ capars05:
 	Building:
 		Dimensions: 3,3
 		Footprint: xxx xxx xxx
+	SpawnActorOnDeath:
+		Actor: capars05.rubble
+
+capars05.rubble:
+	Inherits: ^Rubble
+	Building:
+		Dimensions: 3,3
+		Footprint: ___ ___ ___
+	RenderSprites:
+		Image: capars05
 
 capars06:
 	Inherits: ^CivBuilding
@@ -1157,6 +1781,16 @@ capars06:
 	Building:
 		Dimensions: 3,3
 		Footprint: xxx xxx xxx
+	SpawnActorOnDeath:
+		Actor: capars06.rubble
+
+capars06.rubble:
+	Inherits: ^Rubble
+	Building:
+		Dimensions: 3,3
+		Footprint: ___ ___ ___
+	RenderSprites:
+		Image: capars06
 
 capars07:
 	Inherits: ^CivBuilding
@@ -1166,9 +1800,6 @@ capars07:
 		Range: 6c0
 	Health:
 		HP: 100
-	Building:
-		Dimensions: 1,1
-		Footprint: x
 
 capars08:
 	Inherits: ^CivBuilding
@@ -1181,6 +1812,16 @@ capars08:
 	Building:
 		Dimensions: 6,4
 		Footprint: xxxxxx xxxxxx xxxxxx xxxxxx
+	SpawnActorOnDeath:
+		Actor: capars08.rubble
+
+capars08.rubble:
+	Inherits: ^Rubble
+	Building:
+		Dimensions: 6,4
+		Footprint: ______ ______ ______ ______
+	RenderSprites:
+		Image: capars08
 
 capars09:
 	Inherits: ^CivBuilding
@@ -1193,6 +1834,16 @@ capars09:
 	Building:
 		Dimensions: 6,4
 		Footprint: xxxxxx xxxxxx xxxxxx xxxxxx
+	SpawnActorOnDeath:
+		Actor: capars09.rubble
+
+capars09.rubble:
+	Inherits: ^Rubble
+	Building:
+		Dimensions: 6,4
+		Footprint: ______ ______ ______ ______
+	RenderSprites:
+		Image: capars09
 
 capars10:
 	Inherits: ^CivBuilding
@@ -1205,6 +1856,16 @@ capars10:
 	Building:
 		Dimensions: 4,3
 		Footprint: xxxx xxxx xxxx
+	SpawnActorOnDeath:
+		Actor: capars10.rubble
+
+capars10.rubble:
+	Inherits: ^Rubble
+	Building:
+		Dimensions: 4,3
+		Footprint: ____ ____ ____
+	RenderSprites:
+		Image: capars10
 
 capars11:
 	Inherits: ^CivBuilding
@@ -1219,6 +1880,16 @@ capars11:
 	Building:
 		Dimensions: 3,4
 		Footprint: xxx xxx xxx xxx
+	SpawnActorOnDeath:
+		Actor: capars11.rubble
+
+capars11.rubble:
+	Inherits: ^Rubble
+	Building:
+		Dimensions: 3,4
+		Footprint: ___ ___ ___ ___
+	RenderSprites:
+		Image: capars11
 
 capars12:
 	Inherits: ^CivBuilding
@@ -1233,6 +1904,16 @@ capars12:
 	Building:
 		Dimensions: 3,5
 		Footprint: xxx xxx xxx xxx xxx
+	SpawnActorOnDeath:
+		Actor: capars12.rubble
+
+capars12.rubble:
+	Inherits: ^Rubble
+	Building:
+		Dimensions: 3,5
+		Footprint: ___ ___ ___ ___ ___
+	RenderSprites:
+		Image: capars12
 
 capars13:
 	Inherits: ^CivBuilding
@@ -1247,6 +1928,16 @@ capars13:
 	Building:
 		Dimensions: 3,4
 		Footprint: xxx xxx xxx xxx
+	SpawnActorOnDeath:
+		Actor: capars13.rubble
+
+capars13.rubble:
+	Inherits: ^Rubble
+	Building:
+		Dimensions: 3,4
+		Footprint: ___ ___ ___ ___
+	RenderSprites:
+		Image: capars13
 
 capars14:
 	Inherits: ^CivBuilding
@@ -1261,6 +1952,16 @@ capars14:
 	Building:
 		Dimensions: 4,3
 		Footprint: xxxx xxxx xxxx
+	SpawnActorOnDeath:
+		Actor: capars14.rubble
+
+capars14.rubble:
+	Inherits: ^Rubble
+	Building:
+		Dimensions: 4,3
+		Footprint: ____ ____ ____
+	RenderSprites:
+		Image: capars14
 
 cafrma:
 	Inherits: ^CivBuilding
@@ -1282,9 +1983,6 @@ cafrmb:
 		Range: 4c0
 	Health:
 		HP: 50
-	Building:
-		Dimensions: 1,1
-		Footprint: x
 
 caprs03:
 	Inherits: ^CivBuilding
@@ -1299,6 +1997,16 @@ caprs03:
 	Building:
 		Dimensions: 6,4
 		Footprint: xxxxxx xxxxxx xxxxxx xxxxxx
+	SpawnActorOnDeath:
+		Actor: caprs03.rubble
+
+caprs03.rubble:
+	Inherits: ^Rubble
+	Building:
+		Dimensions: 6,4
+		Footprint: ______ ______ ______ ______
+	RenderSprites:
+		Image: caprs03
 
 cagard01:
 	Inherits: ^CivBuilding
@@ -1310,9 +2018,6 @@ cagard01:
 		Range: 6c0
 	Health:
 		HP: 100
-	Building:
-		Dimensions: 1,1
-		Footprint: x
 
 carus01:
 	Inherits: ^CivBuilding
@@ -1327,6 +2032,54 @@ carus01:
 	Building:
 		Dimensions: 4,4
 		Footprint: xxxx xxxx xxxx xxxx
+	SpawnActorOnDeath:
+		Actor: carus01.rubble
+
+carus01.rubble:
+	Inherits: ^Rubble
+	Building:
+		Dimensions: 4,4
+		Footprint: ____ ____ ____ ____
+	RenderSprites:
+		Image: carus01
+
+carus02a:
+	Inherits: ^CivBuilding
+	Armor:
+		Type: concrete
+	Health:
+		HP: 800
+	SpawnActorOnDeath:
+		Actor: carus02a.rubble
+	EditorTilesetFilter:
+		RequireTilesets: SNOW
+
+carus02a.rubble:
+	Inherits: ^Rubble
+	Building:
+		Dimensions: 1,1
+		Footprint: _
+	RenderSprites:
+		Image: carus02a
+	EditorTilesetFilter:
+		RequireTilesets: SNOW
+
+carus02b:
+	Inherits: ^CivBuilding
+	Armor:
+		Type: concrete
+	Health:
+		HP: 500
+	SpawnActorOnDeath:
+		Actor: carus02b.rubble
+
+carus02b.rubble:
+	Inherits: ^Rubble
+	Building:
+		Dimensions: 1,1
+		Footprint: _
+	RenderSprites:
+		Image: carus02b
 
 carus02g:
 	Inherits: ^CivBuilding
@@ -1338,9 +2091,15 @@ carus02g:
 		Range: 6c0
 	Health:
 		HP: 1000
-	Building:
-		Dimensions: 1,1
-		Footprint: x
+	SpawnActorOnDeath:
+		Actor: carus02g.rubble
+	EditorTilesetFilter:
+		RequireTilesets: SNOW
+
+carus02g.rubble:
+	Inherits: ^Rubble
+	RenderSprites:
+		Image: carus02g
 
 carus03:
 	Inherits: ^CivBuilding
@@ -1355,6 +2114,16 @@ carus03:
 	Building:
 		Dimensions: 2,5
 		Footprint: xx xx xx xx xx
+	SpawnActorOnDeath:
+		Actor: carus03.rubble
+
+carus03.rubble:
+	Inherits: ^Rubble
+	Building:
+		Dimensions: 2,5
+		Footprint: __ __ __ __ __
+	RenderSprites:
+		Image: carus03
 
 carus04:
 	Inherits: ^CivBuilding
@@ -1367,6 +2136,16 @@ carus04:
 	Building:
 		Dimensions: 4,4
 		Footprint: xxxx xxxx xxxx xxxx
+	SpawnActorOnDeath:
+		Actor: carus04.rubble
+
+carus04.rubble:
+	Inherits: ^Rubble
+	Building:
+		Dimensions: 4,4
+		Footprint: ____ ____ ____ ____
+	RenderSprites:
+		Image: carus04
 
 carus05:
 	Inherits: ^CivBuilding
@@ -1379,6 +2158,16 @@ carus05:
 	Building:
 		Dimensions: 4,4
 		Footprint: xxxx xxxx xxxx xxxx
+	SpawnActorOnDeath:
+		Actor: carus05.rubble
+
+carus05.rubble:
+	Inherits: ^Rubble
+	Building:
+		Dimensions: 4,4
+		Footprint: ____ ____ ____ ____
+	RenderSprites:
+		Image: carus05
 
 carus06:
 	Inherits: ^CivBuilding
@@ -1391,6 +2180,16 @@ carus06:
 	Building:
 		Dimensions: 4,4
 		Footprint: xxxx xxxx xxxx xxxx
+	SpawnActorOnDeath:
+		Actor: carus06.rubble
+
+carus06.rubble:
+	Inherits: ^Rubble
+	Building:
+		Dimensions: 4,4
+		Footprint: ____ ____ ____ ____
+	RenderSprites:
+		Image: carus06
 
 carus08:
 	Inherits: ^CivBuilding
@@ -1400,9 +2199,13 @@ carus08:
 		Range: 6c0
 	Health:
 		HP: 1000
-	Building:
-		Dimensions: 1,1
-		Footprint: x
+	SpawnActorOnDeath:
+		Actor: carus08.rubble
+
+carus08.rubble:
+	Inherits: ^Rubble
+	RenderSprites:
+		Image: carus08
 
 carus09:
 	Inherits: ^CivBuilding
@@ -1415,6 +2218,16 @@ carus09:
 	Building:
 		Dimensions: 2,1
 		Footprint: xx
+	SpawnActorOnDeath:
+		Actor: carus09.rubble
+
+carus09.rubble:
+	Inherits: ^Rubble
+	Building:
+		Dimensions: 2,1
+		Footprint: __
+	RenderSprites:
+		Image: carus09
 
 carus10:
 	Inherits: ^CivBuilding
@@ -1427,6 +2240,16 @@ carus10:
 	Building:
 		Dimensions: 1,2
 		Footprint: x x
+	SpawnActorOnDeath:
+		Actor: carus10.rubble
+
+carus10.rubble:
+	Inherits: ^Rubble
+	Building:
+		Dimensions: 1,2
+		Footprint: _ _
+	RenderSprites:
+		Image: carus10
 
 carus11:
 	Inherits: ^CivBuilding
@@ -1439,6 +2262,16 @@ carus11:
 	Building:
 		Dimensions: 2,1
 		Footprint: xx
+	SpawnActorOnDeath:
+		Actor: carus11.rubble
+
+carus11.rubble:
+	Inherits: ^Rubble
+	Building:
+		Dimensions: 2,1
+		Footprint: __
+	RenderSprites:
+		Image: carus11
 
 camiam01:
 	Inherits: ^CivBuilding
@@ -1451,6 +2284,16 @@ camiam01:
 	Building:
 		Dimensions: 4,2
 		Footprint: xxxx xxxx
+	SpawnActorOnDeath:
+		Actor: camiam01.rubble
+
+camiam01.rubble:
+	Inherits: ^Rubble
+	Building:
+		Dimensions: 4,2
+		Footprint: ____ ____
+	RenderSprites:
+		Image: camiam01
 
 camiam02:
 	Inherits: ^CivBuilding
@@ -1463,6 +2306,16 @@ camiam02:
 	Building:
 		Dimensions: 4,2
 		Footprint: xxxx xxxx
+	SpawnActorOnDeath:
+		Actor: camiam02.rubble
+
+camiam02.rubble:
+	Inherits: ^Rubble
+	Building:
+		Dimensions: 4,2
+		Footprint: ____ ____
+	RenderSprites:
+		Image: camiam02
 
 camiam03:
 	Inherits: ^CivBuilding
@@ -1475,6 +2328,16 @@ camiam03:
 	Building:
 		Dimensions: 2,3
 		Footprint: xx xx xx
+	SpawnActorOnDeath:
+		Actor: camiam03.rubble
+
+camiam03.rubble:
+	Inherits: ^Rubble
+	Building:
+		Dimensions: 2,3
+		Footprint: __ __ __
+	RenderSprites:
+		Image: camiam03
 
 camiam04:
 	Inherits: ^CivBuilding
@@ -1484,9 +2347,6 @@ camiam04:
 		Range: 6c0
 	Health:
 		HP: 200
-	Building:
-		Dimensions: 1,1
-		Footprint: x
 
 camiam05:
 	Inherits: ^CivBuilding
@@ -1499,6 +2359,16 @@ camiam05:
 	Building:
 		Dimensions: 3,4
 		Footprint: xxx xxx xxx xxx
+	SpawnActorOnDeath:
+		Actor: camiam05.rubble
+
+camiam05.rubble:
+	Inherits: ^Rubble
+	Building:
+		Dimensions: 3,4
+		Footprint: ___ ___ ___ ___
+	RenderSprites:
+		Image: camiam05
 
 camiam06:
 	Inherits: ^CivBuilding
@@ -1511,6 +2381,16 @@ camiam06:
 	Building:
 		Dimensions: 4,4
 		Footprint: xxxx xxxx xxxx xxxx
+	SpawnActorOnDeath:
+		Actor: camiam06.rubble
+
+camiam06.rubble:
+	Inherits: ^Rubble
+	Building:
+		Dimensions: 4,4
+		Footprint: ____ ____ ____ ____
+	RenderSprites:
+		Image: camiam06
 
 camiam07:
 	Inherits: ^CivBuilding
@@ -1523,6 +2403,16 @@ camiam07:
 	Building:
 		Dimensions: 4,4
 		Footprint: xxxx xxxx xxxx xxxx
+	SpawnActorOnDeath:
+		Actor: camiam07.rubble
+
+camiam07.rubble:
+	Inherits: ^Rubble
+	Building:
+		Dimensions: 4,4
+		Footprint: ____ ____ ____ ____
+	RenderSprites:
+		Image: camiam07
 
 camiam08:
 	Inherits: ^CivBuilding
@@ -1537,6 +2427,16 @@ camiam08:
 	Building:
 		Dimensions: 3,1
 		Footprint: xxx
+	SpawnActorOnDeath:
+		Actor: camiam08.rubble
+
+camiam08.rubble:
+	Inherits: ^Rubble
+	Building:
+		Dimensions: 3,1
+		Footprint: ___
+	RenderSprites:
+		Image: camiam08
 
 canwy05:
 	Inherits: ^CivBuilding
@@ -1549,6 +2449,16 @@ canwy05:
 	Building:
 		Dimensions: 4,4
 		Footprint: xxxx xxxx xxxx xxxx
+	SpawnActorOnDeath:
+		Actor: canwy05.rubble
+
+canwy05.rubble:
+	Inherits: ^Rubble
+	Building:
+		Dimensions: 4,4
+		Footprint: ____ ____ ____ ____
+	RenderSprites:
+		Image: canwy05
 
 canwy09:
 	Inherits: ^CivBuilding
@@ -1561,6 +2471,16 @@ canwy09:
 	Building:
 		Dimensions: 2,3
 		Footprint: xx xx xx
+	SpawnActorOnDeath:
+		Actor: canwy09.rubble
+
+canwy09.rubble:
+	Inherits: ^Rubble
+	Building:
+		Dimensions: 2,3
+		Footprint: __ __ __
+	RenderSprites:
+		Image: canwy09
 
 canwy22:
 	Inherits: ^CivBuilding
@@ -1573,6 +2493,16 @@ canwy22:
 	Building:
 		Dimensions: 3,3
 		Footprint: xxx xxx xxx
+	SpawnActorOnDeath:
+		Actor: canwy22.rubble
+
+canwy22.rubble:
+	Inherits: ^Rubble
+	Building:
+		Dimensions: 3,3
+		Footprint: ___ ___ ___
+	RenderSprites:
+		Image: canwy22
 
 canwy23:
 	Inherits: ^CivBuilding
@@ -1585,6 +2515,16 @@ canwy23:
 	Building:
 		Dimensions: 3,2
 		Footprint: xxx xxx
+	SpawnActorOnDeath:
+		Actor: canwy23.rubble
+
+canwy23.rubble:
+	Inherits: ^Rubble
+	Building:
+		Dimensions: 3,2
+		Footprint: ___ ___
+	RenderSprites:
+		Image: canwy23
 
 canwy24:
 	Inherits: ^CivBuilding
@@ -1597,6 +2537,16 @@ canwy24:
 	Building:
 		Dimensions: 3,3
 		Footprint: xxx xxx xxx
+	SpawnActorOnDeath:
+		Actor: canwy24.rubble
+
+canwy24.rubble:
+	Inherits: ^Rubble
+	Building:
+		Dimensions: 3,3
+		Footprint: ___ ___ ___
+	RenderSprites:
+		Image: canwy24
 
 canwy25:
 	Inherits: ^CivBuilding
@@ -1609,6 +2559,16 @@ canwy25:
 	Building:
 		Dimensions: 3,3
 		Footprint: xxx xxx xxx
+	SpawnActorOnDeath:
+		Actor: canwy25.rubble
+
+canwy25.rubble:
+	Inherits: ^Rubble
+	Building:
+		Dimensions: 3,3
+		Footprint: ___ ___ ___
+	RenderSprites:
+		Image: canwy25
 
 canwy26:
 	Inherits: ^CivBuilding
@@ -1621,6 +2581,16 @@ canwy26:
 	Building:
 		Dimensions: 5,3
 		Footprint: xxxxx xxxxx xxxxx
+	SpawnActorOnDeath:
+		Actor: canwy26.rubble
+
+canwy26.rubble:
+	Inherits: ^Rubble
+	Building:
+		Dimensions: 5,3
+		Footprint: _____ _____ _____
+	RenderSprites:
+		Image: canwy26
 
 camex01:
 	Inherits: ^CivBuilding
@@ -1635,6 +2605,16 @@ camex01:
 	Building:
 		Dimensions: 3,2
 		Footprint: xxx xxx
+	SpawnActorOnDeath:
+		Actor: camex01.rubble
+
+camex01.rubble:
+	Inherits: ^Rubble
+	Building:
+		Dimensions: 3,2
+		Footprint: ___ ___
+	RenderSprites:
+		Image: camex01
 
 camex02:
 	Inherits: ^CivBuilding
@@ -1649,6 +2629,16 @@ camex02:
 	Building:
 		Dimensions: 6,4
 		Footprint: xxxxxx xxxxxx xxxxxx xxxxxx
+	SpawnActorOnDeath:
+		Actor: camex02.rubble
+
+camex02.rubble:
+	Inherits: ^Rubble
+	Building:
+		Dimensions: 6,4
+		Footprint: ______ ______ ______ ______
+	RenderSprites:
+		Image: camex02
 
 camex03:
 	Inherits: ^CivBuilding
@@ -1663,6 +2653,16 @@ camex03:
 	Building:
 		Dimensions: 3,3
 		Footprint: xxx xxx xxx
+	SpawnActorOnDeath:
+		Actor: camex03.rubble
+
+camex03.rubble:
+	Inherits: ^Rubble
+	Building:
+		Dimensions: 3,3
+		Footprint: ___ ___ ___
+	RenderSprites:
+		Image: camex03
 
 camex04:
 	Inherits: ^CivBuilding
@@ -1677,6 +2677,16 @@ camex04:
 	Building:
 		Dimensions: 4,4
 		Footprint: xxxx xxxx xxxx xxxx
+	SpawnActorOnDeath:
+		Actor: camex04.rubble
+
+camex04.rubble:
+	Inherits: ^Rubble
+	Building:
+		Dimensions: 4,4
+		Footprint: ____ ____ ____ ____
+	RenderSprites:
+		Image: camex04
 
 camex05:
 	Inherits: ^CivBuilding
@@ -1691,6 +2701,16 @@ camex05:
 	Building:
 		Dimensions: 2,2
 		Footprint: xx xx
+	SpawnActorOnDeath:
+		Actor: camex05.rubble
+
+camex05.rubble:
+	Inherits: ^Rubble
+	Building:
+		Dimensions: 2,2
+		Footprint: __ __
+	RenderSprites:
+		Image: camex05
 
 caeur1:
 	Inherits: ^CivBuilding
@@ -1703,6 +2723,16 @@ caeur1:
 	Building:
 		Dimensions: 2,2
 		Footprint: xx xx
+	SpawnActorOnDeath:
+		Actor: caeur1.rubble
+
+caeur1.rubble:
+	Inherits: ^Rubble
+	Building:
+		Dimensions: 2,2
+		Footprint: __ __
+	RenderSprites:
+		Image: caeur1
 
 caeur2:
 	Inherits: ^CivBuilding
@@ -1715,6 +2745,16 @@ caeur2:
 	Building:
 		Dimensions: 2,2
 		Footprint: xx xx
+	SpawnActorOnDeath:
+		Actor: caeur2.rubble
+
+caeur2.rubble:
+	Inherits: ^Rubble
+	Building:
+		Dimensions: 2,2
+		Footprint: __ __
+	RenderSprites:
+		Image: caeur2
 
 caeur04:
 	Inherits: ^CivBuilding
@@ -1727,6 +2767,16 @@ caeur04:
 	Building:
 		Dimensions: 4,3
 		Footprint: xxxx xxxx xxxx
+	SpawnActorOnDeath:
+		Actor: caeur04.rubble
+
+caeur04.rubble:
+	Inherits: ^Rubble
+	Building:
+		Dimensions: 4,3
+		Footprint: ____ ____ ____
+	RenderSprites:
+		Image: caeur04
 
 cachig01:
 	Inherits: ^CivBuilding
@@ -1739,6 +2789,16 @@ cachig01:
 	Building:
 		Dimensions: 3,2
 		Footprint: xxx xxx
+	SpawnActorOnDeath:
+		Actor: cachig01.rubble
+
+cachig01.rubble:
+	Inherits: ^Rubble
+	Building:
+		Dimensions: 3,2
+		Footprint: ___ ___
+	RenderSprites:
+		Image: cachig01
 
 cachig02:
 	Inherits: ^CivBuilding
@@ -1751,6 +2811,16 @@ cachig02:
 	Building:
 		Dimensions: 2,3
 		Footprint: xx xx xx
+	SpawnActorOnDeath:
+		Actor: cachig02.rubble
+
+cachig02.rubble:
+	Inherits: ^Rubble
+	Building:
+		Dimensions: 2,3
+		Footprint: __ __ __
+	RenderSprites:
+		Image: cachig02
 
 cachig03:
 	Inherits: ^CivBuilding
@@ -1763,6 +2833,16 @@ cachig03:
 	Building:
 		Dimensions: 3,2
 		Footprint: xxx xxx
+	SpawnActorOnDeath:
+		Actor: cachig03.rubble
+
+cachig03.rubble:
+	Inherits: ^Rubble
+	Building:
+		Dimensions: 3,2
+		Footprint: ___ ___
+	RenderSprites:
+		Image: cachig03
 
 cachig04:
 	Inherits: ^CivBuilding
@@ -1777,6 +2857,16 @@ cachig04:
 	Building:
 		Dimensions: 2,2
 		Footprint: xx xx
+	SpawnActorOnDeath:
+		Actor: cachig04.rubble
+
+cachig04.rubble:
+	Inherits: ^Rubble
+	Building:
+		Dimensions: 2,2
+		Footprint: __ __
+	RenderSprites:
+		Image: cachig04
 
 cachig05:
 	Inherits: ^CivBuilding
@@ -1791,6 +2881,16 @@ cachig05:
 	Building:
 		Dimensions: 4,4
 		Footprint: xxxx xxxx xxxx xxxx
+	SpawnActorOnDeath:
+		Actor: cachig05.rubble
+
+cachig05.rubble:
+	Inherits: ^Rubble
+	Building:
+		Dimensions: 4,4
+		Footprint: ____ ____ ____ ____
+	RenderSprites:
+		Image: cachig05
 
 cachig06:
 	Inherits: ^CivBuilding
@@ -1803,6 +2903,16 @@ cachig06:
 	Building:
 		Dimensions: 2,2
 		Footprint: xx xx
+	SpawnActorOnDeath:
+		Actor: cachig06.rubble
+
+cachig06.rubble:
+	Inherits: ^Rubble
+	Building:
+		Dimensions: 2,2
+		Footprint: __ __
+	RenderSprites:
+		Image: cachig06
 
 castl01:
 	Inherits: ^CivBuilding
@@ -1815,6 +2925,16 @@ castl01:
 	Building:
 		Dimensions: 4,4
 		Footprint: xxxx xxxx xxxx xxxx
+	SpawnActorOnDeath:
+		Actor: castl01.rubble
+
+castl01.rubble:
+	Inherits: ^Rubble
+	Building:
+		Dimensions: 4,4
+		Footprint: ____ ____ ____ ____
+	RenderSprites:
+		Image: castl01
 
 castl02:
 	Inherits: ^CivBuilding
@@ -1827,6 +2947,16 @@ castl02:
 	Building:
 		Dimensions: 4,4
 		Footprint: xxxx xxxx xxxx xxxx
+	SpawnActorOnDeath:
+		Actor: castl02.rubble
+
+castl02.rubble:
+	Inherits: ^Rubble
+	Building:
+		Dimensions: 4,4
+		Footprint: ____ ____ ____ ____
+	RenderSprites:
+		Image: castl02
 
 castl03:
 	Inherits: ^CivBuilding
@@ -1839,6 +2969,16 @@ castl03:
 	Building:
 		Dimensions: 4,4
 		Footprint: xxxx xxxx xxxx xxxx
+	SpawnActorOnDeath:
+		Actor: castl03.rubble
+
+castl03.rubble:
+	Inherits: ^Rubble
+	Building:
+		Dimensions: 4,4
+		Footprint: ____ ____ ____ ____
+	RenderSprites:
+		Image: castl03
 
 castl04:
 	Inherits: ^CivBuilding
@@ -1851,6 +2991,16 @@ castl04:
 	Building:
 		Dimensions: 2,6
 		Footprint: xx xx xx xx xx xx
+	SpawnActorOnDeath:
+		Actor: castl04.rubble
+
+castl04.rubble:
+	Inherits: ^Rubble
+	Building:
+		Dimensions: 2,6
+		Footprint: __ __ __ __ __ __
+	RenderSprites:
+		Image: castl04
 
 castl05a:
 	Inherits: ^CivBuilding
@@ -1865,6 +3015,16 @@ castl05a:
 	Building:
 		Dimensions: 4,4
 		Footprint: xxxx xxxx xxxx xxxx
+	SpawnActorOnDeath:
+		Actor: castl05a.rubble
+
+castl05a.rubble:
+	Inherits: ^Rubble
+	Building:
+		Dimensions: 4,4
+		Footprint: ____ ____ ____ ____
+	RenderSprites:
+		Image: castl05a
 
 castl05b:
 	Inherits: ^CivBuilding
@@ -1879,6 +3039,16 @@ castl05b:
 	Building:
 		Dimensions: 4,4
 		Footprint: xxxx xxxx xxxx xxxx
+	SpawnActorOnDeath:
+		Actor: castl05b.rubble
+
+castl05b.rubble:
+	Inherits: ^Rubble
+	Building:
+		Dimensions: 4,4
+		Footprint: ____ ____ ____ ____
+	RenderSprites:
+		Image: castl05b
 
 castl05c:
 	Inherits: ^CivBuilding
@@ -1893,6 +3063,16 @@ castl05c:
 	Building:
 		Dimensions: 4,4
 		Footprint: xxxx xxxx xxxx xxxx
+	SpawnActorOnDeath:
+		Actor: castl05c.rubble
+
+castl05c.rubble:
+	Inherits: ^Rubble
+	Building:
+		Dimensions: 4,4
+		Footprint: ____ ____ ____ ____
+	RenderSprites:
+		Image: castl05c
 
 castl05d:
 	Inherits: ^CivBuilding
@@ -1907,6 +3087,16 @@ castl05d:
 	Building:
 		Dimensions: 4,4
 		Footprint: xxxx xxxx xxxx xxxx
+	SpawnActorOnDeath:
+		Actor: castl05d.rubble
+
+castl05d.rubble:
+	Inherits: ^Rubble
+	Building:
+		Dimensions: 4,4
+		Footprint: ____ ____ ____ ____
+	RenderSprites:
+		Image: castl05d
 
 castl05e:
 	Inherits: ^CivBuilding
@@ -1921,6 +3111,16 @@ castl05e:
 	Building:
 		Dimensions: 4,4
 		Footprint: xxxx xxxx xxxx xxxx
+	SpawnActorOnDeath:
+		Actor: castl05e.rubble
+
+castl05e.rubble:
+	Inherits: ^Rubble
+	Building:
+		Dimensions: 4,4
+		Footprint: ____ ____ ____ ____
+	RenderSprites:
+		Image: castl05e
 
 castl05f:
 	Inherits: ^CivBuilding
@@ -1935,6 +3135,16 @@ castl05f:
 	Building:
 		Dimensions: 4,4
 		Footprint: xxxx xxxx xxxx xxxx
+	SpawnActorOnDeath:
+		Actor: castl05f.rubble
+
+castl05f.rubble:
+	Inherits: ^Rubble
+	Building:
+		Dimensions: 4,4
+		Footprint: ____ ____ ____ ____
+	RenderSprites:
+		Image: castl05f
 
 castl05g:
 	Inherits: ^CivBuilding
@@ -1949,6 +3159,16 @@ castl05g:
 	Building:
 		Dimensions: 4,4
 		Footprint: xxxx xxxx xxxx xxxx
+	SpawnActorOnDeath:
+		Actor: castl05g.rubble
+
+castl05g.rubble:
+	Inherits: ^Rubble
+	Building:
+		Dimensions: 4,4
+		Footprint: ____ ____ ____ ____
+	RenderSprites:
+		Image: castl05g
 
 castl05h:
 	Inherits: ^CivBuilding
@@ -1963,6 +3183,16 @@ castl05h:
 	Building:
 		Dimensions: 4,4
 		Footprint: xxxx xxxx xxxx xxxx
+	SpawnActorOnDeath:
+		Actor: castl05h.rubble
+
+castl05h.rubble:
+	Inherits: ^Rubble
+	Building:
+		Dimensions: 4,4
+		Footprint: ____ ____ ____ ____
+	RenderSprites:
+		Image: castl05h
 
 camsc07:
 	Inherits: ^CivBuilding
@@ -1986,9 +3216,6 @@ camsc08:
 		Range: 6c0
 	Health:
 		HP: 200
-	Building:
-		Dimensions: 1,1
-		Footprint: x
 
 camsc09:
 	Inherits: ^CivBuilding
@@ -1998,9 +3225,6 @@ camsc09:
 		Range: 6c0
 	Health:
 		HP: 200
-	Building:
-		Dimensions: 1,1
-		Footprint: x
 
 camsc10:
 	Inherits: ^CivBuilding
@@ -2013,6 +3237,16 @@ camsc10:
 	Building:
 		Dimensions: 4,4
 		Footprint: xxxx xxxx xxxx xxxx
+	SpawnActorOnDeath:
+		Actor: camsc10.rubble
+
+camsc10.rubble:
+	Inherits: ^Rubble
+	Building:
+		Dimensions: 4,4
+		Footprint: ____ ____ ____ ____
+	RenderSprites:
+		Image: camsc10
 
 cabunk01:
 	Inherits: ^CivBuilding
@@ -2027,6 +3261,16 @@ cabunk01:
 	Building:
 		Dimensions: 2,2
 		Footprint: xx xx
+	SpawnActorOnDeath:
+		Actor: cabunk01.rubble
+
+cabunk01.rubble:
+	Inherits: ^Rubble
+	Building:
+		Dimensions: 2,2
+		Footprint: __ __
+	RenderSprites:
+		Image: cabunk01
 
 cabunk02:
 	Inherits: ^CivBuilding
@@ -2041,3 +3285,13 @@ cabunk02:
 	Building:
 		Dimensions: 2,2
 		Footprint: xx xx
+	SpawnActorOnDeath:
+		Actor: cabunk02.rubble
+
+cabunk02.rubble:
+	Inherits: ^Rubble
+	Building:
+		Dimensions: 2,2
+		Footprint: __ __
+	RenderSprites:
+		Image: cabunk02
