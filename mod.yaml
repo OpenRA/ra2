@@ -141,7 +141,7 @@ ChromeLayout:
 	ra|chrome/map-chooser.yaml
 	ra|chrome/connection.yaml
 	ra|chrome/replaybrowser.yaml
-	ra|chrome/assetbrowser.yaml
+	ra2|chrome/assetbrowser.yaml
 	ra|chrome/missionbrowser.yaml
 	ra|chrome/confirmation-dialogs.yaml
 	ra|chrome/color-picker.yaml
