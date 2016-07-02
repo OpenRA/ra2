@@ -266,3 +266,9 @@ gagate_a:
 		Start: 10
 		Length: -10
 		ShadowStart: 30
+
+spkr01:
+	Defaults:
+		AddExtension: false
+	idle: spkr01.urb
+		ShadowStart: 1
