@@ -424,14 +424,74 @@ gayard:
 		Type: Concrete
 	RevealsShroud:
 		Range: 10c0
-	Exit@1:
-		SpawnOffset: 0,-113,0
-		Facing: 96
-		ExitCell: 5,4
-	Exit@2:
+	# X -2 column
+	Exit@n2_n2:
+		ExitCell: -2,-2
+	Exit@n2_n1:
+		ExitCell: -2,-1
+	Exit@n2_0:
+		ExitCell: -2,0
+	Exit@n2_1:
+		ExitCell: -2,1
+	Exit@n2_2:
+		ExitCell: -2,2
+	Exit@n2_3:
+		ExitCell: -2,3
+	Exit@n2_4:
+		ExitCell: -2,4
+	Exit@n2_5:
+		ExitCell: -2,5
+	# X -1 column
+	Exit@n1_n2:
+		ExitCell: -1,-2
+	Exit@n1_5:
+		ExitCell: -1,5
+	# X 0 column
+	Exit@0_n2:
+		ExitCell: 0,-2
+	Exit@0_5:
+		ExitCell: 0,5
+	# X 1 column
+	Exit@1_n2:
+		ExitCell: 1,-2
+	Exit@1_5:
+		ExitCell: 1,5
+	# X 2 column
+	Exit@2_n2:
+		ExitCell: 2,-2
+	Exit@2_5:
+		ExitCell: 2,5
+	# X 3 column
+	Exit@3_n2:
+		ExitCell: 3,-2
+	Exit@3_5:
+		ExitCell: 3,5
+	# X 4 column
+	Exit@4_n2:
+		ExitCell: 4,-2
+	Exit@4_5:
 		SpawnOffset: 0,-113,0
 		Facing: 160
 		ExitCell: 4,5
+	# X 5 column
+	Exit@5_n2:
+		ExitCell: 5,-2
+	Exit@5_n1:
+		ExitCell: 5,-1
+	Exit@5_0:
+		ExitCell: 5,0
+	Exit@5_1:
+		ExitCell: 5,1
+	Exit@5_2:
+		ExitCell: 5,2
+	Exit@5_3:
+		ExitCell: 5,3
+	Exit@5_4:
+		SpawnOffset: 0,-113,0
+		Facing: 96
+		ExitCell: 5,4
+	Exit@5_5:
+		ExitCell: 5,5
 	Production:
 		Produces: Ship
 	PrimaryBuilding:
