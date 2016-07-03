@@ -195,9 +195,6 @@ Cursors:
 		chronosphere:
 			Start: 357
 			Length: 12
-		chrono-target:
-			Start: 357
-			Length: 12
 		remove-bomb:
 			Start: 369
 		generic-blocked:

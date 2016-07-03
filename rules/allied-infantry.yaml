@@ -447,6 +447,7 @@ cleg:
 		DeployBlockedCursor: chronosphere
 		Voice: Move
 		ChargeDelay: 300
+		TargetCursor: chronosphere
 	Voiced:
 		VoiceSet: ChronoLegionnaireVoice
 	Armament@Temporal:
