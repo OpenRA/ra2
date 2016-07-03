@@ -168,7 +168,7 @@ World:
 		BaseActor: smcv
 	MPStartUnits@lightsoviets:
 		Class: light
-		CLassName: Light Support
+		ClassName: Light Support
 		Factions: soviets, cuba, libya, iraq, russia
 		BaseActor: smcv
 		SupportActors: dog,e2,e2,e2
@@ -176,7 +176,7 @@ World:
 		OuterSupportRadius: 5
 	MPStartUnits@mediumsoviets:
 		Class: medium
-		CLassName: Medium Support
+		ClassName: Medium Support
 		Factions: soviets, cuba, libya, iraq, russia
 		BaseActor: smcv
 		SupportActors: dog,e2,e2,e2,e2,htnk,engineer
@@ -184,7 +184,7 @@ World:
 		OuterSupportRadius: 5
 	MPStartUnits@heavysoviets:
 		Class: heavy
-		CLassName: Heavy Support
+		ClassName: Heavy Support
 		Factions: soviets, cuba, libya, iraq, russia
 		BaseActor: smcv
 		SupportActors: dog,e2,e2,e2,e2,e2,htnk,htnk,htk,engineer
