@@ -154,8 +154,6 @@ snipe:
 		Range: 8c0
 	Armor:
 		Type: None
-	AutoTarget:
-		InitialStance: ReturnFire
 	Armament@primary:
 		Weapon: awp
 	AttackFrontal:
