@@ -137,10 +137,9 @@ gapile:
 	Production:
 		Produces: Infantry
 	PrimaryBuilding:
-	WithDecoration@primary:
+	WithTextDecoration@primary:
 		RequiresSelection: true
-		Image: pips
-		Sequence: tag-primary
+		Text: PRIMARY
 		ReferencePoint: Top
 		ZOffset: 256
 		UpgradeTypes: primary
@@ -154,10 +153,9 @@ gapile:
 		Proxy: barracks.infiltrated
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
-	WithDecoration@primary:
+	WithTextDecoration@primary:
 		RequiresSelection: true
-		Image: pips
-		Sequence: tag-primary
+		Text: PRIMARY
 		ReferencePoint: Top
 		ZOffset: 256
 		UpgradeTypes: primary
@@ -288,19 +286,17 @@ gaairc:
 		Produces: Aircraft
 	ProductionBar:
 	PrimaryBuilding:
-	WithDecoration@primary:
+	WithTextDecoration@primary:
 		RequiresSelection: true
-		Image: pips
-		Sequence: tag-primary
+		Text: PRIMARY
 		ReferencePoint: Top
 		ZOffset: 256
 		UpgradeTypes: primary
 		UpgradeMinEnabledLevel: 1
 	InfiltrateForExploration:
-	WithDecoration@primary:
+	WithTextDecoration@primary:
 		RequiresSelection: true
-		Image: pips
-		Sequence: tag-primary
+		Text: PRIMARY
 		ReferencePoint: Top
 		ZOffset: 256
 		UpgradeTypes: primary
@@ -364,10 +360,9 @@ gaweap:
 	Production:
 		Produces: Vehicle
 	PrimaryBuilding:
-	WithDecoration@primary:
+	WithTextDecoration@primary:
 		RequiresSelection: true
-		Image: pips
-		Sequence: tag-primary
+		Text: PRIMARY
 		ReferencePoint: Top
 		ZOffset: 256
 		UpgradeTypes: primary
@@ -389,10 +384,9 @@ gaweap:
 		Proxy: warfactory.infiltrated
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
-	WithDecoration@primary:
+	WithTextDecoration@primary:
 		RequiresSelection: true
-		Image: pips
-		Sequence: tag-primary
+		Text: PRIMARY
 		ReferencePoint: Top
 		ZOffset: 256
 		UpgradeTypes: primary
@@ -495,10 +489,9 @@ gayard:
 	Production:
 		Produces: Ship
 	PrimaryBuilding:
-	WithDecoration@primary:
+	WithTextDecoration@primary:
 		RequiresSelection: true
-		Image: pips
-		Sequence: tag-primary
+		Text: PRIMARY
 		ReferencePoint: Top
 		ZOffset: 256
 		UpgradeTypes: primary
@@ -520,10 +513,9 @@ gayard:
 		Sequence: repair
 	-EmitInfantryOnSell@allies:
 	-EmitInfantryOnSell@soviets:
-	WithDecoration@primary:
+	WithTextDecoration@primary:
 		RequiresSelection: true
-		Image: pips
-		Sequence: tag-primary
+		Text: PRIMARY
 		ReferencePoint: Top
 		ZOffset: 256
 		UpgradeTypes: primary
