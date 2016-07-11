@@ -47,3 +47,7 @@ josh:
 		DeathTypes:
 			RadiationDeath: 4
 			ElectroDeath: 6
+	-WithDeathAnimation@flames:
+	SpawnActorOnDeath@flames:
+		Actor: FLAMEGUY
+		DeathType: FlameDeath
