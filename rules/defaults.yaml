@@ -432,6 +432,16 @@
 	DeathSounds@radiation:
 		Voice: Die
 	-TakeCover:
+	WithDeathAnimation@effect:
+		DeathSequencePalette: player
+		DeathPaletteIsPlayerPalette: true
+		DeathTypes:
+			RadiationDeath: 1
+			ElectroDeath: 2
+	-SpawnActorOnDeath@flames:
+	WithDeathAnimation@flames:
+		DeathTypes:
+			FlameDeath: 1
 
 ^Vehicle:
 	Inherits@1: ^ExistsInWorld
