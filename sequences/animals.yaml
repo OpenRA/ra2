@@ -108,4 +108,10 @@ josh:
 	die2:
 		Start: 101
 		Length: 15
+	die4: nukedie
+		Length: *
+		Tick: 50
+	die6: electro
+		Length: *
+		Tick: 80
 	icon: xxicon

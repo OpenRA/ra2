@@ -41,3 +41,9 @@ josh:
 		VoiceSet: ChimpanzeeVoice
 	Armament:
 		Weapon: ChimpBite
+	WithDeathAnimation@effect:
+		DeathSequencePalette: effect
+		DeathPaletteIsPlayerPalette: false
+		DeathTypes:
+			RadiationDeath: 4
+			ElectroDeath: 6
