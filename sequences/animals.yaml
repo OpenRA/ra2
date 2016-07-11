@@ -26,16 +26,6 @@ cow:
 		Start: 101
 		Length: 15
 		ShadowStart: 217
-	die5:
-		Start: 101
-		Length: 15
-		ShadowStart: 217
-	die6: electro
-		Length: *
-		Tick: 80
-	die-crushed: death_c
-		Length: 4
-		Tick: 80
 	icon: xxicon
 
 all:
@@ -118,4 +108,10 @@ josh:
 	die2:
 		Start: 101
 		Length: 15
+	die4: nukedie
+		Length: *
+		Tick: 50
+	die6: electro
+		Length: *
+		Tick: 80
 	icon: xxicon
