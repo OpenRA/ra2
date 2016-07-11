@@ -442,6 +442,7 @@
 	WithDeathAnimation@flames:
 		DeathTypes:
 			FlameDeath: 1
+	-Crushable:
 
 ^Vehicle:
 	Inherits@1: ^ExistsInWorld
