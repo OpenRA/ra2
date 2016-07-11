@@ -78,9 +78,6 @@ adog:
 	die4: # todo: copy of die1
 		Start: 87
 		Length: 14
-	die5: # todo: copy of die1
-		Start: 87
-		Length: 14
 	die6: # todo: copy of die1; art is missing
 		Start: 87
 		Length: 14
@@ -456,12 +453,6 @@ jumpjet:
 		Length: *
 		Tick: 50
 		Facings: 1
-	die5: flameguy
-		Start: 48
-		Length: 59
-		Facings: 1
-		Tick: 80
-# TODO: This is just the death sequence; normally flameguy would run a bit around before dying
 	die6: electro
 		Length: *
 		Facings: 1

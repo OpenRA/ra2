@@ -23,9 +23,6 @@ dog:
 	die4: # todo: copy of die1
 		Start: 87
 		Length: 14
-	die5: # todo: copy of die1
-		Start: 87
-		Length: 14
 	die6: # todo: copy of die1; art is missing
 		Start: 87
 		Length: 14
