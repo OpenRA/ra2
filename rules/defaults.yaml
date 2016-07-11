@@ -407,6 +407,32 @@
 	WithInfantryBody:
 		IdleSequences: idle1
 
+^Animal:
+	Inherits: ^Infantry
+	Valued:
+		Cost: 10
+	Armor:
+		Type: None
+	Health:
+		HP: 200
+	Targetable:
+		TargetTypes: Ground
+	RevealsShroud:
+		Range: 2c0
+	Mobile:
+		Speed: 40
+	Selectable:
+		Bounds: 45, 25, 0, -8
+	AttackFrontal:
+		Voice: Attack
+	DeathSounds@burned:
+		Voice: Die
+	DeathSounds@zapped:
+		Voice: Die
+	DeathSounds@radiation:
+		Voice: Die
+	-TakeCover:
+
 ^Vehicle:
 	Inherits@1: ^ExistsInWorld
 	Inherits@2: ^GainsExperience
