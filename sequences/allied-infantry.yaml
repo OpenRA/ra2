@@ -49,8 +49,6 @@ engineer:
 	die6: electro
 		Length: *
 		Tick: 80
-	die-crushed: death_c
-		Length: 4
 	icon: engnicon
 
 adog:
@@ -81,8 +79,6 @@ adog:
 	die6: # todo: copy of die1; art is missing
 		Start: 87
 		Length: 14
-	die-crushed: death_c
-		Length: 4
 	shoot: adogp
 		Length: 1
 		Facings: 64
@@ -151,8 +147,6 @@ e1:
 	die6: electro
 		Length: *
 		Tick: 80
-	die-crushed: death_c
-		Length: 4
 	shoot:
 		Start: 164
 		Length: 6
@@ -210,9 +204,6 @@ snipe:
 	die6: electro
 		Length: *
 		Tick: 80
-	die-crushed: death_c
-		Length: 4
-		Tick: 80
 	shoot:
 		Start: 164
 		Length: 6
@@ -257,9 +248,6 @@ spy:
 		Tick: 50
 	die6: electro
 		Length: *
-		Tick: 80
-	die-crushed: death_c
-		Length: 4
 		Tick: 80
 	shoot:
 		Start: 164
@@ -321,9 +309,6 @@ seal: # TODO: seala on SNOW
 		Tick: 50
 	die6: electro
 		Length: *
-		Tick: 80
-	die-crushed: death_c
-		Length: 4
 		Tick: 80
 	shoot:
 		Start: 164
@@ -391,9 +376,6 @@ tany:
 	die6: electro
 		Length: *
 		Tick: 80
-	die-crushed: death_c
-		Length: 4
-		Tick: 80
 	shoot:
 		Start: 164
 		Length: 6
@@ -455,10 +437,6 @@ jumpjet:
 		Facings: 1
 	die6: electro
 		Length: *
-		Facings: 1
-		Tick: 80
-	die-crushed: death_c
-		Length: 4
 		Facings: 1
 		Tick: 80
 	shoot:
