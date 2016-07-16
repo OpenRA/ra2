@@ -19,6 +19,7 @@ caoild:
 		Offset: 0, -30
 	flag: caoild_f
 		Length: 16
+		ZOffset: 128
 
 caairp:
 	Defaults:
@@ -38,6 +39,7 @@ caairp:
 		Tick: 400
 	flag: caairp_f
 		Length: 16
+		ZOffset: 128
 
 cahosp:
 	Defaults:
@@ -60,6 +62,7 @@ cahosp:
 		Tick: 400
 	flag: cahosp_f
 		Length: 16
+		ZOffset: 128
 
 caoutp:
 	icon: xxicon
