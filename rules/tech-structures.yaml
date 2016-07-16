@@ -20,6 +20,9 @@ caoild:
 		Type: Steel
 	WithIdleOverlay@pump:
 		Sequence: idle-pump
+	WithIdleOverlay@flag:
+		Sequence: flag
+		Offset: 1000,0,0
 	GivesBuildableArea:
 
 caairp:
@@ -85,6 +88,9 @@ cahosp:
 		StartRepairingNotification:
 	RallyPoint:
 	WithIdleOverlay:
+	WithIdleOverlay@flag:
+		Sequence: flag
+		Offset: 0,-500,2520
 
 cathosp:
 	Inherits: cahosp
