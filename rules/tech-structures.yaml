@@ -85,3 +85,10 @@ cahosp:
 		StartRepairingNotification:
 	RallyPoint:
 	WithIdleOverlay:
+
+cathosp:
+	Inherits: cahosp
+	EditorOnlyTooltip:
+		Name: Tech Hospital
+	RenderSprites:
+		Image: cahosp
