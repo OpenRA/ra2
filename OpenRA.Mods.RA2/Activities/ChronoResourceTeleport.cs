@@ -31,8 +31,10 @@ namespace OpenRA.Mods.RA2.Activities
 		{
 			var image = info.Image ?? self.Info.Name;
 
+			var sourcepos = self.CenterPosition;
+
 			if (info.WarpInSequence != null)
-				self.World.AddFrameEndTask(w => w.Add(new SpriteEffect(self.CenterPosition, w, image, info.WarpInSequence, info.Palette)));
+				self.World.AddFrameEndTask(w => w.Add(new SpriteEffect(sourcepos, w, image, info.WarpInSequence, info.Palette)));
 
 			if (info.WarpInSound != null)
 				Game.Sound.Play(info.WarpInSound, self.CenterPosition);
@@ -40,8 +42,10 @@ namespace OpenRA.Mods.RA2.Activities
 			self.Trait<IPositionable>().SetPosition(self, destination);
 			self.Generation++;
 
+			var destinationpos = self.CenterPosition;
+
 			if (info.WarpOutSequence != null)
-				self.World.AddFrameEndTask(w => w.Add(new SpriteEffect(self.CenterPosition, w, image, info.WarpOutSequence, info.Palette)));
+				self.World.AddFrameEndTask(w => w.Add(new SpriteEffect(destinationpos, w, image, info.WarpOutSequence, info.Palette)));
 
 			if (info.WarpOutSound != null)
 				Game.Sound.Play(info.WarpOutSound, self.CenterPosition);
