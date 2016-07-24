@@ -61,8 +61,7 @@ cmin:
 		HarvestVoice: Move
 		DeliverVoice: Move
 	ChronoResourceDelivery:
-		WarpInSequence: # unused
-		WarpOutSequence: warpout
+		WarpInSequence: warpout
 		WarpInSound: vchrtele.wav
 		WarpOutSound: vchrtele.wav
 	Health:
