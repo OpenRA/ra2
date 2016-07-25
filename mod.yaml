@@ -109,8 +109,8 @@ Assemblies:
 ChromeLayout:
 	ra2|chrome/ingame-player.yaml
 	ra2|chrome/ingame-infoobjectives.yaml
-	ra2|chrome/ingame-infostats.yaml
-	ra2|chrome/ingame-observerstats.yaml
+	ra|chrome/ingame-infostats.yaml
+	ra|chrome/ingame-observerstats.yaml
 	ra|chrome/musicplayer.yaml
 	ra|chrome/tooltips.yaml
 	ra|chrome/ingame.yaml
