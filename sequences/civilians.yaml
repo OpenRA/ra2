@@ -32,8 +32,6 @@ civ1:
 	die6: electro
 		Length: *
 		Tick: 80
-	die-crushed: death_c
-		Length: 4
 	cheer:
 		Start: 230
 		Length: 15
@@ -80,8 +78,6 @@ civ2:
 	die6: electro
 		Length: *
 		Tick: 80
-	die-crushed: death_c
-		Length: 4
 	cheer:
 		Start: 230
 		Length: 15
@@ -128,8 +124,6 @@ civ3:
 	die6: electro
 		Length: *
 		Tick: 80
-	die-crushed: death_c
-		Length: 4
 	cheer:
 		Start: 228
 		Length: 15
@@ -184,8 +178,6 @@ vladimir:
 	die6: electro
 		Length: *
 		Tick: 80
-	die-crushed: death_c
-		Length: 4
 	cheer:
 		Start: 56
 		Length: 15
@@ -234,8 +226,6 @@ pentgen:
 	die6: electro
 		Length: *
 		Tick: 80
-	die-crushed: death_c
-		Length: 4
 	cheer:
 		Start: 56
 		Length: 15
@@ -280,8 +270,6 @@ pres:
 	die6: electro
 		Length: *
 		Tick: 80
-	die-crushed: death_c
-		Length: 4
 	cheer:
 		Start: 56
 		Length: 15
@@ -330,8 +318,6 @@ ssrv:
 	die6: electro
 		Length: *
 		Tick: 80
-	die-crushed: death_c
-		Length: 4
 	cheer:
 		Start: 56
 		Length: 15
@@ -380,8 +366,6 @@ civa:
 	die6: electro
 		Length: *
 		Tick: 80
-	die-crushed: death_c
-		Length: 4
 	cheer:
 		Start: 56
 		Length: 15
@@ -430,8 +414,6 @@ civb:
 	die6: electro
 		Length: *
 		Tick: 80
-	die-crushed: death_c
-		Length: 4
 	cheer:
 		Start: 56
 		Length: 15
@@ -480,8 +462,6 @@ civc:
 	die6: electro
 		Length: *
 		Tick: 80
-	die-crushed: death_c
-		Length: 4
 	cheer:
 		Start: 56
 		Length: 15
@@ -526,8 +506,6 @@ civbbp:
 	die6: electro
 		Length: *
 		Tick: 80
-	die-crushed: death_c
-		Length: 4
 	cheer:
 		Start: 56
 		Length: 15
@@ -572,8 +550,6 @@ civbfm:
 	die6: electro
 		Length: *
 		Tick: 80
-	die-crushed: death_c
-		Length: 4
 	cheer:
 		Start: 56
 		Length: 15
@@ -618,8 +594,6 @@ civbf:
 	die6: electro
 		Length: *
 		Tick: 80
-	die-crushed: death_c
-		Length: 4
 	cheer:
 		Start: 56
 		Length: 15
@@ -664,8 +638,6 @@ civbtm:
 	die6: electro
 		Length: *
 		Tick: 80
-	die-crushed: death_c
-		Length: 4
 	cheer:
 		Start: 56
 		Length: 15
@@ -714,8 +686,6 @@ civsfm:
 	die6: electro
 		Length: *
 		Tick: 80
-	die-crushed: death_c
-		Length: 4
 	cheer:
 		Start: 56
 		Length: 15
@@ -764,8 +734,6 @@ civsf:
 	die6: electro
 		Length: *
 		Tick: 80
-	die-crushed: death_c
-		Length: 4
 	cheer:
 		Start: 56
 		Length: 15
@@ -814,8 +782,6 @@ civstm:
 	die6: electro
 		Length: *
 		Tick: 80
-	die-crushed: death_c
-		Length: 4
 	cheer:
 		Start: 56
 		Length: 15

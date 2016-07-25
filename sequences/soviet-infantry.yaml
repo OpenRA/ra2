@@ -23,14 +23,9 @@ dog:
 	die4: # todo: copy of die1
 		Start: 87
 		Length: 14
-	die5: # todo: copy of die1
-		Start: 87
-		Length: 14
 	die6: # todo: copy of die1; art is missing
 		Start: 87
 		Length: 14
-	die-crushed: death_c
-		Length: 4
 	shoot: dogp
 		Length: 1
 		Facings: 64
@@ -91,8 +86,6 @@ e2:
 	die6: electro
 		Length: *
 		Tick: 80
-	die-crushed: death_c
-		Length: 4
 	shoot:
 		Start: 164
 		Length: 6
@@ -142,8 +135,6 @@ flakt:
 	die6: electro
 		Length: *
 		Tick: 80
-	die-crushed: death_c
-		Length: 4
 	shoot:
 		Start: 116
 		Length: 6
@@ -191,8 +182,6 @@ shk:
 	die6: electro
 		Length: *
 		Tick: 80
-	die-crushed: death_c
-		Length: 4
 	shoot:
 		Start: 164
 		Length: 6
@@ -241,9 +230,6 @@ terror:
 	die6: electro
 		Length: *
 		Tick: 80
-	die-crushed: death_c
-		Length: 4
-		Tick: 80
 	shoot:
 		Start: 164
 		Length: 6
@@ -290,9 +276,6 @@ deso:
 	die6: electro
 		Length: *
 		Tick: 80
-	die-crushed: death_c
-		Length: 4
-		Tick: 80
 	shoot:
 		Start: 164
 		Length: 6
@@ -337,9 +320,6 @@ ivan:
 		Tick: 50
 	die6: electro
 		Length: *
-		Tick: 80
-	die-crushed: death_c
-		Length: 4
 		Tick: 80
 	shoot:
 		Start: 164
