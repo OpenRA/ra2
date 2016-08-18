@@ -24,8 +24,9 @@ elseif ($args.Length -eq 1)
         echo ""
         exit
     }
-    elseif ($command -eq "dependencies")
+    elseif ($command -eq "dependencies") {
         $command = "deps"
+    }
 }
 
 cake -target="$command"
