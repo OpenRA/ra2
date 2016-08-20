@@ -109,4 +109,16 @@ Task("default")
         System.IO.File.Copy("./OpenRA.Mods.RA2/bin/Debug/OpenRA.Mods.RA2.dll", "./OpenRA.Mods.RA2.dll", true);
 });
 
+Task("clean").Does(() => {
+    DeleteFiles("./OpenRA.Mods.RA2/bin/*/*.dll");
+    DeleteFiles("./OpenRA.Mods.RA2/bin/*/*.exe");
+    DeleteFiles("./OpenRA.Mods.RA2/obj/*/*.dll");
+    DeleteFiles("./OpenRA.Mods.RA2/obj/*/*.exe");
+    DeleteFiles("./OpenRA.Mods.RA2/dependencies/*.exe");
+    DeleteFiles("./OpenRA.Mods.RA2/dependencies/*.dll");
+
+    if (FileExists("./OpenRA.Mods.RA2.dll"))
+        DeleteFile("./OpenRA.Mods.RA2.dll");
+});
+
 RunTarget(target);
