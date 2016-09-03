@@ -4,7 +4,9 @@ Metrics:
 	ButtonTextColor: FFFFFF
 	ButtonTextColorDisabled: 808080
 	ButtonTextContrast: false
-	ButtonTextContrastColor: 000000
+	ButtonTextShadow: false
+	ButtonTextContrastColorDark: 000000
+	ButtonTextContrastColorLight: 7F7F7F
 	ButtonBaseLine: 0
 	CheckboxPressedState: false
 	HotkeyFont: Regular
@@ -17,7 +19,9 @@ Metrics:
 	TextFont: Regular
 	TextColor: FFFFFF
 	TextContrast: false
-	TextContrastColor: 000000
+	TextShadow: false
+	TextContrastColorDark: 000000
+	TextContrastColorLight: 7F7F7F
 	ColorPickerRemapIndices: 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31
 	ColorPickerActorType: ^amcv.colorpicker
 	FactionSuffix-america: allies
