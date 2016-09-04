@@ -5,7 +5,7 @@ Metadata:
 	Author: the RA2 mod team
 
 RequiresMods:
-	modchooser: {DEV_VERSION}
+	modchooser: {ORA_VERSION}
 
 Packages:
 	~^Content/ra2

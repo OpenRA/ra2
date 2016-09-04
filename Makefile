@@ -3,7 +3,9 @@ ORA_DIR = OpenRA
 PACKAGE_DIR = package
 
 # Version of the mod and its content package
-VERSION = $(shell git name-rev --name-only --tags --no-undefined HEAD 2>/dev/null || echo git-`git rev-parse --short HEAD`)
+VERSION_CMD = git name-rev --name-only --tags --no-undefined HEAD 2>/dev/null || echo git-`git rev-parse --short HEAD`
+VERSION = $(shell $(VERSION_CMD))
+ORA_VERSION = $(shell cd $(ORA_DIR) && $(VERSION_CMD))
 
 LIB_sources := $(shell find OpenRA.Mods.RA2 -iname ".*" -prune -o -iname '*.cs' -print0)
 LIB_assembly = OpenRA.Mods.RA2.dll
@@ -28,7 +30,7 @@ dependencies:
 
 lib: $(LIB_assembly)
 
-all: lib oramod
+all: dependencies oramod
 
 copy-pkg: $(PACKAGE_DIR)
 	@cd $(MOD_DIR) && cp --parents -u $(COPY_CONTENTS) $(shell realpath $(PACKAGE_DIR))
@@ -38,9 +40,11 @@ $(PACKAGE_DIR)/$(LIB_assembly): $(LIB_assembly) $(PACKAGE_DIR)
 
 $(PACKAGE_DIR)/mod.yaml: $(MOD_DIR)/mod.yaml $(PACKAGE_DIR)
 	@sed -e 's/{DEV_VERSION}/$(VERSION)/' \
+	     -e 's/{ORA_VERSION}/$(ORA_VERSION)/' \
 		$(MOD_DIR)/mod.yaml > $(PACKAGE_DIR)/mod.yaml
 
 $(PACKAGE_DIR)/% : $(MOD_DIR)/% copy-pkg
+	@true
 
 $(ORAMOD_PKG): $(addprefix $(PACKAGE_DIR)/,$(ORAMOD_CONTENTS))
 	@$(ZIP_R9) $(ORAMOD_PKG) $(PACKAGE_DIR)
@@ -57,4 +61,4 @@ distclean: clean
 
 .PHONY: version lib all oramod copy-pkg clean distclean dependencies
 
-.DEFAULT: lib
+.DEFAULT_GOAL = all
