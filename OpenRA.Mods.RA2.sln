@@ -2,7 +2,7 @@
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 # SharpDevelop 5.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenRA.Mods.RA2", "OpenRA.Mods.RA2.csproj", "{7E1263D2-BA04-48D0-85DB-26C68B782608}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenRA.Mods.RA2", "OpenRA.Mods.RA2/OpenRA.Mods.RA2.csproj", "{7E1263D2-BA04-48D0-85DB-26C68B782608}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
