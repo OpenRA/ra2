@@ -11,7 +11,7 @@ ORA_VERSION = $(shell cd $(ORA_DIR) && $(VERSION_CMD))
 LIB_sources := $(shell find OpenRA.Mods.RA2 -iname ".*" -prune -o -iname '*.cs' -print0)
 LIB_assembly = OpenRA.Mods.RA2.dll
 
-ORAMOD_PKG = ra2_$(VERSION).oramod
+ORAMOD_PKG = ra2.oramod
 MOD_CONTENTS := $(shell cd $(MOD_DIR) && git ls-files -c -o --exclude-standard)
 COPY_CONTENTS = $(filter-out mod.yaml,$(MOD_CONTENTS))
 ORAMOD_CONTENTS = $(MOD_CONTENTS) $(LIB_assembly)
