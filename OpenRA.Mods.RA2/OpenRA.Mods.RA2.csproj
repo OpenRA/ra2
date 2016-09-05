@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build AfterBuild">
   <PropertyGroup>
     <ProjectGuid>{7E1263D2-BA04-48D0-85DB-26C68B782608}</ProjectGuid>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -8,6 +8,8 @@
     <RootNamespace>OpenRA.Mods.RA2</RootNamespace>
     <AssemblyName>OpenRA.Mods.RA2</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
     <PlatformTarget>x86</PlatformTarget>
@@ -19,12 +21,6 @@
     <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <OutputPath>bin\Debug\</OutputPath>
-    <CustomCommands>
-      <CustomCommands>
-        <Command type="AfterBuild" command="cp ${TargetFile} .." workingdir="${ProjectDir}" />
-        <Command type="AfterBuild" command="cp ${TargetFile}.mdb .." workingdir="${ProjectDir}" />
-      </CustomCommands>
-    </CustomCommands>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
     <DebugSymbols>False</DebugSymbols>
@@ -33,32 +29,11 @@
     <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
     <DefineConstants>TRACE</DefineConstants>
     <OutputPath>bin\Release\</OutputPath>
-    <CustomCommands>
-      <CustomCommands>
-        <Command type="AfterBuild" command="cp ${TargetFile} .." workingdir="${ProjectDir}" />
-        <Command type="AfterBuild" command="cp ${TargetFile}.mdb .." workingdir="${ProjectDir}" />
-      </CustomCommands>
-    </CustomCommands>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="OpenRA.Game">
-      <HintPath>dependencies\OpenRA.Game.exe</HintPath>
-    </Reference>
-    <Reference Include="OpenRA.Mods.Common">
-      <HintPath>dependencies\OpenRA.Mods.Common.dll</HintPath>
-    </Reference>
-    <Reference Include="OpenRA.Mods.RA">
-      <HintPath>dependencies\OpenRA.Mods.RA.dll</HintPath>
-    </Reference>
-    <Reference Include="OpenRA.Mods.TS">
-      <HintPath>dependencies\OpenRA.Mods.TS.dll</HintPath>
-    </Reference>
     <Reference Include="Eluant">
-      <HintPath>dependencies\Eluant.dll</HintPath>
-    </Reference>
-    <Reference Include="Eluant">
-      <HintPath>dependencies\Eluant.dll</HintPath>
+      <HintPath>..\OpenRA\Eluant.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="System" />
@@ -73,4 +48,40 @@
     <Compile Include="Traits\Render\WithExitOverlay.cs" />
     <Compile Include="Traits\Render\WithSwimSuit.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\OpenRA\OpenRA.Game\OpenRA.Game.csproj">
+      <Project>{0DFB103F-2962-400F-8C6D-E2C28CCBA633}</Project>
+      <Name>OpenRA.Game</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OpenRA\OpenRA.Mods.Common\OpenRA.Mods.Common.csproj">
+      <Project>{FE6C8CC0-2F07-442A-B29F-17617B3B7FC6}</Project>
+      <Name>OpenRA.Mods.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OpenRA\OpenRA.Mods.RA\OpenRA.Mods.RA.csproj">
+      <Project>{4A8A43B5-A9EF-4ED0-99DD-4BAB10A0DB6E}</Project>
+      <Name>OpenRA.Mods.RA</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OpenRA\OpenRA.Mods.TS\OpenRA.Mods.TS.csproj">
+      <Project>{5457CBF5-4CE4-421E-A8BF-9FD6C9732E1D}</Project>
+      <Name>OpenRA.Mods.TS</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Target Name="AfterBuild">
+    <Copy
+      SourceFiles="$(TargetPath)"
+      DestinationFolder="$(SolutionDir)"/>
+    <!--
+        We need to copy OpenRA.Mods.RA.pdb (not `.dll.pdb`).
+        This is only necessary on Windows. Mono outputs a `.dll.mdb`,
+          so we can just append `.mdb` directly.
+    -->
+    <Copy
+      SourceFiles="$([System.IO.Path]::GetFileNameWithoutExtension($(TargetPath))).pdb"
+      DestinationFolder="$(SolutionDir)"
+      Condition="'$(OS)' == 'Windows_NT'" />
+    <Copy
+      SourceFiles="$(TargetPath).mdb"
+      DestinationFolder="$(SolutionDir)"
+      Condition="'$(OS)' == 'Unix'" />
+  </Target>
 </Project>

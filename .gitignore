@@ -60,3 +60,7 @@ OpenRA.Launcher.Mac/OpenRA.xcodeproj/*.mode1v3
 # SublimeText
 *.sublime-project
 *.sublime-workspace
+
+# Release
+package/
+*.oramod
