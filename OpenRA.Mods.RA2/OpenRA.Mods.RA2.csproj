@@ -76,7 +76,7 @@
           so we can just append `.mdb` directly.
     -->
     <Copy
-      SourceFiles="$([System.IO.Path]::GetFileNameWithoutExtension$(TargetPath)).pdb"
+      SourceFiles="$([System.IO.Path]::GetFileNameWithoutExtension($(TargetPath))).pdb"
       DestinationFolder="$(SolutionDir)"
       Condition="'$(OS)' == 'Windows_NT'" />
     <Copy
