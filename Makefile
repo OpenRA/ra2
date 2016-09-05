@@ -1,7 +1,7 @@
 MOD_DIR = mod
 ORA_DIR = OpenRA
 PACKAGE_DIR = package
-INSTALL_DIR = $(HOME)/.openra/mods
+INSTALL_DIR = $(HOME)/.openra/mods/
 
 # Version of the mod and its content package
 VERSION_CMD = git name-rev --name-only --tags --no-undefined HEAD 2>/dev/null || echo git-`git rev-parse --short HEAD`
@@ -48,7 +48,7 @@ $(PACKAGE_DIR)/% : $(MOD_DIR)/% copy-pkg
 	@true
 
 $(ORAMOD_PKG): $(addprefix $(PACKAGE_DIR)/,$(ORAMOD_CONTENTS))
-	@$(ZIP_R9) $(ORAMOD_PKG) $(PACKAGE_DIR)
+	@cd $(PACKAGE_DIR) && $(ZIP_R9) $(CURDIR)/$(ORAMOD_PKG) .
 
 oramod: $(ORAMOD_PKG)
 
