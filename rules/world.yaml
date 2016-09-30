@@ -66,10 +66,11 @@
 	ResourceType@Ore:
 		ResourceType: 1
 		Palette: resource
-		Variants: tib01, tib02, tib03, tib04, tib05, tib06, tib07, tib08, tib09, tib10, tib11, tib12, tib13, tib14, tib15, tib16, tib17, tib18, tib19, tib20
+		Sequences: tib01, tib02, tib03, tib04, tib05, tib06, tib07, tib08, tib09, tib10, tib11, tib12, tib13, tib14, tib15, tib16, tib17, tib18, tib19, tib20
 		MaxDensity: 12
 		ValuePerUnit: 50
-		Name: Ore
+		Type: Ore
+		Name: Valuable Minerals
 		PipColor: Yellow
 		AllowedTerrainTypes: Clear, Rough
 		AllowUnderActors: false
@@ -77,10 +78,11 @@
 	ResourceType@Gems:
 		ResourceType: 2
 		Palette: resource
-		Variants: gem01, gem02, gem03, gem04, gem05, gem06, gem07, gem08, gem09, gem10, gem11, gem12
+		Sequences: gem01, gem02, gem03, gem04, gem05, gem06, gem07, gem08, gem09, gem10, gem11, gem12
 		MaxDensity: 12
 		ValuePerUnit: 250
-		Name: Gems
+		Type: Gems
+		Name: Valuable Minerals
 		PipColor: Red
 		AllowedTerrainTypes: Clear, Rough
 		AllowUnderActors: false
