@@ -10,6 +10,7 @@ cow:
 		VoiceSet: CowVoice
 	AmbientSound:
 		SoundFile: gcowsela.wav #, gcowselb.wav, gcowselc.wav
+		Interval: 200
 	-AutoTarget:
 	-AttackMove:
 	-Guard:
