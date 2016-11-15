@@ -447,6 +447,7 @@ jumpjet:
 		Tick: 80
 	fly:
 		Start: 292
+		Tick: 100
 	die-air:
 		Start: 340
 		Length: 16
