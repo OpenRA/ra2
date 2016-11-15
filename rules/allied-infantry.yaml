@@ -398,7 +398,7 @@ jumpjet:
 		CanHover: True
 		IdealSeparation: 512
 	WithInfantryBody:
-		StandSequence: fly
+		StandSequences: fly
 		MoveSequence: fly
 		DefaultAttackSequence: shoot-air
 		IdleSequences: idle-air
