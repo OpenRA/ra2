@@ -123,6 +123,7 @@ e1:
 #		UpgradeTypes: eliteparaweapon
 #		UpgradeMinEnabledLevel: 1
 	WithInfantryBody:
+		DefaultAttackSequence: shoot
 	Voiced:
 		VoiceSet: GIVoice
 	ProducibleWithLevel:
@@ -162,6 +163,8 @@ snipe:
 		VoiceSet: SniperVoice
 	ProducibleWithLevel:
 		Prerequisites: barracks.infiltrated
+	WithInfantryBody:
+		DefaultAttackSequence: shoot
 
 spy:
 	Inherits: ^Infantry
@@ -274,6 +277,8 @@ ghost:
 		Prerequisites: barracks.infiltrated
 	QuantizeFacingsFromSequence:
 		Sequence: stand
+	WithInfantryBody:
+		DefaultAttackSequence: shoot
 	WithSwimSuit:
 	-TakeCover: # TODO: allow multiple sequence modifiers
 
@@ -339,6 +344,8 @@ tany:
 		Prerequisites: barracks.infiltrated
 	QuantizeFacingsFromSequence:
 		Sequence: stand
+	WithInfantryBody:
+		DefaultAttackSequence: shoot
 	-TakeCover: # TODO: allow multiple sequence modifiers
 	WithSwimSuit:
 
@@ -393,7 +400,7 @@ jumpjet:
 	WithInfantryBody:
 		StandSequence: fly
 		MoveSequence: fly
-		AttackSequence: shoot-air
+		DefaultAttackSequence: shoot-air
 		IdleSequences: idle-air
 	Hovers:
 		OffsetModifier: -45
@@ -454,3 +461,5 @@ cleg:
 		Weapon: NeutronRifle
 	AttackFrontal:
 		Voice: Attack
+	WithInfantryBody:
+		DefaultAttackSequence: shoot

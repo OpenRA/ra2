@@ -206,7 +206,7 @@ sqd:
 	RenderDetectionCircle:
 	WithInfantryBody:
 		StandSequences: stand
-		AttackSequence: punch
+		DefaultAttackSequence: punch
 	Repairable:
 		Voice: Attack
 		RepairBuildings: gayard, nayard

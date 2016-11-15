@@ -33,6 +33,7 @@ e2:
 		UpgradeTypes: eliteweapon
 		UpgradeMinEnabledLevel: 1
 	WithInfantryBody:
+		DefaultAttackSequence: shoot
 	Voiced:
 		VoiceSet: ConscriptVoice
 	ProducibleWithLevel:
@@ -84,6 +85,7 @@ flakt:
 		UpgradeTypes: eliteweapon
 		UpgradeMinEnabledLevel: 1
 	WithInfantryBody:
+		DefaultAttackSequence: shoot
 		IdleAnimation:
 	Voiced:
 		VoiceSet: FlakTrooperVoice
@@ -141,6 +143,7 @@ shk:
 		SelfReloads: true
 		SelfReloadTicks: 70
 	WithInfantryBody:
+		DefaultAttackSequence: shoot
 	UpgradeActorsNear:
 		Upgrades: charged
 		Range: 1c256
@@ -226,6 +229,7 @@ deso:
 	AttackFrontal:
 		Voice: Attack
 	WithInfantryBody:
+		DefaultAttackSequence: shoot
 	Voiced:
 		VoiceSet: DesolatorVoice
 	ProducibleWithLevel:
@@ -277,6 +281,7 @@ ivan:
 		OutsideRangeCursor: bomb
 	TakeCover:
 	WithInfantryBody:
+		DefaultAttackSequence: shoot
 		IdleSequences: idle1,idle2
 	QuantizeFacingsFromSequence:
 		Sequence: stand

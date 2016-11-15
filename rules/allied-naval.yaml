@@ -204,7 +204,7 @@ dlph:
 	RenderSprites:
 	WithInfantryBody:
 		StandSequences: stand
-		AttackSequence: shoot
+		DefaultAttackSequence: shoot
 	WithDeathAnimation:
 		UseDeathTypeSuffix: false
 	Repairable:
