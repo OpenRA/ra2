@@ -37,7 +37,7 @@ namespace OpenRA.Mods.RA2.Activities
 				self.World.AddFrameEndTask(w => w.Add(new SpriteEffect(sourcepos, w, image, info.WarpInSequence, info.Palette)));
 
 			if (info.WarpInSound != null)
-				Game.Sound.Play(info.WarpInSound, self.CenterPosition);
+				Game.Sound.Play(SoundType.World, info.WarpInSound, self.CenterPosition);
 
 			self.Trait<IPositionable>().SetPosition(self, destination);
 			self.Generation++;
@@ -48,7 +48,7 @@ namespace OpenRA.Mods.RA2.Activities
 				self.World.AddFrameEndTask(w => w.Add(new SpriteEffect(destinationpos, w, image, info.WarpOutSequence, info.Palette)));
 
 			if (info.WarpOutSound != null)
-				Game.Sound.Play(info.WarpOutSound, self.CenterPosition);
+				Game.Sound.Play(SoundType.World, info.WarpOutSound, self.CenterPosition);
 
 			return NextActivity;
 		}
