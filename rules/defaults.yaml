@@ -5,7 +5,7 @@
 	DrawLineToTarget:
 	GivesExperience:
 	ScriptTriggers:
-	UpgradeManager:
+	ConditionManager:
 	Huntable:
 
 ^SpriteActor:
@@ -221,7 +221,7 @@
 	FrozenUnderFog:
 	-CombatDebugOverlay:
 	-DrawLineToTarget:
-	-UpgradeManager:
+	-ConditionManager:
 	Building:
 		Dimensions: 1,1
 		Footprint: x
