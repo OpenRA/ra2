@@ -1,0 +1,14 @@
+tfd: C&C The First Decade (English)
+	IDFiles:
+		data1.hdr: bef3a08c3fc1b1caf28ca0dbb97c1f900005930e
+		data7.cab: 49ded3814a0463874994a1af578559388811a85a
+		data8.cab: bcf912735e5c9c43372f5e9d0d2b3a761cb8675e
+	Install:
+		extract-iscab: data1.hdr
+			Volumes:
+				7: data7.cab
+				8: data8.cab
+			Extract:
+				^Content/ra2/theme.mix: Red Alert 2\RA2\theme.mix
+				^Content/ra2/ra2.mix: Red Alert 2\RA2\ra2.mix
+				^Content/ra2/language.mix: Red Alert 2\RA2\language.mix
