@@ -17,60 +17,79 @@
 
 ^GainsExperience:
 	GainsExperience:
-		Upgrades:
-			500: rank, firepower, damage, speed, reload
-			1000: rank, firepower, damage, speed, reload, selfheal, eliteweapon
+		Conditions:
+			500: rank-veteran
+			1000: rank-elite
+	FirepowerMultiplier@veteran:
+		RequiresCondition: (rank-veteran && !rank-elite) || crate-firepower
+		Modifier: 110
+	FirepowerMultiplier@elite:
+		RequiresCondition: rank-elite || (rank-veteran && crate-firepower)
+		Modifier: 130
+	DamageMultiplier@veteran:
+		RequiresCondition: (rank-veteran && !rank-elite) || crate-damage
+		Modifier: 90
+	DamageMultiplier@elite:
+		RequiresCondition: rank-elite || (rank-veteran && crate-damage)
+		Modifier: 75
+	SpeedMultiplier@veteran:
+		RequiresCondition: (rank-veteran && !rank-elite) || crate-speed
+		Modifier: 120
+	SpeedMultiplier@elite:
+		RequiresCondition: rank-elite || (rank-veteran && crate-speed)
+		Modifier: 140
+	ReloadDelayMultiplier@veteran:
+		RequiresCondition: rank-veteran && !rank-elite
+		Modifier: 90
+	ReloadDelayMultiplier@elite:
+		RequiresCondition: rank-elite
+		Modifier: 75
 	SelfHealing@elite:
 		Step: 2
 		Ticks: 100
-		HealIfBelow: 1
+		HealIfBelow: 100
 		DamageCooldown: 125
-		UpgradeTypes: selfheal
-		UpgradeMinEnabledLevel: 1
-	FirepowerMultiplier@experience:
-		Modifier: 110, 130
-		UpgradeTypes: firepower
-	DamageMultiplier@experience:
-		Modifier: 83, 66
-		UpgradeTypes: damage
-	SpeedMultiplier@experience:
-		Modifier: 120, 150
-		UpgradeTypes: speed
-	ReloadDelayMultiplier@experience:
-		Modifier: 90, 75
-		UpgradeTypes: reload
-	InaccuracyMultiplier@experience:
-		Modifier: 90, 80, 70, 50
-		UpgradeTypes: inaccuracy
-	WithRankDecoration:
+        RequiresCondition: rank-veteran && !rank-elite
+        Modifier: 90
+	InaccuracyMultiplier@elite:
+        RequiresCondition: rank-elite
+        Modifier: 50
+ 	WithDecoration@veteran:
 		Image: rank
 		Sequence: rank
 		Palette: pips
 		ReferencePoint: Bottom, Right
-		UpgradeTypes: rank
+		RequiresCondition: rank-veteran && !rank-elite
 		ZOffset: 256
-		UpgradeMinEnabledLevel: 1
-		UpgradeMaxAcceptedLevel: 2
+	WithDecoration@elite:
+		Image: rank
+		Sequence: rank
+		Palette: pips
+		ReferencePoint: Bottom, Right
+		RequiresCondition: rank-elite
+		ZOffset: 256
 
 ^IronCurtainable:
 	UpgradeOverlay@ironcurtain:
-		UpgradeTypes: invulnerability
+		RequiresCondition: invulnerability
 		UpgradeMinEnabledLevel: 1
 	DamageMultiplier@ironcurtain:
-		UpgradeTypes: invulnerability
-		Modifier: 0, 0
-	TimedUpgradeBar:
-		Upgrade: invulnerability
+		RequiresCondition: invulnerability
+		Modifier: 0
+	TimedConditionBar:
+		Condition: invulnerability
+	ExternalConditions@INVULNERABILITY:
+		Conditions: invulnerability
 
 ^ChronoDisable:
-	DisableOnUpgrade@ChronoDisable:
-		UpgradeTypes: chronodisable
+	DisableOnCondition@ChronoDisable:
+		RequiresCondition: chronodisable
 		UpgradeMinEnabledLevel: 1
-	TimedUpgradeBar@ChronoDisable:
-		Upgrade: chronodisable
+	TimedConditionBar@ChronoDisable:
+		Condition: chronodisable
 		Color: FFFFFF
 	Mobile:
-		UpgradeTypes: notmobile
+		RequiresCondition: !notmobile
 		UpgradeMaxEnabledLevel: 0
 
 ^Building:
@@ -98,7 +117,9 @@
 		DamagedSounds: gdamag1a.wav, gdamag1b.wav, gdamag1c.wav, gdamag1d.wav, gdamag1e.wav
 		DestroyedSounds: bgendiea.wav, bgendieb.wav, bgendiec.wav, bgendied.wav, bgendiee.wav, bgendief.wav
 	WithSpriteBody:
-	WithBuildingExplosion:
+	Explodes:
+		Type: Footprint
+		Weapon: UnitExplodeSmall
 		Sequences: building, large_bang, large_brnl, verylarge_clsn, large_tumu
 	RepairableBuilding:
 		IndicatorPalette: mouse
@@ -287,18 +308,19 @@
 			DirtRoad: 100
 			Ore: 90
 			Gems: 80
+	WithTextControlGroupDecoration:
 	SelectionDecorations:
 		Palette: pips
 	Selectable:
 	Targetable:
 		TargetTypes: Ground, Infantry, DetonateAttack, Disguise
-		UpgradeTypes: parachute
+		RequiresCondition: !parachute
 		UpgradeMaxEnabledLevel: 0
 	WithInfantryBody:
 		IdleSequences: idle1,idle2
 		StandSequences: stand
 		DefaultAttackSequence: shoot
-		UpgradeTypes: parachute
+#		RequiresCondition: !parachute
 		UpgradeMaxEnabledLevel: 0
 	WithDeathAnimation@normal:
 		DeathTypes:
@@ -362,7 +384,7 @@
 ^Parachutable:
 	WithSpriteBody@Parachute:
 		Sequence: paradrop
-		UpgradeTypes: parachute
+		RequiresCondition: parachute
 		UpgradeMinEnabledLevel: 1
 	Parachutable:
 		FallRate: 26
@@ -371,8 +393,9 @@
 		GroundCorpsePalette:
 		WaterCorpseSequence:
 		WaterCorpsePalette:
+		ParachutingCondition: parachute
 	WithParachute:
-		UpgradeTypes: parachute
+		RequiresCondition: parachute
 		UpgradeMinEnabledLevel: 1
 		Image: parach
 		OpeningSequence: open
@@ -478,6 +501,7 @@
 	AttackMove:
 		Voice: Attack
 	HiddenUnderFog:
+	WithTextControlGroupDecoration:
 	ActorLostNotification:
 	ProximityCaptor:
 		Types: Vehicle
@@ -531,14 +555,14 @@
 		UseLocation: true
 	Targetable@airborne:
 		TargetTypes: Air
-		UpgradeTypes: airborne
+		RequiresCondition: airborne
 		UpgradeMinEnabledLevel: 1
 	SelectionDecorations:
 		Palette: pips
 	Selectable:
 	Aircraft:
 		Voice: Move
-		AirborneUpgrades: airborne
+		AirborneCondition: airborne
 		CanHover: True
 	HiddenUnderFog:
 		Type: CenterPosition
@@ -553,6 +577,7 @@
 		Voice: Attack
 	Guardable:
 	MustBeDestroyed:
+	WithTextControlGroupDecoration:
 	RenderVoxels:
 		Scale: 11.7
 		LightYaw: 800
@@ -560,8 +585,8 @@
 		LightAmbientColor: -0.5,-0.5,-0.5
 		LightDiffuseColor: 1.4,1.4,1.4
 	Targetable@ground:
-		TargetTypes: Ground, Repair
-		UpgradeTypes: airborne
+		TargetTypes: Ground, Repair, Vehicle
+		RequiresCondition: !airborne
 		UpgradeMaxEnabledLevel: 0
 	DeathSounds:
 	AppearsOnRadar:
@@ -571,10 +596,10 @@
 	Inherits: ^Aircraft
 	Aircraft:
 		CruiseAltitude: 5600
-		CruisingUpgrades: cruising
+		CruisingCondition: cruising
 		AltitudeVelocity: 120
 	Hovers@CRUISING:
-		UpgradeTypes: cruising
+		RequiresCondition: cruising
 		UpgradeMinEnabledLevel: 1
 	ReturnOnIdle:
 	WithVoxelBody:
@@ -587,8 +612,8 @@
 		QuantizedFacings: 0
 		CameraPitch: 90
 	Aircraft:
-		AirborneUpgrades: airborne
-		CruisingUpgrades: cruising
+		AirborneCondition: airborne
+		CruisingCondition: cruising
 	Health:
 		HP: 280
 	Armor:

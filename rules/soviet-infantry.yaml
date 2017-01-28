@@ -18,19 +18,18 @@ e2:
 		Speed: 34
 	Passenger:
 		PipType: Green
-		GrantUpgrades: ifv-machinegun
 	RevealsShroud:
 		Range: 5c0
 	AttackFrontal:
 		Voice: Attack
 	Armament@primary:
 		Weapon: M1Carbine
-		UpgradeTypes: eliteweapon
+		RequiresCondition: !eliteweapon
 		UpgradeMaxEnabledLevel: 0
 		UpgradeMaxAcceptedLevel: 1
 	Armament@elite:
 		Weapon: M1CarbineE
-		UpgradeTypes: eliteweapon
+		RequiresCondition: eliteweapon
 		UpgradeMinEnabledLevel: 1
 	WithInfantryBody:
 		DefaultAttackSequence: shoot
@@ -61,28 +60,27 @@ flakt:
 		Speed: 34
 	Passenger:
 		PipType: Green
-		GrantUpgrades: ifv-flak
 	RevealsShroud:
 		Range: 5c0
 	AttackFrontal:
 		Voice: Attack
 	Armament@primary:
 		Weapon: FlakGuyGun
-		UpgradeTypes: eliteweapon
+		RequiresCondition: !eliteweapon
 		UpgradeMaxEnabledLevel: 0
 		UpgradeMaxAcceptedLevel: 1
 	Armament@secondary:
 		Weapon: FlakGuyAAGun
-		UpgradeTypes: eliteweapon
+		RequiresCondition: !eliteweapon
 		UpgradeMaxEnabledLevel: 0
 		UpgradeMaxAcceptedLevel: 1
 	Armament@primary-elite:
 		Weapon: FlakGuyGunE
-		UpgradeTypes: eliteweapon
+		RequiresCondition: eliteweapon
 		UpgradeMinEnabledLevel: 1
 	Armament@secondary-elite:
 		Weapon: FlakGuyAAGunE
-		UpgradeTypes: eliteweapon
+		RequiresCondition: eliteweapon
 		UpgradeMinEnabledLevel: 1
 	WithInfantryBody:
 		DefaultAttackSequence: shoot
@@ -119,17 +117,16 @@ shk:
 		Type: Plate
 	Passenger:
 		PipType: Red
-		GrantUpgrades: ifv-tesla
 	AttackFrontal:
 		Voice: Attack
 	Armament@primary:
 		Weapon: ElectricBolt
-		UpgradeTypes: eliteweapon
+		RequiresCondition: !eliteweapon
 		UpgradeMaxEnabledLevel: 0
 		UpgradeMaxAcceptedLevel: 1
 	Armament@elite:
 		Weapon: ElectricBoltE
-		UpgradeTypes: eliteweapon
+		RequiresCondition: eliteweapon
 		UpgradeMinEnabledLevel: 1
 	Armament@charge:
 		Weapon: AssaultBolt
@@ -144,8 +141,8 @@ shk:
 		SelfReloadTicks: 70
 	WithInfantryBody:
 		DefaultAttackSequence: shoot
-	UpgradeActorsNear:
-		Upgrades: charged
+	ProximityExternalCondition:
+		Condition: charged
 		Range: 1c256
 	Voiced:
 		VoiceSet: TeslaTrooperVoice
@@ -216,15 +213,14 @@ deso:
 		Type: Plate
 	Passenger:
 		PipType: Red
-		GrantUpgrades: ifv-deso
 	Armament@primary:
 		Weapon: RadBeamWeapon
-		UpgradeTypes: eliteweapon
+		RequiresCondition: !eliteweapon
 		UpgradeMaxEnabledLevel: 0
 		UpgradeMaxAcceptedLevel: 1
 	Armament@elite:
 		Weapon: RadBeamWeaponE
-		UpgradeTypes: eliteweapon
+		RequiresCondition: eliteweapon
 		UpgradeMinEnabledLevel: 1
 	AttackFrontal:
 		Voice: Attack
@@ -268,12 +264,12 @@ ivan:
 		EmptyWeapon: IvanBomber
 	Armament@primary:
 		Weapon: IvanBomber
-		UpgradeTypes: eliteweapon
+		RequiresCondition: !eliteweapon
 		UpgradeMaxEnabledLevel: 0
 		UpgradeMaxAcceptedLevel: 1
 	Armament@elite:
 		Weapon: IvanBomberE
-		UpgradeTypes: eliteweapon
+		RequiresCondition: eliteweapon
 		UpgradeMinEnabledLevel: 1
 	AttackFrontal:
 		Voice: Attack

@@ -29,7 +29,7 @@ sapc:
 			Gems: 50
 			Water: 100
 		UpgradeMaxEnabledLevel: 0
-		UpgradeTypes: notmobile
+#		UpgradeTypes: notmobile
 	RevealsShroud:
 		Range: 6c0
 	Cargo:
@@ -39,7 +39,7 @@ sapc:
 		PassengerFacing: 96
 		UnloadTerrainTypes: Clear, Rough, Rail, Road, DirtRoad, Beach, Ore, Gems
 		UnloadVoice: Move
-		LoadingUpgrades: notmobile
+		LoadingCondition: notmobile
 	Explodes:
 		Weapon: UnitExplode
 		EmptyWeapon: UnitExplode
@@ -69,7 +69,7 @@ sub:
 	-Targetable:
 	Targetable:
 		TargetTypes: Ground, Water, Repair
-		UpgradeTypes: underwater
+		RequiresCondition: underwater
 		UpgradeMaxEnabledLevel: 0
 	Cloak:
 		CloakTypes: Underwater
@@ -99,7 +99,7 @@ sub:
 	RenderSprites:
 	Targetable@underwater:
 		TargetTypes: Underwater, Repair
-		UpgradeTypes: underwater
+		RequiresCondition: underwater
 		UpgradeMinEnabledLevel: 1
 
 hyd:
@@ -183,11 +183,11 @@ sqd:
 		IsPlayerPalette: true
 	Targetable:
 		TargetTypes: Ground, Water
-		UpgradeTypes: underwater
+		RequiresCondition: underwater
 		UpgradeMaxEnabledLevel: 0
 	Targetable@underwater:
 		TargetTypes: Underwater
-		UpgradeTypes: underwater
+		RequiresCondition: underwater
 		UpgradeMinEnabledLevel: 1
 		IsPlayerPalette: true
 	DetectCloaked:

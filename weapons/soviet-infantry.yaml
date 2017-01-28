@@ -176,10 +176,10 @@ AssaultBolt:
 	ValidTargets: TeslaBoost
 	Projectile: TeslaZap
 		Image: litningupg
-	Warhead@charge: GrantUpgrade
+	Warhead@charge: GrantExternalCondition
 		Range: 42
 		Duration: 75
-		Upgrades: charged
+		Condition: charged
 		ValidStances: Ally
 		ValidTargets: TeslaBoost
 

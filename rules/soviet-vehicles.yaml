@@ -68,13 +68,13 @@ harv:
 	Armament@primary:
 		Weapon: 20mmrapid
 		LocalOffset: 0,50,384, 0,-50,384
-		UpgradeTypes: eliteweapon
+		RequiresCondition: !eliteweapon
 		UpgradeMaxEnabledLevel: 0
 		UpgradeMaxAcceptedLevel: 1
 	Armament@elite:
 		Weapon: 20mmrapidE
 		LocalOffset: 0,50,384, 0,-50,384
-		UpgradeTypes: eliteweapon
+		RequiresCondition: eliteweapon
 		UpgradeMinEnabledLevel: 1
 	AttackTurreted:
 		Voice: Attack
@@ -92,12 +92,6 @@ harv:
 	WithHarvestOverlay:
 		Offset: 121,0,0
 		Palette: effect
-	GainsExperience:
-		Upgrades:
-			200: firepower, damage, speed, reload, inaccuracy, rank
-			400: firepower, damage, speed, reload, inaccuracy, rank
-			800: firepower, damage, speed, reload, inaccuracy, rank
-			1600: firepower, damage, speed, reload, inaccuracy, rank, eliteweapon, selfheal
 	RenderSprites:
 	RenderVoxels:
 	WithVoxelTurret:
@@ -123,7 +117,7 @@ htk:
 		TurnSpeed: 15
 		Crushes: crate, infantry
 		UpgradeMaxEnabledLevel: 0
-		UpgradeTypes: notmobile
+#		RequiresCondition: notmobile
 	Health:
 		HP: 180
 	Armor:
@@ -183,13 +177,13 @@ htnk:
 	Armament@primary:
 		Weapon: 120mm
 		LocalOffset: 640,0,384
-		UpgradeTypes: eliteweapon
+		RequiresCondition: !eliteweapon
 		UpgradeMaxEnabledLevel: 0
 		UpgradeMaxAcceptedLevel: 1
 	Armament@elite:
 		Weapon: 120mmE
 		LocalOffset: 640,0,384
-		UpgradeTypes: eliteweapon
+		RequiresCondition: eliteweapon
 		UpgradeMinEnabledLevel: 1
 	AttackTurreted:
 		Voice: Attack
@@ -233,13 +227,13 @@ apoc:
 	Armament@primary:
 		Weapon: 120mmx
 		LocalOffset: 640,0,384
-		UpgradeTypes: eliteweapon
+		RequiresCondition: !eliteweapon
 		UpgradeMaxEnabledLevel: 0
 		UpgradeMaxAcceptedLevel: 1
 	Armament@elite:
 		Weapon: 120mmxE
 		LocalOffset: 640,0,384
-		UpgradeTypes: eliteweapon
+		RequiresCondition: eliteweapon
 		UpgradeMinEnabledLevel: 1
 	Armament@antiair:
 		Weapon: MammothTusk
@@ -284,13 +278,13 @@ ttnk:
 	Armament@primary:
 		Weapon: TankBolt
 		LocalOffset: 280,196,384, 280,-196,384
-		UpgradeTypes: eliteweapon
+		RequiresCondition: !eliteweapon
 		UpgradeMaxEnabledLevel: 0
 		UpgradeMaxAcceptedLevel: 1
 	Armament@elite:
 		Weapon: TankBoltE
 		LocalOffset: 280,196,384, 280,-196,384
-		UpgradeTypes: eliteweapon
+		RequiresCondition: eliteweapon
 		UpgradeMinEnabledLevel: 1
 	AttackTurreted:
 		Voice: Attack

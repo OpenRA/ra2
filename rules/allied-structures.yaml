@@ -137,12 +137,13 @@ gapile:
 	Production:
 		Produces: Infantry
 	PrimaryBuilding:
+		PrimaryCondition: primary
 	WithTextDecoration@primary:
 		RequiresSelection: true
 		Text: PRIMARY
 		ReferencePoint: Top
 		ZOffset: 256
-		UpgradeTypes: primary
+		RequiresCondition: primary
 		UpgradeMinEnabledLevel: 1
 	ProductionBar:
 	WithIdleOverlay@flag:
@@ -158,7 +159,7 @@ gapile:
 		Text: PRIMARY
 		ReferencePoint: Top
 		ZOffset: 256
-		UpgradeTypes: primary
+		RequiresCondition: primary
 		UpgradeMinEnabledLevel: 1
 
 garefn:
@@ -286,12 +287,13 @@ gaairc:
 		Produces: Aircraft
 	ProductionBar:
 	PrimaryBuilding:
+		PrimaryCondition: primary
 	WithTextDecoration@primary:
 		RequiresSelection: true
 		Text: PRIMARY
 		ReferencePoint: Top
 		ZOffset: 256
-		UpgradeTypes: primary
+		RequiresCondition: primary
 		UpgradeMinEnabledLevel: 1
 	InfiltrateForExploration:
 	WithTextDecoration@primary:
@@ -299,7 +301,7 @@ gaairc:
 		Text: PRIMARY
 		ReferencePoint: Top
 		ZOffset: 256
-		UpgradeTypes: primary
+		RequiresCondition: primary
 		UpgradeMinEnabledLevel: 1
 
 amradr:
@@ -360,12 +362,13 @@ gaweap:
 	Production:
 		Produces: Vehicle
 	PrimaryBuilding:
+		PrimaryCondition: primary
 	WithTextDecoration@primary:
 		RequiresSelection: true
 		Text: PRIMARY
 		ReferencePoint: Top
 		ZOffset: 256
-		UpgradeTypes: primary
+		RequiresCondition: primary
 		UpgradeMinEnabledLevel: 1
 	ProductionBar:
 	WithIdleOverlay@flag:
@@ -389,8 +392,7 @@ gaweap:
 		Text: PRIMARY
 		ReferencePoint: Top
 		ZOffset: 256
-		UpgradeTypes: primary
-		UpgradeMinEnabledLevel: 1
+		RequiresCondition: primary
 
 gayard:
 	Inherits: ^Building
@@ -489,12 +491,13 @@ gayard:
 	Production:
 		Produces: Ship
 	PrimaryBuilding:
+		PrimaryCondition: primary
 	WithTextDecoration@primary:
 		RequiresSelection: true
 		Text: PRIMARY
 		ReferencePoint: Top
 		ZOffset: 256
-		UpgradeTypes: primary
+		RequiresCondition: primary
 		UpgradeMinEnabledLevel: 1
 	RallyPoint:
 		Offset: 5,1
@@ -518,8 +521,7 @@ gayard:
 		Text: PRIMARY
 		ReferencePoint: Top
 		ZOffset: 256
-		UpgradeTypes: primary
-		UpgradeMinEnabledLevel: 1
+		RequiresCondition: primary
 
 gadept:
 	Inherits: ^Building

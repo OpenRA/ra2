@@ -29,7 +29,7 @@ lcrf:
 			Gems: 50
 			Water: 100
 		UpgradeMaxEnabledLevel: 0
-		UpgradeTypes: notmobile
+#		UpgradeTypes: notmobile
 	RevealsShroud:
 		Range: 6c0
 	Cargo:
@@ -39,7 +39,7 @@ lcrf:
 		PassengerFacing: 96
 		UnloadTerrainTypes: Clear, Rough, Rail, Road, DirtRoad, Beach, Ore, Gems
 		UnloadVoice: Move
-		LoadingUpgrades: notmobile
+		LoadingCondition: notmobile
 	Explodes:
 		Weapon: UnitExplode
 		EmptyWeapon: UnitExplode
@@ -74,14 +74,14 @@ dest:
 		Weapon: 155mm
 		LocalOffset: 768,0,0
 		FireDelay: 2
-		UpgradeTypes: eliteweapon
+		RequiresCondition: !eliteweapon
 		UpgradeMaxEnabledLevel: 0
 		UpgradeMaxAcceptedLevel: 1
 	Armament@elite:
 		Weapon: 155mmE
 		LocalOffset: 768,0,0
 		FireDelay: 2
-		UpgradeTypes: eliteweapon
+		RequiresCondition: eliteweapon
 		UpgradeMinEnabledLevel: 1
 	AttackFrontal:
 		Voice: Attack
@@ -178,11 +178,11 @@ dlph:
 		IsPlayerPalette: true
 	Targetable:
 		TargetTypes: Ground, Water
-		UpgradeTypes: underwater
+		RequiresCondition: underwater
 		UpgradeMaxEnabledLevel: 0
 	Targetable@underwater:
 		TargetTypes: Underwater
-		UpgradeTypes: underwater
+		RequiresCondition: underwater
 		UpgradeMinEnabledLevel: 1
 		IsPlayerPalette: true
 	DetectCloaked:

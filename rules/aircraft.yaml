@@ -35,7 +35,7 @@ shad:
 	WithVoxelWalkerBody:
 		TickRate: 1
 	Hovers@CRUISING:
-		UpgradeTypes: cruising
+		RequiresCondition: cruising
 		UpgradeMinEnabledLevel: 1
 		OffsetModifier: -45
 	Cargo:
@@ -92,12 +92,8 @@ zep:
 		TurnSpeed: 5
 		Speed: 50
 		Voice: Move
-		AirborneUpgrades: airborne
+		AirborneCondition: airborne
 		CanHover: True
-	Targetable@airborne:
-		TargetTypes: Air
-		UpgradeTypes: airborne
-		UpgradeMinEnabledLevel: 1
 	Health:
 		HP: 2000
 	Armor:
@@ -123,10 +119,6 @@ zep:
 		VoiceSet: KirovVoice
 	SpawnActorOnDeath:
 		Actor: zephusk
-	Targetable@ground:
-		TargetTypes: Ground
-		UpgradeTypes: airborne
-		UpgradeMaxEnabledLevel: 0
 
 zephusk:
 	Tooltip:
@@ -200,6 +192,7 @@ orca:
 		Image: falc
 	SpawnActorOnDeath:
 		Actor: orcahusk
+	ReturnOnIdle:
 
 orcahusk:
 	Inherits: ^PlaneHusk
@@ -229,6 +222,7 @@ beag:
 		Image: beag
 	RenderVoxels:
 		Image: beag
+	ReturnOnIdle:
 
 beaghusk:
 	Inherits: ^PlaneHusk

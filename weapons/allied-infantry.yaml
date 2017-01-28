@@ -185,9 +185,9 @@ NeutronRifle:
 	Warhead@Damage: SpreadDamage
 		Spread: 64
 		Damage: 8
-	Warhead@Disable: GrantUpgrade
+	Warhead@Disable: GrantExternalCondition
 		Range: 64
 		Duration: 250
-		Upgrades: chronodisable, notmobile
+		Condition: chronodisable, notmobile
 	Warhead@Stars: CreateEffect
 		Explosions: chronosk

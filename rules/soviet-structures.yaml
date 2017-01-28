@@ -153,6 +153,7 @@ nahand:
 	Production:
 		Produces: Infantry
 	PrimaryBuilding:
+		PrimaryCondition: primary
 	RallyPoint:
 		Offset: 3,3
 		Palette: mouse
@@ -160,7 +161,7 @@ nahand:
 	ProductionBar:
 	Power:
 		Amount: -10
-	UpgradeManager:
+	ConditionManager:
 	InfiltrateForSupportPower:
 		Proxy: barracks.infiltrated
 	Targetable:
@@ -170,7 +171,7 @@ nahand:
 		Text: PRIMARY
 		ReferencePoint: Top
 		ZOffset: 256
-		UpgradeTypes: primary
+		RequiresCondition: primary
 		UpgradeMinEnabledLevel: 1
 
 narefn:
@@ -307,12 +308,13 @@ naweap:
 	Production:
 		Produces: Vehicle
 	PrimaryBuilding:
+		PrimaryCondition: primary
 	WithTextDecoration@primary:
 		RequiresSelection: true
 		Text: PRIMARY
 		ReferencePoint: Top
 		ZOffset: 256
-		UpgradeTypes: primary
+		RequiresCondition: primary
 		UpgradeMinEnabledLevel: 1
 	ProductionBar:
 	WithExitOverlay@door:
@@ -334,7 +336,7 @@ naweap:
 		Text: PRIMARY
 		ReferencePoint: Top
 		ZOffset: 256
-		UpgradeTypes: primary
+		RequiresCondition: primary
 		UpgradeMinEnabledLevel: 1
 
 nayard:
@@ -434,12 +436,13 @@ nayard:
 	Production:
 		Produces: Ship
 	PrimaryBuilding:
+		PrimaryCondition: primary
 	WithTextDecoration@primary:
 		RequiresSelection: true
 		Text: PRIMARY
 		ReferencePoint: Top
 		ZOffset: 256
-		UpgradeTypes: primary
+		RequiresCondition: primary
 		UpgradeMinEnabledLevel: 1
 	RallyPoint:
 		Offset: 5,1
@@ -465,7 +468,7 @@ nayard:
 		Text: PRIMARY
 		ReferencePoint: Top
 		ZOffset: 256
-		UpgradeTypes: primary
+		RequiresCondition: primary
 		UpgradeMinEnabledLevel: 1
 
 nadept:
@@ -710,7 +713,7 @@ nairon:
 		Range: 4c0
 	Power:
 		Amount: -200
-	GrantUpgradePower@IRONCURTAIN:
+	GrantExternalConditionPower@IRONCURTAIN:
 		Icon: invuln
 		ChargeTime: 120
 		Description: Invulnerability
@@ -718,9 +721,9 @@ nairon:
 		Duration: 500
 		# TODO: This are actually no speech notifications
 		EndChargeSound: siroread.wav
-		GrantUpgradeSound: siroon.wav
+		OnFireSound: siroon.wav
 		DisplayRadarPing: True
-		Upgrades: invulnerability
+		Condition: invulnerability
 	SupportPowerChargeBar:
 	RequiresPower:
 	CanPowerDown:
@@ -867,7 +870,7 @@ tesla:
 	Armament@charged:
 		Weapon: OPCoilBolt
 		LocalOffset: 0,0,2200
-		UpgradeTypes: charged
+		RequiresCondition: charged
 		UpgradeMinEnabledLevel: 2
 		UpgradeMaxAcceptedLevel: 3
 	AttackCharge:
@@ -878,7 +881,7 @@ tesla:
 		ChargeAudio: tslachg2.aud
 	AutoTarget:
 	RequiresPower:
-		UpgradeTypes: charged
+#		RequiresCondition: charged
 		UpgradeMaxEnabledLevel: 2
 		UpgradeMaxAcceptedLevel: 3
 	WithRangeCircle:
