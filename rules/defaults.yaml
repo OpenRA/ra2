@@ -56,14 +56,14 @@
 		Modifier: 50
 	WithDecoration@VETERAN:
 		Image: rank
-		Sequence: rank
+		Sequence: veteran
 		Palette: pips
 		ReferencePoint: Bottom, Right
 		RequiresCondition: rank-veteran && !rank-elite
 		ZOffset: 256
 	WithDecoration@ELITE:
 		Image: rank
-		Sequence: rank
+		Sequence: elite
 		Palette: pips
 		ReferencePoint: Bottom, Right
 		RequiresCondition: rank-elite

@@ -85,10 +85,10 @@ crate:
 		UseTilesetExtension: true
 
 rank:
-	rank: pips
+	veteran: pips
 		Start: 13
-		Length: 2
-		Offset: 2, 2
+	elite: pips
+		Start: 14
 
 mpspawn:
 	idle:
