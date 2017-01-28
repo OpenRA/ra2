@@ -4,11 +4,11 @@ engineer:
 		Queue: Infantry
 		Prerequisites: ~barracks
 		BuildPaletteOrder: 60
+		Description: Captures enemy structures.\n  Unarmed
 	Valued:
 		Cost: 500
 	Tooltip:
 		Name: Engineer
-		Description: Captures enemy structures.\n  Unarmed
 	Selectable:
 		Bounds: 20, 30, 0, -11
 	Health:
@@ -41,11 +41,11 @@ dog:
 		Queue: Infantry
 		Prerequisites: ~barracks
 		BuildPaletteOrder: 50
+		Description: Anti-infantry unit.\nCan detect cloaked units and spies.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
 	Valued:
 		Cost: 200
 	Tooltip:
 		Name: Attack Dog
-		Description: Anti-infantry unit.\nCan detect cloaked units and spies.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
 	Selectable:
 		Bounds: 30, 24, 0, -5
 	Health:
@@ -88,11 +88,11 @@ e1:
 		Queue: Infantry
 		Prerequisites: ~gapile
 		BuildPaletteOrder: 10
+		Description: General-purpose infantry.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
 	Valued:
 		Cost: 200
 	Tooltip:
 		Name: G.I.
-		Description: General-purpose infantry.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
 	Selectable:
 		Bounds: 20, 30, 0, -11
 	Health:
@@ -108,12 +108,10 @@ e1:
 	Armament@primary:
 		Weapon: M60
 		RequiresCondition: !eliteweapon
-		UpgradeMaxEnabledLevel: 0
-		UpgradeMaxAcceptedLevel: 1
+
 	Armament@elite:
 		Weapon: M60E
 		RequiresCondition: eliteweapon
-		UpgradeMinEnabledLevel: 1
 #	Armament@deployed:
 #		Weapon: para
 #		UpgradeTypes: deployed
@@ -137,11 +135,11 @@ snipe:
 		Cost: 600
 	Tooltip:
 		Name: Sniper
-		Description: Special anti-infantry unit.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
 	Buildable:
 		Queue: Infantry
 		BuildPaletteOrder: 80
 		Prerequisites: radar, ~infantry.england
+		Description: Special anti-infantry unit.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
 	Selectable:
 		Bounds: 20, 30, 0, -11
 	Mobile:
@@ -172,12 +170,12 @@ spy:
 		BuildAtProductionType: Infantry
 		BuildPaletteOrder: 90
 		Prerequisites: gatech, ~gapile
+		Description: Infiltrates enemy structures for intel or\nsabotage. Exact effect depends on the\nbuilding infiltrated.\n  Unarmed\nSpecial Ability: Disguises
 	Valued:
 		Cost: 500
 	DisguiseToolTip:
 		Name: Spy
 		GenericName: Soldier
-		Description: Infiltrates enemy structures for intel or\nsabotage. Exact effect depends on the\nbuilding infiltrated.\n  Unarmed\nSpecial Ability: Disguises
 	Selectable:
 		Bounds: 24, 28, -1, -8
 	Health:
@@ -190,6 +188,7 @@ spy:
 		PipType: Yellow
 	TakeCover:
 	Disguise:
+		DisguisedCondition: disguise
 	Infiltrates:
 		Types: SpyInfiltrate
 	-AutoTarget:
@@ -204,7 +203,6 @@ spy:
 		ReferencePoint: Top, Right
 		ZOffset: 256
 		RequiresCondition: disguise
-		UpgradeMinEnabledLevel: 1
 	Voiced:
 		VoiceSet: SpyVoice
 	Guard:
@@ -221,11 +219,11 @@ ghost:
 		BuildAtProductionType: Infantry
 		BuildPaletteOrder: 110
 		Prerequisites: ~disabled
+		Description: Elite commando infantry, armed with\na sub machine gun and C4.\n  Strong vs Infantry, Buildings\n  Weak vs Vehicles, Aircraft\nSpecial Ability: Destroy Building with C4
 	Valued:
 		Cost: 1000
 	Tooltip:
 		Name: Navy SEAL
-		Description: Elite commando infantry, armed with\na sub machine gun and C4.\n  Strong vs Infantry, Buildings\n  Weak vs Vehicles, Aircraft\nSpecial Ability: Destroy Building with C4
 	Selectable:
 		Bounds: 20, 30, 0, -11
 	Health:
@@ -236,7 +234,6 @@ ghost:
 	Targetable@WaterBorne:
 		TargetTypes: Underwater
 		RequiresCondition: water-borne
-		UpgradeMinEnabledLevel: 1
 	Mobile:
 		Speed: 71
 		TerrainSpeeds:
@@ -259,12 +256,11 @@ ghost:
 	Armament@primary:
 		Weapon: MP5
 		RequiresCondition: !eliteweapon
-		UpgradeMaxEnabledLevel: 0
-		UpgradeMaxAcceptedLevel: 1
+
 	Armament@elite:
 		Weapon: MP5E
 		RequiresCondition: eliteweapon
-		UpgradeMinEnabledLevel: 1
+
 	AttackFrontal:
 		Voice: Attack
 	RenderSprites:
@@ -288,11 +284,11 @@ tany:
 		BuildPaletteOrder: 120
 		Prerequisites: gatech, ~gapile
 		BuildLimit: 1
+		Description: Elite commando infantry, armed with \ndual pistols and C4.\n  Strong vs Infantry, Buildings\n  Weak vs Vehicles, Aircraft\nSpecial Ability: Destroy Building with C4\n\nMaximum 1 can be trained.
 	Valued:
 		Cost: 1000
 	Tooltip:
 		Name: Tanya
-		Description: Elite commando infantry, armed with \ndual pistols and C4.\n  Strong vs Infantry, Buildings\n  Weak vs Vehicles, Aircraft\nSpecial Ability: Destroy Building with C4\n\nMaximum 1 can be trained.
 	Selectable:
 		Bounds: 20, 30, 0, -11
 	Health:
@@ -303,7 +299,6 @@ tany:
 	Targetable@WaterBorne:
 		TargetTypes: Underwater
 		RequiresCondition: water-borne
-		UpgradeMinEnabledLevel: 1
 	Mobile:
 		Speed: 71
 		TerrainSpeeds:
@@ -326,12 +321,11 @@ tany:
 	Armament@primary:
 		Weapon: DoublePistols
 		RequiresCondition: !eliteweapon
-		UpgradeMaxEnabledLevel: 0
-		UpgradeMaxAcceptedLevel: 1
+
 	Armament@elite:
 		Weapon: DoublePistolsE
 		RequiresCondition: eliteweapon
-		UpgradeMinEnabledLevel: 1
+
 	AttackFrontal:
 		Voice: Attack
 	AnnounceOnBuild:
@@ -355,11 +349,11 @@ jumpjet:
 		BuildAtProductionType: Infantry
 		BuildPaletteOrder: 60
 		Prerequisites: ~gapile, radar
+		Description: Airborne soldier.\n  Strong vs Infantry, Aircraft\n  Weak vs Vehicles
 	Valued:
 		Cost: 600
 	Tooltip:
 		Name: Rocketeer
-		Description: Airborne soldier.\n  Strong vs Infantry, Aircraft\n  Weak vs Vehicles
 	Selectable:
 		Bounds: 20, 30, 0, -11
 	Health:
@@ -373,12 +367,10 @@ jumpjet:
 	Armament@primary:
 		Weapon: 20mm
 		RequiresCondition: !eliteweapon
-		UpgradeMaxEnabledLevel: 0
-		UpgradeMaxAcceptedLevel: 1
+
 	Armament@elite:
 		Weapon: 20mmE
 		RequiresCondition: eliteweapon
-		UpgradeMinEnabledLevel: 1
 	AttackFrontal:
 		Voice: Attack
 	Aircraft:
@@ -407,7 +399,6 @@ jumpjet:
 	Targetable@airborne:
 		TargetTypes: Air, Disguise
 		RequiresCondition: airborne
-		UpgradeMinEnabledLevel: 1
 	WithShadow:
 	Voiced:
 		VoiceSet: RocketeerVoice
@@ -418,7 +409,6 @@ jumpjet:
 	Targetable@ground:
 		TargetTypes: Ground, Infantry, DetonateAttack, Disguise
 		RequiresCondition: !airborne
-		UpgradeMaxEnabledLevel: 0
 	-Passenger:
 
 cleg:
@@ -427,12 +417,12 @@ cleg:
 		Bounds: 20, 30, 0, -11
 	Tooltip:
 		Name: Chrono Legionnaire
-		Description: High-tech soldier.\n Strong vs Infantry, Vehicles\n Weak vs Aircraft
 	Buildable:
 		Queue: Infantry
 		BuildAtProductionType: Infantry
 		BuildPaletteOrder: 100
 		Prerequisites: ~gapile, gatech
+		Description: High-tech soldier.\n Strong vs Infantry, Vehicles\n Weak vs Aircraft
 	ProducibleWithLevel:
 		Prerequisites: barracks.infiltrated
 	Valued:

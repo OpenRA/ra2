@@ -7,7 +7,7 @@ caoild:
 		Dimensions: 2, 2
 	EngineerRepairable:
 	CashTrickler:
-		Period: 100
+		Interval: 100
 		Amount: 20
 	Tooltip:
 		Name: Tech Oil Derrick

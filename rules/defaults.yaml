@@ -20,48 +20,48 @@
 		Conditions:
 			500: rank-veteran
 			1000: rank-elite
-	FirepowerMultiplier@veteran:
+	FirepowerMultiplier@VETERAN:
 		RequiresCondition: (rank-veteran && !rank-elite) || crate-firepower
 		Modifier: 110
-	FirepowerMultiplier@elite:
+	FirepowerMultiplier@ELITE:
 		RequiresCondition: rank-elite || (rank-veteran && crate-firepower)
 		Modifier: 130
-	DamageMultiplier@veteran:
+	DamageMultiplier@VETERAN:
 		RequiresCondition: (rank-veteran && !rank-elite) || crate-damage
 		Modifier: 90
-	DamageMultiplier@elite:
+	DamageMultiplier@ELITE:
 		RequiresCondition: rank-elite || (rank-veteran && crate-damage)
 		Modifier: 75
-	SpeedMultiplier@veteran:
+	SpeedMultiplier@VETERAN:
 		RequiresCondition: (rank-veteran && !rank-elite) || crate-speed
 		Modifier: 120
-	SpeedMultiplier@elite:
+	SpeedMultiplier@ELITE:
 		RequiresCondition: rank-elite || (rank-veteran && crate-speed)
 		Modifier: 140
-	ReloadDelayMultiplier@veteran:
+	ReloadDelayMultiplier@VETERAN:
 		RequiresCondition: rank-veteran && !rank-elite
 		Modifier: 90
-	ReloadDelayMultiplier@elite:
+	ReloadDelayMultiplier@ELITE:
 		RequiresCondition: rank-elite
 		Modifier: 75
-	SelfHealing@elite:
+	SelfHealing@ELITE:
 		Step: 2
 		Ticks: 100
 		HealIfBelow: 100
 		DamageCooldown: 125
-        RequiresCondition: rank-veteran && !rank-elite
-        Modifier: 90
-	InaccuracyMultiplier@elite:
-        RequiresCondition: rank-elite
-        Modifier: 50
- 	WithDecoration@veteran:
+		RequiresCondition: rank-veteran && !rank-elite
+		Modifier: 90
+	InaccuracyMultiplier@ELITE:
+		RequiresCondition: rank-elite
+		Modifier: 50
+	WithDecoration@VETERAN:
 		Image: rank
 		Sequence: rank
 		Palette: pips
 		ReferencePoint: Bottom, Right
 		RequiresCondition: rank-veteran && !rank-elite
 		ZOffset: 256
-	WithDecoration@elite:
+	WithDecoration@ELITE:
 		Image: rank
 		Sequence: rank
 		Palette: pips
@@ -72,7 +72,6 @@
 ^IronCurtainable:
 	UpgradeOverlay@ironcurtain:
 		RequiresCondition: invulnerability
-		UpgradeMinEnabledLevel: 1
 	DamageMultiplier@ironcurtain:
 		RequiresCondition: invulnerability
 		Modifier: 0
@@ -84,13 +83,11 @@
 ^ChronoDisable:
 	DisableOnCondition@ChronoDisable:
 		RequiresCondition: chronodisable
-		UpgradeMinEnabledLevel: 1
 	TimedConditionBar@ChronoDisable:
 		Condition: chronodisable
 		Color: FFFFFF
 	Mobile:
 		RequiresCondition: !notmobile
-		UpgradeMaxEnabledLevel: 0
 
 ^Building:
 	Inherits@1: ^ExistsInWorld
@@ -315,13 +312,12 @@
 	Targetable:
 		TargetTypes: Ground, Infantry, DetonateAttack, Disguise
 		RequiresCondition: !parachute
-		UpgradeMaxEnabledLevel: 0
 	WithInfantryBody:
 		IdleSequences: idle1,idle2
 		StandSequences: stand
 		DefaultAttackSequence: shoot
-#		RequiresCondition: !parachute
-		UpgradeMaxEnabledLevel: 0
+		RequiresCondition: !parachute
+
 	WithDeathAnimation@normal:
 		DeathTypes:
 			ExplosionDeath: 1
@@ -385,7 +381,6 @@
 	WithSpriteBody@Parachute:
 		Sequence: paradrop
 		RequiresCondition: parachute
-		UpgradeMinEnabledLevel: 1
 	Parachutable:
 		FallRate: 26
 		KilledOnImpassableTerrain: true
@@ -396,7 +391,6 @@
 		ParachutingCondition: parachute
 	WithParachute:
 		RequiresCondition: parachute
-		UpgradeMinEnabledLevel: 1
 		Image: parach
 		OpeningSequence: open
 		Sequence: idle
@@ -556,7 +550,6 @@
 	Targetable@airborne:
 		TargetTypes: Air
 		RequiresCondition: airborne
-		UpgradeMinEnabledLevel: 1
 	SelectionDecorations:
 		Palette: pips
 	Selectable:
@@ -587,7 +580,6 @@
 	Targetable@ground:
 		TargetTypes: Ground, Repair, Vehicle
 		RequiresCondition: !airborne
-		UpgradeMaxEnabledLevel: 0
 	DeathSounds:
 	AppearsOnRadar:
 		UseLocation: true
@@ -600,7 +592,6 @@
 		AltitudeVelocity: 120
 	Hovers@CRUISING:
 		RequiresCondition: cruising
-		UpgradeMinEnabledLevel: 1
 	ReturnOnIdle:
 	WithVoxelBody:
 

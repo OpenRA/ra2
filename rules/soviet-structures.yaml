@@ -4,6 +4,7 @@ nacnst:
 		Queue: Building
 		BuildPaletteOrder: 1000
 		Prerequisites: ~disabled
+		Description: Allows construction of base structures.
 	Building:
 		Footprint: xxxx xxxx xxxx xxxx
 		Dimensions: 4,4
@@ -23,7 +24,6 @@ nacnst:
 		Produces: Building, Support
 	Tooltip:
 		Name: Construction Yard
-		Description: Allows construction of base structures.
 	BaseBuilding:
 	Transforms:
 		IntoActor: smcv
@@ -52,11 +52,11 @@ napowr:
 		Queue: Building
 		BuildPaletteOrder: 10
 		Prerequisites: ~structures.soviets
+		Description: Provides power for other structures.
 	Valued:
 		Cost: 600
 	Tooltip:
 		Name: Tesla Reactor
-		Description: Provides power for other structures.
 	ProvidesPrerequisite:
 		Prerequisite: power
 	Building:
@@ -89,11 +89,11 @@ nahand:
 		Queue: Building
 		BuildPaletteOrder: 20
 		Prerequisites: power, ~structures.soviets
+		Description: Produces infantry.
 	Valued:
 		Cost: 500
 	Tooltip:
 		Name: Barracks
-		Description: Produces infantry.
 	ProvidesPrerequisite:
 		Prerequisite: barracks
 	ProvidesPrerequisite@cuba:
@@ -172,7 +172,6 @@ nahand:
 		ReferencePoint: Top
 		ZOffset: 256
 		RequiresCondition: primary
-		UpgradeMinEnabledLevel: 1
 
 narefn:
 	Inherits: ^Building
@@ -180,13 +179,13 @@ narefn:
 		Queue: Building
 		BuildPaletteOrder: 30
 		Prerequisites: power, ~structures.soviets
+		Description: Processes ore into credits.
 	Selectable:
 		Bounds: 170, 150, -6, -33
 	Valued:
 		Cost: 2000
 	Tooltip:
 		Name: Ore Refinery
-		Description: Processes ore into credits.
 	ProvidesPrerequisite:
 		Prerequisite: refinery
 	ProvidesPrerequisite@default:
@@ -236,11 +235,11 @@ naradr:
 		Queue: Building
 		BuildPaletteOrder: 40
 		Prerequisites: power, narefn, ~structures.soviets
+		Description: Provides radar.
 	Valued:
 		Cost: 1000
 	Tooltip:
 		Name: Radar Tower
-		Description: Provides radar.
 	ProvidesPrerequisite:
 		Prerequisite: radar
 	ProvidesPrerequisite@default:
@@ -259,6 +258,7 @@ naradr:
 		PowerupSpeech: BuildingOnline
 		PowerdownSpeech: BuildingOffline
 	ProvidesRadar:
+		RequiresCondition: !disabled
 	RevealsShroud:
 		Range: 10c0
 	WithIdleOverlay@dish:
@@ -269,6 +269,8 @@ naradr:
 	InfiltrateForExploration:
 	Power:
 		Amount: -50
+	GrantConditionOnDisabled@IDISABLE:
+		Condition: disabled
 
 naweap:
 	Inherits: ^Building
@@ -276,13 +278,13 @@ naweap:
 		Queue: Building
 		BuildPaletteOrder: 50
 		Prerequisites: refinery, nahand, ~structures.soviets
+		Description: Produces vehicles.
 	Selectable:
 		Bounds: 196, 178, -6, -48
 	Valued:
 		Cost: 2000
 	Tooltip:
 		Name: War Factory
-		Description: Produces vehicles.
 	ProvidesPrerequisite@libya:
 		Prerequisite: vehicles.libya
 		Factions: libya
@@ -315,7 +317,6 @@ naweap:
 		ReferencePoint: Top
 		ZOffset: 256
 		RequiresCondition: primary
-		UpgradeMinEnabledLevel: 1
 	ProductionBar:
 	WithExitOverlay@door:
 		Sequence: build-door
@@ -337,7 +338,6 @@ naweap:
 		ReferencePoint: Top
 		ZOffset: 256
 		RequiresCondition: primary
-		UpgradeMinEnabledLevel: 1
 
 nayard:
 	Inherits: ^Building
@@ -345,11 +345,11 @@ nayard:
 		Cost: 1000
 	Tooltip:
 		Name: Naval Yard
-		Description: Produces and repairs ships,\nsubmarines, transports, and other naval units.
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 50
 		Prerequisites: power, refinery, ~structures.soviets
+		Description: Produces and repairs ships,\nsubmarines, transports, and other naval units.
 	Targetable:
 		TargetTypes: Ground, Water, C4
 	ProvidesPrerequisite@default:
@@ -443,7 +443,6 @@ nayard:
 		ReferencePoint: Top
 		ZOffset: 256
 		RequiresCondition: primary
-		UpgradeMinEnabledLevel: 1
 	RallyPoint:
 		Offset: 5,1
 		Palette: mouse
@@ -469,7 +468,6 @@ nayard:
 		ReferencePoint: Top
 		ZOffset: 256
 		RequiresCondition: primary
-		UpgradeMinEnabledLevel: 1
 
 nadept:
 	Inherits: ^Building
@@ -477,13 +475,13 @@ nadept:
 		Queue: Building
 		BuildPaletteOrder: 60
 		Prerequisites: naweap, ~structures.soviets
+		Description: Repairs vehicles and removes Terror Drones (for a price).
 	Selectable:
 		Bounds: 156, 150, 0, -38
 	Valued:
 		Cost: 800
 	Tooltip:
 		Name: Service Depot
-		Description: Repairs vehicles and removes Terror Drones (for a price).
 	ProvidesPrerequisite:
 		Prerequisite: repairpad
 	Building:
@@ -518,11 +516,11 @@ nanrct:
 		Queue: Building
 		BuildPaletteOrder: 160
 		Prerequisites: natech, ~structures.soviets
+		Description: Provides power for other structures.
 	Valued:
 		Cost: 1000
 	Tooltip:
 		Name: Nuclear Reactor
-		Description: Provides power for other structures.
 	ProvidesPrerequisite:
 		Prerequisite: power
 	Building:
@@ -558,11 +556,11 @@ natech:
 		Queue: Building
 		BuildPaletteOrder: 150
 		Prerequisites: naweap, naradr, ~structures.soviets
+		Description: Allows deployment of advanced units.
 	Valued:
 		Cost: 2000
 	Tooltip:
 		Name: Battle Lab
-		Description: Allows deployment of advanced units.
 	ProvidesPrerequisite@default:
 	Building:
 		Footprint: xxx xxx xxx
@@ -589,11 +587,11 @@ naclon:
 		BuildPaletteOrder: 170
 		Prerequisites: natech, ~structures.soviets
 		BuildLimit: 1
+		Description: Clones most trained infantry.
 	Valued:
 		Cost: 2500
 	Tooltip:
 		Name: Cloning Vats
-		Description: Clones most trained infantry.
 	Building:
 		Footprint: xx xx
 		Dimensions: 2, 2
@@ -658,11 +656,11 @@ napsis:
 		Queue: Support
 		BuildPaletteOrder: 40
 		Prerequisites: natech, ~structures.soviets
+		Description: Detects enemy units and strikepoints
 	Valued:
 		Cost: 2000
 	Tooltip:
 		Name: Psychic Sensor
-		Description: Detects enemy units and strikepoints
 	Building:
 		Footprint: xx xx
 		Dimensions: 2,2
@@ -695,11 +693,11 @@ nairon:
 		BuildPaletteOrder: 60
 		Prerequisites: natech, ~structures.soviets
 		BuildLimit: 1
+		Description: Grants invulnerability to armored units.\nFries fleshy units.
 	Valued:
 		Cost: 2500
 	Tooltip:
 		Name: Iron Curtain Device
-		Description: Grants invulnerability to armored units.\nFries fleshy units.
 	Building:
 		Footprint: xxx xxx xxx
 		Dimensions: 3, 3
@@ -738,11 +736,11 @@ namisl:
 		BuildPaletteOrder: 70
 		Prerequisites: natech, ~structures.soviets
 		BuildLimit: 1
+		Description: Provides an atomic bomb.\nRequires power to operate.\n  Special Ability: Atom Bomb\nMaximum 1 can be built.
 	Valued:
 		Cost: 5000
 	Tooltip:
 		Name: Nuclear Missile Silo
-		Description: Provides an atomic bomb.\nRequires power to operate.\n  Special Ability: Atom Bomb\nMaximum 1 can be built.
 	Building:
 		Footprint: xxx xxx xxx
 		Dimensions: 3, 3
@@ -775,10 +773,10 @@ namisl:
 		DisplayTimer: True
 		DisplayBeacon: True
 		DisplayRadarPing: True
-		CameraActor: camera
 		CameraRemoveDelay: 70
 		FlashType: Nuke
 		CircleSequence:
+		CameraRange: 10
 
 nawall:
 	Inherits: ^Wall
@@ -786,9 +784,9 @@ nawall:
 		Queue: Support
 		BuildPaletteOrder: 10
 		Prerequisites: barracks, ~structures.soviets
+		Description: Light wall.\nCrushable by vehicles.
 	Tooltip:
 		Name: Soviet Wall
-		Description: Light wall.\nCrushable by vehicles.
 
 naflak:
 	Inherits: ^VoxelLighting
@@ -796,11 +794,11 @@ naflak:
 		Queue: Support
 		BuildPaletteOrder: 30
 		Prerequisites: barracks, ~structures.soviets
+		Description: Automated anti-aircraft defense.
 	Valued:
 		Cost: 1000
 	Tooltip:
 		Name: Flak Cannon
-		Description: Automated anti-aircraft defense.
 	Building:
 		Footprint: x
 		Dimensions: 1, 1
@@ -842,11 +840,11 @@ tesla:
 		Queue: Support
 		BuildPaletteOrder: 30
 		Prerequisites: naradr, ~structures.soviets
+		Description: Advanced base defense.\nRequires power to operate.\n  Strong vs Infantry, Vehicles\n  Weak vs Aircraft
 	Valued:
 		Cost: 1500
 	Tooltip:
 		Name: Tesla Coil
-		Description: Advanced base defense.\nRequires power to operate.\n  Strong vs Infantry, Vehicles\n  Weak vs Aircraft
 	Building:
 		Footprint: x
 		Dimensions: 1, 1
@@ -861,29 +859,22 @@ tesla:
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, TeslaBoost
 	WithChargeOverlay:
-	Armament@primary:
+	Armament:
 		Weapon: CoilBolt
 		LocalOffset: 0,0,2200
-		UpgradeTypes: charged
-		UpgradeMaxEnabledLevel: 1
-		UpgradeMaxAcceptedLevel: 3
+		RequiresCondition: !charged
 	Armament@charged:
 		Weapon: OPCoilBolt
 		LocalOffset: 0,0,2200
 		RequiresCondition: charged
-		UpgradeMinEnabledLevel: 2
-		UpgradeMaxAcceptedLevel: 3
 	AttackCharge:
 		Voice: Attack
-		Armaments: primary, charged
 		MaxCharges: 3
 		ReloadTime: 120
 		ChargeAudio: tslachg2.aud
 	AutoTarget:
 	RequiresPower:
-#		RequiresCondition: charged
-		UpgradeMaxEnabledLevel: 2
-		UpgradeMaxAcceptedLevel: 3
+		RequiresCondition: !charged
 	WithRangeCircle:
 		Range: 8c0
 		Type: teslacoil
@@ -896,6 +887,8 @@ tesla:
 		IndicatorPalette: ts-mouse
 		PowerupSpeech: BuildingOnline
 		PowerdownSpeech: BuildingOffline
+	ExternalConditions@charged:
+		Conditions: charged
 
 nalasr:
 	Inherits: ^VoxelLighting
@@ -903,11 +896,11 @@ nalasr:
 		Queue: Support
 		BuildPaletteOrder: 30
 		Prerequisites: barracks, ~structures.soviets
+		Description: Automated anti-infantry defense.
 	Valued:
 		Cost: 500
 	Tooltip:
 		Name: Sentry Gun
-		Description: Automated anti-infantry defense.
 	Building:
 		Footprint: x
 		Dimensions: 1, 1

@@ -2,7 +2,6 @@ shad:
 	Inherits: ^Aircraft
 	Tooltip:
 		Name: Night Hawk
-		Description: Infantry Transport Helicopter\nUndetectable by radar.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
 	Health:
 		HP: 175
 	Armor:
@@ -15,6 +14,7 @@ shad:
 		Queue: Vehicle
 		BuildPaletteOrder: 20
 		Prerequisites: ~gaweap
+		Description: Infantry Transport Helicopter\nUndetectable by radar.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
 	Valued:
 		Cost: 1000
 	RevealsShroud:
@@ -30,13 +30,12 @@ shad:
 		TurnSpeed: 10
 		Speed: 100
 		AltitudeVelocity: 120
-		CruisingUpgrades: cruising
+		CruisingCondition: cruising
 	RenderSprites:
 	WithVoxelWalkerBody:
 		TickRate: 1
 	Hovers@CRUISING:
 		RequiresCondition: cruising
-		UpgradeMinEnabledLevel: 1
 		OffsetModifier: -45
 	Cargo:
 		Types: Infantry
@@ -57,7 +56,7 @@ shadhusk:
 	Aircraft:
 		TurnSpeed: 5
 		Speed: 140
-		AirborneUpgrades: airborne
+		AirborneCondition: airborne
 		CanHover: True
 		Voice: Move
 	FallsToEarth:
@@ -130,7 +129,7 @@ zephusk:
 	Aircraft:
 		TurnSpeed: 10
 		Speed: 50
-		AirborneUpgrades: airborne
+		AirborneCondition: airborne
 		CanHover: True
 		Voice: Move
 	FallsToEarth:
@@ -155,11 +154,11 @@ orca:
 		Cost: 1200
 	Tooltip:
 		Name: Harrier
-		Description: Fast assault fighter\n  Strong vs Buildings, Vehicles\n  Weak vs Infantry, Aircraft
 	Buildable:
 		Queue: Aircraft
 		BuildPaletteOrder: 20
 		Prerequisites: ~aircraft.allies
+		Description: Fast assault fighter\n  Strong vs Buildings, Vehicles\n  Weak vs Infantry, Aircraft
 	Aircraft:
 		TurnSpeed: 3
 		Speed: 140
@@ -192,7 +191,7 @@ orca:
 		Image: falc
 	SpawnActorOnDeath:
 		Actor: orcahusk
-	ReturnOnIdle:
+#	ReturnOnIdle:
 
 orcahusk:
 	Inherits: ^PlaneHusk
@@ -222,7 +221,7 @@ beag:
 		Image: beag
 	RenderVoxels:
 		Image: beag
-	ReturnOnIdle:
+#	ReturnOnIdle:
 
 beaghusk:
 	Inherits: ^PlaneHusk
@@ -247,7 +246,7 @@ pdplane:
 		CruiseAltitude: 5600
 		ROT: 5
 		Speed: 100
-		AirborneUpgrades: airborne
+		AirborneCondition: airborne
 	Health:
 		HP: 1000
 	RevealsShroud:
