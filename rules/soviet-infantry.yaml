@@ -24,10 +24,10 @@ e2:
 		Voice: Attack
 	Armament@primary:
 		Weapon: M1Carbine
-		RequiresCondition: !eliteweapon
+		RequiresCondition: !rank-elite
 	Armament@elite:
 		Weapon: M1CarbineE
-		RequiresCondition: eliteweapon
+		RequiresCondition: rank-elite
 	WithInfantryBody:
 		DefaultAttackSequence: shoot
 	Voiced:
@@ -63,16 +63,16 @@ flakt:
 		Voice: Attack
 	Armament@primary:
 		Weapon: FlakGuyGun
-		RequiresCondition: !eliteweapon
+		RequiresCondition: !rank-elite
 	Armament@secondary:
 		Weapon: FlakGuyAAGun
-		RequiresCondition: !eliteweapon
+		RequiresCondition: !rank-elite
 	Armament@primary-elite:
 		Weapon: FlakGuyGunE
-		RequiresCondition: eliteweapon
+		RequiresCondition: rank-elite
 	Armament@secondary-elite:
 		Weapon: FlakGuyAAGunE
-		RequiresCondition: eliteweapon
+		RequiresCondition: rank-elite
 	WithInfantryBody:
 		DefaultAttackSequence: shoot
 		IdleAnimation:
@@ -112,10 +112,10 @@ shk:
 		Voice: Attack
 	Armament@primary:
 		Weapon: ElectricBolt
-		RequiresCondition: !eliteweapon
+		RequiresCondition: !rank-elite
 	Armament@elite:
 		Weapon: ElectricBoltE
-		RequiresCondition: eliteweapon
+		RequiresCondition: rank-elite
 	Armament@charge:
 		Weapon: AssaultBolt
 		LocalOffset: 427,0,341
@@ -203,10 +203,10 @@ deso:
 		PipType: Red
 	Armament@primary:
 		Weapon: RadBeamWeapon
-		RequiresCondition: !eliteweapon
+		RequiresCondition: !rank-elite
 	Armament@elite:
 		Weapon: RadBeamWeaponE
-		RequiresCondition: eliteweapon
+		RequiresCondition: rank-elite
 	AttackFrontal:
 		Voice: Attack
 	WithInfantryBody:
@@ -249,10 +249,10 @@ ivan:
 		EmptyWeapon: IvanBomber
 	Armament@primary:
 		Weapon: IvanBomber
-		RequiresCondition: !eliteweapon
+		RequiresCondition: !rank-elite
 	Armament@elite:
 		Weapon: IvanBomberE
-		RequiresCondition: eliteweapon
+		RequiresCondition: rank-elite
 	AttackFrontal:
 		Voice: Attack
 		Cursor: bomb

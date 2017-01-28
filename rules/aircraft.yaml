@@ -56,7 +56,6 @@ shadhusk:
 	Aircraft:
 		TurnSpeed: 5
 		Speed: 140
-		AirborneCondition: airborne
 		CanHover: True
 		Voice: Move
 	FallsToEarth:
@@ -129,7 +128,6 @@ zephusk:
 	Aircraft:
 		TurnSpeed: 10
 		Speed: 50
-		AirborneCondition: airborne
 		CanHover: True
 		Voice: Move
 	FallsToEarth:
@@ -191,7 +189,6 @@ orca:
 		Image: falc
 	SpawnActorOnDeath:
 		Actor: orcahusk
-#	ReturnOnIdle:
 
 orcahusk:
 	Inherits: ^PlaneHusk
@@ -221,7 +218,6 @@ beag:
 		Image: beag
 	RenderVoxels:
 		Image: beag
-#	ReturnOnIdle:
 
 beaghusk:
 	Inherits: ^PlaneHusk
@@ -234,11 +230,10 @@ beaghusk:
 		Image: beag
 
 pdplane:
-	Inherits: ^Aircraft
+	Inherits: ^NeutralAircraft
 	Valued:
 		Cost: 2000
 	-Selectable:
-	-GainsExperience:
 	RejectsOrders:
 	Tooltip:
 		Name: Cargo Plane
@@ -246,7 +241,6 @@ pdplane:
 		CruiseAltitude: 5600
 		ROT: 5
 		Speed: 100
-		AirborneCondition: airborne
 	Health:
 		HP: 1000
 	RevealsShroud:

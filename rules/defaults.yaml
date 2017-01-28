@@ -21,22 +21,22 @@
 			500: rank-veteran
 			1000: rank-elite
 	FirepowerMultiplier@VETERAN:
-		RequiresCondition: (rank-veteran && !rank-elite) || crate-firepower
+		RequiresCondition: rank-veteran && !rank-elite
 		Modifier: 110
 	FirepowerMultiplier@ELITE:
-		RequiresCondition: rank-elite || (rank-veteran && crate-firepower)
+		RequiresCondition: rank-elite
 		Modifier: 130
 	DamageMultiplier@VETERAN:
-		RequiresCondition: (rank-veteran && !rank-elite) || crate-damage
+		RequiresCondition: rank-veteran && !rank-elite
 		Modifier: 90
 	DamageMultiplier@ELITE:
-		RequiresCondition: rank-elite || (rank-veteran && crate-damage)
+		RequiresCondition: rank-elite
 		Modifier: 75
 	SpeedMultiplier@VETERAN:
-		RequiresCondition: (rank-veteran && !rank-elite) || crate-speed
+		RequiresCondition: rank-veteran && !rank-elite
 		Modifier: 120
 	SpeedMultiplier@ELITE:
-		RequiresCondition: rank-elite || (rank-veteran && crate-speed)
+		RequiresCondition: rank-elite
 		Modifier: 140
 	ReloadDelayMultiplier@VETERAN:
 		RequiresCondition: rank-veteran && !rank-elite
@@ -69,6 +69,19 @@
 		RequiresCondition: rank-elite
 		ZOffset: 256
 
+^CrateStatModifiers:
+	FirepowerMultiplier@CRATES:
+		RequiresCondition: crate-firepower
+		Modifier: 200
+	DamageMultiplier@CRATES:
+		RequiresCondition: crate-damage
+		Modifier: 50
+	SpeedMultiplier@CRATES:
+		RequiresCondition: crate-speed
+		Modifier: 170
+	ExternalConditions@CRATES:
+		Conditions: crate-firepower, crate-damage, crate-speed
+
 ^IronCurtainable:
 	UpgradeOverlay@ironcurtain:
 		RequiresCondition: invulnerability
@@ -87,7 +100,9 @@
 		Condition: chronodisable
 		Color: FFFFFF
 	Mobile:
-		RequiresCondition: !notmobile
+#		RequiresCondition: !notmobile
+	ExternalConditions@ChronoDisable:
+		Conditions: chronodisable
 
 ^Building:
 	Inherits@1: ^ExistsInWorld
@@ -286,6 +301,7 @@
 	Inherits@2: ^SpriteActor
 	Inherits@3: ^GainsExperience
 	Inherits@4: ^ChronoDisable
+	Inherits@5: ^CrateStatModifiers
 	Health:
 		Shape: Circle
 			Radius: 128
@@ -311,13 +327,10 @@
 	Selectable:
 	Targetable:
 		TargetTypes: Ground, Infantry, DetonateAttack, Disguise
-		RequiresCondition: !parachute
 	WithInfantryBody:
 		IdleSequences: idle1,idle2
 		StandSequences: stand
 		DefaultAttackSequence: shoot
-		RequiresCondition: !parachute
-
 	WithDeathAnimation@normal:
 		DeathTypes:
 			ExplosionDeath: 1
@@ -395,6 +408,8 @@
 		OpeningSequence: open
 		Sequence: idle
 		ClosingSequence: close
+	ExternalConditions@parachute:
+		Conditions: parachute
 
 ^CivilianInfantry:
 	Inherits: ^Infantry
@@ -466,6 +481,7 @@
 	Inherits@2: ^GainsExperience
 	Inherits@3: ^IronCurtainable
 	Inherits@4: ^ChronoDisable
+	Inherits@5: ^CrateStatModifiers
 	Mobile:
 		Voice: Move
 		Crushes: crate
@@ -543,10 +559,8 @@
 	Voiced:
 		VoiceSet: CarVoice
 
-^Aircraft:
+^NeutralAircraft:
 	Inherits@1: ^ExistsInWorld
-	Inherits@2: ^GainsExperience
-		UseLocation: true
 	Targetable@airborne:
 		TargetTypes: Air
 		RequiresCondition: airborne
@@ -570,7 +584,6 @@
 		Voice: Attack
 	Guardable:
 	MustBeDestroyed:
-	WithTextControlGroupDecoration:
 	RenderVoxels:
 		Scale: 11.7
 		LightYaw: 800
@@ -583,6 +596,12 @@
 	DeathSounds:
 	AppearsOnRadar:
 		UseLocation: true
+
+^Aircraft:
+	Inherits@1: ^NeutralAircraft
+	Inherits@2: ^GainsExperience
+		UseLocation: true
+	WithTextControlGroupDecoration:
 
 ^Plane:
 	Inherits: ^Aircraft
@@ -603,8 +622,6 @@
 		QuantizedFacings: 0
 		CameraPitch: 90
 	Aircraft:
-		AirborneCondition: airborne
-		CruisingCondition: cruising
 	Health:
 		HP: 280
 	Armor:
@@ -625,6 +642,7 @@
 	Inherits@2: ^GainsExperience
 	Inherits@3: ^IronCurtainable
 	Inherits@4: ^ChronoDisable
+	Inherits@5: ^CrateStatModifiers
 	Mobile:
 		Voice: Move
 		Crushes: crate

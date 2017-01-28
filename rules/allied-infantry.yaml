@@ -107,11 +107,10 @@ e1:
 		Voice: Attack
 	Armament@primary:
 		Weapon: M60
-		RequiresCondition: !eliteweapon
-
+		RequiresCondition: !rank-elite
 	Armament@elite:
 		Weapon: M60E
-		RequiresCondition: eliteweapon
+		RequiresCondition: rank-elite
 #	Armament@deployed:
 #		Weapon: para
 #		UpgradeTypes: deployed
@@ -255,12 +254,10 @@ ghost:
 		PipType: Red
 	Armament@primary:
 		Weapon: MP5
-		RequiresCondition: !eliteweapon
-
+		RequiresCondition: !rank-elite
 	Armament@elite:
 		Weapon: MP5E
-		RequiresCondition: eliteweapon
-
+		RequiresCondition: rank-elite
 	AttackFrontal:
 		Voice: Attack
 	RenderSprites:
@@ -320,11 +317,11 @@ tany:
 		PipType: Red
 	Armament@primary:
 		Weapon: DoublePistols
-		RequiresCondition: !eliteweapon
+		RequiresCondition: !rank-elite
 
 	Armament@elite:
 		Weapon: DoublePistolsE
-		RequiresCondition: eliteweapon
+		RequiresCondition: rank-elite
 
 	AttackFrontal:
 		Voice: Attack
@@ -366,11 +363,10 @@ jumpjet:
 		Type: None
 	Armament@primary:
 		Weapon: 20mm
-		RequiresCondition: !eliteweapon
-
+		RequiresCondition: !rank-elite
 	Armament@elite:
 		Weapon: 20mmE
-		RequiresCondition: eliteweapon
+		RequiresCondition: rank-elite
 	AttackFrontal:
 		Voice: Attack
 	Aircraft:

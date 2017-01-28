@@ -78,7 +78,7 @@ cmin:
 	WithHarvestOverlay:
 		Offset: 121,0,0
 		Palette: effect
-	-GainsExperience:
+	GainsExperience: # can get experience, i.e. speed
 	RenderSprites:
 	RenderVoxels:
 	WithVoxelUnloadBody:
@@ -111,12 +111,11 @@ mtnk:
 	Armament@primary:
 		Weapon: 105mm
 		LocalOffset: 640,0,384
-		RequiresCondition: !eliteweapon
-
+		RequiresCondition: !rank-elite
 	Armament@elite:
 		Weapon: 105mmE
 		LocalOffset: 640,0,384
-		RequiresCondition: eliteweapon
+		RequiresCondition: rank-elite
 	AttackTurreted:
 		Voice: Attack
 	AutoTarget:
@@ -213,11 +212,10 @@ fv:
 		Weapon: HoverMissile
 		LocalOffset: 640, 0, 384
 		RequiresCondition: !ifv-machinegun && !ifv-repair && !ifv-sniper && !ifv-flak && !ifv-tesla && !ifv-deso && !ifv-hero
-
 	Armament@elite:
 		Weapon: HoverMissileE
 		LocalOffset: 640, 0, 384
-		RequiresCondition: eliteweapon
+		RequiresCondition: rank-elite
 	Armament@machinegun:
 		Weapon: CRM60
 		LocalOffset: 188,32,600
@@ -317,11 +315,11 @@ sref:
 	Armament@primary:
 		Weapon: Comet
 		LocalOffset: 640, 0, 427
-		RequiresCondition: !eliteweapon
+		RequiresCondition: !rank-elite
 	Armament@elite:
 		Weapon: SuperComet
 		LocalOffset: 640, 0, 427
-		RequiresCondition: eliteweapon
+		RequiresCondition: rank-elite
 	AttackTurreted:
 		Voice: Attack
 	AutoTarget:
@@ -362,11 +360,11 @@ mgtk:
 	Armament@primary:
 		Weapon: MirageGun
 		LocalOffset: 640, 0, 427
-		RequiresCondition: !eliteweapon
+		RequiresCondition: !rank-elite
 	Armament@elite:
 		Weapon: MirageGunE
 		LocalOffset: 640, 0, 427
-		RequiresCondition: eliteweapon
+		RequiresCondition: rank-elite
 	AttackFrontal:
 		Voice: Attack
 	AutoTarget:

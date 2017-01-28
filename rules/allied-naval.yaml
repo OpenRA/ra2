@@ -73,13 +73,12 @@ dest:
 		Weapon: 155mm
 		LocalOffset: 768,0,0
 		FireDelay: 2
-		RequiresCondition: !eliteweapon
-
+		RequiresCondition: !rank-elite
 	Armament@elite:
 		Weapon: 155mmE
 		LocalOffset: 768,0,0
 		FireDelay: 2
-		RequiresCondition: eliteweapon
+		RequiresCondition: rank-elite
 	AttackFrontal:
 		Voice: Attack
 	DetectCloaked:
@@ -133,6 +132,7 @@ dlph:
 	Inherits@1: ^ExistsInWorld
 	Inherits@2: ^SpriteActor
 	Inherits@3: ^GainsExperience
+	Inherits@5: ^CrateStatModifiers
 	Buildable:
 		Queue: Ship
 		BuildPaletteOrder: 30
