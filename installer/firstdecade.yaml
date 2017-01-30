@@ -1,0 +1,85 @@
+﻿tfd: C&C The First Decade (English)
+	IDFiles:
+		data1.hdr: bef3a08c3fc1b1caf28ca0dbb97c1f900005930e
+	Install:
+		extract-iscab: data1.hdr
+			Volumes:
+				7: data7.cab
+				8: data8.cab
+			Extract:
+				^Content/ra2/theme.mix: Red Alert 2\RA2\theme.mix
+				^Content/ra2/ra2.mix: Red Alert 2\RA2\ra2.mix
+				^Content/ra2/language.mix: Red Alert 2\RA2\language.mix
+		extract-raw: ^Content/ra2/ra2.mix
+			^Content/ra2/cache.mix:
+				Offset: 348
+				Length: 196632
+			^Content/ra2/conquer.mix:
+				Offset: 196988
+				Length: 16284016
+			^Content/ra2/isosnow.mix:
+				Offset: 16481004
+				Length: 28758698
+			^Content/ra2/isogen.mix:
+				Offset: 45239708
+				Length: 11992046
+			^Content/ra2/isotemp.mix:
+				Offset: 57231756
+				Length: 29171410
+			^Content/ra2/isourb.mix:
+				Offset: 86403180
+				Length: 31811402
+			^Content/ra2/local.mix:
+				Offset: 118214588
+				Length: 34793784
+			^Content/ra2/load.mix:
+				Offset: 153008380
+				Length: 25478184
+			^Content/ra2/neutral.mix:
+				Offset: 178486572
+				Length: 45571600
+			^Content/ra2/sidec01.mix:
+				Offset: 224058172
+				Length: 2099412
+			^Content/ra2/sidec02.mix:
+				Offset: 226157596
+				Length: 2102564
+			^Content/ra2/sidenc01.mix:
+				Offset: 228260172
+				Length: 6935164
+			^Content/ra2/sidenc02.mix:
+				Offset: 235195340
+				Length: 6974140
+			^Content/ra2/snow.mix:
+				Offset: 242169484
+				Length: 18421274
+			^Content/ra2/sno.mix:
+				Offset: 260590764
+				Length: 10898
+			^Content/ra2/generic.mix:
+				Offset: 260601676
+				Length: 15810386
+			^Content/ra2/tem.mix:
+				Offset: 276412076
+				Length: 10850
+			^Content/ra2/temperat.mix:
+				Offset: 276422940
+				Length: 2728266
+			^Content/ra2/urb.mix:
+				Offset: 279151212
+				Length: 10850
+			^Content/ra2/urban.mix:
+				Offset: 279162076
+				Length: 2726218
+		delete: ^Content/ra2/ra2.mix
+		extract-raw: ^Content/ra2/language.mix
+			^Content/ra2/audio.mix:
+				Offset: 164
+				Length: 37456674
+			^Content/ra2/grfxtxt.shp:
+				Offset: 52312452
+				Length: 195432
+			^Content/ra2/cameo.mix:
+				Offset: 52507892
+				Length: 608120
+		delete: ^Content/ra2/language.mix

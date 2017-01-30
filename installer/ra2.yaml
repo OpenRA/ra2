@@ -1,0 +1,165 @@
+﻿ra2: Red Alert 2 (Allied or Soviet Disc, English)
+	IDFiles:
+		readme.txt: e125e2742509d73b20dc4aa65b22497c805cd6f5
+	Install:
+		copy: .
+			^Content/ra2/theme.mix: theme.mix
+		extract-mscab: install/game1.cab
+			^Content/ra2/ra2.mix: ra2.mix
+			^Content/ra2/language.mix: language.mix
+		extract-raw: ^Content/ra2/ra2.mix
+			^Content/ra2/cache.mix:
+				Offset: 348
+				Length: 196632
+			^Content/ra2/conquer.mix:
+				Offset: 196988
+				Length: 16284016
+			^Content/ra2/isosnow.mix:
+				Offset: 16481004
+				Length: 28758698
+			^Content/ra2/isogen.mix:
+				Offset: 45239708
+				Length: 11992046
+			^Content/ra2/isotemp.mix:
+				Offset: 57231756
+				Length: 29171410
+			^Content/ra2/isourb.mix:
+				Offset: 86403180
+				Length: 31811402
+			^Content/ra2/local.mix:
+				Offset: 118214588
+				Length: 34793784
+			^Content/ra2/load.mix:
+				Offset: 153008380
+				Length: 25478184
+			^Content/ra2/neutral.mix:
+				Offset: 178486572
+				Length: 45571600
+			^Content/ra2/sidec01.mix:
+				Offset: 224058172
+				Length: 2099412
+			^Content/ra2/sidec02.mix:
+				Offset: 226157596
+				Length: 2102564
+			^Content/ra2/sidenc01.mix:
+				Offset: 228260172
+				Length: 6935164
+			^Content/ra2/sidenc02.mix:
+				Offset: 235195340
+				Length: 6974140
+			^Content/ra2/snow.mix:
+				Offset: 242169484
+				Length: 18421274
+			^Content/ra2/sno.mix:
+				Offset: 260590764
+				Length: 10898
+			^Content/ra2/generic.mix:
+				Offset: 260601676
+				Length: 15810386
+			^Content/ra2/tem.mix:
+				Offset: 276412076
+				Length: 10850
+			^Content/ra2/temperat.mix:
+				Offset: 276422940
+				Length: 2728266
+			^Content/ra2/urb.mix:
+				Offset: 279151212
+				Length: 10850
+			^Content/ra2/urban.mix:
+				Offset: 279162076
+				Length: 2726218
+		delete: ^Content/ra2/ra2.mix
+		extract-raw: ^Content/ra2/language.mix
+			^Content/ra2/audio.mix:
+				Offset: 164
+				Length: 38391794
+			^Content/ra2/grfxtxt.shp:
+				Offset: 53280212
+				Length: 195432
+			^Content/ra2/cameo.mix:
+				Offset: 53475652
+				Length: 608120
+		delete: ^Content/ra2/language.mix
+
+ra2-linux: Red Alert 2 (Allied or Soviet Disc, English)
+	IDFiles:
+		readme.txt: e125e2742509d73b20dc4aa65b22497c805cd6f5
+	Install:
+		copy: .
+			^Content/ra2/theme.mix: theme.mix
+		extract-mscab: install/game1.cab
+			^Content/ra2/ra2.mix: ra2.mix
+			^Content/ra2/language.mix: language.mix
+		extract-raw: ^Content/ra2/ra2.mix
+			^Content/ra2/cache.mix:
+				Offset: 348
+				Length: 196632
+			^Content/ra2/conquer.mix:
+				Offset: 196988
+				Length: 16284016
+			^Content/ra2/isosnow.mix:
+				Offset: 16481004
+				Length: 28758698
+			^Content/ra2/isogen.mix:
+				Offset: 45239708
+				Length: 11992046
+			^Content/ra2/isotemp.mix:
+				Offset: 57231756
+				Length: 29171410
+			^Content/ra2/isourb.mix:
+				Offset: 86403180
+				Length: 31811402
+			^Content/ra2/local.mix:
+				Offset: 118214588
+				Length: 34793784
+			^Content/ra2/load.mix:
+				Offset: 153008380
+				Length: 25478184
+			^Content/ra2/neutral.mix:
+				Offset: 178486572
+				Length: 45571600
+			^Content/ra2/sidec01.mix:
+				Offset: 224058172
+				Length: 2099412
+			^Content/ra2/sidec02.mix:
+				Offset: 226157596
+				Length: 2102564
+			^Content/ra2/sidenc01.mix:
+				Offset: 228260172
+				Length: 6935164
+			^Content/ra2/sidenc02.mix:
+				Offset: 235195340
+				Length: 6974140
+			^Content/ra2/snow.mix:
+				Offset: 242169484
+				Length: 18421274
+			^Content/ra2/sno.mix:
+				Offset: 260590764
+				Length: 10898
+			^Content/ra2/generic.mix:
+				Offset: 260601676
+				Length: 15810386
+			^Content/ra2/tem.mix:
+				Offset: 276412076
+				Length: 10850
+			^Content/ra2/temperat.mix:
+				Offset: 276422940
+				Length: 2728266
+			^Content/ra2/urb.mix:
+				Offset: 279151212
+				Length: 10850
+			^Content/ra2/urban.mix:
+				Offset: 279162076
+				Length: 2726218
+		delete: ^Content/ra2/ra2.mix
+		extract-raw: ^Content/ra2/language.mix
+			^Content/ra2/audio.mix:
+				Offset: 164
+				Length: 38391794
+			^Content/ra2/grfxtxt.shp:
+				Offset: 53280212
+				Length: 195432
+			^Content/ra2/cameo.mix:
+				Offset: 53475652
+				Length: 608120
+		delete: ^Content/ra2/language.mix
