@@ -67,7 +67,9 @@ camisc06:
 		HP: 10
 	Armor:
 		Type: Concrete
-	WithBuildingExplosion:
+	Explodes:
+		Type: Footprint
+		Weapon: UnitExplodeSmall
 		Sequences: terrorist_explosion
 	SoundOnDamageTransition:
 		DamagedSounds: bmetdama.wav, bmetdamb.wav, bmetdamc.wav

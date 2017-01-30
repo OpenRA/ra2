@@ -4,6 +4,7 @@ gacnst:
 		Queue: Building
 		BuildPaletteOrder: 1000
 		Prerequisites: ~disabled
+		Description: Builds base structures.
 	Building:
 		Footprint: xxxx xxxx xxxx xxxx
 		Dimensions: 4,4
@@ -21,7 +22,6 @@ gacnst:
 		Produces: Building,Support
 	Tooltip:
 		Name: Construction Yard
-		Description: Builds base structures.
 	BaseBuilding:
 	Transforms:
 		IntoActor: amcv
@@ -59,13 +59,13 @@ gapowr:
 		Queue: Building
 		BuildPaletteOrder: 10
 		Prerequisites: ~structures.allies
+		Description: Provides power for other structures.
 	Selectable:
 		Bounds: 96, 98, -2, -24
 	Valued:
 		Cost: 800
 	Tooltip:
 		Name: Power Plant
-		Description: Provides power for other structures.
 	ProvidesPrerequisite:
 		Prerequisite: power
 	Building:
@@ -96,13 +96,13 @@ gapile:
 		Queue: Building
 		BuildPaletteOrder: 20
 		Prerequisites: power, ~structures.allies
+		Description: Trains infantry.
 	Selectable:
 		Bounds: 134, 132, 0, -28
 	Valued:
 		Cost: 500
 	Tooltip:
 		Name: Barracks
-		Description: Trains infantry.
 	ProvidesPrerequisite:
 		Prerequisite: barracks
 	ProvidesPrerequisite@england:
@@ -137,13 +137,13 @@ gapile:
 	Production:
 		Produces: Infantry
 	PrimaryBuilding:
+		PrimaryCondition: primary
 	WithTextDecoration@primary:
 		RequiresSelection: true
 		Text: PRIMARY
 		ReferencePoint: Top
 		ZOffset: 256
-		UpgradeTypes: primary
-		UpgradeMinEnabledLevel: 1
+		RequiresCondition: primary
 	ProductionBar:
 	WithIdleOverlay@flag:
 		Sequence: idle-flag
@@ -158,8 +158,7 @@ gapile:
 		Text: PRIMARY
 		ReferencePoint: Top
 		ZOffset: 256
-		UpgradeTypes: primary
-		UpgradeMinEnabledLevel: 1
+		RequiresCondition: primary
 
 garefn:
 	Inherits: ^Building
@@ -167,13 +166,13 @@ garefn:
 		Queue: Building
 		BuildPaletteOrder: 30
 		Prerequisites: power, ~structures.allies
+		Description: Processes ore into credits.
 	Selectable:
 		Bounds: 176, 150, 0, -20
 	Valued:
 		Cost: 2000
 	Tooltip:
 		Name: Ore Refinery
-		Description: Processes ore into credits.
 	ProvidesPrerequisite:
 		Prerequisite: refinery
 	ProvidesPrerequisite@default:
@@ -223,11 +222,11 @@ gaairc:
 		Queue: Building
 		BuildPaletteOrder: 40
 		Prerequisites: garefn, ~structures.allies, ~!structures.america
+		Description: Provides radar\nSupports 4 aircraft.
 	Valued:
 		Cost: 1000
 	Tooltip:
 		Name: Airforce Command Headquarters
-		Description: Provides radar\nSupports 4 aircraft.
 	ProvidesPrerequisite:
 		Prerequisite: radar
 	ProvidesPrerequisite@allies:
@@ -251,6 +250,7 @@ gaairc:
 		PowerupSpeech: BuildingOnline
 		PowerdownSpeech: BuildingOffline
 	ProvidesRadar:
+		RequiresCondition: !disabled
 	RevealsShroud:
 		Range: 10c0
 	WithIdleOverlay@top:
@@ -286,21 +286,22 @@ gaairc:
 		Produces: Aircraft
 	ProductionBar:
 	PrimaryBuilding:
+		PrimaryCondition: primary
 	WithTextDecoration@primary:
 		RequiresSelection: true
 		Text: PRIMARY
 		ReferencePoint: Top
 		ZOffset: 256
-		UpgradeTypes: primary
-		UpgradeMinEnabledLevel: 1
+		RequiresCondition: primary
 	InfiltrateForExploration:
 	WithTextDecoration@primary:
 		RequiresSelection: true
 		Text: PRIMARY
 		ReferencePoint: Top
 		ZOffset: 256
-		UpgradeTypes: primary
-		UpgradeMinEnabledLevel: 1
+		RequiresCondition: primary
+	GrantConditionOnDisabled@IDISABLE:
+		Condition: disabled
 
 amradr:
 	Inherits: gaairc
@@ -330,13 +331,13 @@ gaweap:
 		Queue: Building
 		BuildPaletteOrder: 50
 		Prerequisites: garefn, gapile, ~structures.allies
+		Description: Produces vehicles.
 	Selectable:
 		Bounds: 212, 158, -7, -28
 	Valued:
 		Cost: 2000
 	Tooltip:
 		Name: War Factory
-		Description: Produces vehicles.
 	ProvidesPrerequisite@germany:
 		Prerequisite: vehicles.germany
 		Factions: germany
@@ -360,13 +361,13 @@ gaweap:
 	Production:
 		Produces: Vehicle
 	PrimaryBuilding:
+		PrimaryCondition: primary
 	WithTextDecoration@primary:
 		RequiresSelection: true
 		Text: PRIMARY
 		ReferencePoint: Top
 		ZOffset: 256
-		UpgradeTypes: primary
-		UpgradeMinEnabledLevel: 1
+		RequiresCondition: primary
 	ProductionBar:
 	WithIdleOverlay@flag:
 		Sequence: idle-flag
@@ -389,8 +390,7 @@ gaweap:
 		Text: PRIMARY
 		ReferencePoint: Top
 		ZOffset: 256
-		UpgradeTypes: primary
-		UpgradeMinEnabledLevel: 1
+		RequiresCondition: primary
 
 gayard:
 	Inherits: ^Building
@@ -398,11 +398,11 @@ gayard:
 		Cost: 1000
 	Tooltip:
 		Name: Naval Yard
-		Description: Produces and repairs ships,\nsubmarines, transports, and other naval units.
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 50
 		Prerequisites: power, refinery, ~structures.allies
+		Description: Produces and repairs ships,\nsubmarines, transports, and other naval units.
 	Targetable:
 		TargetTypes: Ground, Water, C4
 	ProvidesPrerequisite@default:
@@ -489,13 +489,13 @@ gayard:
 	Production:
 		Produces: Ship
 	PrimaryBuilding:
+		PrimaryCondition: primary
 	WithTextDecoration@primary:
 		RequiresSelection: true
 		Text: PRIMARY
 		ReferencePoint: Top
 		ZOffset: 256
-		UpgradeTypes: primary
-		UpgradeMinEnabledLevel: 1
+		RequiresCondition: primary
 	RallyPoint:
 		Offset: 5,1
 		Palette: mouse
@@ -518,8 +518,7 @@ gayard:
 		Text: PRIMARY
 		ReferencePoint: Top
 		ZOffset: 256
-		UpgradeTypes: primary
-		UpgradeMinEnabledLevel: 1
+		RequiresCondition: primary
 
 gadept:
 	Inherits: ^Building
@@ -527,13 +526,13 @@ gadept:
 		Queue: Building
 		BuildPaletteOrder: 60
 		Prerequisites: gaweap, ~structures.allies
+		Description: Repairs vehicles and removes Terror Drones (for a price).
 	Selectable:
 		Bounds: 144, 88, -12, -16
 	Valued:
 		Cost: 800
 	Tooltip:
 		Name: Service Depot
-		Description: Repairs vehicles and removes Terror Drones (for a price).
 	ProvidesPrerequisite@default:
 	Building:
 		Footprint: x== x== x==
@@ -568,13 +567,13 @@ gatech:
 		Queue: Building
 		BuildPaletteOrder: 70
 		Prerequisites: radar, gaweap, ~structures.allies
+		Description: Allows deployment of advanced units.
 	Selectable:
 		Bounds: 122, 216, 0, -81
 	Valued:
 		Cost: 2000
 	Tooltip:
 		Name: Battle Lab
-		Description: Allows deployment of advanced units.
 	ProvidesPrerequisite@default:
 	Building:
 		Footprint: xx xx xx
@@ -600,9 +599,9 @@ gawall:
 		Queue: Support
 		BuildPaletteOrder: 10
 		Prerequisites: barracks, ~structures.allies
+		Description: Light wall.\nCrushable by vehicles.
 	Tooltip:
 		Name: Allied Wall
-		Description: Light wall.\nCrushable by vehicles.
 
 gapill:
 	Inherits: ^SupportBuilding
@@ -610,11 +609,11 @@ gapill:
 		Queue: Support
 		BuildPaletteOrder: 20
 		Prerequisites: barracks, ~structures.allies
+		Description: Automated anti-infantry defense.
 	Valued:
 		Cost: 500
 	Tooltip:
 		Name: Pill Box
-		Description: Automated anti-infantry defense.
 	Building:
 		Footprint: x
 		Dimensions: 1, 1
@@ -648,11 +647,11 @@ nasam:
 		Queue: Support
 		BuildPaletteOrder: 30
 		Prerequisites: barracks, ~structures.allies
+		Description: Automated anti-aircraft defense.
 	Valued:
 		Cost: 1000
 	Tooltip:
 		Name: Patriot Missile System
-		Description: Automated anti-aircraft defense.
 	Building:
 		Footprint: x
 		Dimensions: 1, 1
@@ -695,11 +694,11 @@ gtgcan:
 		Queue: Support
 		BuildPaletteOrder: 30
 		Prerequisites: radar, ~structures.france
+		Description: Automated, long ranged anti-ground defense.
 	Valued:
 		Cost: 2000
 	Tooltip:
 		Name: Grand Cannon
-		Description: Automated, long ranged anti-ground defense.
 	Building:
 		Footprint: xx xx
 		Dimensions: 2, 2
@@ -750,13 +749,13 @@ gaorep:
 		BuildPaletteOrder: 80
 		Prerequisites: garefn, gatech, ~structures.allies
 		BuildLimit: 1
+		Description: Refines all forms of income by 25%.
 	Selectable:
 		Bounds: 134, 102, -10, -21
 	Valued:
 		Cost: 2500
 	Tooltip:
 		Name: Allied Ore Purifier
-		Description: Refines all forms of income by 25%.
 	Building:
 		Footprint: xxx xxx xxx
 		Dimensions: 3,3
@@ -777,13 +776,13 @@ gaspysat:
 		Queue: Support
 		BuildPaletteOrder: 90
 		Prerequisites: gatech, ~structures.allies
+		Description: Reveals the entire battlefield.
 	Selectable:
 		Bounds: 96, 98, -4, -30
 	Valued:
 		Cost: 1500
 	Tooltip:
 		Name: Spy Satellite Uplink
-		Description: Reveals the entire battlefield.
 	Building:
 		Footprint: xx xx
 		Dimensions: 2,2
@@ -799,11 +798,14 @@ gaspysat:
 	Power:
 		Amount: -100
 	ProvidesRadar:
+		RequiresCondition: !disabled
 	RequiresPower:
 	CanPowerDown:
 		IndicatorPalette: ts-mouse
 		PowerupSpeech: BuildingOnline
 		PowerdownSpeech: BuildingOffline
+	GrantConditionOnDisabled@IDISABLE:
+		Condition: disabled
 
 gagap:
 	Inherits: ^SupportBuilding
@@ -811,11 +813,11 @@ gagap:
 		Cost: 1000
 	Tooltip:
 		Name: Gap Generator
-		Description: Obscures the enemy's view with shroud.\nRequires power to operate.
 	Buildable:
 		Queue: Support
 		BuildPaletteOrder: 100
 		Prerequisites: gatech, ~structures.allies
+		Description: Obscures the enemy's view with shroud.\nRequires power to operate.
 	Selectable:
 		Bounds: 50, 114, -16, -38
 	Building:
@@ -848,13 +850,13 @@ gaweat:
 		BuildPaletteOrder: 110
 		Prerequisites: gatech, ~structures.allies
 		BuildLimit: 1
+		Description: Play God with deadly weather!
 	Selectable:
 		Bounds: 116, 106, -2, -26
 	Valued:
 		Cost: 5000
 	Tooltip:
 		Name: Weather Controller
-		Description: Play God with deadly weather!
 	Building:
 		Footprint: xxx xxx xxx
 		Dimensions: 3,3

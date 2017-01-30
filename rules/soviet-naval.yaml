@@ -4,11 +4,11 @@ sapc:
 		Queue: Ship
 		BuildPaletteOrder: 10
 		Prerequisites: ~nayard
+		Description: General-purpose naval transport.\nCan carry infantry and vehicles.\n  Unarmed
 	Valued:
 		Cost: 900
 	Tooltip:
 		Name: Amphibious Transport
-		Description: General-purpose naval transport.\nCan carry infantry and vehicles.\n  Unarmed
 	Selectable:
 		Bounds: 60, 80, 0, -6
 	Health:
@@ -28,8 +28,7 @@ sapc:
 			Ore: 50
 			Gems: 50
 			Water: 100
-		UpgradeMaxEnabledLevel: 0
-		UpgradeTypes: notmobile
+		RequiresCondition: !notmobile
 	RevealsShroud:
 		Range: 6c0
 	Cargo:
@@ -39,7 +38,7 @@ sapc:
 		PassengerFacing: 96
 		UnloadTerrainTypes: Clear, Rough, Rail, Road, DirtRoad, Beach, Ore, Gems
 		UnloadVoice: Move
-		LoadingUpgrades: notmobile
+		LoadingCondition: notmobile
 	Explodes:
 		Weapon: UnitExplode
 		EmptyWeapon: UnitExplode
@@ -52,11 +51,11 @@ sub:
 		Queue: Ship
 		BuildPaletteOrder: 30
 		Prerequisites: ~nayard
+		Description: Submerged anti-ship unit armed with\ntorpedoes.\nCan detect other submarines and Giant Squids.\n  Strong vs Ships\n  Weak vs Ground units, Aircraft\nSpecial Ability: Submerge
 	Valued:
 		Cost: 1000
 	Tooltip:
 		Name: Typhoon Attack Sub
-		Description: Submerged anti-ship unit armed with\ntorpedoes.\nCan detect other submarines and Giant Squids.\n  Strong vs Ships\n  Weak vs Ground units, Aircraft\nSpecial Ability: Submerge
 	Health:
 		HP: 600
 	Armor:
@@ -69,15 +68,14 @@ sub:
 	-Targetable:
 	Targetable:
 		TargetTypes: Ground, Water, Repair
-		UpgradeTypes: underwater
-		UpgradeMaxEnabledLevel: 0
+		RequiresCondition: underwater
 	Cloak:
 		CloakTypes: Underwater
 		InitialDelay: 50
 		CloakDelay: 75
 		CloakSound: vnavupa.wav
 		UncloakSound: vnavupa.wav
-		WhileCloakedUpgrades: underwater
+		CloakedCondition: underwater
 		IsPlayerPalette: true
 	Armament:
 		Weapon: SubTorpedo
@@ -99,8 +97,7 @@ sub:
 	RenderSprites:
 	Targetable@underwater:
 		TargetTypes: Underwater, Repair
-		UpgradeTypes: underwater
-		UpgradeMinEnabledLevel: 1
+		RequiresCondition: underwater
 
 hyd:
 	Inherits: ^Ship
@@ -108,11 +105,11 @@ hyd:
 		Queue: Ship
 		BuildPaletteOrder: 20
 		Prerequisites: naradr, ~nayard
+		Description: Anti-Air/Anti-Infantry naval unit.\n  Strong vs Aircraft, Infantry\n  Weak vs Vehicles, Naval Units
 	Valued:
 		Cost: 900
 	Tooltip:
 		Name: Sea Scorpion
-		Description: Anti-Air/Anti-Infantry naval unit.\n  Strong vs Aircraft, Infantry\n  Weak vs Vehicles, Naval Units
 	Selectable:
 		Bounds: 50, 30, 0, -6
 	Health:
@@ -144,11 +141,11 @@ sqd:
 		Queue: Ship
 		BuildPaletteOrder: 30
 		Prerequisites: natech, ~nayard
+		Description: Ocean creature\npunches enemies in close combat.\n  Strong vs Ships
 	Valued:
 		Cost: 500
 	Tooltip:
 		Name: Giant Squid
-		Description: Ocean creature\npunches enemies in close combat.\n  Strong vs Ships
 	Armor:
 		Type: Light
 	Health:
@@ -178,17 +175,15 @@ sqd:
 		CloakDelay: 75
 		CloakSound: vnavupa.wav
 		UncloakSound: vnavupa.wav
-		WhileCloakedUpgrades: underwater
+		CloakedCondition: underwater
 		UncloakOn: Damage
 		IsPlayerPalette: true
 	Targetable:
 		TargetTypes: Ground, Water
-		UpgradeTypes: underwater
-		UpgradeMaxEnabledLevel: 0
+		RequiresCondition: underwater
 	Targetable@underwater:
 		TargetTypes: Underwater
-		UpgradeTypes: underwater
-		UpgradeMinEnabledLevel: 1
+		RequiresCondition: underwater
 		IsPlayerPalette: true
 	DetectCloaked:
 		CloakTypes: Underwater

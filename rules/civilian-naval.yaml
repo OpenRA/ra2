@@ -63,14 +63,14 @@ cdest:
 		Weapon: 155mm
 		LocalOffset: 768,0,0
 		FireDelay: 2
-		UpgradeTypes: eliteweapon
+		RequiresCondition: !rank-elite
 		UpgradeMaxEnabledLevel: 0
 		UpgradeMaxAcceptedLevel: 1
 	Armament@elite:
 		Weapon: 155mmE
 		LocalOffset: 768,0,0
 		FireDelay: 2
-		UpgradeTypes: eliteweapon
+		RequiresCondition: rank-elite
 		UpgradeMinEnabledLevel: 1
 	AttackFrontal:
 	DetectCloaked:
