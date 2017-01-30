@@ -4,11 +4,11 @@ lcrf:
 		Queue: Ship
 		BuildPaletteOrder: 10
 		Prerequisites: ~gayard
+		Description: General-purpose naval transport.\nCan carry infantry and vehicles.\n  Unarmed
 	Valued:
 		Cost: 900
 	Tooltip:
 		Name: Amphibious Transport
-		Description: General-purpose naval transport.\nCan carry infantry and vehicles.\n  Unarmed
 	Selectable:
 		Bounds: 60, 80, 0, -6
 	Health:
@@ -28,8 +28,7 @@ lcrf:
 			Ore: 50
 			Gems: 50
 			Water: 100
-		UpgradeMaxEnabledLevel: 0
-		UpgradeTypes: notmobile
+		RequiresCondition: !notmobile
 	RevealsShroud:
 		Range: 6c0
 	Cargo:
@@ -39,7 +38,7 @@ lcrf:
 		PassengerFacing: 96
 		UnloadTerrainTypes: Clear, Rough, Rail, Road, DirtRoad, Beach, Ore, Gems
 		UnloadVoice: Move
-		LoadingUpgrades: notmobile
+		LoadingCondition: notmobile
 	Explodes:
 		Weapon: UnitExplode
 		EmptyWeapon: UnitExplode
@@ -54,11 +53,11 @@ dest:
 		Queue: Ship
 		BuildPaletteOrder: 40
 		Prerequisites: ~gayard
+		Description: Allied Main Battle Ship armed with cannons and\n an Osprey helicopter.\nCan detect submarines and sea animals.\n  Strong vs Naval units\n  Weak vs Ground units, Aircraft
 	Valued:
 		Cost: 1000
 	Tooltip:
 		Name: Destroyer
-		Description: Allied Main Battle Ship armed with cannons and\n an Osprey helicopter.\nCan detect submarines and sea animals.\n  Strong vs Naval units\n  Weak vs Ground units, Aircraft
 	Health:
 		HP: 600
 	Armor:
@@ -74,15 +73,12 @@ dest:
 		Weapon: 155mm
 		LocalOffset: 768,0,0
 		FireDelay: 2
-		UpgradeTypes: eliteweapon
-		UpgradeMaxEnabledLevel: 0
-		UpgradeMaxAcceptedLevel: 1
+		RequiresCondition: !rank-elite
 	Armament@elite:
 		Weapon: 155mmE
 		LocalOffset: 768,0,0
 		FireDelay: 2
-		UpgradeTypes: eliteweapon
-		UpgradeMinEnabledLevel: 1
+		RequiresCondition: rank-elite
 	AttackFrontal:
 		Voice: Attack
 	DetectCloaked:
@@ -103,11 +99,11 @@ aegis:
 		Queue: Ship
 		BuildPaletteOrder: 30
 		Prerequisites: radar, ~gayard
+		Description: Anti-Air naval unit.\n  Strong vs Aircraft\n  Grounds units, Ships
 	Valued:
 		Cost: 1200
 	Tooltip:
 		Name: Aegis Cruiser
-		Description: Anti-Air naval unit.\n  Strong vs Aircraft\n  Grounds units, Ships
 	Selectable:
 		Bounds: 60, 80, 0, -6
 	Health:
@@ -136,15 +132,16 @@ dlph:
 	Inherits@1: ^ExistsInWorld
 	Inherits@2: ^SpriteActor
 	Inherits@3: ^GainsExperience
+	Inherits@5: ^CrateStatModifiers
 	Buildable:
 		Queue: Ship
 		BuildPaletteOrder: 30
 		Prerequisites: gatech, ~gayard
+		Description: Trained dolphin\narmed with sonic beams.\n  Strong vs Ships
 	Valued:
 		Cost: 500
 	Tooltip:
 		Name: Dolphin
-		Description: Trained dolphin\narmed with sonic beams.\n  Strong vs Ships
 	Armor:
 		Type: Light
 	Health:
@@ -173,17 +170,15 @@ dlph:
 		CloakDelay: 75
 		CloakSound: vnavupa.wav
 		UncloakSound: vnavupa.wav
-		WhileCloakedUpgrades: underwater
+		CloakedCondition: underwater
 		UncloakOn: Damage
 		IsPlayerPalette: true
 	Targetable:
 		TargetTypes: Ground, Water
-		UpgradeTypes: underwater
-		UpgradeMaxEnabledLevel: 0
+		RequiresCondition: underwater
 	Targetable@underwater:
 		TargetTypes: Underwater
-		UpgradeTypes: underwater
-		UpgradeMinEnabledLevel: 1
+		RequiresCondition: underwater
 		IsPlayerPalette: true
 	DetectCloaked:
 		CloakTypes: Underwater

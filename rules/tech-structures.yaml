@@ -7,9 +7,8 @@ caoild:
 		Dimensions: 2, 2
 	EngineerRepairable:
 	CashTrickler:
-		Period: 100
+		Interval: 100
 		Amount: 20
-		CaptureAmount: 1000
 	Tooltip:
 		Name: Tech Oil Derrick
 	Health:
@@ -24,6 +23,8 @@ caoild:
 		Sequence: flag
 		Offset: 1000,0,0
 	GivesBuildableArea:
+	GivesCashOnCapture:
+		Amount: 1000
 
 caairp:
 	Inherits: ^TechBuilding

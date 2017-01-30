@@ -5,7 +5,7 @@
 	DrawLineToTarget:
 	GivesExperience:
 	ScriptTriggers:
-	UpgradeManager:
+	ConditionManager:
 	Huntable:
 
 ^SpriteActor:
@@ -17,61 +17,92 @@
 
 ^GainsExperience:
 	GainsExperience:
-		Upgrades:
-			500: rank, firepower, damage, speed, reload
-			1000: rank, firepower, damage, speed, reload, selfheal, eliteweapon
-	SelfHealing@elite:
+		Conditions:
+			500: rank-veteran
+			1000: rank-elite
+	FirepowerMultiplier@VETERAN:
+		RequiresCondition: rank-veteran && !rank-elite
+		Modifier: 110
+	FirepowerMultiplier@ELITE:
+		RequiresCondition: rank-elite
+		Modifier: 130
+	DamageMultiplier@VETERAN:
+		RequiresCondition: rank-veteran && !rank-elite
+		Modifier: 90
+	DamageMultiplier@ELITE:
+		RequiresCondition: rank-elite
+		Modifier: 75
+	SpeedMultiplier@VETERAN:
+		RequiresCondition: rank-veteran && !rank-elite
+		Modifier: 120
+	SpeedMultiplier@ELITE:
+		RequiresCondition: rank-elite
+		Modifier: 140
+	ReloadDelayMultiplier@VETERAN:
+		RequiresCondition: rank-veteran && !rank-elite
+		Modifier: 90
+	ReloadDelayMultiplier@ELITE:
+		RequiresCondition: rank-elite
+		Modifier: 75
+	SelfHealing@ELITE:
 		Step: 2
 		Ticks: 100
-		HealIfBelow: 1
+		HealIfBelow: 100
 		DamageCooldown: 125
-		UpgradeTypes: selfheal
-		UpgradeMinEnabledLevel: 1
-	FirepowerMultiplier@experience:
-		Modifier: 110, 130
-		UpgradeTypes: firepower
-	DamageMultiplier@experience:
-		Modifier: 83, 66
-		UpgradeTypes: damage
-	SpeedMultiplier@experience:
-		Modifier: 120, 150
-		UpgradeTypes: speed
-	ReloadDelayMultiplier@experience:
-		Modifier: 90, 75
-		UpgradeTypes: reload
-	InaccuracyMultiplier@experience:
-		Modifier: 90, 80, 70, 50
-		UpgradeTypes: inaccuracy
-	WithRankDecoration:
+		RequiresCondition: rank-veteran && !rank-elite
+		Modifier: 90
+	InaccuracyMultiplier@ELITE:
+		RequiresCondition: rank-elite
+		Modifier: 50
+	WithDecoration@VETERAN:
 		Image: rank
-		Sequence: rank
+		Sequence: veteran
 		Palette: pips
 		ReferencePoint: Bottom, Right
-		UpgradeTypes: rank
+		RequiresCondition: rank-veteran && !rank-elite
 		ZOffset: 256
-		UpgradeMinEnabledLevel: 1
-		UpgradeMaxAcceptedLevel: 2
+	WithDecoration@ELITE:
+		Image: rank
+		Sequence: elite
+		Palette: pips
+		ReferencePoint: Bottom, Right
+		RequiresCondition: rank-elite
+		ZOffset: 256
+
+^CrateStatModifiers:
+	FirepowerMultiplier@CRATES:
+		RequiresCondition: crate-firepower
+		Modifier: 200
+	DamageMultiplier@CRATES:
+		RequiresCondition: crate-damage
+		Modifier: 50
+	SpeedMultiplier@CRATES:
+		RequiresCondition: crate-speed
+		Modifier: 170
+	ExternalConditions@CRATES:
+		Conditions: crate-firepower, crate-damage, crate-speed
 
 ^IronCurtainable:
 	UpgradeOverlay@ironcurtain:
-		UpgradeTypes: invulnerability
-		UpgradeMinEnabledLevel: 1
+		RequiresCondition: invulnerability
 	DamageMultiplier@ironcurtain:
-		UpgradeTypes: invulnerability
-		Modifier: 0, 0
-	TimedUpgradeBar:
-		Upgrade: invulnerability
+		RequiresCondition: invulnerability
+		Modifier: 0
+	TimedConditionBar:
+		Condition: invulnerability
+	ExternalConditions@INVULNERABILITY:
+		Conditions: invulnerability
 
 ^ChronoDisable:
-	DisableOnUpgrade@ChronoDisable:
-		UpgradeTypes: chronodisable
-		UpgradeMinEnabledLevel: 1
-	TimedUpgradeBar@ChronoDisable:
-		Upgrade: chronodisable
+	DisableOnCondition@ChronoDisable:
+		RequiresCondition: chronodisable
+	TimedConditionBar@ChronoDisable:
+		Condition: chronodisable
 		Color: FFFFFF
 	Mobile:
-		UpgradeTypes: notmobile
-		UpgradeMaxEnabledLevel: 0
+#		RequiresCondition: !notmobile
+	ExternalConditions@ChronoDisable:
+		Conditions: chronodisable
 
 ^Building:
 	Inherits@1: ^ExistsInWorld
@@ -98,7 +129,9 @@
 		DamagedSounds: gdamag1a.wav, gdamag1b.wav, gdamag1c.wav, gdamag1d.wav, gdamag1e.wav
 		DestroyedSounds: bgendiea.wav, bgendieb.wav, bgendiec.wav, bgendied.wav, bgendiee.wav, bgendief.wav
 	WithSpriteBody:
-	WithBuildingExplosion:
+	Explodes:
+		Type: Footprint
+		Weapon: UnitExplodeSmall
 		Sequences: building, large_bang, large_brnl, verylarge_clsn, large_tumu
 	RepairableBuilding:
 		IndicatorPalette: mouse
@@ -221,7 +254,7 @@
 	FrozenUnderFog:
 	-CombatDebugOverlay:
 	-DrawLineToTarget:
-	-UpgradeManager:
+	-ConditionManager:
 	Building:
 		Dimensions: 1,1
 		Footprint: x
@@ -268,6 +301,7 @@
 	Inherits@2: ^SpriteActor
 	Inherits@3: ^GainsExperience
 	Inherits@4: ^ChronoDisable
+	Inherits@5: ^CrateStatModifiers
 	Health:
 		Shape: Circle
 			Radius: 128
@@ -287,19 +321,16 @@
 			DirtRoad: 100
 			Ore: 90
 			Gems: 80
+	WithTextControlGroupDecoration:
 	SelectionDecorations:
 		Palette: pips
 	Selectable:
 	Targetable:
 		TargetTypes: Ground, Infantry, DetonateAttack, Disguise
-		UpgradeTypes: parachute
-		UpgradeMaxEnabledLevel: 0
 	WithInfantryBody:
 		IdleSequences: idle1,idle2
 		StandSequences: stand
 		DefaultAttackSequence: shoot
-		UpgradeTypes: parachute
-		UpgradeMaxEnabledLevel: 0
 	WithDeathAnimation@normal:
 		DeathTypes:
 			ExplosionDeath: 1
@@ -362,8 +393,7 @@
 ^Parachutable:
 	WithSpriteBody@Parachute:
 		Sequence: paradrop
-		UpgradeTypes: parachute
-		UpgradeMinEnabledLevel: 1
+		RequiresCondition: parachute
 	Parachutable:
 		FallRate: 26
 		KilledOnImpassableTerrain: true
@@ -371,13 +401,15 @@
 		GroundCorpsePalette:
 		WaterCorpseSequence:
 		WaterCorpsePalette:
+		ParachutingCondition: parachute
 	WithParachute:
-		UpgradeTypes: parachute
-		UpgradeMinEnabledLevel: 1
+		RequiresCondition: parachute
 		Image: parach
 		OpeningSequence: open
 		Sequence: idle
 		ClosingSequence: close
+	ExternalConditions@parachute:
+		Conditions: parachute
 
 ^CivilianInfantry:
 	Inherits: ^Infantry
@@ -449,6 +481,7 @@
 	Inherits@2: ^GainsExperience
 	Inherits@3: ^IronCurtainable
 	Inherits@4: ^ChronoDisable
+	Inherits@5: ^CrateStatModifiers
 	Mobile:
 		Voice: Move
 		Crushes: crate
@@ -478,6 +511,7 @@
 	AttackMove:
 		Voice: Attack
 	HiddenUnderFog:
+	WithTextControlGroupDecoration:
 	ActorLostNotification:
 	ProximityCaptor:
 		Types: Vehicle
@@ -525,20 +559,17 @@
 	Voiced:
 		VoiceSet: CarVoice
 
-^Aircraft:
+^NeutralAircraft:
 	Inherits@1: ^ExistsInWorld
-	Inherits@2: ^GainsExperience
-		UseLocation: true
 	Targetable@airborne:
 		TargetTypes: Air
-		UpgradeTypes: airborne
-		UpgradeMinEnabledLevel: 1
+		RequiresCondition: airborne
 	SelectionDecorations:
 		Palette: pips
 	Selectable:
 	Aircraft:
 		Voice: Move
-		AirborneUpgrades: airborne
+		AirborneCondition: airborne
 		CanHover: True
 	HiddenUnderFog:
 		Type: CenterPosition
@@ -560,22 +591,26 @@
 		LightAmbientColor: -0.5,-0.5,-0.5
 		LightDiffuseColor: 1.4,1.4,1.4
 	Targetable@ground:
-		TargetTypes: Ground, Repair
-		UpgradeTypes: airborne
-		UpgradeMaxEnabledLevel: 0
+		TargetTypes: Ground, Repair, Vehicle
+		RequiresCondition: !airborne
 	DeathSounds:
 	AppearsOnRadar:
 		UseLocation: true
+
+^Aircraft:
+	Inherits@1: ^NeutralAircraft
+	Inherits@2: ^GainsExperience
+		UseLocation: true
+	WithTextControlGroupDecoration:
 
 ^Plane:
 	Inherits: ^Aircraft
 	Aircraft:
 		CruiseAltitude: 5600
-		CruisingUpgrades: cruising
+		CruisingCondition: cruising
 		AltitudeVelocity: 120
 	Hovers@CRUISING:
-		UpgradeTypes: cruising
-		UpgradeMinEnabledLevel: 1
+		RequiresCondition: cruising
 	ReturnOnIdle:
 	WithVoxelBody:
 
@@ -587,8 +622,6 @@
 		QuantizedFacings: 0
 		CameraPitch: 90
 	Aircraft:
-		AirborneUpgrades: airborne
-		CruisingUpgrades: cruising
 	Health:
 		HP: 280
 	Armor:
@@ -609,6 +642,7 @@
 	Inherits@2: ^GainsExperience
 	Inherits@3: ^IronCurtainable
 	Inherits@4: ^ChronoDisable
+	Inherits@5: ^CrateStatModifiers
 	Mobile:
 		Voice: Move
 		Crushes: crate

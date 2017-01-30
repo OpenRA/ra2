@@ -4,11 +4,11 @@ smcv:
 		Queue: Vehicle
 		BuildPaletteOrder: 110
 		Prerequisites: ~naweap, repairpad
+		Description: Deploys into a Construction Yard.
 	Valued:
 		Cost: 3000
 	Tooltip:
 		Name: Mobile Construction Vehicle
-		Description: Deploys into a Construction Yard.
 	Selectable:
 		Priority: 4
 		Bounds: 64, 52, 0, -6
@@ -45,11 +45,11 @@ harv:
 		Queue: Vehicle
 		BuildPaletteOrder: 10
 		Prerequisites: ~naweap, refinery
+		Description: Gathers Ore.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
 	Valued:
 		Cost: 1400
 	Tooltip:
 		Name: War Miner
-		Description: Gathers Ore.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
 	Selectable:
 		Priority: 7
 		Bounds: 64, 52, 0, -6
@@ -68,14 +68,11 @@ harv:
 	Armament@primary:
 		Weapon: 20mmrapid
 		LocalOffset: 0,50,384, 0,-50,384
-		UpgradeTypes: eliteweapon
-		UpgradeMaxEnabledLevel: 0
-		UpgradeMaxAcceptedLevel: 1
+		RequiresCondition: !rank-elite
 	Armament@elite:
 		Weapon: 20mmrapidE
 		LocalOffset: 0,50,384, 0,-50,384
-		UpgradeTypes: eliteweapon
-		UpgradeMinEnabledLevel: 1
+		RequiresCondition: rank-elite
 	AttackTurreted:
 		Voice: Attack
 	AutoTarget:
@@ -92,12 +89,6 @@ harv:
 	WithHarvestOverlay:
 		Offset: 121,0,0
 		Palette: effect
-	GainsExperience:
-		Upgrades:
-			200: firepower, damage, speed, reload, inaccuracy, rank
-			400: firepower, damage, speed, reload, inaccuracy, rank
-			800: firepower, damage, speed, reload, inaccuracy, rank
-			1600: firepower, damage, speed, reload, inaccuracy, rank, eliteweapon, selfheal
 	RenderSprites:
 	RenderVoxels:
 	WithVoxelTurret:
@@ -111,19 +102,18 @@ htk:
 		Cost: 500
 	Tooltip:
 		Name: Flak Track
-		Description: Infantry Transport and Anti-Air/Anti-Infantry vehicle.\n  Strong vs Aircraft, Infantry\n  Weak vs Vehicles
 	Selectable:
 		Bounds: 50, 40, 0, -6
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 20
 		Prerequisites: ~naweap
+		Description: Infantry Transport and Anti-Air/Anti-Infantry vehicle.\n  Strong vs Aircraft, Infantry\n  Weak vs Vehicles
 	Mobile:
 		Speed: 75
 		TurnSpeed: 15
 		Crushes: crate, infantry
-		UpgradeMaxEnabledLevel: 0
-		UpgradeTypes: notmobile
+		RequiresCondition: !notmobile
 	Health:
 		HP: 180
 	Armor:
@@ -137,7 +127,7 @@ htk:
 		PassengerFacing: 0
 		UnloadTerrainTypes: Clear, Rough, Rail, Road, DirtRoad, Beach, Ore, Gems
 		UnloadVoice: Move
-		LoadingUpgrades: notmobile
+		LoadingCondition: notmobile
 	AttackTurreted:
 		Voice: Attack
 	AutoTarget:
@@ -163,11 +153,11 @@ htnk:
 		Cost: 900
 	Tooltip:
 		Name: Rhino Heavy Tank
-		Description: Soviet Main Battle Tank.\n  Strong vs Vehicles\n  Weak vs Infantry, Aircraft
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 30
 		Prerequisites: ~naweap
+		Description: Soviet Main Battle Tank.\n  Strong vs Vehicles\n  Weak vs Infantry, Aircraft
 	Mobile:
 		Speed: 75
 		TurnSpeed: 5
@@ -183,14 +173,11 @@ htnk:
 	Armament@primary:
 		Weapon: 120mm
 		LocalOffset: 640,0,384
-		UpgradeTypes: eliteweapon
-		UpgradeMaxEnabledLevel: 0
-		UpgradeMaxAcceptedLevel: 1
+		RequiresCondition: !rank-elite
 	Armament@elite:
 		Weapon: 120mmE
 		LocalOffset: 640,0,384
-		UpgradeTypes: eliteweapon
-		UpgradeMinEnabledLevel: 1
+		RequiresCondition: rank-elite
 	AttackTurreted:
 		Voice: Attack
 	AutoTarget:
@@ -213,11 +200,11 @@ apoc:
 		Cost: 1750
 	Tooltip:
 		Name: Apocalypse Tank
-		Description: Soviet Advanced Battle Tank with Double Barrel\nand Anti-Aircraft Missile Launcher.\n  Strong vs Vehicles, Aircraft\n  Weak vs Infantry
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 60
 		Prerequisites: ~naweap, natech
+		Description: Soviet Advanced Battle Tank with Double Barrel\nand Anti-Aircraft Missile Launcher.\n  Strong vs Vehicles, Aircraft\n  Weak vs Infantry
 	Mobile:
 		Speed: 45
 		TurnSpeed: 5
@@ -233,14 +220,11 @@ apoc:
 	Armament@primary:
 		Weapon: 120mmx
 		LocalOffset: 640,0,384
-		UpgradeTypes: eliteweapon
-		UpgradeMaxEnabledLevel: 0
-		UpgradeMaxAcceptedLevel: 1
+		RequiresCondition: !rank-elite
 	Armament@elite:
 		Weapon: 120mmxE
 		LocalOffset: 640,0,384
-		UpgradeTypes: eliteweapon
-		UpgradeMinEnabledLevel: 1
+		RequiresCondition: rank-elite
 	Armament@antiair:
 		Weapon: MammothTusk
 		LocalOffset: 640,0,384
@@ -265,11 +249,11 @@ ttnk:
 		Cost: 1200
 	Tooltip:
 		Name: Tesla Tank
-		Description: Russian special tank armed with dual small Tesla Coils.\n  Strong vs Vehicles, Infantry\n  Weak vs Aircraft
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 50
 		Prerequisites: ~naweap, naradr, ~vehicles.russia
+		Description: Russian special tank armed with dual small Tesla Coils.\n  Strong vs Vehicles, Infantry\n  Weak vs Aircraft
 	Mobile:
 		Speed: 75
 		Crushes: fence, crate, infantry
@@ -284,14 +268,11 @@ ttnk:
 	Armament@primary:
 		Weapon: TankBolt
 		LocalOffset: 280,196,384, 280,-196,384
-		UpgradeTypes: eliteweapon
-		UpgradeMaxEnabledLevel: 0
-		UpgradeMaxAcceptedLevel: 1
+		RequiresCondition: !rank-elite
 	Armament@elite:
 		Weapon: TankBoltE
 		LocalOffset: 280,196,384, 280,-196,384
-		UpgradeTypes: eliteweapon
-		UpgradeMinEnabledLevel: 1
+		RequiresCondition: rank-elite
 	AttackTurreted:
 		Voice: Attack
 	AutoTarget:
@@ -312,11 +293,11 @@ dtruck:
 		Queue: Vehicle
 		BuildPaletteOrder: 110
 		Prerequisites: naradr, ~vehicles.libya
+		Description: Demolition Truck, actively armed with nuclear explosives.
 	Valued:
 		Cost: 3000
 	Tooltip:
 		Name: Demolition Truck
-		Description: Demolition Truck, actively armed with nuclear explosives.
 	Selectable:
 		Bounds: 64, 52, 0, -6
 	Health:
