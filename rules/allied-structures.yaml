@@ -153,12 +153,6 @@ gapile:
 		Proxy: barracks.infiltrated
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
-	WithTextDecoration@primary:
-		RequiresSelection: true
-		Text: PRIMARY
-		ReferencePoint: Top
-		ZOffset: 256
-		RequiresCondition: primary
 
 garefn:
 	Inherits: ^Building
@@ -294,12 +288,6 @@ gaairc:
 		ZOffset: 256
 		RequiresCondition: primary
 	InfiltrateForExploration:
-	WithTextDecoration@primary:
-		RequiresSelection: true
-		Text: PRIMARY
-		ReferencePoint: Top
-		ZOffset: 256
-		RequiresCondition: primary
 	GrantConditionOnDisabled@IDISABLE:
 		Condition: disabled
 
@@ -385,12 +373,6 @@ gaweap:
 		Proxy: warfactory.infiltrated
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
-	WithTextDecoration@primary:
-		RequiresSelection: true
-		Text: PRIMARY
-		ReferencePoint: Top
-		ZOffset: 256
-		RequiresCondition: primary
 
 gayard:
 	Inherits: ^Building
@@ -513,12 +495,6 @@ gayard:
 		Sequence: repair
 	-EmitInfantryOnSell@allies:
 	-EmitInfantryOnSell@soviets:
-	WithTextDecoration@primary:
-		RequiresSelection: true
-		Text: PRIMARY
-		ReferencePoint: Top
-		ZOffset: 256
-		RequiresCondition: primary
 
 gadept:
 	Inherits: ^Building

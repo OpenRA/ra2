@@ -158,6 +158,12 @@ nahand:
 		Offset: 3,3
 		Palette: mouse
 		IsPlayerPalette: false
+	WithTextDecoration@primary:
+		RequiresSelection: true
+		Text: PRIMARY
+		ReferencePoint: Top
+		ZOffset: 256
+		RequiresCondition: primary
 	ProductionBar:
 	Power:
 		Amount: -10
@@ -166,12 +172,6 @@ nahand:
 		Proxy: barracks.infiltrated
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
-	WithTextDecoration@primary:
-		RequiresSelection: true
-		Text: PRIMARY
-		ReferencePoint: Top
-		ZOffset: 256
-		RequiresCondition: primary
 
 narefn:
 	Inherits: ^Building
@@ -332,12 +332,6 @@ naweap:
 		Proxy: warfactory.infiltrated
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
-	WithTextDecoration@primary:
-		RequiresSelection: true
-		Text: PRIMARY
-		ReferencePoint: Top
-		ZOffset: 256
-		RequiresCondition: primary
 
 nayard:
 	Inherits: ^Building
@@ -462,12 +456,6 @@ nayard:
 		Sequence: production-lights
 	-EmitInfantryOnSell@allies:
 	-EmitInfantryOnSell@soviets:
-	WithTextDecoration@primary:
-		RequiresSelection: true
-		Text: PRIMARY
-		ReferencePoint: Top
-		ZOffset: 256
-		RequiresCondition: primary
 
 nadept:
 	Inherits: ^Building
