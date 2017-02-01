@@ -600,7 +600,10 @@
 ^Aircraft:
 	Inherits@1: ^NeutralAircraft
 	Inherits@2: ^GainsExperience
+<<<<<<< HEAD
 		UseLocation: true
+=======
+>>>>>>> upstream/master
 	WithTextControlGroupDecoration:
 
 ^Plane:
