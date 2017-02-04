@@ -83,8 +83,6 @@
 		Conditions: crate-firepower, crate-damage, crate-speed
 
 ^IronCurtainable:
-	UpgradeOverlay@ironcurtain:
-		RequiresCondition: invulnerability
 	DamageMultiplier@ironcurtain:
 		RequiresCondition: invulnerability
 		Modifier: 0
@@ -600,10 +598,6 @@
 ^Aircraft:
 	Inherits@1: ^NeutralAircraft
 	Inherits@2: ^GainsExperience
-<<<<<<< HEAD
-		UseLocation: true
-=======
->>>>>>> upstream/master
 	WithTextControlGroupDecoration:
 
 ^Plane:

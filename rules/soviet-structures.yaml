@@ -172,15 +172,6 @@ nahand:
 		Proxy: barracks.infiltrated
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
-<<<<<<< HEAD
-	WithTextDecoration@primary:
-		RequiresSelection: true
-		Text: PRIMARY
-		ReferencePoint: Top
-		ZOffset: 256
-		RequiresCondition: primary
-=======
->>>>>>> upstream/master
 
 narefn:
 	Inherits: ^Building
@@ -341,15 +332,6 @@ naweap:
 		Proxy: warfactory.infiltrated
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
-<<<<<<< HEAD
-	WithTextDecoration@primary:
-		RequiresSelection: true
-		Text: PRIMARY
-		ReferencePoint: Top
-		ZOffset: 256
-		RequiresCondition: primary
-=======
->>>>>>> upstream/master
 
 nayard:
 	Inherits: ^Building
@@ -474,15 +456,6 @@ nayard:
 		Sequence: production-lights
 	-EmitInfantryOnSell@allies:
 	-EmitInfantryOnSell@soviets:
-<<<<<<< HEAD
-	WithTextDecoration@primary:
-		RequiresSelection: true
-		Text: PRIMARY
-		ReferencePoint: Top
-		ZOffset: 256
-		RequiresCondition: primary
-=======
->>>>>>> upstream/master
 
 nadept:
 	Inherits: ^Building
