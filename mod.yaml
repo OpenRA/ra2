@@ -13,7 +13,7 @@ Packages:
 	$ra2: ra2
 	$ra: ra
 	$d2k: d2k
-	$ts: ts
+	$cnc: cnc
 	./mods/common: common
 	~ra2.mix
 	~language.mix
@@ -103,7 +103,7 @@ Chrome:
 Assemblies:
 	common|OpenRA.Mods.Common.dll
 	ra|OpenRA.Mods.RA.dll
-	ts|OpenRA.Mods.TS.dll
+	cnc|OpenRA.Mods.Cnc.dll
 	ra2|OpenRA.Mods.RA2.dll
 
 ChromeLayout:
