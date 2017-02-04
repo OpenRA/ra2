@@ -1171,6 +1171,11 @@ castl01:
 	damaged-idle: custl01
 		Start: 1
 		ShadowStart: 5
+	rubble: custl01
+		UseTilesetCode: false
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 castl02:
 	Defaults:
