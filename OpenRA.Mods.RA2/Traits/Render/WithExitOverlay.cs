@@ -36,17 +36,12 @@ namespace OpenRA.Mods.RA2.Traits
 		public object Create(ActorInitializer init) { return new WithExitOverlay(init.Self, this); }
 	}
 
-	public class WithExitOverlay : INotifyDamageStateChanged, INotifyBuildComplete, INotifySold, INotifyProduction
+	public class WithExitOverlay : INotifyDamageStateChanged, INotifyBuildComplete, INotifySold, INotifyProduction, ITick
 	{
 		readonly Actor self;
 		readonly Animation overlay;
-		bool buildComplete;
+		bool buildComplete, enable;
 		CPos exit;
-
-		bool IsExitBlocked
-		{
-			get { return self.World.ActorMap.GetActorsAt(exit).Any(a => a != self); }
-		}
 
 		public WithExitOverlay(Actor self, WithExitOverlayInfo info)
 		{
@@ -61,7 +56,7 @@ namespace OpenRA.Mods.RA2.Traits
 
 			var anim = new AnimationWithOffset(overlay,
 				() => body.LocalToWorld(info.Offset.Rotate(body.QuantizeOrientation(self, self.Orientation))),
-				() => !buildComplete || !IsExitBlocked);
+				() => !buildComplete || !enable);
 
 			rs.Add(anim, info.Palette, info.IsPlayerPalette);
 		}
@@ -85,6 +80,13 @@ namespace OpenRA.Mods.RA2.Traits
 		public void UnitProduced(Actor self, Actor other, CPos exit)
 		{
 			this.exit = exit;
+			enable = true;
+		}
+
+		public void Tick(Actor self)
+		{
+			if (enable)
+				enable = self.World.ActorMap.GetActorsAt(exit).Any(a => a != self);
 		}
 	}
 }
