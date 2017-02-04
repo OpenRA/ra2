@@ -83,7 +83,7 @@
 		Conditions: crate-firepower, crate-damage, crate-speed
 
 ^IronCurtainable:
-	UpgradeOverlay@ironcurtain:
+	WithColoredOverlay@ironcurtain:
 		RequiresCondition: invulnerability
 	DamageMultiplier@ironcurtain:
 		RequiresCondition: invulnerability
