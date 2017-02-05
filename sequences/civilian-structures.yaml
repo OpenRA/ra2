@@ -959,7 +959,7 @@ camiam01:
 	idle:
 		ShadowStart: 4
 	damaged-idle:
-		Start: 2
+		Start: 1
 		ShadowStart: 5
 	rubble:
 		Start: 3
@@ -973,7 +973,7 @@ camiam02:
 	idle:
 		ShadowStart: 4
 	damaged-idle:
-		Start: 2
+		Start: 1
 		ShadowStart: 5
 	rubble:
 		Start: 3
@@ -987,7 +987,7 @@ camiam03:
 	idle:
 		ShadowStart: 4
 	damaged-idle:
-		Start: 2
+		Start: 1
 		ShadowStart: 5
 	rubble:
 		Start: 3
@@ -1001,7 +1001,7 @@ camiam04:
 	idle:
 		ShadowStart: 4
 	damaged-idle:
-		Start: 2
+		Start: 1
 		ShadowStart: 5
 
 camiam05:
@@ -1011,7 +1011,7 @@ camiam05:
 	idle:
 		ShadowStart: 4
 	damaged-idle:
-		Start: 2
+		Start: 1
 		ShadowStart: 5
 	rubble:
 		Start: 3
@@ -1025,7 +1025,7 @@ camiam06:
 	idle:
 		ShadowStart: 4
 	damaged-idle:
-		Start: 2
+		Start: 1
 		ShadowStart: 5
 	rubble:
 		Start: 3
@@ -1039,7 +1039,7 @@ camiam07:
 	idle:
 		ShadowStart: 4
 	damaged-idle:
-		Start: 2
+		Start: 1
 		ShadowStart: 5
 	rubble:
 		Start: 3
@@ -1053,7 +1053,7 @@ camiam08:
 	idle:
 		ShadowStart: 4
 	damaged-idle:
-		Start: 2
+		Start: 1
 		ShadowStart: 5
 	rubble:
 		Start: 3
@@ -1171,6 +1171,11 @@ castl01:
 	damaged-idle: custl01
 		Start: 1
 		ShadowStart: 5
+	rubble: custl01
+		UseTilesetCode: false
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 castl02:
 	Defaults:
@@ -1386,7 +1391,7 @@ cahse01:
 		Offset: -15,-37
 		UseTilesetCode: true
 	idle:
-		ShadowStart: 2
+		ShadowStart: 4
 	damaged-idle:
 		Start: 1
 		ShadowStart: 4
@@ -1400,7 +1405,7 @@ cahse02:
 		Offset: -15,-37
 		UseTilesetCode: true
 	idle:
-		ShadowStart: 2
+		ShadowStart: 4
 	damaged-idle:
 		Start: 1
 		ShadowStart: 4
@@ -1414,7 +1419,7 @@ cahse03:
 		Offset: 15,-52
 		UseTilesetCode: true
 	idle:
-		ShadowStart: 2
+		ShadowStart: 4
 	damaged-idle:
 		Start: 1
 		ShadowStart: 4
@@ -1428,7 +1433,7 @@ cahse04:
 		Offset: -15,-37
 		UseTilesetCode: true
 	idle:
-		ShadowStart: 2
+		ShadowStart: 4
 	damaged-idle:
 		Start: 1
 		ShadowStart: 4
