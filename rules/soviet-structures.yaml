@@ -846,7 +846,7 @@ tesla:
 		Bounds: 44, 88, -2, -33
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, TeslaBoost
-	WithChargeOverlay:
+	WithTeslaChargeOverlay:
 	Armament:
 		Weapon: CoilBolt
 		LocalOffset: 0,0,2200
@@ -855,7 +855,7 @@ tesla:
 		Weapon: OPCoilBolt
 		LocalOffset: 0,0,2200
 		RequiresCondition: charged
-	AttackCharge:
+	AttackTesla:
 		Voice: Attack
 		MaxCharges: 3
 		ReloadTime: 120

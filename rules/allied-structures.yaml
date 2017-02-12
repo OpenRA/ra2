@@ -919,11 +919,11 @@ atesla:
 		Type: Steel
 	RevealsShroud:
 		Range: 8c0
-	WithChargeAnimation:
+	WithTeslaChargeAnimation:
 	Armament:
 		Weapon: PrismShot
 		LocalOffset: 0,0,2500
-	AttackCharge:
+	AttackTesla:
 		Voice: Attack
 		ReloadTime: 60
 		ChargeAudio: bpripow.wav
