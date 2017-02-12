@@ -51,15 +51,8 @@
     <Reference Include="OpenRA.Mods.Common">
       <HintPath>dependencies\OpenRA.Mods.Common.dll</HintPath>
     </Reference>
-    <Reference Include="OpenRA.Mods.RA">
-      <HintPath>dependencies\OpenRA.Mods.RA.dll</HintPath>
-    </Reference>
     <Reference Include="Eluant">
       <HintPath>dependencies\Eluant.dll</HintPath>
-    </Reference>
-    <Reference Include="Eluant">
-      <HintPath>dependencies\Eluant.dll</HintPath>
-      <Private>False</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

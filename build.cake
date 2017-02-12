@@ -15,7 +15,6 @@ var deps = new[] {
     "Eluant.dll",
     "OpenRA.Game.exe",
     "OpenRA.Mods.Common.dll",
-    "OpenRA.Mods.RA.dll",
     "OpenRA.Mods.Cnc.dll"
 };
 
@@ -23,8 +22,7 @@ var depsInOpenRA = new[] {
     "Eluant.dll",
     "OpenRA.Game.exe",
     "mods/common/OpenRA.Mods.Common.dll",
-    "mods/ra/OpenRA.Mods.RA.dll",
-    "mods/cnc/OpenRA.Mods.Cnc.dll"
+    "mods/common/OpenRA.Mods.Cnc.dll"
 };
 
 // Location on-disk of the OpenRA source code.

@@ -11,7 +11,6 @@
 
 using System;
 using OpenRA.Activities;
-using OpenRA.Mods.Common.Activities;
 using OpenRA.Mods.Common.Traits;
 using OpenRA.Mods.RA2.Activities;
 using OpenRA.Traits;
