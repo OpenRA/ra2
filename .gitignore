@@ -60,3 +60,6 @@ OpenRA.Launcher.Mac/OpenRA.xcodeproj/*.mode1v3
 # SublimeText
 *.sublime-project
 *.sublime-workspace
+
+# Environment variables (dotenv)
+.env

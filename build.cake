@@ -2,12 +2,11 @@
 // Windows: choco install cake.portable
 //
 // Example:
-// cake -auto=true -openra-root=~/projects/openra
+// cake -auto=true
 
 var target = Argument("target", "default").ToLowerInvariant();
 var configuration = Argument("configuration", "Debug");
 
-var rootDir = Directory(".");
 var depsDir = Directory("./OpenRA.Mods.RA2/dependencies");
 
 // TODO: Combine 'deps' and 'depsInOpenRA' into an array of pairs/structs
@@ -26,10 +25,43 @@ var depsInOpenRA = new[] {
 };
 
 // Location on-disk of the OpenRA source code.
-var openraRoot = Argument<string>("openra-root", null);
+var openraRoot = Argument<string>("openra-root", GetEngineSourceRootPath());
 
 // Should dependencies be automatically copied (if found in openraRoot)?
 var auto = Argument<bool>("auto", false);
+
+string GetEngineSourceRootPath(string filename = ".env") {
+    var envVal = Environment.GetEnvironmentVariable("OPENRA_ROOT");
+    if (!string.IsNullOrWhiteSpace(envVal))
+        return envVal;
+
+    var dotEnvPath = Directory(".") + File(filename);
+    if (!System.IO.File.Exists(dotEnvPath))
+        return null;
+
+    var i = 0;
+    foreach (var l in System.IO.File.ReadLines(dotEnvPath))
+    {
+        i++;
+        var line = l.Trim();
+        if (line.StartsWith("#"))
+            continue;
+
+        var split = line.Split(new char[] { '=' }, 2);
+        var key = split?[0]?.Trim();
+        var val = split?[1]?.Trim();
+
+        if (string.IsNullOrWhiteSpace(key))
+            throw new Exception($"Could not find key on line {i} of {dotEnvPath}");
+        else if (val == null)
+            throw new Exception($"Could not find value on line {i} of {dotEnvPath}");
+
+        if (key == "OPENRA_ROOT")
+            return val;
+    }
+
+    return null;
+}
 
 Task("deps").Does(() => {
     var missingDeps = new List<string>();
@@ -48,17 +80,15 @@ Task("deps").Does(() => {
 
     // Steps to resolving dependency location:
     //   1) environment variable OPENRA_ROOT
-    //   2) -openra-root=<path> command-line argument
-    //   3) Ask the user for the path (only if `auto` is false!)
+    //   2) .env file
+    //   3) -openra-root=<path> command-line argument
+    //   4) Ask the user for the path
 
     if (string.IsNullOrWhiteSpace(openraRoot))
-        openraRoot = Environment.GetEnvironmentVariable("OPENRA_ROOT");
+        openraRoot = GetEngineSourceRootPath();
 
-    if (!auto && string.IsNullOrWhiteSpace(openraRoot))
-    {
-        Console.Write("Please enter the path to the OpenRA root: ");
-        openraRoot = Console.ReadLine();
-    }
+    if (string.IsNullOrWhiteSpace(openraRoot))
+        Error("Failed to find path to the OpenRA engine source");
 
     if (openraRoot.StartsWith("~"))
         openraRoot = openraRoot.Replace("~", IsRunningOnWindows() ?
@@ -93,7 +123,7 @@ Task("deps").Does(() => {
     }
 
     if (missingDeps.Any())
-        throw new Exception(string.Format("Missing {0} dependencies.", missingDeps.Count));
+        Error(string.Format("Missing {0} dependencies.", missingDeps.Count));
 });
 
 Task("default")
