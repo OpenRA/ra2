@@ -9,9 +9,9 @@ using System.Text.RegularExpressions;
 var target = Argument("target", "default").ToLowerInvariant();
 var configuration = Argument("configuration", "Debug");
 var depsDir = Directory("./OpenRA.Mods.RA2/dependencies");
-//
+
 // Location on-disk of the OpenRA source code.
-var openraRootPath = GetEngineSourceRootPath();
+var engineRootPath = GetEngineSourceRootPath();
 
 // TODO: Combine 'deps' and 'depsInOpenRA' into an array of pairs/structs
 var deps = new[] {
@@ -82,14 +82,14 @@ Task("deps").Does(() => {
     //   3) -openra-root=<path> command-line argument
     //   4) Ask the user for the path
 
-    if (string.IsNullOrWhiteSpace(openraRootPath))
-        openraRootPath = GetEngineSourceRootPath();
+    if (string.IsNullOrWhiteSpace(engineRootPath))
+        engineRootPath = GetEngineSourceRootPath();
 
-    if (string.IsNullOrWhiteSpace(openraRootPath))
+    if (string.IsNullOrWhiteSpace(engineRootPath))
         Error("Failed to find path to the OpenRA engine source");
 
-    if (openraRootPath.StartsWith("~"))
-        openraRootPath = openraRootPath.Replace("~", IsRunningOnWindows() ?
+    if (engineRootPath.StartsWith("~"))
+        engineRootPath = engineRootPath.Replace("~", IsRunningOnWindows() ?
             Environment.ExpandEnvironmentVariables("%HOMEDRIVE%%HOMEPATH%") :
             Environment.GetEnvironmentVariable("HOME"));
 
@@ -100,7 +100,7 @@ Task("deps").Does(() => {
         var depPathInOpenRA = depsInOpenRA[i];
 
         var depPath = System.IO.Path.Combine(depsDir.Path.FullPath, dep);
-        var oraPath = System.IO.Path.Combine(openraRootPath, depPathInOpenRA);
+        var oraPath = System.IO.Path.Combine(engineRootPath, depPathInOpenRA);
 
         if (!System.IO.File.Exists(oraPath))
             Error(string.Format("Could not automatically resolve missing dependency '{0}'.", dep));
@@ -139,25 +139,32 @@ Task("clean").Does(() => {
         DeleteFile("./OpenRA.Mods.RA2.dll");
 });
 
-Task("version").Does(() => {
-    var openraRootDir = Directory(openraRootPath);
-    var gitDir = openraRootDir + Directory(".git");
+string GetGitHashOfDirectory(string directoryPath) {
+    var root = Directory(directoryPath);
+    var gitDir = root + Directory(".git");
     var gitHeadFile = gitDir + File("HEAD");
     var gitHeadFileContents = System.IO.File.ReadAllText(gitHeadFile);
     var split = gitHeadFileContents.Split(new[] { ':' }, 2);
     var refFileStr = split[1].Trim();
     var gitRefFile = gitDir + Directory(refFileStr);
     var hash = "git-" + System.IO.File.ReadAllText(gitRefFile).Substring(0, 9);
+    return hash;
+}
 
+Task("version").Does(() => {
     var modRootDir = Directory(".");
     var manifestPath = modRootDir + File("mod.yaml");
     var manifestContents = System.IO.File.ReadAllText(manifestPath);
 
-    var newContents = Regex.Replace(manifestContents, "\tmodchooser:.*\n", "\tmodchooser: " + hash + "\n", RegexOptions.IgnoreCase);
-    newContents = Regex.Replace(newContents, "\tcnc:.*\n", "\tcnc: " + hash + "\n", RegexOptions.IgnoreCase);
-    newContents = Regex.Replace(newContents, "\tcommon:.*\n", "\tcommon: " + hash + "\n", RegexOptions.IgnoreCase);
+    var modHash = GetGitHashOfDirectory(".");
+    var newManifestContents = Regex.Replace(manifestContents, "\tVersion:.*\n", "\tVersion: " + modHash + "\n", RegexOptions.IgnoreCase);
 
-    System.IO.File.WriteAllText(manifestPath, newContents);
+    var engineHash = GetGitHashOfDirectory(engineRootPath);
+    newManifestContents = Regex.Replace(newManifestContents, "\tmodchooser:.*\n", "\tmodchooser: " + engineHash + "\n", RegexOptions.IgnoreCase);
+    newManifestContents = Regex.Replace(newManifestContents, "\tcnc:.*\n", "\tcnc: " + engineHash + "\n", RegexOptions.IgnoreCase);
+    newManifestContents = Regex.Replace(newManifestContents, "\tcommon:.*\n", "\tcommon: " + engineHash + "\n", RegexOptions.IgnoreCase);
+
+    System.IO.File.WriteAllText(manifestPath, newManifestContents);
 });
 
 RunTarget(target);
