@@ -10,8 +10,8 @@ var configuration = Argument("configuration", "Debug");
 var rootDir = Directory(".");
 var depsDir = Directory("./OpenRA.Mods.RA2/dependencies");
 
-// TODO: Combine 'deps' and 'depsInOpenRA' into an array of pairs/structs
-var deps = new[] {
+// TODO: Combine 'depFilenamesInRA2DepsDir' and 'depsInOpenRA' into an array of pairs/structs
+var depFilenamesInRA2DepsDir = new[] {
     "Eluant.dll",
     "OpenRA.Game.exe",
     "OpenRA.Mods.Common.dll",
@@ -33,7 +33,7 @@ var auto = Argument<bool>("auto", false);
 
 Task("deps").Does(() => {
     var missingDeps = new List<string>();
-    foreach (var dep in deps)
+    foreach (var dep in depFilenamesInRA2DepsDir)
     {
         var fullPath = System.IO.Path.Combine(depsDir.Path.FullPath, dep);
         if (!System.IO.File.Exists(fullPath))
@@ -69,31 +69,39 @@ Task("deps").Does(() => {
     for (var i = 0; i < missingDepsCopy.Length; i++)
     {
         var dep = missingDepsCopy[i];
-        var depPathInOpenRA = depsInOpenRA[i];
+        var depPathInOpenRA = depsInOpenRA.SingleOrDefault(d => d.EndsWith(dep));
+        if (depPathInOpenRA == null)
+            throw new Exception(nameof(depsInOpenRA) + " does not contain an entry for " + dep);
 
-        var depPath = System.IO.Path.Combine(depsDir.Path.FullPath, dep);
-        var oraPath = System.IO.Path.Combine(openraRoot, depPathInOpenRA);
+        var dstPath = System.IO.Path.Combine(depsDir.Path.FullPath, dep);
+        var srcPath = System.IO.Path.Combine(openraRoot, depPathInOpenRA);
 
-        if (!System.IO.File.Exists(oraPath))
-            Error(string.Format("Could not automatically resolve missing dependency '{0}'.", dep));
+        if (!System.IO.File.Exists(srcPath))
+            Error(string.Format("Expected {0} to exist but it didn't.", srcPath));
         else
         {
             if (!auto)
             {
-                Console.Write(string.Format("Would you like to copy {0} to {1}? [Y/n] ", oraPath, depPath));
+                Console.Write(string.Format("Would you like to copy {0} to {1}? [Y/n] ", srcPath, dstPath));
                 var input = Console.ReadLine().ToLowerInvariant();
                 if (!string.IsNullOrWhiteSpace(input) && input != "y" && input != "yes")
                     continue;
             }
 
-            System.IO.File.Copy(oraPath, depPath, true);
-            if (System.IO.File.Exists(depPath))
+            System.IO.File.Copy(srcPath, dstPath, true);
+            if (System.IO.File.Exists(dstPath))
                 missingDeps.Remove(dep);
         }
     }
 
     if (missingDeps.Any())
-        throw new Exception(string.Format("Missing {0} dependencies.", missingDeps.Count));
+    {
+        var msg = String.format("Missing {0} dependencies." + Environment.NewLine, missingDeps.Count);
+        foreach (var md in missingDeps)
+            msg += String.format("\t{0}{1}", md, Environment.NewLine);
+
+        throw new Exception(msg);
+    }
 });
 
 Task("default")
