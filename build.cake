@@ -4,10 +4,14 @@
 // Example:
 // cake -auto=true
 
+using System.Text.RegularExpressions;
+
 var target = Argument("target", "default").ToLowerInvariant();
 var configuration = Argument("configuration", "Debug");
-
 var depsDir = Directory("./OpenRA.Mods.RA2/dependencies");
+//
+// Location on-disk of the OpenRA source code.
+var openraRootPath = GetEngineSourceRootPath();
 
 // TODO: Combine 'deps' and 'depsInOpenRA' into an array of pairs/structs
 var deps = new[] {
@@ -23,12 +27,6 @@ var depsInOpenRA = new[] {
     "mods/common/OpenRA.Mods.Common.dll",
     "mods/common/OpenRA.Mods.Cnc.dll"
 };
-
-// Location on-disk of the OpenRA source code.
-var openraRoot = Argument<string>("openra-root", GetEngineSourceRootPath());
-
-// Should dependencies be automatically copied (if found in openraRoot)?
-var auto = Argument<bool>("auto", false);
 
 string GetEngineSourceRootPath(string filename = ".env") {
     var envVal = Environment.GetEnvironmentVariable("OPENRA_ROOT");
@@ -84,14 +82,14 @@ Task("deps").Does(() => {
     //   3) -openra-root=<path> command-line argument
     //   4) Ask the user for the path
 
-    if (string.IsNullOrWhiteSpace(openraRoot))
-        openraRoot = GetEngineSourceRootPath();
+    if (string.IsNullOrWhiteSpace(openraRootPath))
+        openraRootPath = GetEngineSourceRootPath();
 
-    if (string.IsNullOrWhiteSpace(openraRoot))
+    if (string.IsNullOrWhiteSpace(openraRootPath))
         Error("Failed to find path to the OpenRA engine source");
 
-    if (openraRoot.StartsWith("~"))
-        openraRoot = openraRoot.Replace("~", IsRunningOnWindows() ?
+    if (openraRootPath.StartsWith("~"))
+        openraRootPath = openraRootPath.Replace("~", IsRunningOnWindows() ?
             Environment.ExpandEnvironmentVariables("%HOMEDRIVE%%HOMEPATH%") :
             Environment.GetEnvironmentVariable("HOME"));
 
@@ -102,20 +100,12 @@ Task("deps").Does(() => {
         var depPathInOpenRA = depsInOpenRA[i];
 
         var depPath = System.IO.Path.Combine(depsDir.Path.FullPath, dep);
-        var oraPath = System.IO.Path.Combine(openraRoot, depPathInOpenRA);
+        var oraPath = System.IO.Path.Combine(openraRootPath, depPathInOpenRA);
 
         if (!System.IO.File.Exists(oraPath))
             Error(string.Format("Could not automatically resolve missing dependency '{0}'.", dep));
         else
         {
-            if (!auto)
-            {
-                Console.Write(string.Format("Would you like to copy {0} to {1}? [Y/n] ", oraPath, depPath));
-                var input = Console.ReadLine().ToLowerInvariant();
-                if (!string.IsNullOrWhiteSpace(input) && input != "y" && input != "yes")
-                    continue;
-            }
-
             System.IO.File.Copy(oraPath, depPath, true);
             if (System.IO.File.Exists(depPath))
                 missingDeps.Remove(dep);
@@ -147,6 +137,27 @@ Task("clean").Does(() => {
 
     if (FileExists("./OpenRA.Mods.RA2.dll"))
         DeleteFile("./OpenRA.Mods.RA2.dll");
+});
+
+Task("version").Does(() => {
+    var openraRootDir = Directory(openraRootPath);
+    var gitDir = openraRootDir + Directory(".git");
+    var gitHeadFile = gitDir + File("HEAD");
+    var gitHeadFileContents = System.IO.File.ReadAllText(gitHeadFile);
+    var split = gitHeadFileContents.Split(new[] { ':' }, 2);
+    var refFileStr = split[1].Trim();
+    var gitRefFile = gitDir + Directory(refFileStr);
+    var hash = "git-" + System.IO.File.ReadAllText(gitRefFile).Substring(0, 9);
+
+    var modRootDir = Directory(".");
+    var manifestPath = modRootDir + File("mod.yaml");
+    var manifestContents = System.IO.File.ReadAllText(manifestPath);
+
+    var newContents = Regex.Replace(manifestContents, "\tmodchooser:.*\n", "\tmodchooser: " + hash + "\n", RegexOptions.IgnoreCase);
+    newContents = Regex.Replace(newContents, "\tcnc:.*\n", "\tcnc: " + hash + "\n", RegexOptions.IgnoreCase);
+    newContents = Regex.Replace(newContents, "\tcommon:.*\n", "\tcommon: " + hash + "\n", RegexOptions.IgnoreCase);
+
+    System.IO.File.WriteAllText(manifestPath, newContents);
 });
 
 RunTarget(target);
