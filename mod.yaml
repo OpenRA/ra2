@@ -6,6 +6,8 @@ Metadata:
 
 RequiresMods:
 	modchooser: git-eef4c9b62
+	cnc: git-eef4c9b62
+	common: git-eef4c9b62
 
 Packages:
 	~^Content/ra2
