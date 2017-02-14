@@ -6,6 +6,8 @@ Metadata:
 
 RequiresMods:
 	modchooser: {DEV_VERSION}
+	cnc: {DEV_VERSION}
+	common: {DEV_VERSION}
 
 Packages:
 	~^Content/ra2
