@@ -50,9 +50,9 @@ string GetEngineSourceRootPath(string filename = ".env") {
         var val = split?[1]?.Trim();
 
         if (string.IsNullOrWhiteSpace(key))
-            throw new Exception($"Could not find key on line {i} of {dotEnvPath}");
+            throw new Exception(string.Format("Could not find key on line {0} of {1}", i, dotEnvPath));
         else if (val == null)
-            throw new Exception($"Could not find value on line {i} of {dotEnvPath}");
+            throw new Exception(string.Format("Could not find value on line {0} of {1}", i, dotEnvPath));
 
         if (key == "OPENRA_ROOT")
             return val;
@@ -77,12 +77,7 @@ Task("deps").Does(() => {
     }
 
     if (string.IsNullOrWhiteSpace(engineRootPath))
-        Error("Failed to find path to the OpenRA engine source");
-
-    if (engineRootPath.StartsWith("~"))
-        engineRootPath = engineRootPath.Replace("~", IsRunningOnWindows() ?
-            Environment.ExpandEnvironmentVariables("%HOMEDRIVE%%HOMEPATH%") :
-            Environment.GetEnvironmentVariable("HOME"));
+        Error("Failed to find path to the OpenRA engine source.");
 
     var missingDepsCopy = missingDeps.ToArray();
     for (var i = 0; i < missingDepsCopy.Length; i++)
