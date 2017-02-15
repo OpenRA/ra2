@@ -140,15 +140,19 @@ Task("clean").Does(() => {
 });
 
 string GetGitHashOfDirectory(string directoryPath) {
-    var root = Directory(directoryPath);
-    var gitDir = root + Directory(".git");
-    var gitHeadFile = gitDir + File("HEAD");
-    var gitHeadFileContents = System.IO.File.ReadAllText(gitHeadFile);
-    var split = gitHeadFileContents.Split(new[] { ':' }, 2);
-    var refFileStr = split[1].Trim();
-    var gitRefFile = gitDir + Directory(refFileStr);
-    var hash = "git-" + System.IO.File.ReadAllText(gitRefFile).Substring(0, 9);
-    return hash;
+    try {
+        var root = Directory(directoryPath);
+        var gitDir = root + Directory(".git");
+        var gitHeadFile = gitDir + File("HEAD");
+        var gitHeadFileContents = System.IO.File.ReadAllText(gitHeadFile);
+        var split = gitHeadFileContents.Split(new[] { ':' }, 2);
+        var refFileStr = split[1].Trim();
+        var gitRefFile = gitDir + Directory(refFileStr);
+        var hash = System.IO.File.ReadAllText(gitRefFile);
+        return "git-" + hash.Substring(0, 9);
+    } catch { }
+
+    return null;
 }
 
 Task("version").Does(() => {
