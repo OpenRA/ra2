@@ -76,11 +76,6 @@ Task("deps").Does(() => {
         return;
     }
 
-    // Steps to resolving dependency location:
-    //   1) environment variable OPENRA_ROOT
-    //   2) .env file
-    //   3) -openra-root=<path> command-line argument
-
     if (string.IsNullOrWhiteSpace(engineRootPath))
         engineRootPath = GetEngineSourceRootPath();
 
