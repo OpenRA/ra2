@@ -80,7 +80,6 @@ Task("deps").Does(() => {
     //   1) environment variable OPENRA_ROOT
     //   2) .env file
     //   3) -openra-root=<path> command-line argument
-    //   4) Ask the user for the path
 
     if (string.IsNullOrWhiteSpace(engineRootPath))
         engineRootPath = GetEngineSourceRootPath();
