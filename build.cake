@@ -77,9 +77,6 @@ Task("deps").Does(() => {
     }
 
     if (string.IsNullOrWhiteSpace(engineRootPath))
-        engineRootPath = GetEngineSourceRootPath();
-
-    if (string.IsNullOrWhiteSpace(engineRootPath))
         Error("Failed to find path to the OpenRA engine source");
 
     if (engineRootPath.StartsWith("~"))
