@@ -8,33 +8,18 @@ using System.Text.RegularExpressions;
 
 var target = Argument("target", "default").ToLowerInvariant();
 var configuration = Argument("configuration", "Debug");
-var depsDir = Directory("./OpenRA.Mods.RA2/dependencies");
 
 // Location on-disk of the OpenRA source code.
-var engineRootPath = GetEngineSourceRootPath();
-
-// TODO: Combine 'deps' and 'depsInOpenRA' into an array of pairs/structs
-var deps = new[] {
-    "Eluant.dll",
-    "OpenRA.Game.exe",
-    "OpenRA.Mods.Common.dll",
-    "OpenRA.Mods.Cnc.dll"
-};
-
-var depsInOpenRA = new[] {
-    "Eluant.dll",
-    "OpenRA.Game.exe",
-    "mods/common/OpenRA.Mods.Common.dll",
-    "mods/common/OpenRA.Mods.Cnc.dll"
-};
-
 string GetEngineSourceRootPath(string filename = ".env") {
+    if (string.IsNullOrWhiteSpace(filename))
+        return null;
+
     var envVal = Environment.GetEnvironmentVariable("OPENRA_ROOT");
     if (!string.IsNullOrWhiteSpace(envVal))
         return envVal;
 
     var dotEnvPath = Directory(".") + File(filename);
-    if (!System.IO.File.Exists(dotEnvPath))
+    if (!FileExists(dotEnvPath))
         return null;
 
     var i = 0;
@@ -62,55 +47,71 @@ string GetEngineSourceRootPath(string filename = ".env") {
 }
 
 Task("deps").Does(() => {
-    var missingDeps = new List<string>();
-    foreach (var dep in deps)
-    {
-        var fullPath = System.IO.Path.Combine(depsDir.Path.FullPath, dep);
-        if (!System.IO.File.Exists(fullPath))
-            missingDeps.Add(dep);
-    }
+    var engineRootPath = GetEngineSourceRootPath();
+    if (engineRootPath == null)
+        Error("Failed to get engine root path (OPENRA_ROOT).");
 
-    if (!missingDeps.Any())
-    {
-        Information("All dependencies accounted for. Aborting 'deps' task.");
+    var dependencyFileNames = new[] {
+        "Eluant.dll",
+        "OpenRA.Game.exe",
+        "OpenRA.Mods.Common.dll",
+        "OpenRA.Mods.Cnc.dll"
+    };
+
+    var dependencyFilePathsInEngineSource = new[] {
+        "Eluant.dll",
+        "OpenRA.Game.exe",
+        "mods/common/OpenRA.Mods.Common.dll",
+        "mods/common/OpenRA.Mods.Cnc.dll"
+    };
+
+    var destinationDependencyDirectory = Directory("./OpenRA.Mods.RA2/dependencies");
+
+    var missingDependencyFileNames = new List<string>();
+    foreach (var dependencyFileName in dependencyFileNames)
+        if (!FileExists(destinationDependencyDirectory + File(dependencyFileName))
+            missingDependencyFileNames.Add(dependencyFileName);
+
+    if (!missingDependencyFileNames.Any())
         return;
-    }
 
     if (string.IsNullOrWhiteSpace(engineRootPath))
         Error("Failed to find path to the OpenRA engine source.");
 
-    var missingDepsCopy = missingDeps.ToArray();
-    for (var i = 0; i < missingDepsCopy.Length; i++)
+    var missingDependencyFileNamesCopy = missingDependencyFileNames.ToArray();
+    foreach (var missingDependencyFileName in missingDependencyFileNamesCopy)
     {
-        var dep = missingDepsCopy[i];
-        var depPathInOpenRA = depsInOpenRA[i];
+        var dependencyPathInEngineSource = dependencyFilePathsInEngineSource.SingleOrDefault(fp => fp.EndsWith(missingDependencyFileName));
+        if (dependencyPathInEngineSource == null)
+            Error(string.Format("dependencyFilePathsInEngineSource does not contain an entry for '{0}'", missingDependencyFileName));
 
-        var depPath = System.IO.Path.Combine(depsDir.Path.FullPath, dep);
-        var oraPath = System.IO.Path.Combine(engineRootPath, depPathInOpenRA);
+        var absoluteDependencyPathInEngineSource = engineRootPath + File(dependencyPathInEngineSource);
+        var absoluteDependencyPathInRa2 = destinationDependencyDirectory + File(missingDependencyFileName);
 
-        if (!System.IO.File.Exists(oraPath))
-            Error(string.Format("Could not automatically resolve missing dependency '{0}'.", dep));
+        if (!FileExists(absoluteDependencyPathInEngineSource))
+            Error(string.Format("Could not automatically resolve missing dependency '{0}'.", absoluteDependencyPathInEngineSource));
         else
         {
-            System.IO.File.Copy(oraPath, depPath, true);
-            if (System.IO.File.Exists(depPath))
-                missingDeps.Remove(dep);
+            CopyFile(absoluteDependencyPathInEngineSource, absoluteDependencyPathInRa2);
+
+            if (FileExists(absoluteDependencyPathInRa2))
+                missingDependencyFileNames.Remove(missingDependencyFileName);
+            else
+                Error(string.Format("Failed to copy '{0}' to '{1}'", absoluteDependencyPathInEngineSource, absoluteDependencyPathInRa2));
         }
     }
 
-    if (missingDeps.Any())
-        Error(string.Format("Missing {0} dependencies.", missingDeps.Count));
+    if (missingDependencyFileNames.Any())
+        Error(string.Format("Missing {0} dependencies.", missingDependencyFileNames.Count));
 });
 
-Task("default")
-    .IsDependentOn("deps")
-    .Does(() => {
-        if (IsRunningOnWindows())
-            MSBuild("./OpenRA.Mods.RA2/OpenRA.Mods.RA2.sln", settings => settings.SetConfiguration(configuration));
-        else
-            XBuild("./OpenRA.Mods.RA2/OpenRA.Mods.RA2.sln", settings => settings.SetConfiguration(configuration));
+Task("default").IsDependentOn("deps").Does(() => {
+    if (IsRunningOnWindows())
+        MSBuild("./OpenRA.Mods.RA2/OpenRA.Mods.RA2.sln", settings => settings.SetConfiguration(configuration));
+    else
+        XBuild("./OpenRA.Mods.RA2/OpenRA.Mods.RA2.sln", settings => settings.SetConfiguration(configuration));
 
-        System.IO.File.Copy("./OpenRA.Mods.RA2/bin/Debug/OpenRA.Mods.RA2.dll", "./OpenRA.Mods.RA2.dll", true);
+    CopyFile("./OpenRA.Mods.RA2/bin/Debug/OpenRA.Mods.RA2.dll", "./OpenRA.Mods.RA2.dll");
 });
 
 Task("clean").Does(() => {
@@ -142,6 +143,10 @@ string GetGitHashOfDirectory(string directoryPath) {
 }
 
 Task("version").Does(() => {
+    var engineRootPath = GetEngineSourceRootPath();
+    if (engineRootPath == null)
+        Error("Failed to get engine root path (OPENRA_ROOT).");
+
     var modRootDir = Directory(".");
     var manifestPath = modRootDir + File("mod.yaml");
     var manifestContents = System.IO.File.ReadAllText(manifestPath);
