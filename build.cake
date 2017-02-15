@@ -161,9 +161,15 @@ Task("version").Does(() => {
     var manifestContents = System.IO.File.ReadAllText(manifestPath);
 
     var modHash = GetGitHashOfDirectory(".");
+    if (modHash == null)
+        Error("Failed to get hash of the RA2 mod");
+
     var newManifestContents = Regex.Replace(manifestContents, "\tVersion:.*\n", "\tVersion: " + modHash + "\n", RegexOptions.IgnoreCase);
 
     var engineHash = GetGitHashOfDirectory(engineRootPath);
+    if (engineHash == null)
+        Error("Failed to get hash of the OpenRA engine.");
+
     newManifestContents = Regex.Replace(newManifestContents, "\tmodchooser:.*\n", "\tmodchooser: " + engineHash + "\n", RegexOptions.IgnoreCase);
     newManifestContents = Regex.Replace(newManifestContents, "\tcnc:.*\n", "\tcnc: " + engineHash + "\n", RegexOptions.IgnoreCase);
     newManifestContents = Regex.Replace(newManifestContents, "\tcommon:.*\n", "\tcommon: " + engineHash + "\n", RegexOptions.IgnoreCase);
