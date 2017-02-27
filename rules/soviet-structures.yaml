@@ -763,6 +763,8 @@ namisl:
 		DisplayRadarPing: True
 		CameraRemoveDelay: 70
 		FlashType: Nuke
+		ArrowSequence: arrow
+		ClockSequence: clock
 		CircleSequence:
 		CameraRange: 10
 

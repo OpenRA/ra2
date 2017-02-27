@@ -312,6 +312,9 @@ amradr:
 		QuantizedFacings: 8
 		UnitType: pdplane
 		CameraActor: camera
+		ArrowSequence: arrow
+		ClockSequence: clock
+		CircleSequence: circles
 
 gaweap:
 	Inherits: ^Building
