@@ -79,8 +79,12 @@
 	SpeedMultiplier@CRATES:
 		RequiresCondition: crate-speed
 		Modifier: 170
-	ExternalConditions@CRATES:
-		Conditions: crate-firepower, crate-damage, crate-speed
+	ExternalCondition@CRATE-FIREPOWER:
+		Condition: crate-firepower
+	ExternalCondition@CRATE-DAMAGE:
+		Condition: crate-damage
+	ExternalCondition@CRATE-SPEED:
+		Condition: crate-speed
 
 ^IronCurtainable:
 	WithColoredOverlay@ironcurtain:
@@ -90,8 +94,8 @@
 		Modifier: 0
 	TimedConditionBar:
 		Condition: invulnerability
-	ExternalConditions@INVULNERABILITY:
-		Conditions: invulnerability
+	ExternalCondition@INVULNERABILITY:
+		Condition: invulnerability
 
 ^ChronoDisable:
 	DisableOnCondition@ChronoDisable:
@@ -99,10 +103,10 @@
 	TimedConditionBar@ChronoDisable:
 		Condition: chronodisable
 		Color: FFFFFF
-	Mobile:
-#		RequiresCondition: !notmobile
-	ExternalConditions@ChronoDisable:
-		Conditions: chronodisable
+	#Mobile:
+	#	RequiresCondition: !notmobile
+	ExternalCondition@CHRONODISABLE:
+		Condition: chronodisable
 
 ^Building:
 	Inherits@1: ^ExistsInWorld
@@ -408,8 +412,8 @@
 		OpeningSequence: open
 		Sequence: idle
 		ClosingSequence: close
-	ExternalConditions@parachute:
-		Conditions: parachute
+	ExternalCondition@PARACHUTE:
+		Condition: parachute
 
 ^CivilianInfantry:
 	Inherits: ^Infantry

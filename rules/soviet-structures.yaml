@@ -875,8 +875,8 @@ tesla:
 		IndicatorPalette: ts-mouse
 		PowerupSpeech: BuildingOnline
 		PowerdownSpeech: BuildingOffline
-	ExternalConditions@charged:
-		Conditions: charged
+	ExternalCondition@CHARGED:
+		Condition: charged
 
 nalasr:
 	Inherits: ^VoxelLighting
