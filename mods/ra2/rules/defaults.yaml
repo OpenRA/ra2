@@ -624,7 +624,6 @@
 
 ^PlaneHusk:
 	RenderVoxels:
-	RenderSprites:
 	WithVoxelBody:
 	BodyOrientation:
 		QuantizedFacings: 0

@@ -80,7 +80,7 @@ cmin:
 		Offset: 121,0,0
 		Palette: effect
 	GainsExperience: # can get experience, i.e. speed
-	RenderSprites:
+	RenderSprites: # TODO: WithHarvestOverlay relies on this, but it should actually be removed
 	RenderVoxels:
 	WithVoxelUnloadBody:
 	Voiced:

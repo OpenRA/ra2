@@ -57,8 +57,6 @@ caairp:
 		CameraActor: camera
 		Prerequisites: ~techparadrops.allies
 		ArrowSequence: arrow
-		ClockSequence: clock
-		CircleSequence: circles
 	ParatroopersPower@Soviets:
 		OrderName: SovietParatroopers
 		Icon: paradrop
@@ -70,12 +68,10 @@ caairp:
 		UnitType: pdplane
 		CameraActor: camera
 		Prerequisites: ~techparadrops.soviets
+		ArrowSequence: arrow
 	WithIdleOverlay@decoration:
 	WithIdleOverlay@flag:
 		Sequence: flag
-		ArrowSequence: arrow
-		ClockSequence: clock
-		CircleSequence: circles
 
 cahosp:
 	Inherits: ^TechBuilding

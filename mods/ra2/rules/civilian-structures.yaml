@@ -233,28 +233,6 @@ cawash01.rubble:
 	RenderSprites:
 		Image: cawash01
 
-cawash02:
-	Inherits: ^CivBuilding
-	Building:
-		Footprint: xxxx xxxx xxxx
-		Dimensions: 4, 3
-	Health:
-		HP: 1000
-	Armor:
-		Type: Steel
-	RevealsShroud:
-		Range: 6c0
-	SpawnActorOnDeath:
-		Actor: cawash02.rubble
-
-cawash02.rubble:
-	Inherits: ^Rubble
-	Building:
-		Footprint: ____ ____ ____
-		Dimensions: 4, 3
-	RenderSprites:
-		Image: cawash02
-
 cawash03:
 	Inherits: ^CivBuilding
 	Building:
@@ -489,7 +467,7 @@ cawsh12.rubble:
 		Footprint: ___ ___ ___
 		Dimensions: 3, 3
 	RenderSprites:
-		Image: cawash12
+		Image: cawsh12
 
 cawash13:
 	Inherits: ^CivBuilding
@@ -702,16 +680,6 @@ canewy05:
 	Building:
 		Dimensions: 2,2
 		Footprint: xx xx
-	SpawnActorOnDeath:
-		Actor: canewy05.rubble
-
-canewy05.rubble:
-	Inherits: ^Rubble
-	Building:
-		Dimensions: 2,2
-		Footprint: __ __
-	RenderSprites:
-		Image: canewy05
 
 canewy06:
 	Inherits: ^CivBuilding

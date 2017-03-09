@@ -34,6 +34,8 @@ engineer:
 		Voice: Action
 	QuantizeFacingsFromSequence:
 		Sequence: stand
+	WithInfantryBody:
+		DefaultAttackSequence: stand
 
 dog:
 	Inherits: ^Infantry

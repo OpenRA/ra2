@@ -323,6 +323,10 @@ canewy04:
 	idle: cgnewy04
 	damaged-idle: cgnewy04
 		Start: 1
+	rubble: cgnewy04
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -1c0
 
 canewy05:
 	Defaults:
@@ -2348,6 +2352,14 @@ caswst01:
 		Start: 3
 		ShadowStart: 7
 		ZOffset: -1c0
+
+galite:
+	idle:
+		ShadowStart: 2
+	damaged-idle:
+		Start: 1
+		ShadowStart: 3
+	icon: liteicon
 
 cacity01:
 	Defaults:

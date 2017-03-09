@@ -313,8 +313,6 @@ amradr:
 		UnitType: pdplane
 		CameraActor: camera
 		ArrowSequence: arrow
-		ClockSequence: clock
-		CircleSequence: circles
 
 gaweap:
 	Inherits: ^Building
