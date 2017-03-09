@@ -172,7 +172,7 @@ spy:
 		Description: Infiltrates enemy structures for intel or\nsabotage. Exact effect depends on the\nbuilding infiltrated.\n  Unarmed\nSpecial Ability: Disguises
 	Valued:
 		Cost: 500
-	DisguiseToolTip:
+	DisguiseTooltip:
 		Name: Spy
 		GenericName: Soldier
 	Selectable:
@@ -318,11 +318,9 @@ tany:
 	Armament@primary:
 		Weapon: DoublePistols
 		RequiresCondition: !rank-elite
-
 	Armament@elite:
 		Weapon: DoublePistolsE
 		RequiresCondition: rank-elite
-
 	AttackFrontal:
 		Voice: Attack
 	AnnounceOnBuild:
