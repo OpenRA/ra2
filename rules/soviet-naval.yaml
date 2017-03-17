@@ -76,7 +76,12 @@ sub:
 		CloakSound: vnavupa.wav
 		UncloakSound: vnavupa.wav
 		CloakedCondition: underwater
+		UncloakOn: Damage
 		IsPlayerPalette: true
+		RequiresCondition: !uncloak-critical-damage
+	GrantConditionOnDamageState@UNCLOAK:
+		Condition: uncloak-critical-damage
+		ValidDamageStates: Critical
 	Armament:
 		Weapon: SubTorpedo
 		LocalOffset: 768,0,0
@@ -176,7 +181,7 @@ sqd:
 		CloakSound: vnavupa.wav
 		UncloakSound: vnavupa.wav
 		CloakedCondition: underwater
-		UncloakOn: Damage
+		UncloakOn: Damage, Attack
 		IsPlayerPalette: true
 	Targetable:
 		TargetTypes: Ground, Water
