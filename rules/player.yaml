@@ -44,7 +44,6 @@ Player:
 	PowerManager:
 	AllyRepair:
 	PlayerResources:
-	ActorGroupProxy:
 	DeveloperMode:
 		Enabled: true
 	GpsWatcher:
