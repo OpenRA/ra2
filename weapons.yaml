@@ -595,8 +595,8 @@ BlimpBomb:
 	MinRange: 0c001
 	Report: vkiratta.wav
 	Projectile: GravityBomb
-		Velocity: 50
-		Acceleration: 10
+		Velocity: 0, 0, -50
+		Acceleration: 0, 0, -10
 		Image: canister
 		Palette: player
 		Arm: 10
