@@ -612,6 +612,7 @@
 		CruiseAltitude: 5600
 		CruisingCondition: cruising
 		AltitudeVelocity: 120
+		CanHover: False
 	Hovers@CRUISING:
 		RequiresCondition: cruising
 	ReturnOnIdle:
