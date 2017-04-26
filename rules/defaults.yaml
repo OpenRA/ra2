@@ -155,7 +155,6 @@
 		Types: Building
 	Sellable:
 		SellSounds: uselbuil.wav
-	AcceptsSupplies:
 	Guardable:
 		Range: 3c0
 	Demolishable:
