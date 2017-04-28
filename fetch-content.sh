@@ -2,6 +2,7 @@
 
 # Die on any error for Travis CI to automatically retry:
 set -e
+
 if [ "$(uname)" == "Darwin" ]; then
 	DIR="$HOME/Library/Application Support/OpenRA/Content/ra2/"
 else
