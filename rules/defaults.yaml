@@ -718,7 +718,6 @@
 		CaptureThreshold: 100
 	TransformOnCapture:
 		ForceHealthPercentage: 25
-	DisabledOverlay:
 	ScriptTriggers:
 
 ^OreDrill:
