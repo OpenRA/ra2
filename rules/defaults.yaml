@@ -692,34 +692,6 @@
 		ChronoshiftSound: schrmov.wav
 		ReturnToOrigin: false
 
-^Husk:
-	Husk:
-		AllowedTerrain: Clear, Rough, Road, Ore, Gems, Beach
-	RenderSprites:
-	Health:
-		HP: 280
-	Armor:
-		Type: Heavy
-	HiddenUnderFog:
-	Burns:
-		Damage: 2
-	ProximityCaptor:
-		Types: Husk
-	BodyOrientation:
-	Targetable:
-		TargetTypes: Ground
-		RequiresForceFire: true
-	Tooltip:
-		GenericName: Destroyed Vehicle
-	AutoTargetIgnore:
-	Capturable:
-		Type: husk
-		AllowAllies: true
-		CaptureThreshold: 100
-	TransformOnCapture:
-		ForceHealthPercentage: 25
-	ScriptTriggers:
-
 ^OreDrill:
 	Inherits@1: ^SpriteActor
 	Tooltip:
