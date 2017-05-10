@@ -1055,8 +1055,8 @@ PrismShot:
 	Range: 8c0
 	Report: bpriat1a.wav
 	Projectile: LaserZap
-		Width: 70
-		UsePlayerColor: true
+		Width: 40
+		Color: AFE0E145
 	Warhead@1Dam: SpreadDamage
 		Spread: 42
 		Damage: 120
