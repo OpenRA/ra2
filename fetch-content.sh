@@ -9,7 +9,7 @@ else
 	DIR="$HOME/.openra/Content/ra2/"
 fi
 
-if [ ! -e "$DIR" ]; then
+if [ -z "$(ls -A "$DIR")" ]; then
 	echo "Downloading RA2 mod content"
 
 	mkdir -p "$DIR"
