@@ -4,6 +4,8 @@ Metadata:
 	Version: {DEV_VERSION}
 	Author: the RA2 mod team
 
+PackageFormats: Mix, AudioBag
+
 Packages:
 	~^Content/ra2
 	.
