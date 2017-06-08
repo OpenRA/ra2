@@ -37,6 +37,7 @@ amcv:
 	WithVoxelBody:
 	Voiced:
 		VoiceSet: AlliedConstructionVehicleVoice
+	HitShape:
 
 cmin:
 	Inherits: ^Vehicle
@@ -84,6 +85,7 @@ cmin:
 	WithVoxelUnloadBody:
 	Voiced:
 		VoiceSet: ChronoMinerVoice
+	HitShape:
 
 mtnk:
 	Inherits: ^Vehicle
@@ -130,6 +132,7 @@ mtnk:
 		VoiceSet: AlliedVehicleVoice
 	ProducibleWithLevel:
 		Prerequisites: warfactory.infiltrated
+	HitShape:
 
 tnkd:
 	Inherits: ^Vehicle
@@ -168,6 +171,7 @@ tnkd:
 		VoiceSet: AlliedVehicleVoice
 	ProducibleWithLevel:
 		Prerequisites: warfactory.infiltrated
+	HitShape:
 
 fv:
 	Inherits: ^Vehicle
@@ -286,6 +290,7 @@ fv:
 		VoiceSet: AlliedVehicleVoice
 	ProducibleWithLevel:
 		Prerequisites: warfactory.infiltrated
+	HitShape:
 
 sref:
 	Inherits: ^Vehicle
@@ -334,6 +339,7 @@ sref:
 		VoiceSet: AlliedVehicleVoice
 	ProducibleWithLevel:
 		Prerequisites: warfactory.infiltrated
+	HitShape:
 
 mgtk:
 	Inherits: ^Vehicle
@@ -379,3 +385,4 @@ mgtk:
 		VoiceSet: AlliedVehicleVoice
 	ProducibleWithLevel:
 		Prerequisites: warfactory.infiltrated
+	HitShape:

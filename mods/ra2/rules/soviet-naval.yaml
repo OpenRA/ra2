@@ -44,6 +44,7 @@ sapc:
 		EmptyWeapon: UnitExplode
 	WithVoxelBody:
 	RenderSprites:
+	HitShape:
 
 sub:
 	Inherits: ^Ship
@@ -103,6 +104,7 @@ sub:
 	Targetable@underwater:
 		TargetTypes: Underwater, Repair
 		RequiresCondition: underwater
+	HitShape:
 
 hyd:
 	Inherits: ^Ship
@@ -137,6 +139,7 @@ hyd:
 		EmptyWeapon: UnitExplode
 	WithVoxelBody:
 	RenderSprites:
+	HitShape:
 
 sqd:
 	Inherits@1: ^ExistsInWorld
@@ -210,3 +213,4 @@ sqd:
 	Repairable:
 		Voice: Attack
 		RepairBuildings: gayard, nayard
+	HitShape:

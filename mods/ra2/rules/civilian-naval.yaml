@@ -20,6 +20,7 @@ tug:
 		NormalsPalette: ts-normals
 	WithVoxelBody:
 	-Voiced:
+	HitShape:
 
 cruise:
 	Inherits: ^Ship
@@ -41,6 +42,7 @@ cruise:
 		Bounds: 64, 52, 0, -6
 	WithVoxelBody:
 	-Voiced:
+	HitShape:
 
 cdest:
 	Inherits: ^Ship
@@ -83,3 +85,4 @@ cdest:
 	WithVoxelBody:
 	RenderSprites:
 	-Voiced:
+	HitShape:

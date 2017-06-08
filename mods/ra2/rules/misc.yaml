@@ -136,3 +136,4 @@ FLAMEGUY:
 		UseDeathTypeSuffix: false
 		DeathSequencePalette: effect
 		DeathPaletteIsPlayerPalette: false
+	HitShape:

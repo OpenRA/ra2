@@ -46,6 +46,7 @@ lcrf:
 	RenderSprites:
 	Voiced:
 		VoiceSet: AlliedNavalVoice
+	HitShape:
 
 dest:
 	Inherits: ^Ship
@@ -92,6 +93,7 @@ dest:
 	RenderSprites:
 	Voiced:
 		VoiceSet: AlliedNavalVoice
+	HitShape:
 
 aegis:
 	Inherits: ^Ship
@@ -127,6 +129,7 @@ aegis:
 	RenderSprites:
 	Voiced:
 		VoiceSet: AlliedNavalVoice
+	HitShape:
 
 dlph:
 	Inherits@1: ^ExistsInWorld
@@ -205,3 +208,4 @@ dlph:
 	Repairable:
 		Voice: Attack
 		RepairBuildings: gayard, nayard
+	HitShape:

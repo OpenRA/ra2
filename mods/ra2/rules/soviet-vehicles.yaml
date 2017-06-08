@@ -38,6 +38,7 @@ smcv:
 	WithVoxelBody:
 	Voiced:
 		VoiceSet: SovietVehicleVoice
+	HitShape:
 
 harv:
 	Inherits: ^Vehicle
@@ -95,6 +96,7 @@ harv:
 	WithVoxelUnloadBody:
 	Voiced:
 		VoiceSet: SovietVehicleVoice
+	HitShape:
 
 htk:
 	Inherits: ^Vehicle
@@ -146,6 +148,7 @@ htk:
 		VoiceSet: SovietVehicleVoice
 	ProducibleWithLevel:
 		Prerequisites: warfactory.infiltrated
+	HitShape:
 
 htnk:
 	Inherits: ^Vehicle
@@ -193,6 +196,7 @@ htnk:
 		VoiceSet: SovietVehicleVoice
 	ProducibleWithLevel:
 		Prerequisites: warfactory.infiltrated
+	HitShape:
 
 apoc:
 	Inherits: ^Vehicle
@@ -242,6 +246,7 @@ apoc:
 		VoiceSet: SovietVehicleVoice
 	ProducibleWithLevel:
 		Prerequisites: warfactory.infiltrated
+	HitShape:
 
 ttnk:
 	Inherits: ^Vehicle
@@ -286,6 +291,7 @@ ttnk:
 		VoiceSet: SovietVehicleVoice
 	ProducibleWithLevel:
 		Prerequisites: warfactory.infiltrated
+	HitShape:
 
 dtruck:
 	Inherits: ^Vehicle
@@ -322,3 +328,4 @@ dtruck:
 	AnnounceOnBuild:
 	Voiced:
 		VoiceSet: DemolitionTruckVoice
+	HitShape:
