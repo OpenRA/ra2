@@ -4,9 +4,6 @@ Metadata:
 	Version: {DEV_VERSION}
 	Author: the RA2 mod team
 
-RequiresMods:
-	modchooser: {DEV_VERSION}
-
 Packages:
 	~^Content/ra2
 	.
