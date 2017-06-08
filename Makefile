@@ -19,7 +19,7 @@
 #   make check
 #
 
-.PHONY: utility stylecheck build clean engine version check-scripts check test
+.PHONY: utility stylecheck build clean engine version check-scripts check check-sequence-sprites test
 .DEFAULT_GOAL := build
 
 VERSION = $(shell git name-rev --name-only --tags --no-undefined HEAD 2>/dev/null || echo git-`git rev-parse --short HEAD`)
@@ -90,6 +90,11 @@ check: utility stylecheck
 	@MOD_SEARCH_PATHS="$(MOD_SEARCH_PATHS)" mono --debug "$(ENGINE_DIRECTORY)/OpenRA.Utility.exe" $(MOD_ID) --check-explicit-interfaces
 	@echo "Checking for code style violations in OpenRA.Mods.$(MOD_ID)..."
 	@mono --debug "$(ENGINE_DIRECTORY)/OpenRA.StyleCheck.exe" OpenRA.Mods.$(MOD_ID)
+
+check-sequence-sprites: utility
+	@echo
+	@echo "Checking $(MOD_ID) sprite sequences..."
+	@MOD_SEARCH_PATHS="${MOD_SEARCH_PATHS}" mono --debug engine/OpenRA.Utility.exe $(MOD_ID) --check-sequence-sprites
 
 test: utility
 	@echo "Testing $(MOD_ID) mod MiniYAML..."
