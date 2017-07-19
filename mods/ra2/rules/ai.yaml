@@ -1,6 +1,7 @@
 Player:
 	HackyAI@testai:
 		Name: Test AI
+		Type: test
 		BuildingCommonNames:
 			ConstructionYard: gacnst, nacnst
 			Refinery: garefn, narefn

@@ -60,7 +60,7 @@ Terrain:
 
 Templates:
 	Template@0:
-		Category: Lat Grass
+		Categories: Lat Grass
 		Id: 0
 		Images: clear01.urb, clear01a.urb, clear01b.urb, clear01c.urb, clear01d.urb, clear01e.urb, clear01f.urb, clear01g.urb
 		Size: 1, 1
@@ -69,7 +69,7 @@ Templates:
 				LeftColor: B8B0A1
 				RightColor: B5AFA0
 	Template@1:
-		Category: Blank
+		Categories: Blank
 		Id: 1
 		Images: blank01.urb
 		Size: 1, 1
@@ -78,7 +78,7 @@ Templates:
 				LeftColor: D2D2DC
 				RightColor: D0D0DA
 	Template@29:
-		Category: Ramps
+		Categories: Ramps
 		Id: 29
 		Images: slope01.urb, slope01a.urb, slope01b.urb, slope01c.urb
 		Size: 1, 1
@@ -88,7 +88,7 @@ Templates:
 				LeftColor: AA9F8F
 				RightColor: B1A490
 	Template@30:
-		Category: Ramps
+		Categories: Ramps
 		Id: 30
 		Images: slope02.urb, slope02a.urb, slope02b.urb, slope02c.urb
 		Size: 1, 1
@@ -98,7 +98,7 @@ Templates:
 				LeftColor: 9B8E78
 				RightColor: 9A8B79
 	Template@31:
-		Category: Ramps
+		Categories: Ramps
 		Id: 31
 		Images: slope03.urb, slope03a.urb, slope03b.urb, slope03c.urb
 		Size: 1, 1
@@ -108,7 +108,7 @@ Templates:
 				LeftColor: B2A796
 				RightColor: AFA28D
 	Template@32:
-		Category: Ramps
+		Categories: Ramps
 		Id: 32
 		Images: slope04.urb, slope04a.urb, slope04b.urb, slope04c.urb
 		Size: 1, 1
@@ -118,7 +118,7 @@ Templates:
 				LeftColor: CAC3B6
 				RightColor: C9C1B3
 	Template@33:
-		Category: Ramps
+		Categories: Ramps
 		Id: 33
 		Images: slope05.urb, slope05a.urb, slope05b.urb, slope05c.urb
 		Size: 1, 1
@@ -128,7 +128,7 @@ Templates:
 				LeftColor: BCB3A4
 				RightColor: BCB3A3
 	Template@34:
-		Category: Ramps
+		Categories: Ramps
 		Id: 34
 		Images: slope06.urb, slope06a.urb, slope06b.urb, slope06c.urb
 		Size: 1, 1
@@ -138,7 +138,7 @@ Templates:
 				LeftColor: AEA391
 				RightColor: B6AFA0
 	Template@35:
-		Category: Ramps
+		Categories: Ramps
 		Id: 35
 		Images: slope07.urb, slope07a.urb, slope07b.urb, slope07c.urb
 		Size: 1, 1
@@ -148,7 +148,7 @@ Templates:
 				LeftColor: BBB19F
 				RightColor: B8AF9E
 	Template@36:
-		Category: Ramps
+		Categories: Ramps
 		Id: 36
 		Images: slope08.urb, slope08a.urb, slope08b.urb, slope08c.urb
 		Size: 1, 1
@@ -158,7 +158,7 @@ Templates:
 				LeftColor: B9B1A1
 				RightColor: C7C0B2
 	Template@37:
-		Category: Ramps
+		Categories: Ramps
 		Id: 37
 		Images: slope09.urb, slope09a.urb, slope09b.urb, slope09c.urb
 		Size: 1, 1
@@ -168,7 +168,7 @@ Templates:
 				LeftColor: B8B0A0
 				RightColor: B6AFA0
 	Template@38:
-		Category: Ramps
+		Categories: Ramps
 		Id: 38
 		Images: slope10.urb, slope10a.urb, slope10b.urb, slope10c.urb
 		Size: 1, 1
@@ -178,7 +178,7 @@ Templates:
 				LeftColor: B7AF9F
 				RightColor: A59782
 	Template@39:
-		Category: Ramps
+		Categories: Ramps
 		Id: 39
 		Images: slope11.urb, slope11a.urb, slope11b.urb, slope11c.urb
 		Size: 1, 1
@@ -188,7 +188,7 @@ Templates:
 				LeftColor: B8AF9E
 				RightColor: B5AC9C
 	Template@40:
-		Category: Ramps
+		Categories: Ramps
 		Id: 40
 		Images: slope12.urb, slope12a.urb, slope12b.urb, slope12c.urb
 		Size: 1, 1
@@ -198,7 +198,7 @@ Templates:
 				LeftColor: CCC6B7
 				RightColor: B5AE9F
 	Template@41:
-		Category: Ramps
+		Categories: Ramps
 		Id: 41
 		Images: slope13.urb, slope13a.urb, slope13b.urb, slope13c.urb
 		Size: 1, 1
@@ -208,7 +208,7 @@ Templates:
 				LeftColor: A8A698
 				RightColor: B8AE98
 	Template@42:
-		Category: Ramps
+		Categories: Ramps
 		Id: 42
 		Images: slope14.urb, slope14a.urb, slope14b.urb, slope14c.urb
 		Size: 1, 1
@@ -218,7 +218,7 @@ Templates:
 				LeftColor: A69A88
 				RightColor: A39580
 	Template@43:
-		Category: Ramps
+		Categories: Ramps
 		Id: 43
 		Images: slope15.urb, slope15a.urb, slope15b.urb, slope15c.urb
 		Size: 1, 1
@@ -228,7 +228,7 @@ Templates:
 				LeftColor: BAB09D
 				RightColor: B7AD9C
 	Template@44:
-		Category: Ramps
+		Categories: Ramps
 		Id: 44
 		Images: slope16.urb, slope16a.urb, slope16b.urb, slope16c.urb
 		Size: 1, 1
@@ -238,7 +238,7 @@ Templates:
 				LeftColor: CBC4B6
 				RightColor: C8C1B3
 	Template@45:
-		Category: Ramps
+		Categories: Ramps
 		Id: 45
 		Images: slope17.urb
 		Size: 1, 1
@@ -248,7 +248,7 @@ Templates:
 				LeftColor: A69A87
 				RightColor: C8C1B3
 	Template@46:
-		Category: Ramps
+		Categories: Ramps
 		Id: 46
 		Images: slope18.urb
 		Size: 1, 1
@@ -258,7 +258,7 @@ Templates:
 				LeftColor: CBC4B6
 				RightColor: A49680
 	Template@47:
-		Category: Ramps
+		Categories: Ramps
 		Id: 47
 		Images: slope19.urb
 		Size: 1, 1
@@ -268,7 +268,7 @@ Templates:
 				LeftColor: B8AE9C
 				RightColor: B4AA9A
 	Template@48:
-		Category: Ramps
+		Categories: Ramps
 		Id: 48
 		Images: slope20.urb
 		Size: 1, 1
@@ -278,7 +278,7 @@ Templates:
 				LeftColor: BCB19E
 				RightColor: BBB19E
 	Template@49:
-		Category: Cliff Set
+		Categories: Cliff Set
 		Id: 49
 		Images: cliff01.urb
 		Size: 2, 3
@@ -298,7 +298,7 @@ Templates:
 				LeftColor: BAB6A8
 				RightColor: A19A84
 	Template@50:
-		Category: Cliff Set
+		Categories: Cliff Set
 		Id: 50
 		Images: cliff02.urb
 		Size: 1, 2
@@ -311,7 +311,7 @@ Templates:
 				LeftColor: B9AF9F
 				RightColor: 9A8D73
 	Template@51:
-		Category: Cliff Set
+		Categories: Cliff Set
 		Id: 51
 		Images: cliff03.urb
 		Size: 2, 3
@@ -331,7 +331,7 @@ Templates:
 				LeftColor: B8B6AB
 				RightColor: ABA797
 	Template@52:
-		Category: Cliff Set
+		Categories: Cliff Set
 		Id: 52
 		Images: cliff04.urb
 		Size: 2, 3
@@ -351,7 +351,7 @@ Templates:
 				LeftColor: B8B6AB
 				RightColor: A7A293
 	Template@53:
-		Category: Cliff Set
+		Categories: Cliff Set
 		Id: 53
 		Images: cliff05.urb
 		Size: 2, 2
@@ -371,7 +371,7 @@ Templates:
 				LeftColor: B8B5AA
 				RightColor: 948A70
 	Template@54:
-		Category: Cliff Set
+		Categories: Cliff Set
 		Id: 54
 		Images: cliff06.urb
 		Size: 2, 2
@@ -391,7 +391,7 @@ Templates:
 				LeftColor: B8B5AA
 				RightColor: 938C78
 	Template@55:
-		Category: Cliff Set
+		Categories: Cliff Set
 		Id: 55
 		Images: cliff07.urb
 		Size: 2, 2
@@ -411,7 +411,7 @@ Templates:
 				LeftColor: B8B5AA
 				RightColor: 5F503F
 	Template@56:
-		Category: Cliff Set
+		Categories: Cliff Set
 		Id: 56
 		Images: cliff08.urb
 		Size: 1, 2
@@ -424,7 +424,7 @@ Templates:
 				LeftColor: BBB1A4
 				RightColor: 9D8E75
 	Template@57:
-		Category: Cliff Set
+		Categories: Cliff Set
 		Id: 57
 		Images: cliff09.urb
 		Size: 2, 2
@@ -440,7 +440,7 @@ Templates:
 				LeftColor: 877B62
 				RightColor: 847961
 	Template@58:
-		Category: Cliff Set
+		Categories: Cliff Set
 		Id: 58
 		Images: cliff10.urb
 		Size: 2, 2
@@ -456,7 +456,7 @@ Templates:
 				LeftColor: 837863
 				RightColor: 827862
 	Template@59:
-		Category: Cliff Set
+		Categories: Cliff Set
 		Id: 59
 		Images: cliff11.urb
 		Size: 2, 2
@@ -472,7 +472,7 @@ Templates:
 				LeftColor: 6C5E4B
 				RightColor: 6E604C
 	Template@60:
-		Category: Cliff Set
+		Categories: Cliff Set
 		Id: 60
 		Images: cliff12.urb
 		Size: 1, 1
@@ -481,7 +481,7 @@ Templates:
 				LeftColor: 8A7B62
 				RightColor: 887961
 	Template@61:
-		Category: Cliff Set
+		Categories: Cliff Set
 		Id: 61
 		Images: cliff13.urb
 		Size: 1, 1
@@ -490,7 +490,7 @@ Templates:
 				LeftColor: 847864
 				RightColor: 847863
 	Template@62:
-		Category: Cliff Set
+		Categories: Cliff Set
 		Id: 62
 		Images: cliff14.urb
 		Size: 1, 1
@@ -499,7 +499,7 @@ Templates:
 				LeftColor: 6B5E4C
 				RightColor: 6D604D
 	Template@63:
-		Category: Cliff Set
+		Categories: Cliff Set
 		Id: 63
 		Images: cliff15.urb
 		Size: 2, 2
@@ -519,7 +519,7 @@ Templates:
 				LeftColor: AFADA2
 				RightColor: 71654E
 	Template@64:
-		Category: Cliff Set
+		Categories: Cliff Set
 		Id: 64
 		Images: cliff16.urb
 		Size: 2, 2
@@ -539,7 +539,7 @@ Templates:
 				LeftColor: AFACA1
 				RightColor: 68614C
 	Template@65:
-		Category: Cliff Set
+		Categories: Cliff Set
 		Id: 65
 		Images: cliff17.urb
 		Size: 2, 2
@@ -559,7 +559,7 @@ Templates:
 				LeftColor: ACA99F
 				RightColor: 4E4235
 	Template@66:
-		Category: Cliff Set
+		Categories: Cliff Set
 		Id: 66
 		Images: cliff18.urb
 		Size: 2, 1
@@ -572,7 +572,7 @@ Templates:
 				LeftColor: B1ABA1
 				RightColor: 73644D
 	Template@67:
-		Category: Cliff Set
+		Categories: Cliff Set
 		Id: 67
 		Images: cliff19.urb
 		Size: 3, 2
@@ -592,7 +592,7 @@ Templates:
 				LeftColor: BDB8A8
 				RightColor: 9A9483
 	Template@68:
-		Category: Cliff Set
+		Categories: Cliff Set
 		Id: 68
 		Images: cliff20.urb
 		Size: 3, 2
@@ -612,7 +612,7 @@ Templates:
 				LeftColor: C1B7A7
 				RightColor: A19685
 	Template@69:
-		Category: Cliff Set
+		Categories: Cliff Set
 		Id: 69
 		Images: cliff21.urb
 		Size: 3, 2
@@ -632,7 +632,7 @@ Templates:
 				LeftColor: B0ACA1
 				RightColor: 8D836D
 	Template@70:
-		Category: Cliff Set
+		Categories: Cliff Set
 		Id: 70
 		Images: cliff22.urb
 		Size: 2, 1
@@ -645,7 +645,7 @@ Templates:
 				LeftColor: B8B0A4
 				RightColor: 74644D
 	Template@71:
-		Category: Cliff Set
+		Categories: Cliff Set
 		Id: 71
 		Images: cliff23.urb
 		Size: 2, 1
@@ -659,7 +659,7 @@ Templates:
 				LeftColor: 8C877E
 				RightColor: 8A8883
 	Template@72:
-		Category: Cliff Set
+		Categories: Cliff Set
 		Id: 72
 		Images: cliff24.urb
 		Size: 2, 1
@@ -673,7 +673,7 @@ Templates:
 				LeftColor: 8B867C
 				RightColor: 868480
 	Template@73:
-		Category: Cliff Set
+		Categories: Cliff Set
 		Id: 73
 		Images: cliff25.urb
 		Size: 2, 1
@@ -687,7 +687,7 @@ Templates:
 				LeftColor: 8E8A82
 				RightColor: 858481
 	Template@74:
-		Category: Cliff Set
+		Categories: Cliff Set
 		Id: 74
 		Images: cliff26.urb
 		Size: 1, 1
@@ -697,7 +697,7 @@ Templates:
 				LeftColor: 8A877E
 				RightColor: 898884
 	Template@75:
-		Category: Cliff Set
+		Categories: Cliff Set
 		Id: 75
 		Images: cliff27.urb
 		Size: 2, 2
@@ -715,7 +715,7 @@ Templates:
 				LeftColor: 83817C
 				RightColor: 878278
 	Template@76:
-		Category: Cliff Set
+		Categories: Cliff Set
 		Id: 76
 		Images: cliff28.urb
 		Size: 2, 2
@@ -733,7 +733,7 @@ Templates:
 				LeftColor: 888379
 				RightColor: 868177
 	Template@77:
-		Category: Cliff Set
+		Categories: Cliff Set
 		Id: 77
 		Images: cliff29.urb
 		Size: 1, 1
@@ -743,7 +743,7 @@ Templates:
 				LeftColor: 7C7975
 				RightColor: 85817E
 	Template@78:
-		Category: Cliff Set
+		Categories: Cliff Set
 		Id: 78
 		Images: cliff30.urb
 		Size: 1, 1
@@ -753,7 +753,7 @@ Templates:
 				LeftColor: 7D7A78
 				RightColor: 858280
 	Template@79:
-		Category: Cliff Set
+		Categories: Cliff Set
 		Id: 79
 		Images: cliff31.urb
 		Size: 2, 2
@@ -771,7 +771,7 @@ Templates:
 				LeftColor: 87837B
 				RightColor: 88837B
 	Template@80:
-		Category: Cliff Set
+		Categories: Cliff Set
 		Id: 80
 		Images: cliff32.urb
 		Size: 2, 2
@@ -789,7 +789,7 @@ Templates:
 				LeftColor: 88837B
 				RightColor: 8A867D
 	Template@81:
-		Category: Cliff Set
+		Categories: Cliff Set
 		Id: 81
 		Images: cliff33.urb, cliff33a.urb
 		Size: 1, 1
@@ -799,7 +799,7 @@ Templates:
 				LeftColor: 89857D
 				RightColor: 8B867D
 	Template@82:
-		Category: Cliff Set
+		Categories: Cliff Set
 		Id: 82
 		Images: cliff34.urb, cliff34a.urb
 		Size: 1, 1
@@ -809,7 +809,7 @@ Templates:
 				LeftColor: 88857D
 				RightColor: 8B877F
 	Template@83:
-		Category: Cliff Set
+		Categories: Cliff Set
 		Id: 83
 		Images: cliff35.urb
 		Size: 1, 2
@@ -823,7 +823,7 @@ Templates:
 				LeftColor: 7F7D79
 				RightColor: 89857D
 	Template@84:
-		Category: Cliff Set
+		Categories: Cliff Set
 		Id: 84
 		Images: cliff36.urb
 		Size: 1, 2
@@ -837,7 +837,7 @@ Templates:
 				LeftColor: 817F7A
 				RightColor: 868176
 	Template@85:
-		Category: Cliff Set
+		Categories: Cliff Set
 		Id: 85
 		Images: cliff37.urb
 		Size: 1, 2
@@ -851,7 +851,7 @@ Templates:
 				LeftColor: 7F7D79
 				RightColor: 86827A
 	Template@86:
-		Category: Cliff Set
+		Categories: Cliff Set
 		Id: 86
 		Images: cliff38.urb
 		Size: 1, 1
@@ -861,7 +861,7 @@ Templates:
 				LeftColor: 85837F
 				RightColor: 8A867D
 	Template@87:
-		Category: Cliff Set
+		Categories: Cliff Set
 		Id: 87
 		Images: cliff39.urb
 		Size: 1, 1
@@ -871,7 +871,7 @@ Templates:
 				LeftColor: 838079
 				RightColor: 888379
 	Template@88:
-		Category: Cliff Set
+		Categories: Cliff Set
 		Id: 88
 		Images: cliff40.urb
 		Size: 1, 1
@@ -881,7 +881,7 @@ Templates:
 				LeftColor: 898376
 				RightColor: 8F8C84
 	Template@89:
-		Category: Shore Pieces
+		Categories: Shore Pieces
 		Id: 89
 		Images: shore01.urb
 		Size: 2, 2
@@ -899,7 +899,7 @@ Templates:
 				LeftColor: 444150
 				RightColor: 625B48
 	Template@90:
-		Category: Shore Pieces
+		Categories: Shore Pieces
 		Id: 90
 		Images: shore02.urb
 		Size: 2, 2
@@ -917,7 +917,7 @@ Templates:
 				LeftColor: 3C3C51
 				RightColor: 4F464C
 	Template@91:
-		Category: Shore Pieces
+		Categories: Shore Pieces
 		Id: 91
 		Images: shore03.urb
 		Size: 2, 2
@@ -935,7 +935,7 @@ Templates:
 				LeftColor: 3A3C52
 				RightColor: 49434D
 	Template@92:
-		Category: Shore Pieces
+		Categories: Shore Pieces
 		Id: 92
 		Images: shore04.urb
 		Size: 1, 2
@@ -947,7 +947,7 @@ Templates:
 				LeftColor: 3F3F50
 				RightColor: 5A4D49
 	Template@93:
-		Category: Shore Pieces
+		Categories: Shore Pieces
 		Id: 93
 		Images: shore05.urb
 		Size: 2, 3
@@ -971,7 +971,7 @@ Templates:
 				LeftColor: 383B52
 				RightColor: 4B464D
 	Template@94:
-		Category: Shore Pieces
+		Categories: Shore Pieces
 		Id: 94
 		Images: shore06.urb
 		Size: 2, 3
@@ -995,7 +995,7 @@ Templates:
 				LeftColor: 383B52
 				RightColor: 393C52
 	Template@95:
-		Category: Shore Pieces
+		Categories: Shore Pieces
 		Id: 95
 		Images: shore07.urb
 		Size: 2, 2
@@ -1013,7 +1013,7 @@ Templates:
 				LeftColor: 403F4F
 				RightColor: 44414F
 	Template@96:
-		Category: Shore Pieces
+		Categories: Shore Pieces
 		Id: 96
 		Images: shore08.urb
 		Size: 2, 2
@@ -1031,7 +1031,7 @@ Templates:
 				LeftColor: 45414E
 				RightColor: 45414F
 	Template@97:
-		Category: Shore Pieces
+		Categories: Shore Pieces
 		Id: 97
 		Images: shore09.urb
 		Size: 2, 2
@@ -1049,7 +1049,7 @@ Templates:
 				LeftColor: 6A6645
 				RightColor: 575549
 	Template@98:
-		Category: Shore Pieces
+		Categories: Shore Pieces
 		Id: 98
 		Images: shore10.urb
 		Size: 2, 2
@@ -1067,7 +1067,7 @@ Templates:
 				LeftColor: 605948
 				RightColor: 46444F
 	Template@99:
-		Category: Shore Pieces
+		Categories: Shore Pieces
 		Id: 99
 		Images: shore11.urb
 		Size: 2, 2
@@ -1085,7 +1085,7 @@ Templates:
 				LeftColor: 656146
 				RightColor: 49454D
 	Template@100:
-		Category: Shore Pieces
+		Categories: Shore Pieces
 		Id: 100
 		Images: shore12.urb
 		Size: 2, 1
@@ -1097,7 +1097,7 @@ Templates:
 				LeftColor: 5D5048
 				RightColor: 403E4E
 	Template@101:
-		Category: Shore Pieces
+		Categories: Shore Pieces
 		Id: 101
 		Images: shore13.urb
 		Size: 3, 2
@@ -1121,7 +1121,7 @@ Templates:
 				LeftColor: 5B5947
 				RightColor: 50504B
 	Template@102:
-		Category: Shore Pieces
+		Categories: Shore Pieces
 		Id: 102
 		Images: shore14.urb
 		Size: 3, 2
@@ -1145,7 +1145,7 @@ Templates:
 				LeftColor: 574A4A
 				RightColor: 3A3C52
 	Template@103:
-		Category: Shore Pieces
+		Categories: Shore Pieces
 		Id: 103
 		Images: shore15.urb
 		Size: 2, 2
@@ -1163,7 +1163,7 @@ Templates:
 				LeftColor: 413F4F
 				RightColor: 393C52
 	Template@104:
-		Category: Shore Pieces
+		Categories: Shore Pieces
 		Id: 104
 		Images: shore16.urb
 		Size: 2, 2
@@ -1181,7 +1181,7 @@ Templates:
 				LeftColor: 413F4F
 				RightColor: 393B52
 	Template@105:
-		Category: Shore Pieces
+		Categories: Shore Pieces
 		Id: 105
 		Images: shore17.urb
 		Size: 2, 2
@@ -1199,7 +1199,7 @@ Templates:
 				LeftColor: 69803A
 				RightColor: 6A7C3A
 	Template@106:
-		Category: Shore Pieces
+		Categories: Shore Pieces
 		Id: 106
 		Images: shore18.urb
 		Size: 2, 2
@@ -1217,7 +1217,7 @@ Templates:
 				LeftColor: 698039
 				RightColor: 697E3A
 	Template@107:
-		Category: Shore Pieces
+		Categories: Shore Pieces
 		Id: 107
 		Images: shore19.urb
 		Size: 2, 2
@@ -1235,7 +1235,7 @@ Templates:
 				LeftColor: 69803A
 				RightColor: 6B7A3A
 	Template@108:
-		Category: Shore Pieces
+		Categories: Shore Pieces
 		Id: 108
 		Images: shore20.urb
 		Size: 1, 2
@@ -1247,7 +1247,7 @@ Templates:
 				LeftColor: 69803B
 				RightColor: 6B703B
 	Template@109:
-		Category: Shore Pieces
+		Categories: Shore Pieces
 		Id: 109
 		Images: shore21.urb
 		Size: 2, 3
@@ -1271,7 +1271,7 @@ Templates:
 				LeftColor: 687F3A
 				RightColor: 6B823C
 	Template@110:
-		Category: Shore Pieces
+		Categories: Shore Pieces
 		Id: 110
 		Images: shore22.urb
 		Size: 2, 3
@@ -1295,7 +1295,7 @@ Templates:
 				LeftColor: 687F39
 				RightColor: 6B7E3B
 	Template@111:
-		Category: Shore Pieces
+		Categories: Shore Pieces
 		Id: 111
 		Images: shore23.urb
 		Size: 2, 2
@@ -1313,7 +1313,7 @@ Templates:
 				LeftColor: 636C3F
 				RightColor: 646D3D
 	Template@112:
-		Category: Shore Pieces
+		Categories: Shore Pieces
 		Id: 112
 		Images: shore24.urb
 		Size: 2, 2
@@ -1331,7 +1331,7 @@ Templates:
 				LeftColor: 697B3C
 				RightColor: 68753B
 	Template@113:
-		Category: Shore Pieces
+		Categories: Shore Pieces
 		Id: 113
 		Images: shore25.urb
 		Size: 2, 2
@@ -1349,7 +1349,7 @@ Templates:
 				LeftColor: 6E733A
 				RightColor: 6B7D3B
 	Template@114:
-		Category: Shore Pieces
+		Categories: Shore Pieces
 		Id: 114
 		Images: shore26.urb
 		Size: 2, 2
@@ -1367,7 +1367,7 @@ Templates:
 				LeftColor: 6B7A3A
 				RightColor: 6B823C
 	Template@115:
-		Category: Shore Pieces
+		Categories: Shore Pieces
 		Id: 115
 		Images: shore27.urb
 		Size: 2, 2
@@ -1385,7 +1385,7 @@ Templates:
 				LeftColor: 656C3E
 				RightColor: 6A823C
 	Template@116:
-		Category: Shore Pieces
+		Categories: Shore Pieces
 		Id: 116
 		Images: shore28.urb
 		Size: 2, 1
@@ -1397,7 +1397,7 @@ Templates:
 				LeftColor: 6A793C
 				RightColor: 697F3A
 	Template@117:
-		Category: Shore Pieces
+		Categories: Shore Pieces
 		Id: 117
 		Images: shore29.urb
 		Size: 3, 2
@@ -1421,7 +1421,7 @@ Templates:
 				LeftColor: 687E3A
 				RightColor: 6B823C
 	Template@118:
-		Category: Shore Pieces
+		Categories: Shore Pieces
 		Id: 118
 		Images: shore30.urb
 		Size: 3, 2
@@ -1445,7 +1445,7 @@ Templates:
 				LeftColor: 69813B
 				RightColor: 6A813B
 	Template@119:
-		Category: Shore Pieces
+		Categories: Shore Pieces
 		Id: 119
 		Images: shore31.urb
 		Size: 2, 2
@@ -1463,7 +1463,7 @@ Templates:
 				LeftColor: 393C53
 				RightColor: 4D474D
 	Template@120:
-		Category: Shore Pieces
+		Categories: Shore Pieces
 		Id: 120
 		Images: shore32.urb
 		Size: 2, 2
@@ -1481,7 +1481,7 @@ Templates:
 				LeftColor: 383B52
 				RightColor: 43404F
 	Template@121:
-		Category: Shore Pieces
+		Categories: Shore Pieces
 		Id: 121
 		Images: shore33.urb
 		Size: 2, 2
@@ -1499,7 +1499,7 @@ Templates:
 				LeftColor: 5F5745
 				RightColor: 676343
 	Template@122:
-		Category: Shore Pieces
+		Categories: Shore Pieces
 		Id: 122
 		Images: shore34.urb
 		Size: 2, 2
@@ -1517,7 +1517,7 @@ Templates:
 				LeftColor: 6A6941
 				RightColor: 6D6745
 	Template@123:
-		Category: Shore Pieces
+		Categories: Shore Pieces
 		Id: 123
 		Images: shore35.urb
 		Size: 2, 2
@@ -1535,7 +1535,7 @@ Templates:
 				LeftColor: 687F39
 				RightColor: 6B803C
 	Template@124:
-		Category: Shore Pieces
+		Categories: Shore Pieces
 		Id: 124
 		Images: shore36.urb
 		Size: 2, 2
@@ -1553,7 +1553,7 @@ Templates:
 				LeftColor: 687F3A
 				RightColor: 6B813C
 	Template@125:
-		Category: Shore Pieces
+		Categories: Shore Pieces
 		Id: 125
 		Images: shore37.urb
 		Size: 2, 2
@@ -1571,7 +1571,7 @@ Templates:
 				LeftColor: 687F3A
 				RightColor: 6B823C
 	Template@126:
-		Category: Shore Pieces
+		Categories: Shore Pieces
 		Id: 126
 		Images: shore38.urb
 		Size: 2, 2
@@ -1589,7 +1589,7 @@ Templates:
 				LeftColor: 687F3A
 				RightColor: 6B823C
 	Template@127:
-		Category: Shore Pieces
+		Categories: Shore Pieces
 		Id: 127
 		Images: shore39.urb
 		Size: 2, 2
@@ -1607,7 +1607,7 @@ Templates:
 				LeftColor: 697E39
 				RightColor: 6B823C
 	Template@128:
-		Category: Shore Pieces
+		Categories: Shore Pieces
 		Id: 128
 		Images: shore40.urb
 		Size: 2, 2
@@ -1625,7 +1625,7 @@ Templates:
 				LeftColor: 6A7C39
 				RightColor: 6B823C
 	Template@129:
-		Category: Shore Pieces
+		Categories: Shore Pieces
 		Id: 129
 		Images: shore41.urb
 		Size: 6, 4
@@ -1694,7 +1694,7 @@ Templates:
 				LeftColor: 383B52
 				RightColor: 393C52
 	Template@130:
-		Category: Shore Pieces
+		Categories: Shore Pieces
 		Id: 130
 		Images: shore42.urb
 		Size: 9, 5
@@ -1790,7 +1790,7 @@ Templates:
 				LeftColor: 383B52
 				RightColor: 393C52
 	Template@131:
-		Category: LAT Grass, thick
+		Categories: LAT Grass, thick
 		Id: 131
 		Images: ruff01.urb, ruff01a.urb, ruff01b.urb, ruff01c.urb, ruff01d.urb, ruff01e.urb, ruff01f.urb, ruff01g.urb
 		Size: 1, 1
@@ -1799,7 +1799,7 @@ Templates:
 				LeftColor: 694F2F
 				RightColor: 6A5032
 	Template@132:
-		Category: GrassThick Idividual
+		Categories: GrassThick Idividual
 		Id: 132
 		Images: clat01.urb, clat01a.urb
 		Size: 1, 1
@@ -1808,7 +1808,7 @@ Templates:
 				LeftColor: 694F2F
 				RightColor: 6A5032
 	Template@133:
-		Category: GrassThick Idividual
+		Categories: GrassThick Idividual
 		Id: 133
 		Images: clat02.urb, clat02a.urb
 		Size: 1, 1
@@ -1817,7 +1817,7 @@ Templates:
 				LeftColor: 674F32
 				RightColor: 644C30
 	Template@134:
-		Category: GrassThick Idividual
+		Categories: GrassThick Idividual
 		Id: 134
 		Images: clat03.urb, clat03a.urb
 		Size: 1, 1
@@ -1826,7 +1826,7 @@ Templates:
 				LeftColor: 634B2E
 				RightColor: 644C2F
 	Template@135:
-		Category: GrassThick Idividual
+		Categories: GrassThick Idividual
 		Id: 135
 		Images: clat04.urb, clat04a.urb
 		Size: 1, 1
@@ -1835,7 +1835,7 @@ Templates:
 				LeftColor: 654D2E
 				RightColor: 654D30
 	Template@136:
-		Category: GrassThick Idividual
+		Categories: GrassThick Idividual
 		Id: 136
 		Images: clat05.urb, clat05a.urb
 		Size: 1, 1
@@ -1844,7 +1844,7 @@ Templates:
 				LeftColor: 664E30
 				RightColor: 654D30
 	Template@137:
-		Category: GrassThick Idividual
+		Categories: GrassThick Idividual
 		Id: 137
 		Images: clat06.urb, clat06a.urb
 		Size: 1, 1
@@ -1853,7 +1853,7 @@ Templates:
 				LeftColor: 644B2F
 				RightColor: 644C2F
 	Template@138:
-		Category: GrassThick Idividual
+		Categories: GrassThick Idividual
 		Id: 138
 		Images: clat07.urb, clat07a.urb
 		Size: 1, 1
@@ -1862,7 +1862,7 @@ Templates:
 				LeftColor: 634C30
 				RightColor: 634B30
 	Template@139:
-		Category: GrassThick Idividual
+		Categories: GrassThick Idividual
 		Id: 139
 		Images: clat08.urb, clat08a.urb
 		Size: 1, 1
@@ -1871,7 +1871,7 @@ Templates:
 				LeftColor: 634C30
 				RightColor: 634B30
 	Template@140:
-		Category: GrassThick Idividual
+		Categories: GrassThick Idividual
 		Id: 140
 		Images: clat09.urb, clat09a.urb
 		Size: 1, 1
@@ -1880,7 +1880,7 @@ Templates:
 				LeftColor: 644B2F
 				RightColor: 644C2F
 	Template@141:
-		Category: GrassThick Idividual
+		Categories: GrassThick Idividual
 		Id: 141
 		Images: clat10.urb, clat10a.urb
 		Size: 1, 1
@@ -1889,7 +1889,7 @@ Templates:
 				LeftColor: 664E30
 				RightColor: 654D30
 	Template@142:
-		Category: GrassThick Idividual
+		Categories: GrassThick Idividual
 		Id: 142
 		Images: clat11.urb, clat11a.urb
 		Size: 1, 1
@@ -1898,7 +1898,7 @@ Templates:
 				LeftColor: 654D2E
 				RightColor: 654D30
 	Template@143:
-		Category: GrassThick Idividual
+		Categories: GrassThick Idividual
 		Id: 143
 		Images: clat12.urb, clat12a.urb
 		Size: 1, 1
@@ -1907,7 +1907,7 @@ Templates:
 				LeftColor: 654D2E
 				RightColor: 654D30
 	Template@144:
-		Category: GrassThick Idividual
+		Categories: GrassThick Idividual
 		Id: 144
 		Images: clat13.urb, clat13a.urb
 		Size: 1, 1
@@ -1916,7 +1916,7 @@ Templates:
 				LeftColor: 664E30
 				RightColor: 654D30
 	Template@145:
-		Category: GrassThick Idividual
+		Categories: GrassThick Idividual
 		Id: 145
 		Images: clat14.urb, clat14a.urb
 		Size: 1, 1
@@ -1925,7 +1925,7 @@ Templates:
 				LeftColor: 634B2E
 				RightColor: 644C2F
 	Template@146:
-		Category: GrassThick Idividual
+		Categories: GrassThick Idividual
 		Id: 146
 		Images: clat15.urb, clat15a.urb
 		Size: 1, 1
@@ -1934,7 +1934,7 @@ Templates:
 				LeftColor: 674F32
 				RightColor: 644C30
 	Template@147:
-		Category: GrassThick Idividual
+		Categories: GrassThick Idividual
 		Id: 147
 		Images: clat16.urb, clat16a.urb
 		Size: 1, 1
@@ -1943,7 +1943,7 @@ Templates:
 				LeftColor: 694F2F
 				RightColor: 6A5032
 	Template@148:
-		Category: Cliff/Water pieces
+		Categories: Cliff/Water pieces
 		Id: 148
 		Images: wcliff01.urb
 		Size: 2, 3
@@ -1963,7 +1963,7 @@ Templates:
 				LeftColor: 383B52
 				RightColor: 4C4E33
 	Template@149:
-		Category: Cliff/Water pieces
+		Categories: Cliff/Water pieces
 		Id: 149
 		Images: wcliff02.urb
 		Size: 1, 2
@@ -1976,7 +1976,7 @@ Templates:
 				LeftColor: 383B52
 				RightColor: 6F694E
 	Template@150:
-		Category: Cliff/Water pieces
+		Categories: Cliff/Water pieces
 		Id: 150
 		Images: wcliff03.urb
 		Size: 2, 3
@@ -1996,7 +1996,7 @@ Templates:
 				LeftColor: 383B52
 				RightColor: 424443
 	Template@151:
-		Category: Cliff/Water pieces
+		Categories: Cliff/Water pieces
 		Id: 151
 		Images: wcliff04.urb
 		Size: 2, 3
@@ -2016,7 +2016,7 @@ Templates:
 				LeftColor: 383B52
 				RightColor: 404241
 	Template@152:
-		Category: Cliff/Water pieces
+		Categories: Cliff/Water pieces
 		Id: 152
 		Images: wcliff05.urb
 		Size: 2, 2
@@ -2036,7 +2036,7 @@ Templates:
 				LeftColor: 393C50
 				RightColor: 6C654A
 	Template@153:
-		Category: Cliff/Water pieces
+		Categories: Cliff/Water pieces
 		Id: 153
 		Images: wcliff06.urb
 		Size: 2, 2
@@ -2056,7 +2056,7 @@ Templates:
 				LeftColor: 393C50
 				RightColor: 5E6049
 	Template@154:
-		Category: Cliff/Water pieces
+		Categories: Cliff/Water pieces
 		Id: 154
 		Images: wcliff07.urb
 		Size: 2, 2
@@ -2076,7 +2076,7 @@ Templates:
 				LeftColor: 393A50
 				RightColor: 423329
 	Template@155:
-		Category: Cliff/Water pieces
+		Categories: Cliff/Water pieces
 		Id: 155
 		Images: wcliff08.urb
 		Size: 1, 2
@@ -2089,7 +2089,7 @@ Templates:
 				LeftColor: 383B52
 				RightColor: 6E674D
 	Template@156:
-		Category: Cliff/Water pieces
+		Categories: Cliff/Water pieces
 		Id: 156
 		Images: wcliff09.urb
 		Size: 2, 2
@@ -2105,7 +2105,7 @@ Templates:
 				LeftColor: 696147
 				RightColor: 6A6247
 	Template@157:
-		Category: Cliff/Water pieces
+		Categories: Cliff/Water pieces
 		Id: 157
 		Images: wcliff10.urb
 		Size: 2, 2
@@ -2124,7 +2124,7 @@ Templates:
 				LeftColor: 393C4E
 				RightColor: 393C4F
 	Template@158:
-		Category: Cliff/Water pieces
+		Categories: Cliff/Water pieces
 		Id: 158
 		Images: wcliff11.urb
 		Size: 2, 2
@@ -2140,7 +2140,7 @@ Templates:
 				LeftColor: 544B42
 				RightColor: 554C42
 	Template@159:
-		Category: Cliff/Water pieces
+		Categories: Cliff/Water pieces
 		Id: 159
 		Images: wcliff12.urb
 		Size: 1, 1
@@ -2149,7 +2149,7 @@ Templates:
 				LeftColor: 696147
 				RightColor: 6A6247
 	Template@160:
-		Category: Cliff/Water pieces
+		Categories: Cliff/Water pieces
 		Id: 160
 		Images: wcliff13.urb
 		Size: 1, 1
@@ -2158,7 +2158,7 @@ Templates:
 				LeftColor: 5D5D4A
 				RightColor: 5E5F4A
 	Template@161:
-		Category: Cliff/Water pieces
+		Categories: Cliff/Water pieces
 		Id: 161
 		Images: wcliff14.urb
 		Size: 1, 1
@@ -2167,7 +2167,7 @@ Templates:
 				LeftColor: 544B42
 				RightColor: 554D42
 	Template@162:
-		Category: Cliff/Water pieces
+		Categories: Cliff/Water pieces
 		Id: 162
 		Images: wcliff15.urb
 		Size: 2, 2
@@ -2187,7 +2187,7 @@ Templates:
 				LeftColor: 383A47
 				RightColor: 4B4331
 	Template@163:
-		Category: Cliff/Water pieces
+		Categories: Cliff/Water pieces
 		Id: 163
 		Images: wcliff16.urb
 		Size: 2, 2
@@ -2207,7 +2207,7 @@ Templates:
 				LeftColor: 3B3D4B
 				RightColor: 3C3D31
 	Template@164:
-		Category: Cliff/Water pieces
+		Categories: Cliff/Water pieces
 		Id: 164
 		Images: wcliff17.urb
 		Size: 2, 2
@@ -2227,7 +2227,7 @@ Templates:
 				LeftColor: 373644
 				RightColor: 2F2520
 	Template@165:
-		Category: Cliff/Water pieces
+		Categories: Cliff/Water pieces
 		Id: 165
 		Images: wcliff18.urb
 		Size: 2, 1
@@ -2240,7 +2240,7 @@ Templates:
 				LeftColor: 383A47
 				RightColor: 4B4331
 	Template@166:
-		Category: Cliff/Water pieces
+		Categories: Cliff/Water pieces
 		Id: 166
 		Images: wcliff19.urb
 		Size: 3, 2
@@ -2260,7 +2260,7 @@ Templates:
 				LeftColor: 383B50
 				RightColor: 33333B
 	Template@167:
-		Category: Cliff/Water pieces
+		Categories: Cliff/Water pieces
 		Id: 167
 		Images: wcliff20.urb
 		Size: 3, 2
@@ -2280,7 +2280,7 @@ Templates:
 				LeftColor: 383A50
 				RightColor: 33333B
 	Template@168:
-		Category: Cliff/Water pieces
+		Categories: Cliff/Water pieces
 		Id: 168
 		Images: wcliff21.urb
 		Size: 3, 2
@@ -2300,7 +2300,7 @@ Templates:
 				LeftColor: 363847
 				RightColor: 373630
 	Template@169:
-		Category: Cliff/Water pieces
+		Categories: Cliff/Water pieces
 		Id: 169
 		Images: wcliff22.urb
 		Size: 2, 1
@@ -2313,7 +2313,7 @@ Templates:
 				LeftColor: 383A47
 				RightColor: 4B4331
 	Template@170:
-		Category: Cliff/Water pieces
+		Categories: Cliff/Water pieces
 		Id: 170
 		Images: wcliff23.urb
 		Size: 2, 3
@@ -2336,7 +2336,7 @@ Templates:
 				LeftColor: 3A3C50
 				RightColor: 4A4C33
 	Template@171:
-		Category: Cliff/Water pieces
+		Categories: Cliff/Water pieces
 		Id: 171
 		Images: wcliff24.urb
 		Size: 1, 3
@@ -2351,7 +2351,7 @@ Templates:
 				LeftColor: 373A52
 				RightColor: 393C52
 	Template@172:
-		Category: Cliff/Water pieces
+		Categories: Cliff/Water pieces
 		Id: 172
 		Images: wcliff25.urb
 		Size: 3, 1
@@ -2366,7 +2366,7 @@ Templates:
 				LeftColor: 383B51
 				RightColor: 373A51
 	Template@173:
-		Category: Cliff/Water pieces
+		Categories: Cliff/Water pieces
 		Id: 173
 		Images: wcliff26.urb
 		Size: 2, 2
@@ -2385,7 +2385,7 @@ Templates:
 				LeftColor: 3E3F52
 				RightColor: 55544C
 	Template@174:
-		Category: Cliff/Water pieces
+		Categories: Cliff/Water pieces
 		Id: 174
 		Images: wcliff27.urb
 		Size: 2, 2
@@ -2404,7 +2404,7 @@ Templates:
 				LeftColor: 56544C
 				RightColor: 3E4051
 	Template@175:
-		Category: Cliff/Water pieces
+		Categories: Cliff/Water pieces
 		Id: 175
 		Images: wcliff28.urb
 		Size: 3, 2
@@ -2427,7 +2427,7 @@ Templates:
 				LeftColor: 393B4B
 				RightColor: 353630
 	Template@176:
-		Category: DirtRoads Bendy
+		Categories: DirtRoads Bendy
 		Id: 176
 		Images: droadc01.urb
 		Size: 3, 2
@@ -2448,7 +2448,7 @@ Templates:
 				LeftColor: BCB3A6
 				RightColor: BAB3A4
 	Template@177:
-		Category: DirtRoads Bendy
+		Categories: DirtRoads Bendy
 		Id: 177
 		Images: droadc02.urb
 		Size: 2, 2
@@ -2466,7 +2466,7 @@ Templates:
 				LeftColor: B0A99C
 				RightColor: 5F5E5B
 	Template@178:
-		Category: DirtRoads Bendy
+		Categories: DirtRoads Bendy
 		Id: 178
 		Images: droadc03.urb
 		Size: 2, 2
@@ -2484,7 +2484,7 @@ Templates:
 				LeftColor: 5E5C56
 				RightColor: 5D5C54
 	Template@179:
-		Category: DirtRoads Bendy
+		Categories: DirtRoads Bendy
 		Id: 179
 		Images: droadc04.urb
 		Size: 2, 2
@@ -2499,7 +2499,7 @@ Templates:
 				LeftColor: 999284
 				RightColor: A0988A
 	Template@180:
-		Category: DirtRoads Bendy
+		Categories: DirtRoads Bendy
 		Id: 180
 		Images: droadc05.urb
 		Size: 2, 2
@@ -2517,7 +2517,7 @@ Templates:
 				LeftColor: A29B90
 				RightColor: A7A094
 	Template@181:
-		Category: DirtRoads Bendy
+		Categories: DirtRoads Bendy
 		Id: 181
 		Images: droadc06.urb
 		Size: 3, 2
@@ -2538,7 +2538,7 @@ Templates:
 				LeftColor: 948D80
 				RightColor: AEA697
 	Template@182:
-		Category: DirtRoads Bendy
+		Categories: DirtRoads Bendy
 		Id: 182
 		Images: droadc07.urb
 		Size: 2, 3
@@ -2556,7 +2556,7 @@ Templates:
 				LeftColor: 40413F
 				RightColor: 4F504D
 	Template@183:
-		Category: DirtRoads Bendy
+		Categories: DirtRoads Bendy
 		Id: 183
 		Images: droadc08.urb
 		Size: 2, 2
@@ -2574,7 +2574,7 @@ Templates:
 				LeftColor: 5B5B58
 				RightColor: 4B4C47
 	Template@184:
-		Category: DirtRoads Bendy
+		Categories: DirtRoads Bendy
 		Id: 184
 		Images: droadc09.urb
 		Size: 2, 2
@@ -2592,7 +2592,7 @@ Templates:
 				LeftColor: 5B5A54
 				RightColor: 8E8A80
 	Template@185:
-		Category: DirtRoads Bendy
+		Categories: DirtRoads Bendy
 		Id: 185
 		Images: droadc10.urb
 		Size: 2, 2
@@ -2610,7 +2610,7 @@ Templates:
 				LeftColor: A69E8F
 				RightColor: 9C9487
 	Template@186:
-		Category: DirtRoads Bendy
+		Categories: DirtRoads Bendy
 		Id: 186
 		Images: droadc11.urb
 		Size: 3, 2
@@ -2631,7 +2631,7 @@ Templates:
 				LeftColor: ADA699
 				RightColor: A39D91
 	Template@187:
-		Category: DirtRoads Bendy
+		Categories: DirtRoads Bendy
 		Id: 187
 		Images: droadc12.urb
 		Size: 3, 2
@@ -2652,7 +2652,7 @@ Templates:
 				LeftColor: BBB3A5
 				RightColor: B7AFA1
 	Template@188:
-		Category: DirtRoads Bendy
+		Categories: DirtRoads Bendy
 		Id: 188
 		Images: droadc13.urb
 		Size: 2, 3
@@ -2676,7 +2676,7 @@ Templates:
 				LeftColor: 5A5A56
 				RightColor: 575752
 	Template@189:
-		Category: DirtRoads Bendy
+		Categories: DirtRoads Bendy
 		Id: 189
 		Images: droadc14.urb
 		Size: 2, 2
@@ -2694,7 +2694,7 @@ Templates:
 				LeftColor: 5E5D57
 				RightColor: 605E58
 	Template@190:
-		Category: DirtRoads Bendy
+		Categories: DirtRoads Bendy
 		Id: 190
 		Images: droadc15.urb
 		Size: 2, 2
@@ -2709,7 +2709,7 @@ Templates:
 				LeftColor: 968F82
 				RightColor: 5B5A57
 	Template@191:
-		Category: DirtRoads Bendy
+		Categories: DirtRoads Bendy
 		Id: 191
 		Images: droadc16.urb
 		Size: 2, 2
@@ -2724,7 +2724,7 @@ Templates:
 				LeftColor: 9E988D
 				RightColor: 5B5A58
 	Template@192:
-		Category: DirtRoads Bendy
+		Categories: DirtRoads Bendy
 		Id: 192
 		Images: droadc17.urb
 		Size: 3, 2
@@ -2748,7 +2748,7 @@ Templates:
 				LeftColor: 5A5951
 				RightColor: 5F5F5B
 	Template@193:
-		Category: DirtRoads Bendy
+		Categories: DirtRoads Bendy
 		Id: 193
 		Images: droadc18.urb
 		Size: 2, 2
@@ -2763,7 +2763,7 @@ Templates:
 				LeftColor: 5A5952
 				RightColor: 5E5C57
 	Template@194:
-		Category: DirtRoads Bendy
+		Categories: DirtRoads Bendy
 		Id: 194
 		Images: droadc19.urb
 		Size: 2, 2
@@ -2781,7 +2781,7 @@ Templates:
 				LeftColor: 585852
 				RightColor: 605F5B
 	Template@195:
-		Category: DirtRoads Bendy
+		Categories: DirtRoads Bendy
 		Id: 195
 		Images: droadc20.urb
 		Size: 3, 2
@@ -2802,7 +2802,7 @@ Templates:
 				LeftColor: 736F6A
 				RightColor: BEB5A6
 	Template@196:
-		Category: DirtRoads Bendy
+		Categories: DirtRoads Bendy
 		Id: 196
 		Images: droadc21.urb
 		Size: 2, 2
@@ -2820,7 +2820,7 @@ Templates:
 				LeftColor: 5A5955
 				RightColor: B1A899
 	Template@197:
-		Category: DirtRoads Bendy
+		Categories: DirtRoads Bendy
 		Id: 197
 		Images: droadc22.urb
 		Size: 2, 2
@@ -2835,7 +2835,7 @@ Templates:
 				LeftColor: 595855
 				RightColor: 9F978B
 	Template@198:
-		Category: DirtRoads Bendy
+		Categories: DirtRoads Bendy
 		Id: 198
 		Images: droadc23.urb
 		Size: 2, 3
@@ -2853,7 +2853,7 @@ Templates:
 				LeftColor: 999284
 				RightColor: A9A193
 	Template@199:
-		Category: DirtRoads Bendy
+		Categories: DirtRoads Bendy
 		Id: 199
 		Images: droadc24.urb
 		Size: 2, 3
@@ -2874,7 +2874,7 @@ Templates:
 				LeftColor: B4ADA0
 				RightColor: B6AFA1
 	Template@200:
-		Category: DirtRoads Junctions
+		Categories: DirtRoads Junctions
 		Id: 200
 		Images: droadj01.urb
 		Size: 2, 2
@@ -2892,7 +2892,7 @@ Templates:
 				LeftColor: 5D5C5A
 				RightColor: 605F5D
 	Template@201:
-		Category: DirtRoads Junctions
+		Categories: DirtRoads Junctions
 		Id: 201
 		Images: droadj02.urb
 		Size: 2, 2
@@ -2910,7 +2910,7 @@ Templates:
 				LeftColor: 60605E
 				RightColor: 5A5A59
 	Template@202:
-		Category: DirtRoads Junctions
+		Categories: DirtRoads Junctions
 		Id: 202
 		Images: droadj03.urb
 		Size: 2, 2
@@ -2928,7 +2928,7 @@ Templates:
 				LeftColor: 5A5956
 				RightColor: A0988C
 	Template@203:
-		Category: DirtRoads Junctions
+		Categories: DirtRoads Junctions
 		Id: 203
 		Images: droadj04.urb
 		Size: 2, 2
@@ -2946,7 +2946,7 @@ Templates:
 				LeftColor: 9B9385
 				RightColor: 5B5A57
 	Template@204:
-		Category: DirtRoads Junctions
+		Categories: DirtRoads Junctions
 		Id: 204
 		Images: droadj05.urb
 		Size: 2, 2
@@ -2964,7 +2964,7 @@ Templates:
 				LeftColor: 605F5C
 				RightColor: 615F5C
 	Template@205:
-		Category: DirtRoads Junctions
+		Categories: DirtRoads Junctions
 		Id: 205
 		Images: droadj06.urb
 		Size: 3, 3
@@ -2991,7 +2991,7 @@ Templates:
 				LeftColor: 5C5B54
 				RightColor: 5D5C57
 	Template@206:
-		Category: DirtRoads Junctions
+		Categories: DirtRoads Junctions
 		Id: 206
 		Images: droadj07.urb
 		Size: 3, 3
@@ -3015,7 +3015,7 @@ Templates:
 				LeftColor: 5E5D57
 				RightColor: 5C5B57
 	Template@207:
-		Category: DirtRoads Junctions
+		Categories: DirtRoads Junctions
 		Id: 207
 		Images: droadj08.urb
 		Size: 3, 3
@@ -3039,7 +3039,7 @@ Templates:
 				LeftColor: 9B9486
 				RightColor: 989184
 	Template@208:
-		Category: DirtRoads Junctions
+		Categories: DirtRoads Junctions
 		Id: 208
 		Images: droadj09.urb
 		Size: 3, 3
@@ -3066,7 +3066,7 @@ Templates:
 				LeftColor: 5E5D57
 				RightColor: 5C5B57
 	Template@209:
-		Category: DirtRoads Junctions
+		Categories: DirtRoads Junctions
 		Id: 209
 		Images: droadj10.urb
 		Size: 3, 3
@@ -3093,7 +3093,7 @@ Templates:
 				LeftColor: 5D5D57
 				RightColor: 5C5B57
 	Template@210:
-		Category: DirtRoads Junctions
+		Categories: DirtRoads Junctions
 		Id: 210
 		Images: droadj11.urb
 		Size: 4, 4
@@ -3138,7 +3138,7 @@ Templates:
 				LeftColor: 9B948A
 				RightColor: 5A5957
 	Template@211:
-		Category: DirtRoads Straight
+		Categories: DirtRoads Straight
 		Id: 211
 		Images: droads01.urb
 		Size: 4, 4
@@ -3171,7 +3171,7 @@ Templates:
 				LeftColor: 979082
 				RightColor: 9D9589
 	Template@212:
-		Category: DirtRoads Straight
+		Categories: DirtRoads Straight
 		Id: 212
 		Images: droads02.urb
 		Size: 4, 4
@@ -3204,7 +3204,7 @@ Templates:
 				LeftColor: 9B968B
 				RightColor: 9A948A
 	Template@213:
-		Category: DirtRoads Straight
+		Categories: DirtRoads Straight
 		Id: 213
 		Images: droads03.urb
 		Size: 4, 4
@@ -3237,7 +3237,7 @@ Templates:
 				LeftColor: 979082
 				RightColor: 9D9589
 	Template@214:
-		Category: DirtRoads Straight
+		Categories: DirtRoads Straight
 		Id: 214
 		Images: droads04.urb
 		Size: 4, 4
@@ -3279,7 +3279,7 @@ Templates:
 				LeftColor: B29F49
 				RightColor: AA9F4B
 	Template@215:
-		Category: DirtRoads Straight
+		Categories: DirtRoads Straight
 		Id: 215
 		Images: droads05.urb
 		Size: 3, 3
@@ -3303,7 +3303,7 @@ Templates:
 				LeftColor: 999488
 				RightColor: 959085
 	Template@216:
-		Category: DirtRoads Straight
+		Categories: DirtRoads Straight
 		Id: 216
 		Images: droads06.urb
 		Size: 2, 2
@@ -3318,7 +3318,7 @@ Templates:
 				LeftColor: 9B9486
 				RightColor: 999184
 	Template@217:
-		Category: DirtRoads Straight
+		Categories: DirtRoads Straight
 		Id: 217
 		Images: droads07.urb
 		Size: 2, 2
@@ -3333,7 +3333,7 @@ Templates:
 				LeftColor: 9A9385
 				RightColor: 989184
 	Template@218:
-		Category: DirtRoads Straight
+		Categories: DirtRoads Straight
 		Id: 218
 		Images: droads08.urb
 		Size: 4, 4
@@ -3363,7 +3363,7 @@ Templates:
 				LeftColor: 979187
 				RightColor: 999388
 	Template@219:
-		Category: DirtRoads Straight
+		Categories: DirtRoads Straight
 		Id: 219
 		Images: droads09.urb
 		Size: 4, 3
@@ -3396,7 +3396,7 @@ Templates:
 				LeftColor: B5AC9D
 				RightColor: B9B0A0
 	Template@220:
-		Category: DirtRoads Straight
+		Categories: DirtRoads Straight
 		Id: 220
 		Images: droads10.urb
 		Size: 3, 3
@@ -3420,7 +3420,7 @@ Templates:
 				LeftColor: 979083
 				RightColor: 9D9589
 	Template@221:
-		Category: DirtRoads Straight
+		Categories: DirtRoads Straight
 		Id: 221
 		Images: droads11.urb
 		Size: 4, 4
@@ -3453,7 +3453,7 @@ Templates:
 				LeftColor: B8B0A1
 				RightColor: B6AFA0
 	Template@222:
-		Category: DirtRoads Straight
+		Categories: DirtRoads Straight
 		Id: 222
 		Images: droads12.urb
 		Size: 3, 4
@@ -3486,7 +3486,7 @@ Templates:
 				LeftColor: AFA595
 				RightColor: B1A795
 	Template@223:
-		Category: DirtRoads Straight
+		Categories: DirtRoads Straight
 		Id: 223
 		Images: droads13.urb
 		Size: 3, 3
@@ -3510,7 +3510,7 @@ Templates:
 				LeftColor: AB9F8A
 				RightColor: 968D7E
 	Template@224:
-		Category: DirtRoads Straight
+		Categories: DirtRoads Straight
 		Id: 224
 		Images: droads14.urb
 		Size: 5, 3
@@ -3546,7 +3546,7 @@ Templates:
 				LeftColor: B39C47
 				RightColor: A59A4B
 	Template@225:
-		Category: DirtRoads Straight
+		Categories: DirtRoads Straight
 		Id: 225
 		Images: droads15.urb
 		Size: 3, 5
@@ -3582,7 +3582,7 @@ Templates:
 				LeftColor: BC9645
 				RightColor: B49B4A
 	Template@226:
-		Category: DirtRoads Straight
+		Categories: DirtRoads Straight
 		Id: 226
 		Images: droads16.urb
 		Size: 2, 4
@@ -3606,7 +3606,7 @@ Templates:
 				LeftColor: A7AA55
 				RightColor: AFAC54
 	Template@227:
-		Category: DirtRoads Straight
+		Categories: DirtRoads Straight
 		Id: 227
 		Images: droads17.urb
 		Size: 4, 2
@@ -3636,7 +3636,7 @@ Templates:
 				LeftColor: 9C958B
 				RightColor: 5B5A57
 	Template@228:
-		Category: DirtRoads Straight
+		Categories: DirtRoads Straight
 		Id: 228
 		Images: droads18.urb
 		Size: 4, 2
@@ -3666,7 +3666,7 @@ Templates:
 				LeftColor: 968D7F
 				RightColor: 585754
 	Template@229:
-		Category: DirtRoads Straight
+		Categories: DirtRoads Straight
 		Id: 229
 		Images: droads19.urb
 		Size: 4, 2
@@ -3696,7 +3696,7 @@ Templates:
 				LeftColor: 968E80
 				RightColor: 595855
 	Template@230:
-		Category: DirtRoads Straight
+		Categories: DirtRoads Straight
 		Id: 230
 		Images: droads20.urb
 		Size: 4, 2
@@ -3726,7 +3726,7 @@ Templates:
 				LeftColor: 898070
 				RightColor: 5B5A57
 	Template@231:
-		Category: DirtRoads Straight
+		Categories: DirtRoads Straight
 		Id: 231
 		Images: droads21.urb
 		Size: 3, 2
@@ -3750,7 +3750,7 @@ Templates:
 				LeftColor: 9E988D
 				RightColor: 5B5A58
 	Template@232:
-		Category: DirtRoads Straight
+		Categories: DirtRoads Straight
 		Id: 232
 		Images: droads22.urb
 		Size: 2, 2
@@ -3768,7 +3768,7 @@ Templates:
 				LeftColor: 9B9385
 				RightColor: 5B5A57
 	Template@233:
-		Category: DirtRoads Straight
+		Categories: DirtRoads Straight
 		Id: 233
 		Images: droads23.urb
 		Size: 1, 2
@@ -3780,7 +3780,7 @@ Templates:
 				LeftColor: 9E9789
 				RightColor: 5B5A56
 	Template@234:
-		Category: DirtRoads Straight
+		Categories: DirtRoads Straight
 		Id: 234
 		Images: droads24.urb
 		Size: 1, 2
@@ -3792,7 +3792,7 @@ Templates:
 				LeftColor: 9A9385
 				RightColor: 5B5A57
 	Template@235:
-		Category: DirtRoads Straight
+		Categories: DirtRoads Straight
 		Id: 235
 		Images: droads25.urb
 		Size: 3, 2
@@ -3816,7 +3816,7 @@ Templates:
 				LeftColor: BFB6A8
 				RightColor: BDB5A6
 	Template@236:
-		Category: DirtRoads Straight
+		Categories: DirtRoads Straight
 		Id: 236
 		Images: droads26.urb
 		Size: 2, 2
@@ -3834,7 +3834,7 @@ Templates:
 				LeftColor: BEB4A1
 				RightColor: BEB3A1
 	Template@237:
-		Category: DirtRoads Straight
+		Categories: DirtRoads Straight
 		Id: 237
 		Images: droads27.urb
 		Size: 3, 3
@@ -3861,7 +3861,7 @@ Templates:
 				LeftColor: A0A255
 				RightColor: 9AA14F
 	Template@238:
-		Category: DirtRoads Straight
+		Categories: DirtRoads Straight
 		Id: 238
 		Images: droads28.urb
 		Size: 3, 2
@@ -3885,7 +3885,7 @@ Templates:
 				LeftColor: 9E978D
 				RightColor: 5B5B58
 	Template@239:
-		Category: DirtRoads Straight
+		Categories: DirtRoads Straight
 		Id: 239
 		Images: droads29.urb
 		Size: 2, 2
@@ -3903,7 +3903,7 @@ Templates:
 				LeftColor: 9E9789
 				RightColor: 5B5A56
 	Template@240:
-		Category: DirtRoads Straight
+		Categories: DirtRoads Straight
 		Id: 240
 		Images: droads30.urb
 		Size: 2, 2
@@ -3921,7 +3921,7 @@ Templates:
 				LeftColor: 9D9587
 				RightColor: 5B5A56
 	Template@241:
-		Category: DirtRoads Straight
+		Categories: DirtRoads Straight
 		Id: 241
 		Images: droads31.urb
 		Size: 4, 3
@@ -3951,7 +3951,7 @@ Templates:
 				LeftColor: A6A34C
 				RightColor: AC9647
 	Template@242:
-		Category: DirtRoads Straight
+		Categories: DirtRoads Straight
 		Id: 242
 		Images: droads32.urb
 		Size: 4, 3
@@ -3981,7 +3981,7 @@ Templates:
 				LeftColor: A59F4B
 				RightColor: 9F9649
 	Template@243:
-		Category: DirtRoads Straight
+		Categories: DirtRoads Straight
 		Id: 243
 		Images: droads33.urb
 		Size: 4, 2
@@ -4011,7 +4011,7 @@ Templates:
 				LeftColor: A4A74E
 				RightColor: A5A952
 	Template@244:
-		Category: DirtRoads Straight
+		Categories: DirtRoads Straight
 		Id: 244
 		Images: droads34.urb
 		Size: 4, 4
@@ -4044,7 +4044,7 @@ Templates:
 				LeftColor: 5B5A52
 				RightColor: 5C5B56
 	Template@245:
-		Category: DirtRoads Straight
+		Categories: DirtRoads Straight
 		Id: 245
 		Images: droads35.urb
 		Size: 4, 4
@@ -4077,7 +4077,7 @@ Templates:
 				LeftColor: 5C5B54
 				RightColor: 5D5C57
 	Template@246:
-		Category: DirtRoads Straight
+		Categories: DirtRoads Straight
 		Id: 246
 		Images: droads36.urb
 		Size: 4, 4
@@ -4110,7 +4110,7 @@ Templates:
 				LeftColor: 56554E
 				RightColor: 54534E
 	Template@247:
-		Category: DirtRoads Straight
+		Categories: DirtRoads Straight
 		Id: 247
 		Images: droads37.urb
 		Size: 4, 4
@@ -4143,7 +4143,7 @@ Templates:
 				LeftColor: 57564E
 				RightColor: 595853
 	Template@248:
-		Category: DirtRoads Straight
+		Categories: DirtRoads Straight
 		Id: 248
 		Images: droads38.urb
 		Size: 3, 3
@@ -4167,7 +4167,7 @@ Templates:
 				LeftColor: 5D5C55
 				RightColor: 5E5D58
 	Template@249:
-		Category: DirtRoads Straight
+		Categories: DirtRoads Straight
 		Id: 249
 		Images: droads39.urb
 		Size: 2, 2
@@ -4182,7 +4182,7 @@ Templates:
 				LeftColor: 5D5C55
 				RightColor: 5E5C58
 	Template@250:
-		Category: DirtRoads Straight
+		Categories: DirtRoads Straight
 		Id: 250
 		Images: droads40.urb
 		Size: 2, 2
@@ -4197,7 +4197,7 @@ Templates:
 				LeftColor: 5C5B53
 				RightColor: 5E5C57
 	Template@251:
-		Category: DirtRoads Straight
+		Categories: DirtRoads Straight
 		Id: 251
 		Images: droads41.urb
 		Size: 4, 4
@@ -4230,7 +4230,7 @@ Templates:
 				LeftColor: B7B2A6
 				RightColor: B6B0A2
 	Template@252:
-		Category: DirtRoads Straight
+		Categories: DirtRoads Straight
 		Id: 252
 		Images: droads42.urb
 		Size: 4, 5
@@ -4266,7 +4266,7 @@ Templates:
 				LeftColor: B1A590
 				RightColor: B2A793
 	Template@253:
-		Category: DirtRoads Straight
+		Categories: DirtRoads Straight
 		Id: 253
 		Images: droads43.urb
 		Size: 3, 3
@@ -4290,7 +4290,7 @@ Templates:
 				LeftColor: B7B2A6
 				RightColor: B6B0A2
 	Template@254:
-		Category: DirtRoads Straight
+		Categories: DirtRoads Straight
 		Id: 254
 		Images: droads44.urb
 		Size: 4, 4
@@ -4323,7 +4323,7 @@ Templates:
 				LeftColor: 5B5A52
 				RightColor: 5C5B56
 	Template@255:
-		Category: DirtRoads Straight
+		Categories: DirtRoads Straight
 		Id: 255
 		Images: droads45.urb
 		Size: 2, 3
@@ -4347,7 +4347,7 @@ Templates:
 				LeftColor: 5D5C55
 				RightColor: 5C5B55
 	Template@256:
-		Category: DirtRoads Straight
+		Categories: DirtRoads Straight
 		Id: 256
 		Images: droads46.urb
 		Size: 3, 3
@@ -4371,7 +4371,7 @@ Templates:
 				LeftColor: 5C5C56
 				RightColor: 5B5A56
 	Template@257:
-		Category: DirtRoads Straight
+		Categories: DirtRoads Straight
 		Id: 257
 		Images: droads47.urb
 		Size: 5, 3
@@ -4410,7 +4410,7 @@ Templates:
 				LeftColor: AC9B47
 				RightColor: A7A34E
 	Template@258:
-		Category: DirtRoads Straight
+		Categories: DirtRoads Straight
 		Id: 258
 		Images: droads48.urb
 		Size: 3, 5
@@ -4446,7 +4446,7 @@ Templates:
 				LeftColor: AE9E49
 				RightColor: AEA450
 	Template@259:
-		Category: DirtRoads Straight
+		Categories: DirtRoads Straight
 		Id: 259
 		Images: droads49.urb
 		Size: 4, 4
@@ -4479,7 +4479,7 @@ Templates:
 				LeftColor: A9A757
 				RightColor: ABA958
 	Template@260:
-		Category: DirtRoads Straight
+		Categories: DirtRoads Straight
 		Id: 260
 		Images: droads50.urb
 		Size: 2, 4
@@ -4509,7 +4509,7 @@ Templates:
 				LeftColor: 595956
 				RightColor: 979287
 	Template@261:
-		Category: DirtRoads Straight
+		Categories: DirtRoads Straight
 		Id: 261
 		Images: droads51.urb
 		Size: 2, 4
@@ -4539,7 +4539,7 @@ Templates:
 				LeftColor: 595856
 				RightColor: 958F84
 	Template@262:
-		Category: DirtRoads Straight
+		Categories: DirtRoads Straight
 		Id: 262
 		Images: droads52.urb
 		Size: 2, 4
@@ -4569,7 +4569,7 @@ Templates:
 				LeftColor: 575653
 				RightColor: 968E81
 	Template@263:
-		Category: DirtRoads Straight
+		Categories: DirtRoads Straight
 		Id: 263
 		Images: droads53.urb
 		Size: 2, 4
@@ -4599,7 +4599,7 @@ Templates:
 				LeftColor: 575652
 				RightColor: 908779
 	Template@264:
-		Category: DirtRoads Straight
+		Categories: DirtRoads Straight
 		Id: 264
 		Images: droads54.urb
 		Size: 2, 3
@@ -4623,7 +4623,7 @@ Templates:
 				LeftColor: 5B5A58
 				RightColor: 9E988D
 	Template@265:
-		Category: DirtRoads Straight
+		Categories: DirtRoads Straight
 		Id: 265
 		Images: droads55.urb
 		Size: 2, 2
@@ -4641,7 +4641,7 @@ Templates:
 				LeftColor: 595958
 				RightColor: 98948A
 	Template@266:
-		Category: DirtRoads Straight
+		Categories: DirtRoads Straight
 		Id: 266
 		Images: droads56.urb
 		Size: 2, 1
@@ -4653,7 +4653,7 @@ Templates:
 				LeftColor: 595958
 				RightColor: 98938A
 	Template@267:
-		Category: DirtRoads Straight
+		Categories: DirtRoads Straight
 		Id: 267
 		Images: droads57.urb
 		Size: 2, 1
@@ -4665,7 +4665,7 @@ Templates:
 				LeftColor: 5B5A58
 				RightColor: 9E988D
 	Template@268:
-		Category: DirtRoads Straight
+		Categories: DirtRoads Straight
 		Id: 268
 		Images: droads58.urb
 		Size: 2, 4
@@ -4695,7 +4695,7 @@ Templates:
 				LeftColor: 5A5957
 				RightColor: 9E9689
 	Template@269:
-		Category: DirtRoads Straight
+		Categories: DirtRoads Straight
 		Id: 269
 		Images: droads59.urb
 		Size: 3, 3
@@ -4722,7 +4722,7 @@ Templates:
 				LeftColor: 595958
 				RightColor: 97948A
 	Template@270:
-		Category: DirtRoads Straight
+		Categories: DirtRoads Straight
 		Id: 270
 		Images: droads60.urb
 		Size: 2, 3
@@ -4743,7 +4743,7 @@ Templates:
 				LeftColor: 5B5A57
 				RightColor: 9F988B
 	Template@271:
-		Category: DirtRoads Straight
+		Categories: DirtRoads Straight
 		Id: 271
 		Images: droads61.urb
 		Size: 2, 4
@@ -4770,7 +4770,7 @@ Templates:
 				LeftColor: A9A295
 				RightColor: A49C8C
 	Template@272:
-		Category: DirtRoads Straight
+		Categories: DirtRoads Straight
 		Id: 272
 		Images: droads62.urb
 		Size: 2, 4
@@ -4800,7 +4800,7 @@ Templates:
 				LeftColor: AEA28C
 				RightColor: B3A692
 	Template@273:
-		Category: DirtRoads Straight
+		Categories: DirtRoads Straight
 		Id: 273
 		Images: droads63.urb
 		Size: 2, 2
@@ -4818,7 +4818,7 @@ Templates:
 				LeftColor: B8B3A7
 				RightColor: B3ADA0
 	Template@274:
-		Category: DirtRoads Straight
+		Categories: DirtRoads Straight
 		Id: 274
 		Images: droads64.urb
 		Size: 3, 4
@@ -4848,7 +4848,7 @@ Templates:
 				LeftColor: ADA14A
 				RightColor: A5A550
 	Template@275:
-		Category: DirtRoads Straight
+		Categories: DirtRoads Straight
 		Id: 275
 		Images: droads65.urb
 		Size: 3, 4
@@ -4878,7 +4878,7 @@ Templates:
 				LeftColor: B1A350
 				RightColor: AEAC55
 	Template@276:
-		Category: DirtRoads Straight
+		Categories: DirtRoads Straight
 		Id: 276
 		Images: droads66.urb
 		Size: 2, 3
@@ -4899,7 +4899,7 @@ Templates:
 				LeftColor: A3A74F
 				RightColor: 9D9D4C
 	Template@277:
-		Category: Bridges
+		Categories: Bridges
 		Id: 277
 		Images: ovrps01.urb, ovrps01a.urb
 		Size: 3, 5
@@ -4958,7 +4958,7 @@ Templates:
 				LeftColor: B6AD9F
 				RightColor: BDB4A5
 	Template@278:
-		Category: Bridges
+		Categories: Bridges
 		Id: 278
 		Images: ovrps02.urb, ovrps02a.urb
 		Size: 3, 5
@@ -5017,7 +5017,7 @@ Templates:
 				LeftColor: 393C4E
 				RightColor: 393C52
 	Template@279:
-		Category: Bridges
+		Categories: Bridges
 		Id: 279
 		Images: ovrps03.urb, ovrps03a.urb
 		Size: 2, 5
@@ -5061,7 +5061,7 @@ Templates:
 				LeftColor: 807E79
 				RightColor: 74736F
 	Template@280:
-		Category: Bridges
+		Categories: Bridges
 		Id: 280
 		Images: ovrps04.urb, ovrps04a.urb
 		Size: 5, 3
@@ -5120,7 +5120,7 @@ Templates:
 				LeftColor: BAAF9C
 				RightColor: B3A793
 	Template@281:
-		Category: Bridges
+		Categories: Bridges
 		Id: 281
 		Images: ovrps05.urb, ovrps05a.urb
 		Size: 5, 3
@@ -5179,7 +5179,7 @@ Templates:
 				LeftColor: 383A50
 				RightColor: 393B4F
 	Template@282:
-		Category: Bridges
+		Categories: Bridges
 		Id: 282
 		Images: ovrps06.urb, ovrps06a.urb
 		Size: 5, 2
@@ -5223,7 +5223,7 @@ Templates:
 				LeftColor: 7B7770
 				RightColor: 7A7977
 	Template@283:
-		Category: Bridges
+		Categories: Bridges
 		Id: 283
 		Images: ovrps07.urb
 		Size: 2, 5
@@ -5262,7 +5262,7 @@ Templates:
 				LeftColor: 3B3D4D
 				RightColor: 383B4F
 	Template@284:
-		Category: Bridges
+		Categories: Bridges
 		Id: 284
 		Images: ovrps08.urb
 		Size: 2, 5
@@ -5301,7 +5301,7 @@ Templates:
 				LeftColor: 3B3D4D
 				RightColor: 383B4F
 	Template@285:
-		Category: Bridges
+		Categories: Bridges
 		Id: 285
 		Images: ovrps09.urb
 		Size: 2, 5
@@ -5340,7 +5340,7 @@ Templates:
 				LeftColor: 3C3D4E
 				RightColor: 3A3B50
 	Template@286:
-		Category: Bridges
+		Categories: Bridges
 		Id: 286
 		Images: ovrps10.urb
 		Size: 2, 5
@@ -5379,7 +5379,7 @@ Templates:
 				LeftColor: 3B3D4D
 				RightColor: 383B4F
 	Template@287:
-		Category: Bridges
+		Categories: Bridges
 		Id: 287
 		Images: ovrps11.urb
 		Size: 2, 5
@@ -5418,7 +5418,7 @@ Templates:
 				LeftColor: 3B3D4D
 				RightColor: 383B4F
 	Template@288:
-		Category: Bridges
+		Categories: Bridges
 		Id: 288
 		Images: ovrps12.urb
 		Size: 5, 2
@@ -5457,7 +5457,7 @@ Templates:
 				LeftColor: 3E4054
 				RightColor: 404252
 	Template@289:
-		Category: Bridges
+		Categories: Bridges
 		Id: 289
 		Images: ovrps13.urb
 		Size: 5, 2
@@ -5496,7 +5496,7 @@ Templates:
 				LeftColor: 3E4054
 				RightColor: 404252
 	Template@290:
-		Category: Bridges
+		Categories: Bridges
 		Id: 290
 		Images: ovrps14.urb
 		Size: 5, 2
@@ -5535,7 +5535,7 @@ Templates:
 				LeftColor: 3E4054
 				RightColor: 404252
 	Template@291:
-		Category: Bridges
+		Categories: Bridges
 		Id: 291
 		Images: ovrps15.urb
 		Size: 5, 2
@@ -5574,7 +5574,7 @@ Templates:
 				LeftColor: 3E4054
 				RightColor: 404252
 	Template@292:
-		Category: Bridges
+		Categories: Bridges
 		Id: 292
 		Images: ovrps16.urb
 		Size: 5, 2
@@ -5613,7 +5613,7 @@ Templates:
 				LeftColor: 393B4F
 				RightColor: 3C3D4E
 	Template@293:
-		Category: Paved Roads
+		Categories: Paved Roads
 		Id: 293
 		Images: proad01.urb, proad01a.urb, proad01b.urb, proad01c.urb
 		Size: 1, 3
@@ -5628,7 +5628,7 @@ Templates:
 				LeftColor: 737472
 				RightColor: 464A4C
 	Template@294:
-		Category: Paved Roads
+		Categories: Paved Roads
 		Id: 294
 		Images: proad02.urb, proad02a.urb, proad02b.urb, proad02c.urb
 		Size: 3, 1
@@ -5643,7 +5643,7 @@ Templates:
 				LeftColor: 484B4C
 				RightColor: 737573
 	Template@295:
-		Category: Paved Roads
+		Categories: Paved Roads
 		Id: 295
 		Images: proad03.urb
 		Size: 3, 3
@@ -5676,7 +5676,7 @@ Templates:
 				LeftColor: 4F5253
 				RightColor: 525354
 	Template@296:
-		Category: Paved Roads
+		Categories: Paved Roads
 		Id: 296
 		Images: proad04.urb
 		Size: 3, 3
@@ -5709,7 +5709,7 @@ Templates:
 				LeftColor: 484A4B
 				RightColor: 4D4D4D
 	Template@297:
-		Category: Paved Roads
+		Categories: Paved Roads
 		Id: 297
 		Images: proad05.urb
 		Size: 3, 3
@@ -5742,7 +5742,7 @@ Templates:
 				LeftColor: 4C4C4C
 				RightColor: 4A4C4D
 	Template@298:
-		Category: Paved Roads
+		Categories: Paved Roads
 		Id: 298
 		Images: proad06.urb
 		Size: 3, 3
@@ -5775,7 +5775,7 @@ Templates:
 				LeftColor: 4A4B4D
 				RightColor: 43474A
 	Template@299:
-		Category: Paved Roads
+		Categories: Paved Roads
 		Id: 299
 		Images: proad07.urb
 		Size: 3, 3
@@ -5808,7 +5808,7 @@ Templates:
 				LeftColor: 46494B
 				RightColor: 717270
 	Template@300:
-		Category: Paved Roads
+		Categories: Paved Roads
 		Id: 300
 		Images: proad08.urb
 		Size: 3, 3
@@ -5841,7 +5841,7 @@ Templates:
 				LeftColor: 747471
 				RightColor: 48494B
 	Template@301:
-		Category: Paved Roads
+		Categories: Paved Roads
 		Id: 301
 		Images: proad09.urb
 		Size: 3, 3
@@ -5874,7 +5874,7 @@ Templates:
 				LeftColor: 41464A
 				RightColor: 444749
 	Template@302:
-		Category: Paved Roads
+		Categories: Paved Roads
 		Id: 302
 		Images: proad10.urb
 		Size: 4, 3
@@ -5916,7 +5916,7 @@ Templates:
 				LeftColor: 747573
 				RightColor: 484B4C
 	Template@303:
-		Category: Paved Roads
+		Categories: Paved Roads
 		Id: 303
 		Images: proad11.urb
 		Size: 4, 3
@@ -5958,7 +5958,7 @@ Templates:
 				LeftColor: 45484A
 				RightColor: 7A7B78
 	Template@304:
-		Category: Paved Roads
+		Categories: Paved Roads
 		Id: 304
 		Images: proad12.urb
 		Size: 4, 3
@@ -6000,7 +6000,7 @@ Templates:
 				LeftColor: 727370
 				RightColor: 484B4C
 	Template@305:
-		Category: Paved Roads
+		Categories: Paved Roads
 		Id: 305
 		Images: proad13.urb
 		Size: 3, 4
@@ -6042,7 +6042,7 @@ Templates:
 				LeftColor: B8B2A4
 				RightColor: B5AFA2
 	Template@306:
-		Category: Paved Roads
+		Categories: Paved Roads
 		Id: 306
 		Images: proad14.urb
 		Size: 3, 4
@@ -6084,7 +6084,7 @@ Templates:
 				LeftColor: 484B4C
 				RightColor: 737573
 	Template@307:
-		Category: Paved Roads
+		Categories: Paved Roads
 		Id: 307
 		Images: proad15.urb
 		Size: 3, 4
@@ -6126,7 +6126,7 @@ Templates:
 				LeftColor: 40464B
 				RightColor: 818380
 	Template@308:
-		Category: Paved Roads
+		Categories: Paved Roads
 		Id: 308
 		Images: proad16.urb
 		Size: 4, 5
@@ -6180,7 +6180,7 @@ Templates:
 				LeftColor: 9B9487
 				RightColor: 9A9387
 	Template@309:
-		Category: Paved Roads
+		Categories: Paved Roads
 		Id: 309
 		Images: proad17.urb
 		Size: 4, 4
@@ -6228,7 +6228,7 @@ Templates:
 				LeftColor: 747573
 				RightColor: 484A4D
 	Template@310:
-		Category: Paved Roads
+		Categories: Paved Roads
 		Id: 310
 		Images: proad18.urb
 		Size: 4, 5
@@ -6282,7 +6282,7 @@ Templates:
 				LeftColor: 595957
 				RightColor: 9E978A
 	Template@311:
-		Category: Paved Roads
+		Categories: Paved Roads
 		Id: 311
 		Images: proad19.urb
 		Size: 5, 4
@@ -6336,7 +6336,7 @@ Templates:
 				LeftColor: 474A4C
 				RightColor: 757674
 	Template@312:
-		Category: Paved Roads
+		Categories: Paved Roads
 		Id: 312
 		Images: proad20.urb
 		Size: 4, 4
@@ -6384,7 +6384,7 @@ Templates:
 				LeftColor: 484B4D
 				RightColor: 737573
 	Template@313:
-		Category: Paved Roads
+		Categories: Paved Roads
 		Id: 313
 		Images: proad21.urb
 		Size: 5, 4
@@ -6438,7 +6438,7 @@ Templates:
 				LeftColor: 464A4C
 				RightColor: 737472
 	Template@314:
-		Category: Water
+		Categories: Water
 		Id: 314
 		Images: water01.urb
 		Size: 2, 2
@@ -6456,7 +6456,7 @@ Templates:
 				LeftColor: 383B52
 				RightColor: 393C53
 	Template@315:
-		Category: Water
+		Categories: Water
 		Id: 315
 		Images: water02.urb
 		Size: 2, 2
@@ -6474,7 +6474,7 @@ Templates:
 				LeftColor: 383B52
 				RightColor: 393C52
 	Template@316:
-		Category: Water
+		Categories: Water
 		Id: 316
 		Images: water03.urb
 		Size: 2, 2
@@ -6492,7 +6492,7 @@ Templates:
 				LeftColor: 383B52
 				RightColor: 393C52
 	Template@317:
-		Category: Water
+		Categories: Water
 		Id: 317
 		Images: water04.urb
 		Size: 2, 2
@@ -6510,7 +6510,7 @@ Templates:
 				LeftColor: 383B52
 				RightColor: 393C52
 	Template@318:
-		Category: Water
+		Categories: Water
 		Id: 318
 		Images: water05.urb
 		Size: 2, 2
@@ -6528,7 +6528,7 @@ Templates:
 				LeftColor: 373A52
 				RightColor: 383A53
 	Template@319:
-		Category: Water
+		Categories: Water
 		Id: 319
 		Images: water06.urb
 		Size: 2, 2
@@ -6546,7 +6546,7 @@ Templates:
 				LeftColor: 393C53
 				RightColor: 393C53
 	Template@320:
-		Category: Water
+		Categories: Water
 		Id: 320
 		Images: water07.urb
 		Size: 2, 2
@@ -6564,7 +6564,7 @@ Templates:
 				LeftColor: 373849
 				RightColor: 3B3D51
 	Template@321:
-		Category: Water
+		Categories: Water
 		Id: 321
 		Images: water08.urb
 		Size: 2, 2
@@ -6582,7 +6582,7 @@ Templates:
 				LeftColor: 414152
 				RightColor: 414150
 	Template@322:
-		Category: Water
+		Categories: Water
 		Id: 322
 		Images: water09.urb
 		Size: 1, 1
@@ -6591,7 +6591,7 @@ Templates:
 				LeftColor: 373A52
 				RightColor: 393C53
 	Template@323:
-		Category: Water
+		Categories: Water
 		Id: 323
 		Images: water10.urb
 		Size: 1, 1
@@ -6600,7 +6600,7 @@ Templates:
 				LeftColor: 373A52
 				RightColor: 383A53
 	Template@324:
-		Category: Water
+		Categories: Water
 		Id: 324
 		Images: water11.urb
 		Size: 1, 1
@@ -6609,7 +6609,7 @@ Templates:
 				LeftColor: 383B52
 				RightColor: 393C53
 	Template@325:
-		Category: Water
+		Categories: Water
 		Id: 325
 		Images: water12.urb
 		Size: 1, 1
@@ -6618,7 +6618,7 @@ Templates:
 				LeftColor: 393C53
 				RightColor: 393C53
 	Template@326:
-		Category: Water
+		Categories: Water
 		Id: 326
 		Images: water13.urb
 		Size: 1, 1
@@ -6627,7 +6627,7 @@ Templates:
 				LeftColor: 393C53
 				RightColor: 393C53
 	Template@327:
-		Category: Water
+		Categories: Water
 		Id: 327
 		Images: water14.urb
 		Size: 1, 1
@@ -6636,7 +6636,7 @@ Templates:
 				LeftColor: 484655
 				RightColor: 3D3E50
 	Template@368:
-		Category: DirtRoads Slopes
+		Categories: DirtRoads Slopes
 		Id: 368
 		Images: drslpe01.urb
 		Size: 1, 2
@@ -6650,7 +6650,7 @@ Templates:
 				LeftColor: 878076
 				RightColor: 676159
 	Template@369:
-		Category: DirtRoads Slopes
+		Categories: DirtRoads Slopes
 		Id: 369
 		Images: drslpe02.urb
 		Size: 1, 2
@@ -6664,7 +6664,7 @@ Templates:
 				LeftColor: 898176
 				RightColor: 666158
 	Template@370:
-		Category: DirtRoads Slopes
+		Categories: DirtRoads Slopes
 		Id: 370
 		Images: drslpe03.urb
 		Size: 2, 1
@@ -6678,7 +6678,7 @@ Templates:
 				LeftColor: 645F54
 				RightColor: 7C7464
 	Template@371:
-		Category: DirtRoads Slopes
+		Categories: DirtRoads Slopes
 		Id: 371
 		Images: drslpe04.urb
 		Size: 2, 1
@@ -6692,7 +6692,7 @@ Templates:
 				LeftColor: 635D51
 				RightColor: 817663
 	Template@372:
-		Category: DirtRoads Slopes
+		Categories: DirtRoads Slopes
 		Id: 372
 		Images: drslpe05.urb
 		Size: 1, 2
@@ -6706,7 +6706,7 @@ Templates:
 				LeftColor: 8F877B
 				RightColor: 5D5850
 	Template@373:
-		Category: DirtRoads Slopes
+		Categories: DirtRoads Slopes
 		Id: 373
 		Images: drslpe06.urb
 		Size: 1, 2
@@ -6720,7 +6720,7 @@ Templates:
 				LeftColor: 8F877B
 				RightColor: 5D5850
 	Template@374:
-		Category: DirtRoads Slopes
+		Categories: DirtRoads Slopes
 		Id: 374
 		Images: drslpe07.urb
 		Size: 2, 1
@@ -6734,7 +6734,7 @@ Templates:
 				LeftColor: 827F7A
 				RightColor: ACA69C
 	Template@375:
-		Category: DirtRoads Slopes
+		Categories: DirtRoads Slopes
 		Id: 375
 		Images: drslpe08.urb
 		Size: 2, 1
@@ -6748,7 +6748,7 @@ Templates:
 				LeftColor: 827F7A
 				RightColor: ACA69C
 	Template@384:
-		Category: Slope Set Pieces
+		Categories: Slope Set Pieces
 		Id: 384
 		Images: ramp01.urb
 		Size: 3, 4
@@ -6798,7 +6798,7 @@ Templates:
 				LeftColor: C7C0B3
 				RightColor: C8C0B2
 	Template@385:
-		Category: Slope Set Pieces
+		Categories: Slope Set Pieces
 		Id: 385
 		Images: ramp02.urb
 		Size: 3, 4
@@ -6848,7 +6848,7 @@ Templates:
 				LeftColor: B6AC9E
 				RightColor: BBB09E
 	Template@386:
-		Category: Slope Set Pieces
+		Categories: Slope Set Pieces
 		Id: 386
 		Images: ramp03.urb
 		Size: 4, 3
@@ -6898,7 +6898,7 @@ Templates:
 				LeftColor: B1ADA2
 				RightColor: 74664F
 	Template@387:
-		Category: Slope Set Pieces
+		Categories: Slope Set Pieces
 		Id: 387
 		Images: ramp04.urb
 		Size: 4, 3
@@ -6948,7 +6948,7 @@ Templates:
 				LeftColor: AAA08D
 				RightColor: AFA695
 	Template@388:
-		Category: Slope Set Pieces
+		Categories: Slope Set Pieces
 		Id: 388
 		Images: ramp05.urb
 		Size: 3, 4
@@ -6997,7 +6997,7 @@ Templates:
 				LeftColor: 9D917D
 				RightColor: 9A8B78
 	Template@389:
-		Category: Slope Set Pieces
+		Categories: Slope Set Pieces
 		Id: 389
 		Images: ramp06.urb
 		Size: 3, 4
@@ -7032,7 +7032,7 @@ Templates:
 				LeftColor: 9B8D78
 				RightColor: 9C8E79
 	Template@390:
-		Category: Slope Set Pieces
+		Categories: Slope Set Pieces
 		Id: 390
 		Images: ramp07.urb
 		Size: 2, 2
@@ -7052,7 +7052,7 @@ Templates:
 				LeftColor: B8AFA1
 				RightColor: BDB3A4
 	Template@391:
-		Category: Slope Set Pieces
+		Categories: Slope Set Pieces
 		Id: 391
 		Images: ramp08.urb
 		Size: 4, 3
@@ -7101,7 +7101,7 @@ Templates:
 				LeftColor: ABA08D
 				RightColor: A8A08F
 	Template@392:
-		Category: Slope Set Pieces
+		Categories: Slope Set Pieces
 		Id: 392
 		Images: ramp09.urb
 		Size: 4, 3
@@ -7136,7 +7136,7 @@ Templates:
 				LeftColor: B8B3A7
 				RightColor: B7B0A3
 	Template@393:
-		Category: Slope Set Pieces
+		Categories: Slope Set Pieces
 		Id: 393
 		Images: ramp10.urb
 		Size: 2, 2
@@ -7156,7 +7156,7 @@ Templates:
 				LeftColor: 817F7C
 				RightColor: 86827A
 	Template@414:
-		Category: Waterfalls
+		Categories: Waterfalls
 		Id: 414
 		Images: w-a-01.urb
 		Size: 2, 4
@@ -7190,7 +7190,7 @@ Templates:
 				LeftColor: 6C765F
 				RightColor: 4A5058
 	Template@415:
-		Category: Waterfalls
+		Categories: Waterfalls
 		Id: 415
 		Images: w-a-02.urb
 		Size: 1, 4
@@ -7210,7 +7210,7 @@ Templates:
 				LeftColor: 404357
 				RightColor: 444857
 	Template@416:
-		Category: Waterfalls
+		Categories: Waterfalls
 		Id: 416
 		Images: w-a-03.urb
 		Size: 2, 4
@@ -7244,7 +7244,7 @@ Templates:
 				LeftColor: 414457
 				RightColor: 434758
 	Template@417:
-		Category: Waterfalls
+		Categories: Waterfalls
 		Id: 417
 		Images: w-a-04.urb
 		Size: 2, 4
@@ -7278,7 +7278,7 @@ Templates:
 				LeftColor: DCBE83
 				RightColor: BBAF6B
 	Template@418:
-		Category: LAT Grass Rough
+		Categories: LAT Grass Rough
 		Id: 418
 		Images: sandy01.urb, sandy01a.urb, sandy01b.urb, sandy01c.urb, sandy01d.urb, sandy01e.urb, sandy01f.urb, sandy01g.urb
 		Size: 1, 1
@@ -7287,7 +7287,7 @@ Templates:
 				LeftColor: B2AB9E
 				RightColor: B2AC9F
 	Template@419:
-		Category: GrassRough Individual
+		Categories: GrassRough Individual
 		Id: 419
 		Images: dlat01.urb, dlat01a.urb
 		Size: 1, 1
@@ -7296,7 +7296,7 @@ Templates:
 				LeftColor: B3AB9E
 				RightColor: B5AD9E
 	Template@420:
-		Category: GrassRough Individual
+		Categories: GrassRough Individual
 		Id: 420
 		Images: dlat02.urb, dlat02a.urb
 		Size: 1, 1
@@ -7305,7 +7305,7 @@ Templates:
 				LeftColor: BCB4A8
 				RightColor: BDB4A6
 	Template@421:
-		Category: GrassRough Individual
+		Categories: GrassRough Individual
 		Id: 421
 		Images: dlat03.urb, dlat03a.urb
 		Size: 1, 1
@@ -7314,7 +7314,7 @@ Templates:
 				LeftColor: B8AF9E
 				RightColor: BEB4A4
 	Template@422:
-		Category: GrassRough Individual
+		Categories: GrassRough Individual
 		Id: 422
 		Images: dlat04.urb, dlat04a.urb
 		Size: 1, 1
@@ -7323,7 +7323,7 @@ Templates:
 				LeftColor: B3AA9E
 				RightColor: C1B8A7
 	Template@423:
-		Category: GrassRough Individual
+		Categories: GrassRough Individual
 		Id: 423
 		Images: dlat05.urb, dlat05a.urb
 		Size: 1, 1
@@ -7332,7 +7332,7 @@ Templates:
 				LeftColor: B7AEA0
 				RightColor: B6AC9D
 	Template@424:
-		Category: GrassRough Individual
+		Categories: GrassRough Individual
 		Id: 424
 		Images: dlat06.urb, dlat06a.urb
 		Size: 1, 1
@@ -7341,7 +7341,7 @@ Templates:
 				LeftColor: B5AC9B
 				RightColor: B7AE9E
 	Template@425:
-		Category: GrassRough Individual
+		Categories: GrassRough Individual
 		Id: 425
 		Images: dlat07.urb, dlat07a.urb
 		Size: 1, 1
@@ -7350,7 +7350,7 @@ Templates:
 				LeftColor: B6AEA2
 				RightColor: BBB3A5
 	Template@426:
-		Category: GrassRough Individual
+		Categories: GrassRough Individual
 		Id: 426
 		Images: dlat08.urb, dlat08a.urb
 		Size: 1, 1
@@ -7359,7 +7359,7 @@ Templates:
 				LeftColor: B5ADA2
 				RightColor: BBB3A5
 	Template@427:
-		Category: GrassRough Individual
+		Categories: GrassRough Individual
 		Id: 427
 		Images: dlat09.urb, dlat09a.urb
 		Size: 1, 1
@@ -7368,7 +7368,7 @@ Templates:
 				LeftColor: B8B1A5
 				RightColor: B8B1A4
 	Template@428:
-		Category: GrassRough Individual
+		Categories: GrassRough Individual
 		Id: 428
 		Images: dlat10.urb, dlat10a.urb
 		Size: 1, 1
@@ -7377,7 +7377,7 @@ Templates:
 				LeftColor: B1A898
 				RightColor: B6AD9E
 	Template@429:
-		Category: GrassRough Individual
+		Categories: GrassRough Individual
 		Id: 429
 		Images: dlat11.urb, dlat11a.urb
 		Size: 1, 1
@@ -7386,7 +7386,7 @@ Templates:
 				LeftColor: B6AEA2
 				RightColor: BBB3A5
 	Template@430:
-		Category: GrassRough Individual
+		Categories: GrassRough Individual
 		Id: 430
 		Images: dlat12.urb, dlat12a.urb
 		Size: 1, 1
@@ -7395,7 +7395,7 @@ Templates:
 				LeftColor: B8AE9E
 				RightColor: BBB1A0
 	Template@431:
-		Category: GrassRough Individual
+		Categories: GrassRough Individual
 		Id: 431
 		Images: dlat13.urb, dlat13a.urb
 		Size: 1, 1
@@ -7404,7 +7404,7 @@ Templates:
 				LeftColor: BCB4A6
 				RightColor: B3ADA0
 	Template@432:
-		Category: GrassRough Individual
+		Categories: GrassRough Individual
 		Id: 432
 		Images: dlat14.urb, dlat14a.urb
 		Size: 1, 1
@@ -7413,7 +7413,7 @@ Templates:
 				LeftColor: BAB1A3
 				RightColor: B8AD9E
 	Template@433:
-		Category: GrassRough Individual
+		Categories: GrassRough Individual
 		Id: 433
 		Images: dlat15.urb, dlat15a.urb
 		Size: 1, 1
@@ -7422,7 +7422,7 @@ Templates:
 				LeftColor: BBB3A4
 				RightColor: B8B0A0
 	Template@434:
-		Category: GrassRough Individual
+		Categories: GrassRough Individual
 		Id: 434
 		Images: dlat16.urb, dlat16a.urb
 		Size: 1, 1
@@ -7431,7 +7431,7 @@ Templates:
 				LeftColor: B6AEA1
 				RightColor: B6AFA1
 	Template@435:
-		Category: Farm Crops
+		Categories: Farm Crops
 		Id: 435
 		Images: rough01.urb
 		Size: 7, 4
@@ -7521,7 +7521,7 @@ Templates:
 				LeftColor: 999284
 				RightColor: 9B9489
 	Template@436:
-		Category: Farm Crops
+		Categories: Farm Crops
 		Id: 436
 		Images: rough02.urb
 		Size: 7, 4
@@ -7611,7 +7611,7 @@ Templates:
 				LeftColor: 989183
 				RightColor: 9B9487
 	Template@437:
-		Category: Farm Crops
+		Categories: Farm Crops
 		Id: 437
 		Images: rough03.urb
 		Size: 7, 4
@@ -7701,7 +7701,7 @@ Templates:
 				LeftColor: 3F4246
 				RightColor: 373A3D
 	Template@438:
-		Category: Farm Crops
+		Categories: Farm Crops
 		Id: 438
 		Images: rough04.urb
 		Size: 7, 4
@@ -7791,7 +7791,7 @@ Templates:
 				LeftColor: B8AE9B
 				RightColor: C2B8A6
 	Template@439:
-		Category: Farm Crops
+		Categories: Farm Crops
 		Id: 439
 		Images: rough05.urb
 		Size: 7, 4
@@ -7881,7 +7881,7 @@ Templates:
 				LeftColor: 996049
 				RightColor: 97644D
 	Template@440:
-		Category: Farm Crops
+		Categories: Farm Crops
 		Id: 440
 		Images: rough06.urb
 		Size: 4, 7
@@ -7971,7 +7971,7 @@ Templates:
 				LeftColor: 373A3D
 				RightColor: 3F4346
 	Template@441:
-		Category: Farm Crops
+		Categories: Farm Crops
 		Id: 441
 		Images: rough07.urb
 		Size: 4, 7
@@ -8061,7 +8061,7 @@ Templates:
 				LeftColor: 6E843C
 				RightColor: 758A47
 	Template@442:
-		Category: Farm Crops
+		Categories: Farm Crops
 		Id: 442
 		Images: rough08.urb
 		Size: 4, 7
@@ -8151,7 +8151,7 @@ Templates:
 				LeftColor: BEB4A1
 				RightColor: B0A490
 	Template@443:
-		Category: Farm Crops
+		Categories: Farm Crops
 		Id: 443
 		Images: rough09.urb
 		Size: 4, 7
@@ -8241,7 +8241,7 @@ Templates:
 				LeftColor: 97644D
 				RightColor: 996049
 	Template@444:
-		Category: Farm Crops
+		Categories: Farm Crops
 		Id: 444
 		Images: rough10.urb
 		Size: 4, 7
@@ -8331,7 +8331,7 @@ Templates:
 				LeftColor: C2B8A6
 				RightColor: B8AE9B
 	Template@445:
-		Category: Paved Road Ends
+		Categories: Paved Road Ends
 		Id: 445
 		Images: p_end01.urb
 		Size: 1, 3
@@ -8346,7 +8346,7 @@ Templates:
 				LeftColor: 727372
 				RightColor: 848584
 	Template@446:
-		Category: Paved Road Ends
+		Categories: Paved Road Ends
 		Id: 446
 		Images: p_end02.urb
 		Size: 3, 1
@@ -8361,7 +8361,7 @@ Templates:
 				LeftColor: 4A4D4F
 				RightColor: 898A89
 	Template@447:
-		Category: Paved Road Ends
+		Categories: Paved Road Ends
 		Id: 447
 		Images: p_end03.urb
 		Size: 1, 3
@@ -8376,7 +8376,7 @@ Templates:
 				LeftColor: 898A88
 				RightColor: 484B4D
 	Template@448:
-		Category: Paved Road Ends
+		Categories: Paved Road Ends
 		Id: 448
 		Images: p_end04.urb
 		Size: 3, 1
@@ -8391,7 +8391,7 @@ Templates:
 				LeftColor: 848584
 				RightColor: 717373
 	Template@449:
-		Category: Pavement
+		Categories: Pavement
 		Id: 449
 		Images: pave01.urb
 		Size: 1, 1
@@ -8400,7 +8400,7 @@ Templates:
 				LeftColor: BDB5A6
 				RightColor: BBB3A4
 	Template@450:
-		Category: Pavement
+		Categories: Pavement
 		Id: 450
 		Images: pave02.urb
 		Size: 1, 1
@@ -8409,7 +8409,7 @@ Templates:
 				LeftColor: B9B2A3
 				RightColor: B7B0A0
 	Template@451:
-		Category: Pavement
+		Categories: Pavement
 		Id: 451
 		Images: pave03.urb
 		Size: 1, 1
@@ -8418,7 +8418,7 @@ Templates:
 				LeftColor: B0A48D
 				RightColor: B5AA95
 	Template@452:
-		Category: Pavement
+		Categories: Pavement
 		Id: 452
 		Images: pave04.urb
 		Size: 1, 1
@@ -8427,7 +8427,7 @@ Templates:
 				LeftColor: B3AA99
 				RightColor: BAB2A2
 	Template@453:
-		Category: Pavement
+		Categories: Pavement
 		Id: 453
 		Images: pave05.urb
 		Size: 2, 2
@@ -8445,7 +8445,7 @@ Templates:
 				LeftColor: ACA495
 				RightColor: ADA698
 	Template@454:
-		Category: Pavement
+		Categories: Pavement
 		Id: 454
 		Images: pave06.urb
 		Size: 2, 2
@@ -8463,7 +8463,7 @@ Templates:
 				LeftColor: ACA69D
 				RightColor: AEA89E
 	Template@455:
-		Category: Pavement
+		Categories: Pavement
 		Id: 455
 		Images: pave07.urb
 		Size: 2, 2
@@ -8481,7 +8481,7 @@ Templates:
 				LeftColor: B9A892
 				RightColor: BAA994
 	Template@456:
-		Category: Pavement
+		Categories: Pavement
 		Id: 456
 		Images: pave08.urb
 		Size: 2, 2
@@ -8499,7 +8499,7 @@ Templates:
 				LeftColor: B5AB99
 				RightColor: BAB2A3
 	Template@457:
-		Category: Pavement
+		Categories: Pavement
 		Id: 457
 		Images: pave09.urb
 		Size: 2, 2
@@ -8517,7 +8517,7 @@ Templates:
 				LeftColor: BAAE9A
 				RightColor: BCB19F
 	Template@458:
-		Category: Pavement
+		Categories: Pavement
 		Id: 458
 		Images: pave10.urb
 		Size: 2, 2
@@ -8535,7 +8535,7 @@ Templates:
 				LeftColor: B0A89B
 				RightColor: AAA397
 	Template@459:
-		Category: Pavement
+		Categories: Pavement
 		Id: 459
 		Images: pave11.urb
 		Size: 2, 2
@@ -8553,7 +8553,7 @@ Templates:
 				LeftColor: B3ACA0
 				RightColor: B9B1A2
 	Template@460:
-		Category: Pavement
+		Categories: Pavement
 		Id: 460
 		Images: pave12.urb
 		Size: 2, 2
@@ -8571,7 +8571,7 @@ Templates:
 				LeftColor: AFA89C
 				RightColor: B9B1A1
 	Template@461:
-		Category: Pavement
+		Categories: Pavement
 		Id: 461
 		Images: pave13.urb
 		Size: 2, 2
@@ -8589,7 +8589,7 @@ Templates:
 				LeftColor: ACA494
 				RightColor: BEB4A2
 	Template@462:
-		Category: Pavement
+		Categories: Pavement
 		Id: 462
 		Images: pave14.urb
 		Size: 2, 2
@@ -8607,7 +8607,7 @@ Templates:
 				LeftColor: A59C8C
 				RightColor: BBB1A0
 	Template@463:
-		Category: Pavement Individual
+		Categories: Pavement Individual
 		Id: 463
 		Images: plat01.urb, plat01a.urb
 		Size: 1, 1
@@ -8616,7 +8616,7 @@ Templates:
 				LeftColor: 9B634B
 				RightColor: 986048
 	Template@464:
-		Category: Pavement Individual
+		Categories: Pavement Individual
 		Id: 464
 		Images: plat02.urb, plat02a.urb
 		Size: 1, 1
@@ -8625,7 +8625,7 @@ Templates:
 				LeftColor: 9B634B
 				RightColor: 9A6149
 	Template@465:
-		Category: Pavement Individual
+		Categories: Pavement Individual
 		Id: 465
 		Images: plat03.urb, plat03a.urb
 		Size: 1, 1
@@ -8634,7 +8634,7 @@ Templates:
 				LeftColor: 975E46
 				RightColor: 985F47
 	Template@466:
-		Category: Pavement Individual
+		Categories: Pavement Individual
 		Id: 466
 		Images: plat04.urb, plat04a.urb
 		Size: 1, 1
@@ -8643,7 +8643,7 @@ Templates:
 				LeftColor: 975E46
 				RightColor: 985F47
 	Template@467:
-		Category: Pavement Individual
+		Categories: Pavement Individual
 		Id: 467
 		Images: plat05.urb, plat05a.urb
 		Size: 1, 1
@@ -8652,7 +8652,7 @@ Templates:
 				LeftColor: 9C654C
 				RightColor: 986049
 	Template@468:
-		Category: Pavement Individual
+		Categories: Pavement Individual
 		Id: 468
 		Images: plat06.urb, plat06a.urb
 		Size: 1, 1
@@ -8661,7 +8661,7 @@ Templates:
 				LeftColor: 996049
 				RightColor: 975F47
 	Template@469:
-		Category: Pavement Individual
+		Categories: Pavement Individual
 		Id: 469
 		Images: plat07.urb, plat07a.urb
 		Size: 1, 1
@@ -8670,7 +8670,7 @@ Templates:
 				LeftColor: 9C654C
 				RightColor: 996049
 	Template@470:
-		Category: Pavement Individual
+		Categories: Pavement Individual
 		Id: 470
 		Images: plat08.urb, plat08a.urb
 		Size: 1, 1
@@ -8679,7 +8679,7 @@ Templates:
 				LeftColor: 985F47
 				RightColor: 99624A
 	Template@471:
-		Category: Pavement Individual
+		Categories: Pavement Individual
 		Id: 471
 		Images: plat09.urb, plat09a.urb
 		Size: 1, 1
@@ -8688,7 +8688,7 @@ Templates:
 				LeftColor: 985F47
 				RightColor: 99624A
 	Template@472:
-		Category: Pavement Individual
+		Categories: Pavement Individual
 		Id: 472
 		Images: plat10.urb, plat10a.urb
 		Size: 1, 1
@@ -8697,7 +8697,7 @@ Templates:
 				LeftColor: 9C654C
 				RightColor: 996049
 	Template@473:
-		Category: Pavement Individual
+		Categories: Pavement Individual
 		Id: 473
 		Images: plat11.urb, plat11a.urb
 		Size: 1, 1
@@ -8706,7 +8706,7 @@ Templates:
 				LeftColor: 996049
 				RightColor: 975F48
 	Template@474:
-		Category: Pavement Individual
+		Categories: Pavement Individual
 		Id: 474
 		Images: plat12.urb, plat12a.urb
 		Size: 1, 1
@@ -8715,7 +8715,7 @@ Templates:
 				LeftColor: 996049
 				RightColor: 975F48
 	Template@475:
-		Category: Pavement Individual
+		Categories: Pavement Individual
 		Id: 475
 		Images: plat13.urb, plat13a.urb
 		Size: 1, 1
@@ -8724,7 +8724,7 @@ Templates:
 				LeftColor: 9B634B
 				RightColor: 9A634B
 	Template@476:
-		Category: Pavement Individual
+		Categories: Pavement Individual
 		Id: 476
 		Images: plat14.urb, plat14a.urb
 		Size: 1, 1
@@ -8733,7 +8733,7 @@ Templates:
 				LeftColor: 9C644C
 				RightColor: 9C654D
 	Template@477:
-		Category: Pavement Individual
+		Categories: Pavement Individual
 		Id: 477
 		Images: plat15.urb, plat15a.urb
 		Size: 1, 1
@@ -8742,7 +8742,7 @@ Templates:
 				LeftColor: 9C644C
 				RightColor: 9C654D
 	Template@478:
-		Category: Pavement Individual
+		Categories: Pavement Individual
 		Id: 478
 		Images: plat16.urb, plat16a.urb
 		Size: 1, 1
@@ -8751,7 +8751,7 @@ Templates:
 				LeftColor: 9C644C
 				RightColor: 9C654D
 	Template@479:
-		Category: Paved road bits
+		Categories: Paved road bits
 		Id: 479
 		Images: proadc01.urb
 		Size: 1, 1
@@ -8760,7 +8760,7 @@ Templates:
 				LeftColor: 45473D
 				RightColor: 4E503E
 	Template@480:
-		Category: Paved road bits
+		Categories: Paved road bits
 		Id: 480
 		Images: proadc02.urb
 		Size: 1, 1
@@ -8769,7 +8769,7 @@ Templates:
 				LeftColor: 454739
 				RightColor: 4C4F3E
 	Template@481:
-		Category: Paved road bits
+		Categories: Paved road bits
 		Id: 481
 		Images: proadc03.urb
 		Size: 1, 1
@@ -8778,7 +8778,7 @@ Templates:
 				LeftColor: 454639
 				RightColor: 44463D
 	Template@482:
-		Category: Paved road bits
+		Categories: Paved road bits
 		Id: 482
 		Images: proadc04.urb
 		Size: 1, 1
@@ -8787,7 +8787,7 @@ Templates:
 				LeftColor: 43453D
 				RightColor: 444639
 	Template@483:
-		Category: Paved road bits
+		Categories: Paved road bits
 		Id: 483
 		Images: proadc05.urb
 		Size: 1, 1
@@ -8796,7 +8796,7 @@ Templates:
 				LeftColor: 4B4D3C
 				RightColor: 444639
 	Template@484:
-		Category: Paved road bits
+		Categories: Paved road bits
 		Id: 484
 		Images: proadc06.urb
 		Size: 1, 1
@@ -8805,7 +8805,7 @@ Templates:
 				LeftColor: 4D4F3D
 				RightColor: 44453B
 	Template@485:
-		Category: Paved road bits
+		Categories: Paved road bits
 		Id: 485
 		Images: proadc07.urb
 		Size: 1, 1
@@ -8814,7 +8814,7 @@ Templates:
 				LeftColor: 5A5B58
 				RightColor: 5B5D56
 	Template@486:
-		Category: Paved road bits
+		Categories: Paved road bits
 		Id: 486
 		Images: proadc08.urb
 		Size: 1, 1
@@ -8823,7 +8823,7 @@ Templates:
 				LeftColor: 5A5A54
 				RightColor: 585953
 	Template@487:
-		Category: Paved road bits
+		Categories: Paved road bits
 		Id: 487
 		Images: proadc09.urb
 		Size: 1, 1
@@ -8832,7 +8832,7 @@ Templates:
 				LeftColor: 585953
 				RightColor: 535452
 	Template@488:
-		Category: Paved road bits
+		Categories: Paved road bits
 		Id: 488
 		Images: proadc10.urb
 		Size: 1, 1
@@ -8841,7 +8841,7 @@ Templates:
 				LeftColor: 525352
 				RightColor: 5A5A55
 	Template@489:
-		Category: Paved road bits
+		Categories: Paved road bits
 		Id: 489
 		Images: proadc11.urb
 		Size: 1, 1
@@ -8850,7 +8850,7 @@ Templates:
 				LeftColor: 575752
 				RightColor: 5A5A54
 	Template@490:
-		Category: Paved road bits
+		Categories: Paved road bits
 		Id: 490
 		Images: proadc12.urb
 		Size: 1, 1
@@ -8859,7 +8859,7 @@ Templates:
 				LeftColor: 5B5C55
 				RightColor: 5A5B58
 	Template@491:
-		Category: Paved road bits
+		Categories: Paved road bits
 		Id: 491
 		Images: proadc13.urb
 		Size: 1, 3
@@ -8874,7 +8874,7 @@ Templates:
 				LeftColor: 888782
 				RightColor: 676766
 	Template@492:
-		Category: Paved road bits
+		Categories: Paved road bits
 		Id: 492
 		Images: proadc14.urb
 		Size: 3, 1
@@ -8889,7 +8889,7 @@ Templates:
 				LeftColor: 676766
 				RightColor: 888782
 	Template@493:
-		Category: LAT Sand
+		Categories: LAT Sand
 		Id: 493
 		Images: green01.urb, green01a.urb, green01b.urb, green01c.urb, green01d.urb, green01e.urb, green01f.urb, green01g.urb
 		Size: 1, 1
@@ -8898,7 +8898,7 @@ Templates:
 				LeftColor: 6A803A
 				RightColor: 6C833C
 	Template@494:
-		Category: Sand Individual
+		Categories: Sand Individual
 		Id: 494
 		Images: glat01.urb, glat01a.urb
 		Size: 1, 1
@@ -8907,7 +8907,7 @@ Templates:
 				LeftColor: 6B813B
 				RightColor: 6E833D
 	Template@495:
-		Category: Sand Individual
+		Categories: Sand Individual
 		Id: 495
 		Images: glat02.urb, glat02a.urb
 		Size: 1, 1
@@ -8916,7 +8916,7 @@ Templates:
 				LeftColor: 6A813C
 				RightColor: 6C823C
 	Template@496:
-		Category: Sand Individual
+		Categories: Sand Individual
 		Id: 496
 		Images: glat03.urb, glat03a.urb
 		Size: 1, 1
@@ -8925,7 +8925,7 @@ Templates:
 				LeftColor: 697F3B
 				RightColor: 6B823D
 	Template@497:
-		Category: Sand Individual
+		Categories: Sand Individual
 		Id: 497
 		Images: glat04.urb, glat04a.urb
 		Size: 1, 1
@@ -8934,7 +8934,7 @@ Templates:
 				LeftColor: 6B813A
 				RightColor: 6B823C
 	Template@498:
-		Category: Sand Individual
+		Categories: Sand Individual
 		Id: 498
 		Images: glat05.urb, glat05a.urb
 		Size: 1, 1
@@ -8943,7 +8943,7 @@ Templates:
 				LeftColor: 6C823D
 				RightColor: 6C823C
 	Template@499:
-		Category: Sand Individual
+		Categories: Sand Individual
 		Id: 499
 		Images: glat06.urb, glat06a.urb
 		Size: 1, 1
@@ -8952,7 +8952,7 @@ Templates:
 				LeftColor: 6B813B
 				RightColor: 6E833D
 	Template@500:
-		Category: Sand Individual
+		Categories: Sand Individual
 		Id: 500
 		Images: glat07.urb, glat07a.urb
 		Size: 1, 1
@@ -8961,7 +8961,7 @@ Templates:
 				LeftColor: 6A813B
 				RightColor: 6B813C
 	Template@501:
-		Category: Sand Individual
+		Categories: Sand Individual
 		Id: 501
 		Images: glat08.urb, glat08a.urb
 		Size: 1, 1
@@ -8970,7 +8970,7 @@ Templates:
 				LeftColor: 6C823D
 				RightColor: 6C823C
 	Template@502:
-		Category: Sand Individual
+		Categories: Sand Individual
 		Id: 502
 		Images: glat09.urb, glat09a.urb
 		Size: 1, 1
@@ -8979,7 +8979,7 @@ Templates:
 				LeftColor: 6A813B
 				RightColor: 6B813C
 	Template@503:
-		Category: Sand Individual
+		Categories: Sand Individual
 		Id: 503
 		Images: glat10.urb, glat10a.urb
 		Size: 1, 1
@@ -8988,7 +8988,7 @@ Templates:
 				LeftColor: 6D823E
 				RightColor: 6A813C
 	Template@504:
-		Category: Sand Individual
+		Categories: Sand Individual
 		Id: 504
 		Images: glat11.urb, glat11a.urb
 		Size: 1, 1
@@ -8997,7 +8997,7 @@ Templates:
 				LeftColor: 6A813B
 				RightColor: 6B813C
 	Template@505:
-		Category: Sand Individual
+		Categories: Sand Individual
 		Id: 505
 		Images: glat12.urb, glat12a.urb
 		Size: 1, 1
@@ -9006,7 +9006,7 @@ Templates:
 				LeftColor: 697F3B
 				RightColor: 6B823D
 	Template@506:
-		Category: Sand Individual
+		Categories: Sand Individual
 		Id: 506
 		Images: glat13.urb, glat13a.urb
 		Size: 1, 1
@@ -9015,7 +9015,7 @@ Templates:
 				LeftColor: 697F3B
 				RightColor: 6B823D
 	Template@507:
-		Category: Sand Individual
+		Categories: Sand Individual
 		Id: 507
 		Images: glat14.urb, glat14a.urb
 		Size: 1, 1
@@ -9024,7 +9024,7 @@ Templates:
 				LeftColor: 6A813C
 				RightColor: 6C823C
 	Template@508:
-		Category: Sand Individual
+		Categories: Sand Individual
 		Id: 508
 		Images: glat15.urb, glat15a.urb
 		Size: 1, 1
@@ -9033,7 +9033,7 @@ Templates:
 				LeftColor: 6B813A
 				RightColor: 6B823C
 	Template@509:
-		Category: Sand Individual
+		Categories: Sand Individual
 		Id: 509
 		Images: glat16.urb, glat16a.urb
 		Size: 1, 1
@@ -9042,7 +9042,7 @@ Templates:
 				LeftColor: 6B813B
 				RightColor: 6E833D
 	Template@510:
-		Category: Ramp edge fixup
+		Categories: Ramp edge fixup
 		Id: 510
 		Images: rmpfx01.urb, rmpfx01a.urb, rmpfx01b.urb, rmpfx01c.urb
 		Size: 1, 1
@@ -9052,7 +9052,7 @@ Templates:
 				LeftColor: AA9F8F
 				RightColor: B1A490
 	Template@511:
-		Category: Ramp edge fixup
+		Categories: Ramp edge fixup
 		Id: 511
 		Images: rmpfx02.urb, rmpfx02a.urb, rmpfx02b.urb, rmpfx02c.urb
 		Size: 1, 1
@@ -9062,7 +9062,7 @@ Templates:
 				LeftColor: AA9F8F
 				RightColor: B1A490
 	Template@512:
-		Category: Ramp edge fixup
+		Categories: Ramp edge fixup
 		Id: 512
 		Images: rmpfx03.urb, rmpfx03a.urb, rmpfx03b.urb, rmpfx03c.urb
 		Size: 1, 1
@@ -9072,7 +9072,7 @@ Templates:
 				LeftColor: AA9F8F
 				RightColor: B1A490
 	Template@513:
-		Category: Ramp edge fixup
+		Categories: Ramp edge fixup
 		Id: 513
 		Images: rmpfx04.urb, rmpfx04a.urb, rmpfx04b.urb, rmpfx04c.urb
 		Size: 1, 1
@@ -9082,7 +9082,7 @@ Templates:
 				LeftColor: 9B8E78
 				RightColor: 9A8B79
 	Template@514:
-		Category: Ramp edge fixup
+		Categories: Ramp edge fixup
 		Id: 514
 		Images: rmpfx05.urb, rmpfx05a.urb, rmpfx05b.urb, rmpfx05c.urb
 		Size: 1, 1
@@ -9092,7 +9092,7 @@ Templates:
 				LeftColor: 9B8E78
 				RightColor: 9A8B79
 	Template@515:
-		Category: Ramp edge fixup
+		Categories: Ramp edge fixup
 		Id: 515
 		Images: rmpfx06.urb, rmpfx06a.urb, rmpfx06b.urb, rmpfx06c.urb
 		Size: 1, 1
@@ -9102,7 +9102,7 @@ Templates:
 				LeftColor: 9B8E78
 				RightColor: 9A8B79
 	Template@516:
-		Category: Ramp edge fixup
+		Categories: Ramp edge fixup
 		Id: 516
 		Images: rmpfx07.urb, rmpfx07a.urb, rmpfx07b.urb, rmpfx07c.urb
 		Size: 1, 1
@@ -9112,7 +9112,7 @@ Templates:
 				LeftColor: B3A797
 				RightColor: AEA18C
 	Template@517:
-		Category: Ramp edge fixup
+		Categories: Ramp edge fixup
 		Id: 517
 		Images: rmpfx08.urb, rmpfx08a.urb, rmpfx08b.urb, rmpfx08c.urb
 		Size: 1, 1
@@ -9122,7 +9122,7 @@ Templates:
 				LeftColor: B2A796
 				RightColor: AFA28D
 	Template@518:
-		Category: Ramp edge fixup
+		Categories: Ramp edge fixup
 		Id: 518
 		Images: rmpfx09.urb, rmpfx09a.urb, rmpfx09b.urb, rmpfx09c.urb
 		Size: 1, 1
@@ -9132,7 +9132,7 @@ Templates:
 				LeftColor: B2A796
 				RightColor: AFA28D
 	Template@519:
-		Category: Ramp edge fixup
+		Categories: Ramp edge fixup
 		Id: 519
 		Images: rmpfx10.urb, rmpfx10a.urb, rmpfx10b.urb, rmpfx10c.urb
 		Size: 1, 1
@@ -9142,7 +9142,7 @@ Templates:
 				LeftColor: CAC3B6
 				RightColor: C9C1B4
 	Template@520:
-		Category: Ramp edge fixup
+		Categories: Ramp edge fixup
 		Id: 520
 		Images: rmpfx11.urb, rmpfx11a.urb, rmpfx11b.urb, rmpfx11c.urb
 		Size: 1, 1
@@ -9152,7 +9152,7 @@ Templates:
 				LeftColor: CAC3B6
 				RightColor: C9C1B3
 	Template@521:
-		Category: Ramp edge fixup
+		Categories: Ramp edge fixup
 		Id: 521
 		Images: rmpfx12.urb, rmpfx12a.urb, rmpfx12b.urb, rmpfx12c.urb
 		Size: 1, 1
@@ -9162,7 +9162,7 @@ Templates:
 				LeftColor: CAC3B6
 				RightColor: C9C1B3
 	Template@534:
-		Category: LAT Pavement
+		Categories: LAT Pavement
 		Id: 534
 		Images: pvclr01.urb, pvclr01a.urb, pvclr01b.urb, pvclr01c.urb, pvclr01d.urb, pvclr01e.urb, pvclr01f.urb, pvclr01g.urb
 		Size: 1, 1
@@ -9171,7 +9171,7 @@ Templates:
 				LeftColor: 9B634B
 				RightColor: 986048
 	Template@535:
-		Category: Paved Road Slopes
+		Categories: Paved Road Slopes
 		Id: 535
 		Images: prslpe01.urb
 		Size: 1, 3
@@ -9189,7 +9189,7 @@ Templates:
 				LeftColor: 686966
 				RightColor: 424243
 	Template@536:
-		Category: Paved Road Slopes
+		Categories: Paved Road Slopes
 		Id: 536
 		Images: prslpe02.urb
 		Size: 3, 1
@@ -9207,7 +9207,7 @@ Templates:
 				LeftColor: 2F302E
 				RightColor: 565753
 	Template@537:
-		Category: Paved Road Slopes
+		Categories: Paved Road Slopes
 		Id: 537
 		Images: prslpe03.urb
 		Size: 1, 3
@@ -9225,7 +9225,7 @@ Templates:
 				LeftColor: 656664
 				RightColor: 393B3B
 	Template@538:
-		Category: Paved Road Slopes
+		Categories: Paved Road Slopes
 		Id: 538
 		Images: prslpe04.urb
 		Size: 3, 1
@@ -9243,7 +9243,7 @@ Templates:
 				LeftColor: 616364
 				RightColor: 888988
 	Template@539:
-		Category: Waterfalls-B
+		Categories: Waterfalls-B
 		Id: 539
 		Images: w-b-01.urb
 		Size: 4, 2
@@ -9277,7 +9277,7 @@ Templates:
 				LeftColor: C3B46A
 				RightColor: D4B77C
 	Template@540:
-		Category: Waterfalls-B
+		Categories: Waterfalls-B
 		Id: 540
 		Images: w-b-02.urb
 		Size: 4, 1
@@ -9297,7 +9297,7 @@ Templates:
 				LeftColor: 444857
 				RightColor: 444859
 	Template@541:
-		Category: Waterfalls-B
+		Categories: Waterfalls-B
 		Id: 541
 		Images: w-b-03.urb
 		Size: 4, 2
@@ -9331,7 +9331,7 @@ Templates:
 				LeftColor: 444857
 				RightColor: 434658
 	Template@542:
-		Category: Waterfalls-B
+		Categories: Waterfalls-B
 		Id: 542
 		Images: w-b-04.urb
 		Size: 4, 2
@@ -9365,7 +9365,7 @@ Templates:
 				LeftColor: 50565B
 				RightColor: 797C5E
 	Template@543:
-		Category: Waterfalls-C
+		Categories: Waterfalls-C
 		Id: 543
 		Images: w-c-01.urb
 		Size: 2, 2
@@ -9387,7 +9387,7 @@ Templates:
 				LeftColor: 515544
 				RightColor: 393D3E
 	Template@544:
-		Category: Waterfalls-C
+		Categories: Waterfalls-C
 		Id: 544
 		Images: w-c-02.urb
 		Size: 1, 2
@@ -9401,7 +9401,7 @@ Templates:
 				LeftColor: 2F3039
 				RightColor: 32353A
 	Template@545:
-		Category: Waterfalls-C
+		Categories: Waterfalls-C
 		Id: 545
 		Images: w-c-03.urb
 		Size: 2, 2
@@ -9423,7 +9423,7 @@ Templates:
 				LeftColor: 30323A
 				RightColor: 32353B
 	Template@546:
-		Category: Waterfalls-C
+		Categories: Waterfalls-C
 		Id: 546
 		Images: w-c-04.urb
 		Size: 2, 2
@@ -9445,7 +9445,7 @@ Templates:
 				LeftColor: 917E5D
 				RightColor: 767149
 	Template@547:
-		Category: Waterfalls-D
+		Categories: Waterfalls-D
 		Id: 547
 		Images: w-d-01.urb
 		Size: 2, 2
@@ -9463,7 +9463,7 @@ Templates:
 				LeftColor: 000000
 				RightColor: 000000
 	Template@548:
-		Category: Waterfalls-D
+		Categories: Waterfalls-D
 		Id: 548
 		Images: w-d-02.urb
 		Size: 1, 1
@@ -9473,7 +9473,7 @@ Templates:
 				LeftColor: 000000
 				RightColor: 000000
 	Template@549:
-		Category: Waterfalls-D
+		Categories: Waterfalls-D
 		Id: 549
 		Images: w-d-03.urb
 		Size: 1, 2
@@ -9487,7 +9487,7 @@ Templates:
 				LeftColor: 000000
 				RightColor: 000000
 	Template@550:
-		Category: Waterfalls-D
+		Categories: Waterfalls-D
 		Id: 550
 		Images: w-d-04.urb
 		Size: 2, 2
@@ -9505,7 +9505,7 @@ Templates:
 				LeftColor: 000000
 				RightColor: 000000
 	Template@566:
-		Category: Tunnel Floor
+		Categories: Tunnel Floor
 		Id: 566
 		Images: tunnel01.urb
 		Size: 3, 5
@@ -9556,7 +9556,7 @@ Templates:
 				LeftColor: 827A71
 				RightColor: 847C70
 	Template@567:
-		Category: Tunnel Floor
+		Categories: Tunnel Floor
 		Id: 567
 		Images: tunnel02.urb
 		Size: 5, 3
@@ -9607,7 +9607,7 @@ Templates:
 				LeftColor: 847C70
 				RightColor: 827A71
 	Template@568:
-		Category: Tunnel Floor
+		Categories: Tunnel Floor
 		Id: 568
 		Images: tunnel03.urb
 		Size: 3, 4
@@ -9649,7 +9649,7 @@ Templates:
 				LeftColor: 737472
 				RightColor: 464A4C
 	Template@569:
-		Category: Tunnel Floor
+		Categories: Tunnel Floor
 		Id: 569
 		Images: tunnel04.urb
 		Size: 4, 3
@@ -9691,7 +9691,7 @@ Templates:
 				LeftColor: 464A4C
 				RightColor: 747573
 	Template@570:
-		Category: Tunnel Side
+		Categories: Tunnel Side
 		Id: 570
 		Images: tunnex01.urb
 		Size: 3, 1
@@ -9707,7 +9707,7 @@ Templates:
 				LeftColor: C2B8A6
 				RightColor: B8AE9B
 	Template@571:
-		Category: Tunnel Side
+		Categories: Tunnel Side
 		Id: 571
 		Images: tunnex02.urb
 		Size: 1, 3
@@ -9723,7 +9723,7 @@ Templates:
 				LeftColor: B8B0A1
 				RightColor: B5AE9F
 	Template@572:
-		Category: Destroyable Cliffs
+		Categories: Destroyable Cliffs
 		Id: 572
 		Images: dcliff01.urb
 		Size: 6, 4
@@ -9799,7 +9799,7 @@ Templates:
 				LeftColor: 8D8E46
 				RightColor: 929244
 	Template@573:
-		Category: Destroyable Cliffs
+		Categories: Destroyable Cliffs
 		Id: 573
 		Images: dcliff02.urb
 		Size: 4, 6
@@ -9875,7 +9875,7 @@ Templates:
 				LeftColor: B0934A
 				RightColor: AB7239
 	Template@775:
-		Category: DirtTunnel Floor
+		Categories: DirtTunnel Floor
 		Id: 775
 		Images: dtunn01.urb
 		Size: 3, 5
@@ -9926,7 +9926,7 @@ Templates:
 				LeftColor: 867F76
 				RightColor: 837D74
 	Template@776:
-		Category: DirtTunnel Floor
+		Categories: DirtTunnel Floor
 		Id: 776
 		Images: dtunn02.urb
 		Size: 5, 3
@@ -9977,7 +9977,7 @@ Templates:
 				LeftColor: 837D74
 				RightColor: 867F75
 	Template@777:
-		Category: DirtTunnel Floor
+		Categories: DirtTunnel Floor
 		Id: 777
 		Images: dtunn03.urb
 		Size: 3, 4
@@ -10019,7 +10019,7 @@ Templates:
 				LeftColor: C1B7A5
 				RightColor: BCB29F
 	Template@778:
-		Category: DirtTunnel Floor
+		Categories: DirtTunnel Floor
 		Id: 778
 		Images: dtunn04.urb
 		Size: 4, 3
@@ -10061,7 +10061,7 @@ Templates:
 				LeftColor: B8B3A7
 				RightColor: B9B2A5
 	Template@779:
-		Category: Sand (beach)
+		Categories: Sand (beach)
 		Id: 779
 		Images: green01.urb, green01a.urb, green01b.urb, green01c.urb, green01d.urb, green01e.urb, green01f.urb, green01g.urb
 		Size: 1, 1
@@ -10070,7 +10070,7 @@ Templates:
 				LeftColor: 6A803A
 				RightColor: 6C833C
 	Template@780:
-		Category: Sand (beach) Transitions
+		Categories: Sand (beach) Transitions
 		Id: 780
 		Images: glat01.urb, glat01a.urb
 		Size: 1, 1
@@ -10079,7 +10079,7 @@ Templates:
 				LeftColor: 6B813B
 				RightColor: 6E833D
 	Template@781:
-		Category: Sand (beach) Transitions
+		Categories: Sand (beach) Transitions
 		Id: 781
 		Images: glat02.urb, glat02a.urb
 		Size: 1, 1
@@ -10088,7 +10088,7 @@ Templates:
 				LeftColor: 6A813C
 				RightColor: 6C823C
 	Template@782:
-		Category: Sand (beach) Transitions
+		Categories: Sand (beach) Transitions
 		Id: 782
 		Images: glat03.urb, glat03a.urb
 		Size: 1, 1
@@ -10097,7 +10097,7 @@ Templates:
 				LeftColor: 697F3B
 				RightColor: 6B823D
 	Template@783:
-		Category: Sand (beach) Transitions
+		Categories: Sand (beach) Transitions
 		Id: 783
 		Images: glat04.urb, glat04a.urb
 		Size: 1, 1
@@ -10106,7 +10106,7 @@ Templates:
 				LeftColor: 6B813A
 				RightColor: 6B823C
 	Template@784:
-		Category: Sand (beach) Transitions
+		Categories: Sand (beach) Transitions
 		Id: 784
 		Images: glat05.urb, glat05a.urb
 		Size: 1, 1
@@ -10115,7 +10115,7 @@ Templates:
 				LeftColor: 6C823D
 				RightColor: 6C823C
 	Template@785:
-		Category: Sand (beach) Transitions
+		Categories: Sand (beach) Transitions
 		Id: 785
 		Images: glat06.urb, glat06a.urb
 		Size: 1, 1
@@ -10124,7 +10124,7 @@ Templates:
 				LeftColor: 6B813B
 				RightColor: 6E833D
 	Template@786:
-		Category: Sand (beach) Transitions
+		Categories: Sand (beach) Transitions
 		Id: 786
 		Images: glat07.urb, glat07a.urb
 		Size: 1, 1
@@ -10133,7 +10133,7 @@ Templates:
 				LeftColor: 6A813B
 				RightColor: 6B813C
 	Template@787:
-		Category: Sand (beach) Transitions
+		Categories: Sand (beach) Transitions
 		Id: 787
 		Images: glat08.urb, glat08a.urb
 		Size: 1, 1
@@ -10142,7 +10142,7 @@ Templates:
 				LeftColor: 6C823D
 				RightColor: 6C823C
 	Template@788:
-		Category: Sand (beach) Transitions
+		Categories: Sand (beach) Transitions
 		Id: 788
 		Images: glat09.urb, glat09a.urb
 		Size: 1, 1
@@ -10151,7 +10151,7 @@ Templates:
 				LeftColor: 6A813B
 				RightColor: 6B813C
 	Template@789:
-		Category: Sand (beach) Transitions
+		Categories: Sand (beach) Transitions
 		Id: 789
 		Images: glat10.urb, glat10a.urb
 		Size: 1, 1
@@ -10160,7 +10160,7 @@ Templates:
 				LeftColor: 6D823E
 				RightColor: 6A813C
 	Template@790:
-		Category: Sand (beach) Transitions
+		Categories: Sand (beach) Transitions
 		Id: 790
 		Images: glat11.urb, glat11a.urb
 		Size: 1, 1
@@ -10169,7 +10169,7 @@ Templates:
 				LeftColor: 6A813B
 				RightColor: 6B813C
 	Template@791:
-		Category: Sand (beach) Transitions
+		Categories: Sand (beach) Transitions
 		Id: 791
 		Images: glat12.urb, glat12a.urb
 		Size: 1, 1
@@ -10178,7 +10178,7 @@ Templates:
 				LeftColor: 697F3B
 				RightColor: 6B823D
 	Template@792:
-		Category: Sand (beach) Transitions
+		Categories: Sand (beach) Transitions
 		Id: 792
 		Images: glat13.urb, glat13a.urb
 		Size: 1, 1
@@ -10187,7 +10187,7 @@ Templates:
 				LeftColor: 697F3B
 				RightColor: 6B823D
 	Template@793:
-		Category: Sand (beach) Transitions
+		Categories: Sand (beach) Transitions
 		Id: 793
 		Images: glat14.urb, glat14a.urb
 		Size: 1, 1
@@ -10196,7 +10196,7 @@ Templates:
 				LeftColor: 6A813C
 				RightColor: 6C823C
 	Template@794:
-		Category: Sand (beach) Transitions
+		Categories: Sand (beach) Transitions
 		Id: 794
 		Images: glat15.urb, glat15a.urb
 		Size: 1, 1
@@ -10205,7 +10205,7 @@ Templates:
 				LeftColor: 6B813A
 				RightColor: 6B823C
 	Template@795:
-		Category: Sand (beach) Transitions
+		Categories: Sand (beach) Transitions
 		Id: 795
 		Images: glat16.urb, glat16a.urb
 		Size: 1, 1
@@ -10214,7 +10214,7 @@ Templates:
 				LeftColor: 6B813B
 				RightColor: 6E833D
 	Template@796:
-		Category: CliffA Set
+		Categories: CliffA Set
 		Id: 796
 		Images: cliffa01.urb
 		Size: 2, 3
@@ -10234,7 +10234,7 @@ Templates:
 				LeftColor: BAB6A8
 				RightColor: 9E9887
 	Template@797:
-		Category: CliffA Set
+		Categories: CliffA Set
 		Id: 797
 		Images: cliffa02.urb
 		Size: 2, 3
@@ -10254,7 +10254,7 @@ Templates:
 				LeftColor: BAB6A8
 				RightColor: 7F7465
 	Template@798:
-		Category: CliffA Set
+		Categories: CliffA Set
 		Id: 798
 		Images: cliffa03.urb
 		Size: 1, 2
@@ -10267,7 +10267,7 @@ Templates:
 				LeftColor: B9AF9F
 				RightColor: 938973
 	Template@799:
-		Category: CliffA Set
+		Categories: CliffA Set
 		Id: 799
 		Images: cliffa04.urb
 		Size: 1, 2
@@ -10280,7 +10280,7 @@ Templates:
 				LeftColor: B9AF9F
 				RightColor: 604D3B
 	Template@800:
-		Category: CliffA Set
+		Categories: CliffA Set
 		Id: 800
 		Images: cliffa05.urb
 		Size: 2, 3
@@ -10300,7 +10300,7 @@ Templates:
 				LeftColor: BAB6AA
 				RightColor: 9C9386
 	Template@801:
-		Category: CliffA Set
+		Categories: CliffA Set
 		Id: 801
 		Images: cliffa06.urb
 		Size: 1, 2
@@ -10313,7 +10313,7 @@ Templates:
 				LeftColor: BBB1A4
 				RightColor: 978C77
 	Template@802:
-		Category: CliffA Set
+		Categories: CliffA Set
 		Id: 802
 		Images: cliffa07.urb
 		Size: 1, 2
@@ -10326,7 +10326,7 @@ Templates:
 				LeftColor: BBB1A4
 				RightColor: 62503E
 	Template@803:
-		Category: CliffA Set
+		Categories: CliffA Set
 		Id: 803
 		Images: cliffa08.urb
 		Size: 2, 1
@@ -10339,7 +10339,7 @@ Templates:
 				LeftColor: B1ABA0
 				RightColor: 6B634E
 	Template@804:
-		Category: CliffA Set
+		Categories: CliffA Set
 		Id: 804
 		Images: cliffa09.urb
 		Size: 2, 1
@@ -10352,7 +10352,7 @@ Templates:
 				LeftColor: AEA89E
 				RightColor: 4F4133
 	Template@805:
-		Category: CliffA Set
+		Categories: CliffA Set
 		Id: 805
 		Images: cliffa10.urb
 		Size: 3, 2
@@ -10372,7 +10372,7 @@ Templates:
 				LeftColor: BFB7A7
 				RightColor: 978F81
 	Template@806:
-		Category: CliffA Set
+		Categories: CliffA Set
 		Id: 806
 		Images: cliffa11.urb
 		Size: 3, 2
@@ -10392,7 +10392,7 @@ Templates:
 				LeftColor: B3AB9F
 				RightColor: 89806E
 	Template@807:
-		Category: CliffA Set
+		Categories: CliffA Set
 		Id: 807
 		Images: cliffa12.urb
 		Size: 3, 2
@@ -10412,7 +10412,7 @@ Templates:
 				LeftColor: ACA89D
 				RightColor: 746C5E
 	Template@808:
-		Category: CliffA Set
+		Categories: CliffA Set
 		Id: 808
 		Images: cliffa13.urb
 		Size: 2, 1
@@ -10425,7 +10425,7 @@ Templates:
 				LeftColor: B7AFA2
 				RightColor: 6D634E
 	Template@809:
-		Category: CliffA Set
+		Categories: CliffA Set
 		Id: 809
 		Images: cliffa14.urb
 		Size: 2, 1
@@ -10438,7 +10438,7 @@ Templates:
 				LeftColor: B3AB9E
 				RightColor: 514334
 	Template@824:
-		Category: CliffA/Water pieces
+		Categories: CliffA/Water pieces
 		Id: 824
 		Images: wclifa01.urb
 		Size: 2, 1
@@ -10451,7 +10451,7 @@ Templates:
 				LeftColor: 36333D
 				RightColor: 302520
 	Template@825:
-		Category: CliffA/Water pieces
+		Categories: CliffA/Water pieces
 		Id: 825
 		Images: wclifa02.urb
 		Size: 2, 1
@@ -10464,7 +10464,7 @@ Templates:
 				LeftColor: 3B3D4B
 				RightColor: 3C3D31
 	Template@826:
-		Category: CliffA/Water pieces
+		Categories: CliffA/Water pieces
 		Id: 826
 		Images: wclifa03.urb
 		Size: 3, 2
@@ -10484,7 +10484,7 @@ Templates:
 				LeftColor: 34323E
 				RightColor: 2B2630
 	Template@827:
-		Category: CliffA/Water pieces
+		Categories: CliffA/Water pieces
 		Id: 827
 		Images: wclifa04.urb
 		Size: 3, 2
@@ -10504,7 +10504,7 @@ Templates:
 				LeftColor: 383B4B
 				RightColor: 343531
 	Template@828:
-		Category: CliffA/Water pieces
+		Categories: CliffA/Water pieces
 		Id: 828
 		Images: wclifa05.urb
 		Size: 3, 2
@@ -10524,7 +10524,7 @@ Templates:
 				LeftColor: 383A51
 				RightColor: 31313E
 	Template@829:
-		Category: CliffA/Water pieces
+		Categories: CliffA/Water pieces
 		Id: 829
 		Images: wclifa06.urb
 		Size: 2, 1
@@ -10537,7 +10537,7 @@ Templates:
 				LeftColor: 36333D
 				RightColor: 302520
 	Template@830:
-		Category: CliffA/Water pieces
+		Categories: CliffA/Water pieces
 		Id: 830
 		Images: wclifa07.urb
 		Size: 2, 1
@@ -10550,7 +10550,7 @@ Templates:
 				LeftColor: 383A4B
 				RightColor: 3B3D33
 	Template@831:
-		Category: CliffA/Water pieces
+		Categories: CliffA/Water pieces
 		Id: 831
 		Images: wclifa08.urb
 		Size: 1, 2
@@ -10563,7 +10563,7 @@ Templates:
 				LeftColor: 3A3951
 				RightColor: 423328
 	Template@832:
-		Category: CliffA/Water pieces
+		Categories: CliffA/Water pieces
 		Id: 832
 		Images: wclifa09.urb
 		Size: 1, 2
@@ -10576,7 +10576,7 @@ Templates:
 				LeftColor: 383B52
 				RightColor: 5D6049
 	Template@833:
-		Category: CliffA/Water pieces
+		Categories: CliffA/Water pieces
 		Id: 833
 		Images: wclifa10.urb
 		Size: 2, 3
@@ -10596,7 +10596,7 @@ Templates:
 				LeftColor: 383B52
 				RightColor: 38343E
 	Template@834:
-		Category: CliffA/Water pieces
+		Categories: CliffA/Water pieces
 		Id: 834
 		Images: wclifa11.urb
 		Size: 1, 2
@@ -10609,7 +10609,7 @@ Templates:
 				LeftColor: 393750
 				RightColor: 423228
 	Template@835:
-		Category: CliffA/Water pieces
+		Categories: CliffA/Water pieces
 		Id: 835
 		Images: wclifa12.urb
 		Size: 1, 2
@@ -10622,7 +10622,7 @@ Templates:
 				LeftColor: 393B50
 				RightColor: 5D6049
 	Template@836:
-		Category: CliffA/Water pieces
+		Categories: CliffA/Water pieces
 		Id: 836
 		Images: wclifa13.urb
 		Size: 2, 3
@@ -10642,7 +10642,7 @@ Templates:
 				LeftColor: 373855
 				RightColor: 362E2F
 	Template@837:
-		Category: CliffA/Water pieces
+		Categories: CliffA/Water pieces
 		Id: 837
 		Images: wclifa14.urb
 		Size: 2, 3
@@ -10662,7 +10662,7 @@ Templates:
 				LeftColor: 393B50
 				RightColor: 494C33
 	Template@852:
-		Category: Paved Fixes
+		Categories: Paved Fixes
 		Id: 852
 		Images: pavefx01.urb
 		Size: 1, 1
@@ -10671,7 +10671,7 @@ Templates:
 				LeftColor: 6C784D
 				RightColor: 6B774D
 	Template@853:
-		Category: Paved Fixes
+		Categories: Paved Fixes
 		Id: 853
 		Images: pavefx02.urb
 		Size: 1, 1
@@ -10680,7 +10680,7 @@ Templates:
 				LeftColor: 6B813C
 				RightColor: 908D82
 	Template@854:
-		Category: Paved Fixes
+		Categories: Paved Fixes
 		Id: 854
 		Images: pavefx03.urb
 		Size: 1, 1
@@ -10689,7 +10689,7 @@ Templates:
 				LeftColor: 848B65
 				RightColor: 858B63
 	Template@855:
-		Category: Paved Fixes
+		Categories: Paved Fixes
 		Id: 855
 		Images: pavefx04.urb
 		Size: 1, 1
@@ -10698,7 +10698,7 @@ Templates:
 				LeftColor: 9A968A
 				RightColor: 6D833C
 	Template@856:
-		Category: Paved Fixes
+		Categories: Paved Fixes
 		Id: 856
 		Images: pavefx05.urb
 		Size: 1, 1
@@ -10707,7 +10707,7 @@ Templates:
 				LeftColor: 8B9566
 				RightColor: 8B9567
 	Template@857:
-		Category: Paved Fixes
+		Categories: Paved Fixes
 		Id: 857
 		Images: pavefx06.urb
 		Size: 1, 1
@@ -10716,7 +10716,7 @@ Templates:
 				LeftColor: 6B813C
 				RightColor: B5AFA0
 	Template@858:
-		Category: Paved Fixes
+		Categories: Paved Fixes
 		Id: 858
 		Images: pavefx07.urb
 		Size: 1, 1
@@ -10725,7 +10725,7 @@ Templates:
 				LeftColor: 949A71
 				RightColor: 939A70
 	Template@859:
-		Category: Paved Fixes
+		Categories: Paved Fixes
 		Id: 859
 		Images: pavefx08.urb
 		Size: 1, 1
@@ -10734,7 +10734,7 @@ Templates:
 				LeftColor: B6AF9D
 				RightColor: 6D833C
 	Template@860:
-		Category: RA2 Washington A
+		Categories: RA2 Washington A
 		Id: 860
 		Images: wash01.urb
 		Size: 8, 4
@@ -10836,7 +10836,7 @@ Templates:
 				LeftColor: 69813B
 				RightColor: 6A813B
 	Template@861:
-		Category: RA2 Washington A
+		Categories: RA2 Washington A
 		Id: 861
 		Images: wash02.urb
 		Size: 8, 4
@@ -10938,7 +10938,7 @@ Templates:
 				LeftColor: 69813B
 				RightColor: 697F3B
 	Template@862:
-		Category: RA2 Wash Rubble
+		Categories: RA2 Wash Rubble
 		Id: 862
 		Images: warub01.urb
 		Size: 4, 4
@@ -10992,7 +10992,7 @@ Templates:
 				LeftColor: B8B3A7
 				RightColor: B7B0A3
 	Template@863:
-		Category: RA2 Wash Rubble
+		Categories: RA2 Wash Rubble
 		Id: 863
 		Images: warub02.urb
 		Size: 4, 3
@@ -11034,7 +11034,7 @@ Templates:
 				LeftColor: A6A297
 				RightColor: A49E92
 	Template@864:
-		Category: RA2 Wash Rubble
+		Categories: RA2 Wash Rubble
 		Id: 864
 		Images: warub03.urb
 		Size: 4, 4
@@ -11088,7 +11088,7 @@ Templates:
 				LeftColor: 828078
 				RightColor: 838077
 	Template@865:
-		Category: RA2 Wash Rubble
+		Categories: RA2 Wash Rubble
 		Id: 865
 		Images: warub04.urb
 		Size: 3, 4
@@ -11130,7 +11130,7 @@ Templates:
 				LeftColor: B4A489
 				RightColor: B4A994
 	Template@866:
-		Category: RA2 Wash Rubble
+		Categories: RA2 Wash Rubble
 		Id: 866
 		Images: warub05.urb
 		Size: 4, 4
@@ -11184,7 +11184,7 @@ Templates:
 				LeftColor: B4AFA4
 				RightColor: A6A298
 	Template@867:
-		Category: RA2 Wash Rubble
+		Categories: RA2 Wash Rubble
 		Id: 867
 		Images: warub06.urb
 		Size: 3, 4
@@ -11226,7 +11226,7 @@ Templates:
 				LeftColor: B4A489
 				RightColor: B4A994
 	Template@868:
-		Category: RA2 Wash Rubble
+		Categories: RA2 Wash Rubble
 		Id: 868
 		Images: warub07.urb
 		Size: 3, 4
@@ -11268,7 +11268,7 @@ Templates:
 				LeftColor: B4A489
 				RightColor: B4A994
 	Template@869:
-		Category: RA2 Wash Rubble
+		Categories: RA2 Wash Rubble
 		Id: 869
 		Images: warub08.urb
 		Size: 3, 3
@@ -11301,7 +11301,7 @@ Templates:
 				LeftColor: 9F9B8C
 				RightColor: 979386
 	Template@870:
-		Category: RA2 Wash Rubble
+		Categories: RA2 Wash Rubble
 		Id: 870
 		Images: warub09.urb
 		Size: 4, 4
@@ -11355,7 +11355,7 @@ Templates:
 				LeftColor: AFA496
 				RightColor: 988D7F
 	Template@871:
-		Category: RA2 Wash Rubble
+		Categories: RA2 Wash Rubble
 		Id: 871
 		Images: warub10.urb
 		Size: 4, 4
@@ -11409,7 +11409,7 @@ Templates:
 				LeftColor: B8B3A7
 				RightColor: B7B0A3
 	Template@872:
-		Category: RA2 Wash Rubble
+		Categories: RA2 Wash Rubble
 		Id: 872
 		Images: warub11.urb
 		Size: 3, 3
@@ -11442,7 +11442,7 @@ Templates:
 				LeftColor: AFA797
 				RightColor: ABA698
 	Template@873:
-		Category: RA2 Wash Rubble
+		Categories: RA2 Wash Rubble
 		Id: 873
 		Images: warub12.urb
 		Size: 3, 4
@@ -11484,7 +11484,7 @@ Templates:
 				LeftColor: B4A489
 				RightColor: B4A994
 	Template@874:
-		Category: RA2 Wash Rubble
+		Categories: RA2 Wash Rubble
 		Id: 874
 		Images: warub13.urb
 		Size: 3, 3
@@ -11517,7 +11517,7 @@ Templates:
 				LeftColor: B6AA96
 				RightColor: AFA797
 	Template@875:
-		Category: CliffB/Water pieces
+		Categories: CliffB/Water pieces
 		Id: 875
 		Images: wclifb01.urb
 		Size: 2, 3
@@ -11540,7 +11540,7 @@ Templates:
 				LeftColor: 393C52
 				RightColor: 372F2F
 	Template@876:
-		Category: CliffB/Water pieces
+		Categories: CliffB/Water pieces
 		Id: 876
 		Images: wclifb02.urb
 		Size: 2, 3
@@ -11563,7 +11563,7 @@ Templates:
 				LeftColor: 393B52
 				RightColor: 4C4E33
 	Template@877:
-		Category: CliffB/Water pieces
+		Categories: CliffB/Water pieces
 		Id: 877
 		Images: wclifb03.urb
 		Size: 3, 2
@@ -11586,7 +11586,7 @@ Templates:
 				LeftColor: 36343E
 				RightColor: 2D292F
 	Template@878:
-		Category: CliffB/Water pieces
+		Categories: CliffB/Water pieces
 		Id: 878
 		Images: wclifb04.urb
 		Size: 3, 2
@@ -11609,7 +11609,7 @@ Templates:
 				LeftColor: 363947
 				RightColor: 373730
 	Template@879:
-		Category: CliffB/Water pieces
+		Categories: CliffB/Water pieces
 		Id: 879
 		Images: wclifb05.urb
 		Size: 1, 3
@@ -11624,7 +11624,7 @@ Templates:
 				LeftColor: 373A52
 				RightColor: 393C52
 	Template@880:
-		Category: CliffB/Water pieces
+		Categories: CliffB/Water pieces
 		Id: 880
 		Images: wclifb06.urb
 		Size: 1, 3
@@ -11639,7 +11639,7 @@ Templates:
 				LeftColor: 373A52
 				RightColor: 393C52
 	Template@881:
-		Category: CliffB/Water pieces
+		Categories: CliffB/Water pieces
 		Id: 881
 		Images: wclifb07.urb
 		Size: 3, 1
@@ -11654,7 +11654,7 @@ Templates:
 				LeftColor: 383B51
 				RightColor: 373A51
 	Template@882:
-		Category: CliffB/Water pieces
+		Categories: CliffB/Water pieces
 		Id: 882
 		Images: wclifb08.urb
 		Size: 3, 1
@@ -11669,7 +11669,7 @@ Templates:
 				LeftColor: 393B51
 				RightColor: 373A51
 	Template@883:
-		Category: CliffB/Water pieces
+		Categories: CliffB/Water pieces
 		Id: 883
 		Images: wclifb09.urb
 		Size: 2, 2
@@ -11688,7 +11688,7 @@ Templates:
 				LeftColor: 3E3F52
 				RightColor: 55544C
 	Template@884:
-		Category: CliffB/Water pieces
+		Categories: CliffB/Water pieces
 		Id: 884
 		Images: wclifb10.urb
 		Size: 2, 2
@@ -11707,7 +11707,7 @@ Templates:
 				LeftColor: 3E3F52
 				RightColor: 55544C
 	Template@885:
-		Category: CliffB/Water pieces
+		Categories: CliffB/Water pieces
 		Id: 885
 		Images: wclifb11.urb
 		Size: 2, 2
@@ -11726,7 +11726,7 @@ Templates:
 				LeftColor: 56544C
 				RightColor: 3E4051
 	Template@886:
-		Category: CliffB/Water pieces
+		Categories: CliffB/Water pieces
 		Id: 886
 		Images: wclifb12.urb
 		Size: 2, 2
@@ -11745,7 +11745,7 @@ Templates:
 				LeftColor: 56544C
 				RightColor: 3E4051
 	Template@899:
-		Category: CliffC
+		Categories: CliffC
 		Id: 899
 		Images: cliffc01.urb
 		Size: 2, 2
@@ -11761,7 +11761,7 @@ Templates:
 				LeftColor: 888379
 				RightColor: 83807A
 	Template@900:
-		Category: CliffC
+		Categories: CliffC
 		Id: 900
 		Images: cliffc02.urb
 		Size: 1, 1
@@ -11771,7 +11771,7 @@ Templates:
 				LeftColor: 888379
 				RightColor: 888378
 	Template@901:
-		Category: CliffC
+		Categories: CliffC
 		Id: 901
 		Images: cliffc03.urb
 		Size: 2, 2
@@ -11787,7 +11787,7 @@ Templates:
 				LeftColor: 8A867F
 				RightColor: 8B8885
 	Template@902:
-		Category: CliffC
+		Categories: CliffC
 		Id: 902
 		Images: cliffc04.urb
 		Size: 2, 2
@@ -11803,7 +11803,7 @@ Templates:
 				LeftColor: 86837C
 				RightColor: 888580
 	Template@903:
-		Category: CliffC
+		Categories: CliffC
 		Id: 903
 		Images: cliffc05.urb
 		Size: 2, 2
@@ -11819,7 +11819,7 @@ Templates:
 				LeftColor: 8A867F
 				RightColor: 8B8885
 	Template@904:
-		Category: CliffC
+		Categories: CliffC
 		Id: 904
 		Images: cliffc06.urb
 		Size: 2, 2
@@ -11835,7 +11835,7 @@ Templates:
 				LeftColor: 86837C
 				RightColor: 888580
 	Template@911:
-		Category: pave fix B
+		Categories: pave fix B
 		Id: 911
 		Images: grfix01.urb
 		Size: 1, 1
@@ -11844,7 +11844,7 @@ Templates:
 				LeftColor: 94996E
 				RightColor: 6C833C
 	Template@912:
-		Category: pave fix B
+		Categories: pave fix B
 		Id: 912
 		Images: grfix02.urb
 		Size: 1, 1
@@ -11853,7 +11853,7 @@ Templates:
 				LeftColor: BCB29F
 				RightColor: 939A6D
 	Template@913:
-		Category: pave fix B
+		Categories: pave fix B
 		Id: 913
 		Images: grfix03.urb
 		Size: 1, 1
@@ -11862,7 +11862,7 @@ Templates:
 				LeftColor: 92996C
 				RightColor: C1B7A5
 	Template@914:
-		Category: pave fix B
+		Categories: pave fix B
 		Id: 914
 		Images: grfix04.urb
 		Size: 1, 1
@@ -11871,7 +11871,7 @@ Templates:
 				LeftColor: 6B813C
 				RightColor: 989E73
 	Template@915:
-		Category: pave fix B
+		Categories: pave fix B
 		Id: 915
 		Images: grfix05.urb
 		Size: 1, 1
@@ -11880,7 +11880,7 @@ Templates:
 				LeftColor: C1B7A5
 				RightColor: 92996D
 	Template@916:
-		Category: pave fix B
+		Categories: pave fix B
 		Id: 916
 		Images: grfix06.urb
 		Size: 1, 1
@@ -11889,7 +11889,7 @@ Templates:
 				LeftColor: 989E73
 				RightColor: 6B813B
 	Template@917:
-		Category: pave fix B
+		Categories: pave fix B
 		Id: 917
 		Images: grfix07.urb
 		Size: 1, 1
@@ -11898,7 +11898,7 @@ Templates:
 				LeftColor: 6A803A
 				RightColor: 969B6F
 	Template@918:
-		Category: pave fix B
+		Categories: pave fix B
 		Id: 918
 		Images: grfix08.urb
 		Size: 1, 1
@@ -11907,7 +11907,7 @@ Templates:
 				LeftColor: 939A6F
 				RightColor: BCB29F
 	Template@919:
-		Category: Farm Crops B
+		Categories: Farm Crops B
 		Id: 919
 		Images: baseb01.urb
 		Size: 6, 6
@@ -12021,7 +12021,7 @@ Templates:
 				LeftColor: 758441
 				RightColor: 738441
 	Template@920:
-		Category: LibertyBase
+		Categories: LibertyBase
 		Id: 920
 		Images: libbas01.urb
 		Size: 8, 8
@@ -12171,7 +12171,7 @@ Templates:
 				LeftColor: 6A813C
 				RightColor: 6C833E
 	Template@921:
-		Category: Water bridge
+		Categories: Water bridge
 		Id: 921
 		Images: wbrdge01.urb
 		Size: 2, 4
@@ -12201,7 +12201,7 @@ Templates:
 				LeftColor: 69803A
 				RightColor: 687B3B
 	Template@922:
-		Category: Water bridge
+		Categories: Water bridge
 		Id: 922
 		Images: wbrdge02.urb
 		Size: 4, 2
@@ -12231,7 +12231,7 @@ Templates:
 				LeftColor: 67783B
 				RightColor: 6B823C
 	Template@923:
-		Category: RA2 rubble Chicago a
+		Categories: RA2 rubble Chicago a
 		Id: 923
 		Images: chig01.urb
 		Size: 3, 2
@@ -12255,7 +12255,7 @@ Templates:
 				LeftColor: 8B7A6A
 				RightColor: 695546
 	Template@924:
-		Category: RA2 rubble Chicago a
+		Categories: RA2 rubble Chicago a
 		Id: 924
 		Images: chig02.urb
 		Size: 2, 3
@@ -12279,7 +12279,7 @@ Templates:
 				LeftColor: 584435
 				RightColor: 6F6054
 	Template@925:
-		Category: RA2 rubble Chicago a
+		Categories: RA2 rubble Chicago a
 		Id: 925
 		Images: chig03.urb
 		Size: 3, 2
@@ -12303,7 +12303,7 @@ Templates:
 				LeftColor: 5E5848
 				RightColor: 5E5747
 	Template@926:
-		Category: RA2 rubble Chicago a
+		Categories: RA2 rubble Chicago a
 		Id: 926
 		Images: chig04.urb
 		Size: 2, 2
@@ -12321,7 +12321,7 @@ Templates:
 				LeftColor: 786D58
 				RightColor: 6C5E47
 	Template@927:
-		Category: RA2 rubble Chicago a
+		Categories: RA2 rubble Chicago a
 		Id: 927
 		Images: chig05.urb
 		Size: 2, 2
@@ -12339,7 +12339,7 @@ Templates:
 				LeftColor: 756C5A
 				RightColor: 71624B
 	Template@928:
-		Category: RA2 rubble Euro a
+		Categories: RA2 rubble Euro a
 		Id: 928
 		Images: euro01.urb
 		Size: 2, 2
@@ -12357,7 +12357,7 @@ Templates:
 				LeftColor: 9F9889
 				RightColor: 938B7E
 	Template@929:
-		Category: RA2 rubble Euro a
+		Categories: RA2 rubble Euro a
 		Id: 929
 		Images: euro02.urb
 		Size: 2, 2
@@ -12375,7 +12375,7 @@ Templates:
 				LeftColor: 79746A
 				RightColor: 867E72
 	Template@930:
-		Category: RA2 rubble Euro a
+		Categories: RA2 rubble Euro a
 		Id: 930
 		Images: euro03.urb
 		Size: 2, 2
@@ -12393,7 +12393,7 @@ Templates:
 				LeftColor: 7B6A55
 				RightColor: 6F5C4B
 	Template@931:
-		Category: RA2 rubble Euro a
+		Categories: RA2 rubble Euro a
 		Id: 931
 		Images: euro04.urb
 		Size: 4, 3
@@ -12435,7 +12435,7 @@ Templates:
 				LeftColor: B8B3A7
 				RightColor: B7B0A3
 	Template@932:
-		Category: RA2 rubble Euro a
+		Categories: RA2 rubble Euro a
 		Id: 932
 		Images: euro05.urb
 		Size: 2, 2
@@ -12453,7 +12453,7 @@ Templates:
 				LeftColor: 9D9786
 				RightColor: 989282
 	Template@933:
-		Category: RA2 rubble house
+		Categories: RA2 rubble house
 		Id: 933
 		Images: house01.urb
 		Size: 3, 2
@@ -12477,7 +12477,7 @@ Templates:
 				LeftColor: B5AD9E
 				RightColor: B5AE9F
 	Template@934:
-		Category: RA2 rubble house
+		Categories: RA2 rubble house
 		Id: 934
 		Images: house02.urb
 		Size: 3, 2
@@ -12501,7 +12501,7 @@ Templates:
 				LeftColor: 9F907E
 				RightColor: 8E7C6B
 	Template@935:
-		Category: RA2 rubble house
+		Categories: RA2 rubble house
 		Id: 935
 		Images: house03.urb
 		Size: 2, 4
@@ -12531,7 +12531,7 @@ Templates:
 				LeftColor: A79A81
 				RightColor: 958675
 	Template@936:
-		Category: RA2 rubble house
+		Categories: RA2 rubble house
 		Id: 936
 		Images: house04.urb
 		Size: 3, 2
@@ -12555,7 +12555,7 @@ Templates:
 				LeftColor: B3A690
 				RightColor: A79989
 	Template@937:
-		Category: RA2 rubble miami
+		Categories: RA2 rubble miami
 		Id: 937
 		Images: miami01.urb
 		Size: 4, 2
@@ -12585,7 +12585,7 @@ Templates:
 				LeftColor: 8F8D88
 				RightColor: 8A867F
 	Template@938:
-		Category: RA2 rubble miami
+		Categories: RA2 rubble miami
 		Id: 938
 		Images: miami02.urb
 		Size: 4, 2
@@ -12615,7 +12615,7 @@ Templates:
 				LeftColor: 5D5C57
 				RightColor: 908C83
 	Template@939:
-		Category: RA2 rubble miami
+		Categories: RA2 rubble miami
 		Id: 939
 		Images: miami03.urb
 		Size: 2, 3
@@ -12639,7 +12639,7 @@ Templates:
 				LeftColor: 605F5D
 				RightColor: 42423F
 	Template@940:
-		Category: RA2 rubble miami
+		Categories: RA2 rubble miami
 		Id: 940
 		Images: miami04.urb
 		Size: 3, 4
@@ -12681,7 +12681,7 @@ Templates:
 				LeftColor: B3AA98
 				RightColor: B6AFA0
 	Template@941:
-		Category: RA2 rubble miami
+		Categories: RA2 rubble miami
 		Id: 941
 		Images: miami05.urb
 		Size: 4, 4
@@ -12735,7 +12735,7 @@ Templates:
 				LeftColor: 9F998C
 				RightColor: A49986
 	Template@942:
-		Category: RA2 rubble miami
+		Categories: RA2 rubble miami
 		Id: 942
 		Images: miami06.urb
 		Size: 4, 4
@@ -12789,7 +12789,7 @@ Templates:
 				LeftColor: A9A398
 				RightColor: AFA69B
 	Template@943:
-		Category: RA2 rubble newyork
+		Categories: RA2 rubble newyork
 		Id: 943
 		Images: newy01.urb
 		Size: 4, 4
@@ -12843,7 +12843,7 @@ Templates:
 				LeftColor: 999085
 				RightColor: B4AC9F
 	Template@944:
-		Category: RA2 rubble newyork
+		Categories: RA2 rubble newyork
 		Id: 944
 		Images: newy02.urb
 		Size: 1, 1
@@ -12852,7 +12852,7 @@ Templates:
 				LeftColor: 655F51
 				RightColor: 585245
 	Template@945:
-		Category: RA2 rubble newyork
+		Categories: RA2 rubble newyork
 		Id: 945
 		Images: newy03.urb
 		Size: 4, 4
@@ -12906,7 +12906,7 @@ Templates:
 				LeftColor: 848274
 				RightColor: 79776A
 	Template@946:
-		Category: RA2 rubble newyork
+		Categories: RA2 rubble newyork
 		Id: 946
 		Images: newy04.urb
 		Size: 4, 4
@@ -12960,7 +12960,7 @@ Templates:
 				LeftColor: 8B9879
 				RightColor: 808F6E
 	Template@947:
-		Category: RA2 rubble newyork
+		Categories: RA2 rubble newyork
 		Id: 947
 		Images: newy05.urb
 		Size: 4, 4
@@ -13014,7 +13014,7 @@ Templates:
 				LeftColor: 949193
 				RightColor: 838079
 	Template@948:
-		Category: RA2 rubble newyork
+		Categories: RA2 rubble newyork
 		Id: 948
 		Images: newy06.urb
 		Size: 4, 4
@@ -13068,7 +13068,7 @@ Templates:
 				LeftColor: A79184
 				RightColor: 958173
 	Template@949:
-		Category: RA2 rubble newyork
+		Categories: RA2 rubble newyork
 		Id: 949
 		Images: newy07.urb
 		Size: 2, 3
@@ -13092,7 +13092,7 @@ Templates:
 				LeftColor: 8C8676
 				RightColor: 8E8879
 	Template@950:
-		Category: RA2 rubble newyork
+		Categories: RA2 rubble newyork
 		Id: 950
 		Images: newy08.urb
 		Size: 3, 1
@@ -13107,7 +13107,7 @@ Templates:
 				LeftColor: 857C6C
 				RightColor: 504C41
 	Template@951:
-		Category: RA2 rubble newyork
+		Categories: RA2 rubble newyork
 		Id: 951
 		Images: newy09.urb
 		Size: 3, 1
@@ -13122,7 +13122,7 @@ Templates:
 				LeftColor: 323230
 				RightColor: 3E3D3B
 	Template@952:
-		Category: RA2 rubble newyork
+		Categories: RA2 rubble newyork
 		Id: 952
 		Images: newy10.urb
 		Size: 2, 3
@@ -13146,7 +13146,7 @@ Templates:
 				LeftColor: 6B6A66
 				RightColor: 73716F
 	Template@953:
-		Category: RA2 rubble newyork
+		Categories: RA2 rubble newyork
 		Id: 953
 		Images: newy11.urb
 		Size: 3, 3
@@ -13179,7 +13179,7 @@ Templates:
 				LeftColor: 7B7565
 				RightColor: 7C7769
 	Template@954:
-		Category: RA2 rubble newyork
+		Categories: RA2 rubble newyork
 		Id: 954
 		Images: newy12.urb
 		Size: 3, 3
@@ -13212,7 +13212,7 @@ Templates:
 				LeftColor: 7A7464
 				RightColor: 7B7668
 	Template@955:
-		Category: RA2 rubble newyork
+		Categories: RA2 rubble newyork
 		Id: 955
 		Images: newy13.urb
 		Size: 3, 3
@@ -13245,7 +13245,7 @@ Templates:
 				LeftColor: 625F51
 				RightColor: 736E60
 	Template@956:
-		Category: RA2 rubble newyork
+		Categories: RA2 rubble newyork
 		Id: 956
 		Images: newy14.urb
 		Size: 3, 3
@@ -13278,7 +13278,7 @@ Templates:
 				LeftColor: 89857B
 				RightColor: 8A867B
 	Template@957:
-		Category: RA2 rubble newyork
+		Categories: RA2 rubble newyork
 		Id: 957
 		Images: newy15.urb
 		Size: 3, 3
@@ -13311,7 +13311,7 @@ Templates:
 				LeftColor: 858278
 				RightColor: 888478
 	Template@958:
-		Category: RA2 rubble newyork
+		Categories: RA2 rubble newyork
 		Id: 958
 		Images: newy16.urb
 		Size: 3, 3
@@ -13344,7 +13344,7 @@ Templates:
 				LeftColor: 908D84
 				RightColor: 8D897F
 	Template@959:
-		Category: RA2 rubble newyork
+		Categories: RA2 rubble newyork
 		Id: 959
 		Images: newy17.urb
 		Size: 3, 5
@@ -13395,7 +13395,7 @@ Templates:
 				LeftColor: DDDCD9
 				RightColor: B0ABA0
 	Template@960:
-		Category: RA2 rubble newyork
+		Categories: RA2 rubble newyork
 		Id: 960
 		Images: newy18.urb
 		Size: 5, 3
@@ -13446,7 +13446,7 @@ Templates:
 				LeftColor: ADACA3
 				RightColor: DED8D5
 	Template@961:
-		Category: RA2 rubble newyork
+		Categories: RA2 rubble newyork
 		Id: 961
 		Images: newy19.urb
 		Size: 3, 2
@@ -13470,7 +13470,7 @@ Templates:
 				LeftColor: 807B6E
 				RightColor: 817B6E
 	Template@962:
-		Category: RA2 rubble newyork
+		Categories: RA2 rubble newyork
 		Id: 962
 		Images: newy20.urb
 		Size: 3, 2
@@ -13494,7 +13494,7 @@ Templates:
 				LeftColor: 7A7969
 				RightColor: 575241
 	Template@963:
-		Category: RA2 rubble newyork
+		Categories: RA2 rubble newyork
 		Id: 963
 		Images: newy21.urb
 		Size: 3, 3
@@ -13527,7 +13527,7 @@ Templates:
 				LeftColor: 9F9887
 				RightColor: 948F7E
 	Template@964:
-		Category: RA2 rubble newyork
+		Categories: RA2 rubble newyork
 		Id: 964
 		Images: newy22.urb
 		Size: 3, 3
@@ -13560,7 +13560,7 @@ Templates:
 				LeftColor: ADA89B
 				RightColor: ABA597
 	Template@965:
-		Category: RA2 rubble newyork
+		Categories: RA2 rubble newyork
 		Id: 965
 		Images: newy23.urb
 		Size: 4, 3
@@ -13602,7 +13602,7 @@ Templates:
 				LeftColor: 9C9687
 				RightColor: 979281
 	Template@966:
-		Category: RA2 rubble paris
+		Categories: RA2 rubble paris
 		Id: 966
 		Images: paris01.urb
 		Size: 4, 4
@@ -13656,7 +13656,7 @@ Templates:
 				LeftColor: A2927C
 				RightColor: 837563
 	Template@967:
-		Category: RA2 rubble paris
+		Categories: RA2 rubble paris
 		Id: 967
 		Images: paris02.urb
 		Size: 6, 4
@@ -13734,7 +13734,7 @@ Templates:
 				LeftColor: 817C68
 				RightColor: 524D3D
 	Template@968:
-		Category: RA2 rubble paris
+		Categories: RA2 rubble paris
 		Id: 968
 		Images: paris03.urb
 		Size: 6, 4
@@ -13812,7 +13812,7 @@ Templates:
 				LeftColor: 908673
 				RightColor: 6B6453
 	Template@969:
-		Category: RA2 rubble paris
+		Categories: RA2 rubble paris
 		Id: 969
 		Images: paris04.urb
 		Size: 3, 3
@@ -13845,7 +13845,7 @@ Templates:
 				LeftColor: 747269
 				RightColor: 777571
 	Template@970:
-		Category: RA2 rubble paris
+		Categories: RA2 rubble paris
 		Id: 970
 		Images: paris05.urb
 		Size: 3, 3
@@ -13878,7 +13878,7 @@ Templates:
 				LeftColor: 6C6A63
 				RightColor: 6E6A62
 	Template@971:
-		Category: RA2 rubble paris
+		Categories: RA2 rubble paris
 		Id: 971
 		Images: paris06.urb
 		Size: 3, 3
@@ -13911,7 +13911,7 @@ Templates:
 				LeftColor: 898986
 				RightColor: 5C5953
 	Template@972:
-		Category: RA2 rubble paris
+		Categories: RA2 rubble paris
 		Id: 972
 		Images: paris07.urb
 		Size: 1, 1
@@ -13920,7 +13920,7 @@ Templates:
 				LeftColor: B19080
 				RightColor: A98D7E
 	Template@973:
-		Category: RA2 rubble paris
+		Categories: RA2 rubble paris
 		Id: 973
 		Images: paris08.urb
 		Size: 6, 4
@@ -13998,7 +13998,7 @@ Templates:
 				LeftColor: 817C68
 				RightColor: 524D3D
 	Template@974:
-		Category: RA2 rubble paris
+		Categories: RA2 rubble paris
 		Id: 974
 		Images: paris09.urb
 		Size: 6, 4
@@ -14076,7 +14076,7 @@ Templates:
 				LeftColor: 817C68
 				RightColor: 524D3D
 	Template@975:
-		Category: RA2 rubble paris
+		Categories: RA2 rubble paris
 		Id: 975
 		Images: paris10.urb
 		Size: 4, 3
@@ -14118,7 +14118,7 @@ Templates:
 				LeftColor: 23580C
 				RightColor: 23580D
 	Template@976:
-		Category: RA2 rubble paris
+		Categories: RA2 rubble paris
 		Id: 976
 		Images: paris11.urb
 		Size: 4, 4
@@ -14172,7 +14172,7 @@ Templates:
 				LeftColor: B7B2A6
 				RightColor: B6B0A3
 	Template@977:
-		Category: RA2 rubble paris
+		Categories: RA2 rubble paris
 		Id: 977
 		Images: paris12.urb
 		Size: 3, 5
@@ -14223,7 +14223,7 @@ Templates:
 				LeftColor: 898476
 				RightColor: 999487
 	Template@978:
-		Category: RA2 rubble paris
+		Categories: RA2 rubble paris
 		Id: 978
 		Images: paris13.urb
 		Size: 3, 4
@@ -14265,7 +14265,7 @@ Templates:
 				LeftColor: 23580C
 				RightColor: 23590C
 	Template@979:
-		Category: RA2 rubble paris
+		Categories: RA2 rubble paris
 		Id: 979
 		Images: paris14.urb
 		Size: 4, 3
@@ -14307,7 +14307,7 @@ Templates:
 				LeftColor: 23590C
 				RightColor: 23590C
 	Template@980:
-		Category: RA2 rubble russia
+		Categories: RA2 rubble russia
 		Id: 980
 		Images: russ01.urb
 		Size: 4, 4
@@ -14361,7 +14361,7 @@ Templates:
 				LeftColor: A39D8C
 				RightColor: 8C8470
 	Template@981:
-		Category: RA2 rubble russia
+		Categories: RA2 rubble russia
 		Id: 981
 		Images: russ02.urb
 		Size: 1, 1
@@ -14370,7 +14370,7 @@ Templates:
 				LeftColor: 7A6853
 				RightColor: 796551
 	Template@982:
-		Category: RA2 rubble russia
+		Categories: RA2 rubble russia
 		Id: 982
 		Images: russ03.urb
 		Size: 1, 1
@@ -14379,7 +14379,7 @@ Templates:
 				LeftColor: 7D6958
 				RightColor: 8A7154
 	Template@983:
-		Category: RA2 rubble russia
+		Categories: RA2 rubble russia
 		Id: 983
 		Images: russ04.urb
 		Size: 1, 1
@@ -14388,7 +14388,7 @@ Templates:
 				LeftColor: 6E583F
 				RightColor: 716349
 	Template@984:
-		Category: RA2 rubble russia
+		Categories: RA2 rubble russia
 		Id: 984
 		Images: russ05.urb
 		Size: 1, 1
@@ -14397,7 +14397,7 @@ Templates:
 				LeftColor: AA9B85
 				RightColor: A59379
 	Template@985:
-		Category: RA2 rubble russia
+		Categories: RA2 rubble russia
 		Id: 985
 		Images: russ06.urb
 		Size: 1, 1
@@ -14406,7 +14406,7 @@ Templates:
 				LeftColor: A5957C
 				RightColor: AA977C
 	Template@986:
-		Category: RA2 rubble russia
+		Categories: RA2 rubble russia
 		Id: 986
 		Images: russ07.urb
 		Size: 1, 1
@@ -14415,7 +14415,7 @@ Templates:
 				LeftColor: AC9E83
 				RightColor: AA977C
 	Template@987:
-		Category: RA2 rubble russia
+		Categories: RA2 rubble russia
 		Id: 987
 		Images: russ08.urb
 		Size: 1, 1
@@ -14424,7 +14424,7 @@ Templates:
 				LeftColor: AA9D85
 				RightColor: A8957D
 	Template@988:
-		Category: RA2 rubble russia
+		Categories: RA2 rubble russia
 		Id: 988
 		Images: russ09.urb
 		Size: 2, 5
@@ -14460,7 +14460,7 @@ Templates:
 				LeftColor: 6D6759
 				RightColor: 8E8370
 	Template@989:
-		Category: RA2 rubble russia
+		Categories: RA2 rubble russia
 		Id: 989
 		Images: russ10.urb
 		Size: 4, 4
@@ -14514,7 +14514,7 @@ Templates:
 				LeftColor: 9A907A
 				RightColor: 8A816D
 	Template@990:
-		Category: RA2 rubble russia
+		Categories: RA2 rubble russia
 		Id: 990
 		Images: russ11.urb
 		Size: 4, 4
@@ -14568,7 +14568,7 @@ Templates:
 				LeftColor: 9D947F
 				RightColor: 847A64
 	Template@991:
-		Category: RA2 rubble russia
+		Categories: RA2 rubble russia
 		Id: 991
 		Images: russ12.urb
 		Size: 4, 4
@@ -14622,7 +14622,7 @@ Templates:
 				LeftColor: 968C75
 				RightColor: 897F6B
 	Template@992:
-		Category: RA2 rubble russia
+		Categories: RA2 rubble russia
 		Id: 992
 		Images: russ13.urb
 		Size: 1, 1
@@ -14631,7 +14631,7 @@ Templates:
 				LeftColor: 949084
 				RightColor: 89867B
 	Template@993:
-		Category: RA2 rubble russia
+		Categories: RA2 rubble russia
 		Id: 993
 		Images: russ14.urb
 		Size: 1, 1
@@ -14640,7 +14640,7 @@ Templates:
 				LeftColor: 8A8875
 				RightColor: 726C57
 	Template@994:
-		Category: RA2 rubble russia
+		Categories: RA2 rubble russia
 		Id: 994
 		Images: russ15.urb
 		Size: 2, 1
@@ -14652,7 +14652,7 @@ Templates:
 				LeftColor: 908F7E
 				RightColor: 6E6550
 	Template@995:
-		Category: RA2 rubble russia
+		Categories: RA2 rubble russia
 		Id: 995
 		Images: russ16.urb
 		Size: 1, 2
@@ -14664,7 +14664,7 @@ Templates:
 				LeftColor: 888772
 				RightColor: 6E6752
 	Template@996:
-		Category: RA2 rubble russia
+		Categories: RA2 rubble russia
 		Id: 996
 		Images: russ17.urb
 		Size: 2, 1
@@ -14676,7 +14676,7 @@ Templates:
 				LeftColor: 8C8979
 				RightColor: 706955
 	Template@997:
-		Category: RA2 rubble st louis
+		Categories: RA2 rubble st louis
 		Id: 997
 		Images: stl01.urb
 		Size: 3, 3
@@ -14709,7 +14709,7 @@ Templates:
 				LeftColor: 494331
 				RightColor: 332F22
 	Template@998:
-		Category: RA2 rubble st louis
+		Categories: RA2 rubble st louis
 		Id: 998
 		Images: stl02.urb
 		Size: 3, 3
@@ -14742,7 +14742,7 @@ Templates:
 				LeftColor: 9A6B59
 				RightColor: 764836
 	Template@999:
-		Category: RA2 rubble st louis
+		Categories: RA2 rubble st louis
 		Id: 999
 		Images: stl03.urb
 		Size: 3, 3
@@ -14775,7 +14775,7 @@ Templates:
 				LeftColor: 23580C
 				RightColor: 1F2112
 	Template@1000:
-		Category: RA2 rubble st louis
+		Categories: RA2 rubble st louis
 		Id: 1000
 		Images: stl04.urb
 		Size: 2, 6
@@ -14817,7 +14817,7 @@ Templates:
 				LeftColor: 8F8C7B
 				RightColor: B0AA9D
 	Template@1001:
-		Category: RA2 rubble texas
+		Categories: RA2 rubble texas
 		Id: 1001
 		Images: texs01.urb
 		Size: 2, 2
@@ -14835,7 +14835,7 @@ Templates:
 				LeftColor: 6B6963
 				RightColor: 817F75
 	Template@1002:
-		Category: RA2 rubble texas
+		Categories: RA2 rubble texas
 		Id: 1002
 		Images: texs02.urb
 		Size: 4, 4
@@ -14889,7 +14889,7 @@ Templates:
 				LeftColor: 806C3D
 				RightColor: 817458
 	Template@1003:
-		Category: RA2 rubble texas
+		Categories: RA2 rubble texas
 		Id: 1003
 		Images: texs03.urb
 		Size: 3, 3
@@ -14922,7 +14922,7 @@ Templates:
 				LeftColor: 502910
 				RightColor: 48210B
 	Template@1004:
-		Category: RA2 rubble texas
+		Categories: RA2 rubble texas
 		Id: 1004
 		Images: texs04.urb
 		Size: 3, 3
@@ -14955,7 +14955,7 @@ Templates:
 				LeftColor: 542D15
 				RightColor: 461E07
 	Template@1005:
-		Category: RA2 rubble texas
+		Categories: RA2 rubble texas
 		Id: 1005
 		Images: texs05.urb
 		Size: 3, 3
@@ -14988,7 +14988,7 @@ Templates:
 				LeftColor: 57321A
 				RightColor: 4C2610
 	Template@1006:
-		Category: RA2 rubble texas
+		Categories: RA2 rubble texas
 		Id: 1006
 		Images: texs06.urb
 		Size: 4, 4
@@ -15042,7 +15042,7 @@ Templates:
 				LeftColor: 8A867A
 				RightColor: 888378
 	Template@1007:
-		Category: RA2 rubble texas
+		Categories: RA2 rubble texas
 		Id: 1007
 		Images: texs07.urb
 		Size: 4, 4
@@ -15096,7 +15096,7 @@ Templates:
 				LeftColor: A39E92
 				RightColor: B1AB9E
 	Template@1008:
-		Category: RA2 rubble wash b
+		Categories: RA2 rubble wash b
 		Id: 1008
 		Images: warubb01.urb
 		Size: 4, 4
@@ -15150,7 +15150,7 @@ Templates:
 				LeftColor: A69D8A
 				RightColor: A19785
 	Template@1009:
-		Category: RA2 rubble wash b
+		Categories: RA2 rubble wash b
 		Id: 1009
 		Images: warubb02.urb
 		Size: 4, 4
@@ -15204,7 +15204,7 @@ Templates:
 				LeftColor: B8B3A7
 				RightColor: B7B0A3
 	Template@1010:
-		Category: RA2 rubble wash b
+		Categories: RA2 rubble wash b
 		Id: 1010
 		Images: warubb03.urb
 		Size: 4, 4
@@ -15258,7 +15258,7 @@ Templates:
 				LeftColor: 7D715D
 				RightColor: 897F68
 	Template@1011:
-		Category: RA2 rubble wash b
+		Categories: RA2 rubble wash b
 		Id: 1011
 		Images: warubb04.urb
 		Size: 4, 4
@@ -15312,7 +15312,7 @@ Templates:
 				LeftColor: B0A89A
 				RightColor: B0A695
 	Template@1012:
-		Category: RA2 rubble wash b
+		Categories: RA2 rubble wash b
 		Id: 1012
 		Images: warubb05.urb
 		Size: 3, 4
@@ -15354,7 +15354,7 @@ Templates:
 				LeftColor: A5695C
 				RightColor: 9B6C60
 	Template@1013:
-		Category: RA2 rubble wash b
+		Categories: RA2 rubble wash b
 		Id: 1013
 		Images: warubb06.urb
 		Size: 5, 3
@@ -15405,7 +15405,7 @@ Templates:
 				LeftColor: B5B0A4
 				RightColor: 938D7F
 	Template@1014:
-		Category: RA2 rubble wash b
+		Categories: RA2 rubble wash b
 		Id: 1014
 		Images: warubb07.urb
 		Size: 6, 4
@@ -15483,7 +15483,7 @@ Templates:
 				LeftColor: B8B3A7
 				RightColor: B7B0A3
 	Template@1015:
-		Category: RA2 rubble wash b
+		Categories: RA2 rubble wash b
 		Id: 1015
 		Images: warubb08.urb
 		Size: 2, 2
@@ -15501,7 +15501,7 @@ Templates:
 				LeftColor: A3A097
 				RightColor: A19D94
 	Template@1016:
-		Category: RA2 rubble wash b
+		Categories: RA2 rubble wash b
 		Id: 1016
 		Images: warubb09.urb
 		Size: 4, 4
@@ -15555,7 +15555,7 @@ Templates:
 				LeftColor: B5B0A4
 				RightColor: B2AC9F
 	Template@1017:
-		Category: Wood Bridges
+		Categories: Wood Bridges
 		Id: 1017
 		Images: ovrpsb01.urb, ovrpsb01a.urb
 		Size: 3, 5
@@ -15614,7 +15614,7 @@ Templates:
 				LeftColor: BFB6A8
 				RightColor: BDB5A6
 	Template@1018:
-		Category: Wood Bridges
+		Categories: Wood Bridges
 		Id: 1018
 		Images: ovrpsb02.urb, ovrpsb02a.urb
 		Size: 3, 5
@@ -15673,7 +15673,7 @@ Templates:
 				LeftColor: 37394E
 				RightColor: 393C53
 	Template@1019:
-		Category: Wood Bridges
+		Categories: Wood Bridges
 		Id: 1019
 		Images: ovrpsb03.urb, ovrpsb03a.urb
 		Size: 2, 5
@@ -15717,7 +15717,7 @@ Templates:
 				LeftColor: 6A655F
 				RightColor: 4F3F2F
 	Template@1020:
-		Category: Wood Bridges
+		Categories: Wood Bridges
 		Id: 1020
 		Images: ovrpsb04.urb, ovrpsb04a.urb
 		Size: 5, 3
@@ -15776,7 +15776,7 @@ Templates:
 				LeftColor: BEB4A1
 				RightColor: BDB3A1
 	Template@1021:
-		Category: Wood Bridges
+		Categories: Wood Bridges
 		Id: 1021
 		Images: ovrpsb05.urb, ovrpsb05a.urb
 		Size: 5, 3
@@ -15835,7 +15835,7 @@ Templates:
 				LeftColor: 373951
 				RightColor: 383A50
 	Template@1022:
-		Category: Wood Bridges
+		Categories: Wood Bridges
 		Id: 1022
 		Images: ovrpsb06.urb, ovrpsb06a.urb
 		Size: 5, 2
@@ -15879,7 +15879,7 @@ Templates:
 				LeftColor: 645241
 				RightColor: 544B43
 	Template@1023:
-		Category: Wood Bridges
+		Categories: Wood Bridges
 		Id: 1023
 		Images: ovrpsb07.urb
 		Size: 2, 5
@@ -15918,7 +15918,7 @@ Templates:
 				LeftColor: 38384B
 				RightColor: 393A50
 	Template@1024:
-		Category: Wood Bridges
+		Categories: Wood Bridges
 		Id: 1024
 		Images: ovrpsb08.urb
 		Size: 2, 5
@@ -15957,7 +15957,7 @@ Templates:
 				LeftColor: 38384B
 				RightColor: 383A50
 	Template@1025:
-		Category: Wood Bridges
+		Categories: Wood Bridges
 		Id: 1025
 		Images: ovrpsb09.urb
 		Size: 2, 5
@@ -15996,7 +15996,7 @@ Templates:
 				LeftColor: 38384B
 				RightColor: 393A50
 	Template@1026:
-		Category: Wood Bridges
+		Categories: Wood Bridges
 		Id: 1026
 		Images: ovrpsb10.urb
 		Size: 2, 5
@@ -16035,7 +16035,7 @@ Templates:
 				LeftColor: 38384B
 				RightColor: 383B50
 	Template@1027:
-		Category: Wood Bridges
+		Categories: Wood Bridges
 		Id: 1027
 		Images: ovrpsb11.urb
 		Size: 2, 5
@@ -16074,7 +16074,7 @@ Templates:
 				LeftColor: 9EA455
 				RightColor: 9EA54D
 	Template@1028:
-		Category: Wood Bridges
+		Categories: Wood Bridges
 		Id: 1028
 		Images: ovrpsb12.urb
 		Size: 5, 2
@@ -16113,7 +16113,7 @@ Templates:
 				LeftColor: 383A51
 				RightColor: 393A4E
 	Template@1029:
-		Category: Wood Bridges
+		Categories: Wood Bridges
 		Id: 1029
 		Images: ovrpsb13.urb
 		Size: 5, 2
@@ -16152,7 +16152,7 @@ Templates:
 				LeftColor: 383A51
 				RightColor: 383A4E
 	Template@1030:
-		Category: Wood Bridges
+		Categories: Wood Bridges
 		Id: 1030
 		Images: ovrpsb14.urb
 		Size: 5, 2
@@ -16191,7 +16191,7 @@ Templates:
 				LeftColor: 383A51
 				RightColor: 38394D
 	Template@1031:
-		Category: Wood Bridges
+		Categories: Wood Bridges
 		Id: 1031
 		Images: ovrpsb15.urb
 		Size: 5, 2
@@ -16230,7 +16230,7 @@ Templates:
 				LeftColor: 383A51
 				RightColor: 38394D
 	Template@1032:
-		Category: Wood Bridges
+		Categories: Wood Bridges
 		Id: 1032
 		Images: ovrpsb16.urb
 		Size: 5, 2
@@ -16269,7 +16269,7 @@ Templates:
 				LeftColor: 9EA54D
 				RightColor: 9EA455
 	Template@1033:
-		Category: pave fix C
+		Categories: pave fix C
 		Id: 1033
 		Images: rbfix01.urb
 		Size: 1, 1
@@ -16278,7 +16278,7 @@ Templates:
 				LeftColor: A98772
 				RightColor: 975F48
 	Template@1034:
-		Category: pave fix C
+		Categories: pave fix C
 		Id: 1034
 		Images: rbfix02.urb
 		Size: 1, 1
@@ -16287,7 +16287,7 @@ Templates:
 				LeftColor: BCB29F
 				RightColor: AB8A75
 	Template@1035:
-		Category: pave fix C
+		Categories: pave fix C
 		Id: 1035
 		Images: rbfix03.urb
 		Size: 1, 1
@@ -16296,7 +16296,7 @@ Templates:
 				LeftColor: AB8A75
 				RightColor: C1B7A5
 	Template@1036:
-		Category: pave fix C
+		Categories: pave fix C
 		Id: 1036
 		Images: rbfix04.urb
 		Size: 1, 1
@@ -16305,7 +16305,7 @@ Templates:
 				LeftColor: 9C654C
 				RightColor: AF8E79
 	Template@1037:
-		Category: pave fix C
+		Categories: pave fix C
 		Id: 1037
 		Images: rbfix05.urb
 		Size: 1, 1
@@ -16314,7 +16314,7 @@ Templates:
 				LeftColor: C1B7A5
 				RightColor: AA8772
 	Template@1038:
-		Category: pave fix C
+		Categories: pave fix C
 		Id: 1038
 		Images: rbfix06.urb
 		Size: 1, 1
@@ -16323,7 +16323,7 @@ Templates:
 				LeftColor: B2917B
 				RightColor: 9C654D
 	Template@1039:
-		Category: pave fix C
+		Categories: pave fix C
 		Id: 1039
 		Images: rbfix07.urb
 		Size: 1, 1
@@ -16332,7 +16332,7 @@ Templates:
 				LeftColor: 9C644C
 				RightColor: AB8C78
 	Template@1040:
-		Category: pave fix C
+		Categories: pave fix C
 		Id: 1040
 		Images: rbfix08.urb
 		Size: 1, 1
@@ -16341,7 +16341,7 @@ Templates:
 				LeftColor: AC8C77
 				RightColor: BCB29F
 	Template@1041:
-		Category: pave fix D
+		Categories: pave fix D
 		Id: 1041
 		Images: gbfix01.urb
 		Size: 1, 1
@@ -16350,7 +16350,7 @@ Templates:
 				LeftColor: 827043
 				RightColor: 6D833C
 	Template@1042:
-		Category: pave fix D
+		Categories: pave fix D
 		Id: 1042
 		Images: gbfix02.urb
 		Size: 1, 1
@@ -16359,7 +16359,7 @@ Templates:
 				LeftColor: 9B634B
 				RightColor: 817142
 	Template@1043:
-		Category: pave fix D
+		Categories: pave fix D
 		Id: 1043
 		Images: gbfix03.urb
 		Size: 1, 1
@@ -16368,7 +16368,7 @@ Templates:
 				LeftColor: 847444
 				RightColor: 986049
 	Template@1044:
-		Category: pave fix D
+		Categories: pave fix D
 		Id: 1044
 		Images: gbfix04.urb
 		Size: 1, 1
@@ -16377,7 +16377,7 @@ Templates:
 				LeftColor: 6B813C
 				RightColor: 837143
 	Template@1045:
-		Category: pave fix D
+		Categories: pave fix D
 		Id: 1045
 		Images: gbfix05.urb
 		Size: 1, 1
@@ -16386,7 +16386,7 @@ Templates:
 				LeftColor: 9C654C
 				RightColor: 817345
 	Template@1046:
-		Category: pave fix D
+		Categories: pave fix D
 		Id: 1046
 		Images: gbfix06.urb
 		Size: 1, 1
@@ -16395,7 +16395,7 @@ Templates:
 				LeftColor: 837245
 				RightColor: 6B813B
 	Template@1047:
-		Category: pave fix D
+		Categories: pave fix D
 		Id: 1047
 		Images: gbfix07.urb
 		Size: 1, 1
@@ -16404,7 +16404,7 @@ Templates:
 				LeftColor: 6A803A
 				RightColor: 887545
 	Template@1048:
-		Category: pave fix D
+		Categories: pave fix D
 		Id: 1048
 		Images: gbfix08.urb
 		Size: 1, 1
@@ -16413,7 +16413,7 @@ Templates:
 				LeftColor: 847445
 				RightColor: 996049
 	Template@1049:
-		Category: pave fix E
+		Categories: pave fix E
 		Id: 1049
 		Images: pavfxb01.urb
 		Size: 1, 1
@@ -16422,7 +16422,7 @@ Templates:
 				LeftColor: 896C5C
 				RightColor: 896A5A
 	Template@1050:
-		Category: pave fix E
+		Categories: pave fix E
 		Id: 1050
 		Images: pavfxb02.urb
 		Size: 1, 1
@@ -16431,7 +16431,7 @@ Templates:
 				LeftColor: 985F47
 				RightColor: 908A80
 	Template@1051:
-		Category: pave fix E
+		Categories: pave fix E
 		Id: 1051
 		Images: pavfxb03.urb
 		Size: 1, 1
@@ -16440,7 +16440,7 @@ Templates:
 				LeftColor: 977867
 				RightColor: 967968
 	Template@1052:
-		Category: pave fix E
+		Categories: pave fix E
 		Id: 1052
 		Images: pavfxb04.urb
 		Size: 1, 1
@@ -16449,7 +16449,7 @@ Templates:
 				LeftColor: 9C968B
 				RightColor: 9A624A
 	Template@1053:
-		Category: pave fix E
+		Categories: pave fix E
 		Id: 1053
 		Images: pavfxb05.urb
 		Size: 1, 1
@@ -16458,7 +16458,7 @@ Templates:
 				LeftColor: A68470
 				RightColor: A88570
 	Template@1054:
-		Category: pave fix E
+		Categories: pave fix E
 		Id: 1054
 		Images: pavfxb06.urb
 		Size: 1, 1
@@ -16467,7 +16467,7 @@ Templates:
 				LeftColor: 985F47
 				RightColor: B4AC9C
 	Template@1055:
-		Category: pave fix E
+		Categories: pave fix E
 		Id: 1055
 		Images: pavfxb07.urb
 		Size: 1, 1
@@ -16476,7 +16476,7 @@ Templates:
 				LeftColor: A78672
 				RightColor: A58774
 	Template@1056:
-		Category: pave fix E
+		Categories: pave fix E
 		Id: 1056
 		Images: pavfxb08.urb
 		Size: 1, 1
@@ -16485,7 +16485,7 @@ Templates:
 				LeftColor: B7AF9E
 				RightColor: 985F48
 	Template@1057:
-		Category: RA2 Busch Rubble
+		Categories: RA2 Busch Rubble
 		Id: 1057
 		Images: stdmrb01.urb
 		Size: 8, 8
@@ -16635,7 +16635,7 @@ Templates:
 				LeftColor: 9E8F84
 				RightColor: 9A958A
 	Template@1058:
-		Category: Pave Shore
+		Categories: Pave Shore
 		Id: 1058
 		Images: pshore01.urb
 		Size: 1, 1
@@ -16644,7 +16644,7 @@ Templates:
 				LeftColor: 998976
 				RightColor: 6E5A49
 	Template@1059:
-		Category: Pave Shore
+		Categories: Pave Shore
 		Id: 1059
 		Images: pshore02.urb
 		Size: 1, 1
@@ -16653,7 +16653,7 @@ Templates:
 				LeftColor: 816B55
 				RightColor: 58473E
 	Template@1060:
-		Category: Pave Shore
+		Categories: Pave Shore
 		Id: 1060
 		Images: pshore03.urb
 		Size: 1, 1
@@ -16662,7 +16662,7 @@ Templates:
 				LeftColor: 92806C
 				RightColor: 645245
 	Template@1061:
-		Category: Pave Shore
+		Categories: Pave Shore
 		Id: 1061
 		Images: pshore04.urb
 		Size: 1, 1
@@ -16671,7 +16671,7 @@ Templates:
 				LeftColor: 645244
 				RightColor: 665547
 	Template@1062:
-		Category: Pave Shore
+		Categories: Pave Shore
 		Id: 1062
 		Images: pshore05.urb
 		Size: 1, 1
@@ -16680,7 +16680,7 @@ Templates:
 				LeftColor: 645244
 				RightColor: 8D7D6A
 	Template@1063:
-		Category: Pave Shore
+		Categories: Pave Shore
 		Id: 1063
 		Images: pshore06.urb
 		Size: 1, 1
@@ -16689,7 +16689,7 @@ Templates:
 				LeftColor: 56473E
 				RightColor: 816C57
 	Template@1064:
-		Category: Pave Shore
+		Categories: Pave Shore
 		Id: 1064
 		Images: pshore07.urb
 		Size: 1, 1
@@ -16698,7 +16698,7 @@ Templates:
 				LeftColor: 6F5B4B
 				RightColor: 948472
 	Template@1065:
-		Category: Pave Shore
+		Categories: Pave Shore
 		Id: 1065
 		Images: pshore08.urb
 		Size: 1, 1
@@ -16707,7 +16707,7 @@ Templates:
 				LeftColor: 6F5C4B
 				RightColor: 6F5B4A
 	Template@1066:
-		Category: Water Cliffs pave
+		Categories: Water Cliffs pave
 		Id: 1066
 		Images: wclifc01.urb
 		Size: 1, 2
@@ -16720,7 +16720,7 @@ Templates:
 				LeftColor: 92806C
 				RightColor: 837558
 	Template@1067:
-		Category: Water Cliffs pave
+		Categories: Water Cliffs pave
 		Id: 1067
 		Images: wclifc02.urb
 		Size: 1, 2
@@ -16733,7 +16733,7 @@ Templates:
 				LeftColor: 6F5B4B
 				RightColor: 8E8064
 	Template@1068:
-		Category: Water Cliffs pave
+		Categories: Water Cliffs pave
 		Id: 1068
 		Images: wclifc03.urb
 		Size: 2, 1
@@ -16746,7 +16746,7 @@ Templates:
 				LeftColor: 645244
 				RightColor: 66573F
 	Template@1069:
-		Category: Water Cliffs pave
+		Categories: Water Cliffs pave
 		Id: 1069
 		Images: wclifc04.urb
 		Size: 2, 1
@@ -16759,7 +16759,7 @@ Templates:
 				LeftColor: 998976
 				RightColor: 615139
 	Template@1070:
-		Category: breakers
+		Categories: breakers
 		Id: 1070
 		Images: breakr01.urb
 		Size: 2, 2
@@ -16777,7 +16777,7 @@ Templates:
 				LeftColor: 393A4E
 				RightColor: 464142
 	Template@1071:
-		Category: breakers
+		Categories: breakers
 		Id: 1071
 		Images: breakr02.urb
 		Size: 2, 2
@@ -16795,7 +16795,7 @@ Templates:
 				LeftColor: 3E3D4A
 				RightColor: 514A44
 	Template@1072:
-		Category: breakers
+		Categories: breakers
 		Id: 1072
 		Images: breakr03.urb
 		Size: 2, 2
@@ -16813,7 +16813,7 @@ Templates:
 				LeftColor: 383848
 				RightColor: 3E3C47
 	Template@1073:
-		Category: pave fix F
+		Categories: pave fix F
 		Id: 1073
 		Images: pavfxc01.urb
 		Size: 1, 1
@@ -16822,7 +16822,7 @@ Templates:
 				LeftColor: 7F7141
 				RightColor: 7E7444
 	Template@1074:
-		Category: pave fix F
+		Categories: pave fix F
 		Id: 1074
 		Images: pavfxc02.urb
 		Size: 1, 1
@@ -16831,7 +16831,7 @@ Templates:
 				LeftColor: 6B813C
 				RightColor: 99624A
 	Template@1075:
-		Category: pave fix F
+		Categories: pave fix F
 		Id: 1075
 		Images: pavfxc03.urb
 		Size: 1, 1
@@ -16840,7 +16840,7 @@ Templates:
 				LeftColor: 857044
 				RightColor: 897245
 	Template@1076:
-		Category: pave fix F
+		Categories: pave fix F
 		Id: 1076
 		Images: pavfxc04.urb
 		Size: 1, 1

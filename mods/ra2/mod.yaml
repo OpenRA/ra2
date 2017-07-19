@@ -87,7 +87,7 @@ Sequences:
 	ra2|sequences/vehicles.yaml
 	ra2|sequences/trees.yaml
 
-VoxelSequences:
+ModelSequences:
 	ra2|sequences/voxels.yaml
 
 Cursors:
@@ -227,6 +227,8 @@ SpriteSequenceFormat: TilesetSpecificSpriteSequence
 		SNOW: a
 		TEMPERATE: t
 		URBAN: u
+
+ModelSequenceFormat: VoxelModelSequence
 
 GameSpeeds:
 	slower:

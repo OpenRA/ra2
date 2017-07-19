@@ -160,7 +160,7 @@
 	Demolishable:
 	WithMakeAnimation:
 	HitShape:
-		UseOccupiedCellsOffsets: true
+		UseTargetableCellsOffsets: true
 
 ^SupportBuilding:
 	Inherits: ^Building
@@ -203,7 +203,7 @@
 		Sequence: rubble
 	FrozenUnderFog:
 	HitShape:
-		UseOccupiedCellsOffsets: true
+		UseTargetableCellsOffsets: true
 
 ^TechBuilding:
 	Inherits: ^Building
@@ -275,10 +275,9 @@
 	LineBuildNode:
 		Types: wall
 	Targetable:
-		TargetTypes: Ground, Wall, C4, DetonateAttack
+		TargetTypes: Ground, Wall, C4, DetonateAttack, NoAutoTarget
 	WithWallSpriteBody:
 		Type: wall
-	AutoTargetIgnore:
 	Sellable:
 		SellSounds: uselbuil.wav
 	Demolishable:
@@ -637,7 +636,8 @@
 		Type: Heavy
 	HiddenUnderFog:
 		Type: CenterPosition
-	AutoTargetIgnore:
+	Targetable:
+		TargetTypes: NoAutoTarget
 	ScriptTriggers:
 	Tooltip:
 		GenericName: Destroyed Aircraft
@@ -722,7 +722,7 @@
 		Palette: player
 	AutoSelectionSize:
 	HitShape:
-		UseOccupiedCellsOffsets: true
+		UseTargetableCellsOffsets: true
 
 ^Tree:
 	Inherits@1: ^ExistsInWorld
@@ -791,7 +791,7 @@
 	RenderSprites:
 		Palette: terrain
 	HitShape:
-		UseOccupiedCellsOffsets: true
+		UseTargetableCellsOffsets: true
 
 ^Crate:
 	Inherits@1: ^SpriteActor

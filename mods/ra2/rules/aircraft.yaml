@@ -69,7 +69,8 @@ shadhusk:
 	RenderVoxels:
 		Image: shad
 	WithVoxelBody:
-	AutoTargetIgnore:
+	Targetable:
+		TargetTypes: NoAutoTarget
 	BodyOrientation:
 		QuantizedFacings: 0
 		CameraPitch: 90
@@ -143,7 +144,8 @@ zephusk:
 	RenderVoxels:
 		Image: zep
 	WithVoxelBody:
-	AutoTargetIgnore:
+	Targetable:
+		TargetTypes: NoAutoTarget
 	BodyOrientation:
 		QuantizedFacings: 0
 		CameraPitch: 90
