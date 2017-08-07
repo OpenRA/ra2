@@ -20,6 +20,7 @@ M60:
 		DamageTypes: Prone70Percent, TriggerProne, BulletDeath
 	Warhead@2Eff: CreateEffect
 		Explosions: piffpiff
+		ValidTargets: Ground, Water, Air
 
 M60E:
 	Inherits: M60
@@ -54,6 +55,7 @@ para:
 		DamageTypes: Prone50Percent, TriggerProne, BulletDeath
 	Warhead@2Eff: CreateEffect
 		Explosions: piffpiff
+		ValidTargets: Ground, Water, Air
 
 paraE:
 	Inherits: para
@@ -83,6 +85,7 @@ MP5:
 		DamageTypes: Prone70Percent, TriggerProne, BulletDeath
 	Warhead@2Eff: CreateEffect
 		Explosions: piffpiff
+		ValidTargets: Ground, Water, Air
 
 MP5E:
 	Inherits: MP5
@@ -108,6 +111,7 @@ DoublePistols:
 		DamageTypes: BulletDeath
 	Warhead@2Eff: CreateEffect
 		Explosions: piff
+		ValidTargets: Ground, Water, Air
 
 DoublePistolsE:
 	Inherits: DoublePistols
@@ -139,6 +143,7 @@ awp:
 		DamageTypes: BulletDeath
 	Warhead@2Eff: CreateEffect
 		Explosions: piff
+		ValidTargets: Ground, Water, Air
 
 AWPE:
 	Inherits: awp
@@ -169,6 +174,7 @@ AWPE:
 		DamageTypes: Prone70Percent, TriggerProne, BulletDeath
 	Warhead@2Eff: CreateEffect
 		Explosions: piff
+		ValidTargets: Ground, Water, Air
 
 20mme:
 	Inherits: 20mm
@@ -191,3 +197,4 @@ NeutronRifle:
 		Condition: chronodisable, notmobile
 	Warhead@Stars: CreateEffect
 		Explosions: chronosk
+		ValidTargets: Ground, Water, Air

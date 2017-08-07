@@ -44,6 +44,7 @@ shad:
 		UnloadVoice: Move
 	SpawnActorOnDeath:
 		Actor: shadhusk
+	HitShape:
 
 shadhusk:
 	Tooltip:
@@ -68,11 +69,13 @@ shadhusk:
 	RenderVoxels:
 		Image: shad
 	WithVoxelBody:
-	AutoTargetIgnore:
+	Targetable:
+		TargetTypes: NoAutoTarget
 	BodyOrientation:
 		QuantizedFacings: 0
 		CameraPitch: 90
 		UseClassicPerspectiveFudge: false
+	HitShape:
 
 zep:
 	Inherits: ^Aircraft
@@ -117,6 +120,7 @@ zep:
 		VoiceSet: KirovVoice
 	SpawnActorOnDeath:
 		Actor: zephusk
+	HitShape:
 
 zephusk:
 	Tooltip:
@@ -140,11 +144,13 @@ zephusk:
 	RenderVoxels:
 		Image: zep
 	WithVoxelBody:
-	AutoTargetIgnore:
+	Targetable:
+		TargetTypes: NoAutoTarget
 	BodyOrientation:
 		QuantizedFacings: 0
 		CameraPitch: 90
 		UseClassicPerspectiveFudge: false
+	HitShape:
 
 orca:
 	Inherits: ^Plane
@@ -189,6 +195,7 @@ orca:
 		Image: falc
 	SpawnActorOnDeath:
 		Actor: orcahusk
+	HitShape:
 
 orcahusk:
 	Inherits: ^PlaneHusk
@@ -218,6 +225,7 @@ beag:
 		Image: beag
 	RenderVoxels:
 		Image: beag
+	HitShape:
 
 beaghusk:
 	Inherits: ^PlaneHusk
@@ -256,6 +264,7 @@ pdplane:
 		ChuteSound: sparadra.wav
 	SpawnActorOnDeath:
 		Actor: pdplanehusk
+	HitShape:
 
 pdplanehusk:
 	Inherits: ^PlaneHusk

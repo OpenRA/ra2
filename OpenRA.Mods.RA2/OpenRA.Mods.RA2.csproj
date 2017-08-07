@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
   <PropertyGroup>
     <ProjectGuid>{7E1263D2-BA04-48D0-85DB-26C68B782608}</ProjectGuid>
@@ -41,19 +41,10 @@
     </CustomCommands>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="OpenRA.Game">
-      <HintPath>dependencies\OpenRA.Game.exe</HintPath>
-    </Reference>
-    <Reference Include="OpenRA.Mods.Cnc">
-      <HintPath>dependencies\OpenRA.Mods.Cnc.dll</HintPath>
-    </Reference>
-    <Reference Include="OpenRA.Mods.Common">
-      <HintPath>dependencies\OpenRA.Mods.Common.dll</HintPath>
-    </Reference>
     <Reference Include="Eluant">
-      <HintPath>dependencies\Eluant.dll</HintPath>
+      <HintPath>..\engine\Eluant.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml" />
@@ -65,5 +56,37 @@
     <Compile Include="Traits\ChronoResourceDelivery.cs" />
     <Compile Include="Traits\Render\WithExitOverlay.cs" />
     <Compile Include="Traits\Render\WithSwimSuit.cs" />
+  </ItemGroup>
+  <Target Name="AfterBuild">
+    <MakeDir Directories="$(SolutionDir)..\mods\ra2\"/>
+    <Copy
+      SourceFiles="$(TargetPath)"
+      DestinationFolder="$(SolutionDir)..\mods\ra2\"/>
+    <!--
+        csc generates .pdb symbol files (not `.dll.pdb`).
+        mcs generates .dll.mdb symbol files.
+    -->
+    <Copy
+      SourceFiles="$(TargetDir)$(TargetName).pdb"
+      DestinationFolder="$(SolutionDir)..\mods\ra2\"
+      Condition="Exists('$(TargetDir)$(TargetName).pdb')"/>
+    <Copy
+      SourceFiles="$(TargetPath).mdb"
+      DestinationFolder="$(SolutionDir)..\mods\ra2\"
+      Condition="Exists('$(TargetDir)$(TargetName).mdb')"/>
+  </Target>
+  <ItemGroup>
+    <ProjectReference Include="..\engine\OpenRA.Game\OpenRA.Game.csproj">
+      <Project>{0DFB103F-2962-400F-8C6D-E2C28CCBA633}</Project>
+      <Name>OpenRA.Game</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\engine\OpenRA.Mods.Cnc\OpenRA.Mods.Cnc.csproj">
+      <Project>{2881135D-4D62-493E-8F83-5EEE92CCC6BE}</Project>
+      <Name>OpenRA.Mods.Cnc</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\engine\OpenRA.Mods.Common\OpenRA.Mods.Common.csproj">
+      <Project>{FE6C8CC0-2F07-442A-B29F-17617B3B7FC6}</Project>
+      <Name>OpenRA.Mods.Common</Name>
+    </ProjectReference>
   </ItemGroup>
 </Project>

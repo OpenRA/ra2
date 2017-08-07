@@ -159,6 +159,8 @@
 		Range: 3c0
 	Demolishable:
 	WithMakeAnimation:
+	HitShape:
+		UseTargetableCellsOffsets: true
 
 ^SupportBuilding:
 	Inherits: ^Building
@@ -200,6 +202,8 @@
 	WithSpriteBody:
 		Sequence: rubble
 	FrozenUnderFog:
+	HitShape:
+		UseTargetableCellsOffsets: true
 
 ^TechBuilding:
 	Inherits: ^Building
@@ -271,10 +275,9 @@
 	LineBuildNode:
 		Types: wall
 	Targetable:
-		TargetTypes: Ground, Wall, C4, DetonateAttack
+		TargetTypes: Ground, Wall, C4, DetonateAttack, NoAutoTarget
 	WithWallSpriteBody:
 		Type: wall
-	AutoTargetIgnore:
 	Sellable:
 		SellSounds: uselbuil.wav
 	Demolishable:
@@ -284,6 +287,7 @@
 		HP: 300
 	Armor:
 		Type: Concrete
+	HitShape:
 
 ^Fence:
 	Inherits: ^Wall
@@ -306,7 +310,8 @@
 	Inherits@4: ^ChronoDisable
 	Inherits@5: ^CrateStatModifiers
 	Health:
-		Shape: Circle
+	HitShape:
+		Type: Circle
 			Radius: 128
 	Armor:
 		Type: None
@@ -552,6 +557,7 @@
 		Speed: 113
 	Health:
 		HP: 100
+	HitShape:
 	Armor:
 		Type: Light
 	RevealsShroud:
@@ -630,7 +636,8 @@
 		Type: Heavy
 	HiddenUnderFog:
 		Type: CenterPosition
-	AutoTargetIgnore:
+	Targetable:
+		TargetTypes: NoAutoTarget
 	ScriptTriggers:
 	Tooltip:
 		GenericName: Destroyed Aircraft
@@ -638,6 +645,7 @@
 		Spins: false
 		Moves: true
 		Velocity: 86
+	HitShape:
 
 ^Ship:
 	Inherits@1: ^ExistsInWorld
@@ -713,6 +721,8 @@
 	RenderSprites:
 		Palette: player
 	AutoSelectionSize:
+	HitShape:
+		UseTargetableCellsOffsets: true
 
 ^Tree:
 	Inherits@1: ^ExistsInWorld
@@ -734,6 +744,7 @@
 		TargetTypes: Ground, Wall, DetonateAttack
 	Health:
 		HP: 200
+	HitShape:
 	Armor:
 		Type: Wood
 
@@ -779,6 +790,8 @@
 	QuantizeFacingsFromSequence:
 	RenderSprites:
 		Palette: terrain
+	HitShape:
+		UseTargetableCellsOffsets: true
 
 ^Crate:
 	Inherits@1: ^SpriteActor

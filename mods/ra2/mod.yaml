@@ -4,14 +4,12 @@ Metadata:
 	Version: {DEV_VERSION}
 	Author: the RA2 mod team
 
-RequiresMods:
-	modchooser: {DEV_VERSION}
+PackageFormats: Mix, AudioBag
 
 Packages:
 	~^Content/ra2
 	.
 	$ra2: ra2
-	$cnc: cnc
 	./mods/common: common
 	~ra2.mix
 	~language.mix
@@ -89,7 +87,7 @@ Sequences:
 	ra2|sequences/vehicles.yaml
 	ra2|sequences/trees.yaml
 
-VoxelSequences:
+ModelSequences:
 	ra2|sequences/voxels.yaml
 
 Cursors:
@@ -229,6 +227,8 @@ SpriteSequenceFormat: TilesetSpecificSpriteSequence
 		SNOW: a
 		TEMPERATE: t
 		URBAN: u
+
+ModelSequenceFormat: VoxelModelSequence
 
 GameSpeeds:
 	slower:

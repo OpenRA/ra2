@@ -20,6 +20,7 @@ M1Carbine:
 		DamageTypes: Prone70Percent, TriggerProne, BulletDeath
 	Warhead@2Eff: CreateEffect
 		Explosions: piffpiff
+		ValidTargets: Ground, Water, Air
 
 M1CarbineE:
 	Inherits: M1Carbine
@@ -87,6 +88,7 @@ FlakGuyGun:
 		DamageTypes: Prone100Percent, TriggerProne, BulletDeath
 	Warhead@2Eff: CreateEffect
 		Explosions: flak_puff
+		ValidTargets: Ground, Water, Air
 
 FlakGuyGunE:
 	Inherits: FlakGuyGun
@@ -124,6 +126,7 @@ FlakGuyAAGun:
 		DamageTypes: BulletDeath
 	Warhead@2Eff: CreateEffect
 		Explosions: flak_puff_AA
+		ValidTargets: Ground, Water, Air
 
 FlakGuyAAGunE:
 	Inherits: FlakGuyAAGun
@@ -154,6 +157,7 @@ ElectricBolt:
 		DamageTypes: ElectroDeath
 	Warhead@2Eff: CreateEffect
 		Explosions: tesla_impact
+		ValidTargets: Ground, Water, Air
 
 ElectricBoltE:
 	Inherits: ElectricBolt
@@ -194,6 +198,7 @@ IvanBomber:
 		Delay: 2
 		Explosions: bombcurs
 		ExplosionPalette: mouse
+		ValidTargets: Ground, Water, Air
 	Warhead@1Dam: SpreadDamage
 		Delay: 100
 		Spread: 213
@@ -214,8 +219,10 @@ IvanBomber:
 		Delay: 100
 		Explosions: ivan_explosion
 		ImpactSounds: gexpcraa.wav
+		ValidTargets: Ground, Water, Air
 
 IvanBomberE:
 	Inherits: IvanBomber
 	Warhead@2Eff: CreateEffect
 		Explosions: ivan_explosionE
+		ValidTargets: Ground, Water, Air
