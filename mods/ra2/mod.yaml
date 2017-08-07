@@ -144,9 +144,15 @@ ChromeLayout:
 	common|chrome/editor.yaml
 
 Weapons:
-	ra2|weapons.yaml
-	ra2|weapons/allied-infantry.yaml
-	ra2|weapons/soviet-infantry.yaml
+	ra2|weapons/bullets.yaml
+	ra2|weapons/defaults.yaml
+	ra2|weapons/explosions.yaml
+	ra2|weapons/flaks.yaml
+	ra2|weapons/melee.yaml
+	ra2|weapons/mgs.yaml
+	ra2|weapons/misc.yaml
+	ra2|weapons/missiles.yaml
+	ra2|weapons/zaps.yaml
 
 Voices:
 	ra2|audio/voices.yaml

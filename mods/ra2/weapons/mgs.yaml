@@ -1,0 +1,156 @@
+M1Carbine:
+	Inherits: ^MG
+	ReloadDelay: 25
+	Report: iconatta.wav, iconattb.wav, iconattc.wav, iconattd.wav, iconatte.wav
+	Warhead@1Dam: SpreadDamage
+		Damage: 15
+
+M1CarbineE:
+	Inherits: M1Carbine
+	ReloadDelay: 20
+	Range: 5c0
+	Warhead@1Dam: SpreadDamage
+		Damage: 20
+
+M60:
+	Inherits: ^MG
+
+M60E:
+	Inherits: M60
+	Warhead@1Dam: SpreadDamage
+		Damage: 25
+
+CRM60:
+	Inherits: M60
+	ReloadDelay: 15
+	Range: 6c0
+	Report: vifvat2a.wav, vifvat2b.wav, vifvat2c.wav
+
+para:
+	Inherits: ^MG
+	Range: 5c0
+	ReloadDelay: 15
+	Report: igiat2a.wav, igiat2b.wav, igiat2c.wav, igiat2d.wav, igiat2c.wav, igiat2d.wav
+	Warhead@1Dam: SpreadDamage
+		Damage: 15
+		Versus:
+			Flak: 100
+			Light: 60
+			Medium: 40
+			Heavy: 40
+		DamageTypes: Prone50Percent, TriggerProne, BulletDeath
+
+paraE:
+	Inherits: para
+	Range: 7c0
+	Warhead@1Dam: SpreadDamage
+		Damage: 25
+
+MP5:
+	Inherits: ^MG
+	ReloadDelay: 10
+	Range: 6c0
+	Report: iseaatta.wav, iseaattb.wav
+	Warhead@1Dam: SpreadDamage
+		Damage: 125
+
+MP5E:
+	Inherits: MP5
+
+DoublePistols:
+	Inherits: ^MG
+	ReloadDelay: 10
+	Range: 6c0
+	Report: itanatta.wav, itanattb.wav
+	Warhead@1Dam: SpreadDamage
+		Damage: 125
+		Versus:
+			None: 200
+			Flak: 100
+			Plate: 100
+			Light: 0
+			Medium: 0
+			Heavy: 0
+			Wood: 0
+			Steel: 0
+			Concrete: 0
+		DamageTypes: BulletDeath
+	Warhead@2Eff: CreateEffect
+		Explosions: piff
+
+DoublePistolsE:
+	Inherits: DoublePistols
+	Range: 8c0
+
+CRMP5:
+	Inherits: DoublePistols
+
+awp:
+	Inherits: DoublePistols
+	ValidTargets: Infantry
+	ReloadDelay: 100
+	Range: 14c0
+	Report: isniatta.wav
+	Projectile: Bullet
+		Speed: 6c682
+	Warhead@1Dam: SpreadDamage
+		Spread: 42
+		Damage: 125
+		DamageTypes: BulletDeath
+
+AWPE:
+	Inherits: awp
+	ReloadDelay: 60
+
+20mm:
+	Inherits: ^MG
+	Range: 5c0
+	MinRange: 0c001
+	Report: irocatta.wav
+	ValidTargets: Ground, Water, Air
+	Warhead@1Dam: SpreadDamage
+		Damage: 25
+		ValidTargets: Ground, Water, Air
+		Versus:
+			Flak: 100
+			Light: 60
+			Medium: 40
+			Heavy: 40
+	Warhead@2Eff: CreateEffect
+		Explosions: piff	
+		ValidTargets: Ground, Water, Air
+
+20mme:
+	Inherits: 20mm
+	Burst: 2
+
+vulcan:
+	Inherits: ^MG
+	ReloadDelay: 26
+	Range: 5c512
+	Report: bsenatta.wav, bsenattb.wav, bsenattc.wav, bsenattd.wav
+	Warhead@1Dam: SpreadDamage
+		Damage: 50
+
+vulcan2:
+	Inherits: vulcan
+	Report: bpilatta.wav, bpilattb.wav, bpilattc.wav, bpilattd.wav, bpilattc.wav
+
+BlackHawkCannon:
+	Inherits: ^MG
+	ReloadDelay: 40
+	Range: 6c0
+	Report: vblhatta.wav, vblhattb.wav
+	Warhead@1Dam: SpreadDamage
+		Damage: 25
+		Versus:
+			None: 150
+			Flak: 100
+			Plate: 50
+			Light: 60
+			Medium: 10
+			Heavy: 10
+			Wood: 30
+			Steel: 20
+			Concrete: 10
+		DamageTypes: Prone100Percent, TriggerProne, BulletDeath

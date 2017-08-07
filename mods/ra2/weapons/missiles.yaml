@@ -1,0 +1,172 @@
+RedEye2:
+	Inherits: ^AAMissile
+	Projectile: Missile
+		TrailImage: smokey2
+		LockOnProbability: 80
+
+MammothTusk:
+	Inherits: ^AAMissile
+	ReloadDelay: 80
+	Range: 8c0
+	Report: vapoat2a.wav, vapoar2b.wav, vapoat2c.wav
+	Burst: 2
+	Projectile: Missile
+		Inaccuracy: 128
+		ContrailLength: 8
+		HorizontalRateOfTurn: 10
+		Speed: 170
+		RangeLimit: 9c614
+		TrailImage: smokey2
+	Warhead@1Dam: SpreadDamage
+		Spread: 171
+		Damage: 80
+		Versus:
+			Flak: 90
+			Plate: 80
+			Light: 70
+			Medium: 35
+			Heavy: 35
+			Wood: 75
+			Steel: 40
+			Concrete: 20
+		DamageTypes: ExplosionDeath
+	Warhead@2Eff: CreateEffect
+		Explosions: medium_bang
+
+Maverick:
+	Inherits: ^Missile
+	ReloadDelay: 10
+	Range: 6c0
+	Report: vintatta.wav
+	ValidTargets: Ground, Water
+	Projectile: Missile
+		Speed: 373
+		Arm: 2
+		Inaccuracy: 128
+		HorizontalRateOfTurn: 8
+		RangeLimit: 7c204
+		ContrailColor: D8D8FF
+	Warhead@1Dam: SpreadDamage
+		Spread: 58
+		Damage: 200
+		Versus:
+			Concrete: 75
+		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
+	Warhead@2Eff: CreateEffect
+		Explosions: verylarge_clsn
+		ImpactSounds: gexp14a.wav
+		ValidTargets: Ground, Air
+	Warhead@3EffWater: CreateEffect
+		Explosions: huge_watersplash
+		ImpactSounds: gexpwala.wav
+		ValidTargets: Water
+
+Maverick2:
+	Inherits: Maverick
+	Report: vblaatta.wav
+
+Medusa:
+	Inherits: ^AAMissile
+	ReloadDelay: 100
+	Report: vaegatta.wav, vaegattb.wav
+	Burst: 3
+	BurstDelay: 13
+	Projectile: Missile
+		ContrailLength: 35
+		LockOnProbability: 85
+		RangeLimit: 14c409
+	Warhead@1Dam: SpreadDamage
+		Spread: 60
+		Damage: 100
+
+HoverMissile:
+	Inherits: ^Missile
+	ReloadDelay: 50
+	Burst: 2
+	Range: 6c0
+	Report: vifvatta.wav
+	ValidTargets: Ground, Air
+	Projectile: Missile
+		Speed: 213
+		Arm: 2
+		Inaccuracy: 128
+		HorizontalRateOfTurn: 8
+		RangeLimit: 7c204
+		ContrailColor: D8D8FF
+	Warhead@1Dam: SpreadDamage
+		Spread: 128
+		Damage: 25
+		ValidTargets: Ground, Air
+		Versus:
+			None: 100
+			Flak: 90
+			Plate: 80
+			Light: 70
+			Medium: 35
+			Heavy: 35
+			Wood: 75
+			Steel: 40
+			Concrete: 20
+		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
+	Warhead@2Eff: CreateEffect
+		Explosions: small_grey_explosion
+		ImpactSounds: gexpifva.wav
+		ValidTargets: Ground, Air
+	Warhead@3EffWater: CreateEffect
+		Explosions: small_watersplash
+		ImpactSounds: gexpwasa.wav
+		ValidTargets: Water
+	Warhead@4Smu: LeaveSmudge
+		SmudgeType: SmallCrater
+
+HoverMissileE:
+	Inherits: HoverMissile
+	Burst: 4
+	Report: vifvatta.wav
+	ValidTargets: Ground, Air
+	Warhead@1Dam: SpreadDamage
+		Damage: 80
+	Warhead@2Eff: CreateEffect
+		Explosions: medium_grey_explosion
+		ImpactSounds: gexp15a.wav
+		ValidTargets: Ground, Air
+
+SubTorpedo:
+	ReloadDelay: 75
+	Range: 7c0
+	Report: vsubatta.wav
+	ValidTargets: Water, Underwater
+	Burst: 1
+	BurstDelay: 20
+	Projectile: Missile
+		Image: missile
+		Speed: 102
+		TrailImage: bbblelrg
+		HorizontalRateOfTurn: 12
+		RangeLimit: 8c409
+		BoundToTerrainType: Water
+		Palette: shadow
+		TerrainHeightAware: true
+	Warhead@1Dam: SpreadDamage
+		Spread: 426
+		Damage: 100
+		ValidTargets: Water, Underwater, Bridge
+		Versus:
+			None: 25
+			Flak: 25
+			Plate: 25
+			Light: 75
+			Medium: 100
+			Heavy: 100
+			Wood: 65
+			Steel: 65
+			Concrete: 60
+		DamageTypes: ExplosionDeath
+	Warhead@2EffWater: CreateEffect
+		Explosions: large_watersplash
+		ImpactSounds: gexpwasa.wav
+		ValidTargets: Water
+	Warhead@3EffGround: CreateEffect
+		Explosions: medium_clsn
+		ImpactSounds: gexpwasb.wav
+		ValidTargets: Ground

@@ -1,0 +1,242 @@
+GrandCannonWeapon:
+	Inherits: ^LargeBullet
+	ReloadDelay: 75
+	Report: bgraatta.wav
+	Range: 15c0
+	MinRange: 3c0
+	Projectile: Bullet
+		Blockable: false
+		Speed: 682
+	Warhead@1Dam: SpreadDamage
+		Damage: 150
+		Versus:
+			None: 100
+			Flak: 100
+			Plate: 100
+			Light: 100
+			Medium: 100
+			Heavy: 100
+			Wood: 50
+			Steel: 100
+			Concrete: 50
+	Warhead@2Eff: CreateEffect
+		Explosions: medium_explosion
+
+sabot:
+	Inherits: ^LargeBullet
+	ValidTargets: Ground, Water
+	Range: 5c0
+	ReloadDelay: 25
+	Report: vtadatta.wav, vtadattb.wav, vtadattc.wav
+	Projectile: Bullet
+		Speed: 100c0
+	Warhead@1Dam: SpreadDamage
+		Spread: 190
+		Damage: 150
+		Versus:
+			None: 2
+			Flak: 2
+			Plate: 2
+			Light: 100
+			Medium: 40
+			Heavy: 100
+			Wood: 2
+			Steel: 2
+			Concrete: 2
+		DamageTypes: Prone50Percent, TriggerProne, BulletDeath
+
+MirageGun:
+	Inherits: ^LargeBullet
+	ReloadDelay: 70
+	Range: 7c0
+	Report: vmiratta.wav
+	Projectile: Bullet
+		Speed: 100c0
+	Warhead@1Dam: SpreadDamage
+		Spread: 64
+		Damage: 100
+		Versus:
+			None: 100
+			Flak: 100
+			Plate: 80
+			Light: 100
+			Medium: 100
+			Heavy: 100
+			Wood: 30
+			Steel: 20
+			Concrete: 20
+		DamageTypes: FlameDeath
+	Warhead@2Eff: CreateEffect
+		Explosions: iron_fx
+		ImpactSounds:
+		ValidTargets: Ground, Water, Air
+	-Warhead@3EffWater:
+
+MirageGunE:
+	Inherits: MirageGun
+	ReloadDelay: 80
+	Range: 9c0
+	Warhead@1Dam: SpreadDamage
+		Damage: 150
+
+20mmrapid:
+	Inherits: ^MG
+	Range: 5c512
+	Report: vwaratta.wav, vwarattb.wav
+	Warhead@1Dam: SpreadDamage
+		Damage: 30
+		Versus:
+			Medium: 20
+			Heavy: 20
+			Wood: 20
+			Steel: 15
+			Concrete: 10
+
+20mmrapidE:
+	Inherits: ^LargeBullet
+	ReloadDelay: 50
+	Range: 5c512
+	Report: vrhiatta.wav, vrhiattb.wav, vrhiattc.wav, vrhiattd.wav
+	Warhead@1Dam: SpreadDamage
+		Damage: 50
+		Versus:
+			None: 100
+			Flak: 90
+			Plate: 80
+			Light: 60
+			Medium: 40
+			Heavy: 40
+			Wood: 50
+			Steel: 40
+			Concrete: 25
+		DamageTypes: Prone70Percent, TriggerProne, ExplosionDeath
+
+105mm:
+	Inherits: ^LargeBullet
+	ReloadDelay: 60
+	Range: 5c0
+	Report: vgriatta.wav, vgriattb.wav, vgriattc.wav
+	Warhead@1Dam: SpreadDamage
+		Damage: 65
+		Versus:
+			None: 25
+			Flak: 25
+			Plate: 25
+			Light: 75
+			Medium: 100
+			Heavy: 100
+			Wood: 65
+			Steel: 45
+			Concrete: 60
+
+105mmE:
+	Inherits: 105mm
+	ReloadDelay: 75
+	Burst: 2
+	BurstDelay: 5
+	Warhead@1Dam: SpreadDamage
+		Damage: 55
+		Versus:
+			None: 100
+			Flak: 100
+			Plate: 100
+			Light: 100
+	Warhead@2Eff: CreateEffect
+		Explosions: elite_explosion
+		ImpactSounds: gexpapoa.wav
+	Warhead@3EffWater: CreateEffect
+		Explosions: large_watersplash
+		ImpactSounds: gexpwala.wav
+
+120mm:
+	Inherits: ^LargeBullet
+	ReloadDelay: 65
+	Range: 5c768
+	Report: vrhiatta.wav, vrhiattb.wav, vrhiattc.wav, vrhiattd.wav
+	Warhead@1Dam: SpreadDamage
+		Damage: 90
+		Versus:
+			None: 25
+			Flak: 25
+			Plate: 25
+			Light: 75
+			Medium: 100
+			Heavy: 100
+			Wood: 65
+			Steel: 45
+			Concrete: 60
+
+120mmE:
+	Inherits: 120mm
+	ReloadDelay: 80
+	Burst: 2
+	BurstDelay: 5
+	Warhead@1Dam: SpreadDamage
+		Damage: 85
+		Versus:
+			None: 100
+			Flak: 100
+			Plate: 100
+			Light: 100
+			Wood: 50
+			Steel: 100
+			Concrete: 50
+	Warhead@2Eff: CreateEffect
+		Explosions: elite_explosion
+		ImpactSounds: gexpapoa.wav
+	Warhead@3EffWater: CreateEffect
+		Explosions: large_watersplash
+		ImpactSounds: gexpwala.wav
+
+120mmx:
+	Inherits: 120mm
+	Report: vapoat1a.wav
+	Burst: 2
+	Warhead@1Dam: SpreadDamage
+		Damage: 100
+		Versus:
+			Wood: 100
+			Steel: 100
+			Concrete: 70
+	Warhead@2Eff: CreateEffect
+		Explosions: apoc_explosion
+		ImpactSounds: gexpapoa.wav
+
+120mmxE:
+	Inherits: 120mmx
+	Burst: 4
+	BurstDelay: 5
+	Warhead@1Dam: SpreadDamage
+		Versus:
+			None: 100
+			Flak: 100
+			Plate: 100
+	Warhead@2Eff: CreateEffect
+		Explosions: elite_explosion
+	Warhead@3EffWater: CreateEffect
+		Explosions: large_watersplash
+		ImpactSounds: gexpwala.wav
+	Warhead@4Smu: LeaveSmudge
+		SmudgeType: MediumCrater, MediumScorch
+
+155mm:
+	Inherits: ^LargeBullet
+	ReloadDelay: 110
+	Range: 8c0
+	Report: vdesatta.wav, vrdesattb.wav
+	Warhead@1Dam: SpreadDamage
+		Damage: 60
+		Versus:
+			None: 100
+			Flak: 80
+			Plate: 60
+			Light: 100
+			Medium: 60
+			Heavy: 60
+			Wood: 100
+			Steel: 80
+			Concrete: 60
+
+155mmE:
+	Inherits: 155mm
+	Burst: 2

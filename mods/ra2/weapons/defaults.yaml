@@ -1,0 +1,154 @@
+^Flak:
+	ReloadDelay: 25
+	Range: 5c0
+	Report: vflaat1a.wav, vflaat1b.wav
+	Projectile: Bullet
+		Speed: 50c0
+	Warhead@1Dam: SpreadDamage
+		Spread: 64
+		Damage: 20
+		Versus:
+			None: 150
+			Flak: 100
+			Plate: 50
+			Light: 60
+			Medium: 10
+			Heavy: 10
+			Wood: 30
+			Steel: 20
+			Concrete: 10
+		DamageTypes: Prone100Percent, TriggerProne, BulletDeath
+	Warhead@2Eff: CreateEffect
+		Explosions: flak_puff
+		ValidTargets: Ground, Air
+	Warhead@3EffWater: CreateEffect
+		Explosions: small_watersplash
+		ImpactSounds: gexpwasa.wav
+		ValidTargets: Water
+
+^AAFlak:
+	Inherits: ^Flak
+	Report: vflaat2a.wav, vflaat2b.wav, vflaat2c.wav, vflaat2d.wav
+	Projectile: Bullet
+		Speed: 100c0
+	Warhead@1Dam: SpreadDamage
+		Spread: 120
+		ValidTargets: Air
+		Versus:
+			Light: 80
+			Medium: 20
+			Heavy: 20
+			Wood: 0
+			Steel: 0
+			Concrete: 0
+		DamageTypes: BulletDeath
+	Warhead@2Eff: CreateEffect
+		Explosions: flak_puff_AA
+
+^LargeBullet:
+	Projectile: Bullet
+		Speed: 40c0
+		Image: 120mm
+		Palette: ra
+		Shadow: true
+		Angle: 62
+	Warhead@1Dam: SpreadDamage
+		Spread: 128
+		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
+	Warhead@2Eff: CreateEffect
+		Explosions: medium_clsn
+		ImpactSounds: gexp14a.wav
+		ValidTargets: Ground, Air
+	Warhead@3EffWater: CreateEffect
+		Explosions: small_watersplash
+		ImpactSounds: gexpwasa.wav
+		ValidTargets: Water
+
+^Missile:
+	ReloadDelay: 60
+	Range: 12c0
+	Report: bpatatta.wav
+	Projectile: Missile
+		Blockable: false
+		Shadow: true
+		Image: DRAGON
+		Palette: ra
+		ContrailLength: 16
+		HorizontalRateOfTurn: 55
+		Speed: 100
+		RangeLimit: 14c409
+		TerrainHeightAware: true
+
+^AAMissile:
+	Inherits: ^Missile
+	ValidTargets: Air
+	Warhead@1Dam: SpreadDamage
+		Spread: 120
+		Damage: 75
+		ValidTargets: Air
+		Versus:
+			None: 100
+			Flak: 100
+			Plate: 100
+			Light: 100
+			Medium: 100
+			Heavy: 100
+			Wood: 0
+			Steel: 0
+			Concrete: 0
+		DamageTypes: BulletDeath
+	Warhead@2Eff: CreateEffect
+		Explosions: small_bang
+		ImpactSounds: gexp10a.wav
+		ValidTargets: Ground, Air
+	Warhead@3EffWater: CreateEffect
+		Explosions: small_watersplash
+		ImpactSounds: gexpwasa.wav
+		ValidTargets: Water
+
+^MG:
+	ReloadDelay: 20
+	Range: 4c0
+	Report: igiat1a.wav, igiat1b.wav, igiat1c.wav
+	Projectile: Bullet
+		Speed: 100c0
+	Warhead@1Dam: SpreadDamage
+		Spread: 64
+		Damage: 20
+		Versus:
+			None: 100
+			Flak: 80
+			Plate: 70
+			Light: 50
+			Medium: 25
+			Heavy: 25
+			Wood: 75
+			Steel: 50
+			Concrete: 25
+		DamageTypes: Prone70Percent, TriggerProne, BulletDeath
+	Warhead@2Eff: CreateEffect
+		Explosions: piffpiff
+		ValidTargets: Ground, Water
+
+^TeslaZap:
+	Range: 3c0
+	ReloadDelay: 60
+	Report: itesatta.wav
+	Projectile: TeslaZap
+	Warhead@1Dam: SpreadDamage
+		Spread: 120
+		Damage: 50
+		Versus:
+			None: 100
+			Flak: 100
+			Plate: 100
+			Light: 85
+			Medium: 100
+			Heavy: 100
+			Wood: 50
+			Steel: 50
+			Concrete: 50
+		DamageTypes: ElectroDeath
+	Warhead@2Eff: CreateEffect
+		Explosions: tesla_impact
+		ValidTargets: Ground, Water

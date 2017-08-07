@@ -1,0 +1,222 @@
+CRRadBeamWeapon:
+	Inherits: RadBeamWeapon
+	Range: 7c0
+	ReloadDelay: 30
+	Warhead@1Dam: SpreadDamage
+		Damage: 175
+
+ElectricBolt:
+	Inherits: ^TeslaZap
+
+ElectricBoltE:
+	Inherits: ElectricBolt
+	Range: 5c0
+	ReloadDelay: 40
+	Report: itesat2a.wav, itesat2b.wav
+
+CRElectricBolt:
+	Inherits: ElectricBolt
+	Range: 6c0
+	ReloadDelay: 45
+	Warhead@1Dam: SpreadDamage
+		Damage: 60
+
+AssaultBolt:
+	ReloadDelay: 70
+	Range: 2c0
+	Report: iteschaa.wav
+	ValidStances: Ally
+	ValidTargets: TeslaBoost
+	Projectile: TeslaZap
+		Image: litningupg
+	Warhead@charge: GrantExternalCondition
+		Range: 42
+		Duration: 75
+		Condition: charged
+		ValidStances: Ally
+		ValidTargets: TeslaBoost
+
+CoilBolt:
+	Inherits: ^TeslaZap
+	ReloadDelay: 3
+	Range: 8c0
+	Report: btesat1a.wav
+	Warhead@1Dam: SpreadDamage
+		Spread: 42
+		Damage: 200
+
+OPCoilBolt:
+	Inherits: CoilBolt
+	Range: 8c512
+	Report: btesat2a.wav
+	Projectile: TeslaZap
+		Image: litningupg
+	Warhead@1Dam: SpreadDamage
+		Damage: 300
+
+TankBolt:
+	Inherits: ^TeslaZap
+	Range: 4c0
+	ReloadDelay: 75
+	Burst: 2
+	BurstDelay: 75
+	Report: vtesatta.wav, vtesattb.wav
+	Warhead@1Dam: SpreadDamage
+		Damage: 135
+
+TankBoltE:
+	Inherits: TankBolt
+	Range: 6c0
+	ReloadDelay: 60
+	BurstDelay: 60
+	Warhead@1Dam: SpreadDamage
+		Damage: 150
+
+SonicZap:
+	ReloadDelay: 180
+	Range: 6c0
+	Report: vdolatta.wav
+	ValidTargets: Water, Underwater
+	Burst: 2
+	Projectile: AreaBeam
+		Speed: 1c0
+		Duration: 10
+		DamageInterval: 5
+		Width: 0c512
+		Shape: Flat
+		ZOffset: 2047
+		BeyondTargetRange: 0c256
+		Blockable: true
+		Color: 50F5FF45
+	Warhead@1Dam: SpreadDamage
+		Range: 0, 32
+		Falloff: 100, 100
+		Damage: 4
+		AffectsParent: false
+		ValidStances: Neutral, Enemy
+		Versus:
+			Heavy: 80
+			Concrete: 60
+		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
+		ValidTargets: Water, Underwater
+	Warhead@2Dam: SpreadDamage
+		Range: 0, 32
+		Falloff: 50, 50
+		Damage: 4
+		AffectsParent: false
+		ValidStances: Ally
+		Versus:
+			Heavy: 80
+			Concrete: 60
+		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
+		ValidTargets: Water, Underwater
+
+PrismShot:
+	ReloadDelay: 1
+	Range: 8c0
+	Report: bpriat1a.wav
+	Projectile: LaserZap
+		Width: 70
+		UsePlayerColor: true
+	Warhead@1Dam: SpreadDamage
+		Spread: 42
+		Damage: 120
+		Versus:
+			None: 200
+			Flak: 100
+			Plate: 100
+			Light: 100
+			Medium: 100
+			Heavy: 50
+			Wood: 50
+			Steel: 50
+			Concrete: 50
+		DamageTypes: ElectroDeath
+
+Comet:
+	ValidTargets: Ground, Water
+	ReloadDelay: 100
+	Range: 10c0
+	Report: vpriatta.wav
+	Projectile: LaserZap
+		Width: 50
+		BeamDuration: 15
+		UsePlayerColor: true
+	Warhead@1Dam: SpreadDamage
+		Spread: 800
+		Damage: 100
+		Versus:
+			None: 100
+			Flak: 100
+			Plate: 100
+			Light: 75
+			Medium: 50
+			Heavy: 50
+			Wood: 200
+			Steel: 200
+			Concrete: 200
+		DamageTypes: Prone50Percent, TriggerProne, ElectroDeath
+	Warhead@2Eff: CreateEffect
+		Explosions: medium_clsn
+		ImpactSounds: gexp14a.wav
+		ValidTargets: Ground, Air
+	Warhead@3EffWater: CreateEffect
+		Explosions: small_watersplash
+		ImpactSounds: gexpwasa.wav
+		ValidTargets: Water
+	Warhead@4Smu: LeaveSmudge
+		SmudgeType: SmallCrater, SmallScorch
+
+SuperComet:
+	Inherits: Comet
+	Warhead@1Dam: SpreadDamage
+		Damage: 150
+
+RadBeamWeapon:
+	ValidTargets: Ground
+	Range: 6c0
+	ReloadDelay: 100
+	Report: idesat1a.wav
+	Projectile: LaserZap
+		Width: 20
+		BeamDuration: 7
+		Color: B900FF00
+	Warhead@1Dam: SpreadDamage
+		Spread: 42
+		Damage: 125
+		Versus:
+			None: 100
+			Flak: 100
+			Plate: 100
+			Light: 20
+			Medium: 15
+			Heavy: 10
+			Wood: 0
+			Steel: 0
+			Concrete: 0
+		DamageTypes: RadiationDeath
+
+RadBeamWeaponE:
+	Inherits: RadBeamWeapon
+	Range: 8c0
+	Warhead@1Dam: SpreadDamage
+		Damage: 200
+
+NeutronRifle:
+	ValidTargets: Ground
+	ReloadDelay: 120
+	Range: 10c0
+	Report: ichratta.wav
+	Projectile: TeslaZap
+		Speed: 100c0
+		Palette: highlight
+	Warhead@Damage: SpreadDamage
+		Spread: 64
+		Damage: 8
+	Warhead@Disable: GrantExternalCondition
+		Range: 64
+		Duration: 250
+		Condition: chronodisable, notmobile
+	Warhead@Stars: CreateEffect
+		Explosions: chronosk
+		ValidTargets: Ground, Water

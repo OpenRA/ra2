@@ -1,0 +1,48 @@
+BlimpBomb:
+	ReloadDelay: 45
+	Range: 1c20
+	MinRange: 0c001
+	Report: vkiratta.wav
+	Projectile: GravityBomb
+		Velocity: 0, 0, -50
+		Acceleration: 0, 0, -10
+		Image: canister
+		Palette: player
+		Arm: 10
+	Warhead@1Dam: SpreadDamage
+		Spread: 400
+		Damage: 250
+		ValidTargets: Building, Ground, Water
+		Versus:
+			None: 100
+			Flak: 100
+			Plate: 100
+			Light: 70
+			Medium: 35
+			Heavy: 35
+			Wood: 85
+			Steel: 75
+			Concrete: 50
+		DamageTypes: Prone70Percent, TriggerProne, BulletDeath
+	Warhead@2Eff: CreateEffect
+		Explosions: medium_clsn
+		ImpactSounds: gexp14a.wav
+		ValidTargets: Ground, Air
+	Warhead@3EffWater: CreateEffect
+		Explosions: small_watersplash
+		ImpactSounds: gexpwasa.wav
+		ValidTargets: Water
+	Warhead@4Smu: LeaveSmudge
+		SmudgeType: MediumCrater, MediumScorch
+
+RepairBullet:
+	ReloadDelay: 80
+	Range: 1c819
+	Report: vifvrepa.wav
+	ValidTargets: Repair
+	Projectile: Bullet
+		Speed: 1c682
+	Warhead@1Dam: SpreadDamage
+		Spread: 213
+		Damage: -50
+		ValidTargets: Repair
