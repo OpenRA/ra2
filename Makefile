@@ -25,7 +25,6 @@
 VERSION = $(shell git name-rev --name-only --tags --no-undefined HEAD 2>/dev/null || echo git-`git rev-parse --short HEAD`)
 MOD_ID = $(shell awk -F= '/MOD_ID/ { print $$2 }' mod.config)
 ENGINE_DIRECTORY = $(shell awk -F= '/ENGINE_DIRECTORY/ { print $$2 }' mod.config)
-MOD_SLN_DIRECTORY = $(shell awk -F= '/MOD_SLN_DIRECTORY/ { print $$2 }' mod.config)
 AUTOMATIC_ENGINE_MANAGEMENT = $(shell awk -F= '/AUTOMATIC_ENGINE_MANAGEMENT/ { print $$2 }' mod.config)
 
 INCLUDE_DEFAULT_MODS = $(shell awk -F= '/INCLUDE_DEFAULT_MODS/ { print $$2 }' mod.config)
@@ -53,19 +52,19 @@ stylecheck: engine
 
 build: engine
 ifeq ("$(HAS_MSBUILD)","")
-	@cd $(MOD_SLN_DIRECTORY) && find . -maxdepth 1 -name '*.sln' -exec xbuild /nologo /verbosity:quiet /p:TreatWarningsAsErrors=true \;
+	@find . -maxdepth 1 -name '*.sln' -exec xbuild /nologo /verbosity:quiet /p:TreatWarningsAsErrors=true \;
 else
-	@cd $(MOD_SLN_DIRECTORY) && find . -maxdepth 1 -name '*.sln' -exec msbuild /t:Rebuild /nr:false \;
+	@find . -maxdepth 1 -name '*.sln' -exec msbuild /t:Rebuild /nr:false \;
 endif
-	@cd $(MOD_SLN_DIRECTORY) && find . -maxdepth 1 -name '*.sln' -exec printf "The mod logic has been built.\n" \;
+	@find . -maxdepth 1 -name '*.sln' -exec printf "The mod logic has been built.\n" \;
 
 clean: engine
 ifeq ("$(HAS_MSBUILD)","")
-	@cd $(MOD_SLN_DIRECTORY) && find . -maxdepth 1 -name '*.sln' -exec xbuild /nologo /verbosity:quiet /p:TreatWarningsAsErrors=true /t:Clean \;
+	@find . -maxdepth 1 -name '*.sln' -exec xbuild /nologo /verbosity:quiet /p:TreatWarningsAsErrors=true /t:Clean \;
 else
-	@cd $(MOD_SLN_DIRECTORY) && find . -maxdepth 1 -name '*.sln' -exec msbuild /t:Clean /nr:false \;
+	@find . -maxdepth 1 -name '*.sln' -exec msbuild /t:Clean /nr:false \;
 endif
-	@cd $(MOD_SLN_DIRECTORY) && find . -maxdepth 1 -name '*.sln' -exec printf "The mod logic has been cleaned.\n" \;
+	@find . -maxdepth 1 -name '*.sln' -exec printf "The mod logic has been cleaned.\n" \;
 	@cd $(ENGINE_DIRECTORY) && make clean
 	@printf "The engine has been cleaned.\n"
 

@@ -18,7 +18,6 @@ function All-Command
 	}
 	else
 	{
-		cd OpenRA.Mods.RA2
 		$proc = Start-Process $msBuild $msBuildArguments -NoNewWindow -PassThru -Wait
 		if ($proc.ExitCode -ne 0)
 		{
@@ -28,7 +27,6 @@ function All-Command
 		{
 			echo "Build succeeded."
 		}
-		cd ..
 	}
 }
 
@@ -39,7 +37,6 @@ function Clean-Command
 		return
 	}
 
-	cd OpenRA.Mods.RA2
 	$msBuild = FindMSBuild
 	$msBuildArguments = "/t:Clean /nr:false"
 	if ($msBuild -eq $null)
@@ -59,7 +56,6 @@ function Clean-Command
 		rm ./*/obj -r
 		echo "Clean complete."
 	}
-	cd ..
 }
 
 function Version-Command
