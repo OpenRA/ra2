@@ -113,42 +113,6 @@ ammocrat:
 	RenderSprites:
 		Image: ammo01
 
-casin01e:
-	Inherits: ^CivBuilding
-	Tooltip:
-		Name: Roadblock
-	Armor:
-		Type: concrete
-	Health:
-		HP: 5
-
-casin01n:
-	Inherits: ^CivBuilding
-	Tooltip:
-		Name: Roadblock
-	Armor:
-		Type: concrete
-	Health:
-		HP: 5
-
-casin01s:
-	Inherits: ^CivBuilding
-	Tooltip:
-		Name: Roadblock
-	Armor:
-		Type: concrete
-	Health:
-		HP: 5
-
-casin01w:
-	Inherits: ^CivBuilding
-	Tooltip:
-		Name: Roadblock
-	Armor:
-		Type: concrete
-	Health:
-		HP: 5
-
 camsc01:
 	Inherits: ^CivBuilding
 	Tooltip:
