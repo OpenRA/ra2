@@ -1,28 +1,26 @@
-AlliedEngineerVoice:
+EngineerVoice:
 	DefaultVariant: .wav
+	Prefixes:
+		america: iena
+		germany: iena
+		england: iena
+		france: iena
+		korea: iena
+		cuba: iens
+		libya: iens
+		iraq: iens
+		russia: iens
 	Voices:
-		Select: ienasea, ienaseb, ienasec, ienased
-		Move: ienamoa, ienamob, ienamoc
-		Action: ienaata, ienaatb, ienaatc
-		Feedback: ienafea, ienafeb, ienafec
-		Die: ienadia, ienadib, ienadic, ienadid
+		Select: sea, seb, sec, sed
+		Move: moa, mob, moc
+		Action: ata, atb, atc
+		Feedback: fea, feb, fec
+		Die: dia, dib, dic, did
 		Zapped: igenzapa
 		Burned: ienadia #gotta put something as temp else game crashes
 		Melted: igenmela, igenmelb, igenmelc
 		# [EngAllPowerDown] Sounds = ienapow
-
-SovietEngineerVoice:
-	DefaultVariant: .wav
-	Voices:
-		Select: ienssea, iensseb, ienssec
-		Move: iensmoa, iensmob, iensmoc
-		Action: iensata, iensatb
-		Feedback: iensfea, iensfeb, iensfec
-		Die: iensdia, iensdib, iensdic
-		Zapped: igenzapa
-		Burned: ienadia #gotta put something as temp else game crashes
-		Melted: igenmela, igenmelb, igenmelc
-		# [EngAllPowerDown] Sounds = ienspow
+		DisablePrefixes: Zapped, Burned, Melted
 
 AlliedVehicleVoice:
 	DefaultVariant: .wav
