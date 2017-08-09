@@ -1,80 +1,28 @@
 engineer:
-	stand:
-		Facings: 8
-	run:
-		Start: 8
-		Length: 6
-		Facings: 8
-		Tick: 100
-	liedown:
-		Start: 212
-		Length: 2
-		Facings: 8
-	standup:
-		Start: 228
-		Length: 2
-		Facings: 8
-	prone-stand:
-		Frames: 86, 92, 98, 104, 110, 116, 122, 128
-		Facings: 8
-	prone-run:
-		Start: 86
-		Length: 6
-		Facings: 8
-		Tick: 100
-	idle1:
-		Start: 56
-		Length: 15
-		Tick: 120
-	idle2:
-		Start: 71
-		Length: 15
-		Tick: 120
-	cheer:
-		Start: 245
-		Length: 8
-		Tick: 120
-	die1:
-		Start: 134
-		Length: 15
-		Tick: 80
-	die2:
-		Start: 149
-		Length: 15
-		Tick: 80
-	die4: nukedie
-		Length: *
-		Tick: 50
-	die6: electro
-		Length: *
-		Tick: 80
+	Inherits: ^Infantry
+	paradrop:
+		Start: 244
 	icon: engnicon
 
 adog:
-	stand:
-		Facings: 8
-	run:
-		Start: 8
-		Length: 6
-		Facings: 8
-		Tick: 80
-	idle1:
-		Start: 57
-		Length: 14
-		Tick: 120
-	idle2:
-		Start: 72
-		Length: 14
-		Tick: 120
+	Inherits: ^BasicInfantry
+	cheer:
+		Start: 164
 	die1:
 		Start: 87
 		Length: 14
 	die2:
 		Start: 102
 		Length: 14
+	-die4:
+	-die6:
+	jump:
+		Start: 166
+		Length: 6
+		Facings: 8
 	shoot: adogp
 		Length: 1
-		Facings: 64
+		Facings: 32
 	icon: adogicon
 
 dlph:
@@ -100,56 +48,10 @@ dlph:
 	icon: dlphicon
 
 e1:
+	Inherits: ^ArmedInfantry
 	Defaults: gi
-	stand:
-		Facings: 8
-	prone-stand:
-		Start: 260
-		Length: 2
-		Facings: 8
-		Tick: 100
 	run:
-		Start: 8
-		Length: 6
-		Facings: 8
 		Tick: 120
-	idle1:
-		Start: 56
-		Length: 15
-		Tick: 100
-	idle2:
-		Start: 71
-		Length: 15
-		Tick: 100
-	prone-run:
-		Start: 86
-		Length: 6
-		Facings: 8
-		Tick: 100
-	die1:
-		Start: 134
-		Length: 14
-		Tick: 80
-	die2:
-		Start: 149
-		Length: 14
-		Tick: 80
-	die4: nukedie
-		Length: *
-		Tick: 50
-	die6: electro
-		Length: *
-		Tick: 80
-	shoot:
-		Start: 164
-		Length: 6
-		Facings: 8
-		Tick: 80
-	prone-shoot:
-		Start: 212
-		Length: 6
-		Facings: 8
-		Tick: 80
 	deployed:
 		Start: 292
 		Facings: 8
@@ -162,228 +64,92 @@ e1:
 		Facings: 8
 	paradrop:
 		Start: 363
+	cheer:
+		Start: 364
 	icon: giicon
 
 snipe:
-	stand:
-		Facings: 8
-	run:
-		Start: 8
-		Length: 6
-		Facings: 8
-		Tick: 80
-	idle1:
-		Start: 56
-		Length: 15
-		Tick: 100
-	idle2:
-		Start: 71
-		Length: 15
-		Tick: 100
-	prone-run:
-		Start: 86
-		Length: 6
-		Facings: 8
-		Tick: 100
-	die1:
-		Start: 134
-		Length: 14
-	die2:
-		Start: 149
-		Length: 14
-	die4: nukedie
-		Length: *
-		Tick: 50
-	die6: electro
-		Length: *
-		Tick: 80
-	shoot:
-		Start: 164
-		Length: 6
-		Facings: 8
-		Tick: 80
-	prone-shoot:
-		Start: 212
-		Length: 6
-		Facings: 8
-		Tick: 80
+	Inherits: ^ArmedInfantry
+	paradrop:
+		Start: 292
 	icon: snipicon
 
 spy:
-	stand:
-		Facings: 8
-	run:
-		Start: 8
-		Length: 6
-		Facings: 8
-		Tick: 120
-	idle1:
-		Start: 56
-		Length: 15
-		Tick: 100
-	idle2:
-		Start: 71
-		Length: 15
-		Tick: 100
-	prone-run:
-		Start: 86
-		Length: 6
-		Facings: 8
-		Tick: 100
-	die1:
-		Start: 134
-		Length: 14
-	die2:
-		Start: 149
-		Length: 14
-	die4: nukedie
-		Length: *
-		Tick: 50
-	die6: electro
-		Length: *
-		Tick: 80
-	shoot:
+	Inherits: ^Infantry
+	liedown:
 		Start: 164
-		Length: 6
-		Facings: 8
-		Tick: 80
-	prone-shoot:
-		Start: 212
-		Length: 6
-		Facings: 8
-		Tick: 80
+	standup:
+		Start: 180
+	cheer:
+		Start: 196
 	icon: spyicon
 
 seal: # TODO: seala on SNOW
-	stand:
-		Facings: 8
+	Inherits: ^ArmedInfantry
+	run:
+		Tick: 120
 	swim-stand:
 		Start: 340
 		Facings: 8
 		Length: 6
 		Tick: 160
-	run:
-		Start: 8
-		Length: 6
-		Facings: 8
-		Tick: 120
 	swim-run:
 		Start: 388
 		Facings: 8
 		Length: 6
 		Tick: 120
-	idle1:
-		Start: 56
-		Length: 15
-		Tick: 100
-	idle2:
-		Start: 71
-		Length: 15
-		Tick: 100
-	prone-run:
-		Start: 86
-		Length: 6
-		Facings: 8
-		Tick: 100
-	die1:
-		Start: 134
-		Length: 14
 	swim-die1:
 		Start: 512
 		Length: 22
-	die2:
-		Start: 149
-		Length: 14
 	swim-die2:
 		Start: 534
 		Length: 20
-	die4: nukedie
-		Length: *
-		Tick: 50
-	die6: electro
-		Length: *
-		Tick: 80
-	shoot:
-		Start: 164
-		Length: 6
-		Facings: 8
-		Tick: 80
-	prone-shoot:
-		Start: 212
-		Length: 6
-		Facings: 8
-		Tick: 80
 	swim-shoot:
 		Start: 436
 		Length: 6
 		Facings: 8
 		Tick: 80
+	cheer:
+		Start: 603
+	swim-cheer:
+		Start: 611
+		Length: 8
+		Tick: 120
+	paradrop:
+		Start: 602
 	icon: sealicon
 
 tany:
-	stand:
-		Facings: 8
+	Inherits: ^ArmedInfantry
 	run:
-		Start: 8
-		Length: 6
-		Facings: 8
 		Tick: 120
-	swim-run:
-		Start: 506
-		Facings: 8
-		Length: 6
-		Tick: 120
-	idle1:
-		Start: 56
-		Length: 15
-		Tick: 100
-	idle2:
-		Start: 71
-		Length: 15
-		Tick: 100
 	swim-stand:
 		Start: 362
 		Facings: 8
 		Length: 6
 		Tick: 160
-	prone-run:
-		Start: 86
-		Length: 6
+	swim-run:
+		Start: 506
 		Facings: 8
-		Tick: 100
-	die1:
-		Start: 134
-		Length: 14
+		Length: 6
+		Tick: 120
 	swim-die1:
 		Start: 323
 		Length: 28
-	die2:
-		Start: 149
-		Length: 14
 	swim-die2:
 		Start: 342
 		Length: 22
-	die4: nukedie
-		Length: *
-		Tick: 50
-	die6: electro
-		Length: *
-		Tick: 80
-	shoot:
-		Start: 164
-		Length: 6
-		Facings: 8
-		Tick: 80
-	prone-shoot:
-		Start: 212
-		Length: 6
-		Facings: 8
-		Tick: 80
 	swim-shoot:
 		Start: 554
 		Length: 6
 		Facings: 8
 		Tick: 80
+	cheer:
+		Start: 603
+	swim-cheer:
+		Start: 611
+		Length: 8
+		Tick: 120
 	paradrop:
 		Start: 602
 	icon: tanyicon
@@ -459,39 +225,23 @@ jumpjet:
 		Facings: 1
 
 cleg:
-	stand:
-		Facings: 8
+	Inherits: ^BasicInfantry
 	run:
 		Start: 117
-		Length: 6
-		Facings: 8
-		Tick: 100
 	shoot:
 		Start: 68
 		Length: 6
 		Facings: 8
 	idle1:
 		Start: 8
-		Length: 15
 	idle2:
 		Start: 23
-		Length: 15
 	die1:
 		Start: 38
-		Length: 15
 	die2:
 		Start: 53
-		Length: 15
-	die3:
-		Start: 68
-		Length: 8
-	die4: nukedie
-		Length: *
-		Tick: 50
-	die6: electro
-		Length: *
-		Tick: 80
+	paradrop:
+		Start: 116
 	cheer:
-		Start: 166
-		Length: 7
+		Start: 165
 	icon: clegicon
