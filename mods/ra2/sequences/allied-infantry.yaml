@@ -7,29 +7,28 @@ engineer:
 		Facings: 8
 		Tick: 100
 	liedown:
-		Start: 66
+		Start: 212
 		Length: 2
 		Facings: 8
 	standup:
-		Start: 114
+		Start: 228
 		Length: 2
 		Facings: 8
 	prone-stand:
-		Start: 87
-		Length: 7
+		Frames: 86, 92, 98, 104, 110, 116, 122, 128
 		Facings: 8
 	prone-run:
-		Start: 87
-		Length: 7
+		Start: 86
+		Length: 6
 		Facings: 8
 		Tick: 100
 	idle1:
-		Start: 57
-		Length: 14
+		Start: 56
+		Length: 15
 		Tick: 120
 	idle2:
-		Start: 72
-		Length: 14
+		Start: 71
+		Length: 15
 		Tick: 120
 	cheer:
 		Start: 245
