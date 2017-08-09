@@ -53,3 +53,4 @@ temp.s
 # SublimeText
 *.sublime-project
 *.sublime-workspace
+/.vs
