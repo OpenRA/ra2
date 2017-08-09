@@ -82,6 +82,13 @@ dog:
 	-TakeCover:
 	QuantizeFacingsFromSequence:
 		Sequence: stand
+	WithDeathAnimation@normal:
+		DeathTypes:
+			ExplosionDeath: 1
+			BulletDeath: 2
+			RadiationDeath: 1
+			ElectroDeath: 2
+	-WithDeathAnimation@effect:
 
 e1:
 	Inherits@1: ^Infantry
