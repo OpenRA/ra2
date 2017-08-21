@@ -58,7 +58,7 @@ else
 endif
 	@find . -maxdepth 1 -name '*.sln' -exec printf "The mod logic has been built.\n" \;
 
-clean: engine
+clean:
 ifeq ("$(HAS_MSBUILD)","")
 	@find . -maxdepth 1 -name '*.sln' -exec xbuild /nologo /verbosity:quiet /p:TreatWarningsAsErrors=true /t:Clean \;
 else
