@@ -108,34 +108,54 @@ e1:
 		HP: 125
 	Mobile:
 		Speed: 31
+		RequiresCondition: !deployed
 	Passenger:
 		PipType: Green
 	RevealsShroud:
 		Range: 5c0
 	AttackFrontal:
 		Voice: Attack
+		RequiresCondition: !deployed
+	AttackTurreted:
+		Voice: Attack
+		RequiresCondition: deployed
+		Armaments: sandbags
+	Turreted:
+		RequiresCondition: deployed
 	Armament@primary:
 		Weapon: M60
-		RequiresCondition: !rank-elite
+		RequiresCondition: !rank-elite && !deployed
 	Armament@elite:
 		Weapon: M60E
-		RequiresCondition: rank-elite
-#	Armament@deployed:
-#		Weapon: para
-#		UpgradeTypes: deployed
-#		UpgradeMinEnabledLevel: 1
-#	Armament@elite-deployed:
-#		Weapon: paraE
-#		UpgradeTypes: eliteparaweapon
-#		UpgradeMinEnabledLevel: 1
+		RequiresCondition: rank-elite && !deployed
+	Armament@deployed:
+		Name: sandbags
+		Weapon: para
+		RequiresCondition: deployed && !rank-elite
+	Armament@elite-deployed:
+		Name: sandbags
+		Weapon: paraE
+		RequiresCondition: deployed && rank-elite
 	WithInfantryBody:
 		DefaultAttackSequence: shoot
+		RequiresCondition: !deployed
+	WithInfantryBody@DEPLOYED:
+		StandSequences: deployed
+		DefaultAttackSequence: shoot-deployed
+		RequiresCondition: deployed
 	Voiced:
 		VoiceSet: GIVoice
 	ProducibleWithLevel:
 		Prerequisites: barracks.infiltrated
 	QuantizeFacingsFromSequence:
 		Sequence: stand
+	GrantConditionOnDeploy:
+		DeployedCondition: deployed
+# TODO
+#	TakeCover:
+#		RequiresCondition: !deployed
+#	WithMakeAnimation@DEPLOYING:
+#		Sequence: deploy
 
 snipe:
 	Inherits: ^Infantry
