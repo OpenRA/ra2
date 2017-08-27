@@ -254,7 +254,7 @@ Container@PLAYER_WIDGETS:
 							TooltipText: Buildings
 							TooltipContainer: TOOLTIP_CONTAINER
 							ProductionGroup: Building
-							HotkeyName: ProductionTypeBuildingKey
+							Key: ProductionTypeBuildingKey
 							Children:
 								Image@ICON:
 									Logic: AddFactionSuffixLogic
@@ -271,7 +271,7 @@ Container@PLAYER_WIDGETS:
 							TooltipText: Support
 							TooltipContainer: TOOLTIP_CONTAINER
 							ProductionGroup: Support
-							HotkeyName: ProductionTypeDefenseKey
+							Key: ProductionTypeDefenseKey
 							Children:
 								Image@ICON:
 									Logic: AddFactionSuffixLogic
@@ -288,7 +288,7 @@ Container@PLAYER_WIDGETS:
 							TooltipText: Infantry
 							TooltipContainer: TOOLTIP_CONTAINER
 							ProductionGroup: Infantry
-							HotkeyName: ProductionTypeInfantryKey
+							Key: ProductionTypeInfantryKey
 							Children:
 								Image@ICON:
 									Logic: AddFactionSuffixLogic
@@ -305,7 +305,7 @@ Container@PLAYER_WIDGETS:
 							TooltipText: Vehicles
 							TooltipContainer: TOOLTIP_CONTAINER
 							ProductionGroup: Vehicle
-							HotkeyName: ProductionTypeVehicleKey
+							Key: ProductionTypeVehicleKey
 							Children:
 								Image@ICON:
 									Logic: AddFactionSuffixLogic
@@ -322,7 +322,7 @@ Container@PLAYER_WIDGETS:
 							TooltipText: Aircraft
 							TooltipContainer: TOOLTIP_CONTAINER
 							ProductionGroup: Aircraft
-							HotkeyName: ProductionTypeAircraftKey
+							Key: ProductionTypeAircraftKey
 							Children:
 								Image@ICON:
 									Logic: AddFactionSuffixLogic
@@ -339,7 +339,7 @@ Container@PLAYER_WIDGETS:
 							TooltipText: Naval
 							TooltipContainer: TOOLTIP_CONTAINER
 							ProductionGroup: Ship
-							HotkeyName: ProductionTypeNavalKey
+							Key: ProductionTypeNavalKey
 							Children:
 								Image@ICON:
 									Logic: AddFactionSuffixLogic

@@ -109,19 +109,14 @@ e1:
 	Mobile:
 		Speed: 31
 		RequiresCondition: !deployed
+	TurnsWhileImmobile:
+		RequiresCondition: deployed
 	Passenger:
 		PipType: Green
 	RevealsShroud:
 		Range: 5c0
 	AttackFrontal:
 		Voice: Attack
-		RequiresCondition: !deployed
-	AttackTurreted:
-		Voice: Attack
-		RequiresCondition: deployed
-		Armaments: sandbags
-	Turreted:
-		RequiresCondition: deployed
 	Armament@primary:
 		Weapon: M60
 		RequiresCondition: !rank-elite && !deployed
@@ -129,11 +124,9 @@ e1:
 		Weapon: M60E
 		RequiresCondition: rank-elite && !deployed
 	Armament@deployed:
-		Name: sandbags
 		Weapon: para
 		RequiresCondition: deployed && !rank-elite
 	Armament@elite-deployed:
-		Name: sandbags
 		Weapon: paraE
 		RequiresCondition: deployed && rank-elite
 	WithInfantryBody:
