@@ -70,7 +70,7 @@ Medusa:
 	ReloadDelay: 100
 	Report: vaegatta.wav, vaegattb.wav
 	Burst: 3
-	BurstDelay: 13
+	BurstDelays: 13
 	Projectile: Missile
 		ContrailLength: 35
 		LockOnProbability: 85
@@ -137,7 +137,7 @@ SubTorpedo:
 	Report: vsubatta.wav
 	ValidTargets: Water, Underwater
 	Burst: 1
-	BurstDelay: 20
+	BurstDelays: 20
 	Projectile: Missile
 		Image: missile
 		Speed: 102

@@ -580,6 +580,8 @@
 		Voice: Move
 		AirborneCondition: airborne
 		CanHover: True
+		TakeOffOnResupply: true
+		VTOL: true
 	HiddenUnderFog:
 		Type: CenterPosition
 	AttackMove:

@@ -59,6 +59,8 @@ shadhusk:
 		Speed: 140
 		CanHover: True
 		Voice: Move
+		TakeOffOnResupply: true
+		VTOL: true
 	FallsToEarth:
 		Velocity: 100
 	RevealsShroud:
@@ -95,6 +97,8 @@ zep:
 		Voice: Move
 		AirborneCondition: airborne
 		CanHover: True
+		TakeOffOnResupply: true
+		VTOL: true
 	Health:
 		HP: 2000
 	Armor:
@@ -134,6 +138,8 @@ zephusk:
 		Speed: 50
 		CanHover: True
 		Voice: Move
+		TakeOffOnResupply: true
+		VTOL: true
 	FallsToEarth:
 		Spins: False # TODO: In the original they did spin, but that just looks weird.
 	RevealsShroud:

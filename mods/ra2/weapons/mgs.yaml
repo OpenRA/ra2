@@ -117,7 +117,7 @@ AWPE:
 			Medium: 40
 			Heavy: 40
 	Warhead@2Eff: CreateEffect
-		Explosions: piff	
+		Explosions: piff
 		ValidTargets: Ground, Water, Air
 
 20mme:

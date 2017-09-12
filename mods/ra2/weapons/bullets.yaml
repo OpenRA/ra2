@@ -133,7 +133,7 @@ MirageGunE:
 	Inherits: 105mm
 	ReloadDelay: 75
 	Burst: 2
-	BurstDelay: 5
+	BurstDelays: 5
 	Warhead@1Dam: SpreadDamage
 		Damage: 55
 		Versus:
@@ -170,7 +170,7 @@ MirageGunE:
 	Inherits: 120mm
 	ReloadDelay: 80
 	Burst: 2
-	BurstDelay: 5
+	BurstDelays: 5
 	Warhead@1Dam: SpreadDamage
 		Damage: 85
 		Versus:
@@ -205,7 +205,7 @@ MirageGunE:
 120mmxE:
 	Inherits: 120mmx
 	Burst: 4
-	BurstDelay: 5
+	BurstDelays: 5
 	Warhead@1Dam: SpreadDamage
 		Versus:
 			None: 100

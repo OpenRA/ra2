@@ -389,6 +389,8 @@ jumpjet:
 		RearmBuildings:
 		CanHover: True
 		IdealSeparation: 512
+		TakeOffOnResupply: true
+		VTOL: true
 	WithInfantryBody:
 		StandSequences: fly
 		MoveSequence: fly

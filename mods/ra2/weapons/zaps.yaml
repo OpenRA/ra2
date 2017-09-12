@@ -59,7 +59,7 @@ TankBolt:
 	Range: 4c0
 	ReloadDelay: 75
 	Burst: 2
-	BurstDelay: 75
+	BurstDelays: 75
 	Report: vtesatta.wav, vtesattb.wav
 	Warhead@1Dam: SpreadDamage
 		Damage: 135
@@ -68,7 +68,7 @@ TankBoltE:
 	Inherits: TankBolt
 	Range: 6c0
 	ReloadDelay: 60
-	BurstDelay: 60
+	BurstDelays: 60
 	Warhead@1Dam: SpreadDamage
 		Damage: 150
 

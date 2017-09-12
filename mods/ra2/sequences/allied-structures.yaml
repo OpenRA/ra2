@@ -85,7 +85,7 @@ gapile:
 		Length: 16
 		ShadowStart: 32
 	damaged-idle-flag: ggpile_a
-		Start:16
+		Start: 16
 		Length: 16
 		ShadowStart: 48
 	dead: ggpiledm # SHP broken & unused
