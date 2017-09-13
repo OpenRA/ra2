@@ -17,6 +17,7 @@ script:
  - make
  - travis_retry ./fetch-content.sh
  - make test
+ - make check
  - make check-sequence-sprites
 
 branches:
