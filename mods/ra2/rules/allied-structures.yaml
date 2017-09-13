@@ -186,10 +186,7 @@ garefn:
 		TickVelocity: 1
 		TickRate: 10
 		DockAngle: 160
-	StoresResources:
-		PipColor: Yellow
-		PipCount: 0
-		Capacity: 999999
+		UseStorage: false
 	CustomSellValue:
 		Value: 300
 	InfiltrateForCash:
