@@ -9,8 +9,8 @@
  */
 #endregion
 
-using OpenRA.Traits;
 using OpenRA.Mods.Common.Traits;
+using OpenRA.Traits;
 
 namespace OpenRA.Mods.RA2.Traits
 {
@@ -27,15 +27,13 @@ namespace OpenRA.Mods.RA2.Traits
 		readonly WithSwimSuitInfo info;
 		readonly Actor self;
 
-		bool inWater { get { return self.World.Map.GetTerrainInfo(self.Location).IsWater; } }
-
-		public bool IsModifyingSequence { get { return inWater; } }
-		public string SequencePrefix { get { return info.InWaterPrefix; } }
-
 		public WithSwimSuit(Actor self, WithSwimSuitInfo info)
 		{
 			this.self = self;
 			this.info = info;
 		}
+
+		bool IRenderInfantrySequenceModifier.IsModifyingSequence { get { return self.World.Map.GetTerrainInfo(self.Location).IsWater; } }
+		string IRenderInfantrySequenceModifier.SequencePrefix { get { return info.InWaterPrefix; } }
 	}
 }
