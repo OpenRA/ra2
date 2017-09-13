@@ -30,6 +30,7 @@ _ReSharper.*/
 
 # TODO: Compiling creates a /mods/common folder with dlls and pdbs
 OpenRA.Mods.RA2/mods/*
+mods/common/*
 
 # backup files by various editors
 *~
