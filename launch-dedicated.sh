@@ -1,10 +1,10 @@
 #!/bin/sh
 # Usage:
 #  $ ./launch-dedicated.sh # Launch a dedicated server with default settings
+#  $ Mod="<mod id>" ./launch-dedicated.sh # Launch a dedicated server with default settings but override the Mod
 #  Read the file to see which settings you can override
 
 set -e
-command -v make >/dev/null 2>&1 || { echo >&2 "This script requires make."; exit 1; }
 command -v python >/dev/null 2>&1 || { echo >&2 "This script requires python."; exit 1; }
 command -v mono >/dev/null 2>&1 || { echo >&2 "This script requires mono."; exit 1; }
 

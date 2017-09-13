@@ -11,6 +11,11 @@ TEMPLATE_ROOT=$(dirname "${TEMPLATE_LAUNCHER}")
 # shellcheck source=mod.config
 . "${TEMPLATE_ROOT}/mod.config"
 
+if [ -f "${TEMPLATE_ROOT}/user.config" ]; then
+	# shellcheck source=user.config
+	. "${TEMPLATE_ROOT}/user.config"
+fi
+
 CURRENT_ENGINE_VERSION=$(cat "${ENGINE_DIRECTORY}/VERSION" 2> /dev/null)
 
 if [ -f "${ENGINE_DIRECTORY}/VERSION" ] && [ "${CURRENT_ENGINE_VERSION}" = "${ENGINE_VERSION}" ]; then

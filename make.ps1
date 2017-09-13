@@ -208,9 +208,9 @@ function WaitForInput
 
 function ReadConfigLine($line, $name)
 {
-	if ($line.StartsWith($name))
+	$prefix = $name + '='
+	if ($line.StartsWith($prefix))
 	{
-		$prefix = $name + '='
 		[Environment]::SetEnvironmentVariable($name, $line.Replace($prefix, '').Replace('"', ''))
 	}
 }
@@ -328,7 +328,7 @@ if ($command -eq "all" -or $command -eq "clean")
 		[io.compression.zipfile]::ExtractToDirectory($dlPath, $env:AUTOMATIC_ENGINE_EXTRACT_DIRECTORY)
 		rm $dlPath
 
-		$extractedDir = Get-ChildItem -Recurse | ?{ $_.ToString().StartsWith("OpenRA-") -and $_.PSIsContainer }
+		$extractedDir = Get-ChildItem $env:AUTOMATIC_ENGINE_EXTRACT_DIRECTORY -Recurse | ?{ $_.PSIsContainer } | Select-Object -First 1
 		Move-Item $extractedDir.FullName -Destination $templateDir
 		Rename-Item $extractedDir.Name (Split-Path -leaf $env:ENGINE_DIRECTORY)
 
