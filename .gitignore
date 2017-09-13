@@ -32,6 +32,9 @@ _ReSharper.*/
 OpenRA.Mods.RA2/mods/*
 mods/common/*
 
+# StyleCop
+StyleCopViolations.xml
+
 # backup files by various editors
 *~
 *.orig
