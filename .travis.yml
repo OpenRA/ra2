@@ -12,6 +12,8 @@ addons:
     packages:
     - liblua5.1-0
     - p7zip-full
+    - nsis
+    - nsis-common
 
 script:
  - make
@@ -34,3 +36,19 @@ notifications:
       - "irc.freenode.net#openra"
     use_notice: true
     skip_join: true
+
+before_deploy:
+ - mkdir build
+ - cd build && ../packaging/package-all.sh ${TRAVIS_TAG} ${PWD} && cd ..
+ - . mod.config
+
+deploy:
+  provider: releases
+  api_key: ${GH_DEPLOY_API_KEY}
+  file:
+    - build/${PACKAGING_INSTALLER_NAME}-${TRAVIS_TAG}.exe
+    - build/${PACKAGING_INSTALLER_NAME}-${TRAVIS_TAG}-macOS.zip
+    - build/${PACKAGING_INSTALLER_NAME}-${TRAVIS_TAG}-winportable.zip
+  skip_cleanup: true
+  on:
+    tags: true
