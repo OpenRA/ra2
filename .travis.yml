@@ -17,7 +17,8 @@ script:
  - make
  - travis_retry ./fetch-content.sh
  - make test
- - make check
+# Crashes, see https://github.com/OpenRA/OpenRA/issues/14013
+# - make check
  - make check-sequence-sprites
 
 branches:
