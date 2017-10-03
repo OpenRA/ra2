@@ -662,7 +662,7 @@
 		TurnSpeed: 5
 	LeavesTrails:
 		Image: wake
-		Palette: effect
+		Palette: effect50alpha
 		TerrainTypes: Water
 		StationaryInterval: 18
 		MovingInterval: 6

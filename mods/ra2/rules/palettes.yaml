@@ -62,6 +62,10 @@
 	PaletteFromFile@effect:
 		Name: effect
 		Filename: anim.pal
+	PaletteFromPaletteWithAlpha@effect50alpha:
+		Name: effect50alpha
+		BasePalette: effect
+		Alpha: 0.5
 	PaletteFromFile@mousepal:
 		Name: mouse
 		Filename: mousepal.pal
