@@ -47,37 +47,19 @@ shad:
 	HitShape:
 
 shadhusk:
+	Inherits: ^HelicopterHusk
 	Tooltip:
-		Name: Night Hawk Down
-		GenericName: Destroyed Helicopter
-	Armor:
-		Type: Light
-	Health:
-		HP: 140
+		Name: Night Hawk
 	Aircraft:
-		TurnSpeed: 5
-		Speed: 140
-		CanHover: True
-		Voice: Move
-		TakeOffOnResupply: true
-		VTOL: true
-	FallsToEarth:
-		Velocity: 100
+		TurnSpeed: 10
+		Speed: 100
 	RevealsShroud:
 		Range: 7c0
 		Type: CenterPosition
-	HiddenUnderFog:
-		Type: CenterPosition
 	RenderVoxels:
 		Image: shad
-	WithVoxelBody:
-	Targetable:
-		TargetTypes: NoAutoTarget
 	BodyOrientation:
-		QuantizedFacings: 0
-		CameraPitch: 90
 		UseClassicPerspectiveFudge: false
-	HitShape:
 
 zep:
 	Inherits: ^Aircraft
@@ -127,36 +109,21 @@ zep:
 	HitShape:
 
 zephusk:
+	Inherits: ^HelicopterHusk
 	Tooltip:
 		Name: Kirov Airship
-	Armor:
-		Type: Light
-	Health:
-		HP: 140
 	Aircraft:
-		TurnSpeed: 10
+		TurnSpeed: 5
 		Speed: 50
-		CanHover: True
-		Voice: Move
-		TakeOffOnResupply: true
-		VTOL: true
 	FallsToEarth:
 		Spins: False # TODO: In the original they did spin, but that just looks weird.
 	RevealsShroud:
 		Range: 8c0
 		Type: CenterPosition
-	HiddenUnderFog:
-		Type: CenterPosition
 	RenderVoxels:
 		Image: zep
-	WithVoxelBody:
-	Targetable:
-		TargetTypes: NoAutoTarget
 	BodyOrientation:
-		QuantizedFacings: 0
-		CameraPitch: 90
 		UseClassicPerspectiveFudge: false
-	HitShape:
 
 orca:
 	Inherits: ^Plane
@@ -206,7 +173,7 @@ orca:
 orcahusk:
 	Inherits: ^PlaneHusk
 	Tooltip:
-		Name: Destroyed Harrier
+		Name: Harrier
 	Aircraft:
 		TurnSpeed: 5
 		Speed: 140
@@ -236,7 +203,7 @@ beag:
 beaghusk:
 	Inherits: ^PlaneHusk
 	Tooltip:
-		Name: Destroyed Black Eagle
+		Name: Black Eagle
 	Aircraft:
 		TurnSpeed: 5
 		Speed: 140
@@ -275,7 +242,7 @@ pdplane:
 pdplanehusk:
 	Inherits: ^PlaneHusk
 	Tooltip:
-		Name: Destroyed Cargo Plane
+		Name: Cargo Plane
 	Aircraft:
 		TurnSpeed: 5
 		Speed: 100

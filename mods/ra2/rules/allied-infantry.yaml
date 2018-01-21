@@ -401,6 +401,8 @@ jumpjet:
 	-Crushable:
 	-TakeCover:
 	-Targetable:
+	-WithDeathAnimation@normal:
+	-WithDeathAnimation@effect:
 	Targetable@airborne:
 		TargetTypes: Air, Disguise
 		RequiresCondition: airborne
@@ -415,6 +417,26 @@ jumpjet:
 		TargetTypes: Ground, Infantry, DetonateAttack, Disguise
 		RequiresCondition: !airborne
 	-Passenger:
+	SpawnActorOnDeath:
+		Actor: jumpjet.husk
+
+jumpjet.husk:
+	Inherits: ^HelicopterHusk
+	Inherits@1: ^SpriteActor
+	WithFacingSpriteBody:
+	-RenderVoxels:
+	-WithVoxelBody:
+	Tooltip:
+		Name: Rocketeer
+	Aircraft:
+		TurnSpeed: 10
+		Speed: 100
+	FallsToEarth:
+		Explosion: UnitExplodeSmall
+	RevealsShroud:
+		Range: 8c0
+		Type: CenterPosition
+	WithShadow:
 
 cleg:
 	Inherits: ^Infantry
