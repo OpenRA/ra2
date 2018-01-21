@@ -222,6 +222,9 @@ gaairc:
 		Prerequisite: radar
 	ProvidesPrerequisite@allies:
 		Prerequisite: aircraft.allies
+	ProvidesPrerequisite@harrier:
+		Prerequisite: aircraft.harrier
+		Factions: america, germany, england, france
 	ProvidesPrerequisite@korea:
 		Prerequisite: aircraft.korea
 		Factions: korea

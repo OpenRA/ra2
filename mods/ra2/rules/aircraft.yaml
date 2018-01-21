@@ -167,7 +167,7 @@ orca:
 	Buildable:
 		Queue: Aircraft
 		BuildPaletteOrder: 20
-		Prerequisites: ~aircraft.allies
+		Prerequisites: ~aircraft.harrier
 		Description: Fast assault fighter\n  Strong vs Buildings, Vehicles\n  Weak vs Infantry, Aircraft
 	Aircraft:
 		TurnSpeed: 3
