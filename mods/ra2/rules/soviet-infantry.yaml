@@ -4,7 +4,7 @@ e2:
 	Buildable:
 		Queue: Infantry
 		Prerequisites: ~nahand
-		BuildPaletteOrder: 10
+		BuildPaletteOrder: 20
 		Description: Cheap rifle infantry.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
 	Valued:
 		Cost: 100
@@ -43,7 +43,7 @@ flakt:
 	Buildable:
 		Queue: Infantry
 		Prerequisites: naradr, ~nahand
-		BuildPaletteOrder: 20
+		BuildPaletteOrder: 70
 		Description: Anti-Air/Anti-Infantry unit.\n  Strong vs Aircraft, Infantry\n  Weak vs Vehicles
 	Valued:
 		Cost: 100
@@ -90,7 +90,7 @@ shk:
 		Queue: Infantry
 		BuildAtProductionType: Infantry
 		Prerequisites: ~nahand
-		BuildPaletteOrder: 30
+		BuildPaletteOrder: 50
 		Description: Special armored unit using electricity.\n  Strong vs Infantry, Light armor\n  Weak vs Tanks, Aircraft\nSpecial ability: Charge tesla coils
 	Valued:
 		Cost: 500
@@ -144,7 +144,7 @@ terror:
 	Buildable:
 		Queue: Infantry
 		BuildAtProductionType: Infantry
-		BuildPaletteOrder: 120
+		BuildPaletteOrder: 90
 		Prerequisites: naradr, ~infantry.cuba
 		Description: Carries C4 charges taped to his body and kamikazes enemies\nblowing them up quickly and efficiently.\n  Strong vs Ground units\n  Weak vs Aircraft
 	Valued:
@@ -223,7 +223,7 @@ ivan:
 	Buildable:
 		Queue: Infantry
 		BuildAtProductionType: Infantry
-		BuildPaletteOrder: 120
+		BuildPaletteOrder: 110
 		Prerequisites: naradr, ~nahand
 		Description: Specialist for explosives. Can plant a Bomb on anything, even Cows.
 	Valued:

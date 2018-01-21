@@ -211,7 +211,7 @@ gaairc:
 	Inherits: ^Building
 	Buildable:
 		Queue: Building
-		BuildPaletteOrder: 40
+		BuildPaletteOrder: 60
 		Prerequisites: garefn, ~structures.allies, ~!structures.america
 		Description: Provides radar\nSupports 4 aircraft.
 	Valued:
@@ -315,7 +315,7 @@ gaweap:
 	Inherits: ^Building
 	Buildable:
 		Queue: Building
-		BuildPaletteOrder: 50
+		BuildPaletteOrder: 40
 		Prerequisites: garefn, gapile, ~structures.allies
 		Description: Produces vehicles.
 	Selectable:
@@ -498,7 +498,7 @@ gadept:
 	Inherits: ^Building
 	Buildable:
 		Queue: Building
-		BuildPaletteOrder: 60
+		BuildPaletteOrder: 70
 		Prerequisites: gaweap, ~structures.allies
 		Description: Repairs vehicles and removes Terror Drones (for a price).
 	Selectable:
@@ -539,7 +539,7 @@ gatech:
 	Inherits: ^Building
 	Buildable:
 		Queue: Building
-		BuildPaletteOrder: 70
+		BuildPaletteOrder: 80
 		Prerequisites: radar, gaweap, ~structures.allies
 		Description: Allows deployment of advanced units.
 	Selectable:
@@ -666,7 +666,7 @@ gtgcan:
 	Inherits: ^VoxelLighting
 	Buildable:
 		Queue: Support
-		BuildPaletteOrder: 30
+		BuildPaletteOrder: 50
 		Prerequisites: radar, ~structures.france
 		Description: Automated, long ranged anti-ground defense.
 	Valued:
@@ -720,7 +720,7 @@ gaorep:
 	Inherits: ^Building
 	Buildable:
 		Queue: Building
-		BuildPaletteOrder: 80
+		BuildPaletteOrder: 100
 		Prerequisites: garefn, gatech, ~structures.allies
 		BuildLimit: 1
 		Description: Refines all forms of income by 25%.
@@ -748,7 +748,7 @@ gaspysat:
 	Inherits: ^Building
 	Buildable:
 		Queue: Support
-		BuildPaletteOrder: 90
+		BuildPaletteOrder: 70
 		Prerequisites: gatech, ~structures.allies
 		Description: Reveals the entire battlefield.
 	Selectable:
@@ -789,7 +789,7 @@ gagap:
 		Name: Gap Generator
 	Buildable:
 		Queue: Support
-		BuildPaletteOrder: 100
+		BuildPaletteOrder: 60
 		Prerequisites: gatech, ~structures.allies
 		Description: Obscures the enemy's view with shroud.\nRequires power to operate.
 	Selectable:
@@ -821,7 +821,7 @@ gaweat:
 	Inherits: ^Building
 	Buildable:
 		Queue: Support
-		BuildPaletteOrder: 110
+		BuildPaletteOrder: 90
 		Prerequisites: gatech, ~structures.allies
 		BuildLimit: 1
 		Description: Play God with deadly weather!
@@ -852,7 +852,7 @@ gacsph:
 	Inherits: ^Building
 	Buildable:
 		Queue: Support
-		BuildPaletteOrder: 120
+		BuildPaletteOrder: 80
 		Prerequisites: gatech, ~structures.allies
 		BuildLimit: 1
 	Selectable:
@@ -899,7 +899,7 @@ atesla:
 	Inherits: ^SupportBuilding
 	Buildable:
 		Queue: Support
-		BuildPaletteOrder: 35
+		BuildPaletteOrder: 40
 		Prerequisites: power, radar, ~structures.allies
 	Valued:
 		Cost: 1500
