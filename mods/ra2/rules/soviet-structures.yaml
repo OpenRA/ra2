@@ -1,5 +1,6 @@
 nacnst:
 	Inherits: ^Building
+	Inherits@shape: ^4x4Shape
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 1000
@@ -48,6 +49,7 @@ nacnst:
 
 napowr:
 	Inherits: ^Building
+	Inherits@shape: ^3x2Shape
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 10
@@ -85,6 +87,7 @@ napowr:
 
 nahand:
 	Inherits: ^Building
+	Inherits@shape: ^2x2Shape
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 20
@@ -175,6 +178,7 @@ nahand:
 
 narefn:
 	Inherits: ^Building
+	Inherits@shape: ^4x3Shape
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 30
@@ -228,6 +232,7 @@ narefn:
 
 naradr:
 	Inherits: ^Building
+	Inherits@shape: ^2x2Shape
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 40
@@ -271,6 +276,7 @@ naradr:
 
 naweap:
 	Inherits: ^Building
+	Inherits@shape: ^5x3Shape
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 50
@@ -332,6 +338,7 @@ naweap:
 
 nayard:
 	Inherits: ^Building
+	Inherits@shape: ^4x4Shape
 	Valued:
 		Cost: 1000
 	Tooltip:
@@ -456,6 +463,7 @@ nayard:
 
 nadept:
 	Inherits: ^Building
+	Inherits@shape: ^4x3Shape
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 60
@@ -497,6 +505,7 @@ nadept:
 
 nanrct:
 	Inherits: ^Building
+	Inherits@shape: ^4x4Shape
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 160
@@ -537,6 +546,7 @@ nanrct:
 
 natech:
 	Inherits: ^Building
+	Inherits@shape: ^3x3Shape
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 150
@@ -567,6 +577,7 @@ natech:
 
 naclon:
 	Inherits: ^Building
+	Inherits@shape: ^2x2Shape
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 170
@@ -637,6 +648,7 @@ naclon:
 
 napsis:
 	Inherits: ^Building
+	Inherits@shape: ^2x2Shape
 	Buildable:
 		Queue: Support
 		BuildPaletteOrder: 40
@@ -673,6 +685,7 @@ napsis:
 
 nairon:
 	Inherits: ^Building
+	Inherits@shape: ^3x3Shape
 	Buildable:
 		Queue: Support
 		BuildPaletteOrder: 60
@@ -716,6 +729,7 @@ nairon:
 
 namisl:
 	Inherits: ^Building
+	Inherits@shape: ^3x3Shape
 	Buildable:
 		Queue: Support
 		BuildPaletteOrder: 70

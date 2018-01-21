@@ -34,6 +34,7 @@ cafncp:
 
 cahse01:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^3x2Shape
 	RevealsShroud:
 		Range: 6c0
 	Health:
@@ -46,6 +47,7 @@ cahse01:
 
 cahse01.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^3x2Shape
 	Building:
 		Dimensions: 3,2
 		Footprint: ___ ___
@@ -54,6 +56,7 @@ cahse01.rubble:
 
 cahse02:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^3x2Shape
 	RevealsShroud:
 		Range: 6c0
 	Health:
@@ -66,6 +69,7 @@ cahse02:
 
 cahse02.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^3x2Shape
 	Building:
 		Dimensions: 3,2
 		Footprint: ___ ___
@@ -74,6 +78,7 @@ cahse02.rubble:
 
 cahse03:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^3x4Shape
 	RevealsShroud:
 		Range: 6c0
 	Health:
@@ -86,6 +91,7 @@ cahse03:
 
 cahse03.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^3x4Shape
 	Building:
 		Dimensions: 3,2
 		Footprint: ___ ___
@@ -94,6 +100,7 @@ cahse03.rubble:
 
 cahse04:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^3x2Shape
 	RevealsShroud:
 		Range: 6c0
 	Health:
@@ -106,6 +113,7 @@ cahse04:
 
 cahse04.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^3x2Shape
 	Building:
 		Dimensions: 3,2
 		Footprint: ___ ___
@@ -114,6 +122,7 @@ cahse04.rubble:
 
 cahse05:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^1x2Shape
 	RevealsShroud:
 		Range: 6c0
 	Health:
@@ -126,6 +135,7 @@ cahse05:
 
 cahse05.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^1x2Shape
 	Building:
 		Dimensions: 1,2
 		Footprint: _ _
@@ -134,6 +144,7 @@ cahse05.rubble:
 
 cahse06:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^2x1Shape
 	RevealsShroud:
 		Range: 6c0
 	Health:
@@ -146,6 +157,7 @@ cahse06:
 
 cahse06.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^2x1Shape
 	Building:
 		Dimensions: 2,1
 		Footprint: __
@@ -154,6 +166,7 @@ cahse06.rubble:
 
 cahse07:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^2x3Shape
 	RevealsShroud:
 		Range: 6c0
 	Health:
@@ -166,6 +179,7 @@ cahse07:
 
 cahse07.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^2x3Shape
 	Building:
 		Dimensions: 2,3
 		Footprint: __ __ __
@@ -185,6 +199,7 @@ cawt01:
 
 cats01:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^2x2Shape
 	Tooltip:
 		Name: Twin Silos
 	Armor:
@@ -199,6 +214,7 @@ cats01:
 
 cabarn02:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^2x2Shape
 	Tooltip:
 		Name: Barn
 	RevealsShroud:
@@ -211,6 +227,7 @@ cabarn02:
 
 cawash01:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^4x4Shape
 	Building:
 		Footprint: xxxx xxxx xxxx xxxx
 		Dimensions: 4, 4
@@ -227,6 +244,7 @@ cawash01:
 
 cawash01.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^4x4Shape
 	Building:
 		Footprint: ____ ____ ____ ____
 		Dimensions: 4, 4
@@ -235,6 +253,7 @@ cawash01.rubble:
 
 cawash03:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^4x3Shape
 	Building:
 		Footprint: xxxx xxxx xxxx
 		Dimensions: 4, 3
@@ -249,6 +268,7 @@ cawash03:
 
 cawash03.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^4x3Shape
 	Building:
 		Footprint: ____ ____ ____
 		Dimensions: 4, 3
@@ -257,6 +277,7 @@ cawash03.rubble:
 
 cawash04:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^4x4Shape
 	Building:
 		Footprint: xxxx xxxx xxxx xxxx
 		Dimensions: 4, 4
@@ -271,6 +292,7 @@ cawash04:
 
 cawash04.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^4x4Shape
 	Building:
 		Footprint: ____ ____ ____ ____
 		Dimensions: 4, 4
@@ -279,6 +301,7 @@ cawash04.rubble:
 
 cawash05:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^4x2Shape
 	Building:
 		Footprint: xxxx xxxx
 		Dimensions: 4, 2
@@ -293,6 +316,7 @@ cawash05:
 
 cawash05.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^4x2Shape
 	Building:
 		Footprint: ____ ____
 		Dimensions: 4, 2
@@ -301,6 +325,7 @@ cawash05.rubble:
 
 cawash06:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^4x4Shape
 	Armor:
 		Type: steel
 	RevealsShroud:
@@ -315,6 +340,7 @@ cawash06:
 
 cawash06.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^4x4Shape
 	Building:
 		Dimensions: 4,4
 		Footprint: ____ ____ ____ ____
@@ -323,6 +349,7 @@ cawash06.rubble:
 
 cawash07:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^3x3Shape
 	Building:
 		Footprint: xxx xxx xxx
 		Dimensions: 3, 3
@@ -337,6 +364,7 @@ cawash07:
 
 cawash07.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^3x3Shape
 	Building:
 		Footprint: ___ ___ ___
 		Dimensions: 3, 3
@@ -345,6 +373,7 @@ cawash07.rubble:
 
 cawash08:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^3x4Shape
 	Armor:
 		Type: steel
 	RevealsShroud:
@@ -359,6 +388,7 @@ cawash08:
 
 cawash08.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^3x4Shape
 	Building:
 		Dimensions: 3,4
 		Footprint: ___ ___ ___ ___
@@ -367,6 +397,7 @@ cawash08.rubble:
 
 cawash09:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^3x3Shape
 	Building:
 		Footprint: xxx xxx xxx
 		Dimensions: 3, 3
@@ -381,6 +412,7 @@ cawash09:
 
 cawash09.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^3x3Shape
 	Building:
 		Footprint: ___ ___ ___
 		Dimensions: 3, 3
@@ -389,6 +421,7 @@ cawash09.rubble:
 
 cawash10:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^4x4Shape
 	Building:
 		Footprint: xxxx xxxx xxxx xxxx
 		Dimensions: 4, 4
@@ -403,6 +436,7 @@ cawash10:
 
 cawash10.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^4x4Shape
 	Building:
 		Footprint: ____ ____ ____ ____
 		Dimensions: 4, 4
@@ -411,6 +445,7 @@ cawash10.rubble:
 
 cawash11:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^4x4Shape
 	Building:
 		Footprint: xxxx xxxx xxxx xxxx
 		Dimensions: 4, 4
@@ -425,6 +460,7 @@ cawash11:
 
 cawash11.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^4x4Shape
 	Building:
 		Footprint: ____ ____ ____ ____
 		Dimensions: 4, 4
@@ -433,6 +469,7 @@ cawash11.rubble:
 
 cawsh12:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^3x3Shape
 	Building:
 		Footprint: xxx xxx xxx
 		Dimensions: 3, 3
@@ -463,6 +500,7 @@ cawsh12:
 
 cawsh12.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^3x3Shape
 	Building:
 		Footprint: ___ ___ ___
 		Dimensions: 3, 3
@@ -471,6 +509,7 @@ cawsh12.rubble:
 
 cawash13:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^3x4Shape
 	Armor:
 		Type: steel
 	RevealsShroud:
@@ -485,6 +524,7 @@ cawash13:
 
 cawash13.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^3x4Shape
 	Building:
 		Dimensions: 3,4
 		Footprint: ___ ___ ___ ___
@@ -493,6 +533,7 @@ cawash13.rubble:
 
 cawash14:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^3x3Shape
 	Tooltip:
 		Name: Jefferson Memorial
 	Armor:
@@ -507,6 +548,7 @@ cawash14:
 
 cawash14.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^3x3Shape
 	Building:
 		Dimensions: 3,3
 		Footprint: ___ ___ ___
@@ -515,6 +557,7 @@ cawash14.rubble:
 
 cawash15:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^3x4Shape
 	Tooltip:
 		Name: Lincoln Memorial
 	Armor:
@@ -529,6 +572,7 @@ cawash15:
 
 cawash15.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^3x4Shape
 	Building:
 		Dimensions: 3,3
 		Footprint: ___ ___ ___
@@ -537,6 +581,7 @@ cawash15.rubble:
 
 cawash16:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^5x3Shape
 	Tooltip:
 		Name: Smithsonian Castle
 	Armor:
@@ -553,6 +598,7 @@ cawash16:
 
 cawash16.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^5x3Shape
 	Building:
 		Dimensions: 5,3
 		Footprint: _____ _____ _____
@@ -561,6 +607,7 @@ cawash16.rubble:
 
 cawash17:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^6x4Shape
 	Tooltip:
 		Name: Smithsonian Natural History Museum
 	Armor:
@@ -577,6 +624,7 @@ cawash17:
 
 cawash17.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^6x4Shape
 	Building:
 		Dimensions: 6,4
 		Footprint: ______ ______ ______ ______
@@ -585,6 +633,7 @@ cawash17.rubble:
 
 cawash18:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^2x2Shape
 	Tooltip:
 		Name: White House Fountain
 	Armor:
@@ -599,6 +648,7 @@ cawash18:
 
 cawash19:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^4x4Shape
 	Tooltip:
 		Name: Iwo Jima Memorial
 	Armor:
@@ -615,6 +665,7 @@ cawash19:
 
 cawash19.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^4x4Shape
 	Building:
 		Dimensions: 4,4
 		Footprint: ____ ____ ____ ____
@@ -623,6 +674,7 @@ cawash19.rubble:
 
 canewy01:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^4x4Shape
 	Building:
 		Footprint: xxxx xxxx xxxx xxxx
 		Dimensions: 4, 4
@@ -637,6 +689,7 @@ canewy01:
 
 canewy01.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^4x4Shape
 	Building:
 		Dimensions: 4,4
 		Footprint: ____ ____ ____ ____
@@ -645,6 +698,7 @@ canewy01.rubble:
 
 canewy04:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^3x3Shape
 	Tooltip:
 		Name: Statue of Liberty
 	Armor:
@@ -661,6 +715,7 @@ canewy04:
 
 canewy04.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^3x3Shape
 	Building:
 		Dimensions: 3,3
 		Footprint: ___ ___ ___
@@ -669,6 +724,7 @@ canewy04.rubble:
 
 canewy05:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^2x2Shape
 	Tooltip:
 		Name: World Trade Center
 	Armor:
@@ -683,6 +739,7 @@ canewy05:
 
 canewy06:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^3x3Shape
 	Armor:
 		Type: steel
 	RevealsShroud:
@@ -697,6 +754,7 @@ canewy06:
 
 canewy06.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^3x3Shape
 	Building:
 		Dimensions: 3,3
 		Footprint: ___ ___ ___
@@ -705,6 +763,7 @@ canewy06.rubble:
 
 canewy07:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^3x3Shape
 	Armor:
 		Type: steel
 	RevealsShroud:
@@ -719,6 +778,7 @@ canewy07:
 
 canewy07.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^3x3Shape
 	Building:
 		Dimensions: 3,3
 		Footprint: ___ ___ ___
@@ -727,6 +787,7 @@ canewy07.rubble:
 
 canewy08:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^3x3Shape
 	Armor:
 		Type: steel
 	RevealsShroud:
@@ -741,6 +802,7 @@ canewy08:
 
 canewy08.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^3x3Shape
 	Building:
 		Dimensions: 3,3
 		Footprint: ___ ___ ___
@@ -749,6 +811,7 @@ canewy08.rubble:
 
 canewy10:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^3x2Shape
 	Armor:
 		Type: steel
 	RevealsShroud:
@@ -763,6 +826,7 @@ canewy10:
 
 canewy10.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^3x2Shape
 	Building:
 		Dimensions: 3,2
 		Footprint: ___ ___
@@ -771,6 +835,7 @@ canewy10.rubble:
 
 canewy11:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^3x2Shape
 	Armor:
 		Type: steel
 	RevealsShroud:
@@ -785,6 +850,7 @@ canewy11:
 
 canewy11.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^3x2Shape
 	Building:
 		Dimensions: 3,2
 		Footprint: ___ ___
@@ -793,6 +859,7 @@ canewy11.rubble:
 
 canewy12:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^2x3Shape
 	Armor:
 		Type: steel
 	RevealsShroud:
@@ -807,6 +874,7 @@ canewy12:
 
 canewy12.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^2x3Shape
 	Building:
 		Dimensions: 2,3
 		Footprint: __ __ __
@@ -815,6 +883,7 @@ canewy12.rubble:
 
 canewy13:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^3x3Shape
 	Armor:
 		Type: steel
 	RevealsShroud:
@@ -829,6 +898,7 @@ canewy13:
 
 canewy13.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^3x3Shape
 	Building:
 		Dimensions: 3,3
 		Footprint: ___ ___ ___
@@ -837,6 +907,7 @@ canewy13.rubble:
 
 canewy14:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^3x3Shape
 	Armor:
 		Type: steel
 	RevealsShroud:
@@ -851,6 +922,7 @@ canewy14:
 
 canewy14.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^3x3Shape
 	Building:
 		Dimensions: 3,3
 		Footprint: ___ ___ ___
@@ -859,6 +931,7 @@ canewy14.rubble:
 
 canewy15:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^3x3Shape
 	Armor:
 		Type: steel
 	RevealsShroud:
@@ -873,6 +946,7 @@ canewy15:
 
 canewy15.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^3x3Shape
 	Building:
 		Dimensions: 3,3
 		Footprint: ___ ___ ___
@@ -881,6 +955,7 @@ canewy15.rubble:
 
 canewy16:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^2x2Shape
 	Armor:
 		Type: steel
 	RevealsShroud:
@@ -895,6 +970,7 @@ canewy16:
 
 canewy16.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^2x2Shape
 	Building:
 		Dimensions: 2,2
 		Footprint: __ __
@@ -903,6 +979,7 @@ canewy16.rubble:
 
 canewy17:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^2x2Shape
 	Armor:
 		Type: steel
 	RevealsShroud:
@@ -917,6 +994,7 @@ canewy17:
 
 canewy17.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^2x2Shape
 	Building:
 		Dimensions: 2,2
 		Footprint: __ __
@@ -925,6 +1003,7 @@ canewy17.rubble:
 
 canewy18:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^2x2Shape
 	Armor:
 		Type: steel
 	RevealsShroud:
@@ -939,6 +1018,7 @@ canewy18:
 
 canewy18.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^2x2Shape
 	Building:
 		Dimensions: 2,2
 		Footprint: __ __
@@ -947,6 +1027,7 @@ canewy18.rubble:
 
 canewy20:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^3x5Shape
 	Tooltip:
 		Name: Warehouse
 	Armor:
@@ -963,6 +1044,7 @@ canewy20:
 
 canewy20.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^3x5Shape
 	Building:
 		Dimensions: 3,5
 		Footprint: ___ ___ ___ ___ ___
@@ -971,6 +1053,7 @@ canewy20.rubble:
 
 canewy21:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^5x3Shape
 	Tooltip:
 		Name: Warehouse
 	Armor:
@@ -987,6 +1070,7 @@ canewy21:
 
 canewy21.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^5x3Shape
 	Building:
 		Dimensions: 5,3
 		Footprint: _____ _____ _____
@@ -995,6 +1079,7 @@ canewy21.rubble:
 
 caswst01:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^2x3Shape
 	Tooltip:
 		Name: Southwest Building
 	Armor:
@@ -1011,6 +1096,7 @@ caswst01:
 
 caswst01.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^2x3Shape
 	Building:
 		Dimensions: 2,3
 		Footprint: __ __ __
@@ -1019,6 +1105,7 @@ caswst01.rubble:
 
 caarmy01:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^3x2Shape
 	Building:
 		Footprint: xxx xxx
 		Dimensions: 3, 2
@@ -1058,6 +1145,7 @@ caarmy04:
 
 cawa2a:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^4x4Shape
 	Valued:
 		Cost: 2000
 	Building:
@@ -1074,6 +1162,7 @@ cawa2a:
 
 cawa2a.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^4x4Shape
 	Building:
 		Footprint: ____ ____ ____ ____
 		Dimensions: 4, 4
@@ -1082,6 +1171,7 @@ cawa2a.rubble:
 
 cawa2b:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^4x4Shape
 	Valued:
 		Cost: 2000
 	Building:
@@ -1098,6 +1188,7 @@ cawa2b:
 
 cawa2b.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^4x4Shape
 	Building:
 		Footprint: ____ ____ ____ ____
 		Dimensions: 4, 4
@@ -1106,6 +1197,7 @@ cawa2b.rubble:
 
 cawa2c:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^4x4Shape
 	Valued:
 		Cost: 2000
 	Building:
@@ -1122,6 +1214,7 @@ cawa2c:
 
 cawa2c.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^4x4Shape
 	Building:
 		Footprint: ____ ____ ____ ____
 		Dimensions: 4, 4
@@ -1130,6 +1223,7 @@ cawa2c.rubble:
 
 cawa2d:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^4x4Shape
 	Valued:
 		Cost: 2000
 	Building:
@@ -1146,6 +1240,7 @@ cawa2d:
 
 cawa2d.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^4x4Shape
 	Building:
 		Footprint: ____ ____ ____ ____
 		Dimensions: 4, 4
@@ -1154,6 +1249,7 @@ cawa2d.rubble:
 
 cafarm01:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^2x2Shape
 	Building:
 		Footprint: xx xx
 		Dimensions: 2, 2
@@ -1183,6 +1279,7 @@ cafarm02.rubble:
 
 cafarm06:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^2x2Shape
 	Tooltip:
 		Name: Lighthouse
 	Armor:
@@ -1199,6 +1296,7 @@ cafarm06:
 
 cafarm06.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^2x2Shape
 	Building:
 		Footprint: __ __
 		Dimensions: 2, 2
@@ -1256,6 +1354,7 @@ caukfgl:
 
 cacolo01:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^5x3Shape
 	Building:
 		Footprint: xxxxx xxxxx xxxxx
 		Dimensions: 5, 3
@@ -1272,6 +1371,7 @@ cacolo01:
 
 cacolo01.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^5x3Shape
 	Building:
 		Footprint: _____ _____ _____
 		Dimensions: 5, 3
@@ -1280,6 +1380,7 @@ cacolo01.rubble:
 
 caind01:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^4x4Shape
 	Building:
 		Footprint: xxxx xxxx xxxx xxxx
 		Dimensions: 4, 4
@@ -1296,6 +1397,7 @@ caind01:
 
 caind01.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^4x4Shape
 	Building:
 		Footprint: ____ ____ ____ ____
 		Dimensions: 4, 4
@@ -1304,6 +1406,7 @@ caind01.rubble:
 
 calab:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^3x4Shape
 	Building:
 		Footprint: xxx xxx xxx xxx
 		Dimensions: 3, 4
@@ -1320,6 +1423,7 @@ calab:
 
 calab.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^3x4Shape
 	Building:
 		Footprint: ___ ___ ___ ___
 		Dimensions: 3, 4
@@ -1328,6 +1432,7 @@ calab.rubble:
 
 cagas01:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^3x3Shape
 	Building:
 		Footprint: xxx xxx xxx
 		Dimensions: 3, 3
@@ -1342,6 +1447,7 @@ cagas01:
 
 cagas01.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^3x3Shape
 	Building:
 		Footprint: ___ ___ ___
 		Dimensions: 3, 3
@@ -1371,6 +1477,7 @@ galite:
 
 cacity01:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^4x4Shape
 	Armor:
 		Type: steel
 	RevealsShroud:
@@ -1386,6 +1493,7 @@ cacity01:
 
 cacity02:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^5x4Shape
 	Armor:
 		Type: steel
 	RevealsShroud:
@@ -1401,6 +1509,7 @@ cacity02:
 
 cacity03:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^3x3Shape
 	Armor:
 		Type: steel
 	RevealsShroud:
@@ -1416,6 +1525,7 @@ cacity03:
 
 cacity04:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^4x4Shape
 	Armor:
 		Type: steel
 	RevealsShroud:
@@ -1431,6 +1541,7 @@ cacity04:
 
 city05:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^4x4Shape
 	Tooltip:
 		Name: Battersea Power Station
 	Armor:
@@ -1448,6 +1559,7 @@ city05:
 
 catech01:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^3x3Shape
 	Tooltip:
 		Name: Communications
 	Armor:
@@ -1464,6 +1576,7 @@ catech01:
 
 catech01.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^3x3Shape
 	Building:
 		Dimensions: 3,3
 		Footprint: ___ ___ ___
@@ -1472,6 +1585,7 @@ catech01.rubble:
 
 catexs01:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^2x2Shape
 	Armor:
 		Type: steel
 	RevealsShroud:
@@ -1486,6 +1600,7 @@ catexs01:
 
 catexs01.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^2x2Shape
 	Building:
 		Dimensions: 2,2
 		Footprint: xx xx
@@ -1494,6 +1609,7 @@ catexs01.rubble:
 
 catexs02:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^4x4Shape
 	Tooltip:
 		Name: Alamo
 	Armor:
@@ -1510,6 +1626,7 @@ catexs02:
 
 catexs02.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^4x4Shape
 	Building:
 		Dimensions: 4,4
 		Footprint: xxxx xxxx xxxx xxxx
@@ -1518,6 +1635,7 @@ catexs02.rubble:
 
 catexs03:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^3x3Shape
 	Armor:
 		Type: steel
 	RevealsShroud:
@@ -1532,6 +1650,7 @@ catexs03:
 
 catexs03.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^3x3Shape
 	Building:
 		Dimensions: 3,3
 		Footprint: ___ ___ ___
@@ -1540,6 +1659,7 @@ catexs03.rubble:
 
 catexs04:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^3x3Shape
 	Armor:
 		Type: steel
 	RevealsShroud:
@@ -1554,6 +1674,7 @@ catexs04:
 
 catexs04.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^3x3Shape
 	Building:
 		Dimensions: 3,3
 		Footprint: ___ ___ ___
@@ -1562,6 +1683,7 @@ catexs04.rubble:
 
 catexs05:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^3x3Shape
 	Armor:
 		Type: steel
 	RevealsShroud:
@@ -1576,6 +1698,7 @@ catexs05:
 
 catexs05.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^3x3Shape
 	Building:
 		Dimensions: 3,3
 		Footprint: ___ ___ ___
@@ -1584,6 +1707,7 @@ catexs05.rubble:
 
 catexs06:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^3x3Shape
 	Armor:
 		Type: steel
 	RevealsShroud:
@@ -1598,6 +1722,7 @@ catexs06:
 
 catexs06.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^3x3Shape
 	Building:
 		Dimensions: 3,3
 		Footprint: ___ ___ ___
@@ -1606,6 +1731,7 @@ catexs06.rubble:
 
 catexs07:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^3x3Shape
 	Armor:
 		Type: steel
 	RevealsShroud:
@@ -1620,6 +1746,7 @@ catexs07:
 
 catexs07.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^3x3Shape
 	Building:
 		Dimensions: 3,3
 		Footprint: ___ ___ ___
@@ -1628,6 +1755,7 @@ catexs07.rubble:
 
 catexs08:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^2x3Shape
 	Armor:
 		Type: steel
 	RevealsShroud:
@@ -1642,6 +1770,7 @@ catexs08:
 
 catexs08.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^2x3Shape
 	Building:
 		Dimensions: 2,3
 		Footprint: xx xx xx
@@ -1650,6 +1779,7 @@ catexs08.rubble:
 
 capars01:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^4x4Shape
 	Tooltip:
 		Name: Eiffel Tower
 	Armor:
@@ -1666,6 +1796,7 @@ capars01:
 
 capars01.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^4x4Shape
 	Building:
 		Dimensions: 4,4
 		Footprint: ____ ____ ____ ____
@@ -1674,6 +1805,7 @@ capars01.rubble:
 
 capars02:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^6x4Shape
 	Armor:
 		Type: steel
 	RevealsShroud:
@@ -1688,6 +1820,7 @@ capars02:
 
 capars02.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^6x4Shape
 	Building:
 		Dimensions: 6,4
 		Footprint: ______ ______ ______ ______
@@ -1696,6 +1829,7 @@ capars02.rubble:
 
 capars04:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^3x3Shape
 	Armor:
 		Type: steel
 	RevealsShroud:
@@ -1710,6 +1844,7 @@ capars04:
 
 capars04.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^3x3Shape
 	Building:
 		Dimensions: 3,3
 		Footprint: ___ ___ ___
@@ -1718,6 +1853,7 @@ capars04.rubble:
 
 capars05:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^3x3Shape
 	Armor:
 		Type: steel
 	RevealsShroud:
@@ -1732,6 +1868,7 @@ capars05:
 
 capars05.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^3x3Shape
 	Building:
 		Dimensions: 3,3
 		Footprint: ___ ___ ___
@@ -1740,6 +1877,7 @@ capars05.rubble:
 
 capars06:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^3x3Shape
 	Armor:
 		Type: steel
 	RevealsShroud:
@@ -1754,6 +1892,7 @@ capars06:
 
 capars06.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^3x3Shape
 	Building:
 		Dimensions: 3,3
 		Footprint: ___ ___ ___
@@ -1771,6 +1910,7 @@ capars07:
 
 capars08:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^6x4Shape
 	Armor:
 		Type: steel
 	RevealsShroud:
@@ -1785,6 +1925,7 @@ capars08:
 
 capars08.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^6x4Shape
 	Building:
 		Dimensions: 6,4
 		Footprint: ______ ______ ______ ______
@@ -1793,6 +1934,7 @@ capars08.rubble:
 
 capars09:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^6x4Shape
 	Armor:
 		Type: steel
 	RevealsShroud:
@@ -1807,6 +1949,7 @@ capars09:
 
 capars09.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^6x4Shape
 	Building:
 		Dimensions: 6,4
 		Footprint: ______ ______ ______ ______
@@ -1815,6 +1958,7 @@ capars09.rubble:
 
 capars10:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^4x3Shape
 	Tooltip:
 		Name: Bistro
 	RevealsShroud:
@@ -1829,6 +1973,7 @@ capars10:
 
 capars10.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^4x3Shape
 	Building:
 		Dimensions: 4,3
 		Footprint: ____ ____ ____
@@ -1837,6 +1982,7 @@ capars10.rubble:
 
 capars11:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^3x4Shape
 	Tooltip:
 		Name: Arc de Triumphe
 	Armor:
@@ -1853,6 +1999,7 @@ capars11:
 
 capars11.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^3x4Shape
 	Building:
 		Dimensions: 3,4
 		Footprint: ___ ___ ___ ___
@@ -1861,6 +2008,7 @@ capars11.rubble:
 
 capars12:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^3x5Shape
 	Tooltip:
 		Name: Notre Dame
 	Armor:
@@ -1877,6 +2025,7 @@ capars12:
 
 capars12.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^3x5Shape
 	Building:
 		Dimensions: 3,5
 		Footprint: ___ ___ ___ ___ ___
@@ -1885,6 +2034,7 @@ capars12.rubble:
 
 capars13:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^3x4Shape
 	Tooltip:
 		Name: Bistro
 	Armor:
@@ -1901,6 +2051,7 @@ capars13:
 
 capars13.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^3x4Shape
 	Building:
 		Dimensions: 3,4
 		Footprint: ___ ___ ___ ___
@@ -1909,6 +2060,7 @@ capars13.rubble:
 
 capars14:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^4x3Shape
 	Tooltip:
 		Name: Bistro
 	Armor:
@@ -1925,6 +2077,7 @@ capars14:
 
 capars14.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^4x3Shape
 	Building:
 		Dimensions: 4,3
 		Footprint: ____ ____ ____
@@ -1933,6 +2086,7 @@ capars14.rubble:
 
 cafrma:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^2x2Shape
 	Tooltip:
 		Name: Farmhouse
 	RevealsShroud:
@@ -1954,6 +2108,7 @@ cafrmb:
 
 caprs03:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^6x4Shape
 	Tooltip:
 		Name: Louvre
 	Armor:
@@ -1970,6 +2125,7 @@ caprs03:
 
 caprs03.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^6x4Shape
 	Building:
 		Dimensions: 6,4
 		Footprint: ______ ______ ______ ______
@@ -1989,6 +2145,7 @@ cagard01:
 
 carus01:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^4x4Shape
 	Tooltip:
 		Name: Basil's Cathedral
 	Armor:
@@ -2005,6 +2162,7 @@ carus01:
 
 carus01.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^4x4Shape
 	Building:
 		Dimensions: 4,4
 		Footprint: ____ ____ ____ ____
@@ -2071,6 +2229,7 @@ carus02g.rubble:
 
 carus03:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^2x5Shape
 	Tooltip:
 		Name: Kremlin Palace
 	Armor:
@@ -2087,6 +2246,7 @@ carus03:
 
 carus03.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^2x5Shape
 	Building:
 		Dimensions: 2,5
 		Footprint: __ __ __ __ __
@@ -2095,6 +2255,7 @@ carus03.rubble:
 
 carus04:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^4x4Shape
 	Armor:
 		Type: steel
 	RevealsShroud:
@@ -2109,6 +2270,7 @@ carus04:
 
 carus04.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^4x4Shape
 	Building:
 		Dimensions: 4,4
 		Footprint: ____ ____ ____ ____
@@ -2117,6 +2279,7 @@ carus04.rubble:
 
 carus05:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^4x4Shape
 	Armor:
 		Type: steel
 	RevealsShroud:
@@ -2131,6 +2294,7 @@ carus05:
 
 carus05.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^4x4Shape
 	Building:
 		Dimensions: 4,4
 		Footprint: ____ ____ ____ ____
@@ -2139,6 +2303,7 @@ carus05.rubble:
 
 carus06:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^4x4Shape
 	Armor:
 		Type: steel
 	RevealsShroud:
@@ -2153,6 +2318,7 @@ carus06:
 
 carus06.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^4x4Shape
 	Building:
 		Dimensions: 4,4
 		Footprint: ____ ____ ____ ____
@@ -2177,6 +2343,7 @@ carus08.rubble:
 
 carus09:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^2x1Shape
 	Armor:
 		Type: steel
 	RevealsShroud:
@@ -2191,6 +2358,7 @@ carus09:
 
 carus09.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^2x1Shape
 	Building:
 		Dimensions: 2,1
 		Footprint: __
@@ -2199,6 +2367,7 @@ carus09.rubble:
 
 carus10:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^1x2Shape
 	Armor:
 		Type: steel
 	RevealsShroud:
@@ -2213,6 +2382,7 @@ carus10:
 
 carus10.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^1x2Shape
 	Building:
 		Dimensions: 1,2
 		Footprint: _ _
@@ -2221,6 +2391,7 @@ carus10.rubble:
 
 carus11:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^2x1Shape
 	Armor:
 		Type: steel
 	RevealsShroud:
@@ -2235,6 +2406,7 @@ carus11:
 
 carus11.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^2x1Shape
 	Building:
 		Dimensions: 2,1
 		Footprint: __
@@ -2243,6 +2415,7 @@ carus11.rubble:
 
 camiam01:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^4x2Shape
 	Armor:
 		Type: steel
 	RevealsShroud:
@@ -2257,6 +2430,7 @@ camiam01:
 
 camiam01.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^4x2Shape
 	Building:
 		Dimensions: 4,2
 		Footprint: ____ ____
@@ -2265,6 +2439,7 @@ camiam01.rubble:
 
 camiam02:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^4x2Shape
 	Armor:
 		Type: steel
 	RevealsShroud:
@@ -2279,6 +2454,7 @@ camiam02:
 
 camiam02.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^4x2Shape
 	Building:
 		Dimensions: 4,2
 		Footprint: ____ ____
@@ -2287,6 +2463,7 @@ camiam02.rubble:
 
 camiam03:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^2x3Shape
 	Armor:
 		Type: steel
 	RevealsShroud:
@@ -2301,6 +2478,7 @@ camiam03:
 
 camiam03.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^2x3Shape
 	Building:
 		Dimensions: 2,3
 		Footprint: __ __ __
@@ -2318,6 +2496,7 @@ camiam04:
 
 camiam05:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^3x4Shape
 	Armor:
 		Type: steel
 	RevealsShroud:
@@ -2332,6 +2511,7 @@ camiam05:
 
 camiam05.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^3x4Shape
 	Building:
 		Dimensions: 3,4
 		Footprint: ___ ___ ___ ___
@@ -2340,6 +2520,7 @@ camiam05.rubble:
 
 camiam06:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^4x4Shape
 	Armor:
 		Type: steel
 	RevealsShroud:
@@ -2354,6 +2535,7 @@ camiam06:
 
 camiam06.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^4x4Shape
 	Building:
 		Dimensions: 4,4
 		Footprint: ____ ____ ____ ____
@@ -2384,6 +2566,7 @@ camiam07.rubble:
 
 camiam08:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^3x1Shape
 	Tooltip:
 		Name: Arizona Memorial
 	Armor:
@@ -2400,6 +2583,7 @@ camiam08:
 
 camiam08.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^3x1Shape
 	Building:
 		Dimensions: 3,1
 		Footprint: ___
@@ -2408,6 +2592,7 @@ camiam08.rubble:
 
 canwy05:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^4x4Shape
 	Armor:
 		Type: steel
 	RevealsShroud:
@@ -2422,6 +2607,7 @@ canwy05:
 
 canwy05.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^4x4Shape
 	Building:
 		Dimensions: 4,4
 		Footprint: ____ ____ ____ ____
@@ -2430,6 +2616,7 @@ canwy05.rubble:
 
 canwy09:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^2x3Shape
 	Armor:
 		Type: steel
 	RevealsShroud:
@@ -2444,6 +2631,7 @@ canwy09:
 
 canwy09.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^2x3Shape
 	Building:
 		Dimensions: 2,3
 		Footprint: __ __ __
@@ -2452,6 +2640,7 @@ canwy09.rubble:
 
 canwy22:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^3x3Shape
 	Armor:
 		Type: steel
 	RevealsShroud:
@@ -2466,6 +2655,7 @@ canwy22:
 
 canwy22.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^3x3Shape
 	Building:
 		Dimensions: 3,3
 		Footprint: ___ ___ ___
@@ -2474,6 +2664,7 @@ canwy22.rubble:
 
 canwy23:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^3x2Shape
 	Armor:
 		Type: steel
 	RevealsShroud:
@@ -2488,6 +2679,7 @@ canwy23:
 
 canwy23.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^3x2Shape
 	Building:
 		Dimensions: 3,2
 		Footprint: ___ ___
@@ -2496,6 +2688,7 @@ canwy23.rubble:
 
 canwy24:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^3x3Shape
 	Armor:
 		Type: steel
 	RevealsShroud:
@@ -2510,6 +2703,7 @@ canwy24:
 
 canwy24.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^3x3Shape
 	Building:
 		Dimensions: 3,3
 		Footprint: ___ ___ ___
@@ -2518,6 +2712,7 @@ canwy24.rubble:
 
 canwy25:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^3x3Shape
 	Armor:
 		Type: steel
 	RevealsShroud:
@@ -2532,6 +2727,7 @@ canwy25:
 
 canwy25.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^3x3Shape
 	Building:
 		Dimensions: 3,3
 		Footprint: ___ ___ ___
@@ -2540,6 +2736,7 @@ canwy25.rubble:
 
 canwy26:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^5x3Shape
 	Armor:
 		Type: steel
 	RevealsShroud:
@@ -2554,6 +2751,7 @@ canwy26:
 
 canwy26.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^5x3Shape
 	Building:
 		Dimensions: 5,3
 		Footprint: _____ _____ _____
@@ -2562,6 +2760,7 @@ canwy26.rubble:
 
 camex01:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^3x2Shape
 	Tooltip:
 		Name: Mayan Pyramid
 	Armor:
@@ -2578,6 +2777,7 @@ camex01:
 
 camex01.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^3x2Shape
 	Building:
 		Dimensions: 3,2
 		Footprint: ___ ___
@@ -2586,6 +2786,7 @@ camex01.rubble:
 
 camex02:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^6x4Shape
 	Tooltip:
 		Name: Mayan Castillo
 	Armor:
@@ -2602,6 +2803,7 @@ camex02:
 
 camex02.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^6x4Shape
 	Building:
 		Dimensions: 6,4
 		Footprint: ______ ______ ______ ______
@@ -2610,6 +2812,7 @@ camex02.rubble:
 
 camex03:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^3x3Shape
 	Tooltip:
 		Name: Mayan Minor Temple
 	Armor:
@@ -2626,6 +2829,7 @@ camex03:
 
 camex03.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^3x3Shape
 	Building:
 		Dimensions: 3,3
 		Footprint: ___ ___ ___
@@ -2634,6 +2838,7 @@ camex03.rubble:
 
 camex04:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^4x4Shape
 	Tooltip:
 		Name: Mayan Large Temple
 	Armor:
@@ -2650,6 +2855,7 @@ camex04:
 
 camex04.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^4x4Shape
 	Building:
 		Dimensions: 4,4
 		Footprint: ____ ____ ____ ____
@@ -2658,6 +2864,7 @@ camex04.rubble:
 
 camex05:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^2x2Shape
 	Tooltip:
 		Name: Mayan Platfrom
 	Armor:
@@ -2674,6 +2881,7 @@ camex05:
 
 camex05.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^2x2Shape
 	Building:
 		Dimensions: 2,2
 		Footprint: __ __
@@ -2682,6 +2890,7 @@ camex05.rubble:
 
 caeur1:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^2x2Shape
 	Tooltip:
 		Name: Cottage
 	RevealsShroud:
@@ -2696,6 +2905,7 @@ caeur1:
 
 caeur1.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^2x2Shape
 	Building:
 		Dimensions: 2,2
 		Footprint: __ __
@@ -2704,6 +2914,7 @@ caeur1.rubble:
 
 caeur2:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^2x2Shape
 	Tooltip:
 		Name: Cottage
 	RevealsShroud:
@@ -2718,6 +2929,7 @@ caeur2:
 
 caeur2.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^2x2Shape
 	Building:
 		Dimensions: 2,2
 		Footprint: __ __
@@ -2726,6 +2938,7 @@ caeur2.rubble:
 
 caeur04:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^4x3Shape
 	Armor:
 		Type: steel
 	RevealsShroud:
@@ -2740,6 +2953,7 @@ caeur04:
 
 caeur04.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^4x3Shape
 	Building:
 		Dimensions: 4,3
 		Footprint: ____ ____ ____
@@ -2748,6 +2962,7 @@ caeur04.rubble:
 
 cachig01:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^3x2Shape
 	Armor:
 		Type: steel
 	RevealsShroud:
@@ -2762,6 +2977,7 @@ cachig01:
 
 cachig01.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^3x2Shape
 	Building:
 		Dimensions: 3,2
 		Footprint: ___ ___
@@ -2770,6 +2986,7 @@ cachig01.rubble:
 
 cachig02:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^2x3Shape
 	Armor:
 		Type: steel
 	RevealsShroud:
@@ -2784,6 +3001,7 @@ cachig02:
 
 cachig02.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^2x3Shape
 	Building:
 		Dimensions: 2,3
 		Footprint: __ __ __
@@ -2792,6 +3010,7 @@ cachig02.rubble:
 
 cachig03:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^3x2Shape
 	Armor:
 		Type: steel
 	RevealsShroud:
@@ -2806,6 +3025,7 @@ cachig03:
 
 cachig03.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^3x2Shape
 	Building:
 		Dimensions: 3,2
 		Footprint: ___ ___
@@ -2814,6 +3034,7 @@ cachig03.rubble:
 
 cachig04:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^2x2Shape
 	Tooltip:
 		Name: Associates Center
 	Armor:
@@ -2830,6 +3051,7 @@ cachig04:
 
 cachig04.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^2x2Shape
 	Building:
 		Dimensions: 2,2
 		Footprint: __ __
@@ -2838,6 +3060,7 @@ cachig04.rubble:
 
 cachig05:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^4x4Shape
 	Tooltip:
 		Name: Sears Tower
 	Armor:
@@ -2854,6 +3077,7 @@ cachig05:
 
 cachig05.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^4x4Shape
 	Building:
 		Dimensions: 4,4
 		Footprint: ____ ____ ____ ____
@@ -2862,6 +3086,7 @@ cachig05.rubble:
 
 cachig06:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^2x2Shape
 	Tooltip:
 		Name: Water Tower
 	Armor:
@@ -2876,6 +3101,7 @@ cachig06:
 
 cachig06.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^2x2Shape
 	Building:
 		Dimensions: 2,2
 		Footprint: __ __
@@ -2884,6 +3110,7 @@ cachig06.rubble:
 
 castl01:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^4x4Shape
 	Armor:
 		Type: steel
 	RevealsShroud:
@@ -2898,6 +3125,7 @@ castl01:
 
 castl01.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^4x4Shape
 	Building:
 		Dimensions: 4,4
 		Footprint: ____ ____ ____ ____
@@ -2906,6 +3134,7 @@ castl01.rubble:
 
 castl02:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^4x4Shape
 	Armor:
 		Type: steel
 	RevealsShroud:
@@ -2920,6 +3149,7 @@ castl02:
 
 castl02.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^4x4Shape
 	Building:
 		Dimensions: 4,4
 		Footprint: ____ ____ ____ ____
@@ -2928,6 +3158,7 @@ castl02.rubble:
 
 castl03:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^4x4Shape
 	Armor:
 		Type: steel
 	RevealsShroud:
@@ -2942,6 +3173,7 @@ castl03:
 
 castl03.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^4x4Shape
 	Building:
 		Dimensions: 4,4
 		Footprint: ____ ____ ____ ____
@@ -2950,6 +3182,7 @@ castl03.rubble:
 
 castl04:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^2x6Shape
 	Armor:
 		Type: steel
 	RevealsShroud:
@@ -2964,6 +3197,7 @@ castl04:
 
 castl04.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^2x6Shape
 	Building:
 		Dimensions: 2,6
 		Footprint: __ __ __ __ __ __
@@ -2972,6 +3206,7 @@ castl04.rubble:
 
 castl05a:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^4x4Shape
 	Tooltip:
 		Name: Busch Stadium
 	Armor:
@@ -2988,6 +3223,7 @@ castl05a:
 
 castl05a.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^4x4Shape
 	Building:
 		Dimensions: 4,4
 		Footprint: ____ ____ ____ ____
@@ -2996,6 +3232,7 @@ castl05a.rubble:
 
 castl05b:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^4x4Shape
 	Tooltip:
 		Name: Busch Stadium
 	Armor:
@@ -3012,6 +3249,7 @@ castl05b:
 
 castl05b.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^4x4Shape
 	Building:
 		Dimensions: 4,4
 		Footprint: ____ ____ ____ ____
@@ -3020,6 +3258,7 @@ castl05b.rubble:
 
 castl05c:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^4x4Shape
 	Tooltip:
 		Name: Busch Stadium
 	Armor:
@@ -3036,6 +3275,7 @@ castl05c:
 
 castl05c.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^4x4Shape
 	Building:
 		Dimensions: 4,4
 		Footprint: ____ ____ ____ ____
@@ -3044,6 +3284,7 @@ castl05c.rubble:
 
 castl05d:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^4x4Shape
 	Tooltip:
 		Name: Busch Stadium
 	Armor:
@@ -3060,6 +3301,7 @@ castl05d:
 
 castl05d.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^4x4Shape
 	Building:
 		Dimensions: 4,4
 		Footprint: ____ ____ ____ ____
@@ -3068,6 +3310,7 @@ castl05d.rubble:
 
 castl05e:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^4x4Shape
 	Tooltip:
 		Name: Busch Stadium
 	Armor:
@@ -3084,6 +3327,7 @@ castl05e:
 
 castl05e.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^4x4Shape
 	Building:
 		Dimensions: 4,4
 		Footprint: ____ ____ ____ ____
@@ -3092,8 +3336,9 @@ castl05e.rubble:
 
 castl05f:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^4x4Shape
 	Tooltip:
-		Name: Busch StadiumF
+		Name: Busch Stadium
 	Armor:
 		Type: concrete
 	RevealsShroud:
@@ -3108,6 +3353,7 @@ castl05f:
 
 castl05f.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^4x4Shape
 	Building:
 		Dimensions: 4,4
 		Footprint: ____ ____ ____ ____
@@ -3116,6 +3362,7 @@ castl05f.rubble:
 
 castl05g:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^4x4Shape
 	Tooltip:
 		Name: Busch Stadium
 	Armor:
@@ -3132,6 +3379,7 @@ castl05g:
 
 castl05g.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^4x4Shape
 	Building:
 		Dimensions: 4,4
 		Footprint: ____ ____ ____ ____
@@ -3140,6 +3388,7 @@ castl05g.rubble:
 
 castl05h:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^4x4Shape
 	Tooltip:
 		Name: Busch Stadium
 	Armor:
@@ -3156,6 +3405,7 @@ castl05h:
 
 castl05h.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^4x4Shape
 	Building:
 		Dimensions: 4,4
 		Footprint: ____ ____ ____ ____
@@ -3164,6 +3414,7 @@ castl05h.rubble:
 
 camsc07:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^2x2Shape
 	Tooltip:
 		Name: Thatched Hut Chief
 	Armor:
@@ -3178,6 +3429,7 @@ camsc07:
 
 camsc08:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^2x2Shape
 	Tooltip:
 		Name: Thatched Hut
 	RevealsShroud:
@@ -3187,6 +3439,7 @@ camsc08:
 
 camsc09:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^2x2Shape
 	Tooltip:
 		Name: Thatched Hut
 	RevealsShroud:
@@ -3196,6 +3449,7 @@ camsc09:
 
 camsc10:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^4x4Shape
 	Tooltip:
 		Name: McBurger Kong
 	RevealsShroud:
@@ -3210,6 +3464,7 @@ camsc10:
 
 camsc10.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^4x4Shape
 	Building:
 		Dimensions: 4,4
 		Footprint: ____ ____ ____ ____
@@ -3218,6 +3473,7 @@ camsc10.rubble:
 
 cabunk01:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^2x2Shape
 	Tooltip:
 		Name: Concrete Bunker
 	Armor:
@@ -3234,6 +3490,7 @@ cabunk01:
 
 cabunk01.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^2x2Shape
 	Building:
 		Dimensions: 2,2
 		Footprint: __ __
@@ -3242,6 +3499,7 @@ cabunk01.rubble:
 
 cabunk02:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^2x2Shape
 	Tooltip:
 		Name: Concrete Bunker
 	Armor:
@@ -3258,6 +3516,7 @@ cabunk02:
 
 cabunk02.rubble:
 	Inherits: ^Rubble
+	Inherits@shape: ^2x2Shape
 	Building:
 		Dimensions: 2,2
 		Footprint: __ __

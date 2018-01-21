@@ -58,6 +58,7 @@ camisc05:
 
 camisc06:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^2x1Shape
 	Building:
 		Footprint: xx
 		Dimensions: 2, 1
@@ -94,6 +95,7 @@ camsc12:
 
 camsc13:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^1x2Shape
 	Building:
 		Footprint: x x
 		Dimensions: 1, 2
@@ -169,6 +171,7 @@ camsc06:
 
 caeuro05:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^2x2Shape
 	Tooltip:
 		Name: Statue
 	Armor:
@@ -192,6 +195,7 @@ capark01:
 
 capark02:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^2x1Shape
 	Tooltip:
 		Name: Swing Set
 	RevealsShroud:
@@ -204,6 +208,7 @@ capark02:
 
 capark03:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^2x2Shape
 	Tooltip:
 		Name: Merry Go Round
 	RevealsShroud:
@@ -271,6 +276,7 @@ castrt05:
 
 camov01:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^1x4Shape
 	Tooltip:
 		Name: Drive In Movie Screen
 	Armor:
@@ -286,6 +292,7 @@ camov01:
 
 camov02:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^2x2Shape
 	Tooltip:
 		Name: Drive In Movie Concession Stand
 	Armor:
@@ -426,6 +433,7 @@ cakrmw:
 
 gagate_a:
 	Inherits: ^Building
+	Inherits@shape: ^3x1Shape
 	Valued:
 		Cost: 250
 	Health:
