@@ -647,6 +647,8 @@ cawash18:
 	Building:
 		Dimensions: 2,2
 		Footprint: xx xx
+	WithIdleOverlay@water:
+		Sequence: idle-water
 	EditorTilesetFilter:
 		Categories: Decoration
 
@@ -2152,6 +2154,8 @@ cagard01:
 		Range: 6c0
 	Health:
 		HP: 100
+	WithIdleOverlay@flag:
+		Sequence: idle-flag
 	EditorTilesetFilter:
 		Categories: Decoration
 

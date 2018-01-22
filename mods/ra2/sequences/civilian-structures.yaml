@@ -289,6 +289,10 @@ cawash18:
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 3
+	idle-water: cawsh18a
+		Length: 10
+		ShadowStart: 10
+		Tick: 80
 
 cawash19:
 	Defaults:
@@ -2282,6 +2286,10 @@ cagard01:
 	damaged-idle:
 		Start: 1
 		ShadowStart: 4
+	idle-flag: cagrd1_a
+		Length: 9
+		ShadowStart: 9
+		Tick: 80
 
 caeur1:
 	Defaults:

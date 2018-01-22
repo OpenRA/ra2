@@ -151,6 +151,10 @@ camsc06:
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 3
+	idle-fire: camsc06a
+		Length: 4
+		ShadowStart: 4
+		Tick: 80
 
 camsc11:
 	Defaults:
