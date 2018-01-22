@@ -304,41 +304,17 @@ resources:
 	tib19: tib19
 	tib20: tib20
 	gem01: gem01
-		Length: 5
-		ShadowStart: 0
 	gem02: gem02
-		Length: 5
-		ShadowStart: 0
 	gem03: gem03
-		Length: 5
-		ShadowStart: 0
 	gem04: gem04
-		Length: 5
-		ShadowStart: 0
 	gem05: gem05
-		Length: 5
-		ShadowStart: 0
 	gem06: gem06
-		Length: 5
-		ShadowStart: 0
 	gem07: gem07
-		Length: 5
-		ShadowStart: 0
 	gem08: gem08
-		Length: 5
-		ShadowStart: 0
 	gem09: gem09
-		Length: 5
-		ShadowStart: 0
 	gem10: gem10
-		Length: 5
-		ShadowStart: 0
 	gem11: gem11
-		Length: 5
-		ShadowStart: 0
 	gem12: gem12
-		Length: 5
-		ShadowStart: 0
 
 shroud:
 	shroud:
