@@ -712,13 +712,14 @@ nairon:
 		Amount: -200
 	GrantExternalConditionPower@IRONCURTAIN:
 		Icon: invuln
-		ChargeTime: 120
+		ChargeTime: 300
 		Description: Invulnerability
 		LongDesc: Makes a group of units invulnerable\nfor 20 seconds.
 		Duration: 500
 		# TODO: This are actually no speech notifications
 		EndChargeSound: siroread.wav
 		OnFireSound: siroon.wav
+		DisplayTimerStances: Ally, Neutral, Enemy
 		DisplayRadarPing: True
 		Condition: invulnerability
 	SupportPowerChargeBar:
@@ -759,10 +760,11 @@ namisl:
 		IndicatorPalette: ts-mouse
 		PowerupSpeech: BuildingOnline
 		PowerdownSpeech: BuildingOffline
+	SupportPowerChargeBar:
 	NukePower:
 		Cursor: nuke
 		Icon: abomb
-		ChargeTime: 540
+		ChargeTime: 600
 		Description: Atom Bomb
 		LongDesc: Launches a devastating atomic bomb\nat a target location.
 		EndChargeSound: snukread.wav
@@ -772,7 +774,7 @@ namisl:
 		MissileDelay: 35
 		SpawnOffset: 0,0,-1c0
 		IsPlayerPalette: true
-		DisplayTimer: True
+		DisplayTimerStances: Ally, Neutral, Enemy
 		DisplayBeacon: True
 		DisplayRadarPing: True
 		CameraRemoveDelay: 70
