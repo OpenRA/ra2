@@ -591,6 +591,10 @@
 		Bounds: 20, 30, 0, -11
 	Valued:
 		Cost: 10
+	DeliversCash:
+		Payload: 5
+		PlayerExperience: 2
+		Voice: Move
 	Tooltip:
 		GenericName: Civilian
 	Health:
@@ -619,6 +623,10 @@
 	Inherits: ^Infantry
 	Valued:
 		Cost: 10
+	DeliversCash:
+		Payload: 5
+		PlayerExperience: 2
+		Voice: Move
 	Armor:
 		Type: None
 	Health:

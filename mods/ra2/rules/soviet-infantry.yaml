@@ -8,6 +8,10 @@ e2:
 		Description: Cheap rifle infantry.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
 	Valued:
 		Cost: 100
+	DeliversCash:
+		Payload: 50
+		PlayerExperience: 5
+		Voice: Move
 	Tooltip:
 		Name: Conscript
 	Selectable:
@@ -47,6 +51,10 @@ flakt:
 		Description: Anti-Air/Anti-Infantry unit.\n  Strong vs Aircraft, Infantry\n  Weak vs Vehicles
 	Valued:
 		Cost: 100
+	DeliversCash:
+		Payload: 50
+		PlayerExperience: 5
+		Voice: Move
 	Tooltip:
 		Name: Flak Trooper
 	Selectable:
@@ -94,6 +102,10 @@ shk:
 		Description: Special armored unit using electricity.\n  Strong vs Infantry, Light armor\n  Weak vs Tanks, Aircraft\nSpecial ability: Charge tesla coils
 	Valued:
 		Cost: 500
+	DeliversCash:
+		Payload: 250
+		PlayerExperience: 25
+		Voice: Move
 	Tooltip:
 		Name: Tesla Trooper
 	Selectable:
@@ -149,6 +161,10 @@ terror:
 		Description: Carries C4 charges taped to his body and kamikazes enemies\nblowing them up quickly and efficiently.\n  Strong vs Ground units\n  Weak vs Aircraft
 	Valued:
 		Cost: 200
+	DeliversCash:
+		Payload: 100
+		PlayerExperience: 10
+		Voice: Move
 	Tooltip:
 		Name: Terrorist
 	Selectable:
@@ -187,6 +203,10 @@ deso:
 		Description: Carries a radiation-emitting weapon.\nCan deploy for area-of-effect damage.\n  Strong vs Infantry, Light armor\n  Weak vs Tanks, Aircraft
 	Valued:
 		Cost: 200
+	DeliversCash:
+		Payload: 100
+		PlayerExperience: 10
+		Voice: Move
 	Tooltip:
 		Name: Desolator
 	Selectable:
@@ -228,6 +248,10 @@ ivan:
 		Description: Specialist for explosives. Can plant a Bomb on anything, even Cows.
 	Valued:
 		Cost: 600
+	DeliversCash:
+		Payload: 300
+		PlayerExperience: 30
+		Voice: Move
 	Tooltip:
 		Name: Crazy Ivan
 	Selectable:
