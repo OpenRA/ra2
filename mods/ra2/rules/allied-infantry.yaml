@@ -7,6 +7,10 @@ engineer:
 		Description: Captures enemy structures.\n  Unarmed
 	Valued:
 		Cost: 500
+	DeliversCash:
+		Payload: 250
+		PlayerExperience: 25
+		Voice: Move
 	Tooltip:
 		Name: Engineer
 	Selectable:
@@ -46,6 +50,10 @@ dog:
 		Description: Anti-infantry unit.\nCan detect cloaked units and spies.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
 	Valued:
 		Cost: 200
+	DeliversCash:
+		Payload: 100
+		PlayerExperience: 10
+		Voice: Move
 	Tooltip:
 		Name: Attack Dog
 	Selectable:
@@ -100,6 +108,10 @@ e1:
 		Description: General-purpose infantry.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
 	Valued:
 		Cost: 200
+	DeliversCash:
+		Payload: 100
+		PlayerExperience: 10
+		Voice: Move
 	Tooltip:
 		Name: G.I.
 	Selectable:
@@ -141,6 +153,10 @@ snipe:
 	Inherits: ^Infantry
 	Valued:
 		Cost: 600
+	DeliversCash:
+		Payload: 300
+		PlayerExperience: 30
+		Voice: Move
 	Tooltip:
 		Name: Sniper
 	Buildable:
@@ -181,6 +197,10 @@ spy:
 		Description: Infiltrates enemy structures for intel or\nsabotage. Exact effect depends on the\nbuilding infiltrated.\n  Unarmed\nSpecial Ability: Disguises
 	Valued:
 		Cost: 500
+	DeliversCash:
+		Payload: 250
+		PlayerExperience: 25
+		Voice: Move
 	DisguiseTooltip:
 		Name: Spy
 		GenericName: Soldier
@@ -230,6 +250,10 @@ ghost:
 		Description: Elite commando infantry, armed with\na sub machine gun and C4.\n  Strong vs Infantry, Buildings\n  Weak vs Vehicles, Aircraft\nSpecial Ability: Destroy Building with C4
 	Valued:
 		Cost: 1000
+	DeliversCash:
+		Payload: 500
+		PlayerExperience: 50
+		Voice: Move
 	Tooltip:
 		Name: Navy SEAL
 	Selectable:
@@ -293,6 +317,10 @@ tany:
 		Description: Elite commando infantry, armed with \ndual pistols and C4.\n  Strong vs Infantry, Buildings\n  Weak vs Vehicles, Aircraft\nSpecial Ability: Destroy Building with C4\n\nMaximum 1 can be trained.
 	Valued:
 		Cost: 1000
+	DeliversCash:
+		Payload: 500
+		PlayerExperience: 50
+		Voice: Move
 	Tooltip:
 		Name: Tanya
 	Selectable:
@@ -432,6 +460,10 @@ cleg:
 		Prerequisites: barracks.infiltrated
 	Valued:
 		Cost: 1500
+	DeliversCash:
+		Payload: 750
+		PlayerExperience: 75
+		Voice: Move
 	Health:
 		HP: 125
 	Mobile:

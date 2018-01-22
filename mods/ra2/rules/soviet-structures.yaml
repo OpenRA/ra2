@@ -634,6 +634,7 @@ naclon:
 		IsPlayerPalette: false
 	ClonesProducedUnits:
 		CloneableTypes: infantry
+	AcceptsDeliveredCash:
 
 napsis:
 	Inherits: ^Building
