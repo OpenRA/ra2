@@ -1512,7 +1512,7 @@ catexs02.rubble:
 	Inherits: ^Rubble
 	Building:
 		Dimensions: 4,4
-		Footprint: xxxx xxxx xxxx xxxx
+		Footprint: ____ ____ ____ ____
 	RenderSprites:
 		Image: catexs02
 
