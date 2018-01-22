@@ -47,7 +47,7 @@ Maverick:
 		RangeLimit: 7c204
 		ContrailColor: D8D8FF
 	Warhead@1Dam: SpreadDamage
-		Spread: 58
+		Spread: 128
 		Damage: 200
 		Versus:
 			Concrete: 75
