@@ -61,7 +61,14 @@ IvanBomberE:
 	Inherits: IvanBomber
 	Warhead@2Eff: CreateEffect
 		Explosions: ivan_explosionE
-		ValidTargets: Ground, Water, Air
+
+IvanDeath:
+	Inherits: IvanBomber
+	-Warhead@0Eff:
+	Warhead@1Dam: SpreadDamage
+		Delay: 0
+	Warhead@2Eff: CreateEffect
+		Delay: 0
 
 TerrorBomb:
 	ReloadDelay: 20

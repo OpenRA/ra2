@@ -269,8 +269,8 @@ ivan:
 	Passenger:
 		PipType: Red
 	Explodes:
-		Weapon: IvanBomber
-		EmptyWeapon: IvanBomber
+		Weapon: IvanDeath
+		EmptyWeapon: IvanDeath
 	Armament@primary:
 		Weapon: IvanBomber
 		RequiresCondition: !rank-elite
