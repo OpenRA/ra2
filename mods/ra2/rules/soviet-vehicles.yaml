@@ -98,6 +98,45 @@ harv:
 		VoiceSet: SovietVehicleVoice
 	HitShape:
 
+dron:
+	Inherits: ^Vehicle
+	Valued:
+		Cost: 500
+	Tooltip:
+		Name: Terror Drone
+	Buildable:
+		Queue: Vehicle
+		BuildPaletteOrder: 40
+		Prerequisites: ~naweap
+		Description: \n  Strong vs Infantry, Vehicles\n  Weak vs Aircraft
+	Mobile:
+		Speed: 105
+		TurnSpeed: 15
+		Crushes: crate
+	Health:
+		HP: 100
+	Armor:
+		Type: Drone
+	RevealsShroud:
+		Range: 4c0
+	Passenger:
+		CargoType: Infantry
+		Weight: 2
+	RenderSprites:
+	-RenderVoxels:
+	WithInfantryBody:
+		StandSequences: stand
+		DefaultAttackSequence: shoot
+	Armament:
+		Weapon: DroneJump
+	AttackLeap:
+		Voice: Attack
+	AutoTarget:
+		InitialStance: AttackAnything
+	Voiced:
+		VoiceSet: TerrorDroneVoice
+	HitShape:
+
 htk:
 	Inherits: ^Vehicle
 	Valued:

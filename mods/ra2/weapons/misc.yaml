@@ -23,6 +23,8 @@ BlimpBomb:
 			Wood: 85
 			Steel: 75
 			Concrete: 50
+			Drone: 100
+			Rocket: 100
 		DamageTypes: Prone70Percent, TriggerProne, BulletDeath
 	Warhead@2Eff: CreateEffect
 		Explosions: medium_clsn

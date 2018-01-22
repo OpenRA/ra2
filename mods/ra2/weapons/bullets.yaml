@@ -19,6 +19,8 @@ GrandCannonWeapon:
 			Wood: 50
 			Steel: 100
 			Concrete: 50
+			Drone: 100
+			Rocket: 100
 	Warhead@2Eff: CreateEffect
 		Explosions: medium_explosion
 
@@ -43,6 +45,8 @@ sabot:
 			Wood: 2
 			Steel: 2
 			Concrete: 2
+			Drone: 2
+			Rocket: 100
 		DamageTypes: Prone50Percent, TriggerProne, BulletDeath
 
 MirageGun:
@@ -65,6 +69,8 @@ MirageGun:
 			Wood: 30
 			Steel: 20
 			Concrete: 20
+			Drone: 100
+			Rocket: 100
 		DamageTypes: FlameDeath
 	Warhead@2Eff: CreateEffect
 		Explosions: iron_fx
@@ -91,6 +97,7 @@ MirageGunE:
 			Wood: 20
 			Steel: 15
 			Concrete: 10
+			Drone: 200
 
 20mmrapidE:
 	Inherits: ^LargeBullet
@@ -109,6 +116,8 @@ MirageGunE:
 			Wood: 50
 			Steel: 40
 			Concrete: 25
+			Drone: 80
+			Rocket: 100
 		DamageTypes: Prone70Percent, TriggerProne, ExplosionDeath
 
 105mm:
@@ -128,6 +137,8 @@ MirageGunE:
 			Wood: 65
 			Steel: 45
 			Concrete: 60
+			Drone: 60
+			Rocket: 100
 
 105mmE:
 	Inherits: 105mm
@@ -165,6 +176,8 @@ MirageGunE:
 			Wood: 65
 			Steel: 45
 			Concrete: 60
+			Drone: 60
+			Rocket: 100
 
 120mmE:
 	Inherits: 120mm
@@ -236,6 +249,8 @@ MirageGunE:
 			Wood: 100
 			Steel: 80
 			Concrete: 60
+			Drone: 100
+			Rocket: 100
 
 155mmE:
 	Inherits: 155mm
