@@ -29,6 +29,8 @@ MammothTusk:
 			Wood: 75
 			Steel: 40
 			Concrete: 20
+			Drone: 80
+			Rocket: 100
 		DamageTypes: ExplosionDeath
 	Warhead@2Eff: CreateEffect
 		Explosions: medium_bang
@@ -107,6 +109,8 @@ HoverMissile:
 			Wood: 75
 			Steel: 40
 			Concrete: 20
+			Drone: 80
+			Rocket: 100
 		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
 	Warhead@2Eff: CreateEffect
 		Explosions: small_grey_explosion
@@ -161,6 +165,8 @@ SubTorpedo:
 			Wood: 65
 			Steel: 65
 			Concrete: 60
+			Drone: 25
+			Rocket: 100
 		DamageTypes: ExplosionDeath
 	Warhead@2EffWater: CreateEffect
 		Explosions: large_watersplash

@@ -40,6 +40,27 @@ dest:
 dred:
 	icon: dredicon
 
+dron:
+	stand:
+		Start: 48
+		ShadowStart: 136
+		Facings: -8
+	run:
+		Start: 0
+		ShadowStart: 88
+		Length: 6
+		Facings: -8
+		Tick: 80
+	jump:
+		Start: 56
+		ShadowStart: 144
+		Length: 4
+		Facings: -8
+	shoot: dronp
+		Length: 1
+		Facings: 32
+	icon: dronicon
+
 euroc:
 	icon: xxicon
 

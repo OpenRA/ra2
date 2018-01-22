@@ -17,6 +17,8 @@
 			Wood: 30
 			Steel: 20
 			Concrete: 10
+			Drone: 100
+			Rocket: 100
 		DamageTypes: Prone100Percent, TriggerProne, BulletDeath
 	Warhead@2Eff: CreateEffect
 		Explosions: flak_puff
@@ -96,6 +98,8 @@
 			Wood: 0
 			Steel: 0
 			Concrete: 0
+			Drone: 100
+			Rocket: 100
 		DamageTypes: BulletDeath
 	Warhead@2Eff: CreateEffect
 		Explosions: small_bang
@@ -125,6 +129,8 @@
 			Wood: 75
 			Steel: 50
 			Concrete: 25
+			Drone: 100
+			Rocket: 100
 		DamageTypes: Prone70Percent, TriggerProne, BulletDeath
 	Warhead@2Eff: CreateEffect
 		Explosions: piffpiff
@@ -148,6 +154,8 @@
 			Wood: 50
 			Steel: 50
 			Concrete: 50
+			Drone: 200
+			Rocket: 100
 		DamageTypes: ElectroDeath
 	Warhead@2Eff: CreateEffect
 		Explosions: tesla_impact

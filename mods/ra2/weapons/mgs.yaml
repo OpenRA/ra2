@@ -74,6 +74,8 @@ DoublePistols:
 			Wood: 0
 			Steel: 0
 			Concrete: 0
+			Drone: 0
+			Rocket: 100
 		DamageTypes: BulletDeath
 	Warhead@2Eff: CreateEffect
 		Explosions: piff
