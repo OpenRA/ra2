@@ -645,6 +645,7 @@ nasam:
 		Voice: Attack
 	Armament:
 		Weapon: RedEye2
+		LocalOffset: 500,0,900
 	BodyOrientation:
 		QuantizedFacings: 16
 	RenderVoxels:
