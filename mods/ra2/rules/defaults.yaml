@@ -266,6 +266,56 @@
 		TargetTypes: MindControl
 		RequiresCondition: !controlled
 
+^AutoTargetGround:
+	AutoTarget:
+		AttackAnythingCondition: stance-attackanything
+	AutoTargetPriority@DEFAULT:
+		RequiresCondition: !stance-attackanything
+		ValidTargets: Infantry, Vehicle, Water, Underwater, Defense
+		InvalidTargets: NoAutoTarget, WaterStructure
+	AutoTargetPriority@ATTACKANYTHING:
+		RequiresCondition: stance-attackanything
+		ValidTargets: Infantry, Vehicle, Water, Underwater, Structure, Defense
+		InvalidTargets: NoAutoTarget
+
+^AutoTargetGroundAssaultMove:
+	Inherits: ^AutoTargetGround
+	AutoTargetPriority@DEFAULT:
+		RequiresCondition: !stance-attackanything && !assault-move
+	AutoTargetPriority@ATTACKANYTHING:
+		RequiresCondition: stance-attackanything || assault-move
+	AttackMove:
+		AssaultMoveScanCondition: assault-move
+		Voice: Attack
+
+^AutoTargetAir:
+	AutoTarget:
+	AutoTargetPriority@DEFAULT:
+		ValidTargets: Air
+		InvalidTargets: NoAutoTarget
+
+^AutoTargetAll:
+	AutoTarget:
+		AttackAnythingCondition: stance-attackanything
+	AutoTargetPriority@DEFAULT:
+		RequiresCondition: !stance-attackanything
+		ValidTargets: Infantry, Vehicle, Water, Underwater, Air, Defense
+		InvalidTargets: NoAutoTarget, WaterStructure
+	AutoTargetPriority@ATTACKANYTHING:
+		RequiresCondition: stance-attackanything
+		ValidTargets: Infantry, Vehicle, Water, Underwater, Air, Structure, Defense
+		InvalidTargets: NoAutoTarget
+
+^AutoTargetAllAssaultMove:
+	Inherits: ^AutoTargetAll
+	AutoTargetPriority@DEFAULT:
+		RequiresCondition: !stance-attackanything && !assault-move
+	AutoTargetPriority@ATTACKANYTHING:
+		RequiresCondition: stance-attackanything || assault-move
+	AttackMove:
+		AssaultMoveScanCondition: assault-move
+		Voice: Attack
+
 ^Building:
 	Inherits@1: ^ExistsInWorld
 	Inherits@2: ^SpriteActor
@@ -328,8 +378,6 @@
 
 ^SupportBuilding:
 	Inherits: ^Building
-	AutoTarget:
-		EnableStances: false
 	-Capturable:
 	-CaptureNotification:
 	-MustBeDestroyed:
@@ -532,9 +580,6 @@
 	SpawnActorOnDeath@flames:
 		Actor: FLAMEGUY
 		DeathType: FlameDeath
-	AutoTarget:
-	AttackMove:
-		Voice: Attack
 	TakeCover:
 		DamageModifiers:
 			Prone50Percent: 50
@@ -603,6 +648,7 @@
 
 ^CivilianInfantry:
 	Inherits: ^Infantry
+	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Inherits@MC: ^MindControllable
 	Selectable:
 		Bounds: 20, 30, 0, -11
@@ -704,7 +750,7 @@
 	Selectable:
 		Bounds: 32,32
 	Targetable:
-		TargetTypes: Ground, Repair, DetonateAttack
+		TargetTypes: Ground, Vehicle, Repair, DetonateAttack
 	Repairable:
 		Voice: Move
 		RepairBuildings: gadept, nadept, caoutp
@@ -712,8 +758,6 @@
 		Voice: Move
 		CargoType: Vehicle
 		Weight: 3
-	AttackMove:
-		Voice: Attack
 	HiddenUnderFog:
 	WithTextControlGroupDecoration:
 	ActorLostNotification:
@@ -784,8 +828,6 @@
 		VTOL: true
 	HiddenUnderFog:
 		Type: CenterPosition
-	AttackMove:
-		Voice: Attack
 	ActorLostNotification:
 	BodyOrientation:
 		QuantizedFacings: 0
@@ -893,8 +935,6 @@
 	Repairable:
 		Voice: Attack
 		RepairBuildings: gayard, nayard
-	AttackMove:
-		Voice: Attack
 	HiddenUnderFog:
 	ActorLostNotification:
 	ProximityCaptor:

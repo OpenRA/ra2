@@ -51,6 +51,7 @@ lcrf:
 
 dest:
 	Inherits: ^Ship
+	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Inherits@MC: ^MindControllable
 	Buildable:
 		Queue: Ship
@@ -99,6 +100,7 @@ dest:
 
 aegis:
 	Inherits: ^Ship
+	Inherits@AUTOTARGET: ^AutoTargetAir
 	Inherits@MC: ^MindControllable
 	Buildable:
 		Queue: Ship
@@ -139,6 +141,7 @@ dlph:
 	Inherits@2: ^SpriteActor
 	Inherits@3: ^GainsExperience
 	Inherits@5: ^CrateStatModifiers
+	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Buildable:
 		Queue: Ship
 		BuildPaletteOrder: 40
