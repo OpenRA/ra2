@@ -405,11 +405,15 @@ gawall:
 		UseTilesetCode: true
 	idle: gtwall
 		Length: 16
-		ShadowStart: 32
+		ShadowStart: 48
 	damaged-idle: gtwall
 		Start: 16
 		Length: 16
-		ShadowStart: 48
+		ShadowStart: 64
+	critical-idle: gtwall
+		Start: 32
+		Length: 16
+		ShadowStart: 80
 	icon: wallicon
 		Offset: 0,0
 		UseTilesetCode: false

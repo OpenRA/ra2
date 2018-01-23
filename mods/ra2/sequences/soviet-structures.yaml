@@ -532,11 +532,15 @@ nawall:
 		UseTilesetCode: true
 	idle: ntwall
 		Length: 16
-		ShadowStart: 32
+		ShadowStart: 48
 	damaged-idle: ntwall
 		Start: 16
 		Length: 16
-		ShadowStart: 48
+		ShadowStart: 64
+	critical-idle: ntwall
+		Start: 32
+		Length: 16
+		ShadowStart: 80
 	icon: nwalicon
 		Offset: 0,0
 		UseTilesetCode: false
