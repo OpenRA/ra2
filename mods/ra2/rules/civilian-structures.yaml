@@ -177,7 +177,7 @@ cawt01:
 	Tooltip:
 		Name: Water Tower
 	Armor:
-		Type: steel
+		Type: Steel
 	RevealsShroud:
 		Range: 6c0
 	Health:
@@ -188,7 +188,7 @@ cats01:
 	Tooltip:
 		Name: Twin Silos
 	Armor:
-		Type: steel
+		Type: Steel
 	RevealsShroud:
 		Range: 6c0
 	Health:
@@ -302,7 +302,7 @@ cawash05.rubble:
 cawash06:
 	Inherits: ^CivBuilding
 	Armor:
-		Type: steel
+		Type: Steel
 	RevealsShroud:
 		Range: 6c0
 	Health:
@@ -346,7 +346,7 @@ cawash07.rubble:
 cawash08:
 	Inherits: ^CivBuilding
 	Armor:
-		Type: steel
+		Type: Steel
 	RevealsShroud:
 		Range: 6c0
 	Health:
@@ -472,7 +472,7 @@ cawsh12.rubble:
 cawash13:
 	Inherits: ^CivBuilding
 	Armor:
-		Type: steel
+		Type: Steel
 	RevealsShroud:
 		Range: 6c0
 	Health:
@@ -496,7 +496,7 @@ cawash14:
 	Tooltip:
 		Name: Jefferson Memorial
 	Armor:
-		Type: concrete
+		Type: Concrete
 	Health:
 		HP: 1000
 	Building:
@@ -518,7 +518,7 @@ cawash15:
 	Tooltip:
 		Name: Lincoln Memorial
 	Armor:
-		Type: concrete
+		Type: Concrete
 	Health:
 		HP: 1000
 	Building:
@@ -540,7 +540,7 @@ cawash16:
 	Tooltip:
 		Name: Smithsonian Castle
 	Armor:
-		Type: concrete
+		Type: Concrete
 	RevealsShroud:
 		Range: 6c0
 	Health:
@@ -564,7 +564,7 @@ cawash17:
 	Tooltip:
 		Name: Smithsonian Natural History Museum
 	Armor:
-		Type: concrete
+		Type: Concrete
 	RevealsShroud:
 		Range: 6c0
 	Health:
@@ -588,7 +588,7 @@ cawash18:
 	Tooltip:
 		Name: White House Fountain
 	Armor:
-		Type: concrete
+		Type: Concrete
 	RevealsShroud:
 		Range: 6c0
 	Health:
@@ -602,7 +602,7 @@ cawash19:
 	Tooltip:
 		Name: Iwo Jima Memorial
 	Armor:
-		Type: concrete
+		Type: Concrete
 	RevealsShroud:
 		Range: 6c0
 	Health:
@@ -648,7 +648,7 @@ canewy04:
 	Tooltip:
 		Name: Statue of Liberty
 	Armor:
-		Type: concrete
+		Type: Concrete
 	RevealsShroud:
 		Range: 4c0
 	Health:
@@ -672,7 +672,7 @@ canewy05:
 	Tooltip:
 		Name: World Trade Center
 	Armor:
-		Type: concrete
+		Type: Concrete
 	RevealsShroud:
 		Range: 4c0
 	Health:
@@ -684,7 +684,7 @@ canewy05:
 canewy06:
 	Inherits: ^CivBuilding
 	Armor:
-		Type: steel
+		Type: Steel
 	RevealsShroud:
 		Range: 6c0
 	Health:
@@ -706,7 +706,7 @@ canewy06.rubble:
 canewy07:
 	Inherits: ^CivBuilding
 	Armor:
-		Type: steel
+		Type: Steel
 	RevealsShroud:
 		Range: 6c0
 	Health:
@@ -728,7 +728,7 @@ canewy07.rubble:
 canewy08:
 	Inherits: ^CivBuilding
 	Armor:
-		Type: steel
+		Type: Steel
 	RevealsShroud:
 		Range: 6c0
 	Health:
@@ -750,7 +750,7 @@ canewy08.rubble:
 canewy10:
 	Inherits: ^CivBuilding
 	Armor:
-		Type: steel
+		Type: Steel
 	RevealsShroud:
 		Range: 6c0
 	Health:
@@ -772,7 +772,7 @@ canewy10.rubble:
 canewy11:
 	Inherits: ^CivBuilding
 	Armor:
-		Type: steel
+		Type: Steel
 	RevealsShroud:
 		Range: 6c0
 	Health:
@@ -794,7 +794,7 @@ canewy11.rubble:
 canewy12:
 	Inherits: ^CivBuilding
 	Armor:
-		Type: steel
+		Type: Steel
 	RevealsShroud:
 		Range: 6c0
 	Health:
@@ -816,7 +816,7 @@ canewy12.rubble:
 canewy13:
 	Inherits: ^CivBuilding
 	Armor:
-		Type: steel
+		Type: Steel
 	RevealsShroud:
 		Range: 6c0
 	Health:
@@ -838,7 +838,7 @@ canewy13.rubble:
 canewy14:
 	Inherits: ^CivBuilding
 	Armor:
-		Type: steel
+		Type: Steel
 	RevealsShroud:
 		Range: 6c0
 	Health:
@@ -860,7 +860,7 @@ canewy14.rubble:
 canewy15:
 	Inherits: ^CivBuilding
 	Armor:
-		Type: steel
+		Type: Steel
 	RevealsShroud:
 		Range: 6c0
 	Health:
@@ -882,7 +882,7 @@ canewy15.rubble:
 canewy16:
 	Inherits: ^CivBuilding
 	Armor:
-		Type: steel
+		Type: Steel
 	RevealsShroud:
 		Range: 6c0
 	Health:
@@ -904,7 +904,7 @@ canewy16.rubble:
 canewy17:
 	Inherits: ^CivBuilding
 	Armor:
-		Type: steel
+		Type: Steel
 	RevealsShroud:
 		Range: 6c0
 	Health:
@@ -926,7 +926,7 @@ canewy17.rubble:
 canewy18:
 	Inherits: ^CivBuilding
 	Armor:
-		Type: steel
+		Type: Steel
 	RevealsShroud:
 		Range: 6c0
 	Health:
@@ -950,7 +950,7 @@ canewy20:
 	Tooltip:
 		Name: Warehouse
 	Armor:
-		Type: steel
+		Type: Steel
 	RevealsShroud:
 		Range: 6c0
 	Health:
@@ -974,7 +974,7 @@ canewy21:
 	Tooltip:
 		Name: Warehouse
 	Armor:
-		Type: steel
+		Type: Steel
 	RevealsShroud:
 		Range: 6c0
 	Health:
@@ -998,7 +998,7 @@ caswst01:
 	Tooltip:
 		Name: Southwest Building
 	Armor:
-		Type: steel
+		Type: Steel
 	RevealsShroud:
 		Range: 4c0
 	Health:
@@ -1186,7 +1186,7 @@ cafarm06:
 	Tooltip:
 		Name: Lighthouse
 	Armor:
-		Type: steel
+		Type: Steel
 	RevealsShroud:
 		Range: 6c0
 	Health:
@@ -1372,7 +1372,7 @@ galite:
 cacity01:
 	Inherits: ^CivBuilding
 	Armor:
-		Type: steel
+		Type: Steel
 	RevealsShroud:
 		Range: 4c0
 	Health:
@@ -1387,7 +1387,7 @@ cacity01:
 cacity02:
 	Inherits: ^CivBuilding
 	Armor:
-		Type: steel
+		Type: Steel
 	RevealsShroud:
 		Range: 4c0
 	Health:
@@ -1402,7 +1402,7 @@ cacity02:
 cacity03:
 	Inherits: ^CivBuilding
 	Armor:
-		Type: steel
+		Type: Steel
 	RevealsShroud:
 		Range: 4c0
 	Health:
@@ -1417,7 +1417,7 @@ cacity03:
 cacity04:
 	Inherits: ^CivBuilding
 	Armor:
-		Type: steel
+		Type: Steel
 	RevealsShroud:
 		Range: 4c0
 	Health:
@@ -1434,7 +1434,7 @@ city05:
 	Tooltip:
 		Name: Battersea Power Station
 	Armor:
-		Type: steel
+		Type: Steel
 	RevealsShroud:
 		Range: 4c0
 	Health:
@@ -1451,7 +1451,7 @@ catech01:
 	Tooltip:
 		Name: Communications
 	Armor:
-		Type: steel
+		Type: Steel
 	RevealsShroud:
 		Range: 4c0
 	Health:
@@ -1473,7 +1473,7 @@ catech01.rubble:
 catexs01:
 	Inherits: ^CivBuilding
 	Armor:
-		Type: steel
+		Type: Steel
 	RevealsShroud:
 		Range: 4c0
 	Health:
@@ -1497,7 +1497,7 @@ catexs02:
 	Tooltip:
 		Name: Alamo
 	Armor:
-		Type: concrete
+		Type: Concrete
 	RevealsShroud:
 		Range: 6c0
 	Health:
@@ -1519,7 +1519,7 @@ catexs02.rubble:
 catexs03:
 	Inherits: ^CivBuilding
 	Armor:
-		Type: steel
+		Type: Steel
 	RevealsShroud:
 		Range: 6c0
 	Health:
@@ -1541,7 +1541,7 @@ catexs03.rubble:
 catexs04:
 	Inherits: ^CivBuilding
 	Armor:
-		Type: steel
+		Type: Steel
 	RevealsShroud:
 		Range: 6c0
 	Health:
@@ -1563,7 +1563,7 @@ catexs04.rubble:
 catexs05:
 	Inherits: ^CivBuilding
 	Armor:
-		Type: steel
+		Type: Steel
 	RevealsShroud:
 		Range: 6c0
 	Health:
@@ -1585,7 +1585,7 @@ catexs05.rubble:
 catexs06:
 	Inherits: ^CivBuilding
 	Armor:
-		Type: steel
+		Type: Steel
 	RevealsShroud:
 		Range: 6c0
 	Health:
@@ -1607,7 +1607,7 @@ catexs06.rubble:
 catexs07:
 	Inherits: ^CivBuilding
 	Armor:
-		Type: steel
+		Type: Steel
 	RevealsShroud:
 		Range: 6c0
 	Health:
@@ -1629,7 +1629,7 @@ catexs07.rubble:
 catexs08:
 	Inherits: ^CivBuilding
 	Armor:
-		Type: steel
+		Type: Steel
 	RevealsShroud:
 		Range: 6c0
 	Health:
@@ -1653,7 +1653,7 @@ capars01:
 	Tooltip:
 		Name: Eiffel Tower
 	Armor:
-		Type: steel
+		Type: Steel
 	Health:
 		HP: 3000
 	Power:
@@ -1675,7 +1675,7 @@ capars01.rubble:
 capars02:
 	Inherits: ^CivBuilding
 	Armor:
-		Type: steel
+		Type: Steel
 	RevealsShroud:
 		Range: 6c0
 	Health:
@@ -1697,7 +1697,7 @@ capars02.rubble:
 capars04:
 	Inherits: ^CivBuilding
 	Armor:
-		Type: steel
+		Type: Steel
 	RevealsShroud:
 		Range: 6c0
 	Health:
@@ -1719,7 +1719,7 @@ capars04.rubble:
 capars05:
 	Inherits: ^CivBuilding
 	Armor:
-		Type: steel
+		Type: Steel
 	RevealsShroud:
 		Range: 6c0
 	Health:
@@ -1741,7 +1741,7 @@ capars05.rubble:
 capars06:
 	Inherits: ^CivBuilding
 	Armor:
-		Type: steel
+		Type: Steel
 	RevealsShroud:
 		Range: 6c0
 	Health:
@@ -1772,7 +1772,7 @@ capars07:
 capars08:
 	Inherits: ^CivBuilding
 	Armor:
-		Type: steel
+		Type: Steel
 	RevealsShroud:
 		Range: 6c0
 	Health:
@@ -1794,7 +1794,7 @@ capars08.rubble:
 capars09:
 	Inherits: ^CivBuilding
 	Armor:
-		Type: steel
+		Type: Steel
 	RevealsShroud:
 		Range: 6c0
 	Health:
@@ -1840,7 +1840,7 @@ capars11:
 	Tooltip:
 		Name: Arc de Triumphe
 	Armor:
-		Type: concrete
+		Type: Concrete
 	RevealsShroud:
 		Range: 6c0
 	Health:
@@ -1864,7 +1864,7 @@ capars12:
 	Tooltip:
 		Name: Notre Dame
 	Armor:
-		Type: concrete
+		Type: Concrete
 	RevealsShroud:
 		Range: 6c0
 	Health:
@@ -1888,7 +1888,7 @@ capars13:
 	Tooltip:
 		Name: Bistro
 	Armor:
-		Type: concrete
+		Type: Concrete
 	RevealsShroud:
 		Range: 6c0
 	Health:
@@ -1912,7 +1912,7 @@ capars14:
 	Tooltip:
 		Name: Bistro
 	Armor:
-		Type: concrete
+		Type: Concrete
 	RevealsShroud:
 		Range: 6c0
 	Health:
@@ -1957,7 +1957,7 @@ caprs03:
 	Tooltip:
 		Name: Louvre
 	Armor:
-		Type: concrete
+		Type: Concrete
 	RevealsShroud:
 		Range: 6c0
 	Health:
@@ -1981,7 +1981,7 @@ cagard01:
 	Tooltip:
 		Name: Guard Shack
 	Armor:
-		Type: steel
+		Type: Steel
 	RevealsShroud:
 		Range: 6c0
 	Health:
@@ -1992,7 +1992,7 @@ carus01:
 	Tooltip:
 		Name: Basil's Cathedral
 	Armor:
-		Type: concrete
+		Type: Concrete
 	RevealsShroud:
 		Range: 6c0
 	Health:
@@ -2014,7 +2014,7 @@ carus01.rubble:
 carus02a:
 	Inherits: ^CivBuilding
 	Armor:
-		Type: concrete
+		Type: Concrete
 	Health:
 		HP: 800
 	SpawnActorOnDeath:
@@ -2035,7 +2035,7 @@ carus02a.rubble:
 carus02b:
 	Inherits: ^CivBuilding
 	Armor:
-		Type: concrete
+		Type: Concrete
 	Health:
 		HP: 500
 	SpawnActorOnDeath:
@@ -2054,7 +2054,7 @@ carus02g:
 	Tooltip:
 		Name: Kremlin Wall Clock Tower
 	Armor:
-		Type: concrete
+		Type: Concrete
 	RevealsShroud:
 		Range: 6c0
 	Health:
@@ -2074,7 +2074,7 @@ carus03:
 	Tooltip:
 		Name: Kremlin Palace
 	Armor:
-		Type: concrete
+		Type: Concrete
 	RevealsShroud:
 		Range: 6c0
 	Health:
@@ -2096,7 +2096,7 @@ carus03.rubble:
 carus04:
 	Inherits: ^CivBuilding
 	Armor:
-		Type: steel
+		Type: Steel
 	RevealsShroud:
 		Range: 6c0
 	Health:
@@ -2118,7 +2118,7 @@ carus04.rubble:
 carus05:
 	Inherits: ^CivBuilding
 	Armor:
-		Type: steel
+		Type: Steel
 	RevealsShroud:
 		Range: 6c0
 	Health:
@@ -2140,7 +2140,7 @@ carus05.rubble:
 carus06:
 	Inherits: ^CivBuilding
 	Armor:
-		Type: steel
+		Type: Steel
 	RevealsShroud:
 		Range: 6c0
 	Health:
@@ -2162,7 +2162,7 @@ carus06.rubble:
 carus08:
 	Inherits: ^CivBuilding
 	Armor:
-		Type: steel
+		Type: Steel
 	RevealsShroud:
 		Range: 6c0
 	Health:
@@ -2178,7 +2178,7 @@ carus08.rubble:
 carus09:
 	Inherits: ^CivBuilding
 	Armor:
-		Type: steel
+		Type: Steel
 	RevealsShroud:
 		Range: 6c0
 	Health:
@@ -2200,7 +2200,7 @@ carus09.rubble:
 carus10:
 	Inherits: ^CivBuilding
 	Armor:
-		Type: steel
+		Type: Steel
 	RevealsShroud:
 		Range: 6c0
 	Health:
@@ -2222,7 +2222,7 @@ carus10.rubble:
 carus11:
 	Inherits: ^CivBuilding
 	Armor:
-		Type: steel
+		Type: Steel
 	RevealsShroud:
 		Range: 6c0
 	Health:
@@ -2244,7 +2244,7 @@ carus11.rubble:
 camiam01:
 	Inherits: ^CivBuilding
 	Armor:
-		Type: steel
+		Type: Steel
 	RevealsShroud:
 		Range: 6c0
 	Health:
@@ -2266,7 +2266,7 @@ camiam01.rubble:
 camiam02:
 	Inherits: ^CivBuilding
 	Armor:
-		Type: steel
+		Type: Steel
 	RevealsShroud:
 		Range: 6c0
 	Health:
@@ -2288,7 +2288,7 @@ camiam02.rubble:
 camiam03:
 	Inherits: ^CivBuilding
 	Armor:
-		Type: steel
+		Type: Steel
 	RevealsShroud:
 		Range: 6c0
 	Health:
@@ -2319,7 +2319,7 @@ camiam04:
 camiam05:
 	Inherits: ^CivBuilding
 	Armor:
-		Type: steel
+		Type: Steel
 	RevealsShroud:
 		Range: 6c0
 	Health:
@@ -2341,7 +2341,7 @@ camiam05.rubble:
 camiam06:
 	Inherits: ^CivBuilding
 	Armor:
-		Type: steel
+		Type: Steel
 	RevealsShroud:
 		Range: 6c0
 	Health:
@@ -2363,7 +2363,7 @@ camiam06.rubble:
 camiam07:
 	Inherits: ^CivBuilding
 	Armor:
-		Type: steel
+		Type: Steel
 	RevealsShroud:
 		Range: 6c0
 	Health:
@@ -2387,7 +2387,7 @@ camiam08:
 	Tooltip:
 		Name: Arizona Memorial
 	Armor:
-		Type: steel
+		Type: Steel
 	RevealsShroud:
 		Range: 6c0
 	Health:
@@ -2409,7 +2409,7 @@ camiam08.rubble:
 canwy05:
 	Inherits: ^CivBuilding
 	Armor:
-		Type: steel
+		Type: Steel
 	RevealsShroud:
 		Range: 6c0
 	Health:
@@ -2431,7 +2431,7 @@ canwy05.rubble:
 canwy09:
 	Inherits: ^CivBuilding
 	Armor:
-		Type: steel
+		Type: Steel
 	RevealsShroud:
 		Range: 6c0
 	Health:
@@ -2453,7 +2453,7 @@ canwy09.rubble:
 canwy22:
 	Inherits: ^CivBuilding
 	Armor:
-		Type: steel
+		Type: Steel
 	RevealsShroud:
 		Range: 6c0
 	Health:
@@ -2475,7 +2475,7 @@ canwy22.rubble:
 canwy23:
 	Inherits: ^CivBuilding
 	Armor:
-		Type: steel
+		Type: Steel
 	RevealsShroud:
 		Range: 6c0
 	Health:
@@ -2497,7 +2497,7 @@ canwy23.rubble:
 canwy24:
 	Inherits: ^CivBuilding
 	Armor:
-		Type: steel
+		Type: Steel
 	RevealsShroud:
 		Range: 6c0
 	Health:
@@ -2519,7 +2519,7 @@ canwy24.rubble:
 canwy25:
 	Inherits: ^CivBuilding
 	Armor:
-		Type: steel
+		Type: Steel
 	RevealsShroud:
 		Range: 6c0
 	Health:
@@ -2541,7 +2541,7 @@ canwy25.rubble:
 canwy26:
 	Inherits: ^CivBuilding
 	Armor:
-		Type: steel
+		Type: Steel
 	RevealsShroud:
 		Range: 6c0
 	Health:
@@ -2565,7 +2565,7 @@ camex01:
 	Tooltip:
 		Name: Mayan Pyramid
 	Armor:
-		Type: concrete
+		Type: Concrete
 	RevealsShroud:
 		Range: 12c0
 	Health:
@@ -2589,7 +2589,7 @@ camex02:
 	Tooltip:
 		Name: Mayan Castillo
 	Armor:
-		Type: concrete
+		Type: Concrete
 	RevealsShroud:
 		Range: 6c0
 	Health:
@@ -2613,7 +2613,7 @@ camex03:
 	Tooltip:
 		Name: Mayan Minor Temple
 	Armor:
-		Type: concrete
+		Type: Concrete
 	RevealsShroud:
 		Range: 6c0
 	Health:
@@ -2637,7 +2637,7 @@ camex04:
 	Tooltip:
 		Name: Mayan Large Temple
 	Armor:
-		Type: concrete
+		Type: Concrete
 	RevealsShroud:
 		Range: 6c0
 	Health:
@@ -2661,7 +2661,7 @@ camex05:
 	Tooltip:
 		Name: Mayan Platfrom
 	Armor:
-		Type: concrete
+		Type: Concrete
 	RevealsShroud:
 		Range: 6c0
 	Health:
@@ -2727,7 +2727,7 @@ caeur2.rubble:
 caeur04:
 	Inherits: ^CivBuilding
 	Armor:
-		Type: steel
+		Type: Steel
 	RevealsShroud:
 		Range: 6c0
 	Health:
@@ -2749,7 +2749,7 @@ caeur04.rubble:
 cachig01:
 	Inherits: ^CivBuilding
 	Armor:
-		Type: steel
+		Type: Steel
 	RevealsShroud:
 		Range: 6c0
 	Health:
@@ -2771,7 +2771,7 @@ cachig01.rubble:
 cachig02:
 	Inherits: ^CivBuilding
 	Armor:
-		Type: steel
+		Type: Steel
 	RevealsShroud:
 		Range: 6c0
 	Health:
@@ -2793,7 +2793,7 @@ cachig02.rubble:
 cachig03:
 	Inherits: ^CivBuilding
 	Armor:
-		Type: steel
+		Type: Steel
 	RevealsShroud:
 		Range: 6c0
 	Health:
@@ -2817,7 +2817,7 @@ cachig04:
 	Tooltip:
 		Name: Associates Center
 	Armor:
-		Type: concrete
+		Type: Concrete
 	RevealsShroud:
 		Range: 6c0
 	Health:
@@ -2841,7 +2841,7 @@ cachig05:
 	Tooltip:
 		Name: Sears Tower
 	Armor:
-		Type: concrete
+		Type: Concrete
 	RevealsShroud:
 		Range: 6c0
 	Health:
@@ -2865,7 +2865,7 @@ cachig06:
 	Tooltip:
 		Name: Water Tower
 	Armor:
-		Type: steel
+		Type: Steel
 	Health:
 		HP: 1000
 	Building:
@@ -2885,7 +2885,7 @@ cachig06.rubble:
 castl01:
 	Inherits: ^CivBuilding
 	Armor:
-		Type: steel
+		Type: Steel
 	RevealsShroud:
 		Range: 6c0
 	Health:
@@ -2907,7 +2907,7 @@ castl01.rubble:
 castl02:
 	Inherits: ^CivBuilding
 	Armor:
-		Type: steel
+		Type: Steel
 	RevealsShroud:
 		Range: 6c0
 	Health:
@@ -2929,7 +2929,7 @@ castl02.rubble:
 castl03:
 	Inherits: ^CivBuilding
 	Armor:
-		Type: steel
+		Type: Steel
 	RevealsShroud:
 		Range: 6c0
 	Health:
@@ -2951,7 +2951,7 @@ castl03.rubble:
 castl04:
 	Inherits: ^CivBuilding
 	Armor:
-		Type: steel
+		Type: Steel
 	RevealsShroud:
 		Range: 6c0
 	Health:
@@ -2975,7 +2975,7 @@ castl05a:
 	Tooltip:
 		Name: Busch Stadium
 	Armor:
-		Type: concrete
+		Type: Concrete
 	RevealsShroud:
 		Range: 6c0
 	Health:
@@ -2999,7 +2999,7 @@ castl05b:
 	Tooltip:
 		Name: Busch Stadium
 	Armor:
-		Type: concrete
+		Type: Concrete
 	RevealsShroud:
 		Range: 6c0
 	Health:
@@ -3023,7 +3023,7 @@ castl05c:
 	Tooltip:
 		Name: Busch Stadium
 	Armor:
-		Type: concrete
+		Type: Concrete
 	RevealsShroud:
 		Range: 6c0
 	Health:
@@ -3047,7 +3047,7 @@ castl05d:
 	Tooltip:
 		Name: Busch Stadium
 	Armor:
-		Type: concrete
+		Type: Concrete
 	RevealsShroud:
 		Range: 6c0
 	Health:
@@ -3071,7 +3071,7 @@ castl05e:
 	Tooltip:
 		Name: Busch Stadium
 	Armor:
-		Type: concrete
+		Type: Concrete
 	RevealsShroud:
 		Range: 6c0
 	Health:
@@ -3095,7 +3095,7 @@ castl05f:
 	Tooltip:
 		Name: Busch StadiumF
 	Armor:
-		Type: concrete
+		Type: Concrete
 	RevealsShroud:
 		Range: 6c0
 	Health:
@@ -3119,7 +3119,7 @@ castl05g:
 	Tooltip:
 		Name: Busch Stadium
 	Armor:
-		Type: concrete
+		Type: Concrete
 	RevealsShroud:
 		Range: 6c0
 	Health:
@@ -3143,7 +3143,7 @@ castl05h:
 	Tooltip:
 		Name: Busch Stadium
 	Armor:
-		Type: concrete
+		Type: Concrete
 	RevealsShroud:
 		Range: 6c0
 	Health:
@@ -3167,7 +3167,7 @@ camsc07:
 	Tooltip:
 		Name: Thatched Hut Chief
 	Armor:
-		Type: concrete
+		Type: Concrete
 	RevealsShroud:
 		Range: 6c0
 	Health:
@@ -3221,7 +3221,7 @@ cabunk01:
 	Tooltip:
 		Name: Concrete Bunker
 	Armor:
-		Type: steel
+		Type: Steel
 	RevealsShroud:
 		Range: 6c0
 	Health:
@@ -3245,7 +3245,7 @@ cabunk02:
 	Tooltip:
 		Name: Concrete Bunker
 	Armor:
-		Type: steel
+		Type: Steel
 	RevealsShroud:
 		Range: 6c0
 	Health:
