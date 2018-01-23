@@ -252,13 +252,13 @@ fv:
 		LocalOffset: 200,0,800
 		RequiresCondition: ifv-hero
 	Armament@tesla:
-		Weapon: ElectricBolt
+		Weapon: CRElectricBolt
 		RequiresCondition: ifv-tesla
 	Armament@desolator:
-		Weapon: RadBeamWeapon
+		Weapon: CRRadBeamWeapon
 		RequiresCondition: ifv-deso
 	Armament@flak-ground:
-		Weapon: FlakGuyGun
+		Weapon: CRFlakGuyGun
 		RequiresCondition: ifv-flak
 	Armament@flak-air:
 		Weapon: FlakGuyAAGun
