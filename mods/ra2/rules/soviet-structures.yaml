@@ -789,6 +789,7 @@ nawall:
 
 naflak:
 	Inherits: ^VoxelLighting
+	Inherits@AUTOTARGET: ^AutoTargetAir
 	Buildable:
 		Queue: Support
 		BuildPaletteOrder: 30
@@ -834,6 +835,7 @@ naflak:
 
 tesla:
 	Inherits: ^SupportBuilding
+	Inherits@AUTOTARGET: ^AutoTargetGround
 	Buildable:
 		Queue: Support
 		BuildPaletteOrder: 40
@@ -889,6 +891,7 @@ tesla:
 
 nalasr:
 	Inherits: ^VoxelLighting
+	Inherits@AUTOTARGET: ^AutoTargetGround
 	Buildable:
 		Queue: Support
 		BuildPaletteOrder: 20

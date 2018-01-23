@@ -1,5 +1,6 @@
 shad:
 	Inherits: ^Aircraft
+	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Inherits@MC: ^MindControllable
 	Tooltip:
 		Name: Night Hawk
@@ -64,6 +65,7 @@ shadhusk:
 
 zep:
 	Inherits: ^Aircraft
+	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Valued:
 		Cost: 2000
 	Tooltip:

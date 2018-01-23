@@ -28,7 +28,6 @@ engineer:
 	Captures:
 		Sabotage: false
 		CaptureTypes: building, husk
-	-AutoTarget:
 	RevealsShroud:
 		Range: 4c0
 	Voiced:
@@ -73,6 +72,8 @@ dog:
 		Voice: Attack
 	AutoTarget:
 		InitialStance: AttackAnything
+	AutoTargetPriority@DEFAULT:
+		Types: Infantry
 	RenderSprites:
 		Image: adog
 		FactionImages:
@@ -103,6 +104,7 @@ dog:
 e1:
 	Inherits@1: ^Infantry
 	Inherits@2: ^Parachutable
+	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Inherits@MC: ^MindControllable
 	Buildable:
 		Queue: Infantry
@@ -154,6 +156,7 @@ e1:
 
 snipe:
 	Inherits: ^Infantry
+	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Inherits@MC: ^MindControllable
 	Valued:
 		Cost: 600
@@ -223,7 +226,6 @@ spy:
 		DisguisedCondition: disguise
 	Infiltrates:
 		Types: SpyInfiltrate
-	-AutoTarget:
 	-WithInfantryBody:
 	WithDisguisingInfantryBody:
 		IdleAnimations: idle1,idle2
@@ -246,6 +248,7 @@ spy:
 
 ghost:
 	Inherits: ^Infantry
+	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Inherits@MC: ^MindControllable
 	Buildable:
 		Queue: Infantry
@@ -313,6 +316,7 @@ ghost:
 
 tany:
 	Inherits: ^Infantry
+	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Buildable:
 		Queue: Infantry
 		BuildAtProductionType: Infantry
@@ -379,6 +383,7 @@ tany:
 
 jumpjet:
 	Inherits: ^Infantry
+	Inherits@AUTOTARGET: ^AutoTargetAllAssaultMove
 	HiddenUnderFog:
 		Type: CenterPosition
 	Buildable:

@@ -591,6 +591,7 @@ gawall:
 
 gapill:
 	Inherits: ^SupportBuilding
+	Inherits@AUTOTARGET: ^AutoTargetGround
 	Buildable:
 		Queue: Support
 		BuildPaletteOrder: 20
@@ -631,6 +632,7 @@ gapill:
 
 nasam:
 	Inherits: ^VoxelLighting
+	Inherits@AUTOTARGET: ^AutoTargetAir
 	Buildable:
 		Queue: Support
 		BuildPaletteOrder: 30
@@ -681,6 +683,7 @@ nasam:
 gtgcan:
 	Inherits: ^VoxelLighting
 	Inherits@shape: ^2x2Shape
+	Inherits@AUTOTARGET: ^AutoTargetGround
 	Buildable:
 		Queue: Support
 		BuildPaletteOrder: 50
@@ -828,7 +831,6 @@ gagap:
 		Amount: -100
 	MustBeDestroyed:
 		RequiredForShortGame: false
-	-AutoTarget:
 
 gaweat:
 	Inherits: ^Building
@@ -912,6 +914,7 @@ gacsph:
 
 atesla:
 	Inherits: ^SupportBuilding
+	Inherits@AUTOTARGET: ^AutoTargetGround
 	Buildable:
 		Queue: Support
 		BuildPaletteOrder: 40

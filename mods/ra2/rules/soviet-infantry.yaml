@@ -1,6 +1,7 @@
 e2:
 	Inherits@1: ^Infantry
 	Inherits@2: ^Parachutable
+	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Inherits@MC: ^MindControllable
 	Buildable:
 		Queue: Infantry
@@ -45,6 +46,7 @@ e2:
 flakt:
 	Inherits@1: ^Infantry
 	Inherits@2: ^Parachutable
+	Inherits@AUTOTARGET: ^AutoTargetAllAssaultMove
 	Inherits@MC: ^MindControllable
 	Buildable:
 		Queue: Infantry
@@ -96,6 +98,7 @@ flakt:
 shk:
 	Inherits@1: ^Infantry
 	Inherits@2: ^Parachutable
+	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Inherits@MC: ^MindControllable
 	Buildable:
 		Queue: Infantry
@@ -199,6 +202,7 @@ terror:
 
 deso:
 	Inherits: ^Infantry
+	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Inherits@MC: ^MindControllable
 	Buildable:
 		Queue: Infantry

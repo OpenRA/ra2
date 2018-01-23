@@ -43,6 +43,7 @@ smcv:
 
 harv:
 	Inherits: ^Vehicle
+	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 10
@@ -134,12 +135,15 @@ dron:
 		Voice: Attack
 	AutoTarget:
 		InitialStance: AttackAnything
+	AutoTargetPriority@DEFAULT:
+		Types: Infantry
 	Voiced:
 		VoiceSet: TerrorDroneVoice
 	HitShape:
 
 htk:
 	Inherits: ^Vehicle
+	Inherits@AUTOTARGET: ^AutoTargetAllAssaultMove
 	Inherits@MC: ^MindControllable
 	Valued:
 		Cost: 500
@@ -193,6 +197,7 @@ htk:
 
 htnk:
 	Inherits: ^Vehicle
+	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Inherits@MC: ^MindControllable
 	Valued:
 		Cost: 900
@@ -242,6 +247,7 @@ htnk:
 
 apoc:
 	Inherits: ^Vehicle
+	Inherits@AUTOTARGET: ^AutoTargetAllAssaultMove
 	Valued:
 		Cost: 1750
 	Tooltip:
@@ -292,6 +298,7 @@ apoc:
 
 ttnk:
 	Inherits: ^Vehicle
+	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Inherits@MC: ^MindControllable
 	Valued:
 		Cost: 1200
