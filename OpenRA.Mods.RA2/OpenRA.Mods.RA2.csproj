@@ -54,6 +54,7 @@
   <ItemGroup>
     <Compile Include="Activities\ChronoResourceTeleport.cs" />
     <Compile Include="Traits\ChronoResourceDelivery.cs" />
+    <Compile Include="Traits\PeriodicExplosion.cs" />
     <Compile Include="Traits\Render\WithExitOverlay.cs" />
     <Compile Include="Traits\Render\WithSwimSuit.cs" />
   </ItemGroup>
