@@ -65,15 +65,15 @@ napowr:
 		Start: 2
 		ShadowStart: 5
 	idle-lights: ngpowr_a
-		Length: 9
+		Length: 19
 		Tick: 150
 	damaged-idle-lights: ngpowr_a
-		Start: 9
-		Length: 9
+		Start: 19
+		Length: 19
 		Tick: 150
 	critical-idle-lights: ngpowr_a
-		Start: 9
-		Length: 9
+		Start: 19
+		Length: 19
 		Tick: 150
 	make: ntpowrmk
 		Length: 26
