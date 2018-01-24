@@ -259,6 +259,16 @@
 	ExternalCondition@CHRONODISABLE:
 		Condition: chronodisable
 
+^MindControllable:
+	MindControllable:
+		Condition: controlled
+	WithMindControlArc:
+		UsePlayerColor: true
+		Offset: 0,0,960
+	Targetable@MC:
+		TargetTypes: MindControl
+		RequiresCondition: !controlled
+
 ^Building:
 	Inherits@1: ^ExistsInWorld
 	Inherits@2: ^SpriteActor
@@ -512,6 +522,7 @@
 		DeathPaletteIsPlayerPalette: False
 		DeathTypes:
 			RadiationDeath: 4
+			PsychicDeath: 5
 			ElectroDeath: 6
 	SpawnActorOnDeath@flames:
 		Actor: FLAMEGUY
@@ -587,6 +598,7 @@
 
 ^CivilianInfantry:
 	Inherits: ^Infantry
+	Inherits@MC: ^MindControllable
 	Selectable:
 		Bounds: 20, 30, 0, -11
 	Valued:
@@ -729,6 +741,7 @@
 
 ^CivVehicle:
 	Inherits: ^Vehicle
+	Inherits@MC: ^MindControllable
 	Tooltip:
 		GenericName: Civilian Vehicle
 	Valued:

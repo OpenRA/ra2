@@ -49,6 +49,7 @@ josh:
 		DeathPaletteIsPlayerPalette: false
 		DeathTypes:
 			RadiationDeath: 4
+			PsychicDeath: 5
 			ElectroDeath: 6
 	-WithDeathAnimation@flames:
 	SpawnActorOnDeath@flames:

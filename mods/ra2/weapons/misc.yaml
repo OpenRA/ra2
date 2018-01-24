@@ -48,3 +48,24 @@ RepairBullet:
 		Spread: 213
 		Damage: -50
 		ValidTargets: Repair
+
+MindControl:
+	ReloadDelay: 200
+	Range: 7c0
+	ValidTargets: MindControl
+	Projectile: InstantHit
+	Warhead@1Dam: TargetDamage
+		Damage: 0
+
+PsiWave:
+	ReloadDelay: 100
+	Range: 1c0
+	Report: iyurat2a.wav
+	Warhead@1Dam: SpreadDamage
+		Spread: 3c0
+		Falloff: 100, 100
+		Damage: 250
+		ValidTargets: Infantry
+		DamageTypes: PsychicDeath
+	Warhead@2Eff: CreateEffect
+		Explosions: psi_wave

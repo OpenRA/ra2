@@ -1,5 +1,6 @@
 shad:
 	Inherits: ^Aircraft
+	Inherits@MC: ^MindControllable
 	Tooltip:
 		Name: Night Hawk
 	Health:
