@@ -2,13 +2,14 @@ Player:
 	HackyAI@testai:
 		Name: Test AI
 		Type: test
+		DefenseQueues: Support
 		BuildingCommonNames:
 			ConstructionYard: gacnst, nacnst
 			Refinery: garefn, narefn
 			Power: gapowr, napowr, nanrct
 			Barracks: gapile, nahand
 			VehiclesFactory: gaweap, naweap
-			Production: gapile, nahand, gaweap, naweap, gaairc
+			Production: gapile, nahand, gaweap, naweap, gaairc, amradr
 		UnitsCommonNames:
 			Mcv: amcv, smcv
 		BuildingLimits:
@@ -21,12 +22,20 @@ Player:
 			nahand: 2
 			gaweap: 2
 			naweap: 2
+			gadept: 1
+			nadept: 1
 			gaairc: 2
+			amradr: 2
+			naradr: 1
+			gatech: 1
+			natech: 1
+			gagap: 2
 		BuildingFractions:
 			garefn: 30%
 			narefn: 30%
 			gapowr: 35%
-			napowr: 35%
+			napowr: 25%
+			nanrct: 10%
 			gapile: 1%
 			nahand: 1%
 			gaweap: 1%
@@ -37,33 +46,71 @@ Player:
 			gatech: 1%
 			natech: 1%
 			naclon: 1%
-			gadept: 1%
-			nadept: 1%
-			nasam: 1%
-			naflak: 1%
-			tesla: 1%
+			gadept: 0.1%
+			nadept: 0.1%
+			gapill: 10%
+			nalasr: 10%
+			nasam: 4%
+			naflak: 4%
+			tesla: 4%
+			atesla: 4%
 			gtgcan: 1%
+			gagap: 0.5%
+			namisl: 1%
 		UnitsToBuild:
 			e1: 90%
 			e2: 90%
-			dog: 5%
-			engineer: 5%
-			flakt: 3%
-			shk: 3%
-			terror: 1%
-			ivan: 1%
+			dog: 1%
+			flakt: 10%
+			shk: 10%
+			ivan: 3%
 			jumpjet: 2%
 			deso: 1%
 			tany: 1%
-			snipe: 1%
-			htnk: 3%
-			htk: 1%
-			mtnk: 3%
-			fv: 1%
-			sref: 0.5%
-			mgtk: 0.5%
-			apoc: 0.5%
-			dtruck: 1%
-			tnkd: 1%
-			ttnk: 1%
+			snipe: 5%
+			cmin: 10%
+			harv: 10%
+			htnk: 50%
+			htk: 20%
+			mtnk: 50%
+			fv: 20%
+			sref: 10%
+			mgtk: 10%
+			apoc: 10%
+			tnkd: 15%
+			ttnk: 15%
+		UnitLimits:
+			dog: 4
+			cmin: 8
+			harv: 8
 		SquadSize: 5
+		SupportPowerDecision@airborne:
+			OrderName: AmericanParatroopers
+			MinimumAttractiveness: 5
+			Consideration@1:
+				Against: Enemy
+				Types: Structure
+				Attractiveness: 1
+				TargetMetric: None
+				CheckRadius: 8c0
+			Consideration@2:
+				Against: Enemy
+				Types: Water
+				Attractiveness: -5
+				TargetMetric: None
+				CheckRadius: 8c0
+		SupportPowerDecision@nukepower:
+			OrderName: NukePowerInfoOrder
+			MinimumAttractiveness: 3000
+			Consideration@1:
+				Against: Enemy
+				Types: Structure
+				Attractiveness: 1
+				TargetMetric: Value
+				CheckRadius: 5c0
+			Consideration@2:
+				Against: Ally
+				Types: Air, Ground, Water
+				Attractiveness: -10
+				TargetMetric: Value
+				CheckRadius: 7c0
