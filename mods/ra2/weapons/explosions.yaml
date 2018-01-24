@@ -52,7 +52,7 @@ IvanBomber:
 			Concrete: 20
 			Drone: 100
 			Rocket: 100
-		DamageTypes: FlameDeath, Prone100Percent
+		DamageTypes: PsychicDeath, Prone100Percent
 	Warhead@2Eff: CreateEffect
 		Delay: 100
 		Explosions: ivan_explosion

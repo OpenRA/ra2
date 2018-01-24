@@ -1,5 +1,6 @@
 sapc:
 	Inherits: ^Ship
+	Inherits@MC: ^MindControllable
 	Buildable:
 		Queue: Ship
 		BuildPaletteOrder: 10
@@ -48,6 +49,7 @@ sapc:
 
 sub:
 	Inherits: ^Ship
+	Inherits@MC: ^MindControllable
 	Buildable:
 		Queue: Ship
 		BuildPaletteOrder: 20
@@ -109,6 +111,7 @@ sub:
 
 hyd:
 	Inherits: ^Ship
+	Inherits@MC: ^MindControllable
 	Buildable:
 		Queue: Ship
 		BuildPaletteOrder: 30

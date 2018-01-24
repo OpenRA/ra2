@@ -1,5 +1,6 @@
 tug:
 	Inherits: ^Ship
+	Inherits@MC: ^MindControllable
 	Valued:
 		Cost: 500
 	Tooltip:
@@ -24,6 +25,7 @@ tug:
 
 cruise:
 	Inherits: ^Ship
+	Inherits@MC: ^MindControllable
 	Valued:
 		Cost: 500
 	Tooltip:
@@ -46,6 +48,7 @@ cruise:
 
 cdest:
 	Inherits: ^Ship
+	Inherits@MC: ^MindControllable
 	Valued:
 		Cost: 1000
 	Tooltip:

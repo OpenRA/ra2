@@ -1,5 +1,6 @@
 engineer:
 	Inherits: ^Infantry
+	Inherits@MC: ^MindControllable
 	Buildable:
 		Queue: Infantry
 		Prerequisites: ~barracks
@@ -95,12 +96,14 @@ dog:
 			ExplosionDeath: 1
 			BulletDeath: 2
 			RadiationDeath: 1
+			PsychicDeath: 1
 			ElectroDeath: 2
 	-WithDeathAnimation@effect:
 
 e1:
 	Inherits@1: ^Infantry
 	Inherits@2: ^Parachutable
+	Inherits@MC: ^MindControllable
 	Buildable:
 		Queue: Infantry
 		Prerequisites: ~gapile
@@ -151,6 +154,7 @@ e1:
 
 snipe:
 	Inherits: ^Infantry
+	Inherits@MC: ^MindControllable
 	Valued:
 		Cost: 600
 	DeliversCash:
@@ -242,6 +246,7 @@ spy:
 
 ghost:
 	Inherits: ^Infantry
+	Inherits@MC: ^MindControllable
 	Buildable:
 		Queue: Infantry
 		BuildAtProductionType: Infantry
@@ -468,6 +473,7 @@ jumpjet.husk:
 
 cleg:
 	Inherits: ^Infantry
+	Inherits@MC: ^MindControllable
 	Selectable:
 		Bounds: 20, 30, 0, -11
 	Tooltip:

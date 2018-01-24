@@ -1,5 +1,6 @@
 lcrf:
 	Inherits: ^Ship
+	Inherits@MC: ^MindControllable
 	Buildable:
 		Queue: Ship
 		BuildPaletteOrder: 10
@@ -50,6 +51,7 @@ lcrf:
 
 dest:
 	Inherits: ^Ship
+	Inherits@MC: ^MindControllable
 	Buildable:
 		Queue: Ship
 		BuildPaletteOrder: 20
@@ -97,6 +99,7 @@ dest:
 
 aegis:
 	Inherits: ^Ship
+	Inherits@MC: ^MindControllable
 	Buildable:
 		Queue: Ship
 		BuildPaletteOrder: 30

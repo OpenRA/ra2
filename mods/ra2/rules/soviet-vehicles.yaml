@@ -1,5 +1,6 @@
 smcv:
 	Inherits: ^Vehicle
+	Inherits@MC: ^MindControllable
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 80
@@ -139,6 +140,7 @@ dron:
 
 htk:
 	Inherits: ^Vehicle
+	Inherits@MC: ^MindControllable
 	Valued:
 		Cost: 500
 	Tooltip:
@@ -191,6 +193,7 @@ htk:
 
 htnk:
 	Inherits: ^Vehicle
+	Inherits@MC: ^MindControllable
 	Valued:
 		Cost: 900
 	Tooltip:
@@ -289,6 +292,7 @@ apoc:
 
 ttnk:
 	Inherits: ^Vehicle
+	Inherits@MC: ^MindControllable
 	Valued:
 		Cost: 1200
 	Tooltip:
@@ -334,6 +338,7 @@ ttnk:
 
 dtruck:
 	Inherits: ^Vehicle
+	Inherits@MC: ^MindControllable
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 60

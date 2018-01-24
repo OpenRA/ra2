@@ -27,6 +27,9 @@
 	die4: nukedie
 		Length: *
 		Tick: 50
+	die5: yuridie
+		Length: *
+		Tick: 80
 	die6: electro
 		Length: *
 		Tick: 80
