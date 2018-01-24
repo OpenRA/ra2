@@ -277,7 +277,7 @@
 		BuildSounds: uplace.wav
 		UndeploySounds: uselbuil.wav
 		TerrainTypes: Clear, Road, DirtRoad, Rough
-		Adjacent: 4
+		Adjacent: 3
 	FrozenUnderFog:
 	GivesBuildableArea:
 	Capturable:
@@ -428,7 +428,7 @@
 		Dimensions: 1,1
 		Footprint: x
 		BuildSounds: uplace.wav
-		Adjacent: 7
+		Adjacent: 9
 		TerrainTypes: Clear, Rough, Road, DirtRoad
 	BlocksProjectiles:
 	LineBuild:
