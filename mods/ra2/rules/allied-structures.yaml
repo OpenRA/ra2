@@ -389,7 +389,7 @@ gayard:
 	Building:
 		Footprint: xxxx xxxx xxxx xxxx
 		Dimensions: 4,4
-		Adjacent: 12
+		Adjacent: 13
 		TerrainTypes: Water
 	-GivesBuildableArea:
 	Health:
@@ -591,6 +591,7 @@ gapill:
 	Building:
 		Footprint: x
 		Dimensions: 1, 1
+		Adjacent: 5
 	Health:
 		HP: 400
 	Armor:
@@ -629,6 +630,7 @@ nasam:
 	Building:
 		Footprint: x
 		Dimensions: 1, 1
+		Adjacent: 5
 	Health:
 		HP: 900
 	Armor:
