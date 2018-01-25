@@ -54,6 +54,9 @@
   <ItemGroup>
     <Compile Include="Activities\ChronoResourceTeleport.cs" />
     <Compile Include="Traits\ChronoResourceDelivery.cs" />
+    <Compile Include="Traits\Conditions\GrantTimedConditionOnDeploy.cs" />
+    <Compile Include="Traits\MindController.cs" />
+    <Compile Include="Traits\MindControllable.cs" />
     <Compile Include="Traits\PeriodicExplosion.cs" />
     <Compile Include="Traits\Render\WithExitOverlay.cs" />
     <Compile Include="Traits\Render\WithSwimSuit.cs" />
