@@ -7,23 +7,25 @@ sidebar-allies: chrome.png
 	background-iconrow: 0,275,234,50
 	background-bottom: 0,325,234,66
 	background-supportoverlay: 250,20,64,48
+	background-commandbar: 559,278,459,31
 
+# These coordinates point to an empty area of the chrome.png file to make the background of these buttons empty
 sidebar-button-allies: chrome.png
-	background: 370,15,30,32
+	background: 5370,15,30,32
 sidebar-button-allies-hover: chrome.png
-	background: 370,15,30,32
+	background: 5370,15,30,32
 sidebar-button-allies-pressed: chrome.png
-	background: 370,15,30,32
+	background: 5370,15,30,32
 sidebar-button-allies-highlighted: chrome.png
-	background: 370,15,30,32
+	background: 5370,15,30,32
 sidebar-button-allies-highlighted-hover: chrome.png
-	background: 370,15,30,32
+	background: 5370,15,30,32
 sidebar-button-allies-highlighted-pressed: chrome.png
-	background: 370,15,30,32
+	background: 5370,15,30,32
 sidebar-button-allies-highlighted-disabled: chrome.png
-	background: 370,15,30,32
+	background: 5370,15,30,32
 sidebar-button-allies-disabled: chrome.png
-	background: 370,15,30,32
+	background: 5370,15,30,32
 
 scrollup-buttons-allies: chrome.png
 	background: 117,395,77,27
@@ -165,72 +167,72 @@ support-button-allies-highlighted-disabled: chrome.png
 	background: 370,207,30,32
 
 infantry-button-allies: chrome.png
-	background: 370,15,30,32
+	background: 400,15,30,32
 infantry-button-allies-hover: chrome.png
-	background: 370,47,30,32
+	background: 400,47,30,32
 infantry-button-allies-pressed: chrome.png
-	background: 370,79,30,32
+	background: 400,79,30,32
 infantry-button-allies-highlighted: chrome.png
-	background: 370,111,30,32
+	background: 400,111,30,32
 infantry-button-allies-highlighted-hover: chrome.png
-	background: 370,143,30,32
+	background: 400,143,30,32
 infantry-button-allies-highlighted-pressed: chrome.png
-	background: 370,175,30,32
+	background: 400,175,30,32
 infantry-button-allies-disabled: chrome.png
-	background: 370,207,30,32
+	background: 400,207,30,32
 infantry-button-allies-highlighted-disabled: chrome.png
-	background: 370,207,30,32
+	background: 400,207,30,32
 
 vehicles-button-allies: chrome.png
-	background: 370,15,30,32
+	background: 430,15,30,32
 vehicles-button-allies-hover: chrome.png
-	background: 370,47,30,32
+	background: 430,47,30,32
 vehicles-button-allies-pressed: chrome.png
-	background: 370,79,30,32
+	background: 430,79,30,32
 vehicles-button-allies-highlighted: chrome.png
-	background: 370,111,30,32
+	background: 430,111,30,32
 vehicles-button-allies-highlighted-hover: chrome.png
-	background: 370,143,30,32
+	background: 430,143,30,32
 vehicles-button-allies-highlighted-pressed: chrome.png
-	background: 370,175,30,32
+	background: 430,175,30,32
 vehicles-button-allies-highlighted-disabled: chrome.png
-	background: 370,207,30,32
+	background: 430,207,30,32
 vehicles-button-allies-disabled: chrome.png
-	background: 370,207,30,32
+	background: 430,207,30,32
 
 aircrafts-button-allies: chrome.png
-	background: 370,15,30,32
+	background: 460,15,30,32
 aircrafts-button-allies-hover: chrome.png
-	background: 370,47,30,32
+	background: 460,47,30,32
 aircrafts-button-allies-pressed: chrome.png
-	background: 370,79,30,32
+	background: 460,79,30,32
 aircrafts-button-allies-highlighted: chrome.png
-	background: 370,111,30,32
+	background: 460,111,30,32
 aircrafts-button-allies-highlighted-hover: chrome.png
-	background: 370,143,30,32
+	background: 460,143,30,32
 aircrafts-button-allies-highlighted-pressed: chrome.png
-	background: 370,175,30,32
+	background: 460,175,30,32
 aircrafts-button-allies-highlighted-disabled: chrome.png
-	background: 370,207,30,32
+	background: 460,207,30,32
 aircrafts-button-allies-disabled: chrome.png
-	background: 370,207,30,32
+	background: 460,207,30,32
 
 ships-button-allies: chrome.png
-	background: 400,15,30,32
+	background: 490,15,30,32
 ships-button-allies-hover: chrome.png
-	background: 400,47,30,32
+	background: 490,47,30,32
 ships-button-allies-pressed: chrome.png
-	background: 400,79,30,32
+	background: 490,79,30,32
 ships-button-allies-highlighted: chrome.png
-	background: 400,111,30,32
+	background: 490,111,30,32
 ships-button-allies-highlighted-hover: chrome.png
-	background: 400,143,30,32
+	background: 490,143,30,32
 ships-button-allies-highlighted-pressed: chrome.png
-	background: 400,175,30,32
+	background: 490,175,30,32
 ships-button-allies-highlighted-disabled: chrome.png
-	background: 400,207,30,32
+	background: 490,207,30,32
 ships-button-allies-disabled: chrome.png
-	background: 400,207,30,32
+	background: 490,207,30,32
 
 power-icons-allies: chrome.png
 	power-normal: 326,300,19,19
@@ -309,27 +311,91 @@ stats-button-allies-highlighted-disabled: chrome.png
 stats-button-allies-disabled: chrome.png
 	background: 985,710,30,32
 
-
+# These coordinates point to an empty area of the chrome.png file to make the glyph of these buttons not appear
 production-icons-allies: chrome.png
-	building: 250,110,19,19
-	building-disabled: 269,110,19,19
-	building-alert: 288,110,19,19
-	support: 250,129,19,19
-	support-disabled: 269,129,19,19
-	support-alert: 288,129,19,19
-	infantry: 250,148,19,19
-	infantry-disabled: 269,148,19,19
-	infantry-alert: 288,148,19,19
-	vehicle: 250,167,19,19
-	vehicle-disabled: 269,167,19,19
-	vehicle-alert: 288,167,19,19
-	aircraft: 250,186,19,19
-	aircraft-disabled: 269,186,19,19
-	aircraft-alert: 288,186,19,19
-	ship: 250,205,19,19
-	ship-disabled: 269,205,19,19
-	ship-alert: 288,205,19,19
+	building: 5250,110,19,19
+	building-disabled: 5269,110,19,19
+	building-alert: 5288,110,19,19
+	support: 5250,129,19,19
+	support-disabled: 5269,129,19,19
+	support-alert: 5288,129,19,19
+	infantry: 5250,148,19,19
+	infantry-disabled: 5269,148,19,19
+	infantry-alert: 5288,148,19,19
+	vehicle: 5250,167,19,19
+	vehicle-disabled: 5269,167,19,19
+	vehicle-alert: 5288,167,19,19
+	aircraft: 5250,186,19,19
+	aircraft-disabled: 5269,186,19,19
+	aircraft-alert: 5288,186,19,19
+	ship: 5250,205,19,19
+	ship-disabled: 5269,205,19,19
+	ship-alert: 5288,205,19,19
 
+command-icons-allies: chrome.png
+	attack-move: 783,335,33,26
+	attack-move-disabled: 783,361,33,26
+	attack-move-active: 783,387,33,26
+	attack-move-hover: 783,413,33,26
+	attack-move-active-hover: 783,439,33,26
+	force-move: 816,335,26,26
+	force-move-disabled: 816,361,26,26
+	force-move-active: 816,387,26,26
+	force-move-hover: 816,413,26,26
+	force-move-active-hover: 816,439,26,26    
+	force-attack: 842,335,26,26
+	force-attack-disabled: 842,361,26,26
+	force-attack-active: 842,387,26,26
+	force-attack-hover: 842,413,26,26
+	force-attack-active-hover: 842,439,26,26    
+	guard: 868,335,29,26
+	guard-disabled: 868,361,29,26
+	guard-active: 868,387,29,26
+	guard-hover: 868,413,29,26
+	guard-active-hover: 868,439,29,26    
+	deploy: 897,335,27,26
+	deploy-disabled: 897,361,27,26
+	deploy-active: 897,387,27,26
+	deploy-hover: 897,413,27,26
+	deploy-active-hover: 897,439,27,26
+	scatter: 924,335,29,26
+	scatter-disabled: 924,361,29,26
+	scatter-active: 924,387,29,26
+	scatter-hover: 924,413,29,26
+	scatter-active-hover: 924,439,29,26
+	stop: 953,335,22,26
+	stop-disabled: 953,361,22,26
+	stop-active: 953,387,22,26
+	stop-hover: 953,413,22,26
+	stop-active-hover: 953,439,22,26
+	queue-orders: 975,335,35,26
+	queue-orders-disabled: 975,361,35,26
+	queue-orders-active: 975,387,35,26
+	queue-orders-hover: 975,413,35,26
+	queue-orders-active-hover: 975,439,35,26
+
+stance-icons-allies: chrome.png
+	attack-anything: 769,15,25,21
+	attack-anything-disabled: 769,36,25,21
+	attack-anything-active: 769,57,25,21
+	attack-anything-hover: 769,78,25,21
+	attack-anything-active-hover: 769,99,25,21    
+	return-fire: 794,15,20,21
+	return-fire-disabled: 794,36,20,21
+	return-fire-active: 794,57,20,21
+	return-fire-hover: 794,78,20,21
+	return-fire-active-hover: 794,99,20,21    
+	defend: 816,15,22,21
+	defend-disabled: 816,36,22,21
+	defend-active: 816,57,22,21
+	defend-hover: 816,78,22,21
+	defend-active-hover: 816,99,22,21
+	hold-fire: 836,15,25,21
+	hold-fire-disabled: 836,36,25,21
+	hold-fire-active: 836,57,25,21
+	hold-fire-hover: 836,78,25,21
+	hold-fire-active-hover: 836,99,25,21
+ 
 # -----------------------------------------------------------------------------------
 # Soviets
 # -----------------------------------------------------------------------------------
@@ -339,7 +405,9 @@ sidebar-soviets: chrome.png
 	background-iconrow: 0,787,234,50
 	background-bottom: 0,837,234,66
 	background-supportoverlay: 250,532,64,48
+	background-commandbar: 559,790,459,31
 
+# These coordinates point to an empty area of the chrome.png file to make the background of these buttons empty
 sidebar-button-soviets: chrome.png
 	background: 955,512,30,32
 sidebar-button-soviets-hover: chrome.png
@@ -641,28 +709,91 @@ stats-button-soviets-highlighted-disabled: chrome.png
 stats-button-soviets-disabled: chrome.png
 	background: 985,710,30,32
 
+# These coordinates point to an empty area of the chrome.png file to make the glyph of these buttons not appear
 production-icons-soviets: chrome.png
-	building: 250,622,19,19
-	building-disabled: 269,622,19,19
-	building-alert: 288,622,19,19
-	support: 250,641,19,19
-	support-disabled: 269,641,19,19
-	support-alert: 288,641,19,19
-	infantry: 250,660,19,19
-	infantry-disabled: 269,660,19,19
-	infantry-alert: 288,660,19,19
-	vehicle: 250,679,19,19
-	vehicle-disabled: 269,679,19,19
-	vehicle-alert: 288,679,19,19
-	aircraft: 250,698,19,19
-	aircraft-disabled: 269,698,19,19
-	aircraft-alert: 288,698,19,19
-	ship: 250,717,19,19
-	ship-disabled: 269,717,19,19
-	ship-alert: 288,717,19,19
+	building: 5250,622,19,19
+	building-disabled: 5269,622,19,19
+	building-alert: 5288,622,19,19
+	support: 5250,641,19,19
+	support-disabled: 5269,641,19,19
+	support-alert: 5288,641,19,19
+	infantry: 5250,660,19,19
+	infantry-disabled: 5269,660,19,19
+	infantry-alert: 5288,660,19,19
+	vehicle: 5250,679,19,19
+	vehicle-disabled: 5269,679,19,19
+	vehicle-alert: 5288,679,19,19
+	aircraft: 5250,698,19,19
+	aircraft-disabled: 5269,698,19,19
+	aircraft-alert: 5288,698,19,19
+	ship: 5250,717,19,19
+	ship-disabled: 5269,717,19,19
+	ship-alert: 5288,717,19,19
 
+command-icons-soviets: chrome.png
+	attack-move: 783,847,33,26
+	attack-move-disabled: 783,873,33,26
+	attack-move-active: 783,899,33,26
+	attack-move-hover: 783,925,33,26
+	attack-move-active-hover: 783,951,33,26
+	force-move: 816,847,26,26
+	force-move-disabled: 816,873,26,26
+	force-move-active: 816,899,26,26
+	force-move-hover: 816,925,26,26
+	force-move-active-hover: 816,951,26,26    
+	force-attack: 842,847,26,26
+	force-attack-disabled: 842,873,26,26
+	force-attack-active: 842,899,26,26
+	force-attack-hover: 842,925,26,26
+	force-attack-active-hover: 842,951,26,26    
+	guard: 868,847,29,26
+	guard-disabled: 868,873,29,26
+	guard-active: 868,899,29,26
+	guard-hover: 868,925,29,26
+	guard-active-hover: 868,951,29,26    
+	deploy: 897,847,27,26
+	deploy-disabled: 897,873,27,26
+	deploy-active: 897,899,27,26
+	deploy-hover: 897,925,27,26
+	deploy-active-hover: 897,951,27,26
+	scatter: 924,847,29,26
+	scatter-disabled: 924,873,29,26
+	scatter-active: 924,899,29,26
+	scatter-hover: 924,925,29,26
+	scatter-active-hover: 924,951,29,26
+	stop: 953,847,22,26
+	stop-disabled: 953,873,22,26
+	stop-active: 953,899,22,26
+	stop-hover: 953,925,22,26
+	stop-active-hover: 953,951,22,26
+	queue-orders: 975,847,35,26
+	queue-orders-disabled: 975,873,35,26
+	queue-orders-active: 975,899,35,26
+	queue-orders-hover: 975,925,35,26
+	queue-orders-active-hover: 975,951,35,26
 
-
+stance-icons-soviets: chrome.png
+	attack-anything: 769,527,25,21
+	attack-anything-disabled: 769,548,25,21
+	attack-anything-active: 769,569,25,21
+	attack-anything-hover: 769,590,25,21
+	attack-anything-active-hover: 769,611,25,21
+	return-fire: 794,527,20,21
+	return-fire-disabled: 794,548,20,21
+	return-fire-active: 794,569,20,21
+	return-fire-hover: 794,590,20,21
+	return-fire-active-hover: 794,611,20,21
+	defend: 816,527,22,21
+	defend-disabled: 816,548,22,21
+	defend-active: 816,569,22,21
+	defend-hover: 816,590,22,21
+	defend-active-hover: 816,611,22,21    
+	hold-fire: 836,527,25,21
+	hold-fire-disabled: 836,548,25,21
+	hold-fire-active: 836,569,25,21
+	hold-fire-hover: 836,590,25,21
+	hold-fire-active-hover: 836,611,25,21
+    
 # -----------------------------------------------------------------------------------
 # GENERIC
 # -----------------------------------------------------------------------------------
@@ -678,6 +809,7 @@ sidebar-bits: chrome.png
 	production-tooltip-power: 326, 300, 19, 19
 	production-tooltip-cost: 326, 281, 19, 19
 	production-iconoverlay: 250,20,64,48
+	commandbar-background: 0,123,434,44
 
 order-icons: chrome.png
 	options: 250,452,19,19
