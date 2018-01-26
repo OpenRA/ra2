@@ -887,30 +887,30 @@ camsc07:
 		UseTilesetCode: true
 		Offset: 0,-30
 	idle:
-		ShadowStart: 4
+		ShadowStart: 3
 	damaged-idle:
 		Start: 1
-		ShadowStart: 5
+		ShadowStart: 4
 
 camsc08:
 	Defaults:
 		UseTilesetCode: true
 		Offset: 0,-15
 	idle:
-		ShadowStart: 4
+		ShadowStart: 3
 	damaged-idle:
 		Start: 1
-		ShadowStart: 5
+		ShadowStart: 4
 
 camsc09:
 	Defaults:
 		UseTilesetCode: true
 		Offset: 0,-15
 	idle:
-		ShadowStart: 4
+		ShadowStart: 3
 	damaged-idle:
 		Start: 1
-		ShadowStart: 5
+		ShadowStart: 4
 
 camsc10:
 	Defaults:
