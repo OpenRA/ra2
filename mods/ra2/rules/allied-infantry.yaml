@@ -3,7 +3,7 @@ engineer:
 	Buildable:
 		Queue: Infantry
 		Prerequisites: ~barracks
-		BuildPaletteOrder: 60
+		BuildPaletteOrder: 30
 		Description: Captures enemy structures.\n  Unarmed
 	Valued:
 		Cost: 500
@@ -42,7 +42,7 @@ dog:
 	Buildable:
 		Queue: Infantry
 		Prerequisites: ~barracks
-		BuildPaletteOrder: 50
+		BuildPaletteOrder: 40
 		Description: Anti-infantry unit.\nCan detect cloaked units and spies.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
 	Valued:
 		Cost: 200
@@ -176,7 +176,7 @@ spy:
 	Buildable:
 		Queue: Infantry
 		BuildAtProductionType: Infantry
-		BuildPaletteOrder: 90
+		BuildPaletteOrder: 130
 		Prerequisites: gatech, ~gapile
 		Description: Infiltrates enemy structures for intel or\nsabotage. Exact effect depends on the\nbuilding infiltrated.\n  Unarmed\nSpecial Ability: Disguises
 	Valued:
@@ -225,7 +225,7 @@ ghost:
 	Buildable:
 		Queue: Infantry
 		BuildAtProductionType: Infantry
-		BuildPaletteOrder: 110
+		BuildPaletteOrder: 100
 		Prerequisites: ~disabled
 		Description: Elite commando infantry, armed with\na sub machine gun and C4.\n  Strong vs Infantry, Buildings\n  Weak vs Vehicles, Aircraft\nSpecial Ability: Destroy Building with C4
 	Valued:
@@ -287,7 +287,7 @@ tany:
 	Buildable:
 		Queue: Infantry
 		BuildAtProductionType: Infantry
-		BuildPaletteOrder: 120
+		BuildPaletteOrder: 140
 		Prerequisites: gatech, ~gapile
 		BuildLimit: 1
 		Description: Elite commando infantry, armed with \ndual pistols and C4.\n  Strong vs Infantry, Buildings\n  Weak vs Vehicles, Aircraft\nSpecial Ability: Destroy Building with C4\n\nMaximum 1 can be trained.
@@ -425,7 +425,7 @@ cleg:
 	Buildable:
 		Queue: Infantry
 		BuildAtProductionType: Infantry
-		BuildPaletteOrder: 100
+		BuildPaletteOrder: 150
 		Prerequisites: ~gapile, gatech
 		Description: High-tech soldier.\n Strong vs Infantry, Vehicles\n Weak vs Aircraft
 	ProducibleWithLevel:

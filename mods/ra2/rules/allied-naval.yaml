@@ -52,7 +52,7 @@ dest:
 	Inherits: ^Ship
 	Buildable:
 		Queue: Ship
-		BuildPaletteOrder: 40
+		BuildPaletteOrder: 20
 		Prerequisites: ~gayard
 		Description: Allied Main Battle Ship armed with cannons and\n an Osprey helicopter.\nCan detect submarines and sea animals.\n  Strong vs Naval units\n  Weak vs Ground units, Aircraft
 	Valued:
@@ -138,7 +138,7 @@ dlph:
 	Inherits@5: ^CrateStatModifiers
 	Buildable:
 		Queue: Ship
-		BuildPaletteOrder: 30
+		BuildPaletteOrder: 40
 		Prerequisites: gatech, ~gayard
 		Description: Trained dolphin\narmed with sonic beams.\n  Strong vs Ships
 	Valued:

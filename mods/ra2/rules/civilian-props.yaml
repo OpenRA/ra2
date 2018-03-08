@@ -8,6 +8,8 @@ camisc01:
 		Type: Concrete
 	SoundOnDamageTransition:
 		DamagedSounds: bmetdama.wav, bmetdamb.wav, bmetdamc.wav
+	EditorTilesetFilter:
+		Categories: Decoration
 
 camisc02:
 	Inherits: ^CivBuilding
@@ -19,6 +21,8 @@ camisc02:
 		Type: Concrete
 	SoundOnDamageTransition:
 		DamagedSounds: bmetdama.wav, bmetdamb.wav, bmetdamc.wav
+	EditorTilesetFilter:
+		Categories: Decoration
 
 camisc03:
 	Inherits: ^CivBuilding
@@ -31,6 +35,8 @@ camisc03:
 	SoundOnDamageTransition:
 		DamagedSounds: bmetdama.wav, bmetdamb.wav, bmetdamc.wav
 		DestroyedSounds: bmetdama.wav, bmetdamb.wav, bmetdamc.wav
+	EditorTilesetFilter:
+		Categories: Decoration
 
 camisc04:
 	Inherits: ^CivBuilding
@@ -43,6 +49,8 @@ camisc04:
 	SoundOnDamageTransition:
 		DamagedSounds: bmetdama.wav, bmetdamb.wav, bmetdamc.wav
 		DestroyedSounds: bmetdama.wav, bmetdamb.wav, bmetdamc.wav
+	EditorTilesetFilter:
+		Categories: Decoration
 
 camisc05:
 	Inherits: ^CivBuilding
@@ -55,9 +63,12 @@ camisc05:
 	SoundOnDamageTransition:
 		DamagedSounds: bmetdama.wav, bmetdamb.wav, bmetdamc.wav
 		DestroyedSounds: bmetdama.wav, bmetdamb.wav, bmetdamc.wav
+	EditorTilesetFilter:
+		Categories: Decoration
 
 camisc06:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^2x1Shape
 	Building:
 		Footprint: xx
 		Dimensions: 2, 1
@@ -73,6 +84,8 @@ camisc06:
 		Sequences: terrorist_explosion
 	SoundOnDamageTransition:
 		DamagedSounds: bmetdama.wav, bmetdamb.wav, bmetdamc.wav
+	EditorTilesetFilter:
+		Categories: Decoration
 
 camsc11:
 	Inherits: ^CivBuilding
@@ -82,6 +95,8 @@ camsc11:
 		HP: 10
 	Armor:
 		Type: Concrete
+	EditorTilesetFilter:
+		Categories: Decoration
 
 camsc12:
 	Inherits: ^CivBuilding
@@ -91,9 +106,12 @@ camsc12:
 		HP: 10
 	Armor:
 		Type: Concrete
+	EditorTilesetFilter:
+		Categories: Decoration
 
 camsc13:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^1x2Shape
 	Building:
 		Footprint: x x
 		Dimensions: 1, 2
@@ -103,6 +121,8 @@ camsc13:
 		HP: 800
 	Armor:
 		Type: Concrete
+	EditorTilesetFilter:
+		Categories: Decoration
 
 ammocrat:
 	Inherits: ^CivBuilding
@@ -112,6 +132,8 @@ ammocrat:
 		HP: 1
 	RenderSprites:
 		Image: ammo01
+	EditorTilesetFilter:
+		Categories: Decoration
 
 camsc01:
 	Inherits: ^CivBuilding
@@ -121,6 +143,8 @@ camsc01:
 		Range: 6c0
 	Health:
 		HP: 400
+	EditorTilesetFilter:
+		Categories: Decoration
 
 camsc02:
 	Inherits: ^CivBuilding
@@ -130,6 +154,8 @@ camsc02:
 		Range: 6c0
 	Health:
 		HP: 50
+	EditorTilesetFilter:
+		Categories: Decoration
 
 camsc03:
 	Inherits: ^CivBuilding
@@ -139,6 +165,8 @@ camsc03:
 		Range: 6c0
 	Health:
 		HP: 1
+	EditorTilesetFilter:
+		Categories: Decoration
 
 camsc04:
 	Inherits: ^CivBuilding
@@ -148,15 +176,19 @@ camsc04:
 		Range: 6c0
 	Health:
 		HP: 1
+	EditorTilesetFilter:
+		Categories: Decoration
 
 camsc05:
 	Inherits: ^CivBuilding
 	Tooltip:
-		Name: Beach TowelsB
+		Name: Beach Towels
 	RevealsShroud:
 		Range: 6c0
 	Health:
 		HP: 1
+	EditorTilesetFilter:
+		Categories: Decoration
 
 camsc06:
 	Inherits: ^CivBuilding
@@ -166,9 +198,12 @@ camsc06:
 		Range: 6c0
 	Health:
 		HP: 10
+	EditorTilesetFilter:
+		Categories: Decoration
 
 caeuro05:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^2x2Shape
 	Tooltip:
 		Name: Statue
 	Armor:
@@ -180,6 +215,8 @@ caeuro05:
 	Building:
 		Dimensions: 2,2
 		Footprint: xx xx
+	EditorTilesetFilter:
+		Categories: Decoration
 
 capark01:
 	Inherits: ^CivBuilding
@@ -189,9 +226,12 @@ capark01:
 		Range: 6c0
 	Health:
 		HP: 1
+	EditorTilesetFilter:
+		Categories: Decoration
 
 capark02:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^2x1Shape
 	Tooltip:
 		Name: Swing Set
 	RevealsShroud:
@@ -201,9 +241,12 @@ capark02:
 	Building:
 		Dimensions: 2,1
 		Footprint: xx
+	EditorTilesetFilter:
+		Categories: Decoration
 
 capark03:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^2x2Shape
 	Tooltip:
 		Name: Merry Go Round
 	RevealsShroud:
@@ -213,6 +256,8 @@ capark03:
 	Building:
 		Dimensions: 2,2
 		Footprint: xx xx
+	EditorTilesetFilter:
+		Categories: Decoration
 
 castrt01:
 	Inherits: ^CivBuilding
@@ -224,6 +269,8 @@ castrt01:
 		Range: 6c0
 	Health:
 		HP: 1000
+	EditorTilesetFilter:
+		Categories: Decoration
 
 castrt02:
 	Inherits: ^CivBuilding
@@ -235,6 +282,8 @@ castrt02:
 		Range: 6c0
 	Health:
 		HP: 1000
+	EditorTilesetFilter:
+		Categories: Decoration
 
 castrt03:
 	Inherits: ^CivBuilding
@@ -246,6 +295,8 @@ castrt03:
 		Range: 6c0
 	Health:
 		HP: 1000
+	EditorTilesetFilter:
+		Categories: Decoration
 
 castrt04:
 	Inherits: ^CivBuilding
@@ -257,6 +308,8 @@ castrt04:
 		Range: 6c0
 	Health:
 		HP: 1000
+	EditorTilesetFilter:
+		Categories: Decoration
 
 castrt05:
 	Inherits: ^CivBuilding
@@ -268,9 +321,12 @@ castrt05:
 		Range: 6c0
 	Health:
 		HP: 1000
+	EditorTilesetFilter:
+		Categories: Decoration
 
 camov01:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^1x4Shape
 	Tooltip:
 		Name: Drive In Movie Screen
 	Armor:
@@ -286,6 +342,7 @@ camov01:
 
 camov02:
 	Inherits: ^CivBuilding
+	Inherits@shape: ^2x2Shape
 	Tooltip:
 		Name: Drive In Movie Concession Stand
 	Armor:
@@ -313,6 +370,8 @@ hdstn01:
 	Inherits: ^Tree
 	Tooltip:
 		Name: AlringtonStones
+	EditorTilesetFilter:
+		Categories: Decoration
 
 lt_gen01:
 	Inherits: ^StreetLight
@@ -378,6 +437,8 @@ spkr01:
 	Inherits: ^Tree
 	Tooltip:
 		Name: Drive-In Speaker
+	EditorTilesetFilter:
+		Categories: Decoration
 
 carus02c:
 	Inherits: ^CivBuilding
@@ -385,6 +446,8 @@ carus02c:
 		Type: concrete
 	Health:
 		HP: 1000
+	EditorTilesetFilter:
+		Categories: Wall
 
 carus02d:
 	Inherits: ^CivBuilding
@@ -392,6 +455,8 @@ carus02d:
 		Type: concrete
 	Health:
 		HP: 1000
+	EditorTilesetFilter:
+		Categories: Wall
 
 carus02e:
 	Inherits: ^CivBuilding
@@ -399,6 +464,8 @@ carus02e:
 		Type: concrete
 	Health:
 		HP: 1000
+	EditorTilesetFilter:
+		Categories: Wall
 
 carus02f:
 	Inherits: ^CivBuilding
@@ -406,6 +473,8 @@ carus02f:
 		Type: concrete
 	Health:
 		HP: 1000
+	EditorTilesetFilter:
+		Categories: Wall
 
 carus07:
 	Inherits: ^CivBuilding
@@ -426,6 +495,7 @@ cakrmw:
 
 gagate_a:
 	Inherits: ^Building
+	Inherits@shape: ^3x1Shape
 	Valued:
 		Cost: 250
 	Health:

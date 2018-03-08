@@ -50,7 +50,7 @@ sub:
 	Inherits: ^Ship
 	Buildable:
 		Queue: Ship
-		BuildPaletteOrder: 30
+		BuildPaletteOrder: 20
 		Prerequisites: ~nayard
 		Description: Submerged anti-ship unit armed with\ntorpedoes.\nCan detect other submarines and Giant Squids.\n  Strong vs Ships\n  Weak vs Ground units, Aircraft\nSpecial Ability: Submerge
 	Valued:
@@ -110,7 +110,7 @@ hyd:
 	Inherits: ^Ship
 	Buildable:
 		Queue: Ship
-		BuildPaletteOrder: 20
+		BuildPaletteOrder: 30
 		Prerequisites: naradr, ~nayard
 		Description: Anti-Air/Anti-Infantry naval unit.\n  Strong vs Aircraft, Infantry\n  Weak vs Vehicles, Naval Units
 	Valued:
@@ -147,7 +147,7 @@ sqd:
 	Inherits@3: ^GainsExperience
 	Buildable:
 		Queue: Ship
-		BuildPaletteOrder: 30
+		BuildPaletteOrder: 40
 		Prerequisites: natech, ~nayard
 		Description: Ocean creature\npunches enemies in close combat.\n  Strong vs Ships
 	Valued:

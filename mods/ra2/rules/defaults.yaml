@@ -15,6 +15,157 @@
 	AutoSelectionSize:
 	RenderSprites:
 
+^1x1Shape:
+	HitShape:
+		UseTargetableCellsOffsets: true
+		Type: Rectangle
+			LocalYaw: -128
+			TopLeft: -512, -512
+			BottomRight: 512, 512
+
+^1x2Shape:
+	HitShape:
+		UseTargetableCellsOffsets: true
+		Type: Rectangle
+			LocalYaw: -128
+			TopLeft: -512, -1024
+			BottomRight: 512, 1024
+
+^1x4Shape:
+	HitShape:
+		UseTargetableCellsOffsets: true
+		Type: Rectangle
+			LocalYaw: -128
+			TopLeft: -512, -2048
+			BottomRight: 512, 2048
+
+^2x1Shape:
+	HitShape:
+		UseTargetableCellsOffsets: true
+		Type: Rectangle
+			LocalYaw: -128
+			TopLeft: -1024, -512
+			BottomRight: 1024, 512
+
+^2x2Shape:
+	HitShape:
+		UseTargetableCellsOffsets: true
+		Type: Rectangle
+			LocalYaw: -128
+			TopLeft: -1024, -1024
+			BottomRight: 1024, 1024
+
+^2x3Shape:
+	HitShape:
+		UseTargetableCellsOffsets: true
+		Type: Rectangle
+			LocalYaw: -128
+			TopLeft: -1024, -1536
+			BottomRight: 1024, 1536
+
+^2x5Shape:
+	HitShape:
+		UseTargetableCellsOffsets: true
+		Type: Rectangle
+			LocalYaw: -128
+			TopLeft: -1024, -2560
+			BottomRight: 1024, 2560
+
+^2x6Shape:
+	HitShape:
+		UseTargetableCellsOffsets: true
+		Type: Rectangle
+			LocalYaw: -128
+			TopLeft: -1024, -3072
+			BottomRight: 1024, 3072
+
+^3x1Shape:
+	HitShape:
+		UseTargetableCellsOffsets: true
+		Type: Rectangle
+			LocalYaw: -128
+			TopLeft: -1536, -512
+			BottomRight: 1536, 512
+
+^3x2Shape:
+	HitShape:
+		UseTargetableCellsOffsets: true
+		Type: Rectangle
+			LocalYaw: -128
+			TopLeft: -1536, -1024
+			BottomRight: 1536, 1024
+
+^3x3Shape:
+	HitShape:
+		UseTargetableCellsOffsets: true
+		Type: Rectangle
+			LocalYaw: -128
+			TopLeft: -1536, -1536
+			BottomRight: 1536, 1536
+
+^3x4Shape:
+	HitShape:
+		UseTargetableCellsOffsets: true
+		Type: Rectangle
+			LocalYaw: -128
+			TopLeft: -1536, -2048
+			BottomRight: 1536, 2048
+
+^3x5Shape:
+	HitShape:
+		UseTargetableCellsOffsets: true
+		Type: Rectangle
+			LocalYaw: -128
+			TopLeft: -1536, -2560
+			BottomRight: 1536, 2560
+
+^4x2Shape:
+	HitShape:
+		UseTargetableCellsOffsets: true
+		Type: Rectangle
+			TopLeft: -2048, -1024
+			BottomRight: 2048, 1024
+
+^4x3Shape:
+	HitShape:
+		UseTargetableCellsOffsets: true
+		Type: Rectangle
+			LocalYaw: -128
+			TopLeft: -2048, -1536
+			BottomRight: 2048, 1536
+
+^4x4Shape:
+	HitShape:
+		UseTargetableCellsOffsets: true
+		Type: Rectangle
+			LocalYaw: -128
+			TopLeft: -2048, -2048
+			BottomRight: 2048, 2048
+
+^5x3Shape:
+	HitShape:
+		UseTargetableCellsOffsets: true
+		Type: Rectangle
+			LocalYaw: -128
+			TopLeft: -2560, -1536
+			BottomRight: 2560, 1536
+
+^5x4Shape:
+	HitShape:
+		UseTargetableCellsOffsets: true
+		Type: Rectangle
+			LocalYaw: -128
+			TopLeft: -2560, -2048
+			BottomRight: 2560, 2048
+
+^6x4Shape:
+	HitShape:
+		UseTargetableCellsOffsets: true
+		Type: Rectangle
+			LocalYaw: -128
+			TopLeft: -3072, -2048
+			BottomRight: 3072, 2048
+
 ^GainsExperience:
 	GainsExperience:
 		Conditions:
@@ -112,6 +263,7 @@
 	Inherits@1: ^ExistsInWorld
 	Inherits@2: ^SpriteActor
 	Inherits@3: ^IronCurtainable
+	Inherits@shape: ^1x1Shape
 	-DrawLineToTarget:
 	SelectionDecorations:
 		Palette: pips
@@ -161,6 +313,8 @@
 	WithMakeAnimation:
 	HitShape:
 		UseTargetableCellsOffsets: true
+	EditorTilesetFilter:
+		Categories: Building
 
 ^SupportBuilding:
 	Inherits: ^Building
@@ -181,7 +335,6 @@
 	-CaptureNotification:
 	-Sellable:
 	-UpdatesPlayerStatistics:
-	-CombatDebugOverlay:
 	-WithMakeAnimation:
 	Health:
 		HP: 900
@@ -191,9 +344,12 @@
 		Range: 4c0
 	Tooltip:
 		Name: Civilian Building
+	EditorTilesetFilter:
+		Categories: Civilian building
 
 ^Rubble:
 	Inherits@1: ^SpriteActor
+	Inherits@shape: ^1x1Shape
 	Building:
 		Dimensions: 1,1
 		Footprint: x
@@ -204,6 +360,8 @@
 	FrozenUnderFog:
 	HitShape:
 		UseTargetableCellsOffsets: true
+	EditorTilesetFilter:
+		Categories: Building rubble
 
 ^TechBuilding:
 	Inherits: ^Building
@@ -211,7 +369,6 @@
 	-GivesExperience:
 	-Sellable:
 	-UpdatesPlayerStatistics:
-	-CombatDebugOverlay:
 	-WithMakeAnimation:
 	Health:
 		HP: 900
@@ -224,6 +381,8 @@
 	CaptureNotification:
 		Notification: TechBuildingCaptured
 		LoseNotification: TechBuildingLost
+	EditorTilesetFilter:
+		Categories: Tech building
 
 ^Flag:
 	Inherits: ^CivBuilding
@@ -245,6 +404,8 @@
 	SoundOnDamageTransition:
 		DamagedSounds: bmetdama.wav, bmetdamb.wav, bmetdamc.wav
 		DestroyedSounds: bmetdama.wav, bmetdamb.wav, bmetdamc.wav
+	EditorTilesetFilter:
+		Categories: Flag
 
 ^VoxelLighting:
 	Inherits: ^SupportBuilding
@@ -258,6 +419,7 @@
 ^Wall:
 	Inherits@1: ^ExistsInWorld
 	Inherits@2: ^SpriteActor
+	Inherits@shape: ^1x1Shape
 	FrozenUnderFog:
 	-CombatDebugOverlay:
 	-DrawLineToTarget:
@@ -288,6 +450,8 @@
 	Armor:
 		Type: Concrete
 	HitShape:
+	EditorTilesetFilter:
+		Categories: Wall
 
 ^Fence:
 	Inherits: ^Wall
@@ -397,6 +561,8 @@
 		Voice: Move
 	Chronoshiftable:
 		ExplodeInstead: true
+	EditorTilesetFilter:
+		Categories: Infantry
 
 ^Parachutable:
 	WithSpriteBody@Parachute:
@@ -446,6 +612,8 @@
 		VoiceSet: CivilianAlliedMaleVoice
 	WithInfantryBody:
 		IdleSequences: idle1
+	EditorTilesetFilter:
+		Categories: Civilian infantry
 
 ^Animal:
 	Inherits: ^Infantry
@@ -483,6 +651,8 @@
 		DeathTypes:
 			FlameDeath: 1
 	-Crushable:
+	EditorTilesetFilter:
+		Categories: Animal
 
 ^Vehicle:
 	Inherits@1: ^ExistsInWorld
@@ -546,6 +716,8 @@
 	Chronoshiftable:
 		ChronoshiftSound: schrmov.wav
 		ReturnToOrigin: false
+	EditorTilesetFilter:
+		Categories: Vehicle
 
 ^CivVehicle:
 	Inherits: ^Vehicle
@@ -567,6 +739,8 @@
 	WithVoxelBody:
 	Voiced:
 		VoiceSet: CarVoice
+	EditorTilesetFilter:
+		Categories: Civilian vehicle
 
 ^NeutralAircraft:
 	Inherits@1: ^ExistsInWorld
@@ -607,6 +781,8 @@
 	DeathSounds:
 	AppearsOnRadar:
 		UseLocation: true
+	EditorTilesetFilter:
+		Categories: Aircraft
 
 ^Aircraft:
 	Inherits@1: ^NeutralAircraft
@@ -647,6 +823,8 @@
 		Moves: true
 		Velocity: 86
 	HitShape:
+	EditorTilesetFilter:
+		Categories: Husk
 
 ^Ship:
 	Inherits@1: ^ExistsInWorld
@@ -700,6 +878,8 @@
 	Chronoshiftable:
 		ChronoshiftSound: schrmov.wav
 		ReturnToOrigin: false
+	EditorTilesetFilter:
+		Categories: Naval
 
 ^OreDrill:
 	Inherits@1: ^SpriteActor
@@ -724,6 +904,8 @@
 	AutoSelectionSize:
 	HitShape:
 		UseTargetableCellsOffsets: true
+	EditorTilesetFilter:
+		Categories: Resource spawn
 
 ^Tree:
 	Inherits@1: ^ExistsInWorld
@@ -748,16 +930,22 @@
 	HitShape:
 	Armor:
 		Type: Wood
+	EditorTilesetFilter:
+		Categories: Tree
 
 ^StreetSign:
 	Inherits: ^Tree
 	Tooltip:
 		Name: Street Sign
+	EditorTilesetFilter:
+		Categories: Decoration
 
 ^TrafficLight:
 	Inherits: ^Tree
 	Tooltip:
 		Name: Traffic Light
+	EditorTilesetFilter:
+		Categories: Decoration
 
 ^StreetLight:
 	Inherits: ^Tree
@@ -767,6 +955,8 @@
 		Type: steel
 	Health:
 		HP: 50
+	EditorTilesetFilter:
+		Categories: Decoration
 
 ^TelephonePole:
 	Inherits: ^Tree
@@ -776,6 +966,8 @@
 		HP: 20
 	Armor:
 		Type: Concrete
+	EditorTilesetFilter:
+		Categories: Decoration
 
 ^Rock:
 	Inherits@1: ^SpriteActor
@@ -793,6 +985,8 @@
 		Palette: terrain
 	HitShape:
 		UseTargetableCellsOffsets: true
+	EditorTilesetFilter:
+		Categories: Rock
 
 ^Crate:
 	Inherits@1: ^SpriteActor
@@ -808,3 +1002,5 @@
 	WithCrateBody:
 		LandSequence: land
 		WaterSequence: water
+	EditorTilesetFilter:
+		Categories: System
