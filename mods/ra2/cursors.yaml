@@ -59,11 +59,11 @@ Cursors:
 		generic-blocked-minimap:
 			Start: 52
 		attack:
-			Start: 53
-			Length: 5
-		attackmove:
 			Start: 58
 			Length: 5
+		attackmove:
+			Start: 404
+			Length: 9
 		attack-minimap:
 			Start: 63
 			Length: 5
@@ -220,9 +220,6 @@ Cursors:
 		guard2:
 			Start: 394
 			Length: 10
-		attackmove2:
-			Start: 404
-			Length: 9
 		deploy2:
 			Start: 413
 			Length: 9
@@ -293,3 +290,9 @@ Cursors:
 		undeploy:
 			Start: 0
 			Length: 7
+	assaultmove.shp: cursor
+		assaultmove:
+			Start: 0
+			Length: 9
+		assaultmove-minimap:
+			Start: 9
