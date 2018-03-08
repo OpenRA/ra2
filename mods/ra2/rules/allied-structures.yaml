@@ -1,5 +1,6 @@
 gacnst:
 	Inherits: ^Building
+	Inherits@shape: ^4x4Shape
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 1000
@@ -55,6 +56,7 @@ gacnst:
 
 gapowr:
 	Inherits: ^Building
+	Inherits@shape: ^2x2Shape
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 10
@@ -92,6 +94,7 @@ gapowr:
 
 gapile:
 	Inherits: ^Building
+	Inherits@shape: ^3x2Shape
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 20
@@ -156,6 +159,7 @@ gapile:
 
 garefn:
 	Inherits: ^Building
+	Inherits@shape: ^4x3Shape
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 30
@@ -209,6 +213,7 @@ garefn:
 
 gaairc:
 	Inherits: ^Building
+	Inherits@shape: ^3x2Shape
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 40
@@ -313,6 +318,7 @@ amradr:
 
 gaweap:
 	Inherits: ^Building
+	Inherits@shape: ^5x3Shape
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 50
@@ -374,6 +380,7 @@ gaweap:
 
 gayard:
 	Inherits: ^Building
+	Inherits@shape: ^4x4Shape
 	Valued:
 		Cost: 1000
 	Tooltip:
@@ -496,6 +503,7 @@ gayard:
 
 gadept:
 	Inherits: ^Building
+	Inherits@shape: ^3x3Shape
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 60
@@ -537,6 +545,7 @@ gadept:
 
 gatech:
 	Inherits: ^Building
+	Inherits@shape: ^3x2Shape
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 70
@@ -664,6 +673,7 @@ nasam:
 
 gtgcan:
 	Inherits: ^VoxelLighting
+	Inherits@shape: ^2x2Shape
 	Buildable:
 		Queue: Support
 		BuildPaletteOrder: 30
@@ -718,6 +728,7 @@ gtgcan:
 
 gaorep:
 	Inherits: ^Building
+	Inherits@shape: ^3x3Shape
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 80
@@ -746,6 +757,7 @@ gaorep:
 
 gaspysat:
 	Inherits: ^Building
+	Inherits@shape: ^2x2Shape
 	Buildable:
 		Queue: Support
 		BuildPaletteOrder: 90
@@ -819,6 +831,7 @@ gagap:
 
 gaweat:
 	Inherits: ^Building
+	Inherits@shape: ^3x3Shape
 	Buildable:
 		Queue: Support
 		BuildPaletteOrder: 110
@@ -850,6 +863,7 @@ gaweat:
 
 gacsph:
 	Inherits: ^Building
+	Inherits@shape: ^4x3Shape
 	Buildable:
 		Queue: Support
 		BuildPaletteOrder: 120
