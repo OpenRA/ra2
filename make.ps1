@@ -329,6 +329,7 @@ if ($command -eq "all" -or $command -eq "clean")
 		$dlPath = Join-Path $dlPath (Split-Path -leaf $env:AUTOMATIC_ENGINE_TEMP_ARCHIVE_NAME)
 
 		$client = new-object System.Net.WebClient
+		[Net.ServicePointManager]::SecurityProtocol = 'Tls12'
 		$client.DownloadFile($url, $dlPath)
 
 		Add-Type -assembly "system.io.compression.filesystem"
