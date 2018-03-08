@@ -6,6 +6,8 @@ mpspawn:
 	RenderSpritesEditorOnly:
 	WithSpriteBody:
 	QuantizeFacingsFromSequence:
+	EditorTilesetFilter:
+		Categories: System
 
 waypoint:
 	Immobile:
@@ -15,6 +17,8 @@ waypoint:
 	RenderSpritesEditorOnly:
 	WithSpriteBody:
 	QuantizeFacingsFromSequence:
+	EditorTilesetFilter:
+		Categories: System
 
 crate:
 	Inherits: ^Crate
@@ -105,6 +109,8 @@ CAMERA:
 		Image: camera
 	EditorOnlyTooltip:
 		Name: (reveals area to owner)
+	EditorTilesetFilter:
+		Categories: System
 
 FLAMEGUY:
 	Inherits@1: ^ExistsInWorld

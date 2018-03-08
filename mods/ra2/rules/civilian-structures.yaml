@@ -22,9 +22,11 @@ gasand:
 cabhut:
 	Inherits: ^CivBuilding
 	Tooltip:
-		Name: Bridge repair hut
+		Name: Bridge Repair Hut
 	Health:
 		HP: 2000
+	EditorTilesetFilter:
+		Categories: System
 
 cafncp:
 	Inherits: ^Fence
@@ -645,6 +647,8 @@ cawash18:
 	Building:
 		Dimensions: 2,2
 		Footprint: xx xx
+	EditorTilesetFilter:
+		Categories: Decoration
 
 cawash19:
 	Inherits: ^CivBuilding
@@ -1474,6 +1478,8 @@ galite:
 		UseClassicPerspectiveFudge: False
 		QuantizedFacings: 1
 	FrozenUnderFog:
+	EditorTilesetFilter:
+		Categories: Decoration
 
 cacity01:
 	Inherits: ^CivBuilding
@@ -1907,6 +1913,8 @@ capars07:
 		Range: 6c0
 	Health:
 		HP: 100
+	EditorTilesetFilter:
+		Categories: Decoration
 
 capars08:
 	Inherits: ^CivBuilding
@@ -2105,6 +2113,8 @@ cafrmb:
 		Range: 4c0
 	Health:
 		HP: 50
+	EditorTilesetFilter:
+		Categories: Decoration
 
 caprs03:
 	Inherits: ^CivBuilding
@@ -2142,6 +2152,8 @@ cagard01:
 		Range: 6c0
 	Health:
 		HP: 100
+	EditorTilesetFilter:
+		Categories: Decoration
 
 carus01:
 	Inherits: ^CivBuilding
@@ -2493,6 +2505,8 @@ camiam04:
 		Range: 6c0
 	Health:
 		HP: 200
+	EditorTilesetFilter:
+		Categories: Decoration
 
 camiam05:
 	Inherits: ^CivBuilding

@@ -313,6 +313,8 @@
 	WithMakeAnimation:
 	HitShape:
 		UseTargetableCellsOffsets: true
+	EditorTilesetFilter:
+		Categories: Building
 
 ^SupportBuilding:
 	Inherits: ^Building
@@ -342,6 +344,8 @@
 		Range: 4c0
 	Tooltip:
 		Name: Civilian Building
+	EditorTilesetFilter:
+		Categories: Civilian building
 
 ^Rubble:
 	Inherits@1: ^SpriteActor
@@ -356,6 +360,8 @@
 	FrozenUnderFog:
 	HitShape:
 		UseTargetableCellsOffsets: true
+	EditorTilesetFilter:
+		Categories: Building rubble
 
 ^TechBuilding:
 	Inherits: ^Building
@@ -375,6 +381,8 @@
 	CaptureNotification:
 		Notification: TechBuildingCaptured
 		LoseNotification: TechBuildingLost
+	EditorTilesetFilter:
+		Categories: Tech building
 
 ^Flag:
 	Inherits: ^CivBuilding
@@ -396,6 +404,8 @@
 	SoundOnDamageTransition:
 		DamagedSounds: bmetdama.wav, bmetdamb.wav, bmetdamc.wav
 		DestroyedSounds: bmetdama.wav, bmetdamb.wav, bmetdamc.wav
+	EditorTilesetFilter:
+		Categories: Flag
 
 ^VoxelLighting:
 	Inherits: ^SupportBuilding
@@ -440,6 +450,8 @@
 	Armor:
 		Type: Concrete
 	HitShape:
+	EditorTilesetFilter:
+		Categories: Wall
 
 ^Fence:
 	Inherits: ^Wall
@@ -549,6 +561,8 @@
 		Voice: Move
 	Chronoshiftable:
 		ExplodeInstead: true
+	EditorTilesetFilter:
+		Categories: Infantry
 
 ^Parachutable:
 	WithSpriteBody@Parachute:
@@ -598,6 +612,8 @@
 		VoiceSet: CivilianAlliedMaleVoice
 	WithInfantryBody:
 		IdleSequences: idle1
+	EditorTilesetFilter:
+		Categories: Civilian infantry
 
 ^Animal:
 	Inherits: ^Infantry
@@ -635,6 +651,8 @@
 		DeathTypes:
 			FlameDeath: 1
 	-Crushable:
+	EditorTilesetFilter:
+		Categories: Animal
 
 ^Vehicle:
 	Inherits@1: ^ExistsInWorld
@@ -698,6 +716,8 @@
 	Chronoshiftable:
 		ChronoshiftSound: schrmov.wav
 		ReturnToOrigin: false
+	EditorTilesetFilter:
+		Categories: Vehicle
 
 ^CivVehicle:
 	Inherits: ^Vehicle
@@ -719,6 +739,8 @@
 	WithVoxelBody:
 	Voiced:
 		VoiceSet: CarVoice
+	EditorTilesetFilter:
+		Categories: Civilian vehicle
 
 ^NeutralAircraft:
 	Inherits@1: ^ExistsInWorld
@@ -759,6 +781,8 @@
 	DeathSounds:
 	AppearsOnRadar:
 		UseLocation: true
+	EditorTilesetFilter:
+		Categories: Aircraft
 
 ^Aircraft:
 	Inherits@1: ^NeutralAircraft
@@ -799,6 +823,8 @@
 		Moves: true
 		Velocity: 86
 	HitShape:
+	EditorTilesetFilter:
+		Categories: Husk
 
 ^Ship:
 	Inherits@1: ^ExistsInWorld
@@ -852,6 +878,8 @@
 	Chronoshiftable:
 		ChronoshiftSound: schrmov.wav
 		ReturnToOrigin: false
+	EditorTilesetFilter:
+		Categories: Naval
 
 ^OreDrill:
 	Inherits@1: ^SpriteActor
@@ -876,6 +904,8 @@
 	AutoSelectionSize:
 	HitShape:
 		UseTargetableCellsOffsets: true
+	EditorTilesetFilter:
+		Categories: Resource spawn
 
 ^Tree:
 	Inherits@1: ^ExistsInWorld
@@ -900,16 +930,22 @@
 	HitShape:
 	Armor:
 		Type: Wood
+	EditorTilesetFilter:
+		Categories: Tree
 
 ^StreetSign:
 	Inherits: ^Tree
 	Tooltip:
 		Name: Street Sign
+	EditorTilesetFilter:
+		Categories: Decoration
 
 ^TrafficLight:
 	Inherits: ^Tree
 	Tooltip:
 		Name: Traffic Light
+	EditorTilesetFilter:
+		Categories: Decoration
 
 ^StreetLight:
 	Inherits: ^Tree
@@ -919,6 +955,8 @@
 		Type: steel
 	Health:
 		HP: 50
+	EditorTilesetFilter:
+		Categories: Decoration
 
 ^TelephonePole:
 	Inherits: ^Tree
@@ -928,6 +966,8 @@
 		HP: 20
 	Armor:
 		Type: Concrete
+	EditorTilesetFilter:
+		Categories: Decoration
 
 ^Rock:
 	Inherits@1: ^SpriteActor
@@ -945,6 +985,8 @@
 		Palette: terrain
 	HitShape:
 		UseTargetableCellsOffsets: true
+	EditorTilesetFilter:
+		Categories: Rock
 
 ^Crate:
 	Inherits@1: ^SpriteActor
@@ -960,3 +1002,5 @@
 	WithCrateBody:
 		LandSequence: land
 		WaterSequence: water
+	EditorTilesetFilter:
+		Categories: System
