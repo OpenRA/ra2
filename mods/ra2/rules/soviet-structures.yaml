@@ -769,6 +769,8 @@ namisl:
 		LaunchSound: snuklaun.wav
 		MissileWeapon: atomic
 		MissilePalette: player
+		MissileDelay: 35
+		SpawnOffset: 0,0,-1c0
 		IsPlayerPalette: true
 		DisplayTimer: True
 		DisplayBeacon: True
@@ -777,6 +779,7 @@ namisl:
 		FlashType: Nuke
 		ArrowSequence: arrow
 		CameraRange: 10
+	WithNukeLaunchAnimation:
 
 nawall:
 	Inherits: ^Wall

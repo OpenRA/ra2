@@ -481,10 +481,12 @@ namisl:
 	active: ngmisl_f
 		Length: 16
 		ShadowStart: 32
+		Tick: 120
 	damaged-active: ngmisl_f
 		Start: 17
 		Length: 16
 		ShadowStart: 48
+		Tick: 120
 	make: ntmislmk
 		UseTilesetCode: true
 		Length: 26
