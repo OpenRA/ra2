@@ -2,7 +2,7 @@ smcv:
 	Inherits: ^Vehicle
 	Buildable:
 		Queue: Vehicle
-		BuildPaletteOrder: 110
+		BuildPaletteOrder: 80
 		Prerequisites: ~naweap, repairpad
 		Description: Deploys into a Construction Yard.
 	Valued:
@@ -108,7 +108,7 @@ htk:
 		Bounds: 50, 40, 0, -6
 	Buildable:
 		Queue: Vehicle
-		BuildPaletteOrder: 20
+		BuildPaletteOrder: 30
 		Prerequisites: ~naweap
 		Description: Infantry Transport and Anti-Air/Anti-Infantry vehicle.\n  Strong vs Aircraft, Infantry\n  Weak vs Vehicles
 	Mobile:
@@ -158,7 +158,7 @@ htnk:
 		Name: Rhino Heavy Tank
 	Buildable:
 		Queue: Vehicle
-		BuildPaletteOrder: 30
+		BuildPaletteOrder: 20
 		Prerequisites: ~naweap
 		Description: Soviet Main Battle Tank.\n  Strong vs Vehicles\n  Weak vs Infantry, Aircraft
 	Mobile:
@@ -206,7 +206,7 @@ apoc:
 		Name: Apocalypse Tank
 	Buildable:
 		Queue: Vehicle
-		BuildPaletteOrder: 60
+		BuildPaletteOrder: 70
 		Prerequisites: ~naweap, natech
 		Description: Soviet Advanced Battle Tank with Double Barrel\nand Anti-Aircraft Missile Launcher.\n  Strong vs Vehicles, Aircraft\n  Weak vs Infantry
 	Mobile:
@@ -297,7 +297,7 @@ dtruck:
 	Inherits: ^Vehicle
 	Buildable:
 		Queue: Vehicle
-		BuildPaletteOrder: 110
+		BuildPaletteOrder: 60
 		Prerequisites: naradr, ~vehicles.libya
 		Description: Demolition Truck, actively armed with nuclear explosives.
 	Valued:

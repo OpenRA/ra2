@@ -12,7 +12,7 @@ shad:
 		VoiceSet: NighthawkVoice
 	Buildable:
 		Queue: Vehicle
-		BuildPaletteOrder: 20
+		BuildPaletteOrder: 90
 		Prerequisites: ~gaweap
 		Description: Infantry Transport Helicopter\nUndetectable by radar.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
 	Valued:
@@ -87,7 +87,7 @@ zep:
 		Name: Kirov Airship
 	Buildable:
 		Queue: Vehicle
-		BuildPaletteOrder: 20
+		BuildPaletteOrder: 90
 		Prerequisites: ~naweap, natech
 	Selectable:
 	Aircraft:
@@ -166,7 +166,7 @@ orca:
 		Name: Harrier
 	Buildable:
 		Queue: Aircraft
-		BuildPaletteOrder: 20
+		BuildPaletteOrder: 10
 		Prerequisites: ~aircraft.allies
 		Description: Fast assault fighter\n  Strong vs Buildings, Vehicles\n  Weak vs Infantry, Aircraft
 	Aircraft:
@@ -218,6 +218,7 @@ beag:
 	Tooltip:
 		Name: Black Eagle
 	Buildable:
+		BuildPaletteOrder: 20
 		Prerequisites: ~aircraft.korea
 	SpawnActorOnDeath:
 		Actor: beaghusk

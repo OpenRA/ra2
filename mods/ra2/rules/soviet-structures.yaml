@@ -235,7 +235,7 @@ naradr:
 	Inherits@shape: ^2x2Shape
 	Buildable:
 		Queue: Building
-		BuildPaletteOrder: 40
+		BuildPaletteOrder: 60
 		Prerequisites: power, narefn, ~structures.soviets
 		Description: Provides radar.
 	Valued:
@@ -279,7 +279,7 @@ naweap:
 	Inherits@shape: ^5x3Shape
 	Buildable:
 		Queue: Building
-		BuildPaletteOrder: 50
+		BuildPaletteOrder: 40
 		Prerequisites: refinery, nahand, ~structures.soviets
 		Description: Produces vehicles.
 	Selectable:
@@ -466,7 +466,7 @@ nadept:
 	Inherits@shape: ^4x3Shape
 	Buildable:
 		Queue: Building
-		BuildPaletteOrder: 60
+		BuildPaletteOrder: 70
 		Prerequisites: naweap, ~structures.soviets
 		Description: Repairs vehicles and removes Terror Drones (for a price).
 	Selectable:
@@ -508,7 +508,7 @@ nanrct:
 	Inherits@shape: ^4x4Shape
 	Buildable:
 		Queue: Building
-		BuildPaletteOrder: 160
+		BuildPaletteOrder: 90
 		Prerequisites: natech, ~structures.soviets
 		Description: Provides power for other structures.
 	Valued:
@@ -549,7 +549,7 @@ natech:
 	Inherits@shape: ^3x3Shape
 	Buildable:
 		Queue: Building
-		BuildPaletteOrder: 150
+		BuildPaletteOrder: 80
 		Prerequisites: naweap, naradr, ~structures.soviets
 		Description: Allows deployment of advanced units.
 	Valued:
@@ -580,7 +580,7 @@ naclon:
 	Inherits@shape: ^2x2Shape
 	Buildable:
 		Queue: Building
-		BuildPaletteOrder: 170
+		BuildPaletteOrder: 100
 		Prerequisites: natech, ~structures.soviets
 		BuildLimit: 1
 		Description: Clones most trained infantry.
@@ -651,7 +651,7 @@ napsis:
 	Inherits@shape: ^2x2Shape
 	Buildable:
 		Queue: Support
-		BuildPaletteOrder: 40
+		BuildPaletteOrder: 60
 		Prerequisites: natech, ~structures.soviets
 		Description: Detects enemy units and strikepoints
 	Valued:
@@ -688,7 +688,7 @@ nairon:
 	Inherits@shape: ^3x3Shape
 	Buildable:
 		Queue: Support
-		BuildPaletteOrder: 60
+		BuildPaletteOrder: 80
 		Prerequisites: natech, ~structures.soviets
 		BuildLimit: 1
 		Description: Grants invulnerability to armored units.\nFries fleshy units.
@@ -732,7 +732,7 @@ namisl:
 	Inherits@shape: ^3x3Shape
 	Buildable:
 		Queue: Support
-		BuildPaletteOrder: 70
+		BuildPaletteOrder: 90
 		Prerequisites: natech, ~structures.soviets
 		BuildLimit: 1
 		Description: Provides an atomic bomb.\nRequires power to operate.\n  Special Ability: Atom Bomb\nMaximum 1 can be built.
@@ -837,7 +837,7 @@ tesla:
 	Inherits: ^SupportBuilding
 	Buildable:
 		Queue: Support
-		BuildPaletteOrder: 30
+		BuildPaletteOrder: 40
 		Prerequisites: naradr, ~structures.soviets
 		Description: Advanced base defense.\nRequires power to operate.\n  Strong vs Infantry, Vehicles\n  Weak vs Aircraft
 	Valued:
@@ -893,7 +893,7 @@ nalasr:
 	Inherits: ^VoxelLighting
 	Buildable:
 		Queue: Support
-		BuildPaletteOrder: 30
+		BuildPaletteOrder: 20
 		Prerequisites: barracks, ~structures.soviets
 		Description: Automated anti-infantry defense.
 	Valued:
