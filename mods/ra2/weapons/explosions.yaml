@@ -46,10 +46,10 @@ IvanBomber:
 			Plate: 100
 			Light: 100
 			Medium: 100
-			Heavy: 250
-			Wood: 20
-			Steel: 100
-			Concrete: 100
+			Heavy: 100
+			Wood: 100
+			Steel: 250
+			Concrete: 20
 			Drone: 100
 			Rocket: 100
 		DamageTypes: FlameDeath, Prone100Percent
