@@ -64,6 +64,7 @@ sub:
 	Mobile:
 		TurnSpeed: 4
 		Speed: 71
+	-LeavesTrails:
 	RevealsShroud:
 		Range: 6c0
 	-Targetable:

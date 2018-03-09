@@ -17,7 +17,7 @@ Packages:
 	~audio.mix
 	~cache.mix
 	~cameo.mix
-	~conquer.mix
+	~conquer.mix: conquer
 	~generic.mix
 	~isogen.mix
 	~isosnow.mix

@@ -846,6 +846,12 @@
 		TerrainSpeeds:
 			Water: 100
 		TurnSpeed: 5
+	LeavesTrails:
+		Image: wake
+		Palette: effect50alpha
+		TerrainTypes: Water
+		StationaryInterval: 18
+		MovingInterval: 6
 	SelectionDecorations:
 		Palette: pips
 	Selectable:
