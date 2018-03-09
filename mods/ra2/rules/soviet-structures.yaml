@@ -531,6 +531,7 @@ nanrct:
 	WithIdleOverlay@lights:
 		Sequence: idle-lights
 	Explodes:
+		Type: CenterPosition
 		Weapon: NukePayload
 		EmptyWeapon: NukePayload
 	Power:
