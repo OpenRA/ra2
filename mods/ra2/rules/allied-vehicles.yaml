@@ -155,9 +155,14 @@ tnkd:
 		Type: Heavy
 	RevealsShroud:
 		Range: 8c0
-	Armament@Primary:
+	Armament@primary:
 		Weapon: sabot
 		LocalOffset: 640,0,384
+		RequiresCondition: !rank-elite
+	Armament@elite:
+		Weapon: sabotE
+		LocalOffset: 640,0,384
+		RequiresCondition: rank-elite
 	AttackFrontal:
 		Voice: Attack
 	AutoTarget:

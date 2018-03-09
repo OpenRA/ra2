@@ -28,7 +28,7 @@ sabot:
 	Inherits: ^LargeBullet
 	ValidTargets: Ground, Water
 	Range: 5c0
-	ReloadDelay: 25
+	ReloadDelay: 70
 	Report: vtadatta.wav, vtadattb.wav, vtadattc.wav
 	Projectile: Bullet
 		Speed: 100c0
@@ -48,6 +48,22 @@ sabot:
 			Drone: 2
 			Rocket: 100
 		DamageTypes: Prone50Percent, TriggerProne, BulletDeath
+
+sabotE:
+	Inherits: sabot
+	Range: 6c768
+	ReloadDelay: 60
+	Warhead@1Dam: SpreadDamage
+		Damage: 175
+		Versus:
+			Medium: 50
+			Drone: 100
+	Warhead@2Eff: CreateEffect
+		Explosions: elite_explosion
+		ImpactSounds: gexpapoa.wav
+	Warhead@3EffWater: CreateEffect
+		Explosions: large_watersplash
+		ImpactSounds: gexpwala.wav
 
 MirageGun:
 	Inherits: ^LargeBullet
