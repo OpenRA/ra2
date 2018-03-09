@@ -1635,7 +1635,7 @@ catexs02.rubble:
 	Inherits@shape: ^4x4Shape
 	Building:
 		Dimensions: 4,4
-		Footprint: xxxx xxxx xxxx xxxx
+		Footprint: ____ ____ ____ ____
 	RenderSprites:
 		Image: catexs02
 
