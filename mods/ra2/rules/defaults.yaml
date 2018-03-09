@@ -762,7 +762,6 @@
 		Voice: Move
 		AirborneCondition: airborne
 		CanHover: True
-		TakeOffOnResupply: true
 		VTOL: true
 	HiddenUnderFog:
 		Type: CenterPosition
@@ -803,6 +802,8 @@
 		CruiseAltitude: 5600
 		CruisingCondition: cruising
 		AltitudeVelocity: 120
+		LandWhenIdle: false
+		TakeOffOnCreation: false
 	Hovers@CRUISING:
 		RequiresCondition: cruising
 	ReturnOnIdle:
