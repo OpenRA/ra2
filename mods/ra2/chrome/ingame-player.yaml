@@ -32,7 +32,7 @@ Container@PLAYER_WIDGETS:
 			Y: 10
 			Order: Descending
 		Image@COMMAND_BAR_BACKGROUND:
-        	Logic: AddFactionSuffixLogic
+			Logic: AddFactionSuffixLogic
 			X: 5
 			Y: WINDOW_BOTTOM - HEIGHT - 5
 			Width: 459
@@ -42,7 +42,7 @@ Container@PLAYER_WIDGETS:
 			ClickThrough: False
 		Container@COMMAND_BAR:
 			Logic: CommandBarLogic
-            	HighlightOnButtonPress: True
+				HighlightOnButtonPress: True
 			X: 36
 			Y: WINDOW_BOTTOM - HEIGHT - 10
 			Width: 270
@@ -53,7 +53,7 @@ Container@PLAYER_WIDGETS:
 					Width: 33
 					Height: 26
 					VisualHeight: 0
-					Background: 
+					Background:
 					Key: AttackMove
 					DisableKeySound: true
 					TooltipText: Attack Move
@@ -72,7 +72,7 @@ Container@PLAYER_WIDGETS:
 					Width: 26
 					Height: 26
 					VisualHeight: 0
-					Background: 
+					Background:
 					DisableKeySound: true
 					TooltipText: Force Move
 					TooltipDesc: Selected units will move to the desired location\n - Default activity for the target is suppressed\n - Vehicles will attempt to crush enemies at the target location\n - Units entering transports will consider nearby alternatives\n - Chrono Tanks will teleport towards the target location\n\nLeft-click icon then right-click on target.\nHold {(Alt)} to activate temporarily while commanding units.
@@ -108,7 +108,7 @@ Container@PLAYER_WIDGETS:
 					Width: 29
 					Height: 26
 					VisualHeight: 0
-					Background: 
+					Background:
 					Key: Guard
 					DisableKeySound: true
 					TooltipText: Guard
@@ -164,7 +164,7 @@ Container@PLAYER_WIDGETS:
 					Width: 22
 					Height: 26
 					VisualHeight: 0
-					Background: 
+					Background:
 					Key: Stop
 					DisableKeyRepeat: true
 					DisableKeySound: true
@@ -207,7 +207,7 @@ Container@PLAYER_WIDGETS:
 					Width: 25
 					Height: 21
 					VisualHeight: 0
-					Background: 
+					Background:
 					Key: StanceAttackAnything
 					DisableKeyRepeat: true
 					DisableKeySound: true
@@ -226,7 +226,7 @@ Container@PLAYER_WIDGETS:
 					Width: 20
 					Height: 21
 					VisualHeight: 0
-					Background: 
+					Background:
 					Key: StanceDefend
 					DisableKeyRepeat: true
 					DisableKeySound: true
@@ -245,7 +245,7 @@ Container@PLAYER_WIDGETS:
 					Width: 22
 					Height: 21
 					VisualHeight: 0
-					Background: 
+					Background:
 					Key: StanceReturnFire
 					DisableKeyRepeat: true
 					DisableKeySound: true
@@ -264,7 +264,7 @@ Container@PLAYER_WIDGETS:
 					Width: 25
 					Height: 21
 					VisualHeight: 0
-					Background: 
+					Background:
 					Key: StanceHoldFire
 					DisableKeyRepeat: true
 					DisableKeySound: true

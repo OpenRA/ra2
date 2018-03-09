@@ -254,25 +254,21 @@ naradr:
 		HP: 1000
 	Armor:
 		Type: Wood
-	RequiresPower:
-	CanPowerDown:
-		IndicatorPalette: ts-mouse
-		PowerupSpeech: BuildingOnline
-		PowerdownSpeech: BuildingOffline
+	GrantConditionOnPowerState@LOWPOWER:
+		Condition: lowpower
+		ValidPowerStates: Low, Critical
 	ProvidesRadar:
-		RequiresCondition: !disabled
+		RequiresCondition: !lowpower
 	RevealsShroud:
 		Range: 10c0
 	WithIdleOverlay@dish:
 		Sequence: idle-dish
-		PauseOnLowPower: true
+		PauseOnCondition: lowpower
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
 	InfiltrateForExploration:
 	Power:
 		Amount: -50
-	GrantConditionOnDisabled@IDISABLE:
-		Condition: disabled
 
 naweap:
 	Inherits: ^Building
@@ -354,7 +350,6 @@ nayard:
 	Building:
 		Footprint: xxxx xxxx xxxx xxxx
 		Dimensions: 4,4
-		Adjacent: 13
 		TerrainTypes: Water
 	-GivesBuildableArea:
 	Health:
@@ -460,6 +455,8 @@ nayard:
 		Sequence: production-lights
 	-EmitInfantryOnSell@allies:
 	-EmitInfantryOnSell@soviets:
+	RequiresBuildableArea:
+		Adjacent: 13
 
 nadept:
 	Inherits: ^Building
@@ -676,14 +673,12 @@ napsis:
 		Range: 6c0
 	WithIdleOverlay@spin:
 		Sequence: idle-spin
-		PauseOnLowPower: true
+		PauseOnCondition: lowpower
 	Power:
 		Amount: -100
-	RequiresPower:
-	CanPowerDown:
-		IndicatorPalette: ts-mouse
-		PowerupSpeech: BuildingOnline
-		PowerdownSpeech: BuildingOffline
+	GrantConditionOnPowerState@LOWPOWER:
+		Condition: lowpower
+		ValidPowerStates: Low, Critical
 
 nairon:
 	Inherits: ^Building
@@ -713,7 +708,7 @@ nairon:
 		Amount: -200
 	GrantExternalConditionPower@IRONCURTAIN:
 		Icon: invuln
-		ChargeTime: 300
+		ChargeInterval: 7500
 		Description: Invulnerability
 		LongDesc: Makes a group of units invulnerable\nfor 20 seconds.
 		Duration: 500
@@ -723,12 +718,11 @@ nairon:
 		DisplayTimerStances: Ally, Neutral, Enemy
 		DisplayRadarPing: True
 		Condition: invulnerability
+		PauseOnCondition: lowpower
 	SupportPowerChargeBar:
-	RequiresPower:
-	CanPowerDown:
-		IndicatorPalette: ts-mouse
-		PowerupSpeech: BuildingOnline
-		PowerdownSpeech: BuildingOffline
+	GrantConditionOnPowerState@LOWPOWER:
+		Condition: lowpower
+		ValidPowerStates: Low, Critical
 
 namisl:
 	Inherits: ^Building
@@ -756,16 +750,14 @@ namisl:
 		Range: 4c0
 	Power:
 		Amount: -200
-	RequiresPower:
-	CanPowerDown:
-		IndicatorPalette: ts-mouse
-		PowerupSpeech: BuildingOnline
-		PowerdownSpeech: BuildingOffline
+	GrantConditionOnPowerState@LOWPOWER:
+		Condition: lowpower
+		ValidPowerStates: Low, Critical
 	SupportPowerChargeBar:
 	NukePower:
 		Cursor: nuke
 		Icon: abomb
-		ChargeTime: 600
+		ChargeInterval: 15000
 		Description: Atom Bomb
 		LongDesc: Launches a devastating atomic bomb\nat a target location.
 		EndChargeSound: snukread.wav
@@ -782,6 +774,7 @@ namisl:
 		FlashType: Nuke
 		ArrowSequence: arrow
 		CameraRange: 10
+		PauseOnCondition: lowpower
 	WithNukeLaunchAnimation:
 
 nawall:
@@ -822,6 +815,7 @@ naflak:
 		Offset: 450,0,0
 	AttackTurreted:
 		Voice: Attack
+		PauseOnCondition: lowpower
 	Armament:
 		Weapon: FlakWeapon
 	BodyOrientation:
@@ -834,11 +828,9 @@ naflak:
 	AutoTarget:
 	Power:
 		Amount: -50
-	RequiresPower:
-	CanPowerDown:
-		IndicatorPalette: ts-mouse
-		PowerupSpeech: BuildingOnline
-		PowerdownSpeech: BuildingOffline
+	GrantConditionOnPowerState@LOWPOWER:
+		Condition: lowpower
+		ValidPowerStates: Low, Critical
 
 tesla:
 	Inherits: ^SupportBuilding
@@ -878,9 +870,12 @@ tesla:
 		MaxCharges: 3
 		ReloadTime: 120
 		ChargeAudio: tslachg2.aud
+		PauseOnCondition: lowpower
 	AutoTarget:
-	RequiresPower:
+	GrantConditionOnPowerState@LOWPOWER:
 		RequiresCondition: !charged
+		Condition: lowpower
+		ValidPowerStates: Low, Critical
 	WithRangeCircle:
 		Range: 8c0
 		Type: teslacoil
@@ -888,11 +883,7 @@ tesla:
 		Amount: -75
 	WithIdleOverlay@powered:
 		Sequence: idle-powered
-		PauseOnLowPower: true
-	CanPowerDown:
-		IndicatorPalette: ts-mouse
-		PowerupSpeech: BuildingOnline
-		PowerdownSpeech: BuildingOffline
+		RequiresCondition: !lowpower
 	ExternalCondition@CHARGED:
 		Condition: charged
 
@@ -910,7 +901,6 @@ nalasr:
 	Building:
 		Footprint: x
 		Dimensions: 1, 1
-		Adjacent: 5
 	Health:
 		HP: 400
 	Armor:
@@ -935,3 +925,5 @@ nalasr:
 		Range: 6c0
 		Type: pillbox
 	AutoTarget:
+	RequiresBuildableArea:
+		Adjacent: 5

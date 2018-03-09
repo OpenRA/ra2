@@ -512,7 +512,8 @@ gagate_a:
 	WithGateSpriteBody:
 	Tooltip:
 		Name: Guard Border Crossing
-	Gate:
+	Building:
 		Dimensions: 3,1
 		Footprint: xxx
 		TerrainTypes: Clear, Rough, Road, DirtRoad
+	Gate:

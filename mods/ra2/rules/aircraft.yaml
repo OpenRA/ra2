@@ -152,6 +152,7 @@ orca:
 		Type: CenterPosition
 	Armament:
 		Weapon: Maverick
+		PauseOnCondition: !ammo
 	AttackPlane:
 		FacingTolerance: 20
 		Voice: Attack
@@ -162,6 +163,7 @@ orca:
 		PipCount: 1
 		PipType: Ammo
 		PipTypeEmpty: AmmoEmpty
+		AmmoCondition: ammo
 	AutoTarget:
 	RenderSprites:
 		Image: falc
@@ -240,6 +242,7 @@ pdplane:
 	SpawnActorOnDeath:
 		Actor: pdplanehusk
 	HitShape:
+	Interactable:
 
 pdplanehusk:
 	Inherits: ^PlaneHusk

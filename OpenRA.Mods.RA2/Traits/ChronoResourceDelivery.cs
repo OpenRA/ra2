@@ -77,8 +77,10 @@ namespace OpenRA.Mods.RA2.Traits
 			Reset();
 		}
 
-		public void MovingToRefinery(Actor self, CPos targetCell, Activity next)
+		public void MovingToRefinery(Actor self, Actor refineryActor, Activity next)
 		{
+			var iao = refineryActor.Trait<IAcceptResources>();
+			var targetCell = refineryActor.Location + iao.DeliveryOffset;
 			if (destination != null && destination.Value != targetCell)
 				ticksTillCheck = 0;
 

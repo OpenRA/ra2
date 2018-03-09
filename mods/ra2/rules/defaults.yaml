@@ -12,7 +12,6 @@
 	BodyOrientation:
 		UseClassicPerspectiveFudge: false
 	QuantizeFacingsFromSequence:
-	AutoSelectionSize:
 	RenderSprites:
 
 ^1x1Shape:
@@ -249,13 +248,11 @@
 		Condition: invulnerability
 
 ^ChronoDisable:
-	DisableOnCondition@ChronoDisable:
-		RequiresCondition: chronodisable
 	TimedConditionBar@ChronoDisable:
 		Condition: chronodisable
 		Color: FFFFFF
-	#Mobile:
-	#	RequiresCondition: !notmobile
+	Mobile:
+		RequiresCondition: !chronodisable
 	ExternalCondition@CHRONODISABLE:
 		Condition: chronodisable
 
@@ -287,9 +284,9 @@
 		BuildSounds: uplace.wav
 		UndeploySounds: uselbuil.wav
 		TerrainTypes: Clear, Road, DirtRoad, Rough
-		Adjacent: 3
 	FrozenUnderFog:
 	GivesBuildableArea:
+		AreaTypes: building
 	Capturable:
 	SoundOnDamageTransition:
 		DamagedSounds: gdamag1a.wav, gdamag1b.wav, gdamag1c.wav, gdamag1d.wav, gdamag1e.wav
@@ -325,6 +322,9 @@
 		UseTargetableCellsOffsets: true
 	EditorTilesetFilter:
 		Categories: Building
+	RequiresBuildableArea:
+		AreaTypes: building
+		Adjacent: 3
 
 ^SupportBuilding:
 	Inherits: ^Building
@@ -372,6 +372,7 @@
 		UseTargetableCellsOffsets: true
 	EditorTilesetFilter:
 		Categories: Building rubble
+	Interactable:
 
 ^TechBuilding:
 	Inherits: ^Building
@@ -438,7 +439,6 @@
 		Dimensions: 1,1
 		Footprint: x
 		BuildSounds: uplace.wav
-		Adjacent: 9
 		TerrainTypes: Clear, Rough, Road, DirtRoad
 	BlocksProjectiles:
 	LineBuild:
@@ -462,6 +462,10 @@
 	HitShape:
 	EditorTilesetFilter:
 		Categories: Wall
+	RequiresBuildableArea:
+		AreaTypes: building
+		Adjacent: 9
+	Interactable:
 
 ^Fence:
 	Inherits: ^Wall
@@ -846,6 +850,7 @@
 	HitShape:
 	EditorTilesetFilter:
 		Categories: Husk
+	Interactable:
 
 ^PlaneHusk:
 	Inherits: ^Husk
@@ -940,11 +945,11 @@
 	QuantizeFacingsFromSequence:
 	RenderSprites:
 		Palette: player
-	AutoSelectionSize:
 	HitShape:
 		UseTargetableCellsOffsets: true
 	EditorTilesetFilter:
 		Categories: Resource spawn
+	Interactable:
 
 ^Tree:
 	Inherits@1: ^ExistsInWorld
@@ -961,7 +966,6 @@
 	QuantizeFacingsFromSequence:
 	RenderSprites:
 		Palette: terrain
-	AutoSelectionSize:
 	Targetable:
 		TargetTypes: Ground, Wall, DetonateAttack
 	Health:
@@ -971,6 +975,7 @@
 		Type: Wood
 	EditorTilesetFilter:
 		Categories: Tree
+	Interactable:
 
 ^StreetSign:
 	Inherits: ^Tree
@@ -1026,6 +1031,7 @@
 		UseTargetableCellsOffsets: true
 	EditorTilesetFilter:
 		Categories: Rock
+	Interactable:
 
 ^Crate:
 	Inherits@1: ^SpriteActor
@@ -1043,3 +1049,4 @@
 		WaterSequence: water
 	EditorTilesetFilter:
 		Categories: System
+	Interactable:

@@ -153,6 +153,7 @@ shk:
 		Prerequisites: barracks.infiltrated
 	QuantizeFacingsFromSequence:
 		Sequence: stand
+	ReloadAmmoPool@1:
 
 terror:
 	Inherits: ^Infantry
@@ -317,7 +318,7 @@ yuri:
 		HP: 100
 	Mobile:
 		Speed: 60
-		RequiresCondition: !deployed && !deploying
+		RequiresCondition: !deployed && !deploying && !chronodisable
 	RevealsShroud:
 		Range: 12c0
 	Armor:
