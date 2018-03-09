@@ -71,6 +71,7 @@ caairp:
 		CameraActor: camera
 		Prerequisites: ~techparadrops.soviets
 		ArrowSequence: arrow
+	SupportPowerChargeBar:
 	WithIdleOverlay@decoration:
 	WithIdleOverlay@flag:
 		Sequence: flag

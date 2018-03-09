@@ -307,6 +307,7 @@ amradr:
 	RenderSprites:
 		Image: gaairc
 	AutoSelectionSize:
+	SupportPowerChargeBar:
 	ParatroopersPower@paratroopers:
 		OrderName: AmericanParatroopers
 		Icon: airborne
@@ -899,16 +900,18 @@ gacsph:
 		IndicatorPalette: ts-mouse
 		PowerupSpeech: BuildingOnline
 		PowerdownSpeech: BuildingOffline
+	SupportPowerChargeBar:
 	ChronoshiftPower@chronoshift:
 		OrderName: Chronoshift
 		Icon: chrono
-		ChargeTime: 120
+		ChargeTime: 300
 		Description: Chronoshift
 		LongDesc: Teleports a group of units across\nthe map.
 		# Those sounds don't work: OpenRA/OpenRA#10540
 		# They also want to be played successive
 		#SelectTargetSound: schrlo1.wav, schrlo2a.wav schrlo2b.wav, schrlo2c.wav, schrlo3.wav
 		EndChargeSound: schropen.wav
+		DisplayTimerStances: Ally, Neutral, Enemy
 		DisplayRadarPing: True
 		KillCargo: False
 		SelectionCursor: chronosphere
