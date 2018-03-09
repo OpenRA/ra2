@@ -198,6 +198,8 @@ camsc06:
 		Range: 6c0
 	Health:
 		HP: 10
+	WithIdleOverlay@fire:
+		Sequence: idle-fire
 	EditorTilesetFilter:
 		Categories: Decoration
 
