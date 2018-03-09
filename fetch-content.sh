@@ -6,9 +6,9 @@ set -e
 function download_url() {
   URL="$1"
   LOCAL_FILE="${1##*/}"
-  if [ -x "$(type -p wget)" ]; then
+  if [ -x "$(type -P wget)" ]; then
     wget -O "${LOCAL_FILE}" "${URL}"
-  elif [ -x "$(type -p curl)" ]; then
+  elif [ -x "$(type -P curl)" ]; then
     curl -f -o "${LOCAL_FILE}" "${URL}"
   else
     echo "No supported download method found." 1>&2
