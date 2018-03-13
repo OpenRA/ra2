@@ -306,7 +306,6 @@ amradr:
 	QuantizeFacingsFromSequence:
 	RenderSprites:
 		Image: gaairc
-	AutoSelectionSize:
 	SupportPowerChargeBar:
 	ParatroopersPower@paratroopers:
 		OrderName: AmericanParatroopers
@@ -402,7 +401,6 @@ gayard:
 		Dimensions: 4,4
 		Adjacent: 13
 		TerrainTypes: Water
-	-GivesBuildableArea:
 	Health:
 		HP: 1500
 	Armor:
