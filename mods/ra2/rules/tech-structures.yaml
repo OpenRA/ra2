@@ -6,6 +6,8 @@ caoild:
 	Building:
 		Footprint: xx xx
 		Dimensions: 2, 2
+	GivesBuildableArea:
+		AreaTypes: building
 	EngineerRepairable:
 	CashTrickler:
 		Interval: 100
@@ -39,6 +41,8 @@ caairp:
 	Building:
 		Dimensions: 3,3
 		Footprint: xxx xxx xxx
+	GivesBuildableArea:
+		AreaTypes: building
 	ProvidesPrerequisite@Allies:
 		Prerequisite: techparadrops.allies
 		Factions: america, germany, england, france, korea
@@ -82,6 +86,8 @@ cahosp:
 	Building:
 		Footprint: xxxx xxxx xxxx xxxx xxxx xxxx
 		Dimensions: 6, 4
+	GivesBuildableArea:
+		AreaTypes: building
 	Tooltip:
 		Name: Civilian Hospital
 	Health:
@@ -117,6 +123,8 @@ caoutp:
 	Building:
 		Dimensions: 4,3
 		Footprint: xx== xx== xx==
+	GivesBuildableArea:
+		AreaTypes: building
 	Reservable:
 	RallyPoint:
 		Palette: mouse
