@@ -139,6 +139,7 @@ World:
 		Sequence: largecraters
 	ResourceLayer:
 	ResourceClaimLayer:
+	BridgeLayer:
 	WarheadDebugOverlay:
 	SpawnMapActors:
 	MapBuildRadius:

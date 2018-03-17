@@ -1,0 +1,160 @@
+cabhut:
+	Inherits@1: ^ExistsInWorld
+	Inherits@2: ^SpriteActor
+	FrozenUnderFog:
+	WithSpriteBody:
+	Tooltip:
+		Name: Bridge repair hut
+	Building:
+		Adjacent: 0
+		Footprint: x
+		Dimensions: 1, 1
+	BridgeHut:
+		NeighbourOffsets: -1,-1, -1,0, -1,1, 0,-1, 0,1, 1,-1, 1,0, 1,1
+	RenderSprites:
+		Palette: player
+	Targetable:
+		TargetTypes: C4
+	EditorTilesetFilter:
+		Categories: Bridge
+	Interactable:
+
+^LowBridgeRamp:
+	AlwaysVisible:
+	RenderSprites:
+		Palette: terrain
+	WithSpriteBody:
+	AppearsOnRadar:
+	RadarColorFromTerrain:
+		Terrain: Bridge
+	BodyOrientation:
+		UseClassicPerspectiveFudge: false
+		QuantizedFacings: 1
+	Tooltip:
+		Name: Wooden Bridge
+	EditorTilesetFilter:
+		Categories: Bridge
+	Interactable:
+
+^LowBridge:
+	Inherits: ^LowBridgeRamp
+	Targetable:
+		TargetTypes: Ground, Building, Bridge
+		RequiresForceFire: true
+	Health:
+		HP: 500
+	Armor:
+		Type: Concrete
+	HitShape:
+
+lobrdg_a:
+	Inherits: ^LowBridge
+	Building:
+		Footprint: ___
+		Dimensions: 3, 1
+	GroundLevelBridge:
+		NeighbourOffsets: 1,-1, 1,1
+	SpawnActorOnDeath:
+		Actor: lobrdg_a_d
+	-WithSpriteBody:
+	WithBridgeSpriteBody:
+		AOffset: 1,-1
+		BOffset: 1,1
+		Sequences: idle, idle2, idle3, idle4
+		ADestroyedSequences: adead
+		BDestroyedSequences: bdead
+		ABDestroyedSequences: abdead
+
+lobrdg_a_d:
+	Inherits: lobrdg_a
+	EditorOnlyTooltip:
+		Name: Dead Bridge
+	-GroundLevelBridge:
+	-AppearsOnRadar:
+	BridgePlaceholder:
+		DamageState: Dead
+		ReplaceWithActor: lobrdg_a
+		NeighbourOffsets: 1,-1, 1,1
+	-WithBridgeSpriteBody:
+	WithDeadBridgeSpriteBody:
+		RampActors: lobrdg_r_ne, lobrdg_r_sw
+		AOffset: 1,-1
+		BOffset: 1,1
+	Interactable:
+		Bounds: 96, 48
+
+lobrdg_b:
+	Inherits: ^LowBridge
+	Building:
+		Footprint: _ _ _
+		Dimensions: 1, 3
+	GroundLevelBridge:
+		NeighbourOffsets: -1,1, 1,1
+	SpawnActorOnDeath:
+		Actor: lobrdg_b_d
+	-WithSpriteBody:
+	WithBridgeSpriteBody:
+		AOffset: -1,1
+		BOffset: 1,1
+		Sequences: idle, idle2, idle3, idle4
+		ADestroyedSequences: adead
+		BDestroyedSequences: bdead
+		ABDestroyedSequences: abdead
+
+lobrdg_b_d:
+	Inherits: lobrdg_b
+	EditorOnlyTooltip:
+		Name: Dead Bridge
+	-GroundLevelBridge:
+	-AppearsOnRadar:
+	BridgePlaceholder:
+		DamageState: Dead
+		ReplaceWithActor: lobrdg_b
+		NeighbourOffsets: -1,1, 1,1
+	-WithBridgeSpriteBody:
+	WithDeadBridgeSpriteBody:
+		RampActors: lobrdg_r_nw, lobrdg_r_se
+		AOffset: 1,1
+		BOffset: -1,1
+	Interactable:
+		Bounds: 96, 48
+
+lobrdg_r_se:
+	Inherits: ^LowBridgeRamp
+	Building:
+		Footprint: _ _ _
+		Dimensions: 1, 3
+	BridgePlaceholder:
+		NeighbourOffsets: -1,1
+	EditorOnlyTooltip:
+		Name: Bridge Ramp
+
+lobrdg_r_nw:
+	Inherits: ^LowBridgeRamp
+	Building:
+		Footprint: _ _ _
+		Dimensions: 1, 3
+	BridgePlaceholder:
+		NeighbourOffsets: 1,1
+	EditorOnlyTooltip:
+		Name: Bridge Ramp
+
+lobrdg_r_ne:
+	Inherits: ^LowBridgeRamp
+	Building:
+		Footprint: ___
+		Dimensions: 3, 1
+	BridgePlaceholder:
+		NeighbourOffsets: 1,1
+	EditorOnlyTooltip:
+		Name: Bridge Ramp
+
+lobrdg_r_sw:
+	Inherits: ^LowBridgeRamp
+	Building:
+		Footprint: ___
+		Dimensions: 3, 1
+	BridgePlaceholder:
+		NeighbourOffsets: 1,-1
+	EditorOnlyTooltip:
+		Name: Bridge Ramp
