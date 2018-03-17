@@ -227,11 +227,11 @@ fv:
 	Armament@primary:
 		Weapon: HoverMissile
 		LocalOffset: 640, 0, 384
-		RequiresCondition: !rank-elite && !ifv-machinegun && !ifv-repair && !ifv-sniper && !ifv-flak && !ifv-tesla && !ifv-deso && !ifv-demo && !ifv-hero
+		RequiresCondition: !rank-elite && !ifv-mg && !ifv-repair && !ifv-sniper && !ifv-flak && !ifv-tesla && !ifv-deso && !ifv-demo && !ifv-hero
 	Armament@elite:
 		Weapon: HoverMissileE
 		LocalOffset: 640, 0, 384
-		RequiresCondition: rank-elite
+		RequiresCondition: rank-elite && !ifv-mg && !ifv-repair && !ifv-sniper && !ifv-flak && !ifv-tesla && !ifv-deso && !ifv-demo && !ifv-hero
 	Armament@mg:
 		Weapon: CRM60
 		LocalOffset: 188,32,600
