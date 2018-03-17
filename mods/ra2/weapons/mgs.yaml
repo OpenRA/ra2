@@ -53,17 +53,6 @@ MP5:
 	Report: iseaatta.wav, iseaattb.wav
 	Warhead@1Dam: SpreadDamage
 		Damage: 125
-
-MP5E:
-	Inherits: MP5
-
-DoublePistols:
-	Inherits: ^MG
-	ReloadDelay: 10
-	Range: 6c0
-	Report: itanatta.wav, itanattb.wav
-	Warhead@1Dam: SpreadDamage
-		Damage: 125
 		Versus:
 			None: 200
 			Flak: 100
@@ -79,6 +68,13 @@ DoublePistols:
 		DamageTypes: BulletDeath
 	Warhead@2Eff: CreateEffect
 		Explosions: piff
+
+MP5E:
+	Inherits: MP5
+
+DoublePistols:
+	Inherits: MP5
+	Report: itanatta.wav, itanattb.wav
 
 DoublePistolsE:
 	Inherits: DoublePistols
