@@ -72,6 +72,20 @@ IvanDeath:
 	Warhead@2Eff: CreateEffect
 		Delay: 0
 
+CRNuke:
+	Inherits: IvanDeath
+	Warhead@1Dam: SpreadDamage
+		Spread: 426
+		Damage: 200
+		Versus:
+			Light: 90
+			Medium: 50
+			Heavy: 50
+			Wood: 60
+			Steel: 150
+	Warhead@2Eff: CreateEffect
+		Explosions: large_tumu
+
 TerrorBomb:
 	ReloadDelay: 20
 	Range: 4c0
