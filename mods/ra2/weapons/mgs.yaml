@@ -82,6 +82,7 @@ DoublePistolsE:
 
 CRMP5:
 	Inherits: DoublePistols
+	ReloadDelay: 20
 
 awp:
 	Inherits: DoublePistols
