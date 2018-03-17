@@ -260,11 +260,8 @@ fv:
 	Armament@desolator:
 		Weapon: CRRadBeamWeapon
 		RequiresCondition: ifv-deso
-	Armament@flak-ground:
+	Armament@flak:
 		Weapon: CRFlakGuyGun
-		RequiresCondition: ifv-flak
-	Armament@flak-air:
-		Weapon: FlakGuyAAGun
 		RequiresCondition: ifv-flak
 	AttackTurreted:
 		Voice: Attack
