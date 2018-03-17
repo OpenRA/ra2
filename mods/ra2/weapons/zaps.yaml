@@ -211,7 +211,7 @@ CRRadBeamWeapon:
 NeutronRifle:
 	ValidTargets: Ground
 	ReloadDelay: 120
-	Range: 10c0
+	Range: 5c0
 	Report: ichratta.wav
 	Projectile: TeslaZap
 		Speed: 100c0
@@ -226,3 +226,9 @@ NeutronRifle:
 	Warhead@Stars: CreateEffect
 		Explosions: chronosk
 		ValidTargets: Ground, Water
+
+CRNeutronRifle:
+	Inherits: NeutronRifle
+	Range: 6c0
+	Warhead@Disable: GrantExternalCondition
+		Duration: 350

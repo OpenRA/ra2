@@ -224,14 +224,15 @@ fv:
 			ghost: ifv-hero
 			snipe: ifv-sniper
 			spy: ifv-mg
+			cleg: ifv-chrono
 	Armament@primary:
 		Weapon: HoverMissile
 		LocalOffset: 640, 0, 384
-		RequiresCondition: !rank-elite && !ifv-mg && !ifv-repair && !ifv-sniper && !ifv-flak && !ifv-tesla && !ifv-deso && !ifv-demo && !ifv-hero
+		RequiresCondition: !rank-elite && !ifv-mg && !ifv-repair && !ifv-sniper && !ifv-flak && !ifv-tesla && !ifv-deso && !ifv-demo && !ifv-hero && !ifv-chrono
 	Armament@elite:
 		Weapon: HoverMissileE
 		LocalOffset: 640, 0, 384
-		RequiresCondition: rank-elite && !ifv-mg && !ifv-repair && !ifv-sniper && !ifv-flak && !ifv-tesla && !ifv-deso && !ifv-demo && !ifv-hero
+		RequiresCondition: rank-elite && !ifv-mg && !ifv-repair && !ifv-sniper && !ifv-flak && !ifv-tesla && !ifv-deso && !ifv-demo && !ifv-hero && !ifv-chrono
 	Armament@mg:
 		Weapon: CRM60
 		LocalOffset: 188,32,600
@@ -263,6 +264,9 @@ fv:
 	Armament@flak:
 		Weapon: CRFlakGuyGun
 		RequiresCondition: ifv-flak
+	Armament@chrono:
+		Weapon: CRNeutronRifle
+		RequiresCondition: ifv-chrono
 	AttackTurreted:
 		Voice: Attack
 	AutoTarget:
@@ -279,7 +283,7 @@ fv:
 		RequiresCondition: ifv-demo
 	WithVoxelTurret@default:
 		Sequence: turret-missile
-		RequiresCondition: !ifv-mg && !ifv-repair && !ifv-sniper && !ifv-flak && !ifv-tesla && !ifv-deso && !ifv-demo && !ifv-hero
+		RequiresCondition: !ifv-mg && !ifv-repair && !ifv-sniper && !ifv-flak && !ifv-tesla && !ifv-deso && !ifv-demo && !ifv-hero && !ifv-chrono
 	WithVoxelTurret@mg:
 		Sequence: turret-mg
 		RequiresCondition: ifv-mg || ifv-sniper || ifv-flak || ifv-hero
@@ -288,7 +292,7 @@ fv:
 		RequiresCondition: ifv-repair
 	WithVoxelTurret@hitech:
 		Sequence: turret-hitech
-		RequiresCondition: ifv-tesla || ifv-deso || ifv-demo
+		RequiresCondition: ifv-tesla || ifv-deso || ifv-demo || ifv-chrono
 	Voiced:
 		VoiceSet: AlliedVehicleVoice
 	ProducibleWithLevel:
