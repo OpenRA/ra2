@@ -223,6 +223,7 @@ fv:
 			deso: ifv-deso
 			tany: ifv-hero
 			ghost: ifv-hero
+			spy: ifv-mg
 	Armament@primary:
 		Weapon: HoverMissile
 		LocalOffset: 640, 0, 384
