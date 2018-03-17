@@ -213,8 +213,8 @@ fv:
 		LoadingCondition: notmobile
 		PassengerConditions:
 			snipe: ifv-sniper
-			e1: ifv-machinegun
-			e2: ifv-machinegun
+			e1: ifv-mg
+			e2: ifv-mg
 			engineer: ifv-repair
 			flakt: ifv-flak
 			shk: ifv-tesla
@@ -231,10 +231,10 @@ fv:
 		Weapon: HoverMissileE
 		LocalOffset: 640, 0, 384
 		RequiresCondition: rank-elite
-	Armament@machinegun:
+	Armament@mg:
 		Weapon: CRM60
 		LocalOffset: 188,32,600
-		RequiresCondition: ifv-machinegun
+		RequiresCondition: ifv-mg
 		MuzzleSequence: mgun_muz
 		MuzzleSplitFacings: 8
 	Armament@repair:
@@ -281,10 +281,10 @@ fv:
 		RequiresCondition: ifv-demo
 	WithVoxelTurret@default:
 		Sequence: turret-missile
-		RequiresCondition: !ifv-machinegun && !ifv-repair && !ifv-sniper && !ifv-flak && !ifv-tesla && !ifv-deso && !ifv-demo && !ifv-hero
-	WithVoxelTurret@machinegun:
+		RequiresCondition: !ifv-mg && !ifv-repair && !ifv-sniper && !ifv-flak && !ifv-tesla && !ifv-deso && !ifv-demo && !ifv-hero
+	WithVoxelTurret@mg:
 		Sequence: turret-mg
-		RequiresCondition: ifv-machinegun || ifv-sniper || ifv-flak || ifv-hero
+		RequiresCondition: ifv-mg || ifv-sniper || ifv-flak || ifv-hero
 	WithVoxelTurret@engineer:
 		Sequence: turret-repair
 		RequiresCondition: ifv-repair
