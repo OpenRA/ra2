@@ -56,19 +56,18 @@ beacon:
 		Length: 1
 		ZOffset: 2047
 
-crate-effects: #Temp Null Some SHPs cannot be read by openra at this time, expect more
+crate-effects:
 	Defaults: null
 		Length: *
-	dollar: #money
+	dollar: money
 	reveal-map: reveal
-	hide-map: #shroudx
-	fpower: #firepowr
-	armor: #armor
-	stealth: # RA2 Doesn't have it
-	heal: #healall
-	nuke: #mltimisl
+	hide-map: shroudx
+	fpower: firepowr
+	armor: armor
+	heal: healall
+	nuke: mltimisl
 	levelup: veteran
-	speed: #speed
+	speed: speed
 
 crate:
 	idle:
