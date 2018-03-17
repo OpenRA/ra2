@@ -218,13 +218,15 @@ fv:
 			engineer: ifv-repair
 			flakt: ifv-flak
 			shk: ifv-tesla
+			ivan: ifv-demo
+			terror: ifv-demo
 			deso: ifv-deso
 			tany: ifv-hero
 			ghost: ifv-hero
 	Armament@primary:
 		Weapon: HoverMissile
 		LocalOffset: 640, 0, 384
-		RequiresCondition: !ifv-machinegun && !ifv-repair && !ifv-sniper && !ifv-flak && !ifv-tesla && !ifv-deso && !ifv-hero
+		RequiresCondition: !rank-elite && !ifv-machinegun && !ifv-repair && !ifv-sniper && !ifv-flak && !ifv-tesla && !ifv-deso && !ifv-demo && !ifv-hero
 	Armament@elite:
 		Weapon: HoverMissileE
 		LocalOffset: 640, 0, 384
@@ -271,9 +273,15 @@ fv:
 	RenderSprites:
 	RenderVoxels:
 	WithVoxelBody:
+	Explodes:
+		RequiresCondition: !ifv-demo
+	Explodes@demo:
+		Weapon: CRNuke
+		EmptyWeapon: CRNuke
+		RequiresCondition: ifv-demo
 	WithVoxelTurret@default:
 		Sequence: turret-missile
-		RequiresCondition: !ifv-machinegun && !ifv-repair && !ifv-sniper && !ifv-flak && !ifv-tesla && !ifv-deso && !ifv-hero
+		RequiresCondition: !ifv-machinegun && !ifv-repair && !ifv-sniper && !ifv-flak && !ifv-tesla && !ifv-deso && !ifv-demo && !ifv-hero
 	WithVoxelTurret@machinegun:
 		Sequence: turret-mg
 		RequiresCondition: ifv-machinegun || ifv-sniper || ifv-flak || ifv-hero
@@ -282,7 +290,7 @@ fv:
 		RequiresCondition: ifv-repair
 	WithVoxelTurret@hitech:
 		Sequence: turret-hitech
-		RequiresCondition: ifv-tesla || ifv-deso
+		RequiresCondition: ifv-tesla || ifv-deso || ifv-demo
 	Voiced:
 		VoiceSet: AlliedVehicleVoice
 	ProducibleWithLevel:
