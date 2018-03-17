@@ -276,25 +276,13 @@ fv:
 		RequiresCondition: !ifv-machinegun && !ifv-repair && !ifv-sniper && !ifv-flak && !ifv-tesla && !ifv-deso && !ifv-hero
 	WithVoxelTurret@machinegun:
 		Sequence: turret-mg
-		RequiresCondition: ifv-machinegun
+		RequiresCondition: ifv-machinegun || ifv-sniper || ifv-flak || ifv-hero
 	WithVoxelTurret@engineer:
 		Sequence: turret-repair
 		RequiresCondition: ifv-repair
-	WithVoxelTurret@sniper:
+	WithVoxelTurret@hitech:
 		Sequence: turret-hitech
-		RequiresCondition: ifv-sniper
-	WithVoxelTurret@flak:
-		Sequence: turret-hitech
-		RequiresCondition: ifv-flak
-	WithVoxelTurret@tesla:
-		Sequence: turret-hitech
-		RequiresCondition: ifv-tesla
-	WithVoxelTurret@desolator:
-		Sequence: turret-hitech
-		RequiresCondition: ifv-deso
-	WithVoxelTurret@hero:
-		Sequence: turret-hitech
-		RequiresCondition: ifv-hero
+		RequiresCondition: ifv-tesla || ifv-deso
 	Voiced:
 		VoiceSet: AlliedVehicleVoice
 	ProducibleWithLevel:
