@@ -212,7 +212,6 @@ fv:
 		UnloadVoice: Move
 		LoadingCondition: notmobile
 		PassengerConditions:
-			snipe: ifv-sniper
 			e1: ifv-mg
 			e2: ifv-mg
 			engineer: ifv-repair
@@ -223,6 +222,7 @@ fv:
 			deso: ifv-deso
 			tany: ifv-hero
 			ghost: ifv-hero
+			snipe: ifv-sniper
 			spy: ifv-mg
 	Armament@primary:
 		Weapon: HoverMissile
