@@ -1,5 +1,6 @@
 amcv:
 	Inherits: ^Vehicle
+	Inherits@MC: ^MindControllable
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 80
@@ -89,6 +90,7 @@ cmin:
 
 mtnk:
 	Inherits: ^Vehicle
+	Inherits@MC: ^MindControllable
 	Valued:
 		Cost: 700
 	Tooltip:
@@ -136,6 +138,7 @@ mtnk:
 
 tnkd:
 	Inherits: ^Vehicle
+	Inherits@MC: ^MindControllable
 	Valued:
 		Cost: 900
 	Tooltip:
@@ -155,9 +158,14 @@ tnkd:
 		Type: Heavy
 	RevealsShroud:
 		Range: 8c0
-	Armament@Primary:
+	Armament@primary:
 		Weapon: sabot
 		LocalOffset: 640,0,384
+		RequiresCondition: !rank-elite
+	Armament@elite:
+		Weapon: sabotE
+		LocalOffset: 640,0,384
+		RequiresCondition: rank-elite
 	AttackFrontal:
 		Voice: Attack
 	AutoTarget:
@@ -175,6 +183,7 @@ tnkd:
 
 fv:
 	Inherits: ^Vehicle
+	Inherits@MC: ^MindControllable
 	Valued:
 		Cost: 600
 	Tooltip:
@@ -294,6 +303,7 @@ fv:
 
 sref:
 	Inherits: ^Vehicle
+	Inherits@MC: ^MindControllable
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 50
@@ -343,6 +353,7 @@ sref:
 
 mgtk:
 	Inherits: ^Vehicle
+	Inherits@MC: ^MindControllable
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 70

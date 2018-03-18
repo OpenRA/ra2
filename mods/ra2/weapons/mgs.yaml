@@ -74,6 +74,8 @@ DoublePistols:
 			Wood: 0
 			Steel: 0
 			Concrete: 0
+			Drone: 0
+			Rocket: 100
 		DamageTypes: BulletDeath
 	Warhead@2Eff: CreateEffect
 		Explosions: piff
@@ -143,14 +145,3 @@ BlackHawkCannon:
 	Report: vblhatta.wav, vblhattb.wav
 	Warhead@1Dam: SpreadDamage
 		Damage: 25
-		Versus:
-			None: 150
-			Flak: 100
-			Plate: 50
-			Light: 60
-			Medium: 10
-			Heavy: 10
-			Wood: 30
-			Steel: 20
-			Concrete: 10
-		DamageTypes: Prone100Percent, TriggerProne, BulletDeath

@@ -131,6 +131,8 @@ PrismShot:
 			Wood: 50
 			Steel: 50
 			Concrete: 50
+			Drone: 200
+			Rocket: 100
 		DamageTypes: ElectroDeath
 
 Comet:
@@ -155,6 +157,8 @@ Comet:
 			Wood: 200
 			Steel: 200
 			Concrete: 200
+			Drone: 200
+			Rocket: 100
 		DamageTypes: Prone50Percent, TriggerProne, ElectroDeath
 	Warhead@2Eff: CreateEffect
 		Explosions: medium_clsn
@@ -194,6 +198,8 @@ RadBeamWeapon:
 			Wood: 0
 			Steel: 0
 			Concrete: 0
+			Drone: 0 # This is actually 100, but drones are immune to Radiation
+			Rocket: 100
 		DamageTypes: RadiationDeath
 
 RadBeamWeaponE:

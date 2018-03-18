@@ -46,11 +46,13 @@ IvanBomber:
 			Plate: 100
 			Light: 100
 			Medium: 100
-			Heavy: 250
-			Wood: 20
-			Steel: 100
-			Concrete: 100
-		DamageTypes: FlameDeath, Prone100Percent
+			Heavy: 100
+			Wood: 100
+			Steel: 250
+			Concrete: 20
+			Drone: 100
+			Rocket: 100
+		DamageTypes: PsychicDeath, Prone100Percent
 	Warhead@2Eff: CreateEffect
 		Delay: 100
 		Explosions: ivan_explosion
@@ -61,7 +63,14 @@ IvanBomberE:
 	Inherits: IvanBomber
 	Warhead@2Eff: CreateEffect
 		Explosions: ivan_explosionE
-		ValidTargets: Ground, Water, Air
+
+IvanDeath:
+	Inherits: IvanBomber
+	-Warhead@0Eff:
+	Warhead@1Dam: SpreadDamage
+		Delay: 0
+	Warhead@2Eff: CreateEffect
+		Delay: 0
 
 TerrorBomb:
 	ReloadDelay: 20
@@ -83,6 +92,8 @@ TerrorBomb:
 			Wood: 100
 			Steel: 150
 			Concrete: 30
+			Drone: 100
+			Rocket: 100
 		AffectsParent: true
 		DamageTypes: Prone70Percent, TriggerProne, FlameDeath
 	Warhead@2Eff: CreateEffect
@@ -111,6 +122,8 @@ NukePayload:
 			Wood: 60
 			Steel: 100
 			Concrete: 8
+			Drone: 100
+			Rocket: 100
 		AffectsParent: true
 		DamageTypes: Prone50Percent, TriggerProne, RadiationDeath
 	Warhead@2Res_impact: DestroyResource
@@ -170,6 +183,8 @@ demobomb:
 			Wood: 80
 			Steel: 150
 			Concrete: 10
+			Drone: 100
+			Rocket: 100
 		DamageTypes: Prone50Percent, TriggerProne, RadiationDeath
 	Warhead@5Res_areanuke1: DestroyResource
 		Size: 2
@@ -193,6 +208,8 @@ demobomb:
 			Wood: 80
 			Steel: 150
 			Concrete: 10
+			Drone: 100
+			Rocket: 100
 		DamageTypes: Prone50Percent, TriggerProne, RadiationDeath
 	Warhead@8Res_areanuke2: DestroyResource
 		Size: 3
@@ -213,6 +230,8 @@ demobomb:
 			Wood: 80
 			Steel: 150
 			Concrete: 10
+			Drone: 100
+			Rocket: 100
 		DamageTypes: Prone50Percent, TriggerProne, RadiationDeath
 	Warhead@10Res_areanuke3: DestroyResource
 		Size: 4

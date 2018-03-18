@@ -1,6 +1,7 @@
 e2:
 	Inherits@1: ^Infantry
 	Inherits@2: ^Parachutable
+	Inherits@MC: ^MindControllable
 	Buildable:
 		Queue: Infantry
 		Prerequisites: ~nahand
@@ -44,6 +45,7 @@ e2:
 flakt:
 	Inherits@1: ^Infantry
 	Inherits@2: ^Parachutable
+	Inherits@MC: ^MindControllable
 	Buildable:
 		Queue: Infantry
 		Prerequisites: naradr, ~nahand
@@ -94,6 +96,7 @@ flakt:
 shk:
 	Inherits@1: ^Infantry
 	Inherits@2: ^Parachutable
+	Inherits@MC: ^MindControllable
 	Buildable:
 		Queue: Infantry
 		BuildAtProductionType: Infantry
@@ -195,6 +198,7 @@ terror:
 
 deso:
 	Inherits: ^Infantry
+	Inherits@MC: ^MindControllable
 	Buildable:
 		Queue: Infantry
 		BuildAtProductionType: Infantry
@@ -240,6 +244,7 @@ deso:
 
 ivan:
 	Inherits: ^Infantry
+	Inherits@MC: ^MindControllable
 	Buildable:
 		Queue: Infantry
 		BuildAtProductionType: Infantry
@@ -269,8 +274,8 @@ ivan:
 	Passenger:
 		PipType: Red
 	Explodes:
-		Weapon: IvanBomber
-		EmptyWeapon: IvanBomber
+		Weapon: IvanDeath
+		EmptyWeapon: IvanDeath
 	Armament@primary:
 		Weapon: IvanBomber
 		RequiresCondition: !rank-elite
@@ -287,3 +292,77 @@ ivan:
 		IdleSequences: idle1,idle2
 	QuantizeFacingsFromSequence:
 		Sequence: stand
+
+yuri:
+	Inherits: ^Infantry
+	Buildable:
+		Queue: Infantry
+		BuildAtProductionType: Infantry
+		BuildPaletteOrder: 160
+		Prerequisites: natech, ~nahand
+		Description: Psychic infantry. Can mind control enemy units.\nCan be deployed to unleash a powerful psychic wave.\n  Strong vs Infantry, Vehicles\n  Weak vs Terror Drones, Aircraft, Buildings
+	Valued:
+		Cost: 1200
+	DeliversCash:
+		Payload: 600
+		PlayerExperience: 60
+		Voice: Move
+	Tooltip:
+		Name: Yuri
+	Selectable:
+		Bounds: 20, 30, 0, -11
+	Voiced:
+		VoiceSet: YuriVoice
+	Health:
+		HP: 100
+	Mobile:
+		Speed: 60
+		RequiresCondition: !deployed && !deploying
+	RevealsShroud:
+		Range: 12c0
+	Armor:
+		Type: None
+	Passenger:
+		PipType: Red
+	PeriodicExplosion:
+		Weapon: PsiWave
+		LocalOffset: 0,0,128
+		RequiresCondition: deployed
+	GrantTimedConditionOnDeploy:
+		DeployedTicks: 50
+		CooldownTicks: 0
+		Facing: 96
+		DeployedCondition: deployed
+		DeployingCondition: deploying
+		DeployAnimation: deploy
+		UndeployAnimation: undeploy
+		ShowSelectionBar: false
+		Voice:
+	TakeCover:
+	WithInfantryBody:
+		DefaultAttackSequence: shoot
+		IdleSequences: idle1,idle2
+		RequiresCondition: !deployed && !deploying
+	WithSpriteBody@DEPLOYED:
+		Sequence: deployed
+		RequiresCondition: deployed || deploying
+	QuantizeFacingsFromSequence:
+		Sequence: stand
+	AttackFrontal:
+		Voice: Attack
+	Armament:
+		Weapon: MindControl
+		MuzzleSequence: muzzle
+		LocalOffset: 0,0,960
+		PauseOnCondition: deployed
+	WithMuzzleOverlay:
+	MindController:
+		ControllingCondition: controlling
+		Sounds: iyurat1a.wav
+	WithMindControlArc:
+		UsePlayerColor: true
+		Offset: 0,0,960
+	AutoTarget:
+	AutoTargetPriority@DEFAULT:
+		Types: MindControl
+		RequiresCondition: !controlling

@@ -17,7 +17,13 @@ DogJaw:
 			Wood: 0
 			Steel: 0
 			Concrete: 0
+			Drone: 0
+			Rocket: 0
 		DamageTypes: BulletDeath
+
+DroneJump:
+	Inherits: DogJaw
+	Report: vteratta.wav
 
 AlligatorBite:
 	ReloadDelay: 30

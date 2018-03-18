@@ -224,6 +224,13 @@ jumpjet:
 		Length: 1
 		Facings: 1
 
+jumpjet.husk:
+	idle: rock
+		Start: 340
+		Length: 16
+		Facings: 2
+		Tick: 120
+
 cleg:
 	Inherits: ^BasicInfantry
 	run:
