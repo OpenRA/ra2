@@ -9,6 +9,8 @@ nacnst:
 	Building:
 		Footprint: xxxx xxxx xxxx xxxx
 		Dimensions: 4,4
+	GivesBuildableArea:
+		AreaTypes: building
 	Selectable:
 		Bounds: 220, 180, 0, -35
 	ProvidesPrerequisite@soviets:
@@ -64,6 +66,8 @@ napowr:
 	Building:
 		Footprint: xxx xxx
 		Dimensions: 3,2
+	GivesBuildableArea:
+		AreaTypes: building
 	Selectable:
 		Bounds: 126, 94, 2, -16
 	Health:
@@ -109,6 +113,8 @@ nahand:
 	Building:
 		Footprint: xx xx
 		Dimensions: 2,2
+	GivesBuildableArea:
+		AreaTypes: building
 	Selectable:
 		Bounds: 94, 168, 0, -58
 	Health:
@@ -196,6 +202,8 @@ narefn:
 	Building:
 		Footprint: xxx= xxx= xxx=
 		Dimensions: 4,3
+	GivesBuildableArea:
+		AreaTypes: building
 	Health:
 		HP: 1000
 	Armor:
@@ -248,17 +256,14 @@ naradr:
 	Building:
 		Footprint: xx xx
 		Dimensions: 2,2
+	GivesBuildableArea:
+		AreaTypes: building
 	Selectable:
 		Bounds: 95, 130, 0, -40
 	Health:
 		HP: 1000
 	Armor:
 		Type: Wood
-	RequiresPower:
-	CanPowerDown:
-		IndicatorPalette: ts-mouse
-		PowerupSpeech: BuildingOnline
-		PowerdownSpeech: BuildingOffline
 	ProvidesRadar:
 		RequiresCondition: !disabled
 	RevealsShroud:
@@ -271,8 +276,6 @@ naradr:
 	InfiltrateForExploration:
 	Power:
 		Amount: -50
-	GrantConditionOnDisabled@IDISABLE:
-		Condition: disabled
 
 naweap:
 	Inherits: ^Building
@@ -298,6 +301,8 @@ naweap:
 	Building:
 		Footprint: xxxxx xxxxx xxxxx
 		Dimensions: 5,3
+	GivesBuildableArea:
+		AreaTypes: building
 	Health:
 		HP: 1000
 	Armor:
@@ -356,7 +361,8 @@ nayard:
 		Dimensions: 4,4
 		Adjacent: 13
 		TerrainTypes: Water
-	-GivesBuildableArea:
+	GivesBuildableArea:
+		AreaTypes: building
 	Health:
 		HP: 1500
 	Armor:
@@ -480,6 +486,8 @@ nadept:
 	Building:
 		Footprint: x=== x=== x===
 		Dimensions: 4,3
+	GivesBuildableArea:
+		AreaTypes: building
 	Health:
 		HP: 1200
 	Armor:
@@ -520,6 +528,8 @@ nanrct:
 	Building:
 		Footprint: xxxx xxxx xxxx xxxx
 		Dimensions: 4,4
+	GivesBuildableArea:
+		AreaTypes: building
 	Selectable:
 		Bounds: 167, 130, 9, -31
 	Health:
@@ -561,6 +571,8 @@ natech:
 	Building:
 		Footprint: xxx xxx xxx
 		Dimensions: 3,3
+	GivesBuildableArea:
+		AreaTypes: building
 	Selectable:
 		Bounds: 152, 164, 0, -50
 	Health:
@@ -592,6 +604,8 @@ naclon:
 	Building:
 		Footprint: xx xx
 		Dimensions: 2, 2
+	GivesBuildableArea:
+		AreaTypes: building
 	Selectable:
 		Bounds: 108, 134, 0, -48
 	Health:
@@ -663,6 +677,8 @@ napsis:
 	Building:
 		Footprint: xx xx
 		Dimensions: 2,2
+	GivesBuildableArea:
+		AreaTypes: building
 	Selectable:
 		Bounds: 82, 150, -1, -55
 	Health:
@@ -679,11 +695,6 @@ napsis:
 		PauseOnLowPower: true
 	Power:
 		Amount: -100
-	RequiresPower:
-	CanPowerDown:
-		IndicatorPalette: ts-mouse
-		PowerupSpeech: BuildingOnline
-		PowerdownSpeech: BuildingOffline
 
 nairon:
 	Inherits: ^Building
@@ -701,6 +712,8 @@ nairon:
 	Building:
 		Footprint: xxx xxx xxx
 		Dimensions: 3, 3
+	GivesBuildableArea:
+		AreaTypes: building
 	Selectable:
 		Bounds: 136, 100, 0, -20
 	Health:
@@ -724,11 +737,6 @@ nairon:
 		DisplayRadarPing: True
 		Condition: invulnerability
 	SupportPowerChargeBar:
-	RequiresPower:
-	CanPowerDown:
-		IndicatorPalette: ts-mouse
-		PowerupSpeech: BuildingOnline
-		PowerdownSpeech: BuildingOffline
 
 namisl:
 	Inherits: ^Building
@@ -746,6 +754,8 @@ namisl:
 	Building:
 		Footprint: xxx xxx xxx
 		Dimensions: 3, 3
+	GivesBuildableArea:
+		AreaTypes: building
 	Selectable:
 		Bounds: 152, 104, 0, -50
 	Health:
@@ -756,11 +766,6 @@ namisl:
 		Range: 4c0
 	Power:
 		Amount: -200
-	RequiresPower:
-	CanPowerDown:
-		IndicatorPalette: ts-mouse
-		PowerupSpeech: BuildingOnline
-		PowerdownSpeech: BuildingOffline
 	SupportPowerChargeBar:
 	NukePower:
 		Cursor: nuke
@@ -834,11 +839,6 @@ naflak:
 	AutoTarget:
 	Power:
 		Amount: -50
-	RequiresPower:
-	CanPowerDown:
-		IndicatorPalette: ts-mouse
-		PowerupSpeech: BuildingOnline
-		PowerdownSpeech: BuildingOffline
 
 tesla:
 	Inherits: ^SupportBuilding
@@ -879,7 +879,7 @@ tesla:
 		ReloadTime: 120
 		ChargeAudio: tslachg2.aud
 	AutoTarget:
-	RequiresPower:
+	
 		RequiresCondition: !charged
 	WithRangeCircle:
 		Range: 8c0
@@ -889,10 +889,6 @@ tesla:
 	WithIdleOverlay@powered:
 		Sequence: idle-powered
 		PauseOnLowPower: true
-	CanPowerDown:
-		IndicatorPalette: ts-mouse
-		PowerupSpeech: BuildingOnline
-		PowerdownSpeech: BuildingOffline
 	ExternalCondition@CHARGED:
 		Condition: charged
 

@@ -9,6 +9,8 @@ gacnst:
 	Building:
 		Footprint: xxxx xxxx xxxx xxxx
 		Dimensions: 4,4
+	GivesBuildableArea:
+		AreaTypes: building
 	Selectable:
 		Bounds: 220, 155, 0, -20
 	Health:
@@ -62,6 +64,8 @@ gapowr:
 		BuildPaletteOrder: 10
 		Prerequisites: ~structures.allies
 		Description: Provides power for other structures.
+	GivesBuildableArea:
+		AreaTypes: building
 	Selectable:
 		Bounds: 96, 98, -2, -24
 	Valued:
@@ -100,6 +104,8 @@ gapile:
 		BuildPaletteOrder: 20
 		Prerequisites: power, ~structures.allies
 		Description: Trains infantry.
+	GivesBuildableArea:
+		AreaTypes: building
 	Selectable:
 		Bounds: 134, 132, 0, -28
 	Valued:
@@ -165,6 +171,8 @@ garefn:
 		BuildPaletteOrder: 30
 		Prerequisites: power, ~structures.allies
 		Description: Processes ore into credits.
+	GivesBuildableArea:
+		AreaTypes: building
 	Selectable:
 		Bounds: 176, 150, 0, -20
 	Valued:
@@ -237,17 +245,14 @@ gaairc:
 	Building:
 		Footprint: xxx xxx
 		Dimensions: 3,2
+	GivesBuildableArea:
+		AreaTypes: building
 	Selectable:
 		Bounds: 142, 150, -3, -42
 	Health:
 		HP: 600
 	Armor:
 		Type: Steel
-	RequiresPower:
-	CanPowerDown:
-		IndicatorPalette: ts-mouse
-		PowerupSpeech: BuildingOnline
-		PowerdownSpeech: BuildingOffline
 	ProvidesRadar:
 		RequiresCondition: !disabled
 	RevealsShroud:
@@ -293,8 +298,6 @@ gaairc:
 		ZOffset: 256
 		RequiresCondition: primary
 	InfiltrateForExploration:
-	GrantConditionOnDisabled@IDISABLE:
-		Condition: disabled
 
 amradr:
 	Inherits: gaairc
@@ -302,11 +305,12 @@ amradr:
 		Name: American Airforce Command Headquarters
 	Buildable:
 		Prerequisites: garefn, ~structures.america
+	GivesBuildableArea:
+		AreaTypes: building
 	WithSpriteBody:
 	QuantizeFacingsFromSequence:
 	RenderSprites:
 		Image: gaairc
-	AutoSelectionSize:
 	SupportPowerChargeBar:
 	ParatroopersPower@paratroopers:
 		OrderName: AmericanParatroopers
@@ -328,6 +332,8 @@ gaweap:
 		BuildPaletteOrder: 40
 		Prerequisites: garefn, gapile, ~structures.allies
 		Description: Produces vehicles.
+	GivesBuildableArea:
+		AreaTypes: building
 	Selectable:
 		Bounds: 212, 158, -7, -28
 	Valued:
@@ -402,7 +408,8 @@ gayard:
 		Dimensions: 4,4
 		Adjacent: 13
 		TerrainTypes: Water
-	-GivesBuildableArea:
+	GivesBuildableArea:
+		AreaTypes: building
 	Health:
 		HP: 1500
 	Armor:
@@ -523,6 +530,8 @@ gadept:
 	Building:
 		Footprint: x== x== x==
 		Dimensions: 3,3
+	GivesBuildableArea:
+		AreaTypes: building
 	Health:
 		HP: 1200
 	Armor:
@@ -565,6 +574,8 @@ gatech:
 	Building:
 		Footprint: xx xx xx
 		Dimensions: 3,2
+	GivesBuildableArea:
+		AreaTypes: building
 	Health:
 		HP: 500
 	Armor:
@@ -672,11 +683,6 @@ nasam:
 	AutoTarget:
 	Power:
 		Amount: -50
-	RequiresPower:
-	CanPowerDown:
-		IndicatorPalette: ts-mouse
-		PowerupSpeech: BuildingOnline
-		PowerdownSpeech: BuildingOffline
 
 gtgcan:
 	Inherits: ^VoxelLighting
@@ -727,11 +733,6 @@ gtgcan:
 		Type: grandcannon
 	Power:
 		Amount: -100
-	RequiresPower:
-	CanPowerDown:
-		IndicatorPalette: ts-mouse
-		PowerupSpeech: BuildingOnline
-		PowerdownSpeech: BuildingOffline
 
 gaorep:
 	Inherits: ^Building
@@ -751,6 +752,8 @@ gaorep:
 	Building:
 		Footprint: xxx xxx xxx
 		Dimensions: 3,3
+	GivesBuildableArea:
+		AreaTypes: building
 	Health:
 		HP: 900
 	Armor:
@@ -779,6 +782,8 @@ gaspysat:
 	Building:
 		Footprint: xx xx
 		Dimensions: 2,2
+	GivesBuildableArea:
+		AreaTypes: building
 	Health:
 		HP: 1000
 	Armor:
@@ -792,13 +797,6 @@ gaspysat:
 		Amount: -100
 	ProvidesRadar:
 		RequiresCondition: !disabled
-	RequiresPower:
-	CanPowerDown:
-		IndicatorPalette: ts-mouse
-		PowerupSpeech: BuildingOnline
-		PowerdownSpeech: BuildingOffline
-	GrantConditionOnDisabled@IDISABLE:
-		Condition: disabled
 
 gagap:
 	Inherits: ^SupportBuilding
@@ -816,7 +814,6 @@ gagap:
 	Building:
 		Footprint: _ x
 		Dimensions: 1,2
-	RequiresPower:
 	Health:
 		HP: 600
 	Armor:
@@ -831,10 +828,6 @@ gagap:
 	MustBeDestroyed:
 		RequiredForShortGame: false
 	-AutoTarget:
-	CanPowerDown:
-		IndicatorPalette: ts-mouse
-		PowerupSpeech: BuildingOnline
-		PowerdownSpeech: BuildingOffline
 
 gaweat:
 	Inherits: ^Building
@@ -854,6 +847,8 @@ gaweat:
 	Building:
 		Footprint: xxx xxx xxx
 		Dimensions: 3,3
+	GivesBuildableArea:
+		AreaTypes: building
 	Health:
 		HP: 1000
 	Armor:
@@ -862,11 +857,6 @@ gaweat:
 		Range: 5c0
 	Power:
 		Amount: -200
-	RequiresPower:
-	CanPowerDown:
-		IndicatorPalette: ts-mouse
-		PowerupSpeech: BuildingOnline
-		PowerdownSpeech: BuildingOffline
 
 gacsph:
 	Inherits: ^Building
@@ -886,6 +876,8 @@ gacsph:
 	Building:
 		Footprint: xxx xxx xxx xxx
 		Dimensions: 4,3
+	GivesBuildableArea:
+		AreaTypes: building
 	Health:
 		HP: 750
 	Armor:
@@ -896,11 +888,6 @@ gacsph:
 		Amount: -200
 	WithIdleOverlay:
 		Sequence: idle-dome
-	RequiresPower:
-	CanPowerDown:
-		IndicatorPalette: ts-mouse
-		PowerupSpeech: BuildingOnline
-		PowerdownSpeech: BuildingOffline
 	SupportPowerChargeBar:
 	ChronoshiftPower@chronoshift:
 		OrderName: Chronoshift
@@ -951,17 +938,12 @@ atesla:
 	Power:
 		Amount: -75
 	AutoTarget:
-	RequiresPower:
 	WithIdleOverlay@normal:
 		Sequence: idle-normal
 		PauseOnLowPower: true
 	WithRangeCircle:
 		Range: 8c0
 		Type: prismcannon
-	CanPowerDown:
-		IndicatorPalette: ts-mouse
-		PowerupSpeech: BuildingOnline
-		PowerdownSpeech: BuildingOffline
 
 power:
 	AlwaysVisible:

@@ -12,7 +12,6 @@
 	BodyOrientation:
 		UseClassicPerspectiveFudge: false
 	QuantizeFacingsFromSequence:
-	AutoSelectionSize:
 	RenderSprites:
 
 ^1x1Shape:
@@ -249,8 +248,6 @@
 		Condition: invulnerability
 
 ^ChronoDisable:
-	DisableOnCondition@ChronoDisable:
-		RequiresCondition: chronodisable
 	TimedConditionBar@ChronoDisable:
 		Condition: chronodisable
 		Color: FFFFFF
@@ -940,7 +937,6 @@
 	QuantizeFacingsFromSequence:
 	RenderSprites:
 		Palette: player
-	AutoSelectionSize:
 	HitShape:
 		UseTargetableCellsOffsets: true
 	EditorTilesetFilter:
@@ -961,7 +957,6 @@
 	QuantizeFacingsFromSequence:
 	RenderSprites:
 		Palette: terrain
-	AutoSelectionSize:
 	Targetable:
 		TargetTypes: Ground, Wall, DetonateAttack
 	Health:
