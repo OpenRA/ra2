@@ -1,5 +1,6 @@
 engineer:
 	Inherits: ^Infantry
+	Inherits@MC: ^MindControllable
 	paradrop:
 		Start: 244
 	icon: engnicon
@@ -49,6 +50,7 @@ dlph:
 
 e1:
 	Inherits: ^ArmedInfantry
+	Inherits@MC: ^MindControllable
 	Defaults: gi
 	run:
 		Tick: 120
@@ -70,12 +72,14 @@ e1:
 
 snipe:
 	Inherits: ^ArmedInfantry
+	Inherits@MC: ^MindControllable
 	paradrop:
 		Start: 292
 	icon: snipicon
 
 spy:
 	Inherits: ^Infantry
+	Inherits@MC: ^MindControllable
 	liedown:
 		Start: 164
 	standup:
@@ -86,6 +90,7 @@ spy:
 
 seal: # TODO: seala on SNOW
 	Inherits: ^ArmedInfantry
+	Inherits@MC: ^MindControllable
 	run:
 		Tick: 120
 	swim-stand:
@@ -233,6 +238,7 @@ jumpjet.husk:
 
 cleg:
 	Inherits: ^BasicInfantry
+	Inherits@MC: ^MindControllable
 	run:
 		Start: 117
 	shoot:

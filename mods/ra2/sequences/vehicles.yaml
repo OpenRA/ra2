@@ -1,25 +1,33 @@
 amcv:
+	Inherits@MC: ^MindControllable
 	icon: mcvicon
 
 aegis:
+	Inherits@MC: ^MindControllable
 	icon: agisicon
 
 bus:
+	Inherits@MC: ^MindControllable
 	icon: xxicon
 
 car:
+	Inherits@MC: ^MindControllable
 	icon: xxicon
 
 carrier:
+	Inherits@MC: ^MindControllable
 	icon: carricon
 
 cdest:
+	Inherits@MC: ^MindControllable
 	icon: xxicon
 
 cona:
+	Inherits@MC: ^MindControllable
 	icon: xxicon
 
 cop:
+	Inherits@MC: ^MindControllable
 	icon: xxicon
 
 cmin:
@@ -32,12 +40,15 @@ cmin:
 	icon: ahrvicon
 
 cruise:
+	Inherits@MC: ^MindControllable
 	icon: xxicon
 
 dest:
+	Inherits@MC: ^MindControllable
 	icon: desticon
 
 dred:
+	Inherits@MC: ^MindControllable
 	icon: dredicon
 
 dron:
@@ -62,21 +73,26 @@ dron:
 	icon: dronicon
 
 euroc:
+	Inherits@MC: ^MindControllable
 	icon: xxicon
 
 flata:
+	Inherits@MC: ^MindControllable
 	icon: xxicon
 
 fv:
+	Inherits@MC: ^MindControllable
 	icon: fvicon
 
 mgtk:
+	Inherits@MC: ^MindControllable
 	icon: rtnkicon
 
 gtgcan:
 	icon: gcanicon
 
 mtnk:
+	Inherits@MC: ^MindControllable
 	icon: gtnkicon
 
 harv:
@@ -86,91 +102,121 @@ harv:
 	icon: harvicon
 
 htk:
+	Inherits@MC: ^MindControllable
 	icon: htkicon
 
 htnk:
+	Inherits@MC: ^MindControllable
 	icon: htnkicon
 
 howi:
+	Inherits@MC: ^MindControllable
 	icon: xxicon
 
 hyd:
+	Inherits@MC: ^MindControllable
 	icon: hovricon
 
 lcrf:
+	Inherits@MC: ^MindControllable
 	icon: landicon
 
 limo:
+	Inherits@MC: ^MindControllable
 	icon: xxicon
 
 ltnk:
+	Inherits@MC: ^MindControllable
 	icon: xxicon
 
 apoc:
+	Inherits@MC: ^MindControllable
 	icon: mtnkicon
 
 pick:
+	Inherits@MC: ^MindControllable
 	icon: xxicon
 
 propa:
+	Inherits@MC: ^MindControllable
 	icon: xxicon
 
 ptruck:
+	Inherits@MC: ^MindControllable
 	icon: xxicon
 
 rtnk:
+	Inherits@MC: ^MindControllable
 	icon: rtnkicon
 
 smcv:
+	Inherits@MC: ^MindControllable
 	icon: smcvicon
 
 sref:
+	Inherits@MC: ^MindControllable
 	icon: sreficon
 
 stang:
+	Inherits@MC: ^MindControllable
 	icon: xxicon
 
 sub:
+	Inherits@MC: ^MindControllable
 	icon: subicon
 
 suvb:
+	Inherits@MC: ^MindControllable
 	icon: xxicon
 
 suvbw:
+	Inherits@MC: ^MindControllable
 	icon: xxicon
 
 taxi:
+	Inherits@MC: ^MindControllable
 	icon: xxicon
 
 tnkd:
+	Inherits@MC: ^MindControllable
 	icon: tnkdicon
 
 tractor:
+	Inherits@MC: ^MindControllable
 	icon: xxicon
 
 sapc:
+	Inherits@MC: ^MindControllable
 	icon: sapcicon
 
 dtruck:
+	Inherits@MC: ^MindControllable
 	icon: trkaicon
 
 trucka:
+	Inherits@MC: ^MindControllable
 	icon: xxicon
 
 truckb:
+	Inherits@MC: ^MindControllable
 	icon: xxicon
 
 ttnk:
+	Inherits@MC: ^MindControllable
 	icon: ttnkicon
 
 tug:
+	Inherits@MC: ^MindControllable
 	icon: xxicon
 
 v3:
+	Inherits@MC: ^MindControllable
 	icon: v3icon
 
 vlad:
+	Inherits@MC: ^MindControllable
 	icon: xxicon
 
 wini:
+	Inherits@MC: ^MindControllable
 	icon: xxicon
