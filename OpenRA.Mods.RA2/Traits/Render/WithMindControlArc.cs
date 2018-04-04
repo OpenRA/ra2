@@ -18,23 +18,31 @@ using OpenRA.Traits;
 
 namespace OpenRA.Mods.RA2.Traits
 {
+	[Desc("Draws an arc between a mindcontroller actor and all its victims",
+		"or an actively mindcontrolled actor and it's controller.")]
 	public class WithMindControlArcInfo : ITraitInfo
 	{
-		[Desc("Color of the arc")]
+		[Desc("Color of the arc.")]
 		public readonly Color Color = Color.Red;
 
 		public readonly bool UsePlayerColor = false;
 
 		public readonly int Transparency = 255;
 
-		[Desc("Drawing from self.CenterPosition draws the curve from the foot. Add this much for better looks.")]
+		[Desc("Relative offset from the actor's center position where the arc should start.")]
 		public readonly WVec Offset = new WVec(0, 0, 0);
 
-		[Desc("Angle of the ballistic arc, in WAngle")]
+		[Desc("The angle of the arc.")]
 		public readonly WAngle Angle = new WAngle(64);
 
-		[Desc("Draw with this many piecewise-linear lines")]
-		public readonly int Segments = 16;
+		[Desc("The width of the arc.")]
+		public readonly WDist Width = new WDist(43);
+
+		[Desc("Controls how fine-grained the resulting arc should be.")]
+		public readonly int QuantizedSegments = 16;
+
+		[Desc("Equivalent to sequence ZOffset. Controls Z sorting.")]
+		public readonly int ZOffset = 0;
 
 		public virtual object Create(ActorInitializer init) { return new WithMindControlArc(init.Self, this); }
 	}
@@ -68,7 +76,7 @@ namespace OpenRA.Mods.RA2.Traits
 					yield return new ArcRenderable(
 						self.CenterPosition + info.Offset,
 						s.CenterPosition + info.Offset,
-						info.Angle, color, info.Segments);
+						info.ZOffset, info.Angle, color, info.Width, info.QuantizedSegments);
 				yield break;
 			}
 
@@ -78,7 +86,7 @@ namespace OpenRA.Mods.RA2.Traits
 			yield return new ArcRenderable(
 				mindControllable.Master.CenterPosition + info.Offset,
 				self.CenterPosition + info.Offset,
-				info.Angle, color, info.Segments);
+				info.ZOffset, info.Angle, color, info.Width, info.QuantizedSegments);
 		}
 
 		bool IRenderAboveShroudWhenSelected.SpatiallyPartitionable

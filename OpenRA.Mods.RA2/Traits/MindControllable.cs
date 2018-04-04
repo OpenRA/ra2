@@ -17,24 +17,25 @@ using OpenRA.Traits;
 namespace OpenRA.Mods.RA2.Traits
 {
 	[Desc("This actor can be mind controlled by other actors.")]
-	public class MindControllableInfo : ConditionalTraitInfo
+	public class MindControllableInfo : PausableConditionalTraitInfo
 	{
-		[Desc("Condition to grant when under mind control")]
+		[Desc("Condition to grant while under mindcontrol.")]
 		[GrantedConditionReference]
 		public readonly string Condition = null;
 
-		[Desc("The sound played when the unit is unmind controlled.")]
-		public readonly string[] UnMindControlSounds = { };
+		[Desc("The sound played when the mindcontrol is revoked.")]
+		public readonly string[] RevokeControlSounds = { };
 
 		public override object Create(ActorInitializer init) { return new MindControllable(init.Self, this); }
 	}
 
-	class MindControllable : ConditionalTrait<MindControllableInfo>, INotifyKilled, INotifyActorDisposing, INotifyCreated
+	public class MindControllable : PausableConditionalTrait<MindControllableInfo>, INotifyKilled, INotifyActorDisposing, INotifyCreated, INotifyOwnerChanged
 	{
 		readonly MindControllableInfo info;
 
 		Actor master;
 		Player creatorOwner;
+		bool controlChanging;
 
 		ConditionManager conditionManager;
 		int token = ConditionManager.InvalidConditionToken;
@@ -59,6 +60,8 @@ namespace OpenRA.Mods.RA2.Traits
 			if (this.master == null)
 				creatorOwner = self.Owner;
 
+			controlChanging = true;
+
 			var oldOwner = self.Owner;
 			self.ChangeOwner(master.Owner);
 
@@ -70,6 +73,8 @@ namespace OpenRA.Mods.RA2.Traits
 
 			if (master.Owner == creatorOwner)
 				UnlinkMaster(self, master);
+
+			self.World.AddFrameEndTask(_ => controlChanging = false);
 		}
 
 		public void UnlinkMaster(Actor self, Actor master)
@@ -77,7 +82,13 @@ namespace OpenRA.Mods.RA2.Traits
 			if (master == null)
 				return;
 
-			master.Trait<MindController>().UnlinkSlave(master, self);
+			self.World.AddFrameEndTask(_ =>
+			{
+				if (master.IsDead || master.Disposed)
+					return;
+
+				master.Trait<MindController>().UnlinkSlave(master, self);
+			});
 
 			this.master = null;
 
@@ -85,9 +96,11 @@ namespace OpenRA.Mods.RA2.Traits
 				token = conditionManager.RevokeCondition(self, token);
 		}
 
-		public void UnMindControl(Actor self, Player oldOwner)
+		public void RevokeMindControl(Actor self)
 		{
 			self.CancelActivity();
+
+			controlChanging = true;
 
 			if (creatorOwner.WinState == WinState.Lost)
 				self.ChangeOwner(self.World.WorldActor.Owner);
@@ -96,8 +109,10 @@ namespace OpenRA.Mods.RA2.Traits
 
 			UnlinkMaster(self, master);
 
-			if (info.UnMindControlSounds.Any())
-				Game.Sound.Play(SoundType.World, info.UnMindControlSounds.Random(self.World.SharedRandom), self.CenterPosition);
+			if (info.RevokeControlSounds.Any())
+				Game.Sound.Play(SoundType.World, info.RevokeControlSounds.Random(self.World.SharedRandom), self.CenterPosition);
+
+			self.World.AddFrameEndTask(_ => controlChanging = false);
 		}
 
 		void INotifyKilled.Killed(Actor self, AttackInfo e)
@@ -108,6 +123,18 @@ namespace OpenRA.Mods.RA2.Traits
 		void INotifyActorDisposing.Disposing(Actor self)
 		{
 			UnlinkMaster(self, master);
+		}
+
+		void INotifyOwnerChanged.OnOwnerChanged(Actor self, Player oldOwner, Player newOwner)
+		{
+			if (!controlChanging)
+				UnlinkMaster(self, master);
+		}
+
+		protected override void TraitDisabled(Actor self)
+		{
+			if (master != null)
+				RevokeMindControl(self);
 		}
 	}
 }
