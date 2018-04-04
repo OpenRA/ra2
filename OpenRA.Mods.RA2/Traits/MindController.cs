@@ -9,6 +9,7 @@
  */
 #endregion
 
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using OpenRA.Mods.Common.Traits;
@@ -16,11 +17,10 @@ using OpenRA.Traits;
 
 namespace OpenRA.Mods.RA2.Traits
 {
-	[Desc("This actor mind control other actors")]
-	public class MindControllerInfo : ConditionalTraitInfo, Requires<ArmamentInfo>, Requires<HealthInfo>
+	[Desc("This actor can mind control other actors.")]
+	public class MindControllerInfo : PausableConditionalTraitInfo, Requires<ArmamentInfo>, Requires<HealthInfo>
 	{
-		[Desc("The name of the weapon, one of its armament. Must be specified with \"Name:\" field.",
-			"To limit mind controllable targets, adjust the weapon's valid target filter.")]
+		[Desc("Name of the armament used for mindcontrol targeting and activation.")]
 		public readonly string Name = "primary";
 
 		[Desc("Up to how many units can this unit control?",
@@ -28,26 +28,26 @@ namespace OpenRA.Mods.RA2.Traits
 		public readonly int Capacity = 1;
 
 		[Desc("If the capacity is reached, discard the oldest mind controlled unit and control the new one",
-			"If false controlling new units is forbidden after capacity is reached.")]
+			"If false, controlling new units is forbidden after capacity is reached.")]
 		public readonly bool DiscardOldest = true;
 
 		[Desc("Condition to grant to self when controlling actors. Can stack up by the number of enslaved actors. You can use this to forbid firing of the dummy MC weapon.")]
 		[GrantedConditionReference]
 		public readonly string ControllingCondition;
 
-		[Desc("The sound played when the unit is mind controlled.")]
+		[Desc("The sound played when the unit is mindcontrolled.")]
 		public readonly string[] Sounds = { };
 
-		[Desc("PipType to use for indicating MC'ed units")]
+		[Desc("PipType to use for indicating mindcontrolled units.")]
 		public readonly PipType PipType = PipType.Green;
 
-		[Desc("PipType to use for indicating left over MC capacity")]
+		[Desc("PipType to use for indicating unused mindcontrol slots.")]
 		public readonly PipType PipTypeEmpty = PipType.Transparent;
 
 		public override object Create(ActorInitializer init) { return new MindController(init.Self, this); }
 	}
 
-	class MindController : ConditionalTrait<MindControllerInfo>, INotifyAttack, IPips, INotifyKilled, INotifyActorDisposing, INotifyCreated
+	public class MindController : PausableConditionalTrait<MindControllerInfo>, INotifyAttack, IPips, INotifyKilled, INotifyActorDisposing, INotifyCreated
 	{
 		readonly MindControllerInfo info;
 		readonly List<Actor> slaves = new List<Actor>();
@@ -61,9 +61,6 @@ namespace OpenRA.Mods.RA2.Traits
 			: base(info)
 		{
 			this.info = info;
-
-			var armaments = self.TraitsImplementing<Armament>().Where(a => a.Info.Name == info.Name).ToArray();
-			System.Diagnostics.Debug.Assert(armaments.Length == 1, "Multiple armaments with given name detected: " + info.Name);
 		}
 
 		protected override void Created(Actor self)
@@ -131,6 +128,9 @@ namespace OpenRA.Mods.RA2.Traits
 
 		public void Attacking(Actor self, Target target, Armament a, Barrel barrel)
 		{
+			if (IsTraitDisabled || IsTraitPaused)
+				return;
+
 			if (info.Name != a.Info.Name)
 				return;
 
@@ -140,39 +140,45 @@ namespace OpenRA.Mods.RA2.Traits
 			if (self.Owner.Stances[target.Actor.Owner] == Stance.Ally)
 				return;
 
-			var mcable = target.Actor.TraitOrDefault<MindControllable>();
+			var mindControllable = target.Actor.TraitOrDefault<MindControllable>();
 
-			if (mcable == null)
+			if (mindControllable == null)
 			{
-				Game.Debug("Warning: mind control weapon targetable unit doesn't actually have mindcontrallable trait");
-				return;
+				throw new InvalidOperationException(
+					"`{0}` tried to mindcontrol `{1}`, but the latter does not have the necessary trait!"
+					.F(self.Info.Name, target.Actor.Info.Name));
 			}
+
+			if (mindControllable.IsTraitDisabled || mindControllable.IsTraitPaused)
+				return;
 
 			if (info.Capacity > 0 && !info.DiscardOldest && slaves.Count() >= info.Capacity)
 				return;
 
 			slaves.Add(target.Actor);
 			StackControllingCondition(self, info.ControllingCondition);
-			mcable.LinkMaster(target.Actor, self);
+			mindControllable.LinkMaster(target.Actor, self);
 
 			if (info.Sounds.Any())
 				Game.Sound.Play(SoundType.World, info.Sounds.Random(self.World.SharedRandom), self.CenterPosition);
 
 			if (info.Capacity > 0 && info.DiscardOldest && slaves.Count() > info.Capacity)
-				slaves[0].Trait<MindControllable>().UnMindControl(slaves[0], self.Owner);
-
+				slaves[0].Trait<MindControllable>().RevokeMindControl(slaves[0]);
 		}
 
 		void ReleaseSlaves(Actor self)
 		{
-			var toUnMC = slaves.ToArray();
-			foreach (var s in toUnMC)
+			foreach (var s in slaves)
 			{
 				if (s.IsDead || s.Disposed)
 					continue;
 
-				s.Trait<MindControllable>().UnMindControl(s, self.Owner);
+				s.Trait<MindControllable>().RevokeMindControl(s);
 			}
+
+			slaves.Clear();
+			while (controllingTokens.Any())
+				UnstackControllingCondition(self, info.ControllingCondition);
 		}
 
 		void INotifyKilled.Killed(Actor self, AttackInfo e)
@@ -181,6 +187,11 @@ namespace OpenRA.Mods.RA2.Traits
 		}
 
 		void INotifyActorDisposing.Disposing(Actor self)
+		{
+			ReleaseSlaves(self);
+		}
+
+		protected override void TraitDisabled(Actor self)
 		{
 			ReleaseSlaves(self);
 		}
