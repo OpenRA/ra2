@@ -265,6 +265,10 @@
 	Targetable@MC:
 		TargetTypes: MindControl
 		RequiresCondition: !controlled
+	WithIdleOverlay@mindcontrol:
+		Sequence: mindcontrol
+		Palette: effect
+		RequiresCondition: controlled
 
 ^Building:
 	Inherits@1: ^ExistsInWorld
@@ -746,6 +750,7 @@
 ^CivVehicle:
 	Inherits: ^Vehicle
 	Inherits@MC: ^MindControllable
+	RenderSprites:
 	Tooltip:
 		GenericName: Civilian Vehicle
 	Valued:

@@ -1,4 +1,5 @@
 civ1:
+	Inherits@MC: ^MindControllable
 	stand:
 		Facings: 8
 	run:
@@ -45,6 +46,7 @@ civ1:
 		Facings: 8
 
 civ2:
+	Inherits@MC: ^MindControllable
 	stand:
 		Facings: 8
 	run:
@@ -91,6 +93,7 @@ civ2:
 		Facings: 8
 
 civ3:
+	Inherits@MC: ^MindControllable
 	stand:
 		Facings: 8
 	run:
@@ -137,6 +140,7 @@ civ3:
 		Facings: 8
 
 vladimir:
+	Inherits@MC: ^MindControllable
 	stand:
 		Facings: 8
 	run:
@@ -191,6 +195,7 @@ vladimir:
 		Facings: 8
 
 pentgen:
+	Inherits@MC: ^MindControllable
 	stand:
 		Facings: 8
 	run:
@@ -239,6 +244,7 @@ pentgen:
 		Facings: 8
 
 pres:
+	Inherits@MC: ^MindControllable
 	stand:
 		Facings: 8
 	run:
@@ -283,6 +289,7 @@ pres:
 		Facings: 8
 
 ssrv:
+	Inherits@MC: ^MindControllable
 	stand:
 		Facings: 8
 	run:
@@ -331,6 +338,7 @@ ssrv:
 		Facings: 8
 
 civa:
+	Inherits@MC: ^MindControllable
 	stand:
 		Facings: 8
 	run:
@@ -379,6 +387,7 @@ civa:
 		Facings: 8
 
 civb:
+	Inherits@MC: ^MindControllable
 	stand:
 		Facings: 8
 	run:
@@ -427,6 +436,7 @@ civb:
 		Facings: 8
 
 civc:
+	Inherits@MC: ^MindControllable
 	stand:
 		Facings: 8
 	run:
@@ -475,6 +485,7 @@ civc:
 		Facings: 8
 
 civbbp:
+	Inherits@MC: ^MindControllable
 	stand:
 		Facings: 8
 	run:
@@ -519,6 +530,7 @@ civbbp:
 		Facings: 8
 
 civbfm:
+	Inherits@MC: ^MindControllable
 	stand:
 		Facings: 8
 	run:
@@ -563,6 +575,7 @@ civbfm:
 		Facings: 8
 
 civbf:
+	Inherits@MC: ^MindControllable
 	stand:
 		Facings: 8
 	run:
@@ -607,6 +620,7 @@ civbf:
 		Facings: 8
 
 civbtm:
+	Inherits@MC: ^MindControllable
 	stand:
 		Facings: 8
 	run:
@@ -651,6 +665,7 @@ civbtm:
 		Facings: 8
 
 civsfm:
+	Inherits@MC: ^MindControllable
 	stand:
 		Facings: 8
 	run:
@@ -699,6 +714,7 @@ civsfm:
 		Facings: 8
 
 civsf:
+	Inherits@MC: ^MindControllable
 	stand:
 		Facings: 8
 	run:
@@ -747,6 +763,7 @@ civsf:
 		Facings: 8
 
 civstm:
+	Inherits@MC: ^MindControllable
 	stand:
 		Facings: 8
 	run:

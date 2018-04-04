@@ -75,3 +75,8 @@
 		Start: 276
 	cheer:
 		Start: 293
+
+^MindControllable:
+	mindcontrol: yuricntl
+		Length: *
+		Offset: 0, -24, 24
