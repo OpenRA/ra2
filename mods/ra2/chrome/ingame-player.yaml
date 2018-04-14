@@ -331,22 +331,6 @@ Container@PLAYER_WIDGETS:
 									X: 6
 									Y: 7
 									ImageCollection: order-icons
-						Button@POWER_BUTTON:
-							Logic: PowerdownOrderButtonLogic, AddFactionSuffixLogic
-							X: 76
-							Y: 212
-							Width: 41
-							Height: 34
-							Background: power-button
-							Key: PowerDown
-							TooltipText: Power Down
-							TooltipContainer: TOOLTIP_CONTAINER
-							VisualHeight: 0
-							Children:
-								Image@ICON:
-									X: 6
-									Y: 7
-									ImageCollection: order-icons
 						Button@BEACON_BUTTON:
 							Logic: BeaconOrderButtonLogic, AddFactionSuffixLogic
 							X: 117
