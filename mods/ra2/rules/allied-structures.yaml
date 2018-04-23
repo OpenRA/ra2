@@ -33,9 +33,12 @@ gacnst:
 		ProductionType: Building
 	ProductionBar@Support:
 		ProductionType: Support
+	GrantConditionOnPowerState@LOWPOWER:
+		Condition: lowpower
+		ValidPowerStates: Low, Critical
 	WithIdleOverlay@fans:
 		Sequence: idle-fans
-		PauseOnLowPower: true
+		PauseOnCondition: lowpower
 	WithBuildingPlacedOverlay:
 	ProvidesPrerequisite:
 		Prerequisite: structures.allies
@@ -243,27 +246,25 @@ gaairc:
 		HP: 600
 	Armor:
 		Type: Steel
-	RequiresPower:
-	CanPowerDown:
-		IndicatorPalette: ts-mouse
-		PowerupSpeech: BuildingOnline
-		PowerdownSpeech: BuildingOffline
+	GrantConditionOnPowerState@LOWPOWER:
+		Condition: lowpower
+		ValidPowerStates: Low, Critical
 	ProvidesRadar:
-		RequiresCondition: !disabled
+		RequiresCondition: !lowpower
 	RevealsShroud:
 		Range: 10c0
 	WithIdleOverlay@top:
 		Sequence: idle-top
-		PauseOnLowPower: true
+		PauseOnCondition: lowpower
 	WithIdleOverlay@bottom:
 		Sequence: idle-bottom
-		PauseOnLowPower: true
+		PauseOnCondition: lowpower
 	WithIdleOverlay@mid:
 		Sequence: idle-mid
-		PauseOnLowPower: true
+		PauseOnCondition: lowpower
 	WithIdleOverlay@dish:
 		Sequence: idle-dish
-		PauseOnLowPower: true
+		PauseOnCondition: lowpower
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
 	Power:
@@ -293,8 +294,6 @@ gaairc:
 		ZOffset: 256
 		RequiresCondition: primary
 	InfiltrateForExploration:
-	GrantConditionOnDisabled@IDISABLE:
-		Condition: disabled
 
 amradr:
 	Inherits: gaairc
@@ -306,12 +305,11 @@ amradr:
 	QuantizeFacingsFromSequence:
 	RenderSprites:
 		Image: gaairc
-	AutoSelectionSize:
 	SupportPowerChargeBar:
 	ParatroopersPower@paratroopers:
 		OrderName: AmericanParatroopers
 		Icon: airborne
-		ChargeTime: 360
+		ChargeInterval: 9000
 		Description: American Paratroopers
 		LongDesc: A Cargo Plane drops eight GIs\nanywhere on the map.
 		DropItems: e1,e1,e1,e1,e1,e1,e1,e1
@@ -400,7 +398,6 @@ gayard:
 	Building:
 		Footprint: xxxx xxxx xxxx xxxx
 		Dimensions: 4,4
-		Adjacent: 13
 		TerrainTypes: Water
 	-GivesBuildableArea:
 	Health:
@@ -504,6 +501,8 @@ gayard:
 		Sequence: repair
 	-EmitInfantryOnSell@allies:
 	-EmitInfantryOnSell@soviets:
+	RequiresBuildableArea:
+		Adjacent: 13
 
 gadept:
 	Inherits: ^Building
@@ -604,7 +603,6 @@ gapill:
 	Building:
 		Footprint: x
 		Dimensions: 1, 1
-		Adjacent: 5
 	Health:
 		HP: 400
 	Armor:
@@ -628,6 +626,8 @@ gapill:
 		Range: 6c0
 		Type: pillbox
 	AutoTarget:
+	RequiresBuildableArea:
+		Adjacent: 5
 
 nasam:
 	Inherits: ^VoxelLighting
@@ -643,7 +643,6 @@ nasam:
 	Building:
 		Footprint: x
 		Dimensions: 1, 1
-		Adjacent: 5
 	Health:
 		HP: 900
 	Armor:
@@ -658,6 +657,7 @@ nasam:
 		Offset: 550,0,0
 	AttackTurreted:
 		Voice: Attack
+		PauseOnCondition: lowpower
 	Armament:
 		Weapon: RedEye2
 		LocalOffset: 500,0,900
@@ -672,11 +672,11 @@ nasam:
 	AutoTarget:
 	Power:
 		Amount: -50
-	RequiresPower:
-	CanPowerDown:
-		IndicatorPalette: ts-mouse
-		PowerupSpeech: BuildingOnline
-		PowerdownSpeech: BuildingOffline
+	GrantConditionOnPowerState@LOWPOWER:
+		Condition: lowpower
+		ValidPowerStates: Low, Critical
+	RequiresBuildableArea:
+		Adjacent: 5
 
 gtgcan:
 	Inherits: ^VoxelLighting
@@ -708,6 +708,7 @@ gtgcan:
 	AttackTurreted:
 		Voice: Attack
 		Recoils: true
+		PauseOnCondition: lowpower
 	Armament:
 		Weapon: GrandCannonWeapon
 		Recoil: 127
@@ -727,11 +728,9 @@ gtgcan:
 		Type: grandcannon
 	Power:
 		Amount: -100
-	RequiresPower:
-	CanPowerDown:
-		IndicatorPalette: ts-mouse
-		PowerupSpeech: BuildingOnline
-		PowerdownSpeech: BuildingOffline
+	GrantConditionOnPowerState@LOWPOWER:
+		Condition: lowpower
+		ValidPowerStates: Low, Critical
 
 gaorep:
 	Inherits: ^Building
@@ -787,18 +786,14 @@ gaspysat:
 		Range: 5c0
 	WithIdleOverlay@dish:
 		Sequence: idle-dish
-		PauseOnLowPower: true
+		PauseOnCondition: lowpower
 	Power:
 		Amount: -100
 	ProvidesRadar:
-		RequiresCondition: !disabled
-	RequiresPower:
-	CanPowerDown:
-		IndicatorPalette: ts-mouse
-		PowerupSpeech: BuildingOnline
-		PowerdownSpeech: BuildingOffline
-	GrantConditionOnDisabled@IDISABLE:
-		Condition: disabled
+		RequiresCondition: !lowpower
+	GrantConditionOnPowerState@LOWPOWER:
+		Condition: lowpower
+		ValidPowerStates: Low, Critical
 
 gagap:
 	Inherits: ^SupportBuilding
@@ -816,7 +811,9 @@ gagap:
 	Building:
 		Footprint: _ x
 		Dimensions: 1,2
-	RequiresPower:
+	GrantConditionOnPowerState@LOWPOWER:
+		Condition: lowpower
+		ValidPowerStates: Low, Critical
 	Health:
 		HP: 600
 	Armor:
@@ -825,16 +822,13 @@ gagap:
 		Range: 5c0
 	CreatesShroud:
 		Range: 10c0
+		RequiresCondition: !lowpower
 	RenderShroudCircle:
 	Power:
 		Amount: -100
 	MustBeDestroyed:
 		RequiredForShortGame: false
 	-AutoTarget:
-	CanPowerDown:
-		IndicatorPalette: ts-mouse
-		PowerupSpeech: BuildingOnline
-		PowerdownSpeech: BuildingOffline
 
 gaweat:
 	Inherits: ^Building
@@ -862,11 +856,10 @@ gaweat:
 		Range: 5c0
 	Power:
 		Amount: -200
-	RequiresPower:
-	CanPowerDown:
-		IndicatorPalette: ts-mouse
-		PowerupSpeech: BuildingOnline
-		PowerdownSpeech: BuildingOffline
+	# Nothing to disable at the moment
+	#GrantConditionOnPowerState@LOWPOWER:
+	#	Condition: lowpower
+	#	ValidPowerStates: Low, Critical
 
 gacsph:
 	Inherits: ^Building
@@ -896,16 +889,14 @@ gacsph:
 		Amount: -200
 	WithIdleOverlay:
 		Sequence: idle-dome
-	RequiresPower:
-	CanPowerDown:
-		IndicatorPalette: ts-mouse
-		PowerupSpeech: BuildingOnline
-		PowerdownSpeech: BuildingOffline
+	GrantConditionOnPowerState@LOWPOWER:
+		Condition: lowpower
+		ValidPowerStates: Low, Critical
 	SupportPowerChargeBar:
 	ChronoshiftPower@chronoshift:
 		OrderName: Chronoshift
 		Icon: chrono
-		ChargeTime: 300
+		ChargeInterval: 7500
 		Description: Chronoshift
 		LongDesc: Teleports a group of units across\nthe map.
 		# Those sounds don't work: OpenRA/OpenRA#10540
@@ -917,6 +908,7 @@ gacsph:
 		KillCargo: False
 		SelectionCursor: chronosphere
 		TargetCursor: chronosphere
+		PauseOnCondition: lowpower
 
 atesla:
 	Inherits: ^SupportBuilding
@@ -948,47 +940,53 @@ atesla:
 		Voice: Attack
 		ReloadTime: 60
 		ChargeAudio: bpripow.wav
+		PauseOnCondition: lowpower
 	Power:
 		Amount: -75
 	AutoTarget:
-	RequiresPower:
+	GrantConditionOnPowerState@LOWPOWER:
+		Condition: lowpower
+		ValidPowerStates: Low, Critical
 	WithIdleOverlay@normal:
 		Sequence: idle-normal
-		PauseOnLowPower: true
+		PauseOnCondition: lowpower
+	WithSpriteBody:
+		PauseOnCondition: lowpower
 	WithRangeCircle:
 		Range: 8c0
 		Type: prismcannon
-	CanPowerDown:
-		IndicatorPalette: ts-mouse
-		PowerupSpeech: BuildingOnline
-		PowerdownSpeech: BuildingOffline
 
 power:
 	AlwaysVisible:
+	Interactable:
 	Tooltip:
 		Name: Power Plant
 		Description: Power Plant
 
 refinery:
 	AlwaysVisible:
+	Interactable:
 	Tooltip:
 		Name: Ore Refinery
 		Description: Ore Refinery
 
 barracks:
 	AlwaysVisible:
+	Interactable:
 	Tooltip:
 		Name: Infantry Production
 		Description: Infantry Production
 
 radar:
 	AlwaysVisible:
+	Interactable:
 	Tooltip:
 		Name: Radar
 		Description: Radar
 
 repairpad:
 	AlwaysVisible:
+	Interactable:
 	Tooltip:
 		Name: Service Depot
 		Description: Service Depot

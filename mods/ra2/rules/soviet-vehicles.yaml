@@ -156,7 +156,7 @@ htk:
 		Speed: 75
 		TurnSpeed: 15
 		Crushes: crate, infantry
-		RequiresCondition: !notmobile
+		RequiresCondition: !notmobile && !chronodisable
 	Health:
 		HP: 180
 	Armor:

@@ -45,9 +45,11 @@ Player:
 	AllyRepair:
 	PlayerResources:
 	DeveloperMode:
-		Enabled: true
+		CheckboxEnabled: true
+		CheckboxDisplayOrder: 5
 	GpsWatcher:
 	Shroud:
+		FogCheckboxDisplayOrder: 3
 	FrozenActorLayer:
 	BaseAttackNotifier:
 		AllyNotification: OurAllyIsUnderAttack

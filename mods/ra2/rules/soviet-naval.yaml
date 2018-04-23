@@ -29,7 +29,7 @@ sapc:
 			Ore: 50
 			Gems: 50
 			Water: 100
-		RequiresCondition: !notmobile
+		RequiresCondition: !notmobile && !chronodisable
 	RevealsShroud:
 		Range: 6c0
 	Cargo:

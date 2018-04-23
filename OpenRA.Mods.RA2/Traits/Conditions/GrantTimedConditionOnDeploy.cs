@@ -113,6 +113,11 @@ namespace OpenRA.Mods.RA2.Traits
 			return new Order("GrantTimedConditionOnDeploy", self, false);
 		}
 
+		bool IIssueDeployOrder.CanIssueDeployOrder(Actor self)
+		{
+			return true;
+		}
+
 		IEnumerable<IOrderTargeter> IIssueOrder.Orders
 		{
 			get { yield return new DeployOrderTargeter("GrantTimedConditionOnDeploy", 5,

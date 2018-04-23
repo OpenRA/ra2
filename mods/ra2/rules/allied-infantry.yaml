@@ -395,6 +395,8 @@ jumpjet:
 		Bounds: 20, 30, 0, -11
 	Health:
 		HP: 125
+	-TimedConditionBar@ChronoDisable:
+	-ExternalCondition@CHRONODISABLE:
 	-Mobile:
 	RevealsShroud:
 		Range: 8c0

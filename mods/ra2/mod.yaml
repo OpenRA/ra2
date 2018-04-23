@@ -4,7 +4,8 @@ Metadata:
 	Version: {DEV_VERSION}
 	Author: the RA2 mod team
 
-PackageFormats: Mix, AudioBag
+# TODO: Rename to AudioBag once BagFile is gone from OpenRA/OpenRA
+PackageFormats: Mix, AudioBagHack
 
 Packages:
 	~^Content/ra2
@@ -128,12 +129,9 @@ ChromeLayout:
 	common|chrome/lobby-music.yaml
 	common|chrome/lobby-mappreview.yaml
 	common|chrome/lobby-kickdialogs.yaml
-	common|chrome/lobby-globalchat.yaml
-	common|chrome/multiplayer.yaml
 	common|chrome/multiplayer-browser.yaml
 	common|chrome/multiplayer-createserver.yaml
 	common|chrome/multiplayer-directconnect.yaml
-	common|chrome/multiplayer-globalchat.yaml
 	common|chrome/map-chooser.yaml
 	common|chrome/connection.yaml
 	common|chrome/replaybrowser.yaml
@@ -178,6 +176,14 @@ Music:
 
 Translations:
 	ra2|languages/english.yaml
+
+Hotkeys:
+	common|hotkeys/game.yaml
+	common|hotkeys/observer.yaml
+	common|hotkeys/production-common.yaml
+	common|hotkeys/supportpowers.yaml
+	common|hotkeys/viewport.yaml
+	ra2|hotkeys.yaml
 
 LoadScreen: LogoStripeLoadScreen
 	Image: ra2|uibits/loadscreen.png

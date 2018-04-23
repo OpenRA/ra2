@@ -97,6 +97,7 @@ TROCK05:
 
 CAMERA:
 	AlwaysVisible:
+	Interactable:
 	Immobile:
 		OccupiesSpace: false
 	RevealsShroud:

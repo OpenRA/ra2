@@ -54,6 +54,7 @@
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
     <Compile Include="Activities\ChronoResourceTeleport.cs" />
+    <Compile Include="FileSystem\BagFileHack.cs" />
     <Compile Include="Graphics\ArcRenderable.cs" />
     <Compile Include="Traits\ChronoResourceDelivery.cs" />
     <Compile Include="Traits\Conditions\GrantTimedConditionOnDeploy.cs" />

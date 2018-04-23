@@ -80,5 +80,10 @@ namespace OpenRA.Mods.RA2.Traits
 				self.CenterPosition + info.Offset,
 				info.Angle, color, info.Segments);
 		}
+
+		bool IRenderAboveShroudWhenSelected.SpatiallyPartitionable
+		{
+			get { return false; }
+		}
 	}
 }

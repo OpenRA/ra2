@@ -1475,7 +1475,6 @@ galite:
 	RenderSprites:
 		Image: galite
 	WithSpriteBody:
-	AutoSelectionSize:
 	BodyOrientation:
 		UseClassicPerspectiveFudge: False
 		QuantizedFacings: 1

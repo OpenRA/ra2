@@ -81,23 +81,6 @@ repair-button-allies-disabled: chrome.png
 repair-button-allies-highlighted-disabled: chrome.png
 	background: 580,219,44,34
 
-power-button-allies: chrome.png
-	background: 624,15,41,34
-power-button-allies-hover: chrome.png
-	background: 624,49,41,34
-power-button-allies-pressed: chrome.png
-	background: 624,83,41,34
-power-button-allies-highlighted: chrome.png
-	background: 624,117,41,34
-power-button-allies-highlighted-hover: chrome.png
-	background: 624,151,41,34
-power-button-allies-highlighted-pressed: chrome.png
-	background: 624,185,41,34
-power-button-allies-disabled: chrome.png
-	background: 624,219,41,34
-power-button-allies-highlighted-disabled: chrome.png
-	background: 624,219,41,34
-
 beacon-button-allies: chrome.png
 	background: 665,15,41,34
 beacon-button-allies-hover: chrome.png
@@ -479,23 +462,6 @@ repair-button-soviets-disabled: chrome.png
 repair-button-soviets-highlighted-disabled: chrome.png
 	background: 580,731,44,34
 
-power-button-soviets: chrome.png
-	background: 624,527,41,34
-power-button-soviets-hover: chrome.png
-	background: 624,561,41,34
-power-button-soviets-pressed: chrome.png
-	background: 624,595,41,34
-power-button-soviets-highlighted: chrome.png
-	background: 624,629,41,34
-power-button-soviets-highlighted-hover: chrome.png
-	background: 624,663,41,34
-power-button-soviets-highlighted-pressed: chrome.png
-	background: 624,697,41,34
-power-button-soviets-disabled: chrome.png
-	background: 624,731,41,34
-power-button-soviets-highlighted-disabled: chrome.png
-	background: 624,731,41,34
-
 beacon-button-soviets: chrome.png
 	background: 665,527,41,34
 beacon-button-soviets-hover: chrome.png
@@ -830,9 +796,6 @@ order-icons: chrome.png
 	beacon: 5250,319,19,19
 	beacon-disabled: 5269,319,19,19
 	beacon-active: 5288,319,19,19
-	power: 5250,300,19,19
-	power-disabled: 5269,300,19,19
-	power-active: 5288,300,19,19
 	stats: 250,414,19,19
 	stats-disabled: 269,414,19,19
 	stats-active: 288,414,19,19

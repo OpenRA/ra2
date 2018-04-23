@@ -196,7 +196,7 @@ fv:
 	Mobile:
 		Speed: 128
 		TurnSpeed: 5
-		RequiresCondition: !notmobile
+		RequiresCondition: !notmobile && !chronodisable
 	Health:
 		HP: 200
 	Armor:

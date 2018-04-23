@@ -142,7 +142,12 @@ World:
 	WarheadDebugOverlay:
 	SpawnMapActors:
 	MapBuildRadius:
+		AllyBuildRadiusCheckboxDisplayOrder: 4
+		BuildRadiusCheckboxVisible: false
 	MapOptions:
+		ShortGameCheckboxDisplayOrder: 2
+		TechLevelDropdownDisplayOrder: 2
+		GameSpeedDropdownDisplayOrder: 3
 	CreateMPPlayers:
 	MPStartUnits@amcv:
 		Class: none
@@ -208,6 +213,7 @@ World:
 		SpawnInterval: 3000
 		WaterChance: 25
 		InitialSpawnDelay: 1000
+		CheckboxDisplayOrder: 1
 	MPStartLocations:
 	SpawnMPUnits:
 	PathFinder:

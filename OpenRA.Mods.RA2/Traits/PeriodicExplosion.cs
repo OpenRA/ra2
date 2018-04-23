@@ -96,7 +96,7 @@ namespace OpenRA.Mods.RA2.Traits
 
 			if (--fireDelay < 0)
 			{
-				if (ammoPool != null && !ammoPool.TakeAmmo())
+				if (ammoPool != null && !ammoPool.TakeAmmo(self, 1))
 					return;
 
 				var localoffset = body != null
