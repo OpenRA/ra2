@@ -58,6 +58,7 @@ Rules:
 	ra2|rules/allied-infantry.yaml
 	ra2|rules/soviet-infantry.yaml
 	ra2|rules/civilians.yaml
+	ra2|rules/bridges.yaml
 	ra2|rules/animals.yaml
 	ra2|rules/allied-structures.yaml
 	ra2|rules/soviet-structures.yaml
@@ -78,6 +79,7 @@ Sequences:
 	ra2|sequences/allied-infantry.yaml
 	ra2|sequences/allied-structures.yaml
 	ra2|sequences/animals.yaml
+	ra2|sequences/bridges.yaml
 	ra2|sequences/civilians.yaml
 	ra2|sequences/civilian-props.yaml
 	ra2|sequences/civilian-structures.yaml

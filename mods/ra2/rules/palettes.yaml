@@ -36,6 +36,10 @@
 	PaletteFromCurrentTileset:
 		Name: terrain
 		ShadowIndex: 1
+	PaletteFromPaletteWithAlpha@terrainalpha:
+		BasePalette: terrain
+		Name: terrainalpha
+		Alpha: 0.55
 	PaletteFromFile@chrome:
 		Name: chrome
 		Filename: cameo.pal

@@ -504,6 +504,7 @@
 			Rough: 100
 			Rail: 90
 			Road: 100
+			Bridge: 100
 			DirtRoad: 100
 			Ore: 90
 			Gems: 80
@@ -692,6 +693,7 @@
 			Rough: 100
 			Rail: 50
 			Road: 100
+			Bridge: 100
 			DirtRoad: 100
 			Beach: 100
 			Ore: 70

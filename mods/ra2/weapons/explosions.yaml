@@ -254,3 +254,10 @@ demobomb:
 		SmudgeType: LargeScorch
 		Size: 2
 		Delay: 15
+
+Demolish:
+	Warhead@1Dam: SpreadDamage
+		DamageTypes: DefaultDeath
+	Warhead@2Eff: CreateEffect
+		Explosions: large_twlt
+		ImpactSounds: expnew09.wav

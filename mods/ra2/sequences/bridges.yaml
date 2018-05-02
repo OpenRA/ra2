@@ -1,0 +1,63 @@
+^bridge:
+	Defaults:
+		ZOffset: -1c511
+		UseTilesetExtension: true
+		Start: 1
+		ZRamp: 1
+		Offset: 0, 0, 0.5
+
+lobrdg_a:
+	Inherits: ^bridge
+	idle: lobrdg10
+	idle2: lobrdg11
+	idle3: lobrdg12
+	idle4: lobrdg13
+	adead: lobrdg15
+	bdead: lobrdg14
+	abdead: lobrdg16
+
+lobrdg_a_d:
+	Inherits: ^bridge
+	idle: lobrdg28
+	aramp: lobrdg17
+	bramp: lobrdg18
+	abramp: lobrdg28
+	editor: lobrdg10
+
+lobrdg_b:
+	Inherits: ^bridge
+	idle: lobrdg01
+	idle2: lobrdg02
+	idle3: lobrdg03
+	idle4: lobrdg04
+	adead: lobrdg05
+	bdead: lobrdg06
+	abdead: lobrdg07
+
+lobrdg_b_d:
+	Inherits: ^bridge
+	idle: lobrdg27
+	aramp: lobrdg08
+	bramp: lobrdg09
+	abramp: lobrdg27
+	editor: lobrdg01
+
+lobrdg_r_se:
+	Inherits: ^bridge
+	idle: lobrdg19
+	damaged-idle: lobrdg20
+
+lobrdg_r_nw:
+	Inherits: ^bridge
+	idle: lobrdg21
+	damaged-idle: lobrdg22
+
+lobrdg_r_ne:
+	Inherits: ^bridge
+	idle: lobrdg23
+	damaged-idle: lobrdg24
+
+lobrdg_r_sw:
+	Inherits: ^bridge
+	idle: lobrdg25
+	damaged-idle: lobrdg26
