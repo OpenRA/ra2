@@ -169,7 +169,7 @@ suvb:
 	Inherits@MC: ^MindControllable
 	icon: xxicon
 
-suvbw:
+suvw:
 	Inherits@MC: ^MindControllable
 	icon: xxicon
 
