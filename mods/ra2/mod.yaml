@@ -122,6 +122,7 @@ ChromeLayout:
 	common|chrome/ingame-infobriefing.yaml
 	common|chrome/ingame-debug.yaml
 	common|chrome/ingame-perf.yaml
+	common|chrome/ingame-infochat.yaml
 	common|chrome/mainmenu.yaml
 	common|chrome/settings.yaml
 	common|chrome/credits.yaml
@@ -130,8 +131,10 @@ ChromeLayout:
 	common|chrome/lobby-options.yaml
 	common|chrome/lobby-music.yaml
 	common|chrome/lobby-mappreview.yaml
+	common|chrome/lobby-servers.yaml
 	common|chrome/lobby-kickdialogs.yaml
 	common|chrome/multiplayer-browser.yaml
+	common|chrome/multiplayer-browserpanels.yaml
 	common|chrome/multiplayer-createserver.yaml
 	common|chrome/multiplayer-directconnect.yaml
 	common|chrome/map-chooser.yaml
