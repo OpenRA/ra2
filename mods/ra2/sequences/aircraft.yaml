@@ -20,6 +20,7 @@ pdplane:
 	icon: xxicon
 
 shad:
+	Inherits@MC: ^MindControllable
 	icon: shadicon
 
 zep:
