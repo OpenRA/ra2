@@ -314,6 +314,81 @@ ghost:
 	WithSwimSuit:
 	-TakeCover: # TODO: allow multiple sequence modifiers
 
+ccomand:
+	Inherits: ghost
+	Buildable:
+		BuildPaletteOrder: 170
+		Prerequisites: ~gapile, ~allies.tech.infiltrated
+		Description: Elite commando infantry, armed with\na sub machine gun and C4.\n  Strong vs Infantry, Buildings\n  Weak vs Vehicles, Aircraft\nSpecial Ability: Destroy Building with C4
+	Tooltip:
+		Name: Chrono Commando
+	Valued:
+		Cost: 2000
+	DeliversCash:
+		Payload: 1000
+		PlayerExperience: 100
+	Health:
+		HP: 100
+	PortableChrono:
+		ChronoshiftSound: ichrmova.wav
+		DeployCursor: chronosphere
+		DeployBlockedCursor: chronosphere
+		Voice: Move
+		ChargeDelay: 300
+		TargetCursor: chronosphere
+	-GrantConditionOnTerrain:
+	-Targetable@WaterBorne:
+	-WithSwimSuit:
+	TakeCover:
+		DamageModifiers:
+			Prone50Percent: 50
+			Prone70Percent: 70
+			Prone100Percent: 100
+		DamageTriggers: TriggerProne
+	RenderSprites:
+		Image: ccomand
+
+ptroop:
+	Inherits: ccomand
+	Buildable:
+		BuildPaletteOrder: 180
+		Prerequisites: ~gapile, ~soviets.tech.infiltrated
+		Description: Psychic infantry. Can mind control enemy units.\n  Strong vs Infantry, Vehicles, Buildings\n  Weak vs Dogs, Terror Drones, Aircraft\nSpecial Ability: Destroy Building with C4
+	Valued:
+		Cost: 1000
+	DeliversCash:
+		Payload: 500
+		PlayerExperience: 50
+	Tooltip:
+		Name: Psi Commando
+	-PortableChrono:
+	Armament@primary:
+		Weapon: MindControl
+		MuzzleSequence: muzzle
+		LocalOffset: 0,0,960
+	-Armament@elite:
+	Demolition:
+		Voice: Attack
+	WithMuzzleOverlay:
+	MindController:
+		ControllingCondition: controlling
+		Sounds: iyurat1a.wav
+	WithMindControlArc:
+		UsePlayerColor: true
+		Offset: 0,0,960
+	AttackMove:
+		-AssaultMoveScanCondition:
+	AutoTarget:
+		-AttackAnythingCondition:
+	AutoTargetPriority@DEFAULT:
+		ValidTargets: MindControl
+		RequiresCondition: !controlling
+	-AutoTargetPriority@ATTACKANYTHING:
+	Voiced:
+		VoiceSet: YuriVoice
+	RenderSprites:
+		Image: ptroop
+
 tany:
 	Inherits: ^Infantry
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove

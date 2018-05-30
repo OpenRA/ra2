@@ -298,6 +298,30 @@ ivan:
 	QuantizeFacingsFromSequence:
 		Sequence: stand
 
+civan:
+	Inherits: ivan
+	Buildable:
+		BuildPaletteOrder: 180
+		Prerequisites: ~nahand, ~allies.tech.infiltrated
+		Description: Specialist for explosives. Can plant a Bomb on anything, even Cows. Can teleport on anywhere on the map.
+	Tooltip:
+		Name: Chrono Ivan
+	Valued:
+		Cost: 1000
+	DeliversCash:
+		Payload: 500
+		PlayerExperience: 50
+	Health:
+		HP: 100
+	PortableChrono:
+		ChronoshiftSound: ichrmova.wav
+		DeployCursor: chronosphere
+		DeployBlockedCursor: chronosphere
+		Voice: Move
+		ChargeDelay: 300
+		TargetCursor: chronosphere
+	-Explodes:
+
 yuri:
 	Inherits: ^Infantry
 	Buildable:
@@ -369,5 +393,28 @@ yuri:
 		Offset: 0,0,960
 	AutoTarget:
 	AutoTargetPriority@DEFAULT:
-		Types: MindControl
+		ValidTargets: MindControl
 		RequiresCondition: !controlling
+
+yuripr:
+	Inherits: yuri
+	Buildable:
+		BuildLimit: 1
+		BuildPaletteOrder: 290
+		Prerequisites: ~nahand, ~soviets.tech.infiltrated
+		Description: Psychic infantry. Can mind control enemy units from a great range.\nCan be deployed to unleash a powerful psychic wave.\n  Strong vs Infantry, Vehicles\n  Weak vs Terror Drones, Aircraft, Buildings\n\nMaximum 1 can be trained.
+	Tooltip:
+		Name: Yuri Prime
+	Valued:
+		Cost: 2000
+	DeliversCash:
+		Payload: 1000
+		PlayerExperience: 100
+	Health:
+		HP: 200
+	Armor:
+		Type: Flak
+	RevealsShroud:
+		Range: 8c0
+	Armament:
+		Weapon: SuperMindControl

@@ -125,6 +125,10 @@ ivan:
 		Start: 259
 	icon: ivanicon
 
+civan:
+	Inherits: ivan
+	icon: ivncicon
+
 yuri:
 	Inherits: ^ArmedInfantry
 	deploy:
@@ -141,3 +145,7 @@ yuri:
 	muzzle: yuricntl
 		Length: *
 	icon: yuriicon
+
+yuripr:
+	Inherits: yuri
+	icon: yurpicon
