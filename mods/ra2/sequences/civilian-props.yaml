@@ -258,6 +258,7 @@ ammo01:
 cabhut:
 	idle:
 		ShadowStart: 3
+		Offset: 0, -15
 
 gagate_a:
 	Defaults:
