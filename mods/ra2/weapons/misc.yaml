@@ -56,6 +56,10 @@ MindControl:
 	Projectile: InstantHit
 	Warhead@1Dam: TargetDamage
 		Damage: 0
+        
+SuperMindControl:
+	Inherits: MindControl
+	Range: 30c0
 
 PsiWave:
 	ReloadDelay: 100

@@ -124,6 +124,25 @@ seal: # TODO: seala on SNOW
 		Start: 602
 	icon: sealicon
 
+ccomand:
+	Inherits: seal
+	-swim-stand:
+	-swim-run:
+	-swim-die1:
+	-swim-die2:
+	-swim-shoot:
+	cheer:
+		Start: 340
+	-swim-cheer:
+	-paradrop:
+	icon: ccomicon
+    
+ptroop:
+	Inherits: ccomand
+	muzzle: yuricntl
+		Length: *
+	icon: psicicon
+
 tany:
 	Inherits: ^ArmedInfantry
 	run:
