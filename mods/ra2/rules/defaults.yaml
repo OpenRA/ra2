@@ -699,7 +699,7 @@
 	Health:
 		HP: 200
 	Targetable:
-		TargetTypes: Ground
+		TargetTypes: Ground, Infantry
 	RevealsShroud:
 		Range: 2c0
 	Mobile:
