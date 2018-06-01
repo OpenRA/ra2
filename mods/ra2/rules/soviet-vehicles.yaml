@@ -248,6 +248,7 @@ htnk:
 apoc:
 	Inherits: ^Vehicle
 	Inherits@AUTOTARGET: ^AutoTargetAllAssaultMove
+	Inherits@MC: ^MindControllable
 	Valued:
 		Cost: 1750
 	Tooltip:
