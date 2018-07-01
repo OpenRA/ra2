@@ -215,3 +215,65 @@ dlph:
 		Voice: Attack
 		RepairBuildings: gayard, nayard
 	HitShape:
+
+carrier:
+	Inherits: ^Ship
+	Inherits@MC: ^MindControllable
+	Buildable:
+		Queue: Ship
+		BuildPaletteOrder: 60
+		Prerequisites: gatech, ~gayard
+		Description: Airborne aircraft carrier..\n  Strong vs Tanks, Structures\n  Weak vs Infantry
+	Valued:
+		Cost: 2000
+	Tooltip:
+		Name: Aircraft Carrier
+	Health:
+		HP: 800
+	Armor:
+		Type: Heavy
+	RevealsShroud:
+		Range: 7c0
+		Type: CenterPosition
+	Selectable:
+		Bounds: 60, 80, 0, -6
+	Mobile:
+		TurnSpeed: 5
+		Speed: 45
+	RevealsShroud:
+		Range: 7c0
+	AttackFrontal:
+		Voice: Attack
+	AutoTarget:
+	Explodes:
+		Weapon: UnitExplode
+		EmptyWeapon: UnitExplode
+	WithVoxelBody:
+	RenderSprites:
+	Voiced:
+		VoiceSet: AlliedNavalVoice
+	HitShape:
+	CarrierMaster:
+		Actors: hornet, hornet, hornet
+		RespawnTicks: 300
+		InstaRepair: true
+		SlaveDisposalOnKill: KillSlaves
+		SpawnAllAtOnce: true
+	Exit@0:
+		SpawnOffset: 0,0,0
+		Facing: 0
+	Exit@1:
+		SpawnOffset: 0,0,0
+		Facing: -32
+	Exit@2:
+		SpawnOffset: 0,0,0
+		Facing: 32
+	Exit@3:
+		SpawnOffset: 0,0,0
+		Facing: -64
+	Exit@4:
+		SpawnOffset: 0,0,0
+		Facing: 64
+	Armament:
+		Weapon: HornetLauncher
+	AttackFrontal:

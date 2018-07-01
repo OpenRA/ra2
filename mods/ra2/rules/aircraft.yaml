@@ -255,3 +255,57 @@ pdplanehusk:
 		Speed: 100
 	RenderVoxels:
 		Image: pdplane
+
+hornet:
+	Inherits: ^Plane
+	Valued:
+		Cost: 50
+	Tooltip:
+		Name: Hornet
+		Description: Fast Ground-Attack Plane.\n  Strong vs Buildings, Tanks\n  Weak vs Infantry, Light armor, Aircraft
+	Health:
+		HP: 75
+	Armor:
+		Type: Light
+	RevealsShroud:
+		Range: 2c0
+		Type: GroundPosition
+		RevealGeneratedShroud: False
+	Armament:
+		Weapon: HornetBomb
+	AttackPlane:
+		FacingTolerance: 20
+	Aircraft:
+		CruiseAltitude: 2560
+		InitialFacing: 192
+		TurnSpeed: 16
+		Speed: 223
+		RepulsionSpeed: 40
+		MaximumPitch: 56
+		RearmBuildings: carrier
+	AmmoPool:
+		Ammo: 1
+	RejectsOrders:
+	SpawnActorOnDeath:
+		Actor: hornethusk
+	-Selectable:
+	-ActorLostNotification:
+	SmokeTrailWhenDamaged:
+		Offset: -853,0,171
+		Interval: 2
+	CarrierSlave:
+		LandingDistance: 1c0
+	Contrail@1:
+		Offset: -432,0,0
+	HitShape:
+	Interactable:
+
+hornethusk:
+	Inherits: ^PlaneHusk
+	Tooltip:
+		Name: Hornet
+	Aircraft:
+		TurnSpeed: 5
+		Speed: 100
+	RenderVoxels:
+		Image: hornet
