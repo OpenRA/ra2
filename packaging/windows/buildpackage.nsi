@@ -29,7 +29,7 @@ SetCompressor lzma
 RequestExecutionLevel admin
 
 !insertmacro MUI_PAGE_WELCOME
-!insertmacro MUI_PAGE_LICENSE "${SRCDIR}\COPYING"
+!insertmacro MUI_PAGE_LICENSE "${PACKAGING_WINDOWS_LICENSE_FILE}"
 !insertmacro MUI_PAGE_DIRECTORY
 
 !define MUI_STARTMENUPAGE_REGISTRY_ROOT "HKLM"
@@ -90,7 +90,6 @@ Section "Game" GAME
 	File "${SRCDIR}\MaxMind.Db.dll"
 	File "${SRCDIR}\GeoLite2-Country.mmdb.gz"
 	File "${SRCDIR}\eluant.dll"
-	File "${SRCDIR}\SmarIrc4net.dll"
 	File "${SRCDIR}\rix0rrr.BeaconLib.dll"
 	File "${DEPSDIR}\soft_oal.dll"
 	File "${DEPSDIR}\SDL2.dll"
@@ -197,7 +196,6 @@ Function ${UN}Clean
 	Delete $INSTDIR\freetype6.dll
 	Delete $INSTDIR\SDL2-CS.dll
 	Delete $INSTDIR\OpenAL-CS.dll
-	Delete $INSTDIR\SmarIrc4net.dll
 	Delete $INSTDIR\rix0rrr.BeaconLib.dll
 	RMDir /r $INSTDIR\Support
 

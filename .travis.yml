@@ -1,6 +1,8 @@
-language: csharp
-mono: 4.2.1
+# Travis-CI Build for OpenRA/ra2
+# see travis-ci.org for details
 
+language: csharp
+mono: 4.6.1
 sudo: false
 
 cache:
@@ -18,14 +20,17 @@ addons:
 script:
  - make
  - travis_retry ./fetch-content.sh
+ - . mod.config;
+   if [ "${TRAVIS_TEST_MOD}" == "True" ]; then make test || travis_terminate 1; fi;
+   if [ "${TRAVIS_TEST_PACKAGING}" == "True" ]; then ./packaging/package-all.sh test-0 || travis_terminate 1; fi
  - make test
 # Crashes, see https://github.com/OpenRA/OpenRA/issues/14013
 # - make check
  - make check-sequence-sprites
 
 branches:
- only:
-   - master
+  only:
+    - master
 
 # Notify developers when build passed/failed.
 notifications:
@@ -49,6 +54,7 @@ deploy:
     - build/${PACKAGING_INSTALLER_NAME}-${TRAVIS_TAG}.exe
     - build/${PACKAGING_INSTALLER_NAME}-${TRAVIS_TAG}-macOS.zip
     - build/${PACKAGING_INSTALLER_NAME}-${TRAVIS_TAG}-winportable.zip
+    - build/${PACKAGING_INSTALLER_NAME}-${TRAVIS_TAG}.AppImage
   skip_cleanup: true
   on:
     tags: true

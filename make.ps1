@@ -217,7 +217,7 @@ function ReadConfigLine($line, $name)
 
 function ParseConfigFile($fileName)
 {
-	$names = @("MOD_ID", "INCLUDE_DEFAULT_MODS", "ENGINE_VERSION", "AUTOMATIC_ENGINE_MANAGEMENT", "AUTOMATIC_ENGINE_SOURCE",
+	$names = @("MOD_ID", "ENGINE_VERSION", "AUTOMATIC_ENGINE_MANAGEMENT", "AUTOMATIC_ENGINE_SOURCE",
 		"AUTOMATIC_ENGINE_EXTRACT_DIRECTORY", "AUTOMATIC_ENGINE_TEMP_ARCHIVE_NAME", "ENGINE_DIRECTORY")
 
 	$reader = [System.IO.File]::OpenText($fileName)
@@ -227,6 +227,27 @@ function ParseConfigFile($fileName)
 		{
 			ReadConfigLine $line $name
 		}
+	}
+
+	$missing = @()
+	foreach ($name in $names)
+	{
+		if (!([System.Environment]::GetEnvironmentVariable($name)))
+		{
+			$missing += $name
+		}
+	}
+
+	if ($missing)
+	{
+		echo "Required mod.config variables are missing:"
+		foreach ($m in $missing)
+		{
+			echo "   $m"
+		}
+		echo "Repair your mod.config (or user.config) and try again."
+		WaitForInput
+		exit
 	}
 }
 
@@ -272,11 +293,7 @@ if (Test-Path "user.config")
 
 $modID = $env:MOD_ID
 
-$env:MOD_SEARCH_PATHS = (Get-Item -Path ".\" -Verbose).FullName + "\mods"
-if ($env:INCLUDE_DEFAULT_MODS -eq "True")
-{
-	$env:MOD_SEARCH_PATHS = $env:MOD_SEARCH_PATHS + ",./mods"
-}
+$env:MOD_SEARCH_PATHS = (Get-Item -Path ".\" -Verbose).FullName + "\mods,./mods"
 
 # Run the same command on the engine's make file
 if ($command -eq "all" -or $command -eq "clean")

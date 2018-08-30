@@ -23,24 +23,54 @@
 .DEFAULT_GOAL := build
 
 VERSION = $(shell git name-rev --name-only --tags --no-undefined HEAD 2>/dev/null || echo git-`git rev-parse --short HEAD`)
-MOD_ID = $(shell awk -F= '/MOD_ID/ { print $$2 }' mod.config)
-ENGINE_DIRECTORY = $(shell awk -F= '/ENGINE_DIRECTORY/ { print $$2 }' mod.config)
-AUTOMATIC_ENGINE_MANAGEMENT = $(shell awk -F= '/AUTOMATIC_ENGINE_MANAGEMENT/ { print $$2 }' mod.config)
-
-INCLUDE_DEFAULT_MODS = $(shell awk -F= '/INCLUDE_DEFAULT_MODS/ { print $$2 }' mod.config)
-
-MOD_SEARCH_PATHS = "$(shell python -c "import os; print(os.path.realpath('.'))")/mods"
-ifeq ($(INCLUDE_DEFAULT_MODS),"True")
-	MOD_SEARCH_PATHS := "$(MOD_SEARCH_PATHS),./mods"
-endif
+MOD_ID = $(shell cat user.config mod.config 2> /dev/null | awk -F= '/MOD_ID/ { print $$2; exit }')
+ENGINE_DIRECTORY = $(shell cat user.config mod.config 2> /dev/null | awk -F= '/ENGINE_DIRECTORY/ { print $$2; exit }')
+MOD_SEARCH_PATHS = "$(shell python -c "import os; print(os.path.realpath('.'))")/mods,./mods"
 
 MANIFEST_PATH = "mods/$(MOD_ID)/mod.yaml"
 
 HAS_MSBUILD = $(shell command -v msbuild 2> /dev/null)
 HAS_LUAC = $(shell command -v luac 2> /dev/null)
 LUA_FILES = $(shell find mods/*/maps/* -iname '*.lua')
+PROJECT_DIRS = $(shell dirname $$(find . -iname "*.csproj" -not -path "$(ENGINE_DIRECTORY)/*"))
 
-engine:
+scripts:
+	@awk '/\r$$/ { exit(1); }' mod.config || (printf "Invalid mod.config format: file must be saved using unix-style (CR, not CRLF) line endings.\n"; exit 1)
+	@if [ ! -x "fetch-engine.sh" ] || [ ! -x "launch-dedicated.sh" ] || [ ! -x "launch-game.sh" ] || [ ! -x "utility.sh" ]; then \
+		echo "Required SDK scripts are not executable:"; \
+		if [ ! -x "fetch-engine.sh" ]; then \
+			echo "   fetch-engine.sh"; \
+		fi; \
+		if [ ! -x "launch-dedicated.sh" ]; then \
+			echo "   launch-dedicated.sh"; \
+		fi; \
+		if [ ! -x "launch-game.sh" ]; then \
+			echo "   launch-game.sh"; \
+		fi; \
+		if [ ! -x "utility.sh" ]; then \
+			echo "   utility.sh"; \
+		fi; \
+		echo "Repair their permissions and try again."; \
+		echo "If you are using git you can repair these permissions by running"; \
+		echo "   git update-index --chmod=+x *.sh"; \
+		echo "and commiting the changed files to your repository."; \
+		exit 1; \
+	fi
+
+variables:
+	@if [ -z "$(MOD_ID)" ] || [ -z "$(ENGINE_DIRECTORY)" ]; then \
+			echo "Required mod.config variables are missing:"; \
+			if [ -z "$(MOD_ID)" ]; then \
+				echo "   MOD_ID"; \
+			fi; \
+			if [ -z "$(ENGINE_DIRECTORY)" ]; then \
+				echo "   ENGINE_DIRECTORY"; \
+			fi; \
+			echo "Repair your mod.config (or user.config) and try again."; \
+			exit 1; \
+		fi
+
+engine: variables scripts
 	@./fetch-engine.sh || (printf "Unable to continue without engine files\n"; exit 1)
 	@cd $(ENGINE_DIRECTORY) && make core
 
@@ -68,13 +98,13 @@ endif
 	@cd $(ENGINE_DIRECTORY) && make clean
 	@printf "The engine has been cleaned.\n"
 
-version:
+version: variables
 	@awk '{sub("Version:.*$$","Version: $(VERSION)"); print $0}' $(MANIFEST_PATH) > $(MANIFEST_PATH).tmp && \
 	awk '{sub("/[^/]*: User$$", "/$(VERSION): User"); print $0}' $(MANIFEST_PATH).tmp > $(MANIFEST_PATH) && \
 	rm $(MANIFEST_PATH).tmp
 	@printf "Version changed to $(VERSION).\n"
 
-check-scripts:
+check-scripts: variables
 ifeq ("$(HAS_LUAC)","")
 	@printf "'luac' not found.\n" && exit 1
 endif
@@ -87,8 +117,10 @@ endif
 check: utility stylecheck
 	@echo "Checking for explicit interface violations..."
 	@MOD_SEARCH_PATHS="$(MOD_SEARCH_PATHS)" mono --debug "$(ENGINE_DIRECTORY)/OpenRA.Utility.exe" $(MOD_ID) --check-explicit-interfaces
-	@echo "Checking for code style violations in OpenRA.Mods.$(MOD_ID)..."
-	@mono --debug "$(ENGINE_DIRECTORY)/OpenRA.StyleCheck.exe" OpenRA.Mods.$(MOD_ID)
+	@for i in $(PROJECT_DIRS) ; do \
+		echo "Checking for code style violations in $${i}...";\
+		mono --debug "$(ENGINE_DIRECTORY)/OpenRA.StyleCheck.exe" $${i};\
+	done
 
 check-sequence-sprites: utility
 	@echo

@@ -4,7 +4,19 @@ set -e
 
 command -v make >/dev/null 2>&1 || { echo >&2 "The Red Alert 2 mod requires make."; exit 1; }
 command -v python >/dev/null 2>&1 || { echo >&2 "The Red Alert 2 mod requires python."; exit 1; }
-command -v curl >/dev/null 2>&1 || { echo >&2 "The Red Alert 2 mod requires curl."; exit 1; }
+command -v curl >/dev/null 2>&1 || command -v wget > /dev/null 2>&1 || { echo >&2 "The Red Alert 2 mod requires curl or wget."; exit 1; }
+
+require_variables() {
+	missing=""
+	for i in "$@"; do
+		eval check="\$$i"
+		[ -z "${check}" ] && missing="${missing}   ${i}\n"
+	done
+	if [ ! -z "${missing}" ]; then
+		echo "Required mod.config variables are missing:\n${missing}Repair your mod.config (or user.config) and try again."
+		exit 1
+	fi
+}
 
 if [ $# -eq "0" ]; then
 	echo "Usage: `basename $0` version [outputdir]"
@@ -22,11 +34,9 @@ if [ -f "${TEMPLATE_ROOT}/user.config" ]; then
 	. "${TEMPLATE_ROOT}/user.config"
 fi
 
-if [ "${INCLUDE_DEFAULT_MODS}" = "True" ]; then
-	echo "Cannot generate installers while INCLUDE_DEFAULT_MODS is enabled."
-	echo "Make sure that this setting is disabled in both your mod.config and user.config."
-	exit 1
-fi
+require_variables "MOD_ID" "ENGINE_DIRECTORY" "PACKAGING_DISPLAY_NAME" "PACKAGING_INSTALLER_NAME" \
+	"PACKAGING_OSX_LAUNCHER_TAG" "PACKAGING_OSX_LAUNCHER_SOURCE" "PACKAGING_OSX_LAUNCHER_TEMP_ARCHIVE_NAME" \
+	"PACKAGING_FAQ_URL" "PACKAGING_OVERWRITE_MOD_VERSION"
 
 TAG="$1"
 if [ $# -eq "1" ]; then
@@ -46,7 +56,12 @@ modify_plist() {
 }
 
 echo "Building launcher"
-curl -s -L  -o "${PACKAGING_OSX_LAUNCHER_TEMP_ARCHIVE_NAME}" -O "${PACKAGING_OSX_LAUNCHER_SOURCE}" || exit 3
+
+if command -v curl >/dev/null 2>&1; then
+	curl -s -L -o "${PACKAGING_OSX_LAUNCHER_TEMP_ARCHIVE_NAME}" -O "${PACKAGING_OSX_LAUNCHER_SOURCE}" || exit 3
+else
+	wget -cq "${PACKAGING_OSX_LAUNCHER_SOURCE}" -O "${PACKAGING_OSX_LAUNCHER_TEMP_ARCHIVE_NAME}" || exit 3
+fi
 
 unzip -qq -d "${BUILTDIR}" "${PACKAGING_OSX_LAUNCHER_TEMP_ARCHIVE_NAME}"
 rm "${PACKAGING_OSX_LAUNCHER_TEMP_ARCHIVE_NAME}"
@@ -68,18 +83,30 @@ if [ ! -d "${OUTPUTDIR}" ]; then
 	exit 1
 fi
 
-make version VERSION="${TAG}"
+MOD_VERSION=$(grep 'Version:' mods/${MOD_ID}/mod.yaml | awk '{print $2}')
+
+if [ "${PACKAGING_OVERWRITE_MOD_VERSION}" == "True" ]; then
+    make version VERSION="${TAG}"
+else
+	echo "Mod version ${MOD_VERSION} will remain unchanged.";
+fi
 
 pushd ${ENGINE_DIRECTORY} > /dev/null
 make osx-dependencies
 make core SDK="-sdk:4.5"
 make install-engine gameinstalldir="/Contents/Resources/" DESTDIR="${BUILTDIR}/OpenRA.app"
 make install-common-mod-files gameinstalldir="/Contents/Resources/" DESTDIR="${BUILTDIR}/OpenRA.app"
+
+for f in ${PACKAGING_COPY_ENGINE_FILES}; do
+  mkdir -p "${BUILTDIR}/OpenRA.app/Contents/Resources/$(dirname "${f}")"
+  cp -r "${f}" "${BUILTDIR}/OpenRA.app/Contents/Resources/${f}"
+done
+
 popd > /dev/null
 popd > /dev/null
 
 # Add mod files
-cp -r "${TEMPLATE_ROOT}/mods/"* "${BUILTDIR}/OpenRA.app/Contents/Resources/mods"
+cp -Lr "${TEMPLATE_ROOT}/mods/"* "${BUILTDIR}/OpenRA.app/Contents/Resources/mods"
 cp "mod.icns" "${BUILTDIR}/OpenRA.app/Contents/Resources/${MOD_ID}.icns"
 
 pushd "${BUILTDIR}" > /dev/null
@@ -92,7 +119,7 @@ modify_plist "{JOIN_SERVER_URL_SCHEME}" "openra-${MOD_ID}-${TAG}" "${PACKAGING_O
 
 echo "Packaging zip archive"
 
-zip "${PACKAGING_INSTALLER_NAME}-${TAG}-macOS.zip" -r -9 "${PACKAGING_OSX_APP_NAME}" --quiet --symlinks
+zip "${PACKAGING_INSTALLER_NAME}-${TAG}-macOS.zip" -r -9 "${PACKAGING_OSX_APP_NAME}" --quiet
 mv "${PACKAGING_INSTALLER_NAME}-${TAG}-macOS.zip" "${OUTPUTDIR}"
 popd > /dev/null
 
