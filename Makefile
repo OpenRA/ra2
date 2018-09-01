@@ -59,16 +59,16 @@ scripts:
 
 variables:
 	@if [ -z "$(MOD_ID)" ] || [ -z "$(ENGINE_DIRECTORY)" ]; then \
-			echo "Required mod.config variables are missing:"; \
-			if [ -z "$(MOD_ID)" ]; then \
-				echo "   MOD_ID"; \
-			fi; \
-			if [ -z "$(ENGINE_DIRECTORY)" ]; then \
-				echo "   ENGINE_DIRECTORY"; \
-			fi; \
-			echo "Repair your mod.config (or user.config) and try again."; \
-			exit 1; \
-		fi
+		echo "Required mod.config variables are missing:"; \
+		if [ -z "$(MOD_ID)" ]; then \
+			echo "   MOD_ID"; \
+		fi; \
+		if [ -z "$(ENGINE_DIRECTORY)" ]; then \
+			echo "   ENGINE_DIRECTORY"; \
+		fi; \
+		echo "Repair your mod.config (or user.config) and try again."; \
+		exit 1; \
+	fi
 
 engine: variables scripts
 	@./fetch-engine.sh || (printf "Unable to continue without engine files\n"; exit 1)
