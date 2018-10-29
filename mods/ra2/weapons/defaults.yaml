@@ -53,7 +53,7 @@
 		Image: 120mm
 		Palette: ra
 		Shadow: true
-		Angle: 62
+		LaunchAngle: 62
 	Warhead@1Dam: SpreadDamage
 		Spread: 128
 		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath

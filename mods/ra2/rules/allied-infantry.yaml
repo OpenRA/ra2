@@ -73,7 +73,7 @@ dog:
 	AutoTarget:
 		InitialStance: AttackAnything
 	AutoTargetPriority@DEFAULT:
-		Types: Infantry
+		ValidTargets: Infantry
 	RenderSprites:
 		Image: adog
 		FactionImages:
@@ -137,14 +137,14 @@ e1:
 	Armament@elite:
 		Weapon: M60E
 		RequiresCondition: rank-elite
-#	Armament@deployed:
-#		Weapon: para
-#		UpgradeTypes: deployed
-#		UpgradeMinEnabledLevel: 1
-#	Armament@elite-deployed:
-#		Weapon: paraE
-#		UpgradeTypes: eliteparaweapon
-#		UpgradeMinEnabledLevel: 1
+	# Armament@deployed:
+	#	Weapon: para
+	#	UpgradeTypes: deployed
+	#	UpgradeMinEnabledLevel: 1
+	# Armament@elite-deployed:
+	#	Weapon: paraE
+	#	UpgradeTypes: eliteparaweapon
+	#	UpgradeMinEnabledLevel: 1
 	WithInfantryBody:
 		DefaultAttackSequence: shoot
 	Voiced:
@@ -228,8 +228,8 @@ spy:
 		Types: SpyInfiltrate
 	-WithInfantryBody:
 	WithDisguisingInfantryBody:
-		IdleAnimations: idle1,idle2
-		StandAnimations: stand
+		IdleSequences: idle1,idle2
+		StandSequences: stand
 	WithDecoration@disguise:
 		Image: pips
 		Sequence: pip-disguise
@@ -250,6 +250,7 @@ ghost:
 	Inherits: ^Infantry
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Inherits@MC: ^MindControllable
+	Inherits@SWIMSUIT: ^WithSwimSuit
 	Buildable:
 		Queue: Infantry
 		BuildAtProductionType: Infantry
@@ -268,23 +269,9 @@ ghost:
 		Bounds: 20, 30, 0, -11
 	Health:
 		HP: 125
-	GrantConditionOnTerrain:
-		Condition: water-borne
-		TerrainTypes: Water
-	Targetable@WaterBorne:
-		TargetTypes: Underwater
-		RequiresCondition: water-borne
 	Mobile:
 		Speed: 71
-		TerrainSpeeds:
-			Clear: 100
-			Rough: 100
-			Rail: 90
-			Road: 100
-			DirtRoad: 100
-			Ore: 90
-			Gems: 80
-			Water: 70
+		Locomotor: swimsuit
 	RevealsShroud:
 		Range: 8c0
 	Demolition:
@@ -311,8 +298,7 @@ ghost:
 		Sequence: stand
 	WithInfantryBody:
 		DefaultAttackSequence: shoot
-	WithSwimSuit:
-	-TakeCover: # TODO: allow multiple sequence modifiers
+	-TakeCover: # TODO: needs to be conditional so we can disable in water
 
 ccomand:
 	Inherits: ghost
@@ -329,6 +315,8 @@ ccomand:
 		PlayerExperience: 100
 	Health:
 		HP: 100
+	Mobile:
+		Locomotor: foot
 	PortableChrono:
 		ChronoshiftSound: ichrmova.wav
 		DeployCursor: chronosphere
@@ -336,9 +324,16 @@ ccomand:
 		Voice: Move
 		ChargeDelay: 300
 		TargetCursor: chronosphere
-	-GrantConditionOnTerrain:
+	WithInfantryBody:
+		-RequiresCondition:
+	WithDeathAnimation@normal:
+		-RequiresCondition:
+	WithDeathAnimation@effect:
+		-RequiresCondition:
+	-GrantConditionOnTerrain@Water:
+	-WithInfantryBody@Water:
+	-WithDeathAnimation@Water:
 	-Targetable@WaterBorne:
-	-WithSwimSuit:
 	TakeCover:
 		DamageModifiers:
 			Prone50Percent: 50
@@ -392,6 +387,7 @@ ptroop:
 tany:
 	Inherits: ^Infantry
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
+	Inherits@SWIMSUIT: ^WithSwimSuit
 	Buildable:
 		Queue: Infantry
 		BuildAtProductionType: Infantry
@@ -411,23 +407,9 @@ tany:
 		Bounds: 20, 30, 0, -11
 	Health:
 		HP: 125
-	GrantConditionOnTerrain:
-		Condition: water-borne
-		TerrainTypes: Water
-	Targetable@WaterBorne:
-		TargetTypes: Underwater
-		RequiresCondition: water-borne
 	Mobile:
 		Speed: 71
-		TerrainSpeeds:
-			Clear: 100
-			Rough: 100
-			Rail: 90
-			Road: 100
-			DirtRoad: 100
-			Ore: 90
-			Gems: 80
-			Water: 70
+		Locomotor: swimsuit
 	RevealsShroud:
 		Range: 6c0
 	Demolition:
@@ -453,8 +435,7 @@ tany:
 		Sequence: stand
 	WithInfantryBody:
 		DefaultAttackSequence: shoot
-	-TakeCover: # TODO: allow multiple sequence modifiers
-	WithSwimSuit:
+	-TakeCover: # TODO: needs to be conditional so we can disable in water
 
 jumpjet:
 	Inherits: ^Infantry

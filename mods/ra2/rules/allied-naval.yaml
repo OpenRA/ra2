@@ -19,16 +19,7 @@ lcrf:
 	Mobile:
 		TurnSpeed: 10
 		Speed: 75
-		TerrainSpeeds:
-			Clear: 80
-			Rough: 80
-			Rail: 50
-			Road: 100
-			DirtRoad: 100
-			Beach: 60
-			Ore: 50
-			Gems: 50
-			Water: 100
+		Locomotor: lcraft
 		RequiresCondition: !notmobile && !chronodisable
 	RevealsShroud:
 		Range: 6c0
@@ -158,8 +149,7 @@ dlph:
 	Mobile:
 		TurnSpeed: 6
 		Speed: 90
-		TerrainSpeeds:
-			Water: 100
+		Locomotor: naval
 		Voice: Move
 	SelectionDecorations:
 		Palette: pips
@@ -188,7 +178,6 @@ dlph:
 	Targetable@underwater:
 		TargetTypes: Underwater
 		RequiresCondition: underwater
-		IsPlayerPalette: true
 	DetectCloaked:
 		CloakTypes: Underwater
 		Range: 4c0

@@ -52,14 +52,13 @@ crate:
 		ValidFactions: america, germany, england, france, korea
 		Units: amcv
 
-^amcv.colorpicker:
+amcv.colorpicker:
 	Inherits: amcv
-	AlwaysVisible:
 	Mobile:
 		InitialFacing: 160
+	-EditorTilesetFilter:
 	RenderSprites:
 		Image: amcv
-		StandSequences: idle
 		Palette: colorpicker
 	RenderVoxels:
 		Image: amcv
@@ -118,15 +117,7 @@ FLAMEGUY:
 	Inherits@2: ^SpriteActor
 	Mobile:
 		Speed: 71
-		SharesCell: true
-		TerrainSpeeds:
-			Clear: 45
-			Road: 50
-			Rail: 45
-			DirtRoad: 50
-			Rough: 40
-			Ore: 45
-			Gems: 45
+        Locomotor: flameguy
 	HiddenUnderFog:
 	RenderSprites:
 		Palette: effect

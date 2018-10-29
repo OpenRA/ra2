@@ -207,7 +207,7 @@ naweap:
 		Start: 1
 		ShadowStart: 3
 		ZOffset: 1024
-# TODO: ngweap_3 and ngweap_4 are used for producing flying actors
+	# TODO: ngweap_3 and ngweap_4 are used for producing flying actors
 	build-air-open: ngweap_3
 		ShadowStart: 2
 	damaged-air-open: ngweap_3

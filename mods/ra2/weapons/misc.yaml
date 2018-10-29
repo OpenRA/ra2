@@ -8,7 +8,6 @@ BlimpBomb:
 		Acceleration: 0, 0, -10
 		Image: canister
 		Palette: player
-		Arm: 10
 	Warhead@1Dam: SpreadDamage
 		Spread: 400
 		Damage: 250
@@ -56,7 +55,7 @@ MindControl:
 	Projectile: InstantHit
 	Warhead@1Dam: TargetDamage
 		Damage: 0
-        
+
 SuperMindControl:
 	Inherits: MindControl
 	Range: 30c0

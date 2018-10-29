@@ -23,6 +23,16 @@ UnitExplodeSmall:
 		ImpactSounds: expnew13.wav
 		ValidTargets: Ground, Water, Air
 
+V3AmmunitionExplode:
+	Inherits: UnitExplodeSmall
+	Warhead@2Eff: CreateEffect
+		Explosions: terrorist_explosion
+
+BuildingExplode:
+	Inherits: UnitExplodeSmall
+	Warhead@2Eff: CreateEffect
+		Explosions: building, large_bang, large_brnl, verylarge_clsn, large_tumu
+
 IvanBomber:
 	ReloadDelay: 50
 	Range: 1c849
@@ -66,7 +76,7 @@ IvanBomberE:
 
 IvanDeath:
 	Inherits: IvanBomber
-	-Warhead@0Eff:
+	-Warhead@0Eff: CreateEffect
 	Warhead@1Dam: SpreadDamage
 		Delay: 0
 	Warhead@2Eff: CreateEffect
@@ -150,8 +160,8 @@ NukePayload:
 atomic:
 	Inherits: NukePayload
 	Warhead@0Eff_impact: CreateEffect
-		Explosion: nuke_ball
-		ImpactSound: snukintr.wav
+		Explosions: nuke_ball
+		ImpactSounds: snukintr.wav
 		ValidTargets: Ground, Water, Air
 	Warhead@1Dam_impact: SpreadDamage
 		DamageTypes: RadiationDeath

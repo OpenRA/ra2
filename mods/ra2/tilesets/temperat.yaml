@@ -2,7 +2,6 @@ General:
 	Name: Temperate
 	Id: TEMPERATE
 	Extensions: .tem, .shp
-	Palette: isotem.pal
 	HeightDebugColors: 00000080, 00004480, 00008880, 0000CC80, 0000FF80, 4400CC80, 88008880, CC004480, FF110080, FF550080, FF990080, FFDD0080, DDFF0080, 99FF0080, 55FF0080, 11FF0080
 	EditorTemplateOrder: Lat Grass, ZMM Ramps, Obsolete Height Pieces, Ramps, Cliff Set, Shore Pieces, LAT Grass, thick, GrassThick Idividual, Cliff/Water pieces, DirtRoads Bendy, DirtRoads Junctions, DirtRoads Straight, Bridges, Paved Roads, Water, ZMM Cliff Set, DirtRoads Slopes, ZMM Dirt Road Slopes, Slope Set Pieces, ZSlope Set Pieces, New MM Height Pieces, Waterfalls, LAT Grass Rough, GrassRough Individual, Farm Crops, Paved Road Ends, Pavement, Pavement Individual, Paved road bits, LAT Sand, Sand Individual, Ramp edge fixup, Ramp edge fixup - Marble Madness, LAT Pavement, Paved Road Slopes, Waterfalls-B, Waterfalls-C, Waterfalls-D, Newest MM Height, Tunnel Floor, Tunnel Side, Destroyable Cliffs, Water Caves, ZMM Bendy Dirt Roads, ZMM Dirt Road Junctions, ZMM Straight Dirt Roads, ZMM Shore Pieces, ZMM Waterfalls, ZMM Waterfalls-B, ZMM Waterfalls-C, ZMM Waterfalls-D, ZMM Water Caves, ZMMCliff/Water pieces, ZMM Water, DirtTunnel Floor, Sand (beach), Sand (beach) Transitions, Water bridge, RA2 rubble farm, RA2 rubble mobile, RA2 rubble mexican, Wood Bridges, RA2 uss arizona
 	SheetSize: 4096
@@ -36,7 +35,6 @@ Terrain:
 		Type: Water
 		Color: 745537
 		TargetTypes: Water
-		IsWater: True
 	TerrainType@DirtRoad:
 		Type: DirtRoad
 		AcceptsSmudgeType: SmallCrater, MediumCrater, LargeCrater, SmallScorch, MediumScorch, LargeScorch

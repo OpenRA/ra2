@@ -87,7 +87,6 @@ flakt:
 		RequiresCondition: rank-elite
 	WithInfantryBody:
 		DefaultAttackSequence: shoot
-		IdleAnimation:
 	Voiced:
 		VoiceSet: FlakTrooperVoice
 	ProducibleWithLevel:
@@ -143,8 +142,8 @@ shk:
 		OutsideRangeCursor: ability
 	AmmoPool:
 		PipCount: 0
-		SelfReloads: true
-		SelfReloadTicks: 70
+	ReloadAmmoPool:
+		Delay: 70
 	WithInfantryBody:
 		DefaultAttackSequence: shoot
 	ProximityExternalCondition:
@@ -156,7 +155,6 @@ shk:
 		Prerequisites: barracks.infiltrated
 	QuantizeFacingsFromSequence:
 		Sequence: stand
-	ReloadAmmoPool@1:
 
 terror:
 	Inherits: ^Infantry
