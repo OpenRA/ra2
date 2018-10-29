@@ -20,8 +20,7 @@ smcv:
 	Mobile:
 		Speed: 85
 		TurnSpeed: 8
-		WaitAverage: 0
-		Crushes: fence, crate, infantry
+		Locomotor: heavytracked
 	RevealsShroud:
 		Range: 4c0
 	MustBeDestroyed:
@@ -59,7 +58,7 @@ harv:
 	Harvester:
 		Capacity: 40
 		Resources: Ore, Gems
-		UnloadTicksPerBale: 1
+		BaleUnloadDelay: 1
 		SearchFromProcRadius: 24
 		SearchFromOrderRadius: 12
 		HarvestVoice: Move
@@ -85,12 +84,11 @@ harv:
 	Mobile:
 		Speed: 85
 		TurnSpeed: 8
-		WaitAverage: 0
-		Crushes: crate, infantry
+		Locomotor: tracked
 	RevealsShroud:
 		Range: 4c0
 	WithHarvestOverlay:
-		Offset: 121,0,0
+		LocalOffset: 121,0,0
 		Palette: effect
 	RenderSprites:
 	RenderVoxels:
@@ -114,7 +112,6 @@ dron:
 	Mobile:
 		Speed: 105
 		TurnSpeed: 15
-		Crushes: crate
 	Health:
 		HP: 100
 	Armor:
@@ -136,7 +133,7 @@ dron:
 	AutoTarget:
 		InitialStance: AttackAnything
 	AutoTargetPriority@DEFAULT:
-		Types: Infantry
+		ValidTargets: Infantry
 	Voiced:
 		VoiceSet: TerrorDroneVoice
 	HitShape:
@@ -159,7 +156,7 @@ htk:
 	Mobile:
 		Speed: 75
 		TurnSpeed: 15
-		Crushes: crate, infantry
+		Locomotor: tracked
 		RequiresCondition: !notmobile && !chronodisable
 	Health:
 		HP: 180
@@ -211,7 +208,7 @@ htnk:
 	Mobile:
 		Speed: 75
 		TurnSpeed: 5
-		Crushes: fence, crate, infantry
+		Locomotor: heavytracked
 	Health:
 		HP: 400
 	Armor:
@@ -261,7 +258,7 @@ apoc:
 	Mobile:
 		Speed: 45
 		TurnSpeed: 5
-		Crushes: fence, crate, infantry
+		Locomotor: heavytracked
 	Health:
 		HP: 800
 	Armor:
@@ -312,7 +309,7 @@ ttnk:
 		Description: Russian special tank armed with dual small Tesla Coils.\n  Strong vs Vehicles, Infantry\n  Weak vs Aircraft
 	Mobile:
 		Speed: 75
-		Crushes: fence, crate, infantry
+		Locomotor: heavytracked
 	Health:
 		HP: 300
 	Armor:
@@ -365,8 +362,7 @@ dtruck:
 	Mobile:
 		Speed: 85
 		TurnSpeed: 8
-		WaitAverage: 0
-		Crushes: fence, crate, infantry
+		Locomotor: heavytracked
 	RevealsShroud:
 		Range: 4c0
 	Explodes:

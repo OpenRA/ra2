@@ -106,8 +106,10 @@ Assemblies:
 	ra2|OpenRA.Mods.RA2.dll
 
 ChromeLayout:
+	ra2|chrome/assetbrowser.yaml
 	ra2|chrome/ingame-player.yaml
 	ra2|chrome/ingame-infoobjectives.yaml
+	ra2|chrome/mainmenu.yaml
 	common|chrome/ingame-infostats.yaml
 	common|chrome/ingame-observerstats.yaml
 	common|chrome/musicplayer.yaml
@@ -123,7 +125,6 @@ ChromeLayout:
 	common|chrome/ingame-debug.yaml
 	common|chrome/ingame-perf.yaml
 	common|chrome/ingame-infochat.yaml
-	common|chrome/mainmenu.yaml
 	common|chrome/settings.yaml
 	common|chrome/credits.yaml
 	common|chrome/lobby.yaml
@@ -140,12 +141,12 @@ ChromeLayout:
 	common|chrome/map-chooser.yaml
 	common|chrome/connection.yaml
 	common|chrome/replaybrowser.yaml
-	ra2|chrome/assetbrowser.yaml
 	common|chrome/missionbrowser.yaml
 	common|chrome/confirmation-dialogs.yaml
 	common|chrome/color-picker.yaml
 	common|chrome/dropdowns.yaml
 	common|chrome/editor.yaml
+	common|chrome/playerprofile.yaml
 
 Weapons:
 	ra2|weapons/bullets.yaml

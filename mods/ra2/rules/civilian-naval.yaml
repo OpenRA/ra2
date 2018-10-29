@@ -69,14 +69,11 @@ cdest:
 		LocalOffset: 768,0,0
 		FireDelay: 2
 		RequiresCondition: !rank-elite
-		UpgradeMaxEnabledLevel: 0
-		UpgradeMaxAcceptedLevel: 1
 	Armament@elite:
 		Weapon: 155mmE
 		LocalOffset: 768,0,0
 		FireDelay: 2
 		RequiresCondition: rank-elite
-		UpgradeMinEnabledLevel: 1
 	AttackFrontal:
 	DetectCloaked:
 		CloakTypes: Underwater

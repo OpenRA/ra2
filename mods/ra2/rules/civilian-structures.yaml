@@ -2,19 +2,16 @@ cafncb:
 	Inherits: ^Fence
 	Tooltip:
 		Name: Black Fence
-		Description: Fence.\nCrushable by vehicles.
 
 cafncw:
 	Inherits: ^Fence
 	Tooltip:
 		Name: White Fence
-		Description: Fence.\nCrushable by vehicles.
 
 gasand:
 	Inherits: ^Fence
 	Tooltip:
 		Name: Sandbags
-		Description: Sandbags.\nCrushable by vehicles.
 	SoundOnDamageTransition:
 		DamagedSounds: gsancrua.wav, gsancrub.wav
 		DestroyedSounds: gsancrua.wav, gsancrub.wav
@@ -23,7 +20,6 @@ cafncp:
 	Inherits: ^Fence
 	Tooltip:
 		Name: Prison Camp Fence
-		Description: Fence.\nCrushable by vehicles.
 
 cahse01:
 	Inherits: ^CivBuilding
@@ -1307,6 +1303,7 @@ causfgl:
 
 carufgl:
 	Inherits: ^Flag
+	Tooltip:
 		Name: Russian Flag
 
 cairfgl:

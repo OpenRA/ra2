@@ -98,6 +98,14 @@ seal: # TODO: seala on SNOW
 		Facings: 8
 		Length: 6
 		Tick: 160
+	swim-idle1:
+		Start: 484
+		Length: 15
+		Tick: 160
+	swim-idle2:
+		Start: 499
+		Length: 15
+		Tick: 160
 	swim-run:
 		Start: 388
 		Facings: 8
@@ -127,6 +135,8 @@ seal: # TODO: seala on SNOW
 ccomand:
 	Inherits: seal
 	-swim-stand:
+	-swim-idle1:
+	-swim-idle2:
 	-swim-run:
 	-swim-die1:
 	-swim-die2:
@@ -148,9 +158,17 @@ tany:
 	run:
 		Tick: 120
 	swim-stand:
-		Start: 362
+		Start: 410
 		Facings: 8
 		Length: 6
+		Tick: 160
+	swim-idle1:
+		Start: 292
+		Length: 15
+		Tick: 160
+	swim-idle2:
+		Start: 307
+		Length: 15
 		Tick: 160
 	swim-run:
 		Start: 506
@@ -159,10 +177,10 @@ tany:
 		Tick: 120
 	swim-die1:
 		Start: 323
-		Length: 28
+		Length: 19
 	swim-die2:
 		Start: 342
-		Length: 22
+		Length: 20
 	swim-shoot:
 		Start: 554
 		Length: 6
@@ -201,15 +219,15 @@ jumpjet:
 		Start: 86
 		Tick: 100
 	die1: # copied from die-air
-	#	Start: 134
-	#	Length: 14
+		# Start: 134
+		# Length: 14
 		Start: 340
 		Length: 15
 		Facings: 2
 		Tick: 80
 	die2: # copied from die-air
-	#	Start: 149
-	#	Length: 14
+		# Start: 149
+		# Length: 14
 		Start: 340
 		Length: 15
 		Facings: 2

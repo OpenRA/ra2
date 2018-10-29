@@ -214,7 +214,7 @@ gaweap:
 		Start: 1
 		ShadowStart: 3
 		ZOffset: 1024
-# TODO: ggweap_3 and ggweap_4 are used for producing flying actors
+	# TODO: ggweap_3 and ggweap_4 are used for producing flying actors
 	build-air-open: ggweap_3
 		ShadowStart: 2
 	damaged-air-open: ggweap_3

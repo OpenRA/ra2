@@ -92,7 +92,7 @@ MirageGun:
 		Explosions: iron_fx
 		ImpactSounds:
 		ValidTargets: Ground, Water, Air
-	-Warhead@3EffWater:
+	-Warhead@3EffWater: CreateEffect
 
 MirageGunE:
 	Inherits: MirageGun

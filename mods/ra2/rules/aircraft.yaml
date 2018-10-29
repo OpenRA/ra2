@@ -226,7 +226,7 @@ pdplane:
 		Name: Cargo Plane
 	Aircraft:
 		CruiseAltitude: 5600
-		ROT: 5
+		TurnSpeed: 5
 		Speed: 100
 	Health:
 		HP: 1000

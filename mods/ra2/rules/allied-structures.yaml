@@ -50,10 +50,10 @@ gacnst:
 		Factions: france
 	Power:
 		Amount: 0
-	EmitInfantryOnSell@allies:
+	SpawnActorsOnSell@allies:
 		ActorTypes: e1, e1, e1, engineer
 		Factions: america, germany, england, france, korea
-	EmitInfantryOnSell@soviets:
+	SpawnActorsOnSell@soviets:
 		ActorTypes: e2, e2, e2, e2, engineer
 		Factions: cuba, libya, iraq, russia
 
@@ -499,8 +499,8 @@ gayard:
 		Sequence: idle-waves
 	WithRepairOverlay:
 		Sequence: repair
-	-EmitInfantryOnSell@allies:
-	-EmitInfantryOnSell@soviets:
+	-SpawnActorsOnSell@allies:
+	-SpawnActorsOnSell@soviets:
 	RequiresBuildableArea:
 		Adjacent: 13
 
@@ -710,7 +710,6 @@ gtgcan:
 		Offset: 400,0,0
 	AttackTurreted:
 		Voice: Attack
-		Recoils: true
 		PauseOnCondition: lowpower
 	Armament:
 		Weapon: GrandCannonWeapon
@@ -870,6 +869,7 @@ gacsph:
 		Queue: Support
 		BuildPaletteOrder: 80
 		Prerequisites: gatech, ~structures.allies
+		Description: Allows teleporting units in a 3x3 array.
 		BuildLimit: 1
 	Selectable:
 		Bounds: 176, 110, -5, -14
@@ -877,7 +877,6 @@ gacsph:
 		Cost: 2500
 	Tooltip:
 		Name: Chronosphere
-		Description: Allows teleporting units in a 3x3 array.
 	Building:
 		Footprint: xxx xxx xxx xxx
 		Dimensions: 4,3
@@ -919,11 +918,11 @@ atesla:
 		Queue: Support
 		BuildPaletteOrder: 40
 		Prerequisites: power, radar, ~structures.allies
+		Description: Advanced base defense.\nRequires power to operate.\n  Strong vs Infantry, Vehicles\n  Weak vs Aircraft
 	Valued:
 		Cost: 1500
 	Tooltip:
 		Name: Prism Cannon
-		Description: Advanced base defense.\nRequires power to operate.\n  Strong vs Infantry, Vehicles\n  Weak vs Aircraft
 	Building:
 		Footprint: x
 		Dimensions: 1, 1
@@ -941,7 +940,7 @@ atesla:
 		LocalOffset: 0,0,2500
 	AttackTesla:
 		Voice: Attack
-		ReloadTime: 60
+		ReloadDelay: 60
 		ChargeAudio: bpripow.wav
 		PauseOnCondition: lowpower
 	Power:
@@ -964,32 +963,27 @@ power:
 	Interactable:
 	Tooltip:
 		Name: Power Plant
-		Description: Power Plant
 
 refinery:
 	AlwaysVisible:
 	Interactable:
 	Tooltip:
 		Name: Ore Refinery
-		Description: Ore Refinery
 
 barracks:
 	AlwaysVisible:
 	Interactable:
 	Tooltip:
 		Name: Infantry Production
-		Description: Infantry Production
 
 radar:
 	AlwaysVisible:
 	Interactable:
 	Tooltip:
 		Name: Radar
-		Description: Radar
 
 repairpad:
 	AlwaysVisible:
 	Interactable:
 	Tooltip:
 		Name: Service Depot
-		Description: Service Depot

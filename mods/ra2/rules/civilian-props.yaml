@@ -80,8 +80,7 @@ camisc06:
 		Type: Concrete
 	Explodes:
 		Type: Footprint
-		Weapon: UnitExplodeSmall
-		Sequences: terrorist_explosion
+		Weapon: V3AmmunitionExplode
 	SoundOnDamageTransition:
 		DamagedSounds: bmetdama.wav, bmetdamb.wav, bmetdamc.wav
 	EditorTilesetFilter:
@@ -491,7 +490,6 @@ cakrmw:
 	Inherits: ^Wall
 	Tooltip:
 		Name: Kremlin Walls
-		Description: Walls of the Kremlin.
 	Armor:
 		Type: Concrete
 

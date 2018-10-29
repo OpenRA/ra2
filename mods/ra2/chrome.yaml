@@ -1043,6 +1043,12 @@ lobby-bits: spawnpoints.png
 	huepicker: 71,0,7,15
 	protected: 79,0,10,13
 	protected-disabled: 90,0,10,13
+	authentication: 77,16,12,13
+	authentication-disabled: 90,16,12,13
+	admin-registered: 102,0,16,16
+	admin-anonymous: 118,0,16,16
+	player-registered: 102,16,16,16
+	player-anonymous: 118,16,16,16
 
 strategic: strategic.png
 	unowned: 0,0,32,32

@@ -2,7 +2,6 @@ General:
 	Name: Snow
 	Id: SNOW
 	Extensions: .sno, .shp
-	Palette: isosno.pal
 	HeightDebugColors: 00000080, 00004480, 00008880, 0000CC80, 0000FF80, 4400CC80, 88008880, CC004480, FF110080, FF550080, FF990080, FFDD0080, DDFF0080, 99FF0080, 55FF0080, 11FF0080
 	EditorTemplateOrder: LAT Snow, ZMM Ramps, ZMM Height Pieces, Ramps, Cliff Set, Shore Pieces, LAT Grass, Clear/Rough LAT, Cliff/Water pieces, DirtRoadsBendy, DirtRoadsJunctions, DirtRoadsStraight, Bridges, Paved Roads, Water, ZMM Cliff Set, DirtRoadSlopes, ZMM DirtRoadSlopes, Ramps Big, ZMM Slope Set Pieces, Obsolete Height Pieces, Waterfalls-A, Waterfalls-B, Waterfalls-C, Waterfalls-D, Paved Road Ends, Farmland, Ramp edge fixup, ZMM Ramp edge fixup, Paved Road Slopes, ZMM Height Pieces, Tunnels, Tunnel Side, ZMM DirtRoadsBendy, ZMM DirtRoadJunctions, ZMM DirtRoadsStraight, ZMM Shore Pieces, ZMM Waterfalls-A, ZMM Waterfalls-B, ZMM Waterfalls-C, ZMM Waterfalls-D, ZMM Cliff/Water pieces, ZMM Water, Destroyable Cliffs, LAT SnowyRock, Rock/Clear LAT, LAT Icy, Grey/Clear LAT, DirtTunnel Floor, LAT Pavement, Pavement Detail, Pavement/Clear LAT, Paved road bits, Water bridge, Wood Bridges, Plane downed
 	SheetSize: 4096
@@ -36,7 +35,6 @@ Terrain:
 		Type: Water
 		Color: 745537
 		TargetTypes: Water
-		IsWater: True
 	TerrainType@DirtRoad:
 		Type: DirtRoad
 		AcceptsSmudgeType: SmallCrater, MediumCrater, LargeCrater, SmallScorch, MediumScorch, LargeScorch
