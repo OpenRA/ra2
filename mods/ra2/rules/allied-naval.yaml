@@ -154,6 +154,7 @@ dlph:
 	SelectionDecorations:
 		Palette: pips
 	Selectable:
+		Bounds: 40, 40
 	Voiced:
 		VoiceSet: DolphinVoice
 	Armament:

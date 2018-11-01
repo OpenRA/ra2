@@ -165,6 +165,7 @@ sqd:
 	SelectionDecorations:
 		Palette: pips
 	Selectable:
+		Bounds: 80, 30
 	Voiced:
 		VoiceSet: GiantSquidVoice
 	Armament:
