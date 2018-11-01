@@ -4,6 +4,8 @@ shad:
 	Inherits@MC: ^MindControllable
 	Tooltip:
 		Name: Night Hawk
+	Selectable:
+		Bounds: 70,60,0,-20
 	Health:
 		HP: 175
 	Armor:
@@ -75,6 +77,7 @@ zep:
 		BuildPaletteOrder: 90
 		Prerequisites: ~naweap, natech
 	Selectable:
+		Bounds: 100,60,0,-10
 	Aircraft:
 		CruiseAltitude: 5600
 		TurnSpeed: 5
