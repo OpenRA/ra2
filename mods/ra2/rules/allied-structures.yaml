@@ -705,7 +705,7 @@ gtgcan:
 	Selectable:
 		Bounds: 46, 62, 0, -20
 	Turreted:
-		TurnSpeed: 10
+		TurnSpeed: 3
 		InitialFacing: 224
 		Offset: 400,0,0
 	AttackTurreted:
