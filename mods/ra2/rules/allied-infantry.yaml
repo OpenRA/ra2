@@ -203,7 +203,7 @@ spy:
 		Prerequisites: gatech, ~gapile
 		Description: Infiltrates enemy structures for intel or\nsabotage. Exact effect depends on the\nbuilding infiltrated.\n  Unarmed\nSpecial Ability: Disguises
 	Valued:
-		Cost: 500
+		Cost: 1000
 	DeliversCash:
 		Payload: 250
 		PlayerExperience: 25
