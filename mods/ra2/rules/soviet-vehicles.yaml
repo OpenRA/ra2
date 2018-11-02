@@ -350,7 +350,7 @@ dtruck:
 		Prerequisites: naradr, ~vehicles.libya
 		Description: Demolition Truck, actively armed with nuclear explosives.
 	Valued:
-		Cost: 3000
+		Cost: 1500
 	Tooltip:
 		Name: Demolition Truck
 	Selectable:
