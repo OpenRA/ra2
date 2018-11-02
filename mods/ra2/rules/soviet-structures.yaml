@@ -654,7 +654,7 @@ napsis:
 		Prerequisites: natech, ~structures.soviets
 		Description: Detects enemy units and strikepoints
 	Valued:
-		Cost: 2000
+		Cost: 1000
 	Tooltip:
 		Name: Psychic Sensor
 	Building:
