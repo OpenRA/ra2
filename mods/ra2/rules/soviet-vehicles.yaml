@@ -69,11 +69,11 @@ harv:
 		Type: Medium
 	Armament@primary:
 		Weapon: 20mmrapid
-		LocalOffset: 0,50,384, 0,-50,384
+		LocalOffset: 256,0,1024
 		RequiresCondition: !rank-elite
 	Armament@elite:
 		Weapon: 20mmrapidE
-		LocalOffset: 0,50,384, 0,-50,384
+		LocalOffset: 256,0,1024
 		RequiresCondition: rank-elite
 	AttackTurreted:
 		Voice: Attack
@@ -269,15 +269,15 @@ apoc:
 		TurnSpeed: 5
 	Armament@primary:
 		Weapon: 120mmx
-		LocalOffset: 640,0,384
+		LocalOffset: 640,100,512, 640,-100,512
 		RequiresCondition: !rank-elite
 	Armament@elite:
 		Weapon: 120mmxE
-		LocalOffset: 640,0,384
+		LocalOffset: 640,100,512, 640,-100,512
 		RequiresCondition: rank-elite
 	Armament@antiair:
 		Weapon: MammothTusk
-		LocalOffset: 640,0,384
+		LocalOffset: 80,200,768, 80,-200,768
 	AttackTurreted:
 		Voice: Attack
 	AutoTarget:
@@ -320,11 +320,11 @@ ttnk:
 		TurnSpeed: 5
 	Armament@primary:
 		Weapon: TankBolt
-		LocalOffset: 280,196,384, 280,-196,384
+		LocalOffset: 280,196,640, 280,-196,640
 		RequiresCondition: !rank-elite
 	Armament@elite:
 		Weapon: TankBoltE
-		LocalOffset: 280,196,384, 280,-196,384
+		LocalOffset: 280,196,640, 280,-196,640
 		RequiresCondition: rank-elite
 	AttackTurreted:
 		Voice: Attack

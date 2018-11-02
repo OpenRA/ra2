@@ -114,11 +114,11 @@ mtnk:
 		TurnSpeed: 5
 	Armament@primary:
 		Weapon: 105mm
-		LocalOffset: 640,0,384
+		LocalOffset: 640,0,512
 		RequiresCondition: !rank-elite
 	Armament@elite:
 		Weapon: 105mmE
-		LocalOffset: 640,0,384
+		LocalOffset: 640,0,512
 		RequiresCondition: rank-elite
 	AttackTurreted:
 		Voice: Attack
@@ -161,11 +161,11 @@ tnkd:
 		Range: 8c0
 	Armament@primary:
 		Weapon: sabot
-		LocalOffset: 640,0,384
+		LocalOffset: 704,0,768
 		RequiresCondition: !rank-elite
 	Armament@elite:
 		Weapon: sabotE
-		LocalOffset: 640,0,384
+		LocalOffset: 704,0,768
 		RequiresCondition: rank-elite
 	AttackFrontal:
 		Voice: Attack
@@ -229,11 +229,11 @@ fv:
 			cleg: ifv-chrono
 	Armament@primary:
 		Weapon: HoverMissile
-		LocalOffset: 640, 0, 384
+		LocalOffset: 128,-128,1024, 128,128,1024
 		RequiresCondition: !rank-elite && !ifv-mg && !ifv-repair && !ifv-sniper && !ifv-flak && !ifv-tesla && !ifv-deso && !ifv-demo && !ifv-hero && !ifv-chrono
 	Armament@elite:
 		Weapon: HoverMissileE
-		LocalOffset: 640, 0, 384
+		LocalOffset: 128,-128,1024, 128,128,1024
 		RequiresCondition: rank-elite && !ifv-mg && !ifv-repair && !ifv-sniper && !ifv-flak && !ifv-tesla && !ifv-deso && !ifv-demo && !ifv-hero && !ifv-chrono
 	Armament@mg:
 		Weapon: CRM60
@@ -354,11 +354,11 @@ sref:
 		Offset: -30,0,85
 	Armament@primary:
 		Weapon: Comet
-		LocalOffset: 640, 0, 427
+		LocalOffset: 240,0,1280
 		RequiresCondition: !rank-elite
 	Armament@elite:
 		Weapon: SuperComet
-		LocalOffset: 640, 0, 427
+		LocalOffset: 240,0,1280
 		RequiresCondition: rank-elite
 	AttackTurreted:
 		Voice: Attack
@@ -403,11 +403,11 @@ mgtk:
 		Range: 9c0
 	Armament@primary:
 		Weapon: MirageGun
-		LocalOffset: 640, 0, 427
+		LocalOffset: 640,0,640
 		RequiresCondition: !rank-elite
 	Armament@elite:
 		Weapon: MirageGunE
-		LocalOffset: 640, 0, 427
+		LocalOffset: 640,0,640
 		RequiresCondition: rank-elite
 	AttackFrontal:
 		Voice: Attack

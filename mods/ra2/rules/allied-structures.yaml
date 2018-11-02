@@ -716,7 +716,7 @@ gtgcan:
 		Recoil: 127
 		RecoilRecovery: 26
 		MuzzleSequence: muzzle
-		LocalOffset: 1300,0,900
+		LocalOffset: 1792,0,1280
 	BodyOrientation:
 		QuantizedFacings: 16
 	RenderVoxels:

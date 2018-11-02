@@ -3,7 +3,9 @@
 	Range: 5c0
 	Report: vflaat1a.wav, vflaat1b.wav
 	Projectile: Bullet
-		Speed: 50c0
+		Image: 120mm
+		LaunchAngle: 128
+		Speed: 341
 	Warhead@1Dam: SpreadDamage
 		Spread: 64
 		Damage: 20
@@ -31,8 +33,8 @@
 ^AAFlak:
 	Inherits: ^Flak
 	Report: vflaat2a.wav, vflaat2b.wav, vflaat2c.wav, vflaat2d.wav
-	Projectile: Bullet
-		Speed: 100c0
+	-Projectile: Bullet
+	Projectile: InstantHit
 	Warhead@1Dam: SpreadDamage
 		Spread: 120
 		ValidTargets: Air
@@ -114,8 +116,8 @@
 	ReloadDelay: 20
 	Range: 4c0
 	Report: igiat1a.wav, igiat1b.wav, igiat1c.wav
-	Projectile: Bullet
-		Speed: 100c0
+	Projectile: InstantHit
+		Blockable: true
 	Warhead@1Dam: SpreadDamage
 		Spread: 64
 		Damage: 20

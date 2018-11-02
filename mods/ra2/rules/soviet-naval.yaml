@@ -129,8 +129,10 @@ hyd:
 		Voice: Attack
 	Armament@primary:
 		Weapon: FlakTrackGun
+		LocalOffset: 256,0,1408
 	Armament@secondary:
 		Weapon: FlakWeapon
+		LocalOffset: 256,0,1408
 	Explodes:
 		Weapon: UnitExplode
 		EmptyWeapon: UnitExplode

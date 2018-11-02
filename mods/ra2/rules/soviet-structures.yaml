@@ -861,11 +861,11 @@ tesla:
 	WithTeslaChargeOverlay:
 	Armament:
 		Weapon: CoilBolt
-		LocalOffset: 0,0,2200
+		LocalOffset: 0,0,3072
 		RequiresCondition: !charged
 	Armament@charged:
 		Weapon: OPCoilBolt
-		LocalOffset: 0,0,2200
+		LocalOffset: 0,0,3072
 		RequiresCondition: charged
 	AttackTesla:
 		Voice: Attack
