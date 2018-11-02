@@ -66,12 +66,12 @@ dest:
 		Bounds: 80, 80, 0, -6
 	Armament@primary:
 		Weapon: 155mm
-		LocalOffset: 768,0,0
+		LocalOffset: 1024,0,768
 		FireDelay: 2
 		RequiresCondition: !rank-elite
 	Armament@elite:
 		Weapon: 155mmE
-		LocalOffset: 768,0,0
+		LocalOffset: 1024,0,768
 		FireDelay: 2
 		RequiresCondition: rank-elite
 	AttackFrontal:

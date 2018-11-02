@@ -75,15 +75,19 @@ flakt:
 		Voice: Attack
 	Armament@primary:
 		Weapon: FlakGuyGun
+		LocalOffset: 256,0,1024
 		RequiresCondition: !rank-elite
 	Armament@secondary:
 		Weapon: FlakGuyAAGun
+		LocalOffset: 256,0,1024 
 		RequiresCondition: !rank-elite
 	Armament@primary-elite:
 		Weapon: FlakGuyGunE
+		LocalOffset: 256,0,1024
 		RequiresCondition: rank-elite
 	Armament@secondary-elite:
 		Weapon: FlakGuyAAGunE
+		LocalOffset: 256,0,1024
 		RequiresCondition: rank-elite
 	WithInfantryBody:
 		DefaultAttackSequence: shoot
@@ -135,7 +139,7 @@ shk:
 		RequiresCondition: rank-elite
 	Armament@charge:
 		Weapon: AssaultBolt
-		LocalOffset: 427,0,341
+		LocalOffset: 320,128,1024
 		TargetStances: Ally
 		ForceTargetStances: None
 		Cursor: ability

@@ -31,7 +31,7 @@ sabot:
 	ReloadDelay: 70
 	Report: vtadatta.wav, vtadattb.wav, vtadattc.wav
 	Projectile: Bullet
-		Speed: 100c0
+		Speed: 682
 	Warhead@1Dam: SpreadDamage
 		Spread: 190
 		Damage: 150
@@ -53,6 +53,9 @@ sabotE:
 	Inherits: sabot
 	Range: 6c768
 	ReloadDelay: 60
+	Projectile: Bullet
+		Blockable: false
+		Speed: 682
 	Warhead@1Dam: SpreadDamage
 		Damage: 175
 		Versus:
@@ -141,6 +144,8 @@ MirageGunE:
 	ReloadDelay: 60
 	Range: 5c0
 	Report: vgriatta.wav, vgriattb.wav, vgriattc.wav
+	Projectile: Bullet
+		Speed: 682
 	Warhead@1Dam: SpreadDamage
 		Damage: 65
 		Versus:
@@ -161,6 +166,8 @@ MirageGunE:
 	ReloadDelay: 75
 	Burst: 2
 	BurstDelays: 5
+	Projectile: Bullet
+		Speed: 682
 	Warhead@1Dam: SpreadDamage
 		Damage: 55
 		Versus:
@@ -180,6 +187,8 @@ MirageGunE:
 	ReloadDelay: 65
 	Range: 5c768
 	Report: vrhiatta.wav, vrhiattb.wav, vrhiattc.wav, vrhiattd.wav
+	Projectile: Bullet
+		Speed: 682
 	Warhead@1Dam: SpreadDamage
 		Damage: 90
 		Versus:
@@ -200,6 +209,8 @@ MirageGunE:
 	ReloadDelay: 80
 	Burst: 2
 	BurstDelays: 5
+	Projectile: Bullet
+		Speed: 682
 	Warhead@1Dam: SpreadDamage
 		Damage: 85
 		Versus:
@@ -221,6 +232,8 @@ MirageGunE:
 	Inherits: 120mm
 	Report: vapoat1a.wav
 	Burst: 2
+	Projectile: Bullet
+		Speed: 682
 	Warhead@1Dam: SpreadDamage
 		Damage: 100
 		Versus:
@@ -235,6 +248,8 @@ MirageGunE:
 	Inherits: 120mmx
 	Burst: 4
 	BurstDelays: 5
+	Projectile: Bullet
+		Speed: 682
 	Warhead@1Dam: SpreadDamage
 		Versus:
 			None: 100
@@ -253,6 +268,9 @@ MirageGunE:
 	ReloadDelay: 110
 	Range: 8c0
 	Report: vdesatta.wav, vrdesattb.wav
+	Projectile: Bullet
+		Blockable: false
+		Speed: 682
 	Warhead@1Dam: SpreadDamage
 		Damage: 60
 		Versus:
