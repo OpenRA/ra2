@@ -209,9 +209,9 @@ deso:
 		Prerequisites: naradr, ~infantry.iraq
 		Description: Carries a radiation-emitting weapon.\nCan deploy for area-of-effect damage.\n  Strong vs Infantry, Light armor\n  Weak vs Tanks, Aircraft
 	Valued:
-		Cost: 200
+		Cost: 600
 	DeliversCash:
-		Payload: 100
+		Payload: 300
 		PlayerExperience: 10
 		Voice: Move
 	Tooltip:
