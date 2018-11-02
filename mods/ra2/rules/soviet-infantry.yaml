@@ -54,9 +54,9 @@ flakt:
 		BuildPaletteOrder: 70
 		Description: Anti-Air/Anti-Infantry unit.\n  Strong vs Aircraft, Infantry\n  Weak vs Vehicles
 	Valued:
-		Cost: 100
+		Cost: 300
 	DeliversCash:
-		Payload: 50
+		Payload: 150
 		PlayerExperience: 5
 		Voice: Move
 	Tooltip:
