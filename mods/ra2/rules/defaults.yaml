@@ -614,7 +614,6 @@
 		Voice: Melted
 		DeathTypes: RadiationDeath
 	MustBeDestroyed:
-		RequiredForShortGame: true
 	Cloneable:
 		Types: infantry
 	Voiced:
@@ -705,8 +704,7 @@
 	ProximityCaptor:
 		Types: CivilianInfantry
 	ScaredyCat:
-	MustBeDestroyed:
-		RequiredForShortGame: true
+	-MustBeDestroyed:
 	-TakeCover:
 	Voiced:
 		VoiceSet: CivilianAlliedMaleVoice
@@ -805,7 +803,6 @@
 		LightAmbientColor: -0.5,-0.5,-0.5
 		LightDiffuseColor: 1.4,1.4,1.4
 	MustBeDestroyed:
-		RequiredForShortGame: true
 	Voiced:
 		VoiceSet: AlliedVehicleVoice
 	Chronoshiftable:
@@ -988,7 +985,6 @@
 		LightAmbientColor: -0.5,-0.5,-0.5
 		LightDiffuseColor: 1.4,1.4,1.4
 	MustBeDestroyed:
-		RequiredForShortGame: true
 	Voiced:
 		VoiceSet: SovietNavalVoice
 	Chronoshiftable:
