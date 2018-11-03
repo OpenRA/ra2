@@ -558,6 +558,7 @@
 	RevealsShroud:
 		Range: 4c0
 	Mobile:
+		Speed: 60
 		Voice: Move
 		Locomotor: foot
 	WithTextControlGroupDecoration:

@@ -20,8 +20,6 @@ e2:
 		Bounds: 20, 30, 0, -11
 	Health:
 		HP: 125
-	Mobile:
-		Speed: 34
 	Passenger:
 		PipType: Green
 	RevealsShroud:
@@ -65,8 +63,6 @@ flakt:
 		Bounds: 20, 30, 0, -11
 	Health:
 		HP: 100
-	Mobile:
-		Speed: 34
 	Passenger:
 		PipType: Green
 	RevealsShroud:
@@ -117,8 +113,6 @@ shk:
 		Bounds: 20, 30, 0, -11
 	Health:
 		HP: 130
-	Mobile:
-		Speed: 51
 	RevealsShroud:
 		Range: 6c0
 	Armor:
@@ -177,7 +171,7 @@ terror:
 	Health:
 		HP: 75
 	Mobile:
-		Speed: 71
+		Speed: 90
 	RevealsShroud:
 		Range: 6c0
 	Armor:
@@ -220,8 +214,6 @@ deso:
 		Bounds: 20, 30, 0, -11
 	Health:
 		HP: 150
-	Mobile:
-		Speed: 41
 	RevealsShroud:
 		Range: 6c0
 	Armor:
@@ -268,8 +260,6 @@ ivan:
 		VoiceSet: CrazyIvanVoice
 	Health:
 		HP: 125
-	Mobile:
-		Speed: 60
 	RevealsShroud:
 		Range: 6c0
 	Armor:
@@ -343,7 +333,6 @@ yuri:
 	Health:
 		HP: 100
 	Mobile:
-		Speed: 60
 		RequiresCondition: !deployed && !deploying && !chronodisable
 	RevealsShroud:
 		Range: 12c0
@@ -412,6 +401,8 @@ yuripr:
 		HP: 200
 	Armor:
 		Type: Flak
+	Mobile:
+		Speed: 90
 	RevealsShroud:
 		Range: 8c0
 	Armament:
