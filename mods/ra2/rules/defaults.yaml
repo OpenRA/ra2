@@ -928,6 +928,7 @@
 		CruiseAltitude: 5600
 		CruisingCondition: cruising
 		AltitudeVelocity: 120
+		MaximumPitch: 128
 		LandWhenIdle: false
 		TakeOffOnCreation: false
 	Hovers@CRUISING:

@@ -205,3 +205,52 @@ dlph:
 	HitShape:
 	OwnerLostAction:
 		Action: Kill
+
+carrier:
+	Inherits: ^Ship
+	Inherits@MC: ^MindControllable
+	Buildable:
+		Queue: Ship
+		BuildPaletteOrder: 60
+		Prerequisites: gatech, ~gayard
+		Description: Aircraft carrier ship.\n  Strong vs Tanks, Structures\n  Weak vs Infantry
+	Valued:
+		Cost: 2000
+	Tooltip:
+		Name: Aircraft Carrier
+	Health:
+		HP: 800
+	Armor:
+		Type: Heavy
+	RevealsShroud:
+		Range: 7c0
+		Type: CenterPosition
+	Selectable:
+		Bounds: 60,80,0,-6
+	Mobile:
+		TurnSpeed: 1
+		Speed: 60
+	RevealsShroud:
+		Range: 7c0
+	Turreted:
+		TurnSpeed: 255
+	AttackTurreted:
+		Voice: Attack
+	AutoTarget:
+	Explodes:
+		Weapon: UnitExplode
+		EmptyWeapon: UnitExplode
+	WithVoxelBody:
+	RenderSprites:
+	Voiced:
+		VoiceSet: AlliedNavalVoice
+	HitShape:
+	CarrierMaster:
+		Actors: hornet, hornet, hornet
+		RespawnTicks: 300
+		SpawnAllAtOnce: true
+	Exit@0:
+		SpawnOffset: 0,0,0
+		Facing: 0
+	Armament:
+		Weapon: HornetLauncher
