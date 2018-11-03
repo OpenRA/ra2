@@ -12,7 +12,7 @@ Player:
 			Production: gapile, nahand, gaweap, naweap, gaairc, amradr
 		UnitsCommonNames:
 			Mcv: amcv, smcv
-			ExcludeFromSquads: cmin, smin
+			ExcludeFromSquads: cmin, harv
 		BuildingLimits:
 			garefn: 4
 			narefn: 4
