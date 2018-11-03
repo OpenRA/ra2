@@ -18,8 +18,6 @@ engineer:
 		Bounds: 20, 30, 0, -11
 	Health:
 		HP: 75
-	Mobile:
-		Speed: 56
 	Passenger:
 		PipType: Blue
 	EngineerRepair:
@@ -61,7 +59,7 @@ dog:
 	Health:
 		HP: 100
 	Mobile:
-		Speed: 99
+		Speed: 120
 	Passenger:
 		PipType: Yellow
 	RevealsShroud:
@@ -124,7 +122,6 @@ e1:
 	Health:
 		HP: 125
 	Mobile:
-		Speed: 31
 	Passenger:
 		PipType: Green
 	RevealsShroud:
@@ -173,8 +170,6 @@ snipe:
 		Description: Special anti-infantry unit.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
 	Selectable:
 		Bounds: 20, 30, 0, -11
-	Mobile:
-		Speed: 35
 	Health:
 		HP: 125
 	Passenger:
@@ -215,8 +210,6 @@ spy:
 		Bounds: 24, 28, -1, -8
 	Health:
 		HP: 25
-	Mobile:
-		Speed: 56
 	RevealsShroud:
 		Range: 5c0
 	Passenger:
@@ -270,7 +263,7 @@ ghost:
 	Health:
 		HP: 125
 	Mobile:
-		Speed: 71
+		Speed: 75
 		Locomotor: swimsuit
 	RevealsShroud:
 		Range: 8c0
@@ -408,7 +401,7 @@ tany:
 	Health:
 		HP: 125
 	Mobile:
-		Speed: 71
+		Speed: 75
 		Locomotor: swimsuit
 	RevealsShroud:
 		Range: 6c0
@@ -476,8 +469,8 @@ jumpjet:
 		CruiseAltitude: 3072
 		LandWhenIdle: false
 		InitialFacing: 20
-		TurnSpeed: 10
-		Speed: 100
+		TurnSpeed: 255
+		Speed: 140
 		AltitudeVelocity: 83
 		Voice: Move
 		AirborneCondition: airborne
@@ -526,7 +519,7 @@ jumpjet.husk:
 		Name: Rocketeer
 	Aircraft:
 		TurnSpeed: 10
-		Speed: 100
+		Speed: 140
 	FallsToEarth:
 		Explosion: UnitExplodeSmall
 	RevealsShroud:

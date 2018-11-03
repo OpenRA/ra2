@@ -18,7 +18,7 @@ amcv:
 	Armor:
 		Type: Heavy
 	Mobile:
-		Speed: 80
+		Speed: 60
 		TurnSpeed: 5
 		Locomotor: heavytracked
 	RevealsShroud:
@@ -71,7 +71,7 @@ cmin:
 	Armor:
 		Type: Medium
 	Mobile:
-		Speed: 85
+		Speed: 60
 		TurnSpeed: 8
 		Locomotor: tracked
 	RevealsShroud:
@@ -101,7 +101,7 @@ mtnk:
 		Prerequisites: ~gaweap
 		Description: Allied Main Battle Tank.\n  Strong vs Vehicles, Ships\n  Weak vs Infantry, Aircraft
 	Mobile:
-		Speed: 90
+		Speed: 105
 		TurnSpeed: 5
 		Locomotor: heavytracked
 	Health:
@@ -150,7 +150,7 @@ tnkd:
 		Prerequisites: ~vehicles.germany
 		Description: Special anti-armor unit.\n  Strong vs Vehicles, Ships\n  Weak vs Infantry, Aircraft
 	Mobile:
-		Speed: 70
+		Speed: 75
 		TurnSpeed: 5
 		Locomotor: heavytracked
 	Health:
@@ -196,7 +196,7 @@ fv:
 		Prerequisites: ~gaweap
 		Description: Multi-Purpose Vehicle.\nWithout passenger:\n  Strong vs Infantry, Aircraft\n  Weak vs Vehicles, Ships\nSpecial Ability: Armament depends on passenger.
 	Mobile:
-		Speed: 128
+		Speed: 150
 		TurnSpeed: 5
 		RequiresCondition: !notmobile && !chronodisable
 	Health:
@@ -344,7 +344,7 @@ sref:
 	Armor:
 		Type: Heavy
 	Mobile:
-		TurnSpeed: 6
+		TurnSpeed: 5
 		Speed: 60
 		Locomotor: heavytracked
 	RevealsShroud:

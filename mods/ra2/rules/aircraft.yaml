@@ -32,7 +32,7 @@ shad:
 		LandWhenIdle: true
 		LandableTerrainTypes: Clear, Rough, Road, DirtRoad, Ore, Gems
 		TurnSpeed: 10
-		Speed: 100
+		Speed: 140
 		AltitudeVelocity: 120
 		CruisingCondition: cruising
 	RenderSprites:
@@ -56,7 +56,7 @@ shadhusk:
 		Name: Night Hawk
 	Aircraft:
 		TurnSpeed: 10
-		Speed: 100
+		Speed: 140
 	RevealsShroud:
 		Range: 7c0
 		Type: CenterPosition
@@ -81,7 +81,7 @@ zep:
 	Aircraft:
 		CruiseAltitude: 5600
 		TurnSpeed: 5
-		Speed: 50
+		Speed: 25
 		Voice: Move
 		AirborneCondition: airborne
 		CanHover: True
@@ -120,7 +120,7 @@ zephusk:
 		Name: Kirov Airship
 	Aircraft:
 		TurnSpeed: 5
-		Speed: 50
+		Speed: 25
 	FallsToEarth:
 		Spins: False # TODO: In the original they did spin, but that just looks weird.
 	RevealsShroud:
@@ -144,7 +144,7 @@ orca:
 		Description: Fast assault fighter\n  Strong vs Buildings, Vehicles\n  Weak vs Infantry, Aircraft
 	Aircraft:
 		TurnSpeed: 3
-		Speed: 140
+		Speed: 210
 		RearmBuildings: gaairc, amradr
 	Selectable:
 		Bounds: 30,24
@@ -184,7 +184,7 @@ orcahusk:
 		Name: Harrier
 	Aircraft:
 		TurnSpeed: 5
-		Speed: 140
+		Speed: 210
 	RenderVoxels:
 		Image: falc
 
@@ -215,7 +215,7 @@ beaghusk:
 		Name: Black Eagle
 	Aircraft:
 		TurnSpeed: 5
-		Speed: 140
+		Speed: 210
 	RenderVoxels:
 		Image: beag
 
@@ -230,7 +230,7 @@ pdplane:
 	Aircraft:
 		CruiseAltitude: 5600
 		TurnSpeed: 5
-		Speed: 100
+		Speed: 225
 	Health:
 		HP: 1000
 	RevealsShroud:

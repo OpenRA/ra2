@@ -18,8 +18,8 @@ smcv:
 	Armor:
 		Type: Heavy
 	Mobile:
-		Speed: 85
-		TurnSpeed: 8
+		Speed: 60
+		TurnSpeed: 5
 		Locomotor: heavytracked
 	RevealsShroud:
 		Range: 4c0
@@ -82,7 +82,7 @@ harv:
 		TurnSpeed: 10
 		Offset: 196,0,-24
 	Mobile:
-		Speed: 85
+		Speed: 60
 		TurnSpeed: 8
 		Locomotor: tracked
 	RevealsShroud:
@@ -110,7 +110,7 @@ dron:
 		Prerequisites: ~naweap
 		Description: \n  Strong vs Infantry, Vehicles\n  Weak vs Aircraft
 	Mobile:
-		Speed: 105
+		Speed: 150
 		TurnSpeed: 15
 	Health:
 		HP: 100
@@ -154,8 +154,8 @@ htk:
 		Prerequisites: ~naweap
 		Description: Infantry Transport and Anti-Air/Anti-Infantry vehicle.\n  Strong vs Aircraft, Infantry\n  Weak vs Vehicles
 	Mobile:
-		Speed: 75
-		TurnSpeed: 15
+		Speed: 120
+		TurnSpeed: 5
 		Locomotor: tracked
 		RequiresCondition: !notmobile && !chronodisable
 	Health:
@@ -206,7 +206,7 @@ htnk:
 		Prerequisites: ~naweap
 		Description: Soviet Main Battle Tank.\n  Strong vs Vehicles\n  Weak vs Infantry, Aircraft
 	Mobile:
-		Speed: 75
+		Speed: 90
 		TurnSpeed: 5
 		Locomotor: heavytracked
 	Health:
@@ -256,7 +256,7 @@ apoc:
 		Prerequisites: ~naweap, natech
 		Description: Soviet Advanced Battle Tank with Double Barrel\nand Anti-Aircraft Missile Launcher.\n  Strong vs Vehicles, Aircraft\n  Weak vs Infantry
 	Mobile:
-		Speed: 45
+		Speed: 60
 		TurnSpeed: 5
 		Locomotor: heavytracked
 	Health:
@@ -360,8 +360,8 @@ dtruck:
 	Armor:
 		Type: Light
 	Mobile:
-		Speed: 85
-		TurnSpeed: 8
+		Speed: 75
+		TurnSpeed: 5
 		Locomotor: heavytracked
 	RevealsShroud:
 		Range: 4c0
