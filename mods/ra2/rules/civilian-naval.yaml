@@ -47,42 +47,10 @@ cruise:
 	HitShape:
 
 cdest:
-	Inherits: ^Ship
-	Inherits@MC: ^MindControllable
-	Valued:
-		Cost: 1000
+	Inherits: dest
+	-Buildable:
 	Tooltip:
 		Name: Coast Guard Boat
-	Health:
-		HP: 600
 	Armor:
 		Type: Light
-	Mobile:
-		TurnSpeed: 5
-		Speed: 105
-	RevealsShroud:
-		Range: 7c0
-	Selectable:
-		Bounds: 80, 80, 0, -6
-	Armament@primary:
-		Weapon: 155mm
-		LocalOffset: 768,0,0
-		FireDelay: 2
-		RequiresCondition: !rank-elite
-	Armament@elite:
-		Weapon: 155mmE
-		LocalOffset: 768,0,0
-		FireDelay: 2
-		RequiresCondition: rank-elite
-	AttackFrontal:
-	DetectCloaked:
-		CloakTypes: Underwater
-		Range: 4c0
-	RenderDetectionCircle:
-	Explodes:
-		Weapon: UnitExplode
-		EmptyWeapon: UnitExplode
-	WithVoxelBody:
-	RenderSprites:
 	-Voiced:
-	HitShape:
