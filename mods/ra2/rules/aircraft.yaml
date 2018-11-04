@@ -233,9 +233,6 @@ pdplane:
 		Speed: 225
 	Health:
 		HP: 1000
-	RevealsShroud:
-		Range: 6c0
-		Type: CenterPosition
 	RenderSprites:
 	RenderVoxels:
 	WithVoxelBody:
