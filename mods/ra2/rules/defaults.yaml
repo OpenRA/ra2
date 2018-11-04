@@ -962,7 +962,7 @@
 	Selectable:
 		Bounds: 32,32
 	Targetable:
-		TargetTypes: Ground, Repair
+		TargetTypes: Ground, Water, Repair
 	Repairable:
 		Voice: Attack
 		RepairBuildings: gayard, nayard
