@@ -236,7 +236,6 @@ pdplane:
 	Health:
 		HP: 1000
 	RenderSprites:
-	RenderVoxels:
 	WithVoxelBody:
 	Cargo:
 		MaxWeight: 10
