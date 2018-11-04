@@ -224,6 +224,8 @@ pdplane:
 	Valued:
 		Cost: 2000
 	-Selectable:
+	Interactable:
+		Bounds: 100,80
 	RejectsOrders:
 	Tooltip:
 		Name: Cargo Plane
@@ -244,7 +246,6 @@ pdplane:
 	SpawnActorOnDeath:
 		Actor: pdplanehusk
 	HitShape:
-	Interactable:
 
 pdplanehusk:
 	Inherits: ^PlaneHusk
