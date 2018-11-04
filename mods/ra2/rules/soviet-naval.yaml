@@ -157,6 +157,9 @@ sqd:
 	Health:
 		HP: 200
 	SelfHealing:
+		Step: 2
+		Delay: 100
+		DamageCooldown: 125
 	Mobile:
 		TurnSpeed: 6
 		Speed: 120
