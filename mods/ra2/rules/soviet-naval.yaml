@@ -149,7 +149,7 @@ sqd:
 		Prerequisites: natech, ~nayard
 		Description: Ocean creature\npunches enemies in close combat.\n  Strong vs Ships
 	Valued:
-		Cost: 500
+		Cost: 1000
 	Tooltip:
 		Name: Giant Squid
 	Armor:
