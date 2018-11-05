@@ -5,10 +5,6 @@ language: csharp
 mono: 4.6.1
 sudo: false
 
-cache:
-  directories:
-  - ~/.openra/Content
-
 addons:
   apt:
     packages:
