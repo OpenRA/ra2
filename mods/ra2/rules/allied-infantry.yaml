@@ -551,8 +551,6 @@ cleg:
 		Voice: Move
 	Health:
 		HP: 125
-	Mobile:
-		Speed: 51
 	RevealsShroud:
 		Range: 8c0
 	Passenger:
