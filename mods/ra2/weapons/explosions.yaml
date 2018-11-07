@@ -1,37 +1,43 @@
 UnitExplode:
-	Warhead@1Dam: SpreadDamage
-		Spread: 426
-		Damage: 50
-		Falloff: 1000, 368, 135, 50, 18, 7, 0
-		Versus:
-			None: 90
-			Wood: 75
-			Light: 60
-			Heavy: 25
-		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
-	Warhead@2Eff: CreateEffect
+	Warhead@1Eff: CreateEffect
 		Explosions: large_twlt
 		ImpactSounds: expnew09.wav
 		ValidTargets: Ground, Water, Air
 
 UnitExplodeSmall:
 	Inherits: UnitExplode
-	Warhead@1Dam: SpreadDamage
-		Damage: 40
-	Warhead@2Eff: CreateEffect
+	Warhead@1Eff: CreateEffect
 		Explosions: medium_brnl
 		ImpactSounds: expnew13.wav
 		ValidTargets: Ground, Water, Air
 
 V3AmmunitionExplode:
 	Inherits: UnitExplodeSmall
-	Warhead@2Eff: CreateEffect
+	Warhead@1Eff: CreateEffect
 		Explosions: terrorist_explosion
 
 BuildingExplode:
 	Inherits: UnitExplodeSmall
-	Warhead@2Eff: CreateEffect
+	Warhead@1Eff: CreateEffect
 		Explosions: building, large_bang, large_brnl, verylarge_clsn, large_tumu
+
+KirovExplode:
+	Inherits: UnitExplode
+	Warhead@2Dam: SpreadDamage
+		Spread: 426
+		Damage: 75
+		Falloff: 1000, 368, 135, 50, 18, 7, 0
+		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
+
+ApocExplode:
+	Inherits: KirovExplode
+	Warhead@2Dam: SpreadDamage
+		Damage: 40
+
+PlaneExplode:
+	Inherits: KirovExplode
+	Warhead@2Dam: SpreadDamage
+		Damage: 20
 
 IvanBomber:
 	ReloadDelay: 50

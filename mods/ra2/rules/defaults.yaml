@@ -926,6 +926,7 @@
 ^PlaneHusk:
 	Inherits: ^Husk
 	FallsToEarth:
+		Explosion: PlaneExplode
 		Spins: false
 		Moves: true
 
