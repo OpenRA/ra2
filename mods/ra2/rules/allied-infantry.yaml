@@ -310,6 +310,7 @@ ccomand:
 		HP: 100
 	Mobile:
 		Locomotor: foot
+	-Crushable:
 	PortableChrono:
 		ChronoshiftSound: ichrmova.wav
 		DeployCursor: chronosphere
