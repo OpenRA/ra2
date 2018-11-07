@@ -121,6 +121,7 @@ shk:
 		Range: 6c0
 	Armor:
 		Type: Plate
+	-Crushable:
 	Passenger:
 		PipType: Red
 	AttackFrontal:
@@ -222,6 +223,7 @@ deso:
 		Range: 6c0
 	Armor:
 		Type: Plate
+	-Crushable:
 	Passenger:
 		PipType: Red
 	Armament@primary:
@@ -300,6 +302,7 @@ civan:
 		Name: Chrono Ivan
 	Valued:
 		Cost: 1000
+	-Crushable:
 	DeliversCash:
 		Payload: 500
 		PlayerExperience: 50
@@ -405,6 +408,7 @@ yuripr:
 		HP: 200
 	Armor:
 		Type: Flak
+	-Crushable:
 	Mobile:
 		Speed: 90
 	RevealsShroud:
