@@ -57,6 +57,8 @@ shadhusk:
 	Aircraft:
 		TurnSpeed: 10
 		Speed: 140
+	FallsToEarth:
+		Explosion: UnitExplode
 	RevealsShroud:
 		Range: 7c0
 		Type: CenterPosition
@@ -122,6 +124,7 @@ zephusk:
 		TurnSpeed: 5
 		Speed: 25
 	FallsToEarth:
+		Explosion: KirovExplode
 		Spins: False # TODO: In the original they did spin, but that just looks weird.
 	RevealsShroud:
 		Range: 8c0
