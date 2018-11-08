@@ -31,6 +31,10 @@ nacnst:
 		Offset: 1,1
 		Facing: 96
 		DeployCursor: undeploy
+		RequiresCondition: factundeploy
+	GrantConditionOnPrerequisite@GLOBALFACTUNDEPLOY:
+		Condition: factundeploy
+		Prerequisites: global-factundeploy
 	ProductionBar@Building:
 		ProductionType: Building
 	ProductionBar@Support:
