@@ -157,6 +157,7 @@ shk:
 
 terror:
 	Inherits: ^Infantry
+	Inherits@MC: ^MindControllable
 	Buildable:
 		Queue: Infantry
 		BuildAtProductionType: Infantry
