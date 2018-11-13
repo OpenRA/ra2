@@ -81,6 +81,7 @@ napowr:
 	Power:
 		Amount: 150
 	InfiltrateForPowerOutage:
+		Types: SpyInfiltrate
 	AffectedByPowerOutage:
 	ScalePowerWithHealth:
 	SoundOnDamageTransition:
@@ -176,6 +177,7 @@ nahand:
 		Amount: -10
 	ConditionManager:
 	InfiltrateForSupportPower:
+		Types: SpyInfiltrate
 		Proxy: barracks.infiltrated
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
@@ -217,6 +219,7 @@ narefn:
 	CustomSellValue:
 		Value: 300
 	InfiltrateForCash:
+		Types: SpyInfiltrate
 		Percentage: 50
 		Notification: CreditsStolen
 		Minimum: 500
@@ -271,6 +274,7 @@ naradr:
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
 	InfiltrateForExploration:
+		Types: SpyInfiltrate
 	Power:
 		Amount: -50
 
@@ -332,6 +336,7 @@ naweap:
 	Power:
 		Amount: -25
 	InfiltrateForSupportPower:
+		Types: SpyInfiltrate
 		Proxy: warfactory.infiltrated
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
@@ -538,6 +543,7 @@ nanrct:
 	Power:
 		Amount: 2000
 	InfiltrateForPowerOutage:
+		Types: SpyInfiltrate
 	AffectedByPowerOutage:
 	ScalePowerWithHealth:
 	SoundOnDamageTransition:
@@ -573,6 +579,7 @@ natech:
 	Power:
 		Amount: -100
 	InfiltrateForSupportPower:
+		Types: SpyInfiltrate
 		Proxy: soviets.tech.infiltrated
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
