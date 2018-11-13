@@ -87,6 +87,7 @@ gapowr:
 	Power:
 		Amount: 200
 	InfiltrateForPowerOutage:
+		Types: SpyInfiltrate
 	AffectedByPowerOutage:
 	ScalePowerWithHealth:
 	SoundOnDamageTransition:
@@ -156,6 +157,7 @@ gapile:
 	Power:
 		Amount: -10
 	InfiltrateForSupportPower:
+		Types: SpyInfiltrate
 		Proxy: barracks.infiltrated
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
@@ -197,6 +199,7 @@ garefn:
 	CustomSellValue:
 		Value: 300
 	InfiltrateForCash:
+		Types: SpyInfiltrate
 		Percentage: 50
 		Notification: CreditsStolen
 		Minimum: 500
@@ -294,6 +297,7 @@ gaairc:
 		ZOffset: 256
 		RequiresCondition: primary
 	InfiltrateForExploration:
+		Types: SpyInfiltrate
 
 amradr:
 	Inherits: gaairc
@@ -376,6 +380,7 @@ gaweap:
 	Power:
 		Amount: -25
 	InfiltrateForSupportPower:
+		Types: SpyInfiltrate
 		Proxy: warfactory.infiltrated
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
@@ -575,6 +580,7 @@ gatech:
 	Power:
 		Amount: -100
 	InfiltrateForSupportPower:
+		Types: SpyInfiltrate
 		Proxy: allies.tech.infiltrated
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
