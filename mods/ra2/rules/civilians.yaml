@@ -11,65 +11,45 @@ civ3:
 
 civa:
 	Inherits: ^CivilianInfantry
-	Tooltip:
-		Name: Texan
 	Voiced:
 		VoiceSet: CivilianTexanVoice
 
 civb:
 	Inherits: ^CivilianInfantry
-	Tooltip:
-		Name: Texan
 	Voiced:
 		VoiceSet: CivilianTexanVoice
 
 civc:
 	Inherits: ^CivilianInfantry
-	Tooltip:
-		Name: Texan
 	Voiced:
 		VoiceSet: CivilianTexanVoice
 
 civbbp:
 	Inherits: ^CivilianInfantry
-	Tooltip:
-		Name: Baseball Player
 
 civbfm:
 	Inherits: ^CivilianInfantry
-	Tooltip:
-		Name: Beach Fat Male
 
 civbf:
 	Inherits: ^CivilianInfantry
 	Voiced:
 		VoiceSet: CivilianAlliedFemaleVoice
-	Tooltip:
-		Name: Beach Fat Female
 
 civbtm:
 	Inherits: ^CivilianInfantry
-	Tooltip:
-		Name: Beach Thin Male
 
 civsfm:
 	Inherits: ^CivilianInfantry
-	Tooltip:
-		Name: Snow Fat Male
 	Voiced:
 		VoiceSet: CivilianSovietMaleVoice
 
 civsf:
 	Inherits: ^CivilianInfantry
-	Tooltip:
-		Name: Snow Fat Male
 	Voiced:
 		VoiceSet: CivilianSovietFemaleVoice
 
 civstm:
 	Inherits: ^CivilianInfantry
-	Tooltip:
-		Name: Snow Thin Male
 	Voiced:
 		VoiceSet: CivilianSovietMaleVoice
 

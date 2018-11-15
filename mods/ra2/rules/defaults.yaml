@@ -693,7 +693,7 @@
 		PlayerExperience: 2
 		Voice: Move
 	Tooltip:
-		GenericName: Civilian
+		Name: Civilian
 	Health:
 		HP: 50
 	Mobile:
