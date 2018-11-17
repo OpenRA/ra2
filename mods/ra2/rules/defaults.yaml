@@ -512,7 +512,6 @@
 		Type: wall
 	Sellable:
 		SellSounds: uselbuil.wav
-	Demolishable:
 	Valued:
 		Cost: 100
 	Health:
