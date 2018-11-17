@@ -6,6 +6,62 @@
 		ZRamp: 1
 		Offset: 0, 0, 0.5
 
+lobrdb_a:
+	Inherits: ^bridge
+	idle: lobrdb10
+	idle2: lobrdb11
+	idle3: lobrdb12
+	idle4: lobrdb13
+	adead: lobrdb15
+	bdead: lobrdb14
+	abdead: lobrdb16
+
+lobrdb_a_d:
+	Inherits: ^bridge
+	idle: lobrdb28
+	aramp: lobrdb17
+	bramp: lobrdb18
+	abramp: lobrdb28
+	editor: lobrdb10
+
+lobrdb_b:
+	Inherits: ^bridge
+	idle: lobrdb01
+	idle2: lobrdb02
+	idle3: lobrdb03
+	idle4: lobrdb04
+	adead: lobrdb05
+	bdead: lobrdb06
+	abdead: lobrdb07
+
+lobrdb_b_d:
+	Inherits: ^bridge
+	idle: lobrdb27
+	aramp: lobrdb08
+	bramp: lobrdb09
+	abramp: lobrdb27
+	editor: lobrdb01
+
+lobrdb_r_se:
+	Inherits: ^bridge
+	idle: lobrdb19
+	damaged-idle: lobrdb20
+
+lobrdb_r_nw:
+	Inherits: ^bridge
+	idle: lobrdb21
+	damaged-idle: lobrdb22
+
+lobrdb_r_ne:
+	Inherits: ^bridge
+	idle: lobrdb23
+	damaged-idle: lobrdb24
+
+lobrdb_r_sw:
+	Inherits: ^bridge
+	idle: lobrdb25
+	damaged-idle: lobrdb26
+
 lobrdg_a:
 	Inherits: ^bridge
 	idle: lobrdg10
