@@ -46,6 +46,134 @@ cabhut:
 		Type: Concrete
 	HitShape:
 
+lobrdb_a:
+	Inherits: ^LowBridge
+	Tooltip:
+		Name: Concrete Bridge
+	Building:
+		Footprint: ___
+		Dimensions: 3, 1
+	GroundLevelBridge:
+		NeighbourOffsets: 1,-1, 1,1
+	SpawnActorOnDeath:
+		Actor: lobrdb_a_d
+	-WithSpriteBody:
+	WithBridgeSpriteBody:
+		AOffset: 1,-1
+		BOffset: 1,1
+		Sequences: idle, idle2, idle3, idle4
+		ADestroyedSequences: adead
+		BDestroyedSequences: bdead
+		ABDestroyedSequences: abdead
+	ShakeOnDeath:
+		Duration: 15
+		Intensity: 6
+
+lobrdb_a_d:
+	Inherits: lobrdb_a
+	EditorOnlyTooltip:
+		Name: Dead Bridge
+	-GroundLevelBridge:
+	-AppearsOnRadar:
+	BridgePlaceholder:
+		DamageState: Dead
+		ReplaceWithActor: lobrdb_a
+		NeighbourOffsets: 1,-1, 1,1
+	-WithBridgeSpriteBody:
+	WithDeadBridgeSpriteBody:
+		RampActors: lobrdb_r_ne, lobrdb_r_sw
+		AOffset: 1,-1
+		BOffset: 1,1
+	Interactable:
+		Bounds: 96, 48
+	ShakeOnDeath:
+		Duration: 15
+		Intensity: 6
+
+lobrdb_b:
+	Inherits: ^LowBridge
+	Tooltip:
+		Name: Concrete Bridge
+	Building:
+		Footprint: _ _ _
+		Dimensions: 1, 3
+	GroundLevelBridge:
+		NeighbourOffsets: -1,1, 1,1
+	SpawnActorOnDeath:
+		Actor: lobrdb_b_d
+	-WithSpriteBody:
+	WithBridgeSpriteBody:
+		AOffset: -1,1
+		BOffset: 1,1
+		Sequences: idle, idle2, idle3, idle4
+		ADestroyedSequences: adead
+		BDestroyedSequences: bdead
+		ABDestroyedSequences: abdead
+	ShakeOnDeath:
+		Duration: 15
+		Intensity: 6
+
+lobrdb_b_d:
+	Inherits: lobrdb_b
+	EditorOnlyTooltip:
+		Name: Dead Bridge
+	-GroundLevelBridge:
+	-AppearsOnRadar:
+	BridgePlaceholder:
+		DamageState: Dead
+		ReplaceWithActor: lobrdb_b
+		NeighbourOffsets: -1,1, 1,1
+	-WithBridgeSpriteBody:
+	WithDeadBridgeSpriteBody:
+		RampActors: lobrdb_r_nw, lobrdb_r_se
+		AOffset: 1,1
+		BOffset: -1,1
+	Interactable:
+		Bounds: 96, 48
+	ShakeOnDeath:
+		Duration: 15
+		Intensity: 6
+
+lobrdb_r_se:
+	Inherits: ^LowBridgeRamp
+	Building:
+		Footprint: _ _ _
+		Dimensions: 1, 3
+	BridgePlaceholder:
+		NeighbourOffsets: -1,1
+	EditorOnlyTooltip:
+		Name: Bridge Ramp
+
+lobrdb_r_nw:
+	Inherits: ^LowBridgeRamp
+	Building:
+		Footprint: _ _ _
+		Dimensions: 1, 3
+	BridgePlaceholder:
+		NeighbourOffsets: 1,1
+	EditorOnlyTooltip:
+		Name: Bridge Ramp
+
+lobrdb_r_ne:
+	Inherits: ^LowBridgeRamp
+	Building:
+		Footprint: ___
+		Dimensions: 3, 1
+	BridgePlaceholder:
+		NeighbourOffsets: 1,1
+	EditorOnlyTooltip:
+		Name: Bridge Ramp
+
+lobrdb_r_sw:
+	Inherits: ^LowBridgeRamp
+	Building:
+		Footprint: ___
+		Dimensions: 3, 1
+	BridgePlaceholder:
+		NeighbourOffsets: 1,-1
+	EditorOnlyTooltip:
+		Name: Bridge Ramp
+
 lobrdg_a:
 	Inherits: ^LowBridge
 	Building:
