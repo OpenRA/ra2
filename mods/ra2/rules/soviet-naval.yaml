@@ -25,7 +25,7 @@ sapc:
 		Range: 6c0
 	Cargo:
 		Types: Infantry, Vehicle
-		MaxWeight: 9
+		MaxWeight: 12
 		PipCount: 12
 		PassengerFacing: 96
 		UnloadTerrainTypes: Clear, Rough, Rail, Road, DirtRoad, Beach, Ore, Gems
