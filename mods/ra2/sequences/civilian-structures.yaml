@@ -128,8 +128,8 @@ cawash05:
 cawash06:
 	Defaults:
 		Offset: 0,-60
-	idle: cuwash06
-		ShadowStart: 4
+	idle: cgwash06_a # Custom artwork, original lacked shadow.
+		ShadowStart: 1
 	damaged-idle: cuwash06
 		Start: 1
 		ShadowStart: 5
