@@ -129,10 +129,10 @@ cawash06:
 	Defaults:
 		Offset: 0,-60
 	idle: cuwash06
-		ShadowStart: 5
+		ShadowStart: 4
 	damaged-idle: cuwash06
 		Start: 1
-		ShadowStart: 7
+		ShadowStart: 5
 	rubble: cuwash06
 		Start: 3
 		ShadowStart: 7
@@ -303,6 +303,11 @@ cawash19:
 	damaged-idle:
 		Start: 1
 		ShadowStart: 5
+	idle-flag: cawa19_a
+		Length: 16
+	damaged-idle-flag: cawa19_a
+		Start: 16
+		Length: 16
 	rubble:
 		Start: 3
 		ShadowStart: 7
@@ -1007,7 +1012,7 @@ camiam04:
 		Offset: 0,-15
 		UseTilesetCode: true
 	idle:
-		ShadowStart: 4
+		ShadowStart: 3
 	damaged-idle:
 		Start: 1
 		ShadowStart: 5
@@ -1455,6 +1460,10 @@ cahse05:
 		Offset: 15,-22
 		UseTilesetCode: true
 	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 1
+		ShadowStart: 5
 	rubble:
 		Start: 3
 		ShadowStart: 7
@@ -1465,10 +1474,10 @@ cahse06:
 		Offset: -15,-22
 		UseTilesetCode: true
 	idle:
-		ShadowStart: 2
+		ShadowStart: 4
 	damaged-idle:
 		Start: 1
-		ShadowStart: 4
+		ShadowStart: 5
 	rubble:
 		Start: 3
 		ShadowStart: 7
@@ -1479,10 +1488,10 @@ cahse07:
 		Offset: 15,-37
 		UseTilesetCode: true
 	idle:
-		ShadowStart: 2
+		ShadowStart: 4
 	damaged-idle:
 		Start: 1
-		ShadowStart: 4
+		ShadowStart: 5
 	rubble:
 		Start: 3
 		ShadowStart: 7

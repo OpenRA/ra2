@@ -38,6 +38,21 @@
 		Tileset: URBAN
 		Filename: cityurb.pal
 		ShadowIndex: 1
+	PaletteFromFile@temperateliberty:
+		Name: liberty
+		Tileset: TEMPERATE
+		Filename: libtem.pal
+		ShadowIndex: 1
+	PaletteFromFile@snowliberty:
+		Name: liberty
+		Tileset: SNOW
+		Filename: libsno.pal
+		ShadowIndex: 1
+	PaletteFromFile@urbanliberty:
+		Name: liberty
+		Tileset: URBAN
+		Filename: liburb.pal
+		ShadowIndex: 1
 	PaletteFromFile@playerurb:
 		Name: player
 		Tileset: URBAN
