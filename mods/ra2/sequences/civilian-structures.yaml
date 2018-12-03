@@ -1501,6 +1501,9 @@ cawt01:
 	Defaults:
 		Offset: 0,-15
 		UseTilesetCode: true
+		TilesetOverrides:
+			TEMPERATE: GENERIC
+			URBAN: GENERIC
 	idle:
 		ShadowStart: 2
 	damaged-idle:
