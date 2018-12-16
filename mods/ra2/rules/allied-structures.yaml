@@ -86,9 +86,11 @@ gapowr:
 		Sequence: idle-glow
 	Power:
 		Amount: 200
+		RequiresCondition: !power-outage
 	InfiltrateForPowerOutage:
 		Types: SpyInfiltrate
 	AffectedByPowerOutage:
+		Condition: power-outage
 	ScalePowerWithHealth:
 	SoundOnDamageTransition:
 		DestroyedSounds: bpowdiea.wav, bpowdieb.wav

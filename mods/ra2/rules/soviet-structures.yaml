@@ -76,9 +76,11 @@ napowr:
 		Sequence: idle-lights
 	Power:
 		Amount: 150
+		RequiresCondition: !power-outage
 	InfiltrateForPowerOutage:
 		Types: SpyInfiltrate
 	AffectedByPowerOutage:
+		Condition: power-outage
 	ScalePowerWithHealth:
 	SoundOnDamageTransition:
 		DestroyedSounds: bpowdiea.wav, bpowdieb.wav
@@ -538,9 +540,11 @@ nanrct:
 		EmptyWeapon: NukePayload
 	Power:
 		Amount: 2000
+		RequiresCondition: !power-outage
 	InfiltrateForPowerOutage:
 		Types: SpyInfiltrate
 	AffectedByPowerOutage:
+		Condition: power-outage
 	ScalePowerWithHealth:
 	SoundOnDamageTransition:
 		DestroyedSounds: bpowdiea.wav, bpowdieb.wav
