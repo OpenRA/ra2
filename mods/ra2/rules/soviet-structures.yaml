@@ -886,7 +886,7 @@ tesla:
 		Voice: Attack
 		MaxCharges: 3
 		ReloadDelay: 120
-		ChargeAudio: tslachg2.aud
+		ChargeAudio: btespow.wav
 		PauseOnCondition: lowpower
 	AutoTarget:
 	GrantConditionOnPowerState@LOWPOWER:
