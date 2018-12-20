@@ -4,8 +4,7 @@ Metadata:
 	Version: {DEV_VERSION}
 	Author: the RA2 mod team
 
-# TODO: Rename to AudioBag once BagFile is gone from OpenRA/OpenRA
-PackageFormats: Mix, AudioBagHack
+PackageFormats: Mix, AudioBag
 
 Packages:
 	~^Content/ra2

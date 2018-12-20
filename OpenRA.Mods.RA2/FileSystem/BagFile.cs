@@ -20,9 +20,9 @@ using FS = OpenRA.FileSystem.FileSystem;
 
 namespace OpenRA.Mods.Cnc.FileSystem
 {
-	public class AudioBagHackLoader : IPackageLoader
+	public class AudioBagLoader : IPackageLoader
 	{
-		sealed class BagHackFile : IReadOnlyPackage
+		sealed class BagFile : IReadOnlyPackage
 		{
 			public string Name { get; private set; }
 			public IEnumerable<string> Contents { get { return index.Keys; } }
@@ -30,7 +30,7 @@ namespace OpenRA.Mods.Cnc.FileSystem
 			readonly Stream s;
 			readonly Dictionary<string, IdxEntry> index;
 
-			public BagHackFile(Stream s, List<IdxEntry> entries, string filename)
+			public BagFile(Stream s, List<IdxEntry> entries, string filename)
 			{
 				Name = filename;
 				this.s = s;
@@ -147,7 +147,7 @@ namespace OpenRA.Mods.Cnc.FileSystem
 				return false;
 			}
 
-			package = new BagHackFile(s, entries, filename);
+			package = new BagFile(s, entries, filename);
 			return true;
 		}
 	}
