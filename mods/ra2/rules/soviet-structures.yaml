@@ -302,7 +302,7 @@ naweap:
 		Factions: russia
 	ProvidesPrerequisite@default:
 	Building:
-		Footprint: xxxxx xxxxx xxxxx
+		Footprint: xxxx= xxxx= xxxx=
 		Dimensions: 5,3
 	Health:
 		HP: 1000
