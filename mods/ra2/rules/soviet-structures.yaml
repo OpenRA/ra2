@@ -828,6 +828,7 @@ naflak:
 	Turreted:
 		TurnSpeed: 10
 		InitialFacing: 224
+		PreviewFacing: 224
 		Offset: 450,0,0
 	AttackTurreted:
 		Voice: Attack
@@ -930,6 +931,7 @@ nalasr:
 	Turreted:
 		TurnSpeed: 10
 		InitialFacing: 224
+		PreviewFacing: 224
 		Offset: 320,0,0
 	AttackTurreted:
 		Voice: Attack
