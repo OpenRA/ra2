@@ -668,6 +668,7 @@ nasam:
 	Turreted:
 		TurnSpeed: 10
 		InitialFacing: 224
+		PreviewFacing: 224
 		Offset: 550,0,0
 	AttackTurreted:
 		Voice: Attack
@@ -719,6 +720,7 @@ gtgcan:
 	Turreted:
 		TurnSpeed: 3
 		InitialFacing: 224
+		PreviewFacing: 224
 		Offset: 400,0,0
 	AttackTurreted:
 		Voice: Attack
