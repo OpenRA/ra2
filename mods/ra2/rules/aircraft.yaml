@@ -233,6 +233,7 @@ pdplane:
 	Tooltip:
 		Name: Cargo Plane
 	Aircraft:
+		Repulsable: false
 		CruiseAltitude: 5600
 		TurnSpeed: 5
 		Speed: 225
