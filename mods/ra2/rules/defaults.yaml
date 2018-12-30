@@ -646,6 +646,17 @@
 		OpeningSequence: open
 		Sequence: idle
 		ClosingSequence: close
+	WithInfantryBody:
+		RequiresCondition: !parachute
+	Targetable:
+		RequiresCondition: !parachute
+	Targetable@airborne:
+		TargetTypes: Air
+		RequiresCondition: parachute
+	WithDeathAnimation@normal:
+		RequiresCondition: !parachute
+	WithDeathAnimation@effect:
+		RequiresCondition: !parachute
 	ExternalCondition@PARACHUTE:
 		Condition: parachute
 
