@@ -630,6 +630,7 @@
 
 ^Parachutable:
 	WithSpriteBody@Parachute:
+		Name: parachute
 		Sequence: paradrop
 		RequiresCondition: parachute
 	Parachutable:
