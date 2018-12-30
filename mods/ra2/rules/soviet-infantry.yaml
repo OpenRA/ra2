@@ -320,6 +320,7 @@ civan:
 
 yuri:
 	Inherits: ^Infantry
+	Inherits@2: ^Parachutable
 	Buildable:
 		Queue: Infantry
 		BuildAtProductionType: Infantry
