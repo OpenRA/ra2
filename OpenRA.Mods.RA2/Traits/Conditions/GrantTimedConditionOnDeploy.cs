@@ -12,6 +12,7 @@
 using System;
 using System.Collections.Generic;
 using System.Drawing;
+using System.Linq;
 using OpenRA.Activities;
 using OpenRA.Mods.Common.Activities;
 using OpenRA.Mods.Common.Orders;
@@ -42,6 +43,9 @@ namespace OpenRA.Mods.RA2.Traits
 
 		[Desc("Cursor to display when unable to (un)deploy the actor.")]
 		public readonly string DeployBlockedCursor = "deploy-blocked";
+
+		[Desc("Apply (un)deploy animations to sprite bodies with these names.")]
+		public readonly string[] BodyNames = { "body" };
 
 		[SequenceReference, Desc("Animation to play for deploying.")]
 		public readonly string DeployAnimation = null;
@@ -76,9 +80,9 @@ namespace OpenRA.Mods.RA2.Traits
 		readonly Actor self;
 		readonly GrantTimedConditionOnDeployInfo info;
 		readonly bool canTurn;
-		readonly Lazy<WithSpriteBody> body;
 		int deployedToken = ConditionManager.InvalidConditionToken;
 		int deployingToken = ConditionManager.InvalidConditionToken;
+		readonly WithSpriteBody[] wsbs;
 
 		ConditionManager manager;
 		[Sync] int ticks;
@@ -89,7 +93,7 @@ namespace OpenRA.Mods.RA2.Traits
 			self = init.Self;
 			this.info = info;
 			canTurn = self.Info.HasTraitInfo<IFacingInfo>();
-			body = Exts.Lazy(self.TraitOrDefault<WithSpriteBody>);
+			wsbs = self.TraitsImplementing<WithSpriteBody>().Where(w => info.BodyNames.Contains(w.Info.Name)).ToArray();
 		}
 
 		void INotifyCreated.Created(Actor self)
@@ -168,15 +172,17 @@ namespace OpenRA.Mods.RA2.Traits
 			if (!string.IsNullOrEmpty(info.DeploySound))
 				Game.Sound.Play(SoundType.World, info.DeploySound, self.CenterPosition);
 
+			var wsb = wsbs.FirstEnabledTraitOrDefault();
+
 			// If there is no animation to play just grant the upgrades that are used while deployed.
 			// Alternatively, play the deploy animation and then grant the upgrades.
-			if (string.IsNullOrEmpty(info.DeployAnimation) || body.Value == null)
+			if (string.IsNullOrEmpty(info.DeployAnimation) || wsb == null)
 				OnDeployCompleted();
 			else
 			{
 				if (manager != null && !string.IsNullOrEmpty(info.DeployingCondition) && deployingToken == ConditionManager.InvalidConditionToken)
 					deployingToken = manager.GrantCondition(self, info.DeployingCondition);
-				body.Value.PlayCustomAnimation(self, info.DeployAnimation, OnDeployCompleted);
+				wsb.PlayCustomAnimation(self, info.DeployAnimation, OnDeployCompleted);
 			}
 		}
 
@@ -198,13 +204,15 @@ namespace OpenRA.Mods.RA2.Traits
 			if (!string.IsNullOrEmpty(info.UndeploySound))
 				Game.Sound.Play(SoundType.World, info.UndeploySound, self.CenterPosition);
 
-			if (string.IsNullOrEmpty(info.UndeployAnimation) || body.Value == null)
+			var wsb = wsbs.FirstEnabledTraitOrDefault();
+
+			if (string.IsNullOrEmpty(info.UndeployAnimation) || wsb == null)
 				OnUndeployCompleted();
 			else
 			{
 				if (manager != null && !string.IsNullOrEmpty(info.DeployingCondition) && deployingToken == ConditionManager.InvalidConditionToken)
 					deployingToken = manager.GrantCondition(self, info.DeployingCondition);
-				body.Value.PlayCustomAnimation(self, info.UndeployAnimation, OnUndeployCompleted);
+				wsb.PlayCustomAnimation(self, info.UndeployAnimation, OnUndeployCompleted);
 			}
 		}
 
