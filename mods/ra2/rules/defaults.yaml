@@ -661,6 +661,29 @@
 	ExternalCondition@PARACHUTE:
 		Condition: parachute
 
+^ParachutableVehicle:
+	Parachutable:
+		FallRate: 26
+		KilledOnImpassableTerrain: true
+		GroundCorpseSequence:
+		GroundCorpsePalette:
+		WaterCorpseSequence:
+		WaterCorpsePalette:
+		ParachutingCondition: parachute
+	WithParachute:
+		RequiresCondition: parachute
+		Image: parach
+		OpeningSequence: open
+		Sequence: idle
+		ClosingSequence: close
+	Targetable:
+		RequiresCondition: !parachute
+	Targetable@airborne:
+		TargetTypes: Air
+		RequiresCondition: parachute
+	ExternalCondition@PARACHUTE:
+		Condition: parachute
+
 ^WithSwimSuit:
 	WithInfantryBody:
 		RequiresCondition: !swimming
@@ -774,6 +797,7 @@
 	Inherits@3: ^IronCurtainable
 	Inherits@4: ^ChronoDisable
 	Inherits@5: ^CrateStatModifiers
+	Inherits@6: ^ParachutableVehicle
 	OwnerLostAction:
 		Action: Kill
 	Mobile:
