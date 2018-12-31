@@ -651,7 +651,7 @@ naclon:
 		SpawnOffset: 0,0,0
 		ExitCell: 2, 2
 	Production:
-		Produces:
+		Produces: Dummy
 	RallyPoint:
 		Offset: 3,3
 		Palette: mouse
