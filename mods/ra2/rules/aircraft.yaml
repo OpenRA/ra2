@@ -25,7 +25,7 @@ shad:
 		Range: 7c0
 		Type: CenterPosition
 	-AppearsOnRadar:
-	AttackFrontal:
+	AttackHeli:
 		Voice: Attack
 	Aircraft:
 		CruiseAltitude: 3072
