@@ -387,7 +387,6 @@
 	Inherits: ^Building
 	-Capturable:
 	-CaptureNotification:
-	-MustBeDestroyed:
 	-ShakeOnDeath:
 	-GivesBuildableArea:
 
