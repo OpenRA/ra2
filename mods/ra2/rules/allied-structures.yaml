@@ -842,8 +842,6 @@ gagap:
 	RenderShroudCircle:
 	Power:
 		Amount: -100
-	MustBeDestroyed:
-		RequiredForShortGame: false
 
 gaweat:
 	Inherits: ^Building
