@@ -203,3 +203,5 @@ dlph:
 		Voice: Attack
 		RepairBuildings: gayard, nayard
 	HitShape:
+	OwnerLostAction:
+		Action: Kill
