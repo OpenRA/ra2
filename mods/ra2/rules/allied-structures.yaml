@@ -280,17 +280,21 @@ gaairc:
 		Amount: -50
 	Reservable:
 	Exit@1:
-		SpawnOffset: -350,350,0
+		SpawnOffset: -370,370,0
 		MoveIntoWorld: false
+		Facing: 224
 	Exit@2:
-		SpawnOffset: 600,220,0
+		SpawnOffset: 370,-370,0
 		MoveIntoWorld: false
+		Facing: 224
 	Exit@3:
-		SpawnOffset: 200,820,0
+		SpawnOffset: 1000,370,0
 		MoveIntoWorld: false
+		Facing: 224
 	Exit@4:
-		SpawnOffset: 200,-300,0
+		SpawnOffset: 350,1000,0
 		MoveIntoWorld: false
+		Facing: 224
 	Production:
 		Produces: Aircraft
 	ProductionBar:
