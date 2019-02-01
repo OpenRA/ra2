@@ -119,7 +119,7 @@ PrismShot:
 			Plate: 100
 			Light: 100
 			Medium: 100
-			Heavy: 50
+			Heavy: 100
 			Wood: 50
 			Steel: 50
 			Concrete: 50
