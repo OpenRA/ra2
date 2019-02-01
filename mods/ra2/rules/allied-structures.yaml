@@ -938,7 +938,7 @@ atesla:
 	Valued:
 		Cost: 1500
 	Tooltip:
-		Name: Prism Cannon
+		Name: Prism Tower
 	Building:
 		Footprint: x
 		Dimensions: 1, 1
