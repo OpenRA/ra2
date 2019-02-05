@@ -134,7 +134,11 @@ caoutp:
 		QuantizedFacings: 16
 		CameraPitch: 90
 	RenderVoxels:
-		NormalsPalette: ts-normals
+		Scale: 11.7
+		LightYaw: 800
+		LightPitch: 150
+		LightAmbientColor: -0.5,-0.5,-0.5
+		LightDiffuseColor: 1.4,1.4,1.4
 	WithVoxelTurret:
 	WithRangeCircle:
 		Range: 12c0
