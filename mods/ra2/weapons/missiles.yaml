@@ -176,3 +176,7 @@ SubTorpedo:
 		Explosions: medium_clsn
 		ImpactSounds: gexpwasb.wav
 		ValidTargets: Ground
+
+SubTorpedoE:
+	Inherits: SubTorpedo
+	Burst: 2
