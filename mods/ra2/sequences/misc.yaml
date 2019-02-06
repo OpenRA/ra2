@@ -200,6 +200,7 @@ explosion:
 	elite_explosion: vtexplod
 	terrorist_explosion: mininuke
 	apoc_explosion: apocexp
+	kirovtesla: ktstlexp
 	flak_puff: htrkpuff
 	flak_puff_AA: smkpuff
 	bombcurs: bombcurs
@@ -214,10 +215,6 @@ explosion:
 discus:
 	idle:
 		Length: *
-
-canister:
-	idle:
-		Length: 15
 
 dragon:
 	idle:
@@ -235,6 +232,10 @@ bbblelrg:
 		Length: *
 
 missile:
+	idle:
+		Facings: 32
+
+zbomb:
 	idle:
 		Facings: 32
 
