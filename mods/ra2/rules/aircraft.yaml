@@ -98,6 +98,10 @@ zep:
 		Type: CenterPosition
 	Armament:
 		Weapon: BlimpBomb
+		RequiresCondition: !rank-elite
+	Armament@elite:
+		Weapon: BlimpBombE
+		RequiresCondition: rank-elite
 	AttackFrontal:
 		Voice: Attack
 	AutoTarget:

@@ -1,13 +1,14 @@
 BlimpBomb:
-	ReloadDelay: 45
-	Range: 1c20
+	ReloadDelay: 50
+	Range: 0c256
 	MinRange: 0c001
 	Report: vkiratta.wav
 	Projectile: GravityBomb
 		Velocity: 0, 0, -50
 		Acceleration: 0, 0, -10
-		Image: canister
+		Image: zbomb
 		Palette: player
+		IsPlayerPalette: true
 	Warhead@1Dam: SpreadDamage
 		Spread: 400
 		Damage: 250
@@ -35,6 +36,11 @@ BlimpBomb:
 		ValidTargets: Water
 	Warhead@4Smu: LeaveSmudge
 		SmudgeType: MediumCrater, MediumScorch
+
+BlimpBombE:
+	Inherits: BlimpBomb
+	Warhead@2Eff: CreateEffect
+		Explosions: kirovtesla
 
 RepairBullet:
 	ReloadDelay: 80

@@ -41,6 +41,7 @@ Packages:
 	ra2|bits/cameos
 	ra2|bits/structures
 	ra2|bits/animations
+	ra2|bits/projectiles
 	ra2|uibits
 
 MapFolders:
