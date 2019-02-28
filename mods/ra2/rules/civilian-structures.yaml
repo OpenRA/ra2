@@ -1560,7 +1560,7 @@ catech01:
 	Inherits: ^CivBuilding
 	Inherits@shape: ^3x3Shape
 	Tooltip:
-		Name: Communications
+		Name: Communications Center
 	Armor:
 		Type: Steel
 	RevealsShroud:
@@ -2154,7 +2154,7 @@ carus01:
 	Inherits: ^CivBuilding
 	Inherits@shape: ^4x4Shape
 	Tooltip:
-		Name: Basil's Cathedral
+		Name: St. Basil's Cathedral
 	Armor:
 		Type: Concrete
 	RevealsShroud:
