@@ -124,9 +124,9 @@ namespace OpenRA.Mods.RA2.Traits
 			}
 		}
 
-		public void PreparingAttack(Actor self, Target target, Armament a, Barrel barrel) { }
+		void INotifyAttack.PreparingAttack(Actor self, Target target, Armament a, Barrel barrel) { }
 
-		public void Attacking(Actor self, Target target, Armament a, Barrel barrel)
+		void INotifyAttack.Attacking(Actor self, Target target, Armament a, Barrel barrel)
 		{
 			if (IsTraitDisabled || IsTraitPaused)
 				return;
