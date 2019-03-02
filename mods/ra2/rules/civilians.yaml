@@ -77,6 +77,7 @@ vladimir:
 	Inherits: ^CivilianInfantry
 	Tooltip:
 		Name: Vladimir
+		GenericVisibility: None
 	WithInfantryBody:
 		IdleSequences: idle1, idle2
 
@@ -84,6 +85,7 @@ pentgen:
 	Inherits: ^CivilianInfantry
 	Tooltip:
 		Name: Pentagon General
+		GenericVisibility: None
 	Voiced:
 		VoiceSet: GIVoice
 
@@ -91,8 +93,10 @@ ssrv:
 	Inherits: ^CivilianInfantry
 	Tooltip:
 		Name: Secret Service
+		GenericVisibility: None
 
 pres:
 	Inherits: ^CivilianInfantry
 	Tooltip:
 		Name: President
+		GenericVisibility: None
