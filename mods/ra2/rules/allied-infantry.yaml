@@ -122,34 +122,76 @@ e1:
 	Health:
 		HP: 125
 	Mobile:
+		RequiresCondition: !chronodisable && undeployed
 	Passenger:
 		PipType: Green
 	RevealsShroud:
 		Range: 5c0
 	AttackFrontal:
 		Voice: Attack
+		RequiresCondition: !deployed
+	AttackTurreted@deployed:
+		Armaments: deployed, deployed-elite
+		Voice: Attack
+		RequiresCondition: deployed
 	Armament@primary:
 		Weapon: M60
-		RequiresCondition: !rank-elite
+		RequiresCondition: !deployed && !rank-elite
 	Armament@elite:
 		Weapon: M60E
-		RequiresCondition: rank-elite
-	# Armament@deployed:
-	#	Weapon: para
-	#	UpgradeTypes: deployed
-	#	UpgradeMinEnabledLevel: 1
-	# Armament@elite-deployed:
-	#	Weapon: paraE
-	#	UpgradeTypes: eliteparaweapon
-	#	UpgradeMinEnabledLevel: 1
+		RequiresCondition: !deployed && rank-elite
+	Armament@deployed:
+		Name: deployed
+		Weapon: para
+		RequiresCondition: deployed && !rank-elite
+	Armament@elite-deployed:
+		Name: deployed-elite
+		Weapon: paraE
+		RequiresCondition: deployed && rank-elite
 	WithInfantryBody:
 		DefaultAttackSequence: shoot
+		RequiresCondition: undeployed
+	GrantConditionOnDeploy:
+		DeployedCondition: deployed
+		UndeployedCondition: undeployed
+		CanDeployOnRamps: True
+		Facing: 128
+		RequiresCondition: !parachute
+		DeploySound: igidepa.wav # igidepb.wav
+		UndeploySound: igidepa.wav # igidepb.wav
+	# TODO: TakeCover is not yet conditional
+	-TakeCover:
+	Turreted:
+		RealignDelay: -1
+		TurnSpeed: 50
+		InitialFacing: 128
+	WithSpriteTurret:
+		Sequence: deployed
+		RequiresCondition: !undeployed && editorhack
+	WithTurretDeployAnimation:
+	WithTurretAttackAnimation:
+		Sequence: shoot-deployed
+		Armament: deployed
+		RequiresCondition: !undeployed && !rank-elite
+	WithTurretAttackAnimation@elite:
+		Sequence: shoot-deployed
+		Armament: deployed-elite
+		RequiresCondition: !undeployed && rank-elite
+	RejectsOrders@deployment:
+		Reject: Move, EnterTransport, EnterTransports
+		RequiresCondition: deployed
 	Voiced:
 		VoiceSet: GIVoice
 	ProducibleWithLevel:
 		Prerequisites: barracks.infiltrated
 	QuantizeFacingsFromSequence:
 		Sequence: stand
+	# HACK: negated conditions evaluate to true in EnabledByDefault, we can use this duplicate WIB to render it on map editor
+	GrantCondition:
+		Condition: editorhack
+	WithInfantryBody@Editor:
+		DefaultAttackSequence: shoot
+		RequiresCondition: !editorhack
 
 snipe:
 	Inherits: ^Infantry
