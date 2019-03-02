@@ -57,12 +57,11 @@ namespace OpenRA.Mods.RA2.Traits
 		readonly PeriodicExplosionInfo info;
 		readonly WeaponInfo weapon;
 		readonly BodyOrientation body;
+		readonly List<Pair<int, Action>> delayedActions = new List<Pair<int, Action>>();
 
 		int fireDelay;
 		int burst;
 		AmmoPool ammoPool;
-
-		List<Pair<int, Action>> delayedActions = new List<Pair<int, Action>>();
 
 		public PeriodicExplosion(Actor self, PeriodicExplosionInfo info)
 			: base(info)
@@ -86,6 +85,7 @@ namespace OpenRA.Mods.RA2.Traits
 				var x = delayedActions[i];
 				if (--x.First <= 0)
 					x.Second();
+
 				delayedActions[i] = x;
 			}
 
@@ -129,9 +129,7 @@ namespace OpenRA.Mods.RA2.Traits
 					if (weapon.AfterFireSound != null && weapon.AfterFireSound.Any())
 					{
 						ScheduleDelayedAction(weapon.AfterFireSoundDelay, () =>
-						{
-							Game.Sound.Play(SoundType.World, weapon.AfterFireSound.Random(self.World.SharedRandom), self.CenterPosition);
-						});
+							Game.Sound.Play(SoundType.World, weapon.AfterFireSound.Random(self.World.SharedRandom), self.CenterPosition));
 					}
 				}
 			}

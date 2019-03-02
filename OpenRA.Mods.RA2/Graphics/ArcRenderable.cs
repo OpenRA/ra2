@@ -9,7 +9,6 @@
  */
 #endregion
 
-using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
 using OpenRA.Graphics;
@@ -51,8 +50,8 @@ namespace OpenRA.Mods.RA2.Graphics
 		{
 			var screenWidth = wr.ScreenVector(new WVec(width, WDist.Zero, WDist.Zero))[0];
 
-			float3[] points = new float3[segments + 1];
-			for (int i = 0; i <= segments; i++)
+			var points = new float3[segments + 1];
+			for (var i = 0; i <= segments; i++)
 				points[i] = wr.Screen3DPosition(WPos.LerpQuadratic(a, b, angle, i, segments));
 
 			Game.Renderer.WorldRgbaColorRenderer.DrawLine(points, screenWidth, color, false);
