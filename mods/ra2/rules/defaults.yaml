@@ -725,7 +725,10 @@
 		PlayerExperience: 2
 		Voice: Move
 	Tooltip:
+		Name: Civilian
 		GenericName: Civilian
+		GenericVisibility: Enemy, Ally, Neutral
+		GenericStancePrefix: false
 	Health:
 		HP: 50
 	Mobile:
