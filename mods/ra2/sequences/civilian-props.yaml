@@ -1,268 +1,153 @@
 hdstn01:
-	Defaults:
-		UseTilesetExtension: true
-	idle:
-		ShadowStart: 1
+	Inherits: ^Pole
 
 lt_gen01:
-	Defaults:
-		UseTilesetExtension: true
-	idle:
-		ShadowStart: 1
+	Inherits: ^Pole
 
 lt_gen02:
-	Defaults:
-		UseTilesetExtension: true
-	idle:
-		ShadowStart: 1
+	Inherits: ^Pole
 
 lt_gen03:
-	Defaults:
-		UseTilesetExtension: true
-	idle:
-		ShadowStart: 1
+	Inherits: ^Pole
 
 lt_gen04:
-	Defaults:
-		UseTilesetExtension: true
-	idle:
-		ShadowStart: 1
+	Inherits: ^Pole
 
 lt_sgn01:
-	Defaults:
-		UseTilesetExtension: true
-	idle:
-		ShadowStart: 1
+	Inherits: ^Pole
 
 lt_sgn02:
-	Defaults:
-		UseTilesetExtension: true
-	idle:
-		ShadowStart: 1
+	Inherits: ^Pole
 
 lt_sgn03:
-	Defaults:
-		UseTilesetExtension: true
-	idle:
-		ShadowStart: 1
+	Inherits: ^Pole
 
 lt_sgn04:
-	Defaults:
-		UseTilesetExtension: true
+	Inherits: ^Pole
 	idle:
+		ShadowStart: -1
 
 lt_eur01:
-	Defaults:
-		UseTilesetExtension: true
-	idle:
-		ShadowStart: 1
+	Inherits: ^Pole
 
 lt_eur02:
-	Defaults:
-		UseTilesetExtension: true
-	idle:
-		ShadowStart: 1
+	Inherits: ^Pole
 
 pole01:
-	Defaults:
-		UseTilesetExtension: true
-	idle:
-		ShadowStart: 1
+	Inherits: ^Pole
 
 pole02:
-	Defaults:
-		UseTilesetExtension: true
-	idle:
-		ShadowStart: 1
+	Inherits: ^Pole
 
 sign01:
-	Defaults:
-		UseTilesetExtension: true
-	idle:
-		ShadowStart: 1
+	Inherits: ^Pole
 
 sign02:
-	Defaults:
-		UseTilesetExtension: true
-	idle:
-		ShadowStart: 1
+	Inherits: ^Pole
 
 sign03:
-	Defaults:
-		UseTilesetExtension: true
+	Inherits: ^Pole
 	idle:
+		ShadowStart: -1
 
 sign04:
-	Defaults:
-		UseTilesetExtension: true
-	idle:
-		ShadowStart: 1
+	Inherits: ^Pole
 
 sign05:
-	Defaults:
-		UseTilesetExtension: true
-	idle:
-		ShadowStart: 1
+	Inherits: ^Pole
 
 sign06:
-	Defaults:
-		UseTilesetExtension: true
-	idle:
-		ShadowStart: 1
+	Inherits: ^Pole
 
 trff01:
-	Defaults:
-		UseTilesetExtension: true
-	idle:
-		ShadowStart: 1
+	Inherits: ^Pole
 
 camsc01:
-	Defaults:
-		UseTilesetCode: true
-	idle:
-		ShadowStart: 3
+	Inherits: ^Prop
 
 camsc02:
-	Defaults:
-		UseTilesetCode: true
-	idle:
-		ShadowStart: 3
+	Inherits: ^Prop
 
 camsc03:
-	Defaults:
-		UseTilesetCode: true
-	idle:
-		ShadowStart: 3
+	Inherits: ^Prop
 
 camsc04:
-	Defaults:
-		UseTilesetCode: true
-	idle:
-		ShadowStart: 3
+	Inherits: ^Prop
 
 camsc05:
-	Defaults:
-		UseTilesetCode: true
-	idle:
-		ShadowStart: 3
+	Inherits: ^Prop
 
 camsc06:
-	Defaults:
-		UseTilesetCode: true
-	idle:
-		ShadowStart: 3
+	Inherits: ^Prop
 	idle-fire: camsc06a
 		Length: 4
 		ShadowStart: 4
 		Tick: 80
 
 camsc11:
-	Defaults:
-		UseTilesetCode: true
-	idle:
-		ShadowStart: 3
+	Inherits: ^Prop
 
 camsc12:
-	Defaults:
-		UseTilesetCode: true
-	idle:
-		ShadowStart: 3
+	Inherits: ^Prop
 
 camsc13:
-	Defaults:
-		UseTilesetCode: true
-	idle:
-		ShadowStart: 3
+	Inherits: ^Prop
 
 trff02:
-	Defaults:
-		UseTilesetExtension: true
-	idle:
-		ShadowStart: 1
+	Inherits: ^Pole
 
 trff03:
-	Defaults:
-		UseTilesetExtension: true
-	idle:
-		ShadowStart: 1
+	Inherits: ^Pole
 
 trff04:
-	Defaults:
-		UseTilesetExtension: true
-	idle:
-		ShadowStart: 1
+	Inherits: ^Pole
 
 camisc01:
-	Defaults:
-		UseTilesetCode: true
-	idle:
-		ShadowStart: 3
+	Inherits: ^Prop
 
 camisc02:
-	Defaults:
-		UseTilesetCode: true
+	Inherits: ^Prop
 	idle:
+		ShadowStart: -1
 
 camisc03:
-	Defaults:
-		UseTilesetCode: true
-	idle:
-		ShadowStart: 3
+	Inherits: ^Prop
 
 camisc04:
-	Defaults:
-		UseTilesetCode: true
-	idle:
-		ShadowStart: 3
+	Inherits: ^Prop
 
 camisc05:
-	Defaults:
-		UseTilesetCode: true
-	idle:
-		ShadowStart: 3
+	Inherits: ^Prop
 
 camisc06:
-	Defaults:
-		UseTilesetCode: true
-	idle:
-		ShadowStart: 3
+	Inherits: ^Prop
 
 caeuro05:
-	Defaults:
-		UseTilesetCode: true
-	idle:
-		ShadowStart: 3
+	Inherits: ^Prop
 
 capark01:
-	Defaults:
-		UseTilesetCode: true
-	idle:
-		ShadowStart: 3
+	Inherits: ^Prop
 
 capark02:
-	Defaults:
-		UseTilesetCode: true
-	idle:
-		ShadowStart: 3
+	Inherits: ^Prop
 
 capark03:
-	Defaults:
-		UseTilesetCode: true
-	idle:
-		ShadowStart: 3
+	Inherits: ^Prop
 
 ammo01:
+	Inherits: ^Prop
 	idle:
-		ShadowStart: 3
+		UseTilesetCode: false
 
 cabhut:
+	Inherits: ^Prop
 	idle:
-		ShadowStart: 3
+		UseTilesetCode: false
 		Offset: 0, -15
 
 gagate_a:
+	Inherits: ^Prop
 	Defaults:
-		UseTilesetCode: true
 		Offset: 0, -15
 	idle:
 		Length: 10
