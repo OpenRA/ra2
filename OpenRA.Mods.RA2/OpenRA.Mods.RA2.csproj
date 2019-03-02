@@ -63,6 +63,7 @@
     <Compile Include="Traits\PeriodicExplosion.cs" />
     <Compile Include="Traits\Render\WithExitOverlay.cs" />
     <Compile Include="Traits\Render\WithMindControlArc.cs" />
+    <Compile Include="Traits\Render\WithTurretDeployAnimation.cs" />
   </ItemGroup>
   <Target Name="AfterBuild">
     <MakeDir Directories="$(SolutionDir)mods\ra2\"/>
