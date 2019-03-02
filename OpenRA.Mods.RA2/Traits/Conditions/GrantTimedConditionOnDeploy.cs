@@ -80,9 +80,10 @@ namespace OpenRA.Mods.RA2.Traits
 		readonly Actor self;
 		readonly GrantTimedConditionOnDeployInfo info;
 		readonly bool canTurn;
+		readonly WithSpriteBody[] wsbs;
+
 		int deployedToken = ConditionManager.InvalidConditionToken;
 		int deployingToken = ConditionManager.InvalidConditionToken;
-		readonly WithSpriteBody[] wsbs;
 
 		ConditionManager manager;
 		[Sync] int ticks;
