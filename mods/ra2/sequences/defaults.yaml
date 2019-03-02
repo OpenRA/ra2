@@ -1,4 +1,4 @@
-^BasicInfantry:
+^Animal:
 	stand:
 		Facings: 8
 	run:
@@ -9,10 +9,23 @@
 	idle1:
 		Start: 56
 		Length: 15
-		Tick: 120
 	idle2:
 		Start: 71
 		Length: 15
+	die1:
+		Start: 86
+		Length: 15
+	die2:
+		Start: 101
+		Length: 15
+	paradrop:
+	icon: xxicon
+
+^BasicInfantry:
+	Inherits: ^Animal
+	idle1:
+		Tick: 120
+	idle2:
 		Tick: 120
 	cheer:
 		Start: 245
@@ -20,10 +33,8 @@
 		Tick: 120
 	die1:
 		Start: 134
-		Length: 15
 	die2:
 		Start: 149
-		Length: 15
 	die4: nukedie
 		Length: *
 		Tick: 50
@@ -33,7 +44,6 @@
 	die6: electro
 		Length: *
 		Tick: 80
-	paradrop:
 
 ^ProneInfantry:
 	liedown:
@@ -56,6 +66,34 @@
 ^Infantry:
 	Inherits@1: ^BasicInfantry
 	Inherits@2: ^ProneInfantry
+
+^CivInfantry:
+	Inherits: ^Infantry
+	Inherits@MC: ^MindControllable
+	-idle2:
+	die1:
+		Start: 71
+	die2:
+		Start: 71
+	-standup:
+	-liedown:
+	prone-stand:
+		Frames: 182, 188, 194, 200, 206, 212, 218, 224
+	prone-run:
+		Start: 182
+	shoot:
+		Start: 86
+		Length: 6
+		Facings: 8
+	cheer:
+		Start: 230
+		Length: 8
+	panic-stand:
+		Facings: 8
+	panic-run:
+		Start: 134
+		Length: 6
+		Facings: 8
 
 ^ArmedInfantry:
 	Inherits: ^Infantry
@@ -80,3 +118,106 @@
 	mindcontrol: yuricntl
 		Length: *
 		Offset: 0, -24, 24
+
+^bridge:
+	Defaults:
+		ZOffset: -1c511
+		UseTilesetExtension: true
+		Start: 1
+		ZRamp: 1
+		Offset: 0, 0, 0.5
+
+^Structure:
+	Defaults:
+		UseTilesetCode: true
+		TilesetOverrides:
+			TEMPERATE: GENERIC
+			URBAN: GENERIC
+	idle:
+		ShadowStart: 3
+	make:
+		Length: 25
+		ShadowStart: 25
+		TilesetOverrides:
+			TEMPERATE: TEMPERATE
+			URBAN: URBAN
+	damaged-idle:
+		Start: 1
+		ShadowStart: 4
+	icon:
+		Offset: 0,0
+		UseTilesetCode: false
+
+^TechStructure:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 1
+		ShadowStart: 5
+	flag:
+		Length: 16
+
+^CivStructure:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 1
+		ShadowStart: 5
+	rubble:
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -3c0
+
+^Wall:
+	Defaults:
+		Offset: 0,-15
+		UseTilesetCode: true
+	idle:
+		Length: 16
+		ShadowStart: 32
+	damaged-idle:
+		Start: 16
+		Length: 16
+		ShadowStart: 48
+	icon:
+		Offset: 0,0
+		UseTilesetCode: false
+
+^Pole:
+	Defaults:
+		UseTilesetExtension: true
+	idle:
+		ShadowStart: 1
+
+^Prop:
+	Defaults:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 3
+
+^Rock:
+	idle:
+		ShadowStart: 1
+		Offset: 0, -15
+		UseTilesetExtension: true
+
+^Drill:
+	Defaults:
+		UseTilesetExtension: true
+		Offset: -1, -16
+	idle:
+		ShadowStart: 11
+	active:
+		Start: 1
+		Length: 10
+		ShadowStart: 12
+		Tick: 160
+
+^Tree:
+	idle:
+		ShadowStart: 1
+		UseTilesetExtension: true

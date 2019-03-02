@@ -1,812 +1,173 @@
 civ1:
-	Inherits@MC: ^MindControllable
-	stand:
-		Facings: 8
-	run:
-		Start: 8
-		Length: 6
-		Facings: 8
-	prone-stand:
-		Start: 182
-		Facings: 8
-	prone-run:
-		Start: 182
-		Length: 6
-		Facings: 8
-	prone-shoot:
-		Facings: 8
-	shoot:
-		Start: 86
-		Length: 6
-		Facings: 8
-	idle1:
-		Start: 56
-		Length: 15
-	die1:
-		Start: 71
-		Length: 15
-	die2:
-		Length: 8
-	die4: nukedie
-		Length: *
-		Tick: 50
-	die6: electro
-		Length: *
-		Tick: 80
-	cheer:
-		Start: 230
-		Length: 15
-	panic-stand:
-		Start: 134
-		Length: 6
-		Facings: 8
-	panic-run:
-		Start: 134
-		Length: 6
-		Facings: 8
+	Inherits: ^CivInfantry
 
 civ2:
-	Inherits@MC: ^MindControllable
-	stand:
-		Facings: 8
-	run:
-		Start: 8
-		Length: 6
-		Facings: 8
-	prone-stand:
-		Start: 182
-		Facings: 8
-	prone-run:
-		Start: 182
-		Length: 6
-		Facings: 8
-	prone-shoot:
-		Facings: 8
-	shoot:
-		Start: 86
-		Length: 6
-		Facings: 8
-	idle1:
-		Start: 56
-		Length: 15
-	die1:
-		Start: 71
-		Length: 15
-	die2:
-		Length: 8
-	die4: nukedie
-		Length: *
-		Tick: 50
-	die6: electro
-		Length: *
-		Tick: 80
-	cheer:
-		Start: 230
-		Length: 15
-	panic-stand:
-		Start: 134
-		Length: 6
-		Facings: 8
-	panic-run:
-		Start: 134
-		Length: 6
-		Facings: 8
+	Inherits: ^CivInfantry
 
 civ3:
-	Inherits@MC: ^MindControllable
-	stand:
-		Facings: 8
-	run:
-		Start: 8
-		Length: 6
-		Facings: 8
-	prone-stand:
-		Start: 182
-		Facings: 8
-	prone-run:
-		Start: 180
-		Length: 6
-		Facings: 8
-	prone-shoot:
-		Facings: 8
-	shoot:
-		Start: 84
-		Length: 6
-		Facings: 8
-	idle1:
-		Start: 56
-		Length: 15
+	Inherits: ^CivInfantry
 	die1:
-		Start: 71
 		Length: 13
 	die2:
-		Length: 8
-	die4: nukedie
-		Length: *
-		Tick: 50
-	die6: electro
-		Length: *
-		Tick: 80
+		Length: 13
+	prone-stand:
+		Frames: 180, 186, 192, 198, 204, 210, 216, 222
+	prone-run:
+		Start: 180
+	shoot:
+		Start: 84
 	cheer:
 		Start: 228
-		Length: 15
-	panic-stand:
-		Start: 132
-		Length: 6
-		Facings: 8
 	panic-run:
 		Start: 132
-		Length: 6
-		Facings: 8
 
 vladimir:
-	Inherits@MC: ^MindControllable
-	stand:
-		Facings: 8
-	run:
-		Start: 8
-		Length: 6
-		Facings: 8
+	Inherits: ^CivInfantry
 	prone-stand:
-		Start: 86
-		Facings: 8
+		Frames: 86, 92, 98, 104, 110, 116, 122, 128
 	prone-run:
 		Start: 86
-		Length: 6
-		Facings: 8
 	prone-shoot:
 		Start: 212
 		Length: 6
 		Facings: 8
 	shoot:
 		Start: 164
-		Length: 6
-		Facings: 8
-	idle1:
-		Start: 56
-		Length: 15
 	idle2:
 		Start: 71
-		Length: 14
+		Length: 15
 	die1:
 		Start: 134
-		Length: 15
-		Facings: 8
 	die2:
 		Start: 149
-		Length: 15
+	liedown:
+		Start: 260
+		Length: 2
 		Facings: 8
-	die4: nukedie
-		Length: *
-		Tick: 50
-	die6: electro
-		Length: *
-		Tick: 80
-	cheer:
-		Start: 56
-		Length: 15
-	panic-stand:
-		Start: 8
-		Length: 6
+	standup:
+		Start: 276
+		Length: 2
 		Facings: 8
-	panic-run:
-		Start: 8
-		Length: 6
-		Facings: 8
+	-cheer:
+	-panic-stand:
+	-panic-run:
 
 pentgen:
-	Inherits@MC: ^MindControllable
-	stand:
-		Facings: 8
-	run:
-		Start: 8
-		Length: 6
-		Facings: 8
+	Inherits: ^CivInfantry
 	prone-stand:
-		Start: 134
-		Facings: 8
+		Frames: 134, 140, 146, 152, 158, 164, 170, 176
 	prone-run:
 		Start: 134
-		Length: 6
-		Facings: 8
 	prone-shoot:
 		Start: 214
 		Length: 6
 		Facings: 8
-	shoot:
-		Start: 86
-		Length: 6
+	standup:
+		Start: 182
+		Length: 2
 		Facings: 8
-	idle1:
-		Start: 56
-		Length: 15
-	die1:
-		Start: 71
-		Length: 15
-	die2:
-		Length: 8
-	die4: nukedie
-		Length: *
-		Tick: 50
-	die6: electro
-		Length: *
-		Tick: 80
-	cheer:
-		Start: 56
-		Length: 15
-	panic-stand:
-		Start: 8
-		Length: 6
+	liedown:
+		Start: 198
+		Length: 2
 		Facings: 8
-	panic-run:
-		Start: 8
-		Length: 6
-		Facings: 8
+	-cheer:
+	-panic-stand:
+	-panic-run:
 
 pres:
-	Inherits@MC: ^MindControllable
-	stand:
-		Facings: 8
-	run:
-		Start: 8
-		Length: 6
-		Facings: 8
+	Inherits: ^CivInfantry
 	prone-stand:
-		Start: 134
-		Facings: 8
+		Frames: 134, 140, 146, 152, 158, 164, 170, 176
 	prone-run:
 		Start: 134
-		Length: 6
-		Facings: 8
-	prone-shoot:
-		Facings: 8
-	shoot:
-		Facings: 8
-	idle1:
-		Start: 56
-		Length: 15
-	die1:
-		Start: 71
-		Length: 15
-	die2:
-		Length: 8
-	die4: nukedie
-		Length: *
-		Tick: 50
-	die6: electro
-		Length: *
-		Tick: 80
-	cheer:
-		Start: 56
-		Length: 15
-	panic-stand:
-		Start: 86
-		Length: 6
-		Facings: 8
+	-shoot:
+	-cheer:
 	panic-run:
 		Start: 86
-		Length: 6
-		Facings: 8
 
 ssrv:
-	Inherits@MC: ^MindControllable
-	stand:
-		Facings: 8
-	run:
-		Start: 8
-		Length: 6
-		Facings: 8
+	Inherits: ^CivInfantry
 	prone-stand:
-		Start: 182
-		Facings: 8
+		Frames: 134, 140, 146, 152, 158, 164, 170, 176
 	prone-run:
+		Start: 134
+	prone-shoot:
 		Start: 182
 		Length: 6
 		Facings: 8
-	prone-shoot:
-		Start: 86
-		Length: 6
-		Facings: 8
-	shoot:
-		Start: 86
-		Length: 6
-		Facings: 8
-	idle1:
-		Start: 56
-		Length: 15
-	die1:
-		Start: 71
-		Length: 15
-	die2:
-		Length: 8
-	die4: nukedie
-		Length: *
-		Tick: 50
-	die6: electro
-		Length: *
-		Tick: 80
-	cheer:
-		Start: 56
-		Length: 15
-	panic-stand:
-		Start: 134
-		Length: 6
-		Facings: 8
-	panic-run:
-		Start: 134
-		Length: 6
-		Facings: 8
+	-cheer:
+	-panic-stand:
+	-panic-run:
 
 civa:
-	Inherits@MC: ^MindControllable
-	stand:
-		Facings: 8
-	run:
-		Start: 8
-		Length: 6
-		Facings: 8
-	prone-stand:
-		Start: 182
-		Facings: 8
-	prone-run:
-		Start: 182
-		Length: 6
-		Facings: 8
-	prone-shoot:
-		Start: 86
-		Length: 6
-		Facings: 8
-	shoot:
-		Start: 86
-		Length: 6
-		Facings: 8
-	idle1:
-		Start: 56
-		Length: 15
-	die1:
-		Start: 71
-		Length: 15
-	die2:
-		Length: 8
-	die4: nukedie
-		Length: *
-		Tick: 50
-	die6: electro
-		Length: *
-		Tick: 80
-	cheer:
-		Start: 56
-		Length: 15
-	panic-stand:
-		Start: 134
-		Length: 6
-		Facings: 8
-	panic-run:
-		Start: 134
-		Length: 6
-		Facings: 8
+	Inherits: ^CivInfantry
 
 civb:
-	Inherits@MC: ^MindControllable
-	stand:
-		Facings: 8
-	run:
-		Start: 8
-		Length: 6
-		Facings: 8
-	prone-stand:
-		Start: 182
-		Facings: 8
-	prone-run:
-		Start: 182
-		Length: 6
-		Facings: 8
-	prone-shoot:
-		Start: 86
-		Length: 6
-		Facings: 8
-	shoot:
-		Start: 86
-		Length: 6
-		Facings: 8
-	idle1:
-		Start: 56
-		Length: 15
-	die1:
-		Start: 71
-		Length: 15
-	die2:
-		Length: 8
-	die4: nukedie
-		Length: *
-		Tick: 50
-	die6: electro
-		Length: *
-		Tick: 80
-	cheer:
-		Start: 56
-		Length: 15
-	panic-stand:
-		Start: 134
-		Length: 6
-		Facings: 8
-	panic-run:
-		Start: 134
-		Length: 6
-		Facings: 8
+	Inherits: ^CivInfantry
 
 civc:
-	Inherits@MC: ^MindControllable
-	stand:
-		Facings: 8
-	run:
-		Start: 8
-		Length: 6
-		Facings: 8
-	prone-stand:
-		Start: 182
-		Facings: 8
-	prone-run:
-		Start: 182
-		Length: 6
-		Facings: 8
-	prone-shoot:
-		Start: 86
-		Length: 6
-		Facings: 8
-	shoot:
-		Start: 86
-		Length: 6
-		Facings: 8
-	idle1:
-		Start: 56
-		Length: 15
-	die1:
-		Start: 71
-		Length: 15
-	die2:
-		Length: 8
-	die4: nukedie
-		Length: *
-		Tick: 50
-	die6: electro
-		Length: *
-		Tick: 80
-	cheer:
-		Start: 56
-		Length: 15
-	panic-stand:
-		Start: 134
-		Length: 6
-		Facings: 8
-	panic-run:
-		Start: 134
-		Length: 6
-		Facings: 8
+	Inherits: ^CivInfantry
 
 civbbp:
-	Inherits@MC: ^MindControllable
-	stand:
-		Facings: 8
-	run:
-		Start: 8
-		Length: 6
-		Facings: 8
-	prone-stand:
-		Start: 134
-		Facings: 8
-	prone-run:
-		Start: 134
-		Length: 6
-		Facings: 8
-	prone-shoot:
-		Facings: 8
-	shoot:
-		Facings: 8
-	idle1:
-		Start: 56
-		Length: 15
-	die1:
-		Start: 71
-		Length: 15
-	die2:
-		Length: 8
-	die4: nukedie
-		Length: *
-		Tick: 50
-	die6: electro
-		Length: *
-		Tick: 80
-	cheer:
-		Start: 56
-		Length: 15
-	panic-stand:
-		Start: 86
-		Length: 6
-		Facings: 8
-	panic-run:
-		Start: 86
-		Length: 6
-		Facings: 8
+	Inherits: ^CivInfantry
 
 civbfm:
-	Inherits@MC: ^MindControllable
-	stand:
-		Facings: 8
-	run:
-		Start: 8
-		Length: 6
-		Facings: 8
+	Inherits: ^CivInfantry
+	-shoot:
 	prone-stand:
-		Start: 134
-		Facings: 8
+		Frames: 134, 140, 146, 152, 158, 164, 170, 176
 	prone-run:
 		Start: 134
-		Length: 6
-		Facings: 8
-	prone-shoot:
-		Facings: 8
-	shoot:
-		Facings: 8
-	idle1:
-		Start: 56
-		Length: 15
-	die1:
-		Start: 71
-		Length: 15
-	die2:
-		Length: 8
-	die4: nukedie
-		Length: *
-		Tick: 50
-	die6: electro
-		Length: *
-		Tick: 80
-	cheer:
-		Start: 56
-		Length: 15
-	panic-stand:
-		Start: 86
-		Length: 6
-		Facings: 8
 	panic-run:
 		Start: 86
-		Length: 6
-		Facings: 8
+	cheer:
+		Start: 182
 
 civbf:
-	Inherits@MC: ^MindControllable
-	stand:
-		Facings: 8
-	run:
-		Start: 8
-		Length: 6
-		Facings: 8
+	Inherits: ^CivInfantry
+	-shoot:
 	prone-stand:
-		Start: 134
-		Facings: 8
+		Frames: 134, 140, 146, 152, 158, 164, 170, 176
 	prone-run:
 		Start: 134
-		Length: 6
-		Facings: 8
-	prone-shoot:
-		Facings: 8
-	shoot:
-		Facings: 8
-	idle1:
-		Start: 56
-		Length: 15
-	die1:
-		Start: 71
-		Length: 15
-	die2:
-		Length: 8
-	die4: nukedie
-		Length: *
-		Tick: 50
-	die6: electro
-		Length: *
-		Tick: 80
-	cheer:
-		Start: 56
-		Length: 15
-	panic-stand:
-		Start: 86
-		Length: 6
-		Facings: 8
 	panic-run:
 		Start: 86
-		Length: 6
-		Facings: 8
+	cheer:
+		Start: 182
 
 civbtm:
-	Inherits@MC: ^MindControllable
-	stand:
-		Facings: 8
-	run:
-		Start: 8
-		Length: 6
-		Facings: 8
+	Inherits: ^CivInfantry
+	-shoot:
 	prone-stand:
-		Start: 134
-		Facings: 8
+		Frames: 134, 140, 146, 152, 158, 164, 170, 176
 	prone-run:
 		Start: 134
-		Length: 6
-		Facings: 8
-	prone-shoot:
-		Facings: 8
-	shoot:
-		Facings: 8
-	idle1:
-		Start: 56
-		Length: 15
-	die1:
-		Start: 71
-		Length: 15
-	die2:
-		Length: 8
-	die4: nukedie
-		Length: *
-		Tick: 50
-	die6: electro
-		Length: *
-		Tick: 80
-	cheer:
-		Start: 56
-		Length: 15
-	panic-stand:
-		Start: 86
-		Length: 6
-		Facings: 8
 	panic-run:
 		Start: 86
-		Length: 6
-		Facings: 8
+	cheer:
+		Start: 182
 
 civsfm:
-	Inherits@MC: ^MindControllable
-	stand:
-		Facings: 8
-	run:
-		Start: 8
-		Length: 6
-		Facings: 8
-	prone-stand:
-		Start: 182
-		Facings: 8
-	prone-run:
-		Start: 182
-		Length: 6
-		Facings: 8
-	prone-shoot:
-		Start: 86
-		Length: 6
-		Facings: 8
-	shoot:
-		Start: 86
-		Length: 6
-		Facings: 8
-	idle1:
-		Start: 56
-		Length: 15
-	die1:
-		Start: 71
-		Length: 15
-	die2:
-		Length: 8
-	die4: nukedie
-		Length: *
-		Tick: 50
-	die6: electro
-		Length: *
-		Tick: 80
+	Inherits: ^CivInfantry
 	cheer:
-		Start: 56
-		Length: 15
-	panic-stand:
-		Start: 134
-		Length: 6
-		Facings: 8
-	panic-run:
-		Start: 134
-		Length: 6
-		Facings: 8
+		Start: 231
 
 civsf:
-	Inherits@MC: ^MindControllable
-	stand:
-		Facings: 8
-	run:
-		Start: 8
-		Length: 6
-		Facings: 8
-	prone-stand:
-		Start: 182
-		Facings: 8
-	prone-run:
-		Start: 182
-		Length: 6
-		Facings: 8
-	prone-shoot:
-		Start: 86
-		Length: 6
-		Facings: 8
-	shoot:
-		Start: 86
-		Length: 6
-		Facings: 8
-	idle1:
-		Start: 56
-		Length: 15
-	die1:
-		Start: 71
-		Length: 15
-	die2:
-		Length: 8
-	die4: nukedie
-		Length: *
-		Tick: 50
-	die6: electro
-		Length: *
-		Tick: 80
-	cheer:
-		Start: 56
-		Length: 15
-	panic-stand:
-		Start: 134
-		Length: 6
-		Facings: 8
-	panic-run:
-		Start: 134
-		Length: 6
-		Facings: 8
+	Inherits: ^CivInfantry
 
 civstm:
-	Inherits@MC: ^MindControllable
-	stand:
-		Facings: 8
-	run:
-		Start: 8
-		Length: 6
-		Facings: 8
-	prone-stand:
-		Start: 182
-		Facings: 8
-	prone-run:
-		Start: 182
-		Length: 6
-		Facings: 8
-	prone-shoot:
-		Start: 86
-		Length: 6
-		Facings: 8
-	shoot:
-		Start: 86
-		Length: 6
-		Facings: 8
-	idle1:
-		Start: 56
-		Length: 15
+	Inherits: ^CivInfantry
 	die1:
-		Start: 71
-		Length: 15
+		Length: 13
 	die2:
-		Length: 8
-	die4: nukedie
-		Length: *
-		Tick: 50
-	die6: electro
-		Length: *
-		Tick: 80
+		Length: 13
+	prone-stand:
+		Frames: 180, 186, 192, 198, 204, 210, 216, 222
+	prone-run:
+		Start: 180
+	shoot:
+		Start: 84
 	cheer:
-		Start: 56
-		Length: 15
-	panic-stand:
-		Start: 134
-		Length: 6
-		Facings: 8
+		Start: 228
 	panic-run:
-		Start: 134
-		Length: 6
-		Facings: 8
+		Start: 132

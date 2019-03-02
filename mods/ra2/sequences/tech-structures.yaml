@@ -1,35 +1,21 @@
 caoild:
+	Inherits: ^TechStructure
 	Defaults:
-		UseTilesetCode: true
-	idle:
-		ShadowStart: 4
-		Offset: 0, -30
-	damaged-idle:
-		Start: 1
-		ShadowStart: 5
 		Offset: 0, -30
 	idle-pump: caoild_a
 		Length: 32
 		ShadowStart: 64
-		Offset: 0, -30
 	damaged-idle-pump: caoild_a
 		Start: 32
 		Length: 32
 		ShadowStart: 96
-		Offset: 0, -30
 	flag: caoild_f
-		Length: 16
 		Offset: 0, -9
 
 caairp:
+	Inherits: ^TechStructure
 	Defaults:
-		UseTilesetCode: true
 		Offset: 7, -40
-	idle:
-		ShadowStart: 4
-	damaged-idle:
-		Start: 1
-		ShadowStart: 5
 	idle-overlay: caairp_a
 		Length: 10
 		Tick: 400
@@ -38,35 +24,26 @@ caairp:
 		Length: 10
 		Tick: 400
 	flag: caairp_f
-		Length: 16
 		ZOffset: 128
 
 cahosp:
+	Inherits: ^TechStructure
 	Defaults:
-		UseTilesetCode: true
-	idle:
-		ShadowStart: 4
-		Offset: -30, -75
-	damaged-idle:
-		Start: 1
-		ShadowStart: 5
 		Offset: -30, -75
 	idle-overlay: cahosp_a
 		Length: 2
-		Offset: -30, -75
 		Tick: 400
 	damaged-idle-overlay: cahosp_a
 		Start: 2
 		Length: 2
-		Offset: -30, -75
 		Tick: 400
 	flag: cahosp_f
-		Length: 16
 		ZOffset: 128
+		Offset: 0,0
 
 caoutp:
+	Inherits: ^TechStructure
 	Defaults:
-		UseTilesetCode: true
 		Offset: -15, -50
 	idle-tower:
 		ShadowStart: 4
@@ -76,7 +53,6 @@ caoutp:
 	idle: caoutp_d
 		ShadowStart: 2
 	damaged-idle: caoutp_d
-		Start: 1
 		ShadowStart: 3
 	active-crane: caoutp_a
 		Length: 10
@@ -91,4 +67,3 @@ caoutp:
 	damaged-bib: caoutpbb
 		Start: 1
 	flag: caoutp_f
-		Length: 16

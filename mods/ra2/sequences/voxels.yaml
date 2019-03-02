@@ -22,7 +22,7 @@ car:
 carrier:
 	idle:
 
-cdest:	#coast guard boat/SP unit
+cdest:
 	idle:
 #Needs without weapon image cdestwo
 
@@ -62,7 +62,7 @@ falc:
 naflak:
 	turret: flaktur
 
-flata: #Unused
+flata:
 	idle:
 
 fv:
@@ -86,54 +86,54 @@ harv:
 	turret: harvtur
 	unload: horv
 
-hind: #Unused
+hind:
 	idle:
 
 hornet:
 	idle:
 
-htk: #Flak Track
+htk:
 	idle:
 	turret: htktur
 	barrel: htkbarl
 
-htnk: #Rhino Tank
+htnk:
 	idle:
 	turret: htnktur
 	barrel: htnkbarl
 
-howi: #Howitzer Unused
+howi:
 	idle: hwtz
 
-hyd: #Sea Scorpion
+hyd:
 	idle:
 
 nalasr:
 	turret: laser
 
-lcrf: #Allied transport
+lcrf:
 	idle:
 
 limo:
 	idle:
 
-ltnk: #Light tank,Beta unit. Appears only in one mission as a prop
+ltnk:
 	idle:
 	turret: ltnktur
 	barrel: ltnkbarl
 
-apoc: #Aplocalypse Tank
+apoc:
 	idle: mtnk
 	turret: mtnktur
 	barrel: mtnkbarl
 
-caoutp: #Tech outpost sam
+caoutp:
 	turret: outp
 
-pdplane: #Paradrop plane
+pdplane:
 	idle:
 
-pick: #Cargo Truck
+pick:
 	idle:
 
 #piece: # TODO: unused debris
@@ -142,16 +142,16 @@ pick: #Cargo Truck
 propa:
 	idle:
 
-ptruck: #Pickup Truck
+ptruck:
 	idle:
 
-mgtk: #Mirage Tank, the tur and barrel files are beta, final has fixed turret
+mgtk:
 	idle: rtnk
 
 nasam:
 	turret: sam
 
-shad: #Nighthawk
+shad:
 	idle:
 
 smcv:
@@ -164,7 +164,7 @@ sref: #Has 3 charge states for the turret not possible yet
 stang:
 	idle:
 
-sub: #Typhoon Attack Sub
+sub:
 	idle:
 
 subt: #Sub Torpedo needs voxel projectiles
@@ -185,7 +185,7 @@ taxi:
 tnkd:
 	idle:
 
-tractor: #Unused
+tractor:
 	idle:
 
 sapc:
@@ -197,14 +197,14 @@ dtruck:
 trucka:
 	idle:
 
-truckb: #Psst Has crates in it :D
+truckb:
 	idle:
 
 ttnk:
 	idle:
 	turret: ttnktur
 
-tug: #Tug Boat
+tug:
 	idle:
 
 v3:
@@ -214,14 +214,14 @@ v3:
 #v3rocket: #V3 Missile needs voxel projectiles
 #	idle:
 
-vlad: #Vladimir's Dreadnought SP unit
+vlad:
 	idle:
 #Needs without weapon image vladwo
 
-wini: #Recreational Vehicle Not sure if used in RA2
+wini:
 	idle:
 
-zep: #Kirov Reporting!
+zep:
 	idle:
 
 #zbomb: #Kirov bomb needs voxel projectiles

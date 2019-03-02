@@ -1,11 +1,3 @@
-^bridge:
-	Defaults:
-		ZOffset: -1c511
-		UseTilesetExtension: true
-		Start: 1
-		ZRamp: 1
-		Offset: 0, 0, 0.5
-
 lobrdb_a:
 	Inherits: ^bridge
 	idle: lobrdb10

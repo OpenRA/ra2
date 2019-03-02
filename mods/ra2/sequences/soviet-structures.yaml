@@ -1,25 +1,18 @@
 nacnst:
+	Inherits: ^Structure
 	Defaults:
 		Offset: 4, -58
-		UseTilesetCode: true
-		TilesetOverrides:
-			TEMPERATE: GENERIC
-			URBAN: GENERIC
 	idle: ngcnst_c
 		Length: 1
 		ShadowStart: 4
 		Tick: 150
 	damaged-idle: ngcnst_c
-		Start: 1
 		Length: 1
 		ShadowStart: 5
 		Tick: 150
 	make: ntcnstmk
 		Length: 31
 		ShadowStart: 31
-		TilesetOverrides:
-			TEMPERATE: TEMPERATE
-			URBAN: URBAN
 	idle-top: ngcnst_a
 		Length: 11
 		Tick: 200
@@ -31,8 +24,6 @@ nacnst:
 		ShadowStart: 3
 		ZOffset: -1024
 	damaged-idle-normal: ngcnst
-		Start: 1
-		ShadowStart: 4
 		ZOffset: -1024
 	build: ngcnst_b
 		Length: 21
@@ -46,21 +37,13 @@ nacnst:
 		ShadowStart: 25
 		Tick: 100
 	icon: scnsicon
-		Offset: 0,0
-		UseTilesetCode: false
 
 napowr:
+	Inherits: ^Structure
 	Defaults:
 		Offset: -15, -37
-		UseTilesetCode: true
-		TilesetOverrides:
-			TEMPERATE: GENERIC
-			URBAN: GENERIC
 	idle: ngpowr
-		ShadowStart: 3
 	damaged-idle: ngpowr
-		Start: 1
-		ShadowStart: 4
 	critical-idle: ngpowr
 		Start: 2
 		ShadowStart: 5
@@ -78,56 +61,29 @@ napowr:
 	make: ntpowrmk
 		Length: 26
 		ShadowStart: 26
-		TilesetOverrides:
-			TEMPERATE: TEMPERATE
-			URBAN: URBAN
 	icon: npwricon
-		Offset: 0,0
-		UseTilesetCode: false
 
 nahand:
+	Inherits: ^Structure
 	Defaults:
 		Offset: 1, -31
-		UseTilesetCode: true
-		TilesetOverrides:
-			TEMPERATE: GENERIC
-			URBAN: GENERIC
 	idle: nghand
-		ShadowStart: 3
 	damaged-idle: nghand
-		Start: 1
-		ShadowStart: 4
 	critical-idle: nghand
 		Start: 2
 		ShadowStart: 5
 	make: nthandmk
-		Length: 25
-		ShadowStart: 25
-		TilesetOverrides:
-			TEMPERATE: TEMPERATE
-			URBAN: URBAN
 	icon: handicon
-		Offset: 0,0
-		UseTilesetCode: false
 
 narefn:
+	Inherits: ^Structure
 	Defaults:
 		Offset: -13, -53
-		UseTilesetCode: true
-		TilesetOverrides:
-			TEMPERATE: GENERIC
-			URBAN: GENERIC
 	idle: ngrefn
-		ShadowStart: 3
 	damaged-idle: ngrefn
-		Start: 1
-		ShadowStart: 4
 	make: ntrefnmk
 		Length: 26
 		ShadowStart: 26
-		TilesetOverrides:
-			TEMPERATE: TEMPERATE
-			URBAN: URBAN
 	idle-drill: ngrefnl1
 		Length: 3
 		Tick: 1500
@@ -142,21 +98,13 @@ narefn:
 		Length: 20
 		ShadowStart: 20
 	icon: nreficon
-		Offset: 0,0
-		UseTilesetCode: false
 
 naradr:
+	Inherits: ^Structure
 	Defaults:
 		Offset: 2, -31
-		UseTilesetCode: true
-		TilesetOverrides:
-			TEMPERATE: GENERIC
-			URBAN: GENERIC
 	idle: ngradr
-		ShadowStart: 3
 	damaged-idle: ngradr
-		Start: 1
-		ShadowStart: 4
 	critical-idle: ngradr
 		Start: 2
 		ShadowStart: 5
@@ -172,26 +120,15 @@ naradr:
 	make: ntradrmk
 		Length: 30
 		ShadowStart: 30
-		TilesetOverrides:
-			TEMPERATE: TEMPERATE
-			URBAN: URBAN
 	icon: nradicon
-		Offset: 0,0
-		UseTilesetCode: false
 
 naweap:
+	Inherits: ^Structure
 	Defaults:
 		Offset: -30, -60
-		UseTilesetCode: true
-		TilesetOverrides:
-			TEMPERATE: GENERIC
-			URBAN: GENERIC
 	idle: ngweap
-		ShadowStart: 3
 		ZOffset: -1536
 	damaged-idle: ngweap
-		Start: 1
-		ShadowStart: 4
 		ZOffset: -1536
 	build-door: ngweap_1
 		ShadowStart: 2
@@ -234,22 +171,12 @@ naweap:
 		ShadowStart: 13
 		Tick: 150
 	make: ntweapmk
-		Length: 25
-		ShadowStart: 25
-		TilesetOverrides:
-			TEMPERATE: TEMPERATE
-			URBAN: URBAN
 	icon: nwepicon
-		Offset: 0,0
-		UseTilesetCode: false
 
 nayard:
+	Inherits: ^Structure
 	Defaults:
 		Offset: 0, -45
-		UseTilesetCode: true
-		TilesetOverrides:
-			TEMPERATE: GENERIC
-			URBAN: GENERIC
 	idle: ngyard
 		ShadowStart: 4
 	damaged-idle: ngyard
@@ -281,11 +208,6 @@ nayard:
 		Length: 15
 		ZOffset: 256
 	make: ntyardmk
-		Length: 25
-		ShadowStart: 25
-		TilesetOverrides:
-			TEMPERATE: TEMPERATE
-			URBAN: URBAN
 	repair: ngyard_s
 		Length: 18
 		ShadowStart: 36
@@ -294,16 +216,11 @@ nayard:
 		Length: 18
 		ShadowStart: 54
 	icon: yardicon
-		Offset: 0,0
-		UseTilesetCode: false
 
 nadept:
+	Inherits: ^Structure
 	Defaults:
 		Offset: -15, -53
-		UseTilesetCode: true
-		TilesetOverrides:
-			TEMPERATE: GENERIC
-			URBAN: GENERIC
 	idle: ngdept_b
 		Length: 10
 		ShadowStart: 20
@@ -324,11 +241,6 @@ nadept:
 		Start: 1
 		ShadowStart: 2
 	make: ntdeptmk
-		Length: 25
-		ShadowStart: 25
-		TilesetOverrides:
-			TEMPERATE: TEMPERATE
-			URBAN: URBAN
 	repair: ngdept_c
 		Length: 50
 		ShadowStart: 100
@@ -339,21 +251,13 @@ nadept:
 		ShadowStart: 150
 		Tick: 120
 	icon: rfixicon
-		Offset: 0,0
-		UseTilesetCode: false
 
 nanrct:
+	Inherits: ^Structure
 	Defaults:
 		Offset: -12, -56
-		UseTilesetCode: true
-		TilesetOverrides:
-			TEMPERATE: GENERIC
-			URBAN: GENERIC
 	idle: ngnrct
-		ShadowStart: 3
 	damaged-idle: ngnrct
-		Start: 1
-		ShadowStart: 4
 	critical-idle: ngnrct
 		Start: 2
 		ShadowStart: 5
@@ -369,47 +273,24 @@ nanrct:
 		Length: 11
 		Tick: 150
 	make: ntnrctmk
-		Length: 25
-		ShadowStart: 25
-		TilesetOverrides:
-			TEMPERATE: TEMPERATE
-			URBAN: URBAN
 	icon: nrcticon
-		Offset: 0,0
-		UseTilesetCode: false
 
 natech:
+	Inherits: ^Structure
 	Defaults:
 		Offset: 0, -45
-		UseTilesetCode: true
-		TilesetOverrides:
-			TEMPERATE: GENERIC
-			URBAN: GENERIC
 	idle: ngtech
-		ShadowStart: 3
 	damaged-idle: ngtech
-		Start: 1
-		ShadowStart: 4
 	critical-idle: ngtech
 		Start: 2
 		ShadowStart: 5
 	make: nttechmk
-		Length: 25
-		ShadowStart: 25
-		TilesetOverrides:
-			TEMPERATE: TEMPERATE
-			URBAN: URBAN
 	icon: ntchicon
-		Offset: 0,0
-		UseTilesetCode: false
 
 naclon:
+	Inherits: ^Structure
 	Defaults:
 		Offset: 0, -30
-		UseTilesetCode: true
-		TilesetOverrides:
-			TEMPERATE: GENERIC
-			URBAN: GENERIC
 	idle: ngclon_a
 		Length: 11
 		ShadowStart: 22
@@ -423,27 +304,14 @@ naclon:
 		Length: 11
 		ShadowStart: 33
 	make: ntclonmk
-		Length: 25
-		ShadowStart: 25
-		TilesetOverrides:
-			TEMPERATE: TEMPERATE
-			URBAN: URBAN
 	icon: clonicon
-		Offset: 0,0
-		UseTilesetCode: false
 
 napsis:
+	Inherits: ^Structure
 	Defaults:
 		Offset: 1, -30
-		UseTilesetCode: true
-		TilesetOverrides:
-			TEMPERATE: GENERIC
-			URBAN: GENERIC
 	idle: ngpsis
-		ShadowStart: 3
 	damaged-idle: ngpsis
-		Start: 1
-		ShadowStart: 4
 	critical-idle: ngpsis
 		Start: 2
 		ShadowStart: 5
@@ -459,20 +327,17 @@ napsis:
 	make: ntpsismk
 		Length: 24
 		ShadowStart: 24
-		TilesetOverrides:
-			TEMPERATE: TEMPERATE
-			URBAN: URBAN
 	icon: psisicon
-		Offset: 0,0
-		UseTilesetCode: false
 
 namisl:
+	Inherits: ^Structure
 	Defaults:
 		Offset: 0, -42
+		UseTilesetCode: false
+		-TilesetOverrides:
 	idle: ngmisl_e
 		ShadowStart: 2
 	damaged-idle: ngmisl_e
-		Start: 1
 		ShadowStart: 3
 	critical-idle: ngmisl_e
 		Start: 1
@@ -491,19 +356,12 @@ namisl:
 		UseTilesetCode: true
 		Length: 26
 		ShadowStart: 26
-		TilesetOverrides:
-			TEMPERATE: TEMPERATE
-			URBAN: URBAN
 	icon: msslicon
-		Offset: 0,0
 
 nairon:
+	Inherits: ^Structure
 	Defaults:
 		Offset: 0, -45
-		UseTilesetCode: true
-		TilesetOverrides:
-			TEMPERATE: GENERIC
-			URBAN: GENERIC
 	idle: ngiron_a
 		Length: 11
 		ShadowStart: 22
@@ -519,19 +377,13 @@ nairon:
 		Length: 12
 		ShadowStart: 36
 	make: ntironmk
-		Length: 25
-		ShadowStart: 25
-		TilesetOverrides:
-			TEMPERATE: TEMPERATE
-			URBAN: URBAN
 	icon: ironicon
-		Offset: 0,0
-		UseTilesetCode: false
 
 nawall:
+	Inherits: ^Structure
 	Defaults:
 		Offset: 0, -12
-		UseTilesetCode: true
+		-TilesetOverrides:
 	idle: ntwall
 		Length: 16
 		ShadowStart: 48
@@ -544,49 +396,30 @@ nawall:
 		Length: 16
 		ShadowStart: 80
 	icon: nwalicon
-		Offset: 0,0
-		UseTilesetCode: false
 
 nalasr:
+	Inherits: ^Structure
 	Defaults:
 		Offset: 0, -20
-		UseTilesetCode: true
-		TilesetOverrides:
-			TEMPERATE: GENERIC
-			URBAN: GENERIC
 	idle: nalasr
-		ShadowStart: 3
 	damaged-idle: nalasr
-		Start: 1
-		ShadowStart: 4
 	critical-idle: nalasr
 		Start: 2
 		ShadowStart: 5
 	make: nalasrmk
 		Length: 12
 		ShadowStart: 12
-		TilesetOverrides:
-			TEMPERATE: TEMPERATE
-			URBAN: URBAN
 		ZOffset: 0
 	icon: plticon
-		Offset: 0,0
-		UseTilesetCode: false
 
 tesla:
+	Inherits: ^Structure
 	Defaults:
 		Offset: 0, -15
-		UseTilesetCode: true
-		TilesetOverrides:
-			TEMPERATE: GENERIC
-			URBAN: GENERIC
 	idle: ngtsla
 		Length: 1
-		ShadowStart: 3
 	damaged-idle: ngtsla
-		Start: 1
 		Length: 1
-		ShadowStart: 4
 	idle-powered: ngtsla_a
 		Length: 10
 		ShadowStart: 20
@@ -610,38 +443,20 @@ tesla:
 		ShadowStart: 20
 		Tick: 100
 	make: nttslamk
-		Length: 25
-		ShadowStart: 25
-		TilesetOverrides:
-			TEMPERATE: TEMPERATE
-			URBAN: URBAN
 	icon: tslaicon
-		Offset: 0,0
-		UseTilesetCode: false
 
 naflak:
+	Inherits: ^Structure
 	Defaults:
 		Offset: 0, -15
 		ZOffset: -512
-		UseTilesetCode: true
-		TilesetOverrides:
-			TEMPERATE: GENERIC
-			URBAN: GENERIC
 	idle: ngflak
-		ShadowStart: 3
 	damaged-idle: ngflak
-		Start: 1
-		ShadowStart: 4
 	critical-idle: ngflak
 		Start: 2
 		ShadowStart: 5
 	make: ntflakmk
 		Length: 9
 		ShadowStart: 9
-		TilesetOverrides:
-			TEMPERATE: TEMPERATE
-			URBAN: URBAN
 		ZOffset: 0
 	icon: flakicon
-		Offset: 0,0
-		UseTilesetCode: false
