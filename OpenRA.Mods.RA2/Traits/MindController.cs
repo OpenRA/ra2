@@ -33,7 +33,8 @@ namespace OpenRA.Mods.RA2.Traits
 
 		[Desc("Condition to grant to self when controlling actors. Can stack up by the number of enslaved actors. You can use this to forbid firing of the dummy MC weapon.")]
 		[GrantedConditionReference]
-		public readonly string ControllingCondition;
+		[FieldLoader.Require]
+		public readonly string ControllingCondition = null;
 
 		[Desc("The sound played when the unit is mindcontrolled.")]
 		public readonly string[] Sounds = { };
