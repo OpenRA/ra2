@@ -180,6 +180,10 @@ snipe:
 		Type: None
 	Armament@primary:
 		Weapon: awp
+		RequiresCondition: !rank-elite
+	Armament@elite:
+		Weapon: awpe
+		RequiresCondition: rank-elite
 	AttackFrontal:
 		Voice: Attack
 	Voiced:
