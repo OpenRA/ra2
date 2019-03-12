@@ -101,8 +101,8 @@ nahand:
 		Start: 2
 		ShadowStart: 5
 	make: nthandmk
-		Length: 24
-		ShadowStart: 24
+		Length: 25
+		ShadowStart: 25
 		TilesetOverrides:
 			TEMPERATE: TEMPERATE
 			URBAN: URBAN
@@ -234,7 +234,7 @@ naweap:
 		ShadowStart: 13
 		Tick: 150
 	make: ntweapmk
-		Length: 24
+		Length: 25
 		ShadowStart: 25
 		TilesetOverrides:
 			TEMPERATE: TEMPERATE
@@ -563,8 +563,8 @@ nalasr:
 		Start: 2
 		ShadowStart: 5
 	make: nalasrmk
-		Length: 9
-		ShadowStart: 9
+		Length: 12
+		ShadowStart: 12
 		TilesetOverrides:
 			TEMPERATE: TEMPERATE
 			URBAN: URBAN
