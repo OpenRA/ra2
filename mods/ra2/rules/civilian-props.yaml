@@ -144,6 +144,8 @@ camsc01:
 		HP: 400
 	EditorTilesetFilter:
 		Categories: Decoration
+	EditorTilesetFilter:
+		ExcludeTilesets: SNOW
 
 camsc02:
 	Inherits: ^CivBuilding
@@ -155,6 +157,8 @@ camsc02:
 		HP: 50
 	EditorTilesetFilter:
 		Categories: Decoration
+	EditorTilesetFilter:
+		ExcludeTilesets: SNOW
 
 camsc03:
 	Inherits: ^CivBuilding
@@ -166,6 +170,8 @@ camsc03:
 		HP: 1
 	EditorTilesetFilter:
 		Categories: Decoration
+	EditorTilesetFilter:
+		ExcludeTilesets: SNOW
 
 camsc04:
 	Inherits: ^CivBuilding
@@ -177,6 +183,8 @@ camsc04:
 		HP: 1
 	EditorTilesetFilter:
 		Categories: Decoration
+	EditorTilesetFilter:
+		ExcludeTilesets: SNOW
 
 camsc05:
 	Inherits: ^CivBuilding
@@ -188,6 +196,8 @@ camsc05:
 		HP: 1
 	EditorTilesetFilter:
 		Categories: Decoration
+	EditorTilesetFilter:
+		ExcludeTilesets: SNOW
 
 camsc06:
 	Inherits: ^CivBuilding
