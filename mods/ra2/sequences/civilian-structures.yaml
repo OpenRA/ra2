@@ -577,7 +577,8 @@ castl01:
 	Inherits: ^CivStructure
 	Defaults: custl01
 		Offset: 0,-60
-	-rubble:
+		TilesetOverrides:
+			SNOW: URBAN
 
 castl02:
 	Inherits: ^CivStructure
