@@ -121,6 +121,8 @@ cahse05:
 		Footprint: x x
 	SpawnActorOnDeath:
 		Actor: cahse05.rubble
+	EditorTilesetFilter:
+		ExcludeTilesets: SNOW
 
 cahse05.rubble:
 	Inherits: ^Rubble
@@ -143,6 +145,8 @@ cahse06:
 		Footprint: xx
 	SpawnActorOnDeath:
 		Actor: cahse06.rubble
+	EditorTilesetFilter:
+		ExcludeTilesets: SNOW
 
 cahse06.rubble:
 	Inherits: ^Rubble
@@ -165,6 +169,8 @@ cahse07:
 		Footprint: xx xx xx
 	SpawnActorOnDeath:
 		Actor: cahse07.rubble
+	EditorTilesetFilter:
+		ExcludeTilesets: SNOW
 
 cahse07.rubble:
 	Inherits: ^Rubble
@@ -230,6 +236,8 @@ cawash01:
 		Range: 6c0
 	SpawnActorOnDeath:
 		Actor: cawash01.rubble
+	EditorTilesetFilter:
+		ExcludeTilesets: SNOW
 
 cawash01.rubble:
 	Inherits: ^Rubble
@@ -254,6 +262,8 @@ cawash03:
 		Range: 6c0
 	SpawnActorOnDeath:
 		Actor: cawash03.rubble
+	EditorTilesetFilter:
+		ExcludeTilesets: SNOW
 
 cawash03.rubble:
 	Inherits: ^Rubble
@@ -278,6 +288,8 @@ cawash04:
 		Range: 6c0
 	SpawnActorOnDeath:
 		Actor: cawash04.rubble
+	EditorTilesetFilter:
+		ExcludeTilesets: SNOW
 
 cawash04.rubble:
 	Inherits: ^Rubble
@@ -302,6 +314,8 @@ cawash05:
 		Range: 6c0
 	SpawnActorOnDeath:
 		Actor: cawash05.rubble
+	EditorTilesetFilter:
+		ExcludeTilesets: SNOW
 
 cawash05.rubble:
 	Inherits: ^Rubble
@@ -326,6 +340,8 @@ cawash06:
 		Footprint: xxxx xxxx xxxx xxxx
 	SpawnActorOnDeath:
 		Actor: cawash06.rubble
+	EditorTilesetFilter:
+		ExcludeTilesets: SNOW
 
 cawash06.rubble:
 	Inherits: ^Rubble
@@ -398,6 +414,8 @@ cawash09:
 		Range: 6c0
 	SpawnActorOnDeath:
 		Actor: cawash09.rubble
+	EditorTilesetFilter:
+		ExcludeTilesets: SNOW
 
 cawash09.rubble:
 	Inherits: ^Rubble
@@ -422,6 +440,8 @@ cawash10:
 		Range: 6c0
 	SpawnActorOnDeath:
 		Actor: cawash10.rubble
+	EditorTilesetFilter:
+		ExcludeTilesets: SNOW
 
 cawash10.rubble:
 	Inherits: ^Rubble
@@ -446,6 +466,8 @@ cawash11:
 		Range: 6c0
 	SpawnActorOnDeath:
 		Actor: cawash11.rubble
+	EditorTilesetFilter:
+		ExcludeTilesets: SNOW
 
 cawash11.rubble:
 	Inherits: ^Rubble
@@ -486,6 +508,8 @@ cawsh12:
 		PortCones: 86, 86, 86, 86, 86, 86
 	SpawnActorOnDeath:
 		Actor: cawsh12.rubble
+	EditorTilesetFilter:
+		ExcludeTilesets: SNOW
 
 cawsh12.rubble:
 	Inherits: ^Rubble
@@ -510,6 +534,8 @@ cawash13:
 		Footprint: xxx xxx xxx xxx
 	SpawnActorOnDeath:
 		Actor: cawash13.rubble
+	EditorTilesetFilter:
+		ExcludeTilesets: SNOW
 
 cawash13.rubble:
 	Inherits: ^Rubble
@@ -534,6 +560,8 @@ cawash14:
 		Footprint: xxx xxx xxx
 	SpawnActorOnDeath:
 		Actor: cawash14.rubble
+	EditorTilesetFilter:
+		ExcludeTilesets: SNOW
 
 cawash14.rubble:
 	Inherits: ^Rubble
@@ -558,6 +586,8 @@ cawash15:
 		Footprint: xxx xxx xxx xxx
 	SpawnActorOnDeath:
 		Actor: cawash15.rubble
+	EditorTilesetFilter:
+		ExcludeTilesets: SNOW
 
 cawash15.rubble:
 	Inherits: ^Rubble
@@ -584,6 +614,8 @@ cawash16:
 		Footprint: xxxxx xxxxx xxxxx
 	SpawnActorOnDeath:
 		Actor: cawash16.rubble
+	EditorTilesetFilter:
+		ExcludeTilesets: SNOW
 
 cawash16.rubble:
 	Inherits: ^Rubble
@@ -610,6 +642,8 @@ cawash17:
 		Footprint: xxxxxx xxxxxx xxxxxx xxxxxx
 	SpawnActorOnDeath:
 		Actor: cawash17.rubble
+	EditorTilesetFilter:
+		ExcludeTilesets: SNOW
 
 cawash17.rubble:
 	Inherits: ^Rubble
@@ -657,6 +691,8 @@ cawash19:
 		Sequence: idle-flag
 	SpawnActorOnDeath:
 		Actor: cawash19.rubble
+	EditorTilesetFilter:
+		ExcludeTilesets: SNOW
 
 cawash19.rubble:
 	Inherits: ^Rubble
@@ -681,6 +717,8 @@ canewy01:
 		Range: 4c0
 	SpawnActorOnDeath:
 		Actor: canewy01.rubble
+	EditorTilesetFilter:
+		ExcludeTilesets: SNOW
 
 canewy01.rubble:
 	Inherits: ^Rubble
@@ -709,6 +747,8 @@ canewy04:
 		Actor: canewy04.rubble
 	RenderSprites:
 		Palette: liberty
+	EditorTilesetFilter:
+		ExcludeTilesets: SNOW
 
 canewy04.rubble:
 	Inherits: ^Rubble
@@ -733,6 +773,8 @@ canewy05:
 	Building:
 		Dimensions: 2,2
 		Footprint: xx xx
+	EditorTilesetFilter:
+		ExcludeTilesets: SNOW
 
 canewy06:
 	Inherits: ^CivBuilding
@@ -748,6 +790,8 @@ canewy06:
 		Footprint: xxx xxx xxx
 	SpawnActorOnDeath:
 		Actor: canewy06.rubble
+	EditorTilesetFilter:
+		ExcludeTilesets: SNOW
 
 canewy06.rubble:
 	Inherits: ^Rubble
@@ -772,6 +816,8 @@ canewy07:
 		Footprint: xxx xxx xxx
 	SpawnActorOnDeath:
 		Actor: canewy07.rubble
+	EditorTilesetFilter:
+		ExcludeTilesets: SNOW
 
 canewy07.rubble:
 	Inherits: ^Rubble
@@ -796,6 +842,8 @@ canewy08:
 		Footprint: xxx xxx xxx
 	SpawnActorOnDeath:
 		Actor: canewy08.rubble
+	EditorTilesetFilter:
+		ExcludeTilesets: SNOW
 
 canewy08.rubble:
 	Inherits: ^Rubble
@@ -820,6 +868,8 @@ canewy10:
 		Footprint: xxx xxx
 	SpawnActorOnDeath:
 		Actor: canewy10.rubble
+	EditorTilesetFilter:
+		ExcludeTilesets: SNOW
 
 canewy10.rubble:
 	Inherits: ^Rubble
@@ -844,6 +894,8 @@ canewy11:
 		Footprint: xxx xxx
 	SpawnActorOnDeath:
 		Actor: canewy11.rubble
+	EditorTilesetFilter:
+		ExcludeTilesets: SNOW
 
 canewy11.rubble:
 	Inherits: ^Rubble
@@ -868,6 +920,8 @@ canewy12:
 		Footprint: xx xx xx
 	SpawnActorOnDeath:
 		Actor: canewy12.rubble
+	EditorTilesetFilter:
+		ExcludeTilesets: SNOW
 
 canewy12.rubble:
 	Inherits: ^Rubble
@@ -892,6 +946,8 @@ canewy13:
 		Footprint: xxx xxx xxx
 	SpawnActorOnDeath:
 		Actor: canewy13.rubble
+	EditorTilesetFilter:
+		ExcludeTilesets: SNOW
 
 canewy13.rubble:
 	Inherits: ^Rubble
@@ -916,6 +972,8 @@ canewy14:
 		Footprint: xxx xxx xxx
 	SpawnActorOnDeath:
 		Actor: canewy14.rubble
+	EditorTilesetFilter:
+		ExcludeTilesets: SNOW
 
 canewy14.rubble:
 	Inherits: ^Rubble
@@ -940,6 +998,8 @@ canewy15:
 		Footprint: xxx xxx xxx
 	SpawnActorOnDeath:
 		Actor: canewy15.rubble
+	EditorTilesetFilter:
+		ExcludeTilesets: SNOW
 
 canewy15.rubble:
 	Inherits: ^Rubble
@@ -964,6 +1024,8 @@ canewy16:
 		Footprint: xx xx
 	SpawnActorOnDeath:
 		Actor: canewy16.rubble
+	EditorTilesetFilter:
+		ExcludeTilesets: SNOW
 
 canewy16.rubble:
 	Inherits: ^Rubble
@@ -988,6 +1050,8 @@ canewy17:
 		Footprint: xx xx
 	SpawnActorOnDeath:
 		Actor: canewy17.rubble
+	EditorTilesetFilter:
+		ExcludeTilesets: SNOW
 
 canewy17.rubble:
 	Inherits: ^Rubble
@@ -1012,6 +1076,8 @@ canewy18:
 		Footprint: xx xx
 	SpawnActorOnDeath:
 		Actor: canewy18.rubble
+	EditorTilesetFilter:
+		ExcludeTilesets: SNOW
 
 canewy18.rubble:
 	Inherits: ^Rubble
@@ -1090,6 +1156,8 @@ caswst01:
 		Footprint: xx xx xx
 	SpawnActorOnDeath:
 		Actor: caswst01.rubble
+	EditorTilesetFilter:
+		ExcludeTilesets: SNOW
 
 caswst01.rubble:
 	Inherits: ^Rubble
@@ -1156,6 +1224,8 @@ cawa2a:
 		Range: 6c0
 	SpawnActorOnDeath:
 		Actor: cawa2a.rubble
+	EditorTilesetFilter:
+		ExcludeTilesets: SNOW
 
 cawa2a.rubble:
 	Inherits: ^Rubble
@@ -1182,6 +1252,8 @@ cawa2b:
 		Range: 6c0
 	SpawnActorOnDeath:
 		Actor: cawa2b.rubble
+	EditorTilesetFilter:
+		ExcludeTilesets: SNOW
 
 cawa2b.rubble:
 	Inherits: ^Rubble
@@ -1208,6 +1280,8 @@ cawa2c:
 		Range: 6c0
 	SpawnActorOnDeath:
 		Actor: cawa2c.rubble
+	EditorTilesetFilter:
+		ExcludeTilesets: SNOW
 
 cawa2c.rubble:
 	Inherits: ^Rubble
@@ -1234,6 +1308,8 @@ cawa2d:
 		Range: 6c0
 	SpawnActorOnDeath:
 		Actor: cawa2d.rubble
+	EditorTilesetFilter:
+		ExcludeTilesets: SNOW
 
 cawa2d.rubble:
 	Inherits: ^Rubble
@@ -1489,6 +1565,8 @@ cacity01:
 	RenderSprites:
 		PlayerPalette:
 		Palette: city
+	EditorTilesetFilter:
+		ExcludeTilesets: SNOW
 
 cacity02:
 	Inherits: ^CivBuilding
@@ -1505,6 +1583,8 @@ cacity02:
 	RenderSprites:
 		PlayerPalette:
 		Palette: city
+	EditorTilesetFilter:
+		ExcludeTilesets: SNOW
 
 cacity03:
 	Inherits: ^CivBuilding
@@ -1521,6 +1601,8 @@ cacity03:
 	RenderSprites:
 		PlayerPalette:
 		Palette: city
+	EditorTilesetFilter:
+		ExcludeTilesets: SNOW
 
 cacity04:
 	Inherits: ^CivBuilding
@@ -1537,6 +1619,8 @@ cacity04:
 	RenderSprites:
 		PlayerPalette:
 		Palette: city
+	EditorTilesetFilter:
+		ExcludeTilesets: SNOW
 
 city05:
 	Inherits: ^CivBuilding
@@ -1555,6 +1639,8 @@ city05:
 	RenderSprites:
 		PlayerPalette:
 		Palette: city
+	EditorTilesetFilter:
+		ExcludeTilesets: SNOW
 
 catech01:
 	Inherits: ^CivBuilding
@@ -1572,6 +1658,8 @@ catech01:
 		Footprint: xxx xxx xxx
 	SpawnActorOnDeath:
 		Actor: catech01.rubble
+	EditorTilesetFilter:
+		ExcludeTilesets: SNOW
 
 catech01.rubble:
 	Inherits: ^Rubble
@@ -1596,6 +1684,8 @@ catexs01:
 		Footprint: xx xx
 	SpawnActorOnDeath:
 		Actor: catexs01.rubble
+	EditorTilesetFilter:
+		ExcludeTilesets: SNOW
 
 catexs01.rubble:
 	Inherits: ^Rubble
@@ -1622,6 +1712,8 @@ catexs02:
 		Footprint: xxxx xxxx xxxx xxxx
 	SpawnActorOnDeath:
 		Actor: catexs02.rubble
+	EditorTilesetFilter:
+		ExcludeTilesets: SNOW
 
 catexs02.rubble:
 	Inherits: ^Rubble
@@ -1646,6 +1738,8 @@ catexs03:
 		Footprint: xxx xxx xxx
 	SpawnActorOnDeath:
 		Actor: catexs03.rubble
+	EditorTilesetFilter:
+		ExcludeTilesets: SNOW
 
 catexs03.rubble:
 	Inherits: ^Rubble
@@ -1670,6 +1764,8 @@ catexs04:
 		Footprint: xxx xxx xxx
 	SpawnActorOnDeath:
 		Actor: catexs04.rubble
+	EditorTilesetFilter:
+		ExcludeTilesets: SNOW
 
 catexs04.rubble:
 	Inherits: ^Rubble
@@ -1694,6 +1790,8 @@ catexs05:
 		Footprint: xxx xxx xxx
 	SpawnActorOnDeath:
 		Actor: catexs05.rubble
+	EditorTilesetFilter:
+		ExcludeTilesets: SNOW
 
 catexs05.rubble:
 	Inherits: ^Rubble
@@ -1718,6 +1816,8 @@ catexs06:
 		Footprint: xxx xxx xxx
 	SpawnActorOnDeath:
 		Actor: catexs06.rubble
+	EditorTilesetFilter:
+		ExcludeTilesets: SNOW
 
 catexs06.rubble:
 	Inherits: ^Rubble
@@ -1742,6 +1842,8 @@ catexs07:
 		Footprint: xxx xxx xxx
 	SpawnActorOnDeath:
 		Actor: catexs07.rubble
+	EditorTilesetFilter:
+		ExcludeTilesets: SNOW
 
 catexs07.rubble:
 	Inherits: ^Rubble
@@ -1792,6 +1894,8 @@ capars01:
 		Footprint: xxxx xxxx xxxx xxxx
 	SpawnActorOnDeath:
 		Actor: capars01.rubble
+	EditorTilesetFilter:
+		ExcludeTilesets: SNOW
 
 capars01.rubble:
 	Inherits: ^Rubble
@@ -1816,6 +1920,8 @@ capars02:
 		Footprint: xxxxxx xxxxxx xxxxxx xxxxxx
 	SpawnActorOnDeath:
 		Actor: capars02.rubble
+	EditorTilesetFilter:
+		ExcludeTilesets: SNOW
 
 capars02.rubble:
 	Inherits: ^Rubble
@@ -1840,6 +1946,8 @@ capars04:
 		Footprint: xxx xxx xxx
 	SpawnActorOnDeath:
 		Actor: capars04.rubble
+	EditorTilesetFilter:
+		ExcludeTilesets: SNOW
 
 capars04.rubble:
 	Inherits: ^Rubble
@@ -1864,6 +1972,8 @@ capars05:
 		Footprint: xxx xxx xxx
 	SpawnActorOnDeath:
 		Actor: capars05.rubble
+	EditorTilesetFilter:
+		ExcludeTilesets: SNOW
 
 capars05.rubble:
 	Inherits: ^Rubble
@@ -1888,6 +1998,8 @@ capars06:
 		Footprint: xxx xxx xxx
 	SpawnActorOnDeath:
 		Actor: capars06.rubble
+	EditorTilesetFilter:
+		ExcludeTilesets: SNOW
 
 capars06.rubble:
 	Inherits: ^Rubble
@@ -1923,6 +2035,8 @@ capars08:
 		Footprint: xxxxxx xxxxxx xxxxxx xxxxxx
 	SpawnActorOnDeath:
 		Actor: capars08.rubble
+	EditorTilesetFilter:
+		ExcludeTilesets: SNOW
 
 capars08.rubble:
 	Inherits: ^Rubble
@@ -1947,6 +2061,8 @@ capars09:
 		Footprint: xxxxxx xxxxxx xxxxxx xxxxxx
 	SpawnActorOnDeath:
 		Actor: capars09.rubble
+	EditorTilesetFilter:
+		ExcludeTilesets: SNOW
 
 capars09.rubble:
 	Inherits: ^Rubble
@@ -1971,6 +2087,8 @@ capars10:
 		Footprint: xxxx xxxx xxxx
 	SpawnActorOnDeath:
 		Actor: capars10.rubble
+	EditorTilesetFilter:
+		ExcludeTilesets: SNOW
 
 capars10.rubble:
 	Inherits: ^Rubble
@@ -1997,6 +2115,8 @@ capars11:
 		Footprint: xxx xxx xxx xxx
 	SpawnActorOnDeath:
 		Actor: capars11.rubble
+	EditorTilesetFilter:
+		ExcludeTilesets: SNOW
 
 capars11.rubble:
 	Inherits: ^Rubble
@@ -2023,6 +2143,8 @@ capars12:
 		Footprint: xxx xxx xxx xxx xxx
 	SpawnActorOnDeath:
 		Actor: capars12.rubble
+	EditorTilesetFilter:
+		ExcludeTilesets: SNOW
 
 capars12.rubble:
 	Inherits: ^Rubble
@@ -2049,6 +2171,8 @@ capars13:
 		Footprint: xxx xxx xxx xxx
 	SpawnActorOnDeath:
 		Actor: capars13.rubble
+	EditorTilesetFilter:
+		ExcludeTilesets: SNOW
 
 capars13.rubble:
 	Inherits: ^Rubble
@@ -2075,6 +2199,8 @@ capars14:
 		Footprint: xxxx xxxx xxxx
 	SpawnActorOnDeath:
 		Actor: capars14.rubble
+	EditorTilesetFilter:
+		ExcludeTilesets: SNOW
 
 capars14.rubble:
 	Inherits: ^Rubble
@@ -2125,6 +2251,8 @@ caprs03:
 		Footprint: xxxxxx xxxxxx xxxxxx xxxxxx
 	SpawnActorOnDeath:
 		Actor: caprs03.rubble
+	EditorTilesetFilter:
+		ExcludeTilesets: SNOW
 
 caprs03.rubble:
 	Inherits: ^Rubble
@@ -2434,6 +2562,8 @@ camiam01:
 		Footprint: xxxx xxxx
 	SpawnActorOnDeath:
 		Actor: camiam01.rubble
+	EditorTilesetFilter:
+		ExcludeTilesets: SNOW
 
 camiam01.rubble:
 	Inherits: ^Rubble
@@ -2458,6 +2588,8 @@ camiam02:
 		Footprint: xxxx xxxx
 	SpawnActorOnDeath:
 		Actor: camiam02.rubble
+	EditorTilesetFilter:
+		ExcludeTilesets: SNOW
 
 camiam02.rubble:
 	Inherits: ^Rubble
@@ -2482,6 +2614,8 @@ camiam03:
 		Footprint: xx xx xx
 	SpawnActorOnDeath:
 		Actor: camiam03.rubble
+	EditorTilesetFilter:
+		ExcludeTilesets: SNOW
 
 camiam03.rubble:
 	Inherits: ^Rubble
@@ -2502,6 +2636,8 @@ camiam04:
 		HP: 200
 	EditorTilesetFilter:
 		Categories: Decoration
+	EditorTilesetFilter:
+		ExcludeTilesets: SNOW
 
 camiam05:
 	Inherits: ^CivBuilding
@@ -2517,6 +2653,8 @@ camiam05:
 		Footprint: xxx xxx xxx xxx
 	SpawnActorOnDeath:
 		Actor: camiam05.rubble
+	EditorTilesetFilter:
+		ExcludeTilesets: SNOW
 
 camiam05.rubble:
 	Inherits: ^Rubble
@@ -2541,6 +2679,8 @@ camiam06:
 		Footprint: xxxx xxxx xxxx xxxx
 	SpawnActorOnDeath:
 		Actor: camiam06.rubble
+	EditorTilesetFilter:
+		ExcludeTilesets: SNOW
 
 camiam06.rubble:
 	Inherits: ^Rubble
@@ -2564,6 +2704,8 @@ camiam07:
 		Footprint: xxxx xxxx xxxx xxxx
 	SpawnActorOnDeath:
 		Actor: camiam07.rubble
+	EditorTilesetFilter:
+		ExcludeTilesets: SNOW
 
 camiam07.rubble:
 	Inherits: ^Rubble
@@ -2589,6 +2731,8 @@ camiam08:
 		Footprint: xxx
 	SpawnActorOnDeath:
 		Actor: camiam08.rubble
+	EditorTilesetFilter:
+		ExcludeTilesets: SNOW
 
 camiam08.rubble:
 	Inherits: ^Rubble
@@ -2613,6 +2757,8 @@ canwy05:
 		Footprint: xxxx xxxx xxxx xxxx
 	SpawnActorOnDeath:
 		Actor: canwy05.rubble
+	EditorTilesetFilter:
+		ExcludeTilesets: SNOW
 
 canwy05.rubble:
 	Inherits: ^Rubble
@@ -2637,6 +2783,8 @@ canwy09:
 		Footprint: xx xx xx
 	SpawnActorOnDeath:
 		Actor: canwy09.rubble
+	EditorTilesetFilter:
+		ExcludeTilesets: SNOW
 
 canwy09.rubble:
 	Inherits: ^Rubble
@@ -2661,6 +2809,8 @@ canwy22:
 		Footprint: xxx xxx xxx
 	SpawnActorOnDeath:
 		Actor: canwy22.rubble
+	EditorTilesetFilter:
+		ExcludeTilesets: SNOW
 
 canwy22.rubble:
 	Inherits: ^Rubble
@@ -2685,6 +2835,8 @@ canwy23:
 		Footprint: xxx xxx
 	SpawnActorOnDeath:
 		Actor: canwy23.rubble
+	EditorTilesetFilter:
+		ExcludeTilesets: SNOW
 
 canwy23.rubble:
 	Inherits: ^Rubble
@@ -2709,6 +2861,8 @@ canwy24:
 		Footprint: xxx xxx xxx
 	SpawnActorOnDeath:
 		Actor: canwy24.rubble
+	EditorTilesetFilter:
+		ExcludeTilesets: SNOW
 
 canwy24.rubble:
 	Inherits: ^Rubble
@@ -2733,6 +2887,8 @@ canwy25:
 		Footprint: xxx xxx xxx
 	SpawnActorOnDeath:
 		Actor: canwy25.rubble
+	EditorTilesetFilter:
+		ExcludeTilesets: SNOW
 
 canwy25.rubble:
 	Inherits: ^Rubble
@@ -2757,6 +2913,8 @@ canwy26:
 		Footprint: xxxxx xxxxx xxxxx
 	SpawnActorOnDeath:
 		Actor: canwy26.rubble
+	EditorTilesetFilter:
+		ExcludeTilesets: SNOW
 
 canwy26.rubble:
 	Inherits: ^Rubble
@@ -2783,6 +2941,8 @@ camex01:
 		Footprint: xxx xxx
 	SpawnActorOnDeath:
 		Actor: camex01.rubble
+	EditorTilesetFilter:
+		ExcludeTilesets: SNOW
 
 camex01.rubble:
 	Inherits: ^Rubble
@@ -2809,6 +2969,8 @@ camex02:
 		Footprint: xxxxxx xxxxxx xxxxxx xxxxxx
 	SpawnActorOnDeath:
 		Actor: camex02.rubble
+	EditorTilesetFilter:
+		ExcludeTilesets: SNOW
 
 camex02.rubble:
 	Inherits: ^Rubble
@@ -2835,6 +2997,8 @@ camex03:
 		Footprint: xxx xxx xxx
 	SpawnActorOnDeath:
 		Actor: camex03.rubble
+	EditorTilesetFilter:
+		ExcludeTilesets: SNOW
 
 camex03.rubble:
 	Inherits: ^Rubble
@@ -2861,6 +3025,8 @@ camex04:
 		Footprint: xxxx xxxx xxxx xxxx
 	SpawnActorOnDeath:
 		Actor: camex04.rubble
+	EditorTilesetFilter:
+		ExcludeTilesets: SNOW
 
 camex04.rubble:
 	Inherits: ^Rubble
@@ -2887,6 +3053,8 @@ camex05:
 		Footprint: xx xx
 	SpawnActorOnDeath:
 		Actor: camex05.rubble
+	EditorTilesetFilter:
+		ExcludeTilesets: SNOW
 
 camex05.rubble:
 	Inherits: ^Rubble
@@ -2983,6 +3151,8 @@ cachig01:
 		Footprint: xxx xxx
 	SpawnActorOnDeath:
 		Actor: cachig01.rubble
+	EditorTilesetFilter:
+		ExcludeTilesets: SNOW
 
 cachig01.rubble:
 	Inherits: ^Rubble
@@ -3007,6 +3177,8 @@ cachig02:
 		Footprint: xx xx xx
 	SpawnActorOnDeath:
 		Actor: cachig02.rubble
+	EditorTilesetFilter:
+		ExcludeTilesets: SNOW
 
 cachig02.rubble:
 	Inherits: ^Rubble
@@ -3031,6 +3203,8 @@ cachig03:
 		Footprint: xxx xxx
 	SpawnActorOnDeath:
 		Actor: cachig03.rubble
+	EditorTilesetFilter:
+		ExcludeTilesets: SNOW
 
 cachig03.rubble:
 	Inherits: ^Rubble
@@ -3057,6 +3231,8 @@ cachig04:
 		Footprint: xx xx
 	SpawnActorOnDeath:
 		Actor: cachig04.rubble
+	EditorTilesetFilter:
+		ExcludeTilesets: SNOW
 
 cachig04.rubble:
 	Inherits: ^Rubble
@@ -3083,6 +3259,8 @@ cachig05:
 		Footprint: xxxx xxxx xxxx xxxx
 	SpawnActorOnDeath:
 		Actor: cachig05.rubble
+	EditorTilesetFilter:
+		ExcludeTilesets: SNOW
 
 cachig05.rubble:
 	Inherits: ^Rubble
@@ -3107,6 +3285,8 @@ cachig06:
 		Footprint: xx xx
 	SpawnActorOnDeath:
 		Actor: cachig06.rubble
+	EditorTilesetFilter:
+		ExcludeTilesets: SNOW
 
 cachig06.rubble:
 	Inherits: ^Rubble
@@ -3131,6 +3311,8 @@ castl01:
 		Footprint: xxxx xxxx xxxx xxxx
 	SpawnActorOnDeath:
 		Actor: castl01.rubble
+	EditorTilesetFilter:
+		ExcludeTilesets: SNOW
 
 castl01.rubble:
 	Inherits: ^Rubble
@@ -3155,6 +3337,8 @@ castl02:
 		Footprint: xxxx xxxx xxxx xxxx
 	SpawnActorOnDeath:
 		Actor: castl02.rubble
+	EditorTilesetFilter:
+		ExcludeTilesets: SNOW
 
 castl02.rubble:
 	Inherits: ^Rubble
@@ -3179,6 +3363,8 @@ castl03:
 		Footprint: xxxx xxxx xxxx xxxx
 	SpawnActorOnDeath:
 		Actor: castl03.rubble
+	EditorTilesetFilter:
+		ExcludeTilesets: SNOW
 
 castl03.rubble:
 	Inherits: ^Rubble
@@ -3203,6 +3389,8 @@ castl04:
 		Footprint: xx xx xx xx xx xx
 	SpawnActorOnDeath:
 		Actor: castl04.rubble
+	EditorTilesetFilter:
+		ExcludeTilesets: SNOW
 
 castl04.rubble:
 	Inherits: ^Rubble
@@ -3229,6 +3417,8 @@ castl05a:
 		Footprint: xxxx xxxx xxxx xxxx
 	SpawnActorOnDeath:
 		Actor: castl05a.rubble
+	EditorTilesetFilter:
+		ExcludeTilesets: SNOW
 
 castl05a.rubble:
 	Inherits: ^Rubble
@@ -3255,6 +3445,8 @@ castl05b:
 		Footprint: xxxx xxxx xxxx xxxx
 	SpawnActorOnDeath:
 		Actor: castl05b.rubble
+	EditorTilesetFilter:
+		ExcludeTilesets: SNOW
 
 castl05b.rubble:
 	Inherits: ^Rubble
@@ -3281,6 +3473,8 @@ castl05c:
 		Footprint: xxxx xxxx xxxx xxxx
 	SpawnActorOnDeath:
 		Actor: castl05c.rubble
+	EditorTilesetFilter:
+		ExcludeTilesets: SNOW
 
 castl05c.rubble:
 	Inherits: ^Rubble
@@ -3307,6 +3501,8 @@ castl05d:
 		Footprint: xxxx xxxx xxxx xxxx
 	SpawnActorOnDeath:
 		Actor: castl05d.rubble
+	EditorTilesetFilter:
+		ExcludeTilesets: SNOW
 
 castl05d.rubble:
 	Inherits: ^Rubble
@@ -3333,6 +3529,8 @@ castl05e:
 		Footprint: xxxx xxxx xxxx xxxx
 	SpawnActorOnDeath:
 		Actor: castl05e.rubble
+	EditorTilesetFilter:
+		ExcludeTilesets: SNOW
 
 castl05e.rubble:
 	Inherits: ^Rubble
@@ -3359,6 +3557,8 @@ castl05f:
 		Footprint: xxxx xxxx xxxx xxxx
 	SpawnActorOnDeath:
 		Actor: castl05f.rubble
+	EditorTilesetFilter:
+		ExcludeTilesets: SNOW
 
 castl05f.rubble:
 	Inherits: ^Rubble
@@ -3385,6 +3585,8 @@ castl05g:
 		Footprint: xxxx xxxx xxxx xxxx
 	SpawnActorOnDeath:
 		Actor: castl05g.rubble
+	EditorTilesetFilter:
+		ExcludeTilesets: SNOW
 
 castl05g.rubble:
 	Inherits: ^Rubble
@@ -3411,6 +3613,8 @@ castl05h:
 		Footprint: xxxx xxxx xxxx xxxx
 	SpawnActorOnDeath:
 		Actor: castl05h.rubble
+	EditorTilesetFilter:
+		ExcludeTilesets: SNOW
 
 castl05h.rubble:
 	Inherits: ^Rubble
@@ -3435,6 +3639,8 @@ camsc07:
 	Building:
 		Dimensions: 2,2
 		Footprint: xx xx
+	EditorTilesetFilter:
+		ExcludeTilesets: SNOW
 
 camsc08:
 	Inherits: ^CivBuilding
@@ -3445,6 +3651,8 @@ camsc08:
 		Range: 6c0
 	Health:
 		HP: 200
+	EditorTilesetFilter:
+		ExcludeTilesets: SNOW
 
 camsc09:
 	Inherits: ^CivBuilding
@@ -3455,6 +3663,8 @@ camsc09:
 		Range: 6c0
 	Health:
 		HP: 200
+	EditorTilesetFilter:
+		ExcludeTilesets: SNOW
 
 camsc10:
 	Inherits: ^CivBuilding
