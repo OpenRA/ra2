@@ -380,21 +380,8 @@ nairon:
 	icon: ironicon
 
 nawall:
-	Inherits: ^Structure
-	Defaults:
-		Offset: 0, -12
-		-TilesetOverrides:
-	idle: ntwall
-		Length: 16
-		ShadowStart: 48
-	damaged-idle: ntwall
-		Start: 16
-		Length: 16
-		ShadowStart: 64
-	critical-idle: ntwall
-		Start: 32
-		Length: 16
-		ShadowStart: 80
+	Inherits: ^Wall
+	Defaults: ntwall
 	icon: nwalicon
 
 nalasr:

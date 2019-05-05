@@ -172,9 +172,9 @@
 		ShadowStart: 7
 		ZOffset: -3c0
 
-^Wall:
+^Fence:
 	Defaults:
-		Offset: 0,-15
+		Offset: 0, -15
 		UseTilesetCode: true
 	idle:
 		Length: 16
@@ -186,6 +186,19 @@
 	icon:
 		Offset: 0,0
 		UseTilesetCode: false
+
+^Wall:
+	Inherits: ^Fence
+	Defaults:
+		Offset: 0, -12
+	idle:
+		ShadowStart: 48
+	damaged-idle:
+		ShadowStart: 64
+	critical-idle:
+		Start: 32
+		Length: 16
+		ShadowStart: 80
 
 ^Pole:
 	Defaults:
