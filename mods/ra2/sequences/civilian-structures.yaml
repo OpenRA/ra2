@@ -1,20 +1,20 @@
 cafncb:
-	Inherits: ^Wall
+	Inherits: ^Fence
 	Defaults: ctfncb
 	icon: wallicon
 
 cafncw:
-	Inherits: ^Wall
+	Inherits: ^Fence
 	Defaults: ctfncw
 	icon: wallicon
 
 gasand:
-	Inherits: ^Wall
+	Inherits: ^Fence
 	Defaults: gtsand
 	icon: wallicon
 
 cafncp:
-	Inherits: ^Wall
+	Inherits: ^Fence
 	Defaults: ctfncp
 	icon: wallicon
 
