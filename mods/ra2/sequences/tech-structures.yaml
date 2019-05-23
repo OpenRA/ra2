@@ -39,7 +39,7 @@ cahosp:
 		Tick: 400
 	flag: cahosp_f
 		ZOffset: 128
-		Offset: 0,0
+		Offset: -9,-23
 
 caoutp:
 	Inherits: ^TechStructure
