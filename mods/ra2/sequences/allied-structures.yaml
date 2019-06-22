@@ -395,7 +395,7 @@ gaspysat:
 gagap:
 	Inherits: ^Structure
 	Defaults:
-		Offset: -15, -7
+		Offset: 0, -15
 	idle: gggap
 		Length: 1
 	damaged-idle: gggap
