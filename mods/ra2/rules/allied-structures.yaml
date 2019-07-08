@@ -1,5 +1,5 @@
 gacnst:
-	Inherits: ^Building
+	Inherits: ^BaseBuilding
 	Inherits@shape: ^4x4Shape
 	Buildable:
 		Queue: Building
@@ -29,7 +29,7 @@ gacnst:
 		Offset: 1,1
 		Facing: 96
 		DeployCursor: undeploy
-		RequiresCondition: factundeploy
+		RequiresCondition: factundeploy && !build-incomplete
 	GrantConditionOnPrerequisite@GLOBALFACTUNDEPLOY:
 		Condition: factundeploy
 		Prerequisites: global-factundeploy
@@ -43,6 +43,7 @@ gacnst:
 	WithIdleOverlay@fans:
 		Sequence: idle-fans
 		PauseOnCondition: lowpower
+		RequiresCondition: !build-incomplete
 	WithBuildingPlacedOverlay:
 	ProvidesPrerequisite:
 		Prerequisite: structures.allies
@@ -62,7 +63,7 @@ gacnst:
 		Factions: cuba, libya, iraq, russia
 
 gapowr:
-	Inherits: ^Building
+	Inherits: ^BaseBuilding
 	Inherits@shape: ^2x2Shape
 	Buildable:
 		Queue: Building
@@ -88,6 +89,7 @@ gapowr:
 		Range: 4c0
 	WithIdleOverlay@glow:
 		Sequence: idle-glow
+		RequiresCondition: !build-incomplete
 	Power:
 		Amount: 200
 		RequiresCondition: !power-outage
@@ -103,7 +105,7 @@ gapowr:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
 
 gapile:
-	Inherits: ^Building
+	Inherits: ^BaseBuilding
 	Inherits@shape: ^3x2Shape
 	Buildable:
 		Queue: Building
@@ -151,6 +153,7 @@ gapile:
 		Produces: Infantry
 	PrimaryBuilding:
 		PrimaryCondition: primary
+		SelectionNotification: PrimaryBuildingSelected
 	WithTextDecoration@primary:
 		RequiresSelection: true
 		Text: PRIMARY
@@ -158,8 +161,10 @@ gapile:
 		ZOffset: 256
 		RequiresCondition: primary
 	ProductionBar:
+		ProductionType: Infantry
 	WithIdleOverlay@flag:
 		Sequence: idle-flag
+		RequiresCondition: !build-incomplete
 	Power:
 		Amount: -10
 	InfiltrateForSupportPower:
@@ -169,7 +174,7 @@ gapile:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
 
 garefn:
-	Inherits: ^Building
+	Inherits: ^BaseBuilding
 	Inherits@shape: ^4x3Shape
 	Buildable:
 		Queue: Building
@@ -216,15 +221,17 @@ garefn:
 	WithDockedOverlay:
 	WithIdleOverlay@bib:
 		Sequence: idle-bib
+		RequiresCondition: !build-incomplete
 	WithIdleOverlay@drill:
 		Sequence: idle-drill
+		RequiresCondition: !build-incomplete
 	Power:
 		Amount: -50
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
 
 gaairc:
-	Inherits: ^Building
+	Inherits: ^BaseBuilding
 	Inherits@shape: ^3x2Shape
 	Buildable:
 		Queue: Building
@@ -265,15 +272,19 @@ gaairc:
 	WithIdleOverlay@top:
 		Sequence: idle-top
 		PauseOnCondition: lowpower
+		RequiresCondition: !build-incomplete
 	WithIdleOverlay@bottom:
 		Sequence: idle-bottom
 		PauseOnCondition: lowpower
+		RequiresCondition: !build-incomplete
 	WithIdleOverlay@mid:
 		Sequence: idle-mid
 		PauseOnCondition: lowpower
+		RequiresCondition: !build-incomplete
 	WithIdleOverlay@dish:
 		Sequence: idle-dish
 		PauseOnCondition: lowpower
+		RequiresCondition: !build-incomplete
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
 	Power:
@@ -298,8 +309,10 @@ gaairc:
 	Production:
 		Produces: Aircraft
 	ProductionBar:
+		ProductionType: Aircraft
 	PrimaryBuilding:
 		PrimaryCondition: primary
+		SelectionNotification: PrimaryBuildingSelected
 	WithTextDecoration@primary:
 		RequiresSelection: true
 		Text: PRIMARY
@@ -333,7 +346,7 @@ amradr:
 		ArrowSequence: arrow
 
 gaweap:
-	Inherits: ^Building
+	Inherits: ^BaseBuilding
 	Inherits@shape: ^5x3Shape
 	Buildable:
 		Queue: Building
@@ -370,6 +383,7 @@ gaweap:
 		Produces: Vehicle
 	PrimaryBuilding:
 		PrimaryCondition: primary
+		SelectionNotification: PrimaryBuildingSelected
 	WithTextDecoration@primary:
 		RequiresSelection: true
 		Text: PRIMARY
@@ -377,16 +391,21 @@ gaweap:
 		ZOffset: 256
 		RequiresCondition: primary
 	ProductionBar:
+		ProductionType: Vehicle
 	WithIdleOverlay@flag:
 		Sequence: idle-flag
+		RequiresCondition: !build-incomplete
 	WithIdleOverlay@fan:
 		Sequence: overlay-fan
+		RequiresCondition: !build-incomplete
 	WithIdleOverlay@bib:
 		Sequence: bib
 	WithExitOverlay@top-vehicles:
+		RequiresCondition: !build-incomplete
 		Sequence: build-top
 	WithExitOverlay@ramp:
 		Sequence: build-ramp
+		RequiresCondition: !build-incomplete
 	Power:
 		Amount: -25
 	InfiltrateForSupportPower:
@@ -396,7 +415,7 @@ gaweap:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
 
 gayard:
-	Inherits: ^Building
+	Inherits: ^BaseBuilding
 	Inherits@shape: ^4x4Shape
 	Valued:
 		Cost: 1000
@@ -493,6 +512,7 @@ gayard:
 		Produces: Ship
 	PrimaryBuilding:
 		PrimaryCondition: primary
+		SelectionNotification: PrimaryBuildingSelected
 	WithTextDecoration@primary:
 		RequiresSelection: true
 		Text: PRIMARY
@@ -504,23 +524,28 @@ gayard:
 		Palette: mouse
 		IsPlayerPalette: false
 	RepairsUnits:
+		StartRepairingNotification: Repairing
 		FinishRepairingNotification: UnitRepaired
 	ProductionBar:
+		ProductionType: Ship
 	Power:
 		Amount: -20
 	WithIdleOverlay@crane:
 		Sequence: idle-crane
+		RequiresCondition: !build-incomplete
 	WithIdleOverlay@waves:
 		Sequence: idle-waves
+		RequiresCondition: !build-incomplete
 	WithRepairOverlay:
 		Sequence: repair
+		RequiresCondition: !build-incomplete
 	-SpawnActorsOnSell@allies:
 	-SpawnActorsOnSell@soviets:
 	RequiresBuildableArea:
 		Adjacent: 13
 
 gadept:
-	Inherits: ^Building
+	Inherits: ^BaseBuilding
 	Inherits@shape: ^3x3Shape
 	Buildable:
 		Queue: Building
@@ -549,20 +574,24 @@ gadept:
 		IsPlayerPalette: false
 	RepairsUnits:
 		Interval: 50
+		StartRepairingNotification: Repairing
 		FinishRepairingNotification: UnitRepaired
 	WithIdleOverlay@side:
 		Sequence: idle-side
+		RequiresCondition: !build-incomplete
 	WithIdleOverlay@bib:
 		Sequence: bib
-	WithRepairAnimation:
+		RequiresCondition: !build-incomplete
+	WithResupplyAnimation:
 		Sequence: repair
+		RequiresCondition: !build-incomplete
 	Power:
 		Amount: -25
 	ProvidesPrerequisite:
 		Prerequisite: repairpad
 
 gatech:
-	Inherits: ^Building
+	Inherits: ^BaseBuilding
 	Inherits@shape: ^3x2Shape
 	Buildable:
 		Queue: Building
@@ -587,6 +616,7 @@ gatech:
 		Range: 6c0
 	WithIdleOverlay@lights:
 		Sequence: idle-lights
+		RequiresCondition: !build-incomplete
 	Power:
 		Amount: -100
 	InfiltrateForSupportPower:
@@ -635,6 +665,7 @@ gapill:
 		MuzzleSplitFacings: 8
 	AttackTurreted:
 		Voice: Attack
+		RequiresCondition: !build-incomplete
 	Turreted:
 		TurnSpeed: 255
 	BodyOrientation:
@@ -677,6 +708,7 @@ nasam:
 	AttackTurreted:
 		Voice: Attack
 		PauseOnCondition: lowpower
+		RequiresCondition: !build-incomplete
 	Armament:
 		Weapon: RedEye2
 		LocalOffset: 500,0,900
@@ -685,6 +717,7 @@ nasam:
 	RenderVoxels:
 		NormalsPalette: ts-normals
 	WithVoxelTurret:
+		RequiresCondition: !build-incomplete
 	WithRangeCircle:
 		Range: 12c0
 		Type: patriot
@@ -729,6 +762,7 @@ gtgcan:
 	AttackTurreted:
 		Voice: Attack
 		PauseOnCondition: lowpower
+		RequiresCondition: !build-incomplete
 	Armament:
 		Weapon: GrandCannonWeapon
 		Recoil: 127
@@ -740,7 +774,9 @@ gtgcan:
 	RenderVoxels:
 		NormalsPalette: ts-normals
 	WithVoxelTurret:
+		RequiresCondition: !build-incomplete
 	WithVoxelBarrel:
+		RequiresCondition: !build-incomplete
 	AutoTarget:
 	WithMuzzleOverlay:
 	WithRangeCircle:
@@ -753,7 +789,7 @@ gtgcan:
 		ValidPowerStates: Low, Critical
 
 gaorep:
-	Inherits: ^Building
+	Inherits: ^BaseBuilding
 	Inherits@shape: ^3x3Shape
 	Buildable:
 		Queue: Building
@@ -778,11 +814,12 @@ gaorep:
 		Range: 5c0
 	WithIdleOverlay@glow:
 		Sequence: idle-glow
+		RequiresCondition: !build-incomplete
 	Power:
 		Amount: -200
 
 gaspysat:
-	Inherits: ^Building
+	Inherits: ^BaseBuilding
 	Inherits@shape: ^2x2Shape
 	Buildable:
 		Queue: Support
@@ -807,6 +844,7 @@ gaspysat:
 	WithIdleOverlay@dish:
 		Sequence: idle-dish
 		PauseOnCondition: lowpower
+		RequiresCondition: !build-incomplete
 	Power:
 		Amount: -100
 	ProvidesRadar:
@@ -848,7 +886,7 @@ gagap:
 		Amount: -100
 
 gaweat:
-	Inherits: ^Building
+	Inherits: ^BaseBuilding
 	Inherits@shape: ^3x3Shape
 	Buildable:
 		Queue: Support
@@ -879,7 +917,7 @@ gaweat:
 	#	ValidPowerStates: Low, Critical
 
 gacsph:
-	Inherits: ^Building
+	Inherits: ^BaseBuilding
 	Inherits@shape: ^4x3Shape
 	Buildable:
 		Queue: Support
@@ -906,6 +944,7 @@ gacsph:
 		Amount: -200
 	WithIdleOverlay:
 		Sequence: idle-dome
+		RequiresCondition: !build-incomplete
 	GrantConditionOnPowerState@LOWPOWER:
 		Condition: lowpower
 		ValidPowerStates: Low, Critical
@@ -959,6 +998,7 @@ atesla:
 		ReloadDelay: 60
 		ChargeAudio: bpripow.wav
 		PauseOnCondition: lowpower
+		RequiresCondition: !build-incomplete
 	Power:
 		Amount: -75
 	AutoTarget:
@@ -968,6 +1008,7 @@ atesla:
 	WithIdleOverlay@normal:
 		Sequence: idle-normal
 		PauseOnCondition: lowpower
+		RequiresCondition: !build-incomplete
 	WithSpriteBody:
 		PauseOnCondition: lowpower
 	WithRangeCircle:

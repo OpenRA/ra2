@@ -128,8 +128,10 @@ dron:
 		DefaultAttackSequence: shoot
 	Armament:
 		Weapon: DroneJump
+		ReloadingCondition: attack-cooldown
 	AttackLeap:
 		Voice: Attack
+		PauseOnCondition: attacking || attack-cooldown
 	AutoTarget:
 		InitialStance: AttackAnything
 	AutoTargetPriority@DEFAULT:
@@ -371,12 +373,24 @@ dtruck:
 	Explodes:
 		Weapon: demobomb
 		EmptyWeapon: demobomb
-	AttackSuicides:
+	AttackFrontal:
 		Voice: Attack
+		FacingTolerance: 128
+		RequiresCondition: !chronodisable
+	Armament@PRIMARY:
+		Weapon: DemoTruckTargeting
+	GrantConditionOnAttack:
+		Condition: triggered
+	GrantConditionOnDeploy:
+		DeployedCondition: triggered
+		PauseOnCondition: chronodisable
+	KillsSelf:
+		RequiresCondition: triggered
 	RenderSprites:
 	RenderVoxels:
 	WithVoxelBody:
-	AnnounceOnBuild:
+	VoiceAnnouncement:
+		Voice: Build
 	Voiced:
 		VoiceSet: DemolitionTruckVoice
 	HitShape:

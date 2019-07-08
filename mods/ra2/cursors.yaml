@@ -1,8 +1,5 @@
-Palettes:
-	cursor: mousepal.pal
-
 Cursors:
-	mouse.shp: cursor
+	mouse.shp: mouse
 		default:
 			Start: 0
 			X: -28
@@ -286,11 +283,11 @@ Cursors:
 			Start: 392
 		joystick-tl-blocked:
 			Start: 393
-	undeploy.shp: cursor
+	undeploy.shp: mouse
 		undeploy:
 			Start: 0
 			Length: 7
-	assaultmove.shp: cursor
+	assaultmove.shp: mouse
 		assaultmove:
 			Start: 0
 			Length: 9

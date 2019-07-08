@@ -100,6 +100,7 @@
 	PaletteFromFile@mousepal:
 		Name: mouse
 		Filename: mousepal.pal
+		CursorPalette: true
 	PaletteFromFile@ts-mousepal:
 		Name: ts-mouse
 		Filename: ts-mousepal.pal
