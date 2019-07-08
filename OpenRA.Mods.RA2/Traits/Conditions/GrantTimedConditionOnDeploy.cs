@@ -9,7 +9,6 @@
  */
 #endregion
 
-using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
@@ -22,13 +21,14 @@ using OpenRA.Traits;
 
 namespace OpenRA.Mods.RA2.Traits
 {
-	public class GrantTimedConditionOnDeployInfo : ITraitInfo
+	public class GrantTimedConditionOnDeployInfo : PausableConditionalTraitInfo
 	{
 		[GrantedConditionReference]
 		[Desc("The condition granted during deploying.")]
 		public readonly string DeployingCondition = null;
 
-		[GrantedConditionReference, FieldLoader.Require]
+		[FieldLoader.Require]
+		[GrantedConditionReference]
 		[Desc("The condition granted after deploying.")]
 		public readonly string DeployedCondition = null;
 
@@ -44,14 +44,16 @@ namespace OpenRA.Mods.RA2.Traits
 		[Desc("Cursor to display when unable to (un)deploy the actor.")]
 		public readonly string DeployBlockedCursor = "deploy-blocked";
 
-		[Desc("Apply (un)deploy animations to sprite bodies with these names.")]
-		public readonly string[] BodyNames = { "body" };
-
-		[SequenceReference, Desc("Animation to play for deploying.")]
+		[SequenceReference]
+		[Desc("Animation to play for deploying.")]
 		public readonly string DeployAnimation = null;
 
-		[SequenceReference, Desc("Animation to play for undeploying.")]
+		[SequenceReference]
+		[Desc("Animation to play for undeploying.")]
 		public readonly string UndeployAnimation = null;
+
+		[Desc("Apply (un)deploy animations to sprite bodies with these names.")]
+		public readonly string[] BodyNames = { "body" };
 
 		[Desc("Facing that the actor must face before deploying. Set to -1 to deploy regardless of facing.")]
 		public readonly int Facing = -1;
@@ -64,69 +66,71 @@ namespace OpenRA.Mods.RA2.Traits
 
 		public readonly bool StartsFullyCharged = false;
 
-		[VoiceReference] public readonly string Voice = "Action";
+		[VoiceReference]
+		public readonly string Voice = "Action";
 
 		public readonly bool ShowSelectionBar = true;
 		public readonly Color ChargingColor = Color.DarkRed;
 		public readonly Color DischargingColor = Color.DarkMagenta;
 
-		public object Create(ActorInitializer init) { return new GrantTimedConditionOnDeploy(init, this); }
+		public override object Create(ActorInitializer init) { return new GrantTimedConditionOnDeploy(init, this); }
 	}
 
 	public enum TimedDeployState { Charging, Ready, Active, Deploying, Undeploying }
 
-	public class GrantTimedConditionOnDeploy : IResolveOrder, IIssueOrder, INotifyCreated, ISelectionBar, IOrderVoice, ISync, ITick, IIssueDeployOrder
+	public class GrantTimedConditionOnDeploy : PausableConditionalTrait<GrantTimedConditionOnDeployInfo>,
+		IResolveOrder, IIssueOrder, INotifyCreated, ISelectionBar, IOrderVoice, ISync, ITick, IIssueDeployOrder
 	{
 		readonly Actor self;
-		readonly GrantTimedConditionOnDeployInfo info;
 		readonly bool canTurn;
-		readonly WithSpriteBody[] wsbs;
-
 		int deployedToken = ConditionManager.InvalidConditionToken;
 		int deployingToken = ConditionManager.InvalidConditionToken;
 
+		WithSpriteBody[] wsbs;
 		ConditionManager manager;
-		[Sync] int ticks;
 		TimedDeployState deployState;
 
+		[Sync] int ticks;
+
 		public GrantTimedConditionOnDeploy(ActorInitializer init, GrantTimedConditionOnDeployInfo info)
+			: base(info)
 		{
 			self = init.Self;
-			this.info = info;
 			canTurn = self.Info.HasTraitInfo<IFacingInfo>();
-			wsbs = self.TraitsImplementing<WithSpriteBody>().Where(w => info.BodyNames.Contains(w.Info.Name)).ToArray();
 		}
 
 		void INotifyCreated.Created(Actor self)
 		{
 			manager = self.Trait<ConditionManager>();
+			wsbs = self.TraitsImplementing<WithSpriteBody>().Where(w => Info.BodyNames.Contains(w.Info.Name)).ToArray();
 
-			if (info.StartsFullyCharged)
+			if (Info.StartsFullyCharged)
 			{
-				ticks = info.DeployedTicks;
+				ticks = Info.DeployedTicks;
 				deployState = TimedDeployState.Ready;
 			}
 			else
 			{
-				ticks = info.CooldownTicks;
+				ticks = Info.CooldownTicks;
 				deployState = TimedDeployState.Charging;
 			}
 		}
 
-		Order IIssueDeployOrder.IssueDeployOrder(Actor self)
+		Order IIssueDeployOrder.IssueDeployOrder(Actor self, bool queued)
 		{
-			return new Order("GrantTimedConditionOnDeploy", self, false);
+			return new Order("GrantTimedConditionOnDeploy", self, queued);
 		}
 
-		bool IIssueDeployOrder.CanIssueDeployOrder(Actor self)
-		{
-			return true;
-		}
+		bool IIssueDeployOrder.CanIssueDeployOrder(Actor self) { return !IsTraitPaused && !IsTraitDisabled; }
 
 		IEnumerable<IOrderTargeter> IIssueOrder.Orders
 		{
-			get { yield return new DeployOrderTargeter("GrantTimedConditionOnDeploy", 5,
-				() => IsCursorBlocked() ? info.DeployBlockedCursor : info.DeployCursor); }
+			get
+			{
+				if (!IsTraitDisabled)
+					yield return new DeployOrderTargeter("GrantTimedConditionOnDeploy", 5,
+						() => IsCursorBlocked() ? Info.DeployBlockedCursor : Info.DeployCursor);
+			}
 		}
 
 		Order IIssueOrder.IssueOrder(Actor self, IOrderTargeter order, Target target, bool queued)
@@ -146,8 +150,8 @@ namespace OpenRA.Mods.RA2.Traits
 				self.CancelActivity();
 
 			// Turn to the required facing.
-			if (info.Facing != -1 && canTurn)
-				self.QueueActivity(new Turn(self, info.Facing));
+			if (Info.Facing != -1 && canTurn)
+				self.QueueActivity(new Turn(self, Info.Facing));
 
 			self.QueueActivity(new CallFunc(Deploy));
 		}
@@ -159,7 +163,7 @@ namespace OpenRA.Mods.RA2.Traits
 
 		string IOrderVoice.VoicePhraseForOrder(Actor self, Order order)
 		{
-			return order.OrderString == "GrantTimedConditionOnDeploy" && deployState == TimedDeployState.Ready ? info.Voice : null;
+			return order.OrderString == "GrantTimedConditionOnDeploy" && deployState == TimedDeployState.Ready ? Info.Voice : null;
 		}
 
 		void Deploy()
@@ -170,27 +174,27 @@ namespace OpenRA.Mods.RA2.Traits
 
 			deployState = TimedDeployState.Deploying;
 
-			if (!string.IsNullOrEmpty(info.DeploySound))
-				Game.Sound.Play(SoundType.World, info.DeploySound, self.CenterPosition);
+			if (!string.IsNullOrEmpty(Info.DeploySound))
+				Game.Sound.Play(SoundType.World, Info.DeploySound, self.CenterPosition);
 
 			var wsb = wsbs.FirstEnabledTraitOrDefault();
 
 			// If there is no animation to play just grant the upgrades that are used while deployed.
 			// Alternatively, play the deploy animation and then grant the upgrades.
-			if (string.IsNullOrEmpty(info.DeployAnimation) || wsb == null)
+			if (string.IsNullOrEmpty(Info.DeployAnimation) || wsb == null)
 				OnDeployCompleted();
 			else
 			{
-				if (manager != null && !string.IsNullOrEmpty(info.DeployingCondition) && deployingToken == ConditionManager.InvalidConditionToken)
-					deployingToken = manager.GrantCondition(self, info.DeployingCondition);
-				wsb.PlayCustomAnimation(self, info.DeployAnimation, OnDeployCompleted);
+				if (manager != null && !string.IsNullOrEmpty(Info.DeployingCondition) && deployingToken == ConditionManager.InvalidConditionToken)
+					deployingToken = manager.GrantCondition(self, Info.DeployingCondition);
+				wsb.PlayCustomAnimation(self, Info.DeployAnimation, OnDeployCompleted);
 			}
 		}
 
 		void OnDeployCompleted()
 		{
-			if (manager != null && !string.IsNullOrEmpty(info.DeployedCondition) && deployedToken == ConditionManager.InvalidConditionToken)
-				deployedToken = manager.GrantCondition(self, info.DeployedCondition);
+			if (manager != null && !string.IsNullOrEmpty(Info.DeployedCondition) && deployedToken == ConditionManager.InvalidConditionToken)
+				deployedToken = manager.GrantCondition(self, Info.DeployedCondition);
 
 			if (deployingToken != ConditionManager.InvalidConditionToken)
 				deployingToken = manager.RevokeCondition(self, deployingToken);
@@ -202,18 +206,18 @@ namespace OpenRA.Mods.RA2.Traits
 		{
 			deployState = TimedDeployState.Undeploying;
 
-			if (!string.IsNullOrEmpty(info.UndeploySound))
-				Game.Sound.Play(SoundType.World, info.UndeploySound, self.CenterPosition);
+			if (!string.IsNullOrEmpty(Info.UndeploySound))
+				Game.Sound.Play(SoundType.World, Info.UndeploySound, self.CenterPosition);
 
 			var wsb = wsbs.FirstEnabledTraitOrDefault();
 
-			if (string.IsNullOrEmpty(info.UndeployAnimation) || wsb == null)
+			if (string.IsNullOrEmpty(Info.UndeployAnimation) || wsb == null)
 				OnUndeployCompleted();
 			else
 			{
-				if (manager != null && !string.IsNullOrEmpty(info.DeployingCondition) && deployingToken == ConditionManager.InvalidConditionToken)
-					deployingToken = manager.GrantCondition(self, info.DeployingCondition);
-				wsb.PlayCustomAnimation(self, info.UndeployAnimation, OnUndeployCompleted);
+				if (manager != null && !string.IsNullOrEmpty(Info.DeployingCondition) && deployingToken == ConditionManager.InvalidConditionToken)
+					deployingToken = manager.GrantCondition(self, Info.DeployingCondition);
+				wsb.PlayCustomAnimation(self, Info.UndeployAnimation, OnUndeployCompleted);
 			}
 		}
 
@@ -226,11 +230,14 @@ namespace OpenRA.Mods.RA2.Traits
 				deployingToken = manager.RevokeCondition(self, deployingToken);
 
 			deployState = TimedDeployState.Charging;
-			ticks = info.CooldownTicks;
+			ticks = Info.CooldownTicks;
 		}
 
 		void ITick.Tick(Actor self)
 		{
+			if (IsTraitPaused || IsTraitDisabled)
+				return;
+
 			if (deployState == TimedDeployState.Ready || deployState == TimedDeployState.Deploying || deployState == TimedDeployState.Undeploying)
 				return;
 
@@ -238,7 +245,7 @@ namespace OpenRA.Mods.RA2.Traits
 			{
 				if (deployState == TimedDeployState.Charging)
 				{
-					ticks = info.DeployedTicks;
+					ticks = Info.DeployedTicks;
 					deployState = TimedDeployState.Ready;
 				}
 				else
@@ -250,19 +257,19 @@ namespace OpenRA.Mods.RA2.Traits
 
 		float ISelectionBar.GetValue()
 		{
-			if (!info.ShowSelectionBar || deployState == TimedDeployState.Undeploying)
+			if (IsTraitDisabled || !Info.ShowSelectionBar || deployState == TimedDeployState.Undeploying)
 				return 0f;
 
 			if (deployState == TimedDeployState.Deploying || deployState == TimedDeployState.Ready)
 				return 1f;
 
 			return deployState == TimedDeployState.Charging
-				? (float)(info.CooldownTicks - ticks) / info.CooldownTicks
-				: (float)ticks / info.DeployedTicks;
+				? (float)(Info.CooldownTicks - ticks) / Info.CooldownTicks
+				: (float)ticks / Info.DeployedTicks;
 		}
 
-		bool ISelectionBar.DisplayWhenEmpty { get { return info.ShowSelectionBar; } }
+		bool ISelectionBar.DisplayWhenEmpty { get { return !IsTraitDisabled && Info.ShowSelectionBar; } }
 
-		Color ISelectionBar.GetColor() { return deployState == TimedDeployState.Charging ? info.ChargingColor : info.DischargingColor; }
+		Color ISelectionBar.GetColor() { return deployState == TimedDeployState.Charging ? Info.ChargingColor : Info.DischargingColor; }
 	}
 }

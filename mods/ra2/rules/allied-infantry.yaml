@@ -24,7 +24,6 @@ engineer:
 	RepairsBridges:
 		RepairNotification: BridgeRepaired
 	Captures:
-		Sabotage: false
 		CaptureTypes: building, husk
 	RevealsShroud:
 		Range: 4c0
@@ -38,6 +37,7 @@ engineer:
 		Sequence: stand
 	WithInfantryBody:
 		DefaultAttackSequence: stand
+	CaptureManager:
 
 dog:
 	Inherits: ^Infantry
@@ -66,8 +66,10 @@ dog:
 		Range: 5c0
 	Armament:
 		Weapon: DogJaw
+		ReloadingCondition: attack-cooldown
 	AttackLeap:
 		Voice: Attack
+		PauseOnCondition: attacking || attack-cooldown
 	AutoTarget:
 		InitialStance: AttackAnything
 	AutoTargetPriority@DEFAULT:
@@ -265,6 +267,7 @@ spy:
 		DisguisedCondition: disguise
 	Infiltrates:
 		Types: SpyInfiltrate
+		Notification: BuildingInfiltrated
 	-WithInfantryBody:
 	WithDisguisingInfantryBody:
 		IdleSequences: idle1,idle2
@@ -466,7 +469,8 @@ tany:
 		RequiresCondition: rank-elite
 	AttackFrontal:
 		Voice: Attack
-	AnnounceOnBuild:
+	VoiceAnnouncement:
+		Voice: Build
 	Voiced:
 		VoiceSet: TanyaVoice
 	ProducibleWithLevel:
@@ -521,8 +525,6 @@ jumpjet:
 		AltitudeVelocity: 83
 		Voice: Move
 		AirborneCondition: airborne
-		RepairBuildings:
-		RearmBuildings:
 		CanHover: True
 		IdealSeparation: 512
 		TakeOffOnResupply: true
@@ -555,6 +557,11 @@ jumpjet:
 	-Passenger:
 	SpawnActorOnDeath:
 		Actor: jumpjet.husk
+	Repairable:
+		RepairBuildings:
+		Voice: Move
+	Rearmable:
+		RearmActors:
 
 jumpjet.husk:
 	Inherits: ^HelicopterHusk

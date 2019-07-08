@@ -121,7 +121,7 @@ cahse05:
 		Footprint: x x
 	SpawnActorOnDeath:
 		Actor: cahse05.rubble
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: SNOW
 
 cahse05.rubble:
@@ -145,7 +145,7 @@ cahse06:
 		Footprint: xx
 	SpawnActorOnDeath:
 		Actor: cahse06.rubble
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: SNOW
 
 cahse06.rubble:
@@ -169,7 +169,7 @@ cahse07:
 		Footprint: xx xx xx
 	SpawnActorOnDeath:
 		Actor: cahse07.rubble
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: SNOW
 
 cahse07.rubble:
@@ -236,7 +236,7 @@ cawash01:
 		Range: 6c0
 	SpawnActorOnDeath:
 		Actor: cawash01.rubble
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: SNOW
 
 cawash01.rubble:
@@ -262,7 +262,7 @@ cawash03:
 		Range: 6c0
 	SpawnActorOnDeath:
 		Actor: cawash03.rubble
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: SNOW
 
 cawash03.rubble:
@@ -288,7 +288,7 @@ cawash04:
 		Range: 6c0
 	SpawnActorOnDeath:
 		Actor: cawash04.rubble
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: SNOW
 
 cawash04.rubble:
@@ -314,7 +314,7 @@ cawash05:
 		Range: 6c0
 	SpawnActorOnDeath:
 		Actor: cawash05.rubble
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: SNOW
 
 cawash05.rubble:
@@ -340,7 +340,7 @@ cawash06:
 		Footprint: xxxx xxxx xxxx xxxx
 	SpawnActorOnDeath:
 		Actor: cawash06.rubble
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: SNOW
 
 cawash06.rubble:
@@ -414,7 +414,7 @@ cawash09:
 		Range: 6c0
 	SpawnActorOnDeath:
 		Actor: cawash09.rubble
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: SNOW
 
 cawash09.rubble:
@@ -440,7 +440,7 @@ cawash10:
 		Range: 6c0
 	SpawnActorOnDeath:
 		Actor: cawash10.rubble
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: SNOW
 
 cawash10.rubble:
@@ -466,7 +466,7 @@ cawash11:
 		Range: 6c0
 	SpawnActorOnDeath:
 		Actor: cawash11.rubble
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: SNOW
 
 cawash11.rubble:
@@ -508,7 +508,7 @@ cawsh12:
 		PortCones: 86, 86, 86, 86, 86, 86
 	SpawnActorOnDeath:
 		Actor: cawsh12.rubble
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: SNOW
 
 cawsh12.rubble:
@@ -534,7 +534,7 @@ cawash13:
 		Footprint: xxx xxx xxx xxx
 	SpawnActorOnDeath:
 		Actor: cawash13.rubble
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: SNOW
 
 cawash13.rubble:
@@ -560,7 +560,7 @@ cawash14:
 		Footprint: xxx xxx xxx
 	SpawnActorOnDeath:
 		Actor: cawash14.rubble
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: SNOW
 
 cawash14.rubble:
@@ -586,7 +586,7 @@ cawash15:
 		Footprint: xxx xxx xxx xxx
 	SpawnActorOnDeath:
 		Actor: cawash15.rubble
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: SNOW
 
 cawash15.rubble:
@@ -614,7 +614,7 @@ cawash16:
 		Footprint: xxxxx xxxxx xxxxx
 	SpawnActorOnDeath:
 		Actor: cawash16.rubble
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: SNOW
 
 cawash16.rubble:
@@ -642,7 +642,7 @@ cawash17:
 		Footprint: xxxxxx xxxxxx xxxxxx xxxxxx
 	SpawnActorOnDeath:
 		Actor: cawash17.rubble
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: SNOW
 
 cawash17.rubble:
@@ -670,7 +670,7 @@ cawash18:
 		Footprint: xx xx
 	WithIdleOverlay@water:
 		Sequence: idle-water
-	EditorTilesetFilter:
+	MapEditorData:
 		Categories: Decoration
 
 cawash19:
@@ -691,7 +691,7 @@ cawash19:
 		Sequence: idle-flag
 	SpawnActorOnDeath:
 		Actor: cawash19.rubble
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: SNOW
 
 cawash19.rubble:
@@ -717,7 +717,7 @@ canewy01:
 		Range: 4c0
 	SpawnActorOnDeath:
 		Actor: canewy01.rubble
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: SNOW
 
 canewy01.rubble:
@@ -747,7 +747,7 @@ canewy04:
 		Actor: canewy04.rubble
 	RenderSprites:
 		Palette: liberty
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: SNOW
 
 canewy04.rubble:
@@ -773,7 +773,7 @@ canewy05:
 	Building:
 		Dimensions: 2,2
 		Footprint: xx xx
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: SNOW
 
 canewy06:
@@ -790,7 +790,7 @@ canewy06:
 		Footprint: xxx xxx xxx
 	SpawnActorOnDeath:
 		Actor: canewy06.rubble
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: SNOW
 
 canewy06.rubble:
@@ -816,7 +816,7 @@ canewy07:
 		Footprint: xxx xxx xxx
 	SpawnActorOnDeath:
 		Actor: canewy07.rubble
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: SNOW
 
 canewy07.rubble:
@@ -842,7 +842,7 @@ canewy08:
 		Footprint: xxx xxx xxx
 	SpawnActorOnDeath:
 		Actor: canewy08.rubble
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: SNOW
 
 canewy08.rubble:
@@ -868,7 +868,7 @@ canewy10:
 		Footprint: xxx xxx
 	SpawnActorOnDeath:
 		Actor: canewy10.rubble
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: SNOW
 
 canewy10.rubble:
@@ -894,7 +894,7 @@ canewy11:
 		Footprint: xxx xxx
 	SpawnActorOnDeath:
 		Actor: canewy11.rubble
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: SNOW
 
 canewy11.rubble:
@@ -920,7 +920,7 @@ canewy12:
 		Footprint: xx xx xx
 	SpawnActorOnDeath:
 		Actor: canewy12.rubble
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: SNOW
 
 canewy12.rubble:
@@ -946,7 +946,7 @@ canewy13:
 		Footprint: xxx xxx xxx
 	SpawnActorOnDeath:
 		Actor: canewy13.rubble
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: SNOW
 
 canewy13.rubble:
@@ -972,7 +972,7 @@ canewy14:
 		Footprint: xxx xxx xxx
 	SpawnActorOnDeath:
 		Actor: canewy14.rubble
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: SNOW
 
 canewy14.rubble:
@@ -998,7 +998,7 @@ canewy15:
 		Footprint: xxx xxx xxx
 	SpawnActorOnDeath:
 		Actor: canewy15.rubble
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: SNOW
 
 canewy15.rubble:
@@ -1024,7 +1024,7 @@ canewy16:
 		Footprint: xx xx
 	SpawnActorOnDeath:
 		Actor: canewy16.rubble
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: SNOW
 
 canewy16.rubble:
@@ -1050,7 +1050,7 @@ canewy17:
 		Footprint: xx xx
 	SpawnActorOnDeath:
 		Actor: canewy17.rubble
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: SNOW
 
 canewy17.rubble:
@@ -1076,7 +1076,7 @@ canewy18:
 		Footprint: xx xx
 	SpawnActorOnDeath:
 		Actor: canewy18.rubble
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: SNOW
 
 canewy18.rubble:
@@ -1156,7 +1156,7 @@ caswst01:
 		Footprint: xx xx xx
 	SpawnActorOnDeath:
 		Actor: caswst01.rubble
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: SNOW
 
 caswst01.rubble:
@@ -1224,7 +1224,7 @@ cawa2a:
 		Range: 6c0
 	SpawnActorOnDeath:
 		Actor: cawa2a.rubble
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: SNOW
 
 cawa2a.rubble:
@@ -1252,7 +1252,7 @@ cawa2b:
 		Range: 6c0
 	SpawnActorOnDeath:
 		Actor: cawa2b.rubble
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: SNOW
 
 cawa2b.rubble:
@@ -1280,7 +1280,7 @@ cawa2c:
 		Range: 6c0
 	SpawnActorOnDeath:
 		Actor: cawa2c.rubble
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: SNOW
 
 cawa2c.rubble:
@@ -1308,7 +1308,7 @@ cawa2d:
 		Range: 6c0
 	SpawnActorOnDeath:
 		Actor: cawa2d.rubble
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: SNOW
 
 cawa2d.rubble:
@@ -1547,7 +1547,7 @@ galite:
 		UseClassicPerspectiveFudge: False
 		QuantizedFacings: 1
 	FrozenUnderFog:
-	EditorTilesetFilter:
+	MapEditorData:
 		Categories: Decoration
 
 cacity01:
@@ -1565,7 +1565,7 @@ cacity01:
 	RenderSprites:
 		PlayerPalette:
 		Palette: city
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: SNOW
 
 cacity02:
@@ -1583,7 +1583,7 @@ cacity02:
 	RenderSprites:
 		PlayerPalette:
 		Palette: city
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: SNOW
 
 cacity03:
@@ -1601,7 +1601,7 @@ cacity03:
 	RenderSprites:
 		PlayerPalette:
 		Palette: city
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: SNOW
 
 cacity04:
@@ -1619,7 +1619,7 @@ cacity04:
 	RenderSprites:
 		PlayerPalette:
 		Palette: city
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: SNOW
 
 city05:
@@ -1639,7 +1639,7 @@ city05:
 	RenderSprites:
 		PlayerPalette:
 		Palette: city
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: SNOW
 
 catech01:
@@ -1658,7 +1658,7 @@ catech01:
 		Footprint: xxx xxx xxx
 	SpawnActorOnDeath:
 		Actor: catech01.rubble
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: SNOW
 
 catech01.rubble:
@@ -1684,7 +1684,7 @@ catexs01:
 		Footprint: xx xx
 	SpawnActorOnDeath:
 		Actor: catexs01.rubble
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: SNOW
 
 catexs01.rubble:
@@ -1712,7 +1712,7 @@ catexs02:
 		Footprint: xxxx xxxx xxxx xxxx
 	SpawnActorOnDeath:
 		Actor: catexs02.rubble
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: SNOW
 
 catexs02.rubble:
@@ -1738,7 +1738,7 @@ catexs03:
 		Footprint: xxx xxx xxx
 	SpawnActorOnDeath:
 		Actor: catexs03.rubble
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: SNOW
 
 catexs03.rubble:
@@ -1764,7 +1764,7 @@ catexs04:
 		Footprint: xxx xxx xxx
 	SpawnActorOnDeath:
 		Actor: catexs04.rubble
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: SNOW
 
 catexs04.rubble:
@@ -1790,7 +1790,7 @@ catexs05:
 		Footprint: xxx xxx xxx
 	SpawnActorOnDeath:
 		Actor: catexs05.rubble
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: SNOW
 
 catexs05.rubble:
@@ -1816,7 +1816,7 @@ catexs06:
 		Footprint: xxx xxx xxx
 	SpawnActorOnDeath:
 		Actor: catexs06.rubble
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: SNOW
 
 catexs06.rubble:
@@ -1842,7 +1842,7 @@ catexs07:
 		Footprint: xxx xxx xxx
 	SpawnActorOnDeath:
 		Actor: catexs07.rubble
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: SNOW
 
 catexs07.rubble:
@@ -1894,7 +1894,7 @@ capars01:
 		Footprint: xxxx xxxx xxxx xxxx
 	SpawnActorOnDeath:
 		Actor: capars01.rubble
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: SNOW
 
 capars01.rubble:
@@ -1920,7 +1920,7 @@ capars02:
 		Footprint: xxxxxx xxxxxx xxxxxx xxxxxx
 	SpawnActorOnDeath:
 		Actor: capars02.rubble
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: SNOW
 
 capars02.rubble:
@@ -1946,7 +1946,7 @@ capars04:
 		Footprint: xxx xxx xxx
 	SpawnActorOnDeath:
 		Actor: capars04.rubble
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: SNOW
 
 capars04.rubble:
@@ -1972,7 +1972,7 @@ capars05:
 		Footprint: xxx xxx xxx
 	SpawnActorOnDeath:
 		Actor: capars05.rubble
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: SNOW
 
 capars05.rubble:
@@ -1998,7 +1998,7 @@ capars06:
 		Footprint: xxx xxx xxx
 	SpawnActorOnDeath:
 		Actor: capars06.rubble
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: SNOW
 
 capars06.rubble:
@@ -2018,7 +2018,7 @@ capars07:
 		Range: 6c0
 	Health:
 		HP: 100
-	EditorTilesetFilter:
+	MapEditorData:
 		Categories: Decoration
 
 capars08:
@@ -2035,7 +2035,7 @@ capars08:
 		Footprint: xxxxxx xxxxxx xxxxxx xxxxxx
 	SpawnActorOnDeath:
 		Actor: capars08.rubble
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: SNOW
 
 capars08.rubble:
@@ -2061,7 +2061,7 @@ capars09:
 		Footprint: xxxxxx xxxxxx xxxxxx xxxxxx
 	SpawnActorOnDeath:
 		Actor: capars09.rubble
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: SNOW
 
 capars09.rubble:
@@ -2087,7 +2087,7 @@ capars10:
 		Footprint: xxxx xxxx xxxx
 	SpawnActorOnDeath:
 		Actor: capars10.rubble
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: SNOW
 
 capars10.rubble:
@@ -2115,7 +2115,7 @@ capars11:
 		Footprint: xxx xxx xxx xxx
 	SpawnActorOnDeath:
 		Actor: capars11.rubble
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: SNOW
 
 capars11.rubble:
@@ -2143,7 +2143,7 @@ capars12:
 		Footprint: xxx xxx xxx xxx xxx
 	SpawnActorOnDeath:
 		Actor: capars12.rubble
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: SNOW
 
 capars12.rubble:
@@ -2171,7 +2171,7 @@ capars13:
 		Footprint: xxx xxx xxx xxx
 	SpawnActorOnDeath:
 		Actor: capars13.rubble
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: SNOW
 
 capars13.rubble:
@@ -2199,7 +2199,7 @@ capars14:
 		Footprint: xxxx xxxx xxxx
 	SpawnActorOnDeath:
 		Actor: capars14.rubble
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: SNOW
 
 capars14.rubble:
@@ -2232,7 +2232,7 @@ cafrmb:
 		Range: 4c0
 	Health:
 		HP: 50
-	EditorTilesetFilter:
+	MapEditorData:
 		Categories: Decoration
 
 caprs03:
@@ -2251,7 +2251,7 @@ caprs03:
 		Footprint: xxxxxx xxxxxx xxxxxx xxxxxx
 	SpawnActorOnDeath:
 		Actor: caprs03.rubble
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: SNOW
 
 caprs03.rubble:
@@ -2275,7 +2275,7 @@ cagard01:
 		HP: 100
 	WithIdleOverlay@flag:
 		Sequence: idle-flag
-	EditorTilesetFilter:
+	MapEditorData:
 		Categories: Decoration
 
 carus01:
@@ -2312,7 +2312,7 @@ carus02a:
 		HP: 800
 	SpawnActorOnDeath:
 		Actor: carus02a.rubble
-	EditorTilesetFilter:
+	MapEditorData:
 		RequireTilesets: SNOW
 
 carus02a.rubble:
@@ -2322,7 +2322,7 @@ carus02a.rubble:
 		Footprint: _
 	RenderSprites:
 		Image: carus02a
-	EditorTilesetFilter:
+	MapEditorData:
 		RequireTilesets: SNOW
 
 carus02b:
@@ -2354,7 +2354,7 @@ carus02g:
 		HP: 1000
 	SpawnActorOnDeath:
 		Actor: carus02g.rubble
-	EditorTilesetFilter:
+	MapEditorData:
 		RequireTilesets: SNOW
 
 carus02g.rubble:
@@ -2562,7 +2562,7 @@ camiam01:
 		Footprint: xxxx xxxx
 	SpawnActorOnDeath:
 		Actor: camiam01.rubble
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: SNOW
 
 camiam01.rubble:
@@ -2588,7 +2588,7 @@ camiam02:
 		Footprint: xxxx xxxx
 	SpawnActorOnDeath:
 		Actor: camiam02.rubble
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: SNOW
 
 camiam02.rubble:
@@ -2614,7 +2614,7 @@ camiam03:
 		Footprint: xx xx xx
 	SpawnActorOnDeath:
 		Actor: camiam03.rubble
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: SNOW
 
 camiam03.rubble:
@@ -2634,9 +2634,9 @@ camiam04:
 		Range: 6c0
 	Health:
 		HP: 200
-	EditorTilesetFilter:
+	MapEditorData:
 		Categories: Decoration
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: SNOW
 
 camiam05:
@@ -2653,7 +2653,7 @@ camiam05:
 		Footprint: xxx xxx xxx xxx
 	SpawnActorOnDeath:
 		Actor: camiam05.rubble
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: SNOW
 
 camiam05.rubble:
@@ -2679,7 +2679,7 @@ camiam06:
 		Footprint: xxxx xxxx xxxx xxxx
 	SpawnActorOnDeath:
 		Actor: camiam06.rubble
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: SNOW
 
 camiam06.rubble:
@@ -2704,7 +2704,7 @@ camiam07:
 		Footprint: xxxx xxxx xxxx xxxx
 	SpawnActorOnDeath:
 		Actor: camiam07.rubble
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: SNOW
 
 camiam07.rubble:
@@ -2731,7 +2731,7 @@ camiam08:
 		Footprint: xxx
 	SpawnActorOnDeath:
 		Actor: camiam08.rubble
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: SNOW
 
 camiam08.rubble:
@@ -2757,7 +2757,7 @@ canwy05:
 		Footprint: xxxx xxxx xxxx xxxx
 	SpawnActorOnDeath:
 		Actor: canwy05.rubble
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: SNOW
 
 canwy05.rubble:
@@ -2783,7 +2783,7 @@ canwy09:
 		Footprint: xx xx xx
 	SpawnActorOnDeath:
 		Actor: canwy09.rubble
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: SNOW
 
 canwy09.rubble:
@@ -2809,7 +2809,7 @@ canwy22:
 		Footprint: xxx xxx xxx
 	SpawnActorOnDeath:
 		Actor: canwy22.rubble
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: SNOW
 
 canwy22.rubble:
@@ -2835,7 +2835,7 @@ canwy23:
 		Footprint: xxx xxx
 	SpawnActorOnDeath:
 		Actor: canwy23.rubble
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: SNOW
 
 canwy23.rubble:
@@ -2861,7 +2861,7 @@ canwy24:
 		Footprint: xxx xxx xxx
 	SpawnActorOnDeath:
 		Actor: canwy24.rubble
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: SNOW
 
 canwy24.rubble:
@@ -2887,7 +2887,7 @@ canwy25:
 		Footprint: xxx xxx xxx
 	SpawnActorOnDeath:
 		Actor: canwy25.rubble
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: SNOW
 
 canwy25.rubble:
@@ -2913,7 +2913,7 @@ canwy26:
 		Footprint: xxxxx xxxxx xxxxx
 	SpawnActorOnDeath:
 		Actor: canwy26.rubble
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: SNOW
 
 canwy26.rubble:
@@ -2941,7 +2941,7 @@ camex01:
 		Footprint: xxx xxx
 	SpawnActorOnDeath:
 		Actor: camex01.rubble
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: SNOW
 
 camex01.rubble:
@@ -2969,7 +2969,7 @@ camex02:
 		Footprint: xxxxxx xxxxxx xxxxxx xxxxxx
 	SpawnActorOnDeath:
 		Actor: camex02.rubble
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: SNOW
 
 camex02.rubble:
@@ -2997,7 +2997,7 @@ camex03:
 		Footprint: xxx xxx xxx
 	SpawnActorOnDeath:
 		Actor: camex03.rubble
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: SNOW
 
 camex03.rubble:
@@ -3025,7 +3025,7 @@ camex04:
 		Footprint: xxxx xxxx xxxx xxxx
 	SpawnActorOnDeath:
 		Actor: camex04.rubble
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: SNOW
 
 camex04.rubble:
@@ -3053,7 +3053,7 @@ camex05:
 		Footprint: xx xx
 	SpawnActorOnDeath:
 		Actor: camex05.rubble
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: SNOW
 
 camex05.rubble:
@@ -3151,7 +3151,7 @@ cachig01:
 		Footprint: xxx xxx
 	SpawnActorOnDeath:
 		Actor: cachig01.rubble
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: SNOW
 
 cachig01.rubble:
@@ -3177,7 +3177,7 @@ cachig02:
 		Footprint: xx xx xx
 	SpawnActorOnDeath:
 		Actor: cachig02.rubble
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: SNOW
 
 cachig02.rubble:
@@ -3203,7 +3203,7 @@ cachig03:
 		Footprint: xxx xxx
 	SpawnActorOnDeath:
 		Actor: cachig03.rubble
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: SNOW
 
 cachig03.rubble:
@@ -3231,7 +3231,7 @@ cachig04:
 		Footprint: xx xx
 	SpawnActorOnDeath:
 		Actor: cachig04.rubble
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: SNOW
 
 cachig04.rubble:
@@ -3259,7 +3259,7 @@ cachig05:
 		Footprint: xxxx xxxx xxxx xxxx
 	SpawnActorOnDeath:
 		Actor: cachig05.rubble
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: SNOW
 
 cachig05.rubble:
@@ -3285,7 +3285,7 @@ cachig06:
 		Footprint: xx xx
 	SpawnActorOnDeath:
 		Actor: cachig06.rubble
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: SNOW
 
 cachig06.rubble:
@@ -3311,7 +3311,7 @@ castl01:
 		Footprint: xxxx xxxx xxxx xxxx
 	SpawnActorOnDeath:
 		Actor: castl01.rubble
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: SNOW
 
 castl01.rubble:
@@ -3337,7 +3337,7 @@ castl02:
 		Footprint: xxxx xxxx xxxx xxxx
 	SpawnActorOnDeath:
 		Actor: castl02.rubble
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: SNOW
 
 castl02.rubble:
@@ -3363,7 +3363,7 @@ castl03:
 		Footprint: xxxx xxxx xxxx xxxx
 	SpawnActorOnDeath:
 		Actor: castl03.rubble
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: SNOW
 
 castl03.rubble:
@@ -3389,7 +3389,7 @@ castl04:
 		Footprint: xx xx xx xx xx xx
 	SpawnActorOnDeath:
 		Actor: castl04.rubble
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: SNOW
 
 castl04.rubble:
@@ -3417,7 +3417,7 @@ castl05a:
 		Footprint: xxxx xxxx xxxx xxxx
 	SpawnActorOnDeath:
 		Actor: castl05a.rubble
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: SNOW
 
 castl05a.rubble:
@@ -3445,7 +3445,7 @@ castl05b:
 		Footprint: xxxx xxxx xxxx xxxx
 	SpawnActorOnDeath:
 		Actor: castl05b.rubble
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: SNOW
 
 castl05b.rubble:
@@ -3473,7 +3473,7 @@ castl05c:
 		Footprint: xxxx xxxx xxxx xxxx
 	SpawnActorOnDeath:
 		Actor: castl05c.rubble
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: SNOW
 
 castl05c.rubble:
@@ -3501,7 +3501,7 @@ castl05d:
 		Footprint: xxxx xxxx xxxx xxxx
 	SpawnActorOnDeath:
 		Actor: castl05d.rubble
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: SNOW
 
 castl05d.rubble:
@@ -3529,7 +3529,7 @@ castl05e:
 		Footprint: xxxx xxxx xxxx xxxx
 	SpawnActorOnDeath:
 		Actor: castl05e.rubble
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: SNOW
 
 castl05e.rubble:
@@ -3557,7 +3557,7 @@ castl05f:
 		Footprint: xxxx xxxx xxxx xxxx
 	SpawnActorOnDeath:
 		Actor: castl05f.rubble
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: SNOW
 
 castl05f.rubble:
@@ -3585,7 +3585,7 @@ castl05g:
 		Footprint: xxxx xxxx xxxx xxxx
 	SpawnActorOnDeath:
 		Actor: castl05g.rubble
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: SNOW
 
 castl05g.rubble:
@@ -3613,7 +3613,7 @@ castl05h:
 		Footprint: xxxx xxxx xxxx xxxx
 	SpawnActorOnDeath:
 		Actor: castl05h.rubble
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: SNOW
 
 castl05h.rubble:
@@ -3639,7 +3639,7 @@ camsc07:
 	Building:
 		Dimensions: 2,2
 		Footprint: xx xx
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: SNOW
 
 camsc08:
@@ -3651,7 +3651,7 @@ camsc08:
 		Range: 6c0
 	Health:
 		HP: 200
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: SNOW
 
 camsc09:
@@ -3663,7 +3663,7 @@ camsc09:
 		Range: 6c0
 	Health:
 		HP: 200
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: SNOW
 
 camsc10:

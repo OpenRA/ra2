@@ -14,7 +14,7 @@ cabhut:
 		Palette: player
 	Targetable:
 		TargetTypes: C4
-	EditorTilesetFilter:
+	MapEditorData:
 		Categories: Bridge
 	Interactable:
 
@@ -31,7 +31,7 @@ cabhut:
 		QuantizedFacings: 1
 	Tooltip:
 		Name: Wooden Bridge
-	EditorTilesetFilter:
+	MapEditorData:
 		Categories: Bridge
 	Interactable:
 

@@ -10,41 +10,49 @@ Player:
 	TechTree:
 	ClassicProductionQueue@Building:
 		Type: Building
-		LowPowerSlowdown: 3
+		LowPowerModifier: 300
 		QueuedAudio: Building
 		ReadyAudio: ConstructionComplete
 		SpeedUp: true
 	ClassicProductionQueue@Support:
 		Type: Support
-		LowPowerSlowdown: 3
+		LowPowerModifier: 300
 		QueuedAudio: Building
 		ReadyAudio: ConstructionComplete
 		SpeedUp: true
 	ClassicProductionQueue@Vehicle:
 		Type: Vehicle
-		LowPowerSlowdown: 3
+		LowPowerModifier: 300
 		SpeedUp: true
 	ClassicProductionQueue@Infantry:
 		Type: Infantry
-		LowPowerSlowdown: 3
+		LowPowerModifier: 300
 		SpeedUp: true
 	ClassicProductionQueue@Aircraft:
 		Type: Aircraft
-		LowPowerSlowdown: 3
+		LowPowerModifier: 300
 		SpeedUp: true
 	ClassicProductionQueue@Ship:
 		Type: Ship
-		LowPowerSlowdown: 3
+		LowPowerModifier: 300
 		SpeedUp: true
 	PlaceBuilding:
 		Palette: effect75alpha
+		NewOptionsNotification: NewOptions
+		CannotPlaceNotification: BuildingCannotPlaceAudio
 	SupportPowerManager:
 	ScriptTriggers:
 	MissionObjectives:
+		WinNotification: Win
+		LoseNotification: Lose
+		LeaveNotification: Leave
 	ConquestVictoryConditions:
 	PowerManager:
+		SpeechNotification: LowPower
 	AllyRepair:
 	PlayerResources:
+		CashTickUpNotification: CashTickUp
+		CashTickDownNotification: CashTickDown
 	DeveloperMode:
 		CheckboxEnabled: true
 		CheckboxDisplayOrder: 5
@@ -83,6 +91,7 @@ Player:
 		Name: Unrestricted
 		Prerequisites: techlevel.infonly, techlevel.low, techlevel.medium, techlevel.unrestricted
 		Id: unrestricted
+	ConditionManager:
 	GrantConditionOnPrerequisiteManager:
 	VeteranProductionIconOverlay:
 		Image: cameo-chevron

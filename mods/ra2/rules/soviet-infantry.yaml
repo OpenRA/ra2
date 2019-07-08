@@ -75,7 +75,7 @@ flakt:
 		RequiresCondition: !rank-elite
 	Armament@secondary:
 		Weapon: FlakGuyAAGun
-		LocalOffset: 256,0,1024 
+		LocalOffset: 256,0,1024
 		RequiresCondition: !rank-elite
 	Armament@primary-elite:
 		Weapon: FlakGuyGunE
@@ -187,10 +187,19 @@ terror:
 	Explodes:
 		Weapon: TerrorBomb
 		EmptyWeapon: TerrorBomb
-	AttackSuicides:
-		Voice: Attack
 	AttackFrontal:
 		Voice: Attack
+		FacingTolerance: 128
+	Armament@PRIMARY:
+		Weapon: DemoTruckTargeting
+		PauseOnCondition: chronodisable
+	GrantConditionOnAttack:
+		Condition: triggered
+	GrantConditionOnDeploy:
+		DeployedCondition: triggered
+		PauseOnCondition: chronodisable
+	KillsSelf:
+		RequiresCondition: triggered
 	WithInfantryBody:
 	Voiced:
 		VoiceSet: TerroristVoice

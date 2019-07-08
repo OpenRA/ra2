@@ -8,7 +8,7 @@ camisc01:
 		Type: Concrete
 	SoundOnDamageTransition:
 		DamagedSounds: bmetdama.wav, bmetdamb.wav, bmetdamc.wav
-	EditorTilesetFilter:
+	MapEditorData:
 		Categories: Decoration
 
 camisc02:
@@ -21,7 +21,7 @@ camisc02:
 		Type: Concrete
 	SoundOnDamageTransition:
 		DamagedSounds: bmetdama.wav, bmetdamb.wav, bmetdamc.wav
-	EditorTilesetFilter:
+	MapEditorData:
 		Categories: Decoration
 
 camisc03:
@@ -35,7 +35,7 @@ camisc03:
 	SoundOnDamageTransition:
 		DamagedSounds: bmetdama.wav, bmetdamb.wav, bmetdamc.wav
 		DestroyedSounds: bmetdama.wav, bmetdamb.wav, bmetdamc.wav
-	EditorTilesetFilter:
+	MapEditorData:
 		Categories: Decoration
 
 camisc04:
@@ -49,7 +49,7 @@ camisc04:
 	SoundOnDamageTransition:
 		DamagedSounds: bmetdama.wav, bmetdamb.wav, bmetdamc.wav
 		DestroyedSounds: bmetdama.wav, bmetdamb.wav, bmetdamc.wav
-	EditorTilesetFilter:
+	MapEditorData:
 		Categories: Decoration
 
 camisc05:
@@ -63,7 +63,7 @@ camisc05:
 	SoundOnDamageTransition:
 		DamagedSounds: bmetdama.wav, bmetdamb.wav, bmetdamc.wav
 		DestroyedSounds: bmetdama.wav, bmetdamb.wav, bmetdamc.wav
-	EditorTilesetFilter:
+	MapEditorData:
 		Categories: Decoration
 
 camisc06:
@@ -83,7 +83,7 @@ camisc06:
 		Weapon: V3AmmunitionExplode
 	SoundOnDamageTransition:
 		DamagedSounds: bmetdama.wav, bmetdamb.wav, bmetdamc.wav
-	EditorTilesetFilter:
+	MapEditorData:
 		Categories: Decoration
 
 camsc11:
@@ -94,7 +94,7 @@ camsc11:
 		HP: 10
 	Armor:
 		Type: Concrete
-	EditorTilesetFilter:
+	MapEditorData:
 		Categories: Decoration
 
 camsc12:
@@ -105,7 +105,7 @@ camsc12:
 		HP: 10
 	Armor:
 		Type: Concrete
-	EditorTilesetFilter:
+	MapEditorData:
 		Categories: Decoration
 
 camsc13:
@@ -120,7 +120,7 @@ camsc13:
 		HP: 800
 	Armor:
 		Type: Concrete
-	EditorTilesetFilter:
+	MapEditorData:
 		Categories: Decoration
 
 ammocrat:
@@ -131,7 +131,7 @@ ammocrat:
 		HP: 1
 	RenderSprites:
 		Image: ammo01
-	EditorTilesetFilter:
+	MapEditorData:
 		Categories: Decoration
 
 camsc01:
@@ -142,9 +142,9 @@ camsc01:
 		Range: 6c0
 	Health:
 		HP: 400
-	EditorTilesetFilter:
+	MapEditorData:
 		Categories: Decoration
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: SNOW
 
 camsc02:
@@ -155,9 +155,9 @@ camsc02:
 		Range: 6c0
 	Health:
 		HP: 50
-	EditorTilesetFilter:
+	MapEditorData:
 		Categories: Decoration
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: SNOW
 
 camsc03:
@@ -168,9 +168,9 @@ camsc03:
 		Range: 6c0
 	Health:
 		HP: 1
-	EditorTilesetFilter:
+	MapEditorData:
 		Categories: Decoration
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: SNOW
 
 camsc04:
@@ -181,9 +181,9 @@ camsc04:
 		Range: 6c0
 	Health:
 		HP: 1
-	EditorTilesetFilter:
+	MapEditorData:
 		Categories: Decoration
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: SNOW
 
 camsc05:
@@ -194,9 +194,9 @@ camsc05:
 		Range: 6c0
 	Health:
 		HP: 1
-	EditorTilesetFilter:
+	MapEditorData:
 		Categories: Decoration
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: SNOW
 
 camsc06:
@@ -209,7 +209,7 @@ camsc06:
 		HP: 10
 	WithIdleOverlay@fire:
 		Sequence: idle-fire
-	EditorTilesetFilter:
+	MapEditorData:
 		Categories: Decoration
 
 caeuro05:
@@ -226,7 +226,7 @@ caeuro05:
 	Building:
 		Dimensions: 2,2
 		Footprint: xx xx
-	EditorTilesetFilter:
+	MapEditorData:
 		Categories: Decoration
 
 capark01:
@@ -237,7 +237,7 @@ capark01:
 		Range: 6c0
 	Health:
 		HP: 1
-	EditorTilesetFilter:
+	MapEditorData:
 		Categories: Decoration
 
 capark02:
@@ -252,7 +252,7 @@ capark02:
 	Building:
 		Dimensions: 2,1
 		Footprint: xx
-	EditorTilesetFilter:
+	MapEditorData:
 		Categories: Decoration
 
 capark03:
@@ -267,7 +267,7 @@ capark03:
 	Building:
 		Dimensions: 2,2
 		Footprint: xx xx
-	EditorTilesetFilter:
+	MapEditorData:
 		Categories: Decoration
 
 castrt01:
@@ -280,7 +280,7 @@ castrt01:
 		Range: 6c0
 	Health:
 		HP: 1000
-	EditorTilesetFilter:
+	MapEditorData:
 		Categories: Decoration
 
 castrt02:
@@ -293,7 +293,7 @@ castrt02:
 		Range: 6c0
 	Health:
 		HP: 1000
-	EditorTilesetFilter:
+	MapEditorData:
 		Categories: Decoration
 
 castrt03:
@@ -306,7 +306,7 @@ castrt03:
 		Range: 6c0
 	Health:
 		HP: 1000
-	EditorTilesetFilter:
+	MapEditorData:
 		Categories: Decoration
 
 castrt04:
@@ -319,7 +319,7 @@ castrt04:
 		Range: 6c0
 	Health:
 		HP: 1000
-	EditorTilesetFilter:
+	MapEditorData:
 		Categories: Decoration
 
 castrt05:
@@ -332,7 +332,7 @@ castrt05:
 		Range: 6c0
 	Health:
 		HP: 1000
-	EditorTilesetFilter:
+	MapEditorData:
 		Categories: Decoration
 
 camov01:
@@ -381,7 +381,7 @@ hdstn01:
 	Inherits: ^Tree
 	Tooltip:
 		Name: AlringtonStones
-	EditorTilesetFilter:
+	MapEditorData:
 		Categories: Decoration
 
 lt_gen01:
@@ -448,7 +448,7 @@ spkr01:
 	Inherits: ^Tree
 	Tooltip:
 		Name: Drive-In Speaker
-	EditorTilesetFilter:
+	MapEditorData:
 		Categories: Decoration
 
 carus02c:
@@ -457,7 +457,7 @@ carus02c:
 		Type: concrete
 	Health:
 		HP: 1000
-	EditorTilesetFilter:
+	MapEditorData:
 		Categories: Wall
 
 carus02d:
@@ -466,7 +466,7 @@ carus02d:
 		Type: concrete
 	Health:
 		HP: 1000
-	EditorTilesetFilter:
+	MapEditorData:
 		Categories: Wall
 
 carus02e:
@@ -475,7 +475,7 @@ carus02e:
 		Type: concrete
 	Health:
 		HP: 1000
-	EditorTilesetFilter:
+	MapEditorData:
 		Categories: Wall
 
 carus02f:
@@ -484,7 +484,7 @@ carus02f:
 		Type: concrete
 	Health:
 		HP: 1000
-	EditorTilesetFilter:
+	MapEditorData:
 		Categories: Wall
 
 carus07:
@@ -514,7 +514,7 @@ gagate_a:
 		Type: Wood
 	-Building:
 	-Capturable:
-	-GivesBuildableArea:
+	-CaptureNotification:
 	-MustBeDestroyed:
 	-WithSpriteBody:
 	WithGateSpriteBody:

@@ -1,5 +1,5 @@
 nacnst:
-	Inherits: ^Building
+	Inherits: ^BaseBuilding
 	Inherits@shape: ^4x4Shape
 	Buildable:
 		Queue: Building
@@ -31,7 +31,7 @@ nacnst:
 		Offset: 1,1
 		Facing: 96
 		DeployCursor: undeploy
-		RequiresCondition: factundeploy
+		RequiresCondition: factundeploy && !build-incomplete
 	GrantConditionOnPrerequisite@GLOBALFACTUNDEPLOY:
 		Condition: factundeploy
 		Prerequisites: global-factundeploy
@@ -41,8 +41,10 @@ nacnst:
 		ProductionType: Support
 	WithIdleOverlay@top:
 		Sequence: idle-top
+		RequiresCondition: !build-incomplete
 	WithIdleOverlay@normal:
 		Sequence: idle-normal
+		RequiresCondition: !build-incomplete
 	WithBuildingPlacedAnimation:
 	SpawnActorsOnSell@allies:
 		ActorTypes: e1, e1, e1, engineer
@@ -52,7 +54,7 @@ nacnst:
 		Factions: cuba, libya, iraq, russia
 
 napowr:
-	Inherits: ^Building
+	Inherits: ^BaseBuilding
 	Inherits@shape: ^3x2Shape
 	Buildable:
 		Queue: Building
@@ -78,6 +80,7 @@ napowr:
 		Range: 4c0
 	WithIdleOverlay@lights:
 		Sequence: idle-lights
+		RequiresCondition: !build-incomplete
 	Power:
 		Amount: 150
 		RequiresCondition: !power-outage
@@ -93,7 +96,7 @@ napowr:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
 
 nahand:
-	Inherits: ^Building
+	Inherits: ^BaseBuilding
 	Inherits@shape: ^2x2Shape
 	Buildable:
 		Queue: Building
@@ -164,6 +167,7 @@ nahand:
 		Produces: Infantry
 	PrimaryBuilding:
 		PrimaryCondition: primary
+		SelectionNotification: PrimaryBuildingSelected
 	RallyPoint:
 		Offset: 3,3
 		Palette: mouse
@@ -175,6 +179,7 @@ nahand:
 		ZOffset: 256
 		RequiresCondition: primary
 	ProductionBar:
+		ProductionType: Infantry
 	Power:
 		Amount: -10
 	ConditionManager:
@@ -185,7 +190,7 @@ nahand:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
 
 narefn:
-	Inherits: ^Building
+	Inherits: ^BaseBuilding
 	Inherits@shape: ^4x3Shape
 	Buildable:
 		Queue: Building
@@ -232,15 +237,17 @@ narefn:
 	WithDockedOverlay:
 	WithIdleOverlay@bib:
 		Sequence: idle-bib
+		RequiresCondition: !build-incomplete
 	WithIdleOverlay@drill:
 		Sequence: idle-drill
+		RequiresCondition: !build-incomplete
 	Power:
 		Amount: -50
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
 
 naradr:
-	Inherits: ^Building
+	Inherits: ^BaseBuilding
 	Inherits@shape: ^2x2Shape
 	Buildable:
 		Queue: Building
@@ -273,6 +280,7 @@ naradr:
 	WithIdleOverlay@dish:
 		Sequence: idle-dish
 		PauseOnCondition: lowpower
+		RequiresCondition: !build-incomplete
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
 	InfiltrateForExploration:
@@ -281,7 +289,7 @@ naradr:
 		Amount: -50
 
 naweap:
-	Inherits: ^Building
+	Inherits: ^BaseBuilding
 	Inherits@shape: ^5x3Shape
 	Buildable:
 		Queue: Building
@@ -320,6 +328,7 @@ naweap:
 		Produces: Vehicle
 	PrimaryBuilding:
 		PrimaryCondition: primary
+		SelectionNotification: PrimaryBuildingSelected
 	WithTextDecoration@primary:
 		RequiresSelection: true
 		Text: PRIMARY
@@ -327,14 +336,19 @@ naweap:
 		ZOffset: 256
 		RequiresCondition: primary
 	ProductionBar:
+		ProductionType: Vehicle
 	WithExitOverlay@door:
 		Sequence: build-door
+		RequiresCondition: !build-incomplete
 	WithExitOverlay@top-vehicles:
 		Sequence: build-top
+		RequiresCondition: !build-incomplete
 	WithIdleOverlay@lights:
 		Sequence: idle-lights
+		RequiresCondition: !build-incomplete
 	WithIdleOverlay@bib:
 		Sequence: bib
+		RequiresCondition: !build-incomplete
 	Power:
 		Amount: -25
 	InfiltrateForSupportPower:
@@ -344,7 +358,7 @@ naweap:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
 
 nayard:
-	Inherits: ^Building
+	Inherits: ^BaseBuilding
 	Inherits@shape: ^4x4Shape
 	Valued:
 		Cost: 1000
@@ -441,6 +455,7 @@ nayard:
 		Produces: Ship
 	PrimaryBuilding:
 		PrimaryCondition: primary
+		SelectionNotification: PrimaryBuildingSelected
 	WithTextDecoration@primary:
 		RequiresSelection: true
 		Text: PRIMARY
@@ -452,25 +467,31 @@ nayard:
 		Palette: mouse
 		IsPlayerPalette: false
 	RepairsUnits:
+		StartRepairingNotification: Repairing
 		FinishRepairingNotification: UnitRepaired
 	ProductionBar:
+		ProductionType: Ship
 	Power:
 		Amount: -20
 	WithIdleOverlay@crane:
 		Sequence: idle-crane
+		RequiresCondition: !build-incomplete
 	WithIdleOverlay@waves:
 		Sequence: idle-waves
+		RequiresCondition: !build-incomplete
 	WithRepairOverlay:
 		Sequence: repair
+		RequiresCondition: !build-incomplete
 	WithProductionOverlay@lights:
 		Sequence: production-lights
+		RequiresCondition: !build-incomplete
 	-SpawnActorsOnSell@allies:
 	-SpawnActorsOnSell@soviets:
 	RequiresBuildableArea:
 		Adjacent: 13
 
 nadept:
-	Inherits: ^Building
+	Inherits: ^BaseBuilding
 	Inherits@shape: ^4x3Shape
 	Buildable:
 		Queue: Building
@@ -501,18 +522,22 @@ nadept:
 	RepairsUnits:
 		Interval: 148
 		HpPerStep: 20
+		StartRepairingNotification: Repairing
 		FinishRepairingNotification: UnitRepaired
 	WithIdleOverlay@normal:
 		Sequence: idle-normal
+		RequiresCondition: !build-incomplete
 	WithIdleOverlay@bib:
 		Sequence: bib
-	WithRepairAnimation:
+		RequiresCondition: !build-incomplete
+	WithResupplyAnimation:
 		Sequence: repair
+		RequiresCondition: !build-incomplete
 	Power:
 		Amount: -25
 
 nanrct:
-	Inherits: ^Building
+	Inherits: ^BaseBuilding
 	Inherits@shape: ^4x4Shape
 	Buildable:
 		Queue: Building
@@ -538,6 +563,7 @@ nanrct:
 		Range: 5c0
 	WithIdleOverlay@lights:
 		Sequence: idle-lights
+		RequiresCondition: !build-incomplete
 	Explodes:
 		Type: CenterPosition
 		Weapon: NukePayload
@@ -557,7 +583,7 @@ nanrct:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
 
 natech:
-	Inherits: ^Building
+	Inherits: ^BaseBuilding
 	Inherits@shape: ^3x3Shape
 	Buildable:
 		Queue: Building
@@ -589,7 +615,7 @@ natech:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
 
 naclon:
-	Inherits: ^Building
+	Inherits: ^BaseBuilding
 	Inherits@shape: ^2x2Shape
 	Buildable:
 		Queue: Building
@@ -661,7 +687,7 @@ naclon:
 	AcceptsDeliveredCash:
 
 napsis:
-	Inherits: ^Building
+	Inherits: ^BaseBuilding
 	Inherits@shape: ^2x2Shape
 	Buildable:
 		Queue: Support
@@ -689,6 +715,7 @@ napsis:
 	WithIdleOverlay@spin:
 		Sequence: idle-spin
 		PauseOnCondition: lowpower
+		RequiresCondition: !build-incomplete
 	Power:
 		Amount: -100
 	GrantConditionOnPowerState@LOWPOWER:
@@ -696,7 +723,7 @@ napsis:
 		ValidPowerStates: Low, Critical
 
 nairon:
-	Inherits: ^Building
+	Inherits: ^BaseBuilding
 	Inherits@shape: ^3x3Shape
 	Buildable:
 		Queue: Support
@@ -740,7 +767,7 @@ nairon:
 		ValidPowerStates: Low, Critical
 
 namisl:
-	Inherits: ^Building
+	Inherits: ^BaseBuilding
 	Inherits@shape: ^3x3Shape
 	Buildable:
 		Queue: Support
@@ -791,6 +818,7 @@ namisl:
 		CameraRange: 10
 		PauseOnCondition: lowpower
 	WithNukeLaunchAnimation:
+		RequiresCondition: !build-incomplete
 
 nawall:
 	Inherits: ^Wall
@@ -833,12 +861,14 @@ naflak:
 	AttackTurreted:
 		Voice: Attack
 		PauseOnCondition: lowpower
+		RequiresCondition: !build-incomplete
 	Armament:
 		Weapon: FlakWeapon
 	BodyOrientation:
 		QuantizedFacings: 16
 	RenderVoxels:
 	WithVoxelTurret:
+		RequiresCondition: !build-incomplete
 	WithRangeCircle:
 		Range: 12c0
 		Type: flakcannon
@@ -889,6 +919,7 @@ tesla:
 		ReloadDelay: 120
 		ChargeAudio: btespow.wav
 		PauseOnCondition: lowpower
+		RequiresCondition: !build-incomplete
 	AutoTarget:
 	GrantConditionOnPowerState@LOWPOWER:
 		RequiresCondition: !charged
@@ -901,7 +932,7 @@ tesla:
 		Amount: -75
 	WithIdleOverlay@powered:
 		Sequence: idle-powered
-		RequiresCondition: !lowpower
+		RequiresCondition: !lowpower && !build-incomplete
 	ExternalCondition@CHARGED:
 		Condition: charged
 
@@ -935,12 +966,14 @@ nalasr:
 		Offset: 320,0,0
 	AttackTurreted:
 		Voice: Attack
+		RequiresCondition: !build-incomplete
 	Armament:
 		Weapon: vulcan
 	BodyOrientation:
 		QuantizedFacings: 16
 	RenderVoxels:
 	WithVoxelTurret:
+		RequiresCondition: !build-incomplete
 	WithRangeCircle:
 		Range: 6c0
 		Type: pillbox

@@ -131,7 +131,7 @@ caoutp:
 		Sequence: bib
 	WithIdleOverlay@flag:
 		Sequence: flag
-	WithRepairAnimation:
+	WithResupplyAnimation:
 		Sequence: active-crane
 	BodyOrientation:
 		QuantizedFacings: 16
