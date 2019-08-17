@@ -46,10 +46,16 @@ caoutp:
 	Defaults:
 		Offset: -15, -50
 	idle-tower:
-		ShadowStart: 4
+		ShadowStart: -1
 	damaged-idle-tower:
 		Start: 1
-		ShadowStart: 5
+		ShadowStart: -1
+	idle-tower-shadow:
+		UseTilesetCode: false
+		Start: 4
+	damaged-idle-tower-shadow:
+		UseTilesetCode: false
+		Start: 5
 	idle: caoutp_d
 		ShadowStart: 2
 	damaged-idle: caoutp_d
@@ -67,3 +73,5 @@ caoutp:
 	damaged-bib: caoutpbb
 		Start: 1
 	flag: caoutp_f
+	rubble:
+		UseTilesetCode: false

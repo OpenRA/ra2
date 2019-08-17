@@ -53,6 +53,10 @@
 		Tileset: URBAN
 		Filename: liburb.pal
 		ShadowIndex: 1
+	PaletteFromFile@outpost-rubble:
+		Name: outpost-rubble
+		Filename: isosno.pal
+		ShadowIndex: 1
 	PaletteFromFile@playerurb:
 		Name: player
 		Tileset: URBAN
