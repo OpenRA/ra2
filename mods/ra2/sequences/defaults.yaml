@@ -158,6 +158,10 @@
 		ShadowStart: 5
 	flag:
 		Length: 16
+	rubble:
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -3c0
 
 ^CivStructure:
 	Defaults:

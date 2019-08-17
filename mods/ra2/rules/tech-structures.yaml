@@ -25,6 +25,17 @@ caoild:
 		Offset: 1000,0,0
 	GivesCashOnCapture:
 		Amount: 1000
+	SpawnActorOnDeath:
+		Actor: caoild.rubble
+
+caoild.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^2x2Shape
+	Building:
+		Dimensions: 2,2
+		Footprint: == ==
+	RenderSprites:
+		Image: caoild
 
 caairp:
 	Inherits: ^TechBuilding
@@ -74,6 +85,17 @@ caairp:
 	WithIdleOverlay@decoration:
 	WithIdleOverlay@flag:
 		Sequence: flag
+	SpawnActorOnDeath:
+		Actor: caairp.rubble
+
+caairp.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^3x2Shape
+	Building:
+		Dimensions: 3,3
+		Footprint: === === ===
+	RenderSprites:
+		Image: caairp
 
 cahosp:
 	Inherits: ^TechBuilding
@@ -96,6 +118,17 @@ cahosp:
 	WithIdleOverlay@flag:
 		Sequence: flag
 		Offset: 0,-500,2520
+	SpawnActorOnDeath:
+		Actor: cahosp.rubble
+
+cahosp.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^6x4Shape
+	Building:
+		Dimensions: 6,4
+		Footprint: ==== ==== ==== ==== ==== ====
+	RenderSprites:
+		Image: cahosp
 
 cathosp:
 	Inherits: cahosp
@@ -127,6 +160,8 @@ caoutp:
 		FinishRepairingNotification: UnitRepaired
 	WithIdleOverlay@tower:
 		Sequence: idle-tower
+	WithIdleOverlay@tower-shadow:
+		Sequence: idle-tower-shadow
 	WithIdleOverlay@bib:
 		Sequence: bib
 	WithIdleOverlay@flag:
@@ -156,3 +191,15 @@ caoutp:
 	Armament:
 		Weapon: HoverMissile
 		LocalOffset: 500,0,900
+	SpawnActorOnDeath:
+		Actor: caoutp.rubble
+
+caoutp.rubble:
+	Inherits: ^Rubble
+	Inherits@shape: ^4x3Shape
+	Building:
+		Dimensions: 4,3
+		Footprint: ==== ==== ====
+	RenderSprites:
+		Image: caoutp
+		Palette: outpost-rubble
