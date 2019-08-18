@@ -39,7 +39,7 @@ cahse01.rubble:
 	Inherits@shape: ^3x2Shape
 	Building:
 		Dimensions: 3,2
-		Footprint: ___ ___
+		Footprint: === ===
 	RenderSprites:
 		Image: cahse01
 
@@ -61,7 +61,7 @@ cahse02.rubble:
 	Inherits@shape: ^3x2Shape
 	Building:
 		Dimensions: 3,2
-		Footprint: ___ ___
+		Footprint: === ===
 	RenderSprites:
 		Image: cahse02
 
@@ -83,7 +83,7 @@ cahse03.rubble:
 	Inherits@shape: ^3x4Shape
 	Building:
 		Dimensions: 3,2
-		Footprint: ___ ___
+		Footprint: === ===
 	RenderSprites:
 		Image: cahse03
 
@@ -105,7 +105,7 @@ cahse04.rubble:
 	Inherits@shape: ^3x2Shape
 	Building:
 		Dimensions: 3,2
-		Footprint: ___ ___
+		Footprint: === ===
 	RenderSprites:
 		Image: cahse04
 
@@ -129,7 +129,7 @@ cahse05.rubble:
 	Inherits@shape: ^1x2Shape
 	Building:
 		Dimensions: 1,2
-		Footprint: _ _
+		Footprint: = =
 	RenderSprites:
 		Image: cahse05
 
@@ -153,7 +153,7 @@ cahse06.rubble:
 	Inherits@shape: ^2x1Shape
 	Building:
 		Dimensions: 2,1
-		Footprint: __
+		Footprint: ==
 	RenderSprites:
 		Image: cahse06
 
@@ -177,7 +177,7 @@ cahse07.rubble:
 	Inherits@shape: ^2x3Shape
 	Building:
 		Dimensions: 2,3
-		Footprint: __ __ __
+		Footprint: == == ==
 	RenderSprites:
 		Image: cahse07
 
@@ -243,7 +243,7 @@ cawash01.rubble:
 	Inherits: ^Rubble
 	Inherits@shape: ^4x4Shape
 	Building:
-		Footprint: ____ ____ ____ ____
+		Footprint: ==== ==== ==== ====
 		Dimensions: 4, 4
 	RenderSprites:
 		Image: cawash01
@@ -269,7 +269,7 @@ cawash03.rubble:
 	Inherits: ^Rubble
 	Inherits@shape: ^4x3Shape
 	Building:
-		Footprint: ____ ____ ____
+		Footprint: ==== ==== ====
 		Dimensions: 4, 3
 	RenderSprites:
 		Image: cawash03
@@ -295,7 +295,7 @@ cawash04.rubble:
 	Inherits: ^Rubble
 	Inherits@shape: ^4x4Shape
 	Building:
-		Footprint: ____ ____ ____ ____
+		Footprint: ==== ==== ==== ====
 		Dimensions: 4, 4
 	RenderSprites:
 		Image: cawash04
@@ -321,7 +321,7 @@ cawash05.rubble:
 	Inherits: ^Rubble
 	Inherits@shape: ^4x2Shape
 	Building:
-		Footprint: ____ ____
+		Footprint: ==== ====
 		Dimensions: 4, 2
 	RenderSprites:
 		Image: cawash05
@@ -348,7 +348,7 @@ cawash06.rubble:
 	Inherits@shape: ^4x4Shape
 	Building:
 		Dimensions: 4,4
-		Footprint: ____ ____ ____ ____
+		Footprint: ==== ==== ==== ====
 	RenderSprites:
 		Image: cawash06
 
@@ -371,7 +371,7 @@ cawash07.rubble:
 	Inherits: ^Rubble
 	Inherits@shape: ^3x3Shape
 	Building:
-		Footprint: ___ ___ ___
+		Footprint: === === ===
 		Dimensions: 3, 3
 	RenderSprites:
 		Image: cawash07
@@ -396,7 +396,7 @@ cawash08.rubble:
 	Inherits@shape: ^3x4Shape
 	Building:
 		Dimensions: 3,4
-		Footprint: ___ ___ ___ ___
+		Footprint: === === === ===
 	RenderSprites:
 		Image: cawash08
 
@@ -421,7 +421,7 @@ cawash09.rubble:
 	Inherits: ^Rubble
 	Inherits@shape: ^3x3Shape
 	Building:
-		Footprint: ___ ___ ___
+		Footprint: === === ===
 		Dimensions: 3, 3
 	RenderSprites:
 		Image: cawash09
@@ -447,7 +447,7 @@ cawash10.rubble:
 	Inherits: ^Rubble
 	Inherits@shape: ^4x4Shape
 	Building:
-		Footprint: ____ ____ ____ ____
+		Footprint: ==== ==== ==== ====
 		Dimensions: 4, 4
 	RenderSprites:
 		Image: cawash10
@@ -473,7 +473,7 @@ cawash11.rubble:
 	Inherits: ^Rubble
 	Inherits@shape: ^4x4Shape
 	Building:
-		Footprint: ____ ____ ____ ____
+		Footprint: ==== ==== ==== ====
 		Dimensions: 4, 4
 	RenderSprites:
 		Image: cawash11
@@ -515,7 +515,7 @@ cawsh12.rubble:
 	Inherits: ^Rubble
 	Inherits@shape: ^3x3Shape
 	Building:
-		Footprint: ___ ___ ___
+		Footprint: === === ===
 		Dimensions: 3, 3
 	RenderSprites:
 		Image: cawsh12
@@ -542,7 +542,7 @@ cawash13.rubble:
 	Inherits@shape: ^3x4Shape
 	Building:
 		Dimensions: 3,4
-		Footprint: ___ ___ ___ ___
+		Footprint: === === === ===
 	RenderSprites:
 		Image: cawash13
 
@@ -568,7 +568,7 @@ cawash14.rubble:
 	Inherits@shape: ^3x3Shape
 	Building:
 		Dimensions: 3,3
-		Footprint: ___ ___ ___
+		Footprint: === === ===
 	RenderSprites:
 		Image: cawash14
 
@@ -594,7 +594,7 @@ cawash15.rubble:
 	Inherits@shape: ^3x4Shape
 	Building:
 		Dimensions: 3,3
-		Footprint: ___ ___ ___
+		Footprint: === === ===
 	RenderSprites:
 		Image: cawash15
 
@@ -622,7 +622,7 @@ cawash16.rubble:
 	Inherits@shape: ^5x3Shape
 	Building:
 		Dimensions: 5,3
-		Footprint: _____ _____ _____
+		Footprint: ===== ===== =====
 	RenderSprites:
 		Image: cawash16
 
@@ -650,7 +650,7 @@ cawash17.rubble:
 	Inherits@shape: ^6x4Shape
 	Building:
 		Dimensions: 6,4
-		Footprint: ______ ______ ______ ______
+		Footprint: ====== ====== ====== ======
 	RenderSprites:
 		Image: cawash17
 
@@ -699,7 +699,7 @@ cawash19.rubble:
 	Inherits@shape: ^4x4Shape
 	Building:
 		Dimensions: 4,4
-		Footprint: ____ ____ ____ ____
+		Footprint: ==== ==== ==== ====
 	RenderSprites:
 		Image: cawash19
 
@@ -725,7 +725,7 @@ canewy01.rubble:
 	Inherits@shape: ^4x4Shape
 	Building:
 		Dimensions: 4,4
-		Footprint: ____ ____ ____ ____
+		Footprint: ==== ==== ==== ====
 	RenderSprites:
 		Image: canewy01
 
@@ -755,7 +755,7 @@ canewy04.rubble:
 	Inherits@shape: ^3x3Shape
 	Building:
 		Dimensions: 3,3
-		Footprint: ___ ___ ___
+		Footprint: === === ===
 	RenderSprites:
 		Image: canewy04
 
@@ -798,7 +798,7 @@ canewy06.rubble:
 	Inherits@shape: ^3x3Shape
 	Building:
 		Dimensions: 3,3
-		Footprint: ___ ___ ___
+		Footprint: === === ===
 	RenderSprites:
 		Image: canewy06
 
@@ -824,7 +824,7 @@ canewy07.rubble:
 	Inherits@shape: ^3x3Shape
 	Building:
 		Dimensions: 3,3
-		Footprint: ___ ___ ___
+		Footprint: === === ===
 	RenderSprites:
 		Image: canewy07
 
@@ -850,7 +850,7 @@ canewy08.rubble:
 	Inherits@shape: ^3x3Shape
 	Building:
 		Dimensions: 3,3
-		Footprint: ___ ___ ___
+		Footprint: === === ===
 	RenderSprites:
 		Image: canewy08
 
@@ -876,7 +876,7 @@ canewy10.rubble:
 	Inherits@shape: ^3x2Shape
 	Building:
 		Dimensions: 3,2
-		Footprint: ___ ___
+		Footprint: === ===
 	RenderSprites:
 		Image: canewy10
 
@@ -902,7 +902,7 @@ canewy11.rubble:
 	Inherits@shape: ^3x2Shape
 	Building:
 		Dimensions: 3,2
-		Footprint: ___ ___
+		Footprint: === ===
 	RenderSprites:
 		Image: canewy11
 
@@ -928,7 +928,7 @@ canewy12.rubble:
 	Inherits@shape: ^2x3Shape
 	Building:
 		Dimensions: 2,3
-		Footprint: __ __ __
+		Footprint: == == ==
 	RenderSprites:
 		Image: canewy12
 
@@ -954,7 +954,7 @@ canewy13.rubble:
 	Inherits@shape: ^3x3Shape
 	Building:
 		Dimensions: 3,3
-		Footprint: ___ ___ ___
+		Footprint: === === ===
 	RenderSprites:
 		Image: canewy13
 
@@ -980,7 +980,7 @@ canewy14.rubble:
 	Inherits@shape: ^3x3Shape
 	Building:
 		Dimensions: 3,3
-		Footprint: ___ ___ ___
+		Footprint: === === ===
 	RenderSprites:
 		Image: canewy14
 
@@ -1006,7 +1006,7 @@ canewy15.rubble:
 	Inherits@shape: ^3x3Shape
 	Building:
 		Dimensions: 3,3
-		Footprint: ___ ___ ___
+		Footprint: === === ===
 	RenderSprites:
 		Image: canewy15
 
@@ -1032,7 +1032,7 @@ canewy16.rubble:
 	Inherits@shape: ^2x2Shape
 	Building:
 		Dimensions: 2,2
-		Footprint: __ __
+		Footprint: == ==
 	RenderSprites:
 		Image: canewy16
 
@@ -1058,7 +1058,7 @@ canewy17.rubble:
 	Inherits@shape: ^2x2Shape
 	Building:
 		Dimensions: 2,2
-		Footprint: __ __
+		Footprint: == ==
 	RenderSprites:
 		Image: canewy17
 
@@ -1084,7 +1084,7 @@ canewy18.rubble:
 	Inherits@shape: ^2x2Shape
 	Building:
 		Dimensions: 2,2
-		Footprint: __ __
+		Footprint: == ==
 	RenderSprites:
 		Image: canewy18
 
@@ -1110,7 +1110,7 @@ canewy20.rubble:
 	Inherits@shape: ^3x5Shape
 	Building:
 		Dimensions: 3,5
-		Footprint: ___ ___ ___ ___ ___
+		Footprint: === === === === ===
 	RenderSprites:
 		Image: canewy20
 
@@ -1136,7 +1136,7 @@ canewy21.rubble:
 	Inherits@shape: ^5x3Shape
 	Building:
 		Dimensions: 5,3
-		Footprint: _____ _____ _____
+		Footprint: ===== ===== =====
 	RenderSprites:
 		Image: canewy21
 
@@ -1164,7 +1164,7 @@ caswst01.rubble:
 	Inherits@shape: ^2x3Shape
 	Building:
 		Dimensions: 2,3
-		Footprint: __ __ __
+		Footprint: == == ==
 	RenderSprites:
 		Image: caswst01
 
@@ -1231,7 +1231,7 @@ cawa2a.rubble:
 	Inherits: ^Rubble
 	Inherits@shape: ^4x4Shape
 	Building:
-		Footprint: ____ ____ ____ ____
+		Footprint: ==== ==== ==== ====
 		Dimensions: 4, 4
 	RenderSprites:
 		Image: cawa2a
@@ -1259,7 +1259,7 @@ cawa2b.rubble:
 	Inherits: ^Rubble
 	Inherits@shape: ^4x4Shape
 	Building:
-		Footprint: ____ ____ ____ ____
+		Footprint: ==== ==== ==== ====
 		Dimensions: 4, 4
 	RenderSprites:
 		Image: cawa2b
@@ -1287,7 +1287,7 @@ cawa2c.rubble:
 	Inherits: ^Rubble
 	Inherits@shape: ^4x4Shape
 	Building:
-		Footprint: ____ ____ ____ ____
+		Footprint: ==== ==== ==== ====
 		Dimensions: 4, 4
 	RenderSprites:
 		Image: cawa2c
@@ -1315,7 +1315,7 @@ cawa2d.rubble:
 	Inherits: ^Rubble
 	Inherits@shape: ^4x4Shape
 	Building:
-		Footprint: ____ ____ ____ ____
+		Footprint: ==== ==== ==== ====
 		Dimensions: 4, 4
 	RenderSprites:
 		Image: cawa2d
@@ -1371,7 +1371,7 @@ cafarm06.rubble:
 	Inherits: ^Rubble
 	Inherits@shape: ^2x2Shape
 	Building:
-		Footprint: __ __
+		Footprint: == ==
 		Dimensions: 2, 2
 	RenderSprites:
 		Image: cafarm06
@@ -1447,7 +1447,7 @@ cacolo01.rubble:
 	Inherits: ^Rubble
 	Inherits@shape: ^5x3Shape
 	Building:
-		Footprint: _____ _____ _____
+		Footprint: ===== ===== =====
 		Dimensions: 5, 3
 	RenderSprites:
 		Image: cacolo01
@@ -1473,7 +1473,7 @@ caind01.rubble:
 	Inherits: ^Rubble
 	Inherits@shape: ^4x4Shape
 	Building:
-		Footprint: ____ ____ ____ ____
+		Footprint: ==== ==== ==== ====
 		Dimensions: 4, 4
 	RenderSprites:
 		Image: caind01
@@ -1499,7 +1499,7 @@ calab.rubble:
 	Inherits: ^Rubble
 	Inherits@shape: ^3x4Shape
 	Building:
-		Footprint: ___ ___ ___ ___
+		Footprint: === === === ===
 		Dimensions: 3, 4
 	RenderSprites:
 		Image: calab
@@ -1523,7 +1523,7 @@ cagas01.rubble:
 	Inherits: ^Rubble
 	Inherits@shape: ^3x3Shape
 	Building:
-		Footprint: ___ ___ ___
+		Footprint: === === ===
 		Dimensions: 3, 3
 	RenderSprites:
 		Image: cagas01
@@ -1666,7 +1666,7 @@ catech01.rubble:
 	Inherits@shape: ^3x3Shape
 	Building:
 		Dimensions: 3,3
-		Footprint: ___ ___ ___
+		Footprint: === === ===
 	RenderSprites:
 		Image: catech01
 
@@ -1720,7 +1720,7 @@ catexs02.rubble:
 	Inherits@shape: ^4x4Shape
 	Building:
 		Dimensions: 4,4
-		Footprint: ____ ____ ____ ____
+		Footprint: ==== ==== ==== ====
 	RenderSprites:
 		Image: catexs02
 
@@ -1746,7 +1746,7 @@ catexs03.rubble:
 	Inherits@shape: ^3x3Shape
 	Building:
 		Dimensions: 3,3
-		Footprint: ___ ___ ___
+		Footprint: === === ===
 	RenderSprites:
 		Image: catexs03
 
@@ -1772,7 +1772,7 @@ catexs04.rubble:
 	Inherits@shape: ^3x3Shape
 	Building:
 		Dimensions: 3,3
-		Footprint: ___ ___ ___
+		Footprint: === === ===
 	RenderSprites:
 		Image: catexs04
 
@@ -1798,7 +1798,7 @@ catexs05.rubble:
 	Inherits@shape: ^3x3Shape
 	Building:
 		Dimensions: 3,3
-		Footprint: ___ ___ ___
+		Footprint: === === ===
 	RenderSprites:
 		Image: catexs05
 
@@ -1824,7 +1824,7 @@ catexs06.rubble:
 	Inherits@shape: ^3x3Shape
 	Building:
 		Dimensions: 3,3
-		Footprint: ___ ___ ___
+		Footprint: === === ===
 	RenderSprites:
 		Image: catexs06
 
@@ -1850,7 +1850,7 @@ catexs07.rubble:
 	Inherits@shape: ^3x3Shape
 	Building:
 		Dimensions: 3,3
-		Footprint: ___ ___ ___
+		Footprint: === === ===
 	RenderSprites:
 		Image: catexs07
 
@@ -1902,7 +1902,7 @@ capars01.rubble:
 	Inherits@shape: ^4x4Shape
 	Building:
 		Dimensions: 4,4
-		Footprint: ____ ____ ____ ____
+		Footprint: ==== ==== ==== ====
 	RenderSprites:
 		Image: capars01
 
@@ -1928,7 +1928,7 @@ capars02.rubble:
 	Inherits@shape: ^6x4Shape
 	Building:
 		Dimensions: 6,4
-		Footprint: ______ ______ ______ ______
+		Footprint: ====== ====== ====== ======
 	RenderSprites:
 		Image: capars02
 
@@ -1954,7 +1954,7 @@ capars04.rubble:
 	Inherits@shape: ^3x3Shape
 	Building:
 		Dimensions: 3,3
-		Footprint: ___ ___ ___
+		Footprint: === === ===
 	RenderSprites:
 		Image: capars04
 
@@ -1980,7 +1980,7 @@ capars05.rubble:
 	Inherits@shape: ^3x3Shape
 	Building:
 		Dimensions: 3,3
-		Footprint: ___ ___ ___
+		Footprint: === === ===
 	RenderSprites:
 		Image: capars05
 
@@ -2006,7 +2006,7 @@ capars06.rubble:
 	Inherits@shape: ^3x3Shape
 	Building:
 		Dimensions: 3,3
-		Footprint: ___ ___ ___
+		Footprint: === === ===
 	RenderSprites:
 		Image: capars06
 
@@ -2043,7 +2043,7 @@ capars08.rubble:
 	Inherits@shape: ^6x4Shape
 	Building:
 		Dimensions: 6,4
-		Footprint: ______ ______ ______ ______
+		Footprint: ====== ====== ====== ======
 	RenderSprites:
 		Image: capars08
 
@@ -2069,7 +2069,7 @@ capars09.rubble:
 	Inherits@shape: ^6x4Shape
 	Building:
 		Dimensions: 6,4
-		Footprint: ______ ______ ______ ______
+		Footprint: ====== ====== ====== ======
 	RenderSprites:
 		Image: capars09
 
@@ -2095,7 +2095,7 @@ capars10.rubble:
 	Inherits@shape: ^4x3Shape
 	Building:
 		Dimensions: 4,3
-		Footprint: ____ ____ ____
+		Footprint: ==== ==== ====
 	RenderSprites:
 		Image: capars10
 
@@ -2123,7 +2123,7 @@ capars11.rubble:
 	Inherits@shape: ^3x4Shape
 	Building:
 		Dimensions: 3,4
-		Footprint: ___ ___ ___ ___
+		Footprint: === === === ===
 	RenderSprites:
 		Image: capars11
 
@@ -2151,7 +2151,7 @@ capars12.rubble:
 	Inherits@shape: ^3x5Shape
 	Building:
 		Dimensions: 3,5
-		Footprint: ___ ___ ___ ___ ___
+		Footprint: === === === === ===
 	RenderSprites:
 		Image: capars12
 
@@ -2179,7 +2179,7 @@ capars13.rubble:
 	Inherits@shape: ^3x4Shape
 	Building:
 		Dimensions: 3,4
-		Footprint: ___ ___ ___ ___
+		Footprint: === === === ===
 	RenderSprites:
 		Image: capars13
 
@@ -2207,7 +2207,7 @@ capars14.rubble:
 	Inherits@shape: ^4x3Shape
 	Building:
 		Dimensions: 4,3
-		Footprint: ____ ____ ____
+		Footprint: ==== ==== ====
 	RenderSprites:
 		Image: capars14
 
@@ -2259,7 +2259,7 @@ caprs03.rubble:
 	Inherits@shape: ^6x4Shape
 	Building:
 		Dimensions: 6,4
-		Footprint: ______ ______ ______ ______
+		Footprint: ====== ====== ====== ======
 	RenderSprites:
 		Image: caprs03
 
@@ -2300,7 +2300,7 @@ carus01.rubble:
 	Inherits@shape: ^4x4Shape
 	Building:
 		Dimensions: 4,4
-		Footprint: ____ ____ ____ ____
+		Footprint: ==== ==== ==== ====
 	RenderSprites:
 		Image: carus01
 
@@ -2319,7 +2319,7 @@ carus02a.rubble:
 	Inherits: ^Rubble
 	Building:
 		Dimensions: 1,1
-		Footprint: _
+		Footprint: =
 	RenderSprites:
 		Image: carus02a
 	MapEditorData:
@@ -2338,7 +2338,7 @@ carus02b.rubble:
 	Inherits: ^Rubble
 	Building:
 		Dimensions: 1,1
-		Footprint: _
+		Footprint: =
 	RenderSprites:
 		Image: carus02b
 
@@ -2384,7 +2384,7 @@ carus03.rubble:
 	Inherits@shape: ^2x5Shape
 	Building:
 		Dimensions: 2,5
-		Footprint: __ __ __ __ __
+		Footprint: == == == == ==
 	RenderSprites:
 		Image: carus03
 
@@ -2408,7 +2408,7 @@ carus04.rubble:
 	Inherits@shape: ^4x4Shape
 	Building:
 		Dimensions: 4,4
-		Footprint: ____ ____ ____ ____
+		Footprint: ==== ==== ==== ====
 	RenderSprites:
 		Image: carus04
 
@@ -2432,7 +2432,7 @@ carus05.rubble:
 	Inherits@shape: ^4x4Shape
 	Building:
 		Dimensions: 4,4
-		Footprint: ____ ____ ____ ____
+		Footprint: ==== ==== ==== ====
 	RenderSprites:
 		Image: carus05
 
@@ -2456,7 +2456,7 @@ carus06.rubble:
 	Inherits@shape: ^4x4Shape
 	Building:
 		Dimensions: 4,4
-		Footprint: ____ ____ ____ ____
+		Footprint: ==== ==== ==== ====
 	RenderSprites:
 		Image: carus06
 
@@ -2496,7 +2496,7 @@ carus09.rubble:
 	Inherits@shape: ^2x1Shape
 	Building:
 		Dimensions: 2,1
-		Footprint: __
+		Footprint: ==
 	RenderSprites:
 		Image: carus09
 
@@ -2520,7 +2520,7 @@ carus10.rubble:
 	Inherits@shape: ^1x2Shape
 	Building:
 		Dimensions: 1,2
-		Footprint: _ _
+		Footprint: = =
 	RenderSprites:
 		Image: carus10
 
@@ -2544,7 +2544,7 @@ carus11.rubble:
 	Inherits@shape: ^2x1Shape
 	Building:
 		Dimensions: 2,1
-		Footprint: __
+		Footprint: ==
 	RenderSprites:
 		Image: carus11
 
@@ -2570,7 +2570,7 @@ camiam01.rubble:
 	Inherits@shape: ^4x2Shape
 	Building:
 		Dimensions: 4,2
-		Footprint: ____ ____
+		Footprint: ==== ====
 	RenderSprites:
 		Image: camiam01
 
@@ -2596,7 +2596,7 @@ camiam02.rubble:
 	Inherits@shape: ^4x2Shape
 	Building:
 		Dimensions: 4,2
-		Footprint: ____ ____
+		Footprint: ==== ====
 	RenderSprites:
 		Image: camiam02
 
@@ -2622,7 +2622,7 @@ camiam03.rubble:
 	Inherits@shape: ^2x3Shape
 	Building:
 		Dimensions: 2,3
-		Footprint: __ __ __
+		Footprint: == == ==
 	RenderSprites:
 		Image: camiam03
 
@@ -2661,7 +2661,7 @@ camiam05.rubble:
 	Inherits@shape: ^3x4Shape
 	Building:
 		Dimensions: 3,4
-		Footprint: ___ ___ ___ ___
+		Footprint: === === === ===
 	RenderSprites:
 		Image: camiam05
 
@@ -2687,7 +2687,7 @@ camiam06.rubble:
 	Inherits@shape: ^4x4Shape
 	Building:
 		Dimensions: 4,4
-		Footprint: ____ ____ ____ ____
+		Footprint: ==== ==== ==== ====
 	RenderSprites:
 		Image: camiam06
 
@@ -2711,7 +2711,7 @@ camiam07.rubble:
 	Inherits: ^Rubble
 	Building:
 		Dimensions: 4,4
-		Footprint: ____ ____ ____ ____
+		Footprint: ==== ==== ==== ====
 	RenderSprites:
 		Image: camiam07
 
@@ -2739,7 +2739,7 @@ camiam08.rubble:
 	Inherits@shape: ^3x1Shape
 	Building:
 		Dimensions: 3,1
-		Footprint: ___
+		Footprint: ===
 	RenderSprites:
 		Image: camiam08
 
@@ -2765,7 +2765,7 @@ canwy05.rubble:
 	Inherits@shape: ^4x4Shape
 	Building:
 		Dimensions: 4,4
-		Footprint: ____ ____ ____ ____
+		Footprint: ==== ==== ==== ====
 	RenderSprites:
 		Image: canwy05
 
@@ -2791,7 +2791,7 @@ canwy09.rubble:
 	Inherits@shape: ^2x3Shape
 	Building:
 		Dimensions: 2,3
-		Footprint: __ __ __
+		Footprint: == == ==
 	RenderSprites:
 		Image: canwy09
 
@@ -2817,7 +2817,7 @@ canwy22.rubble:
 	Inherits@shape: ^3x3Shape
 	Building:
 		Dimensions: 3,3
-		Footprint: ___ ___ ___
+		Footprint: === === ===
 	RenderSprites:
 		Image: canwy22
 
@@ -2843,7 +2843,7 @@ canwy23.rubble:
 	Inherits@shape: ^3x2Shape
 	Building:
 		Dimensions: 3,2
-		Footprint: ___ ___
+		Footprint: === ===
 	RenderSprites:
 		Image: canwy23
 
@@ -2869,7 +2869,7 @@ canwy24.rubble:
 	Inherits@shape: ^3x3Shape
 	Building:
 		Dimensions: 3,3
-		Footprint: ___ ___ ___
+		Footprint: === === ===
 	RenderSprites:
 		Image: canwy24
 
@@ -2895,7 +2895,7 @@ canwy25.rubble:
 	Inherits@shape: ^3x3Shape
 	Building:
 		Dimensions: 3,3
-		Footprint: ___ ___ ___
+		Footprint: === === ===
 	RenderSprites:
 		Image: canwy25
 
@@ -2921,7 +2921,7 @@ canwy26.rubble:
 	Inherits@shape: ^5x3Shape
 	Building:
 		Dimensions: 5,3
-		Footprint: _____ _____ _____
+		Footprint: ===== ===== =====
 	RenderSprites:
 		Image: canwy26
 
@@ -2949,7 +2949,7 @@ camex01.rubble:
 	Inherits@shape: ^3x2Shape
 	Building:
 		Dimensions: 3,2
-		Footprint: ___ ___
+		Footprint: === ===
 	RenderSprites:
 		Image: camex01
 
@@ -2977,7 +2977,7 @@ camex02.rubble:
 	Inherits@shape: ^6x4Shape
 	Building:
 		Dimensions: 6,4
-		Footprint: ______ ______ ______ ______
+		Footprint: ====== ====== ====== ======
 	RenderSprites:
 		Image: camex02
 
@@ -3005,7 +3005,7 @@ camex03.rubble:
 	Inherits@shape: ^3x3Shape
 	Building:
 		Dimensions: 3,3
-		Footprint: ___ ___ ___
+		Footprint: === === ===
 	RenderSprites:
 		Image: camex03
 
@@ -3033,7 +3033,7 @@ camex04.rubble:
 	Inherits@shape: ^4x4Shape
 	Building:
 		Dimensions: 4,4
-		Footprint: ____ ____ ____ ____
+		Footprint: ==== ==== ==== ====
 	RenderSprites:
 		Image: camex04
 
@@ -3061,7 +3061,7 @@ camex05.rubble:
 	Inherits@shape: ^2x2Shape
 	Building:
 		Dimensions: 2,2
-		Footprint: __ __
+		Footprint: == ==
 	RenderSprites:
 		Image: camex05
 
@@ -3085,7 +3085,7 @@ caeur1.rubble:
 	Inherits@shape: ^2x2Shape
 	Building:
 		Dimensions: 2,2
-		Footprint: __ __
+		Footprint: == ==
 	RenderSprites:
 		Image: caeur1
 
@@ -3109,7 +3109,7 @@ caeur2.rubble:
 	Inherits@shape: ^2x2Shape
 	Building:
 		Dimensions: 2,2
-		Footprint: __ __
+		Footprint: == ==
 	RenderSprites:
 		Image: caeur2
 
@@ -3133,7 +3133,7 @@ caeur04.rubble:
 	Inherits@shape: ^4x3Shape
 	Building:
 		Dimensions: 4,3
-		Footprint: ____ ____ ____
+		Footprint: ==== ==== ====
 	RenderSprites:
 		Image: caeur04
 
@@ -3159,7 +3159,7 @@ cachig01.rubble:
 	Inherits@shape: ^3x2Shape
 	Building:
 		Dimensions: 3,2
-		Footprint: ___ ___
+		Footprint: === ===
 	RenderSprites:
 		Image: cachig01
 
@@ -3185,7 +3185,7 @@ cachig02.rubble:
 	Inherits@shape: ^2x3Shape
 	Building:
 		Dimensions: 2,3
-		Footprint: __ __ __
+		Footprint: == == ==
 	RenderSprites:
 		Image: cachig02
 
@@ -3211,7 +3211,7 @@ cachig03.rubble:
 	Inherits@shape: ^3x2Shape
 	Building:
 		Dimensions: 3,2
-		Footprint: ___ ___
+		Footprint: === ===
 	RenderSprites:
 		Image: cachig03
 
@@ -3239,7 +3239,7 @@ cachig04.rubble:
 	Inherits@shape: ^2x2Shape
 	Building:
 		Dimensions: 2,2
-		Footprint: __ __
+		Footprint: == ==
 	RenderSprites:
 		Image: cachig04
 
@@ -3267,7 +3267,7 @@ cachig05.rubble:
 	Inherits@shape: ^4x4Shape
 	Building:
 		Dimensions: 4,4
-		Footprint: ____ ____ ____ ____
+		Footprint: ==== ==== ==== ====
 	RenderSprites:
 		Image: cachig05
 
@@ -3293,7 +3293,7 @@ cachig06.rubble:
 	Inherits@shape: ^2x2Shape
 	Building:
 		Dimensions: 2,2
-		Footprint: __ __
+		Footprint: == ==
 	RenderSprites:
 		Image: cachig06
 
@@ -3319,7 +3319,7 @@ castl01.rubble:
 	Inherits@shape: ^4x4Shape
 	Building:
 		Dimensions: 4,4
-		Footprint: ____ ____ ____ ____
+		Footprint: ==== ==== ==== ====
 	RenderSprites:
 		Image: castl01
 
@@ -3345,7 +3345,7 @@ castl02.rubble:
 	Inherits@shape: ^4x4Shape
 	Building:
 		Dimensions: 4,4
-		Footprint: ____ ____ ____ ____
+		Footprint: ==== ==== ==== ====
 	RenderSprites:
 		Image: castl02
 
@@ -3371,7 +3371,7 @@ castl03.rubble:
 	Inherits@shape: ^4x4Shape
 	Building:
 		Dimensions: 4,4
-		Footprint: ____ ____ ____ ____
+		Footprint: ==== ==== ==== ====
 	RenderSprites:
 		Image: castl03
 
@@ -3397,7 +3397,7 @@ castl04.rubble:
 	Inherits@shape: ^2x6Shape
 	Building:
 		Dimensions: 2,6
-		Footprint: __ __ __ __ __ __
+		Footprint: == == == == == ==
 	RenderSprites:
 		Image: castl04
 
@@ -3425,7 +3425,7 @@ castl05a.rubble:
 	Inherits@shape: ^4x4Shape
 	Building:
 		Dimensions: 4,4
-		Footprint: ____ ____ ____ ____
+		Footprint: ==== ==== ==== ====
 	RenderSprites:
 		Image: castl05a
 
@@ -3453,7 +3453,7 @@ castl05b.rubble:
 	Inherits@shape: ^4x4Shape
 	Building:
 		Dimensions: 4,4
-		Footprint: ____ ____ ____ ____
+		Footprint: ==== ==== ==== ====
 	RenderSprites:
 		Image: castl05b
 
@@ -3481,7 +3481,7 @@ castl05c.rubble:
 	Inherits@shape: ^4x4Shape
 	Building:
 		Dimensions: 4,4
-		Footprint: ____ ____ ____ ____
+		Footprint: ==== ==== ==== ====
 	RenderSprites:
 		Image: castl05c
 
@@ -3509,7 +3509,7 @@ castl05d.rubble:
 	Inherits@shape: ^4x4Shape
 	Building:
 		Dimensions: 4,4
-		Footprint: ____ ____ ____ ____
+		Footprint: ==== ==== ==== ====
 	RenderSprites:
 		Image: castl05d
 
@@ -3537,7 +3537,7 @@ castl05e.rubble:
 	Inherits@shape: ^4x4Shape
 	Building:
 		Dimensions: 4,4
-		Footprint: ____ ____ ____ ____
+		Footprint: ==== ==== ==== ====
 	RenderSprites:
 		Image: castl05e
 
@@ -3565,7 +3565,7 @@ castl05f.rubble:
 	Inherits@shape: ^4x4Shape
 	Building:
 		Dimensions: 4,4
-		Footprint: ____ ____ ____ ____
+		Footprint: ==== ==== ==== ====
 	RenderSprites:
 		Image: castl05f
 
@@ -3593,7 +3593,7 @@ castl05g.rubble:
 	Inherits@shape: ^4x4Shape
 	Building:
 		Dimensions: 4,4
-		Footprint: ____ ____ ____ ____
+		Footprint: ==== ==== ==== ====
 	RenderSprites:
 		Image: castl05g
 
@@ -3621,7 +3621,7 @@ castl05h.rubble:
 	Inherits@shape: ^4x4Shape
 	Building:
 		Dimensions: 4,4
-		Footprint: ____ ____ ____ ____
+		Footprint: ==== ==== ==== ====
 	RenderSprites:
 		Image: castl05h
 
@@ -3686,7 +3686,7 @@ camsc10.rubble:
 	Inherits@shape: ^4x4Shape
 	Building:
 		Dimensions: 4,4
-		Footprint: ____ ____ ____ ____
+		Footprint: ==== ==== ==== ====
 	RenderSprites:
 		Image: camsc10
 
@@ -3712,7 +3712,7 @@ cabunk01.rubble:
 	Inherits@shape: ^2x2Shape
 	Building:
 		Dimensions: 2,2
-		Footprint: __ __
+		Footprint: == ==
 	RenderSprites:
 		Image: cabunk01
 
@@ -3738,6 +3738,6 @@ cabunk02.rubble:
 	Inherits@shape: ^2x2Shape
 	Building:
 		Dimensions: 2,2
-		Footprint: __ __
+		Footprint: == ==
 	RenderSprites:
 		Image: cabunk02
