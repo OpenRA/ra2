@@ -94,6 +94,8 @@ ssrv:
 	Tooltip:
 		Name: Secret Service
 		GenericVisibility: None
+	Voiced:
+		VoiceSet: SecretServiceVoice
 
 pres:
 	Inherits: ^CivilianInfantry

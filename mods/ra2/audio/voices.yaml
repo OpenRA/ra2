@@ -410,3 +410,11 @@ CowVoice:
 		Move: gcowmova, gcowmovb
 		Feedback: gcowsela, gcowselb, gcowselc
 		Die: gcowdiea
+
+SecretServiceVoice:
+	DefaultVariant: .wav
+	Voices:
+		Select: isecsea, isecseb, isecsec, isecsed, isecsee, isecsef
+		Move: isecmoa, isecmob, isecmoc, isecmod
+		Attack: isecata, isecatb, isecatc, isecatd, isecate
+		Die: isecdia, isecdib, isecdic
