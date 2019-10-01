@@ -766,7 +766,7 @@ gaorep:
 	Valued:
 		Cost: 2500
 	Tooltip:
-		Name: Allied Ore Purifier
+		Name: Ore Purifier
 	Building:
 		Footprint: xxx xxx xxx
 		Dimensions: 3,3
