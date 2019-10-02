@@ -418,3 +418,6 @@ SecretServiceVoice:
 		Move: isecmoa, isecmob, isecmoc, isecmod
 		Attack: isecata, isecatb, isecatc, isecatd, isecate
 		Die: isecdia, isecdib, isecdic
+		Zapped: igenzapa
+		Burned: ienadia #gotta put something as temp else game crashes
+		Melted: igenmela, igenmelb, igenmelc
