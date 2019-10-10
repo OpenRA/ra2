@@ -48,7 +48,7 @@ Terrain:
 	TerrainType@Cliff:
 		Type: Cliff
 		Color: 745537
-		TargetTypes: Cliff
+		TargetTypes: Ground
 	TerrainType@Ore:
 		Type: Ore
 		AcceptsSmudgeType: SmallCrater, MediumCrater, LargeCrater, SmallScorch, MediumScorch, LargeScorch
