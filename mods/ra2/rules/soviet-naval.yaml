@@ -74,10 +74,6 @@ sub:
 		CloakedCondition: underwater
 		UncloakOn: Damage
 		IsPlayerPalette: true
-		PauseOnCondition: uncloak-critical-damage
-	GrantConditionOnDamageState@UNCLOAK:
-		Condition: uncloak-critical-damage
-		ValidDamageStates: Critical
 	Armament:
 		Weapon: SubTorpedo
 		LocalOffset: 768,0,0
