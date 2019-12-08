@@ -677,13 +677,14 @@ naclon:
 		SpawnOffset: 0,0,0
 		ExitCell: 2, 2
 	Production:
-		Produces: Dummy
+		Produces: Clone
 	RallyPoint:
 		Offset: 3,3
 		Palette: mouse
 		IsPlayerPalette: false
 	ClonesProducedUnits:
 		CloneableTypes: infantry
+		ProductionType: Clone
 	AcceptsDeliveredCash:
 
 napsis:
