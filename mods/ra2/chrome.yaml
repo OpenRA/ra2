@@ -1034,6 +1034,14 @@ dialog5: dialog.png
 	corner-tr: 643,387,1,1
 	corner-bl: 579,446,1,1
 	corner-br: 643,446,1,1
+  
+power-meter: chrome.png
+	power-meter-none: 249,522,12,2
+	power-meter-available: 262,522,12,2
+	power-meter-used: 274,522,12,2
+	power-meter-danger: 286,522,12,2
+	power-meter-disabled: 298,522,12,2
+
 
 lobby-bits: spawnpoints.png
 	spawn-unclaimed: 37,5,22,22
