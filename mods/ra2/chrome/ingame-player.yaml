@@ -459,6 +459,20 @@ Container@PLAYER_WIDGETS:
 							ClickThrough: false
 							ImageCollection: sidebar
 							ImageName: background-bottom
+				PowerMeter:
+					X: WINDOW_RIGHT - 230
+					Y: 270
+					MeterAlongside: ROW_TEMPLATE
+					ParentContainer: PALETTE_BACKGROUND
+					MeterHeight: 3
+					PowerUnitsPerBar: 25
+					TickWait: 4
+					ImageCollection: power-meter
+					NoPowerImage: power-meter-none
+					AvailablePowerImage: power-meter-available
+					UsedPowerImage: power-meter-danger
+					OverUsedPowerImage: power-meter-disabled
+					FlashPowerImage: power-meter-used
 				LogicTicker@PRODUCTION_TICKER:
 				ProductionPalette@PRODUCTION_PALETTE:
 					X: 24
