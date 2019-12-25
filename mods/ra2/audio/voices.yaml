@@ -1,4 +1,12 @@
+^InfantryDeath:
+	Voices:
+		Zapped: igenzapa
+		Burned: ienadia #gotta put something as temp else game crashes
+		Melted: igenmela, igenmelb, igenmelc
+		DisablePrefixes: Zapped, Burned, Melted
+
 EngineerVoice:
+	Inherits@death: ^InfantryDeath
 	DefaultVariant: .wav
 	Prefixes:
 		america: iena
@@ -16,11 +24,7 @@ EngineerVoice:
 		Action: ata, atb, atc
 		Feedback: fea, feb, fec
 		Die: dia, dib, dic, did
-		Zapped: igenzapa
-		Burned: ienadia #gotta put something as temp else game crashes
-		Melted: igenmela, igenmelb, igenmelc
 		# [EngAllPowerDown] Sounds = ienapow
-		DisablePrefixes: Zapped, Burned, Melted
 
 AlliedVehicleVoice:
 	DefaultVariant: .wav
@@ -77,6 +81,7 @@ GIVoice:
 		Melted: igenmela, igenmelb, igenmelc
 
 ConscriptVoice:
+	Inherits@death: ^InfantryDeath
 	DefaultVariant: .wav
 	Voices:
 		Select: iconsea, iconseb, iconsec
@@ -84,11 +89,9 @@ ConscriptVoice:
 		Attack: iconata, iconatb, iconatc, iconatd
 		Feedback: iconfea, iconfeb, iconfec
 		Die: icondia, icondib, icondic, icondid, icondie
-		Zapped: igenzapa
-		Burned: ienadia #gotta put something as temp else game crashes
-		Melted: igenmela, igenmelb, igenmelc
 
 DogVoice:
+	Inherits@death: ^InfantryDeath
 	DefaultVariant: .wav
 	Voices:
 		Select: idogsela
@@ -96,11 +99,9 @@ DogVoice:
 		Attack: idogatca, idogmova # move sound?
 		Feedback: idogfea, idogfeb, idogfec
 		Die: idogdiea
-		Zapped: igenzapa
-		Burned: ienadia #gotta put something as temp else game crashes
-		Melted: igenmela, igenmelb, igenmelc
 
 RocketeerVoice:
+	Inherits@death: ^InfantryDeath
 	DefaultVariant: .wav
 	Voices:
 		Select: irocsea, irocseb, irocsec, irocsed, irocsee, irocsef, irocseg
@@ -108,11 +109,9 @@ RocketeerVoice:
 		Attack: irocata, irocatb, irocatc, irocatd, irocate
 		Feedback: irocfea, irocfeb, irocfec
 		Die: irocdiea
-		Zapped: igenzapa
-		Burned: ienadia #gotta put something as temp else game crashes
-		Melted: igenmela, igenmelb, igenmelc
 
 SpyVoice:
+	Inherits@death: ^InfantryDeath
 	DefaultVariant: .wav
 	Voices:
 		Select: ispysea, ispyseb, ispysec, ispysed
@@ -120,11 +119,9 @@ SpyVoice:
 		Action: ispyatb, ispyatd
 		Feedback: ispyfea, ispyfeb
 		Die: ispydia, ispydib, ispydic
-		Zapped: igenzapa
-		Burned: ienadia #gotta put something as temp else game crashes
-		Melted: igenmela, igenmelb, igenmelc
 
 ChronoLegionnaireVoice:
+	Inherits@death: ^InfantryDeath
 	DefaultVariant: .wav
 	Voices:
 		Select: ichrsea
@@ -132,11 +129,9 @@ ChronoLegionnaireVoice:
 		Attack: ichrata, ichratb, ichratc, ichratd
 		Feedback: ichrfea, ichrfeb, ichrfec
 		Die: ichrdia, ichrdib, ichrdic
-		Zapped: igenzapa
-		Burned: ienadia # gotta put something as temp else game crashes
-		Melted: igenmela, igenmelb, igenmelc
 
 SniperVoice:
+	Inherits@death: ^InfantryDeath
 	DefaultVariant: .wav
 	Voices:
 		Select: isnisea, isniseb, isnisec, isnised
@@ -144,11 +139,9 @@ SniperVoice:
 		Attack: isniata, isniatb, isniatc
 		Feedback: isnifea, isnifeb, isnifec
 		Die: isnidia, isnidib, isnidic
-		Zapped: igenzapa
-		Burned: ienadia #gotta put something as temp else game crashes
-		Melted: igenmela, igenmelb, igenmelc
 
 SealVoice:
+	Inherits@death: ^InfantryDeath
 	DefaultVariant: .wav
 	Voices:
 		Select: iseasea, iseaseb, iseasec, iseased
@@ -156,11 +149,9 @@ SealVoice:
 		Attack: iseaata, iseaatb, iseaatc
 		SpecialAttack: iseaexa, iseaexb
 		Die: iseadia, iseadib, iseadic
-		Zapped: igenzapa
-		Burned: ienadia #gotta put something as temp else game crashes
-		Melted: igenmela, igenmelb, igenmelc
 
 TanyaVoice:
+	Inherits@death: ^InfantryDeath
 	DefaultVariant: .wav
 	Voices:
 		Build: itanatb
@@ -168,9 +159,6 @@ TanyaVoice:
 		Move: itanmoa, itanmob, itanmoc, itanmod, itanmoe, itanmof
 		Attack: itanata, itanatb, itanatc, itanatd
 		Die: itandia, itandib, itandic
-		Zapped: igenzapa
-		Burned: ienadia #gotta put something as temp else game crashes
-		Melted: igenmela, igenmelb, igenmelc
 
 DolphinVoice:
 	DefaultVariant: .wav
@@ -205,6 +193,7 @@ NighthawkVoice:
 		Die: vblhdia, vblhdib, vblhdic
 
 FlakTrooperVoice:
+	Inherits@death: ^InfantryDeath
 	DefaultVariant: .wav
 	Voices:
 		Select: iflasea, iflaseb, iflasec, iflased
@@ -212,11 +201,9 @@ FlakTrooperVoice:
 		Attack: iflaata, iflaatb, iflaatc, iflaatd
 		Feedback: iflafea, iflafeb, iflafec, iflafed
 		Die: ifladia, ifladib, ifladic, ifladid, ifladie
-		Zapped: igenzapa
-		Burned: ienadia #gotta put something as temp else game crashes
-		Melted: igenmela, igenmelb, igenmelc
 
 TeslaTrooperVoice:
+	Inherits@death: ^InfantryDeath
 	DefaultVariant: .wav
 	Voices:
 		Select: itessea, itesseb, itessec, itessed, itessee
@@ -224,33 +211,27 @@ TeslaTrooperVoice:
 		Attack: itesata, itesatb, itesatc, itesatd, itesate
 		Feedback: itesfea, itesfeb, itesfec
 		Die: itesdia, itesdib, itesdic, itesdid
-		Zapped: igenzapa
-		Burned: ienadia #gotta put something as temp else game crashes
-		Melted: igenmela, igenmelb, igenmelc
 
 CrazyIvanVoice:
+	Inherits@death: ^InfantryDeath
 	DefaultVariant: .wav
 	Voices:
 		Select: icrasea, icraseb, icrasec, icrased, icrasee, icrasef, icraseg
 		Move: icramoa, icramob, icramoc, icramod, icramoe, icramof
 		Attack: icraata, icraatb, icraatc, icraatd, icraate
 		Die: icradia, icradib
-		Zapped: igenzapa
-		Burned: ienadia #gotta put something as temp else game crashes
-		Melted: igenmela, igenmelb, igenmelc
 
 DesolatorVoice:
+	Inherits@death: ^InfantryDeath
 	DefaultVariant: .wav
 	Voices:
 		Select: idessea, idesseb, idessec, idessed, idessee
 		Move: idesmoa, idesmob, idesmoc, idesmod, idesmoe
 		Attack: idesata, idesatb, idesatc, idesatd, idesate, idesatf
 		Die: idesdia, idesdib, idesdic
-		Zapped: igenzapa
-		Burned: ienadia #gotta put something as temp else game crashes
-		Melted: igenmela, igenmelb, igenmelc
 
 TerroristVoice:
+	Inherits@death: ^InfantryDeath
 	DefaultVariant: .wav
 	Voices:
 		Select: itersea, iterseb, itersec
@@ -258,20 +239,15 @@ TerroristVoice:
 		Attack: iterata, iteratb, iteratc, iteratd
 		Feedback: iterfea, iterfeb, iterfec
 		Die: iterdia, iterdib, iterdic
-		Zapped: igenzapa
-		Burned: ienadia #gotta put something as temp else game crashes
-		Melted: igenmela, igenmelb, igenmelc
 
 YuriVoice:
+	Inherits@death: ^InfantryDeath
 	DefaultVariant: .wav
 	Voices:
 		Select: iyursea, iyurseb, iyursec, iyursed, iyursee
 		Move: iyurmoa, iyurmob, iyurmoc, iyurmod
 		Attack: iyurata, iyuratb, iyuratc, iyuratd, iyurate
 		Die: iyurdia, iyurdib, iyurdic
-		Zapped: igenzapa
-		Burned: ienadia #gotta put something as temp else game crashes
-		Melted: igenmela, igenmelb, igenmelc
 
 KirovVoice:
 	DefaultVariant: .wav
@@ -344,6 +320,7 @@ ChimpanzeeVoice:
 		Die: gchidiea, gchidieb
 
 CivilianAlliedMaleVoice:
+	Inherits@death: ^InfantryDeath
 	DefaultVariant: .wav
 	Voices:
 		Select: iciasea, iciaseb, iciasec
@@ -351,11 +328,9 @@ CivilianAlliedMaleVoice:
 		Attack: iciaata, iciaatb, iciaatc
 		Feedback: iciafea, iciafeb, iciafec
 		Die: iciadia, iciadib, iciadic, iciadid
-		Zapped: igenzapa
-		Burned: ienadia #gotta put something as temp else game crashes
-		Melted: igenmela, igenmelb, igenmelc
 
 CivilianSovietMaleVoice:
+	Inherits@death: ^InfantryDeath
 	DefaultVariant: .wav
 	Voices:
 		Select: icissea, icisseb, icissec, icissed
@@ -363,11 +338,9 @@ CivilianSovietMaleVoice:
 		Attack: icisata, icisatb, icisatc
 		Feedback: icisfea, icisfeb, icisfec
 		Die: icisdia, icisdib, icisdic
-		Zapped: igenzapa
-		Burned: ienadia #gotta put something as temp else game crashes
-		Melted: igenmela, igenmelb, igenmelc
 
 CivilianAlliedFemaleVoice:
+	Inherits@death: ^InfantryDeath
 	DefaultVariant: .wav
 	Voices:
 		Select: icfasea, icfaseb, icfasec, icfased
@@ -375,11 +348,9 @@ CivilianAlliedFemaleVoice:
 		Attack: icfaata, icfaatb, icfaatc, icfaatd
 		Feedback: icfafea, icfafeb, icfafec
 		Die: icfadia, icfadib, icfadic
-		Zapped: igenzapa
-		Burned: ienadia #gotta put something as temp else game crashes
-		Melted: igenmela, igenmelb, igenmelc
 
 CivilianSovietFemaleVoice:
+	Inherits@death: ^InfantryDeath
 	DefaultVariant: .wav
 	Voices:
 		Select: icfssea, icfsseb, icfssec, icfssed, icfssee
@@ -387,11 +358,9 @@ CivilianSovietFemaleVoice:
 		Attack: icfsata, icfsatb, icfsatc, icfsatd
 		Feedback: icfsfea, icfsfeb
 		Die: icfsdia, icfsdib, icfsdic
-		Zapped: igenzapa
-		Burned: ienadia #gotta put something as temp else game crashes
-		Melted: igenmela, igenmelb, igenmelc
 
 CivilianTexanVoice:
+	Inherits@death: ^InfantryDeath
 	DefaultVariant: .wav
 	Voices:
 		Select: ictesea, icteseb, ictesec, ictesed
@@ -399,9 +368,6 @@ CivilianTexanVoice:
 		Attack: icteata, icteatb, icteatc, icteatd
 		Feedback: ictefea, ictefeb, ictefec
 		Die: ictedia, ictedib, ictedic
-		Zapped: igenzapa
-		Burned: ienadia #gotta put something as temp else game crashes
-		Melted: igenmela, igenmelb, igenmelc
 
 CowVoice:
 	DefaultVariant: .wav
@@ -412,12 +378,10 @@ CowVoice:
 		Die: gcowdiea
 
 SecretServiceVoice:
+	Inherits@death: ^InfantryDeath
 	DefaultVariant: .wav
 	Voices:
 		Select: isecsea, isecseb, isecsec, isecsed, isecsee, isecsef
 		Move: isecmoa, isecmob, isecmoc, isecmod
 		Attack: isecata, isecatb, isecatc, isecatd, isecate
 		Die: isecdia, isecdib, isecdic
-		Zapped: igenzapa
-		Burned: ienadia #gotta put something as temp else game crashes
-		Melted: igenmela, igenmelb, igenmelc
