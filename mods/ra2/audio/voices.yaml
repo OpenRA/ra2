@@ -3,7 +3,8 @@
 		Zapped: igenzapa
 		Burned: ienadia #gotta put something as temp else game crashes
 		Melted: igenmela, igenmelb, igenmelc
-		DisablePrefixes: Zapped, Burned, Melted
+		PsyCrush: igenexpa
+		DisablePrefixes: Zapped, Burned, Melted, PsyCrush
 
 EngineerVoice:
 	Inherits@death: ^InfantryDeath
