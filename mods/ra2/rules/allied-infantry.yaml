@@ -174,8 +174,8 @@ e1:
 		DeploySounds: igidepa.wav, igidepb.wav
 		UndeploySounds: igidepa.wav, igidepb.wav
 		Voice: Move
-	# TODO: TakeCover is not yet conditional
-	-TakeCover:
+	TakeCover:
+		RequiresCondition: undeployed
 	Turreted:
 		RealignDelay: -1
 		TurnSpeed: 50
