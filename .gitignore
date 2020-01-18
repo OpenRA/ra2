@@ -2,6 +2,7 @@ user.config
 engine
 
 # Visual Studio
+.vs
 Release
 bin
 obj
