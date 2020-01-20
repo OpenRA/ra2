@@ -3405,7 +3405,7 @@ castl05a:
 	Inherits: ^CivBuilding
 	Inherits@shape: ^4x4Shape
 	Tooltip:
-		Name: Busch Stadium
+		Name: Stadium
 	Armor:
 		Type: Concrete
 	RevealsShroud:
@@ -3433,7 +3433,7 @@ castl05b:
 	Inherits: ^CivBuilding
 	Inherits@shape: ^4x4Shape
 	Tooltip:
-		Name: Busch Stadium
+		Name: Stadium
 	Armor:
 		Type: Concrete
 	RevealsShroud:
@@ -3461,7 +3461,7 @@ castl05c:
 	Inherits: ^CivBuilding
 	Inherits@shape: ^4x4Shape
 	Tooltip:
-		Name: Busch Stadium
+		Name: Stadium
 	Armor:
 		Type: Concrete
 	RevealsShroud:
@@ -3489,7 +3489,7 @@ castl05d:
 	Inherits: ^CivBuilding
 	Inherits@shape: ^4x4Shape
 	Tooltip:
-		Name: Busch Stadium
+		Name: Stadium
 	Armor:
 		Type: Concrete
 	RevealsShroud:
@@ -3517,7 +3517,7 @@ castl05e:
 	Inherits: ^CivBuilding
 	Inherits@shape: ^4x4Shape
 	Tooltip:
-		Name: Busch Stadium
+		Name: Stadium
 	Armor:
 		Type: Concrete
 	RevealsShroud:
@@ -3545,7 +3545,7 @@ castl05f:
 	Inherits: ^CivBuilding
 	Inherits@shape: ^4x4Shape
 	Tooltip:
-		Name: Busch Stadium
+		Name: Stadium
 	Armor:
 		Type: Concrete
 	RevealsShroud:
@@ -3573,7 +3573,7 @@ castl05g:
 	Inherits: ^CivBuilding
 	Inherits@shape: ^4x4Shape
 	Tooltip:
-		Name: Busch Stadium
+		Name: Stadium
 	Armor:
 		Type: Concrete
 	RevealsShroud:
@@ -3601,7 +3601,7 @@ castl05h:
 	Inherits: ^CivBuilding
 	Inherits@shape: ^4x4Shape
 	Tooltip:
-		Name: Busch Stadium
+		Name: Stadium
 	Armor:
 		Type: Concrete
 	RevealsShroud:
@@ -3629,7 +3629,7 @@ camsc07:
 	Inherits: ^CivBuilding
 	Inherits@shape: ^2x2Shape
 	Tooltip:
-		Name: Thatched Hut Chief
+		Name: Hut
 	Armor:
 		Type: Concrete
 	RevealsShroud:
@@ -3646,7 +3646,7 @@ camsc08:
 	Inherits: ^CivBuilding
 	Inherits@shape: ^2x2Shape
 	Tooltip:
-		Name: Thatched Hut
+		Name: Hut
 	RevealsShroud:
 		Range: 6c0
 	Health:
@@ -3658,7 +3658,7 @@ camsc09:
 	Inherits: ^CivBuilding
 	Inherits@shape: ^2x2Shape
 	Tooltip:
-		Name: Thatched Hut
+		Name: Hut
 	RevealsShroud:
 		Range: 6c0
 	Health:
