@@ -10,34 +10,39 @@ Player:
 	TechTree:
 	ClassicProductionQueue@Building:
 		Type: Building
+		DisplayOrder: 0
 		LowPowerModifier: 300
 		QueuedAudio: Building
 		ReadyAudio: ConstructionComplete
 		SpeedUp: true
 	ClassicProductionQueue@Support:
 		Type: Support
+		DisplayOrder: 1
 		LowPowerModifier: 300
 		QueuedAudio: Building
 		ReadyAudio: ConstructionComplete
 		SpeedUp: true
 	ClassicProductionQueue@Vehicle:
 		Type: Vehicle
+		DisplayOrder: 3
 		LowPowerModifier: 300
 		SpeedUp: true
 	ClassicProductionQueue@Infantry:
 		Type: Infantry
+		DisplayOrder: 2
 		LowPowerModifier: 300
 		SpeedUp: true
 	ClassicProductionQueue@Aircraft:
 		Type: Aircraft
+		DisplayOrder: 4
 		LowPowerModifier: 300
 		SpeedUp: true
 	ClassicProductionQueue@Ship:
 		Type: Ship
+		DisplayOrder: 5
 		LowPowerModifier: 300
 		SpeedUp: true
 	PlaceBuilding:
-		Palette: effect75alpha
 		NewOptionsNotification: NewOptions
 		CannotPlaceNotification: BuildingCannotPlaceAudio
 	SupportPowerManager:
@@ -72,9 +77,12 @@ Player:
 	HarvesterAttackNotifier:
 		Notification: OreMinerUnderAttack
 	PlayerStatistics:
-	PlaceSimpleBeacon:
+	PlaceBeacon:
 		IsPlayerPalette: true
 		Palette: player
+		BeaconSequence: idle
+		ArrowSequence:
+		CircleSequence:
 	ProvidesTechPrerequisite@infonly:
 		Name: Infantry Only
 		Prerequisites: techlevel.infonly
@@ -97,3 +105,4 @@ Player:
 		Image: cameo-chevron
 		Sequence: idle
 		Palette: cameo-chevron
+	GameSaveViewportManager:

@@ -108,10 +108,9 @@ Assemblies:
 ChromeLayout:
 	ra2|chrome/assetbrowser.yaml
 	ra2|chrome/ingame-player.yaml
-	ra2|chrome/ingame-infoobjectives.yaml
-	ra2|chrome/mainmenu.yaml
+	common|chrome/mainmenu.yaml
+	common|chrome/ingame-infoobjectives.yaml
 	common|chrome/ingame-infostats.yaml
-	common|chrome/ingame-observerstats.yaml
 	common|chrome/musicplayer.yaml
 	common|chrome/tooltips.yaml
 	common|chrome/ingame.yaml
@@ -147,6 +146,9 @@ ChromeLayout:
 	common|chrome/dropdowns.yaml
 	common|chrome/editor.yaml
 	common|chrome/playerprofile.yaml
+	common|chrome/gamesave-browser.yaml
+	common|chrome/gamesave-loading.yaml
+	common|chrome/ingame-debuginfo.yaml
 
 Weapons:
 	ra2|weapons/bullets.yaml
@@ -208,27 +210,35 @@ Fonts:
 	Regular:
 		Font: common|FreeSans.ttf
 		Size:14
+		Ascender: 11
 	Bold:
 		Font: common|FreeSansBold.ttf
 		Size:14
+		Ascender: 11
 	Title:
 		Font: common|FreeSansBold.ttf
 		Size:32
+		Ascender: 24
 	BigBold:
 		Font: common|FreeSansBold.ttf
 		Size:24
+		Ascender: 18
 	MediumBold:
 		Font: common|FreeSansBold.ttf
 		Size:18
+		Ascender: 14
 	Small:
 		Font: common|FreeSans.ttf
 		Size:12
+		Ascender: 9
 	Tiny:
 		Font: common|FreeSans.ttf
 		Size:10
+		Ascender: 8
 	TinyBold:
 		Font: common|FreeSansBold.ttf
 		Size:10
+		Ascender: 8
 
 SupportsMapsFrom: ra2
 

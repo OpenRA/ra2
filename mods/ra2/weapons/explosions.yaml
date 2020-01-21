@@ -82,7 +82,7 @@ IvanBomberE:
 
 IvanDeath:
 	Inherits: IvanBomber
-	-Warhead@0Eff: CreateEffect
+	-Warhead@0Eff:
 	Warhead@1Dam: SpreadDamage
 		Delay: 0
 	Warhead@2Eff: CreateEffect

@@ -59,7 +59,7 @@ cmin:
 		Resources: Ore, Gems
 		BaleUnloadDelay: 1
 		SearchFromProcRadius: 24
-		SearchFromOrderRadius: 12
+		SearchFromHarvesterRadius: 12
 		HarvestVoice: Move
 		DeliverVoice: Move
 	ChronoResourceDelivery:
@@ -199,7 +199,7 @@ fv:
 	Mobile:
 		Speed: 150
 		TurnSpeed: 5
-		RequiresCondition: !notmobile && !chronodisable
+		PauseOnCondition: notmobile || chronodisable
 	Health:
 		HP: 200
 	Armor:

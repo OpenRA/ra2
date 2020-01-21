@@ -33,7 +33,7 @@
 ^AAFlak:
 	Inherits: ^Flak
 	Report: vflaat2a.wav, vflaat2b.wav, vflaat2c.wav, vflaat2d.wav
-	-Projectile: Bullet
+	-Projectile:
 	Projectile: InstantHit
 	Warhead@1Dam: SpreadDamage
 		Spread: 120

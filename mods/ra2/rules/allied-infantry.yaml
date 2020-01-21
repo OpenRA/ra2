@@ -124,7 +124,7 @@ e1:
 	Health:
 		HP: 125
 	Mobile:
-		RequiresCondition: !chronodisable && undeployed
+		PauseOnCondition: chronodisable || undeployed
 	Passenger:
 		PipType: Green
 	RevealsShroud:
@@ -159,8 +159,9 @@ e1:
 		CanDeployOnRamps: True
 		Facing: 128
 		RequiresCondition: !parachute
-		DeploySound: igidepa.wav # igidepb.wav
-		UndeploySound: igidepa.wav # igidepb.wav
+		DeploySounds: igidepa.wav, igidepb.wav
+		UndeploySounds: igidepa.wav, igidepb.wav
+		Voice: Move
 	# TODO: TakeCover is not yet conditional
 	-TakeCover:
 	Turreted:
@@ -415,7 +416,7 @@ ptroop:
 		UsePlayerColor: true
 		Offset: 0,0,960
 	AttackMove:
-		-AssaultMoveScanCondition:
+		-AssaultMoveCondition:
 	AutoTarget:
 		-AttackAnythingCondition:
 	AutoTargetPriority@DEFAULT:
@@ -518,7 +519,6 @@ jumpjet:
 		Voice: Attack
 	Aircraft:
 		CruiseAltitude: 3072
-		LandWhenIdle: false
 		InitialFacing: 20
 		TurnSpeed: 255
 		Speed: 140
@@ -529,13 +529,14 @@ jumpjet:
 		IdealSeparation: 512
 		TakeOffOnResupply: true
 		VTOL: true
+		CanSlide: True
 	WithInfantryBody:
 		StandSequences: fly
 		MoveSequence: fly
 		DefaultAttackSequence: shoot-air
 		IdleSequences: idle-air
 	Hovers:
-		OffsetModifier: -45
+		BobDistance: -45
 	-Crushable:
 	-TakeCover:
 	-Targetable:
@@ -558,7 +559,7 @@ jumpjet:
 	SpawnActorOnDeath:
 		Actor: jumpjet.husk
 	Repairable:
-		RepairBuildings:
+		RepairActors:
 		Voice: Move
 	Rearmable:
 		RearmActors:

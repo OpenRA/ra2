@@ -195,6 +195,7 @@
 		AllowUnderActors: false
 		TerrainType: Gems
 	CliffBackImpassabilityLayer:
+	Selection:
 
 World:
 	Inherits: ^BaseWorld
@@ -324,6 +325,7 @@ World:
 	ObjectivesPanel:
 		PanelName: SKIRMISH_STATS
 	LoadWidgetAtGameStart:
+	TimeLimitManager:
 
 EditorWorld:
 	Inherits: ^BaseWorld

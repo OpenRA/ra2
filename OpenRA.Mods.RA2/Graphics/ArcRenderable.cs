@@ -9,9 +9,8 @@
  */
 #endregion
 
-using System.Drawing;
-using System.Linq;
 using OpenRA.Graphics;
+using OpenRA.Primitives;
 
 namespace OpenRA.Mods.RA2.Graphics
 {
@@ -46,7 +45,8 @@ namespace OpenRA.Mods.RA2.Graphics
 		public IRenderable AsDecoration() { return this; }
 
 		public IFinalizedRenderable PrepareRender(WorldRenderer wr) { return this; }
-		public void Render(WorldRenderer wr)
+
+		void IFinalizedRenderable.Render(WorldRenderer wr)
 		{
 			var screenWidth = wr.ScreenVector(new WVec(width, WDist.Zero, WDist.Zero))[0];
 
@@ -57,7 +57,7 @@ namespace OpenRA.Mods.RA2.Graphics
 			Game.Renderer.WorldRgbaColorRenderer.DrawLine(points, screenWidth, color, false);
 		}
 
-		public void RenderDebugGeometry(WorldRenderer wr) { }
-		public Rectangle ScreenBounds(WorldRenderer wr) { return Rectangle.Empty; }
+		void IFinalizedRenderable.RenderDebugGeometry(WorldRenderer wr) { }
+		Rectangle IFinalizedRenderable.ScreenBounds(WorldRenderer wr) { return Rectangle.Empty; }
 	}
 }

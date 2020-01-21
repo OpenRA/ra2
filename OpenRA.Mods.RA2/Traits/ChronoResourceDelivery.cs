@@ -11,6 +11,7 @@
 
 using System;
 using OpenRA.Activities;
+using OpenRA.Mods.Common.Activities;
 using OpenRA.Mods.Common.Traits;
 using OpenRA.Mods.RA2.Activities;
 using OpenRA.Traits;
@@ -48,10 +49,12 @@ namespace OpenRA.Mods.RA2.Traits
 	{
 		readonly ChronoResourceDeliveryInfo info;
 
-		CPos? destination = null;
-		Activity nextActivity = null;
-		int ticksTillCheck = 0;
+		CPos? destination;
+		Actor refinery;
+		int ticksTillCheck;
 
+		// TODO: Rewrite this entire thing, possible to be a subclass of harvester
+		// and make it work properly with activities
 		public ChronoResourceDelivery(Actor self, ChronoResourceDeliveryInfo info)
 		{
 			this.info = info;
@@ -59,7 +62,7 @@ namespace OpenRA.Mods.RA2.Traits
 
 		void ITick.Tick(Actor self)
 		{
-			if (destination == null)
+			if (!destination.HasValue)
 				return;
 
 			if (ticksTillCheck <= 0)
@@ -72,20 +75,20 @@ namespace OpenRA.Mods.RA2.Traits
 				ticksTillCheck--;
 		}
 
-		public void MovingToResources(Actor self, CPos targetCell, Activity next)
+		void INotifyHarvesterAction.MovingToResources(Actor self, CPos targetCell)
 		{
 			Reset();
 		}
 
-		public void MovingToRefinery(Actor self, Actor refineryActor, Activity next)
+		void INotifyHarvesterAction.MovingToRefinery(Actor self, Actor refineryActor)
 		{
 			var iao = refineryActor.Trait<IAcceptResources>();
 			var targetCell = refineryActor.Location + iao.DeliveryOffset;
 			if (destination != null && destination.Value != targetCell)
 				ticksTillCheck = 0;
 
+			refinery = refineryActor;
 			destination = targetCell;
-			nextActivity = next;
 		}
 
 		public void MovementCancelled(Actor self)
@@ -106,12 +109,17 @@ namespace OpenRA.Mods.RA2.Traits
 				return;
 			}
 
+			// HACK: Cancelling the current activity will call Reset, so cache the destination here
+			var dest = destination.Value;
 			var pos = self.Trait<IPositionable>();
-			if (pos.CanEnterCell(destination.Value))
+			if (pos.CanEnterCell(dest))
 			{
 				self.CancelActivity();
-				self.QueueActivity(new ChronoResourceTeleport(destination.Value, info));
-				self.QueueActivity(nextActivity);
+				self.QueueActivity(new ChronoResourceTeleport(dest, info));
+
+				// HACK: Manually queue a delivery and new find since we just cancelled all activities
+				self.QueueActivity(new DeliverResources(self, refinery));
+				self.QueueActivity(new FindAndDeliverResources(self, refinery));
 				Reset();
 			}
 		}
@@ -120,7 +128,7 @@ namespace OpenRA.Mods.RA2.Traits
 		{
 			ticksTillCheck = 0;
 			destination = null;
-			nextActivity = null;
+			refinery = null;
 		}
 	}
 }

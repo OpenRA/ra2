@@ -20,7 +20,7 @@ sapc:
 		TurnSpeed: 5
 		Speed: 90
 		Locomotor: lcraft
-		RequiresCondition: !notmobile && !chronodisable
+		PauseOnCondition: notmobile || chronodisable
 	RevealsShroud:
 		Range: 6c0
 	Cargo:
@@ -216,7 +216,7 @@ sqd:
 		DefaultAttackSequence: punch
 	Repairable:
 		Voice: Attack
-		RepairBuildings: gayard, nayard
+		RepairActors: gayard, nayard
 	HitShape:
 	OwnerLostAction:
 		Action: Kill

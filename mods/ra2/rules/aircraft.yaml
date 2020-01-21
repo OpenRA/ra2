@@ -27,20 +27,21 @@ shad:
 	-AppearsOnRadar:
 	AttackAircraft:
 		Voice: Attack
+		AttackType: Hover
 	Aircraft:
 		CruiseAltitude: 3072
-		LandWhenIdle: true
 		LandableTerrainTypes: Clear, Rough, Road, DirtRoad, Ore, Gems
 		TurnSpeed: 10
 		Speed: 140
 		AltitudeVelocity: 120
 		CruisingCondition: cruising
+		IdleBehavior: Land
 	RenderSprites:
 	WithVoxelWalkerBody:
 		TickRate: 1
 	Hovers@CRUISING:
 		RequiresCondition: cruising
-		OffsetModifier: -45
+		BobDistance: -45
 	Cargo:
 		Types: Infantry
 		MaxWeight: 5
@@ -89,6 +90,7 @@ zep:
 		CanHover: True
 		TakeOffOnResupply: true
 		VTOL: true
+		CanSlide: True
 	Health:
 		HP: 2000
 	Armor:
@@ -109,7 +111,7 @@ zep:
 	RenderVoxels:
 	WithVoxelBody:
 	Hovers:
-		OffsetModifier: -10
+		BobDistance: -10
 	Explodes:
 		Weapon: UnitExplode
 		Chance: 75

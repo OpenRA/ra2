@@ -60,7 +60,7 @@ harv:
 		Resources: Ore, Gems
 		BaleUnloadDelay: 1
 		SearchFromProcRadius: 24
-		SearchFromOrderRadius: 12
+		SearchFromHarvesterRadius: 12
 		HarvestVoice: Move
 		DeliverVoice: Move
 	Health:
@@ -159,7 +159,7 @@ htk:
 		Speed: 120
 		TurnSpeed: 5
 		Locomotor: tracked
-		RequiresCondition: !notmobile && !chronodisable
+		PauseOnCondition: notmobile || chronodisable
 	Health:
 		HP: 180
 	Armor:
@@ -384,6 +384,7 @@ dtruck:
 	GrantConditionOnDeploy:
 		DeployedCondition: triggered
 		PauseOnCondition: chronodisable
+		Voice: Attack
 	KillsSelf:
 		RequiresCondition: triggered
 	RenderSprites:

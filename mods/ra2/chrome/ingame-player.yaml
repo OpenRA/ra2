@@ -75,7 +75,7 @@ Container@PLAYER_WIDGETS:
 					Background:
 					DisableKeySound: true
 					TooltipText: Force Move
-					TooltipDesc: Selected units will move to the desired location\n - Default activity for the target is suppressed\n - Vehicles will attempt to crush enemies at the target location\n - Units entering transports will consider nearby alternatives\n - Chrono Tanks will teleport towards the target location\n\nLeft-click icon then right-click on target.\nHold {(Alt)} to activate temporarily while commanding units.
+					TooltipDesc: Selected units will move to the desired location\n - Default activity for the target is suppressed\n - Vehicles will attempt to crush enemies at the target location\n\nLeft-click icon then right-click on target.\nHold {(Alt)} to activate temporarily while commanding units.
 					TooltipContainer: TOOLTIP_CONTAINER
 					TooltipTemplate: BUTTON_WITH_DESC_HIGHLIGHT_TOOLTIP
 					Children:
@@ -396,17 +396,17 @@ Container@PLAYER_WIDGETS:
 				Label@GAME_TIMER:
 					Logic: GameTimerLogic
 					X: 0
-					Y: 0 - 2
+					Y: 0
 					Width: PARENT_RIGHT
-					Height: 22
+					Height: 23
 					Align: Center
 					Font: TinyBold
 				LabelWithTooltip@CASH:
 					Logic: IngameCashCounterLogic
 					X: 35
-					Y: 0 - 2
+					Y: 0
 					Width: 50
-					Height: 22
+					Height: 23
 					Font: Bold
 					Text: {0}
 					TooltipContainer: TOOLTIP_CONTAINER
@@ -421,9 +421,9 @@ Container@PLAYER_WIDGETS:
 				LabelWithTooltip@POWER:
 					Logic: IngamePowerCounterLogic
 					X: PARENT_RIGHT - WIDTH - 34
-					Y: 0 - 3
+					Y: 0
 					Width: 50
-					Height: 22
+					Height: 23
 					Align: Right
 					Font: Bold
 					Text: {0}
@@ -433,7 +433,7 @@ Container@PLAYER_WIDGETS:
 						Image@POWER_ICON:
 							Logic: AddFactionSuffixLogic
 							X: PARENT_RIGHT + 3
-							Y: 5
+							Y: 3
 							ImageCollection: power-icons
 							ImageName: power-normal
 		Container@SIDEBAR_PRODUCTION:

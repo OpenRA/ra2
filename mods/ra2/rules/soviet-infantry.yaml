@@ -198,6 +198,7 @@ terror:
 	GrantConditionOnDeploy:
 		DeployedCondition: triggered
 		PauseOnCondition: chronodisable
+		Voice: Attack
 	KillsSelf:
 		RequiresCondition: triggered
 	WithInfantryBody:
@@ -351,7 +352,7 @@ yuri:
 	Health:
 		HP: 100
 	Mobile:
-		RequiresCondition: !deployed && !deploying && !chronodisable
+		PauseOnCondition: deployed || deploying || chronodisable
 	RevealsShroud:
 		Range: 12c0
 	Armor:

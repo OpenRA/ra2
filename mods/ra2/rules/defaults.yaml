@@ -253,7 +253,7 @@
 		Condition: chronodisable
 		Color: FFFFFF
 	Mobile:
-		RequiresCondition: !chronodisable
+		PauseOnCondition: chronodisable
 	ExternalCondition@CHRONODISABLE:
 		Condition: chronodisable
 
@@ -290,7 +290,7 @@
 	AutoTargetPriority@ATTACKANYTHING:
 		RequiresCondition: stance-attackanything || assault-move
 	AttackMove:
-		AssaultMoveScanCondition: assault-move
+		AssaultMoveCondition: assault-move
 		Voice: Attack
 
 ^AutoTargetAir:
@@ -318,7 +318,7 @@
 	AutoTargetPriority@ATTACKANYTHING:
 		RequiresCondition: stance-attackanything || assault-move
 	AttackMove:
-		AssaultMoveScanCondition: assault-move
+		AssaultMoveCondition: assault-move
 		Voice: Attack
 
 ^Building:
@@ -379,6 +379,8 @@
 		ReferencePoint: Center
 		Palette: mouse
 	CaptureManager:
+	FootprintPlaceBuildingPreview:
+		Palette: effect75alpha
 
 ^BaseBuilding:
 	Inherits: ^Building
@@ -626,7 +628,7 @@
 	QuantizeFacingsFromSequence:
 		Sequence: stand
 	Repairable:
-		RepairBuildings: cahosp
+		RepairActors: cahosp
 		Voice: Move
 	Chronoshiftable:
 		ExplodeInstead: true
@@ -826,7 +828,7 @@
 		ValidDamageStates: Light, Medium, Heavy, Critical
 	Repairable:
 		Voice: Move
-		RepairBuildings: gadept, nadept, caoutp
+		RepairActors: gadept, nadept, caoutp
 	Passenger:
 		Voice: Move
 		CargoType: Vehicle
@@ -903,6 +905,7 @@
 		AirborneCondition: airborne
 		CanHover: True
 		VTOL: true
+		CanSlide: True
 	HiddenUnderFog:
 		Type: CenterPosition
 	ActorLostNotification:
@@ -946,11 +949,10 @@
 		CruiseAltitude: 5600
 		CruisingCondition: cruising
 		AltitudeVelocity: 120
-		LandWhenIdle: false
 		TakeOffOnCreation: false
+		IdleBehavior: ReturnToBase
 	Hovers@CRUISING:
 		RequiresCondition: cruising
-	ReturnOnIdle:
 	WithVoxelBody:
 
 ^Husk:
@@ -991,6 +993,7 @@
 	Aircraft:
 		CanHover: true
 		VTOL: true
+		CanSlide: True
 
 ^Ship:
 	Inherits@1: ^ExistsInWorld
@@ -1024,7 +1027,7 @@
 		ValidDamageStates: Light, Medium, Heavy, Critical
 	Repairable:
 		Voice: Attack
-		RepairBuildings: gayard, nayard
+		RepairActors: gayard, nayard
 	HiddenUnderFog:
 	ActorLostNotification:
 	ProximityCaptor:
