@@ -1,25 +1,51 @@
 # Travis-CI Build for OpenRA/ra2
 # see travis-ci.org for details
 
+dist: xenial
 language: csharp
-mono: 5.20.1
-sudo: false
+mono: 6.4.0
 
 addons:
   apt:
     packages:
+    - dpkg
     - liblua5.1-0
-    - p7zip-full
-    - nsis
-    - nsis-common
 
 script:
  - make
- - . mod.config;
-   if [ "${TRAVIS_TEST_MOD}" == "True" ]; then make test || travis_terminate 1; fi;
-   if [ "${TRAVIS_TEST_PACKAGING}" == "True" ]; then ./packaging/package-all.sh test-0 || travis_terminate 1; fi
-# Crashes, see https://github.com/OpenRA/OpenRA/issues/14013
-# - make check
+ - |
+   . mod.config;
+   awk '/\r$$/ { exit(1); }' mod.config || (printf "Invalid mod.config format. File must be saved using unix-style (LF, not CRLF or CR) line endings.\n"; travis_terminate 1);
+   if [ "${TRAVIS_TEST_MOD}" == "True" ]; then
+     make test || travis_terminate 1;
+   fi;
+   if [ "${TRAVIS_TEST_PACKAGING}" == "True" ] || [ -n "${TRAVIS_TAG}" ]; then
+     wget http://mirrors.kernel.org/ubuntu/pool/universe/n/nsis/nsis-common_3.03-2_all.deb || travis_terminate 1;
+     wget http://mirrors.kernel.org/ubuntu/pool/universe/n/nsis/nsis_3.03-2_amd64.deb || travis_terminate 1;
+     sudo dpkg -i nsis-common_3.03-2_all.deb || travis_terminate 1;
+     sudo dpkg -i nsis_3.03-2_amd64.deb || travis_terminate 1;
+   fi
+   if [ "${TRAVIS_TEST_PACKAGING}" == "True" ] && [ -z "${TRAVIS_TAG}" ]; then
+     make check-packaging-scripts && ./packaging/package-all.sh test-0 || travis_terminate 1;
+   fi
+
+before_deploy:
+ - mkdir build
+ - make check-packaging-scripts && cd build && ../packaging/package-all.sh ${TRAVIS_TAG} ${PWD} && cd ..
+
+deploy:
+  provider: releases
+  api_key: ${GH_DEPLOY_API_KEY}
+  file:
+    - build/${PACKAGING_INSTALLER_NAME}-${TRAVIS_TAG}-x86.exe
+    - build/${PACKAGING_INSTALLER_NAME}-${TRAVIS_TAG}-x64.exe
+    - build/${PACKAGING_INSTALLER_NAME}-${TRAVIS_TAG}-x86-winportable.zip
+    - build/${PACKAGING_INSTALLER_NAME}-${TRAVIS_TAG}-x64-winportable.zip
+    - build/${PACKAGING_INSTALLER_NAME}-${TRAVIS_TAG}-macOS.zip
+    - build/${PACKAGING_INSTALLER_NAME}-${TRAVIS_TAG}-x86_64.AppImage
+  skip_cleanup: true
+  on:
+    tags: true
 
 branches:
   only:
@@ -34,20 +60,3 @@ notifications:
       - "irc.freenode.net#openra"
     use_notice: true
     skip_join: true
-
-before_deploy:
- - mkdir build
- - cd build && ../packaging/package-all.sh ${TRAVIS_TAG} ${PWD} && cd ..
- - . mod.config
-
-deploy:
-  provider: releases
-  api_key: ${GH_DEPLOY_API_KEY}
-  file:
-    - build/${PACKAGING_INSTALLER_NAME}-${TRAVIS_TAG}.exe
-    - build/${PACKAGING_INSTALLER_NAME}-${TRAVIS_TAG}-macOS.zip
-    - build/${PACKAGING_INSTALLER_NAME}-${TRAVIS_TAG}-winportable.zip
-    - build/${PACKAGING_INSTALLER_NAME}-${TRAVIS_TAG}.AppImage
-  skip_cleanup: true
-  on:
-    tags: true
