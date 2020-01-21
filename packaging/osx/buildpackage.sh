@@ -68,7 +68,6 @@ rm "${PACKAGING_OSX_LAUNCHER_TEMP_ARCHIVE_NAME}"
 
 modify_plist "{DEV_VERSION}" "${TAG}" "${BUILTDIR}/OpenRA.app/Contents/Info.plist"
 modify_plist "{FAQ_URL}" "${PACKAGING_FAQ_URL}" "${BUILTDIR}/OpenRA.app/Contents/Info.plist"
-echo "Building core files"
 
 pushd ${TEMPLATE_ROOT} > /dev/null
 
@@ -92,8 +91,12 @@ else
 fi
 
 pushd ${ENGINE_DIRECTORY} > /dev/null
+echo "Building core files"
+
+make clean
 make osx-dependencies
-make core SDK="-sdk:4.5"
+make core
+make version VERSION="${ENGINE_VERSION}"
 make install-engine gameinstalldir="/Contents/Resources/" DESTDIR="${BUILTDIR}/OpenRA.app"
 make install-common-mod-files gameinstalldir="/Contents/Resources/" DESTDIR="${BUILTDIR}/OpenRA.app"
 
@@ -103,10 +106,13 @@ for f in ${PACKAGING_COPY_ENGINE_FILES}; do
 done
 
 popd > /dev/null
+
+echo "Building mod files"
+make core
+cp -Lr mods/* "${BUILTDIR}/OpenRA.app/Contents/Resources/mods"
+
 popd > /dev/null
 
-# Add mod files
-cp -Lr "${TEMPLATE_ROOT}/mods/"* "${BUILTDIR}/OpenRA.app/Contents/Resources/mods"
 cp "mod.icns" "${BUILTDIR}/OpenRA.app/Contents/Resources/${MOD_ID}.icns"
 
 pushd "${BUILTDIR}" > /dev/null
