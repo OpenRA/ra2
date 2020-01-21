@@ -558,11 +558,6 @@ jumpjet:
 	-Passenger:
 	SpawnActorOnDeath:
 		Actor: jumpjet.husk
-	Repairable:
-		RepairActors:
-		Voice: Move
-	Rearmable:
-		RearmActors:
 
 jumpjet.husk:
 	Inherits: ^HelicopterHusk
