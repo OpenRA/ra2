@@ -99,8 +99,10 @@ namespace OpenRA.Mods.RA2.Traits
 			canTurn = self.Info.HasTraitInfo<IFacingInfo>();
 		}
 
-		void INotifyCreated.Created(Actor self)
+		protected override void Created(Actor self)
 		{
+			base.Created(self);
+
 			manager = self.Trait<ConditionManager>();
 			wsbs = self.TraitsImplementing<WithSpriteBody>().Where(w => Info.BodyNames.Contains(w.Info.Name)).ToArray();
 
