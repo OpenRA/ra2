@@ -124,7 +124,7 @@ e1:
 	Health:
 		HP: 125
 	Mobile:
-		PauseOnCondition: chronodisable || undeployed
+		PauseOnCondition: chronodisable || !undeployed
 	Passenger:
 		PipType: Green
 	RevealsShroud:
