@@ -9,31 +9,24 @@
  */
 #endregion
 
+using System;
+using OpenRA.Graphics;
 using OpenRA.Mods.Common.Traits;
 using OpenRA.Mods.Common.Widgets;
 using OpenRA.Widgets;
-using OpenRA.Graphics;
-using System;
 
 namespace OpenRA.Mods.RA2.Widgets.Logic
 {
-
 	public class PowerMeterWidget : Widget
 	{
 		Widget sidebarProduction;
-
 		int lastMeterCheck;
-
-		int barheight = 0;
-
-		bool bypassanimation = false;
-
-		int warningflash = 0;
-
-		int lasttotalpowerdisplay;
+		int barHeight = 0;
+		bool bypassAnimation = false;
+		int warningFlash = 0;
+		int lastTotalPowerDisplay;
 
 		protected readonly World world;
-
 
 		[Desc("The name of the Container Widget to tie the Y axis to")]
 		[FieldLoader.Require]
@@ -87,20 +80,18 @@ namespace OpenRA.Mods.RA2.Widgets.Logic
 
 		public void CalculateMeterBarDimensions()
 		{
-			// height of power meter in pixels
-			var newbarheight = 0;
+			// Height of power meter in pixels
+			var newBarHeight = 0;
 			foreach (var child in sidebarProduction.Children)
-			{
 				if (child.Id == MeterAlongside)
-					newbarheight += child.Bounds.Height;
-			}
+					newBarHeight += child.Bounds.Height;
 
-			if (newbarheight != barheight)
+			if (newBarHeight != barHeight)
 			{
-				barheight = newbarheight;
+				barHeight = newBarHeight;
 
-				// don't animate the meter after changing sidebars
-				bypassanimation = true;
+				// Don't animate the meter after changing sidebars
+				bypassAnimation = true;
 			}
 		}
 
@@ -118,47 +109,41 @@ namespace OpenRA.Mods.RA2.Widgets.Logic
 
 		public void CheckBarNumber()
 		{
-			var meterdistance = MeterHeight;
-			var numberofbars = Decimal.Floor(barheight / meterdistance);
+			var meterDistance = MeterHeight;
+			var numberOfBars = decimal.Floor(barHeight / meterDistance);
 
-			if (Children.Count == numberofbars)
+			if (Children.Count == numberOfBars)
 				return;
 
 			Children.Clear();
 
-			// create a list of new health bars
-			for (int i = 0; i < numberofbars; i++)
+			// Create a list of new bars
+			for (int i = 0; i < numberOfBars; i++)
 			{
-				var newpower = new ImageWidget();
-				newpower.ImageCollection = ImageCollection;
-				newpower.ImageName = NoPowerImage;
+				var newPower = new ImageWidget();
+				newPower.ImageCollection = ImageCollection;
+				newPower.ImageName = NoPowerImage;
 
-				// you could add AddFactionSuffixLogic here
-				newpower.Bounds.Y = -(i * meterdistance) + barheight + Bounds.Y;
-				newpower.Bounds.X = Bounds.X;
-				newpower.GetImageName = () => newpower.ImageName;
-				Children.Add(newpower);
+				// AddFactionSuffixLogic could be added here
+				newPower.Bounds.Y = -(i * meterDistance) + barHeight + Bounds.Y;
+				newPower.Bounds.X = Bounds.X;
+				newPower.GetImageName = () => newPower.ImageName;
+				Children.Add(newPower);
 			}
 		}
 
-		public void CheckFlash(PowerManager powerManager, int totalpowerdisplay)
+		public void CheckFlash(PowerManager powerManager, int totalPowerDisplay)
 		{
-			var startwarningflash = false;
+			var startWarningFlash = powerManager.PowerState != PowerState.Normal;
 
-			if (powerManager.PowerState == PowerState.Low)
-				startwarningflash = true;
-
-			if (powerManager.PowerState == PowerState.Critical)
-				startwarningflash = true;
-
-			if (lasttotalpowerdisplay != totalpowerdisplay)
+			if (lastTotalPowerDisplay != totalPowerDisplay)
 			{
-				startwarningflash = true;
-				lasttotalpowerdisplay = totalpowerdisplay;
+				startWarningFlash = true;
+				lastTotalPowerDisplay = totalPowerDisplay;
 			}
 
-			if (startwarningflash && warningflash <= 0)
-				warningflash = 10;
+			if (startWarningFlash && warningFlash <= 0)
+				warningFlash = 10;
 		}
 
 		public override void Tick()
@@ -169,82 +154,77 @@ namespace OpenRA.Mods.RA2.Widgets.Logic
 			CalculateMeterBarDimensions();
 			CheckBarNumber();
 
-			// if just changed power level or low power, flash the last bar meter
+			// If just changed power level or low power, flash the last bar meter
 			lastMeterCheck++;
 			if (lastMeterCheck < TickWait)
 				return;
+
 			lastMeterCheck = 0;
 
-			// number of power units represent each bar
-			var stepsize = PowerUnitsPerBar;
+			// Number of power units represent each bar
+			var stepSize = PowerUnitsPerBar;
 
 			var powerManager = world.LocalPlayer.PlayerActor.Trait<PowerManager>();
-			var totalpowerdisplay = Math.Max(powerManager.PowerProvided, powerManager.PowerDrained);
+			var totalPowerDisplay = Math.Max(powerManager.PowerProvided, powerManager.PowerDrained);
 
-			var totalpowerstep = Decimal.Floor(totalpowerdisplay / stepsize);
-			var powerusedstep = Decimal.Floor(powerManager.PowerDrained / stepsize);
-			var poweravailabletep = Decimal.Floor(powerManager.PowerProvided / stepsize);
+			var totalPowerStep = decimal.Floor(totalPowerDisplay / stepSize);
+			var powerUsedStep = decimal.Floor(powerManager.PowerDrained / stepSize);
+			var powerAvailableStep = decimal.Floor(powerManager.PowerProvided / stepSize);
 
-			// maxed out the bar. instead we'll display a percent
-			if (totalpowerstep > Children.Count)
+			// Display a percentage if the bar is maxed out
+			if (totalPowerStep > Children.Count)
 			{
-				var powerfraction = (float)Children.Count / (float)totalpowerstep;
-				totalpowerdisplay = (int)((float)totalpowerdisplay * powerfraction);
-				totalpowerstep = (int)((float)totalpowerstep * powerfraction);
-				powerusedstep = (int)((float)powerusedstep * powerfraction);
-				poweravailabletep = (int)((float)poweravailabletep * powerfraction);
+				var powerFraction = (float)Children.Count / (float)totalPowerStep;
+				totalPowerDisplay = (int)((float)totalPowerDisplay * powerFraction);
+				totalPowerStep = (int)((float)totalPowerStep * powerFraction);
+				powerUsedStep = (int)((float)powerUsedStep * powerFraction);
+				powerAvailableStep = (int)((float)powerAvailableStep * powerFraction);
 			}
 
-			// should i start flashing the top bar?
-			CheckFlash(powerManager, totalpowerdisplay);
+			CheckFlash(powerManager, totalPowerDisplay);
 
-			// if maxed out bar size, work on percents
-			for (int i = 0; i < Children.Count; i++)
+			for (var i = 0; i < Children.Count; i++)
 			{
-				if (Children[i].GetType().Name != "ImageWidget")
+				var image = Children[i] as ImageWidget;
+				if (image == null)
 					continue;
 
-				var myimage = (ImageWidget)Children[i];
-
-				// unpowered amounts 
-				if (i > totalpowerstep || totalpowerstep == 0)
+				if (i > totalPowerStep || totalPowerStep == 0)
 				{
-					myimage.ImageName = NoPowerImage;
+					image.ImageName = NoPowerImage;
 					continue;
 				}
-				var targeticon = AvailablePowerImage;
 
-				if (i < powerusedstep)
-					targeticon = UsedPowerImage;
+				var targetIcon = AvailablePowerImage;
 
-				if (i > poweravailabletep)
-					targeticon = OverUsedPowerImage;
+				if (i < powerUsedStep)
+					targetIcon = UsedPowerImage;
 
-				if (i == totalpowerstep && powerManager.PowerState == PowerState.Low)
-					targeticon = OverUsedPowerImage;
+				if (i > powerAvailableStep)
+					targetIcon = OverUsedPowerImage;
 
-				// flash the top bar if something is wrong
-				if (i == totalpowerstep)
+				if (i == totalPowerStep && powerManager.PowerState == PowerState.Low)
+					targetIcon = OverUsedPowerImage;
+
+				// Flash the top bar if something is wrong
+				if (i == totalPowerStep)
 				{
-					if (warningflash % 2 != 0)
-						targeticon = FlashPowerImage;
-					if (warningflash > 0)
-						warningflash--;
+					if (warningFlash % 2 != 0)
+						targetIcon = FlashPowerImage;
+					if (warningFlash > 0)
+						warningFlash--;
 				}
 
-				// we exit if updating a bar meter. This gives a nice animation effect
-				if (myimage.ImageName != targeticon)
+				// We exit if updating a bar meter. This gives a nice animation effect
+				if (image.ImageName != targetIcon)
 				{
-					myimage.ImageName = targeticon;
-					if (!bypassanimation)
+					image.ImageName = targetIcon;
+					if (!bypassAnimation)
 						return;
 				}
 			}
 
-			bypassanimation = false;
-			// end Tick
+			bypassAnimation = false;
 		}
 	}
-
 }
-
