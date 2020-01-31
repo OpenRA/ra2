@@ -194,6 +194,8 @@ explosion:
 	small_grey_explosion: xgrysml2
 	medium_grey_explosion: xgrymed1
 	large_grey_explosion: xgrymed2
+	small_barrel_explosion: brrlexp1
+	large_barrel_explosion: brrlexp2
 	nuke_explosion: nukeanim
 	nuke_ball: nukeball
 	demotruck_explosion: demtexp

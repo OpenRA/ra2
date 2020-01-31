@@ -1,3 +1,45 @@
+LargeBarrelExplode:
+	Report: gexpbara.wav, gexpbarb.wav, gexpbarc.wav
+	Warhead@1Dam: SpreadDamage
+		Spread: 0c768
+		Damage: 200
+		Falloff: 100, 73, 47, 20, 0
+		Versus:
+			None: 150
+			Flak: 100
+			Plate: 100
+			Light: 90
+			Medium: 50
+			Heavy: 50
+			Wood: 100
+			Steel: 150
+			Concrete: 30
+			Drone: 100
+			Rocket: 100
+		AffectsParent: true
+		DamageTypes: Prone70Percent, TriggerProne, FlameDeath, SuppressTerrorDrone
+	Warhead@2Eff: CreateEffect
+		Explosions: large_barrel_explosion
+		ValidTargets: Ground, Water, Air
+	Warhead@3Smu: LeaveSmudge
+		SmudgeType: MediumCrater, MediumScorch
+
+SmallBarrelExplode:
+	Inherits: LargeBarrelExplode
+	Warhead@2Eff: CreateEffect
+		Explosions: small_barrel_explosion
+	Warhead@3Smu: LeaveSmudge
+		SmudgeType: SmallCrater
+
+DerrickExplode:
+	Inherits: LargeBarrelExplode
+	Warhead@1Dam: SpreadDamage
+		Damage: 600
+	Warhead@2Eff: CreateEffect
+		Explosions: large_twlt, large_bang, large_brnl, verylarge_clsn, large_tumu
+	Warhead@3Smu: LeaveSmudge
+		SmudgeType: MediumCrater, MediumScorch
+
 UnitExplode:
 	Warhead@1Eff: CreateEffect
 		Explosions: large_twlt
