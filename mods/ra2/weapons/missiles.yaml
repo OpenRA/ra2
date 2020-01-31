@@ -65,7 +65,7 @@ Maverick:
 
 Maverick2:
 	Inherits: Maverick
-	Report: vblaatta.wav
+	Report: vbleatta.wav, vbleattb.wav
 	Warhead@1Dam: SpreadDamage
 		Damage: 200
 
