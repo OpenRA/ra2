@@ -11,11 +11,9 @@ MammothTusk:
 	Report: vapoat2a.wav, vapoar2b.wav, vapoat2c.wav
 	Burst: 2
 	Projectile: Missile
-		Inaccuracy: 128
 		ContrailLength: 8
-		HorizontalRateOfTurn: 10
 		Speed: 170
-		RangeLimit: 9c614
+		RangeLimit: 10c204
 		TrailImage: smokey2
 	Warhead@1Dam: SpreadDamage
 		Spread: 171
@@ -44,10 +42,10 @@ Maverick:
 	Projectile: Missile
 		Speed: 373
 		Arm: 2
-		Inaccuracy: 128
-		HorizontalRateOfTurn: 8
-		RangeLimit: 7c204
+		RangeLimit: 10c204
 		ContrailColor: D8D8FF
+		HorizontalRateOfTurn: 40
+		VerticalRateOfTurn: 40
 	Warhead@1Dam: SpreadDamage
 		Spread: 128
 		Damage: 150
@@ -78,7 +76,7 @@ Medusa:
 	Projectile: Missile
 		ContrailLength: 35
 		LockOnProbability: 85
-		RangeLimit: 14c409
+		RangeLimit: 15c409
 	Warhead@1Dam: SpreadDamage
 		Spread: 60
 		Damage: 100
@@ -95,7 +93,7 @@ HoverMissile:
 		Arm: 2
 		Inaccuracy: 128
 		HorizontalRateOfTurn: 8
-		RangeLimit: 7c204
+		RangeLimit: 14c512
 		ContrailColor: D8D8FF
 	Warhead@1Dam: SpreadDamage
 		Spread: 128

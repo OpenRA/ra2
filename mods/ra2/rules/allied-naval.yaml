@@ -117,6 +117,7 @@ aegis:
 		Weapon: Medusa
 	AttackFrontal:
 		Voice: Attack
+		FacingTolerance: 128
 	AutoTarget:
 	Explodes:
 		Weapon: UnitExplode
