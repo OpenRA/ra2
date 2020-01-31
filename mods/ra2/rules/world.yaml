@@ -249,8 +249,8 @@ World:
 		BuildRadiusCheckboxVisible: false
 	MapOptions:
 		ShortGameCheckboxDisplayOrder: 2
-		TechLevelDropdownDisplayOrder: 2
-		GameSpeedDropdownDisplayOrder: 3
+		TechLevelDropdownDisplayOrder: 3
+		GameSpeedDropdownDisplayOrder: 4
 	CreateMPPlayers:
 	MPStartUnits@amcv:
 		Class: none
@@ -334,6 +334,7 @@ World:
 	MPStartLocations:
 		SeparateTeamSpawnsCheckboxDisplayOrder: 6
 	SpawnMPUnits:
+		DropdownDisplayOrder: 2
 	PathFinder:
 	ValidateOrder:
 	DebugPauseState:
@@ -343,6 +344,7 @@ World:
 		PanelName: SKIRMISH_STATS
 	LoadWidgetAtGameStart:
 	TimeLimitManager:
+		TimeLimitDisplayOrder: 1
 
 EditorWorld:
 	Inherits: ^BaseWorld
