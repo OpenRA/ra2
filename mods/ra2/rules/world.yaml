@@ -254,12 +254,15 @@ World:
 		ClassName: MCV Only
 		Factions: allies, america, germany, england, france, korea
 		BaseActor: amcv
+		BaseActorFacing: 224
 	MPStartUnits@lightallies:
 		Class: light
 		ClassName: Light Support
 		Factions: allies, america, germany, england, france, korea
 		BaseActor: amcv
+		BaseActorFacing: 224
 		SupportActors: dog,e1,e1
+		SupportActorsFacing: 224
 		InnerSupportRadius: 3
 		OuterSupportRadius: 5
 	MPStartUnits@mediumallies:
@@ -267,7 +270,9 @@ World:
 		ClassName: Medium Support
 		Factions: allies, america, germany, england, france, korea
 		BaseActor: amcv
+		BaseActorFacing: 224
 		SupportActors: dog,e1,e1,e1,mtnk,engineer
+		SupportActorsFacing: 224
 		InnerSupportRadius: 3
 		OuterSupportRadius: 5
 	MPStartUnits@heavyallies:
@@ -275,7 +280,9 @@ World:
 		ClassName: Heavy Support
 		Factions: allies, america, germany, england, france, korea
 		BaseActor: amcv
+		BaseActorFacing: 224
 		SupportActors: dog,e1,e1,e1,e1,mtnk,mtnk,fv,engineer
+		SupportActorsFacing: 224
 		InnerSupportRadius: 3
 		OuterSupportRadius: 5
 	MPStartUnits@smcv:
@@ -283,12 +290,15 @@ World:
 		ClassName: MCV Only
 		Factions: soviets, cuba, libya, iraq, russia
 		BaseActor: smcv
+		BaseActorFacing: 224
 	MPStartUnits@lightsoviets:
 		Class: light
 		ClassName: Light Support
 		Factions: soviets, cuba, libya, iraq, russia
 		BaseActor: smcv
+		BaseActorFacing: 224
 		SupportActors: dog,e2,e2,e2
+		SupportActorsFacing: 224
 		InnerSupportRadius: 3
 		OuterSupportRadius: 5
 	MPStartUnits@mediumsoviets:
@@ -296,7 +306,9 @@ World:
 		ClassName: Medium Support
 		Factions: soviets, cuba, libya, iraq, russia
 		BaseActor: smcv
+		BaseActorFacing: 224
 		SupportActors: dog,e2,e2,e2,e2,htnk,engineer
+		SupportActorsFacing: 224
 		InnerSupportRadius: 3
 		OuterSupportRadius: 5
 	MPStartUnits@heavysoviets:
@@ -304,7 +316,9 @@ World:
 		ClassName: Heavy Support
 		Factions: soviets, cuba, libya, iraq, russia
 		BaseActor: smcv
+		BaseActorFacing: 224
 		SupportActors: dog,e2,e2,e2,e2,e2,htnk,htnk,htk,engineer
+		SupportActorsFacing: 224
 		InnerSupportRadius: 3
 		OuterSupportRadius: 5
 	CrateSpawner:
