@@ -328,6 +328,14 @@ World:
 	LoadWidgetAtGameStart:
 	TimeLimitManager:
 		TimeLimitDisplayOrder: 1
+		TimeLimitWarnings:
+			1: OneMinuteRemaining
+			2: TwoMinutesRemaining
+			3: ThreeMinutesRemaining
+			4: FourMinutesRemaining
+			5: FiveMinutesRemaining
+			10: TenMinutesRemaining
+			20: TwentyMinutesRemaining
 
 EditorWorld:
 	Inherits: ^BaseWorld
