@@ -29,6 +29,7 @@ caoild:
 		Weapon: DerrickExplode
 	SpawnActorOnDeath:
 		Actor: caoild.rubble
+	UpdatesDerrickCount:
 
 caoild.rubble:
 	Inherits: ^Rubble
