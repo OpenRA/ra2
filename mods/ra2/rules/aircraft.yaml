@@ -37,7 +37,7 @@ shad:
 		CruisingCondition: cruising
 		IdleBehavior: Land
 	RenderSprites:
-	WithVoxelWalkerBody:
+	WithVoxelHelicopterBody:
 		TickRate: 1
 	Hovers@CRUISING:
 		RequiresCondition: cruising
