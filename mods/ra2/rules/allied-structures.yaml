@@ -812,6 +812,8 @@ gaorep:
 	WithIdleOverlay@glow:
 		Sequence: idle-glow
 		RequiresCondition: !build-incomplete
+	ResourcePurifier:
+		Modifier: 25
 	Power:
 		Amount: -200
 
