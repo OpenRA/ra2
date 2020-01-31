@@ -10,6 +10,8 @@ camisc01:
 		DamagedSounds: bmetdama.wav, bmetdamb.wav, bmetdamc.wav
 	MapEditorData:
 		Categories: Decoration
+	Explodes:
+		Weapon: LargeBarrelExplode
 
 camisc02:
 	Inherits: ^CivBuilding
@@ -23,6 +25,8 @@ camisc02:
 		DamagedSounds: bmetdama.wav, bmetdamb.wav, bmetdamc.wav
 	MapEditorData:
 		Categories: Decoration
+	Explodes:
+		Weapon: SmallBarrelExplode
 
 camisc03:
 	Inherits: ^CivBuilding
