@@ -396,9 +396,10 @@ gaweap:
 		RequiresCondition: !build-incomplete
 	WithIdleOverlay@bib:
 		Sequence: bib
-	WithExitOverlay@top-vehicles:
 		RequiresCondition: !build-incomplete
+	WithExitOverlay@top-vehicles:
 		Sequence: build-top
+		RequiresCondition: !build-incomplete
 	WithExitOverlay@ramp:
 		Sequence: build-ramp
 		RequiresCondition: !build-incomplete
