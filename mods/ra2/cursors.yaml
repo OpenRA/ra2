@@ -258,11 +258,8 @@ Cursors:
 			Start: 351
 			Length: 5
 		ability:
-			Start: 68
-			Length: 5
-		ability-minimap:
-			Start: 73
-			Length: 5
+			Start: 329
+			Length: 10
 		powerdown-blocked:
 			Start: 342
 		joystick-all:
