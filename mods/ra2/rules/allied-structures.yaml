@@ -707,7 +707,7 @@ nasam:
 		RequiresCondition: !build-incomplete
 	Armament:
 		Weapon: RedEye2
-		LocalOffset: 500,0,900
+		LocalOffset: 500,200,900, 500,-200,900
 	BodyOrientation:
 		QuantizedFacings: 16
 	RenderVoxels:

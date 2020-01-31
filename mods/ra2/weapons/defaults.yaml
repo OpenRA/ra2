@@ -77,11 +77,17 @@
 		Shadow: true
 		Image: DRAGON
 		Palette: ra
-		ContrailLength: 16
+		ContrailLength: 8
+		ContrailWidth: 24
+		CruiseAltitude: 4352
+		VerticalRateOfTurn: 55
 		HorizontalRateOfTurn: 55
+		MinimumLaunchAngle: 255
+		MaximumLaunchAngle: 255
 		Speed: 100
 		RangeLimit: 14c409
 		TerrainHeightAware: true
+		AllowSnapping: true
 
 ^AAMissile:
 	Inherits: ^Missile
