@@ -30,6 +30,21 @@ gacnst:
 		Facing: 96
 		DeployCursor: undeploy
 		RequiresCondition: factundeploy && !build-incomplete
+	TransformsIntoMobile:
+		RequiresCondition: factundeploy
+		Locomotor: heavytracked
+		Voice: Move
+		RequiresForceMove: true
+	TransformsIntoRepairable:
+		RequiresCondition: factundeploy
+		RepairActors: gadept, nadept, caoutp
+		Voice: Move
+		RequiresForceMove: true
+	TransformsIntoPassenger:
+		RequiresCondition: factundeploy
+		CargoType: Vehicle
+		Voice: Move
+		RequiresForceMove: true
 	GrantConditionOnPrerequisite@GLOBALFACTUNDEPLOY:
 		Condition: factundeploy
 		Prerequisites: global-factundeploy
