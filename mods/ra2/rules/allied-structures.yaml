@@ -412,12 +412,28 @@ gaweap:
 	WithIdleOverlay@bib:
 		Sequence: bib
 		RequiresCondition: !build-incomplete
+	GrantConditionOnProduction@helicopters:
+		Actors: shad
+		Condition: roof-open
+		Duration: 50
+		ShowSelectionBar: false
+	GrantConditionOnProduction@zeppelins:
+		Actors: zep
+		Condition: roof-open
+		Duration: 100
+		ShowSelectionBar: false
 	WithExitOverlay@top-vehicles:
 		Sequence: build-top
-		RequiresCondition: !build-incomplete
+		RequiresCondition: !roof-open && !build-incomplete
 	WithExitOverlay@ramp:
 		Sequence: build-ramp
-		RequiresCondition: !build-incomplete
+		RequiresCondition: !roof-open && !build-incomplete
+	WithIdleOverlay@air-open:
+		Sequence: build-air-open
+		RequiresCondition: roof-open && !build-incomplete
+	WithIdleOverlay@air-inside:
+		Sequence: build-air-inside
+		RequiresCondition: roof-open && !build-incomplete
 	Power:
 		Amount: -25
 	InfiltrateForSupportPower:
