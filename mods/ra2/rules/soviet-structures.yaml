@@ -728,7 +728,7 @@ nairon:
 	Buildable:
 		Queue: Support
 		BuildPaletteOrder: 80
-		Prerequisites: natech, ~structures.soviets
+		Prerequisites: natech, ~structures.soviets, ~techlevel.unrestricted
 		BuildLimit: 1
 		Description: Grants invulnerability to armored units.\nFries fleshy units.
 	Valued:
@@ -772,7 +772,7 @@ namisl:
 	Buildable:
 		Queue: Support
 		BuildPaletteOrder: 90
-		Prerequisites: natech, ~structures.soviets
+		Prerequisites: natech, ~structures.soviets, ~techlevel.unrestricted
 		BuildLimit: 1
 		Description: Provides an atomic bomb.\nRequires power to operate.\n  Special Ability: Atom Bomb\nMaximum 1 can be built.
 	Valued:
