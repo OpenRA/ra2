@@ -902,7 +902,7 @@ gaweat:
 	Buildable:
 		Queue: Support
 		BuildPaletteOrder: 90
-		Prerequisites: gatech, ~structures.allies
+		Prerequisites: gatech, ~structures.allies, ~techlevel.unrestricted
 		BuildLimit: 1
 		Description: Play God with deadly weather!
 	Selectable:
@@ -933,7 +933,7 @@ gacsph:
 	Buildable:
 		Queue: Support
 		BuildPaletteOrder: 80
-		Prerequisites: gatech, ~structures.allies
+		Prerequisites: gatech, ~structures.allies, ~techlevel.unrestricted
 		Description: Allows teleporting units in a 3x3 array.
 		BuildLimit: 1
 	Selectable:
