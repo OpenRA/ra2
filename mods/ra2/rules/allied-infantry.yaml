@@ -545,7 +545,10 @@ jumpjet:
 	Targetable@airborne:
 		TargetTypes: Air, Disguise
 		RequiresCondition: airborne
-	WithShadow:
+	WithSpriteBody@shadow:
+		Name: shadow
+		Sequence: shadow
+		ForceToGround: true
 	Voiced:
 		VoiceSet: RocketeerVoice
 	ProducibleWithLevel:
