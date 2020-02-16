@@ -212,6 +212,9 @@ sqd:
 		ExplodeInstead: true
 	RenderDetectionCircle:
 	WithInfantryBody:
+		MinIdleDelay: 1
+		MaxIdleDelay: 2
+		IdleSequences: idle
 		StandSequences: stand
 		DefaultAttackSequence: punch
 	Repairable:

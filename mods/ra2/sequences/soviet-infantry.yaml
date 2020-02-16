@@ -9,6 +9,11 @@ sqd:
 	stand:
 		Start: 160
 		Facings: -8
+	idle:
+		Start: 0
+		Length: 20
+		Facings: -8
+		Tick: 160
 	run:
 		Start: 0
 		Length: 20

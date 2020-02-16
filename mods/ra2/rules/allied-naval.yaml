@@ -196,6 +196,9 @@ dlph:
 	RenderDetectionCircle:
 	RenderSprites:
 	WithInfantryBody:
+		MinIdleDelay: 1
+		MaxIdleDelay: 2
+		IdleSequences: idle
 		StandSequences: stand
 		DefaultAttackSequence: shoot
 	WithDeathAnimation:
