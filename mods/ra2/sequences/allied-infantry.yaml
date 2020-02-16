@@ -30,6 +30,11 @@ dlph:
 	stand:
 		Start: 48
 		Facings: -8
+	idle:
+		Start: 0
+		Length: 6
+		Facings: -8
+		Tick: 160
 	run:
 		Start: 0
 		Length: 6
