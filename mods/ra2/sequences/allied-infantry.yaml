@@ -149,7 +149,7 @@ ccomand:
 	-swim-cheer:
 	-paradrop:
 	icon: ccomicon
-    
+
 ptroop:
 	Inherits: ccomand
 	muzzle: yuricntl
@@ -265,6 +265,10 @@ jumpjet:
 		Length: 9
 		Facings: 1
 		Tick: 100
+	shadow: infshdw
+		Start: 1
+		Length: 1
+		Facings: 1
 	icon: jjeticon
 		Length: 1
 		Facings: 1
