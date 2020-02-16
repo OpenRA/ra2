@@ -61,6 +61,8 @@ Cursors:
 		attackmove:
 			Start: 404
 			Length: 9
+		attackmove-blocked:
+			Start: 384
 		attack-minimap:
 			Start: 63
 			Length: 5
