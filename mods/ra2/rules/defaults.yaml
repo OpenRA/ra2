@@ -507,6 +507,8 @@
 		Footprint: x
 		BuildSounds: uplace.wav
 		TerrainTypes: Clear, Rough, Road, DirtRoad
+	FootprintPlaceBuildingPreview:
+		Palette: effect75alpha
 	BlocksProjectiles:
 	LineBuild:
 		Range: 8
