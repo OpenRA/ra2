@@ -292,3 +292,8 @@ Cursors:
 			Length: 9
 		assaultmove-minimap:
 			Start: 9
+		assaultmove-blocked: # TODO
+			Start: 0
+			Length: 9
+		assaultmove-blocked-minimap: # TODO
+			Start: 9
