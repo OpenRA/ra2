@@ -173,7 +173,7 @@ caoutp:
 		Sequence: active-crane
 	BodyOrientation:
 		QuantizedFacings: 16
-		CameraPitch: 90
+		CameraPitch: 85
 	RenderVoxels:
 		Scale: 11.7
 		LightYaw: 800
