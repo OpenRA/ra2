@@ -91,6 +91,7 @@ mgtk:
 	muzzle: vtmuzzle
 		Length: *
 	icon: rtnkicon
+	idle: null # this is required because the WithSpriteBody constructor initializes before the Mirage trait is activated
 
 gtgcan:
 	icon: gcanicon
