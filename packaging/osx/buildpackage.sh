@@ -69,7 +69,7 @@ rm "${PACKAGING_OSX_LAUNCHER_TEMP_ARCHIVE_NAME}"
 modify_plist "{DEV_VERSION}" "${TAG}" "${BUILTDIR}/OpenRA.app/Contents/Info.plist"
 modify_plist "{FAQ_URL}" "${PACKAGING_FAQ_URL}" "${BUILTDIR}/OpenRA.app/Contents/Info.plist"
 
-pushd ${TEMPLATE_ROOT} > /dev/null
+pushd "${TEMPLATE_ROOT}" > /dev/null
 
 if [ ! -f "${ENGINE_DIRECTORY}/Makefile" ]; then
 	echo "Required engine files not found."
