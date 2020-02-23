@@ -109,7 +109,7 @@ popd > /dev/null
 
 echo "Building mod files"
 make core
-cp -Lr mods/* "${BUILTDIR}/OpenRA.app/Contents/Resources/mods"
+cp -LR mods/* "${BUILTDIR}/OpenRA.app/Contents/Resources/mods"
 
 popd > /dev/null
 
