@@ -250,7 +250,7 @@ SoundFormats: Aud, Wav
 
 SpriteFormats: ShpTS, TmpTS, ShpTD
 
-SpriteSequenceFormat: TilesetSpecificSpriteSequence
+SpriteSequenceFormat: ExtendedTilesetSpecificSpriteSequence
 	TilesetExtensions:
 		TEMPERATE: .tem
 		SNOW: .sno
@@ -260,6 +260,8 @@ SpriteSequenceFormat: TilesetSpecificSpriteSequence
 		SNOW: a
 		TEMPERATE: t
 		URBAN: u
+	TilesetSuffixes:
+		SNOW: a
 
 ModelSequenceFormat: VoxelModelSequence
 
