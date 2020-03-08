@@ -18,6 +18,7 @@ script:
    awk '/\r$$/ { exit(1); }' mod.config || (printf "Invalid mod.config format. File must be saved using unix-style (LF, not CRLF or CR) line endings.\n"; travis_terminate 1);
    if [ "${TRAVIS_TEST_MOD}" == "True" ]; then
      make test || travis_terminate 1;
+     make check || travis_terminate 1;
    fi;
    if [ "${TRAVIS_TEST_PACKAGING}" == "True" ] || [ -n "${TRAVIS_TAG}" ]; then
      wget http://mirrors.kernel.org/ubuntu/pool/universe/n/nsis/nsis-common_3.03-2_all.deb || travis_terminate 1;
