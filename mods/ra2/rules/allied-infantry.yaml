@@ -131,7 +131,7 @@ e1:
 		Range: 5c0
 	AttackFrontal:
 		Voice: Attack
-		RequiresCondition: !deployed
+		RequiresCondition: undeployed
 	AttackTurreted@deployed:
 		Armaments: deployed, deployed-elite
 		Voice: Attack
