@@ -67,6 +67,9 @@ nacnst:
 	SpawnActorsOnSell@soviets:
 		ActorTypes: e2, e2, e2, e2, engineer
 		Factions: cuba, libya, iraq, russia
+	SpawnSurvivors:
+		DeathTypes: ExplosionDeath, BulletDeath
+		Actors: engineer, e2, e2, e2, e2, e2, e2
 
 napowr:
 	Inherits: ^BaseBuilding
@@ -109,6 +112,9 @@ napowr:
 	PowerTooltip:
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
+	SpawnSurvivors:
+		DeathTypes: ExplosionDeath, BulletDeath
+		Actors: e2, e2, e2
 
 nahand:
 	Inherits: ^BaseBuilding
@@ -203,6 +209,9 @@ nahand:
 		Proxy: barracks.infiltrated
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
+	SpawnSurvivors:
+		DeathTypes: ExplosionDeath, BulletDeath
+		Actors: e2, e2, e2
 
 narefn:
 	Inherits: ^BaseBuilding
@@ -260,6 +269,9 @@ narefn:
 		Amount: -50
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
+	SpawnSurvivors:
+		DeathTypes: ExplosionDeath, BulletDeath
+		Actors: e2, e2, e2
 
 naradr:
 	Inherits: ^BaseBuilding
@@ -302,6 +314,9 @@ naradr:
 		Types: SpyInfiltrate
 	Power:
 		Amount: -50
+	SpawnSurvivors:
+		DeathTypes: ExplosionDeath, BulletDeath
+		Actors: e2, e2, e2, e2
 
 naweap:
 	Inherits: ^BaseBuilding
@@ -387,6 +402,9 @@ naweap:
 		Proxy: warfactory.infiltrated
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
+	SpawnSurvivors:
+		DeathTypes: ExplosionDeath, BulletDeath
+		Actors: e2, e2, e2, e2, e2, e2
 
 nayard:
 	Inherits: ^BaseBuilding
@@ -566,6 +584,9 @@ nadept:
 		RequiresCondition: !build-incomplete
 	Power:
 		Amount: -25
+	SpawnSurvivors:
+		DeathTypes: ExplosionDeath, BulletDeath
+		Actors: e2, e2, e2
 
 nanrct:
 	Inherits: ^BaseBuilding
@@ -612,6 +633,9 @@ nanrct:
 	PowerTooltip:
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
+	SpawnSurvivors:
+		DeathTypes: ExplosionDeath, BulletDeath
+		Actors: e2, e2, e2, e2, e2
 
 natech:
 	Inherits: ^BaseBuilding
@@ -644,6 +668,9 @@ natech:
 		Proxy: soviets.tech.infiltrated
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
+	SpawnSurvivors:
+		DeathTypes: ExplosionDeath, BulletDeath
+		Actors: e2, e2, e2, e2, e2, e2, e2, e2, e2
 
 naclon:
 	Inherits: ^BaseBuilding
@@ -716,6 +743,9 @@ naclon:
 	ClonesProducedUnits:
 		CloneableTypes: infantry
 	AcceptsDeliveredCash:
+	SpawnSurvivors:
+		DeathTypes: ExplosionDeath, BulletDeath
+		Actors: e2, e2, e2, e2
 
 napsis:
 	Inherits: ^BaseBuilding
@@ -752,6 +782,9 @@ napsis:
 	GrantConditionOnPowerState@LOWPOWER:
 		Condition: lowpower
 		ValidPowerStates: Low, Critical
+	SpawnSurvivors:
+		DeathTypes: ExplosionDeath, BulletDeath
+		Actors: e2, e2, e2
 
 nairon:
 	Inherits: ^BaseBuilding
@@ -785,7 +818,7 @@ nairon:
 		Description: Invulnerability
 		LongDesc: Makes a group of units invulnerable\nfor 20 seconds.
 		Duration: 500
-		# TODO: This are actually no speech notifications
+		# TODO: These are actually no speech notifications
 		EndChargeSound: siroread.wav
 		OnFireSound: siroon.wav
 		DisplayTimerStances: Ally, Neutral, Enemy
@@ -796,6 +829,9 @@ nairon:
 	GrantConditionOnPowerState@LOWPOWER:
 		Condition: lowpower
 		ValidPowerStates: Low, Critical
+	SpawnSurvivors:
+		DeathTypes: ExplosionDeath, BulletDeath
+		Actors: e2, e2, e2, e2, e2, e2, e2
 
 namisl:
 	Inherits: ^BaseBuilding
@@ -850,6 +886,9 @@ namisl:
 		PauseOnCondition: lowpower
 	WithNukeLaunchAnimation:
 		RequiresCondition: !build-incomplete
+	SpawnSurvivors:
+		DeathTypes: ExplosionDeath, BulletDeath
+		Actors: e2, e2, e2, e2, e2, e2, e2
 
 nawall:
 	Inherits: ^Wall
