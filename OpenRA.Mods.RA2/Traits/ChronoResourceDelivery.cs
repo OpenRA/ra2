@@ -9,8 +9,6 @@
  */
 #endregion
 
-using System;
-using OpenRA.Activities;
 using OpenRA.Mods.Common.Activities;
 using OpenRA.Mods.Common.Traits;
 using OpenRA.Mods.RA2.Activities;
@@ -28,13 +26,16 @@ namespace OpenRA.Mods.RA2.Traits
 		public readonly string Image = null;
 
 		[Desc("Sequence used for the effect played where the harvester jumped from.")]
-		[SequenceReference("Image")] public readonly string WarpInSequence = null;
+		[SequenceReference("Image")]
+		public readonly string WarpInSequence = null;
 
 		[Desc("Sequence used for the effect played where the harvester jumped to.")]
-		[SequenceReference("Image")] public readonly string WarpOutSequence = null;
+		[SequenceReference("Image")]
+		public readonly string WarpOutSequence = null;
 
 		[Desc("Palette to render the warp in/out sprites in.")]
-		[PaletteReference] public readonly string Palette = "effect";
+		[PaletteReference]
+		public readonly string Palette = "effect";
 
 		[Desc("Sound played where the harvester jumped from.")]
 		public readonly string WarpInSound = null;
