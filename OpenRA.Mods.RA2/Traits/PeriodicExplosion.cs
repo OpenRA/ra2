@@ -24,7 +24,8 @@ namespace OpenRA.Mods.RA2.Traits
 		+ "Reload/BurstDelays are used as explosion intervals.")]
 	public class PeriodicExplosionInfo : ConditionalTraitInfo, IRulesetLoaded
 	{
-		[WeaponReference, FieldLoader.Require]
+		[WeaponReference]
+		[FieldLoader.Require]
 		[Desc("Weapon to be used for explosion.")]
 		public readonly string Weapon = null;
 
