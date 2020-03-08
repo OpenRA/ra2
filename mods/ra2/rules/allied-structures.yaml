@@ -76,6 +76,9 @@ gacnst:
 	SpawnActorsOnSell@soviets:
 		ActorTypes: e2, e2, e2, e2, engineer
 		Factions: cuba, libya, iraq, russia
+	SpawnSurvivors:
+		DeathTypes: ExplosionDeath, BulletDeath
+		Actors: engineer, e1, e1, e1, e1
 
 gapowr:
 	Inherits: ^BaseBuilding
@@ -118,6 +121,9 @@ gapowr:
 	PowerTooltip:
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
+	SpawnSurvivors:
+		DeathTypes: ExplosionDeath, BulletDeath
+		Actors: e1, e1, e1
 
 gapile:
 	Inherits: ^BaseBuilding
@@ -187,6 +193,9 @@ gapile:
 		Proxy: barracks.infiltrated
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
+	SpawnSurvivors:
+		DeathTypes: ExplosionDeath, BulletDeath
+		Actors: e1, e1
 
 garefn:
 	Inherits: ^BaseBuilding
@@ -244,6 +253,9 @@ garefn:
 		Amount: -50
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
+	SpawnSurvivors:
+		DeathTypes: ExplosionDeath, BulletDeath
+		Actors: e1, e1
 
 gaairc:
 	Inherits: ^BaseBuilding
@@ -332,6 +344,9 @@ gaairc:
 		RequiresCondition: primary
 	InfiltrateForExploration:
 		Types: SpyInfiltrate
+	SpawnSurvivors:
+		DeathTypes: ExplosionDeath, BulletDeath
+		Actors: e1, e1
 
 amradr:
 	Inherits: gaairc
@@ -441,6 +456,9 @@ gaweap:
 		Proxy: warfactory.infiltrated
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
+	SpawnSurvivors:
+		DeathTypes: ExplosionDeath, BulletDeath
+		Actors: e1, e1, e1, e1
 
 gayard:
 	Inherits: ^BaseBuilding
@@ -617,6 +635,9 @@ gadept:
 		Amount: -25
 	ProvidesPrerequisite:
 		Prerequisite: repairpad
+	SpawnSurvivors:
+		DeathTypes: ExplosionDeath, BulletDeath
+		Actors: e1, e1
 
 gatech:
 	Inherits: ^BaseBuilding
@@ -652,6 +673,9 @@ gatech:
 		Proxy: allies.tech.infiltrated
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
+	SpawnSurvivors:
+		DeathTypes: ExplosionDeath, BulletDeath
+		Actors: e1, e1, e1, e1
 
 gawall:
 	Inherits: ^Wall
@@ -847,6 +871,9 @@ gaorep:
 		Modifier: 25
 	Power:
 		Amount: -200
+	SpawnSurvivors:
+		DeathTypes: ExplosionDeath, BulletDeath
+		Actors: e1, e1, e1
 
 gaspysat:
 	Inherits: ^BaseBuilding
@@ -882,6 +909,9 @@ gaspysat:
 	GrantConditionOnPowerState@LOWPOWER:
 		Condition: lowpower
 		ValidPowerStates: Low, Critical
+	SpawnSurvivors:
+		DeathTypes: ExplosionDeath, BulletDeath
+		Actors: e1, e1
 
 gagap:
 	Inherits: ^SupportBuilding
@@ -911,6 +941,9 @@ gagap:
 	RenderShroudCircle:
 	Power:
 		Amount: -100
+	SpawnSurvivors:
+		DeathTypes: ExplosionDeath, BulletDeath
+		Actors: e1
 
 gaweat:
 	Inherits: ^BaseBuilding
@@ -942,6 +975,9 @@ gaweat:
 	#GrantConditionOnPowerState@LOWPOWER:
 	#	Condition: lowpower
 	#	ValidPowerStates: Low, Critical
+	SpawnSurvivors:
+		DeathTypes: ExplosionDeath, BulletDeath
+		Actors: e1, e1, e1, e1, e1
 
 gacsph:
 	Inherits: ^BaseBuilding
@@ -992,6 +1028,9 @@ gacsph:
 		SelectionCursor: chronosphere
 		TargetCursor: chronosphere
 		PauseOnCondition: lowpower
+	SpawnSurvivors:
+		DeathTypes: ExplosionDeath, BulletDeath
+		Actors: e1, e1, e1, e1, e1
 
 atesla:
 	Inherits: ^SupportBuilding
