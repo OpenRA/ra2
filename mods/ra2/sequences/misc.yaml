@@ -217,8 +217,10 @@ explosion:
 chrono:
 	warpin: warpin
 		Length: *
+		ZOffset: -2047
 	warpout: warpout
 		Length: *
+		ZOffset: -2047
 
 discus:
 	idle:
