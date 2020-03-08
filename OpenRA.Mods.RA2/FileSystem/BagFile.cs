@@ -133,7 +133,7 @@ namespace OpenRA.Mods.Cnc.FileSystem
 			// A bag file is always accompanied with an .idx counterpart
 			// For example: audio.bag requires the audio.idx file
 			var indexFilename = Path.ChangeExtension(filename, ".idx");
-			List<IdxEntry> entries  = null;
+			List<IdxEntry> entries = null;
 
 			try
 			{

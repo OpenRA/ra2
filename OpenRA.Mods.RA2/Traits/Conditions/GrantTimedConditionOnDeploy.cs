@@ -90,7 +90,8 @@ namespace OpenRA.Mods.RA2.Traits
 		ConditionManager manager;
 		TimedDeployState deployState;
 
-		[Sync] int ticks;
+		[Sync]
+		int ticks;
 
 		public GrantTimedConditionOnDeploy(ActorInitializer init, GrantTimedConditionOnDeployInfo info)
 			: base(info)
