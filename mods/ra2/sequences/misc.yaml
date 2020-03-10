@@ -222,6 +222,12 @@ chrono:
 		Length: *
 		ZOffset: -2047
 
+chronobubble:
+	warpin: chronotg
+		Length: *
+	warpout: chronoar
+		Length: *
+
 discus:
 	idle:
 		Length: *

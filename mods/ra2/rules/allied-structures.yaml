@@ -992,6 +992,10 @@ gacsph:
 		SelectionCursor: chronosphere
 		TargetCursor: chronosphere
 		PauseOnCondition: lowpower
+	WithChronosphereOverlay:
+		Image: chronobubble
+		WarpInSequence: warpin
+		WarpOutSequence: warpout
 
 atesla:
 	Inherits: ^SupportBuilding
