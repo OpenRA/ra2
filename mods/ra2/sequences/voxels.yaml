@@ -157,9 +157,12 @@ shad:
 smcv:
 	idle:
 
-sref: #Has 3 charge states for the turret not possible yet
+sref:
 	idle:
 	turret: sreftur
+	turret-stage1: sreftur1
+	turret-stage2: sreftur2
+	turret-stage3: sreftur3
 
 stang:
 	idle:
