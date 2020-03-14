@@ -4,6 +4,10 @@ Metadata:
 	Version: {DEV_VERSION}
 	Author: the RA2 mod team
 
+ModCredits:
+	ModTabTitle: Red Alert 2
+	ModCreditsFile: ra2|CREDITS # TODO rename to AUTHORS as stated in the .cs files when OpenRA#17460 is available
+
 PackageFormats: Mix, AudioBag
 
 Packages:
