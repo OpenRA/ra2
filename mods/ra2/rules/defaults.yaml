@@ -329,6 +329,7 @@
 	-DrawLineToTarget:
 	OwnerLostAction:
 		Action: Kill
+		DeathTypes: BulletDeath
 	SelectionDecorations:
 		Palette: pips
 	Selectable:
@@ -558,6 +559,7 @@
 	Health:
 	OwnerLostAction:
 		Action: Kill
+		DeathTypes: BulletDeath
 	HitShape:
 		Type: Circle
 			Radius: 128
@@ -812,6 +814,7 @@
 	Inherits@6: ^ParachutableVehicle
 	OwnerLostAction:
 		Action: Kill
+		DeathTypes: BulletDeath
 	Mobile:
 		Voice: Move
 		TurnSpeed: 5
@@ -899,6 +902,7 @@
 	Inherits@1: ^ExistsInWorld
 	OwnerLostAction:
 		Action: Kill
+		DeathTypes: BulletDeath
 	Targetable@airborne:
 		TargetTypes: Air
 		RequiresCondition: airborne
@@ -1015,6 +1019,7 @@
 	Inherits@5: ^CrateStatModifiers
 	OwnerLostAction:
 		Action: Kill
+		DeathTypes: BulletDeath
 	Mobile:
 		Voice: Move
 		Locomotor: naval
