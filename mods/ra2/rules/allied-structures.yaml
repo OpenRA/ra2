@@ -971,10 +971,28 @@ gaweat:
 		Range: 5c0
 	Power:
 		Amount: -200
-	# Nothing to disable at the moment
-	#GrantConditionOnPowerState@LOWPOWER:
-	#	Condition: lowpower
-	#	ValidPowerStates: Low, Critical
+	GrantConditionOnPowerState@LOWPOWER:
+		Condition: lowpower
+		ValidPowerStates: Low, Critical
+	WeatherControlSupportPower@LightningStorm:
+		OrderName: WeatherControlDevice
+		ChargeInterval: 15000
+		Icon: lightningstorm
+		Description: Lightning Storm
+		LongDesc: Control the weather to destroy enemy forces.
+		InsufficientPowerSpeechNotification: WeathercontrolDeviceOffline
+		EndChargeSpeechNotification: LightningStormReady
+		SelectTargetSpeechNotification: SelectTarget
+		LaunchSpeechNotification: LightningStormCreated
+		LaunchSound: sweaintr.wav
+		IncomingSpeechNotification: WeathercontrolDeviceDetected
+		DisplayTimerStances: Ally, Neutral, Enemy
+		DisplayBeacon: true
+		DisplayRadarPing: true
+		Weapon: LightningStorm
+		PauseOnCondition: lowpower
+		Cursor: weatherstorm
+		PaletteEffectType: LightningStorm
 	SpawnSurvivors:
 		DeathTypes: ExplosionDeath, BulletDeath
 		Actors: e1, e1, e1, e1, e1

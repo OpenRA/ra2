@@ -171,3 +171,7 @@
 	FlashPaletteEffect@NUKE:
 		Type: Nuke
 		Length: 90
+	WeatherPaletteEffect@LIGHTNINGSTORM:
+		Type: LightningStorm
+		Color: 08112e50
+		Length: 300
