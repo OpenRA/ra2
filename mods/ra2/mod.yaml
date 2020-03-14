@@ -209,35 +209,35 @@ ChromeMetrics:
 Fonts:
 	Regular:
 		Font: common|FreeSans.ttf
-		Size:14
+		Size: 14
 		Ascender: 11
 	Bold:
 		Font: common|FreeSansBold.ttf
-		Size:14
+		Size: 14
 		Ascender: 11
 	Title:
 		Font: common|FreeSansBold.ttf
-		Size:32
+		Size: 32
 		Ascender: 24
 	BigBold:
 		Font: common|FreeSansBold.ttf
-		Size:24
+		Size: 24
 		Ascender: 18
 	MediumBold:
 		Font: common|FreeSansBold.ttf
-		Size:18
+		Size: 18
 		Ascender: 14
 	Small:
 		Font: common|FreeSans.ttf
-		Size:12
+		Size: 12
 		Ascender: 9
 	Tiny:
 		Font: common|FreeSans.ttf
-		Size:10
+		Size: 10
 		Ascender: 8
 	TinyBold:
 		Font: common|FreeSansBold.ttf
-		Size:10
+		Size: 10
 		Ascender: 8
 
 SupportsMapsFrom: ra2
