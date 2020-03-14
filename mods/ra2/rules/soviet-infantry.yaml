@@ -234,6 +234,8 @@ deso:
 		Range: 6c0
 	Armor:
 		Type: Plate
+	Targetable@RadiationImmunity:
+		TargetTypes: ImmuneToRadiation
 	-Crushable:
 	Passenger:
 		PipType: Red

@@ -70,6 +70,8 @@ cmin:
 		HP: 1000
 	Armor:
 		Type: Medium
+	Targetable@RadiationImmunity:
+		TargetTypes: ImmuneToRadiation
 	Mobile:
 		Speed: 60
 		TurnSpeed: 8
