@@ -947,6 +947,13 @@
 	Inherits@1: ^NeutralAircraft
 	Inherits@2: ^GainsExperience
 	WithTextControlGroupDecoration:
+	ChronoshiftableWithSpriteEffect:
+		Image: chrono
+		WarpInSequence: warpin
+		WarpOutSequence: warpout
+		ChronoshiftSound: schrmov.wav
+		ReturnToOrigin: false
+		RequiresCondition: !airborne
 
 ^Plane:
 	Inherits: ^Aircraft
