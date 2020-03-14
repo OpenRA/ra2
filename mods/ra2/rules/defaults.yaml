@@ -632,7 +632,7 @@
 	Repairable:
 		RepairActors: cahosp
 		Voice: Move
-	Chronoshiftable:
+	ChronoshiftableWithSpriteEffect:
 		ExplodeInstead: true
 	MapEditorData:
 		Categories: Infantry

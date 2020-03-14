@@ -624,3 +624,10 @@ cleg:
 		Voice: Attack
 	WithInfantryBody:
 		DefaultAttackSequence: shoot
+	ChronoshiftableWithSpriteEffect:
+		Image: chrono
+		WarpInSequence: warpin
+		WarpOutSequence: warpout
+		ChronoshiftSound: schrmov.wav
+		ReturnToOrigin: false
+		ExplodeInstead: false
