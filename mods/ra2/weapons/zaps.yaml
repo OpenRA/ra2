@@ -173,13 +173,13 @@ RadBeamWeapon:
 	Range: 6c0
 	ReloadDelay: 100
 	Report: idesat1a.wav
-	Projectile: LaserZap
-		Width: 20
-		Duration: 7
-		Color: B900FF00
+	Projectile: RadBeam
+		Amplitude: 476
+		WaveLength: 384
 	Warhead@1Dam: SpreadDamage
 		Spread: 42
 		Damage: 125
+		InvalidTargets: Structure, Wall, ImmuneToRadiation
 		Versus:
 			None: 100
 			Flak: 100

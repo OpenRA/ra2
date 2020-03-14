@@ -67,6 +67,8 @@ harv:
 		HP: 1000
 	Armor:
 		Type: Medium
+	Targetable@RadiationImmunity:
+		TargetTypes: ImmuneToRadiation
 	Armament@primary:
 		Weapon: 20mmrapid
 		LocalOffset: 256,0,1024
@@ -116,6 +118,8 @@ dron:
 		HP: 100
 	Armor:
 		Type: Drone
+	Targetable@RadiationImmunity:
+		TargetTypes: ImmuneToRadiation
 	RevealsShroud:
 		Range: 4c0
 	Passenger:
