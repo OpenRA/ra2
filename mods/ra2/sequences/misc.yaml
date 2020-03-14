@@ -213,6 +213,22 @@ explosion:
 	iron_fx: ironfx
 	chronosk: chronosk
 	psi_wave: ring1
+	weathercloud1: wccloud1
+		Offset: 0, -175
+		Tick: 80
+	weatherbolt1: wclbolt1
+		Tick: 80
+	weathercloud2: wccloud2
+		Offset: 0, -175
+		Tick: 80
+	weatherbolt2: wclbolt2
+		Tick: 80
+	weathercloud3: wccloud3
+		Offset: 0, -175
+		Tick: 80
+	weatherbolt3: wclbolt3
+		Tick: 80
+	weatherboltexplosion: explolb
 
 chrono:
 	warpin: warpin
@@ -404,6 +420,7 @@ icon:
 	abomb: nukeicon
 	paradrop: paraicon
 	airborne: aparicon
+	lightningstorm: bolticon
 
 atomic:
 	up: nkmslup
