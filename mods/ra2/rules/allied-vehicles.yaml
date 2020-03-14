@@ -371,7 +371,26 @@ sref:
 		EmptyWeapon: UnitExplodeSmall
 	RenderSprites:
 	RenderVoxels:
+	GrantConditionOnAttack@turretcharge1:
+		Condition: turretcharge
+		RevokeDelay: 5
+	GrantConditionOnAttack@turretcharge2:
+		Condition: turretcharge
+		RevokeDelay: 10
+	GrantConditionOnAttack@turretcharge3:
+		Condition: turretcharge
+		RevokeDelay: 15
 	WithVoxelTurret:
+		RequiresCondition: !turretcharge
+	WithVoxelTurret@stage1:
+		RequiresCondition: turretcharge == 1
+		Sequence: turret-stage1
+	WithVoxelTurret@stage2:
+		RequiresCondition: turretcharge == 2
+		Sequence: turret-stage2
+	WithVoxelTurret@stage3:
+		RequiresCondition: turretcharge == 3
+		Sequence: turret-stage3
 	WithVoxelBody:
 	Voiced:
 		VoiceSet: AlliedVehicleVoice
