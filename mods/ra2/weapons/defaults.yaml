@@ -148,7 +148,7 @@
 	Range: 3c0
 	ReloadDelay: 60
 	Report: itesatta.wav
-	Projectile: TeslaZap
+	Projectile: ElectricBolt
 	Warhead@1Dam: SpreadDamage
 		Spread: 120
 		Damage: 50

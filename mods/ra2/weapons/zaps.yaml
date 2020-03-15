@@ -19,8 +19,8 @@ AssaultBolt:
 	Range: 2c0
 	Report: iteschaa.wav
 	ValidTargets: TeslaBoost
-	Projectile: TeslaZap
-		Image: litningupg
+	Projectile: ElectricBolt
+		Colors: FFFF54,FFFF54,FFFFFF
 	Warhead@charge: GrantExternalCondition
 		Range: 42
 		Duration: 75
@@ -41,8 +41,8 @@ OPCoilBolt:
 	Inherits: CoilBolt
 	Range: 8c512
 	Report: btesat2a.wav
-	Projectile: TeslaZap
-		Image: litningupg
+	Projectile: ElectricBolt
+		Colors: FFFF54,FFFF54,FFFFFF
 	Warhead@1Dam: SpreadDamage
 		Damage: 300
 
