@@ -81,9 +81,9 @@
 		Filename: tscameo.pal
 		AllowModifiers: false
 		ShadowIndex: 242
-	PaletteFromFile@cameo-chevron:
+	PaletteFromPng@cameo-chevron:
 		Name: cameo-chevron
-		Filename: cameo-chevron.pal
+		Filename: cameo-chevron.png
 		AllowModifiers: false
 	PaletteFromFile@pips:
 		Name: pips

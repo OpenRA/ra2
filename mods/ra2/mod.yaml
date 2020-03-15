@@ -248,7 +248,7 @@ SupportsMapsFrom: ra2
 
 SoundFormats: Aud, Wav
 
-SpriteFormats: ShpTS, TmpTS, ShpTD
+SpriteFormats: ShpTS, TmpTS, ShpTD, PngSheet
 
 SpriteSequenceFormat: TilesetSpecificSpriteSequence
 	TilesetExtensions:

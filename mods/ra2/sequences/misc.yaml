@@ -113,9 +113,8 @@ parach:
 		Length: 29
 
 cameo-chevron:
-	idle:
-		Length: *
-		BlendMode: Additive
+	idle: cameo-chevron.png
+		AddExtension: false
 
 pips:
 	medic:
