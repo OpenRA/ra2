@@ -60,6 +60,19 @@ dog:
 		HP: 100
 	Mobile:
 		Speed: 120
+	-GainsExperience:
+	-FirepowerMultiplier@VETERAN:
+	-FirepowerMultiplier@ELITE:
+	-DamageMultiplier@VETERAN:
+	-DamageMultiplier@ELITE:
+	-SpeedMultiplier@VETERAN:
+	-SpeedMultiplier@ELITE:
+	-ReloadDelayMultiplier@VETERAN:
+	-ReloadDelayMultiplier@ELITE:
+	-SelfHealing@ELITE:
+	-InaccuracyMultiplier@ELITE:
+	-WithDecoration@VETERAN:
+	-WithDecoration@ELITE:
 	Passenger:
 		PipType: Yellow
 	RevealsShroud:
@@ -87,8 +100,6 @@ dog:
 		Range: 5c0
 	Voiced:
 		VoiceSet: DogVoice
-	ProducibleWithLevel:
-		Prerequisites: barracks.infiltrated
 	-TakeCover:
 	QuantizeFacingsFromSequence:
 		Sequence: stand
@@ -100,6 +111,7 @@ dog:
 			PsychicDeath: 1
 			ElectroDeath: 2
 	-WithDeathAnimation@effect:
+	-SpawnActorOnDeath@flames:
 
 e1:
 	Inherits@1: ^Infantry
