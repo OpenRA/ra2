@@ -285,6 +285,7 @@ gawall:
 
 gapill:
 	Inherits: ^Structure
+	Inherits@Muzzle: ^WithMachineGunMuzzle
 	Defaults:
 		Offset: 0, -15
 	idle: ggpill
@@ -292,30 +293,6 @@ gapill:
 	critical-idle: ggpill
 		Start: 2
 		ShadowStart: 5
-	muzzle0: mgun-n
-		Length: *
-		UseTilesetCode: false
-	muzzle1: mgun-nw
-		Length: *
-		UseTilesetCode: false
-	muzzle2: mgun-w
-		Length: *
-		UseTilesetCode: false
-	muzzle3: mgun-sw
-		Length: *
-		UseTilesetCode: false
-	muzzle4: mgun-s
-		Length: *
-		UseTilesetCode: false
-	muzzle5: mgun-se
-		Length: *
-		UseTilesetCode: false
-	muzzle6: mgun-e
-		Length: *
-		UseTilesetCode: false
-	muzzle7: mgun-ne
-		Length: *
-		UseTilesetCode: false
 	make: gtpillmk
 		Length: 8
 		ShadowStart: 8

@@ -132,9 +132,12 @@ hyd:
 	Armament@primary:
 		Weapon: FlakTrackGun
 		LocalOffset: 256,0,1408
+		MuzzleSequence: muzzle
 	Armament@secondary:
 		Weapon: FlakWeapon
 		LocalOffset: 256,0,1408
+		MuzzleSequence: muzzle
+	WithMuzzleOverlay:
 	Explodes:
 		Weapon: UnitExplode
 		EmptyWeapon: UnitExplode

@@ -385,6 +385,7 @@ nawall:
 
 nalasr:
 	Inherits: ^Structure
+	Inherits@Muzzle: ^WithMachineGunMuzzle
 	Defaults:
 		Offset: 0, -20
 	idle: nalasr
@@ -433,6 +434,7 @@ tesla:
 
 naflak:
 	Inherits: ^Structure
+	Inherits@Muzzle: ^WithFlakMuzzle
 	Defaults:
 		Offset: 0, -15
 		ZOffset: -512

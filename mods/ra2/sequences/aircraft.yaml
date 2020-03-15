@@ -21,6 +21,7 @@ pdplane:
 
 shad:
 	Inherits@MC: ^MindControllable
+	Inherits@Muzzle: ^WithMachineGunMuzzle
 	icon: shadicon
 
 zep:
