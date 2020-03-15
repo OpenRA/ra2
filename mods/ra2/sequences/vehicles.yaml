@@ -20,6 +20,7 @@ carrier:
 
 cdest:
 	Inherits@MC: ^MindControllable
+	Inherits@Muzzle: ^WithCannonMuzzle
 	icon: xxicon
 
 cona:
@@ -45,6 +46,7 @@ cruise:
 
 dest:
 	Inherits@MC: ^MindControllable
+	Inherits@Muzzle: ^WithCannonMuzzle
 	icon: desticon
 
 dred:
@@ -86,6 +88,8 @@ fv:
 
 mgtk:
 	Inherits@MC: ^MindControllable
+	muzzle: vtmuzzle
+		Length: *
 	icon: rtnkicon
 
 gtgcan:
@@ -93,9 +97,11 @@ gtgcan:
 
 mtnk:
 	Inherits@MC: ^MindControllable
+	Inherits@Muzzle: ^WithCannonMuzzle
 	icon: gtnkicon
 
 harv:
+	Inherits@Muzzle: ^WithFlakMuzzle
 	harvest: oregath
 		Length: 15
 		Facings: 8
@@ -103,10 +109,12 @@ harv:
 
 htk:
 	Inherits@MC: ^MindControllable
+	Inherits@Muzzle: ^WithFlakMuzzle
 	icon: htkicon
 
 htnk:
 	Inherits@MC: ^MindControllable
+	Inherits@Muzzle: ^WithCannonMuzzle
 	icon: htnkicon
 
 howi:
@@ -115,6 +123,7 @@ howi:
 
 hyd:
 	Inherits@MC: ^MindControllable
+	Inherits@Muzzle: ^WithFlakMuzzle
 	icon: hovricon
 
 lcrf:
@@ -131,6 +140,9 @@ ltnk:
 
 apoc:
 	Inherits@MC: ^MindControllable
+	Inherits@Muzzle: ^WithCannonMuzzle
+	muzzle: apmuzzle
+		Length: *
 	icon: mtnkicon
 
 pick:
@@ -179,6 +191,7 @@ taxi:
 
 tnkd:
 	Inherits@MC: ^MindControllable
+	Inherits@Muzzle: ^WithCannonMuzzle
 	icon: tnkdicon
 
 tractor:

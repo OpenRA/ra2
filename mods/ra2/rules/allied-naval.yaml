@@ -66,16 +66,19 @@ dest:
 		Bounds: 80, 80, 0, -6
 	Armament@primary:
 		Weapon: 155mm
-		LocalOffset: 1024,0,768
 		FireDelay: 2
+		LocalOffset: 1152,0,800
+		MuzzleSequence: muzzle
 		RequiresCondition: !rank-elite
 	Armament@elite:
 		Weapon: 155mmE
-		LocalOffset: 1024,0,768
 		FireDelay: 2
+		LocalOffset: 1152,0,800
+		MuzzleSequence: muzzle-2
 		RequiresCondition: rank-elite
 	AttackFrontal:
 		Voice: Attack
+	WithMuzzleOverlay:
 	DetectCloaked:
 		CloakTypes: Underwater
 		Range: 4c0

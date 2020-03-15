@@ -71,14 +71,17 @@ harv:
 		TargetTypes: ImmuneToRadiation
 	Armament@primary:
 		Weapon: 20mmrapid
-		LocalOffset: 256,0,1024
+		LocalOffset: 384,0,1024
+		MuzzleSequence: muzzle
 		RequiresCondition: !rank-elite
 	Armament@elite:
 		Weapon: 20mmrapidE
-		LocalOffset: 256,0,1024
+		LocalOffset: 384,0,1024
+		MuzzleSequence: muzzle
 		RequiresCondition: rank-elite
 	AttackTurreted:
 		Voice: Attack
+	WithMuzzleOverlay:
 	AutoTarget:
 	Turreted:
 		TurnSpeed: 10
@@ -183,8 +186,13 @@ htk:
 	AutoTarget:
 	Armament@primary:
 		Weapon: FlakTrackGun
+		LocalOffset: 256,0,1536
+		MuzzleSequence: muzzle
 	Armament@secondary:
 		Weapon: FlakTrackAAGun
+		LocalOffset: 256,0,1536
+		MuzzleSequence: muzzle
+	WithMuzzleOverlay:
 	Turreted:
 		TurnSpeed: 15
 		Offset: -280,-3,0
@@ -225,14 +233,17 @@ htnk:
 		TurnSpeed: 5
 	Armament@primary:
 		Weapon: 120mm
-		LocalOffset: 640,0,384
+		LocalOffset: 768,0,512
+		MuzzleSequence: muzzle
 		RequiresCondition: !rank-elite
 	Armament@elite:
 		Weapon: 120mmE
-		LocalOffset: 640,0,384
+		LocalOffset: 768,0,512
+		MuzzleSequence: muzzle-2
 		RequiresCondition: rank-elite
 	AttackTurreted:
 		Voice: Attack
+	WithMuzzleOverlay:
 	AutoTarget:
 	RenderSprites:
 	Selectable:
@@ -275,17 +286,20 @@ apoc:
 		TurnSpeed: 5
 	Armament@primary:
 		Weapon: 120mmx
-		LocalOffset: 640,100,512, 640,-100,512
+		LocalOffset: 768,100,640, 768,-100,640
+		MuzzleSequence: muzzle
 		RequiresCondition: !rank-elite
 	Armament@elite:
 		Weapon: 120mmxE
-		LocalOffset: 640,100,512, 640,-100,512
+		LocalOffset: 768,100,640, 768,-100,640
+		MuzzleSequence: muzzle-2
 		RequiresCondition: rank-elite
 	Armament@antiair:
 		Weapon: MammothTusk
 		LocalOffset: 80,200,768, 80,-200,768
 	AttackTurreted:
 		Voice: Attack
+	WithMuzzleOverlay:
 	AutoTarget:
 	RenderSprites:
 	Selectable:

@@ -934,6 +934,9 @@ naflak:
 		RequiresCondition: !build-incomplete
 	Armament:
 		Weapon: FlakWeapon
+		LocalOffset: 640,0,1536
+		MuzzleSequence: muzzle
+	WithMuzzleOverlay:
 	BodyOrientation:
 		QuantizedFacings: 16
 	RenderVoxels:
@@ -1039,6 +1042,10 @@ nalasr:
 		RequiresCondition: !build-incomplete
 	Armament:
 		Weapon: vulcan
+		LocalOffset: 544,128,480, 544,-128,480
+		MuzzleSequence: muzzle
+		MuzzleSplitFacings: 8
+	WithMuzzleOverlay:
 	BodyOrientation:
 		QuantizedFacings: 16
 	RenderVoxels:

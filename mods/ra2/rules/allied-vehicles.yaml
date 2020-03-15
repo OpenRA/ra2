@@ -117,14 +117,17 @@ mtnk:
 		TurnSpeed: 5
 	Armament@primary:
 		Weapon: 105mm
-		LocalOffset: 640,0,512
+		LocalOffset: 832,0,512
+		MuzzleSequence: muzzle
 		RequiresCondition: !rank-elite
 	Armament@elite:
 		Weapon: 105mmE
-		LocalOffset: 640,0,512
+		LocalOffset: 832,0,512
+		MuzzleSequence: muzzle-2
 		RequiresCondition: rank-elite
 	AttackTurreted:
 		Voice: Attack
+	WithMuzzleOverlay:
 	AutoTarget:
 	RenderSprites:
 	Selectable:
@@ -164,14 +167,17 @@ tnkd:
 		Range: 8c0
 	Armament@primary:
 		Weapon: sabot
-		LocalOffset: 704,0,768
+		LocalOffset: 800,0,768
+		MuzzleSequence: muzzle
 		RequiresCondition: !rank-elite
 	Armament@elite:
 		Weapon: sabotE
-		LocalOffset: 704,0,768
+		LocalOffset: 800,0,768
+		MuzzleSequence: muzzle-2
 		RequiresCondition: rank-elite
 	AttackFrontal:
 		Voice: Attack
+	WithMuzzleOverlay:
 	AutoTarget:
 	RenderSprites:
 	Selectable:
@@ -426,13 +432,16 @@ mgtk:
 	Armament@primary:
 		Weapon: MirageGun
 		LocalOffset: 640,0,640
+		MuzzleSequence: muzzle
 		RequiresCondition: !rank-elite
 	Armament@elite:
 		Weapon: MirageGunE
 		LocalOffset: 640,0,640
+		MuzzleSequence: muzzle
 		RequiresCondition: rank-elite
 	AttackFrontal:
 		Voice: Attack
+	WithMuzzleOverlay:
 	AutoTarget:
 		AllowMovement: false
 	Explodes:

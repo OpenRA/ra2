@@ -39,6 +39,7 @@ e2:
 flakt:
 	Inherits: ^ArmedInfantry
 	Inherits@MC: ^MindControllable
+	Inherits@Muzzle: ^WithFlakMuzzle
 	run:
 		Tick: 120
 	die1:
