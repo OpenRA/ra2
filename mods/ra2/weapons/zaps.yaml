@@ -212,8 +212,10 @@ NeutronRifle:
 	ReloadDelay: 120
 	Range: 5c0
 	Report: ichratta.wav
-	Projectile: TeslaZap
-		Palette: highlight
+	Projectile: RadBeam
+		Amplitude: 476
+		WaveLength: 384
+		Color: 80C8FF
 	Warhead@Damage: SpreadDamage
 		Spread: 64
 		Damage: 8
