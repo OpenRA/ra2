@@ -3,9 +3,10 @@ DogJaw:
 	ReloadDelay: 10
 	Range: 3c0
 	Report: idogatta.wav, idogatca.wav
-	Warhead@1Dam: SpreadDamage
-		Spread: 213
-		Damage: 100
+	TargetActorCenter: true
+	Projectile: InstantHit
+	Warhead@1Dam: TargetDamage
+		Damage: 200
 		ValidTargets: Infantry
 		Versus:
 			None: 100

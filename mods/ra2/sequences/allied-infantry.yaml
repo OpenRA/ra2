@@ -17,11 +17,11 @@ adog:
 		Length: 14
 	-die4:
 	-die6:
-	jump:
+	standup: # TODO unused
 		Start: 166
 		Length: 6
 		Facings: 8
-	shoot: adogp
+	jump: adogp
 		Length: 1
 		Facings: 32
 	icon: adogicon

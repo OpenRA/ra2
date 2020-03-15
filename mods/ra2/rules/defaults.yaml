@@ -610,6 +610,7 @@
 		Types: Infantry
 	Crushable:
 		CrushSound: igensqua.wav
+	EdibleByLeap:
 	Guard:
 		Voice: Attack
 	Guardable:

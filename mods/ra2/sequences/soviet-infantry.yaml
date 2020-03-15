@@ -1,6 +1,6 @@
 dog:
 	Inherits: adog
-	shoot: dogp
+	jump: dogp
 		Length: 1
 		Facings: 64
 	icon: dogicon
