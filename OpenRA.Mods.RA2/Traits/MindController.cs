@@ -20,8 +20,8 @@ namespace OpenRA.Mods.RA2.Traits
 	[Desc("This actor can mind control other actors.")]
 	public class MindControllerInfo : PausableConditionalTraitInfo, Requires<ArmamentInfo>, Requires<HealthInfo>
 	{
-		[Desc("Name of the armament used for mindcontrol targeting and activation.")]
-		public readonly string Name = "primary";
+		[Desc("Name of the armaments that grant this condition.")]
+		public readonly HashSet<string> ArmamentNames = new HashSet<string>() { "primary" };
 
 		[Desc("Up to how many units can this unit control?",
 			"Use 0 or negative numbers for infinite.")]
@@ -128,7 +128,7 @@ namespace OpenRA.Mods.RA2.Traits
 			if (IsTraitDisabled || IsTraitPaused)
 				return;
 
-			if (Info.Name != a.Info.Name)
+			if (!Info.ArmamentNames.Contains(a.Info.Name))
 				return;
 
 			if (target.Actor == null || !target.IsValidFor(self))
