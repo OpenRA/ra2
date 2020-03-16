@@ -243,6 +243,7 @@ deso:
 		Type: Plate
 	Targetable@RadiationImmunity:
 		TargetTypes: ImmuneToRadiation
+	-DamagedByTintedCells:
 	-Crushable:
 	Passenger:
 		PipType: Red
@@ -256,6 +257,24 @@ deso:
 		Voice: Attack
 	WithInfantryBody:
 		DefaultAttackSequence: shoot
+		RequiresCondition: undeployed
+	PeriodicExplosion:
+		Weapon: RadEruptionWeapon
+		RequiresCondition: deployed
+	GrantConditionOnDeploy:
+		DeployedCondition: deployed
+		UndeployedCondition: undeployed
+		CanDeployOnRamps: true
+		UndeployOnMove: true
+		Facing: 92
+		Voice: Deploy
+	WithSpriteBody@DEPLOYED:
+		Sequence: deployed
+		RequiresCondition: !undeployed
+		Name: deployed
+	WithMakeAnimation:
+		Sequence: deploy
+		BodyNames: deployed
 	Voiced:
 		VoiceSet: DesolatorVoice
 	ProducibleWithLevel:
