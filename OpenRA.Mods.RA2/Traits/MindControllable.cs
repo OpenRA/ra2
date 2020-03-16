@@ -1,6 +1,6 @@
 #region Copyright & License Information
 /*
- * Copyright 2007-2019 The OpenRA Developers (see AUTHORS)
+ * Copyright 2007-2020 The OpenRA Developers (see AUTHORS)
  * This file is part of OpenRA, which is free software. It is made
  * available to you under the terms of the GNU General Public License
  * as published by the Free Software Foundation, either version 3 of
@@ -25,21 +25,22 @@ namespace OpenRA.Mods.RA2.Traits
 		[Desc("The sound played when the mindcontrol is revoked.")]
 		public readonly string[] RevokeControlSounds = { };
 
+		[Desc("Map player to transfer this actor to if the owner lost the game.")]
+		public readonly string FallbackOwner = "Creeps";
+
 		public override object Create(ActorInitializer init) { return new MindControllable(init.Self, this); }
 	}
 
 	public class MindControllable : PausableConditionalTrait<MindControllableInfo>, INotifyKilled, INotifyActorDisposing, INotifyCreated, INotifyOwnerChanged
 	{
 		readonly MindControllableInfo info;
-
-		Actor master;
 		Player creatorOwner;
 		bool controlChanging;
 
 		ConditionManager conditionManager;
 		int token = ConditionManager.InvalidConditionToken;
 
-		public Actor Master { get { return master; } }
+		public Actor Master { get; private set; }
 
 		public MindControllable(Actor self, MindControllableInfo info)
 			: base(info)
@@ -56,7 +57,7 @@ namespace OpenRA.Mods.RA2.Traits
 		{
 			self.CancelActivity();
 
-			if (this.master == null)
+			if (Master == null)
 				creatorOwner = self.Owner;
 
 			controlChanging = true;
@@ -64,8 +65,8 @@ namespace OpenRA.Mods.RA2.Traits
 			var oldOwner = self.Owner;
 			self.ChangeOwner(master.Owner);
 
-			UnlinkMaster(self, this.master);
-			this.master = master;
+			UnlinkMaster(self, Master);
+			Master = master;
 
 			if (conditionManager != null && token == ConditionManager.InvalidConditionToken && !string.IsNullOrEmpty(Info.Condition))
 				token = conditionManager.GrantCondition(self, Info.Condition);
@@ -89,7 +90,7 @@ namespace OpenRA.Mods.RA2.Traits
 				master.Trait<MindController>().UnlinkSlave(master, self);
 			});
 
-			this.master = null;
+			Master = null;
 
 			if (conditionManager != null && token != ConditionManager.InvalidConditionToken)
 				token = conditionManager.RevokeCondition(self, token);
@@ -102,11 +103,11 @@ namespace OpenRA.Mods.RA2.Traits
 			controlChanging = true;
 
 			if (creatorOwner.WinState == WinState.Lost)
-				self.ChangeOwner(self.World.WorldActor.Owner);
+				self.ChangeOwner(self.World.Players.First(p => p.InternalName == info.FallbackOwner));
 			else
 				self.ChangeOwner(creatorOwner);
 
-			UnlinkMaster(self, master);
+			UnlinkMaster(self, Master);
 
 			if (info.RevokeControlSounds.Any())
 				Game.Sound.Play(SoundType.World, info.RevokeControlSounds.Random(self.World.SharedRandom), self.CenterPosition);
@@ -116,23 +117,23 @@ namespace OpenRA.Mods.RA2.Traits
 
 		void INotifyKilled.Killed(Actor self, AttackInfo e)
 		{
-			UnlinkMaster(self, master);
+			UnlinkMaster(self, Master);
 		}
 
 		void INotifyActorDisposing.Disposing(Actor self)
 		{
-			UnlinkMaster(self, master);
+			UnlinkMaster(self, Master);
 		}
 
 		void INotifyOwnerChanged.OnOwnerChanged(Actor self, Player oldOwner, Player newOwner)
 		{
 			if (!controlChanging)
-				UnlinkMaster(self, master);
+				UnlinkMaster(self, Master);
 		}
 
 		protected override void TraitDisabled(Actor self)
 		{
-			if (master != null)
+			if (Master != null)
 				RevokeMindControl(self);
 		}
 	}
