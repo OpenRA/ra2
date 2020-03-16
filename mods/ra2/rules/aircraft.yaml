@@ -40,6 +40,7 @@ shad:
 		AltitudeVelocity: 120
 		CruisingCondition: cruising
 		IdleBehavior: Land
+		Crushes: crate
 	RenderSprites:
 	WithVoxelHelicopterBody:
 		TickRate: 1
