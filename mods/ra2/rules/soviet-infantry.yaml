@@ -134,9 +134,11 @@ shk:
 	Armament@primary:
 		Weapon: ElectricBolt
 		RequiresCondition: !rank-elite
+		LocalOffset: 320,128,1024
 	Armament@elite:
 		Weapon: ElectricBoltE
 		RequiresCondition: rank-elite
+		LocalOffset: 320,128,1024
 	Armament@charge:
 		Weapon: AssaultBolt
 		LocalOffset: 320,128,1024
