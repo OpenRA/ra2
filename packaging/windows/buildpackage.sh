@@ -1,6 +1,7 @@
 #!/bin/bash
 set -e
 command -v makensis >/dev/null 2>&1 || { echo >&2 "Windows packaging requires makensis."; exit 1; }
+command -v convert >/dev/null 2>&1 || { echo >&2 "Windows packaging requires ImageMagick."; exit 1; }
 
 require_variables() {
 	missing=""
@@ -21,6 +22,7 @@ fi
 
 PACKAGING_DIR=$(python -c "import os; print(os.path.dirname(os.path.realpath('$0')))")
 TEMPLATE_ROOT="${PACKAGING_DIR}/../../"
+ARTWORK_DIR="${PACKAGING_DIR}/../artwork/"
 
 # shellcheck source=mod.config
 . "${TEMPLATE_ROOT}/mod.config"
@@ -107,7 +109,8 @@ function build_platform()
 
 	popd > /dev/null
 
-	cp "mod.ico" "${BUILTDIR}/${MOD_ID}.ico"
+	# Create multi-resolution icon
+	convert "${ARTWORK_DIR}/icon_16x16.png" "${ARTWORK_DIR}/icon_24x24.png" "${ARTWORK_DIR}/icon_32x32.png" "${ARTWORK_DIR}/icon_48x48.png" "${ARTWORK_DIR}/icon_256x256.png" "${BUILTDIR}/${MOD_ID}.ico"
 	cp "${SRC_DIR}/OpenRA.Game.exe.config" "${BUILTDIR}"
 
 	# We need to set the loadFromRemoteSources flag for the launcher, but only for the "portable" zip package.

@@ -1,15 +1,23 @@
 # Travis-CI Build for OpenRA/ra2
 # see travis-ci.org for details
 
-dist: xenial
 language: csharp
 mono: 6.4.0
+
+jobs:
+  include:
+    - os: linux
+      dist: xenial
+    - os: osx
+      if: tag IS present
+      osx_image: xcode10
 
 addons:
   apt:
     packages:
     - dpkg
     - liblua5.1-0
+    - imagemagick
 
 script:
  - make
@@ -20,13 +28,13 @@ script:
      make test || travis_terminate 1;
      make check || travis_terminate 1;
    fi;
-   if [ "${TRAVIS_TEST_PACKAGING}" == "True" ] || [ -n "${TRAVIS_TAG}" ]; then
-     wget http://mirrors.kernel.org/ubuntu/pool/universe/n/nsis/nsis-common_3.03-2_all.deb || travis_terminate 1;
-     wget http://mirrors.kernel.org/ubuntu/pool/universe/n/nsis/nsis_3.03-2_amd64.deb || travis_terminate 1;
-     sudo dpkg -i nsis-common_3.03-2_all.deb || travis_terminate 1;
-     sudo dpkg -i nsis_3.03-2_amd64.deb || travis_terminate 1;
+   if [ "$TRAVIS_OS_NAME" == "linux" ] && ( [ "${TRAVIS_TEST_PACKAGING}" == "True" ] || [ -n "${TRAVIS_TAG}" ] ); then
+     wget https://mirrors.edge.kernel.org/ubuntu/pool/universe/n/nsis/nsis-common_3.04-1_all.deb || travis_terminate 1;
+     wget https://mirrors.edge.kernel.org/ubuntu/pool/universe/n/nsis/nsis_3.04-1_amd64.deb || travis_terminate 1;
+     sudo dpkg -i nsis-common_3.04-1_all.deb || travis_terminate 1;
+     sudo dpkg -i nsis_3.04-1_amd64.deb || travis_terminate 1;
    fi
-   if [ "${TRAVIS_TEST_PACKAGING}" == "True" ] && [ -z "${TRAVIS_TAG}" ]; then
+   if [ "$TRAVIS_OS_NAME" == "linux" ] && [ "${TRAVIS_TEST_PACKAGING}" == "True" ] && [ -z "${TRAVIS_TAG}" ]; then
      make check-packaging-scripts && ./packaging/package-all.sh test-0 || travis_terminate 1;
    fi
 
@@ -37,13 +45,8 @@ before_deploy:
 deploy:
   provider: releases
   api_key: ${GH_DEPLOY_API_KEY}
-  file:
-    - build/${PACKAGING_INSTALLER_NAME}-${TRAVIS_TAG}-x86.exe
-    - build/${PACKAGING_INSTALLER_NAME}-${TRAVIS_TAG}-x64.exe
-    - build/${PACKAGING_INSTALLER_NAME}-${TRAVIS_TAG}-x86-winportable.zip
-    - build/${PACKAGING_INSTALLER_NAME}-${TRAVIS_TAG}-x64-winportable.zip
-    - build/${PACKAGING_INSTALLER_NAME}-${TRAVIS_TAG}-macOS.zip
-    - build/${PACKAGING_INSTALLER_NAME}-${TRAVIS_TAG}-x86_64.AppImage
+  file_glob: true
+  file: build/*
   skip_cleanup: true
   on:
     tags: true
