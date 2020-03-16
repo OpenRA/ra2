@@ -58,7 +58,10 @@ MindControl:
 	ReloadDelay: 200
 	Range: 7c0
 	ValidTargets: MindControl
-	Projectile: InstantHit
+	Projectile: ArcLaserZap
+		UsePlayerColor: true
+		Width: 63
+		Angle: 120
 	Warhead@1Dam: TargetDamage
 		Damage: 0
 
