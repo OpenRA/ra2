@@ -272,6 +272,10 @@ smallsmoke:
 	idle: sgrysmk1
 		Length: *
 
+nukesmoke:
+	idle: nukepuff
+		Length: *
+
 largefire:
 	idle: fire01
 		Length: *
