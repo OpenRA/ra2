@@ -207,6 +207,15 @@ CRRadBeamWeapon:
 	Warhead@1Dam: SpreadDamage
 		Damage: 175
 
+RadEruptionWeapon:
+	ReloadDelay: 60
+	Report: idesat2a.wav
+	Warhead@1Radiation: CreateTintedCells
+		Spread: 2c0
+		Falloff: 100, 75, 50, 25, 0
+		Level: 250
+		MaxLevel: 500
+
 NeutronRifle:
 	ValidTargets: Ground
 	ReloadDelay: 120

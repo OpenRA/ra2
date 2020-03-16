@@ -570,6 +570,8 @@ jumpjet:
 	Targetable@ground:
 		TargetTypes: Ground, Infantry, DetonateAttack, Disguise
 		RequiresCondition: !airborne
+	DamagedByTintedCells:
+		RequiresCondition: !airborne
 	-Passenger:
 	SpawnActorOnDeath:
 		Actor: jumpjet.husk

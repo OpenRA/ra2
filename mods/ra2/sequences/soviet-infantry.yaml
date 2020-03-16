@@ -100,13 +100,13 @@ deso:
 	run:
 		Tick: 120
 	deploy:
-		Start: 199
+		Start: 299
 		Length: 15
 		Tick: 80
 	deployed:
-		Start: 198
-	deployed-fire:
-		Start: 192
+		Start: 292
+	deployed-shoot:
+		Start: 292
 		Length: 7
 		Tick: 80
 	cheer:

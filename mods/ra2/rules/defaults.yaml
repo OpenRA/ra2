@@ -550,12 +550,19 @@
 		DamagedSounds: gblacrua.wav, gblacrub.wav
 		DestroyedSounds: gblacrua.wav, gblacrub.wav
 
+^DamagedByRadiation:
+	DamagedByTintedCells:
+		Damage: 200
+		DamageLevel: 1
+		DamageTypes: RadiationDeath, DefaultDeath
+
 ^Infantry:
 	Inherits@1: ^ExistsInWorld
 	Inherits@2: ^SpriteActor
 	Inherits@3: ^GainsExperience
 	Inherits@4: ^ChronoDisable
 	Inherits@5: ^CrateStatModifiers
+	Inherits@6: ^DamagedByRadiation
 	Health:
 	OwnerLostAction:
 		Action: Kill

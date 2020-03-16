@@ -244,6 +244,9 @@ World:
 	BridgeLayer:
 	WarheadDebugOverlay:
 	CustomTerrainDebugOverlay:
+	TintedCellsLayer@radiation:
+		Darkest: 32
+		Brightest: 128
 	SpawnMapActors:
 	MapBuildRadius:
 		AllyBuildRadiusCheckboxDisplayOrder: 4
