@@ -873,7 +873,7 @@ namisl:
 		LaunchSound: snuklaun.wav
 		MissileWeapon: atomic
 		MissilePalette: player
-		MissileDelay: 35
+		MissileDelay: 40
 		SpawnOffset: 0,0,-1c0
 		IsPlayerPalette: true
 		DisplayTimerStances: Ally, Neutral, Enemy
@@ -886,6 +886,9 @@ namisl:
 		PauseOnCondition: lowpower
 	WithNukeLaunchAnimation:
 		RequiresCondition: !build-incomplete
+	WithNuclearMissileSmokeOverlay:
+		Delay: 40
+		Palette: effect50alpha
 	SpawnSurvivors:
 		DeathTypes: ExplosionDeath, BulletDeath
 		Actors: e2, e2, e2, e2, e2, e2, e2

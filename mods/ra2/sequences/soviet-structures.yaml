@@ -351,6 +351,9 @@ namisl:
 		Length: 16
 		ShadowStart: 48
 		Tick: 120
+	smoke: nuketo
+		Length: *
+		Tick: 120
 	make: ntmislmk
 		UseTilesetCode: true
 		Length: 26
