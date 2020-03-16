@@ -204,6 +204,11 @@ NukePayload:
 		Explosions: nuke_explosion
 		ImpactSounds: snukexpl.wav
 		ValidTargets: Ground, Water, Air
+	Warhead@4Radiation: CreateTintedCells
+		Spread: 2c512
+		Falloff: 100, 75, 50, 25, 0
+		Level: 750
+		MaxLevel: 2500
 
 atomic:
 	Inherits: NukePayload
