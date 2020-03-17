@@ -308,8 +308,8 @@ gaairc:
 		Sequence: idle-mid
 		PauseOnCondition: lowpower
 		RequiresCondition: !build-incomplete
-	WithIdleOverlay@dish:
-		Sequence: idle-dish
+	WithIdleOverlay@lights:
+		Sequence: idle-lights
 		PauseOnCondition: lowpower
 		RequiresCondition: !build-incomplete
 	Targetable:

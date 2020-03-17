@@ -1,7 +1,7 @@
 caoild:
 	Inherits: ^TechStructure
 	Defaults:
-		Offset: 0, -30
+		Offset: 0, -30, 30
 	idle-pump: caoild_a
 		Length: 32
 		ShadowStart: 64
@@ -15,7 +15,7 @@ caoild:
 caairp:
 	Inherits: ^TechStructure
 	Defaults:
-		Offset: 7, -40
+		Offset: 7, -40, 50
 	idle-overlay: caairp_a
 		Length: 10
 		Tick: 400
@@ -29,7 +29,7 @@ caairp:
 cahosp:
 	Inherits: ^TechStructure
 	Defaults:
-		Offset: -30, -75
+		Offset: -30, -75, 100
 	idle-overlay: cahosp_a
 		Length: 2
 		Tick: 400
@@ -44,7 +44,7 @@ cahosp:
 caoutp:
 	Inherits: ^TechStructure
 	Defaults:
-		Offset: -15, -50
+		Offset: -15, -50, 65
 	idle-tower:
 		ShadowStart: -1
 	damaged-idle-tower:
@@ -70,8 +70,16 @@ caoutp:
 		Tick: 200
 		ShadowStart: 30
 	bib: caoutpbb
+		ZOffset: -1c511
+		Offset: -15, -50, 15
+		ZRamp: 1
+		-DepthSprite:
 	damaged-bib: caoutpbb
 		Start: 1
+		ZOffset: -1c511
+		Offset: -15, -50, 15
+		ZRamp: 1
+		-DepthSprite:
 	flag: caoutp_f
 	rubble:
 		UseTilesetCode: false

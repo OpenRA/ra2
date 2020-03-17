@@ -26,28 +26,28 @@ cakrmw:
 cawash01:
 	Inherits: ^CivStructure
 	Defaults: cgwash01
-		Offset: 0,-60
+		Offset: 0, -60, 60
 		UseTilesetCode: false
 
 cawash03:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: -15,-52
+		Offset: -15, -52, 52
 
 cawash04:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-60
+		Offset: 0, -60, 60
 
 cawash05:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: -30,-45
+		Offset: -30, -45, 45
 
 cawash06:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-60
+		Offset: 0, -60, 60
 		UseTilesetCode: false
 	idle: cgwash06_a # Custom artwork, original lacked shadow.
 		ShadowStart: 1
@@ -57,64 +57,64 @@ cawash06:
 cawash07:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-45
+		Offset: 0, -45, 45
 
 cawash08:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 15,-52
+		Offset: 15, -52, 52
 
 cawash09:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-45
+		Offset: 0, -45, 45
 
 cawash10:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-60
+		Offset: 0, -60, 60
 
 cawash11:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-60
+		Offset: 0, -60, 60
 
 cawsh12:
 	Inherits: ^CivStructure
 	Defaults: cgwsh12
-		Offset: 0,-45
+		Offset: 0, -45, 45
 		UseTilesetCode: false
 
 cawash13:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 15,-52
+		Offset: 15, -52, 52
 
 cawash14:
 	Inherits: ^CivStructure
 	Defaults: cgwash14
-		Offset: 0,-45
+		Offset: 0, -45, 45
 		UseTilesetCode: false
 
 cawash15:
 	Inherits: ^CivStructure
 	Defaults: cgwash15
-		Offset: 15,-52
+		Offset: 15, -52, 52
 		UseTilesetCode: false
 
 cawash16:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: -30,-60
+		Offset: -30, -60, 60
 
 cawash17:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: -30,-75
+		Offset: -30, -75, 75
 
 cawash18:
 	Defaults:
-		Offset: 0,-30
+		Offset: 0, -30, 30
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 3
@@ -126,7 +126,7 @@ cawash18:
 cawash19:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-60
+		Offset: 0, -60, 60
 	idle-flag: cawa19_a
 		Length: 16
 	damaged-idle-flag: cawa19_a
@@ -136,12 +136,12 @@ cawash19:
 canewy01:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-60
+		Offset: 0, -60, 60
 
 canewy04:
 	Inherits: ^CivStructure
 	Defaults: cgnewy04
-		Offset: 0,-45
+		Offset: 0, -45, 45
 		UseTilesetCode: false
 	idle:
 		ShadowStart: -1
@@ -151,7 +151,7 @@ canewy04:
 
 canewy05:
 	Defaults:
-		Offset: 0,-30
+		Offset: 0, -30, 30
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 3
@@ -159,154 +159,154 @@ canewy05:
 canewy06:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-45
+		Offset: 0, -45, 45
 
 canewy07:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-45
+		Offset: 0, -45, 45
 
 canewy08:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-45
+		Offset: 0, -45, 45
 
 canewy10:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: -15,-37
+		Offset: -15, -37, 37
 
 canewy11:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: -15,-37
+		Offset: -15, -37, 37
 
 canewy12:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 15,-37
+		Offset: 15, -37, 37
 
 canewy13:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-45
+		Offset: 0, -45, 45
 
 canewy14:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-45
+		Offset: 0, -45, 45
 
 canewy15:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-45
+		Offset: 0, -45, 45
 
 canewy16:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-30
+		Offset: 0, -30, 30
 
 canewy17:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-30
+		Offset: 0, -30, 30
 
 canewy18:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-30
+		Offset: 0, -30, 30
 
 canewy20:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 30,-60
+		Offset: 30, -60, 60
 
 canewy21:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: -30,-60
+		Offset: -30, -60, 60
 
 caarmy01:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: -15,-37
+		Offset: -15, -37, 37
 	-rubble:
 
 caarmy02:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-15
+		Offset: 0, -15, 15
 	-rubble:
 
 caarmy03:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-15
+		Offset: 0, -15, 15
 	-rubble:
 
 caarmy04:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-15
+		Offset: 0, -15, 15
 	-rubble:
 
 cawa2a:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-60
+		Offset: 0, -60, 60
 
 cawa2b:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-60
+		Offset: 0, -60, 60
 
 cawa2c:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-60
+		Offset: 0, -60, 60
 
 cawa2d:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-60
+		Offset: 0, -60, 60
 
 cafarm01:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-30
+		Offset: 0, -30, 30
 	-rubble:
 
 cafarm02:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-15
+		Offset: 0, -15, 15
 
 cafarm06:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-30
+		Offset: 0, -30, 30
 
 cafrma:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-30
+		Offset: 0, -30, 30
 	-rubble:
 
 cafrmb:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-15
+		Offset: 0, -15, 15
 	-rubble:
 
 cabarn02:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-30
+		Offset: 0, -30, 30
 
 causfgl:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-15
+		Offset: 0, -15, 15
 	-rubble:
 	flag: causfgl_a
 		Length: 16
@@ -315,7 +315,7 @@ causfgl:
 carufgl:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-15
+		Offset: 0, -15, 15
 	-rubble:
 	flag: carufgl_a
 		Length: 16
@@ -324,7 +324,7 @@ carufgl:
 cairfgl:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-15
+		Offset: 0, -15, 15
 	-rubble:
 	flag: cairfgl_a
 		Length: 16
@@ -333,7 +333,7 @@ cairfgl:
 capofgl:
 	Inherits: ^CivStructure
 	Defaults: capofgl
-		Offset: 0,-15
+		Offset: 0, -15, 15
 		UseTilesetCode: false
 	-rubble:
 	flag: capofgl_a
@@ -343,7 +343,7 @@ capofgl:
 caskfgl:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-15
+		Offset: 0, -15, 15
 	-rubble:
 	flag: cuskfgl_a
 		Length: 16
@@ -352,7 +352,7 @@ caskfgl:
 calbfgl:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-15
+		Offset: 0, -15, 15
 	-rubble:
 	flag: culbfgl_a
 		Length: 16
@@ -361,7 +361,7 @@ calbfgl:
 cafrfgl:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-15
+		Offset: 0, -15, 15
 	-rubble:
 	flag: cufrfgl_a
 		Length: 16
@@ -370,7 +370,7 @@ cafrfgl:
 cagefgl:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-15
+		Offset: 0, -15, 15
 	-rubble:
 	flag: cugefgl_a
 		Length: 16
@@ -379,7 +379,7 @@ cagefgl:
 cacufgl:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-15
+		Offset: 0, -15, 15
 	-rubble:
 	flag: cucufgl_a
 		Length: 16
@@ -388,7 +388,7 @@ cacufgl:
 caukfgl:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-15
+		Offset: 0, -15, 15
 	-rubble:
 	flag: cuukfgl_a
 		Length: 16
@@ -397,31 +397,31 @@ caukfgl:
 camisc01:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-15
+		Offset: 0, -15, 15
 	-rubble:
 
 camisc02:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-15
+		Offset: 0, -15, 15
 	-rubble:
 
 camisc03:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-15
+		Offset: 0, -15, 15
 	-rubble:
 
 camisc04:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-15
+		Offset: 0, -15, 15
 	-rubble:
 
 camisc05:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-15
+		Offset: 0, -15, 15
 	idle:
 		ShadowStart: 2
 	damaged-idle:
@@ -431,119 +431,119 @@ camisc05:
 camisc06:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: -15,-22
+		Offset: -15, -22, 22
 	-rubble:
 
 camsc07:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-30
+		Offset: 0, -30, 30
 	-rubble:
 
 camsc08:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-15
+		Offset: 0, -15, 15
 	-rubble:
 
 camsc09:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-15
+		Offset: 0, -15, 15
 	-rubble:
 
 camsc10:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-60
+		Offset: 0, -60, 60
 
 camsc11:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-15
+		Offset: 0, -15, 15
 	-rubble:
 
 camsc12:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-15
+		Offset: 0, -15, 15
 	-rubble:
 
 camsc13:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 15,-22
+		Offset: 15, -22, 22
 	-rubble:
 
 camiam01:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: -30,-45
+		Offset: -30, -45, 45
 
 camiam02:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: -30,-45
+		Offset: -30, -45, 45
 
 camiam03:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 15,-37
+		Offset: 15, -37, 37
 
 camiam04:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-15
+		Offset: 0, -15, 15
 	-rubble:
 
 camiam05:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 15,-52
+		Offset: 15, -52, 52
 
 camiam06:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-60
+		Offset: 0, -60, 60
 
 camiam07:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-60
+		Offset: 0, -60, 60
 
 camiam08:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: -30,-30
+		Offset: -30, -30, 30
 
 castrt01:
 	Defaults:
-		Offset: 0,-15
+		Offset: 0, -15, 15
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 3
 
 castrt02:
 	Defaults:
-		Offset: 0,-15
+		Offset: 0, -15, 15
 	idle:
 		ShadowStart: 3
 
 castrt03:
 	Defaults:
-		Offset: 0,-15
+		Offset: 0, -15, 15
 	idle:
 		ShadowStart: 3
 
 castrt04:
 	Defaults:
-		Offset: 0,-15
+		Offset: 0, -15, 15
 	idle:
 		ShadowStart: 3
 
 castrt05:
 	Defaults:
-		Offset: 0,-15
+		Offset: 0, -15, 15
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 3
@@ -551,149 +551,149 @@ castrt05:
 camex01:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: -15,-37
+		Offset: -15, -37, 37
 
 camex02:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: -30,-75
+		Offset: -30, -75, 75
 
 camex03:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-45
+		Offset: 0, -45, 45
 
 camex04:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-60
+		Offset: 0, -60, 60
 
 camex05:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-30
+		Offset: 0, -30, 30
 
 castl01:
 	Inherits: ^CivStructure
 	Defaults: custl01
-		Offset: 0,-60
+		Offset: 0, -60, 60
 		TilesetOverrides:
 			SNOW: URBAN
 
 castl02:
 	Inherits: ^CivStructure
 	Defaults: custl02
-		Offset: 0,-60
+		Offset: 0, -60, 60
 
 castl03:
 	Inherits: ^CivStructure
 	Defaults: custl03
-		Offset: 0,-60
+		Offset: 0, -60, 60
 
 castl04:
 	Inherits: ^CivStructure
 	Defaults: cgstl04
-		Offset: 60,-60
+		Offset: 60, -60, 60
 		UseTilesetCode: false
 
 castl05a:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-60
+		Offset: 0, -60, 60
 
 castl05b:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-60
+		Offset: 0, -60, 60
 
 castl05c:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-60
+		Offset: 0, -60, 60
 
 castl05d:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-60
+		Offset: 0, -60, 60
 
 castl05e:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-60
+		Offset: 0, -60, 60
 
 castl05f:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-60
+		Offset: 0, -60, 60
 
 castl05g:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-60
+		Offset: 0, -60, 60
 
 castl05h:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-60
+		Offset: 0, -60, 60
 
 cacolo01:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: -30,-60
+		Offset: -30, -60, 60
 
 caind01:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-60
+		Offset: 0, -60, 60
 
 calab:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 15,-52
+		Offset: 15, -52, 52
 
 cagas01:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-45
+		Offset: 0, -45, 45
 
 cahse01:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: -15,-37
+		Offset: -15, -37, 37
 
 cahse02:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: -15,-37
+		Offset: -15, -37, 37
 
 cahse03:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 15,-52
+		Offset: 15, -52, 52
 
 cahse04:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: -15,-37
+		Offset: -15, -37, 37
 
 cahse05:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 15,-22
+		Offset: 15, -22, 22
 
 cahse06:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: -15,-22
+		Offset: -15, -22, 22
 
 cahse07:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 15,-37
+		Offset: 15, -37, 37
 
 cawt01:
 	Defaults:
-		Offset: 0,-15
+		Offset: 0, -15, 15
 		UseTilesetCode: true
 		TilesetOverrides:
 			TEMPERATE: GENERIC
@@ -707,222 +707,222 @@ cawt01:
 cabunk01:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-30
+		Offset: 0, -30, 30
 
 cabunk02:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-30
+		Offset: 0, -30, 30
 
 carus01:
 	Inherits: ^CivStructure
 	Defaults: cgrus01
-		Offset: 0,-60
+		Offset: 0, -60, 60
 		UseTilesetCode: false
 
 carus02a:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-15
+		Offset: 0, -15, 15
 		UseTilesetCode: false
 
 carus02b:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-15
+		Offset: 0, -15, 15
 		UseTilesetCode: false
 
 carus02c:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-15
+		Offset: 0, -15, 15
 	-rubble:
 
 carus02d:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-15
+		Offset: 0, -15, 15
 	-rubble:
 
 carus02e:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-15
+		Offset: 0, -15, 15
 	-rubble:
 
 carus02f:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-15
+		Offset: 0, -15, 15
 	-rubble:
 
 carus02g:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-15
+		Offset: 0, -15, 15
 	rubble:
 		ShadowStart: -1
 
 carus03:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 45,-52
+		Offset: 45, -52, 52
 
 carus04:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-60
+		Offset: 0, -60, 60
 
 carus05:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-60
+		Offset: 0, -60, 60
 
 carus06:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-60
+		Offset: 0, -60, 60
 
 carus07:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-15
+		Offset: 0, -15, 15
 
 carus08:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-15
+		Offset: 0, -15, 15
 
 carus09:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: -15,-22
+		Offset: -15, -22, 22
 
 carus10:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: -15,-22
+		Offset: -15, -22, 22
 
 carus11:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: -15,-22
+		Offset: -15, -22, 22
 
 cachig01:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: -15,-37
+		Offset: -15, -37, 37
 
 cachig02:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 15,-37
+		Offset: 15, -37, 37
 
 cachig03:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: -15,-37
+		Offset: -15, -37, 37
 
 cachig04:
 	Inherits: ^CivStructure
 	Defaults: cgchig04
-		Offset: 0,-30
+		Offset: 0, -30, 30
 		UseTilesetCode: false
 
 cachig05:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-60
+		Offset: 0, -60, 60
 
 cachig06:
 	Inherits: ^CivStructure
 	Defaults: cgchig06
-		Offset: 0,-30
+		Offset: 0, -30, 30
 		UseTilesetCode: false
 
 catech01:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-45
+		Offset: 0, -45, 45
 
 catexs01:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-30
+		Offset: 0, -30, 30
 
 catexs02:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-60
+		Offset: 0, -60, 60
 
 catexs03:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-45
+		Offset: 0, -45, 45
 
 catexs04:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-45
+		Offset: 0, -45, 45
 
 catexs05:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-45
+		Offset: 0, -45, 45
 
 catexs06:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-45
+		Offset: 0, -45, 45
 
 catexs07:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-45
+		Offset: 0, -45, 45
 
 catexs08:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 15,-37
+		Offset: 15, -37, 37
 
 canwy05:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-60
+		Offset: 0, -60, 60
 
 canwy09:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 15,-37
+		Offset: 15, -37, 37
 
 canwy22:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-45
+		Offset: 0, -45, 45
 
 canwy23:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: -15,-37
+		Offset: -15, -37, 37
 
 canwy24:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-45
+		Offset: 0, -45, 45
 
 canwy25:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-45
+		Offset: 0, -45, 45
 
 canwy26:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: -30,-60
+		Offset: -30, -60, 60
 
 camov01:
 	Defaults:
-		Offset: 45,-37
+		Offset: 45, -37, 37
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 3
@@ -940,7 +940,7 @@ camov01:
 camov02:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-30
+		Offset: 0, -30, 30
 	idle-overlay: camov02_a
 		Length: 2
 		Tick: 200
@@ -952,74 +952,74 @@ camov02:
 capars01:
 	Inherits: ^CivStructure
 	Defaults: cgpars01
-		Offset: 0,-60
+		Offset: 0, -60, 60
 		UseTilesetCode: false
 
 capars02:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: -30,-75
+		Offset: -30, -75, 75
 
 capars04:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-45
+		Offset: 0, -45, 45
 
 capars05:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-45
+		Offset: 0, -45, 45
 
 capars06:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-45
+		Offset: 0, -45, 45
 
 capars07:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-15
+		Offset: 0, -15, 15
 	-rubble:
 
 capars08:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: -30,-75
+		Offset: -30, -75, 75
 
 capars09:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: -30,-75
+		Offset: -30, -75, 75
 
 capars10:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: -15,-52
+		Offset: -15, -52, 75
 
 capars11:
 	Inherits: ^CivStructure
 	Defaults: cgpars11
-		Offset: 15,-52
+		Offset: 15, -52, 75
 		UseTilesetCode: false
 
 capars12:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 30,-60
+		Offset: 30, -60, 75
 
 capars13:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 15,-52
+		Offset: 15, -52, 52
 
 capars14:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: -15,-52
+		Offset: -15, -52, 52
 
 cats01:
 	Defaults:
-		Offset: 0,-30
+		Offset: 0, -30, 30
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 3
@@ -1029,7 +1029,7 @@ cats01:
 
 cagard01:
 	Defaults:
-		Offset: 0,-15
+		Offset: 0, -15, 15
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 3
@@ -1044,29 +1044,32 @@ cagard01:
 caeur1:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-30
+		Offset: 0, -30, 30
 
 caeur2:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-30
+		Offset: 0, -30, 30
 
 caeur04:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: -15,-52
+		Offset: -15, -52, 52
 
 caprs03:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: -30,-75
+		Offset: -30, -75, 75
 
 caswst01:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 15,-37
+		Offset: 15, -37, 37
 
 galite:
+	Defaults:
+		DepthSprite: isodepth.shp
+		Offset: 0, -12, 12
 	idle:
 		ShadowStart: 2
 	damaged-idle:
@@ -1076,54 +1079,54 @@ galite:
 
 cacity01:
 	Defaults:
-		Offset: 0,-60
+		Offset: 0, -60, 60
 	idle:
 		ShadowStart: 3
 
 cacity02:
 	Defaults:
-		Offset: -15,-67
+		Offset: -15, -67, 67
 	idle:
 		ShadowStart: 3
 
 cacity03:
 	Defaults:
-		Offset: 0,-45
+		Offset: 0, -45, 45
 	idle:
 		ShadowStart: 3
 
 cacity04:
 	Defaults:
-		Offset: 0,-60
+		Offset: 0, -60, 60
 	idle:
 		ShadowStart: 3
 
 city01:
 	Defaults:
-		Offset: 0,-45
+		Offset: 0, -45, 45
 	idle:
 		ShadowStart: 2
 
 city02:
 	Defaults:
-		Offset: -15,-52
+		Offset: -15, -52, 52
 	idle:
 		ShadowStart: 2
 
 city03:
 	Defaults:
-		Offset: 0,-45
+		Offset: 0, -45, 45
 	idle:
 		ShadowStart: 2
 
 city04:
 	Defaults:
-		Offset: 0,-60
+		Offset: 0, -60, 60
 	idle:
 		ShadowStart: 2
 
 city05:
 	Defaults:
-		Offset: 0,-60
+		Offset: 0, -60, 60
 	idle:
 		ShadowStart: 2
