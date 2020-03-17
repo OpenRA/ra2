@@ -62,6 +62,7 @@ MindControl:
 		UsePlayerColor: true
 		Width: 63
 		Angle: 120
+		ZOffset: 2047
 	Warhead@1Dam: TargetDamage
 		Damage: 0
 

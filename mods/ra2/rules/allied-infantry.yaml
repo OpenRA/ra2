@@ -634,6 +634,7 @@ cleg:
 		VoiceSet: ChronoLegionnaireVoice
 	Armament@Temporal:
 		Weapon: NeutronRifle
+		LocalOffset: 320,128,1024
 	AttackFrontal:
 		Voice: Attack
 	WithInfantryBody:
