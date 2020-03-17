@@ -20,7 +20,8 @@ AssaultBolt:
 	Report: iteschaa.wav
 	ValidTargets: TeslaBoost
 	Projectile: ElectricBolt
-		Colors: FFFF54,FFFF54,FFFFFF
+		Colors: FFFF54, FFFF54, FFFFFF
+		ZOffset: 2047
 	Warhead@charge: GrantExternalCondition
 		Range: 42
 		Duration: 75
@@ -42,7 +43,8 @@ OPCoilBolt:
 	Range: 8c512
 	Report: btesat2a.wav
 	Projectile: ElectricBolt
-		Colors: FFFF54,FFFF54,FFFFFF
+		Colors: FFFF54, FFFF54, FFFFFF
+		ZOffset: 2047
 	Warhead@1Dam: SpreadDamage
 		Damage: 300
 
@@ -110,6 +112,7 @@ PrismShot:
 	Projectile: LaserZap
 		Width: 70
 		UsePlayerColor: true
+		ZOffset: 2047
 	Warhead@1Dam: SpreadDamage
 		Spread: 42
 		Damage: 120
@@ -136,6 +139,7 @@ Comet:
 		Width: 50
 		Duration: 15
 		UsePlayerColor: true
+		ZOffset: 2047
 	Warhead@1Dam: SpreadDamage
 		Spread: 800
 		Damage: 100
@@ -176,6 +180,7 @@ RadBeamWeapon:
 	Projectile: RadBeam
 		Amplitude: 476
 		WaveLength: 384
+		ZOffset: 2047
 	Warhead@1Dam: SpreadDamage
 		Spread: 42
 		Damage: 125
@@ -225,6 +230,7 @@ NeutronRifle:
 		Amplitude: 476
 		WaveLength: 384
 		Color: 80C8FF
+		ZOffset: 2047
 	Warhead@Damage: SpreadDamage
 		Spread: 64
 		Damage: 8
