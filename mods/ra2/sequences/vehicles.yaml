@@ -54,6 +54,8 @@ dred:
 	icon: dredicon
 
 dron:
+	Defaults:
+		Offset: 0, 0, 15
 	stand:
 		Start: 48
 		ShadowStart: 136

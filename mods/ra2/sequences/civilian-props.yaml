@@ -143,7 +143,7 @@ cabhut:
 	Inherits: ^Prop
 	idle:
 		UseTilesetCode: false
-		Offset: 0, -15
+		Offset: 0, -15, 15
 
 gagate_a:
 	Inherits: ^Prop

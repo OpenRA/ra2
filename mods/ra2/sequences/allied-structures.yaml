@@ -1,7 +1,7 @@
 gacnst:
 	Inherits: ^Structure
 	Defaults:
-		Offset: 3, -60
+		Offset: 3, -60, 60
 	idle: ggcnst
 	make: ggcnstmk
 		Length: 29
@@ -30,7 +30,7 @@ gacnst:
 gapowr:
 	Inherits: ^Structure
 	Defaults:
-		Offset: 0, -31
+		Offset: 0, -31, 31
 	idle: ggpowr
 	damaged-idle: gtpowr
 	idle-glow: ggpowr_a
@@ -48,7 +48,7 @@ gapowr:
 gapile:
 	Inherits: ^Structure
 	Defaults:
-		Offset: -15, -38
+		Offset: -15, -38, 38
 	idle: ggpile
 	damaged-idle: ggpile
 	idle-flag: ggpile_a
@@ -68,7 +68,7 @@ gapile:
 garefn:
 	Inherits: ^Structure
 	Defaults:
-		Offset: -12, -52
+		Offset: -12, -52, 48
 	idle: ggrefn
 	damaged-idle: ggrefn
 	make: gurefnmk
@@ -78,10 +78,16 @@ garefn:
 	idle-bib: ggrefnbb
 		ShadowStart: 2
 		ZOffset: -512
+		Offset: -12, -52, 12
+		ZRamp: 1
+		-DepthSprite:
 	damaged-idle-bib: ggrefnbb
 		Start: 1
 		ShadowStart: 3
 		ZOffset: -512
+		Offset: -12, -52, 12
+		ZRamp: 1
+		-DepthSprite:
 	docking-overlay: ggrefnor
 		Length: 20
 		ShadowStart: 20
@@ -90,7 +96,7 @@ garefn:
 gaairc:
 	Inherits: ^Structure
 	Defaults:
-		Offset: -14, -38
+		Offset: -14, -38, 52
 	idle: ggairc
 		ShadowStart: -1
 		Length: 1
@@ -103,44 +109,68 @@ gaairc:
 	idle-bottom: ggaircbb
 		Length: 1
 		ZOffset: -512
+		Offset: -14, -38, 4
+		ZRamp: 1
+		-DepthSprite:
 	damage-idle-bottom: ggaircbb
 		Start: 1
 		Length: 1
 		ZOffset: -512
-	idle-dish: ggairc_a
+		Offset: -14, -38, 4
+		ZRamp: 1
+		-DepthSprite:
+	idle-lights: ggairc_a
 		Length: 4
 		Tick: 120
 		ZOffset: -512
-	damaged-idle-dish: ggairc_a
+		Offset: -14, -38, 5
+		ZRamp: 1
+		-DepthSprite:
+	damaged-idle-lights: ggairc_a
 		Start: 5
 		Length: 4
 		Tick: 120
 		ZOffset: -512
+		Offset: -14, -38, 5
+		ZRamp: 1
+		-DepthSprite:
 	idle-mid: ggairc_b
 		Length: 6
 		Tick: 120
 		ZOffset: -512
+		Offset: -14, -38, 5
+		ZRamp: 1
+		-DepthSprite:
 	damage-idle-mid: ggairc_b
 		Start: 7
 		Length: 6
 		Tick: 120
 		ZOffset: -512
+		Offset: -14, -38, 5
+		ZRamp: 1
+		-DepthSprite:
 	make: gtaircmk
 	icon: heliicon
 
 gaweap:
 	Inherits: ^Structure
 	Defaults:
-		Offset: -30, -60
+		Offset: -30, -60, 60
 	idle: ggweap
 		ZOffset: -1024
 	damaged-idle: ggweap
 		ZOffset: -1024
 	build-ramp: ggweap_1
 		ShadowStart: 2
+		Offset: -30, -60, 15
+		ZRamp: 1
+		-DepthSprite:
 	damaged-build-ramp: ggweap_1
 		Start: 1
 		ShadowStart: 3
+		Offset: -30, -60, 15
+		ZRamp: 1
+		-DepthSprite:
 	build-top: ggweap_2
 		ShadowStart: 2
 		ZOffset: 1024
@@ -161,10 +191,16 @@ gaweap:
 	bib: ggweapbb
 		ShadowStart: 2
 		ZOffset: -1024
+		Offset: -30, -60, 15
+		ZRamp: 1
+		-DepthSprite:
 	damaged-bib: ggweapbb
 		Start: 1
 		ShadowStart: 3
 		ZOffset: -1024
+		Offset: -30, -60, 15
+		ZRamp: 1
+		-DepthSprite:
 	idle-flag: ggweap_a
 		Length: 14
 		ShadowStart: 31
@@ -181,7 +217,7 @@ gaweap:
 gayard:
 	Inherits: ^Structure
 	Defaults:
-		Offset: 0, -45
+		Offset: 0, -45, 45
 	idle: ggyard
 		ShadowStart: 4
 	damaged-idle: ggyard
@@ -218,7 +254,7 @@ gayard:
 gadept:
 	Inherits: ^Structure
 	Defaults:
-		Offset: 7, -40
+		Offset: 7, -40, 40
 	idle: ggdept_d
 		ShadowStart: 2
 	damaged-idle: ggdept_d
@@ -231,7 +267,10 @@ gadept:
 		ShadowStart: 4
 	bib: ggdeptbb
 		ShadowStart: 3
-		ZOffset: -512
+		ZOffset: -1c511
+		Offset: 7, -40, 10
+		ZRamp: 1
+		-DepthSprite:
 	make: gtdeptmk
 	repair: ggdept_c
 		Length: 10
@@ -247,7 +286,7 @@ gadept:
 gatech:
 	Inherits: ^Structure
 	Defaults:
-		Offset: -15, -40
+		Offset: -15, -40, 40
 	idle: ggtech
 	damaged-idle: ggtech
 	idle-lights: ggtech_a
@@ -263,7 +302,7 @@ gatech:
 gaorep:
 	Inherits: ^Structure
 	Defaults:
-		Offset: 0, -45
+		Offset: 0, -45, 45
 	idle: ggorep
 	damaged-idle: ggorep
 	idle-glow: ggorep_a
@@ -287,7 +326,7 @@ gapill:
 	Inherits: ^Structure
 	Inherits@Muzzle: ^WithMachineGunMuzzle
 	Defaults:
-		Offset: 0, -15
+		Offset: 0, -15, 15
 	idle: ggpill
 	damaged-idle: ggpill
 	critical-idle: ggpill
@@ -301,7 +340,7 @@ gapill:
 nasam:
 	Inherits: ^Structure
 	Defaults:
-		Offset: 0, -15
+		Offset: 0, -15, 15
 		ZOffset: -512
 	idle: ngsam
 	damaged-idle: ngsam
@@ -317,7 +356,7 @@ nasam:
 gtgcan:
 	Inherits: ^Structure
 	Defaults:
-		Offset: 0, -30
+		Offset: 0, -30, 30
 		ZOffset: -512
 	idle: gggcan
 	damaged-idle: gggcan
@@ -338,7 +377,7 @@ gtgcan:
 gaspysat:
 	Inherits: ^Structure
 	Defaults:
-		Offset: 0, -31
+		Offset: 0, -31, 31
 	idle: ggspst
 		Tick: 180
 	damaged-idle: ggspst
@@ -357,7 +396,7 @@ gaspysat:
 gagap:
 	Inherits: ^Structure
 	Defaults:
-		Offset: 0, -15
+		Offset: 0, -15, 15
 	idle: gggap
 		Length: 1
 	damaged-idle: gggap
@@ -372,7 +411,7 @@ gagap:
 gaweat:
 	Inherits: ^Structure
 	Defaults:
-		Offset: 0, -45
+		Offset: 0, -45, 45
 	idle: ggweth
 	damaged-idle: ggweth
 	make: guwethmk
@@ -381,7 +420,7 @@ gaweat:
 gacsph:
 	Inherits: ^Structure
 	Defaults:
-		Offset: -15, -50
+		Offset: -15, -50, 50
 	idle: ggcsph
 		ShadowStart: 3
 	damaged-idle: ggcsph
@@ -400,7 +439,7 @@ gacsph:
 atesla:
 	Inherits: ^Structure
 	Defaults:
-		Offset: 1,-15
+		Offset: 1,-15, 15
 	idle-normal: ggpris
 		ShadowStart: 3
 	damaged-idle-normal: ggpris

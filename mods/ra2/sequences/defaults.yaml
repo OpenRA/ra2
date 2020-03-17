@@ -1,4 +1,6 @@
 ^Animal:
+	Defaults:
+		Offset: 0, 0, 16
 	stand:
 		Facings: 8
 	run:
@@ -133,6 +135,7 @@
 		TilesetOverrides:
 			TEMPERATE: GENERIC
 			URBAN: GENERIC
+		DepthSprite: isodepth.shp
 	idle:
 		ShadowStart: 3
 	make:
@@ -151,6 +154,7 @@
 ^TechStructure:
 	Defaults:
 		UseTilesetCode: true
+		DepthSprite: isodepth.shp
 	idle:
 		ShadowStart: 4
 	damaged-idle:
@@ -166,6 +170,7 @@
 ^CivStructure:
 	Defaults:
 		UseTilesetCode: true
+		DepthSprite: isodepth.shp
 	idle:
 		ShadowStart: 4
 	damaged-idle:
@@ -178,8 +183,9 @@
 
 ^Fence:
 	Defaults:
-		Offset: 0, -15
+		Offset: 0, -15, 15
 		UseTilesetCode: true
+		DepthSprite: isodepth.shp
 	idle:
 		Length: 16
 		ShadowStart: 32
@@ -194,7 +200,8 @@
 ^Wall:
 	Inherits: ^Fence
 	Defaults:
-		Offset: 0, -12
+		Offset: 0, -12, 12
+		DepthSprite: isodepth.shp
 	idle:
 		ShadowStart: 48
 	damaged-idle:
@@ -203,6 +210,9 @@
 		Start: 32
 		Length: 16
 		ShadowStart: 80
+	icon:
+		Offset: 0,0
+		UseTilesetCode: false
 
 ^Pole:
 	Defaults:
@@ -225,7 +235,7 @@
 ^Drill:
 	Defaults:
 		UseTilesetExtension: true
-		Offset: -1, -16
+		Offset: -1, -16, 16
 	idle:
 		ShadowStart: 11
 	active:

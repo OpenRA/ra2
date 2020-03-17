@@ -1,7 +1,7 @@
 nacnst:
 	Inherits: ^Structure
 	Defaults:
-		Offset: 4, -58
+		Offset: 4, -58, 58
 	idle: ngcnst_c
 		Length: 1
 		ShadowStart: 4
@@ -41,7 +41,7 @@ nacnst:
 napowr:
 	Inherits: ^Structure
 	Defaults:
-		Offset: -15, -37
+		Offset: -15, -37, 37
 	idle: ngpowr
 	damaged-idle: ngpowr
 	critical-idle: ngpowr
@@ -66,7 +66,7 @@ napowr:
 nahand:
 	Inherits: ^Structure
 	Defaults:
-		Offset: 1, -31
+		Offset: 1, -31, 31
 	idle: nghand
 	damaged-idle: nghand
 	critical-idle: nghand
@@ -78,7 +78,7 @@ nahand:
 narefn:
 	Inherits: ^Structure
 	Defaults:
-		Offset: -13, -53
+		Offset: -13, -53, 53
 	idle: ngrefn
 	damaged-idle: ngrefn
 	make: ntrefnmk
@@ -102,7 +102,7 @@ narefn:
 naradr:
 	Inherits: ^Structure
 	Defaults:
-		Offset: 2, -31
+		Offset: 2, -31, 31
 	idle: ngradr
 	damaged-idle: ngradr
 	critical-idle: ngradr
@@ -125,7 +125,7 @@ naradr:
 naweap:
 	Inherits: ^Structure
 	Defaults:
-		Offset: -30, -60
+		Offset: -30, -60, 60
 	idle: ngweap
 		ZOffset: -1536
 	damaged-idle: ngweap
@@ -175,7 +175,7 @@ naweap:
 nayard:
 	Inherits: ^Structure
 	Defaults:
-		Offset: 0, -45
+		Offset: 0, -45, 45
 	idle: ngyard
 		ShadowStart: 4
 	damaged-idle: ngyard
@@ -219,7 +219,7 @@ nayard:
 nadept:
 	Inherits: ^Structure
 	Defaults:
-		Offset: -15, -53
+		Offset: -15, -53, 53
 	idle: ngdept_b
 		Length: 10
 		ShadowStart: 20
@@ -235,10 +235,17 @@ nadept:
 		ShadowStart: 4
 	bib: ngdeptbb
 		ShadowStart: 3
-		ZOffset: -512
+		ZOffset: -1c511
+		Offset: -15, -53, 12
+		ZRamp: 1
+		-DepthSprite:
 	damaged-bib: ngdeptbb
 		Start: 1
 		ShadowStart: 2
+		ZOffset: -1c511
+		Offset: -15, -53, 12
+		ZRamp: 1
+		-DepthSprite:
 	make: ntdeptmk
 	repair: ngdept_c
 		Length: 50
@@ -254,7 +261,7 @@ nadept:
 nanrct:
 	Inherits: ^Structure
 	Defaults:
-		Offset: -12, -56
+		Offset: -12, -56, 56
 	idle: ngnrct
 	damaged-idle: ngnrct
 	critical-idle: ngnrct
@@ -277,7 +284,7 @@ nanrct:
 natech:
 	Inherits: ^Structure
 	Defaults:
-		Offset: 0, -45
+		Offset: 0, -45, 45
 	idle: ngtech
 	damaged-idle: ngtech
 	critical-idle: ngtech
@@ -289,7 +296,7 @@ natech:
 naclon:
 	Inherits: ^Structure
 	Defaults:
-		Offset: 0, -30
+		Offset: 0, -30, 30
 	idle: ngclon_a
 		Length: 11
 		ShadowStart: 22
@@ -308,7 +315,7 @@ naclon:
 napsis:
 	Inherits: ^Structure
 	Defaults:
-		Offset: 1, -30
+		Offset: 1, -30, 30
 	idle: ngpsis
 	damaged-idle: ngpsis
 	critical-idle: ngpsis
@@ -331,7 +338,7 @@ napsis:
 namisl:
 	Inherits: ^Structure
 	Defaults:
-		Offset: 0, -42
+		Offset: 0, -42, 42
 		UseTilesetCode: false
 		-TilesetOverrides:
 	idle: ngmisl_e
@@ -360,7 +367,7 @@ namisl:
 nairon:
 	Inherits: ^Structure
 	Defaults:
-		Offset: 0, -45
+		Offset: 0, -45, 45
 	idle: ngiron_a
 		Length: 11
 		ShadowStart: 22
@@ -387,7 +394,7 @@ nalasr:
 	Inherits: ^Structure
 	Inherits@Muzzle: ^WithMachineGunMuzzle
 	Defaults:
-		Offset: 0, -20
+		Offset: 0, -20, 20
 	idle: nalasr
 	damaged-idle: nalasr
 	critical-idle: nalasr
@@ -402,7 +409,7 @@ nalasr:
 tesla:
 	Inherits: ^Structure
 	Defaults:
-		Offset: 0, -15
+		Offset: 0, -15, 15
 	idle: ngtsla
 		Length: 1
 	damaged-idle: ngtsla
@@ -436,7 +443,7 @@ naflak:
 	Inherits: ^Structure
 	Inherits@Muzzle: ^WithFlakMuzzle
 	Defaults:
-		Offset: 0, -15
+		Offset: 0, -15, 15
 		ZOffset: -512
 	idle: ngflak
 	damaged-idle: ngflak
