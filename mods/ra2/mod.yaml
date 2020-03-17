@@ -113,6 +113,7 @@ ChromeLayout:
 	ra2|chrome/assetbrowser.yaml
 	ra2|chrome/ingame-player.yaml
 	common|chrome/mainmenu.yaml
+	ra2|chrome/mainmenu-prerelease-notification.yaml
 	common|chrome/ingame-infoobjectives.yaml
 	common|chrome/ingame-infostats.yaml
 	common|chrome/musicplayer.yaml
