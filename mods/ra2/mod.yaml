@@ -125,7 +125,7 @@ ChromeLayout:
 	common|chrome/ingame-info.yaml
 	common|chrome/ingame-infoscripterror.yaml
 	common|chrome/ingame-infobriefing.yaml
-	common|chrome/ingame-debug.yaml
+	ra2|chrome/ingame-debug.yaml
 	common|chrome/ingame-perf.yaml
 	common|chrome/ingame-infochat.yaml
 	common|chrome/settings.yaml
