@@ -16,8 +16,6 @@ FlakGuyAAGun:
 	Inherits: ^AAFlak
 	Range: 8c0
 	ValidTargets: Air
-	Projectile: Bullet
-		Inaccuracy: 128
 
 FlakGuyAAGunE:
 	Inherits: FlakGuyAAGun

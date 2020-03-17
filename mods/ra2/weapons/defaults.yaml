@@ -33,8 +33,9 @@
 ^AAFlak:
 	Inherits: ^Flak
 	Report: vflaat2a.wav, vflaat2b.wav, vflaat2c.wav, vflaat2d.wav
-	-Projectile:
-	Projectile: InstantHit
+	Projectile: Bullet
+		Speed: 100c0
+		Inaccuracy: 128
 	Warhead@1Dam: SpreadDamage
 		Spread: 120
 		ValidTargets: Air
