@@ -243,6 +243,7 @@ World:
 	ResourceClaimLayer:
 	BridgeLayer:
 	WarheadDebugOverlay:
+	CustomTerrainDebugOverlay:
 	SpawnMapActors:
 	MapBuildRadius:
 		AllyBuildRadiusCheckboxDisplayOrder: 4
