@@ -414,6 +414,7 @@ icon:
 atomic:
 	up: nkmslup
 	down: nkmsldn
+		Offset: 0, 144
 
 bombcurs:
 	idle:
