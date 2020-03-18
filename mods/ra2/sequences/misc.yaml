@@ -275,6 +275,7 @@ smallsmoke:
 nukesmoke:
 	idle: nukepuff
 		Length: *
+		BlendMode: Additive
 
 largefire:
 	idle: fire01
