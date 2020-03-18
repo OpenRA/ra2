@@ -79,6 +79,7 @@ Rules:
 	ra2|rules/civilian-naval.yaml
 
 Sequences:
+	ra2|sequences/misc.yaml
 	ra2|sequences/aircraft.yaml
 	ra2|sequences/allied-infantry.yaml
 	ra2|sequences/allied-structures.yaml
@@ -88,7 +89,6 @@ Sequences:
 	ra2|sequences/civilian-props.yaml
 	ra2|sequences/civilian-structures.yaml
 	ra2|sequences/defaults.yaml
-	ra2|sequences/misc.yaml
 	ra2|sequences/soviet-infantry.yaml
 	ra2|sequences/soviet-structures.yaml
 	ra2|sequences/tech-structures.yaml

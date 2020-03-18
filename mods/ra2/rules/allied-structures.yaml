@@ -957,6 +957,9 @@ gaweat:
 		Description: Play God with deadly weather!
 	Selectable:
 		Bounds: 116, 106, -2, -26
+	WithIdleOverlay:
+		Sequence: idle-top
+		RequiresCondition: !build-incomplete
 	Valued:
 		Cost: 5000
 	Tooltip:
@@ -994,6 +997,8 @@ gaweat:
 		PauseOnCondition: lowpower
 		Cursor: weatherstorm
 		PaletteEffectType: LightningStorm
+	SupportPowerChargeBar:
+	WithSupportPowerChargedOverlay:
 	SpawnSurvivors:
 		DeathTypes: ExplosionDeath, BulletDeath
 		Actors: e1, e1, e1, e1, e1
@@ -1027,10 +1032,14 @@ gacsph:
 	WithIdleOverlay:
 		Sequence: idle-dome
 		RequiresCondition: !build-incomplete
+	WithIdleOverlay@FANS:
+		Sequence: idle-fans
+		RequiresCondition: !build-incomplete
 	GrantConditionOnPowerState@LOWPOWER:
 		Condition: lowpower
 		ValidPowerStates: Low, Critical
 	SupportPowerChargeBar:
+	WithSupportPowerChargedOverlay:
 	ChronoshiftPower@chronoshift:
 		OrderName: Chronoshift
 		Icon: chrono

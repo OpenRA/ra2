@@ -826,6 +826,7 @@ nairon:
 		Condition: invulnerability
 		PauseOnCondition: lowpower
 	SupportPowerChargeBar:
+	WithSupportPowerChargedOverlay:
 	GrantConditionOnPowerState@LOWPOWER:
 		Condition: lowpower
 		ValidPowerStates: Low, Critical
@@ -873,7 +874,6 @@ namisl:
 		LaunchSound: snuklaun.wav
 		MissileWeapon: atomic
 		MissilePalette: player
-		MissileDelay: 35
 		SpawnOffset: 0,0,-1c0
 		IsPlayerPalette: true
 		DisplayTimerStances: Ally, Neutral, Enemy
@@ -884,8 +884,10 @@ namisl:
 		ArrowSequence: arrow
 		CameraRange: 10
 		PauseOnCondition: lowpower
-	WithNukeLaunchAnimation:
-		RequiresCondition: !build-incomplete
+	WithSupportPowerChargedOverlay:
+	WithNukeLaunchOverlay:
+		Sequence: smoke
+		Palette: effect50alpha
 	SpawnSurvivors:
 		DeathTypes: ExplosionDeath, BulletDeath
 		Actors: e2, e2, e2, e2, e2, e2, e2
