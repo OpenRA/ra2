@@ -1,22 +1,30 @@
 mpspawn:
+	Interactable:
+	EditorOnlyTooltip:
+		Name: (Multiplayer Spawnpoint)
 	Immobile:
 		OccupiesSpace: false
 	BodyOrientation:
+		QuantizedFacings: 1
 	AlwaysVisible:
 	RenderSpritesEditorOnly:
 	WithSpriteBody:
-	QuantizeFacingsFromSequence:
 	MapEditorData:
 		Categories: System
+	RequiresSpecificOwners:
+		ValidOwnerNames: Neutral
 
 waypoint:
+	Interactable:
+	EditorOnlyTooltip:
+		Name: (Waypoint for scripted behavior)
 	Immobile:
 		OccupiesSpace: false
 	BodyOrientation:
+		QuantizedFacings: 1
 	AlwaysVisible:
 	RenderSpritesEditorOnly:
 	WithSpriteBody:
-	QuantizeFacingsFromSequence:
 	MapEditorData:
 		Categories: System
 
