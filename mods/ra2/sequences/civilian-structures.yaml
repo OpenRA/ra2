@@ -217,14 +217,34 @@ canewy18:
 		Offset: 0,-30
 
 canewy20:
-	Inherits: ^CivStructure
+	Inherits: ^GarrisonableBuilding
 	Defaults:
 		Offset: 30,-60
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 1
+		ShadowStart: 5
+	rubble:
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -3c0
 
 canewy21:
-	Inherits: ^CivStructure
+	Inherits: ^GarrisonableBuilding
 	Defaults:
 		Offset: -30,-60
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 1
+		ShadowStart: 5
+	rubble:
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -3c0
 
 caarmy01:
 	Inherits: ^CivStructure
@@ -435,27 +455,58 @@ camisc06:
 	-rubble:
 
 camsc07:
-	Inherits: ^CivStructure
+	Inherits: ^GarrisonableBuilding
 	Defaults:
+		UseTilesetCode: true
 		Offset: 0,-30
-	-rubble:
+	idle:
+		ShadowStart: 3
+	damaged-idle:
+		Start: 1
+		ShadowStart: 4
+	garrisoned:
+		ShadowStart: 5
 
 camsc08:
-	Inherits: ^CivStructure
+	Inherits: ^GarrisonableBuilding
 	Defaults:
+		UseTilesetCode: true
 		Offset: 0,-15
-	-rubble:
+	idle:
+		ShadowStart: 3
+	damaged-idle:
+		Start: 1
+		ShadowStart: 4
+	garrisoned:
+		ShadowStart: 5
 
 camsc09:
-	Inherits: ^CivStructure
+	Inherits: ^GarrisonableBuilding
 	Defaults:
+		UseTilesetCode: true
 		Offset: 0,-15
-	-rubble:
+	idle:
+		ShadowStart: 3
+	damaged-idle:
+		Start: 1
+		ShadowStart: 4
+	garrisoned:
+		ShadowStart: 5
 
 camsc10:
-	Inherits: ^CivStructure
+	Inherits: ^GarrisonableBuilding
 	Defaults:
+		UseTilesetCode: true
 		Offset: 0,-60
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 1
+		ShadowStart: 5
+	rubble:
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -3c0
 
 camsc11:
 	Inherits: ^CivStructure
@@ -642,9 +693,19 @@ cacolo01:
 		Offset: -30,-60
 
 caind01:
-	Inherits: ^CivStructure
+	Inherits: ^GarrisonableBuilding
 	Defaults:
+		UseTilesetCode: true
 		Offset: 0,-60
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 1
+		ShadowStart: 5
+	rubble:
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -3c0
 
 calab:
 	Inherits: ^CivStructure
@@ -705,14 +766,34 @@ cawt01:
 		ShadowStart: 3
 
 cabunk01:
-	Inherits: ^CivStructure
+	Inherits: ^GarrisonableBuilding
 	Defaults:
 		Offset: 0,-30
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 1
+		ShadowStart: 5
+	rubble:
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -3c0
 
 cabunk02:
-	Inherits: ^CivStructure
+	Inherits: ^GarrisonableBuilding
 	Defaults:
 		Offset: 0,-30
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 1
+		ShadowStart: 5
+	rubble:
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -3c0
 
 carus01:
 	Inherits: ^CivStructure
@@ -851,9 +932,19 @@ catexs01:
 		Offset: 0,-30
 
 catexs02:
-	Inherits: ^CivStructure
+	Inherits: ^GarrisonableBuilding
 	Defaults:
 		Offset: 0,-60
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 4
+	damaged-idle:
+		Start: 1
+		ShadowStart: 5
+	rubble:
+		Start: 3
+		ShadowStart: 7
+		ZOffset: -3c0
 
 catexs03:
 	Inherits: ^CivStructure

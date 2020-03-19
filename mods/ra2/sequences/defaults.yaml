@@ -284,3 +284,8 @@
 		Length: *
 		Offset: 0,0
 		UseTilesetCode: false
+
+^GarrisonableBuilding:
+	garrisoned:
+		Start: 2
+		ShadowStart: 6
