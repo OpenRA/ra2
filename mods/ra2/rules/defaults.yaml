@@ -435,7 +435,7 @@
 		PipCount: 10
 		EjectOnDeath: true
 		LoadedCondition: loaded
-        PauseOnCondition: dmg_crit
+		PauseOnCondition: dmg_crit
 	AttackGarrisonedRV:
 		Armaments: garrisoned
 		PortOffsets: 768,0,1024, 448,-682,1024, -448,-682,1024, -768,0,1024, -448,682,1024, 448,682,1024

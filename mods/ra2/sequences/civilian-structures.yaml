@@ -105,7 +105,7 @@ cawash08:
 	Inherits: ^GarrisonableBuilding
 	Defaults:
 		Offset: 15, -52, 52
-    UseTilesetCode: true
+	UseTilesetCode: true
 	idle: cuwash08
 		ShadowStart: 4
 	damaged-idle: cuwash08
@@ -120,7 +120,7 @@ cawash09:
 	Inherits: ^GarrisonableBuilding
 	Defaults:
 		Offset: 0, -45, 45
-    UseTilesetCode: true
+	UseTilesetCode: true
 	idle: cuwash09
 		ShadowStart: 4
 	damaged-idle: cuwash09

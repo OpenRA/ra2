@@ -166,7 +166,7 @@ e1:
 		Name: deployed-elite
 		Weapon: paraE
 		RequiresCondition: deployed && rank-elite
-    Armament@garrisoned:
+	Armament@garrisoned:
 		Weapon: para
 		Name: garrisoned
 		RequiresCondition: !rank-elite
