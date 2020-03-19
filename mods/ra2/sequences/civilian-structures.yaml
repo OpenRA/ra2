@@ -30,22 +30,22 @@ cawash01:
 		UseTilesetCode: false
 
 cawash03:
-	Inherits: ^CivStructure
+	Inherits: ^GarrisonableBuilding
 	Defaults:
 		Offset: -15,-52
 
 cawash04:
-	Inherits: ^CivStructure
+	Inherits: ^GarrisonableBuilding
 	Defaults:
 		Offset: 0,-60
 
 cawash05:
-	Inherits: ^CivStructure
+	Inherits: ^GarrisonableBuilding
 	Defaults:
 		Offset: -30,-45
 
 cawash06:
-	Inherits: ^CivStructure
+	Inherits: ^GarrisonableBuilding
 	Defaults:
 		Offset: 0,-60
 		UseTilesetCode: false
@@ -55,27 +55,27 @@ cawash06:
 	rubble: cuwash06
 
 cawash07:
-	Inherits: ^CivStructure
+	Inherits: ^GarrisonableBuilding
 	Defaults:
 		Offset: 0,-45
 
 cawash08:
-	Inherits: ^CivStructure
+	Inherits: ^GarrisonableBuilding
 	Defaults:
 		Offset: 15,-52
 
 cawash09:
-	Inherits: ^CivStructure
+	Inherits: ^GarrisonableBuilding
 	Defaults:
 		Offset: 0,-45
 
 cawash10:
-	Inherits: ^CivStructure
+	Inherits: ^GarrisonableBuilding
 	Defaults:
 		Offset: 0,-60
 
 cawash11:
-	Inherits: ^CivStructure
+	Inherits: ^GarrisonableBuilding
 	Defaults:
 		Offset: 0,-60
 
@@ -86,7 +86,7 @@ cawsh12:
 		UseTilesetCode: false
 
 cawash13:
-	Inherits: ^CivStructure
+	Inherits: ^GarrisonableBuilding
 	Defaults:
 		Offset: 15,-52
 
@@ -108,7 +108,7 @@ cawash16:
 		Offset: -30,-60
 
 cawash17:
-	Inherits: ^CivStructure
+	Inherits: ^GarrisonableBuilding
 	Defaults:
 		Offset: -30,-75
 
@@ -134,7 +134,7 @@ cawash19:
 		Length: 16
 
 canewy01:
-	Inherits: ^CivStructure
+	Inherits: ^GarrisonableBuilding
 	Defaults:
 		Offset: 0,-60
 
@@ -157,62 +157,62 @@ canewy05:
 		ShadowStart: 3
 
 canewy06:
-	Inherits: ^CivStructure
+	Inherits: ^GarrisonableBuilding
 	Defaults:
 		Offset: 0,-45
 
 canewy07:
-	Inherits: ^CivStructure
+	Inherits: ^GarrisonableBuilding
 	Defaults:
 		Offset: 0,-45
 
 canewy08:
-	Inherits: ^CivStructure
+	Inherits: ^GarrisonableBuilding
 	Defaults:
 		Offset: 0,-45
 
 canewy10:
-	Inherits: ^CivStructure
+	Inherits: ^GarrisonableBuilding
 	Defaults:
 		Offset: -15,-37
 
 canewy11:
-	Inherits: ^CivStructure
+	Inherits: ^GarrisonableBuilding
 	Defaults:
 		Offset: -15,-37
 
 canewy12:
-	Inherits: ^CivStructure
+	Inherits: ^GarrisonableBuilding
 	Defaults:
 		Offset: 15,-37
 
 canewy13:
-	Inherits: ^CivStructure
+	Inherits: ^GarrisonableBuilding
 	Defaults:
 		Offset: 0,-45
 
 canewy14:
-	Inherits: ^CivStructure
+	Inherits: ^GarrisonableBuilding
 	Defaults:
 		Offset: 0,-45
 
 canewy15:
-	Inherits: ^CivStructure
+	Inherits: ^GarrisonableBuilding
 	Defaults:
 		Offset: 0,-45
 
 canewy16:
-	Inherits: ^CivStructure
+	Inherits: ^GarrisonableBuilding
 	Defaults:
 		Offset: 0,-30
 
 canewy17:
-	Inherits: ^CivStructure
+	Inherits: ^GarrisonableBuilding
 	Defaults:
 		Offset: 0,-30
 
 canewy18:
-	Inherits: ^CivStructure
+	Inherits: ^GarrisonableBuilding
 	Defaults:
 		Offset: 0,-30
 
@@ -247,54 +247,89 @@ canewy21:
 		ZOffset: -3c0
 
 caarmy01:
-	Inherits: ^CivStructure
+	Inherits: ^GarrisonableBuilding
 	Defaults:
 		Offset: -15,-37
-	-rubble:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 3
+	damaged-idle:
+		Start: 1
+		ShadowStart: 4
+	garrisoned:
+		ShadowStart: 5
 
 caarmy02:
-	Inherits: ^CivStructure
+	Inherits: ^GarrisonableBuilding
 	Defaults:
 		Offset: 0,-15
-	-rubble:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 3
+	damaged-idle:
+		Start: 1
+		ShadowStart: 4
+	garrisoned:
+		ShadowStart: 5
 
 caarmy03:
-	Inherits: ^CivStructure
+	Inherits: ^GarrisonableBuilding
 	Defaults:
 		Offset: 0,-15
-	-rubble:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 3
+	damaged-idle:
+		Start: 1
+		ShadowStart: 4
+	garrisoned:
+		ShadowStart: 5
 
 caarmy04:
-	Inherits: ^CivStructure
+	Inherits: ^GarrisonableBuilding
 	Defaults:
 		Offset: 0,-15
-	-rubble:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 3
+	damaged-idle:
+		Start: 1
+		ShadowStart: 4
+	garrisoned:
+		ShadowStart: 5
 
 cawa2a:
-	Inherits: ^CivStructure
+	Inherits: ^GarrisonableBuilding
 	Defaults:
 		Offset: 0,-60
 
 cawa2b:
-	Inherits: ^CivStructure
+	Inherits: ^GarrisonableBuilding
 	Defaults:
 		Offset: 0,-60
 
 cawa2c:
-	Inherits: ^CivStructure
+	Inherits: ^GarrisonableBuilding
 	Defaults:
 		Offset: 0,-60
 
 cawa2d:
-	Inherits: ^CivStructure
+	Inherits: ^GarrisonableBuilding
 	Defaults:
 		Offset: 0,-60
 
 cafarm01:
-	Inherits: ^CivStructure
+	Inherits: ^GarrisonableBuilding
 	Defaults:
+		UseTilesetCode: true
 		Offset: 0,-30
-	-rubble:
+	idle:
+		ShadowStart: 3
+	damaged-idle:
+		Start: 1
+		ShadowStart: 4
+	garrisoned:
+		ShadowStart: 5
 
 cafarm02:
 	Inherits: ^CivStructure
@@ -302,24 +337,38 @@ cafarm02:
 		Offset: 0,-15
 
 cafarm06:
-	Inherits: ^CivStructure
+	Inherits: ^GarrisonableBuilding
 	Defaults:
 		Offset: 0,-30
 
 cafrma:
-	Inherits: ^CivStructure
+	Inherits: ^GarrisonableBuilding
 	Defaults:
 		Offset: 0,-30
-	-rubble:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 3
+	damaged-idle:
+		Start: 2
+		ShadowStart: 4
+	garrisoned:
+		ShadowStart: 5
 
 cafrmb:
-	Inherits: ^CivStructure
+	Inherits: ^GarrisonableBuilding
 	Defaults:
 		Offset: 0,-15
-	-rubble:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 3
+	damaged-idle:
+		Start: 2
+		ShadowStart: 4
+	garrisoned:
+		ShadowStart: 5
 
 cabarn02:
-	Inherits: ^CivStructure
+	Inherits: ^GarrisonableBuilding
 	Defaults:
 		Offset: 0,-30
 
@@ -527,38 +576,45 @@ camsc13:
 	-rubble:
 
 camiam01:
-	Inherits: ^CivStructure
+	Inherits: ^GarrisonableBuilding
 	Defaults:
 		Offset: -30,-45
 
 camiam02:
-	Inherits: ^CivStructure
+	Inherits: ^GarrisonableBuilding
 	Defaults:
 		Offset: -30,-45
 
 camiam03:
-	Inherits: ^CivStructure
+	Inherits: ^GarrisonableBuilding
 	Defaults:
 		Offset: 15,-37
 
 camiam04:
-	Inherits: ^CivStructure
+	Inherits: ^GarrisonableBuilding
 	Defaults:
 		Offset: 0,-15
-	-rubble:
+		UseTilesetCode: true
+	idle:
+		ShadowStart: 3
+	damaged-idle:
+		Start: 1
+		ShadowStart: 4
+	garrisoned:
+		ShadowStart: 5
 
 camiam05:
-	Inherits: ^CivStructure
+	Inherits: ^GarrisonableBuilding
 	Defaults:
 		Offset: 15,-52
 
 camiam06:
-	Inherits: ^CivStructure
+	Inherits: ^GarrisonableBuilding
 	Defaults:
 		Offset: 0,-60
 
 camiam07:
-	Inherits: ^CivStructure
+	Inherits: ^GarrisonableBuilding
 	Defaults:
 		Offset: 0,-60
 
@@ -605,7 +661,7 @@ camex01:
 		Offset: -15,-37
 
 camex02:
-	Inherits: ^CivStructure
+	Inherits: ^GarrisonableBuilding
 	Defaults:
 		Offset: -30,-75
 
@@ -625,24 +681,24 @@ camex05:
 		Offset: 0,-30
 
 castl01:
-	Inherits: ^CivStructure
+	Inherits: ^GarrisonableBuilding
 	Defaults: custl01
 		Offset: 0,-60
 		TilesetOverrides:
 			SNOW: URBAN
 
 castl02:
-	Inherits: ^CivStructure
+	Inherits: ^GarrisonableBuilding
 	Defaults: custl02
 		Offset: 0,-60
 
 castl03:
-	Inherits: ^CivStructure
+	Inherits: ^GarrisonableBuilding
 	Defaults: custl03
 		Offset: 0,-60
 
 castl04:
-	Inherits: ^CivStructure
+	Inherits: ^GarrisonableBuilding
 	Defaults: cgstl04
 		Offset: 60,-60
 		UseTilesetCode: false
@@ -708,47 +764,47 @@ caind01:
 		ZOffset: -3c0
 
 calab:
-	Inherits: ^CivStructure
+	Inherits: ^GarrisonableBuilding
 	Defaults:
 		Offset: 15,-52
 
 cagas01:
-	Inherits: ^CivStructure
+	Inherits: ^GarrisonableBuilding
 	Defaults:
 		Offset: 0,-45
 
 cahse01:
-	Inherits: ^CivStructure
+	Inherits: ^GarrisonableBuilding
 	Defaults:
 		Offset: -15,-37
 
 cahse02:
-	Inherits: ^CivStructure
+	Inherits: ^GarrisonableBuilding
 	Defaults:
 		Offset: -15,-37
 
 cahse03:
-	Inherits: ^CivStructure
+	Inherits: ^GarrisonableBuilding
 	Defaults:
 		Offset: 15,-52
 
 cahse04:
-	Inherits: ^CivStructure
+	Inherits: ^GarrisonableBuilding
 	Defaults:
 		Offset: -15,-37
 
 cahse05:
-	Inherits: ^CivStructure
+	Inherits: ^GarrisonableBuilding
 	Defaults:
 		Offset: 15,-22
 
 cahse06:
-	Inherits: ^CivStructure
+	Inherits: ^GarrisonableBuilding
 	Defaults:
 		Offset: -15,-22
 
 cahse07:
-	Inherits: ^CivStructure
+	Inherits: ^GarrisonableBuilding
 	Defaults:
 		Offset: 15,-37
 
@@ -838,29 +894,29 @@ carus02f:
 	-rubble:
 
 carus02g:
-	Inherits: ^CivStructure
+	Inherits: ^GarrisonableBuilding
 	Defaults:
 		Offset: 0,-15
 	rubble:
 		ShadowStart: -1
 
 carus03:
-	Inherits: ^CivStructure
+	Inherits: ^GarrisonableBuilding
 	Defaults:
 		Offset: 45,-52
 
 carus04:
-	Inherits: ^CivStructure
+	Inherits: ^GarrisonableBuilding
 	Defaults:
 		Offset: 0,-60
 
 carus05:
-	Inherits: ^CivStructure
+	Inherits: ^GarrisonableBuilding
 	Defaults:
 		Offset: 0,-60
 
 carus06:
-	Inherits: ^CivStructure
+	Inherits: ^GarrisonableBuilding
 	Defaults:
 		Offset: 0,-60
 
@@ -870,48 +926,48 @@ carus07:
 		Offset: 0,-15
 
 carus08:
-	Inherits: ^CivStructure
+	Inherits: ^GarrisonableBuilding
 	Defaults:
 		Offset: 0,-15
 
 carus09:
-	Inherits: ^CivStructure
+	Inherits: ^GarrisonableBuilding
 	Defaults:
 		Offset: -15,-22
 
 carus10:
-	Inherits: ^CivStructure
+	Inherits: ^GarrisonableBuilding
 	Defaults:
 		Offset: -15,-22
 
 carus11:
-	Inherits: ^CivStructure
+	Inherits: ^GarrisonableBuilding
 	Defaults:
 		Offset: -15,-22
 
 cachig01:
-	Inherits: ^CivStructure
+	Inherits: ^GarrisonableBuilding
 	Defaults:
 		Offset: -15,-37
 
 cachig02:
-	Inherits: ^CivStructure
+	Inherits: ^GarrisonableBuilding
 	Defaults:
 		Offset: 15,-37
 
 cachig03:
-	Inherits: ^CivStructure
+	Inherits: ^GarrisonableBuilding
 	Defaults:
 		Offset: -15,-37
 
 cachig04:
-	Inherits: ^CivStructure
+	Inherits: ^GarrisonableBuilding
 	Defaults: cgchig04
 		Offset: 0,-30
 		UseTilesetCode: false
 
 cachig05:
-	Inherits: ^CivStructure
+	Inherits: ^GarrisonableBuilding
 	Defaults:
 		Offset: 0,-60
 
@@ -922,12 +978,12 @@ cachig06:
 		UseTilesetCode: false
 
 catech01:
-	Inherits: ^CivStructure
+	Inherits: ^GarrisonableBuilding
 	Defaults:
 		Offset: 0,-45
 
 catexs01:
-	Inherits: ^CivStructure
+	Inherits: ^GarrisonableBuilding
 	Defaults:
 		Offset: 0,-30
 
@@ -947,67 +1003,67 @@ catexs02:
 		ZOffset: -3c0
 
 catexs03:
-	Inherits: ^CivStructure
+	Inherits: ^GarrisonableBuilding
 	Defaults:
 		Offset: 0,-45
 
 catexs04:
-	Inherits: ^CivStructure
+	Inherits: ^GarrisonableBuilding
 	Defaults:
 		Offset: 0,-45
 
 catexs05:
-	Inherits: ^CivStructure
+	Inherits: ^GarrisonableBuilding
 	Defaults:
 		Offset: 0,-45
 
 catexs06:
-	Inherits: ^CivStructure
+	Inherits: ^GarrisonableBuilding
 	Defaults:
 		Offset: 0,-45
 
 catexs07:
-	Inherits: ^CivStructure
+	Inherits: ^GarrisonableBuilding
 	Defaults:
 		Offset: 0,-45
 
 catexs08:
-	Inherits: ^CivStructure
+	Inherits: ^GarrisonableBuilding
 	Defaults:
 		Offset: 15,-37
 
 canwy05:
-	Inherits: ^CivStructure
+	Inherits: ^GarrisonableBuilding
 	Defaults:
 		Offset: 0,-60
 
 canwy09:
-	Inherits: ^CivStructure
+	Inherits: ^GarrisonableBuilding
 	Defaults:
 		Offset: 15,-37
 
 canwy22:
-	Inherits: ^CivStructure
+	Inherits: ^GarrisonableBuilding
 	Defaults:
 		Offset: 0,-45
 
 canwy23:
-	Inherits: ^CivStructure
+	Inherits: ^GarrisonableBuilding
 	Defaults:
 		Offset: -15,-37
 
 canwy24:
-	Inherits: ^CivStructure
+	Inherits: ^GarrisonableBuilding
 	Defaults:
 		Offset: 0,-45
 
 canwy25:
-	Inherits: ^CivStructure
+	Inherits: ^GarrisonableBuilding
 	Defaults:
 		Offset: 0,-45
 
 canwy26:
-	Inherits: ^CivStructure
+	Inherits: ^GarrisonableBuilding
 	Defaults:
 		Offset: -30,-60
 
@@ -1029,7 +1085,7 @@ camov01:
 		Tick: 200
 
 camov02:
-	Inherits: ^CivStructure
+	Inherits: ^GarrisonableBuilding
 	Defaults:
 		Offset: 0,-30
 	idle-overlay: camov02_a
@@ -1047,22 +1103,22 @@ capars01:
 		UseTilesetCode: false
 
 capars02:
-	Inherits: ^CivStructure
+	Inherits: ^GarrisonableBuilding
 	Defaults:
 		Offset: -30,-75
 
 capars04:
-	Inherits: ^CivStructure
+	Inherits: ^GarrisonableBuilding
 	Defaults:
 		Offset: 0,-45
 
 capars05:
-	Inherits: ^CivStructure
+	Inherits: ^GarrisonableBuilding
 	Defaults:
 		Offset: 0,-45
 
 capars06:
-	Inherits: ^CivStructure
+	Inherits: ^GarrisonableBuilding
 	Defaults:
 		Offset: 0,-45
 
@@ -1073,17 +1129,17 @@ capars07:
 	-rubble:
 
 capars08:
-	Inherits: ^CivStructure
+	Inherits: ^GarrisonableBuilding
 	Defaults:
 		Offset: -30,-75
 
 capars09:
-	Inherits: ^CivStructure
+	Inherits: ^GarrisonableBuilding
 	Defaults:
 		Offset: -30,-75
 
 capars10:
-	Inherits: ^CivStructure
+	Inherits: ^GarrisonableBuilding
 	Defaults:
 		Offset: -15,-52
 
@@ -1094,17 +1150,17 @@ capars11:
 		UseTilesetCode: false
 
 capars12:
-	Inherits: ^CivStructure
+	Inherits: ^GarrisonableBuilding
 	Defaults:
 		Offset: 30,-60
 
 capars13:
-	Inherits: ^CivStructure
+	Inherits: ^GarrisonableBuilding
 	Defaults:
 		Offset: 15,-52
 
 capars14:
-	Inherits: ^CivStructure
+	Inherits: ^GarrisonableBuilding
 	Defaults:
 		Offset: -15,-52
 
@@ -1133,27 +1189,27 @@ cagard01:
 		Tick: 80
 
 caeur1:
-	Inherits: ^CivStructure
+	Inherits: ^GarrisonableBuilding
 	Defaults:
 		Offset: 0,-30
 
 caeur2:
-	Inherits: ^CivStructure
+	Inherits: ^GarrisonableBuilding
 	Defaults:
 		Offset: 0,-30
 
 caeur04:
-	Inherits: ^CivStructure
+	Inherits: ^GarrisonableBuilding
 	Defaults:
 		Offset: -15,-52
 
 caprs03:
-	Inherits: ^CivStructure
+	Inherits: ^GarrisonableBuilding
 	Defaults:
 		Offset: -30,-75
 
 caswst01:
-	Inherits: ^CivStructure
+	Inherits: ^GarrisonableBuilding
 	Defaults:
 		Offset: 15,-37
 
