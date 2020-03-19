@@ -442,6 +442,9 @@
 		PortCones: 88, 88, 88, 88, 88, 88
 		PauseOnCondition: chronodisable
 		RequiresCondition: !build-incomplete
+	Targetable@GARRISONED:
+		TargetTypes: Defense
+		RequiresCondition: loaded
 	WithSpriteBody:
 		RequiresCondition: !loaded
 	WithSpriteBody@GARRISONED:
