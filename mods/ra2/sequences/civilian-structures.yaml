@@ -26,13 +26,13 @@ cakrmw:
 cawash01:
 	Inherits: ^CivStructure
 	Defaults: cgwash01
-		Offset: 0,-60
+		Offset: 0, -60, 60
 		UseTilesetCode: false
 
 cawash03:
 	Inherits: ^GarrisonableBuilding
 	Defaults:
-		Offset: -15,-52
+		Offset: -15, -52, 52
 	idle: cuwash03
 		ShadowStart: 4
 	damaged-idle: cuwash03
@@ -46,7 +46,7 @@ cawash03:
 cawash04:
 	Inherits: ^GarrisonableBuilding
 	Defaults:
-		Offset: 0,-60
+		Offset: 0, -60, 60
 	idle: cuwash04
 		ShadowStart: 4
 	damaged-idle: cuwash04
@@ -60,7 +60,7 @@ cawash04:
 cawash05:
 	Inherits: ^GarrisonableBuilding
 	Defaults:
-		Offset: -30,-45
+		Offset: -30, -45, 45
 	idle: cuwash05
 		ShadowStart: 4
 	damaged-idle: cuwash05
@@ -74,7 +74,8 @@ cawash05:
 cawash06:
 	Inherits: ^GarrisonableBuilding
 	Defaults:
-		Offset: 0,-60
+		Offset: 0, -60, 60
+		UseTilesetCode: false
 	idle: cgwash06_a # Custom artwork, original lacked shadow.
 		ShadowStart: 1
 	damaged-idle: cuwash06
@@ -88,7 +89,7 @@ cawash06:
 cawash07:
 	Inherits: ^GarrisonableBuilding
 	Defaults:
-		Offset: 0,-45
+		Offset: 0, -45, 45
 		UseTilesetCode: true
 	idle: cuwash07
 		ShadowStart: 4
@@ -103,8 +104,8 @@ cawash07:
 cawash08:
 	Inherits: ^GarrisonableBuilding
 	Defaults:
-		Offset: 15,-52
-        UseTilesetCode: true
+		Offset: 15, -52, 52
+    UseTilesetCode: true
 	idle: cuwash08
 		ShadowStart: 4
 	damaged-idle: cuwash08
@@ -118,8 +119,8 @@ cawash08:
 cawash09:
 	Inherits: ^GarrisonableBuilding
 	Defaults:
-		Offset: 0,-45
-        UseTilesetCode: true
+		Offset: 0, -45, 45
+    UseTilesetCode: true
 	idle: cuwash09
 		ShadowStart: 4
 	damaged-idle: cuwash09
@@ -133,7 +134,7 @@ cawash09:
 cawash10:
 	Inherits: ^GarrisonableBuilding
 	Defaults:
-		Offset: 0,-60
+		Offset: 0, -60, 60
 	idle: cuwash10
 		ShadowStart: 4
 	damaged-idle: cuwash10
@@ -147,7 +148,7 @@ cawash10:
 cawash11:
 	Inherits: ^GarrisonableBuilding
 	Defaults:
-		Offset: 0,-60
+		Offset: 0, -60, 60
 	idle: cuwash11
 		ShadowStart: 4
 	damaged-idle: cuwash11
@@ -161,13 +162,13 @@ cawash11:
 cawsh12:
 	Inherits: ^CivStructure
 	Defaults: cgwsh12
-		Offset: 0,-45
+		Offset: 0, -45, 45
 		UseTilesetCode: false
 
 cawash13:
 	Inherits: ^GarrisonableBuilding
 	Defaults:
-		Offset: 15,-52
+		Offset: 15, -52, 52
 	idle: cuwash13
 		ShadowStart: 4
 	damaged-idle: cuwash13
@@ -181,24 +182,24 @@ cawash13:
 cawash14:
 	Inherits: ^CivStructure
 	Defaults: cgwash14
-		Offset: 0,-45
+		Offset: 0, -45, 45
 		UseTilesetCode: false
 
 cawash15:
 	Inherits: ^CivStructure
 	Defaults: cgwash15
-		Offset: 15,-52
+		Offset: 15, -52, 52
 		UseTilesetCode: false
 
 cawash16:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: -30,-60
+		Offset: -30, -60, 60
 
 cawash17:
 	Inherits: ^GarrisonableBuilding
 	Defaults:
-		Offset: -30,-75
+		Offset: -30, -75, 75
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -212,7 +213,7 @@ cawash17:
 
 cawash18:
 	Defaults:
-		Offset: 0,-30
+		Offset: 0, -30, 30
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 3
@@ -224,7 +225,7 @@ cawash18:
 cawash19:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-60
+		Offset: 0, -60, 60
 	idle-flag: cawa19_a
 		Length: 16
 	damaged-idle-flag: cawa19_a
@@ -234,7 +235,7 @@ cawash19:
 canewy01:
 	Inherits: ^GarrisonableBuilding
 	Defaults:
-		Offset: 0,-60
+		Offset: 0, -60, 60
 	idle: cunewy01
 		ShadowStart: 4
 	damaged-idle: cunewy01
@@ -248,7 +249,7 @@ canewy01:
 canewy04:
 	Inherits: ^CivStructure
 	Defaults: cgnewy04
-		Offset: 0,-45
+		Offset: 0, -45, 45
 		UseTilesetCode: false
 	idle:
 		ShadowStart: -1
@@ -258,7 +259,7 @@ canewy04:
 
 canewy05:
 	Defaults:
-		Offset: 0,-30
+		Offset: 0, -30, 30
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 3
@@ -266,7 +267,7 @@ canewy05:
 canewy06:
 	Inherits: ^GarrisonableBuilding
 	Defaults:
-		Offset: 0,-45
+		Offset: 0, -45, 45
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -281,7 +282,7 @@ canewy06:
 canewy07:
 	Inherits: ^GarrisonableBuilding
 	Defaults:
-		Offset: 0,-45
+		Offset: 0, -45, 45
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -296,7 +297,7 @@ canewy07:
 canewy08:
 	Inherits: ^GarrisonableBuilding
 	Defaults:
-		Offset: 0,-45
+		Offset: 0, -45, 45
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -311,7 +312,7 @@ canewy08:
 canewy10:
 	Inherits: ^GarrisonableBuilding
 	Defaults:
-		Offset: -15,-37
+		Offset: -15, -37, 37
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -326,7 +327,7 @@ canewy10:
 canewy11:
 	Inherits: ^GarrisonableBuilding
 	Defaults:
-		Offset: -15,-37
+		Offset: -15, -37, 37
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -341,7 +342,7 @@ canewy11:
 canewy12:
 	Inherits: ^GarrisonableBuilding
 	Defaults:
-		Offset: 15,-37
+		Offset: 15, -37, 37
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -356,7 +357,7 @@ canewy12:
 canewy13:
 	Inherits: ^GarrisonableBuilding
 	Defaults:
-		Offset: 0,-45
+		Offset: 0, -45, 45
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -371,7 +372,7 @@ canewy13:
 canewy14:
 	Inherits: ^GarrisonableBuilding
 	Defaults:
-		Offset: 0,-45
+		Offset: 0, -45, 45
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -386,7 +387,7 @@ canewy14:
 canewy15:
 	Inherits: ^GarrisonableBuilding
 	Defaults:
-		Offset: 0,-45
+		Offset: 0, -45, 45
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -402,7 +403,7 @@ canewy16:
 	Inherits: ^GarrisonableBuilding
 	Defaults:
 		UseTilesetCode: true
-		Offset: 0,-30
+		Offset: 0, -30, 30
 	idle:
 		ShadowStart: 4
 	damaged-idle:
@@ -416,7 +417,7 @@ canewy16:
 canewy17:
 	Inherits: ^GarrisonableBuilding
 	Defaults:
-		Offset: 0,-30
+		Offset: 0, -30, 30
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -431,7 +432,7 @@ canewy17:
 canewy18:
 	Inherits: ^GarrisonableBuilding
 	Defaults:
-		Offset: 0,-30
+		Offset: 0, -30, 30
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -446,7 +447,7 @@ canewy18:
 canewy20:
 	Inherits: ^GarrisonableBuilding
 	Defaults:
-		Offset: 30,-60
+		Offset: 30, -60, 60
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -461,7 +462,7 @@ canewy20:
 canewy21:
 	Inherits: ^GarrisonableBuilding
 	Defaults:
-		Offset: -30,-60
+		Offset: -30, -60, 60
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -477,7 +478,7 @@ caarmy01:
 	Inherits: ^GarrisonableBuilding
 	Defaults:
 		UseTilesetCode: true
-		Offset: -15,-37
+		Offset: -15, -37, 37
 	idle:
 		ShadowStart: 3
 	damaged-idle:
@@ -489,7 +490,7 @@ caarmy01:
 caarmy02:
 	Inherits: ^GarrisonableBuilding
 	Defaults:
-		Offset: 0,-15
+		Offset: 0, -15, 15
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 3
@@ -498,11 +499,12 @@ caarmy02:
 		ShadowStart: 4
 	garrisoned:
 		ShadowStart: 5
+	-rubble:
 
 caarmy03:
 	Inherits: ^GarrisonableBuilding
 	Defaults:
-		Offset: 0,-15
+		Offset: 0, -15, 15
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 3
@@ -511,11 +513,12 @@ caarmy03:
 		ShadowStart: 4
 	garrisoned:
 		ShadowStart: 5
+	-rubble:
 
 caarmy04:
 	Inherits: ^GarrisonableBuilding
 	Defaults:
-		Offset: 0,-15
+		Offset: 0, -15, 15
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 3
@@ -524,11 +527,12 @@ caarmy04:
 		ShadowStart: 4
 	garrisoned:
 		ShadowStart: 5
+	-rubble:
 
 cawa2a:
 	Inherits: ^GarrisonableBuilding
 	Defaults:
-		Offset: 0,-60
+		Offset: 0, -60, 60
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -543,7 +547,7 @@ cawa2a:
 cawa2b:
 	Inherits: ^GarrisonableBuilding
 	Defaults:
-		Offset: 0,-60
+		Offset: 0, -60, 60
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -559,7 +563,7 @@ cawa2c:
 	Inherits: ^GarrisonableBuilding
 	Defaults:
 		UseTilesetCode: true
-		Offset: 0,-60
+		Offset: 0, -60, 60
 	idle:
 		ShadowStart: 4
 	damaged-idle:
@@ -574,7 +578,7 @@ cawa2d:
 	Inherits: ^GarrisonableBuilding
 	Defaults:
 		UseTilesetCode: true
-		Offset: 0,-60
+		Offset: 0, -60, 60
 	idle:
 		ShadowStart: 4
 	damaged-idle:
@@ -589,7 +593,7 @@ cafarm01:
 	Inherits: ^GarrisonableBuilding
 	Defaults:
 		UseTilesetCode: true
-		Offset: 0,-30
+		Offset: 0, -30, 30
 	idle:
 		ShadowStart: 3
 	damaged-idle:
@@ -597,17 +601,18 @@ cafarm01:
 		ShadowStart: 4
 	garrisoned:
 		ShadowStart: 5
+	-rubble:
 
 cafarm02:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-15
+		Offset: 0, -15, 15
 
 cafarm06:
 	Inherits: ^GarrisonableBuilding
 	Defaults:
 		UseTilesetCode: true
-		Offset: 0,-30
+		Offset: 0, -30, 30
 	idle:
 		ShadowStart: 4
 	damaged-idle:
@@ -621,7 +626,7 @@ cafarm06:
 cafrma:
 	Inherits: ^GarrisonableBuilding
 	Defaults:
-		Offset: 0,-30
+		Offset: 0, -30, 30
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 3
@@ -630,11 +635,12 @@ cafrma:
 		ShadowStart: 4
 	garrisoned:
 		ShadowStart: 5
+	-rubble:
 
 cafrmb:
 	Inherits: ^GarrisonableBuilding
 	Defaults:
-		Offset: 0,-15
+		Offset: 0, -15, 15
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 3
@@ -643,12 +649,13 @@ cafrmb:
 		ShadowStart: 4
 	garrisoned:
 		ShadowStart: 5
+	-rubble:
 
 cabarn02:
 	Inherits: ^GarrisonableBuilding
 	Defaults:
 		UseTilesetCode: true
-		Offset: 0,-30
+		Offset: 0, -30, 30
 	idle:
 		ShadowStart: 4
 	damaged-idle:
@@ -661,7 +668,7 @@ cabarn02:
 causfgl:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-15
+		Offset: 0, -15, 15
 	-rubble:
 	flag: causfgl_a
 		Length: 16
@@ -670,7 +677,7 @@ causfgl:
 carufgl:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-15
+		Offset: 0, -15, 15
 	-rubble:
 	flag: carufgl_a
 		Length: 16
@@ -679,7 +686,7 @@ carufgl:
 cairfgl:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-15
+		Offset: 0, -15, 15
 	-rubble:
 	flag: cairfgl_a
 		Length: 16
@@ -688,7 +695,7 @@ cairfgl:
 capofgl:
 	Inherits: ^CivStructure
 	Defaults: capofgl
-		Offset: 0,-15
+		Offset: 0, -15, 15
 		UseTilesetCode: false
 	-rubble:
 	flag: capofgl_a
@@ -698,7 +705,7 @@ capofgl:
 caskfgl:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-15
+		Offset: 0, -15, 15
 	-rubble:
 	flag: cuskfgl_a
 		Length: 16
@@ -707,7 +714,7 @@ caskfgl:
 calbfgl:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-15
+		Offset: 0, -15, 15
 	-rubble:
 	flag: culbfgl_a
 		Length: 16
@@ -716,7 +723,7 @@ calbfgl:
 cafrfgl:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-15
+		Offset: 0, -15, 15
 	-rubble:
 	flag: cufrfgl_a
 		Length: 16
@@ -725,7 +732,7 @@ cafrfgl:
 cagefgl:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-15
+		Offset: 0, -15, 15
 	-rubble:
 	flag: cugefgl_a
 		Length: 16
@@ -734,7 +741,7 @@ cagefgl:
 cacufgl:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-15
+		Offset: 0, -15, 15
 	-rubble:
 	flag: cucufgl_a
 		Length: 16
@@ -743,7 +750,7 @@ cacufgl:
 caukfgl:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-15
+		Offset: 0, -15, 15
 	-rubble:
 	flag: cuukfgl_a
 		Length: 16
@@ -752,31 +759,31 @@ caukfgl:
 camisc01:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-15
+		Offset: 0, -15, 15
 	-rubble:
 
 camisc02:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-15
+		Offset: 0, -15, 15
 	-rubble:
 
 camisc03:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-15
+		Offset: 0, -15, 15
 	-rubble:
 
 camisc04:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-15
+		Offset: 0, -15, 15
 	-rubble:
 
 camisc05:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-15
+		Offset: 0, -15, 15
 	idle:
 		ShadowStart: 2
 	damaged-idle:
@@ -786,14 +793,14 @@ camisc05:
 camisc06:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: -15,-22
+		Offset: -15, -22, 22
 	-rubble:
 
 camsc07:
 	Inherits: ^GarrisonableBuilding
 	Defaults:
 		UseTilesetCode: true
-		Offset: 0,-30
+		Offset: 0, -30, 30
 	idle:
 		ShadowStart: 3
 	damaged-idle:
@@ -801,12 +808,13 @@ camsc07:
 		ShadowStart: 4
 	garrisoned:
 		ShadowStart: 5
+	-rubble:
 
 camsc08:
 	Inherits: ^GarrisonableBuilding
 	Defaults:
 		UseTilesetCode: true
-		Offset: 0,-15
+		Offset: 0, -15, 15
 	idle:
 		ShadowStart: 3
 	damaged-idle:
@@ -814,12 +822,13 @@ camsc08:
 		ShadowStart: 4
 	garrisoned:
 		ShadowStart: 5
+	-rubble:
 
 camsc09:
 	Inherits: ^GarrisonableBuilding
 	Defaults:
 		UseTilesetCode: true
-		Offset: 0,-15
+		Offset: 0, -15, 15
 	idle:
 		ShadowStart: 3
 	damaged-idle:
@@ -827,12 +836,13 @@ camsc09:
 		ShadowStart: 4
 	garrisoned:
 		ShadowStart: 5
+	-rubble:
 
 camsc10:
 	Inherits: ^GarrisonableBuilding
 	Defaults:
 		UseTilesetCode: true
-		Offset: 0,-60
+		Offset: 0, -60, 60
 	idle:
 		ShadowStart: 4
 	damaged-idle:
@@ -846,25 +856,25 @@ camsc10:
 camsc11:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-15
+		Offset: 0, -15, 15
 	-rubble:
 
 camsc12:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-15
+		Offset: 0, -15, 15
 	-rubble:
 
 camsc13:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 15,-22
+		Offset: 15, -22, 22
 	-rubble:
 
 camiam01:
 	Inherits: ^GarrisonableBuilding
 	Defaults:
-		Offset: -30,-45
+		Offset: -30, -45, 45
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -879,7 +889,7 @@ camiam01:
 camiam02:
 	Inherits: ^GarrisonableBuilding
 	Defaults:
-		Offset: -30,-45
+		Offset: -30, -45, 45
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -894,7 +904,7 @@ camiam02:
 camiam03:
 	Inherits: ^GarrisonableBuilding
 	Defaults:
-		Offset: 15,-37
+		Offset: 15, -37, 37
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -909,7 +919,7 @@ camiam03:
 camiam04:
 	Inherits: ^GarrisonableBuilding
 	Defaults:
-		Offset: 0,-15
+		Offset: 0, -15, 15
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 3
@@ -918,11 +928,12 @@ camiam04:
 		ShadowStart: 4
 	garrisoned:
 		ShadowStart: 5
+	-rubble:
 
 camiam05:
 	Inherits: ^GarrisonableBuilding
 	Defaults:
-		Offset: 15,-52
+		Offset: 15, -52, 52
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -937,7 +948,7 @@ camiam05:
 camiam06:
 	Inherits: ^GarrisonableBuilding
 	Defaults:
-		Offset: 0,-60
+		Offset: 0, -60, 60
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -953,7 +964,7 @@ camiam07:
 	Inherits: ^GarrisonableBuilding
 	Defaults:
 		UseTilesetCode: true
-		Offset: 0,-60
+		Offset: 0, -60, 60
 	idle:
 		ShadowStart: 4
 	damaged-idle:
@@ -967,36 +978,36 @@ camiam07:
 camiam08:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: -30,-30
+		Offset: -30, -30, 30
 
 castrt01:
 	Defaults:
-		Offset: 0,-15
+		Offset: 0, -15, 15
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 3
 
 castrt02:
 	Defaults:
-		Offset: 0,-15
+		Offset: 0, -15, 15
 	idle:
 		ShadowStart: 3
 
 castrt03:
 	Defaults:
-		Offset: 0,-15
+		Offset: 0, -15, 15
 	idle:
 		ShadowStart: 3
 
 castrt04:
 	Defaults:
-		Offset: 0,-15
+		Offset: 0, -15, 15
 	idle:
 		ShadowStart: 3
 
 castrt05:
 	Defaults:
-		Offset: 0,-15
+		Offset: 0, -15, 15
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 3
@@ -1004,12 +1015,12 @@ castrt05:
 camex01:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: -15,-37
+		Offset: -15, -37, 37
 
 camex02:
 	Inherits: ^GarrisonableBuilding
 	Defaults:
-		Offset: -30,-75
+		Offset: -30, -75, 75
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -1024,23 +1035,25 @@ camex02:
 camex03:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-45
+		Offset: 0, -45, 45
 
 camex04:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-60
+		Offset: 0, -60, 60
 
 camex05:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-30
+		Offset: 0, -30, 30
 
 castl01:
 	Inherits: ^GarrisonableBuilding
 	Defaults:
 		UseTilesetCode: true
-		Offset: 0,-60
+		Offset: 0, -60, 60
+		TilesetOverrides:
+			SNOW: URBAN
 	idle: custl01
 		ShadowStart: 4
 	damaged-idle: custl01
@@ -1055,7 +1068,7 @@ castl01:
 castl02:
 	Inherits: ^GarrisonableBuilding
 	Defaults:
-		Offset: 0,-60
+		Offset: 0, -60, 60
 		UseTilesetCode: true
 	idle: custl02
 		ShadowStart: 4
@@ -1070,7 +1083,7 @@ castl02:
 castl03:
 	Inherits: ^GarrisonableBuilding
 	Defaults:
-		Offset: 0,-60
+		Offset: 0, -60, 60
 		UseTilesetCode: true
 	idle: custl03
 		ShadowStart: 4
@@ -1085,7 +1098,8 @@ castl03:
 castl04:
 	Inherits: ^GarrisonableBuilding
 	Defaults:
-		Offset: 60,-60
+		Offset: 60, -60, 60
+		UseTilesetCode: false
 	idle: cgstl04
 		ShadowStart: 3
 	damaged-idle: cgstl04
@@ -1099,53 +1113,53 @@ castl04:
 castl05a:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-60
+		Offset: 0, -60, 60
 
 castl05b:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-60
+		Offset: 0, -60, 60
 
 castl05c:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-60
+		Offset: 0, -60, 60
 
 castl05d:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-60
+		Offset: 0, -60, 60
 
 castl05e:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-60
+		Offset: 0, -60, 60
 
 castl05f:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-60
+		Offset: 0, -60, 60
 
 castl05g:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-60
+		Offset: 0, -60, 60
 
 castl05h:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-60
+		Offset: 0, -60, 60
 
 cacolo01:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: -30,-60
+		Offset: -30, -60, 60
 
 caind01:
 	Inherits: ^GarrisonableBuilding
 	Defaults:
 		UseTilesetCode: true
-		Offset: 0,-60
+		Offset: 0, -60, 60
 	idle:
 		ShadowStart: 4
 	damaged-idle:
@@ -1160,7 +1174,7 @@ calab:
 	Inherits: ^GarrisonableBuilding
 	Defaults:
 		UseTilesetCode: true
-		Offset: 15,-52
+		Offset:  15, -52, 52
 	idle:
 		ShadowStart: 4
 	damaged-idle:
@@ -1175,7 +1189,7 @@ cagas01:
 	Inherits: ^GarrisonableBuilding
 	Defaults:
 		UseTilesetCode: true
-		Offset: 0,-45
+		Offset: 0, -45, 45
 	idle:
 		ShadowStart: 4
 	damaged-idle:
@@ -1189,7 +1203,7 @@ cagas01:
 cahse01:
 	Inherits: ^GarrisonableBuilding
 	Defaults:
-		Offset: -15,-37
+		Offset: -15, -37, 37
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -1204,7 +1218,7 @@ cahse01:
 cahse02:
 	Inherits: ^GarrisonableBuilding
 	Defaults:
-		Offset: -15,-37
+		Offset: -15, -37, 37
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -1219,7 +1233,7 @@ cahse02:
 cahse03:
 	Inherits: ^GarrisonableBuilding
 	Defaults:
-		Offset: 15,-52
+		Offset: 15, -52, 52
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -1234,7 +1248,7 @@ cahse03:
 cahse04:
 	Inherits: ^GarrisonableBuilding
 	Defaults:
-		Offset: -15,-37
+		Offset: -15, -37, 37
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -1249,7 +1263,7 @@ cahse04:
 cahse05:
 	Inherits: ^GarrisonableBuilding
 	Defaults:
-		Offset: 15,-22
+		Offset: 15, -22, 22
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -1264,7 +1278,7 @@ cahse05:
 cahse06:
 	Inherits: ^GarrisonableBuilding
 	Defaults:
-		Offset: -15,-22
+		Offset: -15, -22, 22
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -1279,7 +1293,7 @@ cahse06:
 cahse07:
 	Inherits: ^GarrisonableBuilding
 	Defaults:
-		Offset: 15,-37
+		Offset: 15, -37, 37
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -1293,7 +1307,7 @@ cahse07:
 
 cawt01:
 	Defaults:
-		Offset: 0,-15
+		Offset: 0, -15, 15
 		UseTilesetCode: true
 		TilesetOverrides:
 			TEMPERATE: GENERIC
@@ -1307,7 +1321,7 @@ cawt01:
 cabunk01:
 	Inherits: ^GarrisonableBuilding
 	Defaults:
-		Offset: 0,-30
+		Offset: 0, -30, 30
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -1322,7 +1336,7 @@ cabunk01:
 cabunk02:
 	Inherits: ^GarrisonableBuilding
 	Defaults:
-		Offset: 0,-30
+		Offset: 0, -30, 30
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -1337,7 +1351,8 @@ cabunk02:
 carus01:
 	Inherits: ^GarrisonableBuilding
 	Defaults:
-		Offset: 0,-60
+		Offset: 0, -60, 60
+		UseTilesetCode: false
 	idle: cgrus01
 		ShadowStart: 4
 	damaged-idle: cgrus01
@@ -1351,43 +1366,43 @@ carus01:
 carus02a:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-15
+		Offset: 0, -15, 15
 		UseTilesetCode: false
 
 carus02b:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-15
+		Offset: 0, -15, 15
 		UseTilesetCode: false
 
 carus02c:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-15
+		Offset: 0, -15, 15
 	-rubble:
 
 carus02d:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-15
+		Offset: 0, -15, 15
 	-rubble:
 
 carus02e:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-15
+		Offset: 0, -15, 15
 	-rubble:
 
 carus02f:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-15
+		Offset: 0, -15, 15
 	-rubble:
 
 carus02g:
 	Inherits: ^GarrisonableBuilding
 	Defaults:
-		Offset: 0,-15
+		Offset: 0, -15, 15
 		UseTilesetCode: false
 	idle:
 		ShadowStart: 4
@@ -1402,7 +1417,7 @@ carus02g:
 carus03:
 	Inherits: ^GarrisonableBuilding
 	Defaults:
-		Offset: 45,-52
+		Offset: 45, -52, 52
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -1417,7 +1432,7 @@ carus03:
 carus04:
 	Inherits: ^GarrisonableBuilding
 	Defaults:
-		Offset: 0,-60
+		Offset: 0, -60, 60
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -1432,7 +1447,7 @@ carus04:
 carus05:
 	Inherits: ^GarrisonableBuilding
 	Defaults:
-		Offset: 0,-60
+		Offset: 0, -60, 60
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -1447,7 +1462,7 @@ carus05:
 carus06:
 	Inherits: ^GarrisonableBuilding
 	Defaults:
-		Offset: 0,-60
+		Offset: 0, -60, 60
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -1462,12 +1477,12 @@ carus06:
 carus07:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-15
+		Offset: 0, -15, 15
 
 carus08:
 	Inherits: ^GarrisonableBuilding
 	Defaults:
-		Offset: 0,-15
+		Offset: 0, -15, 15
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -1482,7 +1497,7 @@ carus08:
 carus09:
 	Inherits: ^GarrisonableBuilding
 	Defaults:
-		Offset: -15,-22
+		Offset: -15, -22, 22
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -1497,7 +1512,7 @@ carus09:
 carus10:
 	Inherits: ^GarrisonableBuilding
 	Defaults:
-		Offset: 15,-23
+		Offset: -15, -22, 22
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -1512,7 +1527,7 @@ carus10:
 carus11:
 	Inherits: ^GarrisonableBuilding
 	Defaults:
-		Offset: -15,-22
+		Offset: -15, -22, 22
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -1527,7 +1542,7 @@ carus11:
 cachig01:
 	Inherits: ^GarrisonableBuilding
 	Defaults:
-		Offset: -15,-37
+		Offset: -15, -37, 37
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -1542,7 +1557,7 @@ cachig01:
 cachig02:
 	Inherits: ^GarrisonableBuilding
 	Defaults:
-		Offset: 15,-37
+		Offset: 15, -37, 37
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -1557,7 +1572,7 @@ cachig02:
 cachig03:
 	Inherits: ^GarrisonableBuilding
 	Defaults:
-		Offset: -15,-37
+		Offset: -15, -37, 37
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -1572,7 +1587,8 @@ cachig03:
 cachig04:
 	Inherits: ^GarrisonableBuilding
 	Defaults:
-		Offset: 0,-30
+		Offset: 0, -30, 30
+		UseTilesetCode: false
 	idle: cgchig04
 		ShadowStart: 4
 	damaged-idle: cgchig04
@@ -1586,7 +1602,7 @@ cachig04:
 cachig05:
 	Inherits: ^GarrisonableBuilding
 	Defaults:
-		Offset: 0,-60
+		Offset: 0, -60, 60
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -1601,13 +1617,13 @@ cachig05:
 cachig06:
 	Inherits: ^CivStructure
 	Defaults: cgchig06
-		Offset: 0,-30
+		Offset: 0, -30, 30
 		UseTilesetCode: false
 
 catech01:
 	Inherits: ^GarrisonableBuilding
 	Defaults:
-		Offset: 0,-45
+		Offset: 0, -45, 45
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -1622,7 +1638,7 @@ catech01:
 catexs01:
 	Inherits: ^GarrisonableBuilding
 	Defaults:
-		Offset: 0,-30
+		Offset: 0, -30, 30
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -1637,7 +1653,7 @@ catexs01:
 catexs02:
 	Inherits: ^GarrisonableBuilding
 	Defaults:
-		Offset: 0,-60
+		Offset: 0, -60, 60
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -1652,7 +1668,7 @@ catexs02:
 catexs03:
 	Inherits: ^GarrisonableBuilding
 	Defaults:
-		Offset: 0,-45
+		Offset: 0, -45, 45
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -1667,7 +1683,7 @@ catexs03:
 catexs04:
 	Inherits: ^GarrisonableBuilding
 	Defaults:
-		Offset: 0,-45
+		Offset: 0, -45, 45
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -1682,7 +1698,7 @@ catexs04:
 catexs05:
 	Inherits: ^GarrisonableBuilding
 	Defaults:
-		Offset: 0,-45
+		Offset: 0, -45, 45
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -1697,7 +1713,7 @@ catexs05:
 catexs06:
 	Inherits: ^GarrisonableBuilding
 	Defaults:
-		Offset: 0,-45
+		Offset: 0, -45, 45
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -1712,7 +1728,7 @@ catexs06:
 catexs07:
 	Inherits: ^GarrisonableBuilding
 	Defaults:
-		Offset: 0,-45
+		Offset: 0, -45, 45
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -1727,7 +1743,7 @@ catexs07:
 catexs08:
 	Inherits: ^GarrisonableBuilding
 	Defaults:
-		Offset: 15,-37
+		Offset: 15, -37, 37
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -1742,7 +1758,7 @@ catexs08:
 canwy05:
 	Inherits: ^GarrisonableBuilding
 	Defaults:
-		Offset: 0,-60
+		Offset: 0, -60, 60
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -1757,7 +1773,7 @@ canwy05:
 canwy09:
 	Inherits: ^GarrisonableBuilding
 	Defaults:
-		Offset: 15,-37
+		Offset: 15, -37, 37
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -1772,7 +1788,7 @@ canwy09:
 canwy22:
 	Inherits: ^GarrisonableBuilding
 	Defaults:
-		Offset: 0,-45
+		Offset: 0, -45, 45
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -1787,7 +1803,7 @@ canwy22:
 canwy23:
 	Inherits: ^GarrisonableBuilding
 	Defaults:
-		Offset: -15,-37
+		Offset: -15, -37, 37
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -1802,7 +1818,7 @@ canwy23:
 canwy24:
 	Inherits: ^GarrisonableBuilding
 	Defaults:
-		Offset: 0,-45
+		Offset: 0, -45, 45
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -1817,7 +1833,7 @@ canwy24:
 canwy25:
 	Inherits: ^GarrisonableBuilding
 	Defaults:
-		Offset: 0,-45
+		Offset: 0, -45, 45
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -1832,7 +1848,7 @@ canwy25:
 canwy26:
 	Inherits: ^GarrisonableBuilding
 	Defaults:
-		Offset: -30,-60
+		Offset: -30, -60, 60
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -1846,7 +1862,7 @@ canwy26:
 
 camov01:
 	Defaults:
-		Offset: 45,-37
+		Offset: 45, -37, 37
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 3
@@ -1865,7 +1881,7 @@ camov02:
 	Inherits: ^GarrisonableBuilding
 	Defaults:
 		UseTilesetCode: true
-		Offset: 0,-30
+		Offset: 0, -30, 30
 	idle:
 		ShadowStart: 4
 	damaged-idle:
@@ -1886,13 +1902,13 @@ camov02:
 capars01:
 	Inherits: ^CivStructure
 	Defaults: cgpars01
-		Offset: 0,-60
+		Offset: 0, -60, 60
 		UseTilesetCode: false
 
 capars02:
 	Inherits: ^GarrisonableBuilding
 	Defaults:
-		Offset: -30,-75
+		Offset: -30, -75, 75
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -1907,7 +1923,7 @@ capars02:
 capars04:
 	Inherits: ^GarrisonableBuilding
 	Defaults:
-		Offset: 0,-45
+		Offset: 0, -45, 45
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -1922,7 +1938,7 @@ capars04:
 capars05:
 	Inherits: ^GarrisonableBuilding
 	Defaults:
-		Offset: 0,-45
+		Offset: 0, -45, 45
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -1937,7 +1953,7 @@ capars05:
 capars06:
 	Inherits: ^GarrisonableBuilding
 	Defaults:
-		Offset: 0,-45
+		Offset: 0, -45, 45
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -1952,13 +1968,13 @@ capars06:
 capars07:
 	Inherits: ^CivStructure
 	Defaults:
-		Offset: 0,-15
+		Offset: 0, -15, 15
 	-rubble:
 
 capars08:
 	Inherits: ^GarrisonableBuilding
 	Defaults:
-		Offset: -30,-75
+		Offset: -30, -75, 75
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -1973,7 +1989,7 @@ capars08:
 capars09:
 	Inherits: ^GarrisonableBuilding
 	Defaults:
-		Offset: -30,-75
+		Offset: -30, -75, 75
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -1988,7 +2004,7 @@ capars09:
 capars10:
 	Inherits: ^GarrisonableBuilding
 	Defaults:
-		Offset: -15,-52
+		Offset: -15, -52, 75
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -2003,13 +2019,13 @@ capars10:
 capars11:
 	Inherits: ^CivStructure
 	Defaults: cgpars11
-		Offset: 15,-52
+		Offset: 15, -52, 75
 		UseTilesetCode: false
 
 capars12:
 	Inherits: ^GarrisonableBuilding
 	Defaults:
-		Offset: 30,-60
+		Offset: 30, -60, 75
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -2024,7 +2040,7 @@ capars12:
 capars13:
 	Inherits: ^GarrisonableBuilding
 	Defaults:
-		Offset: 15,-52
+		Offset: 15, -52, 52
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -2039,7 +2055,7 @@ capars13:
 capars14:
 	Inherits: ^GarrisonableBuilding
 	Defaults:
-		Offset: -15,-52
+		Offset: -15, -52, 52
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -2053,7 +2069,7 @@ capars14:
 
 cats01:
 	Defaults:
-		Offset: 0,-30
+		Offset: 0, -30, 30
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 3
@@ -2063,7 +2079,7 @@ cats01:
 
 cagard01:
 	Defaults:
-		Offset: 0,-15
+		Offset: 0, -15, 15
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 3
@@ -2078,7 +2094,7 @@ cagard01:
 caeur1:
 	Inherits: ^GarrisonableBuilding
 	Defaults:
-		Offset: 0,-30
+		Offset: 0, -30, 30
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -2093,7 +2109,7 @@ caeur1:
 caeur2:
 	Inherits: ^GarrisonableBuilding
 	Defaults:
-		Offset: 0,-30
+		Offset: 0, -30, 30
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -2108,7 +2124,7 @@ caeur2:
 caeur04:
 	Inherits: ^GarrisonableBuilding
 	Defaults:
-		Offset: -15,-52
+		Offset: -15, -52, 52
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -2123,7 +2139,7 @@ caeur04:
 caprs03:
 	Inherits: ^GarrisonableBuilding
 	Defaults:
-		Offset: -30,-75
+		Offset: -30, -75, 75
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -2138,7 +2154,7 @@ caprs03:
 caswst01:
 	Inherits: ^GarrisonableBuilding
 	Defaults:
-		Offset: 15,-37
+		Offset: 15, -37, 37
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 4
@@ -2151,6 +2167,9 @@ caswst01:
 		ZOffset: -3c0
 
 galite:
+	Defaults:
+		DepthSprite: isodepth.shp
+		Offset: 0, -12, 12
 	idle:
 		ShadowStart: 2
 	damaged-idle:
@@ -2160,54 +2179,54 @@ galite:
 
 cacity01:
 	Defaults:
-		Offset: 0,-60
+		Offset: 0, -60, 60
 	idle:
 		ShadowStart: 3
 
 cacity02:
 	Defaults:
-		Offset: -15,-67
+		Offset: -15, -67, 67
 	idle:
 		ShadowStart: 3
 
 cacity03:
 	Defaults:
-		Offset: 0,-45
+		Offset: 0, -45, 45
 	idle:
 		ShadowStart: 3
 
 cacity04:
 	Defaults:
-		Offset: 0,-60
+		Offset: 0, -60, 60
 	idle:
 		ShadowStart: 3
 
 city01:
 	Defaults:
-		Offset: 0,-45
+		Offset: 0, -45, 45
 	idle:
 		ShadowStart: 2
 
 city02:
 	Defaults:
-		Offset: -15,-52
+		Offset: -15, -52, 52
 	idle:
 		ShadowStart: 2
 
 city03:
 	Defaults:
-		Offset: 0,-45
+		Offset: 0, -45, 45
 	idle:
 		ShadowStart: 2
 
 city04:
 	Defaults:
-		Offset: 0,-60
+		Offset: 0, -60, 60
 	idle:
 		ShadowStart: 2
 
 city05:
 	Defaults:
-		Offset: 0,-60
+		Offset: 0, -60, 60
 	idle:
 		ShadowStart: 2

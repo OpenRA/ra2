@@ -266,9 +266,11 @@ deso:
 	Armament@primary:
 		Weapon: RadBeamWeapon
 		RequiresCondition: !rank-elite
+		LocalOffset: 320,128,1024
 	Armament@elite:
 		Weapon: RadBeamWeaponE
 		RequiresCondition: rank-elite
+		LocalOffset: 320,128,1024
 	AttackFrontal:
 		Voice: Attack
 	WithInfantryBody:

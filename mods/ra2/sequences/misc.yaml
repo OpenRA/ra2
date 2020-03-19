@@ -1,6 +1,7 @@
 overlay:
 	Defaults: place
-		Offset: 0, -15
+		Offset: 0, -15, 1
+		ZRamp: 1
 	build-valid-temperate:
 	build-valid-snow:
 	build-valid-urban:
@@ -18,7 +19,8 @@ overlay:
 
 editor-overlay:
 	Defaults: place
-		Offset: 0, -15
+		ZRamp: 1
+		Offset: 0, -15, 1
 	copy:
 	paste:
 		Start: 1
@@ -70,18 +72,13 @@ crate-effects:
 	speed: speed
 
 crate:
+	Defaults:
+		Offset: 0, -12, 12
+		ShadowStart: 1
+		UseTilesetExtension: true
 	idle:
-		Offset: 0, -12
-		ShadowStart: 1
-		UseTilesetExtension: true
 	land:
-		Offset: 0, -12
-		ShadowStart: 1
-		UseTilesetExtension: true
 	water: wcrate
-		ShadowStart: 1
-		Offset: 0, -12
-		UseTilesetExtension: true
 
 rank:
 	veteran: pips
@@ -92,10 +89,12 @@ rank:
 mpspawn:
 	idle:
 		Length: *
+		ZRamp: 1
 
 waypoint:
 	idle:
 		Length: *
+		ZRamp: 1
 
 clock:
 	idle:
@@ -168,17 +167,23 @@ pips:
 explosion:
 	Defaults:
 		Length: *
+		Offset: 0, 0, 30
 	building: twlt070
+		Offset: 0, 0, 40
 	ionring: ring1
 		Tick: 160
+		ZRamp: 1
 	huge_watersplash: h2o_exp1
+		Offset: 0, 0, 39
 	large_watersplash: h2o_exp2
 	small_watersplash: h2o_exp3
 	piff: piff
 	piffpiff: piffpiff
 	small_explosion: explosml
 	medium_explosion: explomed
+		Offset: 0, 0, 27
 	large_explosion: explolrg
+		Offset: 0, 0, 31
 	tiny_bang: s_bang16
 	small_bang: s_bang24
 	medium_bang: s_bang34
@@ -187,20 +192,26 @@ explosion:
 	small_brnl: s_brnl30
 	medium_brnl: s_brnl40
 	large_brnl: s_brnl58
+		Offset: 0, 0, 30
 	tiny_tumu: s_tumu22
 	small_tumu: s_tumu30
 	medium_tumu: s_tumu42
 	large_tumu: s_tumu60
+		Offset: 0, 0, 31
 	tiny_clsn: s_clsn16
 	small_clsn: s_clsn22
 	medium_clsn: s_clsn30
 	large_clsn: s_clsn42
 	verylarge_clsn: s_clsn58
+		Offset: 0, 0, 30
 	tiny_twlt: twlt026
 	small_twlt: twlt036
 	medium_twlt: twlt050
+		Offset: 0, 0, 26
 	large_twlt: twlt070
+		Offset: 0, 0, 36
 	verylarge_twlt: twlt100
+		Offset: 0, 0, 51
 	tiny_grey_explosion: xgrysml1
 	small_grey_explosion: xgrysml2
 	medium_grey_explosion: xgrymed1
@@ -287,6 +298,7 @@ smallsmoke:
 nukesmoke:
 	idle: nukepuff
 		Length: *
+		BlendMode: Additive
 
 largefire:
 	idle: fire01
@@ -304,6 +316,9 @@ moveflsh:
 	idle: ring
 		Length: *
 		Tick: 30
+		ZOffset: 2047
+		Offset: 0, 0, 48
+		ZRamp: 1
 
 wake:
 	idle: conquer|wake1
@@ -318,7 +333,8 @@ resources:
 		UseTilesetExtension: true
 		Length: 12
 		ShadowStart: 12
-		Offset: 0, -15
+		Offset: 0, -15, 1.5
+		ZRamp: 1
 	tib01: tib01
 	tib02: tib02
 		Frames: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 0
@@ -355,15 +371,17 @@ resources:
 	gem12: gem12
 
 shroud:
+	Defaults:
+		ZRamp: 1
+		Length: *
 	shroud:
-		Length: *
 	fog: fog
-		Length: *
 
 smallscorches:
 	Defaults:
 		UseTilesetExtension: true
-		Offset: 0, -15
+		Offset: 0, -15, 1
+		ZRamp: 1
 	sc1: burnt01
 	sc2: burnt02
 	sc3: burnt03
@@ -374,7 +392,8 @@ smallscorches:
 mediumscorches:
 	Defaults:
 		UseTilesetExtension: true
-		Offset: 0, -20
+		Offset: 0, -20, 1
+		ZRamp: 1
 	sc7: burnt07
 	sc8: burnt08
 	sc9: burnt09
@@ -383,14 +402,16 @@ mediumscorches:
 largescorches:
 	Defaults:
 		UseTilesetExtension: true
-		Offset: 0, -30
+		Offset: 0, -30, 1
+		ZRamp: 1
 	sc11: burnt11
 	sc12: burnt12
 
 smallcraters:
 	Defaults:
 		UseTilesetExtension: true
-		Offset: 0, -15
+		Offset: 0, -15, 1
+		ZRamp: 1
 	cr1: crater01
 	cr2: crater02
 	cr3: crater03
@@ -401,7 +422,8 @@ smallcraters:
 mediumcraters:
 	Defaults:
 		UseTilesetExtension: true
-		Offset: 0, -15
+		Offset: 0, -15, 1
+		ZRamp: 1
 	cr7: crater07
 	cr8: crater08
 	cr9: crater09
@@ -410,7 +432,8 @@ mediumcraters:
 largecraters:
 	Defaults:
 		UseTilesetExtension: true
-		Offset: 0, -30
+		Offset: 0, -30, 1
+		ZRamp: 1
 	cr11: crater11
 	cr12: crater12
 
@@ -426,6 +449,7 @@ icon:
 atomic:
 	up: nkmslup
 	down: nkmsldn
+		Offset: 0, 144
 
 bombcurs:
 	idle:
