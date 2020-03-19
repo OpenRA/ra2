@@ -499,7 +499,6 @@ caarmy02:
 		ShadowStart: 4
 	garrisoned:
 		ShadowStart: 5
-	-rubble:
 
 caarmy03:
 	Inherits: ^GarrisonableBuilding
@@ -513,7 +512,6 @@ caarmy03:
 		ShadowStart: 4
 	garrisoned:
 		ShadowStart: 5
-	-rubble:
 
 caarmy04:
 	Inherits: ^GarrisonableBuilding
@@ -527,7 +525,6 @@ caarmy04:
 		ShadowStart: 4
 	garrisoned:
 		ShadowStart: 5
-	-rubble:
 
 cawa2a:
 	Inherits: ^GarrisonableBuilding
@@ -601,7 +598,6 @@ cafarm01:
 		ShadowStart: 4
 	garrisoned:
 		ShadowStart: 5
-	-rubble:
 
 cafarm02:
 	Inherits: ^CivStructure
@@ -635,7 +631,6 @@ cafrma:
 		ShadowStart: 4
 	garrisoned:
 		ShadowStart: 5
-	-rubble:
 
 cafrmb:
 	Inherits: ^GarrisonableBuilding
@@ -649,7 +644,6 @@ cafrmb:
 		ShadowStart: 4
 	garrisoned:
 		ShadowStart: 5
-	-rubble:
 
 cabarn02:
 	Inherits: ^GarrisonableBuilding
@@ -808,7 +802,6 @@ camsc07:
 		ShadowStart: 4
 	garrisoned:
 		ShadowStart: 5
-	-rubble:
 
 camsc08:
 	Inherits: ^GarrisonableBuilding
@@ -822,7 +815,6 @@ camsc08:
 		ShadowStart: 4
 	garrisoned:
 		ShadowStart: 5
-	-rubble:
 
 camsc09:
 	Inherits: ^GarrisonableBuilding
@@ -836,7 +828,6 @@ camsc09:
 		ShadowStart: 4
 	garrisoned:
 		ShadowStart: 5
-	-rubble:
 
 camsc10:
 	Inherits: ^GarrisonableBuilding
@@ -928,7 +919,6 @@ camiam04:
 		ShadowStart: 4
 	garrisoned:
 		ShadowStart: 5
-	-rubble:
 
 camiam05:
 	Inherits: ^GarrisonableBuilding
