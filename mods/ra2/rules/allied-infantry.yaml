@@ -137,6 +137,8 @@ e1:
 		HP: 125
 	Mobile:
 		PauseOnCondition: chronodisable || !undeployed
+    Garrisoner:
+		PipType: Green
 	Passenger:
 		PipType: Green
 	RevealsShroud:

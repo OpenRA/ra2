@@ -23,6 +23,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Reference Include="Eluant">
+      <HintPath>../engine/thirdparty/download/Eluant.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <ProjectReference Include="..\engine\OpenRA.Game\OpenRA.Game.csproj" />
     <ProjectReference Include="..\engine\OpenRA.Mods.Cnc\OpenRA.Mods.Cnc.csproj" />
     <ProjectReference Include="..\engine\OpenRA.Mods.Common\OpenRA.Mods.Common.csproj" />

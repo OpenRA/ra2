@@ -421,6 +421,24 @@
 	MapEditorData:
 		Categories: Civilian building
 
+^GarrisonableBuilding:
+	Inherits: ^CivBuilding
+	Inherits@AUTOTARGET: ^AutoTargetGround
+	ChangeOwnerOnGarrisoner:
+	Garrisonable:
+		Types: Garrisoner
+		MaxWeight: 6
+		PipCount: 6
+		EjectOnDeath: true
+		LoadedCondition: loaded
+	AttackGarrisonedRV:
+		Armaments: garrisoned
+		PortOffsets: 768,0,1024, 448,-682,1024, -448,-682,1024, -768,0,1024, -448,682,1024, 448,682,1024
+		PortYaws: 0, 176, 341, 512, 682, 853
+		PortCones: 88, 88, 88, 88, 88, 88
+		PauseOnCondition: chronodisable
+		RequiresCondition: !build-incomplete
+
 ^Rubble:
 	Inherits@1: ^SpriteActor
 	Inherits@shape: ^1x1Shape

@@ -3691,7 +3691,7 @@ camsc10.rubble:
 		Image: camsc10
 
 cabunk01:
-	Inherits: ^CivBuilding
+	Inherits: ^GarrisonableBuilding
 	Inherits@shape: ^2x2Shape
 	Tooltip:
 		Name: Concrete Bunker
@@ -3717,7 +3717,7 @@ cabunk01.rubble:
 		Image: cabunk01
 
 cabunk02:
-	Inherits: ^CivBuilding
+	Inherits: ^GarrisonableBuilding
 	Inherits@shape: ^2x2Shape
 	Tooltip:
 		Name: Concrete Bunker
