@@ -75,8 +75,6 @@ flakt:
 		Bounds: 20, 30, 0, -11
 	Health:
 		HP: 100
-	Garrisoner:
-		PipType: Green
 	Passenger:
 		PipType: Green
 	RevealsShroud:
@@ -141,8 +139,6 @@ shk:
 	Armor:
 		Type: Plate
 	-Crushable:
-	Garrisoner:
-		PipType: Green
 	Passenger:
 		PipType: Red
 	AttackFrontal:
