@@ -180,3 +180,59 @@ SubTorpedo:
 SubTorpedoE:
 	Inherits: SubTorpedo
 	Burst: 2
+
+HornetBomb:
+	Inherits: ^Missile
+	ReloadDelay: 3
+	Range: 5c0
+	Report: vospatta.wav
+	ValidTargets: Ground, Water
+	Projectile: Missile
+		Speed: 384
+		Arm: 2
+		HorizontalRateOfTurn: 8
+		RangeLimit: 11c512
+		ContrailColor: D8D8FF
+	Warhead@1Dam: SpreadDamage
+		Spread: 0c410
+		Falloff: 100, 0
+		Damage: 80
+		ValidTargets: Ground, Water
+		Versus:
+			None: 100
+			Flak: 100
+			Plate: 100
+			Light: 100
+			Medium: 100
+			Heavy: 100
+			Wood: 100
+			Steel: 100
+			Concrete: 75
+			Drone: 100
+			Rocket: 100
+		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
+	Warhead@2Eff: CreateEffect
+		Explosions: small_grey_explosion
+		ImpactSounds: gexpifva.wav
+		ValidTargets: Ground
+	Warhead@3EffWater: CreateEffect
+		Explosions: small_watersplash
+		ImpactSounds: gexpwasa.wav
+		ValidTargets: Water
+	Warhead@4Smu: LeaveSmudge
+		SmudgeType: SmallCrater
+
+HornetBombE:
+	Inherits: HornetBomb
+	Projectile: Missile
+		ContrailColor: EA0000
+	Warhead@1Dam: SpreadDamage
+		Spread: 0c512
+		Falloff: 100, 0
+		Damage: 140
+	Warhead@2Eff: CreateEffect
+		Explosions: small_grey_explosion
+		ImpactSounds: gexpapoa.wav
+		ValidTargets: Ground
+	Warhead@4Smu: LeaveSmudge
+		SmudgeType: MediumCrater, MediumScorch

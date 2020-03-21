@@ -979,6 +979,18 @@
 		RequiresCondition: cruising
 	WithVoxelBody:
 
+^SpawnedPlane:
+	Inherits: ^Plane
+	-Selectable:
+	Interactable:
+	-DeathSounds:
+	-ActorLostNotification:
+	RejectsOrders:
+	Aircraft:
+		IdleBehavior: None
+		Repulsable: False
+		Speed: 273
+
 ^Husk:
 	RenderVoxels:
 		Scale: 11.7
