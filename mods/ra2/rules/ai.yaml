@@ -47,6 +47,8 @@ Player:
 		BarracksTypes: gapile, nahand
 		VehiclesFactoryTypes: gaweap, naweap
 		ProductionTypes: gapile, nahand, gaweap, naweap, gaairc, amradr
+		NavalProductionTypes: nayard, gayard
+		MaxBaseRadius: 50
 		BuildingLimits:
 			garefn: 4
 			narefn: 4
@@ -57,6 +59,8 @@ Player:
 			nahand: 2
 			gaweap: 2
 			naweap: 2
+			nayard: 1
+			gayard: 1
 			gadept: 1
 			nadept: 1
 			gaairc: 2
@@ -75,6 +79,8 @@ Player:
 			nahand: 1
 			gaweap: 1
 			naweap: 1
+			nayard: 1
+			gayard: 1
 			gaairc: 1
 			amradr: 1
 			naradr: 1
@@ -97,6 +103,8 @@ Player:
 		SquadSize: 5
 		ExcludeFromSquadsTypes: cmin, harv, amcv, smcv
 		ConstructionYardTypes: gacnst, nacnst
+		NavalUnitsTypes: dest, aegis, dlph, carrier, sub, hyd, sqd
+		NavalProductionTypes: nayard, gayard
 	UnitBuilderBotModule@test:
 		RequiresCondition: enable-test-ai
 		UnitsToBuild:
@@ -122,6 +130,13 @@ Player:
 			apoc: 10
 			tnkd: 15
 			ttnk: 15
+			dest: 20
+			aegis: 20
+			dlph: 5
+			carrier: 3
+			sub: 20
+			hyd: 20
+			sqd: 5
 		UnitLimits:
 			dog: 4
 			cmin: 8
