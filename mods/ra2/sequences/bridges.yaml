@@ -116,7 +116,7 @@ bridge1:
 		# ShadowStart: 18
 		UseTilesetExtension: true
 		ZRamp: 1
-		Offset: 0, -16, 3.5
+		Offset: 0, -16, 12
 
 bridge2:
 	idle: bridge
@@ -125,7 +125,7 @@ bridge2:
 		# ShadowStart: 27
 		UseTilesetExtension: true
 		ZRamp: 1
-		Offset: 0, -31, 3.5
+		Offset: 0, -31, 12
 
 bridgb1:
 	idle: bridgb
@@ -133,7 +133,7 @@ bridgb1:
 		# ShadowStart: 18
 		UseTilesetExtension: true
 		ZRamp: 1
-		Offset: 0, -16, 3.5
+		Offset: 0, -16, 12
 
 bridgb2:
 	idle: bridgb
@@ -142,4 +142,4 @@ bridgb2:
 		# ShadowStart: 27
 		UseTilesetExtension: true
 		ZRamp: 1
-		Offset: 0, -31, 3.5
+		Offset: 0, -31, 12
