@@ -89,3 +89,11 @@ DemoTruckTargeting:
 	Projectile: InstantHit
 	Warhead@1Dam: TargetDamage
 		ValidTargets: DetonateAttack
+
+HornetLauncher:
+	ReloadDelay: 30
+	Range: 25c0
+	ValidTargets: Ground, Water
+	Projectile: InstantHit
+	Warhead@1Dam: TargetDamage
+		ValidTargets: Ground, Water

@@ -274,3 +274,62 @@ pdplanehusk:
 		Speed: 100
 	RenderVoxels:
 		Image: pdplane
+
+hornet:
+	Inherits: ^SpawnedPlane
+	Valued:
+		Cost: 50
+	GainsExperience:
+		ExperienceModifier: 500
+	Tooltip:
+		Name: Hornet
+	Interactable:
+		Bounds: 15,12
+	Health:
+		HP: 75
+	Armor:
+		Type: Light
+	RevealsShroud:
+		Range: 1c512
+		Type: CenterPosition
+	Armament:
+		Weapon: HornetBomb
+		PauseOnCondition: !ammo
+		RequiresCondition: !rank-elite
+	Armament@Elite:
+		Weapon: HornetBombE
+		PauseOnCondition: !ammo
+		RequiresCondition: rank-elite
+	Aircraft:
+		AltitudeVelocity: 240
+		VTOL: true
+		Repulsable: false
+		TakeoffSounds: vhortaka.wav, vhortakb.wav
+		LandingSounds: vhorlana.wav, vhorlanb.wav
+	RenderSprites:
+	AttackAircraft:
+		FacingTolerance: 20
+		Voice: Attack
+	AmmoPool:
+		Ammo: 3
+		PipCount: 3
+		PipType: Ammo
+		PipTypeEmpty: AmmoEmpty
+		AmmoCondition: ammo
+	HitShape:
+	CarrierChild:
+		LandingDistance: 8c0
+		DamageTypes: DefaultDeath
+	Rearmable:
+		RearmActors: carrier
+
+hornethusk:
+	Inherits: ^PlaneHusk
+	Tooltip:
+		Name: Hornet
+	Aircraft:
+		TurnSpeed: 5
+		Speed: 180
+	RenderVoxels:
+		Image: hornet
+		NormalsPalette: ts-normals
