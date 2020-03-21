@@ -297,3 +297,41 @@ lobrdg_r_sw:
 		NeighbourOffsets: 1,-1
 	EditorOnlyTooltip:
 		Name: Bridge Ramp
+
+^ElevatedBridgePlaceholder:
+	AlwaysVisible:
+	RenderSprites:
+		Palette: terrain
+	WithSpriteBody:
+	AppearsOnRadar:
+	RadarColorFromTerrain:
+		Terrain: Bridge
+	AppearsOnMapPreview:
+		Terrain: Bridge
+	BodyOrientation:
+		UseClassicPerspectiveFudge: false
+		QuantizedFacings: 1
+	Tooltip:
+		Name: Concrete Bridge
+	Immobile:
+		OccupiesSpace: false
+	MapEditorData:
+		Categories: Bridge
+	Interactable:
+		Bounds: 96, 144
+
+bridge1:
+	Inherits: ^ElevatedBridgePlaceholder
+
+bridge2:
+	Inherits: ^ElevatedBridgePlaceholder
+
+bridgb1:
+	Inherits: ^ElevatedBridgePlaceholder
+	Tooltip:
+		Name: Wooden Bridge
+
+bridgb2:
+	Inherits: ^ElevatedBridgePlaceholder
+	Tooltip:
+		Name: Wooden Bridge
