@@ -229,7 +229,7 @@
 ^Rock:
 	idle:
 		ShadowStart: 1
-		Offset: 0, -15
+		Offset: 0, -15, 15
 		UseTilesetExtension: true
 
 ^Drill:
