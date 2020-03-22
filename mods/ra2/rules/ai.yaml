@@ -95,7 +95,7 @@ Player:
 	SquadManagerBotModule@test:
 		RequiresCondition: enable-test-ai
 		SquadSize: 5
-		ExcludeFromSquadsTypes: cmin, harv, amcv, smcv
+		ExcludeFromSquadsTypes: cmin, harv, amcv, smcv, dog, engineer
 		ConstructionYardTypes: gacnst, nacnst
 	UnitBuilderBotModule@test:
 		RequiresCondition: enable-test-ai
