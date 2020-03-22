@@ -66,11 +66,11 @@ Player:
 			natech: 1
 			gagap: 2
 		BuildingFractions:
-			garefn: 30
-			narefn: 30
-			gapowr: 35
-			napowr: 25
-			nanrct: 10
+			gapowr: 20
+			napowr: 20
+			nanrct: 1
+			garefn: 15
+			narefn: 15
 			gapile: 1
 			nahand: 1
 			gaweap: 1
