@@ -321,7 +321,7 @@ resources:
 		UseTilesetExtension: true
 		Length: 12
 		ShadowStart: 12
-		Offset: 0, -15, 1.5
+		Offset: 0, -15, 2
 		ZRamp: 1
 	tib01: tib01
 	tib02: tib02
