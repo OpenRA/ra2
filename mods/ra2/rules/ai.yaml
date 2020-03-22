@@ -102,6 +102,7 @@ Player:
 		UnitsToBuild:
 			e1: 90
 			e2: 90
+			engineer: 1
 			dog: 1
 			flakt: 10
 			shk: 10
@@ -123,6 +124,7 @@ Player:
 			tnkd: 15
 			ttnk: 15
 		UnitLimits:
+			engineer: 1
 			dog: 4
 			cmin: 8
 			harv: 8
@@ -137,3 +139,10 @@ Player:
 		RefineryTypes: garefn, narefn
 	BuildingRepairBotModule:
 		RequiresCondition: enable-test-ai
+	CaptureManagerBotModule:
+		RequiresCondition: enable-test-ai
+		CapturingActorTypes: engineer
+		CapturableActorTypes: caoild, caairp, cahosp, cathosp, caoutp
+		CapturableStances: Neutral
+		CheckCaptureTargetsForVisibility: false
+		MaximumCaptureTargetOptions: 15
