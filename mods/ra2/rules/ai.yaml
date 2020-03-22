@@ -133,5 +133,7 @@ Player:
 		McvFactoryTypes: gaweap, naweap
 	HarvesterBotModule:
 		RequiresCondition: enable-test-ai
+		HarvesterTypes: cmin, harv
+		RefineryTypes: garefn, narefn
 	BuildingRepairBotModule:
 		RequiresCondition: enable-test-ai
