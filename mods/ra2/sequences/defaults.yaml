@@ -248,6 +248,7 @@
 	idle:
 		ShadowStart: 1
 		UseTilesetExtension: true
+		Offset: -1, -16, 16
 
 ^WithMachineGunMuzzle:
 	muzzle0: mgun-n
