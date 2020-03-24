@@ -22,7 +22,7 @@ cafncp:
 		Name: Prison Camp Fence
 
 cahse01:
-	Inherits: ^CivBuilding
+	Inherits: ^GarrisonableBuilding
 	Inherits@shape: ^3x2Shape
 	RevealsShroud:
 		Range: 6c0
@@ -31,6 +31,9 @@ cahse01:
 	Building:
 		Dimensions: 3,2
 		Footprint: xxx xxx
+	Garrisonable:
+		MaxWeight: 5
+		PipCount: 5
 	SpawnActorOnDeath:
 		Actor: cahse01.rubble
 
@@ -44,7 +47,7 @@ cahse01.rubble:
 		Image: cahse01
 
 cahse02:
-	Inherits: ^CivBuilding
+	Inherits: ^GarrisonableBuilding
 	Inherits@shape: ^3x2Shape
 	RevealsShroud:
 		Range: 6c0
@@ -53,6 +56,9 @@ cahse02:
 	Building:
 		Dimensions: 3,2
 		Footprint: xxx xxx
+	Garrisonable:
+		MaxWeight: 5
+		PipCount: 5
 	SpawnActorOnDeath:
 		Actor: cahse02.rubble
 
@@ -66,7 +72,7 @@ cahse02.rubble:
 		Image: cahse02
 
 cahse03:
-	Inherits: ^CivBuilding
+	Inherits: ^GarrisonableBuilding
 	Inherits@shape: ^3x4Shape
 	RevealsShroud:
 		Range: 6c0
@@ -75,6 +81,9 @@ cahse03:
 	Building:
 		Dimensions: 3,4
 		Footprint: xxx xxx xxx xxx
+	Garrisonable:
+		MaxWeight: 5
+		PipCount: 5
 	SpawnActorOnDeath:
 		Actor: cahse03.rubble
 
@@ -88,7 +97,7 @@ cahse03.rubble:
 		Image: cahse03
 
 cahse04:
-	Inherits: ^CivBuilding
+	Inherits: ^GarrisonableBuilding
 	Inherits@shape: ^3x2Shape
 	RevealsShroud:
 		Range: 6c0
@@ -97,6 +106,9 @@ cahse04:
 	Building:
 		Dimensions: 3,2
 		Footprint: xxx xxx
+	Garrisonable:
+		MaxWeight: 5
+		PipCount: 5
 	SpawnActorOnDeath:
 		Actor: cahse04.rubble
 
@@ -110,7 +122,7 @@ cahse04.rubble:
 		Image: cahse04
 
 cahse05:
-	Inherits: ^CivBuilding
+	Inherits: ^GarrisonableBuilding
 	Inherits@shape: ^1x2Shape
 	RevealsShroud:
 		Range: 6c0
@@ -119,6 +131,9 @@ cahse05:
 	Building:
 		Dimensions: 1,2
 		Footprint: x x
+	Garrisonable:
+		MaxWeight: 5
+		PipCount: 5
 	SpawnActorOnDeath:
 		Actor: cahse05.rubble
 	MapEditorData:
@@ -134,7 +149,7 @@ cahse05.rubble:
 		Image: cahse05
 
 cahse06:
-	Inherits: ^CivBuilding
+	Inherits: ^GarrisonableBuilding
 	Inherits@shape: ^2x1Shape
 	RevealsShroud:
 		Range: 6c0
@@ -143,6 +158,9 @@ cahse06:
 	Building:
 		Dimensions: 2,1
 		Footprint: xx
+	Garrisonable:
+		MaxWeight: 5
+		PipCount: 5
 	SpawnActorOnDeath:
 		Actor: cahse06.rubble
 	MapEditorData:
@@ -158,7 +176,7 @@ cahse06.rubble:
 		Image: cahse06
 
 cahse07:
-	Inherits: ^CivBuilding
+	Inherits: ^GarrisonableBuilding
 	Inherits@shape: ^2x3Shape
 	RevealsShroud:
 		Range: 6c0
@@ -167,6 +185,9 @@ cahse07:
 	Building:
 		Dimensions: 2,3
 		Footprint: xx xx xx
+	Garrisonable:
+		MaxWeight: 5
+		PipCount: 5
 	SpawnActorOnDeath:
 		Actor: cahse07.rubble
 	MapEditorData:
@@ -208,7 +229,7 @@ cats01:
 		Footprint: xx xx
 
 cabarn02:
-	Inherits: ^CivBuilding
+	Inherits: ^GarrisonableBuilding
 	Inherits@shape: ^2x2Shape
 	Tooltip:
 		Name: Barn
@@ -219,6 +240,9 @@ cabarn02:
 	Building:
 		Dimensions: 2,2
 		Footprint: xx xx
+	Garrisonable:
+		MaxWeight: 5
+		PipCount: 5
 
 cawash01:
 	Inherits: ^CivBuilding
@@ -249,7 +273,7 @@ cawash01.rubble:
 		Image: cawash01
 
 cawash03:
-	Inherits: ^CivBuilding
+	Inherits: ^GarrisonableBuilding
 	Inherits@shape: ^4x3Shape
 	Building:
 		Footprint: xxxx xxxx xxxx
@@ -275,7 +299,7 @@ cawash03.rubble:
 		Image: cawash03
 
 cawash04:
-	Inherits: ^CivBuilding
+	Inherits: ^GarrisonableBuilding
 	Inherits@shape: ^4x4Shape
 	Building:
 		Footprint: xxxx xxxx xxxx xxxx
@@ -301,7 +325,7 @@ cawash04.rubble:
 		Image: cawash04
 
 cawash05:
-	Inherits: ^CivBuilding
+	Inherits: ^GarrisonableBuilding
 	Inherits@shape: ^4x2Shape
 	Building:
 		Footprint: xxxx xxxx
@@ -327,7 +351,7 @@ cawash05.rubble:
 		Image: cawash05
 
 cawash06:
-	Inherits: ^CivBuilding
+	Inherits: ^GarrisonableBuilding
 	Inherits@shape: ^4x4Shape
 	Armor:
 		Type: Steel
@@ -353,7 +377,7 @@ cawash06.rubble:
 		Image: cawash06
 
 cawash07:
-	Inherits: ^CivBuilding
+	Inherits: ^GarrisonableBuilding
 	Inherits@shape: ^3x3Shape
 	Building:
 		Footprint: xxx xxx xxx
@@ -377,7 +401,7 @@ cawash07.rubble:
 		Image: cawash07
 
 cawash08:
-	Inherits: ^CivBuilding
+	Inherits: ^GarrisonableBuilding
 	Inherits@shape: ^3x4Shape
 	Armor:
 		Type: Steel
@@ -401,7 +425,7 @@ cawash08.rubble:
 		Image: cawash08
 
 cawash09:
-	Inherits: ^CivBuilding
+	Inherits: ^GarrisonableBuilding
 	Inherits@shape: ^3x3Shape
 	Building:
 		Footprint: xxx xxx xxx
@@ -427,7 +451,7 @@ cawash09.rubble:
 		Image: cawash09
 
 cawash10:
-	Inherits: ^CivBuilding
+	Inherits: ^GarrisonableBuilding
 	Inherits@shape: ^4x4Shape
 	Building:
 		Footprint: xxxx xxxx xxxx xxxx
@@ -453,7 +477,7 @@ cawash10.rubble:
 		Image: cawash10
 
 cawash11:
-	Inherits: ^CivBuilding
+	Inherits: ^GarrisonableBuilding
 	Inherits@shape: ^4x4Shape
 	Building:
 		Footprint: xxxx xxxx xxxx xxxx
@@ -521,7 +545,7 @@ cawsh12.rubble:
 		Image: cawsh12
 
 cawash13:
-	Inherits: ^CivBuilding
+	Inherits: ^GarrisonableBuilding
 	Inherits@shape: ^3x4Shape
 	Armor:
 		Type: Steel
@@ -627,7 +651,7 @@ cawash16.rubble:
 		Image: cawash16
 
 cawash17:
-	Inherits: ^CivBuilding
+	Inherits: ^GarrisonableBuilding
 	Inherits@shape: ^6x4Shape
 	Tooltip:
 		Name: Smithsonian Natural History Museum
@@ -704,7 +728,7 @@ cawash19.rubble:
 		Image: cawash19
 
 canewy01:
-	Inherits: ^CivBuilding
+	Inherits: ^GarrisonableBuilding
 	Inherits@shape: ^4x4Shape
 	Building:
 		Footprint: xxxx xxxx xxxx xxxx
@@ -777,7 +801,7 @@ canewy05:
 		ExcludeTilesets: SNOW
 
 canewy06:
-	Inherits: ^CivBuilding
+	Inherits: ^GarrisonableBuilding
 	Inherits@shape: ^3x3Shape
 	Armor:
 		Type: Steel
@@ -803,7 +827,7 @@ canewy06.rubble:
 		Image: canewy06
 
 canewy07:
-	Inherits: ^CivBuilding
+	Inherits: ^GarrisonableBuilding
 	Inherits@shape: ^3x3Shape
 	Armor:
 		Type: Steel
@@ -829,7 +853,7 @@ canewy07.rubble:
 		Image: canewy07
 
 canewy08:
-	Inherits: ^CivBuilding
+	Inherits: ^GarrisonableBuilding
 	Inherits@shape: ^3x3Shape
 	Armor:
 		Type: Steel
@@ -855,7 +879,7 @@ canewy08.rubble:
 		Image: canewy08
 
 canewy10:
-	Inherits: ^CivBuilding
+	Inherits: ^GarrisonableBuilding
 	Inherits@shape: ^3x2Shape
 	Armor:
 		Type: Steel
@@ -881,7 +905,7 @@ canewy10.rubble:
 		Image: canewy10
 
 canewy11:
-	Inherits: ^CivBuilding
+	Inherits: ^GarrisonableBuilding
 	Inherits@shape: ^3x2Shape
 	Armor:
 		Type: Steel
@@ -907,7 +931,7 @@ canewy11.rubble:
 		Image: canewy11
 
 canewy12:
-	Inherits: ^CivBuilding
+	Inherits: ^GarrisonableBuilding
 	Inherits@shape: ^2x3Shape
 	Armor:
 		Type: Steel
@@ -933,7 +957,7 @@ canewy12.rubble:
 		Image: canewy12
 
 canewy13:
-	Inherits: ^CivBuilding
+	Inherits: ^GarrisonableBuilding
 	Inherits@shape: ^3x3Shape
 	Armor:
 		Type: Steel
@@ -959,7 +983,7 @@ canewy13.rubble:
 		Image: canewy13
 
 canewy14:
-	Inherits: ^CivBuilding
+	Inherits: ^GarrisonableBuilding
 	Inherits@shape: ^3x3Shape
 	Armor:
 		Type: Steel
@@ -985,7 +1009,7 @@ canewy14.rubble:
 		Image: canewy14
 
 canewy15:
-	Inherits: ^CivBuilding
+	Inherits: ^GarrisonableBuilding
 	Inherits@shape: ^3x3Shape
 	Armor:
 		Type: Steel
@@ -1011,7 +1035,7 @@ canewy15.rubble:
 		Image: canewy15
 
 canewy16:
-	Inherits: ^CivBuilding
+	Inherits: ^GarrisonableBuilding
 	Inherits@shape: ^2x2Shape
 	Armor:
 		Type: Steel
@@ -1037,7 +1061,7 @@ canewy16.rubble:
 		Image: canewy16
 
 canewy17:
-	Inherits: ^CivBuilding
+	Inherits: ^GarrisonableBuilding
 	Inherits@shape: ^2x2Shape
 	Armor:
 		Type: Steel
@@ -1063,7 +1087,7 @@ canewy17.rubble:
 		Image: canewy17
 
 canewy18:
-	Inherits: ^CivBuilding
+	Inherits: ^GarrisonableBuilding
 	Inherits@shape: ^2x2Shape
 	Armor:
 		Type: Steel
@@ -1089,7 +1113,7 @@ canewy18.rubble:
 		Image: canewy18
 
 canewy20:
-	Inherits: ^CivBuilding
+	Inherits: ^GarrisonableBuilding
 	Inherits@shape: ^3x5Shape
 	Tooltip:
 		Name: Warehouse
@@ -1115,7 +1139,7 @@ canewy20.rubble:
 		Image: canewy20
 
 canewy21:
-	Inherits: ^CivBuilding
+	Inherits: ^GarrisonableBuilding
 	Inherits@shape: ^5x3Shape
 	Tooltip:
 		Name: Warehouse
@@ -1141,7 +1165,7 @@ canewy21.rubble:
 		Image: canewy21
 
 caswst01:
-	Inherits: ^CivBuilding
+	Inherits: ^GarrisonableBuilding
 	Inherits@shape: ^2x3Shape
 	Tooltip:
 		Name: Southwest Building
@@ -1169,7 +1193,7 @@ caswst01.rubble:
 		Image: caswst01
 
 caarmy01:
-	Inherits: ^CivBuilding
+	Inherits: ^GarrisonableBuilding
 	Inherits@shape: ^3x2Shape
 	Building:
 		Footprint: xxx xxx
@@ -1182,22 +1206,28 @@ caarmy01:
 		Range: 6c0
 
 caarmy02:
-	Inherits: ^CivBuilding
+	Inherits: ^GarrisonableBuilding
 	Tooltip:
 		Name: Army Tent
 	RevealsShroud:
 		Range: 6c0
 	Health:
 		HP: 200
+	Garrisonable:
+		MaxWeight: 4
+		PipCount: 4
 
 caarmy03:
-	Inherits: ^CivBuilding
+	Inherits: ^GarrisonableBuilding
 	Tooltip:
 		Name: Army Tent
 	RevealsShroud:
 		Range: 6c0
 	Health:
 		HP: 200
+	Garrisonable:
+		MaxWeight: 4
+		PipCount: 4
 
 caarmy04:
 	Inherits: ^CivBuilding
@@ -1209,7 +1239,7 @@ caarmy04:
 		HP: 200
 
 cawa2a:
-	Inherits: ^CivBuilding
+	Inherits: ^GarrisonableBuilding
 	Inherits@shape: ^4x4Shape
 	Valued:
 		Cost: 2000
@@ -1237,7 +1267,7 @@ cawa2a.rubble:
 		Image: cawa2a
 
 cawa2b:
-	Inherits: ^CivBuilding
+	Inherits: ^GarrisonableBuilding
 	Inherits@shape: ^4x4Shape
 	Valued:
 		Cost: 2000
@@ -1265,7 +1295,7 @@ cawa2b.rubble:
 		Image: cawa2b
 
 cawa2c:
-	Inherits: ^CivBuilding
+	Inherits: ^GarrisonableBuilding
 	Inherits@shape: ^4x4Shape
 	Valued:
 		Cost: 2000
@@ -1321,7 +1351,7 @@ cawa2d.rubble:
 		Image: cawa2d
 
 cafarm01:
-	Inherits: ^CivBuilding
+	Inherits: ^GarrisonableBuilding
 	Inherits@shape: ^2x2Shape
 	Building:
 		Footprint: xx xx
@@ -1332,6 +1362,9 @@ cafarm01:
 		HP: 400
 	RevealsShroud:
 		Range: 4c0
+	Garrisonable:
+		MaxWeight: 6
+		PipCount: 6
 
 cafarm02:
 	Inherits: ^CivBuilding
@@ -1351,7 +1384,7 @@ cafarm02.rubble:
 		Image: cafarm02
 
 cafarm06:
-	Inherits: ^CivBuilding
+	Inherits: ^GarrisonableBuilding
 	Inherits@shape: ^2x2Shape
 	Tooltip:
 		Name: Lighthouse
@@ -1364,6 +1397,9 @@ cafarm06:
 	Building:
 		Dimensions: 2,2
 		Footprint: xx xx
+	Garrisonable:
+		MaxWeight: 5
+		PipCount: 5
 	SpawnActorOnDeath:
 		Actor: cafarm06.rubble
 
@@ -1453,7 +1489,7 @@ cacolo01.rubble:
 		Image: cacolo01
 
 caind01:
-	Inherits: ^CivBuilding
+	Inherits: ^GarrisonableBuilding
 	Inherits@shape: ^4x4Shape
 	Building:
 		Footprint: xxxx xxxx xxxx xxxx
@@ -1479,7 +1515,7 @@ caind01.rubble:
 		Image: caind01
 
 calab:
-	Inherits: ^CivBuilding
+	Inherits: ^GarrisonableBuilding
 	Inherits@shape: ^3x4Shape
 	Building:
 		Footprint: xxx xxx xxx xxx
@@ -1505,7 +1541,7 @@ calab.rubble:
 		Image: calab
 
 cagas01:
-	Inherits: ^CivBuilding
+	Inherits: ^GarrisonableBuilding
 	Inherits@shape: ^3x3Shape
 	Building:
 		Footprint: xxx xxx xxx
@@ -1643,7 +1679,7 @@ city05:
 		ExcludeTilesets: SNOW
 
 catech01:
-	Inherits: ^CivBuilding
+	Inherits: ^GarrisonableBuilding
 	Inherits@shape: ^3x3Shape
 	Tooltip:
 		Name: Communications Center
@@ -1671,7 +1707,7 @@ catech01.rubble:
 		Image: catech01
 
 catexs01:
-	Inherits: ^CivBuilding
+	Inherits: ^GarrisonableBuilding
 	Inherits@shape: ^2x2Shape
 	Armor:
 		Type: Steel
@@ -1697,7 +1733,7 @@ catexs01.rubble:
 		Image: catexs01
 
 catexs02:
-	Inherits: ^CivBuilding
+	Inherits: ^GarrisonableBuilding
 	Inherits@shape: ^4x4Shape
 	Tooltip:
 		Name: Alamo
@@ -1725,7 +1761,7 @@ catexs02.rubble:
 		Image: catexs02
 
 catexs03:
-	Inherits: ^CivBuilding
+	Inherits: ^GarrisonableBuilding
 	Inherits@shape: ^3x3Shape
 	Armor:
 		Type: Steel
@@ -1751,7 +1787,7 @@ catexs03.rubble:
 		Image: catexs03
 
 catexs04:
-	Inherits: ^CivBuilding
+	Inherits: ^GarrisonableBuilding
 	Inherits@shape: ^3x3Shape
 	Armor:
 		Type: Steel
@@ -1777,7 +1813,7 @@ catexs04.rubble:
 		Image: catexs04
 
 catexs05:
-	Inherits: ^CivBuilding
+	Inherits: ^GarrisonableBuilding
 	Inherits@shape: ^3x3Shape
 	Armor:
 		Type: Steel
@@ -1803,7 +1839,7 @@ catexs05.rubble:
 		Image: catexs05
 
 catexs06:
-	Inherits: ^CivBuilding
+	Inherits: ^GarrisonableBuilding
 	Inherits@shape: ^3x3Shape
 	Armor:
 		Type: Steel
@@ -1829,7 +1865,7 @@ catexs06.rubble:
 		Image: catexs06
 
 catexs07:
-	Inherits: ^CivBuilding
+	Inherits: ^GarrisonableBuilding
 	Inherits@shape: ^3x3Shape
 	Armor:
 		Type: Steel
@@ -1855,7 +1891,7 @@ catexs07.rubble:
 		Image: catexs07
 
 catexs08:
-	Inherits: ^CivBuilding
+	Inherits: ^GarrisonableBuilding
 	Inherits@shape: ^2x3Shape
 	Armor:
 		Type: Steel
@@ -1907,7 +1943,7 @@ capars01.rubble:
 		Image: capars01
 
 capars02:
-	Inherits: ^CivBuilding
+	Inherits: ^GarrisonableBuilding
 	Inherits@shape: ^6x4Shape
 	Armor:
 		Type: Steel
@@ -1933,7 +1969,7 @@ capars02.rubble:
 		Image: capars02
 
 capars04:
-	Inherits: ^CivBuilding
+	Inherits: ^GarrisonableBuilding
 	Inherits@shape: ^3x3Shape
 	Armor:
 		Type: Steel
@@ -1944,6 +1980,9 @@ capars04:
 	Building:
 		Dimensions: 3,3
 		Footprint: xxx xxx xxx
+	Garrisonable:
+		MaxWeight: 6
+		PipCount: 6
 	SpawnActorOnDeath:
 		Actor: capars04.rubble
 	MapEditorData:
@@ -1959,7 +1998,7 @@ capars04.rubble:
 		Image: capars04
 
 capars05:
-	Inherits: ^CivBuilding
+	Inherits: ^GarrisonableBuilding
 	Inherits@shape: ^3x3Shape
 	Armor:
 		Type: Steel
@@ -1970,6 +2009,9 @@ capars05:
 	Building:
 		Dimensions: 3,3
 		Footprint: xxx xxx xxx
+	Garrisonable:
+		MaxWeight: 6
+		PipCount: 6
 	SpawnActorOnDeath:
 		Actor: capars05.rubble
 	MapEditorData:
@@ -1985,7 +2027,7 @@ capars05.rubble:
 		Image: capars05
 
 capars06:
-	Inherits: ^CivBuilding
+	Inherits: ^GarrisonableBuilding
 	Inherits@shape: ^3x3Shape
 	Armor:
 		Type: Steel
@@ -1996,6 +2038,9 @@ capars06:
 	Building:
 		Dimensions: 3,3
 		Footprint: xxx xxx xxx
+	Garrisonable:
+		MaxWeight: 6
+		PipCount: 6
 	SpawnActorOnDeath:
 		Actor: capars06.rubble
 	MapEditorData:
@@ -2022,7 +2067,7 @@ capars07:
 		Categories: Decoration
 
 capars08:
-	Inherits: ^CivBuilding
+	Inherits: ^GarrisonableBuilding
 	Inherits@shape: ^6x4Shape
 	Armor:
 		Type: Steel
@@ -2048,7 +2093,7 @@ capars08.rubble:
 		Image: capars08
 
 capars09:
-	Inherits: ^CivBuilding
+	Inherits: ^GarrisonableBuilding
 	Inherits@shape: ^6x4Shape
 	Armor:
 		Type: Steel
@@ -2074,7 +2119,7 @@ capars09.rubble:
 		Image: capars09
 
 capars10:
-	Inherits: ^CivBuilding
+	Inherits: ^GarrisonableBuilding
 	Inherits@shape: ^4x3Shape
 	Tooltip:
 		Name: Bistro
@@ -2128,7 +2173,7 @@ capars11.rubble:
 		Image: capars11
 
 capars12:
-	Inherits: ^CivBuilding
+	Inherits: ^GarrisonableBuilding
 	Inherits@shape: ^3x5Shape
 	Tooltip:
 		Name: Notre Dame
@@ -2156,7 +2201,7 @@ capars12.rubble:
 		Image: capars12
 
 capars13:
-	Inherits: ^CivBuilding
+	Inherits: ^GarrisonableBuilding
 	Inherits@shape: ^3x4Shape
 	Tooltip:
 		Name: Bistro
@@ -2184,7 +2229,7 @@ capars13.rubble:
 		Image: capars13
 
 capars14:
-	Inherits: ^CivBuilding
+	Inherits: ^GarrisonableBuilding
 	Inherits@shape: ^4x3Shape
 	Tooltip:
 		Name: Bistro
@@ -2212,7 +2257,7 @@ capars14.rubble:
 		Image: capars14
 
 cafrma:
-	Inherits: ^CivBuilding
+	Inherits: ^GarrisonableBuilding
 	Inherits@shape: ^2x2Shape
 	Tooltip:
 		Name: Farmhouse
@@ -2225,7 +2270,7 @@ cafrma:
 		Footprint: xx xx
 
 cafrmb:
-	Inherits: ^CivBuilding
+	Inherits: ^GarrisonableBuilding
 	Tooltip:
 		Name: Outhouse
 	RevealsShroud:
@@ -2234,9 +2279,12 @@ cafrmb:
 		HP: 50
 	MapEditorData:
 		Categories: Decoration
+	Garrisonable:
+		MaxWeight: 1
+		PipCount: 1
 
 caprs03:
-	Inherits: ^CivBuilding
+	Inherits: ^GarrisonableBuilding
 	Inherits@shape: ^6x4Shape
 	Tooltip:
 		Name: Louvre
@@ -2279,7 +2327,7 @@ cagard01:
 		Categories: Decoration
 
 carus01:
-	Inherits: ^CivBuilding
+	Inherits: ^GarrisonableBuilding
 	Inherits@shape: ^4x4Shape
 	Tooltip:
 		Name: St. Basil's Cathedral
@@ -2343,7 +2391,7 @@ carus02b.rubble:
 		Image: carus02b
 
 carus02g:
-	Inherits: ^CivBuilding
+	Inherits: ^GarrisonableBuilding
 	Tooltip:
 		Name: Kremlin Wall Clock Tower
 	Armor:
@@ -2363,7 +2411,7 @@ carus02g.rubble:
 		Image: carus02g
 
 carus03:
-	Inherits: ^CivBuilding
+	Inherits: ^GarrisonableBuilding
 	Inherits@shape: ^2x5Shape
 	Tooltip:
 		Name: Kremlin Palace
@@ -2389,7 +2437,7 @@ carus03.rubble:
 		Image: carus03
 
 carus04:
-	Inherits: ^CivBuilding
+	Inherits: ^GarrisonableBuilding
 	Inherits@shape: ^4x4Shape
 	Armor:
 		Type: Steel
@@ -2400,6 +2448,9 @@ carus04:
 	Building:
 		Dimensions: 4,4
 		Footprint: xxxx xxxx xxxx xxxx
+	Garrisonable:
+		MaxWeight: 8
+		PipCount: 8
 	SpawnActorOnDeath:
 		Actor: carus04.rubble
 
@@ -2413,7 +2464,7 @@ carus04.rubble:
 		Image: carus04
 
 carus05:
-	Inherits: ^CivBuilding
+	Inherits: ^GarrisonableBuilding
 	Inherits@shape: ^4x4Shape
 	Armor:
 		Type: Steel
@@ -2424,6 +2475,9 @@ carus05:
 	Building:
 		Dimensions: 4,4
 		Footprint: xxxx xxxx xxxx xxxx
+	Garrisonable:
+		MaxWeight: 8
+		PipCount: 8
 	SpawnActorOnDeath:
 		Actor: carus05.rubble
 
@@ -2437,7 +2491,7 @@ carus05.rubble:
 		Image: carus05
 
 carus06:
-	Inherits: ^CivBuilding
+	Inherits: ^GarrisonableBuilding
 	Inherits@shape: ^4x4Shape
 	Armor:
 		Type: Steel
@@ -2448,6 +2502,9 @@ carus06:
 	Building:
 		Dimensions: 4,4
 		Footprint: xxxx xxxx xxxx xxxx
+	Garrisonable:
+		MaxWeight: 8
+		PipCount: 8
 	SpawnActorOnDeath:
 		Actor: carus06.rubble
 
@@ -2461,13 +2518,16 @@ carus06.rubble:
 		Image: carus06
 
 carus08:
-	Inherits: ^CivBuilding
+	Inherits: ^GarrisonableBuilding
 	Armor:
 		Type: Steel
 	RevealsShroud:
 		Range: 6c0
 	Health:
 		HP: 1000
+	Garrisonable:
+		MaxWeight: 5
+		PipCount: 5
 	SpawnActorOnDeath:
 		Actor: carus08.rubble
 
@@ -2477,7 +2537,7 @@ carus08.rubble:
 		Image: carus08
 
 carus09:
-	Inherits: ^CivBuilding
+	Inherits: ^GarrisonableBuilding
 	Inherits@shape: ^2x1Shape
 	Armor:
 		Type: Steel
@@ -2488,6 +2548,9 @@ carus09:
 	Building:
 		Dimensions: 2,1
 		Footprint: xx
+	Garrisonable:
+		MaxWeight: 5
+		PipCount: 5
 	SpawnActorOnDeath:
 		Actor: carus09.rubble
 
@@ -2501,7 +2564,7 @@ carus09.rubble:
 		Image: carus09
 
 carus10:
-	Inherits: ^CivBuilding
+	Inherits: ^GarrisonableBuilding
 	Inherits@shape: ^1x2Shape
 	Armor:
 		Type: Steel
@@ -2512,6 +2575,9 @@ carus10:
 	Building:
 		Dimensions: 1,2
 		Footprint: x x
+	Garrisonable:
+		MaxWeight: 5
+		PipCount: 5
 	SpawnActorOnDeath:
 		Actor: carus10.rubble
 
@@ -2525,7 +2591,7 @@ carus10.rubble:
 		Image: carus10
 
 carus11:
-	Inherits: ^CivBuilding
+	Inherits: ^GarrisonableBuilding
 	Inherits@shape: ^2x1Shape
 	Armor:
 		Type: Steel
@@ -2536,6 +2602,9 @@ carus11:
 	Building:
 		Dimensions: 2,1
 		Footprint: xx
+	Garrisonable:
+		MaxWeight: 5
+		PipCount: 5
 	SpawnActorOnDeath:
 		Actor: carus11.rubble
 
@@ -2549,7 +2618,7 @@ carus11.rubble:
 		Image: carus11
 
 camiam01:
-	Inherits: ^CivBuilding
+	Inherits: ^GarrisonableBuilding
 	Inherits@shape: ^4x2Shape
 	Armor:
 		Type: Steel
@@ -2575,7 +2644,7 @@ camiam01.rubble:
 		Image: camiam01
 
 camiam02:
-	Inherits: ^CivBuilding
+	Inherits: ^GarrisonableBuilding
 	Inherits@shape: ^4x2Shape
 	Armor:
 		Type: Steel
@@ -2601,7 +2670,7 @@ camiam02.rubble:
 		Image: camiam02
 
 camiam03:
-	Inherits: ^CivBuilding
+	Inherits: ^GarrisonableBuilding
 	Inherits@shape: ^2x3Shape
 	Armor:
 		Type: Steel
@@ -2627,7 +2696,7 @@ camiam03.rubble:
 		Image: camiam03
 
 camiam04:
-	Inherits: ^CivBuilding
+	Inherits: ^GarrisonableBuilding
 	Tooltip:
 		Name: Lifeguard Hut
 	RevealsShroud:
@@ -2636,11 +2705,14 @@ camiam04:
 		HP: 200
 	MapEditorData:
 		Categories: Decoration
+	Garrisonable:
+		MaxWeight: 3
+		PipCount: 3
 	MapEditorData:
 		ExcludeTilesets: SNOW
 
 camiam05:
-	Inherits: ^CivBuilding
+	Inherits: ^GarrisonableBuilding
 	Inherits@shape: ^3x4Shape
 	Armor:
 		Type: Steel
@@ -2666,7 +2738,7 @@ camiam05.rubble:
 		Image: camiam05
 
 camiam06:
-	Inherits: ^CivBuilding
+	Inherits: ^GarrisonableBuilding
 	Inherits@shape: ^4x4Shape
 	Armor:
 		Type: Steel
@@ -2692,7 +2764,8 @@ camiam06.rubble:
 		Image: camiam06
 
 camiam07:
-	Inherits: ^CivBuilding
+	Inherits: ^GarrisonableBuilding
+	Inherits@shape: ^4x4Shape
 	Armor:
 		Type: Steel
 	RevealsShroud:
@@ -2744,7 +2817,7 @@ camiam08.rubble:
 		Image: camiam08
 
 canwy05:
-	Inherits: ^CivBuilding
+	Inherits: ^GarrisonableBuilding
 	Inherits@shape: ^4x4Shape
 	Armor:
 		Type: Steel
@@ -2770,7 +2843,7 @@ canwy05.rubble:
 		Image: canwy05
 
 canwy09:
-	Inherits: ^CivBuilding
+	Inherits: ^GarrisonableBuilding
 	Inherits@shape: ^2x3Shape
 	Armor:
 		Type: Steel
@@ -2796,7 +2869,7 @@ canwy09.rubble:
 		Image: canwy09
 
 canwy22:
-	Inherits: ^CivBuilding
+	Inherits: ^GarrisonableBuilding
 	Inherits@shape: ^3x3Shape
 	Armor:
 		Type: Steel
@@ -2822,7 +2895,7 @@ canwy22.rubble:
 		Image: canwy22
 
 canwy23:
-	Inherits: ^CivBuilding
+	Inherits: ^GarrisonableBuilding
 	Inherits@shape: ^3x2Shape
 	Armor:
 		Type: Steel
@@ -2848,7 +2921,7 @@ canwy23.rubble:
 		Image: canwy23
 
 canwy24:
-	Inherits: ^CivBuilding
+	Inherits: ^GarrisonableBuilding
 	Inherits@shape: ^3x3Shape
 	Armor:
 		Type: Steel
@@ -2874,7 +2947,7 @@ canwy24.rubble:
 		Image: canwy24
 
 canwy25:
-	Inherits: ^CivBuilding
+	Inherits: ^GarrisonableBuilding
 	Inherits@shape: ^3x3Shape
 	Armor:
 		Type: Steel
@@ -2900,7 +2973,7 @@ canwy25.rubble:
 		Image: canwy25
 
 canwy26:
-	Inherits: ^CivBuilding
+	Inherits: ^GarrisonableBuilding
 	Inherits@shape: ^5x3Shape
 	Armor:
 		Type: Steel
@@ -2954,7 +3027,7 @@ camex01.rubble:
 		Image: camex01
 
 camex02:
-	Inherits: ^CivBuilding
+	Inherits: ^GarrisonableBuilding
 	Inherits@shape: ^6x4Shape
 	Tooltip:
 		Name: Mayan Castillo
@@ -3066,7 +3139,7 @@ camex05.rubble:
 		Image: camex05
 
 caeur1:
-	Inherits: ^CivBuilding
+	Inherits: ^GarrisonableBuilding
 	Inherits@shape: ^2x2Shape
 	Tooltip:
 		Name: Cottage
@@ -3077,6 +3150,9 @@ caeur1:
 	Building:
 		Dimensions: 2,2
 		Footprint: xx xx
+	Garrisonable:
+		MaxWeight: 3
+		PipCount: 3
 	SpawnActorOnDeath:
 		Actor: caeur1.rubble
 
@@ -3090,7 +3166,7 @@ caeur1.rubble:
 		Image: caeur1
 
 caeur2:
-	Inherits: ^CivBuilding
+	Inherits: ^GarrisonableBuilding
 	Inherits@shape: ^2x2Shape
 	Tooltip:
 		Name: Cottage
@@ -3101,6 +3177,9 @@ caeur2:
 	Building:
 		Dimensions: 2,2
 		Footprint: xx xx
+	Garrisonable:
+		MaxWeight: 3
+		PipCount: 3
 	SpawnActorOnDeath:
 		Actor: caeur2.rubble
 
@@ -3114,7 +3193,7 @@ caeur2.rubble:
 		Image: caeur2
 
 caeur04:
-	Inherits: ^CivBuilding
+	Inherits: ^GarrisonableBuilding
 	Inherits@shape: ^4x3Shape
 	Armor:
 		Type: Steel
@@ -3138,7 +3217,7 @@ caeur04.rubble:
 		Image: caeur04
 
 cachig01:
-	Inherits: ^CivBuilding
+	Inherits: ^GarrisonableBuilding
 	Inherits@shape: ^3x2Shape
 	Armor:
 		Type: Steel
@@ -3164,7 +3243,7 @@ cachig01.rubble:
 		Image: cachig01
 
 cachig02:
-	Inherits: ^CivBuilding
+	Inherits: ^GarrisonableBuilding
 	Inherits@shape: ^2x3Shape
 	Armor:
 		Type: Steel
@@ -3190,7 +3269,7 @@ cachig02.rubble:
 		Image: cachig02
 
 cachig03:
-	Inherits: ^CivBuilding
+	Inherits: ^GarrisonableBuilding
 	Inherits@shape: ^3x2Shape
 	Armor:
 		Type: Steel
@@ -3216,7 +3295,7 @@ cachig03.rubble:
 		Image: cachig03
 
 cachig04:
-	Inherits: ^CivBuilding
+	Inherits: ^GarrisonableBuilding
 	Inherits@shape: ^2x2Shape
 	Tooltip:
 		Name: Associates Center
@@ -3244,7 +3323,7 @@ cachig04.rubble:
 		Image: cachig04
 
 cachig05:
-	Inherits: ^CivBuilding
+	Inherits: ^GarrisonableBuilding
 	Inherits@shape: ^4x4Shape
 	Tooltip:
 		Name: Sears Tower
@@ -3298,7 +3377,7 @@ cachig06.rubble:
 		Image: cachig06
 
 castl01:
-	Inherits: ^CivBuilding
+	Inherits: ^GarrisonableBuilding
 	Inherits@shape: ^4x4Shape
 	Armor:
 		Type: Steel
@@ -3324,7 +3403,7 @@ castl01.rubble:
 		Image: castl01
 
 castl02:
-	Inherits: ^CivBuilding
+	Inherits: ^GarrisonableBuilding
 	Inherits@shape: ^4x4Shape
 	Armor:
 		Type: Steel
@@ -3350,7 +3429,7 @@ castl02.rubble:
 		Image: castl02
 
 castl03:
-	Inherits: ^CivBuilding
+	Inherits: ^GarrisonableBuilding
 	Inherits@shape: ^4x4Shape
 	Armor:
 		Type: Steel
@@ -3376,7 +3455,7 @@ castl03.rubble:
 		Image: castl03
 
 castl04:
-	Inherits: ^CivBuilding
+	Inherits: ^GarrisonableBuilding
 	Inherits@shape: ^2x6Shape
 	Armor:
 		Type: Steel
@@ -3626,7 +3705,7 @@ castl05h.rubble:
 		Image: castl05h
 
 camsc07:
-	Inherits: ^CivBuilding
+	Inherits: ^GarrisonableBuilding
 	Inherits@shape: ^2x2Shape
 	Tooltip:
 		Name: Hut
@@ -3639,11 +3718,14 @@ camsc07:
 	Building:
 		Dimensions: 2,2
 		Footprint: xx xx
+	Garrisonable:
+		MaxWeight: 6
+		PipCount: 6
 	MapEditorData:
 		ExcludeTilesets: SNOW
 
 camsc08:
-	Inherits: ^CivBuilding
+	Inherits: ^GarrisonableBuilding
 	Inherits@shape: ^2x2Shape
 	Tooltip:
 		Name: Hut
@@ -3651,11 +3733,14 @@ camsc08:
 		Range: 6c0
 	Health:
 		HP: 200
+	Garrisonable:
+		MaxWeight: 6
+		PipCount: 6
 	MapEditorData:
 		ExcludeTilesets: SNOW
 
 camsc09:
-	Inherits: ^CivBuilding
+	Inherits: ^GarrisonableBuilding
 	Inherits@shape: ^2x2Shape
 	Tooltip:
 		Name: Hut
@@ -3663,11 +3748,14 @@ camsc09:
 		Range: 6c0
 	Health:
 		HP: 200
+	Garrisonable:
+		MaxWeight: 6
+		PipCount: 6
 	MapEditorData:
 		ExcludeTilesets: SNOW
 
 camsc10:
-	Inherits: ^CivBuilding
+	Inherits: ^GarrisonableBuilding
 	Inherits@shape: ^4x4Shape
 	Tooltip:
 		Name: McBurger Kong
@@ -3691,7 +3779,7 @@ camsc10.rubble:
 		Image: camsc10
 
 cabunk01:
-	Inherits: ^CivBuilding
+	Inherits: ^GarrisonableBuilding
 	Inherits@shape: ^2x2Shape
 	Tooltip:
 		Name: Concrete Bunker
@@ -3704,6 +3792,9 @@ cabunk01:
 	Building:
 		Dimensions: 2,2
 		Footprint: xx xx
+	Garrisonable:
+		MaxWeight: 8
+		PipCount: 8
 	SpawnActorOnDeath:
 		Actor: cabunk01.rubble
 
@@ -3717,7 +3808,7 @@ cabunk01.rubble:
 		Image: cabunk01
 
 cabunk02:
-	Inherits: ^CivBuilding
+	Inherits: ^GarrisonableBuilding
 	Inherits@shape: ^2x2Shape
 	Tooltip:
 		Name: Concrete Bunker
@@ -3730,6 +3821,9 @@ cabunk02:
 	Building:
 		Dimensions: 2,2
 		Footprint: xx xx
+	Garrisonable:
+		MaxWeight: 8
+		PipCount: 8
 	SpawnActorOnDeath:
 		Actor: cabunk02.rubble
 

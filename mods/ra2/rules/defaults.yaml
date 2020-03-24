@@ -421,6 +421,37 @@
 	MapEditorData:
 		Categories: Civilian building
 
+^GarrisonableBuilding:
+	Inherits: ^CivBuilding
+	Inherits@AUTOTARGET: ^AutoTargetAll
+	ChangeOwnerOnGarrisoner:
+		EnterSound: ugarris.wav
+		ExitSound: ugarris.wav
+		EnterNotification: StructureGarrisoned
+		ExitNotification: StructureAbandoned
+	Garrisonable:
+		Types: Garrisoner
+		MaxWeight: 10
+		PipCount: 10
+		EjectOnDeath: true
+		LoadedCondition: loaded
+		PauseOnCondition: dmg_crit
+	AttackGarrisonedRV:
+		Armaments: garrisoned
+		PortOffsets: 768,0,1024, 448,-682,1024, -448,-682,1024, -768,0,1024, -448,682,1024, 448,682,1024
+		PortYaws: 0, 176, 341, 512, 682, 853
+		PortCones: 88, 88, 88, 88, 88, 88
+		PauseOnCondition: chronodisable
+		RequiresCondition: !build-incomplete
+	Targetable@GARRISONED:
+		TargetTypes: Defense
+		RequiresCondition: loaded
+	WithSpriteBody:
+		RequiresCondition: !loaded
+	WithSpriteBody@GARRISONED:
+		Sequence: garrisoned
+		RequiresCondition: loaded
+
 ^Rubble:
 	Inherits@1: ^SpriteActor
 	Inherits@shape: ^1x1Shape

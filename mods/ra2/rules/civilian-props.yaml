@@ -356,7 +356,7 @@ camov01:
 	WithIdleOverlay:
 
 camov02:
-	Inherits: ^CivBuilding
+	Inherits: ^GarrisonableBuilding
 	Inherits@shape: ^2x2Shape
 	Tooltip:
 		Name: Drive In Movie Concession Stand
@@ -370,6 +370,9 @@ camov02:
 		Dimensions: 2,2
 		Footprint: xx xx
 	WithIdleOverlay:
+	Garrisonable:
+		MaxWeight: 5
+		PipCount: 5
 
 pole01:
 	Inherits: ^TelephonePole

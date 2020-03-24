@@ -20,6 +20,10 @@ e2:
 		Bounds: 20, 30, 0, -11
 	Health:
 		HP: 125
+	Garrisoner:
+		Voice: Move
+		PipType: Green
+		GarrisonType: Garrisoner
 	Passenger:
 		PipType: Green
 	RevealsShroud:
@@ -30,6 +34,14 @@ e2:
 		Weapon: M1Carbine
 		RequiresCondition: !rank-elite
 	Armament@elite:
+		Weapon: M1CarbineE
+		RequiresCondition: rank-elite
+	Armament@garrisoned:
+		Name: garrisoned
+		Weapon: M1Carbine
+		RequiresCondition: !rank-elite
+	Armament@elite-garrisoned:
+		Name: garrisoned
 		Weapon: M1CarbineE
 		RequiresCondition: rank-elite
 	WithInfantryBody:

@@ -137,6 +137,10 @@ e1:
 		HP: 125
 	Mobile:
 		PauseOnCondition: chronodisable || !undeployed
+	Garrisoner:
+		Voice: Move
+		PipType: Green
+		GarrisonType: Garrisoner
 	Passenger:
 		PipType: Green
 	RevealsShroud:
@@ -162,6 +166,14 @@ e1:
 		Name: deployed-elite
 		Weapon: paraE
 		RequiresCondition: deployed && rank-elite
+	Armament@garrisoned:
+		Weapon: para
+		Name: garrisoned
+		RequiresCondition: !rank-elite
+	Armament@elite-garrisoned:
+		Weapon: paraE
+		Name: garrisoned
+		RequiresCondition: rank-elite
 	WithInfantryBody:
 		DefaultAttackSequence: shoot
 		RequiresCondition: undeployed

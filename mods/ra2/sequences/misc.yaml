@@ -135,6 +135,18 @@ pips:
 	pip-ammo: ammopips
 	pip-ammoempty: ammopips
 		Start: 1
+	pip-garrison-empty: pips2
+		Start: 6
+	pip-garrison-yellow: pips2
+		Start: 7
+	pip-garrison-white: pips2
+		Start: 8
+	pip-garrison-red: pips2
+		Start: 9
+	pip-garrison-blue: pips2
+		Start: 10
+	pip-garrison-purple: pips2
+		Start: 11
 	# TODO:
 	pip-empty-building:
 	pip-green-building:
