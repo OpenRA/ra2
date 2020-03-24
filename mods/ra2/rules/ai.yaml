@@ -66,15 +66,15 @@ Player:
 			natech: 1
 			gagap: 2
 		BuildingFractions:
-			garefn: 30
-			narefn: 30
-			gapowr: 35
-			napowr: 25
-			nanrct: 10
+			gapowr: 20
+			napowr: 20
+			nanrct: 1
+			garefn: 15
+			narefn: 15
 			gapile: 1
 			nahand: 1
-			gaweap: 1
-			naweap: 1
+			gaweap: 6
+			naweap: 6
 			gaairc: 1
 			amradr: 1
 			naradr: 1
@@ -95,13 +95,14 @@ Player:
 	SquadManagerBotModule@test:
 		RequiresCondition: enable-test-ai
 		SquadSize: 5
-		ExcludeFromSquadsTypes: cmin, harv, amcv, smcv
+		ExcludeFromSquadsTypes: cmin, harv, amcv, smcv, dog, engineer
 		ConstructionYardTypes: gacnst, nacnst
 	UnitBuilderBotModule@test:
 		RequiresCondition: enable-test-ai
 		UnitsToBuild:
 			e1: 90
 			e2: 90
+			engineer: 1
 			dog: 1
 			flakt: 10
 			shk: 10
@@ -123,6 +124,7 @@ Player:
 			tnkd: 15
 			ttnk: 15
 		UnitLimits:
+			engineer: 1
 			dog: 4
 			cmin: 8
 			harv: 8
@@ -133,5 +135,14 @@ Player:
 		McvFactoryTypes: gaweap, naweap
 	HarvesterBotModule:
 		RequiresCondition: enable-test-ai
+		HarvesterTypes: cmin, harv
+		RefineryTypes: garefn, narefn
 	BuildingRepairBotModule:
 		RequiresCondition: enable-test-ai
+	CaptureManagerBotModule:
+		RequiresCondition: enable-test-ai
+		CapturingActorTypes: engineer
+		CapturableActorTypes: caoild, caairp, cahosp, cathosp, caoutp
+		CapturableStances: Neutral
+		CheckCaptureTargetsForVisibility: false
+		MaximumCaptureTargetOptions: 15
