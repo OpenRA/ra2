@@ -24,6 +24,8 @@ gacnst:
 	Tooltip:
 		Name: Construction Yard
 	BaseBuilding:
+	BaseProvider:
+		Range: 0
 	Transforms:
 		IntoActor: amcv
 		Offset: 1,1
