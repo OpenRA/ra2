@@ -26,6 +26,8 @@ nacnst:
 	Tooltip:
 		Name: Construction Yard
 	BaseBuilding:
+	BaseProvider:
+		Range: 0
 	Transforms:
 		IntoActor: smcv
 		Offset: 1,1
