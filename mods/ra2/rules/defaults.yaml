@@ -1031,6 +1031,36 @@
 		VTOL: true
 		CanSlide: True
 
+^ShootableMissile:
+	Inherits@1: ^ExistsInWorld
+	-GivesExperience:
+	Armor:
+		Type: Missile
+	BallisticMissile:
+		LaunchAngle: 128
+		Speed: 170
+		AirborneCondition: airborne
+	Targetable@GROUND:
+		TargetTypes: Ground, Vehicle
+		RequiresCondition: !airborne
+	Targetable@AIRBORNE:
+		TargetTypes: Air
+		RequiresCondition: airborne
+	HiddenUnderFog:
+		Type: GroundPosition
+	Tooltip:
+		Name: Missile
+		GenericName: Missile
+	HitShape:
+	RejectsOrders:
+	BodyOrientation:
+		QuantizedFacings: 0
+		CameraPitch: 85
+		UseClassicPerspectiveFudge: false
+	RenderVoxels:
+	WithVoxelBody:
+	Interactable:
+
 ^Ship:
 	Inherits@1: ^ExistsInWorld
 	Inherits@2: ^GainsExperience
