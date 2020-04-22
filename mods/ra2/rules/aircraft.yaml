@@ -311,8 +311,8 @@ hornet:
 		FacingTolerance: 20
 		Voice: Attack
 	AmmoPool:
-		Ammo: 3
-		PipCount: 3
+		Ammo: 5
+		PipCount: 5
 		PipType: Ammo
 		PipTypeEmpty: AmmoEmpty
 		AmmoCondition: ammo
