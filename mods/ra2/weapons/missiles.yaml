@@ -298,3 +298,9 @@ V3Weapon:
 		ValidTargets: Water
 	Warhead@4Smu: LeaveSmudge
 		SmudgeType: MediumCrater, MediumScorch
+
+DredWeapon:
+	Inherits: V3Weapon
+	Warhead@1Dam: SpreadDamage
+		Spread: 1c0
+		Damage: 200

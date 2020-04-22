@@ -228,3 +228,80 @@ sqd:
 	HitShape:
 	OwnerLostAction:
 		Action: Kill
+
+dred:
+	Inherits: ^Ship
+	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
+	Inherits@MC: ^MindControllable
+	Buildable:
+		Queue: Ship
+		BuildPaletteOrder: 60
+		Prerequisites: natech, ~nayard
+		Description: Long-range rocket artillery ship.
+	UpdatesPlayerStatistics:
+		AddToArmyValue: true
+	Valued:
+		Cost: 2000
+	Tooltip:
+		Name: Dreadnought
+	Tooltip@NoRow:
+		Name: Dreadnought
+	Health:
+		HP: 800
+	Armor:
+		Type: Heavy
+	Mobile:
+		Speed: 60
+		TurnSpeed: 1
+	RevealsShroud:
+		Range: 7c0
+	RevealOnDeath:
+		Radius: 3c512
+	Armament:
+		Weapon: DredLauncher
+	FirepowerMultiplier@RANK-1:
+		RequiresCondition: rank-veteran >= 1 && !rank-elite
+		Modifier: 150
+	FirepowerMultiplier@RANK-ELITE:
+		RequiresCondition: rank-elite
+		Modifier: 225
+	AttackFrontal:
+		Voice: Attack
+		TargetFrozenActors: true
+		PauseOnCondition: chronodisable
+	MissileSpawnerParent:
+		Actors: dmisl, dmisl
+		SpawnAllAtOnce: true
+		RespawnTicks: 120
+		LoadedCondition: loaded
+	RenderSprites:
+	RenderVoxels:
+	WithVoxelBody@FULL:
+		RequiresCondition: loaded
+	WithVoxelBody@EMPTY:
+		Sequence: empty
+		RequiresCondition: !loaded
+	HitShape:
+
+dmisl:
+	Inherits: ^ShootableMissile
+	Valued:
+		Cost: 50
+	Tooltip:
+		Name: Dreadnought Missile
+	Health:
+		HP: 50
+	Armor:
+		Type: Rocket
+	BallisticMissile:
+		LaunchAngle: 192
+		Speed: 225
+		LaunchSounds: vdreatta.wav, vdreattb.wav
+	LeavesTrails:
+		Image: smokey2
+		MovingInterval: 2
+		Type: CenterPosition
+	MissileSpawnerChild:
+	SpawnedExplodes:
+		Weapon: DredWeapon
+		EmptyWeapon: DredWeapon

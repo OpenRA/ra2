@@ -114,3 +114,14 @@ V3Launcher:
 	Projectile: InstantHit
 	Warhead@1Dam: TargetDamage
 		ValidTargets: Ground, Water
+
+DredLauncher:
+	ReloadDelay: 150
+	Burst: 2
+	BurstDelays: 10
+	Range: 25c0
+	MinRange: 8c0
+	ValidTargets: Ground, Water
+	Projectile: InstantHit
+	Warhead@1Dam: TargetDamage
+		ValidTargets: Ground, Water

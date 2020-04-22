@@ -46,12 +46,12 @@ dest:
 	idle:
 	empty: destwo
 
-#dmisl: #Dreadnought Missile needs voxel projectiles
-#	idle:
+dmisl:
+	idle:
 
 dred:
 	idle:
-#Needs without weapon image dredwo
+	empty: dredwo
 
 euroc:
 	idle:
