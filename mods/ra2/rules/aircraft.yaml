@@ -335,3 +335,71 @@ hornethusk:
 	RenderVoxels:
 		Image: hornet
 		NormalsPalette: ts-normals
+
+asw:
+	Inherits: ^Plane
+	Inherits@EXPERIENCE: ^GainsExperience
+	-GivesExperience:
+	Valued:
+		Cost: 50
+	GainsExperience:
+		ExperienceModifier: 500
+	Tooltip:
+		Name: Osprey
+	Health:
+		HP: 135
+	Armor:
+		Type: Light
+	RevealsShroud:
+		Range: 2c0
+		Type: CenterPosition
+	Armament:
+		Weapon: ASWBomb
+		PauseOnCondition: !ammo
+		RequiresCondition: !rank-elite
+	Armament@Elite:
+		Weapon: ASWBombE
+		PauseOnCondition: !ammo
+		RequiresCondition: rank-elite
+	AttackAircraft:
+		FacingTolerance: 20
+		RequiresCondition: ammo
+	Aircraft:
+		AltitudeVelocity: 240
+		InitialFacing: 192
+		TurnSpeed: 8
+		Speed: 180
+		RepulsionSpeed: 40
+		TakeoffSounds: vospstaa.wav
+		LandingSounds: vosplana.wav
+	AmmoPool:
+		Ammo: 5
+		AmmoCondition: ammo
+	RejectsOrders:
+	SpawnActorOnDeath:
+		Actor: aswhusk
+	-Selectable:
+	-ActorLostNotification:
+	CarrierChild:
+		LandingDistance: 8c0
+	HitShape:
+	Interactable:
+	RenderVoxels:
+		NormalsPalette: ts-normals
+	RenderSprites:
+	Rearmable:
+		RearmActors: dest, cdest
+
+aswhusk:
+	Inherits: ^PlaneHusk
+	Tooltip:
+		Name: Osprey
+	Tooltip@NoRow:
+		Name: Osprey
+	Aircraft:
+		TurnSpeed: 5
+		Speed: 180
+		AltitudeVelocity: 240
+	RenderVoxels:
+		Image: asw
+		NormalsPalette: ts-normals

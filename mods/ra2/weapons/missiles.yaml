@@ -236,3 +236,36 @@ HornetBombE:
 		ValidTargets: Ground
 	Warhead@4Smu: LeaveSmudge
 		SmudgeType: MediumCrater, MediumScorch
+
+ASWBomb:
+	Inherits: HornetBomb
+	Range: 3c0
+	ValidTargets: Underwater
+	Projectile: Missile
+		BoundToTerrainType: Water
+	Warhead@1Dam: SpreadDamage
+		Damage: 50
+		Spread: 426
+		ValidTargets: Water, Underwater
+		Versus:
+			None: 25
+			Flak: 25
+			Plate: 25
+			Light: 75
+			Medium: 100
+			Heavy: 100
+			Wood: 65
+			Steel: 85
+			Concrete: 60
+			Drone: 25
+	Warhead@2Eff: CreateEffect
+		Explosions: small_grey_explosion
+		ExplosionPalette: effect
+	-Warhead@4Smu:
+
+ASWBombE:
+	Inherits: ASWBomb
+	Projectile: Missile
+		ContrailColor: EA0000
+	Warhead@1Dam: SpreadDamage
+		Damage: 80

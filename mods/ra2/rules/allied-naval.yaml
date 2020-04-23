@@ -76,8 +76,24 @@ dest:
 		LocalOffset: 1152,0,800
 		MuzzleSequence: muzzle-2
 		RequiresCondition: rank-elite
+	Armament@asw:
+		Name: asw
+		Weapon: ASWLauncher
+	CarrierParent:
+		Actors: asw
+		RespawnTicks: 300
+		ArmamentNames: asw
+		LoadedCondition: loaded
+	Exit:
+		SpawnOffset: 768,0,0
 	AttackFrontal:
 		Voice: Attack
+		Armaments: primary
+		PauseOnCondition: chronodisable
+	AttackFrontal@Spawner:
+		Voice: Attack
+		Armaments: asw
+		FacingTolerance: 128
 	WithMuzzleOverlay:
 	DetectCloaked:
 		CloakTypes: Underwater
@@ -86,7 +102,11 @@ dest:
 	Explodes:
 		Weapon: UnitExplode
 		EmptyWeapon: UnitExplode
-	WithVoxelBody:
+	WithVoxelBody@FULL:
+		RequiresCondition: loaded
+	WithVoxelBody@EMPTY:
+		Sequence: empty
+		RequiresCondition: !loaded
 	RenderSprites:
 	Voiced:
 		VoiceSet: AlliedNavalVoice

@@ -24,7 +24,7 @@ carrier:
 
 cdest:
 	idle:
-#Needs without weapon image cdestwo
+	empty: cdestwo
 
 cona:
 	idle:
@@ -44,7 +44,7 @@ cruise:
 
 dest:
 	idle:
-#Needs without weapon image destwo
+	empty: destwo
 
 #dmisl: #Dreadnought Missile needs voxel projectiles
 #	idle:

@@ -97,3 +97,11 @@ HornetLauncher:
 	Projectile: InstantHit
 	Warhead@1Dam: TargetDamage
 		ValidTargets: Ground, Water
+
+ASWLauncher:
+	ReloadDelay: 150
+	Range: 8c0
+	ValidTargets: Underwater
+	Projectile: InstantHit
+	Warhead@1Dam: TargetDamage
+		ValidTargets: Underwater
