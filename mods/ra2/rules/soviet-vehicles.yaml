@@ -459,6 +459,8 @@ v3:
 		RespawnTicks: 200
 		LoadedCondition: loaded
 	RenderSprites:
+	WithMissileLaunchOverlay:
+		Palette: effect
 	RenderVoxels:
 	WithVoxelBody@FULL:
 		RequiresCondition: loaded

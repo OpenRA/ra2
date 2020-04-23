@@ -103,6 +103,9 @@ namespace OpenRA.Mods.RA2.Traits
 			if (childEntry == null)
 				return;
 
+			foreach (var notify in self.TraitsImplementing<INotifyMissileSpawn>())
+				notify.Launching(self, target);
+
 			if (info.LaunchingCondition != null)
 			{
 				if (launchCondition == ConditionManager.InvalidConditionToken)

@@ -228,6 +228,10 @@ tug:
 v3:
 	Inherits@MC: ^MindControllable
 	icon: v3icon
+	takeoff: v3takoff
+		Length: *
+		Offset: 0, 0, 12
+		ZOffset: -0c511
 
 vlad:
 	Inherits@MC: ^MindControllable
