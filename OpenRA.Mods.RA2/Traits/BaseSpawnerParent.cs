@@ -85,8 +85,6 @@ namespace OpenRA.Mods.RA2.Traits
 		protected readonly BaseSpawnerChildEntry[] ChildEntries;
 
 		IFacing facing;
-		ExitInfo[] exits;
-		RallyPoint rallyPoint;
 
 		protected IReloadModifier[] reloadModifiers;
 
@@ -120,8 +118,6 @@ namespace OpenRA.Mods.RA2.Traits
 			base.Created(self);
 
 			facing = self.TraitOrDefault<IFacing>();
-			exits = self.Info.TraitInfos<ExitInfo>().ToArray();
-			rallyPoint = self.TraitOrDefault<RallyPoint>();
 
 			reloadModifiers = self.TraitsImplementing<IReloadModifier>().ToArray();
 		}

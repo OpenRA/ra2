@@ -152,10 +152,10 @@ namespace OpenRA.Mods.RA2.Traits
 
 		void INotifyBecomingIdle.OnBecomingIdle(Actor self)
 		{
-			Recall(self);
+			Recall();
 		}
 
-		void Recall(Actor self)
+		void Recall()
 		{
 			foreach (var carrierChildEntry in childEntries)
 				if (carrierChildEntry.IsLaunched && carrierChildEntry.IsValid)
