@@ -250,6 +250,9 @@ dred:
 		HP: 800
 	Armor:
 		Type: Heavy
+	Targetable:
+		TargetTypes: Ground, Water, C4
+	Demolishable:
 	Mobile:
 		Speed: 60
 		TurnSpeed: 1
