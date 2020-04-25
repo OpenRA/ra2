@@ -111,7 +111,7 @@ zep:
 		RequiresCondition: rank-elite
 	AttackFrontal:
 		Voice: Attack
-	AutoTarget:
+		FacingTolerance: 128
 	RenderSprites:
 	RenderVoxels:
 	WithVoxelBody:
