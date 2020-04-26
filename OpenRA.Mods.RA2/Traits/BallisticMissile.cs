@@ -23,14 +23,17 @@ namespace OpenRA.Mods.RA2.Traits
 	[Desc("This unit, when ordered to move, will fly in ballistic path then will detonate itself upon reaching target.")]
 	public class BallisticMissileInfo : ITraitInfo, IMoveInfo, IPositionableInfo, IFacingInfo
 	{
-		[Desc("Projectile speed in WDist / tick, two values indicate variable velocity.")]
-		public readonly int Speed = 17;
+		[Desc("Initial projectile speed in WDist / tick.")]
+		public readonly int Speed = 1;
 
 		[Desc("In angle. Missile is launched at this pitch and the intial tangential line of the ballistic path will be this.")]
 		public readonly WAngle LaunchAngle = WAngle.Zero;
 
 		[Desc("Minimum altitude where this missile is considered airborne")]
 		public readonly int MinAirborneAltitude = 5;
+
+		[Desc("Speed gain in WDist / tick.")]
+		public readonly int Acceleration = 3;
 
 		[Desc("Types of damage missile explosion is triggered with. Leave empty for no damage types.")]
 		public readonly BitSet<DamageType> DamageTypes = default(BitSet<DamageType>);
@@ -78,6 +81,8 @@ namespace OpenRA.Mods.RA2.Traits
 		bool airborne;
 		int airborneToken = ConditionManager.InvalidConditionToken;
 
+		int acceleration;
+
 		public BallisticMissile(ActorInitializer init, BallisticMissileInfo info)
 		{
 			Info = info;
@@ -123,7 +128,7 @@ namespace OpenRA.Mods.RA2.Traits
 
 		public int MovementSpeed
 		{
-			get { return Util.ApplyPercentageModifiers(Info.Speed, speedModifiers); }
+			get { return Util.ApplyPercentageModifiers(Info.Speed, speedModifiers) + acceleration; }
 		}
 
 		public WVec FlyStep(int facing)
@@ -162,6 +167,8 @@ namespace OpenRA.Mods.RA2.Traits
 
 			if (!self.IsInWorld)
 				return;
+
+			acceleration += Info.Acceleration;
 
 			self.World.UpdateMaps(self, this);
 
@@ -228,8 +235,7 @@ namespace OpenRA.Mods.RA2.Traits
 
 		public int EstimatedMoveDuration(Actor self, WPos fromPos, WPos toPos)
 		{
-			var speed = MovementSpeed;
-			return speed > 0 ? (toPos - fromPos).Length / speed : 0;
+			return MovementSpeed > 0 ? (toPos - fromPos).Length / MovementSpeed : 0;
 		}
 
 		public CPos NearestMoveableCell(CPos cell) { return cell; }

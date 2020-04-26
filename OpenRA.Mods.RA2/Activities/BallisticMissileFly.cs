@@ -22,9 +22,9 @@ namespace OpenRA.Mods.RA2.Activities
 		readonly BallisticMissile missile;
 		readonly WPos initPos;
 		readonly WPos targetPos;
-		readonly int length;
 		readonly int facing;
 
+		int length;
 		int ticks;
 
 		public BallisticMissileFly(Actor self, Target target, BallisticMissile missile)
@@ -32,7 +32,7 @@ namespace OpenRA.Mods.RA2.Activities
 			this.missile = missile;
 			initPos = self.CenterPosition;
 			targetPos = target.CenterPosition;
-			length = Math.Max((targetPos - initPos).Length / missile.Info.Speed, 1);
+			length = Math.Max((targetPos - initPos).Length / missile.MovementSpeed, 1);
 			facing = (targetPos - initPos).Yaw.Facing;
 			missile.Facing = facing;
 		}
@@ -50,6 +50,7 @@ namespace OpenRA.Mods.RA2.Activities
 				return true;
 			}
 
+			length = Math.Max((targetPos - initPos).Length / missile.MovementSpeed, 1);
 			var pos = WPos.LerpQuadratic(initPos, targetPos, missile.Info.LaunchAngle, ticks, length);
 			missile.SetPosition(self, pos);
 
