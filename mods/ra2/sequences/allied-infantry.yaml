@@ -27,6 +27,8 @@ adog:
 	icon: adogicon
 
 dlph:
+	Defaults:
+		Offset: 0,0,16
 	stand:
 		Start: 48
 		Facings: -8
