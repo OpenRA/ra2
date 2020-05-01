@@ -1158,6 +1158,7 @@
 		Name: Street Sign
 	MapEditorData:
 		Categories: Decoration
+	-MirageTarget:
 
 ^TrafficLight:
 	Inherits: ^Tree
@@ -1165,6 +1166,7 @@
 		Name: Traffic Light
 	MapEditorData:
 		Categories: Decoration
+	-MirageTarget:
 
 ^StreetLight:
 	Inherits: ^Tree
@@ -1176,6 +1178,7 @@
 		HP: 50
 	MapEditorData:
 		Categories: Decoration
+	-MirageTarget:
 
 ^TelephonePole:
 	Inherits: ^Tree
@@ -1187,6 +1190,7 @@
 		Type: Concrete
 	MapEditorData:
 		Categories: Decoration
+	-MirageTarget:
 
 ^Rock:
 	Inherits@1: ^SpriteActor

@@ -387,6 +387,7 @@ hdstn01:
 		Name: AlringtonStones
 	MapEditorData:
 		Categories: Decoration
+	-MirageTarget:
 
 lt_gen01:
 	Inherits: ^StreetLight
@@ -454,6 +455,7 @@ spkr01:
 		Name: Drive-In Speaker
 	MapEditorData:
 		Categories: Decoration
+	-MirageTarget:
 
 carus02c:
 	Inherits: ^CivBuilding
