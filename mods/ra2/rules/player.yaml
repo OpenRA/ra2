@@ -14,6 +14,9 @@ Player:
 		LowPowerModifier: 300
 		QueuedAudio: Building
 		ReadyAudio: ConstructionComplete
+		BlockedAudio: NoBuild
+		OnHoldAudio: OnHold
+		CancelledAudio: Cancelled
 		SpeedUp: true
 	ClassicProductionQueue@Support:
 		Type: Support
@@ -21,26 +24,49 @@ Player:
 		LowPowerModifier: 300
 		QueuedAudio: Building
 		ReadyAudio: ConstructionComplete
+		BlockedAudio: NoBuild
+		OnHoldAudio: OnHold
+		CancelledAudio: Cancelled
 		SpeedUp: true
 	ClassicProductionQueue@Vehicle:
 		Type: Vehicle
 		DisplayOrder: 3
 		LowPowerModifier: 300
+		ReadyAudio: UnitReady
+		BlockedAudio: NoBuild
+		QueuedAudio: Training
+		OnHoldAudio: OnHold
+		CancelledAudio: Cancelled
 		SpeedUp: true
 	ClassicProductionQueue@Infantry:
 		Type: Infantry
 		DisplayOrder: 2
 		LowPowerModifier: 300
+		ReadyAudio: UnitReady
+		BlockedAudio: NoBuild
+		QueuedAudio: Training
+		OnHoldAudio: OnHold
+		CancelledAudio: Cancelled
 		SpeedUp: true
 	ClassicProductionQueue@Aircraft:
 		Type: Aircraft
 		DisplayOrder: 4
 		LowPowerModifier: 300
+		ReadyAudio: UnitReady
+		BlockedAudio: NoBuild
+		QueuedAudio: Training
+		OnHoldAudio: OnHold
+		CancelledAudio: Cancelled
 		SpeedUp: true
 	ClassicProductionQueue@Ship:
 		Type: Ship
 		DisplayOrder: 5
 		LowPowerModifier: 300
+		ReadyAudio: UnitReady
+		BlockedAudio: NoBuild
+		QueuedAudio: Training
+		OnHoldAudio: OnHold
+		CancelledAudio: Cancelled
 		SpeedUp: true
 	PlaceBuilding:
 		NewOptionsNotification: NewOptions
