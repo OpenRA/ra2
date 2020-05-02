@@ -1063,7 +1063,7 @@
 		Condition: damaged
 		ValidDamageStates: Light, Medium, Heavy, Critical
 	Repairable:
-		Voice: Attack
+		Voice: Move
 		RepairActors: gayard, nayard
 	HiddenUnderFog:
 	ActorLostNotification:
