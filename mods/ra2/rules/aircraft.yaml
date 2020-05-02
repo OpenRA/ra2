@@ -112,6 +112,8 @@ zep:
 	AttackFrontal:
 		Voice: Attack
 		FacingTolerance: 128
+	AutoTarget:
+		ScanRadius: 7
 	RenderSprites:
 	RenderVoxels:
 	WithVoxelBody:
