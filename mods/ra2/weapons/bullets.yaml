@@ -267,7 +267,7 @@ MirageGunE:
 	Inherits: ^LargeBullet
 	ReloadDelay: 110
 	Range: 8c0
-	Report: vdesatta.wav, vrdesattb.wav
+	Report: vdesatta.wav, vdesattb.wav
 	InvalidTargets: Underwater
 	Projectile: Bullet
 		Blockable: false
