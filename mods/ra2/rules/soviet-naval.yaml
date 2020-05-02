@@ -196,7 +196,7 @@ sqd:
 		IsPlayerPalette: true
 	Targetable:
 		TargetTypes: Ground, Water
-		RequiresCondition: underwater
+		RequiresCondition: !underwater
 	Targetable@underwater:
 		TargetTypes: Underwater
 		RequiresCondition: underwater
