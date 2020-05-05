@@ -227,28 +227,24 @@ canewy21:
 		Offset: -30, -60, 60
 
 caarmy01:
-	Inherits: ^CivStructure
+	Inherits: ^CivStructureNoRubble
 	Defaults:
 		Offset: -15, -37, 37
-	-rubble:
 
 caarmy02:
-	Inherits: ^CivStructure
+	Inherits: ^CivStructureNoRubble
 	Defaults:
 		Offset: 0, -15, 15
-	-rubble:
 
 caarmy03:
-	Inherits: ^CivStructure
+	Inherits: ^CivStructureNoRubble
 	Defaults:
 		Offset: 0, -15, 15
-	-rubble:
 
 caarmy04:
-	Inherits: ^CivStructure
+	Inherits: ^CivStructureNoRubble
 	Defaults:
 		Offset: 0, -15, 15
-	-rubble:
 
 cawa2a:
 	Inherits: ^CivStructure
@@ -271,10 +267,9 @@ cawa2d:
 		Offset: 0, -60, 60
 
 cafarm01:
-	Inherits: ^CivStructure
+	Inherits: ^CivStructureNoRubble
 	Defaults:
 		Offset: 0, -30, 30
-	-rubble:
 
 cafarm02:
 	Inherits: ^CivStructure
@@ -287,16 +282,14 @@ cafarm06:
 		Offset: 0, -30, 30
 
 cafrma:
-	Inherits: ^CivStructure
+	Inherits: ^CivStructureNoRubble
 	Defaults:
 		Offset: 0, -30, 30
-	-rubble:
 
 cafrmb:
-	Inherits: ^CivStructure
+	Inherits: ^CivStructureNoRubble
 	Defaults:
 		Offset: 0, -15, 15
-	-rubble:
 
 cabarn02:
 	Inherits: ^CivStructure
@@ -304,176 +297,100 @@ cabarn02:
 		Offset: 0, -30, 30
 
 causfgl:
-	Inherits: ^CivStructure
-	Defaults:
-		Offset: 0, -15, 15
-	-rubble:
+	Inherits: ^Flag
 	flag: causfgl_a
-		Length: 16
-		ShadowStart: 16
 
 carufgl:
-	Inherits: ^CivStructure
-	Defaults:
-		Offset: 0, -15, 15
-	-rubble:
+	Inherits: ^Flag
 	flag: carufgl_a
-		Length: 16
-		ShadowStart: 16
 
 cairfgl:
-	Inherits: ^CivStructure
-	Defaults:
-		Offset: 0, -15, 15
-	-rubble:
+	Inherits: ^Flag
 	flag: cairfgl_a
-		Length: 16
-		ShadowStart: 16
 
 capofgl:
-	Inherits: ^CivStructure
+	Inherits: ^Flag
 	Defaults: capofgl
-		Offset: 0, -15, 15
 		UseTilesetCode: false
-	-rubble:
 	flag: capofgl_a
-		Length: 16
-		ShadowStart: 16
 
 caskfgl:
-	Inherits: ^CivStructure
-	Defaults:
-		Offset: 0, -15, 15
-	-rubble:
+	Inherits: ^Flag
 	flag: cuskfgl_a
-		Length: 16
-		ShadowStart: 16
 
 calbfgl:
-	Inherits: ^CivStructure
-	Defaults:
-		Offset: 0, -15, 15
-	-rubble:
+	Inherits: ^Flag
 	flag: culbfgl_a
-		Length: 16
-		ShadowStart: 16
 
 cafrfgl:
-	Inherits: ^CivStructure
-	Defaults:
-		Offset: 0, -15, 15
-	-rubble:
+	Inherits: ^Flag
 	flag: cufrfgl_a
-		Length: 16
-		ShadowStart: 16
 
 cagefgl:
-	Inherits: ^CivStructure
-	Defaults:
-		Offset: 0, -15, 15
-	-rubble:
+	Inherits: ^Flag
 	flag: cugefgl_a
-		Length: 16
-		ShadowStart: 16
 
 cacufgl:
-	Inherits: ^CivStructure
-	Defaults:
-		Offset: 0, -15, 15
-	-rubble:
+	Inherits: ^Flag
 	flag: cucufgl_a
-		Length: 16
-		ShadowStart: 16
 
 caukfgl:
-	Inherits: ^CivStructure
-	Defaults:
-		Offset: 0, -15, 15
-	-rubble:
+	Inherits: ^Flag
 	flag: cuukfgl_a
-		Length: 16
-		ShadowStart: 16
 
 camisc01:
-	Inherits: ^CivStructure
+	Inherits: ^Prop
 	Defaults:
 		Offset: 0, -15, 15
-	-rubble:
 
 camisc02:
-	Inherits: ^CivStructure
+	Inherits: ^Prop
 	Defaults:
 		Offset: 0, -15, 15
-	-rubble:
 
 camisc03:
-	Inherits: ^CivStructure
+	Inherits: ^Prop
 	Defaults:
 		Offset: 0, -15, 15
-	-rubble:
 
 camisc04:
-	Inherits: ^CivStructure
+	Inherits: ^Prop
 	Defaults:
 		Offset: 0, -15, 15
-	-rubble:
 
 camisc05:
-	Inherits: ^CivStructure
+	Inherits: ^CivStructureNoRubble
 	Defaults:
 		Offset: 0, -15, 15
 	idle:
 		ShadowStart: 2
 	damaged-idle:
 		ShadowStart: 3
-	-rubble:
 
 camisc06:
-	Inherits: ^CivStructure
+	Inherits: ^Prop
 	Defaults:
 		Offset: -15, -22, 22
-	-rubble:
 
 camsc07:
-	Inherits: ^CivStructure
+	Inherits: ^CivStructureNoRubble
 	Defaults:
 		Offset: 0, -30, 30
-	-rubble:
 
 camsc08:
-	Inherits: ^CivStructure
+	Inherits: ^CivStructureNoRubble
 	Defaults:
 		Offset: 0, -15, 15
-	-rubble:
 
 camsc09:
-	Inherits: ^CivStructure
+	Inherits: ^CivStructureNoRubble
 	Defaults:
 		Offset: 0, -15, 15
-	-rubble:
 
 camsc10:
 	Inherits: ^CivStructure
 	Defaults:
 		Offset: 0, -60, 60
-
-camsc11:
-	Inherits: ^CivStructure
-	Defaults:
-		Offset: 0, -15, 15
-	-rubble:
-
-camsc12:
-	Inherits: ^CivStructure
-	Defaults:
-		Offset: 0, -15, 15
-	-rubble:
-
-camsc13:
-	Inherits: ^CivStructure
-	Defaults:
-		Offset: 15, -22, 22
-	-rubble:
 
 camiam01:
 	Inherits: ^CivStructure
@@ -491,10 +408,9 @@ camiam03:
 		Offset: 15, -37, 37
 
 camiam04:
-	Inherits: ^CivStructure
+	Inherits: ^CivStructureNoRubble
 	Defaults:
 		Offset: 0, -15, 15
-	-rubble:
 
 camiam05:
 	Inherits: ^CivStructure
@@ -921,14 +837,9 @@ canwy26:
 		Offset: -30, -60, 60
 
 camov01:
+	Inherits: ^CivStructureNoRubble
 	Defaults:
 		Offset: 45, -37, 37
-		UseTilesetCode: true
-	idle:
-		ShadowStart: 3
-	damaged-idle:
-		Start: 1
-		ShadowStart: 4
 	idle-overlay: camov01_a
 		Length: 30
 		Tick: 200
@@ -976,10 +887,9 @@ capars06:
 		Offset: 0, -45, 45
 
 capars07:
-	Inherits: ^CivStructure
+	Inherits: ^CivStructureNoRubble
 	Defaults:
 		Offset: 0, -15, 15
-	-rubble:
 
 capars08:
 	Inherits: ^CivStructure
@@ -1018,24 +928,14 @@ capars14:
 		Offset: -15, -52, 52
 
 cats01:
+	Inherits: ^CivStructureNoRubble
 	Defaults:
 		Offset: 0, -30, 30
-		UseTilesetCode: true
-	idle:
-		ShadowStart: 3
-	damaged-idle:
-		Start: 1
-		ShadowStart: 4
 
 cagard01:
+	Inherits: ^CivStructureNoRubble
 	Defaults:
 		Offset: 0, -15, 15
-		UseTilesetCode: true
-	idle:
-		ShadowStart: 3
-	damaged-idle:
-		Start: 1
-		ShadowStart: 4
 	idle-flag: cagrd1_a
 		Length: 9
 		ShadowStart: 9

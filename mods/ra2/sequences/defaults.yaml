@@ -181,6 +181,22 @@
 		ShadowStart: 7
 		ZOffset: -3c0
 
+^CivStructureNoRubble:
+	Inherits: ^CivStructure
+	idle:
+		ShadowStart: 3
+	damaged-idle:
+		ShadowStart: 4
+	-rubble:
+
+^Flag:
+	Inherits: ^CivStructureNoRubble
+	Defaults:
+		Offset: 0, -15, 15
+	flag:
+		Length: 16
+		ShadowStart: 16
+
 ^Fence:
 	Defaults:
 		Offset: 0, -15, 15
@@ -222,6 +238,7 @@
 
 ^Prop:
 	Defaults:
+		Offset: 0, -15, 15
 		UseTilesetCode: true
 	idle:
 		ShadowStart: 3

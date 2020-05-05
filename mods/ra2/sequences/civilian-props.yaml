@@ -123,16 +123,22 @@ camisc06:
 	Inherits: ^Prop
 
 caeuro05:
-	Inherits: ^Prop
+	Inherits: ^CivStructureNoRubble
+	Defaults:
+		Offset: 0, -30, 30
 
 capark01:
 	Inherits: ^Prop
 
 capark02:
 	Inherits: ^Prop
+	Defaults:
+		Offset: -15, -22, 22
 
 capark03:
 	Inherits: ^Prop
+	Defaults:
+		Offset: 0, -30, 30
 
 ammo01:
 	Inherits: ^Prop
