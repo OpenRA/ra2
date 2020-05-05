@@ -198,10 +198,10 @@ dlph:
 		UncloakOn: Damage
 		IsPlayerPalette: true
 	Targetable:
-		TargetTypes: Ground, Water, ImmuneToAllySonic
+		TargetTypes: Ground, Water, ImmuneToAllySonic, Submergeable
 		RequiresCondition: !underwater
 	Targetable@underwater:
-		TargetTypes: Underwater, ImmuneToAllySonic
+		TargetTypes: Underwater, ImmuneToAllySonic, Submergeable
 		RequiresCondition: underwater
 	DetectCloaked:
 		CloakTypes: Underwater

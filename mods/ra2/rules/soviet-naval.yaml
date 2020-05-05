@@ -61,9 +61,11 @@ sub:
 	-LeavesTrails:
 	RevealsShroud:
 		Range: 6c0
-	-Targetable:
 	Targetable:
-		TargetTypes: Ground, Water, Repair
+		TargetTypes: Ground, Water, Repair, Submergeable
+		RequiresCondition: !underwater
+	Targetable@UNDERWATER:
+		TargetTypes: Underwater, Submergeable
 		RequiresCondition: underwater
 	Cloak:
 		CloakTypes: Underwater
@@ -195,10 +197,10 @@ sqd:
 		UncloakOn: Damage, Attack
 		IsPlayerPalette: true
 	Targetable:
-		TargetTypes: Ground, Water
+		TargetTypes: Ground, Water, Submergeable
 		RequiresCondition: !underwater
 	Targetable@underwater:
-		TargetTypes: Underwater
+		TargetTypes: Underwater, Submergeable
 		RequiresCondition: underwater
 	DetectCloaked:
 		CloakTypes: Underwater

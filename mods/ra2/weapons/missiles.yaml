@@ -240,13 +240,13 @@ HornetBombE:
 ASWBomb:
 	Inherits: HornetBomb
 	Range: 3c0
-	ValidTargets: Underwater
+	ValidTargets: Submergeable
 	Projectile: Missile
 		BoundToTerrainType: Water
 	Warhead@1Dam: SpreadDamage
 		Damage: 50
 		Spread: 426
-		ValidTargets: Water, Underwater
+		ValidTargets: Submergeable
 		Versus:
 			None: 25
 			Flak: 25
