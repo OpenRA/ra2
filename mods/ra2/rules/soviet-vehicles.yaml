@@ -413,3 +413,83 @@ dtruck:
 	Voiced:
 		VoiceSet: DemolitionTruckVoice
 	HitShape:
+
+v3:
+	Inherits: ^Vehicle
+	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
+	Inherits@MC: ^MindControllable
+	Buildable:
+		Queue: Vehicle
+		BuildPaletteOrder: 100
+		Prerequisites: natech, ~naweap
+		Description: Long-range rocket artillery.
+	UpdatesPlayerStatistics:
+		AddToArmyValue: true
+	Valued:
+		Cost: 1000
+	DeliversCash:
+		Payload: 500
+		PlayerExperience: 50
+		Voice: Move
+	Tooltip:
+		Name: V3 Launcher
+	Health:
+		HP: 150
+	Armor:
+		Type: Light
+	Mobile:
+		Speed: 75
+		TurnSpeed: 3
+	RevealsShroud:
+		Range: 6c0
+	Armament:
+		Weapon: V3Launcher
+	FirepowerMultiplier@RANK-1:
+		RequiresCondition: rank-veteran >= 1 && !rank-elite
+		Modifier: 150
+	FirepowerMultiplier@RANK-ELITE:
+		RequiresCondition: rank-elite
+		Modifier: 220
+	AttackFrontal:
+		Voice: Attack
+		TargetFrozenActors: True
+		PauseOnCondition: chronodisable
+	MissileSpawnerParent:
+		Actors: v3rocket
+		RespawnTicks: 200
+		LoadedCondition: loaded
+	RenderSprites:
+	RenderVoxels:
+	WithVoxelBody@FULL:
+		RequiresCondition: loaded
+	WithVoxelBody@EMPTY:
+		Sequence: empty
+		RequiresCondition: !loaded
+	HitShape:
+	Voiced:
+		VoiceSet: SovietVehicleVoice
+	ProducibleWithLevel:
+		Prerequisites: warfactory.infiltrated
+
+v3rocket:
+	Inherits: ^ShootableMissile
+	Valued:
+		Cost: 50
+	Tooltip:
+		Name: V3 Rocket
+	Health:
+		HP: 50
+	Armor:
+		Type: Rocket
+	BallisticMissile:
+		LaunchAngle: 192
+		Speed: 225
+		LaunchSounds: vv3latta.wav, vv3lattb.wav
+	LeavesTrails:
+		Image: smokey2
+		MovingInterval: 2
+		Type: CenterPosition
+	MissileSpawnerChild:
+	SpawnedExplodes:
+		Weapon: V3Weapon
+		EmptyWeapon: V3Weapon

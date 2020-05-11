@@ -269,3 +269,32 @@ ASWBombE:
 		ContrailColor: EA0000
 	Warhead@1Dam: SpreadDamage
 		Damage: 80
+
+V3Weapon:
+	Warhead@1Dam: SpreadDamage
+		Spread: 1c256
+		Damage: 200
+		ValidTargets: Ground, Water
+		Versus:
+			None: 100
+			Flak: 100
+			Plate: 80
+			Light: 100
+			Medium: 70
+			Heavy: 70
+			Wood: 100
+			Steel: 100
+			Concrete: 90
+			Drone: 100
+			Rocket: 0
+		DamageTypes: Prone70Percent, TriggerProne, ExplosionDeath, SuppressTerrorDrone
+	Warhead@2Eff: CreateEffect
+		Explosions: medium_clsn
+		ImpactSounds: gexp14a.wav
+		ValidTargets: Ground, Air
+	Warhead@3EffWater: CreateEffect
+		Explosions: small_watersplash
+		ImpactSounds: gexpwasa.wav
+		ValidTargets: Water
+	Warhead@4Smu: LeaveSmudge
+		SmudgeType: MediumCrater, MediumScorch
