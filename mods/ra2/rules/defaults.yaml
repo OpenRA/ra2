@@ -2,6 +2,7 @@
 	AppearsOnRadar:
 	UpdatesPlayerStatistics:
 	CombatDebugOverlay:
+	RenderDebugState:
 	DrawLineToTarget:
 	GivesExperience:
 	ScriptTriggers:
