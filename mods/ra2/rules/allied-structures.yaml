@@ -981,7 +981,7 @@ gaweat:
 		OrderName: WeatherControlDevice
 		ChargeInterval: 15000
 		Icon: lightningstorm
-		Description: Lightning Storm
+		Description: Weather Storm
 		LongDesc: Control the weather to destroy enemy forces.
 		InsufficientPowerSpeechNotification: WeathercontrolDeviceOffline
 		EndChargeSpeechNotification: LightningStormReady
@@ -1037,7 +1037,7 @@ gacsph:
 		OrderName: Chronoshift
 		Icon: chrono
 		ChargeInterval: 7500
-		Description: Chronoshift
+		Description: Chronosphere
 		LongDesc: Teleports a group of units across\nthe map.
 		# Those sounds don't work: OpenRA/OpenRA#10540
 		# They also want to be played successive
