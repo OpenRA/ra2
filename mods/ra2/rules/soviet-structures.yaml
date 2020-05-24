@@ -822,6 +822,7 @@ nairon:
 		Duration: 500
 		# TODO: These are actually no speech notifications
 		EndChargeSound: siroread.wav
+		EndChargeSpeechNotification: IronCurtainReady
 		OnFireSound: siroon.wav
 		DisplayTimerStances: Ally, Neutral, Enemy
 		DisplayRadarPing: True
@@ -872,7 +873,9 @@ namisl:
 		Description: Atom Bomb
 		LongDesc: Launches a devastating atomic bomb\nat a target location.
 		EndChargeSound: snukread.wav
+		EndChargeSpeechNotification: AtomBombReady
 		LaunchSound: snuklaun.wav
+		LaunchSpeechNotification: AtomBombLaunchDetected
 		MissileWeapon: atomic
 		MissilePalette: player
 		MissileDelay: 35
@@ -892,6 +895,7 @@ namisl:
 		TrailInterval: 2
 		FlightDelay: 200
 		PauseOnCondition: lowpower
+		SelectTargetSpeechNotification: SelectTarget
 	WithNukeLaunchAnimation:
 	SpawnSurvivors:
 		DeathTypes: ExplosionDeath, BulletDeath
