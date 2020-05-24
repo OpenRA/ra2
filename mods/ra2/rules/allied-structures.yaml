@@ -1043,6 +1043,7 @@ gacsph:
 		# They also want to be played successive
 		#SelectTargetSound: schrlo1.wav, schrlo2a.wav schrlo2b.wav, schrlo2c.wav, schrlo3.wav
 		EndChargeSound: schropen.wav
+		EndChargeSpeechNotification: ChronosphereReady
 		DisplayTimerStances: Ally, Neutral, Enemy
 		DisplayRadarPing: True
 		KillCargo: False
