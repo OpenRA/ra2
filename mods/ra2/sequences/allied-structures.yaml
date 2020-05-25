@@ -74,7 +74,7 @@ garefn:
 	make: gurefnmk
 	idle-drill: ggrefnl1
 		Length: 6
-		Tick: 1500
+		Tick: 200
 	idle-bib: ggrefnbb
 		ShadowStart: 2
 		ZOffset: -512
