@@ -59,7 +59,6 @@ gacnst:
 		ValidPowerStates: Low, Critical
 	WithIdleOverlay@fans:
 		Sequence: idle-fans
-		PauseOnCondition: lowpower
 		RequiresCondition: !build-incomplete
 	WithBuildingPlacedOverlay:
 	ProvidesPrerequisite:
@@ -300,19 +299,15 @@ gaairc:
 		Range: 10c0
 	WithIdleOverlay@top:
 		Sequence: idle-top
-		PauseOnCondition: lowpower
 		RequiresCondition: !build-incomplete
 	WithIdleOverlay@bottom:
 		Sequence: idle-bottom
-		PauseOnCondition: lowpower
 		RequiresCondition: !build-incomplete
 	WithIdleOverlay@mid:
 		Sequence: idle-mid
-		PauseOnCondition: lowpower
 		RequiresCondition: !build-incomplete
 	WithIdleOverlay@lights:
 		Sequence: idle-lights
-		PauseOnCondition: lowpower
 		RequiresCondition: !build-incomplete
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
@@ -867,9 +862,13 @@ gaorep:
 		Type: Wood
 	RevealsShroud:
 		Range: 5c0
-	WithIdleOverlay@glow:
+	WithIdleOverlay:
 		Sequence: idle-glow
+		PauseOnCondition: lowpower
 		RequiresCondition: !build-incomplete
+	GrantConditionOnPowerState@LOWPOWER:
+		Condition: lowpower
+		ValidPowerStates: Low, Critical
 	ResourcePurifier:
 		Modifier: 25
 	Power:
