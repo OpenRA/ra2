@@ -13,9 +13,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using OpenRA.GameRules;
-using OpenRA.Mods.RA2.Traits;
 using OpenRA.Mods.Common.Traits;
 using OpenRA.Mods.Common.Warheads;
+using OpenRA.Mods.RA2.Traits;
 using OpenRA.Traits;
 
 namespace OpenRA.Mods.RA2.Warheads
