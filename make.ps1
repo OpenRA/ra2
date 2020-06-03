@@ -233,6 +233,7 @@ function ParseConfigFile($fileName)
 			ReadConfigLine $line $name
 		}
 	}
+	$reader.Close()
 
 	$missing = @()
 	foreach ($name in $names)
@@ -308,7 +309,9 @@ if ($command -eq "all" -or $command -eq "clean")
 	$currentEngine = ""
 	if (Test-Path $versionFile)
 	{
-		$currentEngine = [System.IO.File]::OpenText($versionFile).ReadLine()
+		$reader = [System.IO.File]::OpenText($versionFile)
+		$currentEngine = $reader.ReadLine()
+		$reader.Close()
 	}
 
 	if ($currentEngine -ne "" -and $currentEngine -eq $env:ENGINE_VERSION)
