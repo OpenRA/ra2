@@ -194,7 +194,7 @@ orca:
 		Actor: orcahusk
 	HitShape:
 	Rearmable:
-		RearmActors: gaairc, amradr
+		RearmActors: gaairc, amradr, gapad
 
 orcahusk:
 	Inherits: ^PlaneHusk

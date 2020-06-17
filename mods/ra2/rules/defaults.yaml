@@ -976,6 +976,7 @@
 		AltitudeVelocity: 120
 		TakeOffOnCreation: false
 		IdleBehavior: ReturnToBase
+		InitialFacing: 224
 	Hovers@CRUISING:
 		RequiresCondition: cruising
 	WithVoxelBody:
