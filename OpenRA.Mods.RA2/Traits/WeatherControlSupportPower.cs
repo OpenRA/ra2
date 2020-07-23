@@ -123,7 +123,12 @@ namespace OpenRA.Mods.RA2.Traits.SupportPowers
 			{
 				hitDelay = info.HitDelay;
 
-				info.WeaponInfo.Impact(Target.FromPos(targetPos), self, Enumerable.Empty<int>());
+				var warheadArgs = new WarheadArgs()
+				{
+					SourceActor = self
+				};
+
+				info.WeaponInfo.Impact(Target.FromPos(targetPos), warheadArgs);
 			}
 
 			if (--scatterDelay < 0)
@@ -136,7 +141,12 @@ namespace OpenRA.Mods.RA2.Traits.SupportPowers
 					var newPos = targetPos + offset;
 					var scatterTarget = Target.FromPos(newPos);
 
-					info.WeaponInfo.Impact(scatterTarget, self, Enumerable.Empty<int>());
+					var warheadArgs = new WarheadArgs()
+					{
+						SourceActor = self
+					};
+
+					info.WeaponInfo.Impact(scatterTarget, warheadArgs);
 				}
 			}
 

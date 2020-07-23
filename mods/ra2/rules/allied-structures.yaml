@@ -157,7 +157,7 @@ gapile:
 	RevealsShroud:
 		Range: 5c0
 	RallyPoint:
-		Offset: 2,3
+		Path: 2,3
 		Palette: mouse
 		IsPlayerPalette: false
 	Exit@0_n1:
@@ -401,7 +401,7 @@ gaweap:
 	RevealsShroud:
 		Range: 4c0
 	RallyPoint:
-		Offset: 5,1
+		Path: 5,1
 		Palette: mouse
 		IsPlayerPalette: false
 	Exit@1:
@@ -568,7 +568,7 @@ gayard:
 		ZOffset: 256
 		RequiresCondition: primary
 	RallyPoint:
-		Offset: 5,1
+		Path: 5,1
 		Palette: mouse
 		IsPlayerPalette: false
 	RepairsUnits:

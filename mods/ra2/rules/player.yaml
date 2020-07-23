@@ -133,3 +133,4 @@ Player:
 		Sequence: idle
 		Palette: cameo-chevron
 	GameSaveViewportManager:
+	PlayerRadarTerrain:
