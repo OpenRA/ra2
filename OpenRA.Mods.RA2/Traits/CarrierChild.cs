@@ -66,7 +66,7 @@ namespace OpenRA.Mods.RA2.Traits
 			if (ammoPools.Length == 0)
 				return false;
 
-			return ammoPools.All(x => !x.HasAmmo());
+			return ammoPools.All(x => !x.HasAmmo);
 		}
 
 		void INotifyIdle.TickIdle(Actor self)

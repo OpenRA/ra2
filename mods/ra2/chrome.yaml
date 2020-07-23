@@ -2,1568 +2,1814 @@
 # Allies
 # -----------------------------------------------------------------------------------
 
-sidebar-allies: chrome.png
-	background-top: 0,0,234,275
-	background-iconrow: 0,275,234,50
-	background-bottom: 0,325,234,66
-	background-supportoverlay: 250,20,64,48
-	background-commandbar: 559,278,459,31
+sidebar-allies:
+	Image: chrome.png
+	Regions:
+		background-top: 0, 0, 234, 275
+		background-iconrow: 0, 275, 234, 50
+		background-bottom: 0, 325, 234, 66
+		background-supportoverlay: 250, 20, 64, 48
+		background-commandbar: 559, 278, 459, 31
 
 # These coordinates point to an empty area of the chrome.png file to make the background of these buttons empty
-sidebar-button-allies: chrome.png
-	background: 5370,15,30,32
-sidebar-button-allies-hover: chrome.png
-	background: 5370,15,30,32
-sidebar-button-allies-pressed: chrome.png
-	background: 5370,15,30,32
-sidebar-button-allies-highlighted: chrome.png
-	background: 5370,15,30,32
-sidebar-button-allies-highlighted-hover: chrome.png
-	background: 5370,15,30,32
-sidebar-button-allies-highlighted-pressed: chrome.png
-	background: 5370,15,30,32
-sidebar-button-allies-highlighted-disabled: chrome.png
-	background: 5370,15,30,32
-sidebar-button-allies-disabled: chrome.png
-	background: 5370,15,30,32
+sidebar-button-allies:
+	Image: chrome.png
+	PanelRegion: 5370, 15, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
+sidebar-button-allies-hover:
+	Image: chrome.png
+	PanelRegion: 5370, 15, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
+sidebar-button-allies-pressed:
+	Image: chrome.png
+	PanelRegion: 5370, 15, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
+sidebar-button-allies-highlighted:
+	Image: chrome.png
+	PanelRegion: 5370, 15, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
+sidebar-button-allies-highlighted-hover:
+	Image: chrome.png
+	PanelRegion: 5370, 15, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
+sidebar-button-allies-highlighted-pressed:
+	Image: chrome.png
+	PanelRegion: 5370, 15, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
+sidebar-button-allies-highlighted-disabled:
+	Image: chrome.png
+	PanelRegion: 5370, 15, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
+sidebar-button-allies-disabled:
+	Image: chrome.png
+	PanelRegion: 5370, 15, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
 
-scrollup-buttons-allies: chrome.png
-	background: 117,395,77,27
-scrollup-buttons-allies-hover: chrome.png
-	background: 117,422,77,27
-scrollup-buttons-allies-pressed: chrome.png
-	background: 117,449,77,27
-scrollup-buttons-allies-highlighted: chrome.png
-	background: 117,422,77,27
-scrollup-buttons-allies-highlighted-hover: chrome.png
-	background: 117,422,77,27
-scrollup-buttons-allies-highlighted-pressed: chrome.png
-	background: 117,422,77,27
-scrollup-button-allies-highlighted-disabled: chrome.png
-	background: 117,476,77,27
-scrollup-buttons-allies-disabled: chrome.png
-	background: 117,476,77,27
+scrollup-buttons-allies:
+	Image: chrome.png
+	PanelRegion: 117, 395, 0, 0, 77, 27, 0, 0
+	PanelSides: Center
+scrollup-buttons-allies-hover:
+	Image: chrome.png
+	PanelRegion: 117, 422, 0, 0, 77, 27, 0, 0
+	PanelSides: Center
+scrollup-buttons-allies-pressed:
+	Image: chrome.png
+	PanelRegion: 117, 449, 0, 0, 77, 27, 0, 0
+	PanelSides: Center
+scrollup-buttons-allies-highlighted:
+	Image: chrome.png
+	PanelRegion: 117, 422, 0, 0, 77, 27, 0, 0
+	PanelSides: Center
+scrollup-buttons-allies-highlighted-hover:
+	Image: chrome.png
+	PanelRegion: 117, 422, 0, 0, 77, 27, 0, 0
+	PanelSides: Center
+scrollup-buttons-allies-highlighted-pressed:
+	Image: chrome.png
+	PanelRegion: 117, 422, 0, 0, 77, 27, 0, 0
+	PanelSides: Center
+scrollup-button-allies-highlighted-disabled:
+	Image: chrome.png
+	PanelRegion: 117, 476, 0, 0, 77, 27, 0, 0
+	PanelSides: Center
+scrollup-buttons-allies-disabled:
+	Image: chrome.png
+	PanelRegion: 117, 476, 0, 0, 77, 27, 0, 0
+	PanelSides: Center
 
-scrolldown-buttons-allies: chrome.png
-	background: 40,395,77,27
-scrolldown-buttons-allies-hover: chrome.png
-	background: 40,422,77,27
-scrolldown-buttons-allies-pressed: chrome.png
-	background: 40,449,77,27
-scrolldown-buttons-allies-highlighted: chrome.png
-	background: 40,422,77,27
-scrolldown-buttons-allies-highlighted-hover: chrome.png
-	background: 40,422,77,27
-scrolldown-buttons-allies-highlighted-pressed: chrome.png
-	background: 40,422,77,27
-scrolldown-button-allies-highlighted-disabled: chrome.png
-	background: 40,476,77,27
-scrolldown-buttons-allies-disabled: chrome.png
-	background: 40,476,77,27
+scrolldown-buttons-allies:
+	Image: chrome.png
+	PanelRegion: 40, 395, 0, 0, 77, 27, 0, 0
+	PanelSides: Center
+scrolldown-buttons-allies-hover:
+	Image: chrome.png
+	PanelRegion: 40, 422, 0, 0, 77, 27, 0, 0
+	PanelSides: Center
+scrolldown-buttons-allies-pressed:
+	Image: chrome.png
+	PanelRegion: 40, 449, 0, 0, 77, 27, 0, 0
+	PanelSides: Center
+scrolldown-buttons-allies-highlighted:
+	Image: chrome.png
+	PanelRegion: 40, 422, 0, 0, 77, 27, 0, 0
+	PanelSides: Center
+scrolldown-buttons-allies-highlighted-hover:
+	Image: chrome.png
+	PanelRegion: 40, 422, 0, 0, 77, 27, 0, 0
+	PanelSides: Center
+scrolldown-buttons-allies-highlighted-pressed:
+	Image: chrome.png
+	PanelRegion: 40, 422, 0, 0, 77, 27, 0, 0
+	PanelSides: Center
+scrolldown-button-allies-highlighted-disabled:
+	Image: chrome.png
+	PanelRegion: 40, 476, 0, 0, 77, 27, 0, 0
+	PanelSides: Center
+scrolldown-buttons-allies-disabled:
+	Image: chrome.png
+	PanelRegion: 40, 476, 0, 0, 77, 27, 0, 0
+	PanelSides: Center
 
-radar-allies: chrome.png
-	insignia: 340,335,202,157
+radar-allies:
+	Image: chrome.png
+	Regions:
+		insignia: 340, 335, 202, 157
 
-repair-button-allies: chrome.png
-	background: 580,15,44,34
-repair-button-allies-hover: chrome.png
-	background: 580,49,44,34
-repair-button-allies-pressed: chrome.png
-	background: 580,83,44,34
-repair-button-allies-highlighted: chrome.png
-	background: 580,117,44,34
-repair-button-allies-highlighted-hover: chrome.png
-	background: 580,151,44,34
-repair-button-allies-highlighted-pressed: chrome.png
-	background: 580,185,44,34
-repair-button-allies-disabled: chrome.png
-	background: 580,219,44,34
-repair-button-allies-highlighted-disabled: chrome.png
-	background: 580,219,44,34
+repair-button-allies:
+	Image: chrome.png
+	PanelRegion: 580, 15, 0, 0, 44, 34, 0, 0
+	PanelSides: Center
+repair-button-allies-hover:
+	Image: chrome.png
+	PanelRegion: 580, 49, 0, 0, 44, 34, 0, 0
+	PanelSides: Center
+repair-button-allies-pressed:
+	Image: chrome.png
+	PanelRegion: 580, 83, 0, 0, 44, 34, 0, 0
+	PanelSides: Center
+repair-button-allies-highlighted:
+	Image: chrome.png
+	PanelRegion: 580, 117, 0, 0, 44, 34, 0, 0
+	PanelSides: Center
+repair-button-allies-highlighted-hover:
+	Image: chrome.png
+	PanelRegion: 580, 151, 0, 0, 44, 34, 0, 0
+	PanelSides: Center
+repair-button-allies-highlighted-pressed:
+	Image: chrome.png
+	PanelRegion: 580, 185, 0, 0, 44, 34, 0, 0
+	PanelSides: Center
+repair-button-allies-disabled:
+	Image: chrome.png
+	PanelRegion: 580, 219, 0, 0, 44, 34, 0, 0
+	PanelSides: Center
+repair-button-allies-highlighted-disabled:
+	Image: chrome.png
+	PanelRegion: 580, 219, 0, 0, 44, 34, 0, 0
+	PanelSides: Center
 
-beacon-button-allies: chrome.png
-	background: 665,15,41,34
-beacon-button-allies-hover: chrome.png
-	background: 665,49,41,34
-beacon-button-allies-pressed: chrome.png
-	background: 665,83,41,34
-beacon-button-allies-highlighted: chrome.png
-	background: 665,117,41,34
-beacon-button-allies-highlighted-hover: chrome.png
-	background: 665,151,41,34
-beacon-button-allies-highlighted-pressed: chrome.png
-	background: 665,185,41,34
-beacon-button-allies-disabled: chrome.png
-	background: 665,219,41,34
-beacon-button-allies-highlighted-disabled: chrome.png
-	background: 665,219,41,34
+beacon-button-allies:
+	Image: chrome.png
+	PanelRegion: 665, 15, 0, 0, 41, 34, 0, 0
+	PanelSides: Center
+beacon-button-allies-hover:
+	Image: chrome.png
+	PanelRegion: 665, 49, 0, 0, 41, 34, 0, 0
+	PanelSides: Center
+beacon-button-allies-pressed:
+	Image: chrome.png
+	PanelRegion: 665, 83, 0, 0, 41, 34, 0, 0
+	PanelSides: Center
+beacon-button-allies-highlighted:
+	Image: chrome.png
+	PanelRegion: 665, 117, 0, 0, 41, 34, 0, 0
+	PanelSides: Center
+beacon-button-allies-highlighted-hover:
+	Image: chrome.png
+	PanelRegion: 665, 151, 0, 0, 41, 34, 0, 0
+	PanelSides: Center
+beacon-button-allies-highlighted-pressed:
+	Image: chrome.png
+	PanelRegion: 665, 185, 0, 0, 41, 34, 0, 0
+	PanelSides: Center
+beacon-button-allies-disabled:
+	Image: chrome.png
+	PanelRegion: 665, 219, 0, 0, 41, 34, 0, 0
+	PanelSides: Center
+beacon-button-allies-highlighted-disabled:
+	Image: chrome.png
+	PanelRegion: 665, 219, 0, 0, 41, 34, 0, 0
+	PanelSides: Center
 
-sell-button-allies: chrome.png
-	background: 706,15,43,34
-sell-button-allies-hover: chrome.png
-	background: 706,49,43,34
-sell-button-allies-pressed: chrome.png
-	background: 706,83,43,34
-sell-button-allies-highlighted: chrome.png
-	background: 706,117,43,34
-sell-button-allies-highlighted-hover: chrome.png
-	background: 706,151,43,34
-sell-button-allies-highlighted-pressed: chrome.png
-	background: 706,185,43,34
-sell-button-allies-disabled: chrome.png
-	background: 706,219,43,34
-sell-button-allies-highlighted-disabled: chrome.png
-	background: 706,219,43,34
+sell-button-allies:
+	Image: chrome.png
+	PanelRegion: 706, 15, 0, 0, 43, 34, 0, 0
+	PanelSides: Center
+sell-button-allies-hover:
+	Image: chrome.png
+	PanelRegion: 706, 49, 0, 0, 43, 34, 0, 0
+	PanelSides: Center
+sell-button-allies-pressed:
+	Image: chrome.png
+	PanelRegion: 706, 83, 0, 0, 43, 34, 0, 0
+	PanelSides: Center
+sell-button-allies-highlighted:
+	Image: chrome.png
+	PanelRegion: 706, 117, 0, 0, 43, 34, 0, 0
+	PanelSides: Center
+sell-button-allies-highlighted-hover:
+	Image: chrome.png
+	PanelRegion: 706, 151, 0, 0, 43, 34, 0, 0
+	PanelSides: Center
+sell-button-allies-highlighted-pressed:
+	Image: chrome.png
+	PanelRegion: 706, 185, 0, 0, 43, 34, 0, 0
+	PanelSides: Center
+sell-button-allies-disabled:
+	Image: chrome.png
+	PanelRegion: 706, 219, 0, 0, 43, 34, 0, 0
+	PanelSides: Center
+sell-button-allies-highlighted-disabled:
+	Image: chrome.png
+	PanelRegion: 706, 219, 0, 0, 43, 34, 0, 0
+	PanelSides: Center
 
-buildings-button-allies: chrome.png
-	background: 340,15,30,32
-buildings-button-allies-hover: chrome.png
-	background: 340,47,30,32
-buildings-button-allies-pressed: chrome.png
-	background: 340,79,30,32
-buildings-button-allies-highlighted: chrome.png
-	background: 340,111,30,32
-buildings-button-allies-highlighted-hover: chrome.png
-	background: 340,143,30,32
-buildings-button-allies-highlighted-pressed: chrome.png
-	background: 340,175,30,32
-buildings-button-allies-disabled: chrome.png
-	background: 340,207,30,32
-buildings-button-allies-highlighted-disabled: chrome.png
-	background: 340,207,30,32
+buildings-button-allies:
+	Image: chrome.png
+	PanelRegion: 340, 15, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
+buildings-button-allies-hover:
+	Image: chrome.png
+	PanelRegion: 340, 47, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
+buildings-button-allies-pressed:
+	Image: chrome.png
+	PanelRegion: 340, 79, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
+buildings-button-allies-highlighted:
+	Image: chrome.png
+	PanelRegion: 340, 111, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
+buildings-button-allies-highlighted-hover:
+	Image: chrome.png
+	PanelRegion: 340, 143, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
+buildings-button-allies-highlighted-pressed:
+	Image: chrome.png
+	PanelRegion: 340, 175, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
+buildings-button-allies-disabled:
+	Image: chrome.png
+	PanelRegion: 340, 207, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
+buildings-button-allies-highlighted-disabled:
+	Image: chrome.png
+	PanelRegion: 340, 207, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
 
-support-button-allies: chrome.png
-	background: 370,15,30,32
-support-button-allies-hover: chrome.png
-	background: 370,47,30,32
-support-button-allies-pressed: chrome.png
-	background: 370,79,30,32
-support-button-allies-highlighted: chrome.png
-	background: 370,111,30,32
-support-button-allies-highlighted-hover: chrome.png
-	background: 370,143,30,32
-support-button-allies-highlighted-pressed: chrome.png
-	background: 370,175,30,32
-support-button-allies-disabled: chrome.png
-	background: 370,207,30,32
-support-button-allies-highlighted-disabled: chrome.png
-	background: 370,207,30,32
+support-button-allies:
+	Image: chrome.png
+	PanelRegion: 370, 15, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
+support-button-allies-hover:
+	Image: chrome.png
+	PanelRegion: 370, 47, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
+support-button-allies-pressed:
+	Image: chrome.png
+	PanelRegion: 370, 79, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
+support-button-allies-highlighted:
+	Image: chrome.png
+	PanelRegion: 370, 111, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
+support-button-allies-highlighted-hover:
+	Image: chrome.png
+	PanelRegion: 370, 143, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
+support-button-allies-highlighted-pressed:
+	Image: chrome.png
+	PanelRegion: 370, 175, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
+support-button-allies-disabled:
+	Image: chrome.png
+	PanelRegion: 370, 207, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
+support-button-allies-highlighted-disabled:
+	Image: chrome.png
+	PanelRegion: 370, 207, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
 
-infantry-button-allies: chrome.png
-	background: 400,15,30,32
-infantry-button-allies-hover: chrome.png
-	background: 400,47,30,32
-infantry-button-allies-pressed: chrome.png
-	background: 400,79,30,32
-infantry-button-allies-highlighted: chrome.png
-	background: 400,111,30,32
-infantry-button-allies-highlighted-hover: chrome.png
-	background: 400,143,30,32
-infantry-button-allies-highlighted-pressed: chrome.png
-	background: 400,175,30,32
-infantry-button-allies-disabled: chrome.png
-	background: 400,207,30,32
-infantry-button-allies-highlighted-disabled: chrome.png
-	background: 400,207,30,32
+infantry-button-allies:
+	Image: chrome.png
+	PanelRegion: 400, 15, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
+infantry-button-allies-hover:
+	Image: chrome.png
+	PanelRegion: 400, 47, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
+infantry-button-allies-pressed:
+	Image: chrome.png
+	PanelRegion: 400, 79, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
+infantry-button-allies-highlighted:
+	Image: chrome.png
+	PanelRegion: 400, 111, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
+infantry-button-allies-highlighted-hover:
+	Image: chrome.png
+	PanelRegion: 400, 143, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
+infantry-button-allies-highlighted-pressed:
+	Image: chrome.png
+	PanelRegion: 400, 175, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
+infantry-button-allies-disabled:
+	Image: chrome.png
+	PanelRegion: 400, 207, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
+infantry-button-allies-highlighted-disabled:
+	Image: chrome.png
+	PanelRegion: 400, 207, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
 
-vehicles-button-allies: chrome.png
-	background: 430,15,30,32
-vehicles-button-allies-hover: chrome.png
-	background: 430,47,30,32
-vehicles-button-allies-pressed: chrome.png
-	background: 430,79,30,32
-vehicles-button-allies-highlighted: chrome.png
-	background: 430,111,30,32
-vehicles-button-allies-highlighted-hover: chrome.png
-	background: 430,143,30,32
-vehicles-button-allies-highlighted-pressed: chrome.png
-	background: 430,175,30,32
-vehicles-button-allies-highlighted-disabled: chrome.png
-	background: 430,207,30,32
-vehicles-button-allies-disabled: chrome.png
-	background: 430,207,30,32
+vehicles-button-allies:
+	Image: chrome.png
+	PanelRegion: 430, 15, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
+vehicles-button-allies-hover:
+	Image: chrome.png
+	PanelRegion: 430, 47, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
+vehicles-button-allies-pressed:
+	Image: chrome.png
+	PanelRegion: 430, 79, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
+vehicles-button-allies-highlighted:
+	Image: chrome.png
+	PanelRegion: 430, 111, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
+vehicles-button-allies-highlighted-hover:
+	Image: chrome.png
+	PanelRegion: 430, 143, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
+vehicles-button-allies-highlighted-pressed:
+	Image: chrome.png
+	PanelRegion: 430, 175, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
+vehicles-button-allies-highlighted-disabled:
+	Image: chrome.png
+	PanelRegion: 430, 207, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
+vehicles-button-allies-disabled:
+	Image: chrome.png
+	PanelRegion: 430, 207, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
 
-aircrafts-button-allies: chrome.png
-	background: 460,15,30,32
-aircrafts-button-allies-hover: chrome.png
-	background: 460,47,30,32
-aircrafts-button-allies-pressed: chrome.png
-	background: 460,79,30,32
-aircrafts-button-allies-highlighted: chrome.png
-	background: 460,111,30,32
-aircrafts-button-allies-highlighted-hover: chrome.png
-	background: 460,143,30,32
-aircrafts-button-allies-highlighted-pressed: chrome.png
-	background: 460,175,30,32
-aircrafts-button-allies-highlighted-disabled: chrome.png
-	background: 460,207,30,32
-aircrafts-button-allies-disabled: chrome.png
-	background: 460,207,30,32
+aircrafts-button-allies:
+	Image: chrome.png
+	PanelRegion: 460, 15, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
+aircrafts-button-allies-hover:
+	Image: chrome.png
+	PanelRegion: 460, 47, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
+aircrafts-button-allies-pressed:
+	Image: chrome.png
+	PanelRegion: 460, 79, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
+aircrafts-button-allies-highlighted:
+	Image: chrome.png
+	PanelRegion: 460, 111, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
+aircrafts-button-allies-highlighted-hover:
+	Image: chrome.png
+	PanelRegion: 460, 143, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
+aircrafts-button-allies-highlighted-pressed:
+	Image: chrome.png
+	PanelRegion: 460, 175, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
+aircrafts-button-allies-highlighted-disabled:
+	Image: chrome.png
+	PanelRegion: 460, 207, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
+aircrafts-button-allies-disabled:
+	Image: chrome.png
+	PanelRegion: 460, 207, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
 
-ships-button-allies: chrome.png
-	background: 490,15,30,32
-ships-button-allies-hover: chrome.png
-	background: 490,47,30,32
-ships-button-allies-pressed: chrome.png
-	background: 490,79,30,32
-ships-button-allies-highlighted: chrome.png
-	background: 490,111,30,32
-ships-button-allies-highlighted-hover: chrome.png
-	background: 490,143,30,32
-ships-button-allies-highlighted-pressed: chrome.png
-	background: 490,175,30,32
-ships-button-allies-highlighted-disabled: chrome.png
-	background: 490,207,30,32
-ships-button-allies-disabled: chrome.png
-	background: 490,207,30,32
+ships-button-allies:
+	Image: chrome.png
+	PanelRegion: 490, 15, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
+ships-button-allies-hover:
+	Image: chrome.png
+	PanelRegion: 490, 47, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
+ships-button-allies-pressed:
+	Image: chrome.png
+	PanelRegion: 490, 79, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
+ships-button-allies-highlighted:
+	Image: chrome.png
+	PanelRegion: 490, 111, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
+ships-button-allies-highlighted-hover:
+	Image: chrome.png
+	PanelRegion: 490, 143, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
+ships-button-allies-highlighted-pressed:
+	Image: chrome.png
+	PanelRegion: 490, 175, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
+ships-button-allies-highlighted-disabled:
+	Image: chrome.png
+	PanelRegion: 490, 207, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
+ships-button-allies-disabled:
+	Image: chrome.png
+	PanelRegion: 490, 207, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
 
-power-icons-allies: chrome.png
-	power-normal: 326,300,19,19
-	power-critical: 307,300,19,19
+power-icons-allies:
+	Image: chrome.png
+	Regions:
+		power-normal: 326, 300, 19, 19
+		power-critical: 307, 300, 19, 19
 
-cash-icons-allies: chrome.png
-	cash-normal: 326,281,19,19
-	cash-critical: 307,281,19,19
+cash-icons-allies:
+	Image: chrome.png
+	Regions:
+		cash-normal: 326, 281, 19, 19
+		cash-critical: 307, 281, 19, 19
 
-diplomacy-button-allies: chrome.png
-	background: 550,335,69,23
-diplomacy-button-allies-hover: chrome.png
-	background: 550,358,69,23
-diplomacy-button-allies-pressed: chrome.png
-	background: 550,381,69,23
-diplomacy-button-allies-highlighted: chrome.png
-	background: 550,404,69,23
-diplomacy-button-allies-highlighted-hover: chrome.png
-	background: 550,427,69,23
-diplomacy-button-allies-highlighted-pressed: chrome.png
-	background: 550,450,69,23
-diplomacy-button-allies-highlighted-disabled: chrome.png
-	background: 550,473,69,23
-diplomacy-button-allies-disabled: chrome.png
-	background: 550,473,69,23
+diplomacy-button-allies:
+	Image: chrome.png
+	PanelRegion: 550, 335, 0, 0, 69, 23, 0, 0
+	PanelSides: Center
+diplomacy-button-allies-hover:
+	Image: chrome.png
+	PanelRegion: 550, 358, 0, 0, 69, 23, 0, 0
+	PanelSides: Center
+diplomacy-button-allies-pressed:
+	Image: chrome.png
+	PanelRegion: 550, 381, 0, 0, 69, 23, 0, 0
+	PanelSides: Center
+diplomacy-button-allies-highlighted:
+	Image: chrome.png
+	PanelRegion: 550, 404, 0, 0, 69, 23, 0, 0
+	PanelSides: Center
+diplomacy-button-allies-highlighted-hover:
+	Image: chrome.png
+	PanelRegion: 550, 427, 0, 0, 69, 23, 0, 0
+	PanelSides: Center
+diplomacy-button-allies-highlighted-pressed:
+	Image: chrome.png
+	PanelRegion: 550, 450, 0, 0, 69, 23, 0, 0
+	PanelSides: Center
+diplomacy-button-allies-highlighted-disabled:
+	Image: chrome.png
+	PanelRegion: 550, 473, 0, 0, 69, 23, 0, 0
+	PanelSides: Center
+diplomacy-button-allies-disabled:
+	Image: chrome.png
+	PanelRegion: 550, 473, 0, 0, 69, 23, 0, 0
+	PanelSides: Center
 
-debug-button-allies: chrome.png
-	background: 619,335,62,23
-debug-button-allies-hover: chrome.png
-	background: 619,358,62,23
-debug-button-allies-pressed: chrome.png
-	background: 619,381,62,23
-debug-button-allies-highlighted: chrome.png
-	background: 619,619,62,23
-debug-button-allies-highlighted-hover: chrome.png
-	background: 619,427,62,23
-debug-button-allies-highlighted-pressed: chrome.png
-	background: 619,450,62,23
-debug-button-allies-highlighted-disabled: chrome.png
-	background: 619,473,62,23
-debug-button-allies-disabled: chrome.png
-	background: 619,473,62,23
+debug-button-allies:
+	Image: chrome.png
+	PanelRegion: 619, 335, 0, 0, 62, 23, 0, 0
+	PanelSides: Center
+debug-button-allies-hover:
+	Image: chrome.png
+	PanelRegion: 619, 358, 0, 0, 62, 23, 0, 0
+	PanelSides: Center
+debug-button-allies-pressed:
+	Image: chrome.png
+	PanelRegion: 619, 381, 0, 0, 62, 23, 0, 0
+	PanelSides: Center
+debug-button-allies-highlighted:
+	Image: chrome.png
+	PanelRegion: 619, 619, 0, 0, 62, 23, 0, 0
+	PanelSides: Center
+debug-button-allies-highlighted-hover:
+	Image: chrome.png
+	PanelRegion: 619, 427, 0, 0, 62, 23, 0, 0
+	PanelSides: Center
+debug-button-allies-highlighted-pressed:
+	Image: chrome.png
+	PanelRegion: 619, 450, 0, 0, 62, 23, 0, 0
+	PanelSides: Center
+debug-button-allies-highlighted-disabled:
+	Image: chrome.png
+	PanelRegion: 619, 473, 0, 0, 62, 23, 0, 0
+	PanelSides: Center
+debug-button-allies-disabled:
+	Image: chrome.png
+	PanelRegion: 619, 473, 0, 0, 62, 23, 0, 0
+	PanelSides: Center
 
-options-button-allies: chrome.png
-	background: 681,335,69,23
-options-button-allies-hover: chrome.png
-	background: 681,358,69,23
-options-button-allies-pressed: chrome.png
-	background: 681,381,69,23
-options-button-allies-highlighted: chrome.png
-	background: 681,404,69,23
-options-button-allies-highlighted-hover: chrome.png
-	background: 681,427,69,23
-options-button-allies-highlighted-pressed: chrome.png
-	background: 681,450,69,23
-options-button-allies-highlighted-disabled: chrome.png
-	background: 681,473,69,23
-options-button-allies-disabled: chrome.png
-	background: 681,473,69,23
+options-button-allies:
+	Image: chrome.png
+	PanelRegion: 681, 335, 0, 0, 69, 23, 0, 0
+	PanelSides: Center
+options-button-allies-hover:
+	Image: chrome.png
+	PanelRegion: 681, 358, 0, 0, 69, 23, 0, 0
+	PanelSides: Center
+options-button-allies-pressed:
+	Image: chrome.png
+	PanelRegion: 681, 381, 0, 0, 69, 23, 0, 0
+	PanelSides: Center
+options-button-allies-highlighted:
+	Image: chrome.png
+	PanelRegion: 681, 404, 0, 0, 69, 23, 0, 0
+	PanelSides: Center
+options-button-allies-highlighted-hover:
+	Image: chrome.png
+	PanelRegion: 681, 427, 0, 0, 69, 23, 0, 0
+	PanelSides: Center
+options-button-allies-highlighted-pressed:
+	Image: chrome.png
+	PanelRegion: 681, 450, 0, 0, 69, 23, 0, 0
+	PanelSides: Center
+options-button-allies-highlighted-disabled:
+	Image: chrome.png
+	PanelRegion: 681, 473, 0, 0, 69, 23, 0, 0
+	PanelSides: Center
+options-button-allies-disabled:
+	Image: chrome.png
+	PanelRegion: 681, 473, 0, 0, 69, 23, 0, 0
+	PanelSides: Center
 
 # bad coordinates - find where to add this button
-stats-button-allies: chrome.png
-	background: 985,0,30,32
-stats-button-allies-hover: chrome.png
-	background: 985,545,30,32
-stats-button-allies-pressed: chrome.png
-	background: 985,578,30,32
-stats-button-allies-highlighted: chrome.png
-	background: 985,611,30,32
-stats-button-allies-highlighted-hover: chrome.png
-	background: 985,644,30,32
-stats-button-allies-highlighted-pressed: chrome.png
-	background: 985,677,30,32
-stats-button-allies-highlighted-disabled: chrome.png
-	background: 985,710,30,32
-stats-button-allies-disabled: chrome.png
-	background: 985,710,30,32
+stats-button-allies:
+	Image: chrome.png
+	PanelRegion: 985, 0, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
+stats-button-allies-hover:
+	Image: chrome.png
+	PanelRegion: 985, 545, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
+stats-button-allies-pressed:
+	Image: chrome.png
+	PanelRegion: 985, 578, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
+stats-button-allies-highlighted:
+	Image: chrome.png
+	PanelRegion: 985, 611, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
+stats-button-allies-highlighted-hover:
+	Image: chrome.png
+	PanelRegion: 985, 644, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
+stats-button-allies-highlighted-pressed:
+	Image: chrome.png
+	PanelRegion: 985, 677, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
+stats-button-allies-highlighted-disabled:
+	Image: chrome.png
+	PanelRegion: 985, 710, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
+stats-button-allies-disabled:
+	Image: chrome.png
+	PanelRegion: 985, 710, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
 
 # These coordinates point to an empty area of the chrome.png file to make the glyph of these buttons not appear
-production-icons-allies: chrome.png
-	building: 5250,110,19,19
-	building-disabled: 5269,110,19,19
-	building-alert: 5288,110,19,19
-	support: 5250,129,19,19
-	support-disabled: 5269,129,19,19
-	support-alert: 5288,129,19,19
-	infantry: 5250,148,19,19
-	infantry-disabled: 5269,148,19,19
-	infantry-alert: 5288,148,19,19
-	vehicle: 5250,167,19,19
-	vehicle-disabled: 5269,167,19,19
-	vehicle-alert: 5288,167,19,19
-	aircraft: 5250,186,19,19
-	aircraft-disabled: 5269,186,19,19
-	aircraft-alert: 5288,186,19,19
-	ship: 5250,205,19,19
-	ship-disabled: 5269,205,19,19
-	ship-alert: 5288,205,19,19
+production-icons-allies:
+	Image: chrome.png
+	Regions:
+		building: 5250, 110, 19, 19
+		building-disabled: 5269, 110, 19, 19
+		building-alert: 5288, 110, 19, 19
+		support: 5250, 129, 19, 19
+		support-disabled: 5269, 129, 19, 19
+		support-alert: 5288, 129, 19, 19
+		infantry: 5250, 148, 19, 19
+		infantry-disabled: 5269, 148, 19, 19
+		infantry-alert: 5288, 148, 19, 19
+		vehicle: 5250, 167, 19, 19
+		vehicle-disabled: 5269, 167, 19, 19
+		vehicle-alert: 5288, 167, 19, 19
+		aircraft: 5250, 186, 19, 19
+		aircraft-disabled: 5269, 186, 19, 19
+		aircraft-alert: 5288, 186, 19, 19
+		ship: 5250, 205, 19, 19
+		ship-disabled: 5269, 205, 19, 19
+		ship-alert: 5288, 205, 19, 19
 
-command-icons-allies: chrome.png
-	attack-move: 783,335,33,26
-	attack-move-disabled: 783,361,33,26
-	attack-move-active: 783,387,33,26
-	attack-move-hover: 783,413,33,26
-	attack-move-active-hover: 783,439,33,26
-	force-move: 816,335,26,26
-	force-move-disabled: 816,361,26,26
-	force-move-active: 816,387,26,26
-	force-move-hover: 816,413,26,26
-	force-move-active-hover: 816,439,26,26    
-	force-attack: 842,335,26,26
-	force-attack-disabled: 842,361,26,26
-	force-attack-active: 842,387,26,26
-	force-attack-hover: 842,413,26,26
-	force-attack-active-hover: 842,439,26,26    
-	guard: 868,335,29,26
-	guard-disabled: 868,361,29,26
-	guard-active: 868,387,29,26
-	guard-hover: 868,413,29,26
-	guard-active-hover: 868,439,29,26    
-	deploy: 897,335,27,26
-	deploy-disabled: 897,361,27,26
-	deploy-active: 897,387,27,26
-	deploy-hover: 897,413,27,26
-	deploy-active-hover: 897,439,27,26
-	scatter: 924,335,29,26
-	scatter-disabled: 924,361,29,26
-	scatter-active: 924,387,29,26
-	scatter-hover: 924,413,29,26
-	scatter-active-hover: 924,439,29,26
-	stop: 953,335,22,26
-	stop-disabled: 953,361,22,26
-	stop-active: 953,387,22,26
-	stop-hover: 953,413,22,26
-	stop-active-hover: 953,439,22,26
-	queue-orders: 975,335,35,26
-	queue-orders-disabled: 975,361,35,26
-	queue-orders-active: 975,387,35,26
-	queue-orders-hover: 975,413,35,26
-	queue-orders-active-hover: 975,439,35,26
+command-icons-allies:
+	Image: chrome.png
+	Regions:
+		attack-move: 783, 335, 33, 26
+		attack-move-disabled: 783, 361, 33, 26
+		attack-move-active: 783, 387, 33, 26
+		attack-move-hover: 783, 413, 33, 26
+		attack-move-active-hover: 783, 439, 33, 26
+		force-move: 816, 335, 26, 26
+		force-move-disabled: 816, 361, 26, 26
+		force-move-active: 816, 387, 26, 26
+		force-move-hover: 816, 413, 26, 26
+		force-move-active-hover: 816, 439, 26, 26
+		force-attack: 842, 335, 26, 26
+		force-attack-disabled: 842, 361, 26, 26
+		force-attack-active: 842, 387, 26, 26
+		force-attack-hover: 842, 413, 26, 26
+		force-attack-active-hover: 842, 439, 26, 26
+		guard: 868, 335, 29, 26
+		guard-disabled: 868, 361, 29, 26
+		guard-active: 868, 387, 29, 26
+		guard-hover: 868, 413, 29, 26
+		guard-active-hover: 868, 439, 29, 26
+		deploy: 897, 335, 27, 26
+		deploy-disabled: 897, 361, 27, 26
+		deploy-active: 897, 387, 27, 26
+		deploy-hover: 897, 413, 27, 26
+		deploy-active-hover: 897, 439, 27, 26
+		scatter: 924, 335, 29, 26
+		scatter-disabled: 924, 361, 29, 26
+		scatter-active: 924, 387, 29, 26
+		scatter-hover: 924, 413, 29, 26
+		scatter-active-hover: 924, 439, 29, 26
+		stop: 953, 335, 22, 26
+		stop-disabled: 953, 361, 22, 26
+		stop-active: 953, 387, 22, 26
+		stop-hover: 953, 413, 22, 26
+		stop-active-hover: 953, 439, 22, 26
+		queue-orders: 975, 335, 35, 26
+		queue-orders-disabled: 975, 361, 35, 26
+		queue-orders-active: 975, 387, 35, 26
+		queue-orders-hover: 975, 413, 35, 26
+		queue-orders-active-hover: 975, 439, 35, 26
 
-stance-icons-allies: chrome.png
-	attack-anything: 769,15,25,21
-	attack-anything-disabled: 769,36,25,21
-	attack-anything-active: 769,57,25,21
-	attack-anything-hover: 769,78,25,21
-	attack-anything-active-hover: 769,99,25,21    
-	return-fire: 794,15,20,21
-	return-fire-disabled: 794,36,20,21
-	return-fire-active: 794,57,20,21
-	return-fire-hover: 794,78,20,21
-	return-fire-active-hover: 794,99,20,21    
-	defend: 816,15,22,21
-	defend-disabled: 816,36,22,21
-	defend-active: 816,57,22,21
-	defend-hover: 816,78,22,21
-	defend-active-hover: 816,99,22,21
-	hold-fire: 836,15,25,21
-	hold-fire-disabled: 836,36,25,21
-	hold-fire-active: 836,57,25,21
-	hold-fire-hover: 836,78,25,21
-	hold-fire-active-hover: 836,99,25,21
+stance-icons-allies:
+	Image: chrome.png
+	Regions:
+		attack-anything: 769, 15, 25, 21
+		attack-anything-disabled: 769, 36, 25, 21
+		attack-anything-active: 769, 57, 25, 21
+		attack-anything-hover: 769, 78, 25, 21
+		attack-anything-active-hover: 769, 99, 25, 21
+		return-fire: 794, 15, 20, 21
+		return-fire-disabled: 794, 36, 20, 21
+		return-fire-active: 794, 57, 20, 21
+		return-fire-hover: 794, 78, 20, 21
+		return-fire-active-hover: 794, 99, 20, 21
+		defend: 816, 15, 22, 21
+		defend-disabled: 816, 36, 22, 21
+		defend-active: 816, 57, 22, 21
+		defend-hover: 816, 78, 22, 21
+		defend-active-hover: 816, 99, 22, 21
+		hold-fire: 836, 15, 25, 21
+		hold-fire-disabled: 836, 36, 25, 21
+		hold-fire-active: 836, 57, 25, 21
+		hold-fire-hover: 836, 78, 25, 21
+		hold-fire-active-hover: 836, 99, 25, 21
 
 # -----------------------------------------------------------------------------------
 # Soviets
 # -----------------------------------------------------------------------------------
 
-sidebar-soviets: chrome.png
-	background-top: 0,512,234,275
-	background-iconrow: 0,787,234,50
-	background-bottom: 0,837,234,66
-	background-supportoverlay: 250,532,64,48
-	background-commandbar: 559,790,459,31
+sidebar-soviets:
+	Image: chrome.png
+	Regions:
+		background-top: 0, 512, 234, 275
+		background-iconrow: 0, 787, 234, 50
+		background-bottom: 0, 837, 234, 66
+		background-supportoverlay: 250, 532, 64, 48
+		background-commandbar: 559, 790, 459, 31
 
 # These coordinates point to an empty area of the chrome.png file to make the background of these buttons empty
-sidebar-button-soviets: chrome.png
-	background: 955,512,30,32
-sidebar-button-soviets-hover: chrome.png
-	background: 955,512,30,32
-sidebar-button-soviets-pressed: chrome.png
-	background: 955,512,30,32
-sidebar-button-soviets-highlighted: chrome.png
-	background: 955,512,30,32
-sidebar-button-soviets-highlighted-hover: chrome.png
-	background: 955,512,30,32
-sidebar-button-soviets-highlighted-pressed: chrome.png
-	background: 955,512,30,32
-sidebar-button-soviets-highlighted-disabled: chrome.png
-	background: 955,512,30,32
-sidebar-button-soviets-disabled: chrome.png
-	background: 955,512,30,32
+sidebar-button-soviets:
+	Image: chrome.png
+	PanelRegion: 955, 512, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
+sidebar-button-soviets-hover:
+	Image: chrome.png
+	PanelRegion: 955, 512, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
+sidebar-button-soviets-pressed:
+	Image: chrome.png
+	PanelRegion: 955, 512, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
+sidebar-button-soviets-highlighted:
+	Image: chrome.png
+	PanelRegion: 955, 512, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
+sidebar-button-soviets-highlighted-hover:
+	Image: chrome.png
+	PanelRegion: 955, 512, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
+sidebar-button-soviets-highlighted-pressed:
+	Image: chrome.png
+	PanelRegion: 955, 512, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
+sidebar-button-soviets-highlighted-disabled:
+	Image: chrome.png
+	PanelRegion: 955, 512, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
+sidebar-button-soviets-disabled:
+	Image: chrome.png
+	PanelRegion: 955, 512, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
 
-scrollup-buttons-soviets: chrome.png
-	background: 117,907,77,27
-scrollup-buttons-soviets-hover: chrome.png
-	background: 117,934,77,27
-scrollup-buttons-soviets-pressed: chrome.png
-	background: 117,961,77,27
-scrollup-buttons-soviets-highlighted: chrome.png
-	background: 117,988,77,27
-scrollup-buttons-soviets-highlighted-hover: chrome.png
-	background: 117,1015,77,27
-scrollup-buttons-soviets-highlighted-pressed: chrome.png
-	background: 117,1042,77,27
-scrollup-button-soviets-highlighted-disabled: chrome.png
-	background: 117,1069,77,27
-scrollup-buttons-soviets-disabled: chrome.png
-	background: 117,1069,77,27
+scrollup-buttons-soviets:
+	Image: chrome.png
+	PanelRegion: 117, 907, 0, 0, 77, 27, 0, 0
+	PanelSides: Center
+scrollup-buttons-soviets-hover:
+	Image: chrome.png
+	PanelRegion: 117, 934, 0, 0, 77, 27, 0, 0
+	PanelSides: Center
+scrollup-buttons-soviets-pressed:
+	Image: chrome.png
+	PanelRegion: 117, 961, 0, 0, 77, 27, 0, 0
+	PanelSides: Center
+scrollup-buttons-soviets-highlighted:
+	Image: chrome.png
+	PanelRegion: 117, 988, 0, 0, 77, 27, 0, 0
+	PanelSides: Center
+scrollup-buttons-soviets-highlighted-hover:
+	Image: chrome.png
+	PanelRegion: 117, 1015, 0, 0, 77, 27, 0, 0
+	PanelSides: Center
+scrollup-buttons-soviets-highlighted-pressed:
+	Image: chrome.png
+	PanelRegion: 117, 1042, 0, 0, 77, 27, 0, 0
+	PanelSides: Center
+scrollup-button-soviets-highlighted-disabled:
+	Image: chrome.png
+	PanelRegion: 117, 1069, 0, 0, 77, 27, 0, 0
+	PanelSides: Center
+scrollup-buttons-soviets-disabled:
+	Image: chrome.png
+	PanelRegion: 117, 1069, 0, 0, 77, 27, 0, 0
+	PanelSides: Center
 
-scrolldown-buttons-soviets: chrome.png
-	background: 40,907,77,27
-scrolldown-buttons-soviets-hover: chrome.png
-	background: 40,934,77,27
-scrolldown-buttons-soviets-pressed: chrome.png
-	background: 40,961,77,27
-scrolldown-buttons-soviets-highlighted: chrome.png
-	background: 40,988,77,27
-scrolldown-buttons-soviets-highlighted-hover: chrome.png
-	background: 40,1015,77,27
-scrolldown-buttons-soviets-highlighted-pressed: chrome.png
-	background: 40,1042,77,27
-scrolldown-button-soviets-highlighted-disabled: chrome.png
-	background: 40,1069,77,27
-scrolldown-buttons-soviets-disabled: chrome.png
-	background: 40,1069,77,27
+scrolldown-buttons-soviets:
+	Image: chrome.png
+	PanelRegion: 40, 907, 0, 0, 77, 27, 0, 0
+	PanelSides: Center
+scrolldown-buttons-soviets-hover:
+	Image: chrome.png
+	PanelRegion: 40, 934, 0, 0, 77, 27, 0, 0
+	PanelSides: Center
+scrolldown-buttons-soviets-pressed:
+	Image: chrome.png
+	PanelRegion: 40, 961, 0, 0, 77, 27, 0, 0
+	PanelSides: Center
+scrolldown-buttons-soviets-highlighted:
+	Image: chrome.png
+	PanelRegion: 40, 988, 0, 0, 77, 27, 0, 0
+	PanelSides: Center
+scrolldown-buttons-soviets-highlighted-hover:
+	Image: chrome.png
+	PanelRegion: 40, 1015, 0, 0, 77, 27, 0, 0
+	PanelSides: Center
+scrolldown-buttons-soviets-highlighted-pressed:
+	Image: chrome.png
+	PanelRegion: 40, 1042, 0, 0, 77, 27, 0, 0
+	PanelSides: Center
+scrolldown-button-soviets-highlighted-disabled:
+	Image: chrome.png
+	PanelRegion: 40, 1069, 0, 0, 77, 27, 0, 0
+	PanelSides: Center
+scrolldown-buttons-soviets-disabled:
+	Image: chrome.png
+	PanelRegion: 40, 1069, 0, 0, 77, 27, 0, 0
+	PanelSides: Center
 
-radar-soviets: chrome.png
-	insignia: 340,847,202,157
+radar-soviets:
+	Image: chrome.png
+	Regions:
+		insignia: 340, 847, 202, 157
 
-repair-button-soviets: chrome.png
-	background: 580,527,44,34
-repair-button-soviets-hover: chrome.png
-	background: 580,561,44,34
-repair-button-soviets-pressed: chrome.png
-	background: 580,595,44,34
-repair-button-soviets-highlighted: chrome.png
-	background: 580,629,44,34
-repair-button-soviets-highlighted-hover: chrome.png
-	background: 580,663,44,34
-repair-button-soviets-highlighted-pressed: chrome.png
-	background: 580,697,44,34
-repair-button-soviets-disabled: chrome.png
-	background: 580,731,44,34
-repair-button-soviets-highlighted-disabled: chrome.png
-	background: 580,731,44,34
+repair-button-soviets:
+	Image: chrome.png
+	PanelRegion: 580, 527, 0, 0, 44, 34, 0, 0
+	PanelSides: Center
+repair-button-soviets-hover:
+	Image: chrome.png
+	PanelRegion: 580, 561, 0, 0, 44, 34, 0, 0
+	PanelSides: Center
+repair-button-soviets-pressed:
+	Image: chrome.png
+	PanelRegion: 580, 595, 0, 0, 44, 34, 0, 0
+	PanelSides: Center
+repair-button-soviets-highlighted:
+	Image: chrome.png
+	PanelRegion: 580, 629, 0, 0, 44, 34, 0, 0
+	PanelSides: Center
+repair-button-soviets-highlighted-hover:
+	Image: chrome.png
+	PanelRegion: 580, 663, 0, 0, 44, 34, 0, 0
+	PanelSides: Center
+repair-button-soviets-highlighted-pressed:
+	Image: chrome.png
+	PanelRegion: 580, 697, 0, 0, 44, 34, 0, 0
+	PanelSides: Center
+repair-button-soviets-disabled:
+	Image: chrome.png
+	PanelRegion: 580, 731, 0, 0, 44, 34, 0, 0
+	PanelSides: Center
+repair-button-soviets-highlighted-disabled:
+	Image: chrome.png
+	PanelRegion: 580, 731, 0, 0, 44, 34, 0, 0
+	PanelSides: Center
 
-beacon-button-soviets: chrome.png
-	background: 665,527,41,34
-beacon-button-soviets-hover: chrome.png
-	background: 665,561,41,34
-beacon-button-soviets-pressed: chrome.png
-	background: 665,595,41,34
-beacon-button-soviets-highlighted: chrome.png
-	background: 665,629,41,34
-beacon-button-soviets-highlighted-hover: chrome.png
-	background: 665,663,41,34
-beacon-button-soviets-highlighted-pressed: chrome.png
-	background: 665,697,41,34
-beacon-button-soviets-disabled: chrome.png
-	background: 665,731,41,34
-beacon-button-soviets-highlighted-disabled: chrome.png
-	background: 665,731,41,34
+beacon-button-soviets:
+	Image: chrome.png
+	PanelRegion: 665, 527, 0, 0, 41, 34, 0, 0
+	PanelSides: Center
+beacon-button-soviets-hover:
+	Image: chrome.png
+	PanelRegion: 665, 561, 0, 0, 41, 34, 0, 0
+	PanelSides: Center
+beacon-button-soviets-pressed:
+	Image: chrome.png
+	PanelRegion: 665, 595, 0, 0, 41, 34, 0, 0
+	PanelSides: Center
+beacon-button-soviets-highlighted:
+	Image: chrome.png
+	PanelRegion: 665, 629, 0, 0, 41, 34, 0, 0
+	PanelSides: Center
+beacon-button-soviets-highlighted-hover:
+	Image: chrome.png
+	PanelRegion: 665, 663, 0, 0, 41, 34, 0, 0
+	PanelSides: Center
+beacon-button-soviets-highlighted-pressed:
+	Image: chrome.png
+	PanelRegion: 665, 697, 0, 0, 41, 34, 0, 0
+	PanelSides: Center
+beacon-button-soviets-disabled:
+	Image: chrome.png
+	PanelRegion: 665, 731, 0, 0, 41, 34, 0, 0
+	PanelSides: Center
+beacon-button-soviets-highlighted-disabled:
+	Image: chrome.png
+	PanelRegion: 665, 731, 0, 0, 41, 34, 0, 0
+	PanelSides: Center
 
-sell-button-soviets: chrome.png
-	background: 706,527,43,34
-sell-button-soviets-hover: chrome.png
-	background: 706,561,43,34
-sell-button-soviets-pressed: chrome.png
-	background: 706,595,43,34
-sell-button-soviets-highlighted: chrome.png
-	background: 706,629,43,34
-sell-button-soviets-highlighted-hover: chrome.png
-	background: 706,663,43,34
-sell-button-soviets-highlighted-pressed: chrome.png
-	background: 706,697,43,34
-sell-button-soviets-disabled: chrome.png
-	background: 706,731,43,34
-sell-button-soviets-highlighted-disabled: chrome.png
-	background: 706,731,43,34
+sell-button-soviets:
+	Image: chrome.png
+	PanelRegion: 706, 527, 0, 0, 43, 34, 0, 0
+	PanelSides: Center
+sell-button-soviets-hover:
+	Image: chrome.png
+	PanelRegion: 706, 561, 0, 0, 43, 34, 0, 0
+	PanelSides: Center
+sell-button-soviets-pressed:
+	Image: chrome.png
+	PanelRegion: 706, 595, 0, 0, 43, 34, 0, 0
+	PanelSides: Center
+sell-button-soviets-highlighted:
+	Image: chrome.png
+	PanelRegion: 706, 629, 0, 0, 43, 34, 0, 0
+	PanelSides: Center
+sell-button-soviets-highlighted-hover:
+	Image: chrome.png
+	PanelRegion: 706, 663, 0, 0, 43, 34, 0, 0
+	PanelSides: Center
+sell-button-soviets-highlighted-pressed:
+	Image: chrome.png
+	PanelRegion: 706, 697, 0, 0, 43, 34, 0, 0
+	PanelSides: Center
+sell-button-soviets-disabled:
+	Image: chrome.png
+	PanelRegion: 706, 731, 0, 0, 43, 34, 0, 0
+	PanelSides: Center
+sell-button-soviets-highlighted-disabled:
+	Image: chrome.png
+	PanelRegion: 706, 731, 0, 0, 43, 34, 0, 0
+	PanelSides: Center
 
-buildings-button-soviets: chrome.png
-	background: 340,532,30,32
-buildings-button-soviets-hover: chrome.png
-	background: 340,564,30,32
-buildings-button-soviets-pressed: chrome.png
-	background: 340,596,30,32
-buildings-button-soviets-highlighted: chrome.png
-	background: 340,628,30,32
-buildings-button-soviets-highlighted-hover: chrome.png
-	background: 340,660,30,32
-buildings-button-soviets-highlighted-pressed: chrome.png
-	background: 340,692,30,32
-buildings-button-soviets-disabled: chrome.png
-	background: 340,724,30,32
-buildings-button-soviets-highlighted-disabled: chrome.png
-	background: 340,724,30,32
+buildings-button-soviets:
+	Image: chrome.png
+	PanelRegion: 340, 532, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
+buildings-button-soviets-hover:
+	Image: chrome.png
+	PanelRegion: 340, 564, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
+buildings-button-soviets-pressed:
+	Image: chrome.png
+	PanelRegion: 340, 596, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
+buildings-button-soviets-highlighted:
+	Image: chrome.png
+	PanelRegion: 340, 628, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
+buildings-button-soviets-highlighted-hover:
+	Image: chrome.png
+	PanelRegion: 340, 660, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
+buildings-button-soviets-highlighted-pressed:
+	Image: chrome.png
+	PanelRegion: 340, 692, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
+buildings-button-soviets-disabled:
+	Image: chrome.png
+	PanelRegion: 340, 724, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
+buildings-button-soviets-highlighted-disabled:
+	Image: chrome.png
+	PanelRegion: 340, 724, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
 
-support-button-soviets: chrome.png
-	background: 370,532,30,32
-support-button-soviets-hover: chrome.png
-	background: 370,564,30,32
-support-button-soviets-pressed: chrome.png
-	background: 370,596,30,32
-support-button-soviets-highlighted: chrome.png
-	background: 370,628,30,32
-support-button-soviets-highlighted-hover: chrome.png
-	background: 370,660,30,32
-support-button-soviets-highlighted-pressed: chrome.png
-	background: 370,692,30,32
-support-button-soviets-disabled: chrome.png
-	background: 370,724,30,32
-support-button-soviets-highlighted-disabled: chrome.png
-	background: 370,724,30,32
+support-button-soviets:
+	Image: chrome.png
+	PanelRegion: 370, 532, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
+support-button-soviets-hover:
+	Image: chrome.png
+	PanelRegion: 370, 564, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
+support-button-soviets-pressed:
+	Image: chrome.png
+	PanelRegion: 370, 596, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
+support-button-soviets-highlighted:
+	Image: chrome.png
+	PanelRegion: 370, 628, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
+support-button-soviets-highlighted-hover:
+	Image: chrome.png
+	PanelRegion: 370, 660, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
+support-button-soviets-highlighted-pressed:
+	Image: chrome.png
+	PanelRegion: 370, 692, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
+support-button-soviets-disabled:
+	Image: chrome.png
+	PanelRegion: 370, 724, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
+support-button-soviets-highlighted-disabled:
+	Image: chrome.png
+	PanelRegion: 370, 724, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
 
-infantry-button-soviets: chrome.png
-	background: 400,532,30,32
-infantry-button-soviets-hover: chrome.png
-	background: 400,564,30,32
-infantry-button-soviets-pressed: chrome.png
-	background: 400,596,30,32
-infantry-button-soviets-highlighted: chrome.png
-	background: 400,628,30,32
-infantry-button-soviets-highlighted-hover: chrome.png
-	background: 400,660,30,32
-infantry-button-soviets-highlighted-pressed: chrome.png
-	background: 400,692,30,32
-infantry-button-soviets-disabled: chrome.png
-	background: 400,724,30,32
-infantry-button-soviets-highlighted-disabled: chrome.png
-	background: 400,724,30,32
+infantry-button-soviets:
+	Image: chrome.png
+	PanelRegion: 400, 532, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
+infantry-button-soviets-hover:
+	Image: chrome.png
+	PanelRegion: 400, 564, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
+infantry-button-soviets-pressed:
+	Image: chrome.png
+	PanelRegion: 400, 596, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
+infantry-button-soviets-highlighted:
+	Image: chrome.png
+	PanelRegion: 400, 628, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
+infantry-button-soviets-highlighted-hover:
+	Image: chrome.png
+	PanelRegion: 400, 660, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
+infantry-button-soviets-highlighted-pressed:
+	Image: chrome.png
+	PanelRegion: 400, 692, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
+infantry-button-soviets-disabled:
+	Image: chrome.png
+	PanelRegion: 400, 724, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
+infantry-button-soviets-highlighted-disabled:
+	Image: chrome.png
+	PanelRegion: 400, 724, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
 
-vehicles-button-soviets: chrome.png
-	background: 430,532,30,32
-vehicles-button-soviets-hover: chrome.png
-	background: 430,564,30,32
-vehicles-button-soviets-pressed: chrome.png
-	background: 430,596,30,32
-vehicles-button-soviets-highlighted: chrome.png
-	background: 430,628,30,32
-vehicles-button-soviets-highlighted-hover: chrome.png
-	background: 430,660,30,32
-vehicles-button-soviets-highlighted-pressed: chrome.png
-	background: 430,692,30,32
-vehicles-button-soviets-highlighted-disabled: chrome.png
-	background: 430,724,30,32
-vehicles-button-soviets-disabled: chrome.png
-	background: 430,724,30,32
+vehicles-button-soviets:
+	Image: chrome.png
+	PanelRegion: 430, 532, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
+vehicles-button-soviets-hover:
+	Image: chrome.png
+	PanelRegion: 430, 564, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
+vehicles-button-soviets-pressed:
+	Image: chrome.png
+	PanelRegion: 430, 596, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
+vehicles-button-soviets-highlighted:
+	Image: chrome.png
+	PanelRegion: 430, 628, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
+vehicles-button-soviets-highlighted-hover:
+	Image: chrome.png
+	PanelRegion: 430, 660, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
+vehicles-button-soviets-highlighted-pressed:
+	Image: chrome.png
+	PanelRegion: 430, 692, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
+vehicles-button-soviets-highlighted-disabled:
+	Image: chrome.png
+	PanelRegion: 430, 724, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
+vehicles-button-soviets-disabled:
+	Image: chrome.png
+	PanelRegion: 430, 724, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
 
-aircrafts-button-soviets: chrome.png
-	background: 460,532,30,32
-aircrafts-button-soviets-hover: chrome.png
-	background: 460,564,30,32
-aircrafts-button-soviets-pressed: chrome.png
-	background: 460,596,30,32
-aircrafts-button-soviets-highlighted: chrome.png
-	background: 460,628,30,32
-aircrafts-button-soviets-highlighted-hover: chrome.png
-	background: 460,660,30,32
-aircrafts-button-soviets-highlighted-pressed: chrome.png
-	background: 460,692,30,32
-aircrafts-button-soviets-highlighted-disabled: chrome.png
-	background: 460,724,30,32
-aircrafts-button-soviets-disabled: chrome.png
-	background: 460,724,30,32
+aircrafts-button-soviets:
+	Image: chrome.png
+	PanelRegion: 460, 532, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
+aircrafts-button-soviets-hover:
+	Image: chrome.png
+	PanelRegion: 460, 564, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
+aircrafts-button-soviets-pressed:
+	Image: chrome.png
+	PanelRegion: 460, 596, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
+aircrafts-button-soviets-highlighted:
+	Image: chrome.png
+	PanelRegion: 460, 628, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
+aircrafts-button-soviets-highlighted-hover:
+	Image: chrome.png
+	PanelRegion: 460, 660, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
+aircrafts-button-soviets-highlighted-pressed:
+	Image: chrome.png
+	PanelRegion: 460, 692, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
+aircrafts-button-soviets-highlighted-disabled:
+	Image: chrome.png
+	PanelRegion: 460, 724, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
+aircrafts-button-soviets-disabled:
+	Image: chrome.png
+	PanelRegion: 460, 724, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
 
-ships-button-soviets: chrome.png
-	background: 490,532,30,32
-ships-button-soviets-hover: chrome.png
-	background: 490,564,30,32
-ships-button-soviets-pressed: chrome.png
-	background: 490,596,30,32
-ships-button-soviets-highlighted: chrome.png
-	background: 490,628,30,32
-ships-button-soviets-highlighted-hover: chrome.png
-	background: 490,660,30,32
-ships-button-soviets-highlighted-pressed: chrome.png
-	background: 490,692,30,32
-ships-button-soviets-highlighted-disabled: chrome.png
-	background: 490,724,30,32
-ships-button-soviets-disabled: chrome.png
-	background: 490,724,30,32
+ships-button-soviets:
+	Image: chrome.png
+	PanelRegion: 490, 532, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
+ships-button-soviets-hover:
+	Image: chrome.png
+	PanelRegion: 490, 564, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
+ships-button-soviets-pressed:
+	Image: chrome.png
+	PanelRegion: 490, 596, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
+ships-button-soviets-highlighted:
+	Image: chrome.png
+	PanelRegion: 490, 628, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
+ships-button-soviets-highlighted-hover:
+	Image: chrome.png
+	PanelRegion: 490, 660, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
+ships-button-soviets-highlighted-pressed:
+	Image: chrome.png
+	PanelRegion: 490, 692, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
+ships-button-soviets-highlighted-disabled:
+	Image: chrome.png
+	PanelRegion: 490, 724, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
+ships-button-soviets-disabled:
+	Image: chrome.png
+	PanelRegion: 490, 724, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
 
-power-icons-soviets: chrome.png
-	power-normal: 326,812,19,19
-	power-critical: 307,812,19,19
+power-icons-soviets:
+	Image: chrome.png
+	Regions:
+		power-normal: 326, 812, 19, 19
+		power-critical: 307, 812, 19, 19
 
-cash-icons-soviets: chrome.png
-	cash-normal: 326,793,19,19
-	cash-critical: 307,793,19,19
+cash-icons-soviets:
+	Image: chrome.png
+	Regions:
+		cash-normal: 326, 793, 19, 19
+		cash-critical: 307, 793, 19, 19
 
-diplomacy-button-soviets: chrome.png
-	background: 550,847,69,23
-diplomacy-button-soviets-hover: chrome.png
-	background: 550,870,69,23
-diplomacy-button-soviets-pressed: chrome.png
-	background: 550,893,69,23
-diplomacy-button-soviets-highlighted: chrome.png
-	background: 550,916,69,23
-diplomacy-button-soviets-highlighted-hover: chrome.png
-	background: 550,939,69,23
-diplomacy-button-soviets-highlighted-pressed: chrome.png
-	background: 550,962,69,23
-diplomacy-button-soviets-highlighted-disabled: chrome.png
-	background: 550,985,69,23
-diplomacy-button-soviets-disabled: chrome.png
-	background: 550,985,69,23
+diplomacy-button-soviets:
+	Image: chrome.png
+	PanelRegion: 550, 847, 0, 0, 69, 23, 0, 0
+	PanelSides: Center
+diplomacy-button-soviets-hover:
+	Image: chrome.png
+	PanelRegion: 550, 870, 0, 0, 69, 23, 0, 0
+	PanelSides: Center
+diplomacy-button-soviets-pressed:
+	Image: chrome.png
+	PanelRegion: 550, 893, 0, 0, 69, 23, 0, 0
+	PanelSides: Center
+diplomacy-button-soviets-highlighted:
+	Image: chrome.png
+	PanelRegion: 550, 916, 0, 0, 69, 23, 0, 0
+	PanelSides: Center
+diplomacy-button-soviets-highlighted-hover:
+	Image: chrome.png
+	PanelRegion: 550, 939, 0, 0, 69, 23, 0, 0
+	PanelSides: Center
+diplomacy-button-soviets-highlighted-pressed:
+	Image: chrome.png
+	PanelRegion: 550, 962, 0, 0, 69, 23, 0, 0
+	PanelSides: Center
+diplomacy-button-soviets-highlighted-disabled:
+	Image: chrome.png
+	PanelRegion: 550, 985, 0, 0, 69, 23, 0, 0
+	PanelSides: Center
+diplomacy-button-soviets-disabled:
+	Image: chrome.png
+	PanelRegion: 550, 985, 0, 0, 69, 23, 0, 0
+	PanelSides: Center
 
-debug-button-soviets: chrome.png
-	background: 619,847,62,23
-debug-button-soviets-hover: chrome.png
-	background: 619,870,62,23
-debug-button-soviets-pressed: chrome.png
-	background: 619,893,62,23
-debug-button-soviets-highlighted: chrome.png
-	background: 619,916,62,23
-debug-button-soviets-highlighted-hover: chrome.png
-	background: 619,939,62,23
-debug-button-soviets-highlighted-pressed: chrome.png
-	background: 619,962,62,23
-debug-button-soviets-highlighted-disabled: chrome.png
-	background: 619,985,62,23
-debug-button-soviets-disabled: chrome.png
-	background: 619,985,62,23
+debug-button-soviets:
+	Image: chrome.png
+	PanelRegion: 619, 847, 0, 0, 62, 23, 0, 0
+	PanelSides: Center
+debug-button-soviets-hover:
+	Image: chrome.png
+	PanelRegion: 619, 870, 0, 0, 62, 23, 0, 0
+	PanelSides: Center
+debug-button-soviets-pressed:
+	Image: chrome.png
+	PanelRegion: 619, 893, 0, 0, 62, 23, 0, 0
+	PanelSides: Center
+debug-button-soviets-highlighted:
+	Image: chrome.png
+	PanelRegion: 619, 916, 0, 0, 62, 23, 0, 0
+	PanelSides: Center
+debug-button-soviets-highlighted-hover:
+	Image: chrome.png
+	PanelRegion: 619, 939, 0, 0, 62, 23, 0, 0
+	PanelSides: Center
+debug-button-soviets-highlighted-pressed:
+	Image: chrome.png
+	PanelRegion: 619, 962, 0, 0, 62, 23, 0, 0
+	PanelSides: Center
+debug-button-soviets-highlighted-disabled:
+	Image: chrome.png
+	PanelRegion: 619, 985, 0, 0, 62, 23, 0, 0
+	PanelSides: Center
+debug-button-soviets-disabled:
+	Image: chrome.png
+	PanelRegion: 619, 985, 0, 0, 62, 23, 0, 0
+	PanelSides: Center
 
-options-button-soviets: chrome.png
-	background: 681,847,69,23
-options-button-soviets-hover: chrome.png
-	background: 681,870,69,23
-options-button-soviets-pressed: chrome.png
-	background: 681,893,69,23
-options-button-soviets-highlighted: chrome.png
-	background: 681,916,69,23
-options-button-soviets-highlighted-hover: chrome.png
-	background: 681,939,69,23
-options-button-soviets-highlighted-pressed: chrome.png
-	background: 681,962,69,23
-options-button-soviets-highlighted-disabled: chrome.png
-	background: 681,985,69,23
-options-button-soviets-disabled: chrome.png
-	background: 681,985,69,23
+options-button-soviets:
+	Image: chrome.png
+	PanelRegion: 681, 847, 0, 0, 69, 23, 0, 0
+	PanelSides: Center
+options-button-soviets-hover:
+	Image: chrome.png
+	PanelRegion: 681, 870, 0, 0, 69, 23, 0, 0
+	PanelSides: Center
+options-button-soviets-pressed:
+	Image: chrome.png
+	PanelRegion: 681, 893, 0, 0, 69, 23, 0, 0
+	PanelSides: Center
+options-button-soviets-highlighted:
+	Image: chrome.png
+	PanelRegion: 681, 916, 0, 0, 69, 23, 0, 0
+	PanelSides: Center
+options-button-soviets-highlighted-hover:
+	Image: chrome.png
+	PanelRegion: 681, 939, 0, 0, 69, 23, 0, 0
+	PanelSides: Center
+options-button-soviets-highlighted-pressed:
+	Image: chrome.png
+	PanelRegion: 681, 962, 0, 0, 69, 23, 0, 0
+	PanelSides: Center
+options-button-soviets-highlighted-disabled:
+	Image: chrome.png
+	PanelRegion: 681, 985, 0, 0, 69, 23, 0, 0
+	PanelSides: Center
+options-button-soviets-disabled:
+	Image: chrome.png
+	PanelRegion: 681, 985, 0, 0, 69, 23, 0, 0
+	PanelSides: Center
 
 # bad coordinates - find where to add this button
-stats-button-soviets: chrome.png
-	background: 985,0,30,32
-stats-button-soviets-hover: chrome.png
-	background: 985,545,30,32
-stats-button-soviets-pressed: chrome.png
-	background: 985,578,30,32
-stats-button-soviets-highlighted: chrome.png
-	background: 985,611,30,32
-stats-button-soviets-highlighted-hover: chrome.png
-	background: 985,644,30,32
-stats-button-soviets-highlighted-pressed: chrome.png
-	background: 985,677,30,32
-stats-button-soviets-highlighted-disabled: chrome.png
-	background: 985,710,30,32
-stats-button-soviets-disabled: chrome.png
-	background: 985,710,30,32
+stats-button-soviets:
+	Image: chrome.png
+	PanelRegion: 985, 0, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
+stats-button-soviets-hover:
+	Image: chrome.png
+	PanelRegion: 985, 545, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
+stats-button-soviets-pressed:
+	Image: chrome.png
+	PanelRegion: 985, 578, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
+stats-button-soviets-highlighted:
+	Image: chrome.png
+	PanelRegion: 985, 611, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
+stats-button-soviets-highlighted-hover:
+	Image: chrome.png
+	PanelRegion: 985, 644, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
+stats-button-soviets-highlighted-pressed:
+	Image: chrome.png
+	PanelRegion: 985, 677, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
+stats-button-soviets-highlighted-disabled:
+	Image: chrome.png
+	PanelRegion: 985, 710, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
+stats-button-soviets-disabled:
+	Image: chrome.png
+	PanelRegion: 985, 710, 0, 0, 30, 32, 0, 0
+	PanelSides: Center
 
 # These coordinates point to an empty area of the chrome.png file to make the glyph of these buttons not appear
-production-icons-soviets: chrome.png
-	building: 5250,622,19,19
-	building-disabled: 5269,622,19,19
-	building-alert: 5288,622,19,19
-	support: 5250,641,19,19
-	support-disabled: 5269,641,19,19
-	support-alert: 5288,641,19,19
-	infantry: 5250,660,19,19
-	infantry-disabled: 5269,660,19,19
-	infantry-alert: 5288,660,19,19
-	vehicle: 5250,679,19,19
-	vehicle-disabled: 5269,679,19,19
-	vehicle-alert: 5288,679,19,19
-	aircraft: 5250,698,19,19
-	aircraft-disabled: 5269,698,19,19
-	aircraft-alert: 5288,698,19,19
-	ship: 5250,717,19,19
-	ship-disabled: 5269,717,19,19
-	ship-alert: 5288,717,19,19
+production-icons-soviets:
+	Image: chrome.png
+	Regions:
+		building: 5250, 622, 19, 19
+		building-disabled: 5269, 622, 19, 19
+		building-alert: 5288, 622, 19, 19
+		support: 5250, 641, 19, 19
+		support-disabled: 5269, 641, 19, 19
+		support-alert: 5288, 641, 19, 19
+		infantry: 5250, 660, 19, 19
+		infantry-disabled: 5269, 660, 19, 19
+		infantry-alert: 5288, 660, 19, 19
+		vehicle: 5250, 679, 19, 19
+		vehicle-disabled: 5269, 679, 19, 19
+		vehicle-alert: 5288, 679, 19, 19
+		aircraft: 5250, 698, 19, 19
+		aircraft-disabled: 5269, 698, 19, 19
+		aircraft-alert: 5288, 698, 19, 19
+		ship: 5250, 717, 19, 19
+		ship-disabled: 5269, 717, 19, 19
+		ship-alert: 5288, 717, 19, 19
 
-command-icons-soviets: chrome.png
-	attack-move: 783,847,33,26
-	attack-move-disabled: 783,873,33,26
-	attack-move-active: 783,899,33,26
-	attack-move-hover: 783,925,33,26
-	attack-move-active-hover: 783,951,33,26
-	force-move: 816,847,26,26
-	force-move-disabled: 816,873,26,26
-	force-move-active: 816,899,26,26
-	force-move-hover: 816,925,26,26
-	force-move-active-hover: 816,951,26,26    
-	force-attack: 842,847,26,26
-	force-attack-disabled: 842,873,26,26
-	force-attack-active: 842,899,26,26
-	force-attack-hover: 842,925,26,26
-	force-attack-active-hover: 842,951,26,26    
-	guard: 868,847,29,26
-	guard-disabled: 868,873,29,26
-	guard-active: 868,899,29,26
-	guard-hover: 868,925,29,26
-	guard-active-hover: 868,951,29,26    
-	deploy: 897,847,27,26
-	deploy-disabled: 897,873,27,26
-	deploy-active: 897,899,27,26
-	deploy-hover: 897,925,27,26
-	deploy-active-hover: 897,951,27,26
-	scatter: 924,847,29,26
-	scatter-disabled: 924,873,29,26
-	scatter-active: 924,899,29,26
-	scatter-hover: 924,925,29,26
-	scatter-active-hover: 924,951,29,26
-	stop: 953,847,22,26
-	stop-disabled: 953,873,22,26
-	stop-active: 953,899,22,26
-	stop-hover: 953,925,22,26
-	stop-active-hover: 953,951,22,26
-	queue-orders: 975,847,35,26
-	queue-orders-disabled: 975,873,35,26
-	queue-orders-active: 975,899,35,26
-	queue-orders-hover: 975,925,35,26
-	queue-orders-active-hover: 975,951,35,26
+command-icons-soviets:
+	Image: chrome.png
+	Regions:
+		attack-move: 783, 847, 33, 26
+		attack-move-disabled: 783, 873, 33, 26
+		attack-move-active: 783, 899, 33, 26
+		attack-move-hover: 783, 925, 33, 26
+		attack-move-active-hover: 783, 951, 33, 26
+		force-move: 816, 847, 26, 26
+		force-move-disabled: 816, 873, 26, 26
+		force-move-active: 816, 899, 26, 26
+		force-move-hover: 816, 925, 26, 26
+		force-move-active-hover: 816, 951, 26, 26
+		force-attack: 842, 847, 26, 26
+		force-attack-disabled: 842, 873, 26, 26
+		force-attack-active: 842, 899, 26, 26
+		force-attack-hover: 842, 925, 26, 26
+		force-attack-active-hover: 842, 951, 26, 26
+		guard: 868, 847, 29, 26
+		guard-disabled: 868, 873, 29, 26
+		guard-active: 868, 899, 29, 26
+		guard-hover: 868, 925, 29, 26
+		guard-active-hover: 868, 951, 29, 26
+		deploy: 897, 847, 27, 26
+		deploy-disabled: 897, 873, 27, 26
+		deploy-active: 897, 899, 27, 26
+		deploy-hover: 897, 925, 27, 26
+		deploy-active-hover: 897, 951, 27, 26
+		scatter: 924, 847, 29, 26
+		scatter-disabled: 924, 873, 29, 26
+		scatter-active: 924, 899, 29, 26
+		scatter-hover: 924, 925, 29, 26
+		scatter-active-hover: 924, 951, 29, 26
+		stop: 953, 847, 22, 26
+		stop-disabled: 953, 873, 22, 26
+		stop-active: 953, 899, 22, 26
+		stop-hover: 953, 925, 22, 26
+		stop-active-hover: 953, 951, 22, 26
+		queue-orders: 975, 847, 35, 26
+		queue-orders-disabled: 975, 873, 35, 26
+		queue-orders-active: 975, 899, 35, 26
+		queue-orders-hover: 975, 925, 35, 26
+		queue-orders-active-hover: 975, 951, 35, 26
 
-stance-icons-soviets: chrome.png
-	attack-anything: 769,527,25,21
-	attack-anything-disabled: 769,548,25,21
-	attack-anything-active: 769,569,25,21
-	attack-anything-hover: 769,590,25,21
-	attack-anything-active-hover: 769,611,25,21
-	return-fire: 794,527,20,21
-	return-fire-disabled: 794,548,20,21
-	return-fire-active: 794,569,20,21
-	return-fire-hover: 794,590,20,21
-	return-fire-active-hover: 794,611,20,21
-	defend: 816,527,22,21
-	defend-disabled: 816,548,22,21
-	defend-active: 816,569,22,21
-	defend-hover: 816,590,22,21
-	defend-active-hover: 816,611,22,21    
-	hold-fire: 836,527,25,21
-	hold-fire-disabled: 836,548,25,21
-	hold-fire-active: 836,569,25,21
-	hold-fire-hover: 836,590,25,21
-	hold-fire-active-hover: 836,611,25,21
+stance-icons-soviets:
+	Image: chrome.png
+	Regions:
+		attack-anything: 769, 527, 25, 21
+		attack-anything-disabled: 769, 548, 25, 21
+		attack-anything-active: 769, 569, 25, 21
+		attack-anything-hover: 769, 590, 25, 21
+		attack-anything-active-hover: 769, 611, 25, 21
+		return-fire: 794, 527, 20, 21
+		return-fire-disabled: 794, 548, 20, 21
+		return-fire-active: 794, 569, 20, 21
+		return-fire-hover: 794, 590, 20, 21
+		return-fire-active-hover: 794, 611, 20, 21
+		defend: 816, 527, 22, 21
+		defend-disabled: 816, 548, 22, 21
+		defend-active: 816, 569, 22, 21
+		defend-hover: 816, 590, 22, 21
+		defend-active-hover: 816, 611, 22, 21
+		hold-fire: 836, 527, 25, 21
+		hold-fire-disabled: 836, 548, 25, 21
+		hold-fire-active: 836, 569, 25, 21
+		hold-fire-hover: 836, 590, 25, 21
+		hold-fire-active-hover: 836, 611, 25, 21
 
 # -----------------------------------------------------------------------------------
 # GENERIC
 # -----------------------------------------------------------------------------------
 
-scrollbar: buttons.png
-	down_arrow: 116,140,16,16
-	down_pressed: 116,140,16,16
-	up_arrow: 132,140,16,16
-	up_pressed: 132,140,16,16
+scrollbar:
+	Image: buttons.png
+	Regions:
+		down_arrow: 116, 140, 16, 16
+		down_pressed: 116, 140, 16, 16
+		up_arrow: 132, 140, 16, 16
+		up_pressed: 132, 140, 16, 16
 
-sidebar-bits: chrome.png
-	production-tooltip-time: 250, 357, 19, 19
-	production-tooltip-power: 326, 300, 19, 19
-	production-tooltip-cost: 326, 281, 19, 19
-	production-iconoverlay: 250,20,64,48
-	commandbar-background: 0,123,434,44
+sidebar-bits:
+	Image: chrome.png
+	Regions:
+		production-tooltip-time: 250, 357, 19, 19
+		production-tooltip-power: 326, 300, 19, 19
+		production-tooltip-cost: 326, 281, 19, 19
+		production-iconoverlay: 250, 20, 64, 48
+		commandbar-background: 0, 123, 434, 44
 
-order-icons: chrome.png
-	options: 250,452,19,19
-	options-disabled: 269,452,19,19
-	options-active: 288,452,19,19
-	debug: 250,395,19,19
-	debug-disabled: 269,395,19,19
-	debug-active: 288,395,19,19
-	diplomacy: 250,433,19,19
-	diplomacy-disabled: 269,433,19,19
-	diplomacy-active: 288,433,19,19
-	sell: 5250,281,19,19
-	sell-disabled: 5269,281,19,19
-	sell-active: 5288,281,19,19
-	repair: 5250,262,19,19
-	repair-disabled: 5269,262,19,19
-	repair-active: 5288,262,19,19
-	beacon: 5250,319,19,19
-	beacon-disabled: 5269,319,19,19
-	beacon-active: 5288,319,19,19
-	stats: 250,414,19,19
-	stats-disabled: 269,414,19,19
-	stats-active: 288,414,19,19
+order-icons:
+	Image: chrome.png
+	Regions:
+		options: 250, 452, 19, 19
+		options-disabled: 269, 452, 19, 19
+		options-active: 288, 452, 19, 19
+		debug: 250, 395, 19, 19
+		debug-disabled: 269, 395, 19, 19
+		debug-active: 288, 395, 19, 19
+		diplomacy: 250, 433, 19, 19
+		diplomacy-disabled: 269, 433, 19, 19
+		diplomacy-active: 288, 433, 19, 19
+		sell: 5250, 281, 19, 19
+		sell-disabled: 5269, 281, 19, 19
+		sell-active: 5288, 281, 19, 19
+		repair: 5250, 262, 19, 19
+		repair-disabled: 5269, 262, 19, 19
+		repair-active: 5288, 262, 19, 19
+		beacon: 5250, 319, 19, 19
+		beacon-disabled: 5269, 319, 19, 19
+		beacon-active: 5288, 319, 19, 19
+		stats: 250, 414, 19, 19
+		stats-disabled: 269, 414, 19, 19
+		stats-active: 288, 414, 19, 19
 
 # -----------------------------------------------------------------------------------
 # OBSERVER
 # -----------------------------------------------------------------------------------
 
-sidebar-observer: chrome.png
-	background: 785,15,219,289
-	replay-bottom: 785,283,219,96
-	observer-bottom: 785,283,219,96
+sidebar-observer:
+	Image: chrome.png
+	PanelRegion: 785, 15, 0, 0, 219, 289, 0, 0
+	PanelSides: Center
+	Regions:
+		replay-bottom: 785, 283, 219, 96
+		observer-bottom: 785, 283, 219, 96
 
-sidebar-button-observershroud: chrome.png
-sidebar-button-observershroud-pressed: chrome.png
-sidebar-button-observershroud-hover: chrome.png
+sidebar-button-observershroud:
+	Image: chrome.png
+sidebar-button-observershroud-pressed:
+	Image: chrome.png
+sidebar-button-observershroud-hover:
+	Image: chrome.png
 
-sidebar-button-observer: chrome.png
-	background: 117,545,18,18
-	border-r: 135,545,5,18
-	border-l: 112,545,5,18
-	border-b: 117,51,18,5
-	border-t: 117,28,18,5
-	corner-tl: 112,28,5,5
-	corner-tr: 135,28,5,5
-	corner-bl: 112,51,5,5
-	corner-br: 135,51,5,5
-sidebar-button-observer-hover: chrome.png
-	background: 117,5,18,18
-	border-r: 135,5,5,18
-	border-l: 112,5,5,18
-	border-b: 117,23,18,5
-	border-t: 117,0,18,5
-	corner-tl: 112,0,5,5
-	corner-tr: 135,0,5,5
-	corner-bl: 112,23,5,5
-	corner-br: 135,23,5,5
-sidebar-button-observer-pressed: chrome.png
-	background: 117,545,18,18
-	border-r: 135,545,5,18
-	border-l: 112,545,5,18
-	border-b: 117,51,18,5
-	border-t: 117,28,18,5
-	corner-tl: 112,28,5,5
-	corner-tr: 135,28,5,5
-	corner-bl: 112,51,5,5
-	corner-br: 135,51,5,5
-sidebar-button-observer-highlighted: chrome.png
-	background: 145,545,18,18
-	border-r: 163,545,5,18
-	border-l: 140,545,5,18
-	border-b: 145,51,18,5
-	border-t: 145,28,18,5
-	corner-tl: 140,28,5,5
-	corner-tr: 163,28,5,5
-	corner-bl: 140,51,5,5
-	corner-br: 163,51,5,5
-sidebar-button-observer-highlighted-hover: chrome.png
-	background: 145,5,18,18
-	border-r: 163,5,5,18
-	border-l: 140,5,5,18
-	border-b: 145,23,18,5
-	border-t: 145,0,18,5
-	corner-tl: 140,0,5,5
-	corner-tr: 163,0,5,5
-	corner-bl: 140,23,5,5
-	corner-br: 163,23,5,5
-sidebar-button-observer-highlighted-pressed: chrome.png
-	background: 33,545,18,18
-	border-r: 51,545,5,18
-	border-l: 28,545,5,18
-	border-b: 33,51,18,5
-	border-t: 33,28,18,5
-	corner-tl: 28,28,5,5
-	corner-tr: 51,28,5,5
-	corner-bl: 28,51,5,5
-	corner-br: 51,51,5,5
-sidebar-button-observer-disabled: chrome.png
-	background: 173,5,18,18
-	border-r: 191,5,5,18
-	border-l: 168,5,5,18
-	border-b: 173,23,18,5
-	border-t: 173,0,18,5
-	corner-tl: 168,0,5,5
-	corner-tr: 191,0,5,5
-	corner-bl: 168,23,5,5
-	corner-br: 191,23,5,5
-sidebar-button-observer-highlighted-disabled: chrome.png
-	background: 173,5,18,18
-	border-r: 191,5,5,18
-	border-l: 168,5,5,18
-	border-b: 173,23,18,5
-	border-t: 173,0,18,5
-	corner-tl: 168,0,5,5
-	corner-tr: 191,0,5,5
-	corner-bl: 168,23,5,5
-	corner-br: 191,23,5,5
+sidebar-button-observer:
+	Image: chrome.png
+	Regions:
+		background: 117, 545, 18, 18
+		border-r: 135, 545, 5, 18
+		border-l: 112, 545, 5, 18
+		border-b: 117, 51, 18, 5
+		border-t: 117, 28, 18, 5
+		corner-tl: 112, 28, 5, 5
+		corner-tr: 135, 28, 5, 5
+		corner-bl: 112, 51, 5, 5
+		corner-br: 135, 51, 5, 5
+sidebar-button-observer-hover:
+	Image: chrome.png
+	PanelRegion: 112, 0, 5, 5, 18, 18, 5, 5
+sidebar-button-observer-pressed:
+	Image: chrome.png
+	Regions:
+		background: 117, 545, 18, 18
+		border-r: 135, 545, 5, 18
+		border-l: 112, 545, 5, 18
+		border-b: 117, 51, 18, 5
+		border-t: 117, 28, 18, 5
+		corner-tl: 112, 28, 5, 5
+		corner-tr: 135, 28, 5, 5
+		corner-bl: 112, 51, 5, 5
+		corner-br: 135, 51, 5, 5
+sidebar-button-observer-highlighted:
+	Image: chrome.png
+	Regions:
+		background: 145, 545, 18, 18
+		border-r: 163, 545, 5, 18
+		border-l: 140, 545, 5, 18
+		border-b: 145, 51, 18, 5
+		border-t: 145, 28, 18, 5
+		corner-tl: 140, 28, 5, 5
+		corner-tr: 163, 28, 5, 5
+		corner-bl: 140, 51, 5, 5
+		corner-br: 163, 51, 5, 5
+sidebar-button-observer-highlighted-hover:
+	Image: chrome.png
+	PanelRegion: 140, 0, 5, 5, 18, 18, 5, 5
+sidebar-button-observer-highlighted-pressed:
+	Image: chrome.png
+	Regions:
+		background: 33, 545, 18, 18
+		border-r: 51, 545, 5, 18
+		border-l: 28, 545, 5, 18
+		border-b: 33, 51, 18, 5
+		border-t: 33, 28, 18, 5
+		corner-tl: 28, 28, 5, 5
+		corner-tr: 51, 28, 5, 5
+		corner-bl: 28, 51, 5, 5
+		corner-br: 51, 51, 5, 5
+sidebar-button-observer-disabled:
+	Image: chrome.png
+	PanelRegion: 168, 0, 5, 5, 18, 18, 5, 5
+sidebar-button-observer-highlighted-disabled:
+	Image: chrome.png
+	PanelRegion: 168, 0, 5, 5, 18, 18, 5, 5
 
-observer-scrollpanel-button: dialog.png
-	background: 769,257,126,126
-	border-r: 895,257,1,126
-	border-l: 768,257,1,126
-	border-b: 769,383,126,1
-	border-t: 769,256,126,1
-	corner-tl: 768,256,1,1
-	corner-tr: 895,256,1,1
-	corner-bl: 768,383,1,1
-	corner-br: 895,383,1,1
+observer-scrollpanel-button:
+	Image: dialog.png
+	PanelRegion: 768, 256, 1, 1, 126, 126, 1, 1
 
-observer-scrollpanel-button-hover: dialog.png
-	background: 769,257,126,126
-	border-r: 895,257,1,126
-	border-l: 768,257,1,126
-	border-b: 769,383,126,1
-	border-t: 769,256,126,1
-	corner-tl: 768,256,1,1
-	corner-tr: 895,256,1,1
-	corner-bl: 768,383,1,1
-	corner-br: 895,383,1,1
+observer-scrollpanel-button-hover:
+	Image: dialog.png
+	PanelRegion: 768, 256, 1, 1, 126, 126, 1, 1
 
-observer-scrollpanel-button-pressed: dialog.png
-	background: 897,257,126,126
-	border-r: 1023,257,1,126
-	border-l: 896,257,1,126
-	border-b: 897,383,126,1
-	border-t: 897,256,126,1
-	corner-tl: 896,256,1,1
-	corner-tr: 1023,256,1,1
-	corner-bl: 896,383,1,1
-	corner-br: 1023,383,1,1
+observer-scrollpanel-button-pressed:
+	Image: dialog.png
+	PanelRegion: 896, 256, 1, 1, 126, 126, 1, 1
 
-observer-scrollpanel-button-disabled: dialog.png
-	background: 769,897,126,126
-	border-r: 895,897,1,126
-	border-l: 768,897,1,126
-	border-b: 769,511,126,1
-	border-t: 769,384,126,1
-	corner-tl: 768,384,1,1
-	corner-tr: 895,384,1,1
-	corner-bl: 768,511,1,1
-	corner-br: 895,511,1,1
+observer-scrollpanel-button-disabled:
+	Image: dialog.png
+	Regions:
+		background: 769, 897, 126, 126
+		border-r: 895, 897, 1, 126
+		border-l: 768, 897, 1, 126
+		border-b: 769, 511, 126, 1
+		border-t: 769, 384, 126, 1
+		corner-tl: 768, 384, 1, 1
+		corner-tr: 895, 384, 1, 1
+		corner-bl: 768, 511, 1, 1
+		corner-br: 895, 511, 1, 1
 
-observer-scrollheader-selected: dialog.png
-	background: 769,897,126,126
-	border-r: 895,897,1,126
-	border-l: 768,897,1,126
-	border-b: 769,511,126,1
-	border-t: 769,384,126,1
-	corner-tl: 768,384,1,1
-	corner-tr: 895,384,1,1
-	corner-bl: 768,511,1,1
-	corner-br: 895,511,1,1
+observer-scrollheader-selected:
+	Image: dialog.png
+	Regions:
+		background: 769, 897, 126, 126
+		border-r: 895, 897, 1, 126
+		border-l: 768, 897, 1, 126
+		border-b: 769, 511, 126, 1
+		border-t: 769, 384, 126, 1
+		corner-tl: 768, 384, 1, 1
+		corner-tr: 895, 384, 1, 1
+		corner-bl: 768, 511, 1, 1
+		corner-br: 895, 511, 1, 1
 
-observer-scrollitem-selected: dialog.png
-	background: 897,257,126,126
-	border-r: 1023,257,1,126
-	border-l: 896,257,1,126
-	border-b: 897,383,126,1
-	border-t: 897,256,126,1
-	corner-tl: 896,256,1,1
-	corner-tr: 1023,256,1,1
-	corner-bl: 896,383,1,1
-	corner-br: 1023,383,1,1
+observer-scrollitem-selected:
+	Image: dialog.png
+	PanelRegion: 896, 256, 1, 1, 126, 126, 1, 1
 
-observer-scrollitem-hover: dialog.png
-	background: 769,257,126,126
-	border-r: 895,257,1,126
-	border-l: 768,257,1,126
-	border-b: 769,383,126,1
-	border-t: 769,256,126,1
-	corner-tl: 768,256,1,1
-	corner-tr: 895,256,1,1
-	corner-bl: 768,383,1,1
-	corner-br: 895,383,1,1
+observer-scrollitem-hover:
+	Image: dialog.png
+	PanelRegion: 768, 256, 1, 1, 126, 126, 1, 1
 
 # -----------------------------------------------------------------------------------
 # REST OF THE UI
 # -----------------------------------------------------------------------------------
 
 # Used for the main menu frame
-dialog: dialog.png
-	background: 0,0,480,480
-	border-r: 489,0,9,192
-	border-l: 480,0,9,192
-	border-b: 0,489,191,9
-	border-t: 0,480,191,9
-	corner-tl: 191,480,9,9
-	corner-tr: 200,480,9,9
-	corner-bl: 191,489,9,9
-	corner-br: 200,489,9,9
+dialog:
+	Image: dialog.png
+	Regions:
+		background: 0, 0, 480, 480
+		border-r: 489, 0, 9, 192
+		border-l: 480, 0, 9, 192
+		border-b: 0, 489, 191, 9
+		border-t: 0, 480, 191, 9
+		corner-tl: 191, 480, 9, 9
+		corner-tr: 200, 480, 9, 9
+		corner-bl: 191, 489, 9, 9
+		corner-br: 200, 489, 9, 9
 
 # Used for Music and Map selection (normal button)
-dialog2: dialog.png
-	background: 513,1,126,126
-	border-r: 639,1,1,126
-	border-l: 512,1,1,126
-	border-b: 513,127,126,1
-	border-t: 513,0,126,1
-	corner-tl: 512,0,1,1
-	corner-tr: 639,0,1,1
-	corner-bl: 512,127,1,1
-	corner-br: 639,127,1,1
+dialog2:
+	Image: dialog.png
+	PanelRegion: 512, 0, 1, 1, 126, 126, 1, 1
 
 # It's a Container, used in various places, like Hotkeys, ColorPicker, Asset Browser frames (looks like a pressed button)
-dialog3: dialog.png
-	background: 641,1,126,126
-	border-r: 767,1,1,126
-	border-l: 640,1,1,126
-	border-b: 641,127,126,1
-	border-t: 641,0,126,1
-	corner-tl: 640,0,1,1
-	corner-tr: 767,0,1,1
-	corner-bl: 640,127,1,1
-	corner-br: 767,127,1,1
+dialog3:
+	Image: dialog.png
+	PanelRegion: 640, 0, 1, 1, 126, 126, 1, 1
 
 # Used for tooltips and the video player
-dialog4: dialog.png
-	background: 517,392,54,54
-	border-t: 517,387,54,6
-	border-b: 517,446,54,6
-	border-l: 512,392,6,54
-	border-r: 571,392,6,54
-	corner-tl: 512,387,6,6
-	corner-tr: 571,387,6,6
-	corner-bl: 512,446,6,6
-	corner-br: 571,446,6,6
+dialog4:
+	Image: dialog.png
+	Regions:
+		background: 517, 392, 54, 54
+		border-t: 517, 387, 54, 6
+		border-b: 517, 446, 54, 6
+		border-l: 512, 392, 6, 54
+		border-r: 571, 392, 6, 54
+		corner-tl: 512, 387, 6, 6
+		corner-tr: 571, 387, 6, 6
+		corner-bl: 512, 446, 6, 6
+		corner-br: 571, 446, 6, 6
 
 # completely black tile
-dialog5: dialog.png
-	background: 579,387,64,64
-	border-t: 579,387,64,1
-	border-b: 579,451,64,1
-	border-l: 579,387,1,64
-	border-r: 643,387,1,64
-	corner-tl: 579,387,1,1
-	corner-tr: 643,387,1,1
-	corner-bl: 579,446,1,1
-	corner-br: 643,446,1,1
+dialog5:
+	Image: dialog.png
+	Regions:
+		background: 579, 387, 64, 64
+		border-t: 579, 387, 64, 1
+		border-b: 579, 451, 64, 1
+		border-l: 579, 387, 1, 64
+		border-r: 643, 387, 1, 64
+		corner-tl: 579, 387, 1, 1
+		corner-tr: 643, 387, 1, 1
+		corner-bl: 579, 446, 1, 1
+		corner-br: 643, 446, 1, 1
 
-power-meter: chrome.png
-	power-meter-none: 249,522,12,2
-	power-meter-available: 262,522,12,2
-	power-meter-used: 274,522,12,2
-	power-meter-danger: 286,522,12,2
-	power-meter-disabled: 298,522,12,2
+power-meter:
+	Image: chrome.png
+	Regions:
+		power-meter-none: 249, 522, 12, 2
+		power-meter-available: 262, 522, 12, 2
+		power-meter-used: 274, 522, 12, 2
+		power-meter-danger: 286, 522, 12, 2
+		power-meter-disabled: 298, 522, 12, 2
 
+lobby-bits:
+	Image: spawnpoints.png
+	Regions:
+		spawn-unclaimed: 37, 5, 22, 22
+		spawn-claimed: 5, 5, 22, 22
+		admin: 64, 5, 7, 5
+		colorpicker: 5, 5, 22, 22
+		huepicker: 71, 0, 7, 15
+		kick: 134, 0, 11, 11
+		protected: 79, 0, 10, 13
+		protected-disabled: 90, 0, 10, 13
+		authentication: 77, 16, 12, 13
+		authentication-disabled: 90, 16, 12, 13
+		admin-registered: 102, 0, 16, 16
+		admin-anonymous: 118, 0, 16, 16
+		player-registered: 102, 16, 16, 16
+		player-anonymous: 118, 16, 16, 16
 
-lobby-bits: spawnpoints.png
-	spawn-unclaimed: 37,5,22,22
-	spawn-claimed: 5,5,22,22
-	admin: 64,5,7,5
-	colorpicker: 5,5,22,22
-	huepicker: 71,0,7,15
-	protected: 79,0,10,13
-	protected-disabled: 90,0,10,13
-	authentication: 77,16,12,13
-	authentication-disabled: 90,16,12,13
-	admin-registered: 102,0,16,16
-	admin-anonymous: 118,0,16,16
-	player-registered: 102,16,16,16
-	player-anonymous: 118,16,16,16
+strategic:
+	Image: strategic.png
+	Regions:
+		unowned: 0, 0, 32, 32
+		critical_unowned: 0, 32, 32, 32
+		enemy_owned: 32, 32, 32, 32
+		player_owned: 96, 0, 32, 32
 
-strategic: strategic.png
-	unowned: 0,0,32,32
-	critical_unowned: 0,32,32,32
-	enemy_owned: 32,32,32,32
-	player_owned: 96,0,32,32
+reload-icon:
+	Image: chrome.png
+	Regions:
+		enabled: 768, 152, 16, 16
+		disabled-0: 768, 136, 16, 16
+		disabled-1: 784, 136, 16, 16
+		disabled-2: 800, 136, 16, 16
+		disabled-3: 816, 136, 16, 16
+		disabled-4: 832, 136, 16, 16
+		disabled-5: 848, 136, 16, 16
+		disabled-6: 864, 136, 16, 16
+		disabled-7: 880, 136, 16, 16
+		disabled-8: 896, 136, 16, 16
+		disabled-9: 912, 136, 16, 16
+		disabled-10: 928, 136, 16, 16
+		disabled-11: 944, 136, 16, 16
 
-reload-icon: chrome.png
-	enabled: 768,152,16,16
-	disabled-0: 768,136,16,16
-	disabled-1: 784,136,16,16
-	disabled-2: 800,136,16,16
-	disabled-3: 816,136,16,16
-	disabled-4: 832,136,16,16
-	disabled-5: 848,136,16,16
-	disabled-6: 864,136,16,16
-	disabled-7: 880,136,16,16
-	disabled-8: 896,136,16,16
-	disabled-9: 912,136,16,16
-	disabled-10: 928,136,16,16
-	disabled-11: 944,136,16,16
+flags:
+	Image: buttons.png
+	Regions:
+		america: 0, 0, 45, 21
+		germany: 0, 21, 45, 21
+		england: 0, 42, 45, 21
+		france: 0, 63, 45, 21
+		korea: 0, 84, 45, 21
+		cuba: 45, 0, 45, 21
+		libya: 45, 21, 45, 21
+		iraq: 45, 42, 45, 21
+		russia: 45, 63, 45, 21
+		Random: 45, 84, 45, 21
+		random-allies: 0, 105, 45, 21
+		random-soviets: 45, 105, 45, 21
+		spectator: 45, 84, 45, 21
 
-flags: buttons.png
-	america: 00, 00, 45, 21
-	germany: 00, 21, 45, 21
-	england: 00, 42, 45, 21
-	france:  00, 63, 45, 21
-	korea:   00, 84, 45, 21
-	cuba:    45, 00, 45, 21
-	libya:   45, 21, 45, 21
-	iraq:    45, 42, 45, 21
-	russia:  45, 63, 45, 21
-	Random:  45, 84, 45, 21
-	random-allies:  00, 105, 45, 21
-	random-soviets:  45, 105, 45, 21
-	spectator: 45, 84, 45, 21
-
-music: musicplayer.png
-	pause: 0,0,25,25
-	stop: 28,0,25,25
-	play: 56,0,25,25
-	next: 84,0,25,25
-	prev: 112,0,25,25
-	fastforward: 140,0,25,25
-	slowmo: 168,0,25,25
+music:
+	Image: musicplayer.png
+	Regions:
+		pause: 0, 0, 16, 16
+		stop: 17, 0, 16, 16
+		play: 34, 0, 16, 16
+		next: 51, 0, 16, 16
+		prev: 68, 0, 16, 16
+		fastforward: 85, 0, 16, 16
 
 # A copy of dialog3 (pressed button)
-progressbar-bg: dialog.png
-	background: 641,1,126,126
-	border-r: 767,1,1,126
-	border-l: 640,1,1,126
-	border-b: 641,127,126,1
-	border-t: 641,0,126,1
-	corner-tl: 640,0,1,1
-	corner-tr: 767,0,1,1
-	corner-bl: 640,127,1,1
-	corner-br: 767,127,1,1
+progressbar-bg:
+	Image: dialog.png
+	PanelRegion: 640, 0, 1, 1, 126, 126, 1, 1
 
 # A copy of dialog2 (normal button)
-progressbar-thumb: dialog.png
-	background: 513,1,126,126
-	border-r: 639,1,1,126
-	border-l: 512,1,1,126
-	border-b: 513,127,126,1
-	border-t: 513,0,126,1
-	corner-tl: 512,0,1,1
-	corner-tr: 639,0,1,1
-	corner-bl: 512,127,1,1
-	corner-br: 639,127,1,1
+progressbar-thumb:
+	Image: dialog.png
+	PanelRegion: 512, 0, 1, 1, 126, 126, 1, 1
 
 # A copy of dialog2 (normal button)
-button: dialog.png
-	background: 513,1,126,126
-	border-r: 639,1,1,126
-	border-l: 512,1,1,126
-	border-b: 513,127,126,1
-	border-t: 513,0,126,1
-	corner-tl: 512,0,1,1
-	corner-tr: 639,0,1,1
-	corner-bl: 512,127,1,1
-	corner-br: 639,127,1,1
+button:
+	Image: dialog.png
+	PanelRegion: 512, 0, 1, 1, 126, 126, 1, 1
 
 # 5% lighter than a normal button (mouseover)
-button-hover: dialog.png
-	background: 513,129,126,126
-	border-r: 639,129,1,126
-	border-l: 512,129,1,126
-	border-b: 513,255,126,1
-	border-t: 513,128,126,1
-	corner-tl: 512,128,1,1
-	corner-tr: 639,128,1,1
-	corner-bl: 512,255,1,1
-	corner-br: 639,255,1,1
+button-hover:
+	Image: dialog.png
+	PanelRegion: 512, 128, 1, 1, 126, 126, 1, 1
 
 # A copy of dialog3 (pressed button)
-button-pressed: dialog.png
-	background: 641,1,126,126
-	border-r: 767,1,1,126
-	border-l: 640,1,1,126
-	border-b: 641,127,126,1
-	border-t: 641,0,126,1
-	corner-tl: 640,0,1,1
-	corner-tr: 767,0,1,1
-	corner-bl: 640,127,1,1
-	corner-br: 767,127,1,1
+button-pressed:
+	Image: dialog.png
+	PanelRegion: 640, 0, 1, 1, 126, 126, 1, 1
 
 # 50% grey (disabled button)
-button-disabled: dialog.png
-	background: 513,257,126,126
-	border-r: 639,257,1,126
-	border-l: 512,257,1,126
-	border-b: 513,383,126,1
-	border-t: 513,256,126,1
-	corner-tl: 512,256,1,1
-	corner-tr: 639,256,1,1
-	corner-bl: 512,383,1,1
-	corner-br: 639,383,1,1
+button-disabled:
+	Image: dialog.png
+	PanelRegion: 512, 256, 1, 1, 126, 126, 1, 1
 
 # 10% darker than a normal button - Used in Settings when you select Display Audio Input or Advanced
-button-highlighted: dialog.png
-	background: 769,129,126,126
-	border-r: 895,129,1,126
-	border-l: 768,129,1,126
-	border-b: 769,255,126,1
-	border-t: 769,128,126,1
-	corner-tl: 768,128,1,1
-	corner-tr: 895,128,1,1
-	corner-bl: 768,255,1,1
-	corner-br: 895,255,1,1
+button-highlighted:
+	Image: dialog.png
+	PanelRegion: 768, 128, 1, 1, 126, 126, 1, 1
 
 # A copy of button-highlighted - Used in Settings when you select Display Audio Input or Advanced
-button-highlighted-hover: dialog.png
-	background: 769,129,126,126
-	border-r: 895,129,1,126
-	border-l: 768,129,1,126
-	border-b: 769,255,126,1
-	border-t: 769,128,126,1
-	corner-tl: 768,128,1,1
-	corner-tr: 895,128,1,1
-	corner-bl: 768,255,1,1
-	corner-br: 895,255,1,1
+button-highlighted-hover:
+	Image: dialog.png
+	PanelRegion: 768, 128, 1, 1, 126, 126, 1, 1
 
 #  Used in Settings when you select Display Audio Input or Advanced
-button-highlighted-pressed: dialog.png
-	background: 897,129,126,126
-	border-r: 1023,129,1,126
-	border-l: 896,129,1,126
-	border-b: 897,255,126,1
-	border-t: 897,128,126,1
-	corner-tl: 896,128,1,1
-	corner-tr: 1023,128,1,1
-	corner-bl: 896,255,1,1
-	corner-br: 1023,255,1,1
+button-highlighted-pressed:
+	Image: dialog.png
+	PanelRegion: 896, 128, 1, 1, 126, 126, 1, 1
 
 # A copy of button-highlighted - Used in Settings when you select Display Audio Input or Advanced
-button-highlighted-disabled: dialog.png
-	background: 769,129,126,126
-	border-r: 895,129,1,126
-	border-l: 768,129,1,126
-	border-b: 769,255,126,1
-	border-t: 769,128,126,1
-	corner-tl: 768,128,1,1
-	corner-tr: 895,128,1,1
-	corner-bl: 768,255,1,1
-	corner-br: 895,255,1,1
+button-highlighted-disabled:
+	Image: dialog.png
+	PanelRegion: 768, 128, 1, 1, 126, 126, 1, 1
 
 # vivid red - Used for the Battlefields News button
-newsbutton: dialog.png
-	background: 513,1,126,126
-	border-r: 639,1,1,126
-	border-l: 512,1,1,126
-	border-b: 513,127,126,1
-	border-t: 513,0,126,1
-	corner-tl: 512,0,1,1
-	corner-tr: 639,0,1,1
-	corner-bl: 512,127,1,1
-	corner-br: 639,127,1,1
+newsbutton:
+	Image: dialog.png
+	PanelRegion: 512, 0, 1, 1, 126, 126, 1, 1
 
-newsbutton-hover: dialog.png
-	background: 513,1,126,126
-	border-r: 639,1,1,126
-	border-l: 512,1,1,126
-	border-b: 513,127,126,1
-	border-t: 513,0,126,1
-	corner-tl: 512,0,1,1
-	corner-tr: 639,0,1,1
-	corner-bl: 512,127,1,1
-	corner-br: 639,127,1,1
+newsbutton-hover:
+	Image: dialog.png
+	PanelRegion: 512, 0, 1, 1, 126, 126, 1, 1
 
-newsbutton-highlighted: dialog.png
-	background: 769,1,126,126
-	border-r: 895,1,1,126
-	border-l: 768,1,1,126
-	border-b: 769,127,126,1
-	border-t: 769,0,126,1
-	corner-tl: 768,0,1,1
-	corner-tr: 895,0,1,1
-	corner-bl: 768,127,1,1
-	corner-br: 895,127,1,1
+newsbutton-highlighted:
+	Image: dialog.png
+	PanelRegion: 768, 0, 1, 1, 126, 126, 1, 1
 
-newsbutton-highlighted-hover: dialog.png
-	background: 769,1,126,126
-	border-r: 895,1,1,126
-	border-l: 768,1,1,126
-	border-b: 769,127,126,1
-	border-t: 769,0,126,1
-	corner-tl: 768,0,1,1
-	corner-tr: 895,0,1,1
-	corner-bl: 768,127,1,1
-	corner-br: 895,127,1,1
+newsbutton-highlighted-hover:
+	Image: dialog.png
+	PanelRegion: 768, 0, 1, 1, 126, 126, 1, 1
 
-newsbutton-highlighted-pressed: dialog.png
-	background: 641,1,126,126
-	border-r: 767,1,1,126
-	border-l: 640,1,1,126
-	border-b: 641,127,126,1
-	border-t: 641,0,126,1
-	corner-tl: 640,0,1,1
-	corner-tr: 767,0,1,1
-	corner-bl: 640,127,1,1
-	corner-br: 767,127,1,1
+newsbutton-highlighted-pressed:
+	Image: dialog.png
+	PanelRegion: 640, 0, 1, 1, 126, 126, 1, 1
 
-newsbutton-pressed: dialog.png
-	background: 641,1,126,126
-	border-r: 767,1,1,126
-	border-l: 640,1,1,126
-	border-b: 641,127,126,1
-	border-t: 641,0,126,1
-	corner-tl: 640,0,1,1
-	corner-tr: 767,0,1,1
-	corner-bl: 640,127,1,1
-	corner-br: 767,127,1,1
+newsbutton-pressed:
+	Image: dialog.png
+	PanelRegion: 640, 0, 1, 1, 126, 126, 1, 1
 
 # A copy of dialog3 (pressed button)
-textfield: dialog.png
-	background: 641,1,126,126
-	border-r: 767,1,1,126
-	border-l: 640,1,1,126
-	border-b: 641,127,126,1
-	border-t: 641,0,126,1
-	corner-tl: 640,0,1,1
-	corner-tr: 767,0,1,1
-	corner-bl: 640,127,1,1
-	corner-br: 767,127,1,1
+textfield:
+	Image: dialog.png
+	PanelRegion: 640, 0, 1, 1, 126, 126, 1, 1
 
 # A copy of checkbox-hover
-textfield-hover: dialog.png
-	background: 641,129,126,126
-	border-r: 767,129,1,126
-	border-l: 640,129,1,126
-	border-b: 641,255,126,1
-	border-t: 641,128,126,1
-	corner-tl: 640,128,1,1
-	corner-tr: 767,128,1,1
-	corner-bl: 640,255,1,1
-	corner-br: 767,255,1,1
+textfield-hover:
+	Image: dialog.png
+	PanelRegion: 640, 128, 1, 1, 126, 126, 1, 1
 
 # Same as button-disabled-pressed
-textfield-disabled: dialog.png
-	background: 641,257,126,126
-	border-r: 767,257,1,126
-	border-l: 640,257,1,126
-	border-b: 641,383,126,1
-	border-t: 641,256,126,1
-	corner-tl: 640,256,1,1
-	corner-tr: 767,256,1,1
-	corner-bl: 640,383,1,1
-	corner-br: 767,383,1,1
+textfield-disabled:
+	Image: dialog.png
+	PanelRegion: 640, 256, 1, 1, 126, 126, 1, 1
 
 # A copy of dialog3 (pressed button)
-textfield-focused: dialog.png
-	background: 641,1,126,126
-	border-r: 767,1,1,126
-	border-l: 640,1,1,126
-	border-b: 641,127,126,1
-	border-t: 641,0,126,1
-	corner-tl: 640,0,1,1
-	corner-tr: 767,0,1,1
-	corner-bl: 640,127,1,1
-	corner-br: 767,127,1,1
+textfield-focused:
+	Image: dialog.png
+	PanelRegion: 640, 0, 1, 1, 126, 126, 1, 1
 
 # A copy of dialog3 (pressed button)
-scrollpanel-bg: dialog.png
-	background: 641,1,126,126
-	border-r: 767,1,1,126
-	border-l: 640,1,1,126
-	border-b: 641,127,126,1
-	border-t: 641,0,126,1
-	corner-tl: 640,0,1,1
-	corner-tr: 767,0,1,1
-	corner-bl: 640,127,1,1
-	corner-br: 767,127,1,1
+scrollpanel-bg:
+	Image: dialog.png
+	PanelRegion: 640, 0, 1, 1, 126, 126, 1, 1
 
 # A copy of dialog2 (normal button)
-scrollpanel-button: dialog.png
-	background: 513,1,126,126
-	border-r: 639,1,1,126
-	border-l: 512,1,1,126
-	border-b: 513,127,126,1
-	border-t: 513,0,126,1
-	corner-tl: 512,0,1,1
-	corner-tr: 639,0,1,1
-	corner-bl: 512,127,1,1
-	corner-br: 639,127,1,1
+scrollpanel-button:
+	Image: dialog.png
+	PanelRegion: 512, 0, 1, 1, 126, 126, 1, 1
 
 # A copy of button-hover
-scrollpanel-button-hover: dialog.png
-	background: 513,129,126,126
-	border-r: 639,129,1,126
-	border-l: 512,129,1,126
-	border-b: 513,255,126,1
-	border-t: 513,128,126,1
-	corner-tl: 512,128,1,1
-	corner-tr: 639,128,1,1
-	corner-bl: 512,255,1,1
-	corner-br: 639,255,1,1
+scrollpanel-button-hover:
+	Image: dialog.png
+	PanelRegion: 512, 128, 1, 1, 126, 126, 1, 1
 
 # A copy of dialog3 (pressed button)
-scrollpanel-button-pressed: dialog.png
-	background: 641,1,126,126
-	border-r: 767,1,1,126
-	border-l: 640,1,1,126
-	border-b: 641,127,126,1
-	border-t: 641,0,126,1
-	corner-tl: 640,0,1,1
-	corner-tr: 767,0,1,1
-	corner-bl: 640,127,1,1
-	corner-br: 767,127,1,1
+scrollpanel-button-pressed:
+	Image: dialog.png
+	PanelRegion: 640, 0, 1, 1, 126, 126, 1, 1
 
 # A copy of dialog2 (normal button)
-scrollpanel-button-disabled: dialog.png
-	background: 513,1,126,126
-	border-r: 639,1,1,126
-	border-l: 512,1,1,126
-	border-b: 513,127,126,1
-	border-t: 513,0,126,1
-	corner-tl: 512,0,1,1
-	corner-tr: 639,0,1,1
-	corner-bl: 512,127,1,1
-	corner-br: 639,127,1,1
+scrollpanel-button-disabled:
+	Image: dialog.png
+	PanelRegion: 512, 0, 1, 1, 126, 126, 1, 1
 
-slider: dialog.png
-	tick: 512,1,2,4
+slider:
+	Image: dialog.png
+	Regions:
+		tick: 512, 1, 2, 4
 
 # A copy of dialog3 (pressed button)
-slider-track: dialog.png
-	background: 513,1,126,126
-	border-r: 639,1,1,126
-	border-l: 512,1,1,126
-	border-b: 513,127,126,1
-	border-t: 513,0,126,1
-	corner-tl: 512,0,1,1
-	corner-tr: 639,0,1,1
-	corner-bl: 512,127,1,1
-	corner-br: 639,127,1,1
+slider-track:
+	Image: dialog.png
+	PanelRegion: 512, 0, 1, 1, 126, 126, 1, 1
 
 # A copy of dialog2 (normal button)
-slider-thumb: dialog.png
-	background: 513,1,126,126
-	border-r: 639,1,1,126
-	border-l: 512,1,1,126
-	border-b: 513,127,126,1
-	border-t: 513,0,126,1
-	corner-tl: 512,0,1,1
-	corner-tr: 639,0,1,1
-	corner-bl: 512,127,1,1
-	corner-br: 639,127,1,1
+slider-thumb:
+	Image: dialog.png
+	PanelRegion: 512, 0, 1, 1, 126, 126, 1, 1
 
 # A copy of button-hover
-slider-thumb-hover: dialog.png
-	background: 513,129,126,126
-	border-r: 639,129,1,126
-	border-l: 512,129,1,126
-	border-b: 513,255,126,1
-	border-t: 513,128,126,1
-	corner-tl: 512,128,1,1
-	corner-tr: 639,128,1,1
-	corner-bl: 512,255,1,1
-	corner-br: 639,255,1,1
+slider-thumb-hover:
+	Image: dialog.png
+	PanelRegion: 512, 128, 1, 1, 126, 126, 1, 1
 
 # A copy of dialog3 (pressed button)
-slider-thumb-pressed: dialog.png
-	background: 641,1,126,126
-	border-r: 767,1,1,126
-	border-l: 640,1,1,126
-	border-b: 641,127,126,1
-	border-t: 641,0,126,1
-	corner-tl: 640,0,1,1
-	corner-tr: 767,0,1,1
-	corner-bl: 640,127,1,1
-	corner-br: 767,127,1,1
+slider-thumb-pressed:
+	Image: dialog.png
+	PanelRegion: 640, 0, 1, 1, 126, 126, 1, 1
 
 # A copy of dialog2 (normal button)
-slider-thumb-disabled: dialog.png
-	background: 513,1,126,126
-	border-r: 639,1,1,126
-	border-l: 512,1,1,126
-	border-b: 513,127,126,1
-	border-t: 513,0,126,1
-	corner-tl: 512,0,1,1
-	corner-tr: 639,0,1,1
-	corner-bl: 512,127,1,1
-	corner-br: 639,127,1,1
+slider-thumb-disabled:
+	Image: dialog.png
+	PanelRegion: 512, 0, 1, 1, 126, 126, 1, 1
 
 # A copy of dialog3 (pressed button)
-checkbox: dialog.png
-	background: 641,1,126,126
-	border-r: 767,1,1,126
-	border-l: 640,1,1,126
-	border-b: 641,127,126,1
-	border-t: 641,0,126,1
-	corner-tl: 640,0,1,1
-	corner-tr: 767,0,1,1
-	corner-bl: 640,127,1,1
-	corner-br: 767,127,1,1
+checkbox:
+	Image: dialog.png
+	PanelRegion: 640, 0, 1, 1, 126, 126, 1, 1
 
-checkbox-bits: buttons.png
-	checked: 100,157,16,16
-	checked-disabled: 100,173,16,16
-	crossed: 116,157,16,16
-	crossed-disabled: 116,173,16,16
+checkbox-bits:
+	Image: buttons.png
+	Regions:
+		checked: 100, 157, 16, 16
+		checked-disabled: 100, 173, 16, 16
+		crossed: 116, 157, 16, 16
+		crossed-disabled: 116, 173, 16, 16
 
-checkbox-hover: dialog.png
-	background: 641,129,126,126
-	border-r: 767,129,1,126
-	border-l: 640,129,1,126
-	border-b: 641,255,126,1
-	border-t: 641,128,126,1
-	corner-tl: 640,128,1,1
-	corner-tr: 767,128,1,1
-	corner-bl: 640,255,1,1
-	corner-br: 767,255,1,1
+checkbox-hover:
+	Image: dialog.png
+	PanelRegion: 640, 128, 1, 1, 126, 126, 1, 1
 
 # Same as button-disabled-pressed
-checkbox-disabled: dialog.png
-	background: 641,257,126,126
-	border-r: 767,257,1,126
-	border-l: 640,257,1,126
-	border-b: 641,383,126,1
-	border-t: 641,256,126,1
-	corner-tl: 640,256,1,1
-	corner-tr: 767,256,1,1
-	corner-bl: 640,383,1,1
-	corner-br: 767,383,1,1
+checkbox-disabled:
+	Image: dialog.png
+	PanelRegion: 640, 256, 1, 1, 126, 126, 1, 1
 
 # Same as button-highlighted-pressed
-checkbox-highlighted: dialog.png
-	background: 897,1,126,126
-	border-r: 1023,1,1,126
-	border-l: 896,1,1,126
-	border-b: 897,127,126,1
-	border-t: 897,0,126,1
-	corner-tl: 896,0,1,1
-	corner-tr: 1023,0,1,1
-	corner-bl: 896,127,1,1
-	corner-br: 1023,127,1,1
+checkbox-highlighted:
+	Image: dialog.png
+	PanelRegion: 896, 0, 1, 1, 126, 126, 1, 1
 
 # A copy of dialog3 (pressed button)
-scrollitem-selected: dialog.png
-	background: 641,1,126,126
-	border-r: 767,1,1,126
-	border-l: 640,1,1,126
-	border-b: 641,127,126,1
-	border-t: 641,0,126,1
-	corner-tl: 640,0,1,1
-	corner-tr: 767,0,1,1
-	corner-bl: 640,127,1,1
-	corner-br: 767,127,1,1
+scrollitem-selected:
+	Image: dialog.png
+	PanelRegion: 640, 0, 1, 1, 126, 126, 1, 1
 
 # A copy of dialog2 (normal button)
-scrollitem-hover: dialog.png
-	background: 513,1,126,126
-	border-r: 639,1,1,126
-	border-l: 512,1,1,126
-	border-b: 513,127,126,1
-	border-t: 513,0,126,1
-	corner-tl: 512,0,1,1
-	corner-tr: 639,0,1,1
-	corner-bl: 512,127,1,1
-	corner-br: 639,127,1,1
+scrollitem-hover:
+	Image: dialog.png
+	PanelRegion: 512, 0, 1, 1, 126, 126, 1, 1
 
 # A copy of dialog2 (normal button)
-scrollheader-selected: dialog.png
-	background: 513,1,126,126
-	border-r: 639,1,1,126
-	border-l: 512,1,1,126
-	border-b: 513,127,126,1
-	border-t: 513,0,126,1
-	corner-tl: 512,0,1,1
-	corner-tr: 639,0,1,1
-	corner-bl: 512,127,1,1
-	corner-br: 639,127,1,1
+scrollheader-selected:
+	Image: dialog.png
+	PanelRegion: 512, 0, 1, 1, 126, 126, 1, 1
 
-logos: loadscreen.png
-	logo: 0,0,256,256
+logos:
+	Image: loadscreen.png
+	Regions:
+		logo: 0, 0, 256, 256
 
-mainmenu-border: dialog.png
-	background: 688,427,40,40
-	border-r: 728,427,40,40
-	border-l: 648,427,40,40
-	border-b: 688,467,40,40
-	border-t: 688,387,40,40
-	corner-tl: 648,387,40,40
-	corner-tr: 728,387,40,40
-	corner-bl: 648,467,40,40
-	corner-br: 728,467,40,40
+mainmenu-border:
+	Image: dialog.png
+	PanelRegion: 648, 387, 40, 40, 40, 40, 40, 40
 
-dropdown: dialog.png
-	separator: 512,1,1,19
-	observer-separator: 768,256,1,19
+dropdown:
+	Image: dialog.png
+	Regions:
+		separator: 512, 1, 1, 19
+		observer-separator: 768, 256, 1, 19

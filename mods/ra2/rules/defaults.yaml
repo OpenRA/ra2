@@ -974,6 +974,7 @@
 		CruiseAltitude: 5600
 		CruisingCondition: cruising
 		AltitudeVelocity: 120
+		InitialFacing: 224
 		TakeOffOnCreation: false
 		IdleBehavior: ReturnToBase
 	Hovers@CRUISING:
@@ -1022,8 +1023,8 @@
 	Inherits: ^Husk
 	FallsToEarth:
 		Explosion: PlaneExplode
-		Spins: false
 		Moves: true
+		MaximumSpinSpeed: 0
 
 ^HelicopterHusk:
 	Inherits: ^Husk

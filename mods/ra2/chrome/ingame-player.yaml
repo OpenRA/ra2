@@ -487,16 +487,6 @@ Container@PLAYER_WIDGETS:
 					MaximumRows: 6
 					HotkeyPrefix: Production
 					HotkeyCount: 24
-				Container@PALETTE_FOREGROUND:
-					X: 23
-					Y: 0 - 1
-					Children:
-						Image@ROW_TEMPLATE:
-							Width: 234
-							Height: 48
-							IgnoreMouseOver: true
-							ImageCollection: sidebar-bits
-							ImageName: production-iconoverlay
 				Container@PRODUCTION_TYPES:
 					X: 27
 					Y: 0 - 30

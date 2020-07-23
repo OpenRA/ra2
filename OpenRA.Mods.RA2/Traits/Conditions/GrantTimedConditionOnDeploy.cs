@@ -124,7 +124,7 @@ namespace OpenRA.Mods.RA2.Traits
 			return new Order("GrantTimedConditionOnDeploy", self, queued);
 		}
 
-		bool IIssueDeployOrder.CanIssueDeployOrder(Actor self) { return !IsTraitPaused && !IsTraitDisabled; }
+		bool IIssueDeployOrder.CanIssueDeployOrder(Actor self, bool queued) { return !IsTraitPaused && !IsTraitDisabled; }
 
 		IEnumerable<IOrderTargeter> IIssueOrder.Orders
 		{

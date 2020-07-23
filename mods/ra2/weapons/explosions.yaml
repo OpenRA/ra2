@@ -228,6 +228,10 @@ atomic:
 		Delay: 25
 	Warhead@5Radiation: CreateTintedCells
 		Delay: 25
+	Warhead@21Shake: ShakeScreen
+		Duration: 20
+		Intensity: 5
+		Multiplier: 1,1
 
 demobomb:
 	Inherits: NukePayload

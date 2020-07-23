@@ -192,7 +192,7 @@ nahand:
 		PrimaryCondition: primary
 		SelectionNotification: PrimaryBuildingSelected
 	RallyPoint:
-		Offset: 3,3
+		Path: 3,3
 		Palette: mouse
 		IsPlayerPalette: false
 	WithTextDecoration@primary:
@@ -351,7 +351,7 @@ naweap:
 	RevealsShroud:
 		Range: 4c0
 	RallyPoint:
-		Offset: 6,1
+		Path: 6,1
 		Palette: mouse
 		IsPlayerPalette: false
 	Exit@1:
@@ -514,7 +514,7 @@ nayard:
 		ZOffset: 256
 		RequiresCondition: primary
 	RallyPoint:
-		Offset: 5,1
+		Path: 5,1
 		Palette: mouse
 		IsPlayerPalette: false
 	RepairsUnits:
@@ -737,13 +737,14 @@ naclon:
 		SpawnOffset: 0,0,0
 		ExitCell: 2, 2
 	Production:
-		Produces: Dummy
+		Produces: Cloning
 	RallyPoint:
-		Offset: 3,3
+		Path: 3,3
 		Palette: mouse
 		IsPlayerPalette: false
 	ClonesProducedUnits:
 		CloneableTypes: infantry
+		ProductionType: Cloning
 	AcceptsDeliveredCash:
 	SpawnSurvivors:
 		DeathTypes: ExplosionDeath, BulletDeath

@@ -139,7 +139,7 @@ zephusk:
 		Speed: 25
 	FallsToEarth:
 		Explosion: KirovExplode
-		Spins: False # TODO: In the original they did spin, but that just looks weird.
+		MaximumSpinSpeed: 0
 	RevealsShroud:
 		Range: 8c0
 		Type: CenterPosition

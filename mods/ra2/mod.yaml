@@ -110,9 +110,10 @@ Assemblies:
 	ra2|OpenRA.Mods.RA2.dll
 
 ChromeLayout:
-	ra2|chrome/assetbrowser.yaml
+	common|chrome/assetbrowser.yaml
 	ra2|chrome/ingame-player.yaml
 	common|chrome/mainmenu.yaml
+	common|chrome/mainmenu-prompts.yaml
 	ra2|chrome/mainmenu-prerelease-notification.yaml
 	common|chrome/ingame-infoobjectives.yaml
 	common|chrome/ingame-infostats.yaml
@@ -266,6 +267,9 @@ SpriteSequenceFormat: ExtendedTilesetSpecificSpriteSequence
 		SNOW: a
 
 ModelSequenceFormat: VoxelModelSequence
+
+AssetBrowser:
+	SupportedExtensions: .shp, .tem, .urb, .sno
 
 GameSpeeds:
 	slowest:
