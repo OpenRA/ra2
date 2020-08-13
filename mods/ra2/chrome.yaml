@@ -378,7 +378,7 @@ stance-icons-allies: chrome.png
 	hold-fire-active: 836,57,25,21
 	hold-fire-hover: 836,78,25,21
 	hold-fire-active-hover: 836,99,25,21
- 
+
 # -----------------------------------------------------------------------------------
 # Soviets
 # -----------------------------------------------------------------------------------
@@ -759,7 +759,7 @@ stance-icons-soviets: chrome.png
 	hold-fire-active: 836,569,25,21
 	hold-fire-hover: 836,590,25,21
 	hold-fire-active-hover: 836,611,25,21
-    
+
 # -----------------------------------------------------------------------------------
 # GENERIC
 # -----------------------------------------------------------------------------------
@@ -1034,7 +1034,7 @@ dialog5: dialog.png
 	corner-tr: 643,387,1,1
 	corner-bl: 579,446,1,1
 	corner-br: 643,446,1,1
-  
+
 power-meter: chrome.png
 	power-meter-none: 249,522,12,2
 	power-meter-available: 262,522,12,2
