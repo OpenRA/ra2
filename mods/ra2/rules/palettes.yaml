@@ -71,6 +71,9 @@
 		BasePalette: terrain
 		Name: terrainalpha
 		Alpha: 0.55
+	PaletteFromFile@depth:
+		Name: depth
+		Filename: depth.pal
 	PaletteFromFile@chrome:
 		Name: chrome
 		Filename: cameo.pal
