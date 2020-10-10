@@ -1,0 +1,19 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "ra2",
+			"type": "clr",
+			"linux": {
+				"type": "mono"
+			},
+			"osx": {
+				"type": "mono"
+			},
+			"request": "launch",
+			"program": "${workspaceRoot}/engine/OpenRA.Game.exe",
+			"cwd": "${workspaceRoot}",
+			"args": ["Engine.LaunchPath=${workspaceRoot}", "Engine.ModSearchPaths=${workspaceRoot}/mods,./mods", "Game.Mod=ra2", "Debug.DisplayDeveloperSettings=true"]
+		},
+	]
+}
