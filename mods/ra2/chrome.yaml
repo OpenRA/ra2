@@ -1428,49 +1428,27 @@ sidebar-button-observer-highlighted-disabled:
 
 observer-scrollpanel-button:
 	Image: dialog.png
-	PanelRegion: 768, 256, 1, 1, 126, 126, 1, 1
+	PanelRegion: 769, 257, 2, 2, 122, 122, 2, 2
 
 observer-scrollpanel-button-hover:
-	Image: dialog.png
-	PanelRegion: 768, 256, 1, 1, 126, 126, 1, 1
+	Inherits: observer-scrollpanel-button
 
 observer-scrollpanel-button-pressed:
 	Image: dialog.png
-	PanelRegion: 896, 256, 1, 1, 126, 126, 1, 1
+	PanelRegion: 897, 257, 2, 2, 122, 122, 2, 2
 
 observer-scrollpanel-button-disabled:
 	Image: dialog.png
-	Regions:
-		background: 769, 897, 126, 126
-		border-r: 895, 897, 1, 126
-		border-l: 768, 897, 1, 126
-		border-b: 769, 511, 126, 1
-		border-t: 769, 384, 126, 1
-		corner-tl: 768, 384, 1, 1
-		corner-tr: 895, 384, 1, 1
-		corner-bl: 768, 511, 1, 1
-		corner-br: 895, 511, 1, 1
+	PanelRegion: 769, 385, 2, 2, 122, 122, 2, 2
 
 observer-scrollheader-selected:
-	Image: dialog.png
-	Regions:
-		background: 769, 897, 126, 126
-		border-r: 895, 897, 1, 126
-		border-l: 768, 897, 1, 126
-		border-b: 769, 511, 126, 1
-		border-t: 769, 384, 126, 1
-		corner-tl: 768, 384, 1, 1
-		corner-tr: 895, 384, 1, 1
-		corner-bl: 768, 511, 1, 1
-		corner-br: 895, 511, 1, 1
+	Inherits: observer-scrollpanel-button-disabled
 
 observer-scrollitem-selected:
-	Image: dialog.png
-	PanelRegion: 896, 256, 1, 1, 126, 126, 1, 1
+	Inherits: observer-scrollpanel-button-pressed
 
 observer-scrollitem-hover:
-	Image: dialog.png
-	PanelRegion: 768, 256, 1, 1, 126, 126, 1, 1
+	Inherits: observer-scrollpanel-button
 
 # -----------------------------------------------------------------------------------
 # REST OF THE UI
@@ -1480,53 +1458,34 @@ observer-scrollitem-hover:
 dialog:
 	Image: dialog.png
 	Regions:
-		background: 0, 0, 480, 480
-		border-r: 489, 0, 9, 192
-		border-l: 480, 0, 9, 192
-		border-b: 0, 489, 191, 9
-		border-t: 0, 480, 191, 9
-		corner-tl: 191, 480, 9, 9
-		corner-tr: 200, 480, 9, 9
-		corner-bl: 191, 489, 9, 9
-		corner-br: 200, 489, 9, 9
+		background: 1, 1, 480, 480
+		border-r: 492, 1, 9, 190
+		border-l: 483, 1, 9, 190
+		border-b: 1, 492, 189, 9
+		border-t: 1, 483, 189, 9
+		corner-tl: 192, 483, 9, 9
+		corner-tr: 201, 483, 9, 9
+		corner-bl: 192, 492, 9, 9
+		corner-br: 201, 492, 9, 9
 
 # Used for Music and Map selection (normal button)
 dialog2:
-	Image: dialog.png
-	PanelRegion: 512, 0, 1, 1, 126, 126, 1, 1
+	Inherits: button
 
 # It's a Container, used in various places, like Hotkeys, ColorPicker, Asset Browser frames (looks like a pressed button)
 dialog3:
-	Image: dialog.png
-	PanelRegion: 640, 0, 1, 1, 126, 126, 1, 1
+	Inherits: button-pressed
 
 # Used for tooltips and the video player
 dialog4:
 	Image: dialog.png
-	Regions:
-		background: 517, 392, 54, 54
-		border-t: 517, 387, 54, 6
-		border-b: 517, 446, 54, 6
-		border-l: 512, 392, 6, 54
-		border-r: 571, 392, 6, 54
-		corner-tl: 512, 387, 6, 6
-		corner-tr: 571, 387, 6, 6
-		corner-bl: 512, 446, 6, 6
-		corner-br: 571, 446, 6, 6
+	PanelRegion: 512, 387, 6, 6, 52, 52, 6, 6
 
 # completely black tile
 dialog5:
 	Image: dialog.png
-	Regions:
-		background: 579, 387, 64, 64
-		border-t: 579, 387, 64, 1
-		border-b: 579, 451, 64, 1
-		border-l: 579, 387, 1, 64
-		border-r: 643, 387, 1, 64
-		corner-tl: 579, 387, 1, 1
-		corner-tr: 643, 387, 1, 1
-		corner-bl: 579, 446, 1, 1
-		corner-br: 643, 446, 1, 1
+	PanelRegion: 579, 387, 0, 0, 64, 64, 0, 0
+	PanelSides: Center
 
 power-meter:
 	Image: chrome.png
@@ -1615,117 +1574,103 @@ progressbar-bg:
 # A copy of dialog2 (normal button)
 progressbar-thumb:
 	Image: dialog.png
-	PanelRegion: 512, 0, 1, 1, 126, 126, 1, 1
+	PanelRegion: 513, 1, 2, 2, 122, 122, 2, 2
 
 # A copy of dialog2 (normal button)
 button:
 	Image: dialog.png
-	PanelRegion: 512, 0, 1, 1, 126, 126, 1, 1
+	PanelRegion: 513, 1, 2, 2, 122, 122, 2, 2
 
 # 5% lighter than a normal button (mouseover)
 button-hover:
 	Image: dialog.png
-	PanelRegion: 512, 128, 1, 1, 126, 126, 1, 1
+	PanelRegion: 513, 129, 2, 2, 122, 122, 2, 2
 
 # A copy of dialog3 (pressed button)
 button-pressed:
 	Image: dialog.png
-	PanelRegion: 640, 0, 1, 1, 126, 126, 1, 1
+	PanelRegion: 641, 1, 2, 2, 122, 122, 2, 2
 
 # 50% grey (disabled button)
 button-disabled:
 	Image: dialog.png
-	PanelRegion: 512, 256, 1, 1, 126, 126, 1, 1
+	PanelRegion: 513, 257, 2, 2, 122, 122, 2, 2
 
 # 10% darker than a normal button - Used in Settings when you select Display Audio Input or Advanced
 button-highlighted:
 	Image: dialog.png
-	PanelRegion: 768, 128, 1, 1, 126, 126, 1, 1
+	PanelRegion: 769, 129, 2, 2, 122, 122, 2, 2
 
 # A copy of button-highlighted - Used in Settings when you select Display Audio Input or Advanced
 button-highlighted-hover:
 	Image: dialog.png
-	PanelRegion: 768, 128, 1, 1, 126, 126, 1, 1
+	PanelRegion: 769, 129, 2, 2, 122, 122, 2, 2
 
 #  Used in Settings when you select Display Audio Input or Advanced
 button-highlighted-pressed:
 	Image: dialog.png
-	PanelRegion: 896, 128, 1, 1, 126, 126, 1, 1
+	PanelRegion: 897, 129, 2, 2, 122, 122, 2, 2
 
 # A copy of button-highlighted - Used in Settings when you select Display Audio Input or Advanced
 button-highlighted-disabled:
 	Image: dialog.png
-	PanelRegion: 768, 128, 1, 1, 126, 126, 1, 1
+	PanelRegion: 769, 129, 2, 2, 122, 122, 2, 2
 
 # vivid red - Used for the Battlefields News button
 newsbutton:
-	Image: dialog.png
-	PanelRegion: 512, 0, 1, 1, 126, 126, 1, 1
+	Inherits: button
 
 newsbutton-hover:
-	Image: dialog.png
-	PanelRegion: 512, 0, 1, 1, 126, 126, 1, 1
+	Inherits: button
 
 newsbutton-highlighted:
 	Image: dialog.png
-	PanelRegion: 768, 0, 1, 1, 126, 126, 1, 1
+	PanelRegion: 769, 1, 2, 2, 122, 122, 2, 2
 
 newsbutton-highlighted-hover:
-	Image: dialog.png
-	PanelRegion: 768, 0, 1, 1, 126, 126, 1, 1
+	Inherits: newsbutton-highlighted
 
 newsbutton-highlighted-pressed:
-	Image: dialog.png
-	PanelRegion: 640, 0, 1, 1, 126, 126, 1, 1
+	Inherits: button-pressed
 
 newsbutton-pressed:
-	Image: dialog.png
-	PanelRegion: 640, 0, 1, 1, 126, 126, 1, 1
+	Inherits: button-pressed
 
 # A copy of dialog3 (pressed button)
 textfield:
-	Image: dialog.png
-	PanelRegion: 640, 0, 1, 1, 126, 126, 1, 1
+	Inherits: button-pressed
 
 # A copy of checkbox-hover
 textfield-hover:
-	Image: dialog.png
-	PanelRegion: 640, 128, 1, 1, 126, 126, 1, 1
+	Inherits: checkbox-hover
 
 # Same as button-disabled-pressed
 textfield-disabled:
-	Image: dialog.png
-	PanelRegion: 640, 256, 1, 1, 126, 126, 1, 1
+	Inherits: checkbox-disabled
 
 # A copy of dialog3 (pressed button)
 textfield-focused:
-	Image: dialog.png
-	PanelRegion: 640, 0, 1, 1, 126, 126, 1, 1
+	Inherits: button-pressed
 
 # A copy of dialog3 (pressed button)
 scrollpanel-bg:
-	Image: dialog.png
-	PanelRegion: 640, 0, 1, 1, 126, 126, 1, 1
+	Inherits: button-pressed
 
 # A copy of dialog2 (normal button)
 scrollpanel-button:
-	Image: dialog.png
-	PanelRegion: 512, 0, 1, 1, 126, 126, 1, 1
+	Inherits: button
 
 # A copy of button-hover
 scrollpanel-button-hover:
-	Image: dialog.png
-	PanelRegion: 512, 128, 1, 1, 126, 126, 1, 1
+	Inherits: button-hover
 
 # A copy of dialog3 (pressed button)
 scrollpanel-button-pressed:
-	Image: dialog.png
-	PanelRegion: 640, 0, 1, 1, 126, 126, 1, 1
+	Inherits: button-pressed
 
 # A copy of dialog2 (normal button)
 scrollpanel-button-disabled:
-	Image: dialog.png
-	PanelRegion: 512, 0, 1, 1, 126, 126, 1, 1
+	Inherits: button
 
 slider:
 	Image: dialog.png
@@ -1734,33 +1679,27 @@ slider:
 
 # A copy of dialog3 (pressed button)
 slider-track:
-	Image: dialog.png
-	PanelRegion: 512, 0, 1, 1, 126, 126, 1, 1
+	Inherits: button
 
 # A copy of dialog2 (normal button)
 slider-thumb:
-	Image: dialog.png
-	PanelRegion: 512, 0, 1, 1, 126, 126, 1, 1
+	Inherits: button
 
 # A copy of button-hover
 slider-thumb-hover:
-	Image: dialog.png
-	PanelRegion: 512, 128, 1, 1, 126, 126, 1, 1
+	Inherits: button-hover
 
 # A copy of dialog3 (pressed button)
 slider-thumb-pressed:
-	Image: dialog.png
-	PanelRegion: 640, 0, 1, 1, 126, 126, 1, 1
+	Inherits: button-pressed
 
 # A copy of dialog2 (normal button)
 slider-thumb-disabled:
-	Image: dialog.png
-	PanelRegion: 512, 0, 1, 1, 126, 126, 1, 1
+	Inherits: button
 
 # A copy of dialog3 (pressed button)
 checkbox:
-	Image: dialog.png
-	PanelRegion: 640, 0, 1, 1, 126, 126, 1, 1
+	Inherits: button-pressed
 
 checkbox-bits:
 	Image: buttons.png
@@ -1772,32 +1711,29 @@ checkbox-bits:
 
 checkbox-hover:
 	Image: dialog.png
-	PanelRegion: 640, 128, 1, 1, 126, 126, 1, 1
+	PanelRegion: 641, 129, 2, 2, 122, 122, 2, 2
 
 # Same as button-disabled-pressed
 checkbox-disabled:
 	Image: dialog.png
-	PanelRegion: 640, 256, 1, 1, 126, 126, 1, 1
+	PanelRegion: 641, 257, 2, 2, 122, 122, 2, 2
 
 # Same as button-highlighted-pressed
 checkbox-highlighted:
 	Image: dialog.png
-	PanelRegion: 896, 0, 1, 1, 126, 126, 1, 1
+	PanelRegion: 897, 1, 2, 2, 122, 122, 2, 2
 
 # A copy of dialog3 (pressed button)
 scrollitem-selected:
-	Image: dialog.png
-	PanelRegion: 640, 0, 1, 1, 126, 126, 1, 1
+	Inherits: button-pressed
 
 # A copy of dialog2 (normal button)
 scrollitem-hover:
-	Image: dialog.png
-	PanelRegion: 512, 0, 1, 1, 126, 126, 1, 1
+	Inherits: button
 
 # A copy of dialog2 (normal button)
 scrollheader-selected:
-	Image: dialog.png
-	PanelRegion: 512, 0, 1, 1, 126, 126, 1, 1
+	Inherits: button
 
 logos:
 	Image: loadscreen.png
