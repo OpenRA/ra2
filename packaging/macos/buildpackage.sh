@@ -176,7 +176,7 @@ sleep 2
 
 # Background image is created from source svg in artsrc repository
 mkdir "/Volumes/${PACKAGING_DISPLAY_NAME}/.background/"
-tiffutil -cathidpicheck "${ARTWORK_DIR}/macos-background.png" "${ARTWORK_DIR}/macos-background-2x.png" -out "/Volumes/${PACKAGING_DISPLAY_NAME}/.background/background.tiff"
+tiffutil -cathidpicheck "${ARTWORK_DIR}/macos/background.png" "${ARTWORK_DIR}/macos-background-2x.png" -out "/Volumes/${PACKAGING_DISPLAY_NAME}/.background/background.tiff"
 
 cp "${BUILTDIR}/${PACKAGING_OSX_APP_NAME}/Contents/Resources/${MOD_ID}.icns" "/Volumes/${PACKAGING_DISPLAY_NAME}/.VolumeIcon.icns"
 
