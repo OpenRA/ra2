@@ -123,6 +123,8 @@ make core
 make version VERSION="${ENGINE_VERSION}"
 make install-engine gameinstalldir="/Contents/Resources/" DESTDIR="${BUILTDIR}/OpenRA.app"
 make install-common-mod-files gameinstalldir="/Contents/Resources/" DESTDIR="${BUILTDIR}/OpenRA.app"
+# Need the dynamic libraries
+cp *.dylib "${BUILTDIR}/Contents/Resources/"
 
 for f in ${PACKAGING_COPY_ENGINE_FILES}; do
 	mkdir -p "${BUILTDIR}/OpenRA.app/Contents/Resources/$(dirname "${f}")"
