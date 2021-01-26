@@ -77,7 +77,7 @@ namespace OpenRA.Mods.RA2.Projectiles
 		readonly WVec upVector;
 		readonly MersenneTwister random;
 		readonly bool hasLaunchEffect;
-		readonly HashSet<Pair<Color, WPos[]>> zaps;
+		readonly HashSet<KeyValuePair<Color, WPos[]>> zaps;
 
 		[Sync]
 		readonly WPos target, source;
@@ -117,7 +117,7 @@ namespace OpenRA.Mods.RA2.Projectiles
 					upVector = 1024 * upVector / upVector.Length;
 			}
 
-			zaps = new HashSet<Pair<Color, WPos[]>>();
+			zaps = new HashSet<KeyValuePair<Color, WPos[]>>();
 			foreach (var c in colors)
 			{
 				var numSegments = (direction.Length - 1) / info.SegmentLength.Length + 1;
@@ -130,7 +130,7 @@ namespace OpenRA.Mods.RA2.Projectiles
 				for (var i = 1; i < numSegments; i++)
 					offsets[i] = WPos.LerpQuadratic(source, target, angle, i, numSegments);
 
-				zaps.Add(Pair.New(c, offsets));
+				zaps.Add(new KeyValuePair<Color, WPos[]>(c, offsets));
 			}
 		}
 
@@ -157,7 +157,7 @@ namespace OpenRA.Mods.RA2.Projectiles
 			{
 				foreach (var zap in zaps)
 				{
-					var offsets = zap.Second;
+					var offsets = zap.Value;
 					for (var i = 1; i < offsets.Length - 1; i++)
 					{
 						var angle = WAngle.FromDegrees(random.Next(360));
@@ -169,7 +169,7 @@ namespace OpenRA.Mods.RA2.Projectiles
 						offsets[i] += offset;
 					}
 
-					yield return new ElectricBoltRenderable(offsets, info.ZOffset, info.Width, zap.First);
+					yield return new ElectricBoltRenderable(offsets, info.ZOffset, info.Width, zap.Key);
 				}
 			}
 		}

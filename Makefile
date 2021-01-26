@@ -102,15 +102,11 @@ check-variables:
 		exit 1; \
 	fi
 
-engine-dependencies: check-variables check-sdk-scripts
-	@./fetch-engine.sh || (printf "Unable to continue without engine files\n"; exit 1)
-	@cd $(ENGINE_DIRECTORY) && make dependencies WIN32=$(WIN32)
-
 engine: check-variables check-sdk-scripts
 	@./fetch-engine.sh || (printf "Unable to continue without engine files\n"; exit 1)
-	@cd $(ENGINE_DIRECTORY) && make core WIN32=$(WIN32)
+	@cd $(ENGINE_DIRECTORY) && make all
 
-utility: engine-dependencies engine
+utility: engine
 	@test -f "$(ENGINE_DIRECTORY)/OpenRA.Utility.exe" || (printf "OpenRA.Utility.exe not found!\n"; exit 1)
 
 core:
@@ -125,7 +121,7 @@ else
 endif
 endif
 
-all: engine-dependencies engine core
+all: engine core
 
 clean: engine
 	@command -v $(MSBUILD) >/dev/null || (echo "OpenRA requires the '$(MSBUILD)' tool provided by Mono >= 5.4."; exit 1)

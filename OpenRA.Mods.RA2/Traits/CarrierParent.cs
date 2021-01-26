@@ -31,9 +31,6 @@ namespace OpenRA.Mods.RA2.Traits
 		[Desc("After this many ticks, we remove the condition.")]
 		public readonly int LaunchingTicks = 15;
 
-		[Desc("Pip color for the spawn count.")]
-		public readonly PipType PipType = PipType.Green;
-
 		[Desc("Instantly repair children when they return?")]
 		public readonly bool InstantRepair = true;
 
@@ -45,7 +42,7 @@ namespace OpenRA.Mods.RA2.Traits
 		public override object Create(ActorInitializer init) { return new CarrierParent(init, this); }
 	}
 
-	public class CarrierParent : BaseSpawnerParent, IPips, ITick, INotifyAttack, INotifyBecomingIdle
+	public class CarrierParent : BaseSpawnerParent, ITick, INotifyAttack, INotifyBecomingIdle
 	{
 		class CarrierChildEntry : BaseSpawnerChildEntry
 		{
@@ -59,11 +56,10 @@ namespace OpenRA.Mods.RA2.Traits
 		readonly Stack<int> loadedTokens = new Stack<int>();
 
 		CarrierChildEntry[] childEntries;
-		ConditionManager conditionManager;
 
 		int respawnTicks = 0;
 
-		int launchCondition = ConditionManager.InvalidConditionToken;
+		int launchCondition = Actor.InvalidConditionToken;
 		int launchConditionTicks;
 
 		public CarrierParent(ActorInitializer init, CarrierParentInfo info)
@@ -75,7 +71,6 @@ namespace OpenRA.Mods.RA2.Traits
 		protected override void Created(Actor self)
 		{
 			base.Created(self);
-			conditionManager = self.Trait<ConditionManager>();
 
 			var burst = Info.InitialActorCount == -1 ? Info.Actors.Length : Info.InitialActorCount;
 			for (var i = 0; i < burst; i++)
@@ -102,9 +97,9 @@ namespace OpenRA.Mods.RA2.Traits
 			carrierChildEntry.SpawnerChild = child.Trait<CarrierChild>();
 		}
 
-		void INotifyAttack.PreparingAttack(Actor self, Target target, Armament a, Barrel barrel) { }
+		void INotifyAttack.PreparingAttack(Actor self, in Target target, Armament a, Barrel barrel) { }
 
-		void INotifyAttack.Attacking(Actor self, Target target, Armament a, Barrel barrel)
+		void INotifyAttack.Attacking(Actor self, in Target target, Armament a, Barrel barrel)
 		{
 			if (IsTraitDisabled)
 				return;
@@ -125,8 +120,8 @@ namespace OpenRA.Mods.RA2.Traits
 
 			if (info.LaunchingCondition != null)
 			{
-				if (launchCondition == ConditionManager.InvalidConditionToken)
-					launchCondition = conditionManager.GrantCondition(self, info.LaunchingCondition);
+				if (launchCondition == Actor.InvalidConditionToken)
+					launchCondition = self.GrantCondition(info.LaunchingCondition);
 
 				launchConditionTicks = info.LaunchingTicks;
 			}
@@ -135,10 +130,10 @@ namespace OpenRA.Mods.RA2.Traits
 
 			Stack<int> spawnContainToken;
 			if (spawnContainTokens.TryGetValue(a.Info.Name, out spawnContainToken) && spawnContainToken.Any())
-				conditionManager.RevokeCondition(self, spawnContainToken.Pop());
+				self.RevokeCondition(spawnContainToken.Pop());
 
 			if (loadedTokens.Any())
-				conditionManager.RevokeCondition(self, loadedTokens.Pop());
+				self.RevokeCondition(loadedTokens.Pop());
 
 			self.World.AddFrameEndTask(w =>
 			{
@@ -146,7 +141,8 @@ namespace OpenRA.Mods.RA2.Traits
 				// Cancel whatever it was trying to do.
 				carrierChildEntry.SpawnerChild.Stop(carrierChildEntry.Actor);
 
-				carrierChildEntry.SpawnerChild.Attack(carrierChildEntry.Actor, target);
+                // @nocheckin can't use target since it's now an unmodifiable 'in' reference
+				//carrierChildEntry.SpawnerChild.Attack(carrierChildEntry.Actor, target);
 			});
 		}
 
@@ -178,25 +174,6 @@ namespace OpenRA.Mods.RA2.Traits
 			return null;
 		}
 
-		public IEnumerable<PipType> GetPips(Actor self)
-		{
-			if (IsTraitDisabled)
-				yield break;
-
-			var inside = 0;
-			foreach (var carrierChildEntry in childEntries)
-				if (carrierChildEntry.IsValid && !carrierChildEntry.IsLaunched)
-					inside++;
-
-			for (var i = 0; i < Info.Actors.Length; i++)
-			{
-				if (i < inside)
-					yield return info.PipType;
-				else
-					yield return PipType.Transparent;
-			}
-		}
-
 		public void PickupChild(Actor self, Actor child)
 		{
 			if (info.InstantRepair)
@@ -222,22 +199,22 @@ namespace OpenRA.Mods.RA2.Traits
 
 			childEntry.RearmTicks = Util.ApplyPercentageModifiers(info.RearmTicks, reloadModifiers.Select(rm => rm.GetReloadModifier()));
 
-			if (conditionManager != null && !string.IsNullOrEmpty(info.LoadedCondition))
-				loadedTokens.Push(conditionManager.GrantCondition(self, info.LoadedCondition));
+			if (!string.IsNullOrEmpty(info.LoadedCondition))
+				loadedTokens.Push(self.GrantCondition(info.LoadedCondition));
 		}
 
 		public override void Replenish(Actor self, BaseSpawnerChildEntry entry)
 		{
 			base.Replenish(self, entry);
 
-			if (conditionManager != null && !string.IsNullOrEmpty(info.LoadedCondition))
-				loadedTokens.Push(conditionManager.GrantCondition(self, info.LoadedCondition));
+			if (!string.IsNullOrEmpty(info.LoadedCondition))
+				loadedTokens.Push(self.GrantCondition(info.LoadedCondition));
 		}
 
 		void ITick.Tick(Actor self)
 		{
-			if (launchCondition != ConditionManager.InvalidConditionToken && --launchConditionTicks < 0)
-				launchCondition = conditionManager.RevokeCondition(self, launchCondition);
+			if (launchCondition != Actor.InvalidConditionToken && --launchConditionTicks < 0)
+				launchCondition = self.RevokeCondition(launchCondition);
 
 			if (respawnTicks > 0)
 			{

@@ -39,77 +39,34 @@ namespace OpenRA.Mods.RA2.Traits
 		[Desc("The sound played when the unit is mindcontrolled.")]
 		public readonly string[] Sounds = { };
 
-		[Desc("PipType to use for indicating mindcontrolled units.")]
-		public readonly PipType PipType = PipType.Green;
-
-		[Desc("PipType to use for indicating unused mindcontrol slots.")]
-		public readonly PipType PipTypeEmpty = PipType.Transparent;
-
 		public override object Create(ActorInitializer init) { return new MindController(init.Self, this); }
 	}
 
-	public class MindController : PausableConditionalTrait<MindControllerInfo>, INotifyAttack, IPips, INotifyKilled, INotifyActorDisposing, INotifyCreated
+	public class MindController : PausableConditionalTrait<MindControllerInfo>, INotifyAttack, INotifyKilled, INotifyActorDisposing, INotifyCreated
 	{
 		readonly List<Actor> slaves = new List<Actor>();
 
 		Stack<int> controllingTokens = new Stack<int>();
-		ConditionManager conditionManager;
 
 		public IEnumerable<Actor> Slaves { get { return slaves; } }
 
 		public MindController(Actor self, MindControllerInfo info)
 			: base(info) { }
 
-		protected override void Created(Actor self)
-		{
-			conditionManager = self.TraitOrDefault<ConditionManager>();
-		}
-
 		void StackControllingCondition(Actor self, string condition)
 		{
-			if (conditionManager == null)
-				return;
-
 			if (string.IsNullOrEmpty(condition))
 				return;
 
-			controllingTokens.Push(conditionManager.GrantCondition(self, condition));
+			controllingTokens.Push(self.GrantCondition(condition));
 		}
 
 		void UnstackControllingCondition(Actor self, string condition)
 		{
-			if (conditionManager == null)
-				return;
-
 			if (string.IsNullOrEmpty(condition))
 				return;
 
-			conditionManager.RevokeCondition(self, controllingTokens.Pop());
-		}
-
-		public IEnumerable<PipType> GetPips(Actor self)
-		{
-			if (Info.Capacity > 0)
-			{
-				for (int i = slaves.Count(); i > 0; i--)
-					yield return Info.PipType;
-
-				for (int i = Info.Capacity - slaves.Count(); i > 0; i--)
-					yield return Info.PipTypeEmpty;
-			}
-			else if (slaves.Count() >= -Info.Capacity)
-			{
-				for (int i = -Info.Capacity; i > 0; i--)
-					yield return Info.PipType;
-			}
-			else
-			{
-				for (int i = slaves.Count(); i > 0; i--)
-					yield return Info.PipType;
-
-				for (int i = -Info.Capacity - slaves.Count(); i > 0; i--)
-					yield return Info.PipTypeEmpty;
-			}
+			self.RevokeCondition(controllingTokens.Pop());
 		}
 
 		public void UnlinkSlave(Actor self, Actor slave)
@@ -121,9 +78,9 @@ namespace OpenRA.Mods.RA2.Traits
 			}
 		}
 
-		void INotifyAttack.PreparingAttack(Actor self, Target target, Armament a, Barrel barrel) { }
+		void INotifyAttack.PreparingAttack(Actor self, in Target target, Armament a, Barrel barrel) { }
 
-		void INotifyAttack.Attacking(Actor self, Target target, Armament a, Barrel barrel)
+		void INotifyAttack.Attacking(Actor self, in Target target, Armament a, Barrel barrel)
 		{
 			if (IsTraitDisabled || IsTraitPaused)
 				return;
@@ -134,7 +91,7 @@ namespace OpenRA.Mods.RA2.Traits
 			if (target.Actor == null || !target.IsValidFor(self))
 				return;
 
-			if (self.Owner.Stances[target.Actor.Owner] == Stance.Ally)
+			if (self.Owner.RelationshipWith(target.Actor.Owner) == PlayerRelationship.Ally)
 				return;
 
 			var mindControllable = target.Actor.TraitOrDefault<MindControllable>();

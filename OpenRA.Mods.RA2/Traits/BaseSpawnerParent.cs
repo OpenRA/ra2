@@ -225,16 +225,16 @@ namespace OpenRA.Mods.RA2.Traits
 
 		void SetSpawnedFacing(Actor spawned, Actor spawner, Exit exit)
 		{
-			var facingOffset = facing == null ? 0 : facing.Facing;
+			var facingOffset = facing == null ? new WAngle(0) : facing.Facing;
 
-			var exitFacing = exit != null ? exit.Info.Facing : 0;
+			var exitFacing = exit != null ? exit.Info.Facing.Value : new WAngle(0);
 
 			var spawnFacing = spawned.TraitOrDefault<IFacing>();
 			if (spawnFacing != null)
-				spawnFacing.Facing = (facingOffset + exitFacing) % 256;
+				spawnFacing.Facing = new WAngle(facingOffset.Angle + exitFacing.Angle);
 
-			foreach (var t in spawned.TraitsImplementing<Turreted>())
-				t.TurretFacing = (facingOffset + exitFacing) % 256;
+			//foreach (var t in spawned.TraitsImplementing<Turreted>())
+			//	facing.Facing = new WAngle(facingOffset.Angle + exitFacing.Angle);
 		}
 
 		public void Stopchildren()

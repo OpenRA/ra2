@@ -17,7 +17,7 @@ using OpenRA.Traits;
 namespace OpenRA.Mods.RA2.Traits
 {
 	[Desc("When returning to a refinery to deliver resources, this actor will teleport if possible.")]
-	public class ChronoResourceDeliveryInfo : ITraitInfo, Requires<HarvesterInfo>
+	public class ChronoResourceDeliveryInfo : TraitInfo, Requires<HarvesterInfo>
 	{
 		[Desc("The number of ticks between each check to see if we can teleport to the refinery.")]
 		public readonly int CheckTeleportDelay = 10;
@@ -43,7 +43,7 @@ namespace OpenRA.Mods.RA2.Traits
 		[Desc("Sound where the harvester jumped to.")]
 		public readonly string WarpOutSound = null;
 
-		public virtual object Create(ActorInitializer init) { return new ChronoResourceDelivery(init.Self, this); }
+		public override object Create(ActorInitializer init) { return new ChronoResourceDelivery(init.Self, this); }
 	}
 
 	public class ChronoResourceDelivery : INotifyHarvesterAction, ITick

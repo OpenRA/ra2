@@ -18,7 +18,7 @@ require_variables() {
 
 TEMPLATE_LAUNCHER=$(python -c "import os; print(os.path.realpath('$0'))")
 TEMPLATE_ROOT=$(dirname "${TEMPLATE_LAUNCHER}")
-MOD_SEARCH_PATHS="${TEMPLATE_ROOT}/mods,./mods"
+MOD_SEARCH_PATHS="${TEMPLATE_ROOT}/mods,${TEMPLATE_ROOT}/engine/mods"
 
 # shellcheck source=mod.config
 . "${TEMPLATE_ROOT}/mod.config"
@@ -31,11 +31,11 @@ fi
 require_variables "MOD_ID" "ENGINE_VERSION" "ENGINE_DIRECTORY"
 
 cd "${TEMPLATE_ROOT}"
-if [ ! -f "${ENGINE_DIRECTORY}/OpenRA.Game.exe" ] || [ "$(cat "${ENGINE_DIRECTORY}/VERSION")" != "${ENGINE_VERSION}" ]; then
+if [ ! -f "${ENGINE_DIRECTORY}/bin/OpenRA.exe" ] || [ "$(cat "${ENGINE_DIRECTORY}/VERSION")" != "${ENGINE_VERSION}" ]; then
 	echo "Required engine files not found."
 	echo "Run \`make\` in the mod directory to fetch and build the required files, then try again.";
 	exit 1
 fi
 
 cd "${ENGINE_DIRECTORY}"
-mono OpenRA.Game.exe Engine.LaunchPath="${TEMPLATE_LAUNCHER}" "Engine.ModSearchPaths=${MOD_SEARCH_PATHS}" Game.Mod="${MOD_ID}" "$@"
+mono bin/OpenRA.exe Engine.EngineDir=".." Engine.LaunchPath="${TEMPLATE_LAUNCHER}" "Engine.ModSearchPaths=${MOD_SEARCH_PATHS}" Game.Mod="${MOD_ID}" "$@"

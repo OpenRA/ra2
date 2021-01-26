@@ -42,7 +42,7 @@ namespace OpenRA.Mods.RA2.Graphics
 				TilesetSuffixes = yaml.ToDictionary(kv => kv.Value);
 		}
 
-		public override ISpriteSequence CreateSequence(ModData modData, TileSet tileSet, SpriteCache cache, string sequence, string animation, MiniYaml info)
+		public override ISpriteSequence CreateSequence(ModData modData, string tileSet, SpriteCache cache, string sequence, string animation, MiniYaml info)
 		{
 			return new ExtendedTilesetSpecificSpriteSequence(modData, tileSet, cache, this, sequence, animation, info);
 		}
@@ -50,12 +50,12 @@ namespace OpenRA.Mods.RA2.Graphics
 
 	public class ExtendedTilesetSpecificSpriteSequence : DefaultSpriteSequence
 	{
-		public ExtendedTilesetSpecificSpriteSequence(ModData modData, TileSet tileSet, SpriteCache cache, ISpriteSequenceLoader loader, string sequence, string animation, MiniYaml info)
+		public ExtendedTilesetSpecificSpriteSequence(ModData modData, string tileSet, SpriteCache cache, ISpriteSequenceLoader loader, string sequence, string animation, MiniYaml info)
 			: base(modData, tileSet, cache, loader, sequence, animation, info) { }
 
-		string ResolveTilesetId(TileSet tileSet, Dictionary<string, MiniYaml> d)
+		string ResolveTilesetId(string tileSet, Dictionary<string, MiniYaml> d)
 		{
-			var tsId = tileSet.Id;
+			var tsId = tileSet;
 
 			MiniYaml yaml;
 			if (d.TryGetValue("TilesetOverrides", out yaml))
@@ -68,7 +68,7 @@ namespace OpenRA.Mods.RA2.Graphics
 			return tsId;
 		}
 
-		protected override string GetSpriteSrc(ModData modData, TileSet tileSet, string sequence, string animation, string sprite, Dictionary<string, MiniYaml> d)
+		protected override string GetSpriteSrc(ModData modData, string tileSet, string sequence, string animation, string sprite, Dictionary<string, MiniYaml> d)
 		{
 			var loader = (ExtendedTilesetSpecificSpriteSequenceLoader)Loader;
 
