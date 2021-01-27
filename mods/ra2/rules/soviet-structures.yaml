@@ -828,6 +828,8 @@ nairon:
 		DisplayRadarPing: True
 		Condition: invulnerability
 		PauseOnCondition: lowpower
+		Dimensions: 3, 3
+		Footprint: _x_ xxx _x_
 	SupportPowerChargeBar:
 	GrantConditionOnPowerState@LOWPOWER:
 		Condition: lowpower
@@ -896,7 +898,7 @@ namisl:
 		FlightDelay: 200
 		PauseOnCondition: lowpower
 		SelectTargetSpeechNotification: SelectTarget
-	WithNukeLaunchAnimation:
+	WithSupportPowerActivationAnimation:
 	SpawnSurvivors:
 		DeathTypes: ExplosionDeath, BulletDeath
 		Actors: e2, e2, e2, e2, e2, e2, e2

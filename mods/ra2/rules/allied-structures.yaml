@@ -1051,6 +1051,8 @@ gacsph:
 		TargetCursor: chronosphere
 		TargetOverlayPalette: effect75alpha
 		PauseOnCondition: lowpower
+		Dimensions: 3, 3
+		Footprint: _x_ xxx _x_
 	SpawnSurvivors:
 		DeathTypes: ExplosionDeath, BulletDeath
 		Actors: e1, e1, e1, e1, e1
