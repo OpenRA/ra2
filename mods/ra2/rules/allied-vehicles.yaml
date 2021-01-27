@@ -62,6 +62,14 @@ cmin:
 		SearchFromHarvesterRadius: 12
 		HarvestVoice: Move
 		DeliverVoice: Move
+	WithHarvesterPipsDecoration:
+		Position: BottomLeft
+		Margin: 4, 3
+		RequiresSelection: true
+		PipCount: 7
+		ResourceSequences:
+			Ore: pip-green
+			Gems: pip-blue
 	ChronoResourceDelivery:
 		WarpInSequence: warpout
 		WarpInSound: vchrtele.wav
