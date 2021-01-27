@@ -165,7 +165,7 @@ sqd:
 		Type: Light
 	Health:
 		HP: 200
-	SelfHealing:
+	ChangesHealth:
 		Step: 2
 		Delay: 100
 		DamageCooldown: 125

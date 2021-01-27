@@ -205,7 +205,6 @@ nahand:
 		ProductionType: Infantry
 	Power:
 		Amount: -10
-	ConditionManager:
 	InfiltrateForSupportPower:
 		Types: SpyInfiltrate
 		Proxy: barracks.infiltrated

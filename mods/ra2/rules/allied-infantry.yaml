@@ -69,7 +69,7 @@ dog:
 	-SpeedMultiplier@ELITE:
 	-ReloadDelayMultiplier@VETERAN:
 	-ReloadDelayMultiplier@ELITE:
-	-SelfHealing@ELITE:
+	-ChangesHealth@ELITE:
 	-InaccuracyMultiplier@ELITE:
 	-WithDecoration@VETERAN:
 	-WithDecoration@ELITE:
