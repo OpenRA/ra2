@@ -189,6 +189,8 @@ htk:
 		UnloadTerrainTypes: Clear, Rough, Rail, Road, DirtRoad, Beach, Ore, Gems
 		UnloadVoice: Move
 		LoadingCondition: notmobile
+	WithCargoPipsDecoration:
+		PipCount: 5
 	AttackTurreted:
 		Voice: Attack
 	AutoTarget:

@@ -2,7 +2,7 @@ shad:
 	Inherits: ^Aircraft
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Inherits@MC: ^MindControllable
-	Tooltip:
+    Tooltip:
 		Name: Night Hawk
 	Selectable:
 		Bounds: 70,60,0,-20
@@ -50,8 +50,12 @@ shad:
 	Cargo:
 		Types: Infantry
 		MaxWeight: 5
-		PipCount: 5
 		UnloadVoice: Move
+	WithCargoPipsDecoration:
+		PipCount: 5
+		Position: BottomRight
+		ResourceSequences:
+			Infantry: pip-green
 	SpawnActorOnDeath:
 		Actor: shadhusk
 	HitShape:

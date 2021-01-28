@@ -1229,3 +1229,14 @@
 	MapEditorData:
 		Categories: System
 	Interactable:
+
+^CargoPips:
+	WithCargoPipsDecoration:
+		Position: BottomLeft
+		Margin: 4, 3
+		RequiresSelection: true
+		CustomPipSequences:
+			gray: pip-gray
+			yellow: pip-yellow
+			blue: pip-blue
+			red: pip-red

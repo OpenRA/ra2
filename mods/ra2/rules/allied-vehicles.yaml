@@ -227,7 +227,6 @@ fv:
 	Cargo:
 		Types: Infantry
 		MaxWeight: 1
-		PipCount: 1
 		UnloadVoice: Move
 		LoadingCondition: notmobile
 		PassengerConditions:
@@ -244,6 +243,8 @@ fv:
 			snipe: ifv-sniper
 			spy: ifv-mg
 			cleg: ifv-chrono
+	WithCargoPipsDecoration:
+		PipCount: 1
 	Armament@primary:
 		Weapon: HoverMissile
 		LocalOffset: 128,-128,1024, 128,128,1024

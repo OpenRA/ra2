@@ -31,6 +31,12 @@ sapc:
 		UnloadTerrainTypes: Clear, Rough, Rail, Road, DirtRoad, Beach, Ore, Gems
 		UnloadVoice: Move
 		LoadingCondition: notmobile
+	WithCargoPipsDecoration:
+		PipCount: 12
+		Position: BottomRight
+		ResourceSequences:
+			Infantry: pip-green
+			Vehicles: pip-red
 	Explodes:
 		Weapon: UnitExplode
 		EmptyWeapon: UnitExplode

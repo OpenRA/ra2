@@ -499,6 +499,7 @@ cawsh12:
 	Cargo:
 		Types: Infantry
 		MaxWeight: 5
+	WithCargoPipsDecoration:
 		PipCount: 5
 	AttackGarrisoned:
 		Voice: Attack
