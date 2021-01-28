@@ -493,7 +493,7 @@ cawsh12:
 	RevealsShroud:
 		Range: 6c0
 	Turreted:
-		TurnSpeed: 255
+		TurnSpeed: 512
 	BodyOrientation:
 		QuantizedFacings: 8
 	Cargo:

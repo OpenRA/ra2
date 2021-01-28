@@ -178,7 +178,7 @@ e1:
 	-TakeCover:
 	Turreted:
 		RealignDelay: -1
-		TurnSpeed: 50
+		TurnSpeed: 200
 		InitialFacing: 512
 	WithSpriteTurret:
 		Sequence: deployed
@@ -532,7 +532,7 @@ jumpjet:
 	Aircraft:
 		CruiseAltitude: 3072
 		InitialFacing: 80
-		TurnSpeed: 255
+		TurnSpeed: 512
 		Speed: 140
 		AltitudeVelocity: 83
 		Voice: Move
@@ -585,7 +585,7 @@ jumpjet.husk:
 	Tooltip:
 		Name: Rocketeer
 	Aircraft:
-		TurnSpeed: 10
+		TurnSpeed: 40
 		Speed: 140
 	FallsToEarth:
 		Explosion: UnitExplodeSmall

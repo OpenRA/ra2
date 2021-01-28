@@ -19,7 +19,7 @@ smcv:
 		Type: Heavy
 	Mobile:
 		Speed: 60
-		TurnSpeed: 5
+		TurnSpeed: 20
 		Locomotor: heavytracked
 	RevealsShroud:
 		Range: 4c0
@@ -92,11 +92,11 @@ harv:
 	WithMuzzleOverlay:
 	AutoTarget:
 	Turreted:
-		TurnSpeed: 10
+		TurnSpeed: 40
 		Offset: 196,0,-24
 	Mobile:
 		Speed: 60
-		TurnSpeed: 8
+		TurnSpeed: 32
 		Locomotor: tracked
 	RevealsShroud:
 		Range: 4c0
@@ -124,7 +124,7 @@ dron:
 		Description: \n  Strong vs Infantry, Vehicles\n  Weak vs Aircraft
 	Mobile:
 		Speed: 150
-		TurnSpeed: 15
+		TurnSpeed: 60
 	Health:
 		HP: 100
 	Armor:
@@ -172,7 +172,7 @@ htk:
 		Description: Infantry Transport and Anti-Air/Anti-Infantry vehicle.\n  Strong vs Aircraft, Infantry\n  Weak vs Vehicles
 	Mobile:
 		Speed: 120
-		TurnSpeed: 5
+		TurnSpeed: 20
 		Locomotor: tracked
 		PauseOnCondition: notmobile || chronodisable
 	Health:
@@ -204,7 +204,7 @@ htk:
 		MuzzleSequence: muzzle
 	WithMuzzleOverlay:
 	Turreted:
-		TurnSpeed: 15
+		TurnSpeed: 60
 		Offset: -280,-3,0
 	RenderSprites:
 	RenderVoxels:
@@ -231,7 +231,7 @@ htnk:
 		Description: Soviet Main Battle Tank.\n  Strong vs Vehicles\n  Weak vs Infantry, Aircraft
 	Mobile:
 		Speed: 90
-		TurnSpeed: 5
+		TurnSpeed: 20
 		Locomotor: heavytracked
 	Health:
 		HP: 400
@@ -240,7 +240,7 @@ htnk:
 	RevealsShroud:
 		Range: 8c0
 	Turreted:
-		TurnSpeed: 5
+		TurnSpeed: 20
 	Armament@primary:
 		Weapon: 120mm
 		LocalOffset: 768,0,512
@@ -284,7 +284,7 @@ apoc:
 		Description: Soviet Advanced Battle Tank with Double Barrel\nand Anti-Aircraft Missile Launcher.\n  Strong vs Vehicles, Aircraft\n  Weak vs Infantry
 	Mobile:
 		Speed: 60
-		TurnSpeed: 5
+		TurnSpeed: 20
 		Locomotor: heavytracked
 	Health:
 		HP: 800
@@ -293,7 +293,7 @@ apoc:
 	RevealsShroud:
 		Range: 6c0
 	Turreted:
-		TurnSpeed: 5
+		TurnSpeed: 20
 	Armament@primary:
 		Weapon: 120mmx
 		LocalOffset: 768,100,640, 768,-100,640
@@ -350,7 +350,7 @@ ttnk:
 	RevealsShroud:
 		Range: 8c0
 	Turreted:
-		TurnSpeed: 5
+		TurnSpeed: 20
 	Armament@primary:
 		Weapon: TankBolt
 		LocalOffset: 280,196,640, 280,-196,640
@@ -394,7 +394,7 @@ dtruck:
 		Type: Light
 	Mobile:
 		Speed: 75
-		TurnSpeed: 5
+		TurnSpeed: 20
 		Locomotor: heavytracked
 	RevealsShroud:
 		Range: 4c0

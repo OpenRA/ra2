@@ -19,7 +19,7 @@ amcv:
 		Type: Heavy
 	Mobile:
 		Speed: 60
-		TurnSpeed: 5
+		TurnSpeed: 20
 		Locomotor: heavytracked
 	RevealsShroud:
 		Range: 4c0
@@ -82,7 +82,7 @@ cmin:
 		TargetTypes: ImmuneToRadiation
 	Mobile:
 		Speed: 60
-		TurnSpeed: 8
+		TurnSpeed: 32
 		Locomotor: tracked
 	RevealsShroud:
 		Range: 4c0
@@ -113,7 +113,7 @@ mtnk:
 		Description: Allied Main Battle Tank.\n  Strong vs Vehicles, Ships\n  Weak vs Infantry, Aircraft
 	Mobile:
 		Speed: 105
-		TurnSpeed: 5
+		TurnSpeed: 20
 		Locomotor: heavytracked
 	Health:
 		HP: 300
@@ -122,7 +122,7 @@ mtnk:
 	RevealsShroud:
 		Range: 8c0
 	Turreted:
-		TurnSpeed: 5
+		TurnSpeed: 20
 	Armament@primary:
 		Weapon: 105mm
 		LocalOffset: 832,0,512
@@ -165,7 +165,7 @@ tnkd:
 		Description: Special anti-armor unit.\n  Strong vs Vehicles, Ships\n  Weak vs Infantry, Aircraft
 	Mobile:
 		Speed: 75
-		TurnSpeed: 5
+		TurnSpeed: 20
 		Locomotor: heavytracked
 	Health:
 		HP: 400
@@ -214,7 +214,7 @@ fv:
 		Description: Multi-Purpose Vehicle.\nWithout passenger:\n  Strong vs Infantry, Aircraft\n  Weak vs Vehicles, Ships\nSpecial Ability: Armament depends on passenger.
 	Mobile:
 		Speed: 150
-		TurnSpeed: 5
+		TurnSpeed: 20
 		PauseOnCondition: notmobile || chronodisable
 	Health:
 		HP: 200
@@ -223,7 +223,7 @@ fv:
 	RevealsShroud:
 		Range: 8c0
 	Turreted:
-		TurnSpeed: 5
+		TurnSpeed: 20
 	Cargo:
 		Types: Infantry
 		MaxWeight: 1
@@ -362,13 +362,13 @@ sref:
 	Armor:
 		Type: Heavy
 	Mobile:
-		TurnSpeed: 5
+		TurnSpeed: 20
 		Speed: 60
 		Locomotor: heavytracked
 	RevealsShroud:
 		Range: 8c0
 	Turreted:
-		TurnSpeed: 10
+		TurnSpeed: 40
 		Offset: -30,0,85
 	Armament@primary:
 		Weapon: Comet
@@ -444,7 +444,7 @@ mgtk:
 	Armor:
 		Type: Light
 	Mobile:
-		TurnSpeed: 5
+		TurnSpeed: 20
 		Speed: 105
 		Locomotor: heavytracked
 	RevealsShroud:

@@ -17,7 +17,7 @@ sapc:
 	Armor:
 		Type: Heavy
 	Mobile:
-		TurnSpeed: 5
+		TurnSpeed: 20
 		Speed: 90
 		Locomotor: lcraft
 		PauseOnCondition: notmobile || chronodisable
@@ -62,7 +62,7 @@ sub:
 	Armor:
 		Type: Heavy
 	Mobile:
-		TurnSpeed: 2
+		TurnSpeed: 8
 		Speed: 60
 	-LeavesTrails:
 	RevealsShroud:
@@ -131,7 +131,7 @@ hyd:
 	Armor:
 		Type: Heavy
 	Mobile:
-		TurnSpeed: 6
+		TurnSpeed: 24
 		Speed: 120
 	RevealsShroud:
 		Range: 8c0
@@ -176,7 +176,7 @@ sqd:
 		Delay: 100
 		DamageCooldown: 125
 	Mobile:
-		TurnSpeed: 6
+		TurnSpeed: 24
 		Speed: 120
 		Locomotor: naval
 		Voice: Move

@@ -722,7 +722,7 @@ gapill:
 		RequiresCondition: !build-incomplete
 	WithMuzzleOverlay:
 	Turreted:
-		TurnSpeed: 255
+		TurnSpeed: 512
 	BodyOrientation:
 		QuantizedFacings: 8
 	WithRangeCircle:
@@ -756,7 +756,7 @@ nasam:
 	Selectable:
 		Bounds: 46, 62, 0, -20
 	Turreted:
-		TurnSpeed: 10
+		TurnSpeed: 40
 		InitialFacing: 896
 		PreviewFacing: 896
 		Offset: 550,0,0
@@ -810,7 +810,7 @@ gtgcan:
 	Selectable:
 		Bounds: 46, 62, 0, -20
 	Turreted:
-		TurnSpeed: 3
+		TurnSpeed: 12
 		InitialFacing: 896
 		PreviewFacing: 896
 		Offset: 400,0,0

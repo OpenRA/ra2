@@ -824,7 +824,7 @@
 		DeathTypes: BulletDeath
 	Mobile:
 		Voice: Move
-		TurnSpeed: 5
+		TurnSpeed: 20
 		Locomotor: wheeled
 	SelectionDecorations:
 		Palette: pips
@@ -1043,7 +1043,7 @@
 	Mobile:
 		Voice: Move
 		Locomotor: naval
-		TurnSpeed: 5
+		TurnSpeed: 20
 	LeavesTrails:
 		Image: wake
 		Palette: effect50alpha
