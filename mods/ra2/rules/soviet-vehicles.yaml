@@ -403,7 +403,7 @@ dtruck:
 		EmptyWeapon: demobomb
 	AttackFrontal:
 		Voice: Attack
-		FacingTolerance: 128
+		FacingTolerance: 512
 		RequiresCondition: !chronodisable
 	Armament@PRIMARY:
 		Weapon: DemoTruckTargeting

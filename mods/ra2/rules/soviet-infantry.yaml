@@ -196,7 +196,7 @@ terror:
 		EmptyWeapon: TerrorBomb
 	AttackFrontal:
 		Voice: Attack
-		FacingTolerance: 128
+		FacingTolerance: 512
 	Armament@PRIMARY:
 		Weapon: DemoTruckTargeting
 		PauseOnCondition: chronodisable

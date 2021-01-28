@@ -115,7 +115,7 @@ zep:
 		RequiresCondition: rank-elite
 	AttackFrontal:
 		Voice: Attack
-		FacingTolerance: 128
+		FacingTolerance: 512
 	AutoTarget:
 		ScanRadius: 7
 	RenderSprites:
@@ -179,7 +179,7 @@ orca:
 		Weapon: Maverick
 		PauseOnCondition: !ammo
 	AttackAircraft:
-		FacingTolerance: 20
+		FacingTolerance: 80
 		Voice: Attack
 	Voiced:
 		VoiceSet: HarrierVoice
@@ -314,7 +314,7 @@ hornet:
 		LandingSounds: vhorlana.wav, vhorlanb.wav
 	RenderSprites:
 	AttackAircraft:
-		FacingTolerance: 20
+		FacingTolerance: 80
 		Voice: Attack
 	AmmoPool:
 		Ammo: 5
@@ -366,7 +366,7 @@ asw:
 		PauseOnCondition: !ammo
 		RequiresCondition: rank-elite
 	AttackAircraft:
-		FacingTolerance: 20
+		FacingTolerance: 80
 		RequiresCondition: ammo
 	Aircraft:
 		AltitudeVelocity: 240

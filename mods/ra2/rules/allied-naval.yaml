@@ -99,7 +99,7 @@ dest:
 	AttackFrontal@Spawner:
 		Voice: Attack
 		Armaments: asw
-		FacingTolerance: 128
+		FacingTolerance: 512
 	WithMuzzleOverlay:
 	DetectCloaked:
 		CloakTypes: Underwater
@@ -146,7 +146,7 @@ aegis:
 		Weapon: Medusa
 	AttackFrontal:
 		Voice: Attack
-		FacingTolerance: 128
+		FacingTolerance: 512
 	AutoTarget:
 	Explodes:
 		Weapon: UnitExplode
@@ -268,7 +268,7 @@ carrier:
 		Range: 7c0
 	AttackFrontal:
 		Voice: Attack
-		FacingTolerance: 128
+		FacingTolerance: 512
 	Explodes:
 		Weapon: UnitExplode
 		EmptyWeapon: UnitExplode
