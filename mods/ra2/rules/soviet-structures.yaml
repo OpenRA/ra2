@@ -938,8 +938,8 @@ naflak:
 		Bounds: 46, 62, 0, -20
 	Turreted:
 		TurnSpeed: 10
-		InitialFacing: 224
-		PreviewFacing: 224
+		InitialFacing: 896
+		PreviewFacing: 896
 		Offset: 450,0,0
 	AttackTurreted:
 		Voice: Attack
@@ -1047,8 +1047,8 @@ nalasr:
 		Bounds: 50, 30, 0, -12
 	Turreted:
 		TurnSpeed: 10
-		InitialFacing: 224
-		PreviewFacing: 224
+		InitialFacing: 896
+		PreviewFacing: 896
 		Offset: 320,0,0
 	AttackTurreted:
 		Voice: Attack

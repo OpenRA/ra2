@@ -370,7 +370,7 @@ asw:
 		RequiresCondition: ammo
 	Aircraft:
 		AltitudeVelocity: 240
-		InitialFacing: 192
+		InitialFacing: 768
 		TurnSpeed: 8
 		Speed: 180
 		RepulsionSpeed: 40

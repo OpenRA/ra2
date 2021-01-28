@@ -63,7 +63,7 @@ crate:
 amcv.colorpicker:
 	Inherits: amcv
 	Mobile:
-		InitialFacing: 160
+		InitialFacing: 640
 	-Buildable:
 	-MapEditorData:
 	RenderSprites:

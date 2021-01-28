@@ -972,7 +972,7 @@
 		CruiseAltitude: 5600
 		CruisingCondition: cruising
 		AltitudeVelocity: 120
-		InitialFacing: 224
+		InitialFacing: 896
 		TakeOffOnCreation: false
 		IdleBehavior: ReturnToBase
 	Hovers@CRUISING:
