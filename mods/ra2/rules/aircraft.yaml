@@ -185,10 +185,12 @@ orca:
 		VoiceSet: HarrierVoice
 	AmmoPool:
 		Ammo: 1
-		PipCount: 1
-		PipType: Ammo
-		PipTypeEmpty: AmmoEmpty
 		AmmoCondition: ammo
+	WithAmmoPipsDecoration:
+		PipCount: 1
+		Position: BottomLeft
+		Margin: 4, 3
+		RequiresSelection: true
 	AutoTarget:
 	RenderSprites:
 		Image: falc
@@ -318,10 +320,9 @@ hornet:
 		Voice: Attack
 	AmmoPool:
 		Ammo: 5
-		PipCount: 5
-		PipType: Ammo
-		PipTypeEmpty: AmmoEmpty
 		AmmoCondition: ammo
+	WithAmmoPipsDecoration:
+		PipCount: 5
 	HitShape:
 	CarrierChild:
 		LandingDistance: 8c0
