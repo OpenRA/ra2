@@ -68,7 +68,7 @@ cmin:
 		RequiresSelection: true
 		PipCount: 7
 		ResourceSequences:
-			Ore: pip-green
+			Ore: pip-yellow
 			Gems: pip-blue
 	ChronoResourceDelivery:
 		WarpInSequence: warpout

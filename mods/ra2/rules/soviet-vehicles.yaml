@@ -69,7 +69,7 @@ harv:
 		RequiresSelection: true
 		PipCount: 7
 		ResourceSequences:
-			Ore: pip-green
+			Ore: pip-yellow
 			Gems: pip-blue
 	Health:
 		HP: 1000
