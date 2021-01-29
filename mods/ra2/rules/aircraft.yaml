@@ -2,7 +2,8 @@ shad:
 	Inherits: ^Aircraft
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Inherits@MC: ^MindControllable
-    Tooltip:
+	Inherits@CARGOPIPS: ^CargoPips
+	Tooltip:
 		Name: Night Hawk
 	Selectable:
 		Bounds: 70,60,0,-20

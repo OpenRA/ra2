@@ -19,7 +19,7 @@ engineer:
 	Health:
 		HP: 75
 	Passenger:
-		PipType: Blue
+		CustomPipType: Blue
 	EngineerRepair:
 	RepairsBridges:
 		RepairNotification: BridgeRepaired
@@ -74,7 +74,7 @@ dog:
 	-WithDecoration@VETERAN:
 	-WithDecoration@ELITE:
 	Passenger:
-		PipType: Yellow
+		CustomPipType: Yellow
 	RevealsShroud:
 		Range: 9c0
 	Armament:
@@ -138,7 +138,7 @@ e1:
 	Mobile:
 		PauseOnCondition: chronodisable || !undeployed
 	Passenger:
-		PipType: Green
+		CustomPipType: Green
 	RevealsShroud:
 		Range: 5c0
 	AttackFrontal:
@@ -230,7 +230,7 @@ snipe:
 	Health:
 		HP: 125
 	Passenger:
-		PipType: Red
+		CustomPipType: Red
 	RevealsShroud:
 		Range: 8c0
 	Armor:
@@ -274,7 +274,7 @@ spy:
 	RevealsShroud:
 		Range: 5c0
 	Passenger:
-		PipType: Yellow
+		CustomPipType: Yellow
 	TakeCover:
 	Disguise:
 		DisguisedCondition: disguise
@@ -334,7 +334,7 @@ ghost:
 	Armor:
 		Type: Flak
 	Passenger:
-		PipType: Red
+		CustomPipType: Red
 	Armament@primary:
 		Weapon: MP5
 		RequiresCondition: !rank-elite
@@ -473,7 +473,7 @@ tany:
 	Armor:
 		Type: Flak
 	Passenger:
-		PipType: Red
+		CustomPipType: Red
 	Armament@primary:
 		Weapon: DoublePistols
 		RequiresCondition: !rank-elite
@@ -620,7 +620,7 @@ cleg:
 	RevealsShroud:
 		Range: 8c0
 	Passenger:
-		PipType: Red
+		CustomPipType: Red
 	-Crushable:
 	-TakeCover:
 	PortableChrono:

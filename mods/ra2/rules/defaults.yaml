@@ -1236,7 +1236,8 @@
 		Margin: 4, 3
 		RequiresSelection: true
 		CustomPipSequences:
-			gray: pip-gray
-			yellow: pip-yellow
-			blue: pip-blue
-			red: pip-red
+			Gray: pip-gray
+			Green: pip-green
+			Yellow: pip-yellow
+			Blue: pip-blue
+			Red: pip-red

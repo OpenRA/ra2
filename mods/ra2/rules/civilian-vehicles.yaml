@@ -1,5 +1,6 @@
 bus:
 	Inherits: ^CivVehicle
+	Inherits@CARGOPIPS: ^CargoPips
 	Tooltip:
 		Name: School Bus
 	Cargo:
@@ -11,6 +12,7 @@ bus:
 
 limo:
 	Inherits: ^CivVehicle
+	Inherits@CARGOPIPS: ^CargoPips
 	Tooltip:
 		Name: Presidential Limousine
 	Cargo:

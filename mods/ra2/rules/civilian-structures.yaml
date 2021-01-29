@@ -481,6 +481,7 @@ cawash11.rubble:
 cawsh12:
 	Inherits: ^CivBuilding
 	Inherits@shape: ^3x3Shape
+	Inherits@CARGOPIPS: ^CargoPips
 	Building:
 		Footprint: xxx xxx xxx
 		Dimensions: 3, 3

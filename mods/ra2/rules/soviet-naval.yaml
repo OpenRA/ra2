@@ -1,6 +1,7 @@
 sapc:
 	Inherits: ^Ship
 	Inherits@MC: ^MindControllable
+	Inherits@CARGOPIPS: ^CargoPips
 	Buildable:
 		Queue: Ship
 		BuildPaletteOrder: 10

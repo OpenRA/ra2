@@ -21,7 +21,7 @@ e2:
 	Health:
 		HP: 125
 	Passenger:
-		PipType: Green
+		CustomPipType: Green
 	RevealsShroud:
 		Range: 5c0
 	AttackFrontal:
@@ -64,7 +64,7 @@ flakt:
 	Health:
 		HP: 100
 	Passenger:
-		PipType: Green
+		CustomPipType: Green
 	RevealsShroud:
 		Range: 5c0
 	AttackFrontal:
@@ -128,7 +128,7 @@ shk:
 		Type: Plate
 	-Crushable:
 	Passenger:
-		PipType: Red
+		CustomPipType: Red
 	AttackFrontal:
 		Voice: Attack
 	Armament@primary:
@@ -189,7 +189,7 @@ terror:
 	Armor:
 		Type: Flak
 	Passenger:
-		PipType: Red
+		CustomPipType: Red
 	Explodes:
 		Weapon: TerrorBomb
 		EmptyWeapon: TerrorBomb
@@ -245,7 +245,7 @@ deso:
 	-DamagedByTintedCells:
 	-Crushable:
 	Passenger:
-		PipType: Red
+		CustomPipType: Red
 	Armament@primary:
 		Weapon: RadBeamWeapon
 		RequiresCondition: !rank-elite
@@ -311,7 +311,7 @@ ivan:
 	Armor:
 		Type: None
 	Passenger:
-		PipType: Red
+		CustomPipType: Red
 	Explodes:
 		Weapon: IvanDeath
 		EmptyWeapon: IvanDeath
@@ -387,7 +387,7 @@ yuri:
 	Armor:
 		Type: None
 	Passenger:
-		PipType: Red
+		CustomPipType: Red
 	PeriodicExplosion:
 		Weapon: PsiWave
 		LocalOffset: 0,0,128

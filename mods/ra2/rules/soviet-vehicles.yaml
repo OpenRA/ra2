@@ -159,6 +159,7 @@ htk:
 	Inherits: ^Vehicle
 	Inherits@AUTOTARGET: ^AutoTargetAllAssaultMove
 	Inherits@MC: ^MindControllable
+	Inherits@CARGOPIPS: ^CargoPips
 	Valued:
 		Cost: 500
 	Tooltip:
