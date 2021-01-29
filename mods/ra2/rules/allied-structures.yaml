@@ -231,7 +231,7 @@ garefn:
 		TickLifetime: 30
 		TickVelocity: 1
 		TickRate: 10
-		DockAngle: 160
+		DockAngle: 640
 		UseStorage: false
 	CustomSellValue:
 		Value: 300
