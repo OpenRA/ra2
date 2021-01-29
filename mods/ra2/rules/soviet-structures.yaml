@@ -31,7 +31,7 @@ nacnst:
 	Transforms:
 		IntoActor: smcv
 		Offset: 1,1
-		Facing: 96
+		Facing: 384
 		DeployCursor: undeploy
 		RequiresCondition: factundeploy && !build-incomplete
 	TransformsIntoMobile:
@@ -258,7 +258,7 @@ narefn:
 	FreeActor:
 		Actor: harv
 		SpawnOffset: 3, 1
-		Facing: 160
+		Facing: 640
 	WithDockedOverlay:
 	WithIdleOverlay@bib:
 		Sequence: idle-bib
@@ -480,7 +480,7 @@ nayard:
 		ExitCell: 4,-2
 	Exit@4_5:
 		SpawnOffset: 0,-113,0
-		Facing: 160
+		Facing: 640
 		ExitCell: 4,5
 	# X 5 column
 	Exit@5_n2:
@@ -497,7 +497,7 @@ nayard:
 		ExitCell: 5,3
 	Exit@5_4:
 		SpawnOffset: 0,-113,0
-		Facing: 96
+		Facing: 384
 		ExitCell: 5,4
 	Exit@5_5:
 		ExitCell: 5,5

@@ -169,7 +169,7 @@ e1:
 		DeployedCondition: deployed
 		UndeployedCondition: undeployed
 		CanDeployOnRamps: True
-		Facing: 128
+		Facing: 512
 		RequiresCondition: !parachute
 		DeploySounds: igidepa.wav, igidepb.wav
 		UndeploySounds: igidepa.wav, igidepb.wav

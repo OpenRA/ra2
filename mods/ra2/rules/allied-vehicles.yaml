@@ -30,7 +30,7 @@ amcv:
 		Voice: Move
 		IntoActor: gacnst
 		Offset: -1,-1
-		Facing: 96
+		Facing: 384
 		TransformSounds: uplace.wav
 		NoTransformNotification: BuildingCannotPlaceAudio
 	RenderSprites:

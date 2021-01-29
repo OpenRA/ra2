@@ -27,7 +27,7 @@ lcrf:
 		Types: Infantry, Vehicle
 		MaxWeight: 12
 		PipCount: 12
-		PassengerFacing: 96
+		PassengerFacing: 384
 		UnloadTerrainTypes: Clear, Rough, Rail, Road, DirtRoad, Beach, Ore, Gems
 		UnloadVoice: Move
 		LoadingCondition: notmobile

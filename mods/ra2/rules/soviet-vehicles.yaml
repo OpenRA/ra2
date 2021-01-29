@@ -30,7 +30,7 @@ smcv:
 		Voice: Move
 		IntoActor: nacnst
 		Offset: -1,-1
-		Facing: 96
+		Facing: 384
 		TransformSounds: uplace.wav
 		NoTransformNotification: BuildingCannotPlaceAudio
 	RenderSprites:
