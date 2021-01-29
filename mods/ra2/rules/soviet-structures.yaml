@@ -1056,8 +1056,8 @@ nalasr:
 	Armament:
 		Weapon: vulcan
 		LocalOffset: 544,128,480, 544,-128,480
-		MuzzleSequence: muzzle
-		MuzzleSplitFacings: 8
+		MuzzleSequence: muzzle0
+		SequenceReference: WithMachineGunMuzzle
 	WithMuzzleOverlay:
 	BodyOrientation:
 		QuantizedFacings: 16
