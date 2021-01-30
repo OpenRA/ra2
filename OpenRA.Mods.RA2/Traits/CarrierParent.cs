@@ -135,15 +135,11 @@ namespace OpenRA.Mods.RA2.Traits
 			if (loadedTokens.Any())
 				self.RevokeCondition(loadedTokens.Pop());
 
-			self.World.AddFrameEndTask(w =>
-			{
-				// The actor might had been trying to do something before entering the carrier.
-				// Cancel whatever it was trying to do.
-				carrierChildEntry.SpawnerChild.Stop(carrierChildEntry.Actor);
-
-                // @nocheckin can't use target since it's now an unmodifiable 'in' reference
-				//carrierChildEntry.SpawnerChild.Attack(carrierChildEntry.Actor, target);
-			});
+			// This used to be a frame-end task, but we can't put "in" variables into anonymous functions
+			// The actor might had been trying to do something before entering the carrier.
+			// Cancel whatever it was trying to do.
+			carrierChildEntry.SpawnerChild.Stop(carrierChildEntry.Actor);
+			carrierChildEntry.SpawnerChild.Attack(carrierChildEntry.Actor, target);
 		}
 
 		void INotifyBecomingIdle.OnBecomingIdle(Actor self)

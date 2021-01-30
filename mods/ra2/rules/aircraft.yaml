@@ -381,6 +381,11 @@ asw:
 	AmmoPool:
 		Ammo: 5
 		AmmoCondition: ammo
+	WithAmmoPipsDecoration:
+		PipCount: 5
+		Position: BottomLeft
+		Margin: 45, 60
+		RequiresSelection: false
 	RejectsOrders:
 	SpawnActorOnDeath:
 		Actor: aswhusk

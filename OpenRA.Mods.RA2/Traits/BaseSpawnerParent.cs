@@ -227,7 +227,7 @@ namespace OpenRA.Mods.RA2.Traits
 		{
 			var facingOffset = facing == null ? new WAngle(0) : facing.Facing;
 
-			var exitFacing = exit != null ? exit.Info.Facing.Value : new WAngle(0);
+			var exitFacing = (exit != null && exit.Info.Facing != null) ? exit.Info.Facing.Value : new WAngle(0);
 
 			var spawnFacing = spawned.TraitOrDefault<IFacing>();
 			if (spawnFacing != null)
