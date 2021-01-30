@@ -822,6 +822,7 @@
 		Voice: Move
 		TurnSpeed: 20
 		Locomotor: wheeled
+	SelectionDecorations:
 	Selectable:
 		Bounds: 32,32
 	Targetable:
