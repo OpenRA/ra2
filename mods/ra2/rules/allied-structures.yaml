@@ -180,8 +180,7 @@ gapile:
 	WithTextDecoration@primary:
 		RequiresSelection: true
 		Text: PRIMARY
-		ReferencePoint: Top
-		ZOffset: 256
+		Position: Top
 		RequiresCondition: primary
 	ProductionBar:
 		ProductionType: Infantry
@@ -341,8 +340,7 @@ gaairc:
 	WithTextDecoration@primary:
 		RequiresSelection: true
 		Text: PRIMARY
-		ReferencePoint: Top
-		ZOffset: 256
+		Position: Top
 		RequiresCondition: primary
 	InfiltrateForExploration:
 		Types: SpyInfiltrate
@@ -415,8 +413,7 @@ gaweap:
 	WithTextDecoration@primary:
 		RequiresSelection: true
 		Text: PRIMARY
-		ReferencePoint: Top
-		ZOffset: 256
+		Position: Top
 		RequiresCondition: primary
 	ProductionBar:
 		ProductionType: Vehicle
@@ -564,8 +561,7 @@ gayard:
 	WithTextDecoration@primary:
 		RequiresSelection: true
 		Text: PRIMARY
-		ReferencePoint: Top
-		ZOffset: 256
+		Position: Top
 		RequiresCondition: primary
 	RallyPoint:
 		Path: 5,1
@@ -758,7 +754,6 @@ nasam:
 	Turreted:
 		TurnSpeed: 40
 		InitialFacing: 896
-		PreviewFacing: 896
 		Offset: 550,0,0
 	AttackTurreted:
 		Voice: Attack
@@ -812,7 +807,6 @@ gtgcan:
 	Turreted:
 		TurnSpeed: 12
 		InitialFacing: 896
-		PreviewFacing: 896
 		Offset: 400,0,0
 	AttackTurreted:
 		Voice: Attack

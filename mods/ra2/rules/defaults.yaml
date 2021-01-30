@@ -209,16 +209,14 @@
 		Image: rank
 		Sequence: veteran
 		Palette: pips
-		ReferencePoint: Bottom, Right
+		Position: BottomRight
 		RequiresCondition: rank-veteran && !rank-elite
-		ZOffset: 256
 	WithDecoration@ELITE:
 		Image: rank
 		Sequence: elite
 		Palette: pips
-		ReferencePoint: Bottom, Right
+		Position: BottomRight
 		RequiresCondition: rank-elite
-		ZOffset: 256
 
 ^CrateStatModifiers:
 	FirepowerMultiplier@CRATES:
@@ -331,7 +329,6 @@
 		Action: Kill
 		DeathTypes: BulletDeath
 	SelectionDecorations:
-		Palette: pips
 	Selectable:
 		Priority: 3
 	Targetable:
@@ -377,7 +374,7 @@
 	WithBuildingRepairDecoration:
 		Image: allyrepair
 		Sequence: repair
-		ReferencePoint: Center
+		Position: Center
 		Palette: mouse
 	CaptureManager:
 	FootprintPlaceBuildingPreview:
@@ -579,7 +576,6 @@
 		Locomotor: foot
 	WithTextControlGroupDecoration:
 	SelectionDecorations:
-		Palette: pips
 	Selectable:
 	Targetable:
 		TargetTypes: Ground, Infantry, DetonateAttack, Disguise
@@ -826,8 +822,6 @@
 		Voice: Move
 		TurnSpeed: 20
 		Locomotor: wheeled
-	SelectionDecorations:
-		Palette: pips
 	Selectable:
 		Bounds: 32,32
 	Targetable:
@@ -914,7 +908,6 @@
 		TargetTypes: Air
 		RequiresCondition: airborne
 	SelectionDecorations:
-		Palette: pips
 	Selectable:
 	Aircraft:
 		Voice: Move
@@ -1051,7 +1044,6 @@
 		StationaryInterval: 18
 		MovingInterval: 6
 	SelectionDecorations:
-		Palette: pips
 	Selectable:
 		Bounds: 32,32
 	Targetable:

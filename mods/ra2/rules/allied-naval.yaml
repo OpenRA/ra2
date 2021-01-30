@@ -27,7 +27,6 @@ lcrf:
 	Cargo:
 		Types: Infantry, Vehicle
 		MaxWeight: 12
-		PipCount: 12
 		PassengerFacing: 384
 		UnloadTerrainTypes: Clear, Rough, Rail, Road, DirtRoad, Beach, Ore, Gems
 		UnloadVoice: Move
@@ -35,9 +34,6 @@ lcrf:
 	WithCargoPipsDecoration:
 		PipCount: 12
 		Position: BottomRight
-		ResourceSequences:
-			Infantry: pip-green
-			Vehicles: pip-red
 	Explodes:
 		Weapon: UnitExplode
 		EmptyWeapon: UnitExplode
@@ -183,7 +179,6 @@ dlph:
 		Locomotor: naval
 		Voice: Move
 	SelectionDecorations:
-		Palette: pips
 	Selectable:
 		Bounds: 40, 40
 	Voiced:

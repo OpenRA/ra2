@@ -198,8 +198,7 @@ nahand:
 	WithTextDecoration@primary:
 		RequiresSelection: true
 		Text: PRIMARY
-		ReferencePoint: Top
-		ZOffset: 256
+		Position: Top
 		RequiresCondition: primary
 	ProductionBar:
 		ProductionType: Infantry
@@ -363,8 +362,7 @@ naweap:
 	WithTextDecoration@primary:
 		RequiresSelection: true
 		Text: PRIMARY
-		ReferencePoint: Top
-		ZOffset: 256
+		Position: Top
 		RequiresCondition: primary
 	ProductionBar:
 		ProductionType: Vehicle
@@ -509,8 +507,7 @@ nayard:
 	WithTextDecoration@primary:
 		RequiresSelection: true
 		Text: PRIMARY
-		ReferencePoint: Top
-		ZOffset: 256
+		Position: Top
 		RequiresCondition: primary
 	RallyPoint:
 		Path: 5,1
@@ -939,7 +936,6 @@ naflak:
 	Turreted:
 		TurnSpeed: 40
 		InitialFacing: 896
-		PreviewFacing: 896
 		Offset: 450,0,0
 	AttackTurreted:
 		Voice: Attack
@@ -1048,7 +1044,6 @@ nalasr:
 	Turreted:
 		TurnSpeed: 40
 		InitialFacing: 896
-		PreviewFacing: 896
 		Offset: 320,0,0
 	AttackTurreted:
 		Voice: Attack

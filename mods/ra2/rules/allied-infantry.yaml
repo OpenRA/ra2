@@ -289,9 +289,8 @@ spy:
 		Image: pips
 		Sequence: pip-disguise
 		Palette: pips
-		ReferencePoint: Top, Right
-		ZOffset: 256
 		RequiresCondition: disguise
+		Position: TopRight
 	Voiced:
 		VoiceSet: SpyVoice
 	Guard:

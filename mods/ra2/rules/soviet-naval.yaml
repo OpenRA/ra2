@@ -27,7 +27,6 @@ sapc:
 	Cargo:
 		Types: Infantry, Vehicle
 		MaxWeight: 12
-		PipCount: 12
 		PassengerFacing: 96
 		UnloadTerrainTypes: Clear, Rough, Rail, Road, DirtRoad, Beach, Ore, Gems
 		UnloadVoice: Move
@@ -35,9 +34,6 @@ sapc:
 	WithCargoPipsDecoration:
 		PipCount: 12
 		Position: BottomRight
-		ResourceSequences:
-			Infantry: pip-green
-			Vehicles: pip-red
 	Explodes:
 		Weapon: UnitExplode
 		EmptyWeapon: UnitExplode
@@ -182,7 +178,6 @@ sqd:
 		Locomotor: naval
 		Voice: Move
 	SelectionDecorations:
-		Palette: pips
 	Selectable:
 		Bounds: 80, 30
 	Voiced:

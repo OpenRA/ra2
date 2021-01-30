@@ -266,8 +266,8 @@ fv:
 		RequiresCondition: ifv-repair
 		Cursor: goldwrench
 		OutsideRangeCursor: goldwrench
-		TargetStances: Ally
-		ForceTargetStances: None
+		TargetRelationships: Ally
+		ForceTargetRelationships: None
 	Armament@sniper:
 		Weapon: AWPE
 		LocalOffset: 188,0,600

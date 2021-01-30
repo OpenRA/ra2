@@ -55,8 +55,6 @@ shad:
 	WithCargoPipsDecoration:
 		PipCount: 5
 		Position: BottomRight
-		ResourceSequences:
-			Infantry: pip-green
 	SpawnActorOnDeath:
 		Actor: shadhusk
 	HitShape:
