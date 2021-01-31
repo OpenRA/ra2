@@ -884,7 +884,6 @@ namisl:
 		DisplayBeacon: true
 		DisplayRadarPing: true
 		CameraRemoveDelay: 70
-		FlashType: Nuke
 		ArrowSequence: arrow
 		CameraRange: 10
 		TrailImage: nukesmoke
