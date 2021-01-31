@@ -107,7 +107,7 @@ engine: check-variables check-sdk-scripts
 	@cd $(ENGINE_DIRECTORY) && make all
 
 utility: engine
-	@test -f "$(ENGINE_DIRECTORY)/OpenRA.Utility.exe" || (printf "OpenRA.Utility.exe not found!\n"; exit 1)
+	@test -f "$(ENGINE_DIRECTORY)/bin/OpenRA.Utility.exe" || (printf "OpenRA.Utility.exe not found!\n"; exit 1)
 
 core:
 	@command -v $(MSBUILD) >/dev/null || (echo "OpenRA requires the '$(MSBUILD)' tool provided by Mono >= 5.4."; exit 1)
@@ -153,12 +153,12 @@ ifneq ("$(MOD_SOLUTION_FILES)","")
 	@$(MSBUILD) -t:build -p:Configuration=Debug
 endif
 	@echo "Checking runtime assemblies..."
-	@MOD_SEARCH_PATHS="$(MOD_SEARCH_PATHS)" mono --debug "$(ENGINE_DIRECTORY)/OpenRA.Utility.exe" $(MOD_ID) --check-runtime-assemblies $(WHITELISTED_OPENRA_ASSEMBLIES) $(WHITELISTED_THIRDPARTY_ASSEMBLIES) $(WHITELISTED_CORE_ASSEMBLIES) $(WHITELISTED_MOD_ASSEMBLIES)
+	@ENGINE_DIR='..' MOD_SEARCH_PATHS="$(MOD_SEARCH_PATHS)" mono --debug "$(ENGINE_DIRECTORY)/bin/OpenRA.Utility.exe" $(MOD_ID) --check-runtime-assemblies $(WHITELISTED_OPENRA_ASSEMBLIES) $(WHITELISTED_THIRDPARTY_ASSEMBLIES) $(WHITELISTED_CORE_ASSEMBLIES) $(WHITELISTED_MOD_ASSEMBLIES)
 	@echo "Checking for explicit interface violations..."
-	@MOD_SEARCH_PATHS="$(MOD_SEARCH_PATHS)" mono --debug "$(ENGINE_DIRECTORY)/OpenRA.Utility.exe" $(MOD_ID) --check-explicit-interfaces
+	@ENGINE_DIR='..' MOD_SEARCH_PATHS="$(MOD_SEARCH_PATHS)" mono --debug "$(ENGINE_DIRECTORY)/bin/OpenRA.Utility.exe" $(MOD_ID) --check-explicit-interfaces
 	@echo "Checking for incorrect conditional trait interface overrides..."
-	@MOD_SEARCH_PATHS="$(MOD_SEARCH_PATHS)" mono --debug "$(ENGINE_DIRECTORY)/OpenRA.Utility.exe" $(MOD_ID) --check-conditional-trait-interface-overrides
+	@ENGINE_DIR='..' MOD_SEARCH_PATHS="$(MOD_SEARCH_PATHS)" mono --debug "$(ENGINE_DIRECTORY)/bin/OpenRA.Utility.exe" $(MOD_ID) --check-conditional-trait-interface-overrides
 
 test: utility
 	@echo "Testing $(MOD_ID) mod MiniYAML..."
-	@MOD_SEARCH_PATHS="$(MOD_SEARCH_PATHS)" mono --debug "$(ENGINE_DIRECTORY)/OpenRA.Utility.exe" $(MOD_ID) --check-yaml
+	@ENGINE_DIR='..' MOD_SEARCH_PATHS="$(MOD_SEARCH_PATHS)" mono --debug "$(ENGINE_DIRECTORY)/bin/OpenRA.Utility.exe" $(MOD_ID) --check-yaml
