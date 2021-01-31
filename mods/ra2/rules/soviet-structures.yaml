@@ -821,7 +821,7 @@ nairon:
 		EndChargeSound: siroread.wav
 		EndChargeSpeechNotification: IronCurtainReady
 		OnFireSound: siroon.wav
-		DisplayTimerStances: Ally, Neutral, Enemy
+		DisplayTimerRelationships: Ally, Neutral, Enemy
 		DisplayRadarPing: True
 		Condition: invulnerability
 		PauseOnCondition: lowpower
@@ -880,7 +880,7 @@ namisl:
 		MissileDelay: 35
 		SpawnOffset: 0,0,-1c0
 		IsPlayerPalette: true
-		DisplayTimerStances: Ally, Neutral, Enemy
+		DisplayTimerRelationships: Ally, Neutral, Enemy
 		DisplayBeacon: true
 		DisplayRadarPing: true
 		CameraRemoveDelay: 70
