@@ -86,6 +86,7 @@ flata:
 
 fv:
 	Inherits@MC: ^MindControllable
+	Inherits@Muzzle: ^WithMachineGunMuzzle
 	icon: fvicon
 
 mgtk:
