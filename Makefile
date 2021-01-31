@@ -159,6 +159,6 @@ endif
 	@echo "Checking for incorrect conditional trait interface overrides..."
 	@ENGINE_DIR='..' MOD_SEARCH_PATHS="$(MOD_SEARCH_PATHS)" mono --debug "$(ENGINE_DIRECTORY)/bin/OpenRA.Utility.exe" $(MOD_ID) --check-conditional-trait-interface-overrides
 
-test: utility
+test: utility engine core
 	@echo "Testing $(MOD_ID) mod MiniYAML..."
 	@ENGINE_DIR='..' MOD_SEARCH_PATHS="$(MOD_SEARCH_PATHS)" mono --debug "$(ENGINE_DIRECTORY)/bin/OpenRA.Utility.exe" $(MOD_ID) --check-yaml
