@@ -252,7 +252,7 @@ narefn:
 	InfiltrateForCash:
 		Types: SpyInfiltrate
 		Percentage: 50
-		Notification: CreditsStolen
+		InfiltratedNotification: CreditsStolen
 		Minimum: 500
 	FreeActor:
 		Actor: harv
