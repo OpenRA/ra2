@@ -143,7 +143,7 @@ shk:
 		Weapon: AssaultBolt
 		LocalOffset: 320,128,1024
 		TargetRelationships: Ally
-		ForceRelationships: None
+		ForceTargetRelationships: None
 		Cursor: ability
 		OutsideRangeCursor: ability
 	AmmoPool:
