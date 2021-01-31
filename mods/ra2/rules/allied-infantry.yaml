@@ -103,6 +103,8 @@ dog:
 	-TakeCover:
 	QuantizeFacingsFromSequence:
 		Sequence: stand
+	WithInfantryBody:
+		DefaultAttackSequence: eat
 	WithDeathAnimation@normal:
 		DeathTypes:
 			ExplosionDeath: 1
