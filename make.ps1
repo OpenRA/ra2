@@ -384,8 +384,8 @@ if ($command -eq "all" -or $command -eq "clean")
 	}
 }
 
-$utilityPath = $env:ENGINE_DIRECTORY + "/OpenRA.Utility.exe"
-$styleCheckPath = $env:ENGINE_DIRECTORY + "/OpenRA.StyleCheck.exe"
+$utilityPath = $env:ENGINE_DIRECTORY + "/bin/OpenRA.Utility.exe"
+$styleCheckPath = $env:ENGINE_DIRECTORY + "/bin/OpenRA.StyleCheck.exe"
 
 $execute = $command
 if ($command.Length -gt 1)
