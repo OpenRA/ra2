@@ -135,11 +135,13 @@ namespace OpenRA.Mods.RA2.Traits
 			if (loadedTokens.Any())
 				self.RevokeCondition(loadedTokens.Pop());
 
-			// This used to be a frame-end task, but we can't put "in" variables into anonymous functions
-			// The actor might had been trying to do something before entering the carrier.
-			// Cancel whatever it was trying to do.
-			carrierChildEntry.SpawnerChild.Stop(carrierChildEntry.Actor);
-			carrierChildEntry.SpawnerChild.Attack(carrierChildEntry.Actor, target);
+            // Hack around 'in' variables not being able to be used in lambdas
+            var _target = target;
+            self.World.AddFrameEndTask(w =>
+            {
+                carrierChildEntry.SpawnerChild.Stop(carrierChildEntry.Actor);
+                carrierChildEntry.SpawnerChild.Attack(carrierChildEntry.Actor, _target);
+            });
 		}
 
 		void INotifyBecomingIdle.OnBecomingIdle(Actor self)
