@@ -65,6 +65,7 @@ cmin:
 	WithHarvesterPipsDecoration:
 		Position: BottomLeft
 		Margin: 4, 3
+		Palette: ra
 		RequiresSelection: true
 		PipCount: 7
 		ResourceSequences:

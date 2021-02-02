@@ -67,6 +67,7 @@ harv:
 		Position: BottomLeft
 		Margin: 4, 3
 		RequiresSelection: true
+		Palette: ra
 		PipCount: 7
 		ResourceSequences:
 			Ore: pip-yellow
