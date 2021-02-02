@@ -20,7 +20,7 @@ _ReSharper.*/
 /*.exe
 /*.dll
 /*.dll.config
-/*.so
+*.so
 /*.dylib
 /*.pdb
 /*.mdb
