@@ -1227,9 +1227,9 @@
 	WithCargoPipsDecoration:
 		Position: BottomLeft
 		Margin: 4, 3
+		Palette: pips
 		RequiresSelection: true
 		CustomPipSequences:
-			Gray: pip-gray
 			Green: pip-green
 			Yellow: pip-yellow
 			Blue: pip-blue

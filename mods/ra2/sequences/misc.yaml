@@ -123,11 +123,11 @@ pips:
 		Length: 10
 	pip-empty: pips2
 	pip-green: pips2
-		Start: 1
+		Start: 3
 	pip-yellow: pips2
 		Start: 2
 	pip-gray: pips2
-		Start: 3
+		Start: 1
 	pip-red: pips2
 		Start: 4
 	pip-blue: pips2
