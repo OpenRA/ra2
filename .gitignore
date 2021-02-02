@@ -52,6 +52,7 @@ StyleCopViolations.xml
 
 # Mac OS X
 .DS_Store
+.idea
 
 # XCode
 temp.c

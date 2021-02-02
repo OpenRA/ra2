@@ -1,8 +1,13 @@
 #!/bin/sh
 
 set -e
-command -v python >/dev/null 2>&1 || { echo >&2 "This script requires python."; exit 1; }
-command -v mono >/dev/null 2>&1 || { echo >&2 "This script requires mono."; exit 1; }
+command -v mono >/dev/null 2>&1 || { echo >&2 "The OpenRA mod SDK requires mono."; exit 1; }
+if command -v python3 >/dev/null 2>&1; then
+	PYTHON="python3"
+else
+	command -v python >/dev/null 2>&1 || { echo >&2 "The OpenRA mod SDK requires python."; exit 1; }
+	PYTHON="python"
+fi
 
 require_variables() {
 	missing=""
@@ -16,9 +21,9 @@ require_variables() {
 	fi
 }
 
-TEMPLATE_LAUNCHER=$(python -c "import os; print(os.path.realpath('$0'))")
+TEMPLATE_LAUNCHER=$(${PYTHON} -c "import os; print(os.path.realpath('$0'))")
 TEMPLATE_ROOT=$(dirname "${TEMPLATE_LAUNCHER}")
-MOD_SEARCH_PATHS="${TEMPLATE_ROOT}/mods,${TEMPLATE_ROOT}/engine/mods"
+MOD_SEARCH_PATHS="${TEMPLATE_ROOT}/mods,./mods"
 
 # shellcheck source=mod.config
 . "${TEMPLATE_ROOT}/mod.config"
@@ -38,4 +43,4 @@ if [ ! -f "${ENGINE_DIRECTORY}/bin/OpenRA.exe" ] || [ "$(cat "${ENGINE_DIRECTORY
 fi
 
 cd "${ENGINE_DIRECTORY}"
-mono bin/OpenRA.exe Engine.EngineDir=".." Engine.LaunchPath="${TEMPLATE_LAUNCHER}" "Engine.ModSearchPaths=${MOD_SEARCH_PATHS}" Game.Mod="${MOD_ID}" "$@"
+mono --debug bin/OpenRA.exe Engine.EngineDir=".." Engine.LaunchPath="${TEMPLATE_LAUNCHER}" "Engine.ModSearchPaths=${MOD_SEARCH_PATHS}" Game.Mod="${MOD_ID}" "$@"

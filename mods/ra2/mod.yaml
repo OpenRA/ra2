@@ -12,7 +12,7 @@ PackageFormats: Mix, AudioBag
 
 Packages:
 	~^SupportDir|Content/ra2
-	.
+	^EngineDir
 	$ra2: ra2
 	^EngineDir|./mods/common: common
 	~ra2.mix
