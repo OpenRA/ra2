@@ -234,14 +234,14 @@ nadept:
 		Start: 2
 		ShadowStart: 4
 	bib: ngdeptbb
-		ShadowStart: 3
+		ShadowStart: 2
 		ZOffset: -1c511
 		Offset: -15, -53, 12
 		ZRamp: 1
 		-DepthSprite:
 	damaged-bib: ngdeptbb
 		Start: 1
-		ShadowStart: 2
+		ShadowStart: 3
 		ZOffset: -1c511
 		Offset: -15, -53, 12
 		ZRamp: 1
