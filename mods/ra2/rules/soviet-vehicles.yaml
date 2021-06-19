@@ -331,7 +331,7 @@ ttnk:
 		Prerequisites: ~naweap, naradr, ~vehicles.russia
 		Description: Russian special tank armed with dual small Tesla Coils.\n  Strong vs Vehicles, Infantry\n  Weak vs Aircraft
 	Mobile:
-		Speed: 75
+		Speed: 90
 		Locomotor: heavytracked
 	Health:
 		HP: 300
