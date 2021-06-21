@@ -181,7 +181,6 @@
 		ValuePerUnit: 25
 		Type: Ore
 		Name: Valuable Minerals
-		PipColor: Yellow
 		AllowedTerrainTypes: Clear, Rough, Road
 		AllowUnderActors: false
 		TerrainType: Ore
@@ -193,7 +192,6 @@
 		ValuePerUnit: 50
 		Type: Gems
 		Name: Valuable Minerals
-		PipColor: Red
 		AllowedTerrainTypes: Clear, Rough, Road
 		AllowUnderActors: false
 		TerrainType: Gems
@@ -215,29 +213,29 @@ World:
 	SmudgeLayer@smallscorch:
 		Type: SmallScorch
 		Sequence: smallscorches
-		SmokeType: smallfire
-		SmokePercentage: 50
+		SmokeImage: smallfire
+		SmokeChance: 50
 	SmudgeLayer@mediumscorch:
 		Type: MediumScorch
 		Sequence: mediumscorches
-		SmokeType: mediumfire
-		SmokePercentage: 75
+		SmokeImage: mediumfire
+		SmokeChance: 75
 	SmudgeLayer@largescorch:
 		Type: LargeScorch
 		Sequence: largescorches
-		SmokeType: largefire
-		SmokePercentage: 100
+		SmokeImage: largefire
+		SmokeChance: 100
 	SmudgeLayer@smallcrater:
 		Type: SmallCrater
-		SmokeType: smallsmoke
+		SmokeImage: smallsmoke
 		Sequence: smallcraters
 	SmudgeLayer@mediumcrater:
 		Type: MediumCrater
-		SmokeType: smallsmoke
+		SmokeImage: smallsmoke
 		Sequence: mediumcraters
 	SmudgeLayer@largecrater:
 		Type: LargeCrater
-		SmokeType: largesmoke
+		SmokeImage: largesmoke
 		Sequence: largecraters
 	ResourceLayer:
 	ResourceRenderer:

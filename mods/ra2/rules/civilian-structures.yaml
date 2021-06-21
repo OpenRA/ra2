@@ -481,6 +481,7 @@ cawash11.rubble:
 cawsh12:
 	Inherits: ^CivBuilding
 	Inherits@shape: ^3x3Shape
+	Inherits@CARGOPIPS: ^CargoPips
 	Building:
 		Footprint: xxx xxx xxx
 		Dimensions: 3, 3
@@ -493,12 +494,13 @@ cawsh12:
 	RevealsShroud:
 		Range: 6c0
 	Turreted:
-		TurnSpeed: 255
+		TurnSpeed: 512
 	BodyOrientation:
 		QuantizedFacings: 8
 	Cargo:
 		Types: Infantry
 		MaxWeight: 5
+	WithCargoPipsDecoration:
 		PipCount: 5
 	AttackGarrisoned:
 		Voice: Attack

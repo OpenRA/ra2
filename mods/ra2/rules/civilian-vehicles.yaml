@@ -1,22 +1,26 @@
 bus:
 	Inherits: ^CivVehicle
+	Inherits@CARGOPIPS: ^CargoPips
 	Tooltip:
 		Name: School Bus
 	Cargo:
 		Types: Infantry
 		MaxWeight: 20
-		PipCount: 5
 		UnloadVoice: Move
+	WithCargoPipsDecoration:
+		PipCount: 5
 
 limo:
 	Inherits: ^CivVehicle
+	Inherits@CARGOPIPS: ^CargoPips
 	Tooltip:
 		Name: Presidential Limousine
 	Cargo:
 		Types: Infantry
 		MaxWeight: 20
-		PipCount: 5
 		UnloadVoice: Move
+	WithCargoPipsDecoration:
+		PipCount: 5
 
 pick:
 	Inherits: ^CivVehicle

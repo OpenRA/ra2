@@ -13,15 +13,15 @@ else
 	OUTPUTDIR=$2
 fi
 
-command -v python >/dev/null 2>&1 || { echo >&2 "The Red Alert 2 mod requires python."; exit 1; }
-command -v make >/dev/null 2>&1 || { echo >&2 "The Red Alert 2 mod requires make."; exit 1; }
+command -v python3 >/dev/null 2>&1 || { echo >&2 "The OpenRA mod SDK packaging requires python 3."; exit 1; }
+command -v make >/dev/null 2>&1 || { echo >&2 "The OpenRA mod SDK packaging requires make."; exit 1; }
 
 if [[ "$OSTYPE" != "darwin"* ]]; then
-	command -v curl >/dev/null 2>&1 || command -v wget > /dev/null 2>&1 || { echo >&2 "The Red Alert 2 mod requires curl or wget."; exit 1; }
-	command -v makensis >/dev/null 2>&1 || { echo >&2 "The Red Alert 2 mod requires makensis."; exit 1; }
+	command -v curl >/dev/null 2>&1 || command -v wget > /dev/null 2>&1 || { echo >&2 "The OpenRA mod SDK packaging requires curl or wget."; exit 1; }
+	command -v makensis >/dev/null 2>&1 || { echo >&2 "The OpenRA mod SDK packaging requires makensis."; exit 1; }
 fi
 
-PACKAGING_DIR=$(python -c "import os; print(os.path.dirname(os.path.realpath('$0')))")
+PACKAGING_DIR=$(python3 -c "import os; print(os.path.dirname(os.path.realpath('$0')))")
 
 if [[ "$OSTYPE" == "darwin"* ]]; then
 	echo "Windows packaging requires a Linux host."

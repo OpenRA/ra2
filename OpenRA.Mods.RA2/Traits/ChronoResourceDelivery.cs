@@ -17,7 +17,7 @@ using OpenRA.Traits;
 namespace OpenRA.Mods.RA2.Traits
 {
 	[Desc("When returning to a refinery to deliver resources, this actor will teleport if possible.")]
-	public class ChronoResourceDeliveryInfo : ITraitInfo, Requires<HarvesterInfo>
+	public class ChronoResourceDeliveryInfo : TraitInfo, Requires<HarvesterInfo>
 	{
 		[Desc("The number of ticks between each check to see if we can teleport to the refinery.")]
 		public readonly int CheckTeleportDelay = 10;
@@ -26,11 +26,11 @@ namespace OpenRA.Mods.RA2.Traits
 		public readonly string Image = null;
 
 		[Desc("Sequence used for the effect played where the harvester jumped from.")]
-		[SequenceReference("Image")]
+		[SequenceReference(nameof(Image), allowNullImage: true)]
 		public readonly string WarpInSequence = null;
 
 		[Desc("Sequence used for the effect played where the harvester jumped to.")]
-		[SequenceReference("Image")]
+		[SequenceReference(nameof(Image), allowNullImage: true)]
 		public readonly string WarpOutSequence = null;
 
 		[Desc("Palette to render the warp in/out sprites in.")]
@@ -43,7 +43,7 @@ namespace OpenRA.Mods.RA2.Traits
 		[Desc("Sound where the harvester jumped to.")]
 		public readonly string WarpOutSound = null;
 
-		public virtual object Create(ActorInitializer init) { return new ChronoResourceDelivery(init.Self, this); }
+		public override object Create(ActorInitializer init) { return new ChronoResourceDelivery(init.Self, this); }
 	}
 
 	public class ChronoResourceDelivery : INotifyHarvesterAction, ITick

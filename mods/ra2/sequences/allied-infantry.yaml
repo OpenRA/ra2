@@ -25,6 +25,11 @@ adog:
 		Length: 1
 		Facings: 32
 	icon: adogicon
+	eat:
+		Start: 104
+		Length: 14
+		Facings: 8
+		Tick: 120
 
 dlph:
 	stand:

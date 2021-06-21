@@ -19,7 +19,7 @@ namespace OpenRA.Mods.RA2.Traits
 {
 	[Desc("Draws an arc between a mindcontroller actor and all its victims",
 		"or an actively mindcontrolled actor and it's controller.")]
-	public class WithMindControlArcInfo : ITraitInfo
+	public class WithMindControlArcInfo : TraitInfo
 	{
 		[Desc("Color of the arc.")]
 		public readonly Color Color = Color.Red;
@@ -43,7 +43,7 @@ namespace OpenRA.Mods.RA2.Traits
 		[Desc("Equivalent to sequence ZOffset. Controls Z sorting.")]
 		public readonly int ZOffset = 0;
 
-		public virtual object Create(ActorInitializer init) { return new WithMindControlArc(init.Self, this); }
+		public override object Create(ActorInitializer init) { return new WithMindControlArc(init.Self, this); }
 	}
 
 	public class WithMindControlArc : IRenderAboveShroudWhenSelected, INotifySelected, INotifyCreated

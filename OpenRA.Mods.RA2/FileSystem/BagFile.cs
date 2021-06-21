@@ -100,7 +100,6 @@ namespace OpenRA.Mods.Cnc.FileSystem
 				// Construct a merged stream
 				var waveStream = SegmentStream.CreateWithoutOwningStream(s, entry.Offset, (int)entry.Length);
 				var mergedStream = new MergedStream(waveHeaderMemoryStream, waveStream);
-				mergedStream.SetLength(waveHeaderMemoryStream.Length + entry.Length);
 
 				return mergedStream;
 			}

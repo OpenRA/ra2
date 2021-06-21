@@ -39,6 +39,8 @@ civbfm:
 	Inherits: ^CivilianInfantry
 	Tooltip:
 		Name: Beach Fat Male
+	WithInfantryBody:
+		-DefaultAttackSequence:
 
 civbf:
 	Inherits: ^CivilianInfantry
@@ -46,11 +48,15 @@ civbf:
 		VoiceSet: CivilianAlliedFemaleVoice
 	Tooltip:
 		Name: Beach Fat Female
+	WithInfantryBody:
+		-DefaultAttackSequence:
 
 civbtm:
 	Inherits: ^CivilianInfantry
 	Tooltip:
 		Name: Beach Thin Male
+	WithInfantryBody:
+		-DefaultAttackSequence:
 
 civsfm:
 	Inherits: ^CivilianInfantry
@@ -75,6 +81,7 @@ civstm:
 
 vladimir:
 	Inherits: ^CivilianInfantry
+	-ScaredyCat:
 	Tooltip:
 		Name: Vladimir
 		GenericVisibility: None
@@ -83,6 +90,7 @@ vladimir:
 
 pentgen:
 	Inherits: ^CivilianInfantry
+	-ScaredyCat:
 	Tooltip:
 		Name: Pentagon General
 		GenericVisibility: None
@@ -91,6 +99,7 @@ pentgen:
 
 ssrv:
 	Inherits: ^CivilianInfantry
+	-ScaredyCat:
 	Tooltip:
 		Name: Secret Service
 		GenericVisibility: None
@@ -102,3 +111,5 @@ pres:
 	Tooltip:
 		Name: President
 		GenericVisibility: None
+	WithInfantryBody:
+		-DefaultAttackSequence:

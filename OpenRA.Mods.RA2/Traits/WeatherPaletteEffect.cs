@@ -19,7 +19,7 @@ namespace OpenRA.Mods.RA2.Traits
 	using Util = OpenRA.Graphics.Util;
 
 	[Desc("Global palette effect with a fixed color.")]
-	public class WeatherPaletteEffectInfo : ITraitInfo
+	public class WeatherPaletteEffectInfo : TraitInfo
 	{
 		public readonly string[] ExcludePalette = { "cursor", "chrome", "colorpicker", "fog", "shroud", "effect" };
 
@@ -34,7 +34,7 @@ namespace OpenRA.Mods.RA2.Traits
 		[Desc("Set this when using multiple independent flash effects.")]
 		public readonly string Type = null;
 
-		public object Create(ActorInitializer init) { return new WeatherPaletteEffect(this); }
+		public override object Create(ActorInitializer init) { return new WeatherPaletteEffect(this); }
 	}
 
 	public class WeatherPaletteEffect : IPaletteModifier, ITick

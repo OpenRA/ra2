@@ -39,27 +39,9 @@ function Clean-Command
 	}
 
 	dotnet clean /nologo
-	rm *.dll
-	rm mods/*/*.dll
-	rm *.dll.config
-	rm *.pdb
-	rm mods/*/*.pdb
-	rm *.exe
-	rm ./*/bin -r
-	rm ./*/obj -r
-
-	rm $env:ENGINE_DIRECTORY/*.dll
-	rm $env:ENGINE_DIRECTORY/mods/*/*.dll
-	rm env:ENGINE_DIRECTORY/*.config
-	rm env:ENGINE_DIRECTORY/*.pdb
-	rm mods/*/*.pdb
-	rm env:ENGINE_DIRECTORY/*.exe
-	rm env:ENGINE_DIRECTORY/*/bin -r
-	rm env:ENGINE_DIRECTORY/*/obj -r
-	if (Test-Path env:ENGINE_DIRECTORY/thirdparty/download/)
-	{
-		rmdir env:ENGINE_DIRECTORY/thirdparty/download -Recurse -Force
-	}
+	Remove-Item ./*/obj -Recurse -ErrorAction Ignore
+	Remove-Item env:ENGINE_DIRECTORY/bin -Recurse -ErrorAction Ignore
+	Remove-Item env:ENGINE_DIRECTORY/*/obj -Recurse -ErrorAction Ignore
 
 	Write-Host "Clean complete." -ForegroundColor Green
 }
@@ -117,7 +99,7 @@ function Test-Command
 	}
 
 	Write-Host "Testing $modID mod MiniYAML..." -ForegroundColor Cyan
-	Invoke-Expression "$utilityPath $modID --check-yaml"
+	InvokeCommand "$utilityPath $modID --check-yaml"
 }
 
 function Check-Command
@@ -137,11 +119,14 @@ function Check-Command
 
 	if ((CheckForUtility) -eq 0)
 	{
+		Write-Host "Checking runtime assemblies..." -ForegroundColor Cyan
+		InvokeCommand "$utilityPath $modID --check-runtime-assemblies $env:WHITELISTED_OPENRA_ASSEMBLIES $env:WHITELISTED_THIRDPARTY_ASSEMBLIES $env:WHITELISTED_CORE_ASSEMBLIES $env:WHITELISTED_MOD_ASSEMBLIES"
+
 		Write-Host "Checking for explicit interface violations..." -ForegroundColor Cyan
-		Invoke-Expression "$utilityPath $modID --check-explicit-interfaces"
+		InvokeCommand "$utilityPath $modID --check-explicit-interfaces"
 
 		Write-Host "Checking for incorrect conditional trait interface overrides..." -ForegroundColor Cyan
-		Invoke-Expression "$utilityPath $modID --check-conditional-trait-interface-overrides"
+		InvokeCommand "$utilityPath $modID --check-conditional-trait-interface-overrides"
 	}
 }
 
@@ -160,20 +145,6 @@ function Check-Scripts-Command
 	{
 		Write-Host "luac.exe could not be found. Please install Lua." -ForegroundColor Red
 	}
-}
-
-function Docs-Command
-{
-	if ((CheckForUtility) -eq 1)
-	{
-		return
-	}
-
-	./make.ps1 version
-	Invoke-Expression "$utilityPath $modID --docs | Out-File -Encoding 'UTF8' DOCUMENTATION.md"
-	Invoke-Expression "$utilityPath $modID --weapon-docs | Out-File -Encoding "UTF8" WEAPONS.md"
-	Invoke-Expression "$utilityPath $modID --lua-docs | Out-File -Encoding 'UTF8' Lua-API.md"
-	Write-Host "Docs generated." -ForegroundColor Green
 }
 
 function CheckForUtility
@@ -223,7 +194,9 @@ function ReadConfigLine($line, $name)
 function ParseConfigFile($fileName)
 {
 	$names = @("MOD_ID", "ENGINE_VERSION", "AUTOMATIC_ENGINE_MANAGEMENT", "AUTOMATIC_ENGINE_SOURCE",
-		"AUTOMATIC_ENGINE_EXTRACT_DIRECTORY", "AUTOMATIC_ENGINE_TEMP_ARCHIVE_NAME", "ENGINE_DIRECTORY")
+		"AUTOMATIC_ENGINE_EXTRACT_DIRECTORY", "AUTOMATIC_ENGINE_TEMP_ARCHIVE_NAME", "ENGINE_DIRECTORY",
+		"WHITELISTED_OPENRA_ASSEMBLIES", "WHITELISTED_THIRDPARTY_ASSEMBLIES", "WHITELISTED_CORE_ASSEMBLIES",
+		"WHITELISTED_MOD_ASSEMBLIES")
 
 	$reader = [System.IO.File]::OpenText($fileName)
 	while($null -ne ($line = $reader.ReadLine()))
@@ -257,6 +230,20 @@ function ParseConfigFile($fileName)
 	}
 }
 
+function InvokeCommand
+{
+	param($expression)
+	# $? is the return value of the called expression
+	# Invoke-Expression itself will always succeed, even if the invoked expression fails
+	# So temporarily store the return value in $success
+	$expression += '; $success = $?'
+	Invoke-Expression $expression
+	if ($success -eq $False)
+	{
+		exit 1
+	}
+}
+
 ###############################################################
 ############################ Main #############################
 ###############################################################
@@ -279,7 +266,6 @@ if ($args.Length -eq 0)
 	echo "  test            Tests the mod's MiniYAML for errors."
 	echo "  check           Checks .cs files for StyleCop violations."
 	echo "  check-scripts   Checks .lua files for syntax errors."
-	echo "  docs            Generates the trait and Lua API documentation."
 	echo ""
 	$command = (Read-Host "Enter command").Split(' ', 2)
 }
@@ -304,9 +290,10 @@ if (Test-Path "user.config")
 $modID = $env:MOD_ID
 
 $env:MOD_SEARCH_PATHS = (Get-Item -Path ".\" -Verbose).FullName + "\mods,./mods"
+$env:ENGINE_DIR = ".."
 
-# Run the same command on the engine's make file
-if ($command -eq "all" -or $command -eq "clean")
+# Fetch the engine if required
+if ($command -eq "all" -or $command -eq "clean" -or $command -eq "check")
 {
 	$versionFile = $env:ENGINE_DIRECTORY + "/VERSION"
 	$currentEngine = ""
@@ -384,8 +371,7 @@ if ($command -eq "all" -or $command -eq "clean")
 	}
 }
 
-$utilityPath = $env:ENGINE_DIRECTORY + "/OpenRA.Utility.exe"
-$styleCheckPath = $env:ENGINE_DIRECTORY + "/OpenRA.StyleCheck.exe"
+$utilityPath = $env:ENGINE_DIRECTORY + "/bin/OpenRA.Utility.exe"
 
 $execute = $command
 if ($command.Length -gt 1)
@@ -401,7 +387,6 @@ switch ($execute)
 	"test" { Test-Command }
 	"check" { Check-Command }
 	"check-scripts" { Check-Scripts-Command }
-	"docs" { Docs-Command }
 	Default { echo ("Invalid command '{0}'" -f $command) }
 }
 

@@ -268,38 +268,42 @@
 		Offset: -1, -16, 16
 
 ^WithMachineGunMuzzle:
-	muzzle0: mgun-n
-		Length: *
-		Offset: 0, 0
-		UseTilesetCode: false
-	muzzle1: mgun-nw
-		Length: *
-		Offset: 0, 0
-		UseTilesetCode: false
-	muzzle2: mgun-w
-		Length: *
-		Offset: 0, 0
-		UseTilesetCode: false
-	muzzle3: mgun-sw
-		Length: *
-		Offset: 0, 0
-		UseTilesetCode: false
-	muzzle4: mgun-s
-		Length: *
-		Offset: 0, 0
-		UseTilesetCode: false
-	muzzle5: mgun-se
-		Length: *
-		Offset: 0, 0
-		UseTilesetCode: false
-	muzzle6: mgun-e
-		Length: *
-		Offset: 0, 0
-		UseTilesetCode: false
-	muzzle7: mgun-ne
-		Length: *
-		Offset: 0, 0
-		UseTilesetCode: false
+	muzzle:
+		Facings: 8
+		Length: 6
+		Combine:
+			mgun-n:
+				Length: 6
+				Offset: 0, 0
+				UseTilesetCode: false
+			mgun-nw:
+				Length: 6
+				Offset: 0, 0
+				UseTilesetCode: false
+			mgun-w:
+				Length: 6
+				Offset: 0, 0
+				UseTilesetCode: false
+			mgun-sw:
+				Length: 6
+				Offset: 0, 0
+				UseTilesetCode: false
+			mgun-s:
+				Length: 6
+				Offset: 0, 0
+				UseTilesetCode: false
+			mgun-se:
+				Length: 6
+				Offset: 0, 0
+				UseTilesetCode: false
+			mgun-e:
+				Length: 6
+				Offset: 0, 0
+				UseTilesetCode: false
+			mgun-ne:
+				Length: 6
+				Offset: 0, 0
+				UseTilesetCode: false
 
 ^WithCannonMuzzle:
 	muzzle: gunfire

@@ -58,7 +58,7 @@ namespace OpenRA.Mods.RA2.Traits
 		readonly PeriodicExplosionInfo info;
 		readonly WeaponInfo weapon;
 		readonly BodyOrientation body;
-		readonly List<Pair<int, Action>> delayedActions = new List<Pair<int, Action>>();
+		readonly List<KeyValuePair<int, Action>> delayedActions = new List<KeyValuePair<int, Action>>();
 
 		int fireDelay;
 		int burst;
@@ -84,13 +84,13 @@ namespace OpenRA.Mods.RA2.Traits
 			for (var i = 0; i < delayedActions.Count; i++)
 			{
 				var x = delayedActions[i];
-				if (--x.First <= 0)
-					x.Second();
+				if ((x.Key - 1) <= 0)
+					x.Value();
 
 				delayedActions[i] = x;
 			}
 
-			delayedActions.RemoveAll(a => a.First <= 0);
+			delayedActions.RemoveAll(a => a.Key <= 0);
 
 			if (IsTraitDisabled)
 				return;
@@ -156,7 +156,7 @@ namespace OpenRA.Mods.RA2.Traits
 		protected void ScheduleDelayedAction(int t, Action a)
 		{
 			if (t > 0)
-				delayedActions.Add(Pair.New(t, a));
+				delayedActions.Add(new KeyValuePair<int, Action>(t, a));
 			else
 				a();
 		}
