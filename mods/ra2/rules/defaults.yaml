@@ -977,6 +977,7 @@
 		InitialFacing: 224
 		TakeOffOnCreation: false
 		IdleBehavior: ReturnToBase
+		InitialFacing: 224
 	Hovers@CRUISING:
 		RequiresCondition: cruising
 	WithVoxelBody:

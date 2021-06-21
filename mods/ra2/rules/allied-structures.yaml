@@ -283,7 +283,7 @@ gaairc:
 		Factions: korea
 	ProvidesPrerequisite@default:
 	Building:
-		Footprint: xxx xxx
+		Footprint: x=x x==
 		Dimensions: 3,2
 	Selectable:
 		Bounds: 142, 150, -3, -42
@@ -320,17 +320,17 @@ gaairc:
 		Amount: -50
 	Reservable:
 	Exit@1:
-		SpawnOffset: -370,370,0
 		Facing: 224
+		SpawnOffset: 1024,512,0
 	Exit@2:
-		SpawnOffset: 370,-370,0
 		Facing: 224
+		SpawnOffset: 512,1024,0
 	Exit@3:
-		SpawnOffset: 1000,370,0
 		Facing: 224
+		SpawnOffset: -512,512,0
 	Exit@4:
-		SpawnOffset: 350,1000,0
 		Facing: 224
+		SpawnOffset: 512,-512,0
 	Production:
 		Produces: Aircraft
 	ProductionBar:
@@ -349,6 +349,20 @@ gaairc:
 	SpawnSurvivors:
 		DeathTypes: ExplosionDeath, BulletDeath
 		Actors: e1, e1
+	SpawnNeighboringActors:
+		ActorTypes: gapad
+		Locations: 1,0, 1,1, 2,1
+
+gapad:
+	Interactable:
+	AlwaysVisible:
+	Reservable:
+	Building:
+		Footprint: x
+		Dimensions: 1,1
+		AllowInvalidPlacement: true
+	Production:
+		Produces: Aircraft
 
 amradr:
 	Inherits: gaairc
