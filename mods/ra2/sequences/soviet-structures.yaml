@@ -2,6 +2,7 @@ nacnst:
 	Inherits: ^Structure
 	Defaults:
 		Offset: 4, -58, 58
+		DepthSpriteOffset: 4, -58
 	idle: ngcnst_c
 		Length: 1
 		ShadowStart: 4
@@ -42,6 +43,7 @@ napowr:
 	Inherits: ^Structure
 	Defaults:
 		Offset: -15, -37, 37
+		DepthSpriteOffset: -15, -37
 	idle: ngpowr
 	damaged-idle: ngpowr
 	critical-idle: ngpowr
@@ -67,6 +69,7 @@ nahand:
 	Inherits: ^Structure
 	Defaults:
 		Offset: 1, -31, 31
+		DepthSpriteOffset: 1, -31
 	idle: nghand
 	damaged-idle: nghand
 	critical-idle: nghand
@@ -79,6 +82,7 @@ narefn:
 	Inherits: ^Structure
 	Defaults:
 		Offset: -13, -53, 53
+		DepthSpriteOffset: -13, -53
 	idle: ngrefn
 	damaged-idle: ngrefn
 	make: ntrefnmk
@@ -103,6 +107,7 @@ naradr:
 	Inherits: ^Structure
 	Defaults:
 		Offset: 2, -31, 31
+		DepthSpriteOffset: 2, -31
 	idle: ngradr
 	damaged-idle: ngradr
 	critical-idle: ngradr
@@ -126,6 +131,7 @@ naweap:
 	Inherits: ^Structure
 	Defaults:
 		Offset: -30, -60, 60
+		DepthSpriteOffset: -30, -60
 	idle: ngweap
 		ZOffset: -1536
 	damaged-idle: ngweap
@@ -176,6 +182,7 @@ nayard:
 	Inherits: ^Structure
 	Defaults:
 		Offset: 0, -45, 45
+		DepthSpriteOffset: 0, -45
 	idle: ngyard
 		ShadowStart: 4
 	damaged-idle: ngyard
@@ -220,6 +227,7 @@ nadept:
 	Inherits: ^Structure
 	Defaults:
 		Offset: -15, -53, 53
+		DepthSpriteOffset: -15, -53
 	idle: ngdept_b
 		Length: 10
 		ShadowStart: 20
@@ -262,6 +270,7 @@ nanrct:
 	Inherits: ^Structure
 	Defaults:
 		Offset: -12, -56, 56
+		DepthSpriteOffset: -12, -56
 	idle: ngnrct
 	damaged-idle: ngnrct
 	critical-idle: ngnrct
@@ -285,6 +294,7 @@ natech:
 	Inherits: ^Structure
 	Defaults:
 		Offset: 0, -45, 45
+		DepthSpriteOffset: 0, -45
 	idle: ngtech
 	damaged-idle: ngtech
 	critical-idle: ngtech
@@ -297,6 +307,7 @@ naclon:
 	Inherits: ^Structure
 	Defaults:
 		Offset: 0, -30, 30
+		DepthSpriteOffset: 0, -30
 	idle: ngclon_a
 		Length: 11
 		ShadowStart: 22
@@ -316,6 +327,7 @@ napsis:
 	Inherits: ^Structure
 	Defaults:
 		Offset: 1, -30, 30
+		DepthSpriteOffset: 1, -30
 	idle: ngpsis
 	damaged-idle: ngpsis
 	critical-idle: ngpsis
@@ -339,6 +351,7 @@ namisl:
 	Inherits: ^Structure
 	Defaults:
 		Offset: 0, -42, 42
+		DepthSpriteOffset: 0, -42
 		UseTilesetCode: false
 		-TilesetOverrides:
 	idle: ngmisl_e
@@ -368,6 +381,7 @@ nairon:
 	Inherits: ^Structure
 	Defaults:
 		Offset: 0, -45, 45
+		DepthSpriteOffset: 0, -45
 	idle: ngiron_a
 		Length: 11
 		ShadowStart: 22
@@ -395,6 +409,7 @@ nalasr:
 	Inherits@Muzzle: ^WithMachineGunMuzzle
 	Defaults:
 		Offset: 0, -20, 20
+		DepthSpriteOffset: 0, -20
 	idle: nalasr
 	damaged-idle: nalasr
 	critical-idle: nalasr
@@ -410,6 +425,7 @@ tesla:
 	Inherits: ^Structure
 	Defaults:
 		Offset: 0, -15, 15
+		DepthSpriteOffset: 0, -15
 	idle: ngtsla
 		Length: 1
 	damaged-idle: ngtsla
