@@ -202,14 +202,17 @@ namespace OpenRA.Mods.RA2.Traits
 		public virtual void SpawnIntoWorld(Actor self, Actor child, WPos centerPosition)
 		{
 			var exit = self.RandomExitOrDefault(self.World, null);
-			SetSpawnedFacing(child, self, exit);
+			SetSpawnedFacing(child, exit);
 
 			self.World.AddFrameEndTask(w =>
 			{
 				if (self.IsDead)
 					return;
 
-				var spawnOffset = exit == null ? WVec.Zero : exit.Info.SpawnOffset;
+				var spawnOffset = WVec.Zero;
+				if (exit != null)
+					spawnOffset = exit.Info.SpawnOffset.Rotate(new WRot(WAngle.Zero, WAngle.Zero, WAngle.FromFacing(64 - facing.Facing)));
+
 				child.Trait<IPositionable>().SetVisualPosition(child, centerPosition + spawnOffset);
 
 				var location = self.World.Map.CellContaining(centerPosition + spawnOffset);
@@ -223,7 +226,7 @@ namespace OpenRA.Mods.RA2.Traits
 			});
 		}
 
-		void SetSpawnedFacing(Actor spawned, Actor spawner, Exit exit)
+		void SetSpawnedFacing(Actor spawned, Exit exit)
 		{
 			var facingOffset = facing == null ? 0 : facing.Facing;
 
