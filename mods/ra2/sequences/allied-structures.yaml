@@ -217,7 +217,8 @@ gaweap:
 gayard:
 	Inherits: ^Structure
 	Defaults:
-		Offset: 0, -45, 45
+		Offset: 0, -45, 100
+		ZOffset: 1024
 	idle: ggyard
 		ShadowStart: 4
 	damaged-idle: ggyard

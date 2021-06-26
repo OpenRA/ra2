@@ -6,6 +6,8 @@ dog:
 	icon: dogicon
 
 sqd:
+	Defaults:
+		Offset: 0,0,32
 	stand:
 		Start: 160
 		Facings: -8
