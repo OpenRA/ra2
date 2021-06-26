@@ -250,6 +250,9 @@ carrier:
 		HP: 800
 	Armor:
 		Type: Heavy
+	Targetable:
+		TargetTypes: Ground, Water, C4
+	Demolishable:
 	RevealsShroud:
 		Range: 7c0
 		Type: CenterPosition

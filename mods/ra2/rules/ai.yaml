@@ -103,7 +103,7 @@ Player:
 		SquadSize: 5
 		ExcludeFromSquadsTypes: cmin, harv, amcv, smcv
 		ConstructionYardTypes: gacnst, nacnst
-		NavalUnitsTypes: dest, aegis, dlph, carrier, sub, hyd, sqd
+		NavalUnitsTypes: dest, aegis, dlph, carrier, sub, hyd, sqd, dred
 		NavalProductionTypes: nayard, gayard
 	UnitBuilderBotModule@test:
 		RequiresCondition: enable-test-ai
@@ -126,6 +126,7 @@ Player:
 			mtnk: 50
 			fv: 20
 			sref: 10
+			v3: 10
 			mgtk: 10
 			apoc: 10
 			tnkd: 15
@@ -134,6 +135,7 @@ Player:
 			aegis: 20
 			dlph: 5
 			carrier: 3
+			dred: 3
 			sub: 20
 			hyd: 20
 			sqd: 5
