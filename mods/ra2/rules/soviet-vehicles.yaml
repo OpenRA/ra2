@@ -132,17 +132,24 @@ dron:
 	-RenderVoxels:
 	WithInfantryBody:
 		StandSequences: stand
-		DefaultAttackSequence: shoot
+		DefaultAttackSequence: jump
+		RequiresCondition: !jumping
+	WithFacingSpriteBody:
+		Sequence: shoot
+		RequiresCondition: jumping
 	Armament:
 		Weapon: DroneJump
-		ReloadingCondition: attack-cooldown
-	AttackLeap:
+	AttackInfect:
 		Voice: Attack
-		PauseOnCondition: attacking || attack-cooldown
+		Damage: 25
+		DamageInterval: 20
+		DamageTypes: DefaultDeath, BulletDeath, DroneSurvive
+		SurviveHostDamageTypes: DroneSurvive
+		JumpRange: 1c768
 	AutoTarget:
 		InitialStance: AttackAnything
 	AutoTargetPriority@DEFAULT:
-		ValidTargets: Infantry
+		ValidTargets: DroneParasiteable
 	Voiced:
 		VoiceSet: TerrorDroneVoice
 	HitShape:
