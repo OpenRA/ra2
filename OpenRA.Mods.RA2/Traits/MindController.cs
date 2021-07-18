@@ -39,16 +39,10 @@ namespace OpenRA.Mods.RA2.Traits
 		[Desc("The sound played when the unit is mindcontrolled.")]
 		public readonly string[] Sounds = { };
 
-		[Desc("PipType to use for indicating mindcontrolled units.")]
-		public readonly PipType PipType = PipType.Green;
-
-		[Desc("PipType to use for indicating unused mindcontrol slots.")]
-		public readonly PipType PipTypeEmpty = PipType.Transparent;
-
 		public override object Create(ActorInitializer init) { return new MindController(init.Self, this); }
 	}
 
-	public class MindController : PausableConditionalTrait<MindControllerInfo>, INotifyAttack, IPips, INotifyKilled, INotifyActorDisposing
+	public class MindController : PausableConditionalTrait<MindControllerInfo>, INotifyAttack, INotifyKilled, INotifyActorDisposing
 	{
 		readonly List<Actor> slaves = new List<Actor>();
 
@@ -73,31 +67,6 @@ namespace OpenRA.Mods.RA2.Traits
 				return;
 
 			self.RevokeCondition(controllingTokens.Pop());
-		}
-
-		public IEnumerable<PipType> GetPips(Actor self)
-		{
-			if (Info.Capacity > 0)
-			{
-				for (int i = slaves.Count(); i > 0; i--)
-					yield return Info.PipType;
-
-				for (int i = Info.Capacity - slaves.Count(); i > 0; i--)
-					yield return Info.PipTypeEmpty;
-			}
-			else if (slaves.Count() >= -Info.Capacity)
-			{
-				for (int i = -Info.Capacity; i > 0; i--)
-					yield return Info.PipType;
-			}
-			else
-			{
-				for (int i = slaves.Count(); i > 0; i--)
-					yield return Info.PipType;
-
-				for (int i = -Info.Capacity - slaves.Count(); i > 0; i--)
-					yield return Info.PipTypeEmpty;
-			}
 		}
 
 		public void UnlinkSlave(Actor self, Actor slave)
