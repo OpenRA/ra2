@@ -103,13 +103,12 @@ namespace OpenRA.Mods.RA2.Traits
 		Actor self;
 
 		bool isDocking;
-		ConditionManager conditionManager;
 
 		ActorInfo[] targetTypes;
 
 		CPos? lastPos;
 		bool wasMirage = false;
-		int mirageToken = ConditionManager.InvalidConditionToken;
+		int mirageToken = Actor.InvalidConditionToken;
 
 		public bool Disguised { get { return IsMirage; } }
 
@@ -133,13 +132,11 @@ namespace OpenRA.Mods.RA2.Traits
 
 		protected override void Created(Actor self)
 		{
-			conditionManager = self.TraitOrDefault<ConditionManager>();
-
 			if (IsMirage)
 			{
 				wasMirage = true;
-				if (conditionManager != null && mirageToken == ConditionManager.InvalidConditionToken && !string.IsNullOrEmpty(Info.MirageCondition))
-					mirageToken = conditionManager.GrantCondition(self, Info.MirageCondition);
+				if (mirageToken == Actor.InvalidConditionToken && !string.IsNullOrEmpty(Info.MirageCondition))
+					mirageToken = self.GrantCondition(Info.MirageCondition);
 			}
 
 			base.Created(self);
@@ -187,13 +184,13 @@ namespace OpenRA.Mods.RA2.Traits
 			var isMirage = IsMirage;
 			if (isMirage && !wasMirage)
 			{
-				if (conditionManager != null && mirageToken == ConditionManager.InvalidConditionToken && !string.IsNullOrEmpty(Info.MirageCondition))
-					mirageToken = conditionManager.GrantCondition(self, Info.MirageCondition);
+				if (mirageToken == Actor.InvalidConditionToken && !string.IsNullOrEmpty(Info.MirageCondition))
+					mirageToken = self.GrantCondition(Info.MirageCondition);
 			}
 			else if (!isMirage && wasMirage)
 			{
-				if (mirageToken != ConditionManager.InvalidConditionToken)
-					mirageToken = conditionManager.RevokeCondition(self, mirageToken);
+				if (mirageToken != Actor.InvalidConditionToken)
+					mirageToken = self.RevokeCondition(mirageToken);
 			}
 
 			wasMirage = isMirage;

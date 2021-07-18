@@ -35,11 +35,10 @@ namespace OpenRA.Mods.RA2.Traits
 	public class BaseSpawnerChild : INotifyCreated, INotifyKilled, INotifyOwnerChanged
 	{
 		protected AttackBase[] attackBases;
-		protected ConditionManager conditionManager;
 
 		readonly BaseSpawnerChildInfo info;
 
-		int parentDeadToken = ConditionManager.InvalidConditionToken;
+		int parentDeadToken = Actor.InvalidConditionToken;
 		BaseSpawnerParent spawnerParent = null;
 
 		public Actor Parent { get; private set; }
@@ -59,7 +58,6 @@ namespace OpenRA.Mods.RA2.Traits
 		protected virtual void Created(Actor self)
 		{
 			attackBases = self.TraitsImplementing<AttackBase>().ToArray();
-			conditionManager = self.Trait<ConditionManager>();
 		}
 
 		void INotifyKilled.Killed(Actor self, AttackInfo e)
@@ -123,8 +121,8 @@ namespace OpenRA.Mods.RA2.Traits
 
 		public virtual void OnParentKilled(Actor self, Actor attacker, SpawnerChildDisposal disposal)
 		{
-			if (conditionManager != null && !string.IsNullOrEmpty(info.ParentDeadCondition))
-				parentDeadToken = conditionManager.GrantCondition(self, info.ParentDeadCondition);
+			if (!string.IsNullOrEmpty(info.ParentDeadCondition))
+				parentDeadToken = self.GrantCondition(info.ParentDeadCondition);
 
 			switch (disposal)
 			{

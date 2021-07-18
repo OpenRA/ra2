@@ -59,11 +59,10 @@ namespace OpenRA.Mods.RA2.Traits
 		readonly Stack<int> loadedTokens = new Stack<int>();
 
 		CarrierChildEntry[] childEntries;
-		ConditionManager conditionManager;
 
 		int respawnTicks = 0;
 
-		int launchCondition = ConditionManager.InvalidConditionToken;
+		int launchCondition = Actor.InvalidConditionToken;
 		int launchConditionTicks;
 
 		public CarrierParent(ActorInitializer init, CarrierParentInfo info)
@@ -75,7 +74,6 @@ namespace OpenRA.Mods.RA2.Traits
 		protected override void Created(Actor self)
 		{
 			base.Created(self);
-			conditionManager = self.Trait<ConditionManager>();
 
 			var burst = Info.InitialActorCount == -1 ? Info.Actors.Length : Info.InitialActorCount;
 			for (var i = 0; i < burst; i++)
@@ -125,8 +123,8 @@ namespace OpenRA.Mods.RA2.Traits
 
 			if (info.LaunchingCondition != null)
 			{
-				if (launchCondition == ConditionManager.InvalidConditionToken)
-					launchCondition = conditionManager.GrantCondition(self, info.LaunchingCondition);
+				if (launchCondition == Actor.InvalidConditionToken)
+					launchCondition = self.GrantCondition(info.LaunchingCondition);
 
 				launchConditionTicks = info.LaunchingTicks;
 			}
@@ -135,10 +133,10 @@ namespace OpenRA.Mods.RA2.Traits
 
 			Stack<int> spawnContainToken;
 			if (spawnContainTokens.TryGetValue(a.Info.Name, out spawnContainToken) && spawnContainToken.Any())
-				conditionManager.RevokeCondition(self, spawnContainToken.Pop());
+				self.RevokeCondition(spawnContainToken.Pop());
 
 			if (loadedTokens.Any())
-				conditionManager.RevokeCondition(self, loadedTokens.Pop());
+				self.RevokeCondition(loadedTokens.Pop());
 
 			self.World.AddFrameEndTask(w =>
 			{
@@ -222,22 +220,22 @@ namespace OpenRA.Mods.RA2.Traits
 
 			childEntry.RearmTicks = Util.ApplyPercentageModifiers(info.RearmTicks, reloadModifiers.Select(rm => rm.GetReloadModifier()));
 
-			if (conditionManager != null && !string.IsNullOrEmpty(info.LoadedCondition))
-				loadedTokens.Push(conditionManager.GrantCondition(self, info.LoadedCondition));
+			if (!string.IsNullOrEmpty(info.LoadedCondition))
+				loadedTokens.Push(self.GrantCondition(info.LoadedCondition));
 		}
 
 		public override void Replenish(Actor self, BaseSpawnerChildEntry entry)
 		{
 			base.Replenish(self, entry);
 
-			if (conditionManager != null && !string.IsNullOrEmpty(info.LoadedCondition))
-				loadedTokens.Push(conditionManager.GrantCondition(self, info.LoadedCondition));
+			if (!string.IsNullOrEmpty(info.LoadedCondition))
+				loadedTokens.Push(self.GrantCondition(info.LoadedCondition));
 		}
 
 		void ITick.Tick(Actor self)
 		{
-			if (launchCondition != ConditionManager.InvalidConditionToken && --launchConditionTicks < 0)
-				launchCondition = conditionManager.RevokeCondition(self, launchCondition);
+			if (launchCondition != Actor.InvalidConditionToken && --launchConditionTicks < 0)
+				launchCondition = self.RevokeCondition(launchCondition);
 
 			if (respawnTicks > 0)
 			{
