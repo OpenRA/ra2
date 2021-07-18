@@ -58,7 +58,7 @@ namespace OpenRA.Mods.RA2.Warheads
 			}
 		}
 
-		public override void DoImpact(WPos pos, Actor firedBy, IEnumerable<int> damageModifiers)
+		protected override void DoImpact(WPos pos, Actor firedBy, WarheadArgs args)
 		{
 			var world = firedBy.World;
 
