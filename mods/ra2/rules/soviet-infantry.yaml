@@ -396,7 +396,7 @@ yuri:
 	GrantTimedConditionOnDeploy:
 		DeployedTicks: 50
 		CooldownTicks: 0
-		Facing: 96
+		Facing: 384
 		DeployedCondition: deployed
 		DeployingCondition: deploying
 		DeployAnimation: deploy
