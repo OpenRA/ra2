@@ -42,7 +42,7 @@ namespace OpenRA.Mods.RA2.Traits
 			var frame = init.GetValue<BodyAnimationFrameInit, uint>(this, 0);
 
 			yield return new ModelAnimation(voxel, () => WVec.Zero,
-				() => new[] { body.QuantizeOrientation(orientation(), facings) },
+				() => body.QuantizeOrientation(orientation(), facings),
 				() => false, () => frame, ShowShadow);
 		}
 	}
@@ -65,7 +65,7 @@ namespace OpenRA.Mods.RA2.Traits
 			var voxel = self.World.ModelCache.GetModelSequence(rv.Image, info.Sequence);
 			frames = voxel.Frames;
 			modelAnimation = new ModelAnimation(voxel, () => WVec.Zero,
-				() => new[] { body.QuantizeOrientation(self, self.Orientation) },
+				() => body.QuantizeOrientation(self, self.Orientation),
 				() => IsTraitDisabled, () => frame, info.ShowShadow);
 
 			rv.Add(modelAnimation);
