@@ -17,7 +17,7 @@ using OpenRA.Traits;
 namespace OpenRA.Mods.RA2.Traits
 {
 	[Desc("Can be bound to a SpawnerParent.")]
-	public class BaseSpawnerChildInfo : ITraitInfo
+	public class BaseSpawnerChildInfo : TraitInfo
 	{
 		[GrantedConditionReference]
 		[Desc("The condition to grant to childs when the parent actor is killed.")]
@@ -29,7 +29,7 @@ namespace OpenRA.Mods.RA2.Traits
 		[Desc("Types of damage this actor explodes with due to an unallowed child action. Leave empty for no damage types.")]
 		public readonly BitSet<DamageType> DamageTypes = default(BitSet<DamageType>);
 
-		public virtual object Create(ActorInitializer init) { return new BaseSpawnerChild(init, this); }
+		public override object Create(ActorInitializer init) { return new BaseSpawnerChild(init, this); }
 	}
 
 	public class BaseSpawnerChild : INotifyCreated, INotifyKilled, INotifyOwnerChanged
