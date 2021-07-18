@@ -151,9 +151,9 @@ namespace OpenRA.Mods.RA2.Traits
 			remainingTime = Math.Max(remainingTime, time);
 		}
 
-		void INotifyAttack.Attacking(Actor self, Target target, Armament a, Barrel barrel) { if (Info.RevealOn.HasFlag(MirageRevealType.Attack)) Reveal(); }
+		void INotifyAttack.Attacking(Actor self, in Target target, Armament a, Barrel barrel) { if (Info.RevealOn.HasFlag(MirageRevealType.Attack)) Reveal(); }
 
-		void INotifyAttack.PreparingAttack(Actor self, Target target, Armament a, Barrel barrel) { }
+		void INotifyAttack.PreparingAttack(Actor self, in Target target, Armament a, Barrel barrel) { }
 
 		void INotifyDamage.Damaged(Actor self, AttackInfo e)
 		{
