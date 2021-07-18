@@ -48,43 +48,31 @@ namespace OpenRA.Mods.RA2.Traits
 		public override object Create(ActorInitializer init) { return new MindController(init.Self, this); }
 	}
 
-	public class MindController : PausableConditionalTrait<MindControllerInfo>, INotifyAttack, IPips, INotifyKilled, INotifyActorDisposing, INotifyCreated
+	public class MindController : PausableConditionalTrait<MindControllerInfo>, INotifyAttack, IPips, INotifyKilled, INotifyActorDisposing
 	{
 		readonly List<Actor> slaves = new List<Actor>();
 
 		Stack<int> controllingTokens = new Stack<int>();
-		ConditionManager conditionManager;
 
 		public IEnumerable<Actor> Slaves { get { return slaves; } }
 
 		public MindController(Actor self, MindControllerInfo info)
 			: base(info) { }
 
-		protected override void Created(Actor self)
-		{
-			conditionManager = self.TraitOrDefault<ConditionManager>();
-		}
-
 		void StackControllingCondition(Actor self, string condition)
 		{
-			if (conditionManager == null)
-				return;
-
 			if (string.IsNullOrEmpty(condition))
 				return;
 
-			controllingTokens.Push(conditionManager.GrantCondition(self, condition));
+			controllingTokens.Push(self.GrantCondition(condition));
 		}
 
 		void UnstackControllingCondition(Actor self, string condition)
 		{
-			if (conditionManager == null)
-				return;
-
 			if (string.IsNullOrEmpty(condition))
 				return;
 
-			conditionManager.RevokeCondition(self, controllingTokens.Pop());
+			self.RevokeCondition(controllingTokens.Pop());
 		}
 
 		public IEnumerable<PipType> GetPips(Actor self)
