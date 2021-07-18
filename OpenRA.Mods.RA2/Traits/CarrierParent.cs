@@ -31,9 +31,6 @@ namespace OpenRA.Mods.RA2.Traits
 		[Desc("After this many ticks, we remove the condition.")]
 		public readonly int LaunchingTicks = 15;
 
-		[Desc("Pip color for the spawn count.")]
-		public readonly PipType PipType = PipType.Green;
-
 		[Desc("Instantly repair children when they return?")]
 		public readonly bool InstantRepair = true;
 
@@ -45,7 +42,7 @@ namespace OpenRA.Mods.RA2.Traits
 		public override object Create(ActorInitializer init) { return new CarrierParent(init, this); }
 	}
 
-	public class CarrierParent : BaseSpawnerParent, IPips, ITick, INotifyAttack, INotifyBecomingIdle
+	public class CarrierParent : BaseSpawnerParent, ITick, INotifyAttack, INotifyBecomingIdle
 	{
 		class CarrierChildEntry : BaseSpawnerChildEntry
 		{
@@ -98,6 +95,11 @@ namespace OpenRA.Mods.RA2.Traits
 			carrierChildEntry.RearmTicks = 0;
 			carrierChildEntry.IsLaunched = false;
 			carrierChildEntry.SpawnerChild = child.Trait<CarrierChild>();
+		}
+
+		public int GetChildrenInsideCount()
+		{
+			return childEntries.Count(x => x.IsValid && !x.IsLaunched);
 		}
 
 		void INotifyAttack.PreparingAttack(Actor self, Target target, Armament a, Barrel barrel) { }
@@ -174,25 +176,6 @@ namespace OpenRA.Mods.RA2.Traits
 					return carrierChildEntry;
 
 			return null;
-		}
-
-		public IEnumerable<PipType> GetPips(Actor self)
-		{
-			if (IsTraitDisabled)
-				yield break;
-
-			var inside = 0;
-			foreach (var carrierChildEntry in childEntries)
-				if (carrierChildEntry.IsValid && !carrierChildEntry.IsLaunched)
-					inside++;
-
-			for (var i = 0; i < Info.Actors.Length; i++)
-			{
-				if (i < inside)
-					yield return info.PipType;
-				else
-					yield return PipType.Transparent;
-			}
 		}
 
 		public void PickupChild(Actor self, Actor child)
