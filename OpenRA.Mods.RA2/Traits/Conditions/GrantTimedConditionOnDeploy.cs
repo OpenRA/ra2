@@ -55,8 +55,8 @@ namespace OpenRA.Mods.RA2.Traits
 		[Desc("Apply (un)deploy animations to sprite bodies with these names.")]
 		public readonly string[] BodyNames = { "body" };
 
-		[Desc("Facing that the actor must face before deploying. Set to -1 to deploy regardless of facing.")]
-		public readonly int Facing = -1;
+		[Desc("Facing that the actor must face before deploying. Set to null to deploy regardless of facing.")]
+		public readonly WAngle? Facing = null;
 
 		[Desc("Sound to play when deploying.")]
 		public readonly string DeploySound = null;
@@ -151,8 +151,8 @@ namespace OpenRA.Mods.RA2.Traits
 				self.CancelActivity();
 
 			// Turn to the required facing.
-			if (Info.Facing != -1 && canTurn)
-				self.QueueActivity(new Turn(self, Info.Facing));
+			if (Info.Facing != null && canTurn)
+				self.QueueActivity(new Turn(self, Info.Facing.Value));
 
 			self.QueueActivity(new CallFunc(Deploy));
 		}
