@@ -1501,6 +1501,7 @@ lobby-bits:
 	Regions:
 		spawn-unclaimed: 37, 5, 22, 22
 		spawn-claimed: 5, 5, 22, 22
+		spawn-disabled: 5, 5, 22, 22 # TODO: Needs new artwork!
 		admin: 64, 5, 7, 5
 		colorpicker: 5, 5, 22, 22
 		huepicker: 71, 0, 7, 15
