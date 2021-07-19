@@ -43,117 +43,117 @@ Actors:
 		Location: 75,-10
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor1: camex03
 		Location: 72,-6
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor2: camex03
 		Location: 80,-14
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor3: camex05
 		Location: 72,-14
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor4: camex05
 		Location: 81,-5
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor5: caoild
 		Location: 96,10
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor6: caoild
 		Location: 57,-29
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor7: camex03
 		Location: 75,25
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor8: camex03
 		Location: 42,-8
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor9: camex03
 		Location: 78,-44
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor10: camex03
 		Location: 111,-11
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor11: camsc08
 		Location: 54,-18
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor12: camsc08
 		Location: 86,14
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor13: camsc08
 		Location: 68,-32
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor14: camsc08
 		Location: 100,0
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor15: camsc09
 		Location: 98,-1
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor16: camsc09
 		Location: 69,-30
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor17: camsc09
 		Location: 56,-17
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor18: camsc09
 		Location: 85,12
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor19: camsc07
 		Location: 83,13
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor20: camsc07
 		Location: 54,-16
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor21: camsc07
 		Location: 70,-32
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor22: camsc07
 		Location: 99,-3
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor23: tree22
 		Location: 80,-4
 		Owner: Neutral

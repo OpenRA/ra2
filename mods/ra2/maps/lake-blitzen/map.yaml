@@ -53,57 +53,57 @@ Actors:
 		Location: 84,9
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor1: cabhut
 		Location: 99,5
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor2: caairp
 		Location: 122,44
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor3: caoutp
 		Location: 79,1
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor4: caoild
 		Location: 120,-26
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor5: caoild
 		Location: 63,53
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor6: caoild
 		Location: 94,38
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor7: caoild
 		Location: 96,43
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor8: caoild
 		Location: 88,-21
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor9: caoild
 		Location: 93,-18
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor10: cathosp
 		Location: 104,6
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor11: tree19
 		Location: 151,-3
 		Owner: Neutral

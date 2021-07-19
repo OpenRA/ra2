@@ -155,33 +155,33 @@ Actors:
 	Actor37: castrt05
 		Location: 89,0
 		Owner: Neutral
-		Facing: 224
+		Facing: 896
 	Actor38: camsc10
 		Location: 77,54
 		Owner: Neutral
 	Actor39: pick
 		Location: 79,-22
 		Owner: Neutral
-		Facing: 224
+		Facing: 896
 	Actor40: pick
 		Location: 90,-23
 		Owner: Neutral
-		Facing: 224
+		Facing: 896
 	Actor41: bus
 		Location: 91,-23
 		Owner: Neutral
-		Facing: 224
+		Facing: 896
 	Actor42: car
 		Location: 92,-29
 		Owner: Neutral
-		Facing: 288
+		Facing: 128
 	Actor43: pick
 		Location: 93,-32
 		Owner: Neutral
 	Actor44: pick
 		Location: 91,6
 		Owner: Neutral
-		Facing: 288
+		Facing: 128
 	Actor45: bus
 		Location: 77,-2
 		Owner: Neutral
@@ -191,55 +191,55 @@ Actors:
 	Actor47: car
 		Location: 77,28
 		Owner: Neutral
-		Facing: 288
+		Facing: 128
 	Actor48: ptruck
 		Location: 79,30
 		Owner: Neutral
-		Facing: 288
+		Facing: 128
 	Actor49: trucka
 		Location: 78,27
 		Owner: Neutral
 	Actor50: bus
 		Location: 81,23
 		Owner: Neutral
-		Facing: 224
+		Facing: 896
 	Actor51: euroc
 		Location: 81,30
 		Owner: Neutral
-		Facing: 288
+		Facing: 128
 	Actor52: car
 		Location: 75,58
 		Owner: Neutral
-		Facing: 288
+		Facing: 128
 	Actor53: pick
 		Location: 77,60
 		Owner: Neutral
 	Actor54: ptruck
 		Location: 75,53
 		Owner: Neutral
-		Facing: 288
+		Facing: 128
 	Actor55: stang
 		Location: 79,60
 		Owner: Neutral
-		Facing: 224
+		Facing: 896
 	Actor56: suvb
 		Location: 75,57
 		Owner: Neutral
-		Facing: 288
+		Facing: 128
 	Actor57: suvw
 		Location: 81,56
 		Owner: Neutral
 	Actor58: car
 		Location: 91,10
 		Owner: Neutral
-		Facing: 288
+		Facing: 128
 	Actor59: euroc
 		Location: 86,9
 		Owner: Neutral
 	Actor60: stang
 		Location: 91,12
 		Owner: Neutral
-		Facing: 160
+		Facing: 640
 	Actor61: ptruck
 		Location: 81,13
 		Owner: Neutral
@@ -255,7 +255,7 @@ Actors:
 	Actor65: euroc
 		Location: 77,-22
 		Owner: Neutral
-		Facing: 224
+		Facing: 896
 	Actor66: tree25
 		Location: 19,0
 		Owner: Neutral

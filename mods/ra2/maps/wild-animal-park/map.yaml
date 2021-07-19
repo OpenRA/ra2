@@ -63,317 +63,317 @@ Actors:
 		Location: 134,-24
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor1: cabhut
 		Location: 138,-12
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor2: caoild
 		Location: 101,-46
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor3: caairp
 		Location: 137,14
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor4: cafarm02
 		Location: 136,100
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor5: cafarm01
 		Location: 138,98
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor6: camisc01
 		Location: 137,98
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor7: caairp
 		Location: 230,-17
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor8: cabhut
 		Location: 155,59
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor9: cabhut
 		Location: 159,47
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor10: cabhut
 		Location: 98,-6
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor11: cabhut
 		Location: 88,-2
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor12: caoild
 		Location: 145,133
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor13: caoild
 		Location: 68,39
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor14: caoutp
 		Location: 64,-40
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor15: caoild
 		Location: 174,-11
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor16: cabhut
 		Location: 182,-9
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor17: cabhut
 		Location: 193,-5
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor18: cabhut
 		Location: 229,46
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor19: cabhut
 		Location: 233,34
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor20: cabhut
 		Location: 207,45
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor21: cabhut
 		Location: 203,60
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor22: cabhut
 		Location: 65,-20
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor23: cabhut
 		Location: 61,-31
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor24: cabhut
 		Location: 74,-33
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor25: cabhut
 		Location: 83,-37
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor26: cabhut
 		Location: 105,-64
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor27: cabhut
 		Location: 101,-51
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor28: cabhut
 		Location: 147,-83
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor29: cabhut
 		Location: 151,-73
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor30: caoild
 		Location: 138,0
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor31: caoild
 		Location: 138,-2
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor32: caoild
 		Location: 147,1
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor33: caoild
 		Location: 147,-1
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor34: caoild
 		Location: 132,-35
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor35: caoild
 		Location: 132,-38
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor36: caoild
 		Location: 126,-29
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor37: caoild
 		Location: 124,-29
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor38: cow
 		Location: 138,106
 		Owner: Neutral
 		Health: 100
-		Facing: 98
+		Facing: 392
 	Actor39: cow
 		Location: 136,106
 		Owner: Neutral
 		Health: 100
-		Facing: 98
+		Facing: 392
 	Actor40: cow
 		Location: 137,110
 		Owner: Neutral
 		Health: 100
-		Facing: 98
+		Facing: 392
 	Actor41: dog
 		Location: 136,101
 		Owner: Creeps
 		Health: 100
-		Facing: 99
+		Facing: 396
 	Actor42: cow
 		Location: 139,105
 		Owner: Neutral
 		Health: 100
-		Facing: 100
+		Facing: 400
 	Actor43: josh
 		Location: 232,-1
 		Owner: Creeps
 		Health: 100
-		Facing: 99
+		Facing: 396
 	Actor44: josh
 		Location: 203,-23
 		Owner: Creeps
 		Health: 100
-		Facing: 98
+		Facing: 392
 	Actor45: josh
 		Location: 55,42
 		Owner: Creeps
 		Health: 100
-		Facing: 100
+		Facing: 400
 	Actor46: josh
 		Location: 67,22
 		Owner: Creeps
 		Health: 100
-		Facing: 99
+		Facing: 396
 	Actor47: all
 		Location: 21,0
 		Owner: Creeps
 		Health: 100
-		Facing: 98
+		Facing: 392
 	Actor48: josh
 		Location: 153,5
 		Owner: Creeps
 		Health: 100
-		Facing: 100
+		Facing: 400
 	Actor49: josh
 		Location: 131,-3
 		Owner: Creeps
 		Health: 100
-		Facing: 98
+		Facing: 392
 	Actor50: josh
 		Location: 132,43
 		Owner: Creeps
 		Health: 100
-		Facing: 100
+		Facing: 400
 	Actor51: josh
 		Location: 105,82
 		Owner: Creeps
 		Health: 100
-		Facing: 99
+		Facing: 396
 	Actor52: josh
 		Location: 138,130
 		Owner: Creeps
 		Health: 100
-		Facing: 100
+		Facing: 400
 	Actor53: josh
 		Location: 202,76
 		Owner: Creeps
 		Health: 100
-		Facing: 99
+		Facing: 396
 	Actor54: all
 		Location: 144,72
 		Owner: Creeps
 		Health: 100
-		Facing: 99
+		Facing: 396
 	Actor55: all
 		Location: 160,43
 		Owner: Creeps
 		Health: 100
-		Facing: 98
+		Facing: 392
 	Actor56: josh
 		Location: 112,-36
 		Owner: Creeps
 		Health: 100
-		Facing: 98
+		Facing: 392
 	Actor57: josh
 		Location: 149,-26
 		Owner: Creeps
 		Health: 100
-		Facing: 99
+		Facing: 396
 	Actor58: all
 		Location: 70,-50
 		Owner: Creeps
 		Health: 100
-		Facing: 100
+		Facing: 400
 	Actor59: josh
 		Location: 114,-63
 		Owner: Creeps
 		Health: 100
-		Facing: 100
+		Facing: 400
 	Actor60: all
 		Location: 62,-35
 		Owner: Creeps
 		Health: 100
-		Facing: 98
+		Facing: 392
 	Actor61: josh
 		Location: 194,9
 		Owner: Creeps
 		Health: 100
-		Facing: 99
+		Facing: 396
 	Actor62: all
 		Location: 149,-51
 		Owner: Creeps
 		Health: 100
-		Facing: 100
+		Facing: 400
 	Actor63: tibtre01
 		Location: 237,13
 		Owner: Creeps

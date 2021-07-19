@@ -43,512 +43,512 @@ Actors:
 		Location: 69,-1
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor1: carus06
 		Location: 57,-1
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor2: carus04
 		Location: 63,-1
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor3: carus04
 		Location: 69,-7
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor4: carus06
 		Location: 69,-13
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor5: carus04
 		Location: 48,-1
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor6: carus04
 		Location: 20,-1
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor7: carus04
 		Location: 69,-50
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor8: carus06
 		Location: 69,-21
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor9: carus05
 		Location: 77,-22
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor10: carus06
 		Location: 69,-33
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor11: carus05
 		Location: 63,-34
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor12: carus04
 		Location: 62,-43
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor13: carus06
 		Location: 79,-32
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor14: caeur1
 		Location: 77,-51
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor15: caeur2
 		Location: 78,-53
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor16: caeur2
 		Location: 80,-53
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor17: camsc06
 		Location: 80,-50
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor18: caeur1
 		Location: 77,-49
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor19: cagard01
 		Location: 70,-43
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor20: carus05
 		Location: 59,50
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor21: carus05
 		Location: 64,55
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor22: caeur1
 		Location: 16,11
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor23: caeur1
 		Location: 18,13
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor24: caeur2
 		Location: 20,11
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor25: camsc06
 		Location: 19,12
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor26: carus04
 		Location: 79,43
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor27: carus06
 		Location: 79,33
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor28: carus04
 		Location: 113,9
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor29: carus05
 		Location: 108,9
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor30: carus05
 		Location: 79,55
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor31: carus04
 		Location: 79,70
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor32: carus04
 		Location: 120,9
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor33: carus06
 		Location: 130,9
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor34: carus06
 		Location: 140,9
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor35: carus05
 		Location: 135,9
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor36: carus02b
 		Location: 104,45
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor37: carus02b
 		Location: 104,41
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor38: carus02b
 		Location: 112,34
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor39: carus02b
 		Location: 116,34
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor40: carus02a
 		Location: 106,52
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor41: carus02a
 		Location: 106,45
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor42: carus02a
 		Location: 106,41
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor43: carus02a
 		Location: 106,36
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor44: carus02a
 		Location: 112,36
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor45: carus02a
 		Location: 116,36
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor46: carus02a
 		Location: 88,52
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor47: carus02a
 		Location: 88,70
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor48: carus02a
 		Location: 122,36
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor49: carus02a
 		Location: 122,18
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor50: carus02a
 		Location: 140,18
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor51: carus02b
 		Location: 100,52
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor52: carus02b
 		Location: 94,52
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor53: carus02b
 		Location: 88,58
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor54: carus02b
 		Location: 88,64
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor55: carus02b
 		Location: 128,18
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor56: carus02b
 		Location: 122,24
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor57: carus02b
 		Location: 134,18
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor58: carus02b
 		Location: 122,30
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor59: cabhut
 		Location: 52,39
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor60: cabhut
 		Location: 56,20
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor61: capark01
 		Location: 96,-32
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor62: capark01
 		Location: 83,-13
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor63: capark01
 		Location: 84,-13
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor64: capark02
 		Location: 82,-2
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor65: caairp
 		Location: 126,21
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor66: caoild
 		Location: 92,55
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor67: caoild
 		Location: 92,59
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor68: caoild
 		Location: 96,55
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor69: caoild
 		Location: 100,55
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor70: caoild
 		Location: 22,6
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor71: caoild
 		Location: 19,6
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor72: caoild
 		Location: 16,6
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor73: caoild
 		Location: 13,6
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor74: caairp
 		Location: 69,-41
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor75: carus04
 		Location: 93,-18
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor76: carus05
 		Location: 93,-12
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor77: carus06
 		Location: 93,-24
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor78: caoild
 		Location: 57,44
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor79: caoild
 		Location: 57,38
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor80: caoild
 		Location: 63,44
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor81: caoild
 		Location: 62,39
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor82: caoild
 		Location: 58,7
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor83: caoild
 		Location: 62,7
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor84: caoild
 		Location: 66,7
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor85: caoild
 		Location: 70,7
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor86: cabhut
 		Location: 77,50
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor87: cabhut
 		Location: 66,46
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor88: cawash07
 		Location: 63,-38
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor89: cawash08
 		Location: 70,-27
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor90: cawash08
 		Location: 80,63
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor91: cawash07
 		Location: 80,39
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor92: cawash07
 		Location: 125,9
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor93: cathosp
 		Location: 88,-34
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor94: cathosp
 		Location: 111,39
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor95: car
 		Location: 88,-28
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor96: limo
 		Location: 92,-30
 		Owner: Neutral
 		Health: 100
-		Facing: 160
+		Facing: 640
 	Actor97: euroc
 		Location: 93,-28
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor98: stang
 		Location: 90,-29
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor99: car
 		Location: 113,44
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor100: limo
 		Location: 109,41
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor101: euroc
 		Location: 117,38
 		Owner: Neutral
 		Health: 100
-		Facing: 32
+		Facing: 128
 	Actor102: tree02
 		Location: 58,-4
 		Owner: Neutral

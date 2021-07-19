@@ -53,27 +53,27 @@ Actors:
 		Location: 72,-26
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor1: caoild
 		Location: 92,-12
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor2: caoild
 		Location: 80,-5
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor3: caoild
 		Location: 93,-38
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor4: caoild
 		Location: 103,-25
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor5: tree03
 		Location: 80,38
 		Owner: Neutral
