@@ -255,6 +255,7 @@ fv:
 		Weapon: CRM60
 		LocalOffset: 188,32,600
 		RequiresCondition: ifv-mg
+		#MuzzleSequence: mgun_muz # TODO:
 	Armament@repair:
 		Weapon: RepairBullet
 		LocalOffset: 164,0,864
