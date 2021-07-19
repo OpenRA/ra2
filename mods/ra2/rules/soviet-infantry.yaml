@@ -21,7 +21,7 @@ e2:
 	Health:
 		HP: 125
 	Passenger:
-		PipType: Green
+		CustomPipType: green
 	RevealsShroud:
 		Range: 5c0
 	AttackFrontal:
@@ -64,7 +64,7 @@ flakt:
 	Health:
 		HP: 100
 	Passenger:
-		PipType: Green
+		CustomPipType: green
 	RevealsShroud:
 		Range: 5c0
 	AttackFrontal:
@@ -128,7 +128,7 @@ shk:
 		Type: Plate
 	-Crushable:
 	Passenger:
-		PipType: Red
+		CustomPipType: red
 	AttackFrontal:
 		Voice: Attack
 	Armament@primary:
@@ -142,12 +142,11 @@ shk:
 	Armament@charge:
 		Weapon: AssaultBolt
 		LocalOffset: 320,128,1024
-		TargetStances: Ally
-		ForceTargetStances: None
+		TargetRelationships: Ally
+		ForceTargetRelationships: None
 		Cursor: ability
 		OutsideRangeCursor: ability
 	AmmoPool:
-		PipCount: 0
 	ReloadAmmoPool:
 		Delay: 70
 	WithInfantryBody:
@@ -161,6 +160,7 @@ shk:
 		Prerequisites: barracks.infiltrated
 	QuantizeFacingsFromSequence:
 		Sequence: stand
+	-WithAmmoPipsDecoration:
 
 terror:
 	Inherits: ^Infantry
@@ -190,13 +190,13 @@ terror:
 	Armor:
 		Type: Flak
 	Passenger:
-		PipType: Red
+		CustomPipType: red
 	Explodes:
 		Weapon: TerrorBomb
 		EmptyWeapon: TerrorBomb
 	AttackFrontal:
 		Voice: Attack
-		FacingTolerance: 128
+		FacingTolerance: 512
 	Armament@PRIMARY:
 		Weapon: DemoTruckTargeting
 		PauseOnCondition: chronodisable
@@ -246,7 +246,7 @@ deso:
 	-DamagedByTintedCells:
 	-Crushable:
 	Passenger:
-		PipType: Red
+		CustomPipType: red
 	Armament@primary:
 		Weapon: RadBeamWeapon
 		RequiresCondition: !rank-elite
@@ -268,7 +268,7 @@ deso:
 		UndeployedCondition: undeployed
 		CanDeployOnRamps: true
 		UndeployOnMove: true
-		Facing: 92
+		Facing: 368
 		Voice: Deploy
 	WithSpriteBody@DEPLOYED:
 		Sequence: deployed
@@ -312,7 +312,7 @@ ivan:
 	Armor:
 		Type: None
 	Passenger:
-		PipType: Red
+		CustomPipType: red
 	Explodes:
 		Weapon: IvanDeath
 		EmptyWeapon: IvanDeath
@@ -388,7 +388,7 @@ yuri:
 	Armor:
 		Type: None
 	Passenger:
-		PipType: Red
+		CustomPipType: red
 	PeriodicExplosion:
 		Weapon: PsiWave
 		LocalOffset: 0,0,128

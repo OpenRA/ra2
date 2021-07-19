@@ -63,7 +63,7 @@ crate:
 amcv.colorpicker:
 	Inherits: amcv
 	Mobile:
-		InitialFacing: 160
+		InitialFacing: 640
 	-Buildable:
 	-MapEditorData:
 	RenderSprites:
@@ -134,9 +134,9 @@ FLAMEGUY:
 		IdleSequences: run
 	Health:
 		HP: 160
-	SelfHealing:
+	ChangesHealth:
 		Step: -10
-		HealIfBelow: 101
+		StartIfBelow: 101
 	ScaredyCat:
 		PanicSequencePrefix:
 	WithDeathAnimation:

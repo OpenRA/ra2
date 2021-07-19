@@ -181,7 +181,6 @@
 		ValuePerUnit: 25
 		Type: Ore
 		Name: Valuable Minerals
-		PipColor: Yellow
 		AllowedTerrainTypes: Clear, Rough, Road
 		AllowUnderActors: false
 		TerrainType: Ore
@@ -193,7 +192,6 @@
 		ValuePerUnit: 50
 		Type: Gems
 		Name: Valuable Minerals
-		PipColor: Red
 		AllowedTerrainTypes: Clear, Rough, Road
 		AllowUnderActors: false
 		TerrainType: Gems
@@ -215,30 +213,39 @@ World:
 	SmudgeLayer@smallscorch:
 		Type: SmallScorch
 		Sequence: smallscorches
-		SmokeType: smallfire
-		SmokePercentage: 50
+		SmokeImage: smallfire
+		SmokeChance: 50
+		SmokeSequences: idle
 	SmudgeLayer@mediumscorch:
 		Type: MediumScorch
 		Sequence: mediumscorches
-		SmokeType: mediumfire
-		SmokePercentage: 75
+		SmokeImage: mediumfire
+		SmokeChance: 75
+		SmokeSequences: idle
 	SmudgeLayer@largescorch:
 		Type: LargeScorch
 		Sequence: largescorches
-		SmokeType: largefire
-		SmokePercentage: 100
+		SmokeImage: largefire
+		SmokeChance: 100
+		SmokeSequences: idle
 	SmudgeLayer@smallcrater:
 		Type: SmallCrater
-		SmokeType: smallsmoke
+		SmokeImage: smallsmoke
 		Sequence: smallcraters
+		SmokeChance: 25
+		SmokeSequences: idle
 	SmudgeLayer@mediumcrater:
 		Type: MediumCrater
-		SmokeType: smallsmoke
+		SmokeImage: smallsmoke
 		Sequence: mediumcraters
+		SmokeChance: 25
+		SmokeSequences: idle
 	SmudgeLayer@largecrater:
 		Type: LargeCrater
-		SmokeType: largesmoke
+		SmokeImage: largesmoke
 		Sequence: largecraters
+		SmokeChance: 25
+		SmokeSequences: idle
 	ResourceLayer:
 	ResourceRenderer:
 		RenderTypes: Ore, Gems
@@ -263,15 +270,15 @@ World:
 		ClassName: MCV Only
 		Factions: allies, america, germany, england, france, korea
 		BaseActor: amcv
-		BaseActorFacing: 224
+		BaseActorFacing: 896
 	MPStartUnits@lightallies:
 		Class: light
 		ClassName: Light Support
 		Factions: allies, america, germany, england, france, korea
 		BaseActor: amcv
-		BaseActorFacing: 224
+		BaseActorFacing: 896
 		SupportActors: dog,e1,e1
-		SupportActorsFacing: 224
+		SupportActorsFacing: 896
 		InnerSupportRadius: 3
 		OuterSupportRadius: 5
 	MPStartUnits@mediumallies:
@@ -279,9 +286,9 @@ World:
 		ClassName: Medium Support
 		Factions: allies, america, germany, england, france, korea
 		BaseActor: amcv
-		BaseActorFacing: 224
+		BaseActorFacing: 896
 		SupportActors: dog,e1,e1,e1,mtnk,engineer
-		SupportActorsFacing: 224
+		SupportActorsFacing: 896
 		InnerSupportRadius: 3
 		OuterSupportRadius: 5
 	MPStartUnits@heavyallies:
@@ -289,9 +296,9 @@ World:
 		ClassName: Heavy Support
 		Factions: allies, america, germany, england, france, korea
 		BaseActor: amcv
-		BaseActorFacing: 224
+		BaseActorFacing: 896
 		SupportActors: dog,e1,e1,e1,e1,mtnk,mtnk,fv,engineer
-		SupportActorsFacing: 224
+		SupportActorsFacing: 896
 		InnerSupportRadius: 3
 		OuterSupportRadius: 5
 	MPStartUnits@smcv:
@@ -299,15 +306,15 @@ World:
 		ClassName: MCV Only
 		Factions: soviets, cuba, libya, iraq, russia
 		BaseActor: smcv
-		BaseActorFacing: 224
+		BaseActorFacing: 896
 	MPStartUnits@lightsoviets:
 		Class: light
 		ClassName: Light Support
 		Factions: soviets, cuba, libya, iraq, russia
 		BaseActor: smcv
-		BaseActorFacing: 224
+		BaseActorFacing: 896
 		SupportActors: dog,e2,e2,e2
-		SupportActorsFacing: 224
+		SupportActorsFacing: 896
 		InnerSupportRadius: 3
 		OuterSupportRadius: 5
 	MPStartUnits@mediumsoviets:
@@ -315,9 +322,9 @@ World:
 		ClassName: Medium Support
 		Factions: soviets, cuba, libya, iraq, russia
 		BaseActor: smcv
-		BaseActorFacing: 224
+		BaseActorFacing: 896
 		SupportActors: dog,e2,e2,e2,e2,htnk,engineer
-		SupportActorsFacing: 224
+		SupportActorsFacing: 896
 		InnerSupportRadius: 3
 		OuterSupportRadius: 5
 	MPStartUnits@heavysoviets:
@@ -325,9 +332,9 @@ World:
 		ClassName: Heavy Support
 		Factions: soviets, cuba, libya, iraq, russia
 		BaseActor: smcv
-		BaseActorFacing: 224
+		BaseActorFacing: 896
 		SupportActors: dog,e2,e2,e2,e2,e2,htnk,htnk,htk,engineer
-		SupportActorsFacing: 224
+		SupportActorsFacing: 896
 		InnerSupportRadius: 3
 		OuterSupportRadius: 5
 	CrateSpawner:

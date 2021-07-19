@@ -5,8 +5,11 @@ bus:
 	Cargo:
 		Types: Infantry
 		MaxWeight: 20
-		PipCount: 5
 		UnloadVoice: Move
+	WithCargoPipsDecoration:
+		Position: BottomLeft
+		RequiresSelection: true
+		PipCount: 5
 
 limo:
 	Inherits: ^CivVehicle
@@ -15,8 +18,11 @@ limo:
 	Cargo:
 		Types: Infantry
 		MaxWeight: 20
-		PipCount: 5
 		UnloadVoice: Move
+	WithCargoPipsDecoration:
+		Position: BottomLeft
+		RequiresSelection: true
+		PipCount: 5
 
 pick:
 	Inherits: ^CivVehicle
