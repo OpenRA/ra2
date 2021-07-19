@@ -39,6 +39,12 @@ sapc:
 	WithCargoPipsDecoration:
 		Position: BottomLeft
 		RequiresSelection: true
+		Palette: pips
+		CustomPipSequences:
+			blue: pip-blue
+			yellow: pip-yellow
+			green: pip-green
+			red: pip-red
 
 sub:
 	Inherits: ^Ship

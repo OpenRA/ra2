@@ -160,7 +160,6 @@ shk:
 		Prerequisites: barracks.infiltrated
 	QuantizeFacingsFromSequence:
 		Sequence: stand
-	-WithAmmoPipsDecoration:
 
 terror:
 	Inherits: ^Infantry
