@@ -11,10 +11,10 @@ ModCredits:
 PackageFormats: Mix, AudioBag
 
 Packages:
-	~^Content/ra2
-	.
+	~^SupportDir|Content/ra2
+	^EngineDir
 	$ra2: ra2
-	./mods/common: common
+	^EngineDir|mods/common: common
 	~ra2.mix
 	~language.mix
 	~multi.mix
@@ -105,8 +105,8 @@ Chrome:
 	ra2|chrome.yaml
 
 Assemblies:
-	common|OpenRA.Mods.Common.dll
-	common|OpenRA.Mods.Cnc.dll
+	^BinDir|OpenRA.Mods.Common.dll
+	^BinDir|OpenRA.Mods.Cnc.dll
 	ra2|OpenRA.Mods.RA2.dll
 
 ChromeLayout:
@@ -302,11 +302,11 @@ ModContent:
 	HeaderMessage: The original game content must be copied from an original game disc.
 	Packages:
 		base: Base Game Files
-			TestFiles: ^Content/ra2/ra2.mix, ^Content/ra2/language.mix
+			TestFiles: ^SupportDir|Content/ra2/ra2.mix, ^SupportDir|Content/ra2/language.mix
 			Sources: ra2, origin, tfd
 			Required: true
 		music: Base Game Music
-			TestFiles: ^Content/ra2/theme.mix
+			TestFiles: ^SupportDir|Content/ra2/theme.mix
 			Sources: ra2, origin, tfd
 	Sources:
 		ra2|installer/ra2.yaml
