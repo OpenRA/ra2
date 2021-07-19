@@ -19,7 +19,7 @@ engineer:
 	Health:
 		HP: 75
 	Passenger:
-		PipType: Blue
+		CustomPipType: blue
 	EngineerRepair:
 	RepairsBridges:
 		RepairNotification: BridgeRepaired
@@ -69,12 +69,12 @@ dog:
 	-SpeedMultiplier@ELITE:
 	-ReloadDelayMultiplier@VETERAN:
 	-ReloadDelayMultiplier@ELITE:
-	-SelfHealing@ELITE:
+	-ChangesHealth@ELITE:
 	-InaccuracyMultiplier@ELITE:
 	-WithDecoration@VETERAN:
 	-WithDecoration@ELITE:
 	Passenger:
-		PipType: Yellow
+		CustomPipType: yellow
 	RevealsShroud:
 		Range: 9c0
 	Armament:
@@ -138,7 +138,7 @@ e1:
 	Mobile:
 		PauseOnCondition: chronodisable || !undeployed
 	Passenger:
-		PipType: Green
+		CustomPipType: green
 	RevealsShroud:
 		Range: 5c0
 	AttackFrontal:
@@ -169,7 +169,7 @@ e1:
 		DeployedCondition: deployed
 		UndeployedCondition: undeployed
 		CanDeployOnRamps: True
-		Facing: 128
+		Facing: 512
 		RequiresCondition: !parachute
 		DeploySounds: igidepa.wav, igidepb.wav
 		UndeploySounds: igidepa.wav, igidepb.wav
@@ -178,8 +178,8 @@ e1:
 	-TakeCover:
 	Turreted:
 		RealignDelay: -1
-		TurnSpeed: 50
-		InitialFacing: 128
+		TurnSpeed: 200
+		InitialFacing: 512
 	WithSpriteTurret:
 		Sequence: deployed
 		RequiresCondition: !undeployed && editorhack
@@ -230,7 +230,7 @@ snipe:
 	Health:
 		HP: 125
 	Passenger:
-		PipType: Red
+		CustomPipType: red
 	RevealsShroud:
 		Range: 8c0
 	Armor:
@@ -274,7 +274,7 @@ spy:
 	RevealsShroud:
 		Range: 5c0
 	Passenger:
-		PipType: Yellow
+		CustomPipType: yellow
 	TakeCover:
 	Disguise:
 		DisguisedCondition: disguise
@@ -289,8 +289,7 @@ spy:
 		Image: pips
 		Sequence: pip-disguise
 		Palette: pips
-		ReferencePoint: Top, Right
-		ZOffset: 256
+		Position: TopRight
 		RequiresCondition: disguise
 	Voiced:
 		VoiceSet: SpyVoice
@@ -334,7 +333,7 @@ ghost:
 	Armor:
 		Type: Flak
 	Passenger:
-		PipType: Red
+		CustomPipType: red
 	Armament@primary:
 		Weapon: MP5
 		RequiresCondition: !rank-elite
@@ -473,7 +472,7 @@ tany:
 	Armor:
 		Type: Flak
 	Passenger:
-		PipType: Red
+		CustomPipType: red
 	Armament@primary:
 		Weapon: DoublePistols
 		RequiresCondition: !rank-elite
@@ -531,8 +530,8 @@ jumpjet:
 		Voice: Attack
 	Aircraft:
 		CruiseAltitude: 3072
-		InitialFacing: 20
-		TurnSpeed: 255
+		InitialFacing: 80
+		TurnSpeed: 1023
 		Speed: 140
 		AltitudeVelocity: 83
 		Voice: Move
@@ -585,7 +584,7 @@ jumpjet.husk:
 	Tooltip:
 		Name: Rocketeer
 	Aircraft:
-		TurnSpeed: 10
+		TurnSpeed: 40
 		Speed: 140
 	FallsToEarth:
 		Explosion: UnitExplodeSmall
@@ -620,7 +619,7 @@ cleg:
 	RevealsShroud:
 		Range: 8c0
 	Passenger:
-		PipType: Red
+		CustomPipType: red
 	-Crushable:
 	-TakeCover:
 	PortableChrono:

@@ -17,7 +17,7 @@ lcrf:
 	Armor:
 		Type: Light
 	Mobile:
-		TurnSpeed: 5
+		TurnSpeed: 20
 		Speed: 90
 		Locomotor: lcraft
 		PauseOnCondition: notmobile || chronodisable
@@ -26,8 +26,7 @@ lcrf:
 	Cargo:
 		Types: Infantry, Vehicle
 		MaxWeight: 12
-		PipCount: 12
-		PassengerFacing: 96
+		PassengerFacing: 384
 		UnloadTerrainTypes: Clear, Rough, Rail, Road, DirtRoad, Beach, Ore, Gems
 		UnloadVoice: Move
 		LoadingCondition: notmobile
@@ -39,6 +38,9 @@ lcrf:
 	Voiced:
 		VoiceSet: AlliedNavalVoice
 	HitShape:
+	WithCargoPipsDecoration:
+		Position: BottomLeft
+		RequiresSelection: true
 
 dest:
 	Inherits: ^Ship
@@ -58,7 +60,7 @@ dest:
 	Armor:
 		Type: Heavy
 	Mobile:
-		TurnSpeed: 5
+		TurnSpeed: 20
 		Speed: 90
 	RevealsShroud:
 		Range: 7c0
@@ -93,7 +95,7 @@ dest:
 	AttackFrontal@Spawner:
 		Voice: Attack
 		Armaments: asw
-		FacingTolerance: 128
+		FacingTolerance: 512
 	WithMuzzleOverlay:
 	DetectCloaked:
 		CloakTypes: Underwater
@@ -132,7 +134,7 @@ aegis:
 	Armor:
 		Type: Light
 	Mobile:
-		TurnSpeed: 1
+		TurnSpeed: 4
 		Speed: 60
 	RevealsShroud:
 		Range: 8c0
@@ -140,7 +142,7 @@ aegis:
 		Weapon: Medusa
 	AttackFrontal:
 		Voice: Attack
-		FacingTolerance: 128
+		FacingTolerance: 512
 	AutoTarget:
 	Explodes:
 		Weapon: UnitExplode
@@ -171,12 +173,11 @@ dlph:
 	Health:
 		HP: 200
 	Mobile:
-		TurnSpeed: 6
+		TurnSpeed: 24
 		Speed: 120
 		Locomotor: naval
 		Voice: Move
 	SelectionDecorations:
-		Palette: pips
 	Selectable:
 		Bounds: 40, 40
 	Voiced:
@@ -256,13 +257,13 @@ carrier:
 	Selectable:
 		Bounds: 60,80,0,-6
 	Mobile:
-		TurnSpeed: 1
+		TurnSpeed: 4
 		Speed: 60
 	RevealsShroud:
 		Range: 7c0
 	AttackFrontal:
 		Voice: Attack
-		FacingTolerance: 128
+		FacingTolerance: 512
 	Explodes:
 		Weapon: UnitExplode
 		EmptyWeapon: UnitExplode

@@ -26,7 +26,7 @@ AssaultBolt:
 		Range: 42
 		Duration: 75
 		Condition: charged
-		ValidStances: Ally
+		ValidRelationships: Ally
 		ValidTargets: TeslaBoost
 
 CoilBolt:
@@ -86,7 +86,7 @@ SonicZap:
 		Falloff: 100, 100
 		Damage: 4
 		AffectsParent: false
-		ValidStances: Neutral, Enemy
+		ValidRelationships: Neutral, Enemy
 		Versus:
 			Heavy: 80
 			Concrete: 60
@@ -97,7 +97,7 @@ SonicZap:
 		Falloff: 50, 50
 		Damage: 4
 		AffectsParent: false
-		ValidStances: Ally
+		ValidRelationships: Ally
 		Versus:
 			Heavy: 80
 			Concrete: 60

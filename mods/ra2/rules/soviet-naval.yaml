@@ -17,7 +17,7 @@ sapc:
 	Armor:
 		Type: Heavy
 	Mobile:
-		TurnSpeed: 5
+		TurnSpeed: 20
 		Speed: 90
 		Locomotor: lcraft
 		PauseOnCondition: notmobile || chronodisable
@@ -26,8 +26,7 @@ sapc:
 	Cargo:
 		Types: Infantry, Vehicle
 		MaxWeight: 12
-		PipCount: 12
-		PassengerFacing: 96
+		PassengerFacing: 384
 		UnloadTerrainTypes: Clear, Rough, Rail, Road, DirtRoad, Beach, Ore, Gems
 		UnloadVoice: Move
 		LoadingCondition: notmobile
@@ -37,6 +36,9 @@ sapc:
 	WithVoxelBody:
 	RenderSprites:
 	HitShape:
+	WithCargoPipsDecoration:
+		Position: BottomLeft
+		RequiresSelection: true
 
 sub:
 	Inherits: ^Ship
@@ -56,7 +58,7 @@ sub:
 	Armor:
 		Type: Heavy
 	Mobile:
-		TurnSpeed: 2
+		TurnSpeed: 8
 		Speed: 60
 	-LeavesTrails:
 	RevealsShroud:
@@ -125,7 +127,7 @@ hyd:
 	Armor:
 		Type: Heavy
 	Mobile:
-		TurnSpeed: 6
+		TurnSpeed: 24
 		Speed: 120
 	RevealsShroud:
 		Range: 8c0
@@ -165,17 +167,16 @@ sqd:
 		Type: Light
 	Health:
 		HP: 200
-	SelfHealing:
+	ChangesHealth:
 		Step: 2
 		Delay: 100
 		DamageCooldown: 125
 	Mobile:
-		TurnSpeed: 6
+		TurnSpeed: 24
 		Speed: 120
 		Locomotor: naval
 		Voice: Move
 	SelectionDecorations:
-		Palette: pips
 	Selectable:
 		Bounds: 80, 30
 	Voiced:

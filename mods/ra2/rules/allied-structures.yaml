@@ -29,7 +29,7 @@ gacnst:
 	Transforms:
 		IntoActor: amcv
 		Offset: 1,1
-		Facing: 96
+		Facing: 384
 		DeployCursor: undeploy
 		RequiresCondition: factundeploy && !build-incomplete
 	TransformsIntoMobile:
@@ -180,8 +180,7 @@ gapile:
 	WithTextDecoration@primary:
 		RequiresSelection: true
 		Text: PRIMARY
-		ReferencePoint: Top
-		ZOffset: 256
+		Position: Top
 		RequiresCondition: primary
 	ProductionBar:
 		ProductionType: Infantry
@@ -231,19 +230,19 @@ garefn:
 		TickLifetime: 30
 		TickVelocity: 1
 		TickRate: 10
-		DockAngle: 160
+		DockAngle: 640
 		UseStorage: false
 	CustomSellValue:
 		Value: 300
 	InfiltrateForCash:
 		Types: SpyInfiltrate
 		Percentage: 50
-		Notification: CreditsStolen
+		InfiltratedNotification: CreditsStolen
 		Minimum: 500
 	FreeActor:
 		Actor: cmin
 		SpawnOffset: 3, 1
-		Facing: 160
+		Facing: 640
 	WithDockedOverlay:
 	WithIdleOverlay@bib:
 		Sequence: idle-bib
@@ -321,16 +320,16 @@ gaairc:
 	Reservable:
 	Exit@1:
 		SpawnOffset: -370,370,0
-		Facing: 224
+		Facing: 896
 	Exit@2:
 		SpawnOffset: 370,-370,0
-		Facing: 224
+		Facing: 896
 	Exit@3:
 		SpawnOffset: 1000,370,0
-		Facing: 224
+		Facing: 896
 	Exit@4:
 		SpawnOffset: 350,1000,0
-		Facing: 224
+		Facing: 896
 	Production:
 		Produces: Aircraft
 	ProductionBar:
@@ -341,8 +340,7 @@ gaairc:
 	WithTextDecoration@primary:
 		RequiresSelection: true
 		Text: PRIMARY
-		ReferencePoint: Top
-		ZOffset: 256
+		Position: Top
 		RequiresCondition: primary
 	InfiltrateForExploration:
 		Types: SpyInfiltrate
@@ -415,8 +413,7 @@ gaweap:
 	WithTextDecoration@primary:
 		RequiresSelection: true
 		Text: PRIMARY
-		ReferencePoint: Top
-		ZOffset: 256
+		Position: Top
 		RequiresCondition: primary
 	ProductionBar:
 		ProductionType: Vehicle
@@ -535,7 +532,7 @@ gayard:
 		ExitCell: 4,-2
 	Exit@4_5:
 		SpawnOffset: 0,-113,0
-		Facing: 160
+		Facing: 640
 		ExitCell: 4,5
 	# X 5 column
 	Exit@5_n2:
@@ -552,7 +549,7 @@ gayard:
 		ExitCell: 5,3
 	Exit@5_4:
 		SpawnOffset: 0,-113,0
-		Facing: 96
+		Facing: 384
 		ExitCell: 5,4
 	Exit@5_5:
 		ExitCell: 5,5
@@ -564,8 +561,7 @@ gayard:
 	WithTextDecoration@primary:
 		RequiresSelection: true
 		Text: PRIMARY
-		ReferencePoint: Top
-		ZOffset: 256
+		Position: Top
 		RequiresCondition: primary
 	RallyPoint:
 		Path: 5,1
@@ -715,14 +711,12 @@ gapill:
 	Armament:
 		Weapon: vulcan2
 		LocalOffset: 416,0,416
-		MuzzleSequence: muzzle
-		MuzzleSplitFacings: 8
 	AttackTurreted:
 		Voice: Attack
 		RequiresCondition: !build-incomplete
 	WithMuzzleOverlay:
 	Turreted:
-		TurnSpeed: 255
+		TurnSpeed: 1023
 	BodyOrientation:
 		QuantizedFacings: 8
 	WithRangeCircle:
@@ -756,9 +750,8 @@ nasam:
 	Selectable:
 		Bounds: 46, 62, 0, -20
 	Turreted:
-		TurnSpeed: 10
-		InitialFacing: 224
-		PreviewFacing: 224
+		TurnSpeed: 40
+		InitialFacing: 896
 		Offset: 550,0,0
 	AttackTurreted:
 		Voice: Attack
@@ -810,9 +803,8 @@ gtgcan:
 	Selectable:
 		Bounds: 46, 62, 0, -20
 	Turreted:
-		TurnSpeed: 3
-		InitialFacing: 224
-		PreviewFacing: 224
+		TurnSpeed: 12
+		InitialFacing: 896
 		Offset: 400,0,0
 	AttackTurreted:
 		Voice: Attack
@@ -1044,13 +1036,15 @@ gacsph:
 		#SelectTargetSound: schrlo1.wav, schrlo2a.wav schrlo2b.wav, schrlo2c.wav, schrlo3.wav
 		EndChargeSound: schropen.wav
 		EndChargeSpeechNotification: ChronosphereReady
-		DisplayTimerStances: Ally, Neutral, Enemy
+		DisplayTimerRelationships: Ally, Neutral, Enemy
 		DisplayRadarPing: True
 		KillCargo: False
 		SelectionCursor: chronosphere
 		TargetCursor: chronosphere
 		TargetOverlayPalette: effect75alpha
 		PauseOnCondition: lowpower
+		Dimensions: 3, 3
+		Footprint: _x_ xxx _x_
 	SpawnSurvivors:
 		DeathTypes: ExplosionDeath, BulletDeath
 		Actors: e1, e1, e1, e1, e1

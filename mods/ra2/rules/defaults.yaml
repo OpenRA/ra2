@@ -6,7 +6,6 @@
 	DrawLineToTarget:
 	GivesExperience:
 	ScriptTriggers:
-	ConditionManager:
 	Huntable:
 
 ^SpriteActor:
@@ -202,10 +201,10 @@
 	ReloadDelayMultiplier@ELITE:
 		RequiresCondition: rank-elite
 		Modifier: 75
-	SelfHealing@ELITE:
+	ChangesHealth@ELITE:
 		Step: 2
 		Delay: 100
-		HealIfBelow: 100
+		StartIfBelow: 100
 		DamageCooldown: 125
 		RequiresCondition: rank-veteran && !rank-elite
 	InaccuracyMultiplier@ELITE:
@@ -215,16 +214,14 @@
 		Image: rank
 		Sequence: veteran
 		Palette: pips
-		ReferencePoint: Bottom, Right
+		Position: BottomRight
 		RequiresCondition: rank-veteran && !rank-elite
-		ZOffset: 256
 	WithDecoration@ELITE:
 		Image: rank
 		Sequence: elite
 		Palette: pips
-		ReferencePoint: Bottom, Right
+		Position: BottomRight
 		RequiresCondition: rank-elite
-		ZOffset: 256
 
 ^CrateStatModifiers:
 	FirepowerMultiplier@CRATES:
@@ -338,7 +335,6 @@
 		Action: Kill
 		DeathTypes: BulletDeath
 	SelectionDecorations:
-		Palette: pips
 	Selectable:
 		Priority: 3
 	Targetable:
@@ -384,7 +380,7 @@
 	WithBuildingRepairDecoration:
 		Image: allyrepair
 		Sequence: repair
-		ReferencePoint: Center
+		Position: Center
 		Palette: mouse
 	CaptureManager:
 	FootprintPlaceBuildingPreview:
@@ -509,7 +505,6 @@
 	FrozenUnderFog:
 	-CombatDebugOverlay:
 	-DrawLineToTarget:
-	-ConditionManager:
 	Building:
 		Dimensions: 1,1
 		Footprint: x
@@ -588,7 +583,6 @@
 		Locomotor: foot
 	WithTextControlGroupDecoration:
 	SelectionDecorations:
-		Palette: pips
 	Selectable:
 	Targetable:
 		TargetTypes: Ground, Infantry, DetonateAttack, Disguise
@@ -834,10 +828,9 @@
 		DeathTypes: BulletDeath
 	Mobile:
 		Voice: Move
-		TurnSpeed: 5
+		TurnSpeed: 20
 		Locomotor: wheeled
 	SelectionDecorations:
-		Palette: pips
 	Selectable:
 		Bounds: 32,32
 	Targetable:
@@ -924,7 +917,6 @@
 		TargetTypes: Air
 		RequiresCondition: airborne
 	SelectionDecorations:
-		Palette: pips
 	Selectable:
 	Aircraft:
 		Voice: Move
@@ -983,7 +975,7 @@
 		CruiseAltitude: 5600
 		CruisingCondition: cruising
 		AltitudeVelocity: 120
-		InitialFacing: 224
+		InitialFacing: 896
 		TakeOffOnCreation: false
 		IdleBehavior: ReturnToBase
 	Hovers@CRUISING:
@@ -1055,7 +1047,7 @@
 	Mobile:
 		Voice: Move
 		Locomotor: naval
-		TurnSpeed: 5
+		TurnSpeed: 20
 	LeavesTrails:
 		Image: wake
 		Palette: effect50alpha
@@ -1063,7 +1055,6 @@
 		StationaryInterval: 18
 		MovingInterval: 6
 	SelectionDecorations:
-		Palette: pips
 	Selectable:
 		Bounds: 32,32
 	Targetable:

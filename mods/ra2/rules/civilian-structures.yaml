@@ -493,13 +493,12 @@ cawsh12:
 	RevealsShroud:
 		Range: 6c0
 	Turreted:
-		TurnSpeed: 255
+		TurnSpeed: 1023
 	BodyOrientation:
 		QuantizedFacings: 8
 	Cargo:
 		Types: Infantry
 		MaxWeight: 5
-		PipCount: 5
 	AttackGarrisoned:
 		Voice: Attack
 		Armaments: M1Carbine
@@ -510,6 +509,9 @@ cawsh12:
 		Actor: cawsh12.rubble
 	MapEditorData:
 		ExcludeTilesets: SNOW
+	WithCargoPipsDecoration:
+		Position: BottomLeft
+		RequiresSelection: true
 
 cawsh12.rubble:
 	Inherits: ^Rubble

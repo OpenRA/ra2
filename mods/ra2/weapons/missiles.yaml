@@ -44,8 +44,8 @@ Maverick:
 		Arm: 2
 		RangeLimit: 10c204
 		ContrailColor: D8D8FF
-		HorizontalRateOfTurn: 40
-		VerticalRateOfTurn: 40
+		HorizontalRateOfTurn: 160
+		VerticalRateOfTurn: 160
 	Warhead@1Dam: SpreadDamage
 		Spread: 128
 		Damage: 150
@@ -92,7 +92,7 @@ HoverMissile:
 		Speed: 213
 		Arm: 2
 		Inaccuracy: 128
-		HorizontalRateOfTurn: 8
+		HorizontalRateOfTurn: 32
 		RangeLimit: 14c512
 		ContrailColor: D8D8FF
 	Warhead@1Dam: SpreadDamage
@@ -146,7 +146,7 @@ SubTorpedo:
 		Image: missile
 		Speed: 102
 		TrailImage: bbblelrg
-		HorizontalRateOfTurn: 12
+		HorizontalRateOfTurn: 48
 		RangeLimit: 8c409
 		BoundToTerrainType: Water
 		Palette: shadow
@@ -190,7 +190,7 @@ HornetBomb:
 	Projectile: Missile
 		Speed: 384
 		Arm: 2
-		HorizontalRateOfTurn: 8
+		HorizontalRateOfTurn: 32
 		RangeLimit: 11c512
 		ContrailColor: D8D8FF
 	Warhead@1Dam: SpreadDamage

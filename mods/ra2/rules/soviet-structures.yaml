@@ -31,7 +31,7 @@ nacnst:
 	Transforms:
 		IntoActor: smcv
 		Offset: 1,1
-		Facing: 96
+		Facing: 384
 		DeployCursor: undeploy
 		RequiresCondition: factundeploy && !build-incomplete
 	TransformsIntoMobile:
@@ -198,14 +198,12 @@ nahand:
 	WithTextDecoration@primary:
 		RequiresSelection: true
 		Text: PRIMARY
-		ReferencePoint: Top
-		ZOffset: 256
+		Position: Top
 		RequiresCondition: primary
 	ProductionBar:
 		ProductionType: Infantry
 	Power:
 		Amount: -10
-	ConditionManager:
 	InfiltrateForSupportPower:
 		Types: SpyInfiltrate
 		Proxy: barracks.infiltrated
@@ -247,19 +245,19 @@ narefn:
 		TickLifetime: 30
 		TickVelocity: 1
 		TickRate: 10
-		DockAngle: 160
+		DockAngle: 640
 		UseStorage: false
 	CustomSellValue:
 		Value: 300
 	InfiltrateForCash:
 		Types: SpyInfiltrate
 		Percentage: 50
-		Notification: CreditsStolen
+		InfiltratedNotification: CreditsStolen
 		Minimum: 500
 	FreeActor:
 		Actor: harv
 		SpawnOffset: 3, 1
-		Facing: 160
+		Facing: 640
 	WithDockedOverlay:
 	WithIdleOverlay@bib:
 		Sequence: idle-bib
@@ -364,8 +362,7 @@ naweap:
 	WithTextDecoration@primary:
 		RequiresSelection: true
 		Text: PRIMARY
-		ReferencePoint: Top
-		ZOffset: 256
+		Position: Top
 		RequiresCondition: primary
 	ProductionBar:
 		ProductionType: Vehicle
@@ -481,7 +478,7 @@ nayard:
 		ExitCell: 4,-2
 	Exit@4_5:
 		SpawnOffset: 0,-113,0
-		Facing: 160
+		Facing: 640
 		ExitCell: 4,5
 	# X 5 column
 	Exit@5_n2:
@@ -498,7 +495,7 @@ nayard:
 		ExitCell: 5,3
 	Exit@5_4:
 		SpawnOffset: 0,-113,0
-		Facing: 96
+		Facing: 384
 		ExitCell: 5,4
 	Exit@5_5:
 		ExitCell: 5,5
@@ -510,8 +507,7 @@ nayard:
 	WithTextDecoration@primary:
 		RequiresSelection: true
 		Text: PRIMARY
-		ReferencePoint: Top
-		ZOffset: 256
+		Position: Top
 		RequiresCondition: primary
 	RallyPoint:
 		Path: 5,1
@@ -825,10 +821,12 @@ nairon:
 		EndChargeSound: siroread.wav
 		EndChargeSpeechNotification: IronCurtainReady
 		OnFireSound: siroon.wav
-		DisplayTimerStances: Ally, Neutral, Enemy
+		DisplayTimerRelationships: Ally, Neutral, Enemy
 		DisplayRadarPing: True
 		Condition: invulnerability
 		PauseOnCondition: lowpower
+		Dimensions: 3, 3
+		Footprint: _x_ xxx _x_
 	SupportPowerChargeBar:
 	GrantConditionOnPowerState@LOWPOWER:
 		Condition: lowpower
@@ -882,11 +880,10 @@ namisl:
 		MissileDelay: 35
 		SpawnOffset: 0,0,-1c0
 		IsPlayerPalette: true
-		DisplayTimerStances: Ally, Neutral, Enemy
+		DisplayTimerRelationships: Ally, Neutral, Enemy
 		DisplayBeacon: true
 		DisplayRadarPing: true
 		CameraRemoveDelay: 70
-		FlashType: Nuke
 		ArrowSequence: arrow
 		CameraRange: 10
 		TrailImage: nukesmoke
@@ -897,7 +894,7 @@ namisl:
 		FlightDelay: 200
 		PauseOnCondition: lowpower
 		SelectTargetSpeechNotification: SelectTarget
-	WithNukeLaunchAnimation:
+	WithSupportPowerActivationAnimation:
 	SpawnSurvivors:
 		DeathTypes: ExplosionDeath, BulletDeath
 		Actors: e2, e2, e2, e2, e2, e2, e2
@@ -936,9 +933,8 @@ naflak:
 	Selectable:
 		Bounds: 46, 62, 0, -20
 	Turreted:
-		TurnSpeed: 10
-		InitialFacing: 224
-		PreviewFacing: 224
+		TurnSpeed: 40
+		InitialFacing: 896
 		Offset: 450,0,0
 	AttackTurreted:
 		Voice: Attack
@@ -1045,9 +1041,8 @@ nalasr:
 	Selectable:
 		Bounds: 50, 30, 0, -12
 	Turreted:
-		TurnSpeed: 10
-		InitialFacing: 224
-		PreviewFacing: 224
+		TurnSpeed: 40
+		InitialFacing: 896
 		Offset: 320,0,0
 	AttackTurreted:
 		Voice: Attack
@@ -1055,8 +1050,6 @@ nalasr:
 	Armament:
 		Weapon: vulcan
 		LocalOffset: 544,128,480, 544,-128,480
-		MuzzleSequence: muzzle
-		MuzzleSplitFacings: 8
 	WithMuzzleOverlay:
 	BodyOrientation:
 		QuantizedFacings: 16
