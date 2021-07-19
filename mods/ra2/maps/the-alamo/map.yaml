@@ -43,362 +43,362 @@ Actors:
 		Location: 61,4
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor1: cawash07
 		Location: 21,13
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor2: cawash05
 		Location: 39,-12
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor3: cawash04
 		Location: 39,-22
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor4: cawash05
 		Location: 85,-4
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor5: cawash03
 		Location: 86,16
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor6: cawash10
 		Location: 80,24
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor7: causfgl
 		Location: 60,3
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor8: camisc04
 		Location: 52,6
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor9: camisc04
 		Location: 52,21
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor10: camisc04
 		Location: 42,-9
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor11: camisc04
 		Location: 89,1
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor12: camisc04
 		Location: 75,18
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor13: capark02
 		Location: 73,33
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor14: capark01
 		Location: 68,26
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor15: catexs03
 		Location: 40,1
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor16: catexs04
 		Location: 44,12
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor17: catexs08
 		Location: 40,13
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor18: catexs07
 		Location: 27,12
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor19: catexs06
 		Location: 27,1
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor20: canewy16
 		Location: 33,11
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor21: cachig02
 		Location: 27,20
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor22: cachig01
 		Location: 16,12
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor23: catexs06
 		Location: 20,-11
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor24: catexs07
 		Location: 45,1
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor25: catexs06
 		Location: 45,-31
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor26: catexs04
 		Location: 45,-14
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor27: catexs03
 		Location: 45,-24
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor28: catexs06
 		Location: 69,-18
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor29: catexs07
 		Location: 69,-23
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor30: castl02
 		Location: 79,-13
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor31: catexs04
 		Location: 94,-10
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor32: catexs03
 		Location: 94,-18
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor33: catexs06
 		Location: 80,9
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor34: catexs03
 		Location: 85,2
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor35: castl03
 		Location: 86,8
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor36: catexs08
 		Location: 80,15
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor37: castl02
 		Location: 53,17
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor38: castl01
 		Location: 59,17
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor39: castl03
 		Location: 66,40
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor40: catexs03
 		Location: 33,21
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor41: camiam01
 		Location: 54,25
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor42: caairp
 		Location: 30,-14
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor43: canewy12
 		Location: 33,1
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor44: caoild
 		Location: 96,4
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor45: canewy12
 		Location: 81,-24
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor46: canewy16
 		Location: 87,-23
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor47: caoild
 		Location: 70,-29
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor48: caoild
 		Location: 43,31
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor49: canewy20
 		Location: 30,-20
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor50: camisc05
 		Location: 73,-30
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor51: cats01
 		Location: 74,-31
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor52: cats01
 		Location: 74,-33
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor53: camisc05
 		Location: 39,32
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor54: camisc05
 		Location: 39,33
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor55: car
 		Location: 85,-14
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor56: car
 		Location: 57,-18
 		Owner: Neutral
 		Health: 100
-		Facing: 224
+		Facing: 896
 	Actor57: car
 		Location: 34,-2
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor58: car
 		Location: 94,-5
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor59: car
 		Location: 54,29
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor60: car
 		Location: 68,23
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor61: car
 		Location: 80,-4
 		Owner: Neutral
 		Health: 100
-		Facing: 160
+		Facing: 640
 	Actor62: car
 		Location: 85,13
 		Owner: Neutral
 		Health: 100
-		Facing: 224
+		Facing: 896
 	Actor63: ptruck
 		Location: 59,-18
 		Owner: Neutral
 		Health: 100
-		Facing: 224
+		Facing: 896
 	Actor64: ptruck
 		Location: 33,-3
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor65: ptruck
 		Location: 71,18
 		Owner: Neutral
 		Health: 100
-		Facing: 32
+		Facing: 128
 	Actor66: ptruck
 		Location: 87,-13
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor67: ptruck
 		Location: 81,3
 		Owner: Neutral
 		Health: 100
-		Facing: 32
+		Facing: 128
 	Actor68: cona
 		Location: 40,30
 		Owner: Neutral
 		Health: 100
-		Facing: 128
+		Facing: 512
 	Actor69: cona
 		Location: 70,-26
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor70: cona
 		Location: 97,2
 		Owner: Neutral
 		Health: 100
-		Facing: 32
+		Facing: 128
 	Actor71: stang
 		Location: 79,-8
 		Owner: Neutral
 		Health: 100
-		Facing: 32
+		Facing: 128
 	Actor72: stang
 		Location: 98,-5
 		Owner: Neutral
@@ -408,112 +408,112 @@ Actors:
 		Location: 60,-17
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor74: stang
 		Location: 72,21
 		Owner: Neutral
 		Health: 100
-		Facing: 160
+		Facing: 640
 	Actor75: stang
 		Location: 47,9
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor76: stang
 		Location: 53,-15
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor77: suvb
 		Location: 97,-4
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor78: suvb
 		Location: 64,-15
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor79: suvb
 		Location: 54,-20
 		Owner: Neutral
 		Health: 100
-		Facing: 224
+		Facing: 896
 	Actor80: suvb
 		Location: 43,-3
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor81: suvb
 		Location: 65,22
 		Owner: Neutral
 		Health: 100
-		Facing: 224
+		Facing: 896
 	Actor82: suvb
 		Location: 69,19
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor83: suvw
 		Location: 82,-7
 		Owner: Neutral
 		Health: 100
-		Facing: 160
+		Facing: 640
 	Actor84: suvw
 		Location: 63,-21
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor85: suvw
 		Location: 68,19
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor86: suvw
 		Location: 53,-19
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor87: suvw
 		Location: 61,-17
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor88: suvw
 		Location: 45,9
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor89: suvw
 		Location: 47,-3
 		Owner: Neutral
 		Health: 100
-		Facing: 224
+		Facing: 896
 	Actor90: taxi
 		Location: 81,5
 		Owner: Neutral
 		Health: 100
-		Facing: 32
+		Facing: 128
 	Actor91: taxi
 		Location: 57,-15
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor92: bus
 		Location: 65,18
 		Owner: Neutral
 		Health: 100
-		Facing: 224
+		Facing: 896
 	Actor93: bus
 		Location: 64,18
 		Owner: Neutral
 		Health: 100
-		Facing: 224
+		Facing: 896
 	Actor94: bus
 		Location: 66,18
 		Owner: Neutral
 		Health: 100
-		Facing: 224
+		Facing: 896
 	Actor95: tree11
 		Location: 63,0
 		Owner: Neutral

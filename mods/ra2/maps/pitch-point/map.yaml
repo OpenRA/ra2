@@ -43,32 +43,32 @@ Actors:
 		Location: 106,-5
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor1: cafarm02
 		Location: 107,-7
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor2: cabarn02
 		Location: 113,-56
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor3: cahse07
 		Location: 89,-46
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor4: cahse01
 		Location: 76,1
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor5: ptruck
 		Location: 91,-44
 		Owner: Neutral
 		Health: 100
-		Facing: 96
+		Facing: 384
 	Actor6: tree06
 		Location: 112,-68
 		Owner: Neutral
