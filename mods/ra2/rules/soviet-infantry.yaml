@@ -423,6 +423,9 @@ yuri:
 	MindController:
 		ControllingCondition: controlling
 		Sounds: iyurat1a.wav
+	WithMindControllerPipsDecoration:
+		Position: BottomLeft
+		Palette: pips
 	WithMindControlArc:
 		UsePlayerColor: true
 		Offset: 0,0,960

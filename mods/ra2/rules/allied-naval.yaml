@@ -92,6 +92,9 @@ dest:
 		RespawnTicks: 300
 		ArmamentNames: asw
 		LoadedCondition: loaded
+	WithCarrierParentPipsDecoration:
+		Position: BottomLeft
+		Palette: pips
 	Exit:
 		SpawnOffset: 768,0,0
 	AttackFrontal:
@@ -282,6 +285,9 @@ carrier:
 		Actors: hornet, hornet, hornet
 		RespawnTicks: 300
 		SpawnAllAtOnce: true
+	WithCarrierParentPipsDecoration:
+		Position: BottomLeft
+		Palette: pips
 	Exit@0:
 		SpawnOffset: 0,0,0
 		Facing: 0
