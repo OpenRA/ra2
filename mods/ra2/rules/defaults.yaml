@@ -166,6 +166,11 @@
 			TopLeft: -3072, -2048
 			BottomRight: 3072, 2048
 
+^PlayerHandicaps:
+	HandicapFirepowerMultiplier:
+	HandicapDamageMultiplier:
+	HandicapProductionTimeMultiplier:
+
 ^GainsExperience:
 	GainsExperience:
 		Conditions:
@@ -327,6 +332,7 @@
 	Inherits@2: ^SpriteActor
 	Inherits@3: ^IronCurtainable
 	Inherits@shape: ^1x1Shape
+	Inherits@handicaps: ^PlayerHandicaps
 	-DrawLineToTarget:
 	OwnerLostAction:
 		Action: Kill
@@ -564,6 +570,7 @@
 	Inherits@4: ^ChronoDisable
 	Inherits@5: ^CrateStatModifiers
 	Inherits@6: ^DamagedByRadiation
+	Inherits@handicaps: ^PlayerHandicaps
 	Health:
 	OwnerLostAction:
 		Action: Kill
@@ -821,6 +828,7 @@
 	Inherits@4: ^ChronoDisable
 	Inherits@5: ^CrateStatModifiers
 	Inherits@6: ^ParachutableVehicle
+	Inherits@handicaps: ^PlayerHandicaps
 	OwnerLostAction:
 		Action: Kill
 		DeathTypes: BulletDeath
@@ -959,6 +967,7 @@
 ^Aircraft:
 	Inherits@1: ^NeutralAircraft
 	Inherits@2: ^GainsExperience
+	Inherits@handicaps: ^PlayerHandicaps
 	WithTextControlGroupDecoration:
 	ChronoshiftableWithSpriteEffect:
 		Image: chrono
@@ -1039,6 +1048,7 @@
 	Inherits@3: ^IronCurtainable
 	Inherits@4: ^ChronoDisable
 	Inherits@5: ^CrateStatModifiers
+	Inherits@handicaps: ^PlayerHandicaps
 	OwnerLostAction:
 		Action: Kill
 		DeathTypes: BulletDeath
