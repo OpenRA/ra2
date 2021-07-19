@@ -106,6 +106,10 @@ harv:
 		Position: BottomLeft
 		RequiresSelection: true
 		PipCount: 7
+		Palette: pips
+		ResourceSequences:
+			Ore: pip-yellow
+			Gems: pip-red
 
 dron:
 	Inherits: ^Vehicle
@@ -211,6 +215,12 @@ htk:
 	WithCargoPipsDecoration:
 		Position: BottomLeft
 		RequiresSelection: true
+		Palette: pips
+		CustomPipSequences:
+			blue: pip-blue
+			yellow: pip-yellow
+			green: pip-green
+			red: pip-red
 
 htnk:
 	Inherits: ^Vehicle

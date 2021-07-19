@@ -93,6 +93,10 @@ cmin:
 		Position: BottomLeft
 		RequiresSelection: true
 		PipCount: 7
+		Palette: pips
+		ResourceSequences:
+			Ore: pip-yellow
+			Gems: pip-red
 
 mtnk:
 	Inherits: ^Vehicle
@@ -336,6 +340,12 @@ fv:
 	WithCargoPipsDecoration:
 		Position: BottomLeft
 		RequiresSelection: true
+		Palette: pips
+		CustomPipSequences:
+			blue: pip-blue
+			yellow: pip-yellow
+			green: pip-green
+			red: pip-red
 
 sref:
 	Inherits: ^Vehicle

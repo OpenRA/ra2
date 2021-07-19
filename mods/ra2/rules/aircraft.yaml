@@ -55,6 +55,12 @@ shad:
 	WithCargoPipsDecoration:
 		Position: BottomLeft
 		RequiresSelection: true
+		Palette: pips
+		CustomPipSequences:
+			blue: pip-blue
+			yellow: pip-yellow
+			green: pip-green
+			red: pip-red
 
 shadhusk:
 	Inherits: ^HelicopterHusk
@@ -197,6 +203,7 @@ orca:
 		RequiresSelection: true
 		FullSequence: pip-ammo
 		EmptySequence: pip-ammoempty
+		Palette: pips
 
 orcahusk:
 	Inherits: ^PlaneHusk
@@ -328,6 +335,7 @@ hornet:
 		RequiresSelection: true
 		FullSequence: pip-ammo
 		EmptySequence: pip-ammoempty
+		Palette: pips
 
 hornethusk:
 	Inherits: ^PlaneHusk
@@ -396,6 +404,7 @@ asw:
 	WithAmmoPipsDecoration:
 		Position: BottomLeft
 		RequiresSelection: true
+		Palette: pips
 
 aswhusk:
 	Inherits: ^PlaneHusk

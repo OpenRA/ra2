@@ -10,6 +10,12 @@ bus:
 		Position: BottomLeft
 		RequiresSelection: true
 		PipCount: 5
+		Palette: pips
+		CustomPipSequences:
+			blue: pip-blue
+			yellow: pip-yellow
+			green: pip-green
+			red: pip-red
 
 limo:
 	Inherits: ^CivVehicle
@@ -23,6 +29,12 @@ limo:
 		Position: BottomLeft
 		RequiresSelection: true
 		PipCount: 5
+		Palette: pips
+		CustomPipSequences:
+			blue: pip-blue
+			yellow: pip-yellow
+			green: pip-green
+			red: pip-red
 
 pick:
 	Inherits: ^CivVehicle
