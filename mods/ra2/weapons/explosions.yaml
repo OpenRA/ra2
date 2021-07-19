@@ -232,6 +232,9 @@ atomic:
 		Duration: 20
 		Intensity: 5
 		Multiplier: 1,1
+	Warhead@7FlashEffect: FlashPaletteEffect
+		Duration: 20
+		FlashType: Nuke
 
 demobomb:
 	Inherits: NukePayload
