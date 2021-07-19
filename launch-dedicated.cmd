@@ -5,8 +5,16 @@
 set Name="Dedicated Server"
 set ListenPort=1234
 set AdvertiseOnline=True
-set EnableSingleplayer=False
 set Password=""
+
+set RequireAuthentication=False
+set ProfileIDBlacklist=""
+set ProfileIDWhitelist=""
+
+set EnableSingleplayer=False
+set EnableSyncReports=False
+set EnableGeoIP=True
+set ShareAnonymizedIPs=True
 
 @echo off
 setlocal EnableDelayedExpansion
@@ -25,7 +33,7 @@ if not exist %ENGINE_DIRECTORY%\OpenRA.Game.exe goto noengine
 cd %ENGINE_DIRECTORY%
 
 :loop
-OpenRA.Server.exe Game.Mod=%MOD_ID% Server.Name=%Name% Server.ListenPort=%ListenPort% Server.AdvertiseOnline=%AdvertiseOnline% Server.EnableSingleplayer=%EnableSingleplayer% Server.Password=%Password%
+OpenRA.Server.exe Game.Mod=%MOD_ID% Server.Name=%Name% Server.ListenPort=%ListenPort% Server.AdvertiseOnline=%AdvertiseOnline% Server.EnableSingleplayer=%EnableSingleplayer% Server.Password=%Password% Server.RequireAuthentication=%RequireAuthentication% Server.ProfileIDBlacklist=%ProfileIDBlacklist% Server.ProfileIDWhitelist=%ProfileIDWhitelist% Server.EnableSyncReports=%EnableSyncReports% Server.EnableGeoIP=%EnableGeoIP% Server.ShareAnonymizedIPs=%ShareAnonymizedIPs% Engine.SupportDir=%SupportDir%
 goto loop
 
 :noengine
