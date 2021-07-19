@@ -711,6 +711,7 @@ gapill:
 	Armament:
 		Weapon: vulcan2
 		LocalOffset: 416,0,416
+		MuzzleSequence: muzzle
 	AttackTurreted:
 		Voice: Attack
 		RequiresCondition: !build-incomplete

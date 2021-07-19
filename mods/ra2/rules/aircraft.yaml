@@ -13,6 +13,7 @@ shad:
 	Armament:
 		Weapon: BlackHawkCannon
 		LocalOffset: 928,0,128
+		MuzzleSequence: muzzle
 	WithMuzzleOverlay:
 	Voiced:
 		VoiceSet: NighthawkVoice
