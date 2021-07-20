@@ -56,7 +56,7 @@ namespace OpenRA.Mods.RA2.Projectiles
 		public readonly string LaunchEffectImage = null;
 
 		[Desc("Launch effect sequence to play.")]
-		[SequenceReference("LaunchEffectImage")]
+		[SequenceReference("LaunchEffectImage", allowNullImage: true)]
 		public readonly string LaunchEffectSequence = null;
 
 		[Desc("Palette to use for launch effect.")]
