@@ -112,6 +112,10 @@ dog:
 			ElectroDeath: 2
 	-WithDeathAnimation@effect:
 	-SpawnActorOnDeath@flames:
+	-WithInfantryBody:
+	WithInfantryBody:
+		IdleSequences: idle1,idle2
+		StandSequences: stand
 
 e1:
 	Inherits@1: ^Infantry

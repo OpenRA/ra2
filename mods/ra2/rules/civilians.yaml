@@ -39,6 +39,10 @@ civbfm:
 	Inherits: ^CivilianInfantry
 	Tooltip:
 		Name: Beach Fat Male
+	-WithInfantryBody:
+	WithInfantryBody:
+		IdleSequences: idle1
+		StandSequences: stand
 
 civbf:
 	Inherits: ^CivilianInfantry
@@ -46,11 +50,19 @@ civbf:
 		VoiceSet: CivilianAlliedFemaleVoice
 	Tooltip:
 		Name: Beach Fat Female
+	-WithInfantryBody:
+	WithInfantryBody:
+		IdleSequences: idle1
+		StandSequences: stand
 
 civbtm:
 	Inherits: ^CivilianInfantry
 	Tooltip:
 		Name: Beach Thin Male
+	-WithInfantryBody:
+	WithInfantryBody:
+		IdleSequences: idle1
+		StandSequences: stand
 
 civsfm:
 	Inherits: ^CivilianInfantry
@@ -102,3 +114,7 @@ pres:
 	Tooltip:
 		Name: President
 		GenericVisibility: None
+	-WithInfantryBody:
+	WithInfantryBody:
+		IdleSequences: idle1
+		StandSequences: stand
