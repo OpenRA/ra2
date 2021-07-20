@@ -982,7 +982,7 @@ gaweat:
 		LaunchSpeechNotification: LightningStormCreated
 		LaunchSound: sweaintr.wav
 		IncomingSpeechNotification: WeathercontrolDeviceDetected
-		DisplayTimerStances: Ally, Neutral, Enemy
+		DisplayTimerRelationships: Ally, Neutral, Enemy
 		DisplayBeacon: true
 		DisplayRadarPing: true
 		Weapon: LightningStorm

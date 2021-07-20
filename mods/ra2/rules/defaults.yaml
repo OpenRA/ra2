@@ -763,6 +763,7 @@
 	ProximityCaptor:
 		Types: CivilianInfantry
 	ScaredyCat:
+		PanicSequencePrefix:
 	-MustBeDestroyed:
 	-TakeCover:
 	Voiced:

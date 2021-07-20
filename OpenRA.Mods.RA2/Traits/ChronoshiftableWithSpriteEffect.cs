@@ -22,11 +22,11 @@ namespace OpenRA.Mods.RA2.Traits
 		public readonly string Image = null;
 
 		[Desc("Sequence used for the effect played where the unit jumped from.")]
-		[SequenceReference("Image")]
+		[SequenceReference("Image", allowNullImage: true)]
 		public readonly string WarpInSequence = null;
 
 		[Desc("Sequence used for the effect played where the unit jumped to.")]
-		[SequenceReference("Image")]
+		[SequenceReference("Image", allowNullImage: true)]
 		public readonly string WarpOutSequence = null;
 
 		[Desc("Palette to render the warp in/out sprites in.")]
