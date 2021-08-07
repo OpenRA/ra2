@@ -25,6 +25,8 @@ shad:
 		Description: Infantry Transport Helicopter\nUndetectable by radar.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
 	Valued:
 		Cost: 1000
+	UpdatesPlayerStatistics:
+		AddToArmyValue: true
 	RevealsShroud:
 		Range: 7c0
 		Type: CenterPosition
@@ -78,6 +80,8 @@ zep:
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Valued:
 		Cost: 2000
+	UpdatesPlayerStatistics:
+		AddToArmyValue: true
 	Tooltip:
 		Name: Kirov Airship
 	Buildable:
@@ -152,6 +156,8 @@ orca:
 	Inherits: ^Plane
 	Valued:
 		Cost: 1200
+	UpdatesPlayerStatistics:
+		AddToArmyValue: true
 	Tooltip:
 		Name: Harrier
 	Buildable:
@@ -281,6 +287,8 @@ hornet:
 	Inherits: ^SpawnedPlane
 	Valued:
 		Cost: 50
+	UpdatesPlayerStatistics:
+		AddToArmyValue: true
 	GainsExperience:
 		ExperienceModifier: 500
 	Tooltip:
@@ -342,6 +350,8 @@ asw:
 	-GivesExperience:
 	Valued:
 		Cost: 50
+	UpdatesPlayerStatistics:
+		AddToArmyValue: true
 	GainsExperience:
 		ExperienceModifier: 500
 	Tooltip:

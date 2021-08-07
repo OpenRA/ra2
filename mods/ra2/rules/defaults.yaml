@@ -525,6 +525,7 @@
 		SellSounds: uselbuil.wav
 	Valued:
 		Cost: 100
+	-UpdatesPlayerStatistics:
 	Health:
 		HP: 300
 	Armor:

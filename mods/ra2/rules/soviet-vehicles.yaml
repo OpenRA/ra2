@@ -8,6 +8,8 @@ smcv:
 		Description: Deploys into a Construction Yard.
 	Valued:
 		Cost: 3000
+	UpdatesPlayerStatistics:
+		AddToArmyValue: true
 	Tooltip:
 		Name: Mobile Construction Vehicle
 	Selectable:
@@ -50,6 +52,8 @@ harv:
 		Description: Gathers Ore.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
 	Valued:
 		Cost: 1400
+	UpdatesPlayerStatistics:
+		AddToArmyValue: true
 	Tooltip:
 		Name: War Miner
 	Selectable:
@@ -107,6 +111,8 @@ dron:
 	Inherits: ^Vehicle
 	Valued:
 		Cost: 500
+	UpdatesPlayerStatistics:
+		AddToArmyValue: true
 	Tooltip:
 		Name: Terror Drone
 	Buildable:
@@ -153,6 +159,8 @@ htk:
 	Inherits@MC: ^MindControllable
 	Valued:
 		Cost: 500
+	UpdatesPlayerStatistics:
+		AddToArmyValue: true
 	Tooltip:
 		Name: Flak Track
 	Selectable:
@@ -212,6 +220,8 @@ htnk:
 	Inherits@MC: ^MindControllable
 	Valued:
 		Cost: 900
+	UpdatesPlayerStatistics:
+		AddToArmyValue: true
 	Tooltip:
 		Name: Rhino Heavy Tank
 	Buildable:
@@ -265,6 +275,8 @@ apoc:
 	Inherits@MC: ^MindControllable
 	Valued:
 		Cost: 1750
+	UpdatesPlayerStatistics:
+		AddToArmyValue: true
 	Tooltip:
 		Name: Apocalypse Tank
 	Buildable:
@@ -323,6 +335,8 @@ ttnk:
 	Inherits@MC: ^MindControllable
 	Valued:
 		Cost: 1200
+	UpdatesPlayerStatistics:
+		AddToArmyValue: true
 	Tooltip:
 		Name: Tesla Tank
 	Buildable:
@@ -374,6 +388,8 @@ dtruck:
 		Description: Demolition Truck, actively armed with nuclear explosives.
 	Valued:
 		Cost: 1500
+	UpdatesPlayerStatistics:
+		AddToArmyValue: true
 	Tooltip:
 		Name: Demolition Truck
 	Selectable:

@@ -49,6 +49,8 @@ cmin:
 		Description: Gathers Ore.\n  Unarmed\nSpecial ability: Can teleport to own refineries
 	Valued:
 		Cost: 1400
+	UpdatesPlayerStatistics:
+		AddToArmyValue: true
 	Tooltip:
 		Name: Chrono Miner
 	Selectable:
@@ -96,6 +98,8 @@ mtnk:
 	Inherits@MC: ^MindControllable
 	Valued:
 		Cost: 700
+	UpdatesPlayerStatistics:
+		AddToArmyValue: true
 	Tooltip:
 		Name: Grizzly Battle Tank
 	Buildable:
@@ -150,6 +154,8 @@ tnkd:
 		Cost: 900
 	Tooltip:
 		Name: Tank Destroyer
+	UpdatesPlayerStatistics:
+		AddToArmyValue: true
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 40
@@ -197,6 +203,8 @@ fv:
 	Inherits@MC: ^MindControllable
 	Valued:
 		Cost: 600
+	UpdatesPlayerStatistics:
+		AddToArmyValue: true
 	Tooltip:
 		Name: Infantry Fighting Vehicle
 	Buildable:
@@ -344,6 +352,8 @@ sref:
 		Description: Fires deadly beams of light.\n  Strong vs Infantry, Vehicles\n  Weak vs Aircraft
 	Valued:
 		Cost: 1200
+	UpdatesPlayerStatistics:
+		AddToArmyValue: true
 	Tooltip:
 		Name: Prism Tank
 	Selectable:
@@ -415,6 +425,8 @@ mgtk:
 		Description: As tree disguised tank.\n  Strong vs Infantry, Vehicles\n  Weak vs Aircraft
 	Valued:
 		Cost: 1000
+	UpdatesPlayerStatistics:
+		AddToArmyValue: true
 	Tooltip:
 		Name: Mirage Tank
 		RequiresCondition: !tree

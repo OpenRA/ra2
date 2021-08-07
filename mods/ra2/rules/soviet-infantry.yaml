@@ -10,6 +10,8 @@ e2:
 		Description: Cheap rifle infantry.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
 	Valued:
 		Cost: 100
+	UpdatesPlayerStatistics:
+		AddToArmyValue: true
 	DeliversCash:
 		Payload: 50
 		PlayerExperience: 5
@@ -53,6 +55,8 @@ flakt:
 		Description: Anti-Air/Anti-Infantry unit.\n  Strong vs Aircraft, Infantry\n  Weak vs Vehicles
 	Valued:
 		Cost: 300
+	UpdatesPlayerStatistics:
+		AddToArmyValue: true
 	DeliversCash:
 		Payload: 150
 		PlayerExperience: 5
@@ -112,6 +116,8 @@ shk:
 		Description: Special armored unit using electricity.\n  Strong vs Infantry, Light armor\n  Weak vs Tanks, Aircraft\nSpecial ability: Charge tesla coils
 	Valued:
 		Cost: 500
+	UpdatesPlayerStatistics:
+		AddToArmyValue: true
 	DeliversCash:
 		Payload: 250
 		PlayerExperience: 25
@@ -173,6 +179,8 @@ terror:
 		Description: Carries C4 charges taped to his body and kamikazes enemies\nblowing them up quickly and efficiently.\n  Strong vs Ground units\n  Weak vs Aircraft
 	Valued:
 		Cost: 200
+	UpdatesPlayerStatistics:
+		AddToArmyValue: true
 	DeliversCash:
 		Payload: 100
 		PlayerExperience: 10
@@ -227,6 +235,8 @@ deso:
 		Description: Carries a radiation-emitting weapon.\nCan deploy for area-of-effect damage.\n  Strong vs Infantry, Light armor\n  Weak vs Tanks, Aircraft
 	Valued:
 		Cost: 600
+	UpdatesPlayerStatistics:
+		AddToArmyValue: true
 	DeliversCash:
 		Payload: 300
 		PlayerExperience: 10
@@ -295,6 +305,8 @@ ivan:
 		Description: Specialist for explosives. Can plant a Bomb on anything, even Cows.
 	Valued:
 		Cost: 600
+	UpdatesPlayerStatistics:
+		AddToArmyValue: true
 	DeliversCash:
 		Payload: 300
 		PlayerExperience: 30
@@ -343,6 +355,8 @@ civan:
 		Name: Chrono Ivan
 	Valued:
 		Cost: 1000
+	UpdatesPlayerStatistics:
+		AddToArmyValue: true
 	-Crushable:
 	DeliversCash:
 		Payload: 500
@@ -369,6 +383,8 @@ yuri:
 		Description: Psychic infantry. Can mind control enemy units.\nCan be deployed to unleash a powerful psychic wave.\n  Strong vs Infantry, Vehicles\n  Weak vs Terror Drones, Aircraft, Buildings
 	Valued:
 		Cost: 1200
+	UpdatesPlayerStatistics:
+		AddToArmyValue: true
 	DeliversCash:
 		Payload: 600
 		PlayerExperience: 60
@@ -443,6 +459,8 @@ yuripr:
 		Name: Yuri Prime
 	Valued:
 		Cost: 2000
+	UpdatesPlayerStatistics:
+		AddToArmyValue: true
 	DeliversCash:
 		Payload: 1000
 		PlayerExperience: 100
