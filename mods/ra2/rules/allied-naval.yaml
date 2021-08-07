@@ -8,6 +8,8 @@ lcrf:
 		Description: General-purpose naval transport.\nCan carry infantry and vehicles.\n  Unarmed
 	Valued:
 		Cost: 900
+	UpdatesPlayerStatistics:
+		AddToArmyValue: true
 	Tooltip:
 		Name: Amphibious Transport
 	Selectable:
@@ -59,6 +61,8 @@ dest:
 		Description: Allied Main Battle Ship armed with cannons and\n an Osprey helicopter.\nCan detect submarines and sea animals.\n  Strong vs Naval units\n  Weak vs Ground units, Aircraft
 	Valued:
 		Cost: 1000
+	UpdatesPlayerStatistics:
+		AddToArmyValue: true
 	Tooltip:
 		Name: Destroyer
 	Health:
@@ -134,6 +138,8 @@ aegis:
 		Description: Anti-Air naval unit.\n  Strong vs Aircraft\n  Grounds units, Ships
 	Valued:
 		Cost: 1200
+	UpdatesPlayerStatistics:
+		AddToArmyValue: true
 	Tooltip:
 		Name: Aegis Cruiser
 	Selectable:
@@ -175,6 +181,8 @@ dlph:
 		Description: Trained dolphin\narmed with sonic beams.\n  Strong vs Ships
 	Valued:
 		Cost: 500
+	UpdatesPlayerStatistics:
+		AddToArmyValue: true
 	Tooltip:
 		Name: Dolphin
 	Armor:
@@ -254,6 +262,8 @@ carrier:
 		Description: Aircraft carrier ship.\n  Strong vs Tanks, Structures\n  Weak vs Infantry
 	Valued:
 		Cost: 2000
+	UpdatesPlayerStatistics:
+		AddToArmyValue: true
 	Tooltip:
 		Name: Aircraft Carrier
 	Health:

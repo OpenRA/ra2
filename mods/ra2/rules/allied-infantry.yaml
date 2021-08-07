@@ -8,6 +8,8 @@ engineer:
 		Description: Captures enemy structures.\n  Unarmed
 	Valued:
 		Cost: 500
+	UpdatesPlayerStatistics:
+		AddToArmyValue: true
 	DeliversCash:
 		Payload: 250
 		PlayerExperience: 25
@@ -48,6 +50,8 @@ dog:
 		Description: Anti-infantry unit.\nCan detect cloaked units and spies.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
 	Valued:
 		Cost: 200
+	UpdatesPlayerStatistics:
+		AddToArmyValue: true
 	DeliversCash:
 		Payload: 100
 		PlayerExperience: 10
@@ -129,6 +133,8 @@ e1:
 		Description: General-purpose infantry.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
 	Valued:
 		Cost: 200
+	UpdatesPlayerStatistics:
+		AddToArmyValue: true
 	DeliversCash:
 		Payload: 100
 		PlayerExperience: 10
@@ -218,6 +224,8 @@ snipe:
 	Inherits@MC: ^MindControllable
 	Valued:
 		Cost: 600
+	UpdatesPlayerStatistics:
+		AddToArmyValue: true
 	DeliversCash:
 		Payload: 300
 		PlayerExperience: 30
@@ -264,6 +272,8 @@ spy:
 		Description: Infiltrates enemy structures for intel or\nsabotage. Exact effect depends on the\nbuilding infiltrated.\n  Unarmed\nSpecial Ability: Disguises
 	Valued:
 		Cost: 1000
+	UpdatesPlayerStatistics:
+		AddToArmyValue: true
 	DeliversCash:
 		Payload: 250
 		PlayerExperience: 25
@@ -317,6 +327,8 @@ ghost:
 		Description: Elite commando infantry, armed with\na sub machine gun and C4.\n  Strong vs Infantry, Buildings\n  Weak vs Vehicles, Aircraft\nSpecial Ability: Destroy Building with C4
 	Valued:
 		Cost: 1000
+	UpdatesPlayerStatistics:
+		AddToArmyValue: true
 	DeliversCash:
 		Payload: 500
 		PlayerExperience: 50
@@ -368,6 +380,8 @@ ccomand:
 		Name: Chrono Commando
 	Valued:
 		Cost: 2000
+	UpdatesPlayerStatistics:
+		AddToArmyValue: true
 	DeliversCash:
 		Payload: 1000
 		PlayerExperience: 100
@@ -410,6 +424,8 @@ ptroop:
 		Description: Psychic infantry. Can mind control enemy units.\n  Strong vs Infantry, Vehicles, Buildings\n  Weak vs Dogs, Terror Drones, Aircraft\nSpecial Ability: Destroy Building with C4
 	Valued:
 		Cost: 1000
+	UpdatesPlayerStatistics:
+		AddToArmyValue: true
 	DeliversCash:
 		Payload: 500
 		PlayerExperience: 50
@@ -459,6 +475,8 @@ tany:
 		Description: Elite commando infantry, armed with \ndual pistols and C4.\n  Strong vs Infantry, Buildings\n  Weak vs Vehicles, Aircraft\nSpecial Ability: Destroy Building with C4\n\nMaximum 1 can be trained.
 	Valued:
 		Cost: 1000
+	UpdatesPlayerStatistics:
+		AddToArmyValue: true
 	DeliversCash:
 		Payload: 500
 		PlayerExperience: 50
@@ -513,6 +531,8 @@ jumpjet:
 		Description: Airborne soldier.\n  Strong vs Infantry, Aircraft\n  Weak vs Vehicles
 	Valued:
 		Cost: 600
+	UpdatesPlayerStatistics:
+		AddToArmyValue: true
 	Tooltip:
 		Name: Rocketeer
 	Selectable:
@@ -617,6 +637,8 @@ cleg:
 		Prerequisites: barracks.infiltrated
 	Valued:
 		Cost: 1500
+	UpdatesPlayerStatistics:
+		AddToArmyValue: true
 	DeliversCash:
 		Payload: 750
 		PlayerExperience: 75
