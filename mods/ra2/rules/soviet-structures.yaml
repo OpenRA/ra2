@@ -106,6 +106,8 @@ napowr:
 		RequiresCondition: !power-outage
 	InfiltrateForPowerOutage:
 		Types: SpyInfiltrate
+		InfiltrationNotification: BuildingInfiltratedPowerSabotaged
+		InfiltratedNotification: PowerSabotaged
 	AffectedByPowerOutage:
 		Condition: power-outage
 	ScalePowerWithHealth:
@@ -207,6 +209,8 @@ nahand:
 	InfiltrateForSupportPower:
 		Types: SpyInfiltrate
 		Proxy: barracks.infiltrated
+		InfiltrationNotification: BuildingInfiltratedTechnologyStolen
+		InfiltratedNotification: TechnologyStolen
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
 	SpawnSurvivors:
@@ -252,7 +256,8 @@ narefn:
 	InfiltrateForCash:
 		Types: SpyInfiltrate
 		Percentage: 50
-		InfiltratedNotification: CreditsStolen
+		InfiltrationNotification: BuildingInfiltratedCashStolen
+		InfiltratedNotification: CashStolen
 		Minimum: 500
 	FreeActor:
 		Actor: harv
@@ -312,6 +317,8 @@ naradr:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
 	InfiltrateForExploration:
 		Types: SpyInfiltrate
+		InfiltrationNotification: BuildingInfiltratedRadarSabotaged
+		InfiltratedNotification: RadarSabotaged
 	Power:
 		Amount: -50
 	SpawnSurvivors:
@@ -399,6 +406,8 @@ naweap:
 	InfiltrateForSupportPower:
 		Types: SpyInfiltrate
 		Proxy: warfactory.infiltrated
+		InfiltrationNotification: BuildingInfiltratedTechnologyStolen
+		InfiltratedNotification: ArmorTechnologyStolen
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
 	SpawnSurvivors:
@@ -623,6 +632,8 @@ nanrct:
 		RequiresCondition: !power-outage
 	InfiltrateForPowerOutage:
 		Types: SpyInfiltrate
+		InfiltrationNotification: BuildingInfiltratedPowerSabotaged
+		InfiltratedNotification: PowerSabotaged
 	AffectedByPowerOutage:
 		Condition: power-outage
 	ScalePowerWithHealth:
@@ -664,6 +675,8 @@ natech:
 	InfiltrateForSupportPower:
 		Types: SpyInfiltrate
 		Proxy: soviets.tech.infiltrated
+		InfiltrationNotification: BuildingInfiltratedTechnologyStolen
+		InfiltratedNotification: TechnologyStolen
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
 	SpawnSurvivors:
