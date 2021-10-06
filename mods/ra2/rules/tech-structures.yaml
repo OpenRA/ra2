@@ -160,6 +160,7 @@ caoutp:
 		IsPlayerPalette: false
 	RepairsUnits:
 		Interval: 50
+		RepairDamageTypes: KillTerrorDrone
 		FinishRepairingNotification: UnitRepaired
 	WithIdleOverlay@tower:
 		Sequence: idle-tower

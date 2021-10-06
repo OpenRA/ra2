@@ -569,6 +569,7 @@ nadept:
 	RepairsUnits:
 		Interval: 148
 		HpPerStep: 20
+		RepairDamageTypes: KillTerrorDrone
 		StartRepairingNotification: Repairing
 		FinishRepairingNotification: UnitRepaired
 	WithIdleOverlay@normal:

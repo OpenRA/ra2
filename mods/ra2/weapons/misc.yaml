@@ -53,6 +53,7 @@ RepairBullet:
 		Spread: 213
 		Damage: -50
 		ValidTargets: Repair
+		DamageTypes: KillTerrorDrone
 
 MindControl:
 	ReloadDelay: 200

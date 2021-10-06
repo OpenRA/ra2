@@ -566,6 +566,7 @@
 	Inherits@5: ^CrateStatModifiers
 	Inherits@6: ^DamagedByRadiation
 	Inherits@handicaps: ^PlayerHandicaps
+	Inherits@7: ^AffectedByTerrorDrone
 	Health:
 	OwnerLostAction:
 		Action: Kill
@@ -650,6 +651,7 @@
 		Categories: Infantry
 
 ^Parachutable:
+	Inherits: ^ParachutableAffectedByTerrorDrone
 	WithSpriteBody@Parachute:
 		Name: parachute
 		Sequence: paradrop
@@ -683,6 +685,7 @@
 		Condition: parachute
 
 ^ParachutableVehicle:
+	Inherits: ^ParachutableAffectedByTerrorDrone
 	Parachutable:
 		FallRate: 26
 		KilledOnImpassableTerrain: true
@@ -702,6 +705,15 @@
 	Targetable@airborne:
 		TargetTypes: Air
 		RequiresCondition: parachute
+	Targetable@Parasiteable:
+		TargetTypes: DroneParasiteable
+		RequiresCondition: !parachute && !infected
+	Targetable@byTerrorDrone:
+		TargetTypes: ValidForTerrorDrone
+		RequiresCondition: !parachute
+	Targetable@InfectedByTerrorDrone:
+		TargetTypes: TerrorDroned
+		RequiresCondition: !parachute && infected
 	ExternalCondition@PARACHUTE:
 		Condition: parachute
 
@@ -824,6 +836,7 @@
 	Inherits@5: ^CrateStatModifiers
 	Inherits@6: ^ParachutableVehicle
 	Inherits@handicaps: ^PlayerHandicaps
+	Inherits@7: ^AffectedByTerrorDrone
 	OwnerLostAction:
 		Action: Kill
 		DeathTypes: BulletDeath
@@ -1233,3 +1246,32 @@
 	MapEditorData:
 		Categories: System
 	Interactable:
+
+^AffectedByTerrorDrone:
+	Targetable@Parasiteable:
+		TargetTypes: DroneParasiteable
+		RequiresCondition: !infected
+	Targetable@byTerrorDrone:
+		TargetTypes: ValidForTerrorDrone
+	Targetable@InfectedByTerrorDrone:
+		TargetTypes: TerrorDroned
+		RequiresCondition: infected
+	Infectable:
+		RemoveInfectorDamageTypes: DropTerrorDrone
+		KillInfectorDamageTypes: KillTerrorDrone
+		BeingInfectedCondition: being-infected
+		InfectedCondition: infected
+	SpeedMultiplier@Infected:
+		Modifier: 0
+		RequiresCondition: being-infected
+
+^ParachutableAffectedByTerrorDrone:
+	Targetable@Parasiteable:
+		TargetTypes: DroneParasiteable
+		RequiresCondition: !parachute && !infected
+	Targetable@byTerrorDrone:
+		TargetTypes: ValidForTerrorDrone
+		RequiresCondition: !parachute
+	Targetable@InfectedByTerrorDrone:
+		TargetTypes: TerrorDroned
+		RequiresCondition: !parachute && infected

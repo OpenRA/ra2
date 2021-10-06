@@ -618,6 +618,7 @@ gadept:
 		IsPlayerPalette: false
 	RepairsUnits:
 		Interval: 50
+		RepairDamageTypes: KillTerrorDrone
 		StartRepairingNotification: Repairing
 		FinishRepairingNotification: UnitRepaired
 	WithIdleOverlay@side:
