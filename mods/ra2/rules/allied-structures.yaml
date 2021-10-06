@@ -115,6 +115,8 @@ gapowr:
 		RequiresCondition: !power-outage
 	InfiltrateForPowerOutage:
 		Types: SpyInfiltrate
+		InfiltrationNotification: BuildingInfiltratedPowerSabotaged
+		InfiltratedNotification: PowerSabotaged
 	AffectedByPowerOutage:
 		Condition: power-outage
 	ScalePowerWithHealth:
@@ -192,6 +194,8 @@ gapile:
 	InfiltrateForSupportPower:
 		Types: SpyInfiltrate
 		Proxy: barracks.infiltrated
+		InfiltrationNotification: BuildingInfiltratedTechnologyStolen
+		InfiltratedNotification: TechnologyStolen
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
 	SpawnSurvivors:
@@ -237,7 +241,8 @@ garefn:
 	InfiltrateForCash:
 		Types: SpyInfiltrate
 		Percentage: 50
-		InfiltratedNotification: CreditsStolen
+		InfiltrationNotification: BuildingInfiltratedCashStolen
+		InfiltratedNotification: CashStolen
 		Minimum: 500
 	FreeActor:
 		Actor: cmin
@@ -344,6 +349,8 @@ gaairc:
 		RequiresCondition: primary
 	InfiltrateForExploration:
 		Types: SpyInfiltrate
+		InfiltrationNotification: BuildingInfiltratedRadarSabotaged
+		InfiltratedNotification: RadarSabotaged
 	SpawnSurvivors:
 		DeathTypes: ExplosionDeath, BulletDeath
 		Actors: e1, e1
@@ -453,6 +460,8 @@ gaweap:
 	InfiltrateForSupportPower:
 		Types: SpyInfiltrate
 		Proxy: warfactory.infiltrated
+		InfiltrationNotification: BuildingInfiltratedTechnologyStolen
+		InfiltratedNotification: ArmorTechnologyStolen
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
 	SpawnSurvivors:
@@ -669,6 +678,8 @@ gatech:
 	InfiltrateForSupportPower:
 		Types: SpyInfiltrate
 		Proxy: allies.tech.infiltrated
+		InfiltrationNotification: BuildingInfiltratedTechnologyStolen
+		InfiltratedNotification: TechnologyStolen
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
 	SpawnSurvivors:
