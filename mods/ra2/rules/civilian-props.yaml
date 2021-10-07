@@ -53,6 +53,8 @@ camisc04:
 	SoundOnDamageTransition:
 		DamagedSounds: bmetdama.wav, bmetdamb.wav, bmetdamc.wav
 		DestroyedSounds: bmetdama.wav, bmetdamb.wav, bmetdamc.wav
+	IsometricSelectable:
+		DecorationHeight: 15
 	MapEditorData:
 		Categories: Decoration
 
@@ -67,6 +69,8 @@ camisc05:
 	SoundOnDamageTransition:
 		DamagedSounds: bmetdama.wav, bmetdamb.wav, bmetdamc.wav
 		DestroyedSounds: bmetdama.wav, bmetdamb.wav, bmetdamc.wav
+	IsometricSelectable:
+		DecorationHeight: 15
 	MapEditorData:
 		Categories: Decoration
 
@@ -100,6 +104,8 @@ camsc11:
 		Type: Concrete
 	MapEditorData:
 		Categories: Decoration
+	IsometricSelectable:
+		Height: 15
 
 camsc12:
 	Inherits: ^CivBuilding
@@ -148,7 +154,6 @@ camsc01:
 		HP: 400
 	MapEditorData:
 		Categories: Decoration
-	MapEditorData:
 		ExcludeTilesets: SNOW
 
 camsc02:
@@ -161,7 +166,6 @@ camsc02:
 		HP: 50
 	MapEditorData:
 		Categories: Decoration
-	MapEditorData:
 		ExcludeTilesets: SNOW
 
 camsc03:
@@ -174,7 +178,6 @@ camsc03:
 		HP: 1
 	MapEditorData:
 		Categories: Decoration
-	MapEditorData:
 		ExcludeTilesets: SNOW
 
 camsc04:
@@ -185,9 +188,10 @@ camsc04:
 		Range: 6c0
 	Health:
 		HP: 1
+	IsometricSelectable:
+		Height: 15
 	MapEditorData:
 		Categories: Decoration
-	MapEditorData:
 		ExcludeTilesets: SNOW
 
 camsc05:
@@ -198,9 +202,10 @@ camsc05:
 		Range: 6c0
 	Health:
 		HP: 1
+	IsometricSelectable:
+		Height: 15
 	MapEditorData:
 		Categories: Decoration
-	MapEditorData:
 		ExcludeTilesets: SNOW
 
 camsc06:
@@ -213,6 +218,8 @@ camsc06:
 		HP: 10
 	WithIdleOverlay@fire:
 		Sequence: idle-fire
+	IsometricSelectable:
+		Height: 15
 	MapEditorData:
 		Categories: Decoration
 
@@ -230,6 +237,8 @@ caeuro05:
 	Building:
 		Dimensions: 2,2
 		Footprint: xx xx
+	IsometricSelectable:
+		Height: 75
 	MapEditorData:
 		Categories: Decoration
 
@@ -241,6 +250,8 @@ capark01:
 		Range: 6c0
 	Health:
 		HP: 1
+	IsometricSelectable:
+		DecorationHeight: 15
 	MapEditorData:
 		Categories: Decoration
 
@@ -286,6 +297,8 @@ castrt01:
 		HP: 1000
 	MapEditorData:
 		Categories: Decoration
+	IsometricSelectable:
+		Height: 60
 
 castrt02:
 	Inherits: ^CivBuilding
@@ -299,6 +312,8 @@ castrt02:
 		HP: 1000
 	MapEditorData:
 		Categories: Decoration
+	IsometricSelectable:
+		Height: 60
 
 castrt03:
 	Inherits: ^CivBuilding
@@ -312,6 +327,8 @@ castrt03:
 		HP: 1000
 	MapEditorData:
 		Categories: Decoration
+	IsometricSelectable:
+		Height: 60
 
 castrt04:
 	Inherits: ^CivBuilding
@@ -325,6 +342,8 @@ castrt04:
 		HP: 1000
 	MapEditorData:
 		Categories: Decoration
+	IsometricSelectable:
+		Height: 60
 
 castrt05:
 	Inherits: ^CivBuilding
@@ -354,6 +373,8 @@ camov01:
 		Dimensions: 1,4
 		Footprint: x x x x
 	WithIdleOverlay:
+	IsometricSelectable:
+		Height: 90
 
 camov02:
 	Inherits: ^CivBuilding
@@ -370,6 +391,8 @@ camov02:
 		Dimensions: 2,2
 		Footprint: xx xx
 	WithIdleOverlay:
+	IsometricSelectable:
+		Height: 60
 
 pole01:
 	Inherits: ^TelephonePole
@@ -465,6 +488,8 @@ carus02c:
 		HP: 1000
 	MapEditorData:
 		Categories: Wall
+	IsometricSelectable:
+		Height: 15
 
 carus02d:
 	Inherits: ^CivBuilding
@@ -501,6 +526,8 @@ carus07:
 		Range: 6c0
 	Health:
 		HP: 1000
+	IsometricSelectable:
+		Height: 15
 
 cakrmw:
 	Inherits: ^Wall
