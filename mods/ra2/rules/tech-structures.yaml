@@ -1,8 +1,8 @@
 caoild:
 	Inherits: ^TechBuilding
 	Inherits@shape: ^2x2Shape
-	Selectable:
-		Bounds: 96, 104, -2, -26
+	IsometricSelectable:
+		Height: 75
 	Building:
 		Footprint: xx xx
 		Dimensions: 2, 2
@@ -52,6 +52,8 @@ caairp:
 	Building:
 		Dimensions: 3,3
 		Footprint: xxx xxx xxx
+	IsometricSelectable:
+		Height: 90
 	ProvidesPrerequisite@Allies:
 		Prerequisite: techparadrops.allies
 		Factions: america, germany, england, france, korea
@@ -106,6 +108,8 @@ cahosp:
 	Building:
 		Footprint: xxxx xxxx xxxx xxxx xxxx xxxx
 		Dimensions: 6, 4
+	IsometricSelectable:
+		Height: 105
 	Tooltip:
 		Name: Civilian Hospital
 	Health:
@@ -143,8 +147,8 @@ cathosp:
 caoutp:
 	Inherits: ^TechBuilding
 	Inherits@shape: ^4x3Shape
-	Selectable:
-		Bounds: 178, 180, 0, -38
+	IsometricSelectable:
+		Height: 90
 	Tooltip:
 		Name: Tech Outpost
 	Armor:

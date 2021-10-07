@@ -334,9 +334,12 @@
 	OwnerLostAction:
 		Action: Kill
 		DeathTypes: BulletDeath
-	SelectionDecorations:
-	Selectable:
+	IsometricSelectionDecorations:
+	IsometricSelectable:
 		Priority: 3
+		Height: 30
+	WithTextControlGroupDecoration:
+		Margin: 1, 1
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure
 	Building:
@@ -466,8 +469,8 @@
 	Inherits: ^CivBuilding
 	OwnerLostAction:
 		Action: ChangeOwner
-	Selectable:
-		Bounds: 50, 228, 0, 0
+	IsometricSelectable:
+		Height: 120
 	Building:
 		Footprint: x
 		Dimensions: 1, 1
