@@ -209,7 +209,7 @@ namespace OpenRA.Mods.RA2.Traits
 
 		void INotifyHarvesterAction.MovementCancelled(Actor self) { }
 
-		void INotifyHarvesterAction.Harvested(Actor self, ResourceType resource) { }
+		void INotifyHarvesterAction.Harvested(Actor self, string resourceType) { }
 
 		void INotifyHarvesterAction.Docked()
 		{

@@ -65,7 +65,7 @@ namespace OpenRA.Mods.RA2.Traits
 			var voxel = self.World.ModelCache.GetModelSequence(rv.Image, info.Sequence);
 			frames = voxel.Frames;
 			modelAnimation = new ModelAnimation(voxel, () => WVec.Zero,
-				() => body.QuantizeOrientation(self, self.Orientation),
+				() => body.QuantizeOrientation(self.Orientation),
 				() => IsTraitDisabled, () => frame, info.ShowShadow);
 
 			rv.Add(modelAnimation);

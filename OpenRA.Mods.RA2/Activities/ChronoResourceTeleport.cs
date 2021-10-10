@@ -11,8 +11,8 @@
 
 using OpenRA.Activities;
 using OpenRA.Mods.Common.Effects;
+using OpenRA.Mods.Common.Traits;
 using OpenRA.Mods.RA2.Traits;
-using OpenRA.Traits;
 
 namespace OpenRA.Mods.RA2.Activities
 {
