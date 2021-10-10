@@ -97,7 +97,7 @@ namespace OpenRA.Mods.RA2.Traits
 			Reset();
 		}
 
-		public void Harvested(Actor self, ResourceType resource) { }
+		public void Harvested(Actor self, string resourceType) { }
 		public void Docked() { }
 		public void Undocked() { }
 

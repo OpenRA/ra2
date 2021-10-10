@@ -53,7 +53,7 @@ namespace OpenRA.Mods.RA2.Traits.Render
 				{
 					var renderSprites = disguiseActor.TraitInfoOrDefault<RenderSpritesInfo>();
 					if (renderSprites != null)
-						disguiseImage = renderSprites.GetImage(disguiseActor, self.World.Map.Rules.Sequences, disguisePlayer.Faction.InternalName);
+						disguiseImage = renderSprites.GetImage(disguiseActor, disguisePlayer.Faction.InternalName);
 				}
 
 				var withSpriteBody = disguiseActor.TraitInfoOrDefault<WithSpriteBodyInfo>();

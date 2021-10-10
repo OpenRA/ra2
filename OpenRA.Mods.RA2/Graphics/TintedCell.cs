@@ -46,7 +46,7 @@ namespace OpenRA.Mods.RA2.Graphics
 
 		public IRenderable WithPalette(PaletteReference newPalette) { return this; }
 		public IRenderable WithZOffset(int newOffset) { return this; }
-		public IRenderable OffsetBy(WVec vec) { return this; }
+		public IRenderable OffsetBy(in WVec vec) { return this; }
 		public IRenderable AsDecoration() { return this; }
 
 		public PaletteReference Palette { get { return null; } }
@@ -64,17 +64,15 @@ namespace OpenRA.Mods.RA2.Graphics
 			if (firstTime)
 			{
 				var map = wr.World.Map;
-				var tileSet = wr.World.Map.Rules.TileSet;
+				var terrainInfo = wr.World.Map.Rules.TerrainInfo;
 				var uv = location.ToMPos(map);
 
 				if (!map.Height.Contains(uv))
 					return;
 
 				var tile = map.Tiles[uv];
-				var ti = tileSet.GetTileInfo(tile);
-				var ramp = ti != null ? ti.RampType : 0;
-
-				var corners = map.Grid.Ramps[ramp].Corners;
+				var ti = terrainInfo.GetTerrainInfo(tile);
+				var corners = map.Grid.Ramps[ti.RampType].Corners;
 				screen = corners.Select(c => wr.Screen3DPxPosition(centeredLocation + c + new WVec(0, 0, ZOffset))).ToArray();
 				SetLevel(Level);
 				firstTime = false;

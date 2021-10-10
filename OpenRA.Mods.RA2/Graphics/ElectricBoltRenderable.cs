@@ -37,7 +37,13 @@ namespace OpenRA.Mods.RA2.Graphics
 
 		public IRenderable WithPalette(PaletteReference newPalette) { return this; }
 		public IRenderable WithZOffset(int newOffset) { return new ElectricBoltRenderable(offsets, newOffset, width, color); }
-		public IRenderable OffsetBy(WVec vec) { return new ElectricBoltRenderable(offsets.Select(offset => offset + vec).ToArray(), zOffset, width, color); }
+
+		public IRenderable OffsetBy(in WVec vec)
+		{
+			var vec2 = vec;
+			return new ElectricBoltRenderable(offsets.Select(offset => offset + vec2).ToArray(), zOffset, width, color);
+		}
+
 		public IRenderable AsDecoration() { return this; }
 
 		public IFinalizedRenderable PrepareRender(WorldRenderer wr) { return this; }
