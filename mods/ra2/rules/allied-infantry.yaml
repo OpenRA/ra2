@@ -546,6 +546,7 @@ jumpjet:
 	-TimedConditionBar@ChronoDisable:
 	-ExternalCondition@CHRONODISABLE:
 	-Mobile:
+	-ChronoshiftableWithSpriteEffect:
 	RevealsShroud:
 		Range: 8c0
 		Type: CenterPosition
