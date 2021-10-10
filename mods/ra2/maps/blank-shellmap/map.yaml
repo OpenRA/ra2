@@ -34,4 +34,3 @@ Rules:
 		-StartGameNotification:
 		MusicPlaylist:
 			StartingMusic: grinder
-			LoopStartingMusic: true
