@@ -1,4 +1,4 @@
-; Copyright 2007-2021 OpenRA developers (see AUTHORS)
+; Copyright (c) The OpenRA Developers and Contributors
 ; This file is part of OpenRA.
 ;
 ;  OpenRA is free software: you can redistribute it and/or modify
@@ -93,14 +93,16 @@ Section "Game" GAME
 
 	SetOutPath "$INSTDIR"
 	File "${SRCDIR}\*.exe"
-	File "${SRCDIR}\*.exe.config"
+	File "${SRCDIR}\*.dll.config"
 	File "${SRCDIR}\*.dll"
 	File "${SRCDIR}\*.ico"
+	File "${SRCDIR}\*.deps.json"
+	File "${SRCDIR}\*.runtimeconfig.json"
+	File "${SRCDIR}\global mix database.dat"
+	File "${SRCDIR}\IP2LOCATION-LITE-DB1.IPV6.BIN.ZIP"
 	File "${SRCDIR}\VERSION"
 	File "${SRCDIR}\AUTHORS"
 	File "${SRCDIR}\COPYING"
-	File "${SRCDIR}\global mix database.dat"
-	File "${SRCDIR}\IP2LOCATION-LITE-DB1.IPV6.BIN.ZIP"
 	File /r "${SRCDIR}\mods"
 
 	!insertmacro MUI_STARTMENU_WRITE_BEGIN Application
@@ -123,6 +125,7 @@ Section "Game" GAME
 
 	SetShellVarContext all
 	CreateDirectory "$APPDATA\OpenRA\ModMetadata"
+	SetOutPath "$INSTDIR"
 	nsExec::ExecToLog '"$INSTDIR\OpenRA.Utility.exe" ${MOD_ID} --register-mod "$INSTDIR\${PACKAGING_WINDOWS_LAUNCHER_NAME}.exe" system'
 	nsExec::ExecToLog '"$INSTDIR\OpenRA.Utility.exe" ${MOD_ID} --clear-invalid-mod-registrations system'
 	SetShellVarContext current
@@ -133,21 +136,6 @@ Section "Desktop Shortcut" DESKTOPSHORTCUT
 	SetOutPath "$INSTDIR"
 	CreateShortCut "$DESKTOP\OpenRA - ${PACKAGING_DISPLAY_NAME}.lnk" "$INSTDIR\${PACKAGING_WINDOWS_LAUNCHER_NAME}.exe" "" \
 		"$INSTDIR\${PACKAGING_WINDOWS_LAUNCHER_NAME}.exe" "" "" "" ""
-SectionEnd
-
-;***************************
-;Dependency Sections
-;***************************
-Section "-DotNet" DotNet
-	ClearErrors
-	; https://docs.microsoft.com/en-us/dotnet/framework/migration-guide/how-to-determine-which-versions-are-installed
-	ReadRegDWORD $0 HKLM "SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full" "Release"
-	IfErrors error 0
-	IntCmp $0 461808 done error done
-	error:
-		MessageBox MB_OK ".NET Framework v4.7.2 or later is required to run OpenRA."
-		Abort
-	done:
 SectionEnd
 
 ;***************************
@@ -176,21 +164,28 @@ Function ${UN}Clean
 	RMDir /r $INSTDIR\glsl
 	RMDir /r $INSTDIR\lua
 	Delete $INSTDIR\*.exe
-	Delete $INSTDIR\*.exe.config
 	Delete $INSTDIR\*.dll
 	Delete $INSTDIR\*.ico
+	Delete $INSTDIR\*.dll.config
+	Delete $INSTDIR\*.deps.json
+	Delete $INSTDIR\*.runtimeconfig.json
 	Delete $INSTDIR\VERSION
 	Delete $INSTDIR\AUTHORS
 	Delete $INSTDIR\COPYING
 	Delete "$INSTDIR\global mix database.dat"
 	Delete $INSTDIR\IP2LOCATION-LITE-DB1.IPV6.BIN.ZIP
+
 	RMDir /r $INSTDIR\Support
+
+	!ifndef USE_PROGRAMFILES32
+		SetRegView 64
+	!endif
 
 	DeleteRegKey HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\${PACKAGING_WINDOWS_REGISTRY_KEY}"
 	DeleteRegKey HKLM "Software\Classes\openra-${MOD_ID}-${TAG}"
 
 	!ifdef USE_DISCORDID
-		DeleteRegKey HKLM "Software\Classes\discord-${DISCORD_APP_ID}"
+		DeleteRegKey HKLM "Software\Classes\discord-${USE_DISCORDID}"
 	!endif
 
 	Delete $INSTDIR\uninstaller.exe
