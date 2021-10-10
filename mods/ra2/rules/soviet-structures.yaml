@@ -829,8 +829,8 @@ nairon:
 	GrantExternalConditionPower@IRONCURTAIN:
 		Icon: invuln
 		ChargeInterval: 7500
-		Description: Iron Curtain
-		LongDesc: Makes a group of units invulnerable\nfor 20 seconds.
+		Name: Iron Curtain
+		Description: Makes a group of units invulnerable\nfor 20 seconds.
 		Duration: 500
 		# TODO: These are actually no speech notifications
 		EndChargeSound: siroread.wav
@@ -884,8 +884,8 @@ namisl:
 		Cursor: nuke
 		Icon: abomb
 		ChargeInterval: 15000
-		Description: Nuclear Missile
-		LongDesc: Launches a devastating atomic bomb\nat a target location.
+		Name: Nuclear Missile
+		Description: Launches a devastating atomic bomb\nat a target location.
 		EndChargeSound: snukread.wav
 		EndChargeSpeechNotification: AtomBombReady
 		LaunchSound: snuklaun.wav
@@ -909,6 +909,7 @@ namisl:
 		FlightDelay: 200
 		PauseOnCondition: lowpower
 		SelectTargetSpeechNotification: SelectTarget
+		MissileImage: atomic
 	WithSupportPowerActivationAnimation:
 	SpawnSurvivors:
 		DeathTypes: ExplosionDeath, BulletDeath

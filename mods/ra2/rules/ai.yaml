@@ -98,6 +98,7 @@ Player:
 			gtgcan: 1
 			gagap: 1
 			namisl: 1
+		DefenseTypes: gapill, nasam, gtgcan, atesla, naflak, tesla, nalasr
 	SquadManagerBotModule@test:
 		RequiresCondition: enable-test-ai
 		SquadSize: 5
@@ -105,6 +106,8 @@ Player:
 		ConstructionYardTypes: gacnst, nacnst
 		NavalUnitsTypes: dest, aegis, dlph, carrier, sub, hyd, sqd
 		NavalProductionTypes: nayard, gayard
+		AirUnitsTypes: jumpjet, shad, zep, orca, beag
+		ProtectionTypes: gacnst, gapowr, gapile, garefn, gaairc, amradr, gaweap, gayard, gadept, gatech, gapill, nasam, gtgcan, gaorep, gaspysat, gagap, gaweat, gacsph, atesla, nacnst, napowr, nahand, narefn, naradr, naweap, nayard, nadept, nanrct, natech, naclon, napsis, nairon, namisl, naflak, tesla, nalasr, amcv, cmin, smcv, harv
 	UnitBuilderBotModule@test:
 		RequiresCondition: enable-test-ai
 		UnitsToBuild:

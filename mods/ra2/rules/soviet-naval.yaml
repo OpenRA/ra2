@@ -13,7 +13,7 @@ sapc:
 	Tooltip:
 		Name: Amphibious Transport
 	Selectable:
-		Bounds: 60, 80, 0, -6
+		Bounds: 1448, 3861, 0, -289
 	Health:
 		HP: 300
 	Armor:
@@ -80,7 +80,7 @@ sub:
 		TargetTypes: Underwater, Submergeable
 		RequiresCondition: underwater
 	Cloak:
-		CloakTypes: Underwater
+		DetectionTypes: Underwater
 		InitialDelay: 50
 		CloakDelay: 75
 		CloakSound: vnavupa.wav
@@ -100,10 +100,11 @@ sub:
 		RequiresCondition: rank-elite
 	AttackFrontal:
 		Voice: Attack
+		FacingTolerance: 0
 	AutoTarget:
 		InitialStance: ReturnFire
 	DetectCloaked:
-		CloakTypes: Underwater
+		DetectionTypes: Underwater
 		Range: 4c0
 	RenderDetectionCircle:
 	Explodes:
@@ -133,7 +134,7 @@ hyd:
 	Tooltip:
 		Name: Sea Scorpion
 	Selectable:
-		Bounds: 50, 30, 0, -6
+		Bounds: 1206, 1448, 0, -289
 	Health:
 		HP: 300
 	Armor:
@@ -145,6 +146,7 @@ hyd:
 		Range: 8c0
 	AttackFrontal:
 		Voice: Attack
+		FacingTolerance: 0
 	Armament@primary:
 		Weapon: FlakTrackGun
 		LocalOffset: 256,0,1408
@@ -192,18 +194,19 @@ sqd:
 		Voice: Move
 	SelectionDecorations:
 	Selectable:
-		Bounds: 80, 30
+		Bounds: 1930, 1448
 	Voiced:
 		VoiceSet: GiantSquidVoice
 	Armament:
 		Weapon: SquidPunch
 	AttackFrontal:
 		Voice: Attack
+		FacingTolerance: 0
 	AutoTarget:
 	RevealsShroud:
 		Range: 5c0
 	Cloak:
-		CloakTypes: Underwater
+		DetectionTypes: Underwater
 		InitialDelay: 50
 		CloakDelay: 75
 		CloakSound: vnavupa.wav
@@ -218,7 +221,7 @@ sqd:
 		TargetTypes: Underwater, Submergeable
 		RequiresCondition: underwater
 	DetectCloaked:
-		CloakTypes: Underwater
+		DetectionTypes: Underwater
 		Range: 5c0
 	HiddenUnderFog:
 	ActorLostNotification:

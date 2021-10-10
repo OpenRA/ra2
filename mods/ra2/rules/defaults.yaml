@@ -743,7 +743,7 @@
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Inherits@MC: ^MindControllable
 	Selectable:
-		Bounds: 20, 30, 0, -11
+		Bounds: 482, 1448, 0, -530
 	Valued:
 		Cost: 10
 	DeliversCash:
@@ -764,6 +764,7 @@
 		Range: 2c0
 	AttackFrontal:
 		Voice: Attack
+		FacingTolerance: 0
 	ProximityCaptor:
 		Types: CivilianInfantry
 	ScaredyCat:
@@ -796,9 +797,10 @@
 	Mobile:
 		Speed: 40
 	Selectable:
-		Bounds: 45, 25, 0, -8
+		Bounds: 1086, 1206, 0, -386
 	AttackFrontal:
 		Voice: Attack
+		FacingTolerance: 0
 	DeathSounds@burned:
 		Voice: Die
 	DeathSounds@zapped:
@@ -837,7 +839,7 @@
 		Locomotor: wheeled
 	SelectionDecorations:
 	Selectable:
-		Bounds: 32,32
+		Bounds: 772, 1544
 	Targetable:
 		TargetTypes: Ground, Vehicle, DetonateAttack
 	Targetable@REPAIR:
@@ -906,7 +908,7 @@
 	RevealsShroud:
 		Range: 5c0
 	Selectable:
-		Bounds: 64, 52, 0, -6
+		Bounds: 1544, 2509, 0, -289
 	WithVoxelBody:
 	Voiced:
 		VoiceSet: CarVoice
@@ -1061,7 +1063,7 @@
 		MovingInterval: 6
 	SelectionDecorations:
 	Selectable:
-		Bounds: 32,32
+		Bounds: 772, 1544
 	Targetable:
 		TargetTypes: Ground, Water
 	Targetable@REPAIR:

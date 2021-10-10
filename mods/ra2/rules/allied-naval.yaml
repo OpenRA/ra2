@@ -13,7 +13,7 @@ lcrf:
 	Tooltip:
 		Name: Amphibious Transport
 	Selectable:
-		Bounds: 60, 80, 0, -6
+		Bounds: 1448, 3861, 0, -289
 	Health:
 		HP: 300
 	Armor:
@@ -75,7 +75,7 @@ dest:
 	RevealsShroud:
 		Range: 7c0
 	Selectable:
-		Bounds: 80, 80, 0, -6
+		Bounds: 1930, 3861, 0, -289
 	Armament@primary:
 		Weapon: 155mm
 		FireDelay: 2
@@ -105,13 +105,14 @@ dest:
 		Voice: Attack
 		Armaments: primary
 		PauseOnCondition: chronodisable
+		FacingTolerance: 0
 	AttackFrontal@Spawner:
 		Voice: Attack
 		Armaments: asw
 		FacingTolerance: 512
 	WithMuzzleOverlay:
 	DetectCloaked:
-		CloakTypes: Underwater
+		DetectionTypes: Underwater
 		Range: 4c0
 	RenderDetectionCircle:
 	Explodes:
@@ -143,7 +144,7 @@ aegis:
 	Tooltip:
 		Name: Aegis Cruiser
 	Selectable:
-		Bounds: 60, 80, 0, -6
+		Bounds: 1448, 3861, 0, -289
 	Health:
 		HP: 800
 	Armor:
@@ -196,18 +197,19 @@ dlph:
 		Voice: Move
 	SelectionDecorations:
 	Selectable:
-		Bounds: 40, 40
+		Bounds: 965, 1930
 	Voiced:
 		VoiceSet: DolphinVoice
 	Armament:
 		Weapon: SonicZap
 	AttackFrontal:
 		Voice: Attack
+		FacingTolerance: 0
 	AutoTarget:
 	RevealsShroud:
 		Range: 4c0
 	Cloak:
-		CloakTypes: Underwater
+		DetectionTypes: Underwater
 		InitialDelay: 50
 		CloakDelay: 75
 		CloakSound: vnavupa.wav
@@ -222,7 +224,7 @@ dlph:
 		TargetTypes: Underwater, ImmuneToAllySonic, Submergeable
 		RequiresCondition: underwater
 	DetectCloaked:
-		CloakTypes: Underwater
+		DetectionTypes: Underwater
 		Range: 4c0
 	HiddenUnderFog:
 	ActorLostNotification:
@@ -274,7 +276,7 @@ carrier:
 		Range: 7c0
 		Type: CenterPosition
 	Selectable:
-		Bounds: 60,80,0,-6
+		Bounds: 1448, 3861, 0, -289
 	Mobile:
 		TurnSpeed: 4
 		Speed: 60

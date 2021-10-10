@@ -16,7 +16,7 @@ tug:
 		Range: 8c0
 	RenderSprites:
 	Selectable:
-		Bounds: 64, 52, 0, -6
+		Bounds: 1544, 2509, 0, -289
 	RenderVoxels:
 		NormalsPalette: ts-normals
 	WithVoxelBody:
@@ -41,7 +41,7 @@ cruise:
 		Range: 8c0
 	RenderSprites:
 	Selectable:
-		Bounds: 64, 52, 0, -6
+		Bounds: 1544, 2509, 0, -289
 	WithVoxelBody:
 	-Voiced:
 	HitShape:

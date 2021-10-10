@@ -5,7 +5,7 @@ shad:
 	Tooltip:
 		Name: Night Hawk
 	Selectable:
-		Bounds: 70,60,0,-20
+		Bounds: 1689, 2896, 0, -965
 	Health:
 		HP: 175
 	Armor:
@@ -96,7 +96,7 @@ zep:
 		BuildPaletteOrder: 90
 		Prerequisites: ~naweap, natech
 	Selectable:
-		Bounds: 100,60,0,-10
+		Bounds: 2413, 2896, 0, -482
 	Aircraft:
 		CruiseAltitude: 5600
 		TurnSpeed: 20
@@ -176,7 +176,7 @@ orca:
 		TurnSpeed: 12
 		Speed: 210
 	Selectable:
-		Bounds: 30,24
+		Bounds: 724, 1158
 	Health:
 		HP: 150
 	Armor:
@@ -259,7 +259,7 @@ pdplane:
 		Cost: 2000
 	-Selectable:
 	Interactable:
-		Bounds: 100,80
+		Bounds: 2413, 3861
 	RejectsOrders:
 	Tooltip:
 		Name: Cargo Plane
@@ -304,7 +304,7 @@ hornet:
 	Tooltip:
 		Name: Hornet
 	Interactable:
-		Bounds: 15,12
+		Bounds: 362, 579
 	Health:
 		HP: 75
 	Armor:

@@ -370,8 +370,8 @@ amradr:
 		OrderName: AmericanParatroopers
 		Icon: airborne
 		ChargeInterval: 9000
-		Description: American Paratroopers
-		LongDesc: A Cargo Plane drops eight GIs\nanywhere on the map.
+		Name: American Paratroopers
+		Description: A Cargo Plane drops eight GIs\nanywhere on the map.
 		DropItems: e1,e1,e1,e1,e1,e1,e1,e1
 		QuantizedFacings: 8
 		UnitType: pdplane
@@ -990,8 +990,8 @@ gaweat:
 		OrderName: WeatherControlDevice
 		ChargeInterval: 15000
 		Icon: lightningstorm
-		Description: Weather Storm
-		LongDesc: Control the weather to destroy enemy forces.
+		Name: Weather Storm
+		Description: Control the weather to destroy enemy forces.
 		InsufficientPowerSpeechNotification: WeathercontrolDeviceOffline
 		EndChargeSpeechNotification: LightningStormReady
 		SelectTargetSpeechNotification: SelectTarget
@@ -1046,8 +1046,8 @@ gacsph:
 		OrderName: Chronoshift
 		Icon: chrono
 		ChargeInterval: 7500
-		Description: Chronosphere
-		LongDesc: Teleports a group of units across\nthe map.
+		Name: Chronosphere
+		Description: Teleports a group of units across\nthe map.
 		# Those sounds don't work: OpenRA/OpenRA#10540
 		# They also want to be played successive
 		#SelectTargetSound: schrlo1.wav, schrlo2a.wav schrlo2b.wav, schrlo2c.wav, schrlo3.wav
