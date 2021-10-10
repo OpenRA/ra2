@@ -1,45 +1,29 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>net472</TargetFramework>
-    <Optimize>true</Optimize>
-    <LangVersion>7.3</LangVersion>
-    <DebugSymbols>true</DebugSymbols>
-    <OutputPath>../mods/ra2</OutputPath>
-    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
-    <PlatformTarget>AnyCPU</PlatformTarget>
-    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
-    <CodeAnalysisRuleSet>..\engine\OpenRA.ruleset</CodeAnalysisRuleSet>
-  </PropertyGroup>
+	<PropertyGroup>
+		<EngineRootPath>../engine</EngineRootPath>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <!-- Work around an issue where Rider does not detect files in the project root using the default glob -->
-    <Compile Include="**/*.cs" Exclude="$(DefaultItemExcludes)" />
-  </ItemGroup>
+	<Import Project="$(EngineRootPath)/Directory.Build.props" />
 
-  <PropertyGroup Condition="'$(Configuration)'=='Debug'">
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <Optimize>false</Optimize>
-  </PropertyGroup>
+	<ItemGroup>
+		<ProjectReference Include="$(EngineRootPath)/OpenRA.Game/OpenRA.Game.csproj">
+			<Private>False</Private>
+		</ProjectReference>
 
-  <ItemGroup>
-    <Reference Include="Eluant">
-      <HintPath>../engine/thirdparty/download/Eluant.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
+		<ProjectReference Include="$(EngineRootPath)/OpenRA.Mods.Common/OpenRA.Mods.Common.csproj">
+			<Private>False</Private>
+		</ProjectReference>
 
-    <ProjectReference Include="..\engine\OpenRA.Game\OpenRA.Game.csproj" />
-    <ProjectReference Include="..\engine\OpenRA.Mods.Cnc\OpenRA.Mods.Cnc.csproj" />
-    <ProjectReference Include="..\engine\OpenRA.Mods.Common\OpenRA.Mods.Common.csproj" />
+		<ProjectReference Include="$(EngineRootPath)/OpenRA.Mods.Cnc/OpenRA.Mods.Cnc.csproj">
+			<Private>False</Private>
+		</ProjectReference>
+	</ItemGroup>
 
-    <PackageReference Include="StyleCop.Analyzers" Version="1.1.118" />
-    <AdditionalFiles Include="..\engine\stylecop.json" />
-  </ItemGroup>
+	<ItemGroup>
+		<None Include="$(EngineRootPath)/AUTHORS">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+	</ItemGroup>
 
-  <Target Name="DisableAnalyzers" BeforeTargets="CoreCompile" Condition="'$(Configuration)'=='Release'">
-    <!-- Disable code style analysis on Release builds to improve compile-time performance -->
-    <ItemGroup Condition="'$(Configuration)'=='Release'">
-      <Analyzer Remove="@(Analyzer)" />
-    </ItemGroup>
-  </Target>
 </Project>
