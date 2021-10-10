@@ -66,8 +66,8 @@ caairp:
 		OrderName: AlliedParatroopers
 		Icon: paradrop
 		ChargeInterval: 9000
-		Description: Allied Paratroopers
-		LongDesc: A Cargo Plane drops six GIs\nanywhere on the map.
+		Name: Allied Paratroopers
+		Description: A Cargo Plane drops six GIs\nanywhere on the map.
 		DropItems: e1,e1,e1,e1,e1,e1
 		QuantizedFacings: 8
 		UnitType: pdplane
@@ -78,8 +78,8 @@ caairp:
 		OrderName: SovietParatroopers
 		Icon: paradrop
 		ChargeInterval: 9000
-		Description: Soviet Paratroopers
-		LongDesc: A Cargo Plane drops nine conscripts\nanywhere on the map.
+		Name: Soviet Paratroopers
+		Description: A Cargo Plane drops nine conscripts\nanywhere on the map.
 		DropItems: e2,e2,e2,e2,e2,e2,e2,e2,e2
 		QuantizedFacings: 8
 		UnitType: pdplane

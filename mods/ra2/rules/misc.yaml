@@ -31,7 +31,7 @@ waypoint:
 crate:
 	Inherits: ^Crate
 	Crate:
-		Lifetime: 240
+		Duration: 6000
 	GiveCashCrateAction@500:
 		Amount: 500
 		SelectionShares: 10

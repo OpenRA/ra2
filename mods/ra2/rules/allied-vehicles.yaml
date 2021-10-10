@@ -12,7 +12,7 @@ amcv:
 		Name: Mobile Construction Vehicle
 	Selectable:
 		Priority: 4
-		Bounds: 68, 56, 0, -7
+		Bounds: 1641, 2702, 0, -337
 	Health:
 		HP: 1000
 	Armor:
@@ -55,7 +55,7 @@ cmin:
 		Name: Chrono Miner
 	Selectable:
 		Priority: 7
-		Bounds: 64, 52, 0, -6
+		Bounds: 1544, 2509, 0, -289
 	Harvester:
 		Capacity: 20
 		Resources: Ore, Gems
@@ -143,7 +143,7 @@ mtnk:
 	AutoTarget:
 	RenderSprites:
 	Selectable:
-		Bounds: 64, 52, 0, -6
+		Bounds: 1544, 2509, 0, -289
 	RenderVoxels:
 	WithVoxelBody:
 	WithVoxelTurret:
@@ -191,11 +191,12 @@ tnkd:
 		RequiresCondition: rank-elite
 	AttackFrontal:
 		Voice: Attack
+		FacingTolerance: 0
 	WithMuzzleOverlay:
 	AutoTarget:
 	RenderSprites:
 	Selectable:
-		Bounds: 64, 52, 0, -6
+		Bounds: 1544, 2509, 0, -289
 	RenderVoxels:
 		NormalsPalette: ts-normals
 	WithVoxelBody:
@@ -319,7 +320,7 @@ fv:
 		ValidTargets: Infantry, Vehicle
 		InvalidTargets: NoAutoTarget
 	Selectable:
-		Bounds: 64, 52, 0, -6
+		Bounds: 1544, 2509, 0, -289
 	RenderSprites:
 	RenderVoxels:
 	WithVoxelBody:
@@ -372,7 +373,7 @@ sref:
 	Tooltip:
 		Name: Prism Tank
 	Selectable:
-		Bounds: 64, 52, 0, -10
+		Bounds: 1544, 2509, 0, -482
 	Health:
 		HP: 150
 	Armor:
@@ -456,7 +457,7 @@ mgtk:
 		MirageCondition: tree
 		DefaultTargetTypes: tree01, tree02, tree03, tree04
 	Selectable:
-		Bounds: 64, 52, 0, -6
+		Bounds: 1544, 2509, 0, -289
 	Health:
 		HP: 200
 	Armor:
@@ -479,6 +480,7 @@ mgtk:
 		RequiresCondition: rank-elite
 	AttackFrontal:
 		Voice: Attack
+		FacingTolerance: 0
 	WithMuzzleOverlay:
 	AutoTarget:
 		AllowMovement: false

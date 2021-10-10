@@ -14,7 +14,7 @@ smcv:
 		Name: Mobile Construction Vehicle
 	Selectable:
 		Priority: 4
-		Bounds: 64, 52, 0, -6
+		Bounds: 1544, 2509, 0, -289
 	Health:
 		HP: 1000
 	Armor:
@@ -58,7 +58,7 @@ harv:
 		Name: War Miner
 	Selectable:
 		Priority: 7
-		Bounds: 64, 52, 0, -6
+		Bounds: 1544, 2509, 0, -289
 	Harvester:
 		Capacity: 40
 		Resources: Ore, Gems
@@ -172,7 +172,7 @@ htk:
 	Tooltip:
 		Name: Flak Track
 	Selectable:
-		Bounds: 50, 40, 0, -6
+		Bounds: 1206, 1930, 0, -289
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 30
@@ -273,7 +273,7 @@ htnk:
 	AutoTarget:
 	RenderSprites:
 	Selectable:
-		Bounds: 64, 52, 0, -6
+		Bounds: 1544, 2509, 0, -289
 	RenderVoxels:
 		NormalsPalette: ts-normals
 	WithVoxelBody:
@@ -331,7 +331,7 @@ apoc:
 	AutoTarget:
 	RenderSprites:
 	Selectable:
-		Bounds: 64, 52, 0, -6
+		Bounds: 1544, 2509, 0, -289
 	RenderVoxels:
 	WithVoxelBody:
 	WithVoxelTurret:
@@ -384,7 +384,7 @@ ttnk:
 	AutoTarget:
 	RenderSprites:
 	Selectable:
-		Bounds: 64, 52, 0, -6
+		Bounds: 1544, 2509, 0, -289
 	RenderVoxels:
 	WithVoxelBody:
 	WithVoxelTurret:
@@ -409,7 +409,7 @@ dtruck:
 	Tooltip:
 		Name: Demolition Truck
 	Selectable:
-		Bounds: 64, 52, 0, -6
+		Bounds: 1544, 2509, 0, -289
 	Health:
 		HP: 150
 	Armor:
