@@ -1,8 +1,10 @@
 #!/bin/bash
 set -e
+command -v curl >/dev/null 2>&1 || command -v wget > /dev/null 2>&1 || { echo >&2 "The OpenRA mod SDK Windows packaging requires curl or wget."; exit 1; }
 command -v makensis >/dev/null 2>&1 || { echo >&2 "The OpenRA mod SDK Windows packaging requires makensis."; exit 1; }
 command -v convert >/dev/null 2>&1 || { echo >&2 "The OpenRA mod SDK Windows packaging requires ImageMagick."; exit 1; }
 command -v python3 >/dev/null 2>&1 || { echo >&2 "The OpenRA mod SDK Windows packaging requires python 3."; exit 1; }
+command -v wine64 >/dev/null 2>&1 || { echo >&2 "The OpenRA mod SDK Windows packaging requires wine64."; exit 1; }
 
 require_variables() {
 	missing=""
@@ -56,10 +58,17 @@ if [ ! -f "${TEMPLATE_ROOT}/${ENGINE_DIRECTORY}/Makefile" ]; then
 fi
 
 . "${TEMPLATE_ROOT}/${ENGINE_DIRECTORY}/packaging/functions.sh"
+. "${TEMPLATE_ROOT}/packaging/functions.sh"
 
 if [ ! -d "${OUTPUTDIR}" ]; then
 	echo "Output directory '${OUTPUTDIR}' does not exist.";
 	exit 1
+fi
+
+if command -v curl >/dev/null 2>&1; then
+	curl -s -L -O https://github.com/electron/rcedit/releases/download/v1.1.1/rcedit-x64.exe || exit 3
+else
+	wget -cq https://github.com/electron/rcedit/releases/download/v1.1.1/rcedit-x64.exe || exit 3
 fi
 
 function build_platform()
@@ -78,7 +87,7 @@ function build_platform()
 	fi
 
 	echo "Building core files (${PLATFORM})"
-	install_assemblies_mono "${TEMPLATE_ROOT}/${ENGINE_DIRECTORY}" "${BUILTDIR}" "win-${PLATFORM}" "False" "${PACKAGING_COPY_CNC_DLL}" "${PACKAGING_COPY_D2K_DLL}"
+	install_assemblies "${TEMPLATE_ROOT}/${ENGINE_DIRECTORY}" "${BUILTDIR}" "win-${PLATFORM}" "net6" "False" "${PACKAGING_COPY_CNC_DLL}" "${PACKAGING_COPY_D2K_DLL}"
 	install_data "${TEMPLATE_ROOT}/${ENGINE_DIRECTORY}" "${BUILTDIR}"
 
 	for f in ${PACKAGING_COPY_ENGINE_FILES}; do
@@ -87,16 +96,9 @@ function build_platform()
 	done
 
 	echo "Building mod files (${PLATFORM})"
-	pushd "${TEMPLATE_ROOT}" > /dev/null
-	make all
-	popd > /dev/null
+	install_mod_assemblies "${TEMPLATE_ROOT}" "${BUILTDIR}" "win-${PLATFORM}" "net6" "${TEMPLATE_ROOT}/${ENGINE_DIRECTORY}"
 
 	cp -Lr "${TEMPLATE_ROOT}/mods/"* "${BUILTDIR}/mods"
-
-	for f in ${PACKAGING_COPY_MOD_BINARIES}; do
-		mkdir -p "${BUILTDIR}/$(dirname "${f}")"
-		cp "${TEMPLATE_ROOT}/${ENGINE_DIRECTORY}/bin/${f}" "${BUILTDIR}/${f}"
-	done
 
 	set_engine_version "${ENGINE_VERSION}" "${BUILTDIR}"
 	if [ "${PACKAGING_OVERWRITE_MOD_VERSION}" == "True" ]; then
@@ -110,7 +112,9 @@ function build_platform()
 	convert "${ARTWORK_DIR}/icon_16x16.png" "${ARTWORK_DIR}/icon_24x24.png" "${ARTWORK_DIR}/icon_32x32.png" "${ARTWORK_DIR}/icon_48x48.png" "${ARTWORK_DIR}/icon_256x256.png" "${BUILTDIR}/${MOD_ID}.ico"
 
 	echo "Compiling Windows launcher (${PLATFORM})"
-	install_windows_launcher "${TEMPLATE_ROOT}/${ENGINE_DIRECTORY}" "${BUILTDIR}" "win-${PLATFORM}" "${MOD_ID}" "${PACKAGING_WINDOWS_LAUNCHER_NAME}"  "${PACKAGING_DISPLAY_NAME}" "${BUILTDIR}/${MOD_ID}.ico" "${PACKAGING_FAQ_URL}"
+	install_windows_launcher "${TEMPLATE_ROOT}/${ENGINE_DIRECTORY}" "${BUILTDIR}" "win-${PLATFORM}" "${MOD_ID}" "${PACKAGING_WINDOWS_LAUNCHER_NAME}"  "${PACKAGING_DISPLAY_NAME}" "${PACKAGING_FAQ_URL}"
+
+	wine64 rcedit-x64.exe "${BUILTDIR}/${PACKAGING_WINDOWS_LAUNCHER_NAME}.exe" --set-icon "${BUILTDIR}/${MOD_ID}.ico"
 
 	echo "Building Windows setup.exe (${PLATFORM})"
 	pushd "${PACKAGING_DIR}" > /dev/null
