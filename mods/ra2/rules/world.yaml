@@ -9,7 +9,15 @@
 	TerrainGeometryOverlay:
 	TerrainRenderer:
 	ResourceRenderer:
-		RenderTypes: Ore, Gems
+		ResourceTypes:
+			Ore:
+				Sequences: tib01, tib02, tib03, tib04, tib05, tib06, tib07, tib08, tib09, tib10, tib11, tib12, tib13, tib14, tib15, tib16, tib17, tib18, tib19, tib20
+				Palette: resource
+				Name: Valuable Minerals
+			Gems:
+				Sequences: gem01, gem02, gem03, gem04, gem05, gem06, gem07, gem08, gem09, gem10, gem11, gem12
+				Palette: resource
+				Name: Valuable Minerals
 	TerrainLighting:
 	DebugVisualizations:
 	Locomotor@FOOT:
@@ -228,7 +236,18 @@ World:
 		SmokeChance: 25
 		SmokeSequences: idle
 	ResourceLayer:
-	ResourceRenderer:
+		RecalculateResourceDensity: true
+		ResourceTypes:
+			Ore:
+				ResourceIndex: 1
+				TerrainType: Ore
+				AllowedTerrainTypes: Clear, Rough, Road
+				MaxDensity: 12
+			Gems:
+				ResourceIndex: 2
+				TerrainType: Gems
+				AllowedTerrainTypes: Clear, Rough, Road
+				MaxDensity: 12
 	ResourceClaimLayer:
 	BridgeLayer:
 	WarheadDebugOverlay:
@@ -355,6 +374,18 @@ EditorWorld:
 	EditorActorLayer:
 	EditorCursorLayer:
 	EditorResourceLayer:
+		RecalculateResourceDensity: true
+		ResourceTypes:
+			Ore:
+				ResourceIndex: 1
+				TerrainType: Ore
+				AllowedTerrainTypes: Clear, Rough, Road
+				MaxDensity: 12
+			Gems:
+				ResourceIndex: 2
+				TerrainType: Gems
+				AllowedTerrainTypes: Clear, Rough, Road
+				MaxDensity: 12
 	EditorSelectionLayer:
 	LoadWidgetAtGameStart:
 	EditorActionManager:
