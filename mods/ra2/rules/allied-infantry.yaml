@@ -581,7 +581,7 @@ jumpjet:
 	-WithDeathAnimation@normal:
 	-WithDeathAnimation@effect:
 	Targetable@airborne:
-		TargetTypes: Air, Disguise
+		TargetTypes: Air
 		RequiresCondition: airborne
 	WithSpriteBody@shadow:
 		Name: shadow
