@@ -839,7 +839,7 @@ nairon:
 		Condition: invulnerability
 		PauseOnCondition: lowpower
 		Dimensions: 3, 3
-		Footprint: _x_ xxx _x_
+		Footprint: xxx xxx xxx
 	SupportPowerChargeBar:
 	GrantConditionOnPowerState@LOWPOWER:
 		Condition: lowpower
