@@ -12,9 +12,10 @@
 			},
 			"request": "launch",
 			"preLaunchTask": "build",
-			"program": "${workspaceRoot}/engine/OpenRA.Game.exe",
+			"program": "${workspaceRoot}/engine/bin/OpenRA.exe",
 			"cwd": "${workspaceRoot}/engine/",
 			"args": [
+				"Engine.EngineDir=${workspaceRoot}/engine",
 				"Engine.LaunchPath=${workspaceRoot}",
 				"Engine.ModSearchPaths=${workspaceRoot}/mods,./mods",
 				"Game.Mod=ra2",
