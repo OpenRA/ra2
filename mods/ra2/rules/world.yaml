@@ -8,6 +8,8 @@
 	ScreenMap:
 	TerrainGeometryOverlay:
 	TerrainRenderer:
+	ResourceRenderer:
+		RenderTypes: Ore, Gems
 	DebugVisualizations:
 	Locomotor@FOOT:
 		Name: foot
@@ -247,8 +249,6 @@ World:
 		SmokeChance: 25
 		SmokeSequences: idle
 	ResourceLayer:
-	ResourceRenderer:
-		RenderTypes: Ore, Gems
 	ResourceClaimLayer:
 	BridgeLayer:
 	WarheadDebugOverlay:
