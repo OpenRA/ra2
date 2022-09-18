@@ -34,10 +34,6 @@ _ReSharper.*/
 /mods/ra2/*.exe.config
 /mods/ra2/*.deps.json
 
-# TODO: Compiling creates a /mods/common folder with dlls and pdbs
-OpenRA.Mods.RA2/mods/*
-mods/common/*
-
 # StyleCop
 StyleCopViolations.xml
 
