@@ -47,128 +47,103 @@ Actors:
 	Actor0: caairp
 		Location: 102,11
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor1: caoild
 		Location: 110,2
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor2: caoild
 		Location: 86,3
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor3: caoild
 		Location: 158,8
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor4: caoild
 		Location: 158,5
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor5: caoild
 		Location: 81,65
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor6: caoild
 		Location: 84,65
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor7: caoild
 		Location: 55,-6
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor8: caoild
 		Location: 58,-6
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor9: caoild
 		Location: 112,26
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor10: caeur1
 		Location: 90,26
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor11: cafrma
 		Location: 93,28
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor12: caeur1
 		Location: 106,33
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor13: caeur2
 		Location: 103,37
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor14: cafrma
 		Location: 120,18
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor15: caeur1
 		Location: 121,16
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor16: caeur2
 		Location: 126,18
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor17: caeur1
 		Location: 121,7
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor18: caeur2
 		Location: 123,1
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor19: cafrma
 		Location: 94,-7
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor20: caeur1
 		Location: 96,-8
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor21: caeur2
 		Location: 91,-14
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor22: caeur1
 		Location: 86,-5
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor23: caeur2
 		Location: 78,-4
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor24: caeur2
 		Location: 87,30
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor25: tree28
 		Location: 85,5
 		Owner: Neutral
@@ -1085,10 +1060,10 @@ Actors:
 		Location: 107,-4
 		Owner: Neutral
 	Actor330: srock01
-		Location: 108,-4
+		Location: 101,3
 		Owner: Neutral
 	Actor331: srock01
-		Location: 101,3
+		Location: 108,-4
 		Owner: Neutral
 	Actor332: srock05
 		Location: 88,19
@@ -1102,23 +1077,23 @@ Actors:
 	Actor335: srock05
 		Location: 108,12
 		Owner: Neutral
-	Actor336: trock01
-		Location: 111,18
+	Actor336: srock02
+		Location: 107,21
 		Owner: Neutral
 	Actor337: srock01
 		Location: 110,19
 		Owner: Neutral
-	Actor338: srock02
-		Location: 107,21
+	Actor338: trock01
+		Location: 111,18
 		Owner: Neutral
 	Actor339: srock04
 		Location: 111,28
 		Owner: Neutral
-	Actor340: srock02
-		Location: 120,20
-		Owner: Neutral
-	Actor341: trock01
+	Actor340: trock01
 		Location: 112,28
+		Owner: Neutral
+	Actor341: srock02
+		Location: 120,20
 		Owner: Neutral
 	Actor342: srock03
 		Location: 155,-5
@@ -1131,7 +1106,8 @@ Actors:
 		Owner: Neutral
 
 Rules:
-	World:
-		GlobalLightingPaletteEffect:
-			Red: 0.68
-			Green: 0.68
+	^BaseWorld:
+		TerrainLighting:
+			RedTint: 0.68
+			GreenTint: 0.68
+			HeightStep: 0.028

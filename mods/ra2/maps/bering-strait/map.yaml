@@ -62,418 +62,500 @@ Actors:
 	Actor0: cabhut
 		Location: 74,-34
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor1: cabhut
 		Location: 74,-38
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor2: cabhut
 		Location: 88,-34
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor3: cabhut
 		Location: 88,-38
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor4: cabhut
 		Location: 66,32
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor5: cabhut
 		Location: 66,28
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor6: cabhut
 		Location: 76,32
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor7: cabhut
 		Location: 76,28
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor8: cabhut
 		Location: 115,44
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor9: cabhut
 		Location: 115,40
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor10: cabhut
 		Location: 129,44
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor11: cabhut
 		Location: 129,40
 		Owner: Neutral
-		Health: 100
-		Facing: 384
-	Actor12: cabhut
+		Facing: 896
+	Actor12: neglamp
+		Location: 168,12
+		Owner: Neutral
+		Facing: 896
+	Actor13: neglamp
+		Location: 158,4
+		Owner: Neutral
+		Facing: 896
+	Actor14: neglamp
+		Location: 157,-16
+		Owner: Neutral
+		Facing: 896
+	Actor15: inyelwlamp
+		Location: 149,-17
+		Owner: Neutral
+		Facing: 896
+	Actor16: inyelwlamp
+		Location: 147,-44
+		Owner: Neutral
+		Facing: 896
+	Actor17: inyelwlamp
+		Location: 185,-21
+		Owner: Neutral
+		Facing: 896
+	Actor18: inyelwlamp
+		Location: 176,-28
+		Owner: Neutral
+		Facing: 896
+	Actor19: inyelwlamp
+		Location: 140,18
+		Owner: Neutral
+		Facing: 896
+	Actor20: inyelwlamp
+		Location: 138,28
+		Owner: Neutral
+		Facing: 896
+	Actor21: inyelwlamp
+		Location: 92,56
+		Owner: Neutral
+		Facing: 896
+	Actor22: inyelwlamp
+		Location: 85,51
+		Owner: Neutral
+		Facing: 896
+	Actor23: inyelwlamp
+		Location: 71,-9
+		Owner: Neutral
+		Facing: 896
+	Actor24: inyelwlamp
+		Location: 66,-22
+		Owner: Neutral
+		Facing: 896
+	Actor25: inyelwlamp
+		Location: 106,-42
+		Owner: Neutral
+		Facing: 896
+	Actor26: ingalite
+		Location: 152,-29
+		Owner: Neutral
+		Facing: 896
+	Actor27: cabhut
 		Location: 147,-74
 		Owner: Neutral
-		Health: 100
-		Facing: 384
-	Actor13: cabhut
+		Facing: 896
+	Actor28: cabhut
 		Location: 138,-78
 		Owner: Neutral
-		Health: 100
-		Facing: 384
-	Actor14: caoild
+		Facing: 896
+	Actor29: caoild
 		Location: 97,-1
 		Owner: Neutral
-		Health: 100
-		Facing: 384
-	Actor15: caoild
+		Facing: 896
+	Actor30: caoild
 		Location: 104,-8
 		Owner: Neutral
-		Health: 100
-		Facing: 384
-	Actor16: caoild
+		Facing: 896
+	Actor31: caoild
 		Location: 105,6
 		Owner: Neutral
-		Health: 100
-		Facing: 384
-	Actor17: caoild
+		Facing: 896
+	Actor32: caoild
 		Location: 111,-3
 		Owner: Neutral
-		Health: 100
-		Facing: 384
-	Actor18: tibtre01
+		Facing: 896
+	Actor33: tibtre01
 		Location: 105,-41
 		Owner: Neutral
-	Actor19: tibtre02
+	Actor34: tibtre02
 		Location: 107,-43
 		Owner: Neutral
-	Actor20: tibtre03
+	Actor35: tibtre03
 		Location: 148,-43
 		Owner: Neutral
-	Actor21: tibtre03
+	Actor36: tibtre03
 		Location: 150,-17
 		Owner: Neutral
-	Actor22: tibtre01
+	Actor37: tibtre01
 		Location: 186,-20
 		Owner: Neutral
-	Actor23: tibtre01
+	Actor38: tibtre01
 		Location: 177,-27
 		Owner: Neutral
-	Actor24: tibtre02
+	Actor39: tibtre02
 		Location: 139,17
 		Owner: Neutral
-	Actor25: tibtre03
+	Actor40: tibtre03
 		Location: 137,27
 		Owner: Neutral
-	Actor26: tibtre03
+	Actor41: tibtre03
 		Location: 86,51
 		Owner: Neutral
-	Actor27: tibtre02
+	Actor42: tibtre02
 		Location: 93,57
 		Owner: Neutral
-	Actor28: tibtre03
+	Actor43: tibtre03
 		Location: 72,-9
 		Owner: Neutral
-	Actor29: tibtre03
+	Actor44: tibtre03
 		Location: 67,-21
 		Owner: Neutral
-	Actor30: mpspawn
+	Actor45: mpspawn
 		Location: 107,-63
 		Owner: Neutral
-	Actor31: mpspawn
+	Actor46: mpspawn
 		Location: 102,60
 		Owner: Neutral
-	Actor32: mpspawn
+	Actor47: mpspawn
 		Location: 59,-5
 		Owner: Neutral
-	Actor33: mpspawn
+	Actor48: mpspawn
 		Location: 157,-47
 		Owner: Neutral
-	Actor34: mpspawn
+	Actor49: mpspawn
 		Location: 149,22
 		Owner: Neutral
-	Actor35: mpspawn
+	Actor50: mpspawn
 		Location: 170,-13
 		Owner: Neutral
-	Actor36: waypoint
+	Actor51: waypoint
 		Location: 74,-42
 		Owner: Neutral
-	Actor37: waypoint
+	Actor52: waypoint
 		Location: 59,-20
 		Owner: Neutral
-	Actor38: waypoint
+	Actor53: waypoint
 		Location: 55,1
 		Owner: Neutral
-	Actor39: waypoint
+	Actor54: waypoint
 		Location: 54,22
 		Owner: Neutral
-	Actor40: waypoint
+	Actor55: waypoint
 		Location: 81,26
 		Owner: Neutral
-	Actor41: waypoint
+	Actor56: waypoint
 		Location: 92,49
 		Owner: Neutral
-	Actor42: waypoint
+	Actor57: waypoint
 		Location: 113,49
 		Owner: Neutral
-	Actor43: waypoint
+	Actor58: waypoint
 		Location: 139,37
 		Owner: Neutral
-	Actor44: waypoint
+	Actor59: waypoint
 		Location: 151,14
 		Owner: Neutral
-	Actor45: waypoint
+	Actor60: waypoint
 		Location: 166,-13
 		Owner: Neutral
-	Actor46: waypoint
+	Actor61: waypoint
 		Location: 147,-20
 		Owner: Neutral
-	Actor47: waypoint
+	Actor62: waypoint
 		Location: 154,-51
 		Owner: Neutral
-	Actor48: waypoint
+	Actor63: waypoint
 		Location: 179,-40
 		Owner: Neutral
-	Actor49: waypoint
+	Actor64: waypoint
 		Location: 147,-72
 		Owner: Neutral
-	Actor50: waypoint
+	Actor65: waypoint
 		Location: 132,-93
 		Owner: Neutral
-	Actor51: waypoint
+	Actor66: waypoint
 		Location: 114,-76
 		Owner: Neutral
-	Actor52: waypoint
+	Actor67: waypoint
 		Location: 105,-57
 		Owner: Neutral
-	Actor53: waypoint
+	Actor68: waypoint
 		Location: 90,-40
 		Owner: Neutral
-	Actor54: waypoint
+	Actor69: waypoint
 		Location: 105,26
 		Owner: Neutral
-	Actor55: waypoint
+	Actor70: waypoint
 		Location: 115,7
 		Owner: Neutral
-	Actor56: waypoint
+	Actor71: waypoint
 		Location: 92,-13
 		Owner: Neutral
-	Actor57: waypoint
+	Actor72: waypoint
 		Location: 92,4
 		Owner: Neutral
-	Actor58: waypoint
+	Actor73: waypoint
 		Location: 123,-16
 		Owner: Neutral
-	Actor59: waypoint
+	Actor74: waypoint
 		Location: 129,-41
 		Owner: Neutral
-	Actor60: waypoint
+	Actor75: waypoint
 		Location: 132,-53
 		Owner: Neutral
-	Actor61: waypoint
+	Actor76: waypoint
 		Location: 106,-2
 		Owner: Neutral
-	Actor62: waypoint
+	Actor77: waypoint
 		Location: 106,-2
 		Owner: Neutral
-	Actor63: waypoint
-		Location: 109,-14
-		Owner: Neutral
-	Actor64: lobrdg_r_nw
+	Actor78: lobrdg_r_nw
 		Location: 74,-37
 		Owner: Neutral
-	Actor65: lobrdg_b
+	Actor79: lobrdg_b
 		Location: 75,-37
 		Owner: Neutral
-	Actor66: lobrdg_b
+	Actor80: lobrdg_b
 		Location: 76,-37
 		Owner: Neutral
-	Actor67: lobrdg_b
+	Actor81: lobrdg_b
 		Location: 77,-37
 		Owner: Neutral
-	Actor68: lobrdg_b
+	Actor82: lobrdg_b
 		Location: 78,-37
 		Owner: Neutral
-	Actor69: lobrdg_b
+	Actor83: lobrdg_b
 		Location: 79,-37
 		Owner: Neutral
-	Actor70: trock02
+	Actor84: trock02
 		Location: 123,-81
 		Owner: Neutral
-	Actor71: lobrdg_b
+	Actor85: lobrdg_b
 		Location: 80,-37
 		Owner: Neutral
-	Actor72: trock01
+	Actor86: trock01
 		Location: 123,-80
 		Owner: Neutral
-	Actor73: lobrdg_b
+	Actor87: lobrdg_b
 		Location: 81,-37
 		Owner: Neutral
-	Actor74: lobrdg_b
+	Actor88: lobrdg_b
 		Location: 82,-37
 		Owner: Neutral
-	Actor75: lobrdg_b
+	Actor89: lobrdg_b
 		Location: 83,-37
 		Owner: Neutral
-	Actor76: lobrdg_b
+	Actor90: lobrdg_b
 		Location: 84,-37
 		Owner: Neutral
-	Actor77: lobrdg_b
+	Actor91: lobrdg_b
 		Location: 85,-37
 		Owner: Neutral
-	Actor78: lobrdg_b
+	Actor92: lobrdg_b
 		Location: 86,-37
 		Owner: Neutral
-	Actor79: trock03
+	Actor93: trock03
 		Location: 129,-80
 		Owner: Neutral
-	Actor80: lobrdg_b
+	Actor94: lobrdg_b
 		Location: 87,-37
 		Owner: Neutral
-	Actor81: lobrdg_r_se
+	Actor95: lobrdg_r_se
 		Location: 88,-37
 		Owner: Neutral
-	Actor82: srock03
+	Actor96: srock03
 		Location: 102,-50
 		Owner: Neutral
-	Actor83: trock05
+	Actor97: trock05
 		Location: 119,-61
 		Owner: Neutral
-	Actor84: lobrdg_r_nw
+	Actor98: lobrdg_r_nw
 		Location: 138,-77
 		Owner: Neutral
-	Actor85: lobrdg_b
+	Actor99: lobrdg_b
 		Location: 139,-77
 		Owner: Neutral
-	Actor86: lobrdg_b
+	Actor100: lobrdg_b
 		Location: 140,-77
 		Owner: Neutral
-	Actor87: lobrdg_b
+	Actor101: lobrdg_b
 		Location: 141,-77
 		Owner: Neutral
-	Actor88: lobrdg_b
+	Actor102: lobrdg_b
 		Location: 142,-77
 		Owner: Neutral
-	Actor89: lobrdg_b
+	Actor103: lobrdg_b
 		Location: 143,-77
 		Owner: Neutral
-	Actor90: lobrdg_b
+	Actor104: lobrdg_b
 		Location: 144,-77
 		Owner: Neutral
-	Actor91: lobrdg_b
+	Actor105: lobrdg_b
 		Location: 145,-77
 		Owner: Neutral
-	Actor92: lobrdg_b
+	Actor106: lobrdg_b
 		Location: 146,-77
 		Owner: Neutral
-	Actor93: lobrdg_r_se
+	Actor107: lobrdg_r_se
 		Location: 147,-77
 		Owner: Neutral
-	Actor94: trock03
+	Actor108: trock03
 		Location: 80,-6
 		Owner: Neutral
-	Actor95: srock03
+	Actor109: srock03
 		Location: 106,-29
 		Owner: Neutral
-	Actor96: lobrdg_r_nw
+	Actor110: lobrdg_r_nw
 		Location: 66,29
 		Owner: Neutral
-	Actor97: lobrdg_b
+	Actor111: lobrdg_b
 		Location: 67,29
 		Owner: Neutral
-	Actor98: lobrdg_b
+	Actor112: lobrdg_b
 		Location: 68,29
 		Owner: Neutral
-	Actor99: lobrdg_b
+	Actor113: lobrdg_b
 		Location: 69,29
 		Owner: Neutral
-	Actor100: lobrdg_b
+	Actor114: lobrdg_b
 		Location: 70,29
 		Owner: Neutral
-	Actor101: lobrdg_b
+	Actor115: lobrdg_b
 		Location: 71,29
 		Owner: Neutral
-	Actor102: lobrdg_b
+	Actor116: lobrdg_b
 		Location: 72,29
 		Owner: Neutral
-	Actor103: lobrdg_b
+	Actor117: lobrdg_b
 		Location: 73,29
 		Owner: Neutral
-	Actor104: lobrdg_b
+	Actor118: lobrdg_b
 		Location: 74,29
 		Owner: Neutral
-	Actor105: lobrdg_b
+	Actor119: lobrdg_b
 		Location: 75,29
 		Owner: Neutral
-	Actor106: lobrdg_r_se
+	Actor120: lobrdg_r_se
 		Location: 76,29
 		Owner: Neutral
-	Actor107: srock04
+	Actor121: srock04
 		Location: 166,-61
 		Owner: Neutral
-	Actor108: srock03
+	Actor122: srock03
 		Location: 144,-25
 		Owner: Neutral
-	Actor109: srock04
+	Actor123: srock04
 		Location: 157,-18
 		Owner: Neutral
-	Actor110: lobrdg_r_nw
+	Actor124: lobrdg_r_nw
 		Location: 115,41
 		Owner: Neutral
-	Actor111: lobrdg_b
+	Actor125: lobrdg_b
 		Location: 116,41
 		Owner: Neutral
-	Actor112: lobrdg_b
+	Actor126: lobrdg_b
 		Location: 117,41
 		Owner: Neutral
-	Actor113: lobrdg_b
+	Actor127: lobrdg_b
 		Location: 118,41
 		Owner: Neutral
-	Actor114: lobrdg_b
+	Actor128: lobrdg_b
 		Location: 119,41
 		Owner: Neutral
-	Actor115: lobrdg_b
+	Actor129: lobrdg_b
 		Location: 120,41
 		Owner: Neutral
-	Actor116: lobrdg_b
+	Actor130: lobrdg_b
 		Location: 121,41
 		Owner: Neutral
-	Actor117: lobrdg_b
+	Actor131: lobrdg_b
 		Location: 122,41
 		Owner: Neutral
-	Actor118: lobrdg_b
+	Actor132: lobrdg_b
 		Location: 123,41
 		Owner: Neutral
-	Actor119: lobrdg_b
+	Actor133: lobrdg_b
 		Location: 124,41
 		Owner: Neutral
-	Actor120: lobrdg_b
+	Actor134: lobrdg_b
 		Location: 125,41
 		Owner: Neutral
-	Actor121: lobrdg_b
+	Actor135: lobrdg_b
 		Location: 126,41
 		Owner: Neutral
-	Actor122: lobrdg_b
+	Actor136: lobrdg_b
 		Location: 127,41
 		Owner: Neutral
-	Actor123: lobrdg_b
+	Actor137: lobrdg_b
 		Location: 128,41
 		Owner: Neutral
-	Actor124: lobrdg_r_se
+	Actor138: lobrdg_r_se
 		Location: 129,41
 		Owner: Neutral
 
 Rules:
-	World:
-		GlobalLightingPaletteEffect:
-			Ambient: 0.75
-			Red: 0.87
-			Blue: 1.25
+	^BaseWorld:
+		TerrainLighting:
+			RedTint: 0.87
+			BlueTint: 1.25
+			Intensity: 0.75
+			HeightStep: 0.028
+	INGALITE:
+		TerrainLightSource:
+			Range: 19c544
+			Intensity: 0.2
+			RedTint: 0.05
+			GreenTint: 0.05
+			BlueTint: 0.01
+	NEGLAMP:
+		TerrainLightSource:
+			Range: 19c544
+			Intensity: -0.15
+			RedTint: 0.03
+			GreenTint: 0.04
+			BlueTint: 0.04
+	INYELWLAMP:
+		TerrainLightSource:
+			Range: 10c760
+			Intensity: 0.01
+			RedTint: 0.4
+			GreenTint: 0.2
+			BlueTint: 0.01
+	INPURPLAMP:
+		TerrainLightSource:
+			Range: 15c640
+			Intensity: 0.01
+			RedTint: 0.67059
+			GreenTint: 0.19608
+			BlueTint: 0.67059
+	INREDLMP:
+		TerrainLightSource:
+			Range: 15c640
+			Intensity: 0.01
+			RedTint: 0.81176
+			GreenTint: 0.0549
+			BlueTint: 0.12941
+	INBLULMP:
+		TerrainLightSource:
+			Range: 15c640
+			Intensity: 0.01
+			RedTint: 0.24706
+			GreenTint: 0.0549
+			BlueTint: 0.81176

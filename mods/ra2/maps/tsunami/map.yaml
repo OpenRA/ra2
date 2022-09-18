@@ -52,43 +52,35 @@ Actors:
 	Actor0: caoild
 		Location: 99,55
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor1: caoild
 		Location: 49,12
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor2: caoild
 		Location: 85,-45
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor3: caoild
 		Location: 142,-1
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor4: caoild
 		Location: 83,-42
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor5: caoild
 		Location: 50,15
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor6: caoild
 		Location: 82,42
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor7: caoild
 		Location: 144,2
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor8: tibtre01
 		Location: 139,19
 		Owner: Neutral
@@ -943,6 +935,7 @@ Actors:
 		Owner: Neutral
 
 Rules:
-	World:
-		GlobalLightingPaletteEffect:
-			Ambient: 0.68
+	^BaseWorld:
+		TerrainLighting:
+			Intensity: 0.68
+			HeightStep: 0.017
