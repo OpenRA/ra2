@@ -69,66 +69,134 @@ Players:
 		Enemies: Creeps
 
 Actors:
+	Actor0: cabhut
+		Location: 103,32
+		Owner: Neutral
+		Facing: 896
+	Actor1: cabhut
+		Location: 78,41
+		Owner: Neutral
+		Facing: 896
+	Actor2: cabhut
+		Location: 89,41
+		Owner: Neutral
+		Facing: 896
 	Actor3: cabhut
 		Location: 203,-70
 		Owner: Neutral
+		Facing: 896
+	Actor4: cabhut
+		Location: 203,-61
+		Owner: Neutral
+		Facing: 896
 	Actor5: cabhut
 		Location: 56,-23
 		Owner: Neutral
+		Facing: 896
+	Actor6: cabhut
+		Location: 67,-23
+		Owner: Neutral
+		Facing: 896
 	Actor7: cabhut
 		Location: 103,20
 		Owner: Neutral
+		Facing: 896
+	Actor8: cabhut
+		Location: 186,-52
+		Owner: Neutral
+		Facing: 896
+	Actor9: cabhut
+		Location: 176,-52
+		Owner: Neutral
+		Facing: 896
 	Actor10: cabhut
 		Location: 131,-91
 		Owner: Neutral
+		Facing: 896
+	Actor11: cabhut
+		Location: 131,-80
+		Owner: Neutral
+		Facing: 896
+	Actor12: cabhut
+		Location: 154,-111
+		Owner: Neutral
+		Facing: 896
+	Actor13: cabhut
+		Location: 146,-111
+		Owner: Neutral
+		Facing: 896
 	Actor14: caoutp
 		Location: 57,28
 		Owner: Neutral
+		Facing: 896
 	Actor15: caoutp
 		Location: 186,-94
 		Owner: Neutral
+		Facing: 896
 	Actor16: caoild
 		Location: 160,-9
 		Owner: Neutral
+		Facing: 896
 	Actor17: caoild
 		Location: 150,1
 		Owner: Neutral
+		Facing: 896
 	Actor18: caairp
 		Location: 154,-5
 		Owner: Neutral
+		Facing: 896
 	Actor19: caairp
 		Location: 89,-71
 		Owner: Neutral
+		Facing: 896
 	Actor20: caoild
 		Location: 84,-66
 		Owner: Neutral
+		Facing: 896
 	Actor21: caoild
 		Location: 94,-76
 		Owner: Neutral
+		Facing: 896
 	Actor22: caoild
 		Location: 136,-23
 		Owner: Neutral
+		Facing: 896
 	Actor23: caoild
 		Location: 159,-44
 		Owner: Neutral
+		Facing: 896
 	Actor24: caoild
 		Location: 143,-57
 		Owner: Neutral
+		Facing: 896
 	Actor25: caoild
 		Location: 124,-66
 		Owner: Neutral
+		Facing: 896
 	Actor26: caoild
 		Location: 107,-52
 		Owner: Neutral
+		Facing: 896
 	Actor27: caoild
 		Location: 85,-28
 		Owner: Neutral
+		Facing: 896
 	Actor28: caoild
 		Location: 101,-17
 		Owner: Neutral
+		Facing: 896
 	Actor29: caoild
 		Location: 112,-1
 		Owner: Neutral
+		Facing: 896
+	Actor30: cabhut
+		Location: 36,-1
+		Owner: Neutral
+		Facing: 896
+	Actor31: cabhut
+		Location: 36,-14
+		Owner: Neutral
+		Facing: 896
 	Actor32: tibtre02
 		Location: 18,10
 		Owner: Neutral
@@ -5244,46 +5312,46 @@ Actors:
 	Actor1736: lobrdg_r_sw
 		Location: 205,-61
 		Owner: Neutral
-	Actor1739: cabhut
-		Owner: Neutral
-		Location: 185,-53
-	Actor1740: cabhut
-		Owner: Neutral
-		Location: 176,-53
-	Actor1741: cabhut
-		Owner: Neutral
-		Location: 88,46
-	Actor1737: cabhut
-		Owner: Neutral
-		Location: 78,46
-	Actor1742: cabhut
-		Owner: Neutral
-		Location: 108,32
-	Actor1743: cabhut
-		Owner: Neutral
-		Location: 136,-80
-	Actor1744: cabhut
-		Owner: Neutral
-		Location: 153,-112
-	Actor1745: cabhut
-		Owner: Neutral
-		Location: 146,-112
-	Actor1746: cabhut
-		Owner: Neutral
-		Location: 203,-62
-	Actor1747: cabhut
-		Owner: Neutral
-		Location: 67,-18
-	Actor1748: cabhut
-		Owner: Neutral
-		Location: 41,-13
-	Actor1738: cabhut
-		Owner: Neutral
-		Location: 36,-2
 
 Rules:
-	World:
-		GlobalLightingPaletteEffect:
-			Ambient: 0.87
-			Red: 0.8
-			Green: 0.85
+	^BaseWorld:
+		TerrainLighting:
+			RedTint: 0.8
+			GreenTint: 0.85
+			Intensity: 0.87
+			HeightStep: 0.017
+	NEGLAMP:
+		TerrainLightSource:
+			Range: 19c544
+			Intensity: -0.15
+			RedTint: 0.03
+			GreenTint: 0.04
+			BlueTint: 0.04
+	INYELWLAMP:
+		TerrainLightSource:
+			Range: 9c784
+			Intensity: 0.01
+			RedTint: 0.35
+			GreenTint: 0.2
+			BlueTint: 0.02
+	INPURPLAMP:
+		TerrainLightSource:
+			Range: 15c640
+			Intensity: 0.01
+			RedTint: 0.67059
+			GreenTint: 0.19608
+			BlueTint: 0.67059
+	INREDLMP:
+		TerrainLightSource:
+			Range: 15c640
+			Intensity: 0.01
+			RedTint: 0.81176
+			GreenTint: 0.0549
+			BlueTint: 0.12941
+	INBLULMP:
+		TerrainLightSource:
+			Range: 15c640
+			Intensity: 0.01
+			RedTint: 0.24706
+			GreenTint: 0.0549
+			BlueTint: 0.81176

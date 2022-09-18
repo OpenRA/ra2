@@ -1224,14 +1224,14 @@ Actors:
 	Actor384: srock05
 		Location: 57,-14
 		Owner: Neutral
-	Actor385: srock03
+	Actor385: srock04
+		Location: 67,-11
+		Owner: Neutral
+	Actor386: srock03
 		Location: 68,-12
 		Owner: Neutral
-	Actor386: srock04
-		Location: 68,-11
-		Owner: Neutral
 	Actor387: srock04
-		Location: 67,-11
+		Location: 68,-11
 		Owner: Neutral
 	Actor388: trock01
 		Location: 65,-7
@@ -1254,11 +1254,11 @@ Actors:
 	Actor394: trock04
 		Location: 100,-27
 		Owner: Neutral
-	Actor395: trock05
-		Location: 100,-26
-		Owner: Neutral
-	Actor396: trock03
+	Actor395: trock03
 		Location: 67,7
+		Owner: Neutral
+	Actor396: trock05
+		Location: 100,-26
 		Owner: Neutral
 	Actor397: trock02
 		Location: 67,11
@@ -1273,10 +1273,10 @@ Actors:
 		Location: 117,-19
 		Owner: Neutral
 	Actor401: trock01
-		Location: 83,16
+		Location: 58,41
 		Owner: Neutral
 	Actor402: trock01
-		Location: 58,41
+		Location: 83,16
 		Owner: Neutral
 	Actor403: trock02
 		Location: 64,38
@@ -1284,11 +1284,11 @@ Actors:
 	Actor404: trock01
 		Location: 61,43
 		Owner: Neutral
-	Actor405: trock04
-		Location: 124,-17
-		Owner: Neutral
-	Actor406: trock02
+	Actor405: trock02
 		Location: 61,45
+		Owner: Neutral
+	Actor406: trock04
+		Location: 124,-17
 		Owner: Neutral
 	Actor407: trock01
 		Location: 122,-14
@@ -1317,11 +1317,11 @@ Actors:
 	Actor415: trock04
 		Location: 72,53
 		Owner: Neutral
-	Actor416: trock03
-		Location: 129,-2
-		Owner: Neutral
-	Actor417: trock05
+	Actor416: trock05
 		Location: 75,51
+		Owner: Neutral
+	Actor417: trock03
+		Location: 129,-2
 		Owner: Neutral
 	Actor418: trock01
 		Location: 118,12
@@ -1329,11 +1329,11 @@ Actors:
 	Actor419: trock02
 		Location: 118,13
 		Owner: Neutral
-	Actor420: srock02
-		Location: 117,16
-		Owner: Neutral
-	Actor421: srock01
+	Actor420: srock01
 		Location: 116,17
+		Owner: Neutral
+	Actor421: srock02
+		Location: 117,16
 		Owner: Neutral
 	Actor422: srock05
 		Location: 136,0
@@ -1345,19 +1345,19 @@ Actors:
 		Location: 82,58
 		Owner: Neutral
 	Actor425: srock05
-		Location: 93,57
+		Location: 92,58
 		Owner: Neutral
 	Actor426: srock05
-		Location: 92,58
+		Location: 93,57
 		Owner: Neutral
 	Actor427: srock04
 		Location: 94,67
 		Owner: Neutral
-	Actor428: trock05
-		Location: 111,52
-		Owner: Neutral
-	Actor429: srock01
+	Actor428: srock01
 		Location: 95,67
+		Owner: Neutral
+	Actor429: trock05
+		Location: 111,52
 		Owner: Neutral
 	Actor430: srock05
 		Location: 96,69
@@ -1367,8 +1367,9 @@ Actors:
 		Owner: Neutral
 
 Rules:
-	World:
-		GlobalLightingPaletteEffect:
-			Ambient: 0.8
-			Red: 0.87
-			Blue: 1.1
+	^BaseWorld:
+		TerrainLighting:
+			RedTint: 0.87
+			BlueTint: 1.1
+			Intensity: 0.8
+			HeightStep: 0.028

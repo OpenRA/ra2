@@ -72,598 +72,479 @@ Actors:
 	Actor0: capars11
 		Location: 121,-2
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor1: cawash18
 		Location: 123,-9
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor2: cawash18
 		Location: 129,-3
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor3: cawash18
 		Location: 124,7
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor4: cawash18
 		Location: 129,1
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor5: caeuro05
 		Location: 115,6
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor6: caeuro05
 		Location: 115,-8
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor7: caeuro05
 		Location: 128,-8
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor8: caeuro05
 		Location: 128,6
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor9: cawash18
 		Location: 119,-9
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor10: cawash18
 		Location: 114,-3
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor11: cawash18
 		Location: 114,1
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor12: cawash18
 		Location: 120,7
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor13: carus02g
 		Location: 131,-10
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor14: carus02g
 		Location: 113,-10
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor15: carus02g
 		Location: 113,9
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor16: carus02g
 		Location: 131,9
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor17: carus02b
 		Location: 112,1
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor18: carus02b
 		Location: 112,-2
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor19: carus02b
 		Location: 132,1
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor20: carus02b
 		Location: 132,-2
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor21: carus02a
 		Location: 121,10
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor22: carus02a
 		Location: 124,10
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor23: carus02a
 		Location: 123,-11
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor24: carus02a
 		Location: 120,-11
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor25: capars02
 		Location: 172,-17
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor26: capars09
 		Location: 143,-17
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor27: capars09
 		Location: 107,29
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor28: carus04
 		Location: 156,14
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor29: carus04
 		Location: 123,40
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor30: carus05
 		Location: 117,30
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor31: canewy06
 		Location: 104,37
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor32: canewy08
 		Location: 68,16
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor33: cawash10
 		Location: 75,18
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor34: cawash11
 		Location: 74,27
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor35: cawash11
 		Location: 153,-17
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor36: cawash04
 		Location: 83,3
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor37: cawash05
 		Location: 97,42
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor38: cawash05
 		Location: 153,-8
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor39: cawash05
 		Location: 82,-15
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor40: cawash06
 		Location: 84,19
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor41: cawash07
 		Location: 110,43
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor42: cawash07
 		Location: 134,31
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor43: cawash07
 		Location: 162,-2
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor44: cawash08
 		Location: 145,-1
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor45: camiam07
 		Location: 171,24
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor46: cawash09
 		Location: 106,22
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor47: cahse02
 		Location: 60,20
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor48: cahse03
 		Location: 60,13
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor49: cahse04
 		Location: 60,6
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor50: cahse05
 		Location: 92,-6
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor51: camsc04
 		Location: 95,-3
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor52: camsc05
 		Location: 94,-6
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor53: camsc05
 		Location: 97,-9
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor54: camsc02
 		Location: 97,-3
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor55: camsc02
 		Location: 94,-7
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor56: camsc02
 		Location: 96,-9
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor57: camsc03
 		Location: 94,-3
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor58: cachig03
 		Location: 155,7
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor59: cachig03
 		Location: 162,-8
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor60: catech01
 		Location: 162,-26
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor61: calab
 		Location: 170,5
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor62: cagas01
 		Location: 76,-6
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor63: camsc01
 		Location: 94,-10
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor64: camsc01
 		Location: 99,-6
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor65: camsc10
 		Location: 92,3
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor66: camiam01
 		Location: 117,23
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor67: camiam02
 		Location: 126,-18
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor68: camiam03
 		Location: 138,-6
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor69: camiam06
 		Location: 60,27
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor70: canewy10
 		Location: 117,17
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor71: canewy12
 		Location: 138,4
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor72: canewy13
 		Location: 136,20
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor73: canewy14
 		Location: 127,16
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor74: canewy15
 		Location: 83,35
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor75: canewy16
 		Location: 142,15
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor76: canewy17
 		Location: 135,13
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor77: canewy18
 		Location: 136,-16
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor78: canwy23
 		Location: 104,-7
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor79: canwy23
 		Location: 91,35
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor80: canwy24
 		Location: 96,30
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor81: canwy24
 		Location: 135,-29
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor82: canwy26
 		Location: 124,-32
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor83: canwy26
 		Location: 105,-16
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor84: capars10
 		Location: 104,15
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor85: capars13
 		Location: 171,-26
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor86: capars14
 		Location: 173,-2
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor87: caswst01
 		Location: 114,-31
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor88: caswst01
 		Location: 85,-7
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor89: caswst01
 		Location: 84,28
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor90: castl02
 		Location: 116,40
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor91: castl01
 		Location: 127,22
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor92: catexs07
 		Location: 145,-8
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor93: catexs08
 		Location: 154,-2
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor94: catexs06
 		Location: 164,14
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor95: catexs06
 		Location: 104,3
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor96: catexs07
 		Location: 116,-25
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor97: capars09
 		Location: 146,8
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor98: capars02
 		Location: 103,-30
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor99: camiam01
 		Location: 69,6
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor100: camiam03
 		Location: 75,3
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor101: canewy10
 		Location: 70,-15
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor102: canewy16
 		Location: 133,41
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor103: canwy23
 		Location: 173,-8
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor104: canwy26
 		Location: 143,-48
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor105: castl01
 		Location: 125,-25
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor106: castl02
 		Location: 135,-41
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor107: canewy06
 		Location: 141,-57
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor108: canewy07
 		Location: 128,-41
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor109: cawash10
 		Location: 94,22
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor110: cawash05
 		Location: 135,-50
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor111: canewy16
 		Location: 89,42
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor112: camiam05
 		Location: 85,-25
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor113: camsc10
 		Location: 148,-26
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor114: caind01
 		Location: 147,-62
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor115: cawash04
 		Location: 94,-27
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor116: suvb
 		Location: 59,21
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor117: stang
 		Location: 61,17
 		Owner: Neutral
-		Health: 100
 		Facing: 640
 	Actor118: suvw
 		Location: 59,6
 		Owner: Neutral
-		Health: 100
-		Facing: 384
+		Facing: 896
 	Actor119: lt_eur01
 		Location: 125,3
 		Owner: Neutral
@@ -3001,3 +2882,195 @@ Actors:
 	Actor897: waypoint
 		Location: 123,0
 		Owner: Neutral
+	Actor898: cakrmw
+		Location: 113,-9
+		Owner: Neutral
+	Actor899: cakrmw
+		Location: 114,-10
+		Owner: Neutral
+	Actor900: cakrmw
+		Location: 113,-8
+		Owner: Neutral
+	Actor901: cakrmw
+		Location: 115,-10
+		Owner: Neutral
+	Actor902: cakrmw
+		Location: 113,-7
+		Owner: Neutral
+	Actor903: cakrmw
+		Location: 116,-10
+		Owner: Neutral
+	Actor904: cakrmw
+		Location: 117,-11
+		Owner: Neutral
+	Actor905: cakrmw
+		Location: 112,-5
+		Owner: Neutral
+	Actor906: cakrmw
+		Location: 113,-6
+		Owner: Neutral
+	Actor907: cakrmw
+		Location: 117,-10
+		Owner: Neutral
+	Actor908: cakrmw
+		Location: 118,-11
+		Owner: Neutral
+	Actor909: cakrmw
+		Location: 112,-4
+		Owner: Neutral
+	Actor910: cakrmw
+		Location: 113,-5
+		Owner: Neutral
+	Actor911: cakrmw
+		Location: 119,-11
+		Owner: Neutral
+	Actor912: cakrmw
+		Location: 112,-3
+		Owner: Neutral
+	Actor913: cakrmw
+		Location: 124,-11
+		Owner: Neutral
+	Actor914: cakrmw
+		Location: 112,2
+		Owner: Neutral
+	Actor915: cakrmw
+		Location: 125,-11
+		Owner: Neutral
+	Actor916: cakrmw
+		Location: 112,3
+		Owner: Neutral
+	Actor917: cakrmw
+		Location: 126,-11
+		Owner: Neutral
+	Actor918: cakrmw
+		Location: 112,4
+		Owner: Neutral
+	Actor919: cakrmw
+		Location: 126,-10
+		Owner: Neutral
+	Actor920: cakrmw
+		Location: 113,4
+		Owner: Neutral
+	Actor921: cakrmw
+		Location: 127,-10
+		Owner: Neutral
+	Actor922: cakrmw
+		Location: 113,5
+		Owner: Neutral
+	Actor923: cakrmw
+		Location: 128,-10
+		Owner: Neutral
+	Actor924: cakrmw
+		Location: 113,6
+		Owner: Neutral
+	Actor925: cakrmw
+		Location: 129,-10
+		Owner: Neutral
+	Actor926: cakrmw
+		Location: 113,7
+		Owner: Neutral
+	Actor927: cakrmw
+		Location: 130,-10
+		Owner: Neutral
+	Actor928: cakrmw
+		Location: 113,8
+		Owner: Neutral
+	Actor929: cakrmw
+		Location: 131,-9
+		Owner: Neutral
+	Actor930: cakrmw
+		Location: 114,9
+		Owner: Neutral
+	Actor931: cakrmw
+		Location: 131,-8
+		Owner: Neutral
+	Actor932: cakrmw
+		Location: 115,9
+		Owner: Neutral
+	Actor933: cakrmw
+		Location: 131,-7
+		Owner: Neutral
+	Actor934: cakrmw
+		Location: 116,9
+		Owner: Neutral
+	Actor935: cakrmw
+		Location: 131,-6
+		Owner: Neutral
+	Actor936: cakrmw
+		Location: 117,9
+		Owner: Neutral
+	Actor937: cakrmw
+		Location: 131,-5
+		Owner: Neutral
+	Actor938: cakrmw
+		Location: 118,9
+		Owner: Neutral
+	Actor939: cakrmw
+		Location: 132,-5
+		Owner: Neutral
+	Actor940: cakrmw
+		Location: 118,10
+		Owner: Neutral
+	Actor941: cakrmw
+		Location: 132,-4
+		Owner: Neutral
+	Actor942: cakrmw
+		Location: 119,10
+		Owner: Neutral
+	Actor943: cakrmw
+		Location: 132,-3
+		Owner: Neutral
+	Actor944: cakrmw
+		Location: 120,10
+		Owner: Neutral
+	Actor945: cakrmw
+		Location: 132,2
+		Owner: Neutral
+	Actor946: cakrmw
+		Location: 125,10
+		Owner: Neutral
+	Actor947: cakrmw
+		Location: 131,4
+		Owner: Neutral
+	Actor948: cakrmw
+		Location: 132,3
+		Owner: Neutral
+	Actor949: cakrmw
+		Location: 126,10
+		Owner: Neutral
+	Actor950: cakrmw
+		Location: 127,9
+		Owner: Neutral
+	Actor951: cakrmw
+		Location: 131,5
+		Owner: Neutral
+	Actor952: cakrmw
+		Location: 132,4
+		Owner: Neutral
+	Actor953: cakrmw
+		Location: 127,10
+		Owner: Neutral
+	Actor954: cakrmw
+		Location: 128,9
+		Owner: Neutral
+	Actor955: cakrmw
+		Location: 131,6
+		Owner: Neutral
+	Actor956: cakrmw
+		Location: 129,9
+		Owner: Neutral
+	Actor957: cakrmw
+		Location: 131,7
+		Owner: Neutral
+	Actor958: cakrmw
+		Location: 130,9
+		Owner: Neutral
+	Actor959: cakrmw
+		Location: 131,8
+		Owner: Neutral
+
+Rules:
+	^BaseWorld:
+		TerrainLighting:
+			Intensity: 0.95
+			HeightStep: 0.006
