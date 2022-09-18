@@ -27,6 +27,7 @@ _ReSharper.*/
 *.mmdb.gz
 /mods/ra2/*.dll
 /mods/ra2/*.dll.config
+/mods/ra2/*.so
 /mods/ra2/*.pdb
 /mods/ra2/*.mdb
 /mods/ra2/*.exe
