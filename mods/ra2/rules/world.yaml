@@ -10,6 +10,7 @@
 	TerrainRenderer:
 	ResourceRenderer:
 		RenderTypes: Ore, Gems
+	TerrainLighting:
 	DebugVisualizations:
 	Locomotor@FOOT:
 		Name: foot
