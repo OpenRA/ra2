@@ -2,25 +2,29 @@
 	"version": "0.2.0",
 	"configurations": [
 		{
-			"name": "Red Alert 2",
-			"type": "clr",
-			"linux": {
-				"type": "mono",
-			},
-			"osx": {
-				"type": "mono",
-			},
+			"name": "Launch (RA2)",
+			"type": "coreclr",
 			"request": "launch",
-			"preLaunchTask": "build",
-			"program": "${workspaceRoot}/engine/bin/OpenRA.exe",
-			"cwd": "${workspaceRoot}/engine/",
+			"program": "${workspaceRoot}/engine/bin/OpenRA.dll",
 			"args": [
-				"Engine.EngineDir=${workspaceRoot}/engine",
-				"Engine.LaunchPath=${workspaceRoot}",
-				"Engine.ModSearchPaths=${workspaceRoot}/mods,./mods",
 				"Game.Mod=ra2",
+				"Engine.EngineDir=${workspaceRoot}/engine",
+				"Engine.ModSearchPaths=${workspaceRoot}/mods, ${workspaceRoot}/engine/mods",
 				"Debug.DisplayDeveloperSettings=true",
 			],
+			"preLaunchTask": "build",
+		},
+		{
+			"name": "Launch Utility",
+			"type": "coreclr",
+			"request": "launch",
+			"program": "${workspaceRoot}/engine/bin/OpenRA.Utility.dll",
+			"args": ["ra2", "--docs", "{DEV_VERSION}"],
+			"env": {
+				"ENGINE_DIR": "${workspaceRoot}/engine",
+				"MOD_SEARCH_PATHS": "${workspaceRoot}/mods, ${workspaceRoot}/engine/mods"
+			},
+			"preLaunchTask": "build",
 		},
 	],
 }
