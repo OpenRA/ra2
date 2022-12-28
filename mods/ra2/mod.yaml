@@ -107,7 +107,7 @@ Chrome:
 Assemblies:
 	^BinDir|OpenRA.Mods.Common.dll
 	^BinDir|OpenRA.Mods.Cnc.dll
-	ra2|OpenRA.Mods.RA2.dll
+	^BinDir|OpenRA.Mods.RA2.dll
 
 ChromeLayout:
 	common|chrome/assetbrowser.yaml
@@ -120,17 +120,24 @@ ChromeLayout:
 	common|chrome/musicplayer.yaml
 	common|chrome/tooltips.yaml
 	common|chrome/ingame.yaml
-	common|chrome/ingame-observer.yaml
+	ra2|chrome/ingame-observer.yaml
 	common|chrome/ingame-chat.yaml
+	common|chrome/ingame-transients.yaml
 	common|chrome/ingame-fmvplayer.yaml
 	common|chrome/ingame-menu.yaml
 	common|chrome/ingame-info.yaml
+	common|chrome/ingame-info-lobby-options.yaml
 	common|chrome/ingame-infoscripterror.yaml
 	common|chrome/ingame-infobriefing.yaml
 	ra2|chrome/ingame-debug.yaml
 	common|chrome/ingame-perf.yaml
 	common|chrome/ingame-infochat.yaml
 	common|chrome/settings.yaml
+	common|chrome/settings-display.yaml
+	common|chrome/settings-audio.yaml
+	common|chrome/settings-input.yaml
+	common|chrome/settings-hotkeys.yaml
+	common|chrome/settings-advanced.yaml
 	common|chrome/credits.yaml
 	common|chrome/lobby.yaml
 	common|chrome/lobby-players.yaml
@@ -155,6 +162,7 @@ ChromeLayout:
 	common|chrome/gamesave-browser.yaml
 	common|chrome/gamesave-loading.yaml
 	common|chrome/ingame-debuginfo.yaml
+	common|chrome/text-notifications.yaml
 
 Weapons:
 	ra2|weapons/bullets.yaml
@@ -190,7 +198,7 @@ Music:
 	ra2|audio/music.yaml
 
 Translations:
-	ra2|languages/english.yaml
+	common|languages/en.ftl
 
 Hotkeys:
 	common|hotkeys/game.yaml
@@ -198,6 +206,9 @@ Hotkeys:
 	common|hotkeys/production-common.yaml
 	common|hotkeys/supportpowers.yaml
 	common|hotkeys/viewport.yaml
+	common|hotkeys/chat.yaml
+	common|hotkeys/editor.yaml
+	common|hotkeys/control-groups.yaml
 	ra2|hotkeys.yaml
 
 LoadScreen: LogoStripeLoadScreen
@@ -208,6 +219,7 @@ ServerTraits:
 	LobbyCommands
 	PlayerPinger
 	MasterServerPinger
+	LobbySettingsNotification
 
 ChromeMetrics:
 	common|metrics.yaml
@@ -247,11 +259,17 @@ Fonts:
 		Size: 10
 		Ascender: 8
 
+DefaultOrderGenerator: UnitOrderGenerator
+
 SupportsMapsFrom: ra2
 
 SoundFormats: Aud, Wav
 
 SpriteFormats: ShpTS, TmpTS, ShpTD, PngSheet
+
+VideoFormats: Vqa
+
+TerrainFormat: DefaultTerrain
 
 SpriteSequenceFormat: ExtendedTilesetSpecificSpriteSequence
 	TilesetExtensions:
@@ -269,33 +287,38 @@ SpriteSequenceFormat: ExtendedTilesetSpecificSpriteSequence
 ModelSequenceFormat: VoxelModelSequence
 
 AssetBrowser:
-	SupportedExtensions: .shp, .tem, .urb, .sno
+	SpriteExtensions: .shp, .tem, .urb, .sno
+	ModelExtensions: .vxl
+	AudioExtensions: .aud, .wav
+	VideoExtensions: .vqa
 
 GameSpeeds:
-	slowest:
-		Name: Slowest
-		Timestep: 80
-		OrderLatency: 2
-	slower:
-		Name: Slower
-		Timestep: 50
-		OrderLatency: 3
-	default:
-		Name: Normal
-		Timestep: 40
-		OrderLatency: 3
-	fast:
-		Name: Fast
-		Timestep: 35
-		OrderLatency: 4
-	faster:
-		Name: Faster
-		Timestep: 30
-		OrderLatency: 4
-	fastest:
-		Name: Fastest
-		Timestep: 20
-		OrderLatency: 6
+	DefaultSpeed: default
+	Speeds:
+		slowest:
+			Name: slowest
+			Timestep: 80
+			OrderLatency: 2
+		slower:
+			Name: slower
+			Timestep: 50
+			OrderLatency: 3
+		default:
+			Name: normal
+			Timestep: 40
+			OrderLatency: 3
+		fast:
+			Name: fast
+			Timestep: 35
+			OrderLatency: 4
+		faster:
+			Name: faster
+			Timestep: 30
+			OrderLatency: 4
+		fastest:
+			Name: fastest
+			Timestep: 20
+			OrderLatency: 6
 
 ModContent:
 	InstallPromptMessage: Red Alert 2 requires artwork and audio from the original game.
