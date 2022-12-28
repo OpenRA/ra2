@@ -1,17 +1,213 @@
 ; Top-most http://editorconfig.org/ file
 root = true
+charset=utf-8
 
 ; Unix-style newlines
 [*]
 end_of_line = LF
 insert_final_newline = true
+trim_trailing_whitespace = true
 
-; 4-column tab indentation
+; 4-column tab indentation and .NET coding conventions
 [*.cs]
 indent_style = tab
 indent_size = 4
+
+dotnet_separate_import_directive_groups = false
+dotnet_sort_system_directives_first = true
+
+csharp_style_var_elsewhere = true:suggestion
+csharp_style_var_for_built_in_types = true:suggestion
+csharp_style_var_when_type_is_apparent = true:suggestion
+
+csharp_prefer_braces = when_multiline:suggestion
+csharp_using_directive_placement = outside_namespace:suggestion
+csharp_new_line_before_open_brace = all
+csharp_space_around_binary_operators = before_and_after
+
+## Naming styles:
+
+dotnet_naming_style.camel_case.capitalization = camel_case
+
+dotnet_naming_style.pascal_case.capitalization = pascal_case
+
+dotnet_naming_style.i_prefix_pascal_case.capitalization = pascal_case
+dotnet_naming_style.i_prefix_pascal_case.required_prefix = I
+
+## Symbol specifications:
+
+dotnet_naming_symbols.const_locals.applicable_kinds = local
+dotnet_naming_symbols.const_locals.applicable_accessibilities = *
+dotnet_naming_symbols.const_locals.required_modifiers = const
+
+dotnet_naming_symbols.const_fields.applicable_kinds = field
+dotnet_naming_symbols.const_fields.applicable_accessibilities = *
+dotnet_naming_symbols.const_fields.required_modifiers = const
+
+dotnet_naming_symbols.static_readonly_fields.applicable_kinds = field
+dotnet_naming_symbols.static_readonly_fields.applicable_accessibilities = *
+dotnet_naming_symbols.static_readonly_fields.required_modifiers = static, readonly
+
+dotnet_naming_symbols.non_private_readonly_fields.applicable_kinds = field
+dotnet_naming_symbols.non_private_readonly_fields.applicable_accessibilities = public, internal, protected, protected_internal, private_protected
+dotnet_naming_symbols.non_private_readonly_fields.required_modifiers = readonly
+
+dotnet_naming_symbols.private_or_protected_fields.applicable_kinds = field
+dotnet_naming_symbols.private_or_protected_fields.applicable_accessibilities = private, protected, private_protected
+
+dotnet_naming_symbols.interfaces.applicable_kinds = interface
+dotnet_naming_symbols.interfaces.applicable_accessibilities = *
+
+dotnet_naming_symbols.parameters_and_locals.applicable_kinds = parameter, local
+dotnet_naming_symbols.parameters_and_locals.applicable_accessibilities = *
+
+dotnet_naming_symbols.most_symbols.applicable_kinds = namespace, class, struct, enum, field, property, method, local_function, event, delegate, type_parameter
+dotnet_naming_symbols.most_symbols.applicable_accessibilities = *
+
+## Naming rules:
+
+dotnet_naming_rule.const_locals_should_be_pascal_case.symbols = const_locals
+dotnet_naming_rule.const_locals_should_be_pascal_case.style = pascal_case
+dotnet_naming_rule.const_locals_should_be_pascal_case.severity = warning
+
+dotnet_naming_rule.const_fields_should_be_pascal_case.symbols = const_fields
+dotnet_naming_rule.const_fields_should_be_pascal_case.style = pascal_case
+dotnet_naming_rule.const_fields_should_be_pascal_case.severity = warning
+
+dotnet_naming_rule.static_readonly_fields_should_be_pascal_case.symbols = static_readonly_fields
+dotnet_naming_rule.static_readonly_fields_should_be_pascal_case.style = pascal_case
+dotnet_naming_rule.static_readonly_fields_should_be_pascal_case.severity = warning
+
+dotnet_naming_rule.non_private_readonly_fields_should_be_pascal_case.symbols = non_private_readonly_fields
+dotnet_naming_rule.non_private_readonly_fields_should_be_pascal_case.style = pascal_case
+dotnet_naming_rule.non_private_readonly_fields_should_be_pascal_case.severity = warning
+
+dotnet_naming_rule.private_or_protected_fields_should_be_camel_case.symbols = private_or_protected_fields
+dotnet_naming_rule.private_or_protected_fields_should_be_camel_case.style = camel_case
+dotnet_naming_rule.private_or_protected_fields_should_be_camel_case.severity = warning
+
+dotnet_naming_rule.interfaces_should_be_i_prefix_pascal_case.symbols = interfaces
+dotnet_naming_rule.interfaces_should_be_i_prefix_pascal_case.style = i_prefix_pascal_case
+dotnet_naming_rule.interfaces_should_be_i_prefix_pascal_case.severity = warning
+
+dotnet_naming_rule.parameters_and_locals_should_be_camel_case.symbols = parameters_and_locals
+dotnet_naming_rule.parameters_and_locals_should_be_camel_case.style = camel_case
+dotnet_naming_rule.parameters_and_locals_should_be_camel_case.severity = warning
+
+dotnet_naming_rule.most_symbols_should_be_pascal_case.symbols = most_symbols
+dotnet_naming_rule.most_symbols_should_be_pascal_case.style = pascal_case
+dotnet_naming_rule.most_symbols_should_be_pascal_case.severity = warning
+
+## Formatting:
+
+# Also handled by StyleCopAnalyzers - SA1024: ColonsMustBeSpacedCorrectly.
+csharp_space_after_colon_in_inheritance_clause = true
+
+# Also handled by StyleCopAnalyzers - SA1024: ColonsMustBeSpacedCorrectly.
+csharp_space_before_colon_in_inheritance_clause = true
+
+# Also handled by StyleCopAnalyzers - SA1000: KeywordsMustBeSpacedCorrectly.
+csharp_space_after_keywords_in_control_flow_statements = true
+
+# Leave code block on single line.
+csharp_preserve_single_line_blocks = true
+
+# Leave statements and member declarations on the same line.
+csharp_preserve_single_line_statements = true
+
+# IDE0049, IDE-only counterpart of StyleCopAnalyzers - SA1121: UseBuiltInTypeAlias.
+dotnet_style_predefined_type_for_member_access = true
+
+# IDE0049, IDE-only counterpart of StyleCopAnalyzers - SA1121: UseBuiltInTypeAlias.
+dotnet_style_predefined_type_for_locals_parameters_members = true
+
+## Others:
+
+# Show an IDE warning when default access modifiers are explicitly specified.
+dotnet_style_require_accessibility_modifiers = omit_if_default:warning
+
+# Use 'var' instead of explicit type.
+dotnet_diagnostic.IDE0007.severity = warning
+
+# Don't prefer braces (for one liners).
+dotnet_diagnostic.IDE0011.severity = silent
+
+# Object initialization can be simplified / Use object initializer.
+dotnet_diagnostic.IDE0017.severity = warning
+
+# Collection initialization can be simplified
+dotnet_diagnostic.IDE0028.severity = warning
+
+# Simplify 'default' expression
+dotnet_diagnostic.IDE0034.severity = warning
+
+# Modifiers are not ordered.
+dotnet_diagnostic.IDE0036.severity = warning
+
+# Raise a warning on build when default access modifiers are explicitly specified.
+dotnet_diagnostic.IDE0040.severity = warning
+
+# Make field readonly.
+dotnet_diagnostic.IDE0044.severity = warning
+
+# Unused private member.
+dotnet_diagnostic.IDE0052.severity = warning
+
+# Unnecessary value assignment.
+dotnet_diagnostic.IDE0059.severity = warning
+
+# Unused parameter.
+dotnet_diagnostic.IDE0060.severity = warning
+
+# Naming rule violation.
+dotnet_diagnostic.IDE1006.severity = warning
+
+# Avoid unnecessary zero-length array allocations.
+dotnet_diagnostic.CA1825.severity = warning
+
+# Do not use Enumerable methods on indexable collections. Instead use the collection directly.
+dotnet_diagnostic.CA1826.severity = warning
+
+# Count() is used where Any() could be used instead to improve performance.
+dotnet_diagnostic.CA1827.severity = warning
+
+# Use Length/Count property instead of Enumerable.Count method.
+dotnet_diagnostic.CA1829.severity = warning
+
+# Use string.Contains(char) instead of string.Contains(string) with single characters.
+dotnet_diagnostic.CA1847.severity = warning
 
 ; 4-column tab indentation
 [*.yaml]
 indent_style = tab
 indent_size = 4
+
+# Use 'Count' property instead of 'Any' method.
+dotnet_diagnostic.RCS1080.severity = warning
+
+# Use read-only auto-implemented property.
+dotnet_diagnostic.RCS1170.severity = warning
+
+# Unnecessary interpolated string.
+dotnet_diagnostic.RCS1214.severity = warning
+
+# Unnecessary usage of verbatim string literal.
+dotnet_diagnostic.RCS1192.severity = warning
+
+# Use pattern matching instead of combination of 'as' operator and null check.
+dotnet_diagnostic.RCS1221.severity = warning
+
+# Expression is always equal to 'true'.
+dotnet_diagnostic.RCS1215.severity = warning
+
+# Use StringComparison when comparing strings.
+dotnet_diagnostic.RCS1155.severity = warning
+
+# Abstract type should not have public constructors.
+dotnet_diagnostic.RCS1160.severity = warning
+
+# Optimize 'Dictionary<TKey, TValue>.ContainsKey' call.
+dotnet_diagnostic.RCS1235.severity = warning
+
+# Call extension method as instance method.
+dotnet_diagnostic.RCS1196.severity = warning
