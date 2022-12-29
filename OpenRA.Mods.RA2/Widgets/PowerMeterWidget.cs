@@ -10,7 +10,6 @@
 #endregion
 
 using System;
-using OpenRA.Graphics;
 using OpenRA.Mods.Common.Traits;
 using OpenRA.Mods.Common.Widgets;
 using OpenRA.Widgets;
@@ -21,12 +20,12 @@ namespace OpenRA.Mods.RA2.Widgets.Logic
 	{
 		Widget sidebarProduction;
 		int lastMeterCheck;
-		int barHeight = 0;
-		bool bypassAnimation = false;
-		int warningFlash = 0;
+		int barHeight;
+		bool bypassAnimation;
+		int warningFlash;
 		int lastTotalPowerDisplay;
 
-		protected readonly World world;
+		protected readonly World World;
 
 		[Desc("The name of the Container Widget to tie the Y axis to")]
 		[FieldLoader.Require]
@@ -73,9 +72,9 @@ namespace OpenRA.Mods.RA2.Widgets.Logic
 		public readonly string ImageCollection = "";
 
 		[ObjectCreator.UseCtor]
-		public PowerMeterWidget(World world, WorldRenderer worldRenderer)
+		public PowerMeterWidget(World world)
 		{
-			this.world = world;
+			World = world;
 		}
 
 		public void CalculateMeterBarDimensions()
@@ -118,11 +117,13 @@ namespace OpenRA.Mods.RA2.Widgets.Logic
 			Children.Clear();
 
 			// Create a list of new bars
-			for (int i = 0; i < numberOfBars; i++)
+			for (var i = 0; i < numberOfBars; i++)
 			{
-				var newPower = new ImageWidget();
-				newPower.ImageCollection = ImageCollection;
-				newPower.ImageName = NoPowerImage;
+				var newPower = new ImageWidget
+				{
+					ImageCollection = ImageCollection,
+					ImageName = NoPowerImage
+				};
 
 				// AddFactionSuffixLogic could be added here
 				newPower.Bounds.Y = -(i * meterDistance) + barHeight + Bounds.Y;
@@ -164,7 +165,7 @@ namespace OpenRA.Mods.RA2.Widgets.Logic
 			// Number of power units represent each bar
 			var stepSize = PowerUnitsPerBar;
 
-			var powerManager = world.LocalPlayer.PlayerActor.Trait<PowerManager>();
+			var powerManager = World.LocalPlayer.PlayerActor.Trait<PowerManager>();
 			var totalPowerDisplay = Math.Max(powerManager.PowerProvided, powerManager.PowerDrained);
 
 			var totalPowerStep = decimal.Floor(totalPowerDisplay / stepSize);

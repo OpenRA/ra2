@@ -34,12 +34,10 @@ namespace OpenRA.Mods.RA2.Graphics
 			this.segments = segments;
 		}
 
-		public WPos Pos { get { return a; } }
-		public PaletteReference Palette { get { return null; } }
-		public int ZOffset { get { return zOffset; } }
-		public bool IsDecoration { get { return true; } }
+		public WPos Pos => a;
+		public int ZOffset => zOffset;
+		public bool IsDecoration => true;
 
-		public IRenderable WithPalette(PaletteReference newPalette) { return new ArcRenderable(a, b, zOffset, angle, color, width, segments); }
 		public IRenderable WithZOffset(int newOffset) { return new ArcRenderable(a, b, zOffset, angle, color, width, segments); }
 		public IRenderable OffsetBy(in WVec vec) { return new ArcRenderable(a + vec, b + vec, zOffset, angle, color, width, segments); }
 		public IRenderable AsDecoration() { return this; }

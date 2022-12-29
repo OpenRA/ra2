@@ -21,7 +21,7 @@ namespace OpenRA.Mods.RA2.Traits
 	public class MindControllerInfo : PausableConditionalTraitInfo, Requires<ArmamentInfo>, Requires<HealthInfo>
 	{
 		[Desc("Name of the armaments that grant this condition.")]
-		public readonly HashSet<string> ArmamentNames = new HashSet<string>() { "primary" };
+		public readonly HashSet<string> ArmamentNames = new HashSet<string> { "primary" };
 
 		[Desc("Up to how many units can this unit control?",
 			"Use 0 or negative numbers for infinite.")]
@@ -37,20 +37,20 @@ namespace OpenRA.Mods.RA2.Traits
 		public readonly string ControllingCondition = null;
 
 		[Desc("The sound played when the unit is mindcontrolled.")]
-		public readonly string[] Sounds = { };
+		public readonly string[] Sounds = Array.Empty<string>();
 
-		public override object Create(ActorInitializer init) { return new MindController(init.Self, this); }
+		public override object Create(ActorInitializer init) { return new MindController(this); }
 	}
 
 	public class MindController : PausableConditionalTrait<MindControllerInfo>, INotifyAttack, INotifyKilled, INotifyActorDisposing
 	{
 		readonly List<Actor> slaves = new List<Actor>();
 
-		Stack<int> controllingTokens = new Stack<int>();
+		readonly Stack<int> controllingTokens = new Stack<int>();
 
-		public IEnumerable<Actor> Slaves { get { return slaves; } }
+		public IEnumerable<Actor> Slaves => slaves;
 
-		public MindController(Actor self, MindControllerInfo info)
+		public MindController(MindControllerInfo info)
 			: base(info) { }
 
 		void StackControllingCondition(Actor self, string condition)
@@ -106,7 +106,7 @@ namespace OpenRA.Mods.RA2.Traits
 			if (mindControllable.IsTraitDisabled || mindControllable.IsTraitPaused)
 				return;
 
-			if (Info.Capacity > 0 && !Info.DiscardOldest && slaves.Count() >= Info.Capacity)
+			if (Info.Capacity > 0 && !Info.DiscardOldest && slaves.Count >= Info.Capacity)
 				return;
 
 			slaves.Add(target.Actor);
@@ -116,7 +116,7 @@ namespace OpenRA.Mods.RA2.Traits
 			if (Info.Sounds.Any())
 				Game.Sound.Play(SoundType.World, Info.Sounds.Random(self.World.SharedRandom), self.CenterPosition);
 
-			if (Info.Capacity > 0 && Info.DiscardOldest && slaves.Count() > Info.Capacity)
+			if (Info.Capacity > 0 && Info.DiscardOldest && slaves.Count > Info.Capacity)
 				slaves[0].Trait<MindControllable>().RevokeMindControl(slaves[0]);
 		}
 

@@ -43,7 +43,7 @@ namespace OpenRA.Mods.RA2.Traits
 		[Desc("Sound where the harvester jumped to.")]
 		public readonly string WarpOutSound = null;
 
-		public override object Create(ActorInitializer init) { return new ChronoResourceDelivery(init.Self, this); }
+		public override object Create(ActorInitializer init) { return new ChronoResourceDelivery(this); }
 	}
 
 	public class ChronoResourceDelivery : INotifyHarvesterAction, ITick
@@ -56,7 +56,7 @@ namespace OpenRA.Mods.RA2.Traits
 
 		// TODO: Rewrite this entire thing, possible to be a subclass of harvester
 		// and make it work properly with activities
-		public ChronoResourceDelivery(Actor self, ChronoResourceDeliveryInfo info)
+		public ChronoResourceDelivery(ChronoResourceDeliveryInfo info)
 		{
 			this.info = info;
 		}

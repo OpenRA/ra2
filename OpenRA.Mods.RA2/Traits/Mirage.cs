@@ -38,7 +38,7 @@ namespace OpenRA.Mods.RA2.Traits
 			mirage = self.Trait<Mirage>();
 		}
 
-		public ITooltipInfo TooltipInfo { get { return Info; } }
+		public ITooltipInfo TooltipInfo => Info;
 
 		public Player Owner
 		{
@@ -97,23 +97,22 @@ namespace OpenRA.Mods.RA2.Traits
 	public class Mirage : PausableConditionalTrait<MirageInfo>, INotifyDamage, IEffectiveOwner, INotifyUnload, INotifyDemolition, INotifyInfiltration,
 		INotifyAttack, ITick, INotifyCreated, INotifyHarvesterAction
 	{
-		[Sync]
-		private int remainingTime;
+		readonly Actor self;
 
-		Actor self;
+		[Sync]
+		int remainingTime;
 
 		bool isDocking;
 
-		ActorInfo[] targetTypes;
-
 		CPos? lastPos;
-		bool wasMirage = false;
+		bool wasMirage;
 		int mirageToken = Actor.InvalidConditionToken;
 
-		public bool Disguised { get { return IsMirage; } }
+		public bool Disguised => IsMirage;
 
-		public ActorInfo ActorType { get; private set; }
-		public Player Owner { get { return IsMirage ? self.World.Players.First(p => p.InternalName == Info.EffectiveOwner) : null; } }
+		public ActorInfo ActorType { get; }
+
+		public Player Owner => IsMirage ? self.World.Players.First(p => p.InternalName == Info.EffectiveOwner) : null;
 
 		public Mirage(ActorInitializer init, MirageInfo info)
 			: base(info)
@@ -122,7 +121,7 @@ namespace OpenRA.Mods.RA2.Traits
 			remainingTime = info.InitialDelay;
 
 			var targets = self.World.ActorsWithTrait<MirageTarget>().Distinct();
-			targetTypes = targets.Select(a => a.Actor.Info).ToArray();
+			var targetTypes = targets.Select(a => a.Actor.Info).ToArray();
 
 			if (!targetTypes.Any() && info.DefaultTargetTypes != null)
 				targetTypes = self.World.Map.Rules.Actors.Where(a => info.DefaultTargetTypes.Contains(a.Key)).Select(a => a.Value).ToArray();
@@ -142,7 +141,7 @@ namespace OpenRA.Mods.RA2.Traits
 			base.Created(self);
 		}
 
-		public bool IsMirage { get { return !IsTraitDisabled && !IsTraitPaused && remainingTime <= 0; } }
+		public bool IsMirage => !IsTraitDisabled && !IsTraitPaused && remainingTime <= 0;
 
 		public void Reveal() { Reveal(Info.RevealDelay); }
 

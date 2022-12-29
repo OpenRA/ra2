@@ -27,9 +27,9 @@ namespace OpenRA.Mods.RA2.Traits
 		public readonly bool AllowOwnerChange = false;
 
 		[Desc("Types of damage this actor explodes with due to an unallowed child action. Leave empty for no damage types.")]
-		public readonly BitSet<DamageType> DamageTypes = default(BitSet<DamageType>);
+		public readonly BitSet<DamageType> DamageTypes = default;
 
-		public override object Create(ActorInitializer init) { return new BaseSpawnerChild(init, this); }
+		public override object Create(ActorInitializer init) { return new BaseSpawnerChild(this); }
 	}
 
 	public class BaseSpawnerChild : INotifyCreated, INotifyKilled, INotifyOwnerChanged
@@ -38,14 +38,13 @@ namespace OpenRA.Mods.RA2.Traits
 
 		readonly BaseSpawnerChildInfo info;
 
-		int parentDeadToken = Actor.InvalidConditionToken;
 		BaseSpawnerParent spawnerParent = null;
 
 		public Actor Parent { get; private set; }
 
 		Target lastTarget;
 
-		public BaseSpawnerChild(ActorInitializer init, BaseSpawnerChildInfo info)
+		public BaseSpawnerChild(BaseSpawnerChildInfo info)
 		{
 			this.info = info;
 		}
@@ -121,9 +120,6 @@ namespace OpenRA.Mods.RA2.Traits
 
 		public virtual void OnParentKilled(Actor self, Actor attacker, SpawnerChildDisposal disposal)
 		{
-			if (!string.IsNullOrEmpty(info.ParentDeadCondition))
-				parentDeadToken = self.GrantCondition(info.ParentDeadCondition);
-
 			switch (disposal)
 			{
 				case SpawnerChildDisposal.KillChildren:

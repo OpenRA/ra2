@@ -9,6 +9,7 @@
  */
 #endregion
 
+using System;
 using System.Linq;
 using OpenRA.Mods.Common.Traits;
 using OpenRA.Traits;
@@ -23,12 +24,12 @@ namespace OpenRA.Mods.RA2.Traits
 		public readonly string Condition = null;
 
 		[Desc("The sound played when the mindcontrol is revoked.")]
-		public readonly string[] RevokeControlSounds = { };
+		public readonly string[] RevokeControlSounds = Array.Empty<string>();
 
 		[Desc("Map player to transfer this actor to if the owner lost the game.")]
 		public readonly string FallbackOwner = "Creeps";
 
-		public override object Create(ActorInitializer init) { return new MindControllable(init.Self, this); }
+		public override object Create(ActorInitializer init) { return new MindControllable(this); }
 	}
 
 	public class MindControllable : PausableConditionalTrait<MindControllableInfo>, INotifyKilled, INotifyActorDisposing, INotifyOwnerChanged
@@ -41,7 +42,7 @@ namespace OpenRA.Mods.RA2.Traits
 
 		public Actor Master { get; private set; }
 
-		public MindControllable(Actor self, MindControllableInfo info)
+		public MindControllable(MindControllableInfo info)
 			: base(info)
 		{
 			this.info = info;

@@ -269,7 +269,7 @@ namespace OpenRA.Mods.RA2.Traits
 				: (float)ticks / Info.DeployedTicks;
 		}
 
-		bool ISelectionBar.DisplayWhenEmpty { get { return !IsTraitDisabled && Info.ShowSelectionBar; } }
+		bool ISelectionBar.DisplayWhenEmpty => !IsTraitDisabled && Info.ShowSelectionBar;
 
 		Color ISelectionBar.GetColor() { return deployState == TimedDeployState.Charging ? Info.ChargingColor : Info.DischargingColor; }
 	}

@@ -148,6 +148,7 @@ namespace OpenRA.Mods.RA2.UtilityCommands
 			{ 0xEB, "lobrdb_r_ne" }, // lobrdb3
 			{ 0xEC, "lobrdb_r_sw" }, // lobrdb4
 
+			// Others
 			{ 0xF0, "cakrmw" }, // Kremlin walls
 			{ 0xF1, "cafncp" }, // prison camp fence
 			{ 0xF2, "crate" }, // wcrate (water crate)
@@ -431,8 +432,8 @@ namespace OpenRA.Mods.RA2.UtilityCommands
 			var mapSection = file.GetSection("IsoMapPack5");
 
 			var data = Convert.FromBase64String(string.Concat(mapSection.Select(kvp => kvp.Value)));
-			int cells = (fullSize.X * 2 - 1) * fullSize.Y;
-			int lzoPackSize = cells * 11 + 4; // last 4 bytes contains a lzo pack header saying no more data is left
+			var cells = (fullSize.X * 2 - 1) * fullSize.Y;
+			var lzoPackSize = cells * 11 + 4; // last 4 bytes contains a lzo pack header saying no more data is left
 			var isoMapPack = new byte[lzoPackSize];
 			UnpackLZO(data, isoMapPack);
 
@@ -447,8 +448,8 @@ namespace OpenRA.Mods.RA2.UtilityCommands
 				var z = mf.ReadUInt8();
 				/*var zero2 = */mf.ReadUInt8();
 
-				int dx = rx - ry + fullSize.X - 1;
-				int dy = rx + ry - fullSize.X - 1;
+				var dx = rx - ry + fullSize.X - 1;
+				var dy = rx + ry - fullSize.X - 1;
 				var mapCell = new MPos(dx / 2, dy);
 				var cell = mapCell.ToCPos(map);
 
@@ -466,13 +467,13 @@ namespace OpenRA.Mods.RA2.UtilityCommands
 		static void ReadOverlay(Map map, IniFile file, int2 fullSize)
 		{
 			var overlaySection = file.GetSection("OverlayPack");
-			var overlayCompressed = Convert.FromBase64String(overlaySection.Aggregate(string.Empty, (a, b) => a + b.Value));
+			var overlayCompressed = Convert.FromBase64String(string.Concat(overlaySection.Select(kvp => kvp.Value)));
 			var overlayPack = new byte[1 << 18];
 			var temp = new byte[1 << 18];
 			UnpackLCW(overlayCompressed, overlayPack, temp);
 
 			var overlayDataSection = file.GetSection("OverlayDataPack");
-			var overlayDataCompressed = Convert.FromBase64String(overlayDataSection.Aggregate(string.Empty, (a, b) => a + b.Value));
+			var overlayDataCompressed = Convert.FromBase64String(string.Concat(overlayDataSection.Select(kvp => kvp.Value)));
 			var overlayDataPack = new byte[1 << 18];
 			UnpackLCW(overlayDataCompressed, overlayDataPack, temp);
 
@@ -664,7 +665,7 @@ namespace OpenRA.Mods.RA2.UtilityCommands
 					ar.Add(new DeployStateInit(DeployState.Deployed));
 
 				if (!map.Rules.Actors.ContainsKey(name))
-					Console.WriteLine("Ignoring unknown actor type: `{0}`".F(name));
+					Console.WriteLine($"Ignoring unknown actor type: `{name}`");
 				else
 					map.ActorDefinitions.Add(new MiniYamlNode("Actor" + map.ActorDefinitions.Count, ar.Save()));
 			}
@@ -708,7 +709,7 @@ namespace OpenRA.Mods.RA2.UtilityCommands
 					lightingNodes.Add(new MiniYamlNode(node.Value, FieldSaver.FormatValue(val)));
 			}
 
-			if (lightingNodes.Any())
+			if (lightingNodes.Count > 0)
 			{
 				map.RuleDefinitions.Nodes.Add(new MiniYamlNode("^BaseWorld", new MiniYaml("", new List<MiniYamlNode>()
 				{
@@ -748,7 +749,7 @@ namespace OpenRA.Mods.RA2.UtilityCommands
 					}
 				}
 
-				if (lightingNodes.Any())
+				if (lightingNodes.Count > 0)
 				{
 					map.RuleDefinitions.Nodes.Add(new MiniYamlNode(lamp, new MiniYaml("", new List<MiniYamlNode>()
 					{

@@ -135,7 +135,7 @@ namespace OpenRA.Mods.RA2.Traits.SupportPowers
 			{
 				scatterDelay = info.ScatterDelay;
 
-				for (int i = 0; i < info.ScatterCount; i++)
+				for (var i = 0; i < info.ScatterCount; i++)
 				{
 					var offset = RandomOffset(self.World);
 					var newPos = targetPos + offset;
