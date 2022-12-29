@@ -52,7 +52,8 @@ namespace OpenRA.Mods.RA2.Traits
 		readonly WithVoxelHelicopterBodyInfo info;
 		readonly RenderVoxels rv;
 		readonly ModelAnimation modelAnimation;
-		uint tick, frame, frames;
+		readonly uint frames;
+		uint tick, frame;
 
 		public WithVoxelHelicopterBody(Actor self, WithVoxelHelicopterBodyInfo info)
 			: base(info)

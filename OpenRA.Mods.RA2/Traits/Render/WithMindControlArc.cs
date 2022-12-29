@@ -43,7 +43,7 @@ namespace OpenRA.Mods.RA2.Traits
 		[Desc("Equivalent to sequence ZOffset. Controls Z sorting.")]
 		public readonly int ZOffset = 0;
 
-		public override object Create(ActorInitializer init) { return new WithMindControlArc(init.Self, this); }
+		public override object Create(ActorInitializer init) { return new WithMindControlArc(this); }
 	}
 
 	public class WithMindControlArc : IRenderAboveShroudWhenSelected, INotifySelected, INotifyCreated
@@ -52,7 +52,7 @@ namespace OpenRA.Mods.RA2.Traits
 		MindController mindController;
 		MindControllable mindControllable;
 
-		public WithMindControlArc(Actor self, WithMindControlArcInfo info)
+		public WithMindControlArc(WithMindControlArcInfo info)
 		{
 			this.info = info;
 		}
@@ -88,9 +88,6 @@ namespace OpenRA.Mods.RA2.Traits
 				info.ZOffset, info.Angle, color, info.Width, info.QuantizedSegments);
 		}
 
-		bool IRenderAboveShroudWhenSelected.SpatiallyPartitionable
-		{
-			get { return false; }
-		}
+		bool IRenderAboveShroudWhenSelected.SpatiallyPartitionable => false;
 	}
 }

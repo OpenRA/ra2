@@ -22,7 +22,7 @@ namespace OpenRA.Mods.RA2.Activities
 		readonly Actor parent;
 		readonly CarrierParent spawnerParent;
 
-		public EnterCarrierParent(Actor self, Actor parent, CarrierParent spawnerParent, EnterBehaviour enterBehaviour)
+		public EnterCarrierParent(Actor self, Actor parent, CarrierParent spawnerParent)
 			: base(self, Target.FromActor(parent))
 		{
 			this.parent = parent;

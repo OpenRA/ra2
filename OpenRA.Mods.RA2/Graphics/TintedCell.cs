@@ -26,7 +26,7 @@ namespace OpenRA.Mods.RA2.Graphics
 		readonly WPos centeredLocation;
 
 		public int Level { get; private set; }
-		public int ZOffset { get { return layer.Info.ZOffset; } }
+		public int ZOffset => layer.Info.ZOffset;
 
 		public TintedCell(TintedCellsLayer layer, CPos location, WPos centeredLocation)
 		{
@@ -44,15 +44,14 @@ namespace OpenRA.Mods.RA2.Graphics
 			centeredLocation = src.centeredLocation;
 		}
 
-		public IRenderable WithPalette(PaletteReference newPalette) { return this; }
 		public IRenderable WithZOffset(int newOffset) { return this; }
 		public IRenderable OffsetBy(in WVec vec) { return this; }
 		public IRenderable AsDecoration() { return this; }
 
-		public PaletteReference Palette { get { return null; } }
-		public bool IsDecoration { get { return false; } }
+		public PaletteReference Palette => null;
+		public bool IsDecoration => false;
 
-		WPos IRenderable.Pos { get { return centeredLocation; } }
+		WPos IRenderable.Pos => centeredLocation;
 
 		IFinalizedRenderable IRenderable.PrepareRender(WorldRenderer wr) { return this; }
 
@@ -92,7 +91,7 @@ namespace OpenRA.Mods.RA2.Graphics
 				return;
 
 			// Saturate the visualization to MaxLevel
-			int level = Level.Clamp(0, layer.Info.MaxLevel);
+			var level = Level.Clamp(0, layer.Info.MaxLevel);
 
 			// Linear interpolation
 			alpha = layer.Info.Darkest + (layer.TintLevel * level) / 255;

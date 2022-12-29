@@ -32,7 +32,7 @@ namespace OpenRA.Mods.RA2.Traits
 		public Actor Actor = null;
 		public BaseSpawnerChild SpawnerChild = null;
 
-		public bool IsValid { get { return Actor != null && !Actor.IsDead; } }
+		public bool IsValid => Actor != null && !Actor.IsDead;
 	}
 
 	[Desc("This actor can spawn actors.")]
@@ -202,7 +202,7 @@ namespace OpenRA.Mods.RA2.Traits
 		public virtual void SpawnIntoWorld(Actor self, Actor child, WPos centerPosition)
 		{
 			var exit = self.RandomExitOrDefault(self.World, null);
-			SetSpawnedFacing(child, self, exit);
+			SetSpawnedFacing(child, exit);
 
 			self.World.AddFrameEndTask(w =>
 			{
@@ -223,7 +223,7 @@ namespace OpenRA.Mods.RA2.Traits
 			});
 		}
 
-		void SetSpawnedFacing(Actor spawned, Actor spawner, Exit exit)
+		void SetSpawnedFacing(Actor spawned, Exit exit)
 		{
 			var facingOffset = facing?.Facing ?? WAngle.Zero;
 			var exitFacing = exit?.Info.Facing ?? WAngle.Zero;

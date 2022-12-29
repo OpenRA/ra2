@@ -81,7 +81,7 @@ namespace OpenRA.Mods.RA2.Warheads
 
 				foreach (var cell in affectedCells)
 				{
-					int mul = GetIntensityFalloff((pos - world.Map.CenterOfCell(cell)).Length);
+					var mul = GetIntensityFalloff((pos - world.Map.CenterOfCell(cell)).Length);
 					IncreaseTintedCellLevel(cell, mul, Falloff[i], raLayer);
 				}
 			}

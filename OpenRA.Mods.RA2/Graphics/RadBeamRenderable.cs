@@ -37,15 +37,10 @@ namespace OpenRA.Mods.RA2.Graphics
 			this.quantizationCount = quantizationCount;
 		}
 
-		public WPos Pos { get { return pos; } }
-		public PaletteReference Palette { get { return null; } }
-		public int ZOffset { get { return zOffset; } }
-		public bool IsDecoration { get { return true; } }
-
-		public IRenderable WithPalette(PaletteReference newPalette)
-		{
-			return new RadBeamRenderable(pos, zOffset, sourceToTarget, width, color, amplitude, wavelength, quantizationCount);
-		}
+		public WPos Pos => pos;
+		public PaletteReference Palette => null;
+		public int ZOffset => zOffset;
+		public bool IsDecoration => true;
 
 		public IRenderable WithZOffset(int newOffset) { return new RadBeamRenderable(pos, zOffset, sourceToTarget, width, color, amplitude, wavelength, quantizationCount); }
 
@@ -65,7 +60,7 @@ namespace OpenRA.Mods.RA2.Graphics
 			// QuantizationCont * forwardStep == One cycle of beam in src2target direction.
 			var forwardStep = (wavelength.Length * sourceToTarget) / (quantizationCount * sourceToTarget.Length);
 
-			int cycleCount = sourceToTarget.Length / wavelength.Length;
+			var cycleCount = sourceToTarget.Length / wavelength.Length;
 			if (sourceToTarget.Length % wavelength.Length != 0)
 				cycleCount += 1; // I'm emulating Math.Ceil
 

@@ -30,12 +30,10 @@ namespace OpenRA.Mods.RA2.Graphics
 			this.color = color;
 		}
 
-		public WPos Pos { get { return new WPos(offsets[0].X, offsets[0].Y, 0); } }
-		public PaletteReference Palette { get { return null; } }
-		public int ZOffset { get { return zOffset; } }
-		public bool IsDecoration { get { return true; } }
+		public WPos Pos => new WPos(offsets[0].X, offsets[0].Y, 0);
+		public int ZOffset => zOffset;
+		public bool IsDecoration => true;
 
-		public IRenderable WithPalette(PaletteReference newPalette) { return this; }
 		public IRenderable WithZOffset(int newOffset) { return new ElectricBoltRenderable(offsets, newOffset, width, color); }
 
 		public IRenderable OffsetBy(in WVec vec)

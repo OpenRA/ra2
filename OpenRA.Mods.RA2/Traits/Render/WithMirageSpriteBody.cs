@@ -22,7 +22,6 @@ namespace OpenRA.Mods.RA2.Traits.Render
 
 	class WithMirageSpriteBody : WithSpriteBody, ITick
 	{
-		readonly WithMirageSpriteBodyInfo info;
 		readonly Mirage mirage;
 		readonly RenderSprites renderSprites;
 		ActorInfo disguiseActor;
@@ -32,7 +31,6 @@ namespace OpenRA.Mods.RA2.Traits.Render
 		public WithMirageSpriteBody(ActorInitializer init, WithMirageSpriteBodyInfo info)
 			: base(init, info)
 		{
-			this.info = info;
 			var self = init.Self;
 			renderSprites = self.Trait<RenderSprites>();
 			mirage = self.Trait<Mirage>();
