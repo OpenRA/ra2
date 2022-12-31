@@ -915,6 +915,9 @@ gaspysat:
 		Amount: -100
 	ProvidesRadar:
 		RequiresCondition: !lowpower
+	RevealsMap:
+		RequiresCondition: !lowpower
+		RevealGeneratedShroud: false
 	GrantConditionOnPowerState@LOWPOWER:
 		Condition: lowpower
 		ValidPowerStates: Low, Critical
