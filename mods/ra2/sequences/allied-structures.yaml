@@ -413,8 +413,43 @@ gaweat:
 	Defaults:
 		Offset: 0, -45, 45
 	idle: ggweth
+		ShadowStart: 3
 	damaged-idle: ggweth
+		Start: 1
+		ShadowStart: 4
+	idle-top: ggweth_e
+	damaged-idle-top: ggweth_e
+		Start: 1
+	charged: ggweth_f
+		Length: 12
+		ShadowStart: 24
+		Tick: 150
+	damaged-charged: ggweth_f
+		Start: 12
+		Length: 12
+		ShadowStart: 36
+		Tick: 150
+	loop: ggweth_g
+		Length: 12
+		ShadowStart: 24
+		Tick: 150
+	damaged-loop: ggweth_g
+		Start: 12
+		Length: 12
+		ShadowStart: 36
+		Tick: 150
+	end: ggweth_h
+		Length: 12
+		ShadowStart: 24
+		Tick: 150
+	damaged-end: ggweth_h
+		Start: 12
+		Length: 12
+		ShadowStart: 36
+		Tick: 150
 	make: guwethmk
+		Length: 25
+		ShadowStart: 25
 	icon: wethicon
 
 gacsph:
