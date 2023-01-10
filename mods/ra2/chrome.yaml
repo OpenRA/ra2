@@ -625,29 +625,54 @@ command-icons-allies:
 		queue-orders-hover: 975, 413, 35, 26
 		queue-orders-active-hover: 975, 439, 35, 26
 
+command-icons-allies-highlighted:
+	Inherits: command-icons-allies
+	Regions:
+		attack-move: 783, 387, 33, 26
+		attack-move-hover: 783, 439, 33, 26
+		force-move: 816, 387, 26, 26
+		force-move-hover: 816, 439, 26, 26
+		force-attack: 842, 387, 26, 26
+		force-attack-hover: 842, 439, 26, 26
+		guard: 868, 387, 29, 26
+		guard-hover: 868, 439, 29, 26
+		deploy: 897, 387, 27, 26
+		deploy-hover: 897, 439, 27, 26
+		scatter: 924, 387, 29, 26
+		scatter-hover: 924, 439, 29, 26
+		stop: 953, 387, 22, 26
+		stop-hover: 953, 439, 22, 26
+		queue-orders: 975, 387, 35, 26
+		queue-orders-hover: 975, 439, 35, 26
+
 stance-icons-allies:
 	Image: chrome.png
 	Regions:
 		attack-anything: 769, 15, 25, 21
 		attack-anything-disabled: 769, 36, 25, 21
-		attack-anything-active: 769, 57, 25, 21
 		attack-anything-hover: 769, 78, 25, 21
-		attack-anything-active-hover: 769, 99, 25, 21
 		return-fire: 794, 15, 20, 21
 		return-fire-disabled: 794, 36, 20, 21
-		return-fire-active: 794, 57, 20, 21
 		return-fire-hover: 794, 78, 20, 21
-		return-fire-active-hover: 794, 99, 20, 21
 		defend: 816, 15, 22, 21
 		defend-disabled: 816, 36, 22, 21
-		defend-active: 816, 57, 22, 21
 		defend-hover: 816, 78, 22, 21
-		defend-active-hover: 816, 99, 22, 21
 		hold-fire: 836, 15, 25, 21
 		hold-fire-disabled: 836, 36, 25, 21
-		hold-fire-active: 836, 57, 25, 21
 		hold-fire-hover: 836, 78, 25, 21
-		hold-fire-active-hover: 836, 99, 25, 21
+
+stance-icons-allies-highlighted:
+	Inherits: stance-icons-allies
+	Regions:
+		attack-anything: 769, 57, 25, 21
+		attack-anything-hover: 769, 99, 25, 21
+		return-fire: 794, 57, 20, 21
+		return-fire-hover: 794, 99, 20, 21
+		defend: 816, 57, 22, 21
+		defend-hover: 816, 99, 22, 21
+		hold-fire-active: 836, 57, 25, 21
+		hold-fire: 836, 57, 25, 21
+		hold-fire-hover: 836, 99, 25, 21
 
 # -----------------------------------------------------------------------------------
 # Soviets
@@ -1276,29 +1301,53 @@ command-icons-soviets:
 		queue-orders-hover: 975, 925, 35, 26
 		queue-orders-active-hover: 975, 951, 35, 26
 
+command-icons-soviets-highlighted:
+	Inherits: command-icons-soviets
+	Regions:
+		attack-move: 783, 899, 33, 26
+		attack-move-hover: 783, 951, 33, 26
+		force-move: 816, 899, 26, 26
+		force-move-hover: 816, 951, 26, 26
+		force-attack: 842, 899, 26, 26
+		force-attack-hover: 842, 951, 26, 26
+		guard: 868, 899, 29, 26
+		guard-hover: 868, 951, 29, 26
+		deploy: 897, 899, 27, 26
+		deploy-hover: 897, 951, 27, 26
+		scatter: 924, 899, 29, 26
+		scatter-hover: 924, 951, 29, 26
+		stop: 953, 899, 22, 26
+		stop-hover: 953, 951, 22, 26
+		queue-active: 975, 899, 35, 26
+		queue-active-hover: 975, 951, 35, 26
+
 stance-icons-soviets:
 	Image: chrome.png
 	Regions:
 		attack-anything: 769, 527, 25, 21
 		attack-anything-disabled: 769, 548, 25, 21
-		attack-anything-active: 769, 569, 25, 21
 		attack-anything-hover: 769, 590, 25, 21
-		attack-anything-active-hover: 769, 611, 25, 21
 		return-fire: 794, 527, 20, 21
 		return-fire-disabled: 794, 548, 20, 21
-		return-fire-active: 794, 569, 20, 21
 		return-fire-hover: 794, 590, 20, 21
-		return-fire-active-hover: 794, 611, 20, 21
 		defend: 816, 527, 22, 21
 		defend-disabled: 816, 548, 22, 21
-		defend-active: 816, 569, 22, 21
 		defend-hover: 816, 590, 22, 21
-		defend-active-hover: 816, 611, 22, 21
 		hold-fire: 836, 527, 25, 21
 		hold-fire-disabled: 836, 548, 25, 21
-		hold-fire-active: 836, 569, 25, 21
 		hold-fire-hover: 836, 590, 25, 21
-		hold-fire-active-hover: 836, 611, 25, 21
+
+stance-icons-soviets-highlighted:
+	Inherits: stance-icons-soviets
+	Regions:
+		attack-anything: 769, 569, 25, 21
+		attack-anything-hover: 769, 611, 25, 21
+		return-fire: 794, 569, 20, 21
+		return-fire-hover: 794, 611, 20, 21
+		defend: 816, 569, 22, 21
+		defend-hover: 816, 611, 22, 21
+		hold-fire: 836, 569, 25, 21
+		hold-fire-hover: 836, 611, 25, 21
 
 # -----------------------------------------------------------------------------------
 # GENERIC
@@ -1433,14 +1482,22 @@ observer-scrollpanel-button-disabled:
 	Image: dialog.png
 	PanelRegion: 769, 385, 2, 2, 122, 122, 2, 2
 
-observer-scrollheader-selected:
+observer-scrollheader:
 	Inherits: observer-scrollpanel-button-disabled
 
-observer-scrollitem-selected:
-	Inherits: observer-scrollpanel-button-pressed
+observer-scrollheader-highlighted:
+	Inherits: observer-scrollpanel-button-disabled
+
+observer-scrollitem:
 
 observer-scrollitem-hover:
 	Inherits: observer-scrollpanel-button
+
+observer-scrollitem-pressed:
+	Inherits: observer-scrollpanel-button
+
+observer-scrollitem-highlighted:
+	Inherits: observer-scrollpanel-button-pressed
 
 # -----------------------------------------------------------------------------------
 # REST OF THE UI
@@ -1688,23 +1745,51 @@ slider-thumb-pressed:
 
 # A copy of dialog2 (normal button)
 slider-thumb-disabled:
-	Inherits: button
+	Inherits: button-disabled
 
 # A copy of dialog3 (pressed button)
 checkbox:
 	Inherits: button-pressed
 
-checkbox-bits:
+checkmark-tick:
 	Image: buttons.png
 	Regions:
 		checked: 100, 157, 16, 16
-		checked-disabled: 100, 173, 16, 16
-		crossed: 116, 157, 16, 16
-		crossed-disabled: 116, 173, 16, 16
+		checked-pressed: 204, 0, 16, 16
+		unchecked: 0, 0, 0, 0
+		unchecked-pressed: 204, 0, 16, 16
+
+checkmark-tick-highlighted:
+	Inherits: checkmark-tick
+
+checkmark-cross:
+	Image: buttons.png
+	Regions:
+		checked: 221, 0, 16, 16
+		checked-pressed: 238, 0, 16, 16
+		unchecked: 0, 0, 0, 0
+		unchecked-pressed: 238, 0, 16, 16
+
+checkmark-cross-highlighted:
+	Inherits: checkmark-cross
+
+checkmark-mute:
+	Image: buttons.png
+	Regions:
+		unchecked: 0, 170, 16, 16
+		unchecked-pressed: 17, 170, 16, 16
+		checked: 17, 170, 16, 16
+		checked-pressed: 0, 170, 16, 16
+
+checkmark-mute-highlighted:
+	Inherits: checkmark-mute
 
 checkbox-hover:
 	Image: dialog.png
 	PanelRegion: 641, 129, 2, 2, 122, 122, 2, 2
+
+checkbox-pressed:
+	Inherits: checkbox-hover
 
 # Same as button-disabled-pressed
 checkbox-disabled:
@@ -1719,19 +1804,48 @@ checkbox-highlighted:
 checkbox-highlighted-hover:
 	Inherits: checkbox-highlighted
 
+checkbox-highlighted-pressed:
+	Inherits: checkbox-highlighted
+
 checkbox-highlighted-disabled:
 	Inherits: checkbox-disabled
 
-# A copy of dialog3 (pressed button)
-scrollitem-selected:
-	Inherits: button-pressed
+checkbox-toggle:
+
+checkbox-toggle-hover:
+	Inherits: button
+
+checkbox-toggle-pressed:
+	Inherits: checkbox-pressed
+
+checkbox-toggle-highlighted:
+
+checkbox-toggle-highlighted-hover:
+	Inherits: button-highlighted
+
+checkbox-toggle-highlighted-pressed:
+	Inherits: checkbox-highlighted-pressed
+
+scrollitem:
 
 # A copy of dialog2 (normal button)
 scrollitem-hover:
 	Inherits: button
 
-# A copy of dialog2 (normal button)
-scrollheader-selected:
+scrollitem-pressed:
+	Inherits: button
+
+scrollitem-highlighted:
+	Inherits: button-pressed
+
+scrollitem-nohover:
+
+scrollitem-nohover-highlighted:
+
+scrollheader:
+	Inherits: button
+
+scrollheader-highlighted:
 	Inherits: button
 
 logos:
@@ -1747,23 +1861,18 @@ scrollpanel-decorations:
 	Image: buttons.png # TODO: Will need left and right arrows to be added to the artwork.
 	Regions:
 		down: 116, 140, 16, 16
-		down-pressed: 116, 140, 16, 16
 		down-disabled: 116, 140, 16, 16
 		up: 132, 140, 16, 16
-		up-pressed: 132, 140, 16, 16
 		up-disabled: 132, 140, 16, 16
 		right: 116, 140, 16, 16 # TODO: Placeholder coordinates.
-		right-pressed: 116, 140, 16, 16 # TODO: Placeholder coordinates.
 		right-disabled: 116, 140, 16, 16 # TODO: Placeholder coordinates.
 		left: 132, 140, 16, 16 # TODO: Placeholder coordinates.
-		left-pressed: 132, 140, 16, 16 # TODO: Placeholder coordinates.
 		left-disabled: 132, 140, 16, 16 # TODO: Placeholder coordinates.
 
 dropdown-decorations:
 	Image: buttons.png # TODO: This is a placeholder.
 	Regions:
 		marker: 116, 140, 16, 16
-		marker-pressed: 116, 140, 16, 16
 		marker-disabled: 116, 140, 16, 16
 
 dropdown-separators:
@@ -1774,3 +1883,6 @@ dropdown-separators:
 		separator-pressed: 512, 1, 1, 19 # TODO: Needs coordinate fixes.
 		separator-disabled: 512, 1, 1, 19 # TODO: Needs coordinate fixes.
 		observer-separator: 768, 256, 1, 19
+
+separator:
+	Inherits: button
