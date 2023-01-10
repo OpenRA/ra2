@@ -162,6 +162,8 @@ gapile:
 		Path: 2,3
 		Palette: mouse
 		IsPlayerPalette: false
+	CommandBarBlacklist:
+		DisableStop: false
 	Exit@0_n1:
 		SpawnOffset: 170,-810,0
 		ExitCell: 0, -1
@@ -409,6 +411,8 @@ gaweap:
 		Path: 5,1
 		Palette: mouse
 		IsPlayerPalette: false
+	CommandBarBlacklist:
+		DisableStop: false
 	Exit@1:
 		SpawnOffset: -384,-384,0
 		ExitCell: 4,1
@@ -578,6 +582,8 @@ gayard:
 		Path: 5,1
 		Palette: mouse
 		IsPlayerPalette: false
+	CommandBarBlacklist:
+		DisableStop: false
 	RepairsUnits:
 		StartRepairingNotification: Repairing
 		FinishRepairingNotification: UnitRepaired
@@ -627,6 +633,8 @@ gadept:
 	RallyPoint:
 		Palette: mouse
 		IsPlayerPalette: false
+	CommandBarBlacklist:
+		DisableStop: false
 	RepairsUnits:
 		Interval: 50
 		StartRepairingNotification: Repairing

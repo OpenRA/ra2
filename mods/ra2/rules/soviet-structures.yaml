@@ -197,6 +197,8 @@ nahand:
 		Path: 3,3
 		Palette: mouse
 		IsPlayerPalette: false
+	CommandBarBlacklist:
+		DisableStop: false
 	WithTextDecoration@primary:
 		RequiresSelection: true
 		Text: PRIMARY
@@ -359,6 +361,8 @@ naweap:
 		Path: 6,1
 		Palette: mouse
 		IsPlayerPalette: false
+	CommandBarBlacklist:
+		DisableStop: false
 	Exit@1:
 		ExitCell: 5,1
 	Production:
@@ -524,6 +528,8 @@ nayard:
 		Path: 5,1
 		Palette: mouse
 		IsPlayerPalette: false
+	CommandBarBlacklist:
+		DisableStop: false
 	RepairsUnits:
 		StartRepairingNotification: Repairing
 		FinishRepairingNotification: UnitRepaired
@@ -577,6 +583,8 @@ nadept:
 	RallyPoint:
 		Palette: mouse
 		IsPlayerPalette: false
+	CommandBarBlacklist:
+		DisableStop: false
 	RepairsUnits:
 		Interval: 148
 		HpPerStep: 20
@@ -753,6 +761,8 @@ naclon:
 		Path: 3,3
 		Palette: mouse
 		IsPlayerPalette: false
+	CommandBarBlacklist:
+		DisableStop: false
 	ClonesProducedUnits:
 		CloneableTypes: infantry
 		ProductionType: Cloning

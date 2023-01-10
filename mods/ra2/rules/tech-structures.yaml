@@ -121,6 +121,8 @@ cahosp:
 	RepairsUnits:
 		StartRepairingNotification:
 	RallyPoint:
+	CommandBarBlacklist:
+		DisableStop: false
 	WithIdleOverlay:
 	WithIdleOverlay@flag:
 		Sequence: flag
@@ -162,6 +164,8 @@ caoutp:
 	RallyPoint:
 		Palette: mouse
 		IsPlayerPalette: false
+	CommandBarBlacklist:
+		DisableStop: false
 	RepairsUnits:
 		Interval: 50
 		FinishRepairingNotification: UnitRepaired
