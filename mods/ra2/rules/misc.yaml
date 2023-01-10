@@ -62,13 +62,8 @@ crate:
 
 amcv.colorpicker:
 	Inherits: amcv
-	Mobile:
-		InitialFacing: 640
 	-Buildable:
 	-MapEditorData:
-	RenderSprites:
-		Image: amcv
-		Palette: colorpicker
 	RenderVoxels:
 		Image: amcv
 		Palette: colorpicker
