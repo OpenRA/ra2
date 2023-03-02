@@ -131,6 +131,7 @@ dron:
 	Mobile:
 		Speed: 150
 		TurnSpeed: 60
+		TerrainOrientationAdjustmentMargin: -1
 	Health:
 		HP: 100
 	Armor:
