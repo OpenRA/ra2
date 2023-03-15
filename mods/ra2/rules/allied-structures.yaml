@@ -368,6 +368,8 @@ amradr:
 	RenderSprites:
 		Image: gaairc
 	SupportPowerChargeBar:
+	InfiltrateForSupportPowerReset:
+		Types: SpyInfiltrate
 	ParatroopersPower@paratroopers:
 		OrderName: AmericanParatroopers
 		Icon: airborne
@@ -994,6 +996,11 @@ gaweat:
 	GrantConditionOnPowerState@LOWPOWER:
 		Condition: lowpower
 		ValidPowerStates: Low, Critical
+	SupportPowerChargeBar:
+	InfiltrateForSupportPowerReset:
+		Types: SpyInfiltrate
+	Targetable:
+		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
 	WeatherControlSupportPower@LightningStorm:
 		OrderName: WeatherControlDevice
 		ChargeInterval: 15000
@@ -1050,6 +1057,10 @@ gacsph:
 		Condition: lowpower
 		ValidPowerStates: Low, Critical
 	SupportPowerChargeBar:
+	InfiltrateForSupportPowerReset:
+		Types: SpyInfiltrate
+	Targetable:
+		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
 	ChronoshiftPower@chronoshift:
 		OrderName: Chronoshift
 		Icon: chrono
