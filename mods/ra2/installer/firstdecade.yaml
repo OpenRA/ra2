@@ -9,6 +9,6 @@ tfd: C&C The First Decade (English)
 				7: data7.cab
 				8: data8.cab
 			Extract:
-				^Content/ra2/theme.mix: Red Alert 2\RA2\theme.mix
-				^Content/ra2/ra2.mix: Red Alert 2\RA2\ra2.mix
-				^Content/ra2/language.mix: Red Alert 2\RA2\language.mix
+				^SupportDir|Content/ra2/theme.mix: Red Alert 2\RA2\theme.mix
+				^SupportDir|Content/ra2/ra2.mix: Red Alert 2\RA2\ra2.mix
+				^SupportDir|Content/ra2/language.mix: Red Alert 2\RA2\language.mix
