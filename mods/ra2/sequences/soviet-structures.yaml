@@ -375,13 +375,37 @@ nairon:
 		Start: 11
 		Length: 11
 		ShadowStart: 33
-	active: ngiron_h
+
+	charged: ngiron_f
+		Length: 21
+	damaged-charged: ngiron_f
+		Start: 21
+		Length: 21
+	loop: ngiron_f
+		Start: 10
+		Length: 10
+	damaged-loop: ngiron_f
+		Start: 31
+		Length: 10
+	end: ggcsph_h
+		Length: 12
+	damaged-end: ggcsph_h
+		Start: 15
+		Length: 15
+		ShadowStart: 45
+	end: ngiron_h
 		Length: 12
 		ShadowStart: 24
-	damaged-active: ngiron_h
+	damaged-end: ngiron_h
 		Start: 12
 		Length: 12
 		ShadowStart: 36
+	active: ngiron_f
+		Start: 10
+		Length: 10
+	damaged-active: ngiron_f
+		Start: 31
+		Length: 10
 	make: ntironmk
 	icon: ironicon
 

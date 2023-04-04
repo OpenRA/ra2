@@ -857,6 +857,7 @@ nairon:
 		Types: SpyInfiltrate
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
+	WithSupportPowerChargedOverlay:
 	GrantConditionOnPowerState@LOWPOWER:
 		Condition: lowpower
 		ValidPowerStates: Low, Critical
