@@ -424,11 +424,37 @@ gacsph:
 	idle: ggcsph
 		ShadowStart: 3
 	damaged-idle: ggcsph
+	idle-fans: ggcsph_a
+		Length: 6
+	damaged-idle-fans: ggcsph_a
+		Start: 6
+		Length: 6
 	idle-dome: ggcsph_e
 		ShadowStart: 2
 	damaged-idle-dome: ggcsph_e
 		Start: 1
 		ShadowStart: 3
+	charged: ggcsph_f
+		Length: 12
+		ShadowStart: 24
+	damaged-charged: ggcsph_f
+		Start: 12
+		Length: 12
+		ShadowStart: 36
+	loop: ggcsph_g
+		Length: 6
+		ShadowStart: 12
+	damaged-loop: ggcsph_g
+		Start: 6
+		Length: 6
+		ShadowStart: 18
+	end: ggcsph_h
+		Length: 15
+		ShadowStart: 30
+	damaged-end: ggcsph_h
+		Start: 15
+		Length: 15
+		ShadowStart: 45
 	dead: ggcsphdm # SHP broken & unused
 		Length: 25
 		ShadowStart: 25
