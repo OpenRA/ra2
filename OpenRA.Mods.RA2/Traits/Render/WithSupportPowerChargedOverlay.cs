@@ -77,8 +77,9 @@ namespace OpenRA.Mods.RA2.Traits.Render
 
 		void INotifySupportPower.Activated(Actor self)
 		{
-			overlay.PlayThen(info.EndSequence,
-				() => visible = false);
+			if (!string.IsNullOrEmpty(info.EndSequence))
+				overlay.PlayThen(info.EndSequence,
+					() => visible = false);
 		}
 	}
 }

@@ -348,15 +348,37 @@ namisl:
 	critical-idle: ngmisl_e
 		Start: 1
 		ShadowStart: 3
-	# TODO: ngmisl_f is actually the open sequence
-	active: ngmisl_f
+	charged: ngmisl_f
 		Length: 16
 		ShadowStart: 32
-		Tick: 120
-	damaged-active: ngmisl_f
-		Start: 17
+		Tick: 150
+	damaged-charged: ngmisl_f
+		Start: 16
 		Length: 16
 		ShadowStart: 48
+		Tick: 120
+	loop: ngmisl_g
+		ShadowStart: 2
+		Tick: 120
+	damaged-loop: ngmisl_g
+		Start: 1
+		ShadowStart: 3
+		Tick: 120
+	end: ngmisl_h
+		Length: 16
+		ShadowStart: 32
+		Tick: 150
+	damaged-end: ngmisl_h
+		Start: 16
+		Length: 16
+		ShadowStart: 48
+		Tick: 120
+	smoke: nuketo
+		Length: *
+		Tick: 120
+		Offset: 0, 0
+	steam: nukestm # TODO: unused
+		Length: *
 		Tick: 120
 	make: ntmislmk
 		UseTilesetCode: true
