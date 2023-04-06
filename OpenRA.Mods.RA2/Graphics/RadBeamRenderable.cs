@@ -1,6 +1,6 @@
-﻿#region Copyright & License Information
+#region Copyright & License Information
 /*
- * Copyright 2007-2020 The OpenRA Developers (see AUTHORS)
+ * Copyright (c) The OpenRA Developers and Contributors
  * This file is part of OpenRA, which is free software. It is made
  * available to you under the terms of the GNU General Public License
  * as published by the Free Software Foundation, either version 3 of
@@ -37,19 +37,14 @@ namespace OpenRA.Mods.RA2.Graphics
 			this.quantizationCount = quantizationCount;
 		}
 
-		public WPos Pos { get { return pos; } }
-		public PaletteReference Palette { get { return null; } }
-		public int ZOffset { get { return zOffset; } }
-		public bool IsDecoration { get { return true; } }
-
-		public IRenderable WithPalette(PaletteReference newPalette)
-		{
-			return new RadBeamRenderable(pos, zOffset, sourceToTarget, width, color, amplitude, wavelength, quantizationCount);
-		}
+		public WPos Pos => pos;
+		public PaletteReference Palette => null;
+		public int ZOffset => zOffset;
+		public bool IsDecoration => true;
 
 		public IRenderable WithZOffset(int newOffset) { return new RadBeamRenderable(pos, zOffset, sourceToTarget, width, color, amplitude, wavelength, quantizationCount); }
 
-		public IRenderable OffsetBy(WVec vec) { return new RadBeamRenderable(pos + vec, zOffset, sourceToTarget, width, color, amplitude, wavelength, quantizationCount); }
+		public IRenderable OffsetBy(in WVec vec) { return new RadBeamRenderable(pos + vec, zOffset, sourceToTarget, width, color, amplitude, wavelength, quantizationCount); }
 
 		public IRenderable AsDecoration() { return this; }
 
@@ -65,7 +60,7 @@ namespace OpenRA.Mods.RA2.Graphics
 			// QuantizationCont * forwardStep == One cycle of beam in src2target direction.
 			var forwardStep = (wavelength.Length * sourceToTarget) / (quantizationCount * sourceToTarget.Length);
 
-			int cycleCount = sourceToTarget.Length / wavelength.Length;
+			var cycleCount = sourceToTarget.Length / wavelength.Length;
 			if (sourceToTarget.Length % wavelength.Length != 0)
 				cycleCount += 1; // I'm emulating Math.Ceil
 

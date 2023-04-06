@@ -8,18 +8,20 @@ smcv:
 		Description: Deploys into a Construction Yard.
 	Valued:
 		Cost: 3000
+	UpdatesPlayerStatistics:
+		AddToArmyValue: true
 	Tooltip:
 		Name: Mobile Construction Vehicle
 	Selectable:
 		Priority: 4
-		Bounds: 64, 52, 0, -6
+		Bounds: 1544, 2509, 0, -289
 	Health:
 		HP: 1000
 	Armor:
 		Type: Heavy
 	Mobile:
 		Speed: 60
-		TurnSpeed: 5
+		TurnSpeed: 20
 		Locomotor: heavytracked
 	RevealsShroud:
 		Range: 4c0
@@ -30,7 +32,7 @@ smcv:
 		Voice: Move
 		IntoActor: nacnst
 		Offset: -1,-1
-		Facing: 96
+		Facing: 384
 		TransformSounds: uplace.wav
 		NoTransformNotification: BuildingCannotPlaceAudio
 	RenderSprites:
@@ -50,11 +52,13 @@ harv:
 		Description: Gathers Ore.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
 	Valued:
 		Cost: 1400
+	UpdatesPlayerStatistics:
+		AddToArmyValue: true
 	Tooltip:
 		Name: War Miner
 	Selectable:
 		Priority: 7
-		Bounds: 64, 52, 0, -6
+		Bounds: 1544, 2509, 0, -289
 	Harvester:
 		Capacity: 40
 		Resources: Ore, Gems
@@ -84,11 +88,11 @@ harv:
 	WithMuzzleOverlay:
 	AutoTarget:
 	Turreted:
-		TurnSpeed: 10
+		TurnSpeed: 40
 		Offset: 196,0,-24
 	Mobile:
 		Speed: 60
-		TurnSpeed: 8
+		TurnSpeed: 32
 		Locomotor: tracked
 	RevealsShroud:
 		Range: 4c0
@@ -102,11 +106,21 @@ harv:
 	Voiced:
 		VoiceSet: SovietVehicleVoice
 	HitShape:
+	WithHarvesterPipsDecoration:
+		Position: BottomLeft
+		RequiresSelection: true
+		PipCount: 7
+		Palette: pips
+		ResourceSequences:
+			Ore: pip-yellow
+			Gems: pip-red
 
 dron:
 	Inherits: ^Vehicle
 	Valued:
 		Cost: 500
+	UpdatesPlayerStatistics:
+		AddToArmyValue: true
 	Tooltip:
 		Name: Terror Drone
 	Buildable:
@@ -116,7 +130,8 @@ dron:
 		Description: \n  Strong vs Infantry, Vehicles\n  Weak vs Aircraft
 	Mobile:
 		Speed: 150
-		TurnSpeed: 15
+		TurnSpeed: 60
+		TerrainOrientationAdjustmentMargin: -1
 	Health:
 		HP: 100
 	Armor:
@@ -153,10 +168,12 @@ htk:
 	Inherits@MC: ^MindControllable
 	Valued:
 		Cost: 500
+	UpdatesPlayerStatistics:
+		AddToArmyValue: true
 	Tooltip:
 		Name: Flak Track
 	Selectable:
-		Bounds: 50, 40, 0, -6
+		Bounds: 1206, 1930, 0, -289
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 30
@@ -164,7 +181,7 @@ htk:
 		Description: Infantry Transport and Anti-Air/Anti-Infantry vehicle.\n  Strong vs Aircraft, Infantry\n  Weak vs Vehicles
 	Mobile:
 		Speed: 120
-		TurnSpeed: 5
+		TurnSpeed: 20
 		Locomotor: tracked
 		PauseOnCondition: notmobile || chronodisable
 	Health:
@@ -176,7 +193,6 @@ htk:
 	Cargo:
 		Types: Infantry
 		MaxWeight: 5
-		PipCount: 5
 		PassengerFacing: 0
 		UnloadTerrainTypes: Clear, Rough, Rail, Road, DirtRoad, Beach, Ore, Gems
 		UnloadVoice: Move
@@ -194,7 +210,7 @@ htk:
 		MuzzleSequence: muzzle
 	WithMuzzleOverlay:
 	Turreted:
-		TurnSpeed: 15
+		TurnSpeed: 60
 		Offset: -280,-3,0
 	RenderSprites:
 	RenderVoxels:
@@ -205,6 +221,15 @@ htk:
 	ProducibleWithLevel:
 		Prerequisites: warfactory.infiltrated
 	HitShape:
+	WithCargoPipsDecoration:
+		Position: BottomLeft
+		RequiresSelection: true
+		Palette: pips
+		CustomPipSequences:
+			blue: pip-blue
+			yellow: pip-yellow
+			green: pip-green
+			red: pip-red
 
 htnk:
 	Inherits: ^Vehicle
@@ -212,6 +237,8 @@ htnk:
 	Inherits@MC: ^MindControllable
 	Valued:
 		Cost: 900
+	UpdatesPlayerStatistics:
+		AddToArmyValue: true
 	Tooltip:
 		Name: Rhino Heavy Tank
 	Buildable:
@@ -221,7 +248,7 @@ htnk:
 		Description: Soviet Main Battle Tank.\n  Strong vs Vehicles\n  Weak vs Infantry, Aircraft
 	Mobile:
 		Speed: 90
-		TurnSpeed: 5
+		TurnSpeed: 20
 		Locomotor: heavytracked
 	Health:
 		HP: 400
@@ -230,7 +257,7 @@ htnk:
 	RevealsShroud:
 		Range: 8c0
 	Turreted:
-		TurnSpeed: 5
+		TurnSpeed: 20
 	Armament@primary:
 		Weapon: 120mm
 		LocalOffset: 768,0,512
@@ -247,7 +274,7 @@ htnk:
 	AutoTarget:
 	RenderSprites:
 	Selectable:
-		Bounds: 64, 52, 0, -6
+		Bounds: 1544, 2509, 0, -289
 	RenderVoxels:
 		NormalsPalette: ts-normals
 	WithVoxelBody:
@@ -265,6 +292,8 @@ apoc:
 	Inherits@MC: ^MindControllable
 	Valued:
 		Cost: 1750
+	UpdatesPlayerStatistics:
+		AddToArmyValue: true
 	Tooltip:
 		Name: Apocalypse Tank
 	Buildable:
@@ -274,7 +303,7 @@ apoc:
 		Description: Soviet Advanced Battle Tank with Double Barrel\nand Anti-Aircraft Missile Launcher.\n  Strong vs Vehicles, Aircraft\n  Weak vs Infantry
 	Mobile:
 		Speed: 60
-		TurnSpeed: 5
+		TurnSpeed: 20
 		Locomotor: heavytracked
 	Health:
 		HP: 800
@@ -283,7 +312,7 @@ apoc:
 	RevealsShroud:
 		Range: 6c0
 	Turreted:
-		TurnSpeed: 5
+		TurnSpeed: 20
 	Armament@primary:
 		Weapon: 120mmx
 		LocalOffset: 768,100,640, 768,-100,640
@@ -303,7 +332,7 @@ apoc:
 	AutoTarget:
 	RenderSprites:
 	Selectable:
-		Bounds: 64, 52, 0, -6
+		Bounds: 1544, 2509, 0, -289
 	RenderVoxels:
 	WithVoxelBody:
 	WithVoxelTurret:
@@ -323,6 +352,8 @@ ttnk:
 	Inherits@MC: ^MindControllable
 	Valued:
 		Cost: 1200
+	UpdatesPlayerStatistics:
+		AddToArmyValue: true
 	Tooltip:
 		Name: Tesla Tank
 	Buildable:
@@ -331,7 +362,7 @@ ttnk:
 		Prerequisites: ~naweap, naradr, ~vehicles.russia
 		Description: Russian special tank armed with dual small Tesla Coils.\n  Strong vs Vehicles, Infantry\n  Weak vs Aircraft
 	Mobile:
-		Speed: 75
+		Speed: 90
 		Locomotor: heavytracked
 	Health:
 		HP: 300
@@ -340,7 +371,7 @@ ttnk:
 	RevealsShroud:
 		Range: 8c0
 	Turreted:
-		TurnSpeed: 5
+		TurnSpeed: 20
 	Armament@primary:
 		Weapon: TankBolt
 		LocalOffset: 280,196,640, 280,-196,640
@@ -354,7 +385,7 @@ ttnk:
 	AutoTarget:
 	RenderSprites:
 	Selectable:
-		Bounds: 64, 52, 0, -6
+		Bounds: 1544, 2509, 0, -289
 	RenderVoxels:
 	WithVoxelBody:
 	WithVoxelTurret:
@@ -374,17 +405,19 @@ dtruck:
 		Description: Demolition Truck, actively armed with nuclear explosives.
 	Valued:
 		Cost: 1500
+	UpdatesPlayerStatistics:
+		AddToArmyValue: true
 	Tooltip:
 		Name: Demolition Truck
 	Selectable:
-		Bounds: 64, 52, 0, -6
+		Bounds: 1544, 2509, 0, -289
 	Health:
 		HP: 150
 	Armor:
 		Type: Light
 	Mobile:
 		Speed: 75
-		TurnSpeed: 5
+		TurnSpeed: 20
 		Locomotor: heavytracked
 	RevealsShroud:
 		Range: 4c0
@@ -393,7 +426,7 @@ dtruck:
 		EmptyWeapon: demobomb
 	AttackFrontal:
 		Voice: Attack
-		FacingTolerance: 128
+		FacingTolerance: 512
 		RequiresCondition: !chronodisable
 	Armament@PRIMARY:
 		Weapon: DemoTruckTargeting

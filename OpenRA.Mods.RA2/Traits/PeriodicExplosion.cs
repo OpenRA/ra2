@@ -1,6 +1,6 @@
 #region Copyright & License Information
 /*
- * Copyright 2007-2019 The OpenRA Developers (see AUTHORS)
+ * Copyright (c) The OpenRA Developers and Contributors
  * This file is part of OpenRA, which is free software. It is made
  * available to you under the terms of the GNU General Public License
  * as published by the Free Software Foundation, either version 3 of
@@ -15,7 +15,6 @@ using System.Linq;
 using OpenRA.GameRules;
 using OpenRA.Mods.Common;
 using OpenRA.Mods.Common.Traits;
-using OpenRA.Primitives;
 using OpenRA.Traits;
 
 namespace OpenRA.Mods.RA2.Traits
@@ -43,10 +42,8 @@ namespace OpenRA.Mods.RA2.Traits
 
 		void IRulesetLoaded<ActorInfo>.RulesetLoaded(Ruleset rules, ActorInfo info)
 		{
-			WeaponInfo weaponInfo;
-
 			var weaponToLower = Weapon.ToLowerInvariant();
-			if (!rules.Weapons.TryGetValue(weaponToLower, out weaponInfo))
+			if (!rules.Weapons.TryGetValue(weaponToLower, out var weaponInfo))
 				throw new YamlException("Weapons Ruleset does not contain an entry '{0}'".F(weaponToLower));
 
 			WeaponInfo = weaponInfo;
@@ -58,7 +55,7 @@ namespace OpenRA.Mods.RA2.Traits
 		readonly PeriodicExplosionInfo info;
 		readonly WeaponInfo weapon;
 		readonly BodyOrientation body;
-		readonly List<Pair<int, Action>> delayedActions = new List<Pair<int, Action>>();
+		readonly List<(int Ticks, Action Action)> delayedActions = new List<(int, Action)>();
 
 		int fireDelay;
 		int burst;
@@ -84,13 +81,13 @@ namespace OpenRA.Mods.RA2.Traits
 			for (var i = 0; i < delayedActions.Count; i++)
 			{
 				var x = delayedActions[i];
-				if (--x.First <= 0)
-					x.Second();
+				if (--x.Ticks <= 0)
+					x.Action();
 
 				delayedActions[i] = x;
 			}
 
-			delayedActions.RemoveAll(a => a.First <= 0);
+			delayedActions.RemoveAll(a => a.Ticks <= 0);
 
 			if (IsTraitDisabled)
 				return;
@@ -101,11 +98,19 @@ namespace OpenRA.Mods.RA2.Traits
 					return;
 
 				var localoffset = body != null
-					? body.LocalToWorld(info.LocalOffset.Rotate(body.QuantizeOrientation(self, self.Orientation)))
+					? body.LocalToWorld(info.LocalOffset.Rotate(body.QuantizeOrientation(self.Orientation)))
 					: info.LocalOffset;
 
-				weapon.Impact(Target.FromPos(self.CenterPosition + localoffset), self,
-					self.TraitsImplementing<IFirepowerModifier>().Select(a => a.GetFirepowerModifier()).ToArray());
+				var args = new WarheadArgs
+				{
+					Weapon = weapon,
+					DamageModifiers = self.TraitsImplementing<IFirepowerModifier>().Select(a => a.GetFirepowerModifier()).ToArray(),
+					Source = self.CenterPosition,
+					SourceActor = self,
+					WeaponTarget = Target.FromPos(self.CenterPosition + localoffset)
+				};
+
+				weapon.Impact(args.WeaponTarget, args);
 
 				if (weapon.Report != null && weapon.Report.Any())
 					Game.Sound.Play(SoundType.World, weapon.Report.Random(self.World.SharedRandom), self.CenterPosition);
@@ -148,7 +153,7 @@ namespace OpenRA.Mods.RA2.Traits
 		protected void ScheduleDelayedAction(int t, Action a)
 		{
 			if (t > 0)
-				delayedActions.Add(Pair.New(t, a));
+				delayedActions.Add((t, a));
 			else
 				a();
 		}

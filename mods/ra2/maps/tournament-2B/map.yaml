@@ -42,53 +42,43 @@ Actors:
 	Actor0: caoild
 		Location: 34,6
 		Owner: Neutral
-		Health: 100
-		Facing: 96
+		Facing: 896
 	Actor1: caoild
 		Location: 144,4
 		Owner: Neutral
-		Health: 100
-		Facing: 96
+		Facing: 896
 	Actor2: caoild
 		Location: 128,6
 		Owner: Neutral
-		Health: 100
-		Facing: 96
+		Facing: 896
 	Actor3: caoild
 		Location: 50,7
 		Owner: Neutral
-		Health: 100
-		Facing: 96
+		Facing: 896
 	Actor4: camsc07
 		Location: 68,22
 		Owner: Neutral
-		Health: 100
-		Facing: 96
+		Facing: 896
 	Actor5: camsc07
 		Location: 107,-6
 		Owner: Neutral
-		Health: 100
-		Facing: 96
+		Facing: 896
 	Actor6: cabhut
 		Location: 138,7
 		Owner: Neutral
-		Health: 100
-		Facing: 96
+		Facing: 896
 	Actor7: cabhut
 		Location: 130,11
 		Owner: Neutral
-		Health: 100
-		Facing: 96
+		Facing: 896
 	Actor8: cabhut
 		Location: 40,6
 		Owner: Neutral
-		Health: 100
-		Facing: 96
+		Facing: 896
 	Actor9: cabhut
 		Location: 49,2
 		Owner: Neutral
-		Health: 100
-		Facing: 96
+		Facing: 896
 	Actor10: tree20
 		Location: 101,30
 		Owner: Neutral
@@ -284,67 +274,66 @@ Actors:
 	Actor74: mpspawn
 		Location: 92,-27
 		Owner: Neutral
-	Actor75: waypoint
-		Location: 87,3
-		Owner: Neutral
-	Actor76: lobrdg_r_nw
+	Actor75: lobrdg_r_nw
 		Location: 40,3
 		Owner: Neutral
-	Actor77: lobrdg_b
+	Actor76: lobrdg_b
 		Location: 41,3
 		Owner: Neutral
-	Actor78: lobrdg_b
+	Actor77: lobrdg_b
 		Location: 42,3
 		Owner: Neutral
 		Health: 25
-	Actor79: lobrdg_b_d
+	Actor78: lobrdg_b_d
 		Location: 43,3
 		Owner: Neutral
-	Actor80: lobrdg_b_d
+	Actor79: lobrdg_b_d
 		Location: 44,3
 		Owner: Neutral
-	Actor81: lobrdg_b_d
+	Actor80: lobrdg_b_d
 		Location: 45,3
 		Owner: Neutral
-	Actor82: lobrdg_b
+	Actor81: lobrdg_b
 		Location: 46,3
 		Owner: Neutral
 		Health: 25
-	Actor83: lobrdg_b
+	Actor82: lobrdg_b
 		Location: 47,3
 		Owner: Neutral
-	Actor84: lobrdg_b
+	Actor83: lobrdg_b
 		Location: 48,3
 		Owner: Neutral
-	Actor85: lobrdg_r_se
+	Actor84: lobrdg_r_se
 		Location: 49,3
 		Owner: Neutral
-	Actor86: lobrdg_r_nw
+	Actor85: lobrdg_r_nw
 		Location: 130,8
 		Owner: Neutral
-	Actor87: lobrdg_b
+	Actor86: lobrdg_b
 		Location: 131,8
 		Owner: Neutral
-	Actor88: lobrdg_b
+	Actor87: lobrdg_b
 		Location: 132,8
 		Owner: Neutral
 		Health: 25
-	Actor89: lobrdg_b_d
+	Actor88: lobrdg_b_d
 		Location: 133,8
 		Owner: Neutral
-	Actor90: lobrdg_b_d
+	Actor89: lobrdg_b_d
 		Location: 134,8
 		Owner: Neutral
-	Actor91: lobrdg_b_d
+	Actor90: lobrdg_b_d
 		Location: 135,8
 		Owner: Neutral
-	Actor92: lobrdg_b
+	Actor91: lobrdg_b
 		Location: 136,8
 		Owner: Neutral
 		Health: 25
-	Actor93: lobrdg_b
+	Actor92: lobrdg_b
 		Location: 137,8
 		Owner: Neutral
-	Actor94: lobrdg_r_se
+	Actor93: lobrdg_r_se
 		Location: 138,8
 		Owner: Neutral
+
+Rules:

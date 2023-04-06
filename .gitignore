@@ -2,7 +2,6 @@ user.config
 engine
 
 # Visual Studio
-.vs
 Release
 bin
 obj
@@ -15,30 +14,10 @@ obj
 *.CodeAnalysisLog.xml
 *.lastcodeanalysissucceeded
 _ReSharper.*/
+/.vs
 
-# binaries
-/*.exe
-/*.dll
-/*.dll.config
-/*.so
-/*.dylib
-/*.pdb
-/*.mdb
-*.mmdb.gz
-/mods/ra2/*.dll
-/mods/ra2/*.dll.config
-/mods/ra2/*.pdb
-/mods/ra2/*.mdb
-/mods/ra2/*.exe
-/mods/ra2/*.exe.config
-/mods/ra2/*.deps.json
-
-# TODO: Compiling creates a /mods/common folder with dlls and pdbs
-OpenRA.Mods.RA2/mods/*
-mods/common/*
-
-# StyleCop
-StyleCopViolations.xml
+# Visual Studio Code
+/.vscode/settings.json
 
 # backup files by various editors
 *~
@@ -53,12 +32,16 @@ StyleCopViolations.xml
 # Mac OS X
 .DS_Store
 
-# XCode
-temp.c
-temp.o
-temp.s
-*.resources
-
 # SublimeText
 *.sublime-project
 *.sublime-workspace
+
+# NUnit
+/TestResult.xml
+/lib/
+
+# Support directory
+/Support
+
+# IntelliJ files
+.idea

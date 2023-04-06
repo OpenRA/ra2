@@ -1,6 +1,6 @@
 #region Copyright & License Information
 /*
- * Copyright 2007-2020 The OpenRA Developers (see AUTHORS)
+ * Copyright (c) The OpenRA Developers and Contributors
  * This file is part of OpenRA, which is free software. It is made
  * available to you under the terms of the GNU General Public License
  * as published by the Free Software Foundation, either version 3 of
@@ -39,10 +39,10 @@ namespace OpenRA.Mods.RA2.Traits
 		{
 			var voxel = init.World.ModelCache.GetModelSequence(image, Sequence);
 			var body = init.Actor.TraitInfo<BodyOrientationInfo>();
-			var frame = init.Contains<BodyAnimationFrameInit>() ? init.Get<BodyAnimationFrameInit, uint>() : 0;
+			var frame = init.GetValue<BodyAnimationFrameInit, uint>(this, 0);
 
 			yield return new ModelAnimation(voxel, () => WVec.Zero,
-				() => new[] { body.QuantizeOrientation(orientation(), facings) },
+				() => body.QuantizeOrientation(orientation(), facings),
 				() => false, () => frame, ShowShadow);
 		}
 	}
@@ -52,7 +52,8 @@ namespace OpenRA.Mods.RA2.Traits
 		readonly WithVoxelHelicopterBodyInfo info;
 		readonly RenderVoxels rv;
 		readonly ModelAnimation modelAnimation;
-		uint tick, frame, frames;
+		readonly uint frames;
+		uint tick, frame;
 
 		public WithVoxelHelicopterBody(Actor self, WithVoxelHelicopterBodyInfo info)
 			: base(info)
@@ -65,7 +66,7 @@ namespace OpenRA.Mods.RA2.Traits
 			var voxel = self.World.ModelCache.GetModelSequence(rv.Image, info.Sequence);
 			frames = voxel.Frames;
 			modelAnimation = new ModelAnimation(voxel, () => WVec.Zero,
-				() => new[] { body.QuantizeOrientation(self, self.Orientation) },
+				() => body.QuantizeOrientation(self.Orientation),
 				() => IsTraitDisabled, () => frame, info.ShowShadow);
 
 			rv.Add(modelAnimation);

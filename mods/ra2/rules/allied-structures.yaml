@@ -9,8 +9,8 @@ gacnst:
 	Building:
 		Footprint: xxxx xxxx xxxx xxxx
 		Dimensions: 4,4
-	Selectable:
-		Bounds: 220, 155, 0, -20
+	IsometricSelectable:
+		Height: 60
 	Health:
 		HP: 1000
 	Armor:
@@ -29,7 +29,7 @@ gacnst:
 	Transforms:
 		IntoActor: amcv
 		Offset: 1,1
-		Facing: 96
+		Facing: 384
 		DeployCursor: undeploy
 		RequiresCondition: factundeploy && !build-incomplete
 	TransformsIntoMobile:
@@ -89,8 +89,8 @@ gapowr:
 		BuildPaletteOrder: 10
 		Prerequisites: ~structures.allies
 		Description: Provides power for other structures.
-	Selectable:
-		Bounds: 96, 98, -2, -24
+	IsometricSelectable:
+		Height: 60
 	Valued:
 		Cost: 800
 	Tooltip:
@@ -114,6 +114,8 @@ gapowr:
 		RequiresCondition: !power-outage
 	InfiltrateForPowerOutage:
 		Types: SpyInfiltrate
+		InfiltrationNotification: BuildingInfiltratedPowerSabotaged
+		InfiltratedNotification: PowerSabotaged
 	AffectedByPowerOutage:
 		Condition: power-outage
 	ScalePowerWithHealth:
@@ -134,8 +136,8 @@ gapile:
 		BuildPaletteOrder: 20
 		Prerequisites: power, ~structures.allies
 		Description: Trains infantry.
-	Selectable:
-		Bounds: 134, 132, 0, -28
+	IsometricSelectable:
+		Height: 60
 	Valued:
 		Cost: 500
 	Tooltip:
@@ -156,9 +158,11 @@ gapile:
 	RevealsShroud:
 		Range: 5c0
 	RallyPoint:
-		Offset: 2,3
+		Path: 2,3
 		Palette: mouse
 		IsPlayerPalette: false
+	CommandBarBlacklist:
+		DisableStop: false
 	Exit@0_n1:
 		SpawnOffset: 170,-810,0
 		ExitCell: 0, -1
@@ -179,8 +183,7 @@ gapile:
 	WithTextDecoration@primary:
 		RequiresSelection: true
 		Text: PRIMARY
-		ReferencePoint: Top
-		ZOffset: 256
+		Position: Top
 		RequiresCondition: primary
 	ProductionBar:
 		ProductionType: Infantry
@@ -192,6 +195,8 @@ gapile:
 	InfiltrateForSupportPower:
 		Types: SpyInfiltrate
 		Proxy: barracks.infiltrated
+		InfiltrationNotification: BuildingInfiltratedTechnologyStolen
+		InfiltratedNotification: TechnologyStolen
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
 	SpawnSurvivors:
@@ -206,8 +211,8 @@ garefn:
 		BuildPaletteOrder: 30
 		Prerequisites: power, ~structures.allies
 		Description: Processes ore into credits.
-	Selectable:
-		Bounds: 176, 150, 0, -20
+	IsometricSelectable:
+		Height: 60
 	Valued:
 		Cost: 2000
 	Tooltip:
@@ -230,19 +235,20 @@ garefn:
 		TickLifetime: 30
 		TickVelocity: 1
 		TickRate: 10
-		DockAngle: 160
+		DockAngle: 640
 		UseStorage: false
 	CustomSellValue:
 		Value: 300
 	InfiltrateForCash:
 		Types: SpyInfiltrate
 		Percentage: 50
-		Notification: CreditsStolen
+		InfiltrationNotification: BuildingInfiltratedCashStolen
+		InfiltratedNotification: CashStolen
 		Minimum: 500
 	FreeActor:
 		Actor: cmin
 		SpawnOffset: 3, 1
-		Facing: 160
+		Facing: 640
 	WithDockedOverlay:
 	WithIdleOverlay@bib:
 		Sequence: idle-bib
@@ -284,8 +290,8 @@ gaairc:
 	Building:
 		Footprint: xxx xxx
 		Dimensions: 3,2
-	Selectable:
-		Bounds: 142, 150, -3, -42
+	IsometricSelectable:
+		Height: 105
 	Health:
 		HP: 600
 	Armor:
@@ -316,16 +322,16 @@ gaairc:
 	Reservable:
 	Exit@1:
 		SpawnOffset: -370,370,0
-		Facing: 224
+		Facing: 896
 	Exit@2:
 		SpawnOffset: 370,-370,0
-		Facing: 224
+		Facing: 896
 	Exit@3:
 		SpawnOffset: 1000,370,0
-		Facing: 224
+		Facing: 896
 	Exit@4:
 		SpawnOffset: 350,1000,0
-		Facing: 224
+		Facing: 896
 	Production:
 		Produces: Aircraft
 	ProductionBar:
@@ -336,11 +342,12 @@ gaairc:
 	WithTextDecoration@primary:
 		RequiresSelection: true
 		Text: PRIMARY
-		ReferencePoint: Top
-		ZOffset: 256
+		Position: Top
 		RequiresCondition: primary
 	InfiltrateForExploration:
 		Types: SpyInfiltrate
+		InfiltrationNotification: BuildingInfiltratedRadarSabotaged
+		InfiltratedNotification: RadarSabotaged
 	SpawnSurvivors:
 		DeathTypes: ExplosionDeath, BulletDeath
 		Actors: e1, e1
@@ -356,12 +363,14 @@ amradr:
 	RenderSprites:
 		Image: gaairc
 	SupportPowerChargeBar:
+	InfiltrateForSupportPowerReset:
+		Types: SpyInfiltrate
 	ParatroopersPower@paratroopers:
 		OrderName: AmericanParatroopers
 		Icon: airborne
 		ChargeInterval: 9000
-		Description: American Paratroopers
-		LongDesc: A Cargo Plane drops eight GIs\nanywhere on the map.
+		Name: American Paratroopers
+		Description: A Cargo Plane drops eight GIs\nanywhere on the map.
 		DropItems: e1,e1,e1,e1,e1,e1,e1,e1
 		QuantizedFacings: 8
 		UnitType: pdplane
@@ -376,8 +385,8 @@ gaweap:
 		BuildPaletteOrder: 40
 		Prerequisites: garefn, gapile, ~structures.allies
 		Description: Produces vehicles.
-	Selectable:
-		Bounds: 212, 158, -7, -28
+	IsometricSelectable:
+		Height: 60
 	Valued:
 		Cost: 2000
 	Tooltip:
@@ -396,9 +405,11 @@ gaweap:
 	RevealsShroud:
 		Range: 4c0
 	RallyPoint:
-		Offset: 5,1
+		Path: 5,1
 		Palette: mouse
 		IsPlayerPalette: false
+	CommandBarBlacklist:
+		DisableStop: false
 	Exit@1:
 		SpawnOffset: -384,-384,0
 		ExitCell: 4,1
@@ -410,8 +421,7 @@ gaweap:
 	WithTextDecoration@primary:
 		RequiresSelection: true
 		Text: PRIMARY
-		ReferencePoint: Top
-		ZOffset: 256
+		Position: Top
 		RequiresCondition: primary
 	ProductionBar:
 		ProductionType: Vehicle
@@ -451,6 +461,8 @@ gaweap:
 	InfiltrateForSupportPower:
 		Types: SpyInfiltrate
 		Proxy: warfactory.infiltrated
+		InfiltrationNotification: BuildingInfiltratedTechnologyStolen
+		InfiltratedNotification: ArmorTechnologyStolen
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
 	SpawnSurvivors:
@@ -476,6 +488,8 @@ gayard:
 		Footprint: xxxx xxxx xxxx xxxx
 		Dimensions: 4,4
 		TerrainTypes: Water
+	IsometricSelectable:
+		Height: 120
 	-GivesBuildableArea:
 	Health:
 		HP: 1500
@@ -530,7 +544,7 @@ gayard:
 		ExitCell: 4,-2
 	Exit@4_5:
 		SpawnOffset: 0,-113,0
-		Facing: 160
+		Facing: 640
 		ExitCell: 4,5
 	# X 5 column
 	Exit@5_n2:
@@ -547,7 +561,7 @@ gayard:
 		ExitCell: 5,3
 	Exit@5_4:
 		SpawnOffset: 0,-113,0
-		Facing: 96
+		Facing: 384
 		ExitCell: 5,4
 	Exit@5_5:
 		ExitCell: 5,5
@@ -559,13 +573,14 @@ gayard:
 	WithTextDecoration@primary:
 		RequiresSelection: true
 		Text: PRIMARY
-		ReferencePoint: Top
-		ZOffset: 256
+		Position: Top
 		RequiresCondition: primary
 	RallyPoint:
-		Offset: 5,1
+		Path: 5,1
 		Palette: mouse
 		IsPlayerPalette: false
+	CommandBarBlacklist:
+		DisableStop: false
 	RepairsUnits:
 		StartRepairingNotification: Repairing
 		FinishRepairingNotification: UnitRepaired
@@ -595,8 +610,8 @@ gadept:
 		BuildPaletteOrder: 70
 		Prerequisites: gaweap, ~structures.allies
 		Description: Repairs vehicles and removes Terror Drones (for a price).
-	Selectable:
-		Bounds: 144, 88, -12, -16
+	IsometricSelectable:
+		Height: 45
 	Valued:
 		Cost: 800
 	Tooltip:
@@ -615,6 +630,8 @@ gadept:
 	RallyPoint:
 		Palette: mouse
 		IsPlayerPalette: false
+	CommandBarBlacklist:
+		DisableStop: false
 	RepairsUnits:
 		Interval: 50
 		StartRepairingNotification: Repairing
@@ -644,8 +661,8 @@ gatech:
 		BuildPaletteOrder: 80
 		Prerequisites: radar, gaweap, ~structures.allies
 		Description: Allows deployment of advanced units.
-	Selectable:
-		Bounds: 122, 216, 0, -81
+	IsometricSelectable:
+		Height: 180
 	Valued:
 		Cost: 2000
 	Tooltip:
@@ -668,6 +685,8 @@ gatech:
 	InfiltrateForSupportPower:
 		Types: SpyInfiltrate
 		Proxy: allies.tech.infiltrated
+		InfiltrationNotification: BuildingInfiltratedTechnologyStolen
+		InfiltratedNotification: TechnologyStolen
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
 	SpawnSurvivors:
@@ -705,19 +724,18 @@ gapill:
 		Type: Steel
 	RevealsShroud:
 		Range: 7c0
-	Selectable:
-		Bounds: 50, 30, 0, -4
+	IsometricSelectable:
+		Height: 15
 	Armament:
 		Weapon: vulcan2
 		LocalOffset: 416,0,416
 		MuzzleSequence: muzzle
-		MuzzleSplitFacings: 8
 	AttackTurreted:
 		Voice: Attack
 		RequiresCondition: !build-incomplete
 	WithMuzzleOverlay:
 	Turreted:
-		TurnSpeed: 255
+		TurnSpeed: 1023
 	BodyOrientation:
 		QuantizedFacings: 8
 	WithRangeCircle:
@@ -748,12 +766,11 @@ nasam:
 		Type: Steel
 	RevealsShroud:
 		Range: 7c0
-	Selectable:
-		Bounds: 46, 62, 0, -20
+	IsometricSelectable:
+		Height: 45
 	Turreted:
-		TurnSpeed: 10
-		InitialFacing: 224
-		PreviewFacing: 224
+		TurnSpeed: 40
+		InitialFacing: 896
 		Offset: 550,0,0
 	AttackTurreted:
 		Voice: Attack
@@ -802,12 +819,11 @@ gtgcan:
 		Type: Steel
 	RevealsShroud:
 		Range: 10c0
-	Selectable:
-		Bounds: 46, 62, 0, -20
+	IsometricSelectable:
+		Height: 45
 	Turreted:
-		TurnSpeed: 3
-		InitialFacing: 224
-		PreviewFacing: 224
+		TurnSpeed: 12
+		InitialFacing: 896
 		Offset: 400,0,0
 	AttackTurreted:
 		Voice: Attack
@@ -847,8 +863,8 @@ gaorep:
 		Prerequisites: garefn, gatech, ~structures.allies
 		BuildLimit: 1
 		Description: Refines all forms of income by 25%.
-	Selectable:
-		Bounds: 134, 102, -10, -21
+	IsometricSelectable:
+		Height: 60
 	Valued:
 		Cost: 2500
 	Tooltip:
@@ -885,8 +901,8 @@ gaspysat:
 		BuildPaletteOrder: 70
 		Prerequisites: gatech, ~structures.allies
 		Description: Reveals the entire battlefield.
-	Selectable:
-		Bounds: 96, 98, -4, -30
+	IsometricSelectable:
+		Height: 75
 	Valued:
 		Cost: 1500
 	Tooltip:
@@ -908,6 +924,9 @@ gaspysat:
 		Amount: -100
 	ProvidesRadar:
 		RequiresCondition: !lowpower
+	RevealsMap:
+		RequiresCondition: !lowpower
+		RevealGeneratedShroud: false
 	GrantConditionOnPowerState@LOWPOWER:
 		Condition: lowpower
 		ValidPowerStates: Low, Critical
@@ -926,8 +945,8 @@ gagap:
 		BuildPaletteOrder: 60
 		Prerequisites: gatech, ~structures.allies
 		Description: Obscures the enemy's view with shroud.\nRequires power to operate.
-	Selectable:
-		Bounds: 50, 114, -1, -45
+	IsometricSelectable:
+		Height: 90
 	GrantConditionOnPowerState@LOWPOWER:
 		Condition: lowpower
 		ValidPowerStates: Low, Critical
@@ -956,8 +975,8 @@ gaweat:
 		Prerequisites: gatech, ~structures.allies, ~techlevel.unrestricted
 		BuildLimit: 1
 		Description: Play God with deadly weather!
-	Selectable:
-		Bounds: 116, 106, -2, -26
+	IsometricSelectable:
+		Height: 75
 	Valued:
 		Cost: 5000
 	Tooltip:
@@ -976,19 +995,24 @@ gaweat:
 	GrantConditionOnPowerState@LOWPOWER:
 		Condition: lowpower
 		ValidPowerStates: Low, Critical
+	SupportPowerChargeBar:
+	InfiltrateForSupportPowerReset:
+		Types: SpyInfiltrate
+	Targetable:
+		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
 	WeatherControlSupportPower@LightningStorm:
 		OrderName: WeatherControlDevice
 		ChargeInterval: 15000
 		Icon: lightningstorm
-		Description: Weather Storm
-		LongDesc: Control the weather to destroy enemy forces.
+		Name: Weather Storm
+		Description: Control the weather to destroy enemy forces.
 		InsufficientPowerSpeechNotification: WeathercontrolDeviceOffline
 		EndChargeSpeechNotification: LightningStormReady
 		SelectTargetSpeechNotification: SelectTarget
 		LaunchSpeechNotification: LightningStormCreated
 		LaunchSound: sweaintr.wav
 		IncomingSpeechNotification: WeathercontrolDeviceDetected
-		DisplayTimerStances: Ally, Neutral, Enemy
+		DisplayTimerRelationships: Ally, Neutral, Enemy
 		DisplayBeacon: true
 		DisplayRadarPing: true
 		Weapon: LightningStorm
@@ -1008,8 +1032,8 @@ gacsph:
 		Prerequisites: gatech, ~structures.allies, ~techlevel.unrestricted
 		Description: Allows teleporting units in a 3x3 array.
 		BuildLimit: 1
-	Selectable:
-		Bounds: 176, 110, -5, -14
+	IsometricSelectable:
+		Height: 45
 	Valued:
 		Cost: 2500
 	Tooltip:
@@ -1032,24 +1056,30 @@ gacsph:
 		Condition: lowpower
 		ValidPowerStates: Low, Critical
 	SupportPowerChargeBar:
+	InfiltrateForSupportPowerReset:
+		Types: SpyInfiltrate
+	Targetable:
+		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
 	ChronoshiftPower@chronoshift:
 		OrderName: Chronoshift
 		Icon: chrono
 		ChargeInterval: 7500
-		Description: Chronosphere
-		LongDesc: Teleports a group of units across\nthe map.
+		Name: Chronosphere
+		Description: Teleports a group of units across\nthe map.
 		# Those sounds don't work: OpenRA/OpenRA#10540
 		# They also want to be played successive
 		#SelectTargetSound: schrlo1.wav, schrlo2a.wav schrlo2b.wav, schrlo2c.wav, schrlo3.wav
 		EndChargeSound: schropen.wav
 		EndChargeSpeechNotification: ChronosphereReady
-		DisplayTimerStances: Ally, Neutral, Enemy
+		DisplayTimerRelationships: Ally, Neutral, Enemy
 		DisplayRadarPing: True
 		KillCargo: False
 		SelectionCursor: chronosphere
 		TargetCursor: chronosphere
 		TargetOverlayPalette: effect75alpha
 		PauseOnCondition: lowpower
+		Dimensions: 3, 3
+		Footprint: xxx xxx xxx
 	SpawnSurvivors:
 		DeathTypes: ExplosionDeath, BulletDeath
 		Actors: e1, e1, e1, e1, e1
@@ -1069,8 +1099,8 @@ atesla:
 	Building:
 		Footprint: x
 		Dimensions: 1, 1
-	Selectable:
-		Bounds: 44, 102, 0, -40
+	IsometricSelectable:
+		Height: 90
 	Health:
 		HP: 600
 	Armor:

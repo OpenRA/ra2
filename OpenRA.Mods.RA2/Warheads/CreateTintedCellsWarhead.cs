@@ -1,6 +1,6 @@
-﻿#region Copyright & License Information
+#region Copyright & License Information
 /*
- * Copyright 2007-2020 The OpenRA Developers (see AUTHORS)
+ * Copyright (c) The OpenRA Developers and Contributors
  * This file is part of OpenRA, which is free software. It is made
  * available to you under the terms of the GNU General Public License
  * as published by the Free Software Foundation, either version 3 of
@@ -10,12 +10,11 @@
 #endregion
 
 using System;
-using System.Collections.Generic;
 using System.Linq;
 using OpenRA.GameRules;
-using OpenRA.Mods.RA2.Traits;
 using OpenRA.Mods.Common.Traits;
 using OpenRA.Mods.Common.Warheads;
+using OpenRA.Mods.RA2.Traits;
 using OpenRA.Traits;
 
 namespace OpenRA.Mods.RA2.Warheads
@@ -58,7 +57,7 @@ namespace OpenRA.Mods.RA2.Warheads
 			}
 		}
 
-		public override void DoImpact(WPos pos, Actor firedBy, IEnumerable<int> damageModifiers)
+		protected override void DoImpact(WPos pos, Actor firedBy, WarheadArgs args)
 		{
 			var world = firedBy.World;
 
@@ -82,7 +81,7 @@ namespace OpenRA.Mods.RA2.Warheads
 
 				foreach (var cell in affectedCells)
 				{
-					int mul = GetIntensityFalloff((pos - world.Map.CenterOfCell(cell)).Length);
+					var mul = GetIntensityFalloff((pos - world.Map.CenterOfCell(cell)).Length);
 					IncreaseTintedCellLevel(cell, mul, Falloff[i], raLayer);
 				}
 			}

@@ -1,6 +1,6 @@
-﻿#region Copyright & License Information
+#region Copyright & License Information
 /*
- * Copyright 2007-2020 The OpenRA Developers (see AUTHORS)
+ * Copyright (c) The OpenRA Developers and Contributors
  * This file is part of OpenRA, which is free software. It is made
  * available to you under the terms of the GNU General Public License
  * as published by the Free Software Foundation, either version 3 of
@@ -123,20 +123,30 @@ namespace OpenRA.Mods.RA2.Traits.SupportPowers
 			{
 				hitDelay = info.HitDelay;
 
-				info.WeaponInfo.Impact(Target.FromPos(targetPos), self, Enumerable.Empty<int>());
+				var warheadArgs = new WarheadArgs()
+				{
+					SourceActor = self
+				};
+
+				info.WeaponInfo.Impact(Target.FromPos(targetPos), warheadArgs);
 			}
 
 			if (--scatterDelay < 0)
 			{
 				scatterDelay = info.ScatterDelay;
 
-				for (int i = 0; i < info.ScatterCount; i++)
+				for (var i = 0; i < info.ScatterCount; i++)
 				{
 					var offset = RandomOffset(self.World);
 					var newPos = targetPos + offset;
 					var scatterTarget = Target.FromPos(newPos);
 
-					info.WeaponInfo.Impact(scatterTarget, self, Enumerable.Empty<int>());
+					var warheadArgs = new WarheadArgs()
+					{
+						SourceActor = self
+					};
+
+					info.WeaponInfo.Impact(scatterTarget, warheadArgs);
 				}
 			}
 

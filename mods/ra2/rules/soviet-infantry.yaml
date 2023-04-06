@@ -10,6 +10,8 @@ e2:
 		Description: Cheap rifle infantry.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
 	Valued:
 		Cost: 100
+	UpdatesPlayerStatistics:
+		AddToArmyValue: true
 	DeliversCash:
 		Payload: 50
 		PlayerExperience: 5
@@ -17,15 +19,16 @@ e2:
 	Tooltip:
 		Name: Conscript
 	Selectable:
-		Bounds: 20, 30, 0, -11
+		Bounds: 482, 1448, 0, -530
 	Health:
 		HP: 125
 	Passenger:
-		PipType: Green
+		CustomPipType: green
 	RevealsShroud:
 		Range: 5c0
 	AttackFrontal:
 		Voice: Attack
+		FacingTolerance: 0
 	Armament@primary:
 		Weapon: M1Carbine
 		RequiresCondition: !rank-elite
@@ -53,6 +56,8 @@ flakt:
 		Description: Anti-Air/Anti-Infantry unit.\n  Strong vs Aircraft, Infantry\n  Weak vs Vehicles
 	Valued:
 		Cost: 300
+	UpdatesPlayerStatistics:
+		AddToArmyValue: true
 	DeliversCash:
 		Payload: 150
 		PlayerExperience: 5
@@ -60,15 +65,16 @@ flakt:
 	Tooltip:
 		Name: Flak Trooper
 	Selectable:
-		Bounds: 20, 30, 0, -11
+		Bounds: 482, 1448, 0, -530
 	Health:
 		HP: 100
 	Passenger:
-		PipType: Green
+		CustomPipType: green
 	RevealsShroud:
 		Range: 5c0
 	AttackFrontal:
 		Voice: Attack
+		FacingTolerance: 0
 	Armament@primary:
 		Weapon: FlakGuyGun
 		LocalOffset: 256,0,1024
@@ -112,6 +118,8 @@ shk:
 		Description: Special armored unit using electricity.\n  Strong vs Infantry, Light armor\n  Weak vs Tanks, Aircraft\nSpecial ability: Charge tesla coils
 	Valued:
 		Cost: 500
+	UpdatesPlayerStatistics:
+		AddToArmyValue: true
 	DeliversCash:
 		Payload: 250
 		PlayerExperience: 25
@@ -119,7 +127,7 @@ shk:
 	Tooltip:
 		Name: Tesla Trooper
 	Selectable:
-		Bounds: 20, 30, 0, -11
+		Bounds: 482, 1448, 0, -530
 	Health:
 		HP: 130
 	RevealsShroud:
@@ -128,9 +136,10 @@ shk:
 		Type: Plate
 	-Crushable:
 	Passenger:
-		PipType: Red
+		CustomPipType: red
 	AttackFrontal:
 		Voice: Attack
+		FacingTolerance: 0
 	Armament@primary:
 		Weapon: ElectricBolt
 		RequiresCondition: !rank-elite
@@ -142,12 +151,11 @@ shk:
 	Armament@charge:
 		Weapon: AssaultBolt
 		LocalOffset: 320,128,1024
-		TargetStances: Ally
-		ForceTargetStances: None
+		TargetRelationships: Ally
+		ForceTargetRelationships: None
 		Cursor: ability
 		OutsideRangeCursor: ability
 	AmmoPool:
-		PipCount: 0
 	ReloadAmmoPool:
 		Delay: 70
 	WithInfantryBody:
@@ -173,6 +181,8 @@ terror:
 		Description: Carries C4 charges taped to his body and kamikazes enemies\nblowing them up quickly and efficiently.\n  Strong vs Ground units\n  Weak vs Aircraft
 	Valued:
 		Cost: 200
+	UpdatesPlayerStatistics:
+		AddToArmyValue: true
 	DeliversCash:
 		Payload: 100
 		PlayerExperience: 10
@@ -180,7 +190,7 @@ terror:
 	Tooltip:
 		Name: Terrorist
 	Selectable:
-		Bounds: 20, 30, 0, -11
+		Bounds: 482, 1448, 0, -530
 	Health:
 		HP: 75
 	Mobile:
@@ -190,13 +200,13 @@ terror:
 	Armor:
 		Type: Flak
 	Passenger:
-		PipType: Red
+		CustomPipType: red
 	Explodes:
 		Weapon: TerrorBomb
 		EmptyWeapon: TerrorBomb
 	AttackFrontal:
 		Voice: Attack
-		FacingTolerance: 128
+		FacingTolerance: 512
 	Armament@PRIMARY:
 		Weapon: DemoTruckTargeting
 		PauseOnCondition: chronodisable
@@ -227,6 +237,8 @@ deso:
 		Description: Carries a radiation-emitting weapon.\nCan deploy for area-of-effect damage.\n  Strong vs Infantry, Light armor\n  Weak vs Tanks, Aircraft
 	Valued:
 		Cost: 600
+	UpdatesPlayerStatistics:
+		AddToArmyValue: true
 	DeliversCash:
 		Payload: 300
 		PlayerExperience: 10
@@ -234,7 +246,7 @@ deso:
 	Tooltip:
 		Name: Desolator
 	Selectable:
-		Bounds: 20, 30, 0, -11
+		Bounds: 482, 1448, 0, -530
 	Health:
 		HP: 150
 	RevealsShroud:
@@ -246,7 +258,7 @@ deso:
 	-DamagedByTintedCells:
 	-Crushable:
 	Passenger:
-		PipType: Red
+		CustomPipType: red
 	Armament@primary:
 		Weapon: RadBeamWeapon
 		RequiresCondition: !rank-elite
@@ -257,6 +269,7 @@ deso:
 		LocalOffset: 320,128,1024
 	AttackFrontal:
 		Voice: Attack
+		FacingTolerance: 0
 	WithInfantryBody:
 		DefaultAttackSequence: shoot
 		RequiresCondition: undeployed
@@ -268,7 +281,7 @@ deso:
 		UndeployedCondition: undeployed
 		CanDeployOnRamps: true
 		UndeployOnMove: true
-		Facing: 92
+		Facing: 368
 		Voice: Deploy
 	WithSpriteBody@DEPLOYED:
 		Sequence: deployed
@@ -295,6 +308,8 @@ ivan:
 		Description: Specialist for explosives. Can plant a Bomb on anything, even Cows.
 	Valued:
 		Cost: 600
+	UpdatesPlayerStatistics:
+		AddToArmyValue: true
 	DeliversCash:
 		Payload: 300
 		PlayerExperience: 30
@@ -302,7 +317,7 @@ ivan:
 	Tooltip:
 		Name: Crazy Ivan
 	Selectable:
-		Bounds: 20, 30, 0, -11
+		Bounds: 482, 1448, 0, -530
 	Voiced:
 		VoiceSet: CrazyIvanVoice
 	Health:
@@ -312,7 +327,7 @@ ivan:
 	Armor:
 		Type: None
 	Passenger:
-		PipType: Red
+		CustomPipType: red
 	Explodes:
 		Weapon: IvanDeath
 		EmptyWeapon: IvanDeath
@@ -326,6 +341,7 @@ ivan:
 		Voice: Attack
 		Cursor: bomb
 		OutsideRangeCursor: bomb
+		FacingTolerance: 0
 	TakeCover:
 	WithInfantryBody:
 		DefaultAttackSequence: shoot
@@ -343,6 +359,8 @@ civan:
 		Name: Chrono Ivan
 	Valued:
 		Cost: 1000
+	UpdatesPlayerStatistics:
+		AddToArmyValue: true
 	-Crushable:
 	DeliversCash:
 		Payload: 500
@@ -369,6 +387,8 @@ yuri:
 		Description: Psychic infantry. Can mind control enemy units.\nCan be deployed to unleash a powerful psychic wave.\n  Strong vs Infantry, Vehicles\n  Weak vs Terror Drones, Aircraft, Buildings
 	Valued:
 		Cost: 1200
+	UpdatesPlayerStatistics:
+		AddToArmyValue: true
 	DeliversCash:
 		Payload: 600
 		PlayerExperience: 60
@@ -376,7 +396,7 @@ yuri:
 	Tooltip:
 		Name: Yuri
 	Selectable:
-		Bounds: 20, 30, 0, -11
+		Bounds: 482, 1448, 0, -530
 	Voiced:
 		VoiceSet: YuriVoice
 	Health:
@@ -388,7 +408,7 @@ yuri:
 	Armor:
 		Type: None
 	Passenger:
-		PipType: Red
+		CustomPipType: red
 	PeriodicExplosion:
 		Weapon: PsiWave
 		LocalOffset: 0,0,128
@@ -396,7 +416,7 @@ yuri:
 	GrantTimedConditionOnDeploy:
 		DeployedTicks: 50
 		CooldownTicks: 0
-		Facing: 96
+		Facing: 384
 		DeployedCondition: deployed
 		DeployingCondition: deploying
 		DeployAnimation: deploy
@@ -415,6 +435,7 @@ yuri:
 		Sequence: stand
 	AttackFrontal:
 		Voice: Attack
+		FacingTolerance: 0
 	Armament:
 		Weapon: MindControl
 		MuzzleSequence: muzzle
@@ -424,6 +445,9 @@ yuri:
 	MindController:
 		ControllingCondition: controlling
 		Sounds: iyurat1a.wav
+	WithMindControllerPipsDecoration:
+		Position: BottomLeft
+		Palette: pips
 	WithMindControlArc:
 		UsePlayerColor: true
 		Offset: 0,0,960
@@ -443,6 +467,8 @@ yuripr:
 		Name: Yuri Prime
 	Valued:
 		Cost: 2000
+	UpdatesPlayerStatistics:
+		AddToArmyValue: true
 	DeliversCash:
 		Payload: 1000
 		PlayerExperience: 100

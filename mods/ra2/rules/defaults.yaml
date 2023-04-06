@@ -6,7 +6,6 @@
 	DrawLineToTarget:
 	GivesExperience:
 	ScriptTriggers:
-	ConditionManager:
 	Huntable:
 
 ^SpriteActor:
@@ -166,6 +165,11 @@
 			TopLeft: -3072, -2048
 			BottomRight: 3072, 2048
 
+^PlayerHandicaps:
+	HandicapFirepowerMultiplier:
+	HandicapDamageMultiplier:
+	HandicapProductionTimeMultiplier:
+
 ^GainsExperience:
 	GainsExperience:
 		Conditions:
@@ -197,10 +201,10 @@
 	ReloadDelayMultiplier@ELITE:
 		RequiresCondition: rank-elite
 		Modifier: 75
-	SelfHealing@ELITE:
+	ChangesHealth@ELITE:
 		Step: 2
 		Delay: 100
-		HealIfBelow: 100
+		StartIfBelow: 100
 		DamageCooldown: 125
 		RequiresCondition: rank-veteran && !rank-elite
 	InaccuracyMultiplier@ELITE:
@@ -210,16 +214,14 @@
 		Image: rank
 		Sequence: veteran
 		Palette: pips
-		ReferencePoint: Bottom, Right
+		Position: BottomRight
 		RequiresCondition: rank-veteran && !rank-elite
-		ZOffset: 256
 	WithDecoration@ELITE:
 		Image: rank
 		Sequence: elite
 		Palette: pips
-		ReferencePoint: Bottom, Right
+		Position: BottomRight
 		RequiresCondition: rank-elite
-		ZOffset: 256
 
 ^CrateStatModifiers:
 	FirepowerMultiplier@CRATES:
@@ -327,14 +329,17 @@
 	Inherits@2: ^SpriteActor
 	Inherits@3: ^IronCurtainable
 	Inherits@shape: ^1x1Shape
+	Inherits@handicaps: ^PlayerHandicaps
 	-DrawLineToTarget:
 	OwnerLostAction:
 		Action: Kill
 		DeathTypes: BulletDeath
-	SelectionDecorations:
-		Palette: pips
-	Selectable:
+	IsometricSelectionDecorations:
+	IsometricSelectable:
 		Priority: 3
+		Height: 30
+	WithTextControlGroupDecoration:
+		Margin: 1, 1
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure
 	Building:
@@ -378,7 +383,7 @@
 	WithBuildingRepairDecoration:
 		Image: allyrepair
 		Sequence: repair
-		ReferencePoint: Center
+		Position: Center
 		Palette: mouse
 	CaptureManager:
 	FootprintPlaceBuildingPreview:
@@ -464,8 +469,8 @@
 	Inherits: ^CivBuilding
 	OwnerLostAction:
 		Action: ChangeOwner
-	Selectable:
-		Bounds: 50, 228, 0, 0
+	IsometricSelectable:
+		Height: 120
 	Building:
 		Footprint: x
 		Dimensions: 1, 1
@@ -503,7 +508,6 @@
 	FrozenUnderFog:
 	-CombatDebugOverlay:
 	-DrawLineToTarget:
-	-ConditionManager:
 	Building:
 		Dimensions: 1,1
 		Footprint: x
@@ -525,6 +529,7 @@
 		SellSounds: uselbuil.wav
 	Valued:
 		Cost: 100
+	-UpdatesPlayerStatistics:
 	Health:
 		HP: 300
 	Armor:
@@ -564,6 +569,7 @@
 	Inherits@4: ^ChronoDisable
 	Inherits@5: ^CrateStatModifiers
 	Inherits@6: ^DamagedByRadiation
+	Inherits@handicaps: ^PlayerHandicaps
 	Health:
 	OwnerLostAction:
 		Action: Kill
@@ -581,7 +587,6 @@
 		Locomotor: foot
 	WithTextControlGroupDecoration:
 	SelectionDecorations:
-		Palette: pips
 	Selectable:
 	Targetable:
 		TargetTypes: Ground, Infantry, DetonateAttack, Disguise
@@ -738,7 +743,7 @@
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Inherits@MC: ^MindControllable
 	Selectable:
-		Bounds: 20, 30, 0, -11
+		Bounds: 482, 1448, 0, -530
 	Valued:
 		Cost: 10
 	DeliversCash:
@@ -759,9 +764,11 @@
 		Range: 2c0
 	AttackFrontal:
 		Voice: Attack
+		FacingTolerance: 0
 	ProximityCaptor:
 		Types: CivilianInfantry
 	ScaredyCat:
+		PanicSequencePrefix:
 	-MustBeDestroyed:
 	-TakeCover:
 	Voiced:
@@ -790,9 +797,10 @@
 	Mobile:
 		Speed: 40
 	Selectable:
-		Bounds: 45, 25, 0, -8
+		Bounds: 1086, 1206, 0, -386
 	AttackFrontal:
 		Voice: Attack
+		FacingTolerance: 0
 	DeathSounds@burned:
 		Voice: Die
 	DeathSounds@zapped:
@@ -821,17 +829,18 @@
 	Inherits@4: ^ChronoDisable
 	Inherits@5: ^CrateStatModifiers
 	Inherits@6: ^ParachutableVehicle
+	Inherits@handicaps: ^PlayerHandicaps
 	OwnerLostAction:
 		Action: Kill
 		DeathTypes: BulletDeath
 	Mobile:
 		Voice: Move
-		TurnSpeed: 5
+		TurnSpeed: 20
 		Locomotor: wheeled
+		TerrainOrientationAdjustmentMargin: 256
 	SelectionDecorations:
-		Palette: pips
 	Selectable:
-		Bounds: 32,32
+		Bounds: 772, 1544
 	Targetable:
 		TargetTypes: Ground, Vehicle, DetonateAttack
 	Targetable@REPAIR:
@@ -900,7 +909,7 @@
 	RevealsShroud:
 		Range: 5c0
 	Selectable:
-		Bounds: 64, 52, 0, -6
+		Bounds: 1544, 2509, 0, -289
 	WithVoxelBody:
 	Voiced:
 		VoiceSet: CarVoice
@@ -916,7 +925,6 @@
 		TargetTypes: Air
 		RequiresCondition: airborne
 	SelectionDecorations:
-		Palette: pips
 	Selectable:
 	Aircraft:
 		Voice: Move
@@ -959,14 +967,8 @@
 ^Aircraft:
 	Inherits@1: ^NeutralAircraft
 	Inherits@2: ^GainsExperience
+	Inherits@handicaps: ^PlayerHandicaps
 	WithTextControlGroupDecoration:
-	ChronoshiftableWithSpriteEffect:
-		Image: chrono
-		WarpInSequence: warpin
-		WarpOutSequence: warpout
-		ChronoshiftSound: schrmov.wav
-		ReturnToOrigin: false
-		RequiresCondition: !airborne
 
 ^Plane:
 	Inherits: ^Aircraft
@@ -974,6 +976,7 @@
 		CruiseAltitude: 5600
 		CruisingCondition: cruising
 		AltitudeVelocity: 120
+		InitialFacing: 896
 		TakeOffOnCreation: false
 		IdleBehavior: ReturnToBase
 	Hovers@CRUISING:
@@ -1022,8 +1025,8 @@
 	Inherits: ^Husk
 	FallsToEarth:
 		Explosion: PlaneExplode
-		Spins: false
 		Moves: true
+		MaximumSpinSpeed: 0
 
 ^HelicopterHusk:
 	Inherits: ^Husk
@@ -1038,13 +1041,14 @@
 	Inherits@3: ^IronCurtainable
 	Inherits@4: ^ChronoDisable
 	Inherits@5: ^CrateStatModifiers
+	Inherits@handicaps: ^PlayerHandicaps
 	OwnerLostAction:
 		Action: Kill
 		DeathTypes: BulletDeath
 	Mobile:
 		Voice: Move
 		Locomotor: naval
-		TurnSpeed: 5
+		TurnSpeed: 20
 	LeavesTrails:
 		Image: wake
 		Palette: effect50alpha
@@ -1052,9 +1056,8 @@
 		StationaryInterval: 18
 		MovingInterval: 6
 	SelectionDecorations:
-		Palette: pips
 	Selectable:
-		Bounds: 32,32
+		Bounds: 772, 1544
 	Targetable:
 		TargetTypes: Ground, Water
 	Targetable@REPAIR:

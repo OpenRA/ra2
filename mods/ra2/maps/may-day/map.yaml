@@ -42,513 +42,411 @@ Actors:
 	Actor0: carus05
 		Location: 69,-1
 		Owner: Neutral
-		Health: 100
-		Facing: 96
+		Facing: 896
 	Actor1: carus06
 		Location: 57,-1
 		Owner: Neutral
-		Health: 100
-		Facing: 96
+		Facing: 896
 	Actor2: carus04
 		Location: 63,-1
 		Owner: Neutral
-		Health: 100
-		Facing: 96
+		Facing: 896
 	Actor3: carus04
 		Location: 69,-7
 		Owner: Neutral
-		Health: 100
-		Facing: 96
+		Facing: 896
 	Actor4: carus06
 		Location: 69,-13
 		Owner: Neutral
-		Health: 100
-		Facing: 96
+		Facing: 896
 	Actor5: carus04
 		Location: 48,-1
 		Owner: Neutral
-		Health: 100
-		Facing: 96
+		Facing: 896
 	Actor6: carus04
 		Location: 20,-1
 		Owner: Neutral
-		Health: 100
-		Facing: 96
+		Facing: 896
 	Actor7: carus04
 		Location: 69,-50
 		Owner: Neutral
-		Health: 100
-		Facing: 96
+		Facing: 896
 	Actor8: carus06
 		Location: 69,-21
 		Owner: Neutral
-		Health: 100
-		Facing: 96
+		Facing: 896
 	Actor9: carus05
 		Location: 77,-22
 		Owner: Neutral
-		Health: 100
-		Facing: 96
+		Facing: 896
 	Actor10: carus06
 		Location: 69,-33
 		Owner: Neutral
-		Health: 100
-		Facing: 96
+		Facing: 896
 	Actor11: carus05
 		Location: 63,-34
 		Owner: Neutral
-		Health: 100
-		Facing: 96
+		Facing: 896
 	Actor12: carus04
 		Location: 62,-43
 		Owner: Neutral
-		Health: 100
-		Facing: 96
+		Facing: 896
 	Actor13: carus06
 		Location: 79,-32
 		Owner: Neutral
-		Health: 100
-		Facing: 96
+		Facing: 896
 	Actor14: caeur1
 		Location: 77,-51
 		Owner: Neutral
-		Health: 100
-		Facing: 96
+		Facing: 896
 	Actor15: caeur2
 		Location: 78,-53
 		Owner: Neutral
-		Health: 100
-		Facing: 96
+		Facing: 896
 	Actor16: caeur2
 		Location: 80,-53
 		Owner: Neutral
-		Health: 100
-		Facing: 96
+		Facing: 896
 	Actor17: camsc06
 		Location: 80,-50
 		Owner: Neutral
-		Health: 100
-		Facing: 96
+		Facing: 896
 	Actor18: caeur1
 		Location: 77,-49
 		Owner: Neutral
-		Health: 100
-		Facing: 96
+		Facing: 896
 	Actor19: cagard01
 		Location: 70,-43
 		Owner: Neutral
-		Health: 100
-		Facing: 96
+		Facing: 896
 	Actor20: carus05
 		Location: 59,50
 		Owner: Neutral
-		Health: 100
-		Facing: 96
+		Facing: 896
 	Actor21: carus05
 		Location: 64,55
 		Owner: Neutral
-		Health: 100
-		Facing: 96
+		Facing: 896
 	Actor22: caeur1
 		Location: 16,11
 		Owner: Neutral
-		Health: 100
-		Facing: 96
+		Facing: 896
 	Actor23: caeur1
 		Location: 18,13
 		Owner: Neutral
-		Health: 100
-		Facing: 96
+		Facing: 896
 	Actor24: caeur2
 		Location: 20,11
 		Owner: Neutral
-		Health: 100
-		Facing: 96
+		Facing: 896
 	Actor25: camsc06
 		Location: 19,12
 		Owner: Neutral
-		Health: 100
-		Facing: 96
+		Facing: 896
 	Actor26: carus04
 		Location: 79,43
 		Owner: Neutral
-		Health: 100
-		Facing: 96
+		Facing: 896
 	Actor27: carus06
 		Location: 79,33
 		Owner: Neutral
-		Health: 100
-		Facing: 96
+		Facing: 896
 	Actor28: carus04
 		Location: 113,9
 		Owner: Neutral
-		Health: 100
-		Facing: 96
+		Facing: 896
 	Actor29: carus05
 		Location: 108,9
 		Owner: Neutral
-		Health: 100
-		Facing: 96
+		Facing: 896
 	Actor30: carus05
 		Location: 79,55
 		Owner: Neutral
-		Health: 100
-		Facing: 96
+		Facing: 896
 	Actor31: carus04
 		Location: 79,70
 		Owner: Neutral
-		Health: 100
-		Facing: 96
+		Facing: 896
 	Actor32: carus04
 		Location: 120,9
 		Owner: Neutral
-		Health: 100
-		Facing: 96
+		Facing: 896
 	Actor33: carus06
 		Location: 130,9
 		Owner: Neutral
-		Health: 100
-		Facing: 96
+		Facing: 896
 	Actor34: carus06
 		Location: 140,9
 		Owner: Neutral
-		Health: 100
-		Facing: 96
+		Facing: 896
 	Actor35: carus05
 		Location: 135,9
 		Owner: Neutral
-		Health: 100
-		Facing: 96
+		Facing: 896
 	Actor36: carus02b
 		Location: 104,45
 		Owner: Neutral
-		Health: 100
-		Facing: 96
+		Facing: 896
 	Actor37: carus02b
 		Location: 104,41
 		Owner: Neutral
-		Health: 100
-		Facing: 96
+		Facing: 896
 	Actor38: carus02b
 		Location: 112,34
 		Owner: Neutral
-		Health: 100
-		Facing: 96
+		Facing: 896
 	Actor39: carus02b
 		Location: 116,34
 		Owner: Neutral
-		Health: 100
-		Facing: 96
+		Facing: 896
 	Actor40: carus02a
 		Location: 106,52
 		Owner: Neutral
-		Health: 100
-		Facing: 96
+		Facing: 896
 	Actor41: carus02a
 		Location: 106,45
 		Owner: Neutral
-		Health: 100
-		Facing: 96
+		Facing: 896
 	Actor42: carus02a
 		Location: 106,41
 		Owner: Neutral
-		Health: 100
-		Facing: 96
+		Facing: 896
 	Actor43: carus02a
 		Location: 106,36
 		Owner: Neutral
-		Health: 100
-		Facing: 96
+		Facing: 896
 	Actor44: carus02a
 		Location: 112,36
 		Owner: Neutral
-		Health: 100
-		Facing: 96
+		Facing: 896
 	Actor45: carus02a
 		Location: 116,36
 		Owner: Neutral
-		Health: 100
-		Facing: 96
+		Facing: 896
 	Actor46: carus02a
 		Location: 88,52
 		Owner: Neutral
-		Health: 100
-		Facing: 96
+		Facing: 896
 	Actor47: carus02a
 		Location: 88,70
 		Owner: Neutral
-		Health: 100
-		Facing: 96
+		Facing: 896
 	Actor48: carus02a
 		Location: 122,36
 		Owner: Neutral
-		Health: 100
-		Facing: 96
+		Facing: 896
 	Actor49: carus02a
 		Location: 122,18
 		Owner: Neutral
-		Health: 100
-		Facing: 96
+		Facing: 896
 	Actor50: carus02a
 		Location: 140,18
 		Owner: Neutral
-		Health: 100
-		Facing: 96
+		Facing: 896
 	Actor51: carus02b
 		Location: 100,52
 		Owner: Neutral
-		Health: 100
-		Facing: 96
+		Facing: 896
 	Actor52: carus02b
 		Location: 94,52
 		Owner: Neutral
-		Health: 100
-		Facing: 96
+		Facing: 896
 	Actor53: carus02b
 		Location: 88,58
 		Owner: Neutral
-		Health: 100
-		Facing: 96
+		Facing: 896
 	Actor54: carus02b
 		Location: 88,64
 		Owner: Neutral
-		Health: 100
-		Facing: 96
+		Facing: 896
 	Actor55: carus02b
 		Location: 128,18
 		Owner: Neutral
-		Health: 100
-		Facing: 96
+		Facing: 896
 	Actor56: carus02b
 		Location: 122,24
 		Owner: Neutral
-		Health: 100
-		Facing: 96
+		Facing: 896
 	Actor57: carus02b
 		Location: 134,18
 		Owner: Neutral
-		Health: 100
-		Facing: 96
+		Facing: 896
 	Actor58: carus02b
 		Location: 122,30
 		Owner: Neutral
-		Health: 100
-		Facing: 96
+		Facing: 896
 	Actor59: cabhut
 		Location: 52,39
 		Owner: Neutral
-		Health: 100
-		Facing: 96
+		Facing: 896
 	Actor60: cabhut
 		Location: 56,20
 		Owner: Neutral
-		Health: 100
-		Facing: 96
-	Actor61: capark01
-		Location: 96,-32
-		Owner: Neutral
-		Health: 100
-		Facing: 96
-	Actor62: capark01
-		Location: 83,-13
-		Owner: Neutral
-		Health: 100
-		Facing: 96
-	Actor63: capark01
-		Location: 84,-13
-		Owner: Neutral
-		Health: 100
-		Facing: 96
-	Actor64: capark02
-		Location: 82,-2
-		Owner: Neutral
-		Health: 100
-		Facing: 96
-	Actor65: caairp
-		Location: 126,21
-		Owner: Neutral
-		Health: 100
-		Facing: 96
-	Actor66: caoild
-		Location: 92,55
-		Owner: Neutral
-		Health: 100
-		Facing: 96
-	Actor67: caoild
-		Location: 92,59
-		Owner: Neutral
-		Health: 100
-		Facing: 96
-	Actor68: caoild
-		Location: 96,55
-		Owner: Neutral
-		Health: 100
-		Facing: 96
-	Actor69: caoild
-		Location: 100,55
-		Owner: Neutral
-		Health: 100
-		Facing: 96
-	Actor70: caoild
-		Location: 22,6
-		Owner: Neutral
-		Health: 100
-		Facing: 96
-	Actor71: caoild
-		Location: 19,6
-		Owner: Neutral
-		Health: 100
-		Facing: 96
-	Actor72: caoild
-		Location: 16,6
-		Owner: Neutral
-		Health: 100
-		Facing: 96
-	Actor73: caoild
-		Location: 13,6
-		Owner: Neutral
-		Health: 100
-		Facing: 96
-	Actor74: caairp
-		Location: 69,-41
-		Owner: Neutral
-		Health: 100
-		Facing: 96
-	Actor75: carus04
-		Location: 93,-18
-		Owner: Neutral
-		Health: 100
-		Facing: 96
-	Actor76: carus05
-		Location: 93,-12
-		Owner: Neutral
-		Health: 100
-		Facing: 96
-	Actor77: carus06
-		Location: 93,-24
-		Owner: Neutral
-		Health: 100
-		Facing: 96
-	Actor78: caoild
-		Location: 57,44
-		Owner: Neutral
-		Health: 100
-		Facing: 96
-	Actor79: caoild
-		Location: 57,38
-		Owner: Neutral
-		Health: 100
-		Facing: 96
-	Actor80: caoild
-		Location: 63,44
-		Owner: Neutral
-		Health: 100
-		Facing: 96
-	Actor81: caoild
-		Location: 62,39
-		Owner: Neutral
-		Health: 100
-		Facing: 96
-	Actor82: caoild
-		Location: 58,7
-		Owner: Neutral
-		Health: 100
-		Facing: 96
-	Actor83: caoild
-		Location: 62,7
-		Owner: Neutral
-		Health: 100
-		Facing: 96
-	Actor84: caoild
-		Location: 66,7
-		Owner: Neutral
-		Health: 100
-		Facing: 96
-	Actor85: caoild
-		Location: 70,7
-		Owner: Neutral
-		Health: 100
-		Facing: 96
-	Actor86: cabhut
-		Location: 77,50
-		Owner: Neutral
-		Health: 100
-		Facing: 96
-	Actor87: cabhut
-		Location: 66,46
-		Owner: Neutral
-		Health: 100
-		Facing: 96
-	Actor88: cawash07
-		Location: 63,-38
-		Owner: Neutral
-		Health: 100
-		Facing: 96
-	Actor89: cawash08
-		Location: 70,-27
-		Owner: Neutral
-		Health: 100
-		Facing: 96
-	Actor90: cawash08
-		Location: 80,63
-		Owner: Neutral
-		Health: 100
-		Facing: 96
-	Actor91: cawash07
-		Location: 80,39
-		Owner: Neutral
-		Health: 100
-		Facing: 96
-	Actor92: cawash07
-		Location: 125,9
-		Owner: Neutral
-		Health: 100
-		Facing: 96
-	Actor93: cathosp
+		Facing: 896
+	Actor61: cahosp
 		Location: 88,-34
 		Owner: Neutral
-		Health: 100
-		Facing: 96
-	Actor94: cathosp
+		Facing: 896
+	Actor62: capark01
+		Location: 96,-32
+		Owner: Neutral
+		Facing: 896
+	Actor63: capark01
+		Location: 83,-13
+		Owner: Neutral
+		Facing: 896
+	Actor64: capark01
+		Location: 84,-13
+		Owner: Neutral
+		Facing: 896
+	Actor65: capark02
+		Location: 82,-2
+		Owner: Neutral
+		Facing: 896
+	Actor66: caairp
+		Location: 126,21
+		Owner: Neutral
+		Facing: 896
+	Actor67: caoild
+		Location: 92,55
+		Owner: Neutral
+		Facing: 896
+	Actor68: caoild
+		Location: 92,59
+		Owner: Neutral
+		Facing: 896
+	Actor69: caoild
+		Location: 96,55
+		Owner: Neutral
+		Facing: 896
+	Actor70: caoild
+		Location: 100,55
+		Owner: Neutral
+		Facing: 896
+	Actor71: caoild
+		Location: 22,6
+		Owner: Neutral
+		Facing: 896
+	Actor72: caoild
+		Location: 19,6
+		Owner: Neutral
+		Facing: 896
+	Actor73: caoild
+		Location: 16,6
+		Owner: Neutral
+		Facing: 896
+	Actor74: caoild
+		Location: 13,6
+		Owner: Neutral
+		Facing: 896
+	Actor75: caairp
+		Location: 69,-41
+		Owner: Neutral
+		Facing: 896
+	Actor76: carus04
+		Location: 93,-18
+		Owner: Neutral
+		Facing: 896
+	Actor77: carus05
+		Location: 93,-12
+		Owner: Neutral
+		Facing: 896
+	Actor78: carus06
+		Location: 93,-24
+		Owner: Neutral
+		Facing: 896
+	Actor79: caoild
+		Location: 57,44
+		Owner: Neutral
+		Facing: 896
+	Actor80: caoild
+		Location: 57,38
+		Owner: Neutral
+		Facing: 896
+	Actor81: caoild
+		Location: 63,44
+		Owner: Neutral
+		Facing: 896
+	Actor82: caoild
+		Location: 62,39
+		Owner: Neutral
+		Facing: 896
+	Actor83: caoild
+		Location: 58,7
+		Owner: Neutral
+		Facing: 896
+	Actor84: caoild
+		Location: 62,7
+		Owner: Neutral
+		Facing: 896
+	Actor85: caoild
+		Location: 66,7
+		Owner: Neutral
+		Facing: 896
+	Actor86: caoild
+		Location: 70,7
+		Owner: Neutral
+		Facing: 896
+	Actor87: cahosp
 		Location: 111,39
 		Owner: Neutral
-		Health: 100
-		Facing: 96
+		Facing: 896
+	Actor88: cabhut
+		Location: 77,50
+		Owner: Neutral
+		Facing: 896
+	Actor89: cabhut
+		Location: 66,46
+		Owner: Neutral
+		Facing: 896
+	Actor90: cawash07
+		Location: 63,-38
+		Owner: Neutral
+		Facing: 896
+	Actor91: cawash08
+		Location: 70,-27
+		Owner: Neutral
+		Facing: 896
+	Actor92: cawash08
+		Location: 80,63
+		Owner: Neutral
+		Facing: 896
+	Actor93: cawash07
+		Location: 80,39
+		Owner: Neutral
+		Facing: 896
+	Actor94: cawash07
+		Location: 125,9
+		Owner: Neutral
+		Facing: 896
 	Actor95: car
 		Location: 88,-28
 		Owner: Neutral
-		Health: 100
-		Facing: 96
+		Facing: 896
 	Actor96: limo
 		Location: 92,-30
 		Owner: Neutral
-		Health: 100
-		Facing: 160
+		Facing: 640
 	Actor97: euroc
 		Location: 93,-28
 		Owner: Neutral
-		Health: 100
-		Facing: 96
+		Facing: 896
 	Actor98: stang
 		Location: 90,-29
 		Owner: Neutral
-		Health: 100
-		Facing: 96
+		Facing: 896
 	Actor99: car
 		Location: 113,44
 		Owner: Neutral
-		Health: 100
-		Facing: 96
+		Facing: 896
 	Actor100: limo
 		Location: 109,41
 		Owner: Neutral
-		Health: 100
-		Facing: 96
+		Facing: 896
 	Actor101: euroc
 		Location: 117,38
 		Owner: Neutral
-		Health: 100
-		Facing: 32
+		Facing: 128
 	Actor102: tree02
 		Location: 58,-4
 		Owner: Neutral
@@ -1503,105 +1401,105 @@ Actors:
 	Actor419: waypoint
 		Location: 48,-22
 		Owner: Neutral
-	Actor420: waypoint
-		Location: 75,6
-		Owner: Neutral
-	Actor421: trock05
+	Actor420: trock05
 		Location: 32,-26
 		Owner: Neutral
-	Actor422: trock04
+	Actor421: trock04
 		Location: 44,-38
 		Owner: Neutral
-	Actor423: trock02
+	Actor422: trock02
 		Location: 76,-54
 		Owner: Neutral
-	Actor424: srock01
+	Actor423: srock01
 		Location: 14,10
 		Owner: Neutral
-	Actor425: trock03
+	Actor424: trock03
 		Location: 79,-47
 		Owner: Neutral
-	Actor426: srock02
+	Actor425: srock02
 		Location: 23,14
 		Owner: Neutral
-	Actor427: trock04
+	Actor426: trock04
 		Location: 77,-38
 		Owner: Neutral
-	Actor428: trock01
+	Actor427: trock01
 		Location: 32,8
 		Owner: Neutral
-	Actor429: trock01
+	Actor428: trock01
 		Location: 87,-46
 		Owner: Neutral
-	Actor430: trock03
+	Actor429: trock03
 		Location: 83,-38
 		Owner: Neutral
-	Actor431: srock03
+	Actor430: srock03
 		Location: 32,15
 		Owner: Neutral
-	Actor432: srock05
+	Actor431: srock05
 		Location: 32,16
 		Owner: Neutral
-	Actor433: trock02
+	Actor432: trock02
 		Location: 51,-3
 		Owner: Neutral
-	Actor434: trock01
+	Actor433: trock01
 		Location: 57,-3
 		Owner: Neutral
-	Actor435: trock04
+	Actor434: trock04
 		Location: 99,-34
 		Owner: Neutral
-	Actor436: lobrdg_r_ne
+	Actor435: lobrdg_r_ne
 		Location: 53,19
 		Owner: Neutral
-	Actor437: lobrdg_a
+	Actor436: lobrdg_a
 		Location: 53,20
 		Owner: Neutral
-	Actor438: lobrdg_a
+	Actor437: lobrdg_a
 		Location: 53,21
 		Owner: Neutral
-	Actor439: lobrdg_a
+	Actor438: lobrdg_a
 		Location: 53,22
 		Owner: Neutral
 		Health: 25
-	Actor440: lobrdg_a_d
+	Actor439: lobrdg_a_d
 		Location: 53,23
 		Owner: Neutral
-	Actor441: trock05
+	Actor440: trock05
 		Location: 100,-24
 		Owner: Neutral
-	Actor442: lobrdg_a_d
+	Actor441: lobrdg_a_d
 		Location: 53,24
 		Owner: Neutral
-	Actor443: trock03
+	Actor442: trock03
 		Location: 99,-22
 		Owner: Neutral
-	Actor444: lobrdg_a_d
+	Actor443: lobrdg_a_d
 		Location: 53,25
 		Owner: Neutral
-	Actor445: lobrdg_a_d
+	Actor444: lobrdg_a_d
 		Location: 53,26
 		Owner: Neutral
-	Actor446: lobrdg_a_d
+	Actor445: lobrdg_a_d
 		Location: 53,27
 		Owner: Neutral
-	Actor447: lobrdg_a_d
+	Actor446: lobrdg_a_d
 		Location: 53,28
 		Owner: Neutral
-	Actor448: lobrdg_a_d
+	Actor447: lobrdg_a_d
 		Location: 53,29
 		Owner: Neutral
-	Actor449: lobrdg_a_d
+	Actor448: lobrdg_a_d
 		Location: 53,30
 		Owner: Neutral
-	Actor450: lobrdg_a_d
+	Actor449: lobrdg_a_d
 		Location: 53,31
 		Owner: Neutral
-	Actor451: lobrdg_a_d
+	Actor450: lobrdg_a_d
 		Location: 53,32
 		Owner: Neutral
-	Actor452: lobrdg_a_d
+	Actor451: lobrdg_a_d
 		Location: 53,33
+		Owner: Neutral
+	Actor452: lobrdb_r_se
+		Location: 51,36
 		Owner: Neutral
 	Actor453: lobrdg_a_d
 		Location: 53,34
@@ -1610,368 +1508,374 @@ Actors:
 		Location: 53,35
 		Owner: Neutral
 		Health: 25
-	Actor455: lobrdg_a
-		Location: 53,36
+	Actor455: lobrdb_r_se
+		Location: 51,38
 		Owner: Neutral
 	Actor456: lobrdg_a
-		Location: 53,37
+		Location: 53,36
 		Owner: Neutral
 	Actor457: lobrdg_a
+		Location: 53,37
+		Owner: Neutral
+	Actor458: lobrdg_a
 		Location: 53,38
 		Owner: Neutral
-	Actor458: lobrdg_r_sw
+	Actor459: lobrdg_r_sw
 		Location: 53,39
 		Owner: Neutral
-	Actor459: trock03
+	Actor460: trock03
 		Location: 67,41
 		Owner: Neutral
-	Actor460: lobrdg_r_nw
+	Actor461: lobrdg_r_nw
 		Location: 66,47
 		Owner: Neutral
-	Actor461: trock04
+	Actor462: trock04
 		Location: 68,45
 		Owner: Neutral
-	Actor462: trock05
+	Actor463: trock05
 		Location: 74,39
 		Owner: Neutral
-	Actor463: srock04
+	Actor464: srock04
 		Location: 109,4
 		Owner: Neutral
-	Actor464: lobrdg_b
+	Actor465: lobrdg_b
 		Location: 67,47
 		Owner: Neutral
-	Actor465: trock02
+	Actor466: trock02
 		Location: 74,40
 		Owner: Neutral
-	Actor466: lobrdg_b
+	Actor467: lobrdg_b
 		Location: 68,47
 		Owner: Neutral
-	Actor467: trock01
+	Actor468: trock01
 		Location: 75,40
 		Owner: Neutral
-	Actor468: lobrdg_b
+	Actor469: lobrdg_b
 		Location: 69,47
 		Owner: Neutral
 		Health: 25
-	Actor469: lobrdg_b_d
+	Actor470: lobrdg_b_d
 		Location: 70,47
 		Owner: Neutral
-	Actor470: lobrdg_b_d
+	Actor471: lobrdg_b_d
 		Location: 71,47
 		Owner: Neutral
-	Actor471: lobrdg_b_d
+	Actor472: lobrdg_b_d
 		Location: 72,47
 		Owner: Neutral
-	Actor472: lobrdg_b_d
+	Actor473: lobrdg_b_d
 		Location: 73,47
 		Owner: Neutral
-	Actor473: lobrdg_b
+	Actor474: lobrdg_b
 		Location: 74,47
 		Owner: Neutral
 		Health: 25
-	Actor474: lobrdg_b
+	Actor475: lobrdg_b
 		Location: 75,47
 		Owner: Neutral
-	Actor475: lobrdg_b
+	Actor476: lobrdg_b
 		Location: 76,47
 		Owner: Neutral
-	Actor476: lobrdg_r_sw
+	Actor477: lobrdg_r_sw
 		Location: 117,6
 		Owner: Neutral
-	Actor477: lobrdg_r_se
+	Actor478: lobrdg_r_se
 		Location: 77,47
 		Owner: Neutral
-	Actor478: srock05
+	Actor479: srock05
 		Location: 76,57
 		Owner: Neutral
-	Actor479: srock03
+	Actor480: srock03
 		Location: 128,6
 		Owner: Neutral
-	Actor480: srock05
+	Actor481: cakrmw
+		Location: 88,53
+		Owner: Neutral
+	Actor482: cakrmw
+		Location: 89,52
+		Owner: Neutral
+	Actor483: cakrmw
+		Location: 122,19
+		Owner: Neutral
+	Actor484: cakrmw
+		Location: 123,18
+		Owner: Neutral
+	Actor485: cakrmw
+		Location: 88,54
+		Owner: Neutral
+	Actor486: cakrmw
+		Location: 90,52
+		Owner: Neutral
+	Actor487: cakrmw
+		Location: 122,20
+		Owner: Neutral
+	Actor488: cakrmw
+		Location: 124,18
+		Owner: Neutral
+	Actor489: cakrmw
+		Location: 88,55
+		Owner: Neutral
+	Actor490: cakrmw
+		Location: 91,52
+		Owner: Neutral
+	Actor491: cakrmw
+		Location: 106,37
+		Owner: Neutral
+	Actor492: cakrmw
+		Location: 107,36
+		Owner: Neutral
+	Actor493: cakrmw
+		Location: 122,21
+		Owner: Neutral
+	Actor494: cakrmw
+		Location: 125,18
+		Owner: Neutral
+	Actor495: cakrmw
+		Location: 88,56
+		Owner: Neutral
+	Actor496: cakrmw
+		Location: 92,52
+		Owner: Neutral
+	Actor497: cakrmw
+		Location: 106,38
+		Owner: Neutral
+	Actor498: cakrmw
+		Location: 108,36
+		Owner: Neutral
+	Actor499: cakrmw
+		Location: 122,22
+		Owner: Neutral
+	Actor500: cakrmw
+		Location: 126,18
+		Owner: Neutral
+	Actor501: srock05
 		Location: 138,6
 		Owner: Neutral
-	Actor481: cakrmw
-		Owner: Neutral
-		Location: 88,57
-	Actor482: cakrmw
-		Owner: Neutral
-		Location: 88,56
-	Actor483: cakrmw
-		Owner: Neutral
-		Location: 88,55
-	Actor484: cakrmw
-		Owner: Neutral
-		Location: 88,54
-	Actor485: cakrmw
-		Owner: Neutral
-		Location: 88,53
-	Actor486: cakrmw
-		Owner: Neutral
-		Location: 89,52
-	Actor487: cakrmw
-		Owner: Neutral
-		Location: 90,52
-	Actor488: cakrmw
-		Owner: Neutral
-		Location: 91,52
-	Actor489: cakrmw
-		Owner: Neutral
-		Location: 92,52
-	Actor490: cakrmw
-		Owner: Neutral
-		Location: 93,52
-	Actor491: cakrmw
-		Owner: Neutral
-		Location: 95,52
-	Actor492: cakrmw
-		Owner: Neutral
-		Location: 96,52
-	Actor493: cakrmw
-		Owner: Neutral
-		Location: 97,52
-	Actor494: cakrmw
-		Owner: Neutral
-		Location: 98,52
-	Actor495: cakrmw
-		Owner: Neutral
-		Location: 99,52
-	Actor496: cakrmw
-		Owner: Neutral
-		Location: 101,52
-	Actor497: cakrmw
-		Owner: Neutral
-		Location: 102,52
-	Actor498: cakrmw
-		Owner: Neutral
-		Location: 103,52
-	Actor499: cakrmw
-		Owner: Neutral
-		Location: 104,52
-	Actor500: cakrmw
-		Owner: Neutral
-		Location: 105,52
-	Actor501: cakrmw
-		Owner: Neutral
-		Location: 88,71
 	Actor502: cakrmw
+		Location: 88,57
 		Owner: Neutral
-		Location: 88,72
 	Actor503: cakrmw
+		Location: 93,52
 		Owner: Neutral
-		Location: 88,73
 	Actor504: cakrmw
-		Owner: Neutral
-		Location: 88,74
-	Actor506: cakrmw
-		Owner: Neutral
-		Location: 88,75
-	Actor507: cakrmw
-		Owner: Neutral
-		Location: 88,76
-	Actor508: cakrmw
-		Owner: Neutral
-		Location: 88,77
-	Actor509: cakrmw
-		Owner: Neutral
-		Location: 88,69
-	Actor510: cakrmw
-		Owner: Neutral
-		Location: 88,68
-	Actor511: cakrmw
-		Owner: Neutral
-		Location: 88,67
-	Actor512: cakrmw
-		Owner: Neutral
-		Location: 88,66
-	Actor513: cakrmw
-		Owner: Neutral
-		Location: 88,65
-	Actor514: cakrmw
-		Owner: Neutral
-		Location: 106,51
-	Actor515: cakrmw
-		Owner: Neutral
-		Location: 106,50
-	Actor516: cakrmw
-		Owner: Neutral
-		Location: 106,49
-	Actor517: cakrmw
-		Owner: Neutral
-		Location: 106,48
-	Actor518: cakrmw
-		Owner: Neutral
-		Location: 106,47
-	Actor519: cakrmw
-		Owner: Neutral
-		Location: 106,46
-	Actor520: cakrmw
-		Owner: Neutral
-		Location: 105,45
-	Actor521: cakrmw
-		Owner: Neutral
-		Location: 105,41
-	Actor522: cakrmw
-		Owner: Neutral
-		Location: 106,40
-	Actor523: cakrmw
-		Owner: Neutral
 		Location: 106,39
-	Actor524: cakrmw
 		Owner: Neutral
-		Location: 106,38
-	Actor525: cakrmw
-		Owner: Neutral
-		Location: 106,37
-	Actor526: cakrmw
-		Owner: Neutral
-		Location: 107,36
-	Actor527: cakrmw
-		Owner: Neutral
-		Location: 108,36
-	Actor528: cakrmw
-		Owner: Neutral
+	Actor505: cakrmw
 		Location: 109,36
-	Actor529: cakrmw
 		Owner: Neutral
-		Location: 110,36
-	Actor530: cakrmw
-		Owner: Neutral
-		Location: 111,36
-	Actor531: cakrmw
-		Owner: Neutral
-		Location: 112,35
-	Actor532: cakrmw
-		Owner: Neutral
-		Location: 116,35
-	Actor533: cakrmw
-		Owner: Neutral
-		Location: 117,36
-	Actor534: cakrmw
-		Owner: Neutral
-		Location: 118,36
-	Actor535: cakrmw
-		Owner: Neutral
-		Location: 119,36
-	Actor536: cakrmw
-		Owner: Neutral
-		Location: 120,36
-	Actor537: cakrmw
-		Owner: Neutral
-		Location: 121,36
-	Actor538: cakrmw
-		Owner: Neutral
-		Location: 122,35
-	Actor539: cakrmw
-		Owner: Neutral
-		Location: 122,33
-	Actor540: cakrmw
-		Owner: Neutral
-		Location: 122,34
-	Actor541: cakrmw
-		Owner: Neutral
-		Location: 122,32
-	Actor542: cakrmw
-		Owner: Neutral
-		Location: 122,31
-	Actor543: cakrmw
-		Owner: Neutral
-		Location: 122,29
-	Actor544: cakrmw
-		Owner: Neutral
-		Location: 122,28
-	Actor545: cakrmw
-		Owner: Neutral
-		Location: 122,27
-	Actor546: cakrmw
-		Owner: Neutral
-		Location: 122,26
-	Actor547: cakrmw
-		Owner: Neutral
-		Location: 122,25
-	Actor548: cakrmw
-		Owner: Neutral
+	Actor506: cakrmw
 		Location: 122,23
-	Actor549: cakrmw
 		Owner: Neutral
-		Location: 122,22
-	Actor550: cakrmw
-		Owner: Neutral
-		Location: 122,21
-	Actor551: cakrmw
-		Owner: Neutral
-		Location: 122,20
-	Actor552: cakrmw
-		Owner: Neutral
-		Location: 122,19
-	Actor553: cakrmw
-		Owner: Neutral
-		Location: 123,18
-	Actor554: cakrmw
-		Owner: Neutral
-		Location: 124,18
-	Actor555: cakrmw
-		Owner: Neutral
-		Location: 125,18
-	Actor556: cakrmw
-		Owner: Neutral
-		Location: 126,18
-	Actor557: cakrmw
-		Owner: Neutral
+	Actor507: cakrmw
 		Location: 127,18
-	Actor558: cakrmw
 		Owner: Neutral
-		Location: 135,18
-	Actor559: cakrmw
+	Actor508: cakrmw
+		Location: 105,41
 		Owner: Neutral
-		Location: 136,18
-	Actor560: cakrmw
+	Actor509: cakrmw
+		Location: 106,40
 		Owner: Neutral
-		Location: 137,18
-	Actor561: cakrmw
+	Actor510: cakrmw
+		Location: 110,36
 		Owner: Neutral
-		Location: 138,18
-	Actor562: cakrmw
-		Owner: Neutral
-		Location: 139,18
-	Actor563: cakrmw
-		Owner: Neutral
-		Location: 141,18
-	Actor564: cakrmw
-		Owner: Neutral
-		Location: 142,18
-	Actor565: cakrmw
-		Owner: Neutral
-		Location: 143,18
-	Actor566: cakrmw
-		Owner: Neutral
-		Location: 144,18
-	Actor567: cakrmw
-		Owner: Neutral
-		Location: 145,18
-	Actor568: cakrmw
-		Owner: Neutral
-		Location: 146,18
-	Actor569: cakrmw
-		Owner: Neutral
-		Location: 147,18
-	Actor570: cakrmw
-		Owner: Neutral
-		Location: 88,63
-	Actor571: cakrmw
-		Owner: Neutral
-		Location: 88,62
-	Actor573: cakrmw
-		Owner: Neutral
-		Location: 88,61
-	Actor574: cakrmw
-		Owner: Neutral
-		Location: 88,60
-	Actor575: cakrmw
-		Owner: Neutral
+	Actor511: cakrmw
 		Location: 88,59
+		Owner: Neutral
+	Actor512: cakrmw
+		Location: 95,52
+		Owner: Neutral
+	Actor513: cakrmw
+		Location: 111,36
+		Owner: Neutral
+	Actor514: cakrmw
+		Location: 112,35
+		Owner: Neutral
+	Actor515: cakrmw
+		Location: 122,25
+		Owner: Neutral
+	Actor516: cakrmw
+		Location: 88,60
+		Owner: Neutral
+	Actor517: cakrmw
+		Location: 96,52
+		Owner: Neutral
+	Actor518: cakrmw
+		Location: 122,26
+		Owner: Neutral
+	Actor519: cakrmw
+		Location: 88,61
+		Owner: Neutral
+	Actor520: cakrmw
+		Location: 97,52
+		Owner: Neutral
+	Actor521: cakrmw
+		Location: 122,27
+		Owner: Neutral
+	Actor522: cakrmw
+		Location: 88,62
+		Owner: Neutral
+	Actor523: cakrmw
+		Location: 98,52
+		Owner: Neutral
+	Actor524: cakrmw
+		Location: 105,45
+		Owner: Neutral
+	Actor525: cakrmw
+		Location: 122,28
+		Owner: Neutral
+	Actor526: cakrmw
+		Location: 88,63
+		Owner: Neutral
+	Actor527: cakrmw
+		Location: 99,52
+		Owner: Neutral
+	Actor528: cakrmw
+		Location: 116,35
+		Owner: Neutral
+	Actor529: cakrmw
+		Location: 122,29
+		Owner: Neutral
+	Actor530: cakrmw
+		Location: 106,46
+		Owner: Neutral
+	Actor531: cakrmw
+		Location: 88,65
+		Owner: Neutral
+	Actor532: cakrmw
+		Location: 101,52
+		Owner: Neutral
+	Actor533: cakrmw
+		Location: 106,47
+		Owner: Neutral
+	Actor534: cakrmw
+		Location: 117,36
+		Owner: Neutral
+	Actor535: cakrmw
+		Location: 122,31
+		Owner: Neutral
+	Actor536: cakrmw
+		Location: 135,18
+		Owner: Neutral
+	Actor537: cakrmw
+		Location: 88,66
+		Owner: Neutral
+	Actor538: cakrmw
+		Location: 102,52
+		Owner: Neutral
+	Actor539: cakrmw
+		Location: 106,48
+		Owner: Neutral
+	Actor540: cakrmw
+		Location: 118,36
+		Owner: Neutral
+	Actor541: cakrmw
+		Location: 122,32
+		Owner: Neutral
+	Actor542: cakrmw
+		Location: 136,18
+		Owner: Neutral
+	Actor543: cakrmw
+		Location: 88,67
+		Owner: Neutral
+	Actor544: cakrmw
+		Location: 103,52
+		Owner: Neutral
+	Actor545: cakrmw
+		Location: 106,49
+		Owner: Neutral
+	Actor546: cakrmw
+		Location: 119,36
+		Owner: Neutral
+	Actor547: cakrmw
+		Location: 122,33
+		Owner: Neutral
+	Actor548: cakrmw
+		Location: 137,18
+		Owner: Neutral
+	Actor549: cakrmw
+		Location: 88,68
+		Owner: Neutral
+	Actor550: cakrmw
+		Location: 104,52
+		Owner: Neutral
+	Actor551: cakrmw
+		Location: 106,50
+		Owner: Neutral
+	Actor552: cakrmw
+		Location: 120,36
+		Owner: Neutral
+	Actor553: cakrmw
+		Location: 122,34
+		Owner: Neutral
+	Actor554: cakrmw
+		Location: 138,18
+		Owner: Neutral
+	Actor555: cakrmw
+		Location: 88,69
+		Owner: Neutral
+	Actor556: cakrmw
+		Location: 105,52
+		Owner: Neutral
+	Actor557: cakrmw
+		Location: 106,51
+		Owner: Neutral
+	Actor558: cakrmw
+		Location: 121,36
+		Owner: Neutral
+	Actor559: cakrmw
+		Location: 122,35
+		Owner: Neutral
+	Actor560: cakrmw
+		Location: 139,18
+		Owner: Neutral
+	Actor561: cakrmw
+		Location: 88,71
+		Owner: Neutral
+	Actor562: cakrmw
+		Location: 141,18
+		Owner: Neutral
+	Actor563: cakrmw
+		Location: 88,72
+		Owner: Neutral
+	Actor564: cakrmw
+		Location: 142,18
+		Owner: Neutral
+	Actor565: cakrmw
+		Location: 88,73
+		Owner: Neutral
+	Actor566: cakrmw
+		Location: 143,18
+		Owner: Neutral
+	Actor567: cakrmw
+		Location: 88,74
+		Owner: Neutral
+	Actor568: cakrmw
+		Location: 144,18
+		Owner: Neutral
 
 Rules:
-	World:
-		GlobalLightingPaletteEffect:
-			Red: 0.93
-			Green: 0.93
+	^BaseWorld:
+		TerrainLighting:
+			RedTint: 0.93
+			GreenTint: 0.93
+	NEGLAMP:
+		TerrainLightSource:
+			Range: 19c544
+			Intensity: -0.15
+			RedTint: 0.03
+			GreenTint: 0.04
+			BlueTint: 0.04
+	INYELWLAMP:
+		TerrainLightSource:
+			Range: 15c640
+			Intensity: 0.01
+			RedTint: 0.2
+			GreenTint: 0.2
+			BlueTint: 0
+	INPURPLAMP:
+		TerrainLightSource:
+			Range: 15c640
+			Intensity: 0.01
+			RedTint: 0.67059
+			GreenTint: 0.19608
+			BlueTint: 0.67059

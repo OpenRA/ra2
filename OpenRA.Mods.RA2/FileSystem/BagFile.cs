@@ -1,6 +1,6 @@
 #region Copyright & License Information
 /*
- * Copyright 2007-2019 The OpenRA Developers (see AUTHORS)
+ * Copyright (c) The OpenRA Developers and Contributors
  * This file is part of OpenRA, which is free software. It is made
  * available to you under the terms of the GNU General Public License
  * as published by the Free Software Foundation, either version 3 of
@@ -25,7 +25,7 @@ namespace OpenRA.Mods.Cnc.FileSystem
 		sealed class BagFile : IReadOnlyPackage
 		{
 			public string Name { get; private set; }
-			public IEnumerable<string> Contents { get { return index.Keys; } }
+			public IEnumerable<string> Contents => index.Keys;
 
 			readonly Stream s;
 			readonly Dictionary<string, IdxEntry> index;
@@ -99,10 +99,7 @@ namespace OpenRA.Mods.Cnc.FileSystem
 
 				// Construct a merged stream
 				var waveStream = SegmentStream.CreateWithoutOwningStream(s, entry.Offset, (int)entry.Length);
-				var mergedStream = new MergedStream(waveHeaderMemoryStream, waveStream);
-				mergedStream.SetLength(waveHeaderMemoryStream.Length + entry.Length);
-
-				return mergedStream;
+				return new MergedStream(waveHeaderMemoryStream, waveStream);
 			}
 
 			public bool Contains(string filename)

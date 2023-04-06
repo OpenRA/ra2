@@ -31,6 +31,8 @@ cahse01:
 	Building:
 		Dimensions: 3,2
 		Footprint: xxx xxx
+	IsometricSelectable:
+		Height: 60
 	SpawnActorOnDeath:
 		Actor: cahse01.rubble
 
@@ -53,6 +55,8 @@ cahse02:
 	Building:
 		Dimensions: 3,2
 		Footprint: xxx xxx
+	IsometricSelectable:
+		Height: 75
 	SpawnActorOnDeath:
 		Actor: cahse02.rubble
 
@@ -75,6 +79,8 @@ cahse03:
 	Building:
 		Dimensions: 3,4
 		Footprint: xxx xxx xxx xxx
+	IsometricSelectable:
+		Height: 60
 	SpawnActorOnDeath:
 		Actor: cahse03.rubble
 
@@ -97,6 +103,8 @@ cahse04:
 	Building:
 		Dimensions: 3,2
 		Footprint: xxx xxx
+	IsometricSelectable:
+		Height: 75
 	SpawnActorOnDeath:
 		Actor: cahse04.rubble
 
@@ -167,6 +175,8 @@ cahse07:
 	Building:
 		Dimensions: 2,3
 		Footprint: xx xx xx
+	IsometricSelectable:
+		Height: 60
 	SpawnActorOnDeath:
 		Actor: cahse07.rubble
 	MapEditorData:
@@ -191,6 +201,8 @@ cawt01:
 		Range: 6c0
 	Health:
 		HP: 400
+	IsometricSelectable:
+		Height: 75
 
 cats01:
 	Inherits: ^CivBuilding
@@ -206,6 +218,8 @@ cats01:
 	Building:
 		Dimensions: 2,2
 		Footprint: xx xx
+	IsometricSelectable:
+		Height: 45
 
 cabarn02:
 	Inherits: ^CivBuilding
@@ -219,6 +233,8 @@ cabarn02:
 	Building:
 		Dimensions: 2,2
 		Footprint: xx xx
+	IsometricSelectable:
+		Height: 45
 
 cawash01:
 	Inherits: ^CivBuilding
@@ -234,6 +250,8 @@ cawash01:
 		Type: Concrete
 	RevealsShroud:
 		Range: 6c0
+	IsometricSelectable:
+		Height: 60
 	SpawnActorOnDeath:
 		Actor: cawash01.rubble
 	MapEditorData:
@@ -260,6 +278,8 @@ cawash03:
 		Type: Steel
 	RevealsShroud:
 		Range: 6c0
+	IsometricSelectable:
+		Height: 60
 	SpawnActorOnDeath:
 		Actor: cawash03.rubble
 	MapEditorData:
@@ -286,6 +306,8 @@ cawash04:
 		Type: Steel
 	RevealsShroud:
 		Range: 6c0
+	IsometricSelectable:
+		Height: 75
 	SpawnActorOnDeath:
 		Actor: cawash04.rubble
 	MapEditorData:
@@ -312,6 +334,8 @@ cawash05:
 		Type: Steel
 	RevealsShroud:
 		Range: 6c0
+	IsometricSelectable:
+		Height: 90
 	SpawnActorOnDeath:
 		Actor: cawash05.rubble
 	MapEditorData:
@@ -338,6 +362,8 @@ cawash06:
 	Building:
 		Dimensions: 4,4
 		Footprint: xxxx xxxx xxxx xxxx
+	IsometricSelectable:
+		Height: 60
 	SpawnActorOnDeath:
 		Actor: cawash06.rubble
 	MapEditorData:
@@ -364,6 +390,8 @@ cawash07:
 		Type: Steel
 	RevealsShroud:
 		Range: 6c0
+	IsometricSelectable:
+		Height: 90
 	SpawnActorOnDeath:
 		Actor: cawash07.rubble
 
@@ -388,6 +416,8 @@ cawash08:
 	Building:
 		Dimensions: 3,4
 		Footprint: xxx xxx xxx xxx
+	IsometricSelectable:
+		Height: 105
 	SpawnActorOnDeath:
 		Actor: cawash08.rubble
 
@@ -412,6 +442,8 @@ cawash09:
 		Type: Steel
 	RevealsShroud:
 		Range: 6c0
+	IsometricSelectable:
+		Height: 90
 	SpawnActorOnDeath:
 		Actor: cawash09.rubble
 	MapEditorData:
@@ -438,6 +470,8 @@ cawash10:
 		Type: Steel
 	RevealsShroud:
 		Range: 6c0
+	IsometricSelectable:
+		Height: 90
 	SpawnActorOnDeath:
 		Actor: cawash10.rubble
 	MapEditorData:
@@ -464,6 +498,8 @@ cawash11:
 		Type: Steel
 	RevealsShroud:
 		Range: 6c0
+	IsometricSelectable:
+		Height: 90
 	SpawnActorOnDeath:
 		Actor: cawash11.rubble
 	MapEditorData:
@@ -493,23 +529,33 @@ cawsh12:
 	RevealsShroud:
 		Range: 6c0
 	Turreted:
-		TurnSpeed: 255
+		TurnSpeed: 1023
 	BodyOrientation:
 		QuantizedFacings: 8
 	Cargo:
 		Types: Infantry
 		MaxWeight: 5
-		PipCount: 5
 	AttackGarrisoned:
 		Voice: Attack
 		Armaments: M1Carbine
 		PortOffsets: 384,0,128, 224,-341,128, -224,-341,128, -384,0,128, -224,341,128, 224,341,128
 		PortYaws: 0, 176, 341, 512, 682, 853
 		PortCones: 86, 86, 86, 86, 86, 86
+	IsometricSelectable:
+		Height: 165
 	SpawnActorOnDeath:
 		Actor: cawsh12.rubble
 	MapEditorData:
 		ExcludeTilesets: SNOW
+	WithCargoPipsDecoration:
+		Position: BottomLeft
+		RequiresSelection: true
+		Palette: pips
+		CustomPipSequences:
+			blue: pip-blue
+			yellow: pip-yellow
+			green: pip-green
+			red: pip-red
 
 cawsh12.rubble:
 	Inherits: ^Rubble
@@ -532,6 +578,8 @@ cawash13:
 	Building:
 		Dimensions: 3,4
 		Footprint: xxx xxx xxx xxx
+	IsometricSelectable:
+		Height: 60
 	SpawnActorOnDeath:
 		Actor: cawash13.rubble
 	MapEditorData:
@@ -558,6 +606,8 @@ cawash14:
 	Building:
 		Dimensions: 3,3
 		Footprint: xxx xxx xxx
+	IsometricSelectable:
+		Height: 45
 	SpawnActorOnDeath:
 		Actor: cawash14.rubble
 	MapEditorData:
@@ -584,6 +634,8 @@ cawash15:
 	Building:
 		Dimensions: 3,4
 		Footprint: xxx xxx xxx xxx
+	IsometricSelectable:
+		Height: 60
 	SpawnActorOnDeath:
 		Actor: cawash15.rubble
 	MapEditorData:
@@ -612,6 +664,8 @@ cawash16:
 	Building:
 		Dimensions: 5,3
 		Footprint: xxxxx xxxxx xxxxx
+	IsometricSelectable:
+		Height: 75
 	SpawnActorOnDeath:
 		Actor: cawash16.rubble
 	MapEditorData:
@@ -640,6 +694,8 @@ cawash17:
 	Building:
 		Dimensions: 6,4
 		Footprint: xxxxxx xxxxxx xxxxxx xxxxxx
+	IsometricSelectable:
+		Height: 60
 	SpawnActorOnDeath:
 		Actor: cawash17.rubble
 	MapEditorData:
@@ -670,6 +726,8 @@ cawash18:
 		Footprint: xx xx
 	WithIdleOverlay@water:
 		Sequence: idle-water
+	IsometricSelectable:
+		Height: 45
 	MapEditorData:
 		Categories: Decoration
 
@@ -689,6 +747,8 @@ cawash19:
 		Footprint: xxxx xxxx xxxx xxxx
 	WithIdleOverlay@flag:
 		Sequence: idle-flag
+	IsometricSelectable:
+		Height: 90
 	SpawnActorOnDeath:
 		Actor: cawash19.rubble
 	MapEditorData:
@@ -715,6 +775,8 @@ canewy01:
 		Type: Steel
 	RevealsShroud:
 		Range: 4c0
+	IsometricSelectable:
+		Height: 135
 	SpawnActorOnDeath:
 		Actor: canewy01.rubble
 	MapEditorData:
@@ -743,6 +805,8 @@ canewy04:
 	Building:
 		Dimensions: 3,3
 		Footprint: xxx xxx xxx
+	IsometricSelectable:
+		Height: 225
 	SpawnActorOnDeath:
 		Actor: canewy04.rubble
 	RenderSprites:
@@ -773,6 +837,8 @@ canewy05:
 	Building:
 		Dimensions: 2,2
 		Footprint: xx xx
+	IsometricSelectable:
+		Height: 120
 	MapEditorData:
 		ExcludeTilesets: SNOW
 
@@ -788,6 +854,8 @@ canewy06:
 	Building:
 		Dimensions: 3,3
 		Footprint: xxx xxx xxx
+	IsometricSelectable:
+		Height: 225
 	SpawnActorOnDeath:
 		Actor: canewy06.rubble
 	MapEditorData:
@@ -814,6 +882,8 @@ canewy07:
 	Building:
 		Dimensions: 3,3
 		Footprint: xxx xxx xxx
+	IsometricSelectable:
+		Height: 180
 	SpawnActorOnDeath:
 		Actor: canewy07.rubble
 	MapEditorData:
@@ -840,6 +910,8 @@ canewy08:
 	Building:
 		Dimensions: 3,3
 		Footprint: xxx xxx xxx
+	IsometricSelectable:
+		Height: 180
 	SpawnActorOnDeath:
 		Actor: canewy08.rubble
 	MapEditorData:
@@ -866,6 +938,8 @@ canewy10:
 	Building:
 		Dimensions: 3,2
 		Footprint: xxx xxx
+	IsometricSelectable:
+		Height: 210
 	SpawnActorOnDeath:
 		Actor: canewy10.rubble
 	MapEditorData:
@@ -892,6 +966,8 @@ canewy11:
 	Building:
 		Dimensions: 3,2
 		Footprint: xxx xxx
+	IsometricSelectable:
+		Height: 135
 	SpawnActorOnDeath:
 		Actor: canewy11.rubble
 	MapEditorData:
@@ -918,6 +994,8 @@ canewy12:
 	Building:
 		Dimensions: 2,3
 		Footprint: xx xx xx
+	IsometricSelectable:
+		Height: 135
 	SpawnActorOnDeath:
 		Actor: canewy12.rubble
 	MapEditorData:
@@ -944,6 +1022,8 @@ canewy13:
 	Building:
 		Dimensions: 3,3
 		Footprint: xxx xxx xxx
+	IsometricSelectable:
+		Height: 195
 	SpawnActorOnDeath:
 		Actor: canewy13.rubble
 	MapEditorData:
@@ -970,6 +1050,8 @@ canewy14:
 	Building:
 		Dimensions: 3,3
 		Footprint: xxx xxx xxx
+	IsometricSelectable:
+		Height: 195
 	SpawnActorOnDeath:
 		Actor: canewy14.rubble
 	MapEditorData:
@@ -996,6 +1078,8 @@ canewy15:
 	Building:
 		Dimensions: 3,3
 		Footprint: xxx xxx xxx
+	IsometricSelectable:
+		Height: 135
 	SpawnActorOnDeath:
 		Actor: canewy15.rubble
 	MapEditorData:
@@ -1022,6 +1106,8 @@ canewy16:
 	Building:
 		Dimensions: 2,2
 		Footprint: xx xx
+	IsometricSelectable:
+		Height: 210
 	SpawnActorOnDeath:
 		Actor: canewy16.rubble
 	MapEditorData:
@@ -1048,6 +1134,8 @@ canewy17:
 	Building:
 		Dimensions: 2,2
 		Footprint: xx xx
+	IsometricSelectable:
+		Height: 105
 	SpawnActorOnDeath:
 		Actor: canewy17.rubble
 	MapEditorData:
@@ -1074,6 +1162,8 @@ canewy18:
 	Building:
 		Dimensions: 2,2
 		Footprint: xx xx
+	IsometricSelectable:
+		Height: 120
 	SpawnActorOnDeath:
 		Actor: canewy18.rubble
 	MapEditorData:
@@ -1102,6 +1192,8 @@ canewy20:
 	Building:
 		Dimensions: 3,5
 		Footprint: xxx xxx xxx xxx xxx
+	IsometricSelectable:
+		Height: 45
 	SpawnActorOnDeath:
 		Actor: canewy20.rubble
 
@@ -1128,6 +1220,8 @@ canewy21:
 	Building:
 		Dimensions: 5,3
 		Footprint: xxxxx xxxxx xxxxx
+	IsometricSelectable:
+		Height: 45
 	SpawnActorOnDeath:
 		Actor: canewy21.rubble
 
@@ -1154,6 +1248,8 @@ caswst01:
 	Building:
 		Dimensions: 2,3
 		Footprint: xx xx xx
+	IsometricSelectable:
+		Height: 195
 	SpawnActorOnDeath:
 		Actor: caswst01.rubble
 	MapEditorData:
@@ -1332,6 +1428,8 @@ cafarm01:
 		HP: 400
 	RevealsShroud:
 		Range: 4c0
+	IsometricSelectable:
+		Height: 60
 
 cafarm02:
 	Inherits: ^CivBuilding
@@ -1344,6 +1442,8 @@ cafarm02:
 		HP: 400
 	SpawnActorOnDeath:
 		Actor: cafarm02.rubble
+	IsometricSelectable:
+		Height: 75
 
 cafarm02.rubble:
 	Inherits: ^Rubble
@@ -1364,6 +1464,8 @@ cafarm06:
 	Building:
 		Dimensions: 2,2
 		Footprint: xx xx
+	IsometricSelectable:
+		Height: 135
 	SpawnActorOnDeath:
 		Actor: cafarm06.rubble
 
@@ -1440,6 +1542,8 @@ cacolo01:
 		Type: Concrete
 	RevealsShroud:
 		Range: 6c0
+	IsometricSelectable:
+		Height: 120
 	SpawnActorOnDeath:
 		Actor: cacolo01.rubble
 
@@ -1466,6 +1570,8 @@ caind01:
 		Type: Steel
 	RevealsShroud:
 		Range: 6c0
+	IsometricSelectable:
+		Height: 120
 	SpawnActorOnDeath:
 		Actor: caind01.rubble
 
@@ -1492,6 +1598,8 @@ calab:
 		Type: Steel
 	RevealsShroud:
 		Range: 6c0
+	IsometricSelectable:
+		Height: 90
 	SpawnActorOnDeath:
 		Actor: calab.rubble
 
@@ -1516,6 +1624,8 @@ cagas01:
 		HP: 1000
 	RevealsShroud:
 		Range: 6c0
+	IsometricSelectable:
+		Height: 60
 	SpawnActorOnDeath:
 		Actor: cagas01.rubble
 
@@ -1562,6 +1672,8 @@ cacity01:
 	Building:
 		Dimensions: 4,4
 		Footprint: xxxx xxxx xxxx xxxx
+	IsometricSelectable:
+		Height: 105
 	RenderSprites:
 		PlayerPalette:
 		Palette: city
@@ -1580,6 +1692,8 @@ cacity02:
 	Building:
 		Dimensions: 5,4
 		Footprint: xxxxx xxxxx xxxxx xxxxx
+	IsometricSelectable:
+		Height: 120
 	RenderSprites:
 		PlayerPalette:
 		Palette: city
@@ -1598,6 +1712,8 @@ cacity03:
 	Building:
 		Dimensions: 3,3
 		Footprint: xxx xxx xxx
+	IsometricSelectable:
+		Height: 120
 	RenderSprites:
 		PlayerPalette:
 		Palette: city
@@ -1616,6 +1732,8 @@ cacity04:
 	Building:
 		Dimensions: 4,4
 		Footprint: xxxx xxxx xxxx xxxx
+	IsometricSelectable:
+		Height: 90
 	RenderSprites:
 		PlayerPalette:
 		Palette: city
@@ -1636,6 +1754,8 @@ city05:
 	Building:
 		Dimensions: 4,4
 		Footprint: xxxx xxxx xxxx xxxx
+	IsometricSelectable:
+		Height: 75
 	RenderSprites:
 		PlayerPalette:
 		Palette: city
@@ -1656,6 +1776,8 @@ catech01:
 	Building:
 		Dimensions: 3,3
 		Footprint: xxx xxx xxx
+	IsometricSelectable:
+		Height: 75
 	SpawnActorOnDeath:
 		Actor: catech01.rubble
 	MapEditorData:
@@ -1682,6 +1804,8 @@ catexs01:
 	Building:
 		Dimensions: 2,2
 		Footprint: xx xx
+	IsometricSelectable:
+		Height: 135
 	SpawnActorOnDeath:
 		Actor: catexs01.rubble
 	MapEditorData:
@@ -1710,6 +1834,8 @@ catexs02:
 	Building:
 		Dimensions: 4,4
 		Footprint: xxxx xxxx xxxx xxxx
+	IsometricSelectable:
+		Height: 45
 	SpawnActorOnDeath:
 		Actor: catexs02.rubble
 	MapEditorData:
@@ -1736,6 +1862,8 @@ catexs03:
 	Building:
 		Dimensions: 3,3
 		Footprint: xxx xxx xxx
+	IsometricSelectable:
+		Height: 150
 	SpawnActorOnDeath:
 		Actor: catexs03.rubble
 	MapEditorData:
@@ -1762,6 +1890,8 @@ catexs04:
 	Building:
 		Dimensions: 3,3
 		Footprint: xxx xxx xxx
+	IsometricSelectable:
+		Height: 165
 	SpawnActorOnDeath:
 		Actor: catexs04.rubble
 	MapEditorData:
@@ -1788,6 +1918,8 @@ catexs05:
 	Building:
 		Dimensions: 3,3
 		Footprint: xxx xxx xxx
+	IsometricSelectable:
+		Height: 150
 	SpawnActorOnDeath:
 		Actor: catexs05.rubble
 	MapEditorData:
@@ -1814,6 +1946,8 @@ catexs06:
 	Building:
 		Dimensions: 3,3
 		Footprint: xxx xxx xxx
+	IsometricSelectable:
+		Height: 60
 	SpawnActorOnDeath:
 		Actor: catexs06.rubble
 	MapEditorData:
@@ -1840,6 +1974,8 @@ catexs07:
 	Building:
 		Dimensions: 3,3
 		Footprint: xxx xxx xxx
+	IsometricSelectable:
+		Height: 90
 	SpawnActorOnDeath:
 		Actor: catexs07.rubble
 	MapEditorData:
@@ -1866,6 +2002,8 @@ catexs08:
 	Building:
 		Dimensions: 2,3
 		Footprint: xx xx xx
+	IsometricSelectable:
+		Height: 60
 	SpawnActorOnDeath:
 		Actor: catexs08.rubble
 
@@ -1892,6 +2030,8 @@ capars01:
 	Building:
 		Dimensions: 4,4
 		Footprint: xxxx xxxx xxxx xxxx
+	IsometricSelectable:
+		Height: 265
 	SpawnActorOnDeath:
 		Actor: capars01.rubble
 	MapEditorData:
@@ -1918,6 +2058,8 @@ capars02:
 	Building:
 		Dimensions: 6,4
 		Footprint: xxxxxx xxxxxx xxxxxx xxxxxx
+	IsometricSelectable:
+		Height: 135
 	SpawnActorOnDeath:
 		Actor: capars02.rubble
 	MapEditorData:
@@ -1944,6 +2086,8 @@ capars04:
 	Building:
 		Dimensions: 3,3
 		Footprint: xxx xxx xxx
+	IsometricSelectable:
+		Height: 90
 	SpawnActorOnDeath:
 		Actor: capars04.rubble
 	MapEditorData:
@@ -1970,6 +2114,8 @@ capars05:
 	Building:
 		Dimensions: 3,3
 		Footprint: xxx xxx xxx
+	IsometricSelectable:
+		Height: 105
 	SpawnActorOnDeath:
 		Actor: capars05.rubble
 	MapEditorData:
@@ -1996,6 +2142,8 @@ capars06:
 	Building:
 		Dimensions: 3,3
 		Footprint: xxx xxx xxx
+	IsometricSelectable:
+		Height: 75
 	SpawnActorOnDeath:
 		Actor: capars06.rubble
 	MapEditorData:
@@ -2033,6 +2181,8 @@ capars08:
 	Building:
 		Dimensions: 6,4
 		Footprint: xxxxxx xxxxxx xxxxxx xxxxxx
+	IsometricSelectable:
+		Height: 135
 	SpawnActorOnDeath:
 		Actor: capars08.rubble
 	MapEditorData:
@@ -2059,6 +2209,8 @@ capars09:
 	Building:
 		Dimensions: 6,4
 		Footprint: xxxxxx xxxxxx xxxxxx xxxxxx
+	IsometricSelectable:
+		Height: 90
 	SpawnActorOnDeath:
 		Actor: capars09.rubble
 	MapEditorData:
@@ -2085,6 +2237,8 @@ capars10:
 	Building:
 		Dimensions: 4,3
 		Footprint: xxxx xxxx xxxx
+	IsometricSelectable:
+		Height: 120
 	SpawnActorOnDeath:
 		Actor: capars10.rubble
 	MapEditorData:
@@ -2113,6 +2267,8 @@ capars11:
 	Building:
 		Dimensions: 3,4
 		Footprint: xxx xxx xxx xxx
+	IsometricSelectable:
+		Height: 120
 	SpawnActorOnDeath:
 		Actor: capars11.rubble
 	MapEditorData:
@@ -2141,6 +2297,8 @@ capars12:
 	Building:
 		Dimensions: 3,5
 		Footprint: xxx xxx xxx xxx xxx
+	IsometricSelectable:
+		Height: 90
 	SpawnActorOnDeath:
 		Actor: capars12.rubble
 	MapEditorData:
@@ -2169,6 +2327,8 @@ capars13:
 	Building:
 		Dimensions: 3,4
 		Footprint: xxx xxx xxx xxx
+	IsometricSelectable:
+		Height: 120
 	SpawnActorOnDeath:
 		Actor: capars13.rubble
 	MapEditorData:
@@ -2197,6 +2357,8 @@ capars14:
 	Building:
 		Dimensions: 4,3
 		Footprint: xxxx xxxx xxxx
+	IsometricSelectable:
+		Height: 120
 	SpawnActorOnDeath:
 		Actor: capars14.rubble
 	MapEditorData:
@@ -2223,6 +2385,8 @@ cafrma:
 	Building:
 		Dimensions: 2,2
 		Footprint: xx xx
+	IsometricSelectable:
+		Height: 60
 
 cafrmb:
 	Inherits: ^CivBuilding
@@ -2249,6 +2413,8 @@ caprs03:
 	Building:
 		Dimensions: 6,4
 		Footprint: xxxxxx xxxxxx xxxxxx xxxxxx
+	IsometricSelectable:
+		Height: 45
 	SpawnActorOnDeath:
 		Actor: caprs03.rubble
 	MapEditorData:
@@ -2275,6 +2441,8 @@ cagard01:
 		HP: 100
 	WithIdleOverlay@flag:
 		Sequence: idle-flag
+	IsometricSelectable:
+		Height: 60
 	MapEditorData:
 		Categories: Decoration
 
@@ -2292,6 +2460,8 @@ carus01:
 	Building:
 		Dimensions: 4,4
 		Footprint: xxxx xxxx xxxx xxxx
+	IsometricSelectable:
+		Height: 135
 	SpawnActorOnDeath:
 		Actor: carus01.rubble
 
@@ -2310,6 +2480,8 @@ carus02a:
 		Type: Concrete
 	Health:
 		HP: 800
+	IsometricSelectable:
+		Height: 165
 	SpawnActorOnDeath:
 		Actor: carus02a.rubble
 	MapEditorData:
@@ -2331,6 +2503,8 @@ carus02b:
 		Type: Concrete
 	Health:
 		HP: 500
+	IsometricSelectable:
+		Height: 120
 	SpawnActorOnDeath:
 		Actor: carus02b.rubble
 
@@ -2352,6 +2526,8 @@ carus02g:
 		Range: 6c0
 	Health:
 		HP: 1000
+	IsometricSelectable:
+		Height: 180
 	SpawnActorOnDeath:
 		Actor: carus02g.rubble
 	MapEditorData:
@@ -2376,6 +2552,8 @@ carus03:
 	Building:
 		Dimensions: 2,5
 		Footprint: xx xx xx xx xx
+	IsometricSelectable:
+		Height: 135
 	SpawnActorOnDeath:
 		Actor: carus03.rubble
 
@@ -2400,6 +2578,8 @@ carus04:
 	Building:
 		Dimensions: 4,4
 		Footprint: xxxx xxxx xxxx xxxx
+	IsometricSelectable:
+		Height: 90
 	SpawnActorOnDeath:
 		Actor: carus04.rubble
 
@@ -2424,6 +2604,8 @@ carus05:
 	Building:
 		Dimensions: 4,4
 		Footprint: xxxx xxxx xxxx xxxx
+	IsometricSelectable:
+		Height: 90
 	SpawnActorOnDeath:
 		Actor: carus05.rubble
 
@@ -2448,6 +2630,8 @@ carus06:
 	Building:
 		Dimensions: 4,4
 		Footprint: xxxx xxxx xxxx xxxx
+	IsometricSelectable:
+		Height: 60
 	SpawnActorOnDeath:
 		Actor: carus06.rubble
 
@@ -2468,6 +2652,8 @@ carus08:
 		Range: 6c0
 	Health:
 		HP: 1000
+	IsometricSelectable:
+		Height: 90
 	SpawnActorOnDeath:
 		Actor: carus08.rubble
 
@@ -2488,6 +2674,8 @@ carus09:
 	Building:
 		Dimensions: 2,1
 		Footprint: xx
+	IsometricSelectable:
+		Height: 90
 	SpawnActorOnDeath:
 		Actor: carus09.rubble
 
@@ -2512,6 +2700,8 @@ carus10:
 	Building:
 		Dimensions: 1,2
 		Footprint: x x
+	IsometricSelectable:
+		Height: 60
 	SpawnActorOnDeath:
 		Actor: carus10.rubble
 
@@ -2536,6 +2726,8 @@ carus11:
 	Building:
 		Dimensions: 2,1
 		Footprint: xx
+	IsometricSelectable:
+		Height: 60
 	SpawnActorOnDeath:
 		Actor: carus11.rubble
 
@@ -2560,6 +2752,8 @@ camiam01:
 	Building:
 		Dimensions: 4,2
 		Footprint: xxxx xxxx
+	IsometricSelectable:
+		Height: 180
 	SpawnActorOnDeath:
 		Actor: camiam01.rubble
 	MapEditorData:
@@ -2586,6 +2780,8 @@ camiam02:
 	Building:
 		Dimensions: 4,2
 		Footprint: xxxx xxxx
+	IsometricSelectable:
+		Height: 180
 	SpawnActorOnDeath:
 		Actor: camiam02.rubble
 	MapEditorData:
@@ -2612,6 +2808,8 @@ camiam03:
 	Building:
 		Dimensions: 2,3
 		Footprint: xx xx xx
+	IsometricSelectable:
+		Height: 180
 	SpawnActorOnDeath:
 		Actor: camiam03.rubble
 	MapEditorData:
@@ -2651,6 +2849,8 @@ camiam05:
 	Building:
 		Dimensions: 3,4
 		Footprint: xxx xxx xxx xxx
+	IsometricSelectable:
+		Height: 75
 	SpawnActorOnDeath:
 		Actor: camiam05.rubble
 	MapEditorData:
@@ -2677,6 +2877,8 @@ camiam06:
 	Building:
 		Dimensions: 4,4
 		Footprint: xxxx xxxx xxxx xxxx
+	IsometricSelectable:
+		Height: 75
 	SpawnActorOnDeath:
 		Actor: camiam06.rubble
 	MapEditorData:
@@ -2702,6 +2904,8 @@ camiam07:
 	Building:
 		Dimensions: 4,4
 		Footprint: xxxx xxxx xxxx xxxx
+	IsometricSelectable:
+		Height: 75
 	SpawnActorOnDeath:
 		Actor: camiam07.rubble
 	MapEditorData:
@@ -2755,6 +2959,8 @@ canwy05:
 	Building:
 		Dimensions: 4,4
 		Footprint: xxxx xxxx xxxx xxxx
+	IsometricSelectable:
+		Height: 265
 	SpawnActorOnDeath:
 		Actor: canwy05.rubble
 	MapEditorData:
@@ -2781,6 +2987,8 @@ canwy09:
 	Building:
 		Dimensions: 2,3
 		Footprint: xx xx xx
+	IsometricSelectable:
+		Height: 225
 	SpawnActorOnDeath:
 		Actor: canwy09.rubble
 	MapEditorData:
@@ -2807,6 +3015,8 @@ canwy22:
 	Building:
 		Dimensions: 3,3
 		Footprint: xxx xxx xxx
+	IsometricSelectable:
+		Height: 105
 	SpawnActorOnDeath:
 		Actor: canwy22.rubble
 	MapEditorData:
@@ -2833,6 +3043,8 @@ canwy23:
 	Building:
 		Dimensions: 3,2
 		Footprint: xxx xxx
+	IsometricSelectable:
+		Height: 210
 	SpawnActorOnDeath:
 		Actor: canwy23.rubble
 	MapEditorData:
@@ -2859,6 +3071,8 @@ canwy24:
 	Building:
 		Dimensions: 3,3
 		Footprint: xxx xxx xxx
+	IsometricSelectable:
+		Height: 165
 	SpawnActorOnDeath:
 		Actor: canwy24.rubble
 	MapEditorData:
@@ -2885,6 +3099,8 @@ canwy25:
 	Building:
 		Dimensions: 3,3
 		Footprint: xxx xxx xxx
+	IsometricSelectable:
+		Height: 105
 	SpawnActorOnDeath:
 		Actor: canwy25.rubble
 	MapEditorData:
@@ -2911,6 +3127,8 @@ canwy26:
 	Building:
 		Dimensions: 5,3
 		Footprint: xxxxx xxxxx xxxxx
+	IsometricSelectable:
+		Height: 165
 	SpawnActorOnDeath:
 		Actor: canwy26.rubble
 	MapEditorData:
@@ -2939,6 +3157,8 @@ camex01:
 	Building:
 		Dimensions: 3,2
 		Footprint: xxx xxx
+	IsometricSelectable:
+		Height: 135
 	SpawnActorOnDeath:
 		Actor: camex01.rubble
 	MapEditorData:
@@ -2967,6 +3187,8 @@ camex02:
 	Building:
 		Dimensions: 6,4
 		Footprint: xxxxxx xxxxxx xxxxxx xxxxxx
+	IsometricSelectable:
+		Height: 90
 	SpawnActorOnDeath:
 		Actor: camex02.rubble
 	MapEditorData:
@@ -2995,6 +3217,8 @@ camex03:
 	Building:
 		Dimensions: 3,3
 		Footprint: xxx xxx xxx
+	IsometricSelectable:
+		Height: 45
 	SpawnActorOnDeath:
 		Actor: camex03.rubble
 	MapEditorData:
@@ -3023,6 +3247,8 @@ camex04:
 	Building:
 		Dimensions: 4,4
 		Footprint: xxxx xxxx xxxx xxxx
+	IsometricSelectable:
+		Height: 45
 	SpawnActorOnDeath:
 		Actor: camex04.rubble
 	MapEditorData:
@@ -3077,6 +3303,8 @@ caeur1:
 	Building:
 		Dimensions: 2,2
 		Footprint: xx xx
+	IsometricSelectable:
+		Height: 45
 	SpawnActorOnDeath:
 		Actor: caeur1.rubble
 
@@ -3101,6 +3329,8 @@ caeur2:
 	Building:
 		Dimensions: 2,2
 		Footprint: xx xx
+	IsometricSelectable:
+		Height: 45
 	SpawnActorOnDeath:
 		Actor: caeur2.rubble
 
@@ -3125,6 +3355,8 @@ caeur04:
 	Building:
 		Dimensions: 4,3
 		Footprint: xxxx xxxx xxxx
+	IsometricSelectable:
+		Height: 45
 	SpawnActorOnDeath:
 		Actor: caeur04.rubble
 
@@ -3149,6 +3381,8 @@ cachig01:
 	Building:
 		Dimensions: 3,2
 		Footprint: xxx xxx
+	IsometricSelectable:
+		Height: 135
 	SpawnActorOnDeath:
 		Actor: cachig01.rubble
 	MapEditorData:
@@ -3175,6 +3409,8 @@ cachig02:
 	Building:
 		Dimensions: 2,3
 		Footprint: xx xx xx
+	IsometricSelectable:
+		Height: 135
 	SpawnActorOnDeath:
 		Actor: cachig02.rubble
 	MapEditorData:
@@ -3201,6 +3437,8 @@ cachig03:
 	Building:
 		Dimensions: 3,2
 		Footprint: xxx xxx
+	IsometricSelectable:
+		Height: 165
 	SpawnActorOnDeath:
 		Actor: cachig03.rubble
 	MapEditorData:
@@ -3229,6 +3467,8 @@ cachig04:
 	Building:
 		Dimensions: 2,2
 		Footprint: xx xx
+	IsometricSelectable:
+		Height: 195
 	SpawnActorOnDeath:
 		Actor: cachig04.rubble
 	MapEditorData:
@@ -3257,6 +3497,8 @@ cachig05:
 	Building:
 		Dimensions: 4,4
 		Footprint: xxxx xxxx xxxx xxxx
+	IsometricSelectable:
+		Height: 330
 	SpawnActorOnDeath:
 		Actor: cachig05.rubble
 	MapEditorData:
@@ -3283,6 +3525,8 @@ cachig06:
 	Building:
 		Dimensions: 2,2
 		Footprint: xx xx
+	IsometricSelectable:
+		Height: 225
 	SpawnActorOnDeath:
 		Actor: cachig06.rubble
 	MapEditorData:
@@ -3309,6 +3553,8 @@ castl01:
 	Building:
 		Dimensions: 4,4
 		Footprint: xxxx xxxx xxxx xxxx
+	IsometricSelectable:
+		Height: 105
 	SpawnActorOnDeath:
 		Actor: castl01.rubble
 	MapEditorData:
@@ -3335,6 +3581,8 @@ castl02:
 	Building:
 		Dimensions: 4,4
 		Footprint: xxxx xxxx xxxx xxxx
+	IsometricSelectable:
+		Height: 105
 	SpawnActorOnDeath:
 		Actor: castl02.rubble
 	MapEditorData:
@@ -3361,6 +3609,8 @@ castl03:
 	Building:
 		Dimensions: 4,4
 		Footprint: xxxx xxxx xxxx xxxx
+	IsometricSelectable:
+		Height: 90
 	SpawnActorOnDeath:
 		Actor: castl03.rubble
 	MapEditorData:
@@ -3387,6 +3637,8 @@ castl04:
 	Building:
 		Dimensions: 2,6
 		Footprint: xx xx xx xx xx xx
+	IsometricSelectable:
+		Height: 240
 	SpawnActorOnDeath:
 		Actor: castl04.rubble
 	MapEditorData:
@@ -3415,6 +3667,8 @@ castl05a:
 	Building:
 		Dimensions: 4,4
 		Footprint: xxxx xxxx xxxx xxxx
+	IsometricSelectable:
+		Height: 90
 	SpawnActorOnDeath:
 		Actor: castl05a.rubble
 	MapEditorData:
@@ -3443,6 +3697,8 @@ castl05b:
 	Building:
 		Dimensions: 4,4
 		Footprint: xxxx xxxx xxxx xxxx
+	IsometricSelectable:
+		Height: 90
 	SpawnActorOnDeath:
 		Actor: castl05b.rubble
 	MapEditorData:
@@ -3471,6 +3727,8 @@ castl05c:
 	Building:
 		Dimensions: 4,4
 		Footprint: xxxx xxxx xxxx xxxx
+	IsometricSelectable:
+		Height: 90
 	SpawnActorOnDeath:
 		Actor: castl05c.rubble
 	MapEditorData:
@@ -3499,6 +3757,8 @@ castl05d:
 	Building:
 		Dimensions: 4,4
 		Footprint: xxxx xxxx xxxx xxxx
+	IsometricSelectable:
+		Height: 90
 	SpawnActorOnDeath:
 		Actor: castl05d.rubble
 	MapEditorData:
@@ -3527,6 +3787,8 @@ castl05e:
 	Building:
 		Dimensions: 4,4
 		Footprint: xxxx xxxx xxxx xxxx
+	IsometricSelectable:
+		Height: 90
 	SpawnActorOnDeath:
 		Actor: castl05e.rubble
 	MapEditorData:
@@ -3555,6 +3817,8 @@ castl05f:
 	Building:
 		Dimensions: 4,4
 		Footprint: xxxx xxxx xxxx xxxx
+	IsometricSelectable:
+		Height: 90
 	SpawnActorOnDeath:
 		Actor: castl05f.rubble
 	MapEditorData:
@@ -3583,6 +3847,8 @@ castl05g:
 	Building:
 		Dimensions: 4,4
 		Footprint: xxxx xxxx xxxx xxxx
+	IsometricSelectable:
+		Height: 90
 	SpawnActorOnDeath:
 		Actor: castl05g.rubble
 	MapEditorData:
@@ -3611,6 +3877,8 @@ castl05h:
 	Building:
 		Dimensions: 4,4
 		Footprint: xxxx xxxx xxxx xxxx
+	IsometricSelectable:
+		Height: 90
 	SpawnActorOnDeath:
 		Actor: castl05h.rubble
 	MapEditorData:
@@ -3639,6 +3907,8 @@ camsc07:
 	Building:
 		Dimensions: 2,2
 		Footprint: xx xx
+	IsometricSelectable:
+		Height: 45
 	MapEditorData:
 		ExcludeTilesets: SNOW
 
@@ -3651,6 +3921,8 @@ camsc08:
 		Range: 6c0
 	Health:
 		HP: 200
+	IsometricSelectable:
+		Height: 45
 	MapEditorData:
 		ExcludeTilesets: SNOW
 
@@ -3663,6 +3935,8 @@ camsc09:
 		Range: 6c0
 	Health:
 		HP: 200
+	IsometricSelectable:
+		Height: 45
 	MapEditorData:
 		ExcludeTilesets: SNOW
 
@@ -3678,6 +3952,8 @@ camsc10:
 	Building:
 		Dimensions: 4,4
 		Footprint: xxxx xxxx xxxx xxxx
+	IsometricSelectable:
+		Height: 90
 	SpawnActorOnDeath:
 		Actor: camsc10.rubble
 
@@ -3704,6 +3980,8 @@ cabunk01:
 	Building:
 		Dimensions: 2,2
 		Footprint: xx xx
+	IsometricSelectable:
+		Height: 60
 	SpawnActorOnDeath:
 		Actor: cabunk01.rubble
 
@@ -3730,6 +4008,8 @@ cabunk02:
 	Building:
 		Dimensions: 2,2
 		Footprint: xx xx
+	IsometricSelectable:
+		Height: 60
 	SpawnActorOnDeath:
 		Actor: cabunk02.rubble
 

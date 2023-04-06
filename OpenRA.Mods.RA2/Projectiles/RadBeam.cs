@@ -1,6 +1,6 @@
 #region Copyright & License Information
 /*
- * Copyright 2007-2020 The OpenRA Developers (see AUTHORS)
+ * Copyright (c) The OpenRA Developers and Contributors
  * This file is part of OpenRA, which is free software. It is made
  * available to you under the terms of the GNU General Public License
  * as published by the Free Software Foundation, either version 3 of
@@ -50,7 +50,7 @@ namespace OpenRA.Mods.RA2.Projectiles
 		public readonly string HitAnim = null;
 
 		[Desc("Sequence of impact animation to use.")]
-		[SequenceReference("HitAnim")]
+		[SequenceReference("HitAnim", allowNullImage: true)]
 		public readonly string HitAnimSequence = "idle";
 
 		[PaletteReference]
@@ -58,8 +58,7 @@ namespace OpenRA.Mods.RA2.Projectiles
 
 		public IProjectile Create(ProjectileArgs args)
 		{
-			var c = UsePlayerColor ? args.SourceActor.Owner.Color : Color;
-			return new RadBeam(args, this, c);
+			return new RadBeam(args, this);
 		}
 	}
 
@@ -73,7 +72,7 @@ namespace OpenRA.Mods.RA2.Projectiles
 		bool animationComplete;
 		WPos target;
 
-		public RadBeam(ProjectileArgs args, RadBeamInfo info, Color color)
+		public RadBeam(ProjectileArgs args, RadBeamInfo info)
 		{
 			this.args = args;
 			this.info = info;
@@ -96,7 +95,7 @@ namespace OpenRA.Mods.RA2.Projectiles
 				else
 					animationComplete = true;
 
-				args.Weapon.Impact(Target.FromPos(target), args.SourceActor, args.DamageModifiers);
+				args.Weapon.Impact(Target.FromPos(target), new WarheadArgs(args));
 				doneDamage = true;
 			}
 
@@ -115,9 +114,10 @@ namespace OpenRA.Mods.RA2.Projectiles
 
 			if (ticks < info.BeamDuration)
 			{
-				WDist amp = info.ScaleAmplitudeWithDuration
+				var amp = info.ScaleAmplitudeWithDuration
 					? info.Amplitude * ticks / info.BeamDuration
 					: info.Amplitude;
+
 				yield return new RadBeamRenderable(args.Source, info.ZOffset, target - args.Source, info.Thickness, info.Color, amp, info.WaveLength, info.QuantizationCount);
 			}
 

@@ -1,0 +1,86 @@
+name: Continuous Integration
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  linux:
+    name: Linux (.NET 6.0)
+    runs-on: ubuntu-22.04
+
+    steps:
+      - name: Clone Repository
+        uses: actions/checkout@v3
+
+      - name: Install .NET 6.0
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '6.0.x'
+
+      - name: Prepare Environment
+        run: |
+          . mod.config;
+          awk '/\r$$/ { exit(1); }' mod.config || (printf "Invalid mod.config format. File must be saved using unix-style (LF, not CRLF or CR) line endings.\n"; exit 1);
+
+      - name: Check Code
+        run: |
+          make check
+          make check-packaging-scripts
+
+      - name: Check Mod
+        run: |
+          sudo apt-get install lua5.1
+          make check-scripts
+          make test
+
+  linux-mono:
+    name: Linux (mono)
+    runs-on: ubuntu-22.04
+
+    steps:
+      - name: Clone Repository
+        uses: actions/checkout@v3
+
+      - name: Prepare Environment
+        run: |
+          . mod.config;
+          awk '/\r$$/ { exit(1); }' mod.config || (printf "Invalid mod.config format. File must be saved using unix-style (LF, not CRLF or CR) line endings.\n"; exit 1);
+
+      - name: Check Code
+        run: |
+          # check-packaging-scripts does not depend on .net/mono, so is not needed here
+          mono --version
+          make RUNTIME=mono check
+
+      - name: Check Mod
+        run: |
+          # check-scripts does not depend on .net/mono, so is not needed here
+          make RUNTIME=mono test
+
+  windows:
+    name: Windows (.NET 6.0)
+    runs-on: windows-2019
+
+    steps:
+      - name: Clone Repository
+        uses: actions/checkout@v3
+
+      - name: Install .NET 6.0
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '6.0.x'
+
+      - name: Check Code
+        shell: powershell
+        run: |
+          # Work around runtime failures on the GH Actions runner
+          dotnet nuget add source https://api.nuget.org/v3/index.json -n nuget.org
+          .\make.ps1 check
+
+      - name: Check Mods
+        run: |
+          chocolatey install lua --version 5.1.5.52
+          $ENV:Path = $ENV:Path + ";C:\Program Files (x86)\Lua\5.1\"
+          .\make.ps1 check-scripts
+          .\make.ps1 test

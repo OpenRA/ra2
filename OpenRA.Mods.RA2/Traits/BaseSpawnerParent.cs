@@ -1,6 +1,6 @@
-﻿#region Copyright & License Information
+#region Copyright & License Information
 /*
- * Copyright 2007-2020 The OpenRA Developers (see AUTHORS)
+ * Copyright (c) The OpenRA Developers and Contributors
  * This file is part of OpenRA, which is free software. It is made
  * available to you under the terms of the GNU General Public License
  * as published by the Free Software Foundation, either version 3 of
@@ -32,7 +32,7 @@ namespace OpenRA.Mods.RA2.Traits
 		public Actor Actor = null;
 		public BaseSpawnerChild SpawnerChild = null;
 
-		public bool IsValid { get { return Actor != null && !Actor.IsDead; } }
+		public bool IsValid => Actor != null && !Actor.IsDead;
 	}
 
 	[Desc("This actor can spawn actors.")]
@@ -202,7 +202,7 @@ namespace OpenRA.Mods.RA2.Traits
 		public virtual void SpawnIntoWorld(Actor self, Actor child, WPos centerPosition)
 		{
 			var exit = self.RandomExitOrDefault(self.World, null);
-			SetSpawnedFacing(child, self, exit);
+			SetSpawnedFacing(child, exit);
 
 			self.World.AddFrameEndTask(w =>
 			{
@@ -210,7 +210,7 @@ namespace OpenRA.Mods.RA2.Traits
 					return;
 
 				var spawnOffset = exit == null ? WVec.Zero : exit.Info.SpawnOffset;
-				child.Trait<IPositionable>().SetVisualPosition(child, centerPosition + spawnOffset);
+				child.Trait<IPositionable>().SetCenterPosition(child, centerPosition + spawnOffset);
 
 				var location = self.World.Map.CellContaining(centerPosition + spawnOffset);
 
@@ -223,18 +223,14 @@ namespace OpenRA.Mods.RA2.Traits
 			});
 		}
 
-		void SetSpawnedFacing(Actor spawned, Actor spawner, Exit exit)
+		void SetSpawnedFacing(Actor spawned, Exit exit)
 		{
-			var facingOffset = facing == null ? 0 : facing.Facing;
-
-			var exitFacing = exit != null ? exit.Info.Facing : 0;
+			var facingOffset = facing?.Facing ?? WAngle.Zero;
+			var exitFacing = exit?.Info.Facing ?? WAngle.Zero;
 
 			var spawnFacing = spawned.TraitOrDefault<IFacing>();
 			if (spawnFacing != null)
-				spawnFacing.Facing = (facingOffset + exitFacing) % 256;
-
-			foreach (var t in spawned.TraitsImplementing<Turreted>())
-				t.TurretFacing = (facingOffset + exitFacing) % 256;
+				spawnFacing.Facing = facingOffset + exitFacing;
 		}
 
 		public void Stopchildren()

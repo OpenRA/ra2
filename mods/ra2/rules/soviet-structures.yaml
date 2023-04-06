@@ -9,8 +9,8 @@ nacnst:
 	Building:
 		Footprint: xxxx xxxx xxxx xxxx
 		Dimensions: 4,4
-	Selectable:
-		Bounds: 220, 180, 0, -35
+	IsometricSelectable:
+		Height: 90
 	ProvidesPrerequisite@soviets:
 		Prerequisite: structures.soviets
 	Health:
@@ -31,7 +31,7 @@ nacnst:
 	Transforms:
 		IntoActor: smcv
 		Offset: 1,1
-		Facing: 96
+		Facing: 384
 		DeployCursor: undeploy
 		RequiresCondition: factundeploy && !build-incomplete
 	TransformsIntoMobile:
@@ -90,8 +90,8 @@ napowr:
 	Building:
 		Footprint: xxx xxx
 		Dimensions: 3,2
-	Selectable:
-		Bounds: 126, 94, 2, -16
+	IsometricSelectable:
+		Height: 45
 	Health:
 		HP: 750
 	Armor:
@@ -106,6 +106,8 @@ napowr:
 		RequiresCondition: !power-outage
 	InfiltrateForPowerOutage:
 		Types: SpyInfiltrate
+		InfiltrationNotification: BuildingInfiltratedPowerSabotaged
+		InfiltratedNotification: PowerSabotaged
 	AffectedByPowerOutage:
 		Condition: power-outage
 	ScalePowerWithHealth:
@@ -142,8 +144,8 @@ nahand:
 	Building:
 		Footprint: xx xx
 		Dimensions: 2,2
-	Selectable:
-		Bounds: 94, 168, 0, -58
+	IsometricSelectable:
+		Height: 135
 	Health:
 		HP: 500
 	Armor:
@@ -192,23 +194,25 @@ nahand:
 		PrimaryCondition: primary
 		SelectionNotification: PrimaryBuildingSelected
 	RallyPoint:
-		Offset: 3,3
+		Path: 3,3
 		Palette: mouse
 		IsPlayerPalette: false
+	CommandBarBlacklist:
+		DisableStop: false
 	WithTextDecoration@primary:
 		RequiresSelection: true
 		Text: PRIMARY
-		ReferencePoint: Top
-		ZOffset: 256
+		Position: Top
 		RequiresCondition: primary
 	ProductionBar:
 		ProductionType: Infantry
 	Power:
 		Amount: -10
-	ConditionManager:
 	InfiltrateForSupportPower:
 		Types: SpyInfiltrate
 		Proxy: barracks.infiltrated
+		InfiltrationNotification: BuildingInfiltratedTechnologyStolen
+		InfiltratedNotification: TechnologyStolen
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
 	SpawnSurvivors:
@@ -223,8 +227,8 @@ narefn:
 		BuildPaletteOrder: 30
 		Prerequisites: power, ~structures.soviets
 		Description: Processes ore into credits.
-	Selectable:
-		Bounds: 170, 150, -6, -33
+	IsometricSelectable:
+		Height: 90
 	Valued:
 		Cost: 2000
 	Tooltip:
@@ -247,19 +251,20 @@ narefn:
 		TickLifetime: 30
 		TickVelocity: 1
 		TickRate: 10
-		DockAngle: 160
+		DockAngle: 640
 		UseStorage: false
 	CustomSellValue:
 		Value: 300
 	InfiltrateForCash:
 		Types: SpyInfiltrate
 		Percentage: 50
-		Notification: CreditsStolen
+		InfiltrationNotification: BuildingInfiltratedCashStolen
+		InfiltratedNotification: CashStolen
 		Minimum: 500
 	FreeActor:
 		Actor: harv
 		SpawnOffset: 3, 1
-		Facing: 160
+		Facing: 640
 	WithDockedOverlay:
 	WithIdleOverlay@bib:
 		Sequence: idle-bib
@@ -293,8 +298,8 @@ naradr:
 	Building:
 		Footprint: xx xx
 		Dimensions: 2,2
-	Selectable:
-		Bounds: 95, 130, 0, -40
+	IsometricSelectable:
+		Height: 90
 	Health:
 		HP: 1000
 	Armor:
@@ -314,6 +319,8 @@ naradr:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
 	InfiltrateForExploration:
 		Types: SpyInfiltrate
+		InfiltrationNotification: BuildingInfiltratedRadarSabotaged
+		InfiltratedNotification: RadarSabotaged
 	Power:
 		Amount: -50
 	SpawnSurvivors:
@@ -328,8 +335,8 @@ naweap:
 		BuildPaletteOrder: 40
 		Prerequisites: refinery, nahand, ~structures.soviets
 		Description: Produces vehicles.
-	Selectable:
-		Bounds: 196, 178, -6, -48
+	IsometricSelectable:
+		Height: 90
 	Valued:
 		Cost: 2000
 	Tooltip:
@@ -351,9 +358,11 @@ naweap:
 	RevealsShroud:
 		Range: 4c0
 	RallyPoint:
-		Offset: 6,1
+		Path: 6,1
 		Palette: mouse
 		IsPlayerPalette: false
+	CommandBarBlacklist:
+		DisableStop: false
 	Exit@1:
 		ExitCell: 5,1
 	Production:
@@ -364,8 +373,7 @@ naweap:
 	WithTextDecoration@primary:
 		RequiresSelection: true
 		Text: PRIMARY
-		ReferencePoint: Top
-		ZOffset: 256
+		Position: Top
 		RequiresCondition: primary
 	ProductionBar:
 		ProductionType: Vehicle
@@ -402,6 +410,8 @@ naweap:
 	InfiltrateForSupportPower:
 		Types: SpyInfiltrate
 		Proxy: warfactory.infiltrated
+		InfiltrationNotification: BuildingInfiltratedTechnologyStolen
+		InfiltratedNotification: ArmorTechnologyStolen
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
 	SpawnSurvivors:
@@ -427,6 +437,8 @@ nayard:
 		Footprint: xxxx xxxx xxxx xxxx
 		Dimensions: 4,4
 		TerrainTypes: Water
+	IsometricSelectable:
+		Height: 120
 	-GivesBuildableArea:
 	Health:
 		HP: 1500
@@ -481,7 +493,7 @@ nayard:
 		ExitCell: 4,-2
 	Exit@4_5:
 		SpawnOffset: 0,-113,0
-		Facing: 160
+		Facing: 640
 		ExitCell: 4,5
 	# X 5 column
 	Exit@5_n2:
@@ -498,7 +510,7 @@ nayard:
 		ExitCell: 5,3
 	Exit@5_4:
 		SpawnOffset: 0,-113,0
-		Facing: 96
+		Facing: 384
 		ExitCell: 5,4
 	Exit@5_5:
 		ExitCell: 5,5
@@ -510,13 +522,14 @@ nayard:
 	WithTextDecoration@primary:
 		RequiresSelection: true
 		Text: PRIMARY
-		ReferencePoint: Top
-		ZOffset: 256
+		Position: Top
 		RequiresCondition: primary
 	RallyPoint:
-		Offset: 5,1
+		Path: 5,1
 		Palette: mouse
 		IsPlayerPalette: false
+	CommandBarBlacklist:
+		DisableStop: false
 	RepairsUnits:
 		StartRepairingNotification: Repairing
 		FinishRepairingNotification: UnitRepaired
@@ -549,8 +562,8 @@ nadept:
 		BuildPaletteOrder: 70
 		Prerequisites: naweap, ~structures.soviets
 		Description: Repairs vehicles and removes Terror Drones (for a price).
-	Selectable:
-		Bounds: 156, 150, 0, -38
+	IsometricSelectable:
+		Height: 90
 	Valued:
 		Cost: 800
 	Tooltip:
@@ -570,6 +583,8 @@ nadept:
 	RallyPoint:
 		Palette: mouse
 		IsPlayerPalette: false
+	CommandBarBlacklist:
+		DisableStop: false
 	RepairsUnits:
 		Interval: 148
 		HpPerStep: 20
@@ -607,8 +622,8 @@ nanrct:
 	Building:
 		Footprint: xxxx xxxx xxxx xxxx
 		Dimensions: 4,4
-	Selectable:
-		Bounds: 167, 130, 9, -31
+	IsometricSelectable:
+		Height: 60
 	Health:
 		HP: 1000
 	Armor:
@@ -627,6 +642,8 @@ nanrct:
 		RequiresCondition: !power-outage
 	InfiltrateForPowerOutage:
 		Types: SpyInfiltrate
+		InfiltrationNotification: BuildingInfiltratedPowerSabotaged
+		InfiltratedNotification: PowerSabotaged
 	AffectedByPowerOutage:
 		Condition: power-outage
 	ScalePowerWithHealth:
@@ -655,8 +672,8 @@ natech:
 	Building:
 		Footprint: xxx xxx xxx
 		Dimensions: 3,3
-	Selectable:
-		Bounds: 152, 164, 0, -50
+	IsometricSelectable:
+		Height: 120
 	Health:
 		HP: 500
 	Armor:
@@ -668,6 +685,8 @@ natech:
 	InfiltrateForSupportPower:
 		Types: SpyInfiltrate
 		Proxy: soviets.tech.infiltrated
+		InfiltrationNotification: BuildingInfiltratedTechnologyStolen
+		InfiltratedNotification: TechnologyStolen
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
 	SpawnSurvivors:
@@ -690,8 +709,8 @@ naclon:
 	Building:
 		Footprint: xx xx
 		Dimensions: 2, 2
-	Selectable:
-		Bounds: 108, 134, 0, -48
+	IsometricSelectable:
+		Height: 90
 	Health:
 		HP: 1000
 	Armor:
@@ -737,13 +756,16 @@ naclon:
 		SpawnOffset: 0,0,0
 		ExitCell: 2, 2
 	Production:
-		Produces: Dummy
+		Produces: Cloning
 	RallyPoint:
-		Offset: 3,3
+		Path: 3,3
 		Palette: mouse
 		IsPlayerPalette: false
+	CommandBarBlacklist:
+		DisableStop: false
 	ClonesProducedUnits:
 		CloneableTypes: infantry
+		ProductionType: Cloning
 	AcceptsDeliveredCash:
 	SpawnSurvivors:
 		DeathTypes: ExplosionDeath, BulletDeath
@@ -764,8 +786,8 @@ napsis:
 	Building:
 		Footprint: xx xx
 		Dimensions: 2,2
-	Selectable:
-		Bounds: 82, 150, -1, -55
+	IsometricSelectable:
+		Height: 120
 	Health:
 		HP: 750
 	Armor:
@@ -804,8 +826,8 @@ nairon:
 	Building:
 		Footprint: xxx xxx xxx
 		Dimensions: 3, 3
-	Selectable:
-		Bounds: 136, 100, 0, -20
+	IsometricSelectable:
+		Height: 75
 	Health:
 		HP: 750
 	Armor:
@@ -817,18 +839,24 @@ nairon:
 	GrantExternalConditionPower@IRONCURTAIN:
 		Icon: invuln
 		ChargeInterval: 7500
-		Description: Iron Curtain
-		LongDesc: Makes a group of units invulnerable\nfor 20 seconds.
+		Name: Iron Curtain
+		Description: Makes a group of units invulnerable\nfor 20 seconds.
 		Duration: 500
 		# TODO: These are actually no speech notifications
 		EndChargeSound: siroread.wav
 		EndChargeSpeechNotification: IronCurtainReady
 		OnFireSound: siroon.wav
-		DisplayTimerStances: Ally, Neutral, Enemy
+		DisplayTimerRelationships: Ally, Neutral, Enemy
 		DisplayRadarPing: True
 		Condition: invulnerability
 		PauseOnCondition: lowpower
+		Dimensions: 3, 3
+		Footprint: xxx xxx xxx
 	SupportPowerChargeBar:
+	InfiltrateForSupportPowerReset:
+		Types: SpyInfiltrate
+	Targetable:
+		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
 	GrantConditionOnPowerState@LOWPOWER:
 		Condition: lowpower
 		ValidPowerStates: Low, Critical
@@ -852,8 +880,8 @@ namisl:
 	Building:
 		Footprint: xxx xxx xxx
 		Dimensions: 3, 3
-	Selectable:
-		Bounds: 152, 104, 0, -50
+	IsometricSelectable:
+		Height: 120
 	Health:
 		HP: 1000
 	Armor:
@@ -866,12 +894,16 @@ namisl:
 		Condition: lowpower
 		ValidPowerStates: Low, Critical
 	SupportPowerChargeBar:
+	InfiltrateForSupportPowerReset:
+		Types: SpyInfiltrate
+	Targetable:
+		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
 	NukePower:
 		Cursor: nuke
 		Icon: abomb
 		ChargeInterval: 15000
-		Description: Nuclear Missile
-		LongDesc: Launches a devastating atomic bomb\nat a target location.
+		Name: Nuclear Missile
+		Description: Launches a devastating atomic bomb\nat a target location.
 		EndChargeSound: snukread.wav
 		EndChargeSpeechNotification: AtomBombReady
 		LaunchSound: snuklaun.wav
@@ -881,11 +913,10 @@ namisl:
 		MissileDelay: 35
 		SpawnOffset: 0,0,-1c0
 		IsPlayerPalette: true
-		DisplayTimerStances: Ally, Neutral, Enemy
+		DisplayTimerRelationships: Ally, Neutral, Enemy
 		DisplayBeacon: true
 		DisplayRadarPing: true
 		CameraRemoveDelay: 70
-		FlashType: Nuke
 		ArrowSequence: arrow
 		CameraRange: 10
 		TrailImage: nukesmoke
@@ -896,7 +927,8 @@ namisl:
 		FlightDelay: 200
 		PauseOnCondition: lowpower
 		SelectTargetSpeechNotification: SelectTarget
-	WithNukeLaunchAnimation:
+		MissileImage: atomic
+	WithSupportPowerActivationAnimation:
 	SpawnSurvivors:
 		DeathTypes: ExplosionDeath, BulletDeath
 		Actors: e2, e2, e2, e2, e2, e2, e2
@@ -932,12 +964,11 @@ naflak:
 		Type: Steel
 	RevealsShroud:
 		Range: 5c0
-	Selectable:
-		Bounds: 46, 62, 0, -20
+	IsometricSelectable:
+		Height: 60
 	Turreted:
-		TurnSpeed: 10
-		InitialFacing: 224
-		PreviewFacing: 224
+		TurnSpeed: 40
+		InitialFacing: 896
 		Offset: 450,0,0
 	AttackTurreted:
 		Voice: Attack
@@ -984,8 +1015,8 @@ tesla:
 		Type: Steel
 	RevealsShroud:
 		Range: 8c0
-	Selectable:
-		Bounds: 44, 88, -2, -33
+	IsometricSelectable:
+		Height: 75
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, TeslaBoost
 	WithTeslaChargeOverlay:
@@ -1041,12 +1072,9 @@ nalasr:
 		Type: Steel
 	RevealsShroud:
 		Range: 7c0
-	Selectable:
-		Bounds: 50, 30, 0, -12
 	Turreted:
-		TurnSpeed: 10
-		InitialFacing: 224
-		PreviewFacing: 224
+		TurnSpeed: 40
+		InitialFacing: 896
 		Offset: 320,0,0
 	AttackTurreted:
 		Voice: Attack
@@ -1055,7 +1083,6 @@ nalasr:
 		Weapon: vulcan
 		LocalOffset: 544,128,480, 544,-128,480
 		MuzzleSequence: muzzle
-		MuzzleSplitFacings: 8
 	WithMuzzleOverlay:
 	BodyOrientation:
 		QuantizedFacings: 16

@@ -12,14 +12,14 @@ amcv:
 		Name: Mobile Construction Vehicle
 	Selectable:
 		Priority: 4
-		Bounds: 68, 56, 0, -7
+		Bounds: 1641, 2702, 0, -337
 	Health:
 		HP: 1000
 	Armor:
 		Type: Heavy
 	Mobile:
 		Speed: 60
-		TurnSpeed: 5
+		TurnSpeed: 20
 		Locomotor: heavytracked
 	RevealsShroud:
 		Range: 4c0
@@ -30,7 +30,7 @@ amcv:
 		Voice: Move
 		IntoActor: gacnst
 		Offset: -1,-1
-		Facing: 96
+		Facing: 384
 		TransformSounds: uplace.wav
 		NoTransformNotification: BuildingCannotPlaceAudio
 	RenderSprites:
@@ -49,11 +49,13 @@ cmin:
 		Description: Gathers Ore.\n  Unarmed\nSpecial ability: Can teleport to own refineries
 	Valued:
 		Cost: 1400
+	UpdatesPlayerStatistics:
+		AddToArmyValue: true
 	Tooltip:
 		Name: Chrono Miner
 	Selectable:
 		Priority: 7
-		Bounds: 64, 52, 0, -6
+		Bounds: 1544, 2509, 0, -289
 	Harvester:
 		Capacity: 20
 		Resources: Ore, Gems
@@ -74,7 +76,7 @@ cmin:
 		TargetTypes: ImmuneToRadiation
 	Mobile:
 		Speed: 60
-		TurnSpeed: 8
+		TurnSpeed: 32
 		Locomotor: tracked
 	RevealsShroud:
 		Range: 4c0
@@ -89,6 +91,14 @@ cmin:
 	Voiced:
 		VoiceSet: ChronoMinerVoice
 	HitShape:
+	WithHarvesterPipsDecoration:
+		Position: BottomLeft
+		RequiresSelection: true
+		PipCount: 7
+		Palette: pips
+		ResourceSequences:
+			Ore: pip-yellow
+			Gems: pip-red
 
 mtnk:
 	Inherits: ^Vehicle
@@ -96,6 +106,8 @@ mtnk:
 	Inherits@MC: ^MindControllable
 	Valued:
 		Cost: 700
+	UpdatesPlayerStatistics:
+		AddToArmyValue: true
 	Tooltip:
 		Name: Grizzly Battle Tank
 	Buildable:
@@ -105,7 +117,7 @@ mtnk:
 		Description: Allied Main Battle Tank.\n  Strong vs Vehicles, Ships\n  Weak vs Infantry, Aircraft
 	Mobile:
 		Speed: 105
-		TurnSpeed: 5
+		TurnSpeed: 20
 		Locomotor: heavytracked
 	Health:
 		HP: 300
@@ -114,7 +126,7 @@ mtnk:
 	RevealsShroud:
 		Range: 8c0
 	Turreted:
-		TurnSpeed: 5
+		TurnSpeed: 20
 	Armament@primary:
 		Weapon: 105mm
 		LocalOffset: 832,0,512
@@ -131,7 +143,7 @@ mtnk:
 	AutoTarget:
 	RenderSprites:
 	Selectable:
-		Bounds: 64, 52, 0, -6
+		Bounds: 1544, 2509, 0, -289
 	RenderVoxels:
 	WithVoxelBody:
 	WithVoxelTurret:
@@ -150,6 +162,8 @@ tnkd:
 		Cost: 900
 	Tooltip:
 		Name: Tank Destroyer
+	UpdatesPlayerStatistics:
+		AddToArmyValue: true
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 40
@@ -157,7 +171,7 @@ tnkd:
 		Description: Special anti-armor unit.\n  Strong vs Vehicles, Ships\n  Weak vs Infantry, Aircraft
 	Mobile:
 		Speed: 75
-		TurnSpeed: 5
+		TurnSpeed: 20
 		Locomotor: heavytracked
 	Health:
 		HP: 400
@@ -177,11 +191,12 @@ tnkd:
 		RequiresCondition: rank-elite
 	AttackFrontal:
 		Voice: Attack
+		FacingTolerance: 0
 	WithMuzzleOverlay:
 	AutoTarget:
 	RenderSprites:
 	Selectable:
-		Bounds: 64, 52, 0, -6
+		Bounds: 1544, 2509, 0, -289
 	RenderVoxels:
 		NormalsPalette: ts-normals
 	WithVoxelBody:
@@ -197,6 +212,8 @@ fv:
 	Inherits@MC: ^MindControllable
 	Valued:
 		Cost: 600
+	UpdatesPlayerStatistics:
+		AddToArmyValue: true
 	Tooltip:
 		Name: Infantry Fighting Vehicle
 	Buildable:
@@ -206,7 +223,7 @@ fv:
 		Description: Multi-Purpose Vehicle.\nWithout passenger:\n  Strong vs Infantry, Aircraft\n  Weak vs Vehicles, Ships\nSpecial Ability: Armament depends on passenger.
 	Mobile:
 		Speed: 150
-		TurnSpeed: 5
+		TurnSpeed: 20
 		PauseOnCondition: notmobile || chronodisable
 	Health:
 		HP: 200
@@ -215,11 +232,10 @@ fv:
 	RevealsShroud:
 		Range: 8c0
 	Turreted:
-		TurnSpeed: 5
+		TurnSpeed: 20
 	Cargo:
 		Types: Infantry
 		MaxWeight: 1
-		PipCount: 1
 		UnloadVoice: Move
 		LoadingCondition: notmobile
 		PassengerConditions:
@@ -248,16 +264,15 @@ fv:
 		Weapon: CRM60
 		LocalOffset: 188,32,600
 		RequiresCondition: ifv-mg
-		MuzzleSequence: mgun_muz
-		MuzzleSplitFacings: 8
+		#MuzzleSequence: mgun_muz # TODO:
 	Armament@repair:
 		Weapon: RepairBullet
 		LocalOffset: 164,0,864
 		RequiresCondition: ifv-repair
 		Cursor: goldwrench
 		OutsideRangeCursor: goldwrench
-		TargetStances: Ally
-		ForceTargetStances: None
+		TargetRelationships: Ally
+		ForceTargetRelationships: None
 	Armament@sniper:
 		Weapon: AWPE
 		LocalOffset: 188,0,600
@@ -305,7 +320,7 @@ fv:
 		ValidTargets: Infantry, Vehicle
 		InvalidTargets: NoAutoTarget
 	Selectable:
-		Bounds: 64, 52, 0, -6
+		Bounds: 1544, 2509, 0, -289
 	RenderSprites:
 	RenderVoxels:
 	WithVoxelBody:
@@ -332,6 +347,15 @@ fv:
 	ProducibleWithLevel:
 		Prerequisites: warfactory.infiltrated
 	HitShape:
+	WithCargoPipsDecoration:
+		Position: BottomLeft
+		RequiresSelection: true
+		Palette: pips
+		CustomPipSequences:
+			blue: pip-blue
+			yellow: pip-yellow
+			green: pip-green
+			red: pip-red
 
 sref:
 	Inherits: ^Vehicle
@@ -344,22 +368,24 @@ sref:
 		Description: Fires deadly beams of light.\n  Strong vs Infantry, Vehicles\n  Weak vs Aircraft
 	Valued:
 		Cost: 1200
+	UpdatesPlayerStatistics:
+		AddToArmyValue: true
 	Tooltip:
 		Name: Prism Tank
 	Selectable:
-		Bounds: 64, 52, 0, -10
+		Bounds: 1544, 2509, 0, -482
 	Health:
 		HP: 150
 	Armor:
 		Type: Heavy
 	Mobile:
-		TurnSpeed: 5
+		TurnSpeed: 20
 		Speed: 60
 		Locomotor: heavytracked
 	RevealsShroud:
 		Range: 8c0
 	Turreted:
-		TurnSpeed: 10
+		TurnSpeed: 40
 		Offset: -30,0,85
 	Armament@primary:
 		Weapon: Comet
@@ -415,6 +441,8 @@ mgtk:
 		Description: As tree disguised tank.\n  Strong vs Infantry, Vehicles\n  Weak vs Aircraft
 	Valued:
 		Cost: 1000
+	UpdatesPlayerStatistics:
+		AddToArmyValue: true
 	Tooltip:
 		Name: Mirage Tank
 		RequiresCondition: !tree
@@ -429,13 +457,13 @@ mgtk:
 		MirageCondition: tree
 		DefaultTargetTypes: tree01, tree02, tree03, tree04
 	Selectable:
-		Bounds: 64, 52, 0, -6
+		Bounds: 1544, 2509, 0, -289
 	Health:
 		HP: 200
 	Armor:
 		Type: Light
 	Mobile:
-		TurnSpeed: 5
+		TurnSpeed: 20
 		Speed: 105
 		Locomotor: heavytracked
 	RevealsShroud:
@@ -452,6 +480,7 @@ mgtk:
 		RequiresCondition: rank-elite
 	AttackFrontal:
 		Voice: Attack
+		FacingTolerance: 0
 	WithMuzzleOverlay:
 	AutoTarget:
 		AllowMovement: false

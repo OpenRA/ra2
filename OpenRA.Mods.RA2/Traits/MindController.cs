@@ -1,6 +1,6 @@
 #region Copyright & License Information
 /*
- * Copyright 2007-2020 The OpenRA Developers (see AUTHORS)
+ * Copyright (c) The OpenRA Developers and Contributors
  * This file is part of OpenRA, which is free software. It is made
  * available to you under the terms of the GNU General Public License
  * as published by the Free Software Foundation, either version 3 of
@@ -21,7 +21,7 @@ namespace OpenRA.Mods.RA2.Traits
 	public class MindControllerInfo : PausableConditionalTraitInfo, Requires<ArmamentInfo>, Requires<HealthInfo>
 	{
 		[Desc("Name of the armaments that grant this condition.")]
-		public readonly HashSet<string> ArmamentNames = new HashSet<string>() { "primary" };
+		public readonly HashSet<string> ArmamentNames = new HashSet<string> { "primary" };
 
 		[Desc("Up to how many units can this unit control?",
 			"Use 0 or negative numbers for infinite.")]
@@ -37,79 +37,36 @@ namespace OpenRA.Mods.RA2.Traits
 		public readonly string ControllingCondition = null;
 
 		[Desc("The sound played when the unit is mindcontrolled.")]
-		public readonly string[] Sounds = { };
+		public readonly string[] Sounds = Array.Empty<string>();
 
-		[Desc("PipType to use for indicating mindcontrolled units.")]
-		public readonly PipType PipType = PipType.Green;
-
-		[Desc("PipType to use for indicating unused mindcontrol slots.")]
-		public readonly PipType PipTypeEmpty = PipType.Transparent;
-
-		public override object Create(ActorInitializer init) { return new MindController(init.Self, this); }
+		public override object Create(ActorInitializer init) { return new MindController(this); }
 	}
 
-	public class MindController : PausableConditionalTrait<MindControllerInfo>, INotifyAttack, IPips, INotifyKilled, INotifyActorDisposing, INotifyCreated
+	public class MindController : PausableConditionalTrait<MindControllerInfo>, INotifyAttack, INotifyKilled, INotifyActorDisposing
 	{
 		readonly List<Actor> slaves = new List<Actor>();
 
-		Stack<int> controllingTokens = new Stack<int>();
-		ConditionManager conditionManager;
+		readonly Stack<int> controllingTokens = new Stack<int>();
 
-		public IEnumerable<Actor> Slaves { get { return slaves; } }
+		public IEnumerable<Actor> Slaves => slaves;
 
-		public MindController(Actor self, MindControllerInfo info)
+		public MindController(MindControllerInfo info)
 			: base(info) { }
-
-		protected override void Created(Actor self)
-		{
-			conditionManager = self.TraitOrDefault<ConditionManager>();
-		}
 
 		void StackControllingCondition(Actor self, string condition)
 		{
-			if (conditionManager == null)
-				return;
-
 			if (string.IsNullOrEmpty(condition))
 				return;
 
-			controllingTokens.Push(conditionManager.GrantCondition(self, condition));
+			controllingTokens.Push(self.GrantCondition(condition));
 		}
 
 		void UnstackControllingCondition(Actor self, string condition)
 		{
-			if (conditionManager == null)
-				return;
-
 			if (string.IsNullOrEmpty(condition))
 				return;
 
-			conditionManager.RevokeCondition(self, controllingTokens.Pop());
-		}
-
-		public IEnumerable<PipType> GetPips(Actor self)
-		{
-			if (Info.Capacity > 0)
-			{
-				for (int i = slaves.Count(); i > 0; i--)
-					yield return Info.PipType;
-
-				for (int i = Info.Capacity - slaves.Count(); i > 0; i--)
-					yield return Info.PipTypeEmpty;
-			}
-			else if (slaves.Count() >= -Info.Capacity)
-			{
-				for (int i = -Info.Capacity; i > 0; i--)
-					yield return Info.PipType;
-			}
-			else
-			{
-				for (int i = slaves.Count(); i > 0; i--)
-					yield return Info.PipType;
-
-				for (int i = -Info.Capacity - slaves.Count(); i > 0; i--)
-					yield return Info.PipTypeEmpty;
-			}
+			self.RevokeCondition(controllingTokens.Pop());
 		}
 
 		public void UnlinkSlave(Actor self, Actor slave)
@@ -121,9 +78,9 @@ namespace OpenRA.Mods.RA2.Traits
 			}
 		}
 
-		void INotifyAttack.PreparingAttack(Actor self, Target target, Armament a, Barrel barrel) { }
+		void INotifyAttack.PreparingAttack(Actor self, in Target target, Armament a, Barrel barrel) { }
 
-		void INotifyAttack.Attacking(Actor self, Target target, Armament a, Barrel barrel)
+		void INotifyAttack.Attacking(Actor self, in Target target, Armament a, Barrel barrel)
 		{
 			if (IsTraitDisabled || IsTraitPaused)
 				return;
@@ -134,7 +91,7 @@ namespace OpenRA.Mods.RA2.Traits
 			if (target.Actor == null || !target.IsValidFor(self))
 				return;
 
-			if (self.Owner.Stances[target.Actor.Owner] == Stance.Ally)
+			if (self.Owner.RelationshipWith(target.Actor.Owner) == PlayerRelationship.Ally)
 				return;
 
 			var mindControllable = target.Actor.TraitOrDefault<MindControllable>();
@@ -149,7 +106,7 @@ namespace OpenRA.Mods.RA2.Traits
 			if (mindControllable.IsTraitDisabled || mindControllable.IsTraitPaused)
 				return;
 
-			if (Info.Capacity > 0 && !Info.DiscardOldest && slaves.Count() >= Info.Capacity)
+			if (Info.Capacity > 0 && !Info.DiscardOldest && slaves.Count >= Info.Capacity)
 				return;
 
 			slaves.Add(target.Actor);
@@ -159,7 +116,7 @@ namespace OpenRA.Mods.RA2.Traits
 			if (Info.Sounds.Any())
 				Game.Sound.Play(SoundType.World, Info.Sounds.Random(self.World.SharedRandom), self.CenterPosition);
 
-			if (Info.Capacity > 0 && Info.DiscardOldest && slaves.Count() > Info.Capacity)
+			if (Info.Capacity > 0 && Info.DiscardOldest && slaves.Count > Info.Capacity)
 				slaves[0].Trait<MindControllable>().RevokeMindControl(slaves[0]);
 		}
 

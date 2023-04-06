@@ -1,6 +1,6 @@
 #region Copyright & License Information
 /*
- * Copyright 2007-2020 The OpenRA Developers (see AUTHORS)
+ * Copyright (c) The OpenRA Developers and Contributors
  * This file is part of OpenRA, which is free software. It is made
  * available to you under the terms of the GNU General Public License
  * as published by the Free Software Foundation, either version 3 of
@@ -38,7 +38,7 @@ namespace OpenRA.Mods.RA2.Traits
 			mirage = self.Trait<Mirage>();
 		}
 
-		public ITooltipInfo TooltipInfo { get { return Info; } }
+		public ITooltipInfo TooltipInfo => Info;
 
 		public Player Owner
 		{
@@ -97,24 +97,22 @@ namespace OpenRA.Mods.RA2.Traits
 	public class Mirage : PausableConditionalTrait<MirageInfo>, INotifyDamage, IEffectiveOwner, INotifyUnload, INotifyDemolition, INotifyInfiltration,
 		INotifyAttack, ITick, INotifyCreated, INotifyHarvesterAction
 	{
-		[Sync]
-		private int remainingTime;
+		readonly Actor self;
 
-		Actor self;
+		[Sync]
+		int remainingTime;
 
 		bool isDocking;
-		ConditionManager conditionManager;
-
-		ActorInfo[] targetTypes;
 
 		CPos? lastPos;
-		bool wasMirage = false;
-		int mirageToken = ConditionManager.InvalidConditionToken;
+		bool wasMirage;
+		int mirageToken = Actor.InvalidConditionToken;
 
-		public bool Disguised { get { return IsMirage; } }
+		public bool Disguised => IsMirage;
 
-		public ActorInfo ActorType { get; private set; }
-		public Player Owner { get { return IsMirage ? self.World.Players.First(p => p.InternalName == Info.EffectiveOwner) : null; } }
+		public ActorInfo ActorType { get; }
+
+		public Player Owner => IsMirage ? self.World.Players.First(p => p.InternalName == Info.EffectiveOwner) : null;
 
 		public Mirage(ActorInitializer init, MirageInfo info)
 			: base(info)
@@ -123,7 +121,7 @@ namespace OpenRA.Mods.RA2.Traits
 			remainingTime = info.InitialDelay;
 
 			var targets = self.World.ActorsWithTrait<MirageTarget>().Distinct();
-			targetTypes = targets.Select(a => a.Actor.Info).ToArray();
+			var targetTypes = targets.Select(a => a.Actor.Info).ToArray();
 
 			if (!targetTypes.Any() && info.DefaultTargetTypes != null)
 				targetTypes = self.World.Map.Rules.Actors.Where(a => info.DefaultTargetTypes.Contains(a.Key)).Select(a => a.Value).ToArray();
@@ -133,19 +131,17 @@ namespace OpenRA.Mods.RA2.Traits
 
 		protected override void Created(Actor self)
 		{
-			conditionManager = self.TraitOrDefault<ConditionManager>();
-
 			if (IsMirage)
 			{
 				wasMirage = true;
-				if (conditionManager != null && mirageToken == ConditionManager.InvalidConditionToken && !string.IsNullOrEmpty(Info.MirageCondition))
-					mirageToken = conditionManager.GrantCondition(self, Info.MirageCondition);
+				if (mirageToken == Actor.InvalidConditionToken && !string.IsNullOrEmpty(Info.MirageCondition))
+					mirageToken = self.GrantCondition(Info.MirageCondition);
 			}
 
 			base.Created(self);
 		}
 
-		public bool IsMirage { get { return !IsTraitDisabled && !IsTraitPaused && remainingTime <= 0; } }
+		public bool IsMirage => !IsTraitDisabled && !IsTraitPaused && remainingTime <= 0;
 
 		public void Reveal() { Reveal(Info.RevealDelay); }
 
@@ -154,9 +150,9 @@ namespace OpenRA.Mods.RA2.Traits
 			remainingTime = Math.Max(remainingTime, time);
 		}
 
-		void INotifyAttack.Attacking(Actor self, Target target, Armament a, Barrel barrel) { if (Info.RevealOn.HasFlag(MirageRevealType.Attack)) Reveal(); }
+		void INotifyAttack.Attacking(Actor self, in Target target, Armament a, Barrel barrel) { if (Info.RevealOn.HasFlag(MirageRevealType.Attack)) Reveal(); }
 
-		void INotifyAttack.PreparingAttack(Actor self, Target target, Armament a, Barrel barrel) { }
+		void INotifyAttack.PreparingAttack(Actor self, in Target target, Armament a, Barrel barrel) { }
 
 		void INotifyDamage.Damaged(Actor self, AttackInfo e)
 		{
@@ -187,13 +183,13 @@ namespace OpenRA.Mods.RA2.Traits
 			var isMirage = IsMirage;
 			if (isMirage && !wasMirage)
 			{
-				if (conditionManager != null && mirageToken == ConditionManager.InvalidConditionToken && !string.IsNullOrEmpty(Info.MirageCondition))
-					mirageToken = conditionManager.GrantCondition(self, Info.MirageCondition);
+				if (mirageToken == Actor.InvalidConditionToken && !string.IsNullOrEmpty(Info.MirageCondition))
+					mirageToken = self.GrantCondition(Info.MirageCondition);
 			}
 			else if (!isMirage && wasMirage)
 			{
-				if (mirageToken != ConditionManager.InvalidConditionToken)
-					mirageToken = conditionManager.RevokeCondition(self, mirageToken);
+				if (mirageToken != Actor.InvalidConditionToken)
+					mirageToken = self.RevokeCondition(mirageToken);
 			}
 
 			wasMirage = isMirage;
@@ -212,7 +208,7 @@ namespace OpenRA.Mods.RA2.Traits
 
 		void INotifyHarvesterAction.MovementCancelled(Actor self) { }
 
-		void INotifyHarvesterAction.Harvested(Actor self, ResourceType resource) { }
+		void INotifyHarvesterAction.Harvested(Actor self, string resourceType) { }
 
 		void INotifyHarvesterAction.Docked()
 		{

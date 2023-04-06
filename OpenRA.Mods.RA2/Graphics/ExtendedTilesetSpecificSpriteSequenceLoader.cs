@@ -1,6 +1,6 @@
 #region Copyright & License Information
 /*
- * Copyright 2007-2020 The OpenRA Developers (see AUTHORS)
+ * Copyright (c) The OpenRA Developers and Contributors
  * This file is part of OpenRA, which is free software. It is made
  * available to you under the terms of the GNU General Public License
  * as published by the Free Software Foundation, either version 3 of
@@ -42,7 +42,7 @@ namespace OpenRA.Mods.RA2.Graphics
 				TilesetSuffixes = yaml.ToDictionary(kv => kv.Value);
 		}
 
-		public override ISpriteSequence CreateSequence(ModData modData, TileSet tileSet, SpriteCache cache, string sequence, string animation, MiniYaml info)
+		public override ISpriteSequence CreateSequence(ModData modData, string tileSet, SpriteCache cache, string sequence, string animation, MiniYaml info)
 		{
 			return new ExtendedTilesetSpecificSpriteSequence(modData, tileSet, cache, this, sequence, animation, info);
 		}
@@ -50,25 +50,23 @@ namespace OpenRA.Mods.RA2.Graphics
 
 	public class ExtendedTilesetSpecificSpriteSequence : DefaultSpriteSequence
 	{
-		public ExtendedTilesetSpecificSpriteSequence(ModData modData, TileSet tileSet, SpriteCache cache, ISpriteSequenceLoader loader, string sequence, string animation, MiniYaml info)
+		public ExtendedTilesetSpecificSpriteSequence(ModData modData, string tileSet, SpriteCache cache, ISpriteSequenceLoader loader, string sequence, string animation, MiniYaml info)
 			: base(modData, tileSet, cache, loader, sequence, animation, info) { }
 
-		string ResolveTilesetId(TileSet tileSet, Dictionary<string, MiniYaml> d)
+		string ResolveTilesetId(string tileSet, Dictionary<string, MiniYaml> d)
 		{
-			var tsId = tileSet.Id;
-
 			MiniYaml yaml;
 			if (d.TryGetValue("TilesetOverrides", out yaml))
 			{
-				var tsNode = yaml.Nodes.FirstOrDefault(n => n.Key == tsId);
+				var tsNode = yaml.Nodes.FirstOrDefault(n => n.Key == tileSet);
 				if (tsNode != null)
-					tsId = tsNode.Value.Value;
+					tileSet = tsNode.Value.Value;
 			}
 
-			return tsId;
+			return tileSet;
 		}
 
-		protected override string GetSpriteSrc(ModData modData, TileSet tileSet, string sequence, string animation, string sprite, Dictionary<string, MiniYaml> d)
+		protected override string GetSpriteSrc(ModData modData, string tileSet, string sequence, string animation, string sprite, Dictionary<string, MiniYaml> d)
 		{
 			var loader = (ExtendedTilesetSpecificSpriteSequenceLoader)Loader;
 

@@ -52,28 +52,23 @@ Actors:
 	Actor0: caairp
 		Location: 72,-26
 		Owner: Neutral
-		Health: 100
-		Facing: 96
+		Facing: 896
 	Actor1: caoild
 		Location: 92,-12
 		Owner: Neutral
-		Health: 100
-		Facing: 96
+		Facing: 896
 	Actor2: caoild
 		Location: 80,-5
 		Owner: Neutral
-		Health: 100
-		Facing: 96
+		Facing: 896
 	Actor3: caoild
 		Location: 93,-38
 		Owner: Neutral
-		Health: 100
-		Facing: 96
+		Facing: 896
 	Actor4: caoild
 		Location: 103,-25
 		Owner: Neutral
-		Health: 100
-		Facing: 96
+		Facing: 896
 	Actor5: tree03
 		Location: 80,38
 		Owner: Neutral
@@ -1898,133 +1893,166 @@ Actors:
 	Actor612: waypoint
 		Location: 90,-20
 		Owner: Neutral
-	Actor613: waypoint
-		Location: 89,-20
-		Owner: Neutral
-	Actor614: trock01
+	Actor613: trock01
 		Location: 106,-95
 		Owner: Neutral
-	Actor615: srock03
+	Actor614: srock03
 		Location: 110,-98
 		Owner: Neutral
-	Actor616: srock02
+	Actor615: srock02
 		Location: 111,-99
 		Owner: Neutral
-	Actor617: srock05
+	Actor616: srock05
 		Location: 111,-98
 		Owner: Neutral
-	Actor618: srock04
+	Actor617: srock04
 		Location: 112,-98
 		Owner: Neutral
-	Actor619: trock01
+	Actor618: trock01
 		Location: 112,-97
 		Owner: Neutral
-	Actor620: srock02
+	Actor619: srock02
 		Location: 111,-91
 		Owner: Neutral
-	Actor621: srock05
+	Actor620: srock05
 		Location: 112,-91
 		Owner: Neutral
-	Actor622: srock01
+	Actor621: srock01
 		Location: 112,-90
 		Owner: Neutral
-	Actor623: srock04
+	Actor622: srock04
 		Location: 68,-3
 		Owner: Neutral
-	Actor624: srock05
+	Actor623: srock05
 		Location: 78,-12
 		Owner: Neutral
-	Actor625: trock01
+	Actor624: trock01
 		Location: 105,-39
 		Owner: Neutral
-	Actor626: trock01
+	Actor625: trock01
 		Location: 79,-12
 		Owner: Neutral
-	Actor627: trock02
+	Actor626: trock02
 		Location: 106,-39
 		Owner: Neutral
-	Actor628: srock05
+	Actor627: srock05
 		Location: 105,-37
 		Owner: Neutral
-	Actor629: trock03
+	Actor628: trock03
 		Location: 106,-38
 		Owner: Neutral
-	Actor630: trock05
+	Actor629: trock05
 		Location: 102,-33
 		Owner: Neutral
-	Actor631: trock04
+	Actor630: trock04
 		Location: 88,-18
 		Owner: Neutral
-	Actor632: trock02
+	Actor631: trock02
 		Location: 86,-12
 		Owner: Neutral
-	Actor633: srock02
+	Actor632: srock02
 		Location: 118,-39
 		Owner: Neutral
-	Actor634: srock05
+	Actor633: srock05
 		Location: 125,-46
 		Owner: Neutral
-	Actor635: srock03
+	Actor634: srock03
 		Location: 126,-46
 		Owner: Neutral
-	Actor636: srock04
+	Actor635: srock04
 		Location: 125,-39
 		Owner: Neutral
-	Actor637: srock03
+	Actor636: srock03
 		Location: 127,-36
 		Owner: Neutral
-	Actor638: srock01
+	Actor637: srock01
 		Location: 129,-38
 		Owner: Neutral
-	Actor639: srock02
+	Actor638: srock02
 		Location: 129,-37
 		Owner: Neutral
-	Actor640: trock05
+	Actor639: trock05
 		Location: 112,-18
 		Owner: Neutral
-	Actor641: trock02
+	Actor640: trock02
 		Location: 96,1
 		Owner: Neutral
-	Actor642: trock01
+	Actor641: trock01
 		Location: 97,1
 		Owner: Neutral
-	Actor643: srock05
+	Actor642: srock05
 		Location: 97,2
 		Owner: Neutral
-	Actor644: trock03
+	Actor643: trock03
 		Location: 117,-16
 		Owner: Neutral
-	Actor645: srock04
+	Actor644: srock04
 		Location: 87,15
 		Owner: Neutral
-	Actor646: trock04
+	Actor645: trock04
 		Location: 118,-16
 		Owner: Neutral
-	Actor647: srock05
+	Actor646: srock05
 		Location: 97,6
 		Owner: Neutral
-	Actor648: trock02
+	Actor647: trock02
 		Location: 119,-16
 		Owner: Neutral
-	Actor649: trock01
+	Actor648: trock01
 		Location: 144,-30
 		Owner: Neutral
-	Actor650: srock03
+	Actor649: srock03
 		Location: 86,32
 		Owner: Neutral
-	Actor651: srock04
+	Actor650: srock04
 		Location: 100,18
 		Owner: Neutral
-	Actor652: trock03
+	Actor651: trock03
 		Location: 150,-27
 		Owner: Neutral
-	Actor653: trock04
+	Actor652: trock04
 		Location: 151,-28
 		Owner: Neutral
 
 Rules:
-	World:
-		GlobalLightingPaletteEffect:
-			Ambient: 0.93
-			Red: 0.87
-			Green: 0.92
+	^BaseWorld:
+		TerrainLighting:
+			RedTint: 0.87
+			GreenTint: 0.92
+			Intensity: 0.93
+			HeightStep: 0.028
+	NEGLAMP:
+		TerrainLightSource:
+			Range: 19c544
+			Intensity: -0.15
+			RedTint: 0.03
+			GreenTint: 0.04
+			BlueTint: 0.04
+	INYELWLAMP:
+		TerrainLightSource:
+			Range: 9c784
+			Intensity: 0.01
+			RedTint: 0.35
+			GreenTint: 0.2
+			BlueTint: 0.02
+	INPURPLAMP:
+		TerrainLightSource:
+			Range: 15c640
+			Intensity: 0.01
+			RedTint: 0.67059
+			GreenTint: 0.19608
+			BlueTint: 0.67059
+	INREDLMP:
+		TerrainLightSource:
+			Range: 15c640
+			Intensity: 0.01
+			RedTint: 0.81176
+			GreenTint: 0.0549
+			BlueTint: 0.12941
+	INBLULMP:
+		TerrainLightSource:
+			Range: 15c640
+			Intensity: 0.01
+			RedTint: 0.24706
+			GreenTint: 0.0549
+			BlueTint: 0.81176

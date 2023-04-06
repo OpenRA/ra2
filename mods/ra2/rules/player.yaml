@@ -1,6 +1,10 @@
 ^BasePlayer:
 	AlwaysVisible:
 	Shroud:
+	PlayerResources:
+		ResourceValues:
+			Ore: 25
+			Gems: 50
 
 EditorPlayer:
 	Inherits: ^BasePlayer
@@ -79,7 +83,7 @@ Player:
 		LeaveNotification: Leave
 	ConquestVictoryConditions:
 	PowerManager:
-		AdviceInterval: 750
+		AdviceInterval: 30000
 		SpeechNotification: LowPower
 	AllyRepair:
 	PlayerResources:
@@ -126,10 +130,11 @@ Player:
 		Name: Unrestricted
 		Prerequisites: techlevel.infonly, techlevel.low, techlevel.medium, techlevel.unrestricted
 		Id: unrestricted
-	ConditionManager:
 	GrantConditionOnPrerequisiteManager:
-	VeteranProductionIconOverlay:
+	ProductionIconOverlayManager:
 		Image: cameo-chevron
 		Sequence: idle
 		Palette: cameo-chevron
+		Type: Veterancy
 	GameSaveViewportManager:
+	PlayerRadarTerrain:

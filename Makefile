@@ -3,6 +3,12 @@
 # to compile, run:
 #   make
 #
+# to compile using Mono (version 6.4 or greater) instead of .NET 6, run:
+#   make RUNTIME=mono
+#
+# to compile using system libraries for native dependencies, run:
+#   make [RUNTIME=net6] TARGETPLATFORM=unix-generic
+#
 # to remove the files created by compiling, run:
 #   make clean
 #
@@ -13,25 +19,31 @@
 #   make check-scripts
 #
 # to check the engine and your mod dlls for StyleCop violations, run:
-#   make check
+#   make [RUNTIME=net6] check
+#
+# to check your mod yaml for errors, run:
+#   make [RUNTIME=net6] test
 #
 # the following are internal sdk helpers that are not intended to be run directly:
 #   make check-variables
 #   make check-sdk-scripts
 #   make check-packaging-scripts
 
-.PHONY: utility stylecheck build clean engine version check check-scripts check-sdk-scripts check-packaging-scripts check-variables
+.PHONY: check-sdk-scripts check-packaging-scripts check-variables engine all clean version check-scripts check test
 .DEFAULT_GOAL := all
+
+PYTHON = $(shell command -v python3 2> /dev/null)
+ifeq ($(PYTHON),)
+PYTHON = $(shell command -v python 2> /dev/null)
+endif
+ifeq ($(PYTHON),)
+$(error "The OpenRA mod SDK requires python.")
+endif
 
 VERSION = $(shell git name-rev --name-only --tags --no-undefined HEAD 2>/dev/null || echo git-`git rev-parse --short HEAD`)
 MOD_ID = $(shell cat user.config mod.config 2> /dev/null | awk -F= '/MOD_ID/ { print $$2; exit }')
 ENGINE_DIRECTORY = $(shell cat user.config mod.config 2> /dev/null | awk -F= '/ENGINE_DIRECTORY/ { print $$2; exit }')
-MOD_SEARCH_PATHS = "$(shell python -c "import os; print(os.path.realpath('.'))")/mods,./mods"
-
-WHITELISTED_OPENRA_ASSEMBLIES = "$(shell cat user.config mod.config 2> /dev/null | awk -F= '/WHITELISTED_OPENRA_ASSEMBLIES/ { print $$2; exit }')"
-WHITELISTED_THIRDPARTY_ASSEMBLIES = "$(shell cat user.config mod.config 2> /dev/null | awk -F= '/WHITELISTED_THIRDPARTY_ASSEMBLIES/ { print $$2; exit }')"
-WHITELISTED_CORE_ASSEMBLIES = "$(shell cat user.config mod.config 2> /dev/null | awk -F= '/WHITELISTED_CORE_ASSEMBLIES/ { print $$2; exit }')"
-WHITELISTED_MOD_ASSEMBLIES = "$(shell cat user.config mod.config 2> /dev/null | awk -F= '/WHITELISTED_MOD_ASSEMBLIES/ { print $$2; exit }')"
+MOD_SEARCH_PATHS = "$(shell $(PYTHON) -c "import os; print(os.path.realpath('.'))")/mods,./mods"
 
 MANIFEST_PATH = "mods/$(MOD_ID)/mod.yaml"
 HAS_LUAC = $(shell command -v luac 2> /dev/null)
@@ -39,9 +51,34 @@ LUA_FILES = $(shell find mods/*/maps/* -iname '*.lua' 2> /dev/null)
 MOD_SOLUTION_FILES = $(shell find . -maxdepth 1 -iname '*.sln' 2> /dev/null)
 
 MSBUILD = msbuild -verbosity:m -nologo
+DOTNET = dotnet
 
-# Enable 32 bit builds while generating the windows installer
-WIN32 = false
+RUNTIME ?= net6
+CONFIGURATION ?= Release
+DOTNET_RID = $(shell ${DOTNET} --info | grep RID: | cut -w -f3)
+ARCH_X64 = $(shell echo ${DOTNET_RID} | grep x64)
+
+ifndef TARGETPLATFORM
+UNAME_S := $(shell uname -s)
+UNAME_M := $(shell uname -m)
+ifeq ($(UNAME_S),Darwin)
+ifeq ($(ARCH_X64),)
+TARGETPLATFORM = osx-arm64
+else
+TARGETPLATFORM = osx-x64
+endif
+else
+ifeq ($(UNAME_M),x86_64)
+TARGETPLATFORM = linux-x64
+else
+ifeq ($(UNAME_M),aarch64)
+TARGETPLATFORM = linux-arm64
+else
+TARGETPLATFORM = unix-generic
+endif
+endif
+endif
+endif
 
 check-sdk-scripts:
 	@awk '/\r$$/ { exit(1); }' mod.config || (printf "Invalid mod.config format: file must be saved using unix-style (CR, not CRLF) line endings.\n"; exit 1)
@@ -102,43 +139,32 @@ check-variables:
 		exit 1; \
 	fi
 
-engine-dependencies: check-variables check-sdk-scripts
-	@./fetch-engine.sh || (printf "Unable to continue without engine files\n"; exit 1)
-	@cd $(ENGINE_DIRECTORY) && make dependencies WIN32=$(WIN32)
-
 engine: check-variables check-sdk-scripts
 	@./fetch-engine.sh || (printf "Unable to continue without engine files\n"; exit 1)
-	@cd $(ENGINE_DIRECTORY) && make core WIN32=$(WIN32)
+	@cd $(ENGINE_DIRECTORY) && make RUNTIME=$(RUNTIME) TARGETPLATFORM=$(TARGETPLATFORM) all
 
-utility: engine-dependencies engine
-	@test -f "$(ENGINE_DIRECTORY)/OpenRA.Utility.exe" || (printf "OpenRA.Utility.exe not found!\n"; exit 1)
-
-core:
-	@command -v $(MSBUILD) >/dev/null || (echo "OpenRA requires the '$(MSBUILD)' tool provided by Mono >= 5.4."; exit 1)
+all: engine
+ifeq ($(RUNTIME), mono)
+	@command -v $(MSBUILD) >/dev/null || (echo "OpenRA requires the '$(MSBUILD)' tool provided by Mono >= 6.4."; exit 1)
 ifneq ("$(MOD_SOLUTION_FILES)","")
-	@find . -maxdepth 1 -name '*.sln' -exec $(MSBUILD) -t:restore \;
-ifeq ($(WIN32), $(filter $(WIN32),true yes y on 1))
-	@find . -maxdepth 1 -name '*.sln' -exec $(MSBUILD) -t:build -p:Configuration="Release-x86" \;
+	@find . -maxdepth 1 -name '*.sln' -exec $(MSBUILD) -t:Build -restore -p:Configuration=${CONFIGURATION} -p:TargetPlatform=$(TARGETPLATFORM) -p:Mono=true \;
+endif
 else
-	@$(MSBUILD) -t:build -p:Configuration=Release
-	@find . -maxdepth 1 -name '*.sln' -exec $(MSBUILD) -t:build -p:Configuration=Release \;
+	@find . -maxdepth 1 -name '*.sln' -exec $(DOTNET) build -c ${CONFIGURATION} -p:TargetPlatform=$(TARGETPLATFORM) \;
 endif
-endif
-
-all: engine-dependencies engine core
 
 clean: engine
-	@command -v $(MSBUILD) >/dev/null || (echo "OpenRA requires the '$(MSBUILD)' tool provided by Mono >= 5.4."; exit 1)
 ifneq ("$(MOD_SOLUTION_FILES)","")
+ifeq ($(RUNTIME), mono)
 	@find . -maxdepth 1 -name '*.sln' -exec $(MSBUILD) -t:clean \;
+else
+	@find . -maxdepth 1 -name '*.sln' -exec $(DOTNET) clean \;
+endif
 endif
 	@cd $(ENGINE_DIRECTORY) && make clean
-	@printf "The engine has been cleaned.\n"
 
 version: check-variables
-	@awk '{sub("Version:.*$$","Version: $(VERSION)"); print $0}' $(MANIFEST_PATH) > $(MANIFEST_PATH).tmp && \
-	awk '{sub("/[^/]*: User$$", "/$(VERSION): User"); print $0}' $(MANIFEST_PATH).tmp > $(MANIFEST_PATH) && \
-	rm $(MANIFEST_PATH).tmp
+	@sh -c '. $(ENGINE_DIRECTORY)/packaging/functions.sh; set_mod_version $(VERSION) $(MANIFEST_PATH)'
 	@printf "Version changed to $(VERSION).\n"
 
 check-scripts: check-variables
@@ -151,18 +177,22 @@ ifneq ("$(LUA_FILES)","")
 	@luac -p $(LUA_FILES)
 endif
 
-check: utility
+check: engine
 ifneq ("$(MOD_SOLUTION_FILES)","")
-	@echo "Compiling in debug mode..."
-	@$(MSBUILD) -t:build -p:Configuration=Debug
+	@echo "Compiling in Debug mode..."
+ifeq ($(RUNTIME), mono)
+# Enabling EnforceCodeStyleInBuild and GenerateDocumentationFile as a workaround for some code style rules (in particular IDE0005) being bugged and not reporting warnings/errors otherwise.
+	@$(MSBUILD) -t:build -restore -p:Configuration=Debug -warnaserror -p:TargetPlatform=$(TARGETPLATFORM) -p:Mono=true -p:EnforceCodeStyleInBuild=true -p:GenerateDocumentationFile=true
+else
+# Enabling EnforceCodeStyleInBuild and GenerateDocumentationFile as a workaround for some code style rules (in particular IDE0005) being bugged and not reporting warnings/errors otherwise.
+	@$(DOTNET) build -c Debug -nologo -warnaserror -p:TargetPlatform=$(TARGETPLATFORM) -p:EnforceCodeStyleInBuild=true -p:GenerateDocumentationFile=true
 endif
-	@echo "Checking runtime assemblies..."
-	@MOD_SEARCH_PATHS="$(MOD_SEARCH_PATHS)" mono --debug "$(ENGINE_DIRECTORY)/OpenRA.Utility.exe" $(MOD_ID) --check-runtime-assemblies $(WHITELISTED_OPENRA_ASSEMBLIES) $(WHITELISTED_THIRDPARTY_ASSEMBLIES) $(WHITELISTED_CORE_ASSEMBLIES) $(WHITELISTED_MOD_ASSEMBLIES)
+endif
 	@echo "Checking for explicit interface violations..."
-	@MOD_SEARCH_PATHS="$(MOD_SEARCH_PATHS)" mono --debug "$(ENGINE_DIRECTORY)/OpenRA.Utility.exe" $(MOD_ID) --check-explicit-interfaces
+	@./utility.sh --check-explicit-interfaces
 	@echo "Checking for incorrect conditional trait interface overrides..."
-	@MOD_SEARCH_PATHS="$(MOD_SEARCH_PATHS)" mono --debug "$(ENGINE_DIRECTORY)/OpenRA.Utility.exe" $(MOD_ID) --check-conditional-trait-interface-overrides
+	@./utility.sh --check-conditional-trait-interface-overrides
 
-test: utility
+test: all
 	@echo "Testing $(MOD_ID) mod MiniYAML..."
-	@MOD_SEARCH_PATHS="$(MOD_SEARCH_PATHS)" mono --debug "$(ENGINE_DIRECTORY)/OpenRA.Utility.exe" $(MOD_ID) --check-yaml
+	@./utility.sh --check-yaml

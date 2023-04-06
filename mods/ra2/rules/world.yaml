@@ -8,6 +8,17 @@
 	ScreenMap:
 	TerrainGeometryOverlay:
 	TerrainRenderer:
+	ResourceRenderer:
+		ResourceTypes:
+			Ore:
+				Sequences: tib01, tib02, tib03, tib04, tib05, tib06, tib07, tib08, tib09, tib10, tib11, tib12, tib13, tib14, tib15, tib16, tib17, tib18, tib19, tib20
+				Palette: resource
+				Name: Valuable Minerals
+			Gems:
+				Sequences: gem01, gem02, gem03, gem04, gem05, gem06, gem07, gem08, gem09, gem10, gem11, gem12
+				Palette: resource
+				Name: Valuable Minerals
+	TerrainLighting:
 	DebugVisualizations:
 	Locomotor@FOOT:
 		Name: foot
@@ -173,32 +184,9 @@
 		InternalName: russia
 		Side: Soviets
 		Description: Russia\nSpecial Vehicle: Tesla Tank
-	ResourceType@Ore:
-		ResourceType: 1
-		Palette: resource
-		Sequences: tib01, tib02, tib03, tib04, tib05, tib06, tib07, tib08, tib09, tib10, tib11, tib12, tib13, tib14, tib15, tib16, tib17, tib18, tib19, tib20
-		MaxDensity: 12
-		ValuePerUnit: 25
-		Type: Ore
-		Name: Valuable Minerals
-		PipColor: Yellow
-		AllowedTerrainTypes: Clear, Rough, Road
-		AllowUnderActors: false
-		TerrainType: Ore
-	ResourceType@Gems:
-		ResourceType: 2
-		Palette: resource
-		Sequences: gem01, gem02, gem03, gem04, gem05, gem06, gem07, gem08, gem09, gem10, gem11, gem12
-		MaxDensity: 12
-		ValuePerUnit: 50
-		Type: Gems
-		Name: Valuable Minerals
-		PipColor: Red
-		AllowedTerrainTypes: Clear, Rough, Road
-		AllowUnderActors: false
-		TerrainType: Gems
 	CliffBackImpassabilityLayer:
 	Selection:
+	ControlGroups:
 
 World:
 	Inherits: ^BaseWorld
@@ -211,35 +199,55 @@ World:
 	BuildingInfluence:
 	ProductionQueueFromSelection:
 		ProductionPaletteWidget: PRODUCTION_PALETTE
-	DomainIndex:
 	SmudgeLayer@smallscorch:
 		Type: SmallScorch
 		Sequence: smallscorches
-		SmokeType: smallfire
-		SmokePercentage: 50
+		SmokeImage: smallfire
+		SmokeChance: 50
+		SmokeSequences: idle
 	SmudgeLayer@mediumscorch:
 		Type: MediumScorch
 		Sequence: mediumscorches
-		SmokeType: mediumfire
-		SmokePercentage: 75
+		SmokeImage: mediumfire
+		SmokeChance: 75
+		SmokeSequences: idle
 	SmudgeLayer@largescorch:
 		Type: LargeScorch
 		Sequence: largescorches
-		SmokeType: largefire
-		SmokePercentage: 100
+		SmokeImage: largefire
+		SmokeChance: 100
+		SmokeSequences: idle
 	SmudgeLayer@smallcrater:
 		Type: SmallCrater
-		SmokeType: smallsmoke
+		SmokeImage: smallsmoke
 		Sequence: smallcraters
+		SmokeChance: 25
+		SmokeSequences: idle
 	SmudgeLayer@mediumcrater:
 		Type: MediumCrater
-		SmokeType: smallsmoke
+		SmokeImage: smallsmoke
 		Sequence: mediumcraters
+		SmokeChance: 25
+		SmokeSequences: idle
 	SmudgeLayer@largecrater:
 		Type: LargeCrater
-		SmokeType: largesmoke
+		SmokeImage: largesmoke
 		Sequence: largecraters
+		SmokeChance: 25
+		SmokeSequences: idle
 	ResourceLayer:
+		RecalculateResourceDensity: true
+		ResourceTypes:
+			Ore:
+				ResourceIndex: 1
+				TerrainType: Ore
+				AllowedTerrainTypes: Clear, Rough, Road
+				MaxDensity: 12
+			Gems:
+				ResourceIndex: 2
+				TerrainType: Gems
+				AllowedTerrainTypes: Clear, Rough, Road
+				MaxDensity: 12
 	ResourceClaimLayer:
 	BridgeLayer:
 	WarheadDebugOverlay:
@@ -255,77 +263,77 @@ World:
 		ShortGameCheckboxDisplayOrder: 2
 		TechLevelDropdownDisplayOrder: 3
 		GameSpeedDropdownDisplayOrder: 4
-	CreateMPPlayers:
-	MPStartUnits@amcv:
+	CreateMapPlayers:
+	StartingUnits@amcv:
 		Class: none
 		ClassName: MCV Only
 		Factions: allies, america, germany, england, france, korea
 		BaseActor: amcv
-		BaseActorFacing: 224
-	MPStartUnits@lightallies:
+		BaseActorFacing: 896
+	StartingUnits@lightallies:
 		Class: light
 		ClassName: Light Support
 		Factions: allies, america, germany, england, france, korea
 		BaseActor: amcv
-		BaseActorFacing: 224
+		BaseActorFacing: 896
 		SupportActors: dog,e1,e1
-		SupportActorsFacing: 224
+		SupportActorsFacing: 896
 		InnerSupportRadius: 3
 		OuterSupportRadius: 5
-	MPStartUnits@mediumallies:
+	StartingUnits@mediumallies:
 		Class: medium
 		ClassName: Medium Support
 		Factions: allies, america, germany, england, france, korea
 		BaseActor: amcv
-		BaseActorFacing: 224
+		BaseActorFacing: 896
 		SupportActors: dog,e1,e1,e1,mtnk,engineer
-		SupportActorsFacing: 224
+		SupportActorsFacing: 896
 		InnerSupportRadius: 3
 		OuterSupportRadius: 5
-	MPStartUnits@heavyallies:
+	StartingUnits@heavyallies:
 		Class: heavy
 		ClassName: Heavy Support
 		Factions: allies, america, germany, england, france, korea
 		BaseActor: amcv
-		BaseActorFacing: 224
+		BaseActorFacing: 896
 		SupportActors: dog,e1,e1,e1,e1,mtnk,mtnk,fv,engineer
-		SupportActorsFacing: 224
+		SupportActorsFacing: 896
 		InnerSupportRadius: 3
 		OuterSupportRadius: 5
-	MPStartUnits@smcv:
+	StartingUnits@smcv:
 		Class: none
 		ClassName: MCV Only
 		Factions: soviets, cuba, libya, iraq, russia
 		BaseActor: smcv
-		BaseActorFacing: 224
-	MPStartUnits@lightsoviets:
+		BaseActorFacing: 896
+	StartingUnits@lightsoviets:
 		Class: light
 		ClassName: Light Support
 		Factions: soviets, cuba, libya, iraq, russia
 		BaseActor: smcv
-		BaseActorFacing: 224
+		BaseActorFacing: 896
 		SupportActors: dog,e2,e2,e2
-		SupportActorsFacing: 224
+		SupportActorsFacing: 896
 		InnerSupportRadius: 3
 		OuterSupportRadius: 5
-	MPStartUnits@mediumsoviets:
+	StartingUnits@mediumsoviets:
 		Class: medium
 		ClassName: Medium Support
 		Factions: soviets, cuba, libya, iraq, russia
 		BaseActor: smcv
-		BaseActorFacing: 224
+		BaseActorFacing: 896
 		SupportActors: dog,e2,e2,e2,e2,htnk,engineer
-		SupportActorsFacing: 224
+		SupportActorsFacing: 896
 		InnerSupportRadius: 3
 		OuterSupportRadius: 5
-	MPStartUnits@heavysoviets:
+	StartingUnits@heavysoviets:
 		Class: heavy
 		ClassName: Heavy Support
 		Factions: soviets, cuba, libya, iraq, russia
 		BaseActor: smcv
-		BaseActorFacing: 224
+		BaseActorFacing: 896
 		SupportActors: dog,e2,e2,e2,e2,e2,htnk,htnk,htk,engineer
-		SupportActorsFacing: 224
+		SupportActorsFacing: 896
 		InnerSupportRadius: 3
 		OuterSupportRadius: 5
 	CrateSpawner:
@@ -335,9 +343,9 @@ World:
 		WaterChance: 25
 		InitialSpawnDelay: 1000
 		CheckboxDisplayOrder: 1
-	MPStartLocations:
+	MapStartingLocations:
 		SeparateTeamSpawnsCheckboxDisplayOrder: 6
-	SpawnMPUnits:
+	SpawnStartingUnits:
 		DropdownDisplayOrder: 2
 	PathFinder:
 	ValidateOrder:
@@ -358,10 +366,36 @@ World:
 			5: FiveMinutesRemaining
 			10: TenMinutesRemaining
 			20: TwentyMinutesRemaining
+	PathFinderOverlay:
+	HierarchicalPathFinderOverlay:
+	ColorPickerManager:
+		PreviewActor: amcv.colorpicker
+		PresetHues: 0, 0.125, 0.185, 0.4, 0.54, 0.66, 0.79, 0.875, 0, 0.14, 0.23, 0.43, 0.54, 0.625, 0.77, 0.85
+		PresetSaturations: 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.4, 0.5, 0.4, 0.5, 0.4, 0.5, 0.4, 0.5
+	OrderEffects:
+		TerrainFlashImage: moveflsh
+		TerrainFlashSequence: idle
+		TerrainFlashPalette: moveflash
 
 EditorWorld:
 	Inherits: ^BaseWorld
 	EditorActorLayer:
+	EditorCursorLayer:
 	EditorResourceLayer:
+		RecalculateResourceDensity: true
+		ResourceTypes:
+			Ore:
+				ResourceIndex: 1
+				TerrainType: Ore
+				AllowedTerrainTypes: Clear, Rough, Road
+				MaxDensity: 12
+			Gems:
+				ResourceIndex: 2
+				TerrainType: Gems
+				AllowedTerrainTypes: Clear, Rough, Road
+				MaxDensity: 12
 	EditorSelectionLayer:
 	LoadWidgetAtGameStart:
+	EditorActionManager:
+	BuildableTerrainOverlay:
+		AllowedTerrainTypes: Clear, Rough, Road

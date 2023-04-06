@@ -8,16 +8,18 @@ lcrf:
 		Description: General-purpose naval transport.\nCan carry infantry and vehicles.\n  Unarmed
 	Valued:
 		Cost: 900
+	UpdatesPlayerStatistics:
+		AddToArmyValue: true
 	Tooltip:
 		Name: Amphibious Transport
 	Selectable:
-		Bounds: 60, 80, 0, -6
+		Bounds: 1448, 3861, 0, -289
 	Health:
 		HP: 300
 	Armor:
 		Type: Light
 	Mobile:
-		TurnSpeed: 5
+		TurnSpeed: 20
 		Speed: 90
 		Locomotor: lcraft
 		PauseOnCondition: notmobile || chronodisable
@@ -26,8 +28,7 @@ lcrf:
 	Cargo:
 		Types: Infantry, Vehicle
 		MaxWeight: 12
-		PipCount: 12
-		PassengerFacing: 96
+		PassengerFacing: 384
 		UnloadTerrainTypes: Clear, Rough, Rail, Road, DirtRoad, Beach, Ore, Gems
 		UnloadVoice: Move
 		LoadingCondition: notmobile
@@ -39,6 +40,15 @@ lcrf:
 	Voiced:
 		VoiceSet: AlliedNavalVoice
 	HitShape:
+	WithCargoPipsDecoration:
+		Position: BottomLeft
+		RequiresSelection: true
+		Palette: pips
+		CustomPipSequences:
+			blue: pip-blue
+			yellow: pip-yellow
+			green: pip-green
+			red: pip-red
 
 dest:
 	Inherits: ^Ship
@@ -51,6 +61,8 @@ dest:
 		Description: Allied Main Battle Ship armed with cannons and\n an Osprey helicopter.\nCan detect submarines and sea animals.\n  Strong vs Naval units\n  Weak vs Ground units, Aircraft
 	Valued:
 		Cost: 1000
+	UpdatesPlayerStatistics:
+		AddToArmyValue: true
 	Tooltip:
 		Name: Destroyer
 	Health:
@@ -58,12 +70,12 @@ dest:
 	Armor:
 		Type: Heavy
 	Mobile:
-		TurnSpeed: 5
+		TurnSpeed: 20
 		Speed: 90
 	RevealsShroud:
 		Range: 7c0
 	Selectable:
-		Bounds: 80, 80, 0, -6
+		Bounds: 1930, 3861, 0, -289
 	Armament@primary:
 		Weapon: 155mm
 		FireDelay: 2
@@ -84,19 +96,23 @@ dest:
 		RespawnTicks: 300
 		ArmamentNames: asw
 		LoadedCondition: loaded
+	WithCarrierParentPipsDecoration:
+		Position: BottomLeft
+		Palette: pips
 	Exit:
 		SpawnOffset: 768,0,0
 	AttackFrontal:
 		Voice: Attack
 		Armaments: primary
 		PauseOnCondition: chronodisable
+		FacingTolerance: 0
 	AttackFrontal@Spawner:
 		Voice: Attack
 		Armaments: asw
-		FacingTolerance: 128
+		FacingTolerance: 512
 	WithMuzzleOverlay:
 	DetectCloaked:
-		CloakTypes: Underwater
+		DetectionTypes: Underwater
 		Range: 4c0
 	RenderDetectionCircle:
 	Explodes:
@@ -123,16 +139,18 @@ aegis:
 		Description: Anti-Air naval unit.\n  Strong vs Aircraft\n  Grounds units, Ships
 	Valued:
 		Cost: 1200
+	UpdatesPlayerStatistics:
+		AddToArmyValue: true
 	Tooltip:
 		Name: Aegis Cruiser
 	Selectable:
-		Bounds: 60, 80, 0, -6
+		Bounds: 1448, 3861, 0, -289
 	Health:
 		HP: 800
 	Armor:
 		Type: Light
 	Mobile:
-		TurnSpeed: 1
+		TurnSpeed: 4
 		Speed: 60
 	RevealsShroud:
 		Range: 8c0
@@ -140,7 +158,7 @@ aegis:
 		Weapon: Medusa
 	AttackFrontal:
 		Voice: Attack
-		FacingTolerance: 128
+		FacingTolerance: 512
 	AutoTarget:
 	Explodes:
 		Weapon: UnitExplode
@@ -164,6 +182,8 @@ dlph:
 		Description: Trained dolphin\narmed with sonic beams.\n  Strong vs Ships
 	Valued:
 		Cost: 500
+	UpdatesPlayerStatistics:
+		AddToArmyValue: true
 	Tooltip:
 		Name: Dolphin
 	Armor:
@@ -171,25 +191,25 @@ dlph:
 	Health:
 		HP: 200
 	Mobile:
-		TurnSpeed: 6
+		TurnSpeed: 24
 		Speed: 120
 		Locomotor: naval
 		Voice: Move
 	SelectionDecorations:
-		Palette: pips
 	Selectable:
-		Bounds: 40, 40
+		Bounds: 965, 1930
 	Voiced:
 		VoiceSet: DolphinVoice
 	Armament:
 		Weapon: SonicZap
 	AttackFrontal:
 		Voice: Attack
+		FacingTolerance: 0
 	AutoTarget:
 	RevealsShroud:
 		Range: 4c0
 	Cloak:
-		CloakTypes: Underwater
+		DetectionTypes: Underwater
 		InitialDelay: 50
 		CloakDelay: 75
 		CloakSound: vnavupa.wav
@@ -204,7 +224,7 @@ dlph:
 		TargetTypes: Underwater, ImmuneToAllySonic, Submergeable
 		RequiresCondition: underwater
 	DetectCloaked:
-		CloakTypes: Underwater
+		DetectionTypes: Underwater
 		Range: 4c0
 	HiddenUnderFog:
 	ActorLostNotification:
@@ -244,6 +264,8 @@ carrier:
 		Description: Aircraft carrier ship.\n  Strong vs Tanks, Structures\n  Weak vs Infantry
 	Valued:
 		Cost: 2000
+	UpdatesPlayerStatistics:
+		AddToArmyValue: true
 	Tooltip:
 		Name: Aircraft Carrier
 	Health:
@@ -254,15 +276,15 @@ carrier:
 		Range: 7c0
 		Type: CenterPosition
 	Selectable:
-		Bounds: 60,80,0,-6
+		Bounds: 1448, 3861, 0, -289
 	Mobile:
-		TurnSpeed: 1
+		TurnSpeed: 4
 		Speed: 60
 	RevealsShroud:
 		Range: 7c0
 	AttackFrontal:
 		Voice: Attack
-		FacingTolerance: 128
+		FacingTolerance: 512
 	Explodes:
 		Weapon: UnitExplode
 		EmptyWeapon: UnitExplode
@@ -275,6 +297,9 @@ carrier:
 		Actors: hornet, hornet, hornet
 		RespawnTicks: 300
 		SpawnAllAtOnce: true
+	WithCarrierParentPipsDecoration:
+		Position: BottomLeft
+		Palette: pips
 	Exit@0:
 		SpawnOffset: 0,0,0
 		Facing: 0

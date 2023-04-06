@@ -11,10 +11,10 @@ ModCredits:
 PackageFormats: Mix, AudioBag
 
 Packages:
-	~^Content/ra2
-	.
+	~^SupportDir|Content/ra2
+	^EngineDir
 	$ra2: ra2
-	./mods/common: common
+	^EngineDir|mods/common: common
 	~ra2.mix
 	~language.mix
 	~multi.mix
@@ -105,31 +105,39 @@ Chrome:
 	ra2|chrome.yaml
 
 Assemblies:
-	common|OpenRA.Mods.Common.dll
-	common|OpenRA.Mods.Cnc.dll
-	ra2|OpenRA.Mods.RA2.dll
+	^BinDir|OpenRA.Mods.Common.dll
+	^BinDir|OpenRA.Mods.Cnc.dll
+	^BinDir|OpenRA.Mods.RA2.dll
 
 ChromeLayout:
-	ra2|chrome/assetbrowser.yaml
+	common|chrome/assetbrowser.yaml
 	ra2|chrome/ingame-player.yaml
 	common|chrome/mainmenu.yaml
+	common|chrome/mainmenu-prompts.yaml
 	ra2|chrome/mainmenu-prerelease-notification.yaml
 	common|chrome/ingame-infoobjectives.yaml
 	common|chrome/ingame-infostats.yaml
 	common|chrome/musicplayer.yaml
 	common|chrome/tooltips.yaml
 	common|chrome/ingame.yaml
-	common|chrome/ingame-observer.yaml
+	ra2|chrome/ingame-observer.yaml
 	common|chrome/ingame-chat.yaml
+	common|chrome/ingame-transients.yaml
 	common|chrome/ingame-fmvplayer.yaml
 	common|chrome/ingame-menu.yaml
 	common|chrome/ingame-info.yaml
+	common|chrome/ingame-info-lobby-options.yaml
 	common|chrome/ingame-infoscripterror.yaml
 	common|chrome/ingame-infobriefing.yaml
 	ra2|chrome/ingame-debug.yaml
 	common|chrome/ingame-perf.yaml
 	common|chrome/ingame-infochat.yaml
 	common|chrome/settings.yaml
+	common|chrome/settings-display.yaml
+	common|chrome/settings-audio.yaml
+	common|chrome/settings-input.yaml
+	common|chrome/settings-hotkeys.yaml
+	common|chrome/settings-advanced.yaml
 	common|chrome/credits.yaml
 	common|chrome/lobby.yaml
 	common|chrome/lobby-players.yaml
@@ -154,6 +162,7 @@ ChromeLayout:
 	common|chrome/gamesave-browser.yaml
 	common|chrome/gamesave-loading.yaml
 	common|chrome/ingame-debuginfo.yaml
+	common|chrome/text-notifications.yaml
 
 Weapons:
 	ra2|weapons/bullets.yaml
@@ -189,7 +198,7 @@ Music:
 	ra2|audio/music.yaml
 
 Translations:
-	ra2|languages/english.yaml
+	common|languages/en.ftl
 
 Hotkeys:
 	common|hotkeys/game.yaml
@@ -197,6 +206,9 @@ Hotkeys:
 	common|hotkeys/production-common.yaml
 	common|hotkeys/supportpowers.yaml
 	common|hotkeys/viewport.yaml
+	common|hotkeys/chat.yaml
+	common|hotkeys/editor.yaml
+	common|hotkeys/control-groups.yaml
 	ra2|hotkeys.yaml
 
 LoadScreen: LogoStripeLoadScreen
@@ -207,6 +219,7 @@ ServerTraits:
 	LobbyCommands
 	PlayerPinger
 	MasterServerPinger
+	LobbySettingsNotification
 
 ChromeMetrics:
 	common|metrics.yaml
@@ -246,11 +259,17 @@ Fonts:
 		Size: 10
 		Ascender: 8
 
+DefaultOrderGenerator: UnitOrderGenerator
+
 SupportsMapsFrom: ra2
 
 SoundFormats: Aud, Wav
 
 SpriteFormats: ShpTS, TmpTS, ShpTD, PngSheet
+
+VideoFormats: Vqa
+
+TerrainFormat: DefaultTerrain
 
 SpriteSequenceFormat: ExtendedTilesetSpecificSpriteSequence
 	TilesetExtensions:
@@ -267,42 +286,50 @@ SpriteSequenceFormat: ExtendedTilesetSpecificSpriteSequence
 
 ModelSequenceFormat: VoxelModelSequence
 
+AssetBrowser:
+	SpriteExtensions: .shp, .tem, .urb, .sno
+	ModelExtensions: .vxl
+	AudioExtensions: .aud, .wav
+	VideoExtensions: .vqa
+
 GameSpeeds:
-	slowest:
-		Name: Slowest
-		Timestep: 80
-		OrderLatency: 2
-	slower:
-		Name: Slower
-		Timestep: 50
-		OrderLatency: 3
-	default:
-		Name: Normal
-		Timestep: 40
-		OrderLatency: 3
-	fast:
-		Name: Fast
-		Timestep: 35
-		OrderLatency: 4
-	faster:
-		Name: Faster
-		Timestep: 30
-		OrderLatency: 4
-	fastest:
-		Name: Fastest
-		Timestep: 20
-		OrderLatency: 6
+	DefaultSpeed: default
+	Speeds:
+		slowest:
+			Name: slowest
+			Timestep: 80
+			OrderLatency: 2
+		slower:
+			Name: slower
+			Timestep: 50
+			OrderLatency: 3
+		default:
+			Name: normal
+			Timestep: 40
+			OrderLatency: 3
+		fast:
+			Name: fast
+			Timestep: 35
+			OrderLatency: 4
+		faster:
+			Name: faster
+			Timestep: 30
+			OrderLatency: 4
+		fastest:
+			Name: fastest
+			Timestep: 20
+			OrderLatency: 6
 
 ModContent:
 	InstallPromptMessage: Red Alert 2 requires artwork and audio from the original game.
 	HeaderMessage: The original game content must be copied from an original game disc.
 	Packages:
 		base: Base Game Files
-			TestFiles: ^Content/ra2/ra2.mix, ^Content/ra2/language.mix
+			TestFiles: ^SupportDir|Content/ra2/ra2.mix, ^SupportDir|Content/ra2/language.mix
 			Sources: ra2, origin, tfd
 			Required: true
 		music: Base Game Music
-			TestFiles: ^Content/ra2/theme.mix
+			TestFiles: ^SupportDir|Content/ra2/theme.mix
 			Sources: ra2, origin, tfd
 	Sources:
 		ra2|installer/ra2.yaml

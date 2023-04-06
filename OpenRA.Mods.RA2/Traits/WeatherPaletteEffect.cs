@@ -1,6 +1,6 @@
 #region Copyright & License Information
 /*
- * Copyright 2007-2020 The OpenRA Developers (see AUTHORS)
+ * Copyright (c) The OpenRA Developers and Contributors
  * This file is part of OpenRA, which is free software. It is made
  * available to you under the terms of the GNU General Public License
  * as published by the Free Software Foundation, either version 3 of
@@ -9,6 +9,7 @@
  */
 #endregion
 
+using System.Collections.Generic;
 using System.Linq;
 using OpenRA.Graphics;
 using OpenRA.Traits;
@@ -19,7 +20,7 @@ namespace OpenRA.Mods.RA2.Traits
 	using Util = OpenRA.Graphics.Util;
 
 	[Desc("Global palette effect with a fixed color.")]
-	public class WeatherPaletteEffectInfo : ITraitInfo
+	public class WeatherPaletteEffectInfo : TraitInfo
 	{
 		public readonly string[] ExcludePalette = { "cursor", "chrome", "colorpicker", "fog", "shroud", "effect" };
 
@@ -34,7 +35,7 @@ namespace OpenRA.Mods.RA2.Traits
 		[Desc("Set this when using multiple independent flash effects.")]
 		public readonly string Type = null;
 
-		public object Create(ActorInitializer init) { return new WeatherPaletteEffect(this); }
+		public override object Create(ActorInitializer init) { return new WeatherPaletteEffect(this); }
 	}
 
 	public class WeatherPaletteEffect : IPaletteModifier, ITick

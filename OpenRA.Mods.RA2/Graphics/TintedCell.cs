@@ -1,6 +1,6 @@
-﻿#region Copyright & License Information
+#region Copyright & License Information
 /*
- * Copyright 2007-2020 The OpenRA Developers (see AUTHORS)
+ * Copyright (c) The OpenRA Developers and Contributors
  * This file is part of OpenRA, which is free software. It is made
  * available to you under the terms of the GNU General Public License
  * as published by the Free Software Foundation, either version 3 of
@@ -26,7 +26,7 @@ namespace OpenRA.Mods.RA2.Graphics
 		readonly WPos centeredLocation;
 
 		public int Level { get; private set; }
-		public int ZOffset { get { return layer.Info.ZOffset; } }
+		public int ZOffset => layer.Info.ZOffset;
 
 		public TintedCell(TintedCellsLayer layer, CPos location, WPos centeredLocation)
 		{
@@ -44,15 +44,14 @@ namespace OpenRA.Mods.RA2.Graphics
 			centeredLocation = src.centeredLocation;
 		}
 
-		public IRenderable WithPalette(PaletteReference newPalette) { return this; }
 		public IRenderable WithZOffset(int newOffset) { return this; }
-		public IRenderable OffsetBy(WVec vec) { return this; }
+		public IRenderable OffsetBy(in WVec vec) { return this; }
 		public IRenderable AsDecoration() { return this; }
 
-		public PaletteReference Palette { get { return null; } }
-		public bool IsDecoration { get { return false; } }
+		public PaletteReference Palette => null;
+		public bool IsDecoration => false;
 
-		WPos IRenderable.Pos { get { return centeredLocation; } }
+		WPos IRenderable.Pos => centeredLocation;
 
 		IFinalizedRenderable IRenderable.PrepareRender(WorldRenderer wr) { return this; }
 
@@ -64,17 +63,15 @@ namespace OpenRA.Mods.RA2.Graphics
 			if (firstTime)
 			{
 				var map = wr.World.Map;
-				var tileSet = wr.World.Map.Rules.TileSet;
+				var terrainInfo = wr.World.Map.Rules.TerrainInfo;
 				var uv = location.ToMPos(map);
 
 				if (!map.Height.Contains(uv))
 					return;
 
 				var tile = map.Tiles[uv];
-				var ti = tileSet.GetTileInfo(tile);
-				var ramp = ti != null ? ti.RampType : 0;
-
-				var corners = map.Grid.CellCorners[ramp];
+				var ti = terrainInfo.GetTerrainInfo(tile);
+				var corners = map.Grid.Ramps[ti.RampType].Corners;
 				screen = corners.Select(c => wr.Screen3DPxPosition(centeredLocation + c + new WVec(0, 0, ZOffset))).ToArray();
 				SetLevel(Level);
 				firstTime = false;
@@ -94,7 +91,7 @@ namespace OpenRA.Mods.RA2.Graphics
 				return;
 
 			// Saturate the visualization to MaxLevel
-			int level = Level.Clamp(0, layer.Info.MaxLevel);
+			var level = Level.Clamp(0, layer.Info.MaxLevel);
 
 			// Linear interpolation
 			alpha = layer.Info.Darkest + (layer.TintLevel * level) / 255;

@@ -1,6 +1,6 @@
-﻿#region Copyright & License Information
+#region Copyright & License Information
 /*
- * Copyright 2007-2020 The OpenRA Developers (see AUTHORS)
+ * Copyright (c) The OpenRA Developers and Contributors
  * This file is part of OpenRA, which is free software. It is made
  * available to you under the terms of the GNU General Public License
  * as published by the Free Software Foundation, either version 3 of
@@ -56,7 +56,7 @@ namespace OpenRA.Mods.RA2.Projectiles
 		public readonly string LaunchEffectImage = null;
 
 		[Desc("Launch effect sequence to play.")]
-		[SequenceReference("LaunchEffectImage")]
+		[SequenceReference("LaunchEffectImage", allowNullImage: true)]
 		public readonly string LaunchEffectSequence = null;
 
 		[Desc("Palette to use for launch effect.")]
@@ -77,7 +77,7 @@ namespace OpenRA.Mods.RA2.Projectiles
 		readonly WVec upVector;
 		readonly MersenneTwister random;
 		readonly bool hasLaunchEffect;
-		readonly HashSet<Pair<Color, WPos[]>> zaps;
+		readonly HashSet<(Color Color, WPos[] Offsets)> zaps;
 
 		[Sync]
 		readonly WPos target, source;
@@ -117,7 +117,7 @@ namespace OpenRA.Mods.RA2.Projectiles
 					upVector = 1024 * upVector / upVector.Length;
 			}
 
-			zaps = new HashSet<Pair<Color, WPos[]>>();
+			zaps = new HashSet<(Color, WPos[])>();
 			foreach (var c in colors)
 			{
 				var numSegments = (direction.Length - 1) / info.SegmentLength.Length + 1;
@@ -130,7 +130,7 @@ namespace OpenRA.Mods.RA2.Projectiles
 				for (var i = 1; i < numSegments; i++)
 					offsets[i] = WPos.LerpQuadratic(source, target, angle, i, numSegments);
 
-				zaps.Add(Pair.New(c, offsets));
+				zaps.Add((c, offsets));
 			}
 		}
 
@@ -141,7 +141,7 @@ namespace OpenRA.Mods.RA2.Projectiles
 					info.LaunchEffectImage, info.LaunchEffectSequence, info.LaunchEffectPalette)));
 
 			if (ticks == 0)
-				args.Weapon.Impact(Target.FromPos(target), args.SourceActor, args.DamageModifiers);
+				args.Weapon.Impact(Target.FromPos(target), new WarheadArgs(args));
 
 			if (++ticks >= info.Duration)
 				world.AddFrameEndTask(w => w.Remove(this));
@@ -157,7 +157,7 @@ namespace OpenRA.Mods.RA2.Projectiles
 			{
 				foreach (var zap in zaps)
 				{
-					var offsets = zap.Second;
+					var offsets = zap.Offsets;
 					for (var i = 1; i < offsets.Length - 1; i++)
 					{
 						var angle = WAngle.FromDegrees(random.Next(360));
@@ -169,7 +169,7 @@ namespace OpenRA.Mods.RA2.Projectiles
 						offsets[i] += offset;
 					}
 
-					yield return new ElectricBoltRenderable(offsets, info.ZOffset, info.Width, zap.First);
+					yield return new ElectricBoltRenderable(offsets, info.ZOffset, info.Width, zap.Color);
 				}
 			}
 		}

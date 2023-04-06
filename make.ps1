@@ -7,6 +7,7 @@ function All-Command
 {
 	If (!(Test-Path "*.sln"))
 	{
+		Write-Host "No custom solution file found. Aborting." -ForegroundColor Red
 		return
 	}
 
@@ -15,7 +16,9 @@ function All-Command
 		return
 	}
 
-	dotnet build /p:Configuration=Release /nologo
+	Write-Host "Building $modID in" $configuration "configuration..." -ForegroundColor Cyan
+	dotnet build -c $configuration --nologo -p:TargetPlatform=win-x64
+
 	if ($lastexitcode -ne 0)
 	{
 		Write-Host "Build failed. If just the development tools failed to build, try installing Visual Studio. You may also still be able to run the game." -ForegroundColor Red
@@ -30,6 +33,7 @@ function Clean-Command
 {
 	If (!(Test-Path "*.sln"))
 	{
+		Write-Host "No custom solution file found - nothing to clean. Aborting." -ForegroundColor Red
 		return
 	}
 
@@ -38,28 +42,12 @@ function Clean-Command
 		return
 	}
 
-	dotnet clean /nologo
-	rm *.dll
-	rm mods/*/*.dll
-	rm *.dll.config
-	rm *.pdb
-	rm mods/*/*.pdb
-	rm *.exe
-	rm ./*/bin -r
-	rm ./*/obj -r
+	Write-Host "Cleaning $modID..." -ForegroundColor Cyan
 
-	rm $env:ENGINE_DIRECTORY/*.dll
-	rm $env:ENGINE_DIRECTORY/mods/*/*.dll
-	rm env:ENGINE_DIRECTORY/*.config
-	rm env:ENGINE_DIRECTORY/*.pdb
-	rm mods/*/*.pdb
-	rm env:ENGINE_DIRECTORY/*.exe
-	rm env:ENGINE_DIRECTORY/*/bin -r
-	rm env:ENGINE_DIRECTORY/*/obj -r
-	if (Test-Path env:ENGINE_DIRECTORY/thirdparty/download/)
-	{
-		rmdir env:ENGINE_DIRECTORY/thirdparty/download -Recurse -Force
-	}
+	dotnet clean /nologo
+	Remove-Item ./*/obj -Recurse -ErrorAction Ignore
+	Remove-Item env:ENGINE_DIRECTORY/bin -Recurse -ErrorAction Ignore
+	Remove-Item env:ENGINE_DIRECTORY/*/obj -Recurse -ErrorAction Ignore
 
 	Write-Host "Clean complete." -ForegroundColor Green
 }
@@ -117,7 +105,7 @@ function Test-Command
 	}
 
 	Write-Host "Testing $modID mod MiniYAML..." -ForegroundColor Cyan
-	Invoke-Expression "$utilityPath $modID --check-yaml"
+	InvokeCommand "$utilityPath $modID --check-yaml"
 }
 
 function Check-Command
@@ -128,8 +116,10 @@ function Check-Command
 		return
 	}
 
-	Write-Host "Compiling in debug configuration..." -ForegroundColor Cyan
-	dotnet build /p:Configuration=Debug /nologo
+	Write-Host "Compiling $modID in Debug configuration..." -ForegroundColor Cyan
+
+	# Enabling EnforceCodeStyleInBuild and GenerateDocumentationFile as a workaround for some code style rules (in particular IDE0005) being bugged and not reporting warnings/errors otherwise.
+	dotnet build -c Debug --nologo -warnaserror -p:TargetPlatform=win-x64 -p:EnforceCodeStyleInBuild=true -p:GenerateDocumentationFile=true
 	if ($lastexitcode -ne 0)
 	{
 		Write-Host "Build failed." -ForegroundColor Red
@@ -137,11 +127,11 @@ function Check-Command
 
 	if ((CheckForUtility) -eq 0)
 	{
-		Write-Host "Checking for explicit interface violations..." -ForegroundColor Cyan
-		Invoke-Expression "$utilityPath $modID --check-explicit-interfaces"
+		Write-Host "Checking $modID for explicit interface violations..." -ForegroundColor Cyan
+		InvokeCommand "$utilityPath $modID --check-explicit-interfaces"
 
-		Write-Host "Checking for incorrect conditional trait interface overrides..." -ForegroundColor Cyan
-		Invoke-Expression "$utilityPath $modID --check-conditional-trait-interface-overrides"
+		Write-Host "Checking $modID for incorrect conditional trait interface overrides..." -ForegroundColor Cyan
+		InvokeCommand "$utilityPath $modID --check-conditional-trait-interface-overrides"
 	}
 }
 
@@ -162,20 +152,6 @@ function Check-Scripts-Command
 	}
 }
 
-function Docs-Command
-{
-	if ((CheckForUtility) -eq 1)
-	{
-		return
-	}
-
-	./make.ps1 version
-	Invoke-Expression "$utilityPath $modID --docs | Out-File -Encoding 'UTF8' DOCUMENTATION.md"
-	Invoke-Expression "$utilityPath $modID --weapon-docs | Out-File -Encoding "UTF8" WEAPONS.md"
-	Invoke-Expression "$utilityPath $modID --lua-docs | Out-File -Encoding 'UTF8' Lua-API.md"
-	Write-Host "Docs generated." -ForegroundColor Green
-}
-
 function CheckForUtility
 {
 	if (Test-Path $utilityPath)
@@ -189,9 +165,9 @@ function CheckForUtility
 
 function CheckForDotnet
 {
-	if ((Get-Command "dotnet" -ErrorAction SilentlyContinue) -eq $null) 
+	if ((Get-Command "dotnet" -ErrorAction SilentlyContinue) -eq $null)
 	{
-		Write-Host "The 'dotnet' tool is required to compile OpenRA. Please install the .NET Core SDK or Visual Studio and try again. https://dotnet.microsoft.com/download" -ForegroundColor Red
+		Write-Host "The 'dotnet' tool is required to compile OpenRA. Please install the .NET 6.0 SDK and try again. https://dotnet.microsoft.com/download/dotnet/6.0" -ForegroundColor Red
 		return 1
 	}
 
@@ -200,7 +176,7 @@ function CheckForDotnet
 
 function WaitForInput
 {
-	echo "Press enter to continue."
+	Write-Host "Press enter to continue."
 	while ($true)
 	{
 		if ([System.Console]::KeyAvailable)
@@ -233,6 +209,7 @@ function ParseConfigFile($fileName)
 			ReadConfigLine $line $name
 		}
 	}
+	$reader.Close()
 
 	$missing = @()
 	foreach ($name in $names)
@@ -245,14 +222,28 @@ function ParseConfigFile($fileName)
 
 	if ($missing)
 	{
-		echo "Required mod.config variables are missing:"
+		Write-Host "Required mod.config variables are missing:"
 		foreach ($m in $missing)
 		{
-			echo "   $m"
+			Write-Host "   $m"
 		}
-		echo "Repair your mod.config (or user.config) and try again."
+		Write-Host "Repair your mod.config (or user.config) and try again."
 		WaitForInput
 		exit
+	}
+}
+
+function InvokeCommand
+{
+	param($expression)
+	# $? is the return value of the called expression
+	# Invoke-Expression itself will always succeed, even if the invoked expression fails
+	# So temporarily store the return value in $success
+	$expression += '; $success = $?'
+	Invoke-Expression $expression
+	if ($success -eq $False)
+	{
+		exit 1
 	}
 }
 
@@ -261,31 +252,34 @@ function ParseConfigFile($fileName)
 ###############################################################
 if ($PSVersionTable.PSVersion.Major -clt 3)
 {
-    echo "The makefile requires PowerShell version 3 or higher."
-    echo "Please download and install the latest Windows Management Framework version from Microsoft."
+    Write-Host "The makefile requires PowerShell version 3 or higher." -ForegroundColor Red
+    Write-Host "Please download and install the latest Windows Management Framework version from Microsoft." -ForegroundColor Red
     WaitForInput
 }
 
 if ($args.Length -eq 0)
 {
-	echo "Command list:"
-	echo ""
-	echo "  all             Builds the game, its development tools and the mod dlls."
-	echo "  version         Sets the version strings for all mods to the latest"
-	echo "                  version for the current Git branch."
-	echo "  clean           Removes all built and copied files."
-	echo "                  from the mods and the engine directories."
-	echo "  test            Tests the mod's MiniYAML for errors."
-	echo "  check           Checks .cs files for StyleCop violations."
-	echo "  check-scripts   Checks .lua files for syntax errors."
-	echo "  docs            Generates the trait and Lua API documentation."
-	echo ""
+	Write-Host "Command list:"
+	Write-Host ""
+	Write-Host "  all             Builds the game, its development tools and the mod dlls."
+	Write-Host "  version         Sets the version strings for all mods to the latest"
+	Write-Host "                  version for the current Git branch."
+	Write-Host "  clean           Removes all built and copied files."
+	Write-Host "                  from the mods and the engine directories."
+	Write-Host "  test            Tests the mod's MiniYAML for errors."
+	Write-Host "  check           Checks .cs files for StyleCop violations."
+	Write-Host "  check-scripts   Checks .lua files for syntax errors."
+	Write-Host ""
 	$command = (Read-Host "Enter command").Split(' ', 2)
 }
 else
 {
 	$command = $args
 }
+
+# Set the working directory for our IO methods
+$templateDir = $pwd.Path
+[System.IO.Directory]::SetCurrentDirectory($templateDir)
 
 # Load the environment variables from the config file
 # and get the mod ID from the local environment variable
@@ -298,51 +292,53 @@ if (Test-Path "user.config")
 
 $modID = $env:MOD_ID
 
-$env:MOD_SEARCH_PATHS = (Get-Item -Path ".\" -Verbose).FullName + "\mods,./mods"
+$env:MOD_SEARCH_PATHS = "./mods,$env:ENGINE_DIRECTORY/mods"
+$env:ENGINE_DIR = ".." # Set to potentially be used by the Utility and different than $env:ENGINE_DIRECTORY, which is for the script.
 
-# Run the same command on the engine's make file
-if ($command -eq "all" -or $command -eq "clean")
+# Fetch the engine if required
+if ($command -eq "all" -or $command -eq "clean" -or $command -eq "check")
 {
-	$templateDir = $pwd.Path
 	$versionFile = $env:ENGINE_DIRECTORY + "/VERSION"
 	$currentEngine = ""
 	if (Test-Path $versionFile)
 	{
-		$currentEngine = [System.IO.File]::OpenText($versionFile).ReadLine()
+		$reader = [System.IO.File]::OpenText($versionFile)
+		$currentEngine = $reader.ReadLine()
+		$reader.Close()
 	}
 
 	if ($currentEngine -ne "" -and $currentEngine -eq $env:ENGINE_VERSION)
 	{
 		cd $env:ENGINE_DIRECTORY
 		Invoke-Expression ".\make.cmd $command"
-		echo ""
+		Write-Host ""
 		cd $templateDir
 	}
 	elseif ($env:AUTOMATIC_ENGINE_MANAGEMENT -ne "True")
 	{
-		echo "Automatic engine management is disabled."
-		echo "Please manually update the engine to version $env:ENGINE_VERSION."
+		Write-Host "Automatic engine management is disabled."
+		Write-Host "Please manually update the engine to version $env:ENGINE_VERSION."
 		WaitForInput
 	}
 	else
 	{
-		echo "OpenRA engine version $env:ENGINE_VERSION is required."
+		Write-Host "OpenRA engine version $env:ENGINE_VERSION is required."
 
 		if (Test-Path $env:ENGINE_DIRECTORY)
 		{
 			if ($currentEngine -ne "")
 			{
-				echo "Deleting engine version $currentEngine."
+				Write-Host "Deleting engine version $currentEngine."
 			}
 			else
 			{
-				echo "Deleting existing engine (unknown version)."
+				Write-Host "Deleting existing engine (unknown version)."
 			}
 
 			rm $env:ENGINE_DIRECTORY -r
 		}
 
-		echo "Downloading engine..."
+		Write-Host "Downloading engine..."
 
 		if (Test-Path $env:AUTOMATIC_ENGINE_EXTRACT_DIRECTORY)
 		{
@@ -373,13 +369,18 @@ if ($command -eq "all" -or $command -eq "clean")
 		cd $env:ENGINE_DIRECTORY
 		Invoke-Expression ".\make.cmd version $env:ENGINE_VERSION"
 		Invoke-Expression ".\make.cmd $command"
-		echo ""
+		Write-Host ""
 		cd $templateDir
 	}
 }
 
-$utilityPath = $env:ENGINE_DIRECTORY + "/OpenRA.Utility.exe"
-$styleCheckPath = $env:ENGINE_DIRECTORY + "/OpenRA.StyleCheck.exe"
+$utilityPath = $env:ENGINE_DIRECTORY + "/bin/OpenRA.Utility.exe"
+
+$configuration = "Release"
+if ($args.Contains("CONFIGURATION=Debug"))
+{
+	$configuration = "Debug"
+}
 
 $execute = $command
 if ($command.Length -gt 1)
@@ -395,8 +396,7 @@ switch ($execute)
 	"test" { Test-Command }
 	"check" { Check-Command }
 	"check-scripts" { Check-Scripts-Command }
-	"docs" { Docs-Command }
-	Default { echo ("Invalid command '{0}'" -f $command) }
+	Default { Write-Host ("Invalid command '{0}'" -f $command) }
 }
 
 # In case the script was called without any parameters we keep the window open

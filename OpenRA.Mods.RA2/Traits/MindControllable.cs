@@ -1,6 +1,6 @@
 #region Copyright & License Information
 /*
- * Copyright 2007-2020 The OpenRA Developers (see AUTHORS)
+ * Copyright (c) The OpenRA Developers and Contributors
  * This file is part of OpenRA, which is free software. It is made
  * available to you under the terms of the GNU General Public License
  * as published by the Free Software Foundation, either version 3 of
@@ -9,6 +9,7 @@
  */
 #endregion
 
+using System;
 using System.Linq;
 using OpenRA.Mods.Common.Traits;
 using OpenRA.Traits;
@@ -23,34 +24,28 @@ namespace OpenRA.Mods.RA2.Traits
 		public readonly string Condition = null;
 
 		[Desc("The sound played when the mindcontrol is revoked.")]
-		public readonly string[] RevokeControlSounds = { };
+		public readonly string[] RevokeControlSounds = Array.Empty<string>();
 
 		[Desc("Map player to transfer this actor to if the owner lost the game.")]
 		public readonly string FallbackOwner = "Creeps";
 
-		public override object Create(ActorInitializer init) { return new MindControllable(init.Self, this); }
+		public override object Create(ActorInitializer init) { return new MindControllable(this); }
 	}
 
-	public class MindControllable : PausableConditionalTrait<MindControllableInfo>, INotifyKilled, INotifyActorDisposing, INotifyCreated, INotifyOwnerChanged
+	public class MindControllable : PausableConditionalTrait<MindControllableInfo>, INotifyKilled, INotifyActorDisposing, INotifyOwnerChanged
 	{
 		readonly MindControllableInfo info;
 		Player creatorOwner;
 		bool controlChanging;
 
-		ConditionManager conditionManager;
-		int token = ConditionManager.InvalidConditionToken;
+		int token = Actor.InvalidConditionToken;
 
 		public Actor Master { get; private set; }
 
-		public MindControllable(Actor self, MindControllableInfo info)
+		public MindControllable(MindControllableInfo info)
 			: base(info)
 		{
 			this.info = info;
-		}
-
-		protected override void Created(Actor self)
-		{
-			conditionManager = self.TraitOrDefault<ConditionManager>();
 		}
 
 		public void LinkMaster(Actor self, Actor master)
@@ -68,8 +63,8 @@ namespace OpenRA.Mods.RA2.Traits
 			UnlinkMaster(self, Master);
 			Master = master;
 
-			if (conditionManager != null && token == ConditionManager.InvalidConditionToken && !string.IsNullOrEmpty(Info.Condition))
-				token = conditionManager.GrantCondition(self, Info.Condition);
+			if (token == Actor.InvalidConditionToken && !string.IsNullOrEmpty(Info.Condition))
+				token = self.GrantCondition(Info.Condition);
 
 			if (master.Owner == creatorOwner)
 				UnlinkMaster(self, master);
@@ -92,8 +87,8 @@ namespace OpenRA.Mods.RA2.Traits
 
 			Master = null;
 
-			if (conditionManager != null && token != ConditionManager.InvalidConditionToken)
-				token = conditionManager.RevokeCondition(self, token);
+			if (token != Actor.InvalidConditionToken)
+				token = self.RevokeCondition(token);
 		}
 
 		public void RevokeMindControl(Actor self)

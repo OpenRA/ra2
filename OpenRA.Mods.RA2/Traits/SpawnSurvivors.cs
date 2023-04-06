@@ -1,6 +1,6 @@
-﻿#region Copyright & License Information
+#region Copyright & License Information
 /*
- * Copyright 2007-2020 The OpenRA Developers (see AUTHORS)
+ * Copyright (c) The OpenRA Developers and Contributors
  * This file is part of OpenRA, which is free software. It is made
  * available to you under the terms of the GNU General Public License
  * as published by the Free Software Foundation, either version 3 of
@@ -9,6 +9,7 @@
  */
 #endregion
 
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using OpenRA.Mods.Common.Traits;
@@ -23,10 +24,10 @@ namespace OpenRA.Mods.RA2.Traits
 		[ActorReference]
 		[FieldLoader.Require]
 		[Desc("The actors spawned.")]
-		public readonly string[] Actors = { };
+		public readonly string[] Actors = Array.Empty<string>();
 
 		[Desc("DeathType(s) that trigger spawning. Leave empty to always spawn.")]
-		public readonly BitSet<DamageType> DeathTypes = default(BitSet<DamageType>);
+		public readonly BitSet<DamageType> DeathTypes = default;
 
 		public override object Create(ActorInitializer actor) { return new SpawnSurvivors(this); }
 	}
@@ -58,15 +59,15 @@ namespace OpenRA.Mods.RA2.Traits
 			{
 				foreach (var actorType in Info.Actors)
 				{
-					var td = new TypeDictionary();
-
-					td.Add(new OwnerInit(self.Owner));
-					td.Add(new LocationInit(eligibleLocations.Random(w.SharedRandom)));
+					var td = new TypeDictionary
+					{
+						new OwnerInit(self.Owner),
+						new LocationInit(eligibleLocations.Random(w.SharedRandom))
+					};
 
 					var unit = w.CreateActor(true, actorType.ToLowerInvariant(), td);
 					var mobile = unit.TraitOrDefault<Mobile>();
-					if (mobile != null)
-						mobile.Nudge(unit, self, true);
+					mobile?.Nudge(unit);
 				}
 			});
 		}

@@ -1,8 +1,8 @@
 caoild:
 	Inherits: ^TechBuilding
 	Inherits@shape: ^2x2Shape
-	Selectable:
-		Bounds: 96, 104, -2, -26
+	IsometricSelectable:
+		Height: 75
 	Building:
 		Footprint: xx xx
 		Dimensions: 2, 2
@@ -52,6 +52,8 @@ caairp:
 	Building:
 		Dimensions: 3,3
 		Footprint: xxx xxx xxx
+	IsometricSelectable:
+		Height: 90
 	ProvidesPrerequisite@Allies:
 		Prerequisite: techparadrops.allies
 		Factions: america, germany, england, france, korea
@@ -64,8 +66,8 @@ caairp:
 		OrderName: AlliedParatroopers
 		Icon: paradrop
 		ChargeInterval: 9000
-		Description: Allied Paratroopers
-		LongDesc: A Cargo Plane drops six GIs\nanywhere on the map.
+		Name: Allied Paratroopers
+		Description: A Cargo Plane drops six GIs\nanywhere on the map.
 		DropItems: e1,e1,e1,e1,e1,e1
 		QuantizedFacings: 8
 		UnitType: pdplane
@@ -76,8 +78,8 @@ caairp:
 		OrderName: SovietParatroopers
 		Icon: paradrop
 		ChargeInterval: 9000
-		Description: Soviet Paratroopers
-		LongDesc: A Cargo Plane drops nine conscripts\nanywhere on the map.
+		Name: Soviet Paratroopers
+		Description: A Cargo Plane drops nine conscripts\nanywhere on the map.
 		DropItems: e2,e2,e2,e2,e2,e2,e2,e2,e2
 		QuantizedFacings: 8
 		UnitType: pdplane
@@ -106,6 +108,8 @@ cahosp:
 	Building:
 		Footprint: xxxx xxxx xxxx xxxx xxxx xxxx
 		Dimensions: 6, 4
+	IsometricSelectable:
+		Height: 105
 	Tooltip:
 		Name: Civilian Hospital
 	Health:
@@ -117,6 +121,8 @@ cahosp:
 	RepairsUnits:
 		StartRepairingNotification:
 	RallyPoint:
+	CommandBarBlacklist:
+		DisableStop: false
 	WithIdleOverlay:
 	WithIdleOverlay@flag:
 		Sequence: flag
@@ -143,8 +149,8 @@ cathosp:
 caoutp:
 	Inherits: ^TechBuilding
 	Inherits@shape: ^4x3Shape
-	Selectable:
-		Bounds: 178, 180, 0, -38
+	IsometricSelectable:
+		Height: 90
 	Tooltip:
 		Name: Tech Outpost
 	Armor:
@@ -158,6 +164,8 @@ caoutp:
 	RallyPoint:
 		Palette: mouse
 		IsPlayerPalette: false
+	CommandBarBlacklist:
+		DisableStop: false
 	RepairsUnits:
 		Interval: 50
 		FinishRepairingNotification: UnitRepaired
@@ -186,8 +194,8 @@ caoutp:
 		Type: patriot
 	AutoTarget:
 	Turreted:
-		TurnSpeed: 10
-		InitialFacing: 224
+		TurnSpeed: 40
+		InitialFacing: 896
 		Offset: 700,-1000,1500
 	AttackTurreted:
 		Voice:

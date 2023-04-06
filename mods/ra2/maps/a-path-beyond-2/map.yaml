@@ -72,15 +72,19 @@ Actors:
 	Actor0: cabhut
 		Location: 135,29
 		Owner: Neutral
+		Facing: 896
 	Actor1: cabhut
 		Location: 129,8
 		Owner: Neutral
+		Facing: 896
 	Actor2: cabhut
 		Location: 165,32
 		Owner: Neutral
+		Facing: 896
 	Actor3: cabhut
 		Location: 169,12
 		Owner: Neutral
+		Facing: 896
 	Actor4: tibtre02
 		Location: 196,28
 		Owner: Neutral

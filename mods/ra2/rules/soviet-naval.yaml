@@ -8,16 +8,18 @@ sapc:
 		Description: General-purpose naval transport.\nCan carry infantry and vehicles.\n  Unarmed
 	Valued:
 		Cost: 900
+	UpdatesPlayerStatistics:
+		AddToArmyValue: true
 	Tooltip:
 		Name: Amphibious Transport
 	Selectable:
-		Bounds: 60, 80, 0, -6
+		Bounds: 1448, 3861, 0, -289
 	Health:
 		HP: 300
 	Armor:
 		Type: Heavy
 	Mobile:
-		TurnSpeed: 5
+		TurnSpeed: 20
 		Speed: 90
 		Locomotor: lcraft
 		PauseOnCondition: notmobile || chronodisable
@@ -26,8 +28,7 @@ sapc:
 	Cargo:
 		Types: Infantry, Vehicle
 		MaxWeight: 12
-		PipCount: 12
-		PassengerFacing: 96
+		PassengerFacing: 384
 		UnloadTerrainTypes: Clear, Rough, Rail, Road, DirtRoad, Beach, Ore, Gems
 		UnloadVoice: Move
 		LoadingCondition: notmobile
@@ -37,6 +38,15 @@ sapc:
 	WithVoxelBody:
 	RenderSprites:
 	HitShape:
+	WithCargoPipsDecoration:
+		Position: BottomLeft
+		RequiresSelection: true
+		Palette: pips
+		CustomPipSequences:
+			blue: pip-blue
+			yellow: pip-yellow
+			green: pip-green
+			red: pip-red
 
 sub:
 	Inherits: ^Ship
@@ -49,6 +59,8 @@ sub:
 		Description: Submerged anti-ship unit armed with\ntorpedoes.\nCan detect other submarines and Giant Squids.\n  Strong vs Ships\n  Weak vs Ground units, Aircraft\nSpecial Ability: Submerge
 	Valued:
 		Cost: 1000
+	UpdatesPlayerStatistics:
+		AddToArmyValue: true
 	Tooltip:
 		Name: Typhoon Attack Sub
 	Health:
@@ -56,7 +68,7 @@ sub:
 	Armor:
 		Type: Heavy
 	Mobile:
-		TurnSpeed: 2
+		TurnSpeed: 8
 		Speed: 60
 	-LeavesTrails:
 	RevealsShroud:
@@ -68,7 +80,7 @@ sub:
 		TargetTypes: Underwater, Submergeable
 		RequiresCondition: underwater
 	Cloak:
-		CloakTypes: Underwater
+		DetectionTypes: Underwater
 		InitialDelay: 50
 		CloakDelay: 75
 		CloakSound: vnavupa.wav
@@ -88,10 +100,11 @@ sub:
 		RequiresCondition: rank-elite
 	AttackFrontal:
 		Voice: Attack
+		FacingTolerance: 0
 	AutoTarget:
 		InitialStance: ReturnFire
 	DetectCloaked:
-		CloakTypes: Underwater
+		DetectionTypes: Underwater
 		Range: 4c0
 	RenderDetectionCircle:
 	Explodes:
@@ -116,21 +129,24 @@ hyd:
 		Description: Anti-Air/Anti-Infantry naval unit.\n  Strong vs Aircraft, Infantry\n  Weak vs Vehicles, Naval Units
 	Valued:
 		Cost: 900
+	UpdatesPlayerStatistics:
+		AddToArmyValue: true
 	Tooltip:
 		Name: Sea Scorpion
 	Selectable:
-		Bounds: 50, 30, 0, -6
+		Bounds: 1206, 1448, 0, -289
 	Health:
 		HP: 300
 	Armor:
 		Type: Heavy
 	Mobile:
-		TurnSpeed: 6
+		TurnSpeed: 24
 		Speed: 120
 	RevealsShroud:
 		Range: 8c0
 	AttackFrontal:
 		Voice: Attack
+		FacingTolerance: 0
 	Armament@primary:
 		Weapon: FlakTrackGun
 		LocalOffset: 256,0,1408
@@ -159,36 +175,38 @@ sqd:
 		Description: Ocean creature\npunches enemies in close combat.\n  Strong vs Ships
 	Valued:
 		Cost: 1000
+	UpdatesPlayerStatistics:
+		AddToArmyValue: true
 	Tooltip:
 		Name: Giant Squid
 	Armor:
 		Type: Light
 	Health:
 		HP: 200
-	SelfHealing:
+	ChangesHealth:
 		Step: 2
 		Delay: 100
 		DamageCooldown: 125
 	Mobile:
-		TurnSpeed: 6
+		TurnSpeed: 24
 		Speed: 120
 		Locomotor: naval
 		Voice: Move
 	SelectionDecorations:
-		Palette: pips
 	Selectable:
-		Bounds: 80, 30
+		Bounds: 1930, 1448
 	Voiced:
 		VoiceSet: GiantSquidVoice
 	Armament:
 		Weapon: SquidPunch
 	AttackFrontal:
 		Voice: Attack
+		FacingTolerance: 0
 	AutoTarget:
 	RevealsShroud:
 		Range: 5c0
 	Cloak:
-		CloakTypes: Underwater
+		DetectionTypes: Underwater
 		InitialDelay: 50
 		CloakDelay: 75
 		CloakSound: vnavupa.wav
@@ -203,7 +221,7 @@ sqd:
 		TargetTypes: Underwater, Submergeable
 		RequiresCondition: underwater
 	DetectCloaked:
-		CloakTypes: Underwater
+		DetectionTypes: Underwater
 		Range: 5c0
 	HiddenUnderFog:
 	ActorLostNotification:

@@ -1,6 +1,6 @@
 #region Copyright & License Information
 /*
- * Copyright 2007-2020 The OpenRA Developers (see AUTHORS)
+ * Copyright (c) The OpenRA Developers and Contributors
  * This file is part of OpenRA, which is free software. It is made
  * available to you under the terms of the GNU General Public License
  * as published by the Free Software Foundation, either version 3 of
@@ -22,7 +22,6 @@ namespace OpenRA.Mods.RA2.Traits.Render
 
 	class WithMirageSpriteBody : WithSpriteBody, ITick
 	{
-		readonly WithMirageSpriteBodyInfo info;
 		readonly Mirage mirage;
 		readonly RenderSprites renderSprites;
 		ActorInfo disguiseActor;
@@ -32,7 +31,6 @@ namespace OpenRA.Mods.RA2.Traits.Render
 		public WithMirageSpriteBody(ActorInitializer init, WithMirageSpriteBodyInfo info)
 			: base(init, info)
 		{
-			this.info = info;
 			var self = init.Self;
 			renderSprites = self.Trait<RenderSprites>();
 			mirage = self.Trait<Mirage>();
@@ -53,7 +51,7 @@ namespace OpenRA.Mods.RA2.Traits.Render
 				{
 					var renderSprites = disguiseActor.TraitInfoOrDefault<RenderSpritesInfo>();
 					if (renderSprites != null)
-						disguiseImage = renderSprites.GetImage(disguiseActor, self.World.Map.Rules.Sequences, disguisePlayer.Faction.InternalName);
+						disguiseImage = renderSprites.GetImage(disguiseActor, disguisePlayer.Faction.InternalName);
 				}
 
 				var withSpriteBody = disguiseActor.TraitInfoOrDefault<WithSpriteBodyInfo>();
