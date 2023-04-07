@@ -59,7 +59,7 @@ gacnst:
 		ValidPowerStates: Low, Critical
 	WithIdleOverlay@fans@LOWPOWER:
 		Sequence: idle-fans-low-power
-		RequiresCondition: !build-incomplete
+		RequiresCondition: !build-incomplete && lowpower
 	WithIdleOverlay@fans:
 		Sequence: idle-fans
 		RequiresCondition: !build-incomplete && !lowpower
