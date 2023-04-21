@@ -348,15 +348,37 @@ namisl:
 	critical-idle: ngmisl_e
 		Start: 1
 		ShadowStart: 3
-	# TODO: ngmisl_f is actually the open sequence
-	active: ngmisl_f
+	charged: ngmisl_f
 		Length: 16
 		ShadowStart: 32
-		Tick: 120
-	damaged-active: ngmisl_f
-		Start: 17
+		Tick: 150
+	damaged-charged: ngmisl_f
+		Start: 16
 		Length: 16
 		ShadowStart: 48
+		Tick: 120
+	loop: ngmisl_g
+		ShadowStart: 2
+		Tick: 120
+	damaged-loop: ngmisl_g
+		Start: 1
+		ShadowStart: 3
+		Tick: 120
+	end: ngmisl_h
+		Length: 16
+		ShadowStart: 32
+		Tick: 150
+	damaged-end: ngmisl_h
+		Start: 16
+		Length: 16
+		ShadowStart: 48
+		Tick: 120
+	smoke: nuketo
+		Length: *
+		Tick: 120
+		Offset: 0, 0
+	steam: nukestm # TODO: unused
+		Length: *
 		Tick: 120
 	make: ntmislmk
 		UseTilesetCode: true
@@ -375,13 +397,37 @@ nairon:
 		Start: 11
 		Length: 11
 		ShadowStart: 33
-	active: ngiron_h
+
+	charged: ngiron_f
+		Length: 21
+	damaged-charged: ngiron_f
+		Start: 21
+		Length: 21
+	loop: ngiron_f
+		Start: 10
+		Length: 10
+	damaged-loop: ngiron_f
+		Start: 31
+		Length: 10
+	end: ggcsph_h
+		Length: 12
+	damaged-end: ggcsph_h
+		Start: 15
+		Length: 15
+		ShadowStart: 45
+	end: ngiron_h
 		Length: 12
 		ShadowStart: 24
-	damaged-active: ngiron_h
+	damaged-end: ngiron_h
 		Start: 12
 		Length: 12
 		ShadowStart: 36
+	active: ngiron_f
+		Start: 10
+		Length: 10
+	damaged-active: ngiron_f
+		Start: 31
+		Length: 10
 	make: ntironmk
 	icon: ironicon
 

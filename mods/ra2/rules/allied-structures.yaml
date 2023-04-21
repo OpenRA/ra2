@@ -978,6 +978,9 @@ gaweat:
 		Description: Play God with deadly weather!
 	IsometricSelectable:
 		Height: 75
+	WithIdleOverlay:
+		Sequence: idle-top
+		RequiresCondition: !build-incomplete
 	Valued:
 		Cost: 5000
 	Tooltip:
@@ -1020,6 +1023,8 @@ gaweat:
 		PauseOnCondition: lowpower
 		Cursor: weatherstorm
 		PaletteEffectType: LightningStorm
+	SupportPowerChargeBar:
+	WithSupportPowerChargedOverlay:
 	SpawnSurvivors:
 		DeathTypes: ExplosionDeath, BulletDeath
 		Actors: e1, e1, e1, e1, e1
@@ -1053,6 +1058,9 @@ gacsph:
 	WithIdleOverlay:
 		Sequence: idle-dome
 		RequiresCondition: !build-incomplete
+	WithIdleOverlay@FANS:
+		Sequence: idle-fans
+		RequiresCondition: !build-incomplete
 	GrantConditionOnPowerState@LOWPOWER:
 		Condition: lowpower
 		ValidPowerStates: Low, Critical
@@ -1061,6 +1069,7 @@ gacsph:
 		Types: SpyInfiltrate
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
+	WithSupportPowerChargedOverlay:
 	ChronoshiftPower@chronoshift:
 		OrderName: Chronoshift
 		Icon: chrono
