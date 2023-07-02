@@ -12,7 +12,8 @@ A Red Alert 2 mod based on the 2.5D features of the OpenRA engine. Requires the 
 
 ## Dependencies
 [Install](https://github.com/OpenRA/OpenRA/blob/release-20200202/INSTALL.md) the dependencies required to compile OpenRA.
-To use higher version of dotnet in linux/mac:
+
+- To use higher version of dotnet in linux/mac:
  export DOTNET_ROLL_FORWARD=LatestMajor
 
 ## Installing the mod
@@ -42,6 +43,8 @@ The mod expects the original Red Alert 2 game assets in place. Put the .mix arch
   * Linux:  `~/.config/openra/Content/ra2/`
 
 Create the `ra2` directory if it does not exist.
+
+I have uploads some *.mixs in this project, just copy them to directory depending on your operating system.
 
 ### Download
 The game can be bought and downloaded from the following official places:
