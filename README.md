@@ -13,8 +13,7 @@ A Red Alert 2 mod based on the 2.5D features of the OpenRA engine. Requires the 
 ## Dependencies
 [Install](https://github.com/OpenRA/OpenRA/blob/release-20200202/INSTALL.md) the dependencies required to compile OpenRA.
 
-- To use higher version of dotnet in linux/mac:
- export DOTNET_ROLL_FORWARD=LatestMajor
+- To use higher version of dotnet in linux/mac: export DOTNET_ROLL_FORWARD=LatestMajor
 
 ## Installing the mod
 
