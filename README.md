@@ -43,7 +43,7 @@ The mod expects the original Red Alert 2 game assets in place. Put the .mix arch
 
 Create the `ra2` directory if it does not exist.
 
-I have uploads some *.mixs in this project, just copy them to directory depending on your operating system.
+I have uploads some *.mixs into mixs folder in this project, just copy them to directory depending on your operating system.
 
 ### Download
 The game can be bought and downloaded from the following official places:
