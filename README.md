@@ -1,11 +1,5 @@
 # Red Alert 2 mod for OpenRA
 
-[![Build Status](https://api.travis-ci.com/OpenRA/ra2.svg?branch=master)](https://travis-ci.com/github/OpenRA/ra2)
-
-Consult the [wiki](https://github.com/OpenRA/ra2/wiki) for instructions on how to install and use this.
-
-[![Bountysource](https://api.bountysource.com/badge/tracker?tracker_id=27677844)](https://www.bountysource.com/teams/openra/issues?tracker_ids=27677844)
-
 EA has not endorsed and does not support this product.
 
 A Red Alert 2 mod based on the 2.5D features of the OpenRA engine. Requires the original game data to play.
@@ -43,12 +37,11 @@ The mod expects the original Red Alert 2 game assets in place. Put the .mix arch
 
 Create the `ra2` directory if it does not exist.
 
-I have uploads some *.mixs into mixs folder in this project, just copy them to directory depending on your operating system.
-
 ### Download
 The game can be bought and downloaded from the following official places:
 
 * [EA Origin](https://www.origin.com/en-de/store/buy/c-c-the-ultimate-collection/pc-download/bundle/ultimate-collection)
+* [Download from OneDriver](https://1drv.ms/f/s!Ap2Dq5Q_kRPGapKIQXkmezfQbOM)
 
 ### Disc
 If you own the original CDs:
