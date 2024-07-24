@@ -10,6 +10,9 @@ gacnst:
 	idle-fans: ggcnst_a
 		Length: 6
 		Tick: 150
+	idle-fans-low-power: ggcnst_a
+		Length: 6
+		Tick: 600
 	damaged-idle-fans: ggcnst_a
 		Start: 5
 		Length: 6
