@@ -22,7 +22,7 @@
 #   make [RUNTIME=net6] check
 #
 # to check your mod yaml for errors, run:
-#   make [RUNTIME=net6] test
+#   make [RUNTIME=net6] [TREAT_WARNINGS_AS_ERRORS=false] test
 #
 # the following are internal sdk helpers that are not intended to be run directly:
 #   make check-variables
