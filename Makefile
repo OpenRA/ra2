@@ -3,7 +3,7 @@
 # to compile, run:
 #   make
 #
-# to compile using Mono (version 6.4 or greater) instead of .NET 6, run:
+# to compile using Mono (version 6.12 or greater) instead of .NET 6, run:
 #   make RUNTIME=mono
 #
 # to compile using system libraries for native dependencies, run:
@@ -145,7 +145,7 @@ engine: check-variables check-sdk-scripts
 
 all: engine
 ifeq ($(RUNTIME), mono)
-	@command -v $(MSBUILD) >/dev/null || (echo "OpenRA requires the '$(MSBUILD)' tool provided by Mono >= 6.4."; exit 1)
+	@command -v $(MSBUILD) >/dev/null || (echo "OpenRA requires the '$(MSBUILD)' tool provided by Mono >= 6.12."; exit 1)
 ifneq ("$(MOD_SOLUTION_FILES)","")
 	@find . -maxdepth 1 -name '*.sln' -exec $(MSBUILD) -t:Build -restore -p:Configuration=${CONFIGURATION} -p:TargetPlatform=$(TARGETPLATFORM) -p:Mono=true \;
 endif
@@ -181,11 +181,10 @@ check: engine
 ifneq ("$(MOD_SOLUTION_FILES)","")
 	@echo "Compiling in Debug mode..."
 ifeq ($(RUNTIME), mono)
-# Enabling EnforceCodeStyleInBuild and GenerateDocumentationFile as a workaround for some code style rules (in particular IDE0005) being bugged and not reporting warnings/errors otherwise.
-	@$(MSBUILD) -t:build -restore -p:Configuration=Debug -warnaserror -p:TargetPlatform=$(TARGETPLATFORM) -p:Mono=true -p:EnforceCodeStyleInBuild=true -p:GenerateDocumentationFile=true
+	@$(MSBUILD) -t:clean\;build -restore -p:Configuration=Debug -warnaserror -p:TargetPlatform=$(TARGETPLATFORM)
 else
-# Enabling EnforceCodeStyleInBuild and GenerateDocumentationFile as a workaround for some code style rules (in particular IDE0005) being bugged and not reporting warnings/errors otherwise.
-	@$(DOTNET) build -c Debug -nologo -warnaserror -p:TargetPlatform=$(TARGETPLATFORM) -p:EnforceCodeStyleInBuild=true -p:GenerateDocumentationFile=true
+	@$(DOTNET) clean -c Debug --nologo --verbosity minimal
+	@$(DOTNET) build -c Debug -nologo -warnaserror -p:TargetPlatform=$(TARGETPLATFORM)
 endif
 endif
 	@echo "Checking for explicit interface violations..."
