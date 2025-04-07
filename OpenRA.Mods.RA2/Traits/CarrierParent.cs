@@ -44,16 +44,16 @@ namespace OpenRA.Mods.RA2.Traits
 
 	public class CarrierParent : BaseSpawnerParent, ITick, INotifyAttack, INotifyBecomingIdle
 	{
-		class CarrierChildEntry : BaseSpawnerChildEntry
+		sealed class CarrierChildEntry : BaseSpawnerChildEntry
 		{
 			public int RearmTicks = 0;
 			public bool IsLaunched = false;
 			public new CarrierChild SpawnerChild;
 		}
 
-		readonly Dictionary<string, Stack<int>> spawnContainTokens = new Dictionary<string, Stack<int>>();
+		readonly Dictionary<string, Stack<int>> spawnContainTokens = new();
 		readonly CarrierParentInfo info;
-		readonly Stack<int> loadedTokens = new Stack<int>();
+		readonly Stack<int> loadedTokens = new();
 
 		CarrierChildEntry[] childEntries;
 
@@ -133,11 +133,10 @@ namespace OpenRA.Mods.RA2.Traits
 
 			SpawnIntoWorld(self, carrierChildEntry.Actor, self.CenterPosition);
 
-			Stack<int> spawnContainToken;
-			if (spawnContainTokens.TryGetValue(a.Info.Name, out spawnContainToken) && spawnContainToken.Any())
+			if (spawnContainTokens.TryGetValue(a.Info.Name, out var spawnContainToken) && spawnContainToken.Count != 0)
 				self.RevokeCondition(spawnContainToken.Pop());
 
-			if (loadedTokens.Any())
+			if (loadedTokens.Count != 0)
 				self.RevokeCondition(loadedTokens.Pop());
 
 			var localTarget = target;

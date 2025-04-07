@@ -15,12 +15,12 @@ using OpenRA.Traits;
 namespace OpenRA.Mods.RA2.Traits.Render
 {
 	[Desc("Creates the illusion of another actor.")]
-	class WithMirageSpriteBodyInfo : WithSpriteBodyInfo, Requires<MirageInfo>
+	sealed class WithMirageSpriteBodyInfo : WithSpriteBodyInfo, Requires<MirageInfo>
 	{
 		public override object Create(ActorInitializer init) { return new WithMirageSpriteBody(init, this); }
 	}
 
-	class WithMirageSpriteBody : WithSpriteBody, ITick
+	sealed class WithMirageSpriteBody : WithSpriteBody, ITick
 	{
 		readonly Mirage mirage;
 		readonly RenderSprites renderSprites;

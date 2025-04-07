@@ -14,10 +14,8 @@ using OpenRA.Primitives;
 
 namespace OpenRA.Mods.RA2.Graphics
 {
-	public struct RadBeamRenderable : IRenderable, IFinalizedRenderable
+	public readonly struct RadBeamRenderable : IRenderable, IFinalizedRenderable
 	{
-		readonly WPos pos;
-		readonly int zOffset;
 		readonly WVec sourceToTarget;
 		readonly WDist width;
 		readonly Color color;
@@ -27,8 +25,8 @@ namespace OpenRA.Mods.RA2.Graphics
 
 		public RadBeamRenderable(WPos pos, int zOffset, WVec sourceToTarget, WDist width, Color color, WDist amplitude, WDist wavelength, int quantizationCount)
 		{
-			this.pos = pos;
-			this.zOffset = zOffset;
+			Pos = pos;
+			ZOffset = zOffset;
 			this.sourceToTarget = sourceToTarget;
 			this.width = width;
 			this.color = color;
@@ -37,18 +35,19 @@ namespace OpenRA.Mods.RA2.Graphics
 			this.quantizationCount = quantizationCount;
 		}
 
-		public WPos Pos => pos;
+		public WPos Pos { get; }
 		public PaletteReference Palette => null;
-		public int ZOffset => zOffset;
+		public int ZOffset { get; }
 		public bool IsDecoration => true;
 
-		public IRenderable WithZOffset(int newOffset) { return new RadBeamRenderable(pos, zOffset, sourceToTarget, width, color, amplitude, wavelength, quantizationCount); }
+		public IRenderable WithZOffset(int newOffset) => new RadBeamRenderable(Pos, ZOffset, sourceToTarget, width, color, amplitude, wavelength, quantizationCount);
 
-		public IRenderable OffsetBy(in WVec vec) { return new RadBeamRenderable(pos + vec, zOffset, sourceToTarget, width, color, amplitude, wavelength, quantizationCount); }
+		public IRenderable OffsetBy(in WVec vec) => new RadBeamRenderable(Pos + vec, ZOffset, sourceToTarget, width, color, amplitude, wavelength, quantizationCount);
 
-		public IRenderable AsDecoration() { return this; }
+		public IRenderable AsDecoration() => this;
 
-		public IFinalizedRenderable PrepareRender(WorldRenderer wr) { return this; }
+		public IFinalizedRenderable PrepareRender(WorldRenderer wr) => this;
+
 		public void Render(WorldRenderer wr)
 		{
 			if (sourceToTarget == WVec.Zero)
@@ -58,7 +57,7 @@ namespace OpenRA.Mods.RA2.Graphics
 
 			// forward step, pointing from src to target.
 			// QuantizationCont * forwardStep == One cycle of beam in src2target direction.
-			var forwardStep = (wavelength.Length * sourceToTarget) / (quantizationCount * sourceToTarget.Length);
+			var forwardStep = wavelength.Length * sourceToTarget / (quantizationCount * sourceToTarget.Length);
 
 			var cycleCount = sourceToTarget.Length / wavelength.Length;
 			if (sourceToTarget.Length % wavelength.Length != 0)
@@ -70,7 +69,7 @@ namespace OpenRA.Mods.RA2.Graphics
 			var angleStep = new WAngle(1024 / quantizationCount);
 
 			// last point the rad beam "reached"
-			var pos = this.pos; // where we are
+			var pos = Pos; // where we are
 			var last = wr.Screen3DPosition(pos); // we start from the shooter
 			for (var i = 0; i < cycleCount * quantizationCount; i++)
 			{
@@ -86,6 +85,6 @@ namespace OpenRA.Mods.RA2.Graphics
 
 		public void RenderDebugGeometry(WorldRenderer wr) { }
 
-		public Rectangle ScreenBounds(WorldRenderer wr) { return Rectangle.Empty; }
+		public Rectangle ScreenBounds(WorldRenderer wr) => Rectangle.Empty;
 	}
 }

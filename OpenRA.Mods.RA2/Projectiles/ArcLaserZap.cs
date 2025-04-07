@@ -23,7 +23,7 @@ namespace OpenRA.Mods.RA2.Projectiles
 	public class ArcLaserZapInfo : IProjectileInfo
 	{
 		[Desc("The width of the zap.")]
-		public readonly WDist Width = new WDist(86);
+		public readonly WDist Width = new(86);
 
 		[Desc("Equivalent to sequence ZOffset. Controls Z sorting.")]
 		public readonly int ZOffset = 0;
@@ -94,7 +94,7 @@ namespace OpenRA.Mods.RA2.Projectiles
 
 			if (info.Inaccuracy.Length > 0)
 			{
-				var inaccuracy = OpenRA.Mods.Common.Util.ApplyPercentageModifiers(info.Inaccuracy.Length, args.InaccuracyModifiers);
+				var inaccuracy = Common.Util.ApplyPercentageModifiers(info.Inaccuracy.Length, args.InaccuracyModifiers);
 				var maxOffset = inaccuracy * (target - source).Length / args.Weapon.Range.Length;
 				target += WVec.FromPDF(args.SourceActor.World.SharedRandom, 2) * maxOffset / 1024;
 			}
@@ -110,9 +110,8 @@ namespace OpenRA.Mods.RA2.Projectiles
 				target = args.Weapon.TargetActorCenter ? args.GuidedTarget.CenterPosition : args.GuidedTarget.Positions.PositionClosestTo(source);
 
 			// Check for blocking actors
-			WPos blockedPos;
 			if (info.Blockable && BlocksProjectiles.AnyBlockingActorsBetween(world, args.SourceActor.Owner, source, target,
-				info.Width, out blockedPos))
+				info.Width, out var blockedPos))
 				target = blockedPos;
 
 			if (!doneDamage)
@@ -126,8 +125,7 @@ namespace OpenRA.Mods.RA2.Projectiles
 				doneDamage = true;
 			}
 
-			if (hitanim != null)
-				hitanim.Tick();
+			hitanim?.Tick();
 
 			if (++ticks >= info.Duration && animationComplete)
 				world.AddFrameEndTask(w => w.Remove(this));

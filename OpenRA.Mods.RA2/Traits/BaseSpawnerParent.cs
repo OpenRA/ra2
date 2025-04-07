@@ -48,7 +48,7 @@ namespace OpenRA.Mods.RA2.Traits
 
 		[Desc("Name of the armaments that grants the LaunchingCondition.",
 		"The rate of fire of the dummy weapon determines the launch cycle as each shot.")]
-		public readonly HashSet<string> ArmamentNames = new HashSet<string>() { "primary" };
+		public readonly HashSet<string> ArmamentNames = new() { "primary" };
 
 		[Desc("What happens to the children when the parent is killed?")]
 		public readonly SpawnerChildDisposal ChildDisposalOnKill = SpawnerChildDisposal.KillChildren;

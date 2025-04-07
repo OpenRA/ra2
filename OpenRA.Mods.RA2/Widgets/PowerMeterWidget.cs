@@ -175,8 +175,8 @@ namespace OpenRA.Mods.RA2.Widgets.Logic
 			// Display a percentage if the bar is maxed out
 			if (totalPowerStep > Children.Count)
 			{
-				var powerFraction = (float)Children.Count / (float)totalPowerStep;
-				totalPowerDisplay = (int)((float)totalPowerDisplay * powerFraction);
+				var powerFraction = Children.Count / (float)totalPowerStep;
+				totalPowerDisplay = (int)(totalPowerDisplay * powerFraction);
 				totalPowerStep = (int)((float)totalPowerStep * powerFraction);
 				powerUsedStep = (int)((float)powerUsedStep * powerFraction);
 				powerAvailableStep = (int)((float)powerAvailableStep * powerFraction);
@@ -186,8 +186,7 @@ namespace OpenRA.Mods.RA2.Widgets.Logic
 
 			for (var i = 0; i < Children.Count; i++)
 			{
-				var image = Children[i] as ImageWidget;
-				if (image == null)
+				if (Children[i] is not ImageWidget image)
 					continue;
 
 				if (i > totalPowerStep || totalPowerStep == 0)

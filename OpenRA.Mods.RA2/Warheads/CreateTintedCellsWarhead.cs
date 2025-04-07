@@ -22,7 +22,7 @@ namespace OpenRA.Mods.RA2.Warheads
 	public class CreateTintedCellsWarhead : DamageWarhead, IRulesetLoaded<WeaponInfo>
 	{
 		[Desc("Range between falloff steps in cells.")]
-		public readonly WDist Spread = new WDist(1024);
+		public readonly WDist Spread = new(1024);
 
 		[Desc("Level percentage at each range step.")]
 		public readonly int[] Falloff = { 100, 37, 14, 5, 0 };

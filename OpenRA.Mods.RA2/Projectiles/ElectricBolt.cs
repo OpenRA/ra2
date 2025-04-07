@@ -24,7 +24,7 @@ namespace OpenRA.Mods.RA2.Projectiles
 	public class ElectricBoltInfo : IProjectileInfo
 	{
 		[Desc("The width of the zap.")]
-		public readonly WDist Width = new WDist(12);
+		public readonly WDist Width = new(12);
 
 		[Desc("Equivalent to sequence ZOffset. Controls Z sorting.")]
 		public readonly int ZOffset = 0;
@@ -50,7 +50,7 @@ namespace OpenRA.Mods.RA2.Projectiles
 		public readonly WAngle Angle = WAngle.FromDegrees(90);
 
 		[Desc("Maximum length per segment.")]
-		public readonly WDist SegmentLength = new WDist(320);
+		public readonly WDist SegmentLength = new(320);
 
 		[Desc("Image containing launch effect sequence.")]
 		public readonly string LaunchEffectImage = null;
@@ -123,9 +123,9 @@ namespace OpenRA.Mods.RA2.Projectiles
 				var numSegments = (direction.Length - 1) / info.SegmentLength.Length + 1;
 				var offsets = new WPos[numSegments + 1];
 				offsets[0] = args.Source;
-				offsets[offsets.Length - 1] = args.PassiveTarget;
+				offsets[^1] = args.PassiveTarget;
 
-				var angle = new WAngle((-info.Angle.Angle / 2) + random.Next(info.Angle.Angle));
+				var angle = new WAngle(-info.Angle.Angle / 2 + random.Next(info.Angle.Angle));
 
 				for (var i = 1; i < numSegments; i++)
 					offsets[i] = WPos.LerpQuadratic(source, target, angle, i, numSegments);

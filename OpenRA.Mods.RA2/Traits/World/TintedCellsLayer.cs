@@ -64,13 +64,13 @@ namespace OpenRA.Mods.RA2.Traits
 		// In the following, I think dictionary is better than array, as radioactivity has similar affecting area as smudges.
 
 		// Tiles without considering fog of war.
-		readonly Dictionary<CPos, TintedCell> tiles = new Dictionary<CPos, TintedCell>();
+		readonly Dictionary<CPos, TintedCell> tiles = new();
 
 		// What's visible to the player.
-		readonly Dictionary<CPos, TintedCell> renderedTiles = new Dictionary<CPos, TintedCell>();
+		readonly Dictionary<CPos, TintedCell> renderedTiles = new();
 
 		// Dirty, as in cache dirty bits.
-		readonly HashSet<CPos> dirty = new HashSet<CPos>();
+		readonly HashSet<CPos> dirty = new();
 
 		// There's LERP function but the problem is, it is better to reuse these constants than computing
 		// related constants (in LERP) every time.
@@ -125,16 +125,16 @@ namespace OpenRA.Mods.RA2.Traits
 				if (self.World.FogObscures(c))
 					continue;
 
-				if (renderedTiles.ContainsKey(c))
+				if (renderedTiles.TryGetValue(c, out var renderedTile))
 				{
-					world.Remove(renderedTiles[c]);
+					world.Remove(renderedTile);
 					renderedTiles.Remove(c);
 				}
 
-				// synchronize observations with true value.
-				if (tiles.ContainsKey(c))
+				// Synchronize observations with true value.
+				if (tiles.TryGetValue(c, out var tile))
 				{
-					renderedTiles[c] = new TintedCell(tiles[c]);
+					renderedTiles[c] = new TintedCell(tile);
 					world.Add(renderedTiles[c]);
 				}
 
@@ -147,11 +147,11 @@ namespace OpenRA.Mods.RA2.Traits
 
 		public int GetLevel(CPos cell)
 		{
-			if (!tiles.ContainsKey(cell))
+			if (!tiles.TryGetValue(cell, out var tile))
 				return 0;
 
 			// The damage is constrained by MaxLevel
-			var level = tiles[cell].Level;
+			var level = tile.Level;
 			if (level > Info.MaxLevel)
 				return Info.MaxLevel;
 			else

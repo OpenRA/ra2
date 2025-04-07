@@ -40,8 +40,7 @@ namespace OpenRA.Mods.Cnc.FileSystem
 
 			public Stream GetStream(string filename)
 			{
-				IdxEntry entry;
-				if (!index.TryGetValue(filename, out entry))
+				if (!index.TryGetValue(filename, out var entry))
 					return null;
 
 				var waveHeaderMemoryStream = new MemoryStream();
@@ -69,8 +68,8 @@ namespace OpenRA.Mods.Cnc.FileSystem
 				if ((entry.Flags & 8) > 0)
 				{
 					// IMA ADPCM
-					var samplesPerChunk = (2 * (entry.ChunkSize - 4)) + 1;
-					var bytesPerSec = (int)Math.Floor(((double)(2 * entry.ChunkSize) / samplesPerChunk) * ((double)entry.SampleRate / 2));
+					var samplesPerChunk = 2 * (entry.ChunkSize - 4) + 1;
+					var bytesPerSec = (int)Math.Floor((double)(2 * entry.ChunkSize) / samplesPerChunk * ((double)entry.SampleRate / 2));
 					var chunkSize = entry.ChunkSize > entry.Length ? entry.Length : entry.ChunkSize;
 
 					waveHeaderMemoryStream.WriteArray(Encoding.ASCII.GetBytes("RIFF"));

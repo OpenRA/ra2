@@ -18,7 +18,7 @@ using OpenRA.Traits;
 namespace OpenRA.Mods.RA2.Traits
 {
 	[Desc("This actor receives damage when in `TintedCell` area.")]
-	class DamagedByTintedCellsInfo : ConditionalTraitInfo, Requires<HealthInfo>, IRulesetLoaded
+	sealed class DamagedByTintedCellsInfo : ConditionalTraitInfo, Requires<HealthInfo>, IRulesetLoaded
 	{
 		[Desc("Receive damage from the `TintedCellLayer` with this name.")]
 		public readonly string LayerName = "radioactivity";
@@ -57,7 +57,7 @@ namespace OpenRA.Mods.RA2.Traits
 		}
 	}
 
-	class DamagedByTintedCells : ConditionalTrait<DamagedByTintedCellsInfo>, ITick, ISync
+	sealed class DamagedByTintedCells : ConditionalTrait<DamagedByTintedCellsInfo>, ITick, ISync
 	{
 		readonly TintedCellsLayer tintedCellLayer;
 
