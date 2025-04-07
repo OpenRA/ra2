@@ -21,12 +21,12 @@ namespace OpenRA.Mods.RA2.Traits
 	public class MirageTarget { }
 
 	[Desc("Overrides the default Tooltip to aid in deceiving enemy players.")]
-	class MirageTooltipInfo : TooltipInfo, Requires<MirageInfo>
+	sealed class MirageTooltipInfo : TooltipInfo, Requires<MirageInfo>
 	{
 		public override object Create(ActorInitializer init) { return new MirageTooltip(init.Self, this); }
 	}
 
-	class MirageTooltip : ConditionalTrait<MirageTooltipInfo>, ITooltip
+	sealed class MirageTooltip : ConditionalTrait<MirageTooltipInfo>, ITooltip
 	{
 		readonly Actor self;
 		readonly Mirage mirage;
@@ -121,7 +121,7 @@ namespace OpenRA.Mods.RA2.Traits
 			var targets = self.World.ActorsWithTrait<MirageTarget>().Distinct();
 			var targetTypes = targets.Select(a => a.Actor.Info).ToArray();
 
-			if (!targetTypes.Any() && info.DefaultTargetTypes != null)
+			if (targetTypes.Length == 0 && info.DefaultTargetTypes != null)
 				targetTypes = self.World.Map.Rules.Actors.Where(a => info.DefaultTargetTypes.Contains(a.Key)).Select(a => a.Value).ToArray();
 
 			ActorType = targetTypes.RandomOrDefault(self.World.SharedRandom);

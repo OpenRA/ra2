@@ -14,32 +14,31 @@ using OpenRA.Primitives;
 
 namespace OpenRA.Mods.RA2.Graphics
 {
-	public struct ArcRenderable : IRenderable, IFinalizedRenderable
+	public readonly struct ArcRenderable : IRenderable, IFinalizedRenderable
 	{
 		readonly Color color;
-		readonly WPos a, b;
+		readonly WPos end;
 		readonly WAngle angle;
-		readonly int zOffset;
 		readonly WDist width;
 		readonly int segments;
 
-		public ArcRenderable(WPos a, WPos b, int zOffset, WAngle angle, Color color, WDist width, int segments)
+		public ArcRenderable(WPos start, WPos end, int zOffset, WAngle angle, Color color, WDist width, int segments)
 		{
-			this.a = a;
-			this.b = b;
+			Pos = start;
+			ZOffset = zOffset;
+			this.end = end;
 			this.angle = angle;
 			this.color = color;
-			this.zOffset = zOffset;
 			this.width = width;
 			this.segments = segments;
 		}
 
-		public WPos Pos => a;
-		public int ZOffset => zOffset;
+		public WPos Pos { get; }
+		public int ZOffset { get; }
 		public bool IsDecoration => true;
 
-		public IRenderable WithZOffset(int newOffset) { return new ArcRenderable(a, b, zOffset, angle, color, width, segments); }
-		public IRenderable OffsetBy(in WVec vec) { return new ArcRenderable(a + vec, b + vec, zOffset, angle, color, width, segments); }
+		public IRenderable WithZOffset(int newOffset) { return new ArcRenderable(Pos, end, ZOffset, angle, color, width, segments); }
+		public IRenderable OffsetBy(in WVec vec) { return new ArcRenderable(Pos + vec, end + vec, ZOffset, angle, color, width, segments); }
 		public IRenderable AsDecoration() { return this; }
 
 		public IFinalizedRenderable PrepareRender(WorldRenderer wr) { return this; }
@@ -50,7 +49,7 @@ namespace OpenRA.Mods.RA2.Graphics
 
 			var points = new float3[segments + 1];
 			for (var i = 0; i <= segments; i++)
-				points[i] = wr.Screen3DPosition(WPos.LerpQuadratic(a, b, angle, i, segments));
+				points[i] = wr.Screen3DPosition(WPos.LerpQuadratic(Pos, end, angle, i, segments));
 
 			Game.Renderer.WorldRgbaColorRenderer.DrawLine(points, screenWidth, color, false);
 		}

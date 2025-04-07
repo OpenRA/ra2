@@ -15,23 +15,22 @@ using OpenRA.Primitives;
 
 namespace OpenRA.Mods.RA2.Graphics
 {
-	public struct ElectricBoltRenderable : IRenderable, IFinalizedRenderable
+	public readonly struct ElectricBoltRenderable : IRenderable, IFinalizedRenderable
 	{
 		readonly WPos[] offsets;
-		readonly int zOffset;
 		readonly WDist width;
 		readonly Color color;
 
 		public ElectricBoltRenderable(WPos[] offsets, int zOffset, WDist width, Color color)
 		{
 			this.offsets = offsets;
-			this.zOffset = zOffset;
+			ZOffset = zOffset;
 			this.width = width;
 			this.color = color;
 		}
 
-		public WPos Pos => new WPos(offsets[0].X, offsets[0].Y, 0);
-		public int ZOffset => zOffset;
+		public WPos Pos => new(offsets[0].X, offsets[0].Y, 0);
+		public int ZOffset { get; }
 		public bool IsDecoration => true;
 
 		public IRenderable WithZOffset(int newOffset) { return new ElectricBoltRenderable(offsets, newOffset, width, color); }
@@ -39,7 +38,7 @@ namespace OpenRA.Mods.RA2.Graphics
 		public IRenderable OffsetBy(in WVec vec)
 		{
 			var vec2 = vec;
-			return new ElectricBoltRenderable(offsets.Select(offset => offset + vec2).ToArray(), zOffset, width, color);
+			return new ElectricBoltRenderable(offsets.Select(offset => offset + vec2).ToArray(), ZOffset, width, color);
 		}
 
 		public IRenderable AsDecoration() { return this; }

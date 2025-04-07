@@ -18,7 +18,7 @@ namespace OpenRA.Mods.RA2.Traits
 	public class CarrierChildInfo : BaseSpawnerChildInfo
 	{
 		[Desc("Move this close to the spawner, before entering it.")]
-		public readonly WDist LandingDistance = new WDist(5 * 1024);
+		public readonly WDist LandingDistance = new(5 * 1024);
 
 		public override object Create(ActorInitializer init) { return new CarrierChild(this); }
 	}

@@ -39,10 +39,10 @@ namespace OpenRA.Mods.RA2.Traits.SupportPowers
 		public readonly int ScatterCount = 1;
 
 		[Desc("Spawn offset interval for the clouds relative to the target in X direction.")]
-		public int2 OffsetsX = new int2(-5120, 5120);
+		public int2 OffsetsX = new(-5120, 5120);
 
 		[Desc("Spawn offset interval for the clouds relative to the target in Y direction.")]
-		public int2 OffsetsY = new int2(-5120, 5120);
+		public int2 OffsetsY = new(-5120, 5120);
 
 		public override object Create(ActorInitializer init)
 		{
@@ -53,9 +53,8 @@ namespace OpenRA.Mods.RA2.Traits.SupportPowers
 
 		public override void RulesetLoaded(Ruleset rules, ActorInfo ai)
 		{
-			WeaponInfo weapon;
 			var weaponToLower = (Weapon ?? string.Empty).ToLowerInvariant();
-			if (!rules.Weapons.TryGetValue(weaponToLower, out weapon))
+			if (!rules.Weapons.TryGetValue(weaponToLower, out var weapon))
 				throw new YamlException($"Weapons Ruleset does not contain an entry '{weaponToLower}'");
 
 			WeaponInfo = weapon;
@@ -150,7 +149,7 @@ namespace OpenRA.Mods.RA2.Traits.SupportPowers
 				}
 			}
 
-			if (info.WeaponInfo.Report != null && info.WeaponInfo.Report.Any())
+			if (info.WeaponInfo.Report != null && info.WeaponInfo.Report.Length != 0)
 				Game.Sound.Play(SoundType.World, info.WeaponInfo.Report.Random(self.World.LocalRandom), targetPos);
 		}
 	}

@@ -17,7 +17,7 @@ using OpenRA.Traits;
 
 namespace OpenRA.Mods.RA2.Activities
 {
-	class EnterCarrierParent : Enter
+	sealed class EnterCarrierParent : Enter
 	{
 		readonly Actor parent;
 		readonly CarrierParent spawnerParent;

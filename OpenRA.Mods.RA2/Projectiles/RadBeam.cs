@@ -22,13 +22,13 @@ namespace OpenRA.Mods.RA2.Projectiles
 	public class RadBeamInfo : IProjectileInfo
 	{
 		[Desc("The thickness of the beam.")]
-		public readonly WDist Thickness = new WDist(16);
+		public readonly WDist Thickness = new(16);
 
 		[Desc("The amplitude of the beam .")]
-		public readonly WDist Amplitude = new WDist(128);
+		public readonly WDist Amplitude = new(128);
 
 		[Desc("The wavelength of the beam.")]
-		public readonly WDist WaveLength = new WDist(512);
+		public readonly WDist WaveLength = new(512);
 
 		[Desc("Draw each cycle with this many quantization steps.")]
 		public readonly int QuantizationCount = 8;
@@ -99,8 +99,7 @@ namespace OpenRA.Mods.RA2.Projectiles
 				doneDamage = true;
 			}
 
-			if (hitanim != null)
-				hitanim.Tick();
+			hitanim?.Tick();
 
 			if (++ticks >= info.BeamDuration && animationComplete)
 				world.AddFrameEndTask(w => w.Remove(this));

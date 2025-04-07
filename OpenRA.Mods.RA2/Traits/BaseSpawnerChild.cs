@@ -73,7 +73,7 @@ namespace OpenRA.Mods.RA2.Traits
 			this.spawnerParent = spawnerParent;
 		}
 
-		bool TargetSwitched(Target lastTarget, Target newTarget)
+		static bool TargetSwitched(Target lastTarget, Target newTarget)
 		{
 			if (newTarget.Type != lastTarget.Type)
 				return true;

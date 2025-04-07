@@ -29,13 +29,13 @@ namespace OpenRA.Mods.RA2.Traits
 		public readonly int Transparency = 255;
 
 		[Desc("Relative offset from the actor's center position where the arc should start.")]
-		public readonly WVec Offset = new WVec(0, 0, 0);
+		public readonly WVec Offset = new(0, 0, 0);
 
 		[Desc("The angle of the arc.")]
-		public readonly WAngle Angle = new WAngle(64);
+		public readonly WAngle Angle = new(64);
 
 		[Desc("The width of the arc.")]
-		public readonly WDist Width = new WDist(43);
+		public readonly WDist Width = new(43);
 
 		[Desc("Controls how fine-grained the resulting arc should be.")]
 		public readonly int QuantizedSegments = 16;

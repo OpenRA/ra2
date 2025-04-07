@@ -104,7 +104,7 @@ namespace OpenRA.Mods.RA2.Traits
 
 			UnlinkMaster(self, Master);
 
-			if (info.RevokeControlSounds.Any())
+			if (info.RevokeControlSounds.Length != 0)
 				Game.Sound.Play(SoundType.World, info.RevokeControlSounds.Random(self.World.SharedRandom), self.CenterPosition);
 
 			self.World.AddFrameEndTask(_ => controlChanging = false);

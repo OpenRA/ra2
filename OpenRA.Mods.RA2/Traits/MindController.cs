@@ -11,7 +11,6 @@
 
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using OpenRA.Mods.Common.Traits;
 using OpenRA.Traits;
 
@@ -21,7 +20,7 @@ namespace OpenRA.Mods.RA2.Traits
 	public class MindControllerInfo : PausableConditionalTraitInfo, Requires<ArmamentInfo>, Requires<HealthInfo>
 	{
 		[Desc("Name of the armaments that grant this condition.")]
-		public readonly HashSet<string> ArmamentNames = new HashSet<string> { "primary" };
+		public readonly HashSet<string> ArmamentNames = new() { "primary" };
 
 		[Desc("Up to how many units can this unit control?",
 			"Use 0 or negative numbers for infinite.")]
@@ -44,9 +43,9 @@ namespace OpenRA.Mods.RA2.Traits
 
 	public class MindController : PausableConditionalTrait<MindControllerInfo>, INotifyAttack, INotifyKilled, INotifyActorDisposing
 	{
-		readonly List<Actor> slaves = new List<Actor>();
+		readonly List<Actor> slaves = new();
 
-		readonly Stack<int> controllingTokens = new Stack<int>();
+		readonly Stack<int> controllingTokens = new();
 
 		public IEnumerable<Actor> Slaves => slaves;
 
@@ -112,7 +111,7 @@ namespace OpenRA.Mods.RA2.Traits
 			StackControllingCondition(self, Info.ControllingCondition);
 			mindControllable.LinkMaster(target.Actor, self);
 
-			if (Info.Sounds.Any())
+			if (Info.Sounds.Length != 0)
 				Game.Sound.Play(SoundType.World, Info.Sounds.Random(self.World.SharedRandom), self.CenterPosition);
 
 			if (Info.Capacity > 0 && Info.DiscardOldest && slaves.Count > Info.Capacity)
@@ -130,7 +129,7 @@ namespace OpenRA.Mods.RA2.Traits
 			}
 
 			slaves.Clear();
-			while (controllingTokens.Any())
+			while (controllingTokens.Count != 0)
 				UnstackControllingCondition(self, Info.ControllingCondition);
 		}
 

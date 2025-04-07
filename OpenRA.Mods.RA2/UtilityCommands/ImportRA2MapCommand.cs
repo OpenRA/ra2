@@ -24,12 +24,12 @@ using OpenRA.Traits;
 
 namespace OpenRA.Mods.RA2.UtilityCommands
 {
-	class ImportRA2MapCommand : IUtilityCommand
+	sealed class ImportRA2MapCommand : IUtilityCommand
 	{
 		string IUtilityCommand.Name { get { return "--import-ra2-map"; } }
 		bool IUtilityCommand.ValidateArguments(string[] args) { return args.Length >= 2; }
 
-		static readonly Dictionary<byte, string> OverlayToActor = new Dictionary<byte, string>()
+		static readonly Dictionary<byte, string> OverlayToActor = new()
 		{
 			{ 0x01, "gasand" },
 			{ 0x03, "gawall" },
@@ -154,7 +154,7 @@ namespace OpenRA.Mods.RA2.UtilityCommands
 			{ 0xF2, "crate" }, // wcrate (water crate)
 		};
 
-		static readonly Dictionary<byte, Size> OverlayShapes = new Dictionary<byte, Size>()
+		static readonly Dictionary<byte, Size> OverlayShapes = new()
 		{
 			{ 0x4A, new Size(1, 3) },
 			{ 0x4B, new Size(1, 3) },
@@ -222,7 +222,7 @@ namespace OpenRA.Mods.RA2.UtilityCommands
 			{ 0xEC, new Size(3, 1) },
 		};
 
-		static readonly Dictionary<byte, DamageState> OverlayToHealth = new Dictionary<byte, DamageState>()
+		static readonly Dictionary<byte, DamageState> OverlayToHealth = new()
 		{
 			// 1,3 wooden bridge tiles
 			{ 0x4A, DamageState.Undamaged },
@@ -309,7 +309,7 @@ namespace OpenRA.Mods.RA2.UtilityCommands
 			{ 0xE8, DamageState.Undamaged },
 		};
 
-		static readonly Dictionary<byte, byte[]> ResourceFromOverlay = new Dictionary<byte, byte[]>()
+		static readonly Dictionary<byte, byte[]> ResourceFromOverlay = new()
 		{
 			// Ore
 			{
@@ -342,7 +342,7 @@ namespace OpenRA.Mods.RA2.UtilityCommands
 			"INYELWLAMP", "PURPLAMP", "INPURPLAMP", "INORANLAMP", "INGRNLMP", "INREDLMP", "INBLULMP"
 		};
 
-		static readonly Dictionary<string, string> ReplaceActors = new Dictionary<string, string>()
+		static readonly Dictionary<string, string> ReplaceActors = new()
 		{
 			{ "adog", "dog" }
 		};
@@ -599,10 +599,8 @@ namespace OpenRA.Mods.RA2.UtilityCommands
 				var cell = new MPos(dx / 2, dy).ToCPos(map);
 				var name = kv.Value.ToLowerInvariant();
 
-				if (ReplaceActors.ContainsKey(name))
-				{
-					name = ReplaceActors[name];
-				}
+				if (ReplaceActors.TryGetValue(name, out var newName))
+					name = newName;
 
 				var ar = new ActorReference(name)
 				{
@@ -713,7 +711,7 @@ namespace OpenRA.Mods.RA2.UtilityCommands
 			{
 				map.RuleDefinitions.Nodes.Add(new MiniYamlNode("^BaseWorld", new MiniYaml("", new List<MiniYamlNode>()
 				{
-					new MiniYamlNode("TerrainLighting", new MiniYaml("", lightingNodes))
+					new("TerrainLighting", new MiniYaml("", lightingNodes))
 				})));
 			}
 		}
@@ -741,11 +739,11 @@ namespace OpenRA.Mods.RA2.UtilityCommands
 						var visibility = FieldLoader.GetValue<int>(kv.Key, kv.Value);
 						lightingNodes.Add(new MiniYamlNode("Range", FieldSaver.FormatValue(new WDist(visibility * 4))));
 					}
-					else if (lightingTypes.ContainsKey(kv.Key))
+					else if (lightingTypes.TryGetValue(kv.Key, out var lightingType))
 					{
 						// Some maps use "," instead of "."!
 						var value = FieldLoader.GetValue<float>(kv.Key, kv.Value.Replace(',', '.'));
-						lightingNodes.Add(new MiniYamlNode(lightingTypes[kv.Key], FieldSaver.FormatValue(value)));
+						lightingNodes.Add(new MiniYamlNode(lightingType, FieldSaver.FormatValue(value)));
 					}
 				}
 
@@ -753,7 +751,7 @@ namespace OpenRA.Mods.RA2.UtilityCommands
 				{
 					map.RuleDefinitions.Nodes.Add(new MiniYamlNode(lamp, new MiniYaml("", new List<MiniYamlNode>()
 					{
-						new MiniYamlNode("TerrainLightSource", new MiniYaml("", lightingNodes))
+						new("TerrainLightSource", new MiniYaml("", lightingNodes))
 					})));
 				}
 			}
