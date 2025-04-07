@@ -94,15 +94,13 @@ namespace OpenRA.Mods.RA2.Traits
 		public override object Create(ActorInitializer init) { return new Mirage(init, this); }
 	}
 
-	public class Mirage : PausableConditionalTrait<MirageInfo>, INotifyDamage, IEffectiveOwner, INotifyUnload, INotifyDemolition, INotifyInfiltration,
-		INotifyAttack, ITick, INotifyCreated, INotifyHarvesterAction
+	public class Mirage : PausableConditionalTrait<MirageInfo>, INotifyDamage, IEffectiveOwner, INotifyDemolition, INotifyInfiltration,
+		INotifyAttack, ITick, INotifyCreated
 	{
 		readonly Actor self;
 
 		[Sync]
 		int remainingTime;
-
-		bool isDocking;
 
 		CPos? lastPos;
 		bool wasMirage;
@@ -170,7 +168,7 @@ namespace OpenRA.Mods.RA2.Traits
 		{
 			if (!IsTraitDisabled && !IsTraitPaused)
 			{
-				if (remainingTime > 0 && !isDocking)
+				if (remainingTime > 0)
 					remainingTime--;
 
 				if (Info.RevealOn.HasFlag(MirageRevealType.Move) && (lastPos == null || lastPos.Value != self.Location))
@@ -201,34 +199,6 @@ namespace OpenRA.Mods.RA2.Traits
 		}
 
 		protected override void TraitDisabled(Actor self) { Reveal(); }
-
-		void INotifyHarvesterAction.MovingToResources(Actor self, CPos targetCell) { }
-
-		void INotifyHarvesterAction.MovingToRefinery(Actor self, Actor refineryActor) { }
-
-		void INotifyHarvesterAction.MovementCancelled(Actor self) { }
-
-		void INotifyHarvesterAction.Harvested(Actor self, string resourceType) { }
-
-		void INotifyHarvesterAction.Docked()
-		{
-			if (Info.RevealOn.HasFlag(MirageRevealType.Dock))
-			{
-				isDocking = true;
-				Reveal();
-			}
-		}
-
-		void INotifyHarvesterAction.Undocked()
-		{
-			isDocking = false;
-		}
-
-		void INotifyUnload.Unloading(Actor self)
-		{
-			if (Info.RevealOn.HasFlag(MirageRevealType.Unload))
-				Reveal();
-		}
 
 		void INotifyDemolition.Demolishing(Actor self)
 		{

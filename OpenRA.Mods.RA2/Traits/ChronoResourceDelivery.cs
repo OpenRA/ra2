@@ -84,7 +84,7 @@ namespace OpenRA.Mods.RA2.Traits
 		void INotifyHarvesterAction.MovingToRefinery(Actor self, Actor refineryActor)
 		{
 			var iao = refineryActor.Trait<IAcceptResources>();
-			var targetCell = refineryActor.Location + iao.DeliveryOffset;
+			var targetCell = self.World.Map.CellContaining(iao.DeliveryPosition);
 			if (destination != null && destination.Value != targetCell)
 				ticksTillCheck = 0;
 
