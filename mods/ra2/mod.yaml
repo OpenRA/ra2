@@ -271,7 +271,7 @@ VideoFormats: Vqa
 
 TerrainFormat: DefaultTerrain
 
-SpriteSequenceFormat: ExtendedTilesetSpecificSpriteSequence
+SpriteSequenceFormat: TilesetSpecificSpriteSequence
 	TilesetExtensions:
 		TEMPERATE: .tem
 		SNOW: .sno

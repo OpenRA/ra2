@@ -56,7 +56,7 @@ namespace OpenRA.Mods.RA2.Traits.SupportPowers
 			WeaponInfo weapon;
 			var weaponToLower = (Weapon ?? string.Empty).ToLowerInvariant();
 			if (!rules.Weapons.TryGetValue(weaponToLower, out weapon))
-				throw new YamlException("Weapons Ruleset does not contain an entry '{0}'".F(weaponToLower));
+				throw new YamlException($"Weapons Ruleset does not contain an entry '{weaponToLower}'");
 
 			WeaponInfo = weapon;
 
