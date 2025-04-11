@@ -324,11 +324,15 @@ ModContent:
 	InstallPromptMessage: Red Alert 2 requires artwork and audio from the original game.
 	HeaderMessage: The original game content must be copied from an original game disc.
 	Packages:
-		base: Base Game Files
+		ContentPackage@base:
+			Title: Base Game Files
+			Identifier: base
 			TestFiles: ^SupportDir|Content/ra2/ra2.mix, ^SupportDir|Content/ra2/language.mix
 			Sources: ra2, origin, tfd
 			Required: true
-		music: Base Game Music
+		ContentPackage@music:
+			Title: Game Music
+			Identifier: music
 			TestFiles: ^SupportDir|Content/ra2/theme.mix
 			Sources: ra2, origin, tfd
 	Sources:
