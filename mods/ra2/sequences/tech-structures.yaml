@@ -1,49 +1,102 @@
 caoild:
 	Inherits: ^TechStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctoild.shp
+			SNOW: caoild.shp
+			URBAN: cuoild.shp
 		Offset: 0, -30, 30
-	idle-pump: caoild_a
+	idle-pump:
+		TilesetFilenames:
+			TEMPERATE: ctoild_a.shp
+			SNOW: caoild_a.shp
+			URBAN: cuoild_a.shp
 		Length: 32
 		ShadowStart: 64
-	damaged-idle-pump: caoild_a
+	damaged-idle-pump:
+		TilesetFilenames:
+			TEMPERATE: ctoild_a.shp
+			SNOW: caoild_a.shp
+			URBAN: cuoild_a.shp
 		Start: 32
 		Length: 32
 		ShadowStart: 96
-	flag: caoild_f
+	flag:
+		TilesetFilenames:
+			TEMPERATE: ctoild_f.shp
+			SNOW: caoild_f.shp
+			URBAN: cuoild_f.shp
 		Offset: 0, -9
 
 caairp:
 	Inherits: ^TechStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctairp.shp
+			SNOW: caairp.shp
+			URBAN: cuairp.shp
 		Offset: 7, -40, 50
-	idle-overlay: caairp_a
+	idle-overlay:
+		TilesetFilenames:
+			TEMPERATE: ctairp_a.shp
+			SNOW: caairp_a.shp
+			URBAN: cuairp_a.shp
 		Length: 10
 		Tick: 400
-	damaged-idle-overlay: caairp_a
+	damaged-idle-overlay:
+		TilesetFilenames:
+			TEMPERATE: ctairp_a.shp
+			SNOW: caairp_a.shp
+			URBAN: cuairp_a.shp
 		Start: 10
 		Length: 10
 		Tick: 400
-	flag: caairp_f
+	flag:
+		TilesetFilenames:
+			TEMPERATE: ctairp_f.shp
+			SNOW: caairp_f.shp
+			URBAN: cuairp_f.shp
 		ZOffset: 128
 
 cahosp:
 	Inherits: ^TechStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: cthosp.shp
+			SNOW: cahosp.shp
+			URBAN: cuhosp.shp
 		Offset: -30, -75, 100
-	idle-overlay: cahosp_a
+	idle-overlay:
+		TilesetFilenames:
+			TEMPERATE: cthosp_a.shp
+			SNOW: cahosp_a.shp
+			URBAN: cuhosp_a.shp
 		Length: 2
 		Tick: 400
-	damaged-idle-overlay: cahosp_a
+	damaged-idle-overlay:
+		TilesetFilenames:
+			TEMPERATE: cthosp_a.shp
+			SNOW: cahosp_a.shp
+			URBAN: cuhosp_a.shp
 		Start: 2
 		Length: 2
 		Tick: 400
-	flag: cahosp_f
+	flag:
+		TilesetFilenames:
+			TEMPERATE: cthosp_f.shp
+			SNOW: cahosp_f.shp
+			URBAN: cuhosp_f.shp
 		ZOffset: 128
 		Offset: -9,-23
 
 caoutp:
 	Inherits: ^TechStructure
 	Defaults:
+		Filename: caoutp.shp
+		TilesetFilenames:
+			TEMPERATE: ctoutp.shp
+			SNOW: caoutp.shp
+			URBAN: cuoutp.shp
 		Offset: -15, -50, 65
 	idle-tower:
 		ShadowStart: -1
@@ -51,35 +104,63 @@ caoutp:
 		Start: 1
 		ShadowStart: -1
 	idle-tower-shadow:
-		UseTilesetCode: false
+		TilesetFilenames:
 		Start: 4
 	damaged-idle-tower-shadow:
-		UseTilesetCode: false
+		TilesetFilenames:
 		Start: 5
-	idle: caoutp_d
+	idle:
+		TilesetFilenames:
+			TEMPERATE: ctoutp_d.shp
+			SNOW: caoutp_d.shp
+			URBAN: cuoutp_d.shp
 		ShadowStart: 2
-	damaged-idle: caoutp_d
+	damaged-idle:
+		TilesetFilenames:
+			TEMPERATE: ctoutp_d.shp
+			SNOW: caoutp_d.shp
+			URBAN: cuoutp_d.shp
 		ShadowStart: 3
-	active-crane: caoutp_a
+	active-crane:
+		TilesetFilenames:
+			TEMPERATE: ctoutp_a.shp
+			SNOW: caoutp_a.shp
+			URBAN: cuoutp_a.shp
 		Length: 10
 		Tick: 200
 		ShadowStart: 20
-	damaged-active-crane: caoutp_a
+	damaged-active-crane:
+		TilesetFilenames:
+			TEMPERATE: ctoutp_a.shp
+			SNOW: caoutp_a.shp
+			URBAN: cuoutp_a.shp
 		Start: 20
 		Length: 10
 		Tick: 200
 		ShadowStart: 30
-	bib: caoutpbb
+	bib:
+		TilesetFilenames:
+			TEMPERATE: ctoutpbb.shp
+			SNOW: caoutpbb.shp
+			URBAN: cuoutpbb.shp
 		ZOffset: -1c511
 		Offset: -15, -50, 15
 		ZRamp: 1
-		-DepthSprite:
-	damaged-bib: caoutpbb
+		DepthSprite:
+	damaged-bib:
+		TilesetFilenames:
+			TEMPERATE: ctoutpbb.shp
+			SNOW: caoutpbb.shp
+			URBAN: cuoutpbb.shp
 		Start: 1
 		ZOffset: -1c511
 		Offset: -15, -50, 15
 		ZRamp: 1
-		-DepthSprite:
-	flag: caoutp_f
+		DepthSprite:
+	flag:
+		TilesetFilenames:
+			TEMPERATE: ctoutp_f.shp
+			SNOW: caoutp_f.shp
+			URBAN: cuoutp_f.shp
 	rubble:
-		UseTilesetCode: false
+		TilesetFilenames:

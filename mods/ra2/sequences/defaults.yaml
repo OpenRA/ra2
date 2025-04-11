@@ -21,7 +21,8 @@
 		Start: 101
 		Length: 15
 	paradrop:
-	icon: xxicon
+	icon:
+		Filename: xxicon.shp
 
 ^BasicInfantry:
 	Inherits: ^Animal
@@ -37,13 +38,16 @@
 		Start: 134
 	die2:
 		Start: 149
-	die4: nukedie
+	die4:
+		Filename: nukedie.shp
 		Length: *
 		Tick: 50
-	die5: yuridie
+	die5:
+		Filename: yuridie.shp
 		Length: *
 		Tick: 80
-	die6: electro
+	die6:
+		Filename: electro.shp
 		Length: *
 		Tick: 80
 
@@ -117,43 +121,34 @@
 		Start: 293
 
 ^MindControllable:
-	mindcontrol: yuricntl
+	mindcontrol:
+		Filename: yuricntl.shp
 		Length: *
 		Offset: 0, -24, 24
 
 ^bridge:
 	Defaults:
 		ZOffset: -1c511
-		UseTilesetExtension: true
 		Start: 1
 		ZRamp: 1
 		Offset: 0, 0, 0.5
 
 ^Structure:
 	Defaults:
-		UseTilesetCode: true
-		TilesetOverrides:
-			TEMPERATE: GENERIC
-			URBAN: GENERIC
 		DepthSprite: isodepth.shp
 	idle:
 		ShadowStart: 3
 	make:
 		Length: 25
 		ShadowStart: 25
-		TilesetOverrides:
-			TEMPERATE: TEMPERATE
-			URBAN: URBAN
 	damaged-idle:
 		Start: 1
 		ShadowStart: 4
 	icon:
 		Offset: 0,0
-		UseTilesetCode: false
 
 ^TechStructure:
 	Defaults:
-		UseTilesetCode: true
 		DepthSprite: isodepth.shp
 	idle:
 		ShadowStart: 4
@@ -169,7 +164,6 @@
 
 ^CivStructure:
 	Defaults:
-		UseTilesetCode: true
 		DepthSprite: isodepth.shp
 	idle:
 		ShadowStart: 4
@@ -200,7 +194,6 @@
 ^Fence:
 	Defaults:
 		Offset: 0, -15, 15
-		UseTilesetCode: true
 		DepthSprite: isodepth.shp
 	idle:
 		Length: 16
@@ -211,7 +204,6 @@
 		ShadowStart: 48
 	icon:
 		Offset: 0,0
-		UseTilesetCode: false
 
 ^Wall:
 	Inherits: ^Fence
@@ -228,18 +220,15 @@
 		ShadowStart: 80
 	icon:
 		Offset: 0,0
-		UseTilesetCode: false
 
 ^Pole:
 	Defaults:
-		UseTilesetExtension: true
 	idle:
 		ShadowStart: 1
 
 ^Prop:
 	Defaults:
 		Offset: 0, -15, 15
-		UseTilesetCode: true
 	idle:
 		ShadowStart: 3
 
@@ -247,11 +236,9 @@
 	idle:
 		ShadowStart: 1
 		Offset: 0, -15, 15
-		UseTilesetExtension: true
 
 ^Drill:
 	Defaults:
-		UseTilesetExtension: true
 		Offset: -1, -16, 16
 	idle:
 		ShadowStart: 11
@@ -264,7 +251,6 @@
 ^Tree:
 	idle:
 		ShadowStart: 1
-		UseTilesetExtension: true
 		Offset: -1, -16, 16
 
 ^WithMachineGunMuzzle:
@@ -272,47 +258,49 @@
 		Facings: 8
 		Length: 6
 		Combine:
-			mgun-n:
+			0:
+				Filename: mgun-n.shp
 				Length: 6
 				Offset: 0, 0
-				UseTilesetCode: false
-			mgun-nw:
+			1:
+				Filename: mgun-nw.shp
 				Length: 6
 				Offset: 0, 0
-				UseTilesetCode: false
-			mgun-w:
+			2:
+				Filename: mgun-w.shp
 				Length: 6
 				Offset: 0, 0
-				UseTilesetCode: false
-			mgun-sw:
+			3:
+				Filename: mgun-sw.shp
 				Length: 6
 				Offset: 0, 0
-				UseTilesetCode: false
-			mgun-s:
+			4:
+				Filename: mgun-s.shp
 				Length: 6
 				Offset: 0, 0
-				UseTilesetCode: false
-			mgun-se:
+			5:
+				Filename: mgun-se.shp
 				Length: 6
 				Offset: 0, 0
-				UseTilesetCode: false
-			mgun-e:
+			6:
+				Filename: mgun-e.shp
 				Length: 6
 				Offset: 0, 0
-				UseTilesetCode: false
-			mgun-ne:
+			7:
+				Filename: mgun-ne.shp
 				Length: 6
 				Offset: 0, 0
-				UseTilesetCode: false
 
 ^WithCannonMuzzle:
-	muzzle: gunfire
+	muzzle:
+		Filename: gunfire.shp
 		Length: *
-	muzzle-2: vtmuzzle
+	muzzle-2:
+		Filename: vtmuzzle.shp
 		Length: *
 
 ^WithFlakMuzzle:
-	muzzle: gunfire
+	muzzle:
+		Filename: gunfire.shp
 		Length: *
 		Offset: 0,0
-		UseTilesetCode: false

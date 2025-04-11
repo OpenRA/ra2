@@ -1,12 +1,17 @@
 engineer:
 	Inherits: ^Infantry
 	Inherits@MC: ^MindControllable
+	Defaults:
+		Filename: engineer.shp
 	paradrop:
 		Start: 244
-	icon: engnicon
+	icon:
+		Filename: engnicon.shp
 
 adog:
 	Inherits: ^BasicInfantry
+	Defaults:
+		Filename: adog.shp
 	cheer:
 		Start: 164
 	die1:
@@ -21,12 +26,16 @@ adog:
 		Start: 166
 		Length: 6
 		Facings: 8
-	jump: adogp
+	jump:
+		Filename: adogp.shp
 		Length: 1
 		Facings: 32
-	icon: adogicon
+	icon:
+		Filename: adogicon.shp
 
 dlph:
+	Defaults:
+		Filename: dlph.shp
 	stand:
 		Start: 48
 		Facings: -8
@@ -51,12 +60,14 @@ dlph:
 		Start: 56
 		Length: 6
 		Facings: 8
-	icon: dlphicon
+	icon:
+		Filename: dlphicon.shp
 
 e1:
 	Inherits: ^ArmedInfantry
 	Inherits@MC: ^MindControllable
-	Defaults: gi
+	Defaults:
+		Filename: gi.shp
 	run:
 		Tick: 120
 	deployed:
@@ -76,105 +87,98 @@ e1:
 		Start: 363
 	cheer:
 		Start: 364
-	icon: giicon
+	icon:
+		Filename: giicon.shp
 
 snipe:
 	Inherits: ^ArmedInfantry
 	Inherits@MC: ^MindControllable
+	Defaults:
+		Filename: snipe.shp
 	paradrop:
 		Start: 292
-	icon: snipicon
+	icon:
+		Filename: snipicon.shp
 
 spy:
 	Inherits: ^Infantry
 	Inherits@MC: ^MindControllable
+	Defaults:
+		Filename: spy.shp
 	liedown:
 		Start: 164
 	standup:
 		Start: 180
 	cheer:
 		Start: 196
-	icon: spyicon
+	icon:
+		Filename: spyicon.shp
 
 seal:
 	Inherits: ^ArmedInfantry
 	Inherits@MC: ^MindControllable
+	Defaults:
+		Filename: seal.shp
+		TilesetFilenames:
+			SNOW: seala.shp
 	stand:
-		UseTilesetSuffix: true
 	idle1:
-		UseTilesetSuffix: true
 	idle2:
-		UseTilesetSuffix: true
 	die1:
-		UseTilesetSuffix: true
 	die2:
-		UseTilesetSuffix: true
 	shoot:
-		UseTilesetSuffix: true
 	prone-shoot:
-		UseTilesetSuffix: true
 	prone-stand:
-		UseTilesetSuffix: true
 	prone-run:
-		UseTilesetSuffix: true
 	liedown:
-		UseTilesetSuffix: true
 	standup:
-		UseTilesetSuffix: true
 	run:
-		UseTilesetSuffix: true
 		Tick: 120
 	swim-stand:
-		UseTilesetSuffix: true
 		Start: 340
 		Facings: 8
 		Length: 6
 		Tick: 160
 	swim-idle1:
-		UseTilesetSuffix: true
 		Start: 484
 		Length: 15
 		Tick: 160
 	swim-idle2:
-		UseTilesetSuffix: true
 		Start: 499
 		Length: 15
 		Tick: 160
 	swim-run:
-		UseTilesetSuffix: true
 		Start: 388
 		Facings: 8
 		Length: 6
 		Tick: 120
 	swim-die1:
-		UseTilesetSuffix: true
 		Start: 512
 		Length: 22
 	swim-die2:
-		UseTilesetSuffix: true
 		Start: 534
 		Length: 20
 	swim-shoot:
-		UseTilesetSuffix: true
 		Start: 436
 		Length: 6
 		Facings: 8
 		Tick: 80
 	cheer:
-		UseTilesetSuffix: true
 		Start: 603
 	swim-cheer:
-		UseTilesetSuffix: true
 		Start: 611
 		Length: 8
 		Tick: 120
 	paradrop:
-		UseTilesetSuffix: true
 		Start: 602
-	icon: sealicon
+	icon:
+		Filename: sealicon.shp
+		TilesetFilenames:
 
 ccomand:
 	Inherits: seal
+	Defaults:
+		Filename: ccomand.shp
 	-swim-stand:
 	-swim-idle1:
 	-swim-idle2:
@@ -183,52 +187,42 @@ ccomand:
 	-swim-die2:
 	-swim-shoot:
 	stand:
-		UseTilesetSuffix: false
 	idle1:
-		UseTilesetSuffix: false
 	idle2:
-		UseTilesetSuffix: false
 	die1:
-		UseTilesetSuffix: false
 	die2:
-		UseTilesetSuffix: false
 	shoot:
-		UseTilesetSuffix: false
 	prone-shoot:
-		UseTilesetSuffix: false
 	prone-stand:
-		UseTilesetSuffix: false
 	prone-run:
-		UseTilesetSuffix: false
 	liedown:
-		UseTilesetSuffix: false
 	standup:
-		UseTilesetSuffix: false
 	run:
-		UseTilesetSuffix: false
 	shoot:
-		UseTilesetSuffix: false
 	liedown:
-		UseTilesetSuffix: false
 	standup:
-		UseTilesetSuffix: false
 	run:
-		UseTilesetSuffix: false
 	cheer:
-		UseTilesetSuffix: false
 		Start: 340
 	-swim-cheer:
 	-paradrop:
-	icon: ccomicon
+	icon:
+		Filename: ccomicon.shp
 
 ptroop:
 	Inherits: ccomand
-	muzzle: yuricntl
+	Defaults:
+		Filename: ptroop.shp
+	muzzle:
+		Filename: yuricntl.shp
 		Length: *
-	icon: psicicon
+	icon:
+		Filename: psicicon.shp
 
 tany:
 	Inherits: ^ArmedInfantry
+	Defaults:
+		Filename: tany.shp
 	run:
 		Tick: 120
 	swim-stand:
@@ -268,10 +262,12 @@ tany:
 		Tick: 120
 	paradrop:
 		Start: 602
-	icon: tanyicon
+	icon:
+		Filename: tanyicon.shp
 
 jumpjet:
-	Defaults: rock
+	Defaults:
+		Filename: rock.shp
 		Length: 6
 		Facings: 8
 	stand:
@@ -306,11 +302,13 @@ jumpjet:
 		Length: 15
 		Facings: 2
 		Tick: 80
-	die4: nukedie
+	die4:
+		Filename: nukedie.shp
 		Length: *
 		Tick: 50
 		Facings: 1
-	die6: electro
+	die6:
+		Filename: electro.shp
 		Length: *
 		Facings: 1
 		Tick: 80
@@ -336,16 +334,19 @@ jumpjet:
 		Length: 9
 		Facings: 1
 		Tick: 100
-	shadow: infshdw
+	shadow:
+		Filename: infshdw.shp
 		Start: 1
 		Length: 1
 		Facings: 1
-	icon: jjeticon
+	icon:
+		Filename: jjeticon.shp
 		Length: 1
 		Facings: 1
 
 jumpjet.husk:
-	idle: rock
+	idle:
+		Filename: rock.shp
 		Start: 340
 		Length: 16
 		Facings: 2
@@ -354,6 +355,8 @@ jumpjet.husk:
 cleg:
 	Inherits: ^BasicInfantry
 	Inherits@MC: ^MindControllable
+	Defaults:
+		Filename: cleg.shp
 	run:
 		Start: 117
 	shoot:
@@ -372,4 +375,5 @@ cleg:
 		Start: 116
 	cheer:
 		Start: 165
-	icon: clegicon
+	icon:
+		Filename: clegicon.shp

@@ -1,472 +1,883 @@
 gacnst:
 	Inherits: ^Structure
 	Defaults:
+		Filename: ggcnst.shp
 		Offset: 3, -60, 60
-	idle: ggcnst
-	make: ggcnstmk
+	idle:
+		Filename: ggcnst.shp
+		TilesetFilenames:
+			SNOW: gacnst.shp
+	make:
+		TilesetFilenames:
+			TEMPERATE: gtcnstmk.shp
+			SNOW: gacnstmk.shp
+			URBAN: gucnstmk.shp
 		Length: 29
 		ShadowStart: 29
-	damaged-idle: ggcnst
-	idle-fans: ggcnst_a
+	damaged-idle:
+		Filename: ggcnst.shp
+		TilesetFilenames:
+			SNOW: gacnst.shp
+	idle-fans:
+		Filename: ggcnst_a.shp
+		TilesetFilenames:
+			SNOW: gacnst_a.shp
 		Length: 6
 		Tick: 150
-	damaged-idle-fans: ggcnst_a
+	damaged-idle-fans:
+		Filename: ggcnst_a.shp
+		TilesetFilenames:
+			SNOW: gacnst_a.shp
 		Start: 5
 		Length: 6
 		Tick: 150
-	crane-overlay: ggcnst_b
+	crane-overlay:
+		Filename: ggcnst_b.shp
+		TilesetFilenames:
+			SNOW: gacnst_b.shp
 		Length: 20
 		Tick: 150
-	damaged-crane-overlay: ggcnst_b
+	damaged-crane-overlay:
+		Filename: ggcnst_b.shp
+		TilesetFilenames:
+			SNOW: gacnst_b.shp
 		Start: 20
 		Length: 20
 		Tick: 150
-	dead: ggcnstdm # SHP broken & unused
+	dead: # SHP broken & unused
+		Filename: ggcnstdm.shp
+		TilesetFilenames:
+			SNOW: gacnstdm.shp
 		Length: 30
 		ShadowStart: 30
 		Tick: 100
-	icon: acnsicon
+	icon:
+		Filename: acnsicon.shp
 
 gapowr:
 	Inherits: ^Structure
 	Defaults:
+		Filename: ggpowr.shp
 		Offset: 0, -31, 31
-	idle: ggpowr
-	damaged-idle: gtpowr
-	idle-glow: ggpowr_a
+	idle:
+		Filename: ggpowr.shp
+		TilesetFilenames:
+			SNOW: gapowr.shp
+	damaged-idle:
+		Filename: ggpowr.shp
+		TilesetFilenames:
+			SNOW: gapowr.shp
+	idle-glow:
+		Filename: ggpowr_a.shp
+		TilesetFilenames:
+			SNOW: gapowr_a.shp
 		Length: 8
 		ShadowStart: 16
 		Tick: 150
-	damaged-idle-glow: ggpowr_a
+	damaged-idle-glow:
+		Filename: ggpowr_a.shp
+		TilesetFilenames:
+			SNOW: gapowr_a.shp
 		Start: 8
 		Length: 8
 		ShadowStart: 24
 		Tick: 150
-	make: gtpowrmk
-	icon: powricon
+	make:
+		TilesetFilenames:
+			TEMPERATE: gtpowrmk.shp
+			SNOW: gapowrmk.shp
+			URBAN: gupowrmk.shp
+	icon:
+		Filename: powricon.shp
 
 gapile:
 	Inherits: ^Structure
 	Defaults:
+		Filename: ggpile.shp
 		Offset: -15, -38, 38
-	idle: ggpile
-	damaged-idle: ggpile
-	idle-flag: ggpile_a
+	idle:
+		Filename: ggpile.shp
+		TilesetFilenames:
+			SNOW: gapile.shp
+	damaged-idle:
+		Filename: ggpile.shp
+		TilesetFilenames:
+			SNOW: gapile.shp
+	idle-flag:
+		Filename: ggpile_a.shp
+		TilesetFilenames:
+			SNOW: gapile_a.shp
 		Length: 16
 		ShadowStart: 32
-	damaged-idle-flag: ggpile_a
+	damaged-idle-flag:
+		Filename: ggpile_a.shp
+		TilesetFilenames:
+			SNOW: gapile_a.shp
 		Start: 16
 		Length: 16
 		ShadowStart: 48
-	dead: ggpiledm # SHP broken & unused
+	dead: # SHP broken & unused
+		Filename: ggpiledm.shp
+		TilesetFilenames:
+			SNOW: gapiledm.shp
 		Length: 25
 		ShadowStart: 25
 		Tick: 100
-	make: gtpilemk
-	icon: brrkicon
+	make:
+		TilesetFilenames:
+			TEMPERATE: gtpilemk.shp
+			SNOW: gapilemk.shp
+			URBAN: gupilemk.shp
+	icon:
+		Filename: brrkicon.shp
 
 garefn:
 	Inherits: ^Structure
 	Defaults:
+		Filename: ggrefn.shp
 		Offset: -12, -52, 48
-	idle: ggrefn
-	damaged-idle: ggrefn
-	make: gurefnmk
-	idle-drill: ggrefnl1
+	idle:
+		Filename: ggrefn.shp
+		TilesetFilenames:
+			SNOW: garefn.shp
+	damaged-idle:
+		Filename: ggrefn.shp
+		TilesetFilenames:
+			SNOW: garefn.shp
+	make:
+		TilesetFilenames:
+			TEMPERATE: gtrefnmk.shp
+			SNOW: garefnmk.shp
+			URBAN: gurefnmk.shp
+	idle-drill:
+		Filename: ggrefnl1.shp
+		TilesetFilenames:
+			SNOW: garefnl1.shp
 		Length: 6
 		Tick: 200
-	idle-bib: ggrefnbb
+	idle-bib:
+		Filename: ggrefnbb.shp
+		TilesetFilenames:
+			SNOW: garefnbb.shp
 		ShadowStart: 2
 		ZOffset: -512
 		Offset: -12, -52, 12
 		ZRamp: 1
-		-DepthSprite:
-	damaged-idle-bib: ggrefnbb
+		DepthSprite:
+	damaged-idle-bib:
+		Filename: ggrefnbb.shp
+		TilesetFilenames:
+			SNOW: garefnbb.shp
 		Start: 1
 		ShadowStart: 3
 		ZOffset: -512
 		Offset: -12, -52, 12
 		ZRamp: 1
-		-DepthSprite:
-	docking-overlay: ggrefnor
+		DepthSprite:
+	docking-overlay:
+		Filename: ggrefnor.shp
+		TilesetFilenames:
+			SNOW: garefnor.shp
 		Length: 20
 		ShadowStart: 20
-	icon: reficon
+	icon:
+		Filename: reficon.shp
 
 gaairc:
 	Inherits: ^Structure
 	Defaults:
+		Filename: ggairc.shp
 		Offset: -14, -38, 52
-	idle: ggairc
+	idle:
+		Filename: ggairc.shp
+		TilesetFilenames:
+			SNOW: gaairc.shp
 		ShadowStart: -1
 		Length: 1
-	damaged-idle: ggairc
+	damaged-idle:
+		Filename: ggairc.shp
+		TilesetFilenames:
+			SNOW: gaairc.shp
 		Length: 2
-	idle-top: gaairc_c
+	idle-top:
+		Filename: ggairc_c.shp
+		TilesetFilenames:
+			SNOW: gaairc_c.shp
 		Length: 16
 		ShadowStart: 16
 		Tick: 320
-	idle-bottom: ggaircbb
+	idle-bottom:
+		Filename: ggaircbb.shp
+		TilesetFilenames:
+			SNOW: gaaircbb.shp
 		Length: 1
 		ZOffset: -512
 		Offset: -14, -38, 4
 		ZRamp: 1
-		-DepthSprite:
-	damage-idle-bottom: ggaircbb
+		DepthSprite:
+	damage-idle-bottom:
+		Filename: ggaircbb.shp
+		TilesetFilenames:
+			SNOW: gaaircbb.shp
 		Start: 1
 		Length: 1
 		ZOffset: -512
 		Offset: -14, -38, 4
 		ZRamp: 1
-		-DepthSprite:
-	idle-lights: ggairc_a
+		DepthSprite:
+	idle-lights:
+		Filename: ggairc_a.shp
+		TilesetFilenames:
+			SNOW: gaairc_a.shp
 		Length: 4
 		Tick: 120
 		ZOffset: -512
 		Offset: -14, -38, 5
 		ZRamp: 1
-		-DepthSprite:
-	damaged-idle-lights: ggairc_a
+		DepthSprite:
+	damaged-idle-lights:
+		Filename: ggairc_a.shp
+		TilesetFilenames:
+			SNOW: gaairc_a.shp
 		Start: 5
 		Length: 4
 		Tick: 120
 		ZOffset: -512
 		Offset: -14, -38, 5
 		ZRamp: 1
-		-DepthSprite:
-	idle-mid: ggairc_b
+		DepthSprite:
+	idle-mid:
+		Filename: ggairc_b.shp
+		TilesetFilenames:
+			SNOW: gaairc_b.shp
 		Length: 6
 		Tick: 120
 		ZOffset: -512
 		Offset: -14, -38, 5
 		ZRamp: 1
-		-DepthSprite:
-	damage-idle-mid: ggairc_b
+		DepthSprite:
+	damage-idle-mid:
+		Filename: ggairc_b.shp
+		TilesetFilenames:
+			SNOW: gaairc_b.shp
 		Start: 7
 		Length: 6
 		Tick: 120
 		ZOffset: -512
 		Offset: -14, -38, 5
 		ZRamp: 1
-		-DepthSprite:
-	make: gtaircmk
-	icon: heliicon
+		DepthSprite:
+	make:
+		TilesetFilenames:
+			TEMPERATE: gtaircmk.shp
+			SNOW: gaaircmk.shp
+			URBAN: guaircmk.shp
+	icon:
+		Filename: heliicon.shp
 
 gaweap:
 	Inherits: ^Structure
 	Defaults:
+		Filename: ggweap.shp
 		Offset: -30, -60, 60
-	idle: ggweap
+	idle:
+		Filename: ggweap.shp
+		TilesetFilenames:
+			SNOW: gaweap.shp
 		ZOffset: -1024
-	damaged-idle: ggweap
+	damaged-idle:
+		Filename: ggweap.shp
+		TilesetFilenames:
+			SNOW: gaweap.shp
 		ZOffset: -1024
-	build-ramp: ggweap_1
+	build-ramp:
+		Filename: ggweap_1.shp
+		TilesetFilenames:
+			SNOW: gaweap_1.shp
 		ShadowStart: 2
 		Offset: -30, -60, 15
 		ZRamp: 1
-		-DepthSprite:
-	damaged-build-ramp: ggweap_1
+		DepthSprite:
+	damaged-build-ramp:
+		Filename: ggweap_1.shp
+		TilesetFilenames:
+			SNOW: gaweap_1.shp
 		Start: 1
 		ShadowStart: 3
 		Offset: -30, -60, 15
 		ZRamp: 1
-		-DepthSprite:
-	build-top: ggweap_2
+		DepthSprite:
+	build-top:
+		Filename: ggweap_2.shp
+		TilesetFilenames:
+			SNOW: gaweap_2.shp
 		ShadowStart: 2
 		ZOffset: 1024
-	damaged-build-top: ggweap_2
+	damaged-build-top:
+		Filename: ggweap_2.shp
+		TilesetFilenames:
+			SNOW: gaweap_2.shp
 		Start: 1
 		ShadowStart: 3
 		ZOffset: 1024
-	build-air-open: ggweap_3
+	build-air-open:
+		Filename: ggweap_3.shp
+		TilesetFilenames:
+			SNOW: gaweap_3.shp
 		ShadowStart: 2
-	damaged-air-open: ggweap_3
+	damaged-air-open:
+		Filename: ggweap_3.shp
+		TilesetFilenames:
+			SNOW: gaweap_3.shp
 		Start: 1
 		ShadowStart: 3
-	build-air-inside: ggweap_4
+	build-air-inside:
+		Filename: ggweap_4.shp
+		TilesetFilenames:
+			SNOW: gaweap_4.shp
 		ShadowStart: 2
-	damaged-air-inside: ggweap_4
+	damaged-air-inside:
+		Filename: ggweap_4.shp
+		TilesetFilenames:
+			SNOW: gaweap_4.shp
 		Start: 1
 		ShadowStart: 3
-	bib: ggweapbb
+	bib:
+		Filename: ggweapbb.shp
+		TilesetFilenames:
+			SNOW: gaweapbb.shp
 		ShadowStart: 2
 		ZOffset: -1024
 		Offset: -30, -60, 15
 		ZRamp: 1
-		-DepthSprite:
-	damaged-bib: ggweapbb
+		DepthSprite:
+	damaged-bib:
+		Filename: ggweapbb.shp
+		TilesetFilenames:
+			SNOW: gaweapbb.shp
 		Start: 1
 		ShadowStart: 3
 		ZOffset: -1024
 		Offset: -30, -60, 15
 		ZRamp: 1
-		-DepthSprite:
-	idle-flag: ggweap_a
+		DepthSprite:
+	idle-flag:
+		Filename: ggweap_a.shp
+		TilesetFilenames:
+			SNOW: gaweap_a.shp
 		Length: 14
 		ShadowStart: 31
-	damaged-idle-flag: ggweap_a
+	damaged-idle-flag:
+		Filename: ggweap_a.shp
+		TilesetFilenames:
+			SNOW: gaweap_a.shp
 		Start: 15
 		Length: 14
 		ShadowStart: 45
-	overlay-fan: ggweap_b
+	overlay-fan:
+		Filename: ggweap_b.shp
+		TilesetFilenames:
+			SNOW: gaweap_b.shp
 		Length: 5
 		ShadowStart: 6
-	make: gtweapmk
-	icon: gwepicon
+	make:
+		TilesetFilenames:
+			TEMPERATE: gtweapmk.shp
+			SNOW: gaweapmk.shp
+			URBAN: guweapmk.shp
+	icon:
+		Filename: gwepicon.shp
 
 gayard:
 	Inherits: ^Structure
 	Defaults:
+		Filename: ggyard.shp
 		Offset: 0, -45, 45
-	idle: ggyard
+	idle:
+		Filename: ggyard.shp
+		TilesetFilenames:
+			SNOW: gayard.shp
 		ShadowStart: 4
-	damaged-idle: ggyard
+	damaged-idle:
+		Filename: ggyard.shp
+		TilesetFilenames:
+			SNOW: gayard.shp
 		Start: 2
 		ShadowStart: 5
-	idle-crane: ggyard_a
+	idle-crane:
+		Filename: ggyard_a.shp
+		TilesetFilenames:
+			SNOW: gayard_a.shp
 		Length: 15
 		ShadowStart: 30
 		Tick: 200
-	damaged-idle-crane: ggyard_a
+	damaged-idle-crane:
+		Filename: ggyard_a.shp
+		TilesetFilenames:
+			SNOW: gayard_a.shp
 		Start: 15
 		Length: 15
 		ShadowStart: 45
 		Tick: 200
-	idle-waves: ggyard_c
+	idle-waves:
+		Filename: ggyard_c.shp
+		TilesetFilenames:
+			SNOW: gayard_c.shp
 		Length: 15
 		ShadowStart: 30
 		Tick: 200
-	damaged-idle-waves: ggyard_c
+	damaged-idle-waves:
+		Filename: ggyard_c.shp
+		TilesetFilenames:
+			SNOW: gayard_c.shp
 		Start: 30
 		Length: 15
 		ShadowStart: 30
 		Tick: 200
-	make: gtyardmk
-	repair: ggyard_s
+	make:
+		TilesetFilenames:
+			TEMPERATE: gtyardmk.shp
+			SNOW: gayardmk.shp
+			URBAN: guyardmk.shp
+	repair:
+		Filename: ggyard_s.shp
+		TilesetFilenames:
+			SNOW: gayard_s.shp
 		Length: 18
 		ShadowStart: 36
-	damaged-repair: ggyard_s
+	damaged-repair:
+		Filename: ggyard_s.shp
+		TilesetFilenames:
+			SNOW: gayard_s.shp
 		Start: 18
 		Length: 18
 		ShadowStart: 54
-	icon: ayaricon
+	icon:
+		Filename: ayaricon.shp
 
 gadept:
 	Inherits: ^Structure
 	Defaults:
+		Filename: ggdept.shp
 		Offset: 7, -40, 40
-	idle: ggdept_d
+	idle:
+		Filename: ggdept_d.shp
+		TilesetFilenames:
+			SNOW: gadept_d.shp
 		ShadowStart: 2
-	damaged-idle: ggdept_d
+	damaged-idle:
+		Filename: ggdept_d.shp
+		TilesetFilenames:
+			SNOW: gadept_d.shp
 		ShadowStart: 3
-	idle-side: ggdept
+	idle-side:
+		Filename: ggdept.shp
+		TilesetFilenames:
+			SNOW: gadept.shp
 		ShadowStart: 3
-	damaged-idle-side: ggdept
+	damaged-idle-side:
+		Filename: ggdept.shp
+		TilesetFilenames:
+			SNOW: gadept.shp
 		Start: 1
 		Length: 2
 		ShadowStart: 4
-	bib: ggdeptbb
+	bib:
+		Filename: ggdeptbb.shp
+		TilesetFilenames:
+			SNOW: gadeptbb.shp
 		ShadowStart: 3
 		ZOffset: -1c511
 		Offset: 7, -40, 10
 		ZRamp: 1
-		-DepthSprite:
-	make: gtdeptmk
-	repair: ggdept_c
+		DepthSprite:
+	make:
+		TilesetFilenames:
+			TEMPERATE: gtdeptmk.shp
+			SNOW: gadeptmk.shp
+			URBAN: gudeptmk.shp
+	repair:
+		Filename: ggdept_c.shp
+		TilesetFilenames:
+			SNOW: gadept_c.shp
 		Length: 10
 		ShadowStart: 20
 		Tick: 180
-	damaged-repair: ggdept_c
+	damaged-repair:
+		Filename: ggdept_c.shp
+		TilesetFilenames:
+			SNOW: gadept_c.shp
 		Start: 10
 		Length: 10
 		ShadowStart: 30
 		Tick: 180
-	icon: fixicon
+	icon:
+		Filename: fixicon.shp
 
 gatech:
 	Inherits: ^Structure
 	Defaults:
+		Filename: ggtech.shp
 		Offset: -15, -40, 40
-	idle: ggtech
-	damaged-idle: ggtech
-	idle-lights: ggtech_a
+	idle:
+		Filename: ggtech.shp
+		TilesetFilenames:
+			SNOW: gatech.shp
+	damaged-idle:
+		Filename: ggtech.shp
+		TilesetFilenames:
+			SNOW: gatech.shp
+	idle-lights:
+		Filename: ggtech_a.shp
+		TilesetFilenames:
+			SNOW: gatech_a.shp
 		Length: 12
 		ShadowStart: 24
-	damaged-idle-ights: ggtech_a
+	damaged-idle-ights:
+		Filename: ggtech_a.shp
+		TilesetFilenames:
+			SNOW: gatech_a.shp
 		Start: 12
 		Length: 12
 		ShadowStart: 36
-	make: gttechmk
-	icon: techicon
+	make:
+		TilesetFilenames:
+			TEMPERATE: gttechmk.shp
+			SNOW: gatechmk.shp
+			URBAN: gutechmk.shp
+	icon:
+		Filename: techicon.shp
 
 gaorep:
 	Inherits: ^Structure
 	Defaults:
+		Filename: ggorep.shp
 		Offset: 0, -45, 45
-	idle: ggorep
-	damaged-idle: ggorep
-	idle-glow: ggorep_a
+	idle:
+		Filename: ggorep.shp
+		TilesetFilenames:
+			SNOW: gaorep.shp
+	damaged-idle:
+		Filename: ggorep.shp
+		TilesetFilenames:
+			SNOW: gaorep.shp
+	idle-glow:
+		Filename: ggorep_a.shp
+		TilesetFilenames:
+			SNOW: gaorep_a.shp
 		Length: 8
 		ShadowStart: 16
 		Tick: 180
-	damaged-idle-glow: ggorep_a
+	damaged-idle-glow:
+		Filename: ggorep_a.shp
+		TilesetFilenames:
+			SNOW: gaorep_a.shp
 		Start: 8
 		Length: 8
 		ShadowStart: 24
 		Tick: 180
-	make: gtorepmk
-	icon: gorep
+	make:
+		TilesetFilenames:
+			TEMPERATE: gtorepmk.shp
+			SNOW: gaorepmk.shp
+			URBAN: guorepmk.shp
+	icon:
+		Filename: gorep.shp
 
 gawall:
 	Inherits: ^Wall
-	Defaults: gtwall
-	icon: wallicon
+	Defaults:
+		TilesetFilenames:
+			TEMPERATE: gtwall.shp
+			SNOW: gawall.shp
+			URBAN: guwall.shp
+	icon:
+		Filename: wallicon.shp
+		TilesetFilenames:
 
 gapill:
 	Inherits: ^Structure
 	Inherits@Muzzle: ^WithMachineGunMuzzle
 	Defaults:
+		Filename: ggpill.shp
+		TilesetFilenames:
+			SNOW: gapill.shp
 		Offset: 0, -15, 15
-	idle: ggpill
-	damaged-idle: ggpill
-	critical-idle: ggpill
+	idle:
+		Filename: ggpill.shp
+		TilesetFilenames:
+			SNOW: gapill.shp
+	damaged-idle:
+		Filename: ggpill.shp
+		TilesetFilenames:
+			SNOW: gapill.shp
+	critical-idle:
+		Filename: ggpill.shp
+		TilesetFilenames:
+			SNOW: gapill.shp
 		Start: 2
 		ShadowStart: 5
-	make: gtpillmk
+	make:
+		TilesetFilenames:
+			TEMPERATE: gtpillmk.shp
+			SNOW: gapillmk.shp
+			URBAN: gupillmk.shp
 		Length: 8
 		ShadowStart: 8
-	icon: pillicon
+	icon:
+		Filename: pillicon.shp
+		TilesetFilenames:
 
 nasam:
 	Inherits: ^Structure
 	Defaults:
+		Filename: ngsam.shp
 		Offset: 0, -15, 15
 		ZOffset: -512
-	idle: ngsam
-	damaged-idle: ngsam
-	critical-idle: ngsam
+	idle:
+		Filename: ngsam.shp
+		TilesetFilenames:
+			SNOW: nasam.shp
+	damaged-idle:
+		Filename: ngsam.shp
+		TilesetFilenames:
+			SNOW: nasam.shp
+	critical-idle:
+		Filename: ngsam.shp
+		TilesetFilenames:
+			SNOW: nasam.shp
 		Start: 2
 		ShadowStart: 5
-	make: ntsammk
+	make:
+		TilesetFilenames:
+			TEMPERATE: ntsammk.shp
+			SNOW: nasammk.shp
+			URBAN: nusammk.shp
 		Length: 8
 		ShadowStart: 8
 		ZOffset: 0
-	icon: samicon
+	icon:
+		Filename: samicon.shp
 
 gtgcan:
 	Inherits: ^Structure
 	Defaults:
+		Filename: gggcan.shp
 		Offset: 0, -30, 30
 		ZOffset: -512
-	idle: gggcan
-	damaged-idle: gggcan
-	critical-idle: gggcan
+	idle:
+		Filename: gggcan.shp
+		TilesetFilenames:
+			SNOW: gagcan.shp
+	damaged-idle:
+		Filename: gggcan.shp
+		TilesetFilenames:
+			SNOW: gagcan.shp
+	critical-idle:
+		Filename: gggcan.shp
+		TilesetFilenames:
+			SNOW: gagcan.shp
 		Start: 2
 		ShadowStart: 5
 		Offset: 0, -30
-	make: gtgcanmk
+	make:
+		TilesetFilenames:
+			TEMPERATE: gtgcanmk.shp
+			SNOW: gagcanmk.shp
+			URBAN: gugcanmk.shp
 		Length: 12
 		ShadowStart: 12
 		ZOffset: 0
-	muzzle: gcmuzzle
+	muzzle:
+		Filename: gcmuzzle.shp
 		Length: *
 		Offset: 0,0
-		UseTilesetCode: false
-	icon: gcanicon
+	icon:
+		Filename: gcanicon.shp
 
 gaspysat:
 	Inherits: ^Structure
 	Defaults:
+		Filename: ggspysat.shp
 		Offset: 0, -31, 31
-	idle: ggspst
+	idle:
+		Filename: ggspst.shp
+		TilesetFilenames:
+			SNOW: gaspst.shp
 		Tick: 180
-	damaged-idle: ggspst
+	damaged-idle:
+		Filename: ggspst.shp
+		TilesetFilenames:
+			SNOW: gaspst.shp
 		Tick: 180
-	idle-dish: ggspst_a
+	idle-dish:
+		Filename: ggspst_a.shp
+		TilesetFilenames:
+			SNOW: gaspst_a.shp
 		Length: 16
 		Tick: 180
-	damaged-idle-dish: ggspst_a
+	damaged-idle-dish:
+		Filename: ggspst_a.shp
+		TilesetFilenames:
+			SNOW: gaspst_a.shp
 		Start: 16
 		Length: 16
 		Tick: 180
-	make: gtspstmk
+	make:
+		TilesetFilenames:
+			TEMPERATE: gtspstmk.shp
+			SNOW: gaspstmk.shp
+			URBAN: guspstmk.shp
 		Tick: 90
-	icon: asaticon
+	icon:
+		Filename: asaticon.shp
 
 gagap:
 	Inherits: ^Structure
 	Defaults:
+		Filename: gggap.shp
 		Offset: 0, -15, 15
-	idle: gggap
+	idle:
+		Filename: gggap.shp
+		TilesetFilenames:
+			SNOW: gagap.shp
 		Length: 1
-	damaged-idle: gggap
+	damaged-idle:
+		Filename: gggap.shp
+		TilesetFilenames:
+			SNOW: gagap.shp
 		Start: 2
 		Length: 1
-	make: gtgapmk
+	make:
+		TilesetFilenames:
+			TEMPERATE: gtgapmk.shp
+			SNOW: gagapmk.shp
+			URBAN: gugapmk.shp
 		Length: 9
 		ShadowStart: 9
 		Tick: 90
-	icon: gapicon
+	icon:
+		Filename: gapicon.shp
 
 gaweat:
 	Inherits: ^Structure
 	Defaults:
+		Filename: ggweat.shp
 		Offset: 0, -45, 45
-	idle: ggweth
-	damaged-idle: ggweth
-	make: guwethmk
-	icon: wethicon
+	idle:
+		Filename: ggweth.shp
+		TilesetFilenames:
+			SNOW: gaweth.shp
+	damaged-idle:
+		Filename: ggweth.shp
+		TilesetFilenames:
+			SNOW: gaweth.shp
+	make:
+		TilesetFilenames:
+			TEMPERATE: gtwethmk.shp
+			SNOW: gawethmk.shp
+			URBAN: guwethmk.shp
+	icon:
+		Filename: wethicon.shp
 
 gacsph:
 	Inherits: ^Structure
 	Defaults:
+		Filename: ggcsph.shp
 		Offset: -15, -50, 50
-	idle: ggcsph
+	idle:
+		Filename: ggcsph.shp
+		TilesetFilenames:
+			SNOW: gacsph.shp
 		ShadowStart: 3
-	damaged-idle: ggcsph
-	idle-dome: ggcsph_e
+	damaged-idle:
+		Filename: ggcsph.shp
+		TilesetFilenames:
+			SNOW: gacsph.shp
+	idle-dome:
+		Filename: ggcsph_e.shp
+		TilesetFilenames:
+			SNOW: gacsph_e.shp
 		ShadowStart: 2
-	damaged-idle-dome: ggcsph_e
+	damaged-idle-dome:
+		Filename: ggcsph_e.shp
+		TilesetFilenames:
+			SNOW: gacsph_e.shp
 		Start: 1
 		ShadowStart: 3
-	dead: ggcsphdm # SHP broken & unused
+	dead: # SHP broken & unused
+		Filename: ggcsphdm.shp
+		TilesetFilenames:
+			SNOW: gacsphdm.shp
 		Length: 25
 		ShadowStart: 25
 		Tick: 50
-	make: gtcsphmk
-	icon: csphicon
+	make:
+		TilesetFilenames:
+			TEMPERATE: gtcsphmk.shp
+			SNOW: gacsphmk.shp
+			URBAN: gucsphmk.shp
+	icon:
+		Filename: csphicon.shp
 
 atesla:
 	Inherits: ^Structure
 	Defaults:
+		Filename: agesla.shp
 		Offset: 1,-15, 15
-	idle-normal: ggpris
+	idle-normal:
+		Filename: ggpris.shp
+		TilesetFilenames:
+			SNOW: gapris.shp
 		ShadowStart: 3
-	damaged-idle-normal: ggpris
-	idle: ggpris_b
+	damaged-idle-normal:
+		Filename: ggpris.shp
+		TilesetFilenames:
+			SNOW: gapris.shp
+	idle:
+		Filename: ggpris_b.shp
+		TilesetFilenames:
+			SNOW: gapris_b.shp
 		Length: 9
 		Tick: 100
 		ShadowStart: 18
-	damaged-idle: ggpris_b
+	damaged-idle:
+		Filename: ggpris_b.shp
+		TilesetFilenames:
+			SNOW: gapris_b.shp
 		Start: 9
 		Length: 9
 		Tick: 180
 		ShadowStart: 27
-	active: ggpris_a
+	active:
+		Filename: ggpris_a.shp
+		TilesetFilenames:
+			SNOW: gapris_a.shp
 		Length: 10
 		Tick: 100
 		ShadowStart: 20
-	damaged-active: ggpris_a
+	damaged-active:
+		Filename: ggpris_a.shp
+		TilesetFilenames:
+			SNOW: gapris_a.shp
 		Start: 10
 		Length: 10
 		Tick: 100
 		ShadowStart: 30
-	dead: ggprisdm # SHP broken & unused
+	dead: # SHP broken & unused
+		Filename: ggprisdm.shp
+		TilesetFilenames:
+			SNOW: gaprisdm.shp
 		Length: 21
 		ShadowStart: 21
 		Tick: 100
-	icon: prisicon
-	make: gtprismk
+	icon:
+		Filename: prisicon.shp
+	make:
+		TilesetFilenames:
+			TEMPERATE: gtprismk.shp
+			SNOW: gaprismk.shp
+			URBAN: guprismk.shp
 		Length: 8
 		ShadowStart: 8
 		Tick: 160

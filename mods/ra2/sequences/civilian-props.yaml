@@ -1,171 +1,385 @@
 hdstn01:
 	Inherits: ^Pole
+	idle:
+		TilesetFilenames:
+			TEMPERATE: hdstn01.tem
+			SNOW: hdstn01.sno
+			URBAN: hdstn01.urb
 
 lt_gen01:
 	Inherits: ^Pole
+	idle:
+		TilesetFilenames:
+			TEMPERATE: lt_gen01.tem
+			SNOW: lt_gen01.sno
+			URBAN: lt_gen01.urb
 
 lt_gen02:
 	Inherits: ^Pole
+	idle:
+		TilesetFilenames:
+			TEMPERATE: lt_gen02.tem
+			SNOW: lt_gen02.sno
+			URBAN: lt_gen02.urb
 
 lt_gen03:
 	Inherits: ^Pole
+	idle:
+		TilesetFilenames:
+			TEMPERATE: lt_gen03.tem
+			SNOW: lt_gen03.sno
+			URBAN: lt_gen03.urb
 
 lt_gen04:
 	Inherits: ^Pole
+	idle:
+		TilesetFilenames:
+			TEMPERATE: lt_gen04.tem
+			SNOW: lt_gen04.sno
+			URBAN: lt_gen04.urb
 
 lt_sgn01:
 	Inherits: ^Pole
+	idle:
+		TilesetFilenames:
+			TEMPERATE: lt_sgn01.tem
+			SNOW: lt_sgn01.sno
+			URBAN: lt_sgn01.urb
 
 lt_sgn02:
 	Inherits: ^Pole
+	idle:
+		TilesetFilenames:
+			TEMPERATE: lt_sgn02.tem
+			SNOW: lt_sgn02.sno
+			URBAN: lt_sgn02.urb
 
 lt_sgn03:
 	Inherits: ^Pole
+	idle:
+		TilesetFilenames:
+			TEMPERATE: lt_sgn03.tem
+			SNOW: lt_sgn03.sno
+			URBAN: lt_sgn03.urb
 
 lt_sgn04:
 	Inherits: ^Pole
 	idle:
+		TilesetFilenames:
+			TEMPERATE: lt_sgn04.tem
+			SNOW: lt_sgn04.sno
+			URBAN: lt_sgn04.urb
 		ShadowStart: -1
 
 lt_eur01:
 	Inherits: ^Pole
+	idle:
+		TilesetFilenames:
+			TEMPERATE: lt_eur01.tem
+			SNOW: lt_eur01.sno
+			URBAN: lt_eur01.urb
 
 lt_eur02:
 	Inherits: ^Pole
+	idle:
+		TilesetFilenames:
+			TEMPERATE: lt_eur02.tem
+			SNOW: lt_eur02.sno
+			URBAN: lt_eur02.urb
 
 pole01:
 	Inherits: ^Pole
+	idle:
+		TilesetFilenames:
+			TEMPERATE: pole01.tem
+			SNOW: pole01.sno
+			URBAN: pole01.urb
 
 pole02:
 	Inherits: ^Pole
+	idle:
+		TilesetFilenames:
+			TEMPERATE: pole02.tem
+			SNOW: pole02.sno
+			URBAN: pole02.urb
 
 sign01:
 	Inherits: ^Pole
+	idle:
+		TilesetFilenames:
+			TEMPERATE: sign01.tem
+			SNOW: sign01.sno
+			URBAN: sign01.urb
 
 sign02:
 	Inherits: ^Pole
+	idle:
+		TilesetFilenames:
+			TEMPERATE: sign02.tem
+			SNOW: sign02.sno
+			URBAN: sign02.urb
 
 sign03:
 	Inherits: ^Pole
 	idle:
+		TilesetFilenames:
+			TEMPERATE: sign03.tem
+			SNOW: sign03.sno
+			URBAN: sign03.urb
 		ShadowStart: -1
 
 sign04:
 	Inherits: ^Pole
+	idle:
+		TilesetFilenames:
+			TEMPERATE: sign04.tem
+			SNOW: sign04.sno
+			URBAN: sign04.urb
 
 sign05:
 	Inherits: ^Pole
+	idle:
+		TilesetFilenames:
+			TEMPERATE: sign05.tem
+			SNOW: sign05.sno
+			URBAN: sign05.urb
 
 sign06:
 	Inherits: ^Pole
+	idle:
+		TilesetFilenames:
+			TEMPERATE: sign06.tem
+			SNOW: sign06.sno
+			URBAN: sign06.urb
 
 trff01:
 	Inherits: ^Pole
+	idle:
+		TilesetFilenames:
+			TEMPERATE: trff01.tem
+			SNOW: trff01.sno
+			URBAN: trff01.urb
 
 camsc01:
 	Inherits: ^Prop
+	idle:
+		TilesetFilenames:
+			TEMPERATE: ctmsc01.shp
+			SNOW: camsc01.shp
+			URBAN: cumsc01.shp
 
 camsc02:
 	Inherits: ^Prop
+	idle:
+		TilesetFilenames:
+			TEMPERATE: ctmsc02.shp
+			SNOW: camsc02.shp
+			URBAN: cumsc02.shp
 
 camsc03:
 	Inherits: ^Prop
+	idle:
+		TilesetFilenames:
+			TEMPERATE: ctmsc03.shp
+			SNOW: camsc03.shp
+			URBAN: cumsc03.shp
 
 camsc04:
 	Inherits: ^Prop
+	idle:
+		TilesetFilenames:
+			TEMPERATE: ctmsc04.shp
+			SNOW: camsc04.shp
+			URBAN: cumsc04.shp
 
 camsc05:
 	Inherits: ^Prop
+	idle:
+		TilesetFilenames:
+			TEMPERATE: ctmsc05.shp
+			SNOW: camsc05.shp
+			URBAN: cumsc05.shp
 
 camsc06:
 	Inherits: ^Prop
-	idle-fire: camsc06a
+	idle-fire:
+		TilesetFilenames:
+			TEMPERATE: ctmsc06a.shp
+			SNOW: camsc06a.shp
+			URBAN: cumsc06a.shp
 		Length: 4
 		ShadowStart: 4
 		Tick: 80
+	idle:
+		TilesetFilenames:
+			TEMPERATE: ctmsc06.shp
+			SNOW: camsc06.shp
+			URBAN: cumsc06.shp
 
 camsc11:
 	Inherits: ^Prop
+	idle:
+		TilesetFilenames:
+			TEMPERATE: ctmsc11.shp
+			SNOW: camsc11.shp
+			URBAN: cumsc11.shp
 
 camsc12:
 	Inherits: ^Prop
+	idle:
+		TilesetFilenames:
+			TEMPERATE: ctmsc12.shp
+			SNOW: camsc12.shp
+			URBAN: cumsc12.shp
 
 camsc13:
 	Inherits: ^Prop
+	idle:
+		TilesetFilenames:
+			TEMPERATE: ctmsc13.shp
+			SNOW: camsc13.shp
+			URBAN: cumsc13.shp
 
 trff02:
 	Inherits: ^Pole
+	idle:
+		TilesetFilenames:
+			TEMPERATE: trff02.tem
+			SNOW: trff02.sno
+			URBAN: trff02.urb
 
 trff03:
 	Inherits: ^Pole
+	idle:
+		TilesetFilenames:
+			TEMPERATE: trff03.tem
+			SNOW: trff03.sno
+			URBAN: trff03.urb
 
 trff04:
 	Inherits: ^Pole
+	idle:
+		TilesetFilenames:
+			TEMPERATE: trff04.tem
+			SNOW: trff04.sno
+			URBAN: trff04.urb
 
 camisc01:
 	Inherits: ^Prop
+	idle:
+		TilesetFilenames:
+			TEMPERATE: ctmisc01.shp
+			SNOW: camisc01.shp
+			URBAN: cumisc01.shp
 
 camisc02:
 	Inherits: ^Prop
 	idle:
+		TilesetFilenames:
+			TEMPERATE: ctmisc02.shp
+			SNOW: camisc02.shp
+			URBAN: cumisc02.shp
 		ShadowStart: -1
 
 camisc03:
 	Inherits: ^Prop
+	idle:
+		TilesetFilenames:
+			TEMPERATE: ctmisc03.shp
+			SNOW: camisc03.shp
+			URBAN: cumisc03.shp
 
 camisc04:
 	Inherits: ^Prop
+	idle:
+		TilesetFilenames:
+			TEMPERATE: ctmisc04.shp
+			SNOW: camisc04.shp
+			URBAN: cumisc04.shp
 
 camisc05:
 	Inherits: ^Prop
+	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctmisc05.shp
+			SNOW: camisc05.shp
+			URBAN: cumisc05.shp
 
 camisc06:
 	Inherits: ^Prop
+	idle:
+		TilesetFilenames:
+			TEMPERATE: ctmisc06.shp
+			SNOW: camisc06.shp
+			URBAN: cumisc06.shp
 
 caeuro05:
 	Inherits: ^CivStructureNoRubble
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: cteuro05.shp
+			SNOW: caeuro05.shp
+			URBAN: cueuro05.shp
 		Offset: 0, -30, 30
 
 capark01:
 	Inherits: ^Prop
+	idle:
+		TilesetFilenames:
+			TEMPERATE: ctpark01.shp
+			SNOW: capark01.shp
+			URBAN: cupark01.shp
 
 capark02:
 	Inherits: ^Prop
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctpark02.shp
+			SNOW: capark02.shp
+			URBAN: cupark02.shp
 		Offset: -15, -22, 22
 
 capark03:
 	Inherits: ^Prop
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctpark03.shp
+			SNOW: capark03.shp
+			URBAN: cupark03.shp
 		Offset: 0, -30, 30
 
 ammo01:
 	Inherits: ^Prop
 	idle:
-		UseTilesetCode: false
+		Filename: ammo01.shp
 
 cabhut:
 	Inherits: ^Prop
 	idle:
-		UseTilesetCode: false
+		Filename: cabhut.shp
 		Offset: 0, -15, 15
 		ShadowStart: 3
 
 gagate_a:
 	Inherits: ^Prop
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: gtgate_a.shp
+			SNOW: gagate_a.shp
+			URBAN: gugate_a.shp
 		Offset: 0, -15
 	idle:
 		Length: 10
 		ShadowStart: 21
-	make: gagate_a
-		Start: 10
-		Length: -10
-		ShadowStart: 30
+	make:
+		TilesetFilenames:
+			TEMPERATE: gtgate_a.shp
+			SNOW: gagate_a.shp
+			URBAN: gugate_a.shp
+		#ShadowStart: 30
+		Frames: 9, 8, 7, 6, 5, 4, 3, 2, 1, 0
 
 spkr01:
-	Defaults:
-		AddExtension: false
-	idle: spkr01.urb
+	idle:
+		Filename: spkr01.urb
 		ShadowStart: 1
