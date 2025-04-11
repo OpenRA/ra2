@@ -1,124 +1,207 @@
 cafncb:
 	Inherits: ^Fence
-	Defaults: ctfncb
-	icon: wallicon
+	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctfncb.shp
+			SNOW: cafncb.shp
+			URBAN: cufncb.shp
+	icon:
+		Filename: wallicon.shp
+		TilesetFilenames:
 
 cafncw:
 	Inherits: ^Fence
-	Defaults: ctfncw
-	icon: wallicon
+	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctfncw.shp
+			SNOW: cafncw.shp
+			URBAN: cufncw.shp
+	icon:
+		Filename: wallicon.shp
+		TilesetFilenames:
 
 gasand:
 	Inherits: ^Fence
-	Defaults: gtsand
-	icon: wallicon
+	Defaults:
+		TilesetFilenames:
+			TEMPERATE: gtsand.shp
+			SNOW: gasand.shp
+			URBAN: gusand.shp
+	icon:
+		Filename: wallicon.shp
+		TilesetFilenames:
 
 cafncp:
 	Inherits: ^Fence
-	Defaults: ctfncp
-	icon: wallicon
+	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctfncp.shp
+			SNOW: cafncp.shp
+			URBAN: cufncp.shp
+	icon:
+		Filename: wallicon.shp
+		TilesetFilenames:
 
 cakrmw:
 	Inherits: ^Wall
-	Defaults: ctkrmw
-	icon: wallicon
+	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctkrmw.shp
+			SNOW: cakrmw.shp
+			URBAN: cukrmw.shp
+	icon:
+		Filename: wallicon.shp
+		TilesetFilenames:
 
 cawash01:
 	Inherits: ^CivStructure
-	Defaults: cgwash01
+	Defaults:
+		Filename: cgwash01.shp
 		Offset: 0, -60, 60
-		UseTilesetCode: false
 
 cawash03:
 	Inherits: ^CivStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctwash03.shp
+			SNOW: cawash03.shp
+			URBAN: cuwash03.shp
 		Offset: -15, -52, 52
 
 cawash04:
 	Inherits: ^CivStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctwash04.shp
+			SNOW: cawash04.shp
+			URBAN: cuwash04.shp
 		Offset: 0, -60, 60
 
 cawash05:
 	Inherits: ^CivStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctwash05.shp
+			SNOW: cawash05.shp
+			URBAN: cuwash05.shp
 		Offset: -30, -45, 45
 
 cawash06:
 	Inherits: ^CivStructure
 	Defaults:
 		Offset: 0, -60, 60
-		UseTilesetCode: false
-	idle: cgwash06_a # Custom artwork, original lacked shadow.
+	idle: # Custom artwork, original lacked shadow.
+		Filename: cgwash06_a.shp
 		ShadowStart: 1
-	damaged-idle: cuwash06
-	rubble: cuwash06
+	damaged-idle:
+		Filename: cuwash06.shp
+	rubble:
+		Filename: cuwash06.shp
 
 cawash07:
 	Inherits: ^CivStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctwash07.shp
+			SNOW: cawash07.shp
+			URBAN: cuwash07.shp
 		Offset: 0, -45, 45
 
 cawash08:
 	Inherits: ^CivStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctwash08.shp
+			SNOW: cawash08.shp
+			URBAN: cuwash08.shp
 		Offset: 15, -52, 52
 
 cawash09:
 	Inherits: ^CivStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctwash09.shp
+			SNOW: cawash09.shp
+			URBAN: cuwash09.shp
 		Offset: 0, -45, 45
 
 cawash10:
 	Inherits: ^CivStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctwash10.shp
+			SNOW: cawash10.shp
+			URBAN: cuwash10.shp
 		Offset: 0, -60, 60
 
 cawash11:
 	Inherits: ^CivStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctwash11.shp
+			SNOW: cawash11.shp
+			URBAN: cuwash11.shp
 		Offset: 0, -60, 60
 
 cawsh12:
 	Inherits: ^CivStructure
-	Defaults: cgwsh12
+	Defaults:
+		Filename: cgwsh12.shp
 		Offset: 0, -45, 45
-		UseTilesetCode: false
 
 cawash13:
 	Inherits: ^CivStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctwash13.shp
+			SNOW: cawash13.shp
+			URBAN: cuwash13.shp
 		Offset: 15, -52, 52
 
 cawash14:
 	Inherits: ^CivStructure
-	Defaults: cgwash14
+	Defaults:
+		Filename: cgwash14.shp
 		Offset: 0, -45, 45
-		UseTilesetCode: false
 
 cawash15:
 	Inherits: ^CivStructure
-	Defaults: cgwash15
+	Defaults:
+		Filename: cgwash15.shp
 		Offset: 15, -52, 52
-		UseTilesetCode: false
 
 cawash16:
 	Inherits: ^CivStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctwash16.shp
+			SNOW: cawash16.shp
+			URBAN: cuwash16.shp
 		Offset: -30, -60, 60
 
 cawash17:
 	Inherits: ^CivStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctwash17.shp
+			SNOW: cawash17.shp
+			URBAN: cuwash17.shp
 		Offset: -30, -75, 75
 
 cawash18:
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctwash18.shp
+			SNOW: cawash18.shp
+			URBAN: cuwash18.shp
 		Offset: 0, -30, 30
-		UseTilesetCode: true
 	idle:
 		ShadowStart: 3
-	idle-water: cawsh18a
+	idle-water:
+		TilesetFilenames:
+			TEMPERATE: ctwsh18a.shp
+			SNOW: cawsh18a.shp
+			URBAN: cuwsh18a.shp
 		Length: 10
 		ShadowStart: 10
 		Tick: 80
@@ -126,23 +209,39 @@ cawash18:
 cawash19:
 	Inherits: ^CivStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctwash19.shp
+			SNOW: cawash19.shp
+			URBAN: cuwash19.shp
 		Offset: 0, -60, 60
-	idle-flag: cawa19_a
+	idle-flag:
+		TilesetFilenames:
+			TEMPERATE: ctwa19_a.shp
+			SNOW: cawa19_a.shp
+			URBAN: cuwa19_a.shp
 		Length: 16
-	damaged-idle-flag: cawa19_a
+	damaged-idle-flag:
+		TilesetFilenames:
+			TEMPERATE: ctwa19_a.shp
+			SNOW: cawa19_a.shp
+			URBAN: cuwa19_a.shp
 		Start: 16
 		Length: 16
 
 canewy01:
 	Inherits: ^CivStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctnewy01.shp
+			SNOW: canewy01.shp
+			URBAN: cunewy01.shp
 		Offset: 0, -60, 60
 
 canewy04:
 	Inherits: ^CivStructure
-	Defaults: cgnewy04
+	Defaults:
+		Filename: cgnewy04.shp
 		Offset: 0, -45, 45
-		UseTilesetCode: false
 	idle:
 		ShadowStart: -1
 	damaged-idle:
@@ -151,216 +250,433 @@ canewy04:
 
 canewy05:
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctnewy05.shp
+			SNOW: canewy05.shp
+			URBAN: cunewy05.shp
 		Offset: 0, -30, 30
-		UseTilesetCode: true
 	idle:
 		ShadowStart: 3
 
 canewy06:
 	Inherits: ^CivStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctnewy06.shp
+			SNOW: canewy06.shp
+			URBAN: cunewy06.shp
 		Offset: 0, -45, 45
 
 canewy07:
 	Inherits: ^CivStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctnewy07.shp
+			SNOW: canewy07.shp
+			URBAN: cunewy07.shp
 		Offset: 0, -45, 45
 
 canewy08:
 	Inherits: ^CivStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctnewy08.shp
+			SNOW: canewy08.shp
+			URBAN: cunewy08.shp
 		Offset: 0, -45, 45
 
 canewy10:
 	Inherits: ^CivStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctnewy10.shp
+			SNOW: canewy10.shp
+			URBAN: cunewy10.shp
 		Offset: -15, -37, 37
 
 canewy11:
 	Inherits: ^CivStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctnewy11.shp
+			SNOW: canewy11.shp
+			URBAN: cunewy11.shp
 		Offset: -15, -37, 37
 
 canewy12:
 	Inherits: ^CivStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctnewy12.shp
+			SNOW: canewy12.shp
+			URBAN: cunewy12.shp
 		Offset: 15, -37, 37
 
 canewy13:
 	Inherits: ^CivStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctnewy13.shp
+			SNOW: canewy13.shp
+			URBAN: cunewy13.shp
 		Offset: 0, -45, 45
 
 canewy14:
 	Inherits: ^CivStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctnewy14.shp
+			SNOW: canewy14.shp
+			URBAN: cunewy14.shp
 		Offset: 0, -45, 45
 
 canewy15:
 	Inherits: ^CivStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctnewy15.shp
+			SNOW: canewy15.shp
+			URBAN: cunewy15.shp
 		Offset: 0, -45, 45
 
 canewy16:
 	Inherits: ^CivStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctnewy16.shp
+			SNOW: canewy16.shp
+			URBAN: cunewy16.shp
 		Offset: 0, -30, 30
 
 canewy17:
 	Inherits: ^CivStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctnewy17.shp
+			SNOW: canewy17.shp
+			URBAN: cunewy17.shp
 		Offset: 0, -30, 30
 
 canewy18:
 	Inherits: ^CivStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctnewy18.shp
+			SNOW: canewy18.shp
+			URBAN: cunewy18.shp
 		Offset: 0, -30, 30
 
 canewy20:
 	Inherits: ^CivStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctnewy20.shp
+			SNOW: canewy20.shp
+			URBAN: cunewy20.shp
 		Offset: 30, -60, 60
 
 canewy21:
 	Inherits: ^CivStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctnewy21.shp
+			SNOW: canewy21.shp
+			URBAN: cunewy21.shp
 		Offset: -30, -60, 60
 
 caarmy01:
 	Inherits: ^CivStructureNoRubble
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctarmy01.shp
+			SNOW: caarmy01.shp
+			URBAN: cuarmy01.shp
 		Offset: -15, -37, 37
 
 caarmy02:
 	Inherits: ^CivStructureNoRubble
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctarmy02.shp
+			SNOW: caarmy02.shp
+			URBAN: cuarmy02.shp
 		Offset: 0, -15, 15
 
 caarmy03:
 	Inherits: ^CivStructureNoRubble
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctarmy03.shp
+			SNOW: caarmy03.shp
+			URBAN: cuarmy03.shp
 		Offset: 0, -15, 15
 
 caarmy04:
 	Inherits: ^CivStructureNoRubble
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctarmy04.shp
+			SNOW: caarmy04.shp
+			URBAN: cuarmy04.shp
 		Offset: 0, -15, 15
 
 cawa2a:
 	Inherits: ^CivStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctwa2a.shp
+			SNOW: cawa2a.shp
+			URBAN: cuwa2a.shp
 		Offset: 0, -60, 60
 
 cawa2b:
 	Inherits: ^CivStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctwa2b.shp
+			SNOW: cawa2b.shp
+			URBAN: cuwa2b.shp
 		Offset: 0, -60, 60
 
 cawa2c:
 	Inherits: ^CivStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctwa2c.shp
+			SNOW: cawa2c.shp
+			URBAN: cuwa2c.shp
 		Offset: 0, -60, 60
 
 cawa2d:
 	Inherits: ^CivStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctwa2d.shp
+			SNOW: cawa2d.shp
+			URBAN: cuwa2d.shp
 		Offset: 0, -60, 60
 
 cafarm01:
 	Inherits: ^CivStructureNoRubble
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctfarm01.shp
+			SNOW: cafarm01.shp
+			URBAN: cufarm01.shp
 		Offset: 0, -30, 30
 
 cafarm02:
 	Inherits: ^CivStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctfarm02.shp
+			SNOW: cafarm02.shp
+			URBAN: cufarm02.shp
 		Offset: 0, -15, 15
 
 cafarm06:
 	Inherits: ^CivStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctfarm06.shp
+			SNOW: cafarm06.shp
+			URBAN: cufarm06.shp
 		Offset: 0, -30, 30
 
 cafrma:
 	Inherits: ^CivStructureNoRubble
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctfrma.shp
+			SNOW: cafrma.shp
+			URBAN: cufrma.shp
 		Offset: 0, -30, 30
 
 cafrmb:
 	Inherits: ^CivStructureNoRubble
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctfrmb.shp
+			SNOW: cafrmb.shp
+			URBAN: cufrmb.shp
 		Offset: 0, -15, 15
 
 cabarn02:
 	Inherits: ^CivStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctbarn02.shp
+			SNOW: cabarn02.shp
+			URBAN: cubarn02.shp
 		Offset: 0, -30, 30
 
 causfgl:
 	Inherits: ^Flag
-	flag: causfgl_a
+	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctusfgl.shp
+			SNOW: causfgl.shp
+			URBAN: cuusfgl.shp
+	flag:
+		TilesetFilenames:
+			TEMPERATE: ctusfgl_a.shp
+			SNOW: causfgl_a.shp
+			URBAN: cuusfgl_a.shp
 
 carufgl:
 	Inherits: ^Flag
-	flag: carufgl_a
+	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctrufgl.shp
+			SNOW: carufgl.shp
+			URBAN: curufgl.shp
+	flag:
+		TilesetFilenames:
+			TEMPERATE: ctrufgl_a.shp
+			SNOW: carufgl_a.shp
+			URBAN: curufgl_a.shp
 
 cairfgl:
 	Inherits: ^Flag
-	flag: cairfgl_a
+	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctirfgl.shp
+			SNOW: cairfgl.shp
+			URBAN: cuirfgl.shp
+	flag:
+		TilesetFilenames:
+			TEMPERATE: ctirfgl_a.shp
+			SNOW: cairfgl_a.shp
+			URBAN: cuirfgl_a.shp
 
 capofgl:
 	Inherits: ^Flag
-	Defaults: capofgl
-		UseTilesetCode: false
-	flag: capofgl_a
+	Defaults:
+		Filename: capofgl.shp
+	flag:
+		Filename: capofgl_a.shp
 
 caskfgl:
 	Inherits: ^Flag
-	flag: cuskfgl_a
+	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctskfgl.shp
+			SNOW: caskfgl.shp
+			URBAN: cuskfgl.shp
+	flag:
+		TilesetFilenames:
+			TEMPERATE: ctskfgl_a.shp
+			SNOW: caskfgl_a.shp
+			URBAN: cuskfgl_a.shp
 
 calbfgl:
 	Inherits: ^Flag
-	flag: culbfgl_a
+	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctlbfgl.shp
+			SNOW: calbfgl.shp
+			URBAN: culbfgl.shp
+	flag:
+		TilesetFilenames:
+			TEMPERATE: ctlbfgl_a.shp
+			SNOW: calbfgl_a.shp
+			URBAN: culbfgl_a.shp
 
 cafrfgl:
 	Inherits: ^Flag
-	flag: cufrfgl_a
+	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctfrfgl.shp
+			SNOW: cafrfgl.shp
+			URBAN: cufrfgl.shp
+	flag:
+		TilesetFilenames:
+			TEMPERATE: ctfrfgl_a.shp
+			SNOW: cafrfgl_a.shp
+			URBAN: cufrfgl_a.shp
 
 cagefgl:
 	Inherits: ^Flag
-	flag: cugefgl_a
+	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctgefgl.shp
+			SNOW: cagefgl.shp
+			URBAN: cugefgl.shp
+	flag:
+		TilesetFilenames:
+			TEMPERATE: ctgefgl_a.shp
+			SNOW: cagefgl_a.shp
+			URBAN: cugefgl_a.shp
 
 cacufgl:
 	Inherits: ^Flag
-	flag: cucufgl_a
+	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctcufgl.shp
+			SNOW: cacufgl.shp
+			URBAN: cucufgl.shp
+	flag:
+		TilesetFilenames:
+			TEMPERATE: ctcufgl_a.shp
+			SNOW: cacufgl_a.shp
+			URBAN: cucufgl_a.shp
 
 caukfgl:
 	Inherits: ^Flag
-	flag: cuukfgl_a
+	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctukfgl.shp
+			SNOW: caukfgl.shp
+			URBAN: cuukfgl.shp
+	flag:
+		TilesetFilenames:
+			TEMPERATE: ctukfgl_a.shp
+			SNOW: caukfgl_a.shp
+			URBAN: cuukfgl_a.shp
 
 camisc01:
 	Inherits: ^Prop
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctmisc01.shp
+			SNOW: camisc01.shp
+			URBAN: cumisc01.shp
 		Offset: 0, -15, 15
 
 camisc02:
 	Inherits: ^Prop
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctmisc02.shp
+			SNOW: camisc02.shp
+			URBAN: cumisc02.shp
 		Offset: 0, -15, 15
 
 camisc03:
 	Inherits: ^Prop
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctmisc03.shp
+			SNOW: camisc03.shp
+			URBAN: cumisc03.shp
 		Offset: 0, -15, 15
 
 camisc04:
 	Inherits: ^Prop
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctmisc04.shp
+			SNOW: camisc04.shp
+			URBAN: cumisc04.shp
 		Offset: 0, -15, 15
 
 camisc05:
 	Inherits: ^CivStructureNoRubble
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctmisc05.shp
+			SNOW: camisc05.shp
+			URBAN: cumisc05.shp
 		Offset: 0, -15, 15
 	idle:
 		ShadowStart: 2
@@ -370,250 +686,415 @@ camisc05:
 camisc06:
 	Inherits: ^Prop
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctmisc06.shp
+			SNOW: camisc06.shp
+			URBAN: cumisc06.shp
 		Offset: -15, -22, 22
 
 camsc07:
 	Inherits: ^CivStructureNoRubble
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctmsc07.shp
+			SNOW: camsc07.shp
+			URBAN: cumsc07.shp
 		Offset: 0, -30, 30
 
 camsc08:
 	Inherits: ^CivStructureNoRubble
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctmsc08.shp
+			SNOW: camsc08.shp
+			URBAN: cumsc08.shp
 		Offset: 0, -15, 15
 
 camsc09:
 	Inherits: ^CivStructureNoRubble
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctmsc09.shp
+			SNOW: camsc09.shp
+			URBAN: cumsc09.shp
 		Offset: 0, -15, 15
 
 camsc10:
 	Inherits: ^CivStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctmsc10.shp
+			SNOW: camsc10.shp
+			URBAN: cumsc10.shp
 		Offset: 0, -60, 60
 
 camiam01:
 	Inherits: ^CivStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctmiam01.shp
+			SNOW: camiam01.shp
+			URBAN: cumiam01.shp
 		Offset: -30, -45, 45
 
 camiam02:
 	Inherits: ^CivStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctmiam02.shp
+			SNOW: camiam02.shp
+			URBAN: cumiam02.shp
 		Offset: -30, -45, 45
 
 camiam03:
 	Inherits: ^CivStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctmiam03.shp
+			SNOW: camiam03.shp
+			URBAN: cumiam03.shp
 		Offset: 15, -37, 37
 
 camiam04:
 	Inherits: ^CivStructureNoRubble
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctmiam04.shp
+			SNOW: camiam04.shp
+			URBAN: cumiam04.shp
 		Offset: 0, -15, 15
 
 camiam05:
 	Inherits: ^CivStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctmiam05.shp
+			SNOW: camiam05.shp
+			URBAN: cumiam05.shp
 		Offset: 15, -52, 52
 
 camiam06:
 	Inherits: ^CivStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctmiam06.shp
+			SNOW: camiam06.shp
+			URBAN: cumiam06.shp
 		Offset: 0, -60, 60
 
 camiam07:
 	Inherits: ^CivStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctmiam07.shp
+			SNOW: camiam07.shp
+			URBAN: cumiam07.shp
 		Offset: 0, -60, 60
 
 camiam08:
 	Inherits: ^CivStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctmiam08.shp
+			SNOW: camiam08.shp
+			URBAN: cumiam08.shp
 		Offset: -30, -30, 30
 
 castrt01:
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctstrt01.shp
+			SNOW: castrt01.shp
+			URBAN: custrt01.shp
 		Offset: 0, -15, 15
-		UseTilesetCode: true
 	idle:
 		ShadowStart: 3
 
 castrt02:
 	Defaults:
+		Filename: castrt02.shp
 		Offset: 0, -15, 15
 	idle:
 		ShadowStart: 3
 
 castrt03:
 	Defaults:
+		Filename: castrt03.shp
 		Offset: 0, -15, 15
 	idle:
 		ShadowStart: 3
 
 castrt04:
 	Defaults:
+		Filename: castrt04.shp
 		Offset: 0, -15, 15
 	idle:
 		ShadowStart: 3
 
 castrt05:
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctstrt05.shp
+			SNOW: castrt05.shp
+			URBAN: custrt05.shp
 		Offset: 0, -15, 15
-		UseTilesetCode: true
 	idle:
 		ShadowStart: 3
 
 camex01:
 	Inherits: ^CivStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctmex01.shp
+			SNOW: camex01.shp
+			URBAN: cumex01.shp
 		Offset: -15, -37, 37
 
 camex02:
 	Inherits: ^CivStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctmex02.shp
+			SNOW: camex02.shp
+			URBAN: cumex02.shp
 		Offset: -30, -75, 75
 
 camex03:
 	Inherits: ^CivStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctmex03.shp
+			SNOW: camex03.shp
+			URBAN: cumex03.shp
 		Offset: 0, -45, 45
 
 camex04:
 	Inherits: ^CivStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctmex04.shp
+			SNOW: camex04.shp
+			URBAN: cumex04.shp
 		Offset: 0, -60, 60
 
 camex05:
 	Inherits: ^CivStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctmex05.shp
+			SNOW: camex05.shp
+			URBAN: cumex05.shp
 		Offset: 0, -30, 30
 
 castl01:
 	Inherits: ^CivStructure
-	Defaults: custl01
+	Defaults:
+		Filename: custl01.shp
+		TilesetFilenames:
+			TEMPERATE: ctstl01.shp
 		Offset: 0, -60, 60
-		TilesetOverrides:
-			SNOW: URBAN
 
 castl02:
 	Inherits: ^CivStructure
-	Defaults: custl02
+	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctstl02.shp
+			SNOW: castl02.shp
+			URBAN: custl02.shp
 		Offset: 0, -60, 60
 
 castl03:
 	Inherits: ^CivStructure
-	Defaults: custl03
+	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctstl03.shp
+			SNOW: castl03.shp
+			URBAN: custl03.shp
 		Offset: 0, -60, 60
 
 castl04:
 	Inherits: ^CivStructure
-	Defaults: cgstl04
+	Defaults:
+		Filename: cgstl04.shp
 		Offset: 60, -60, 60
-		UseTilesetCode: false
 
 castl05a:
 	Inherits: ^CivStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctstl05a.shp
+			SNOW: castl05a.shp
+			URBAN: custl05a.shp
 		Offset: 0, -60, 60
 
 castl05b:
 	Inherits: ^CivStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctstl05b.shp
+			SNOW: castl05b.shp
+			URBAN: custl05b.shp
 		Offset: 0, -60, 60
 
 castl05c:
 	Inherits: ^CivStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctstl05c.shp
+			SNOW: castl05c.shp
+			URBAN: custl05c.shp
 		Offset: 0, -60, 60
 
 castl05d:
 	Inherits: ^CivStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctstl05d.shp
+			SNOW: castl05d.shp
+			URBAN: custl05d.shp
 		Offset: 0, -60, 60
 
 castl05e:
 	Inherits: ^CivStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctstl05e.shp
+			SNOW: castl05e.shp
+			URBAN: custl05e.shp
 		Offset: 0, -60, 60
 
 castl05f:
 	Inherits: ^CivStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctstl05f.shp
+			SNOW: castl05f.shp
+			URBAN: custl05f.shp
 		Offset: 0, -60, 60
 
 castl05g:
 	Inherits: ^CivStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctstl05g.shp
+			SNOW: castl05g.shp
+			URBAN: custl05g.shp
 		Offset: 0, -60, 60
 
 castl05h:
 	Inherits: ^CivStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctstl05h.shp
+			SNOW: castl05h.shp
+			URBAN: custl05h.shp
 		Offset: 0, -60, 60
 
 cacolo01:
 	Inherits: ^CivStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctcolo01.shp
+			SNOW: cacolo01.shp
+			URBAN: cucolo01.shp
 		Offset: -30, -60, 60
 
 caind01:
 	Inherits: ^CivStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctind01.shp
+			SNOW: caind01.shp
+			URBAN: cuind01.shp
 		Offset: 0, -60, 60
 
 calab:
 	Inherits: ^CivStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctlab.shp
+			SNOW: calab.shp
+			URBAN: culab.shp
 		Offset: 15, -52, 52
 
 cagas01:
 	Inherits: ^CivStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctgas01.shp
+			SNOW: cagas01.shp
+			URBAN: cugas01.shp
 		Offset: 0, -45, 45
 
 cahse01:
 	Inherits: ^CivStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: cthse01.shp
+			SNOW: cahse01.shp
+			URBAN: cuhse01.shp
 		Offset: -15, -37, 37
 
 cahse02:
 	Inherits: ^CivStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: cthse02.shp
+			SNOW: cahse02.shp
+			URBAN: cuhse02.shp
 		Offset: -15, -37, 37
 
 cahse03:
 	Inherits: ^CivStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: cthse03.shp
+			SNOW: cahse03.shp
+			URBAN: cuhse03.shp
 		Offset: 15, -52, 52
 
 cahse04:
 	Inherits: ^CivStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: cthse04.shp
+			SNOW: cahse04.shp
+			URBAN: cuhse04.shp
 		Offset: -15, -37, 37
 
 cahse05:
 	Inherits: ^CivStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: cthse05.shp
+			SNOW: cahse05.shp
+			URBAN: cuhse05.shp
 		Offset: 15, -22, 22
 
 cahse06:
 	Inherits: ^CivStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: cthse06.shp
+			SNOW: cahse06.shp
+			URBAN: cuhse06.shp
 		Offset: -15, -22, 22
 
 cahse07:
 	Inherits: ^CivStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: cthse07.shp
+			SNOW: cahse07.shp
+			URBAN: cuhse07.shp
 		Offset: 15, -37, 37
 
 cawt01:
 	Defaults:
+		Filename: cgwt01.shp
+		TilesetFilenames:
+			SNOW: cawt01.shp
 		Offset: 0, -15, 15
-		UseTilesetCode: true
-		TilesetOverrides:
-			TEMPERATE: GENERIC
-			URBAN: GENERIC
 	idle:
 		ShadowStart: 2
 	damaged-idle:
@@ -623,58 +1104,86 @@ cawt01:
 cabunk01:
 	Inherits: ^CivStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctbunk01.shp
+			SNOW: cabunk01.shp
+			URBAN: cubunk01.shp
 		Offset: 0, -30, 30
 
 cabunk02:
 	Inherits: ^CivStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctbunk02.shp
+			SNOW: cabunk02.shp
+			URBAN: cubunk02.shp
 		Offset: 0, -30, 30
 
 carus01:
 	Inherits: ^CivStructure
-	Defaults: cgrus01
+	Defaults:
+		Filename: cgrus01.shp
 		Offset: 0, -60, 60
-		UseTilesetCode: false
 
 carus02a:
 	Inherits: ^CivStructure
 	Defaults:
+		Filename: carus02a.shp
 		Offset: 0, -15, 15
-		UseTilesetCode: false
 
 carus02b:
 	Inherits: ^CivStructure
 	Defaults:
+		Filename: carus02b.shp
 		Offset: 0, -15, 15
-		UseTilesetCode: false
 
 carus02c:
 	Inherits: ^CivStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctrus02c.shp
+			SNOW: carus02c.shp
+			URBAN: curus02c.shp
 		Offset: 0, -15, 15
 	-rubble:
 
 carus02d:
 	Inherits: ^CivStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctrus02d.shp
+			SNOW: carus02d.shp
+			URBAN: curus02d.shp
 		Offset: 0, -15, 15
 	-rubble:
 
 carus02e:
 	Inherits: ^CivStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctrus02e.shp
+			SNOW: carus02e.shp
+			URBAN: curus02e.shp
 		Offset: 0, -15, 15
 	-rubble:
 
 carus02f:
 	Inherits: ^CivStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctrus02f.shp
+			SNOW: carus02f.shp
+			URBAN: curus02f.shp
 		Offset: 0, -15, 15
 	-rubble:
 
 carus02g:
 	Inherits: ^CivStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctrus02g.shp
+			SNOW: carus02g.shp
+			URBAN: curus02g.shp
 		Offset: 0, -15, 15
 	rubble:
 		ShadowStart: -1
@@ -682,168 +1191,296 @@ carus02g:
 carus03:
 	Inherits: ^CivStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctrus03.shp
+			SNOW: carus03.shp
+			URBAN: curus03.shp
 		Offset: 45, -52, 52
 
 carus04:
 	Inherits: ^CivStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctrus04.shp
+			SNOW: carus04.shp
+			URBAN: curus04.shp
 		Offset: 0, -60, 60
 
 carus05:
 	Inherits: ^CivStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctrus05.shp
+			SNOW: carus05.shp
+			URBAN: curus05.shp
 		Offset: 0, -60, 60
 
 carus06:
 	Inherits: ^CivStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctrus06.shp
+			SNOW: carus06.shp
+			URBAN: curus06.shp
 		Offset: 0, -60, 60
 
 carus07:
 	Inherits: ^CivStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctrus07.shp
+			SNOW: carus07.shp
+			URBAN: curus07.shp
 		Offset: 0, -15, 15
 
 carus08:
 	Inherits: ^CivStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctrus08.shp
+			SNOW: carus08.shp
+			URBAN: curus08.shp
 		Offset: 0, -15, 15
 
 carus09:
 	Inherits: ^CivStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctrus09.shp
+			SNOW: carus09.shp
+			URBAN: curus09.shp
 		Offset: -15, -22, 22
 
 carus10:
 	Inherits: ^CivStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctrus10.shp
+			SNOW: carus10.shp
+			URBAN: curus10.shp
 		Offset: -15, -22, 22
 
 carus11:
 	Inherits: ^CivStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctrus11.shp
+			SNOW: carus11.shp
+			URBAN: curus11.shp
 		Offset: -15, -22, 22
 
 cachig01:
 	Inherits: ^CivStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctchig01.shp
+			SNOW: cachig01.shp
+			URBAN: cuchig01.shp
 		Offset: -15, -37, 37
 
 cachig02:
 	Inherits: ^CivStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctchig02.shp
+			SNOW: cachig02.shp
+			URBAN: cuchig02.shp
 		Offset: 15, -37, 37
 
 cachig03:
 	Inherits: ^CivStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctchig03.shp
+			SNOW: cachig03.shp
+			URBAN: cuchig03.shp
 		Offset: -15, -37, 37
 
 cachig04:
 	Inherits: ^CivStructure
-	Defaults: cgchig04
+	Defaults:
+		Filename: cgchig04.shp
 		Offset: 0, -30, 30
-		UseTilesetCode: false
 
 cachig05:
 	Inherits: ^CivStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctchig05.shp
+			SNOW: cachig05.shp
+			URBAN: cuchig05.shp
 		Offset: 0, -60, 60
 
 cachig06:
 	Inherits: ^CivStructure
-	Defaults: cgchig06
+	Defaults:
+		Filename: cgchig06.shp
 		Offset: 0, -30, 30
-		UseTilesetCode: false
 
 catech01:
 	Inherits: ^CivStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: cttech01.shp
+			SNOW: catech01.shp
+			URBAN: cutech01.shp
 		Offset: 0, -45, 45
 
 catexs01:
 	Inherits: ^CivStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: cttexs01.shp
+			SNOW: catexs01.shp
+			URBAN: cutexs01.shp
 		Offset: 0, -30, 30
 
 catexs02:
 	Inherits: ^CivStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: cttexs02.shp
+			SNOW: catexs02.shp
+			URBAN: cutexs02.shp
 		Offset: 0, -60, 60
 
 catexs03:
 	Inherits: ^CivStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: cttexs03.shp
+			SNOW: catexs03.shp
+			URBAN: cutexs03.shp
 		Offset: 0, -45, 45
 
 catexs04:
 	Inherits: ^CivStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: cttexs04.shp
+			SNOW: catexs04.shp
+			URBAN: cutexs04.shp
 		Offset: 0, -45, 45
 
 catexs05:
 	Inherits: ^CivStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: cttexs05.shp
+			SNOW: catexs05.shp
+			URBAN: cutexs05.shp
 		Offset: 0, -45, 45
 
 catexs06:
 	Inherits: ^CivStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: cttexs06.shp
+			SNOW: catexs06.shp
+			URBAN: cutexs06.shp
 		Offset: 0, -45, 45
 
 catexs07:
 	Inherits: ^CivStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: cttexs07.shp
+			SNOW: catexs07.shp
+			URBAN: cutexs07.shp
 		Offset: 0, -45, 45
 
 catexs08:
 	Inherits: ^CivStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: cttexs08.shp
+			SNOW: catexs08.shp
+			URBAN: cutexs08.shp
 		Offset: 15, -37, 37
 
 canwy05:
 	Inherits: ^CivStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctnwy05.shp
+			SNOW: canwy05.shp
+			URBAN: cunwy05.shp
 		Offset: 0, -60, 60
 
 canwy09:
 	Inherits: ^CivStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctnwy09.shp
+			SNOW: canwy09.shp
+			URBAN: cunwy09.shp
 		Offset: 15, -37, 37
 
 canwy22:
 	Inherits: ^CivStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctnwy22.shp
+			SNOW: canwy22.shp
+			URBAN: cunwy22.shp
 		Offset: 0, -45, 45
 
 canwy23:
 	Inherits: ^CivStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctnwy23.shp
+			SNOW: canwy23.shp
+			URBAN: cunwy23.shp
 		Offset: -15, -37, 37
 
 canwy24:
 	Inherits: ^CivStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctnwy24.shp
+			SNOW: canwy24.shp
+			URBAN: cunwy24.shp
 		Offset: 0, -45, 45
 
 canwy25:
 	Inherits: ^CivStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctnwy25.shp
+			SNOW: canwy25.shp
+			URBAN: cunwy25.shp
 		Offset: 0, -45, 45
 
 canwy26:
 	Inherits: ^CivStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctnwy26.shp
+			SNOW: canwy26.shp
+			URBAN: cunwy26.shp
 		Offset: -30, -60, 60
 
 camov01:
 	Inherits: ^CivStructureNoRubble
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctmov01.shp
+			SNOW: camov01.shp
+			URBAN: cumov01.shp
 		Offset: 45, -37, 37
-	idle-overlay: camov01_a
+	idle-overlay:
+		TilesetFilenames:
+			TEMPERATE: ctmov01_a.shp
+			SNOW: camov01_a.shp
+			URBAN: cumov01_a.shp
 		Length: 30
 		Tick: 200
-	damaged-idle-overlay: camov01_a
+	damaged-idle-overlay:
+		TilesetFilenames:
+			TEMPERATE: ctmov01_a.shp
+			SNOW: camov01_a.shp
+			URBAN: cumov01_a.shp
 		Start: 30
 		Length: 30
 		Tick: 200
@@ -851,92 +1488,160 @@ camov01:
 camov02:
 	Inherits: ^CivStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctmov02.shp
+			SNOW: camov02.shp
+			URBAN: cumov02.shp
 		Offset: 0, -30, 30
-	idle-overlay: camov02_a
+	idle-overlay:
+		TilesetFilenames:
+			TEMPERATE: ctmov02_a.shp
+			SNOW: camov02_a.shp
+			URBAN: cumov02_a.shp
 		Length: 2
 		Tick: 200
-	damaged-idle-overlay: camov02_a
+	damaged-idle-overlay:
+		TilesetFilenames:
+			TEMPERATE: ctmov02_a.shp
+			SNOW: camov02_a.shp
+			URBAN: cumov02_a.shp
 		Start: 2
 		Length: 2
 		Tick: 200
 
 capars01:
 	Inherits: ^CivStructure
-	Defaults: cgpars01
+	Defaults:
+		Filename: cgpars01.shp
 		Offset: 0, -60, 60
-		UseTilesetCode: false
 
 capars02:
 	Inherits: ^CivStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctpars02.shp
+			SNOW: capars02.shp
+			URBAN: cupars02.shp
 		Offset: -30, -75, 75
 
 capars04:
 	Inherits: ^CivStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctpars04.shp
+			SNOW: capars04.shp
+			URBAN: cupars04.shp
 		Offset: 0, -45, 45
 
 capars05:
 	Inherits: ^CivStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctpars05.shp
+			SNOW: capars05.shp
+			URBAN: cupars05.shp
 		Offset: 0, -45, 45
 
 capars06:
 	Inherits: ^CivStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctpars06.shp
+			SNOW: capars06.shp
+			URBAN: cupars06.shp
 		Offset: 0, -45, 45
 
 capars07:
 	Inherits: ^CivStructureNoRubble
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctpars07.shp
+			SNOW: capars07.shp
+			URBAN: cupars07.shp
 		Offset: 0, -15, 15
 
 capars08:
 	Inherits: ^CivStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctpars08.shp
+			SNOW: capars08.shp
+			URBAN: cupars08.shp
 		Offset: -30, -75, 75
 
 capars09:
 	Inherits: ^CivStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctpars09.shp
+			SNOW: capars09.shp
+			URBAN: cupars09.shp
 		Offset: -30, -75, 75
 
 capars10:
 	Inherits: ^CivStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctpars10.shp
+			SNOW: capars10.shp
+			URBAN: cupars10.shp
 		Offset: -15, -52, 75
 
 capars11:
 	Inherits: ^CivStructure
-	Defaults: cgpars11
+	Defaults:
+		Filename: cgpars11.shp
 		Offset: 15, -52, 75
-		UseTilesetCode: false
 
 capars12:
 	Inherits: ^CivStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctpars12.shp
+			SNOW: capars12.shp
+			URBAN: cupars12.shp
 		Offset: 30, -60, 75
 
 capars13:
 	Inherits: ^CivStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctpars13.shp
+			SNOW: capars13.shp
+			URBAN: cupars13.shp
 		Offset: 15, -52, 52
 
 capars14:
 	Inherits: ^CivStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctpars14.shp
+			SNOW: capars14.shp
+			URBAN: cupars14.shp
 		Offset: -15, -52, 52
 
 cats01:
 	Inherits: ^CivStructureNoRubble
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctts01.shp
+			SNOW: cats01.shp
+			URBAN: cuts01.shp
 		Offset: 0, -30, 30
 
 cagard01:
 	Inherits: ^CivStructureNoRubble
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctgard01.shp
+			SNOW: cagard01.shp
+			URBAN: cugard01.shp
 		Offset: 0, -15, 15
-	idle-flag: cagrd1_a
+	idle-flag:
+		TilesetFilenames:
+			TEMPERATE: ctgrd1_a.shp
+			SNOW: cagrd1_a.shp
+			URBAN: cugrd1_a.shp
 		Length: 9
 		ShadowStart: 9
 		Tick: 80
@@ -944,30 +1649,51 @@ cagard01:
 caeur1:
 	Inherits: ^CivStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: cteur1.shp
+			SNOW: caeur1.shp
+			URBAN: cueur1.shp
 		Offset: 0, -30, 30
 
 caeur2:
 	Inherits: ^CivStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: cteur2.shp
+			SNOW: caeur2.shp
+			URBAN: cueur2.shp
 		Offset: 0, -30, 30
 
 caeur04:
 	Inherits: ^CivStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: cteur04.shp
+			SNOW: caeur04.shp
+			URBAN: cueur04.shp
 		Offset: -15, -52, 52
 
 caprs03:
 	Inherits: ^CivStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctprs03.shp
+			SNOW: caprs03.shp
+			URBAN: cuprs03.shp
 		Offset: -30, -75, 75
 
 caswst01:
 	Inherits: ^CivStructure
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: ctswst01.shp
+			SNOW: caswst01.shp
+			URBAN: cuswst01.shp
 		Offset: 15, -37, 37
 
 galite:
 	Defaults:
+		Filename: galite.shp
 		DepthSprite: isodepth.shp
 		Offset: 0, -12, 12
 	idle:
@@ -975,58 +1701,68 @@ galite:
 	damaged-idle:
 		Start: 1
 		ShadowStart: 3
-	icon: liteicon
+	icon:
+		Filename: liteicon.shp
 
 cacity01:
 	Defaults:
+		Filename: cacity01.shp
 		Offset: 0, -60, 60
 	idle:
 		ShadowStart: 3
 
 cacity02:
 	Defaults:
+		Filename: cacity02.shp
 		Offset: -15, -67, 67
 	idle:
 		ShadowStart: 3
 
 cacity03:
 	Defaults:
+		Filename: cacity03.shp
 		Offset: 0, -45, 45
 	idle:
 		ShadowStart: 3
 
 cacity04:
 	Defaults:
+		Filename: cacity04.shp
 		Offset: 0, -60, 60
 	idle:
 		ShadowStart: 3
 
 city01:
 	Defaults:
+		Filename: city01.shp
 		Offset: 0, -45, 45
 	idle:
 		ShadowStart: 2
 
 city02:
 	Defaults:
+		Filename: city02.shp
 		Offset: -15, -52, 52
 	idle:
 		ShadowStart: 2
 
 city03:
 	Defaults:
+		Filename: city03.shp
 		Offset: 0, -45, 45
 	idle:
 		ShadowStart: 2
 
 city04:
 	Defaults:
+		Filename: city04.shp
 		Offset: 0, -60, 60
 	idle:
 		ShadowStart: 2
 
 city05:
 	Defaults:
+		Filename: city05.shp
 		Offset: 0, -60, 60
 	idle:
 		ShadowStart: 2

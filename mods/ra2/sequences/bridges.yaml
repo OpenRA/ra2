@@ -1,145 +1,413 @@
 lobrdb_a:
 	Inherits: ^bridge
-	idle: lobrdb10
-	idle2: lobrdb11
-	idle3: lobrdb12
-	idle4: lobrdb13
-	adead: lobrdb15
-	bdead: lobrdb14
-	abdead: lobrdb16
+	idle:
+		TilesetFilenames:
+			TEMPERATE: lobrdb10.tem
+			SNOW: lobrdb10.sno
+			URBAN: lobrdb10.urb
+	idle2:
+		TilesetFilenames:
+			TEMPERATE: lobrdb11.tem
+			SNOW: lobrdb11.sno
+			URBAN: lobrdb11.urb
+	idle3:
+		TilesetFilenames:
+			TEMPERATE: lobrdb12.tem
+			SNOW: lobrdb12.sno
+			URBAN: lobrdb12.urb
+	idle4:
+		TilesetFilenames:
+			TEMPERATE: lobrdb13.tem
+			SNOW: lobrdb13.sno
+			URBAN: lobrdb13.urb
+	adead:
+		TilesetFilenames:
+			TEMPERATE: lobrdb15.tem
+			SNOW: lobrdb15.sno
+			URBAN: lobrdb15.urb
+	bdead:
+		TilesetFilenames:
+			TEMPERATE: lobrdb14.tem
+			SNOW: lobrdb14.sno
+			URBAN: lobrdb14.urb
+	abdead:
+		TilesetFilenames:
+			TEMPERATE: lobrdb16.tem
+			SNOW: lobrdb16.sno
+			URBAN: lobrdb16.urb
 
 lobrdb_a_d:
 	Inherits: ^bridge
-	idle: lobrdb28
-	aramp: lobrdb17
-	bramp: lobrdb18
-	abramp: lobrdb28
-	editor: lobrdb10
+	idle:
+		TilesetFilenames:
+			TEMPERATE: lobrdb28.tem
+			SNOW: lobrdb28.sno
+			URBAN: lobrdb28.urb
+	aramp:
+		TilesetFilenames:
+			TEMPERATE: lobrdb17.tem
+			SNOW: lobrdb17.sno
+			URBAN: lobrdb17.urb
+	bramp:
+		TilesetFilenames:
+			TEMPERATE: lobrdb18.tem
+			SNOW: lobrdb18.sno
+			URBAN: lobrdb18.urb
+	abramp:
+		TilesetFilenames:
+			TEMPERATE: lobrdb28.tem
+			SNOW: lobrdb28.sno
+			URBAN: lobrdb28.urb
+	editor:
+		TilesetFilenames:
+			TEMPERATE: lobrdb10.tem
+			SNOW: lobrdb10.sno
+			URBAN: lobrdb10.urb
 
 lobrdb_b:
 	Inherits: ^bridge
-	idle: lobrdb01
-	idle2: lobrdb02
-	idle3: lobrdb03
-	idle4: lobrdb04
-	adead: lobrdb05
-	bdead: lobrdb06
-	abdead: lobrdb07
+	idle:
+		TilesetFilenames:
+			TEMPERATE: lobrdb01.tem
+			SNOW: lobrdb01.sno
+			URBAN: lobrdb01.urb
+	idle2:
+		TilesetFilenames:
+			TEMPERATE: lobrdb02.tem
+			SNOW: lobrdb02.sno
+			URBAN: lobrdb02.urb
+	idle3:
+		TilesetFilenames:
+			TEMPERATE: lobrdb03.tem
+			SNOW: lobrdb03.sno
+			URBAN: lobrdb03.urb
+	idle4:
+		TilesetFilenames:
+			TEMPERATE: lobrdb04.tem
+			SNOW: lobrdb04.sno
+			URBAN: lobrdb04.urb
+	adead:
+		TilesetFilenames:
+			TEMPERATE: lobrdb05.tem
+			SNOW: lobrdb05.sno
+			URBAN: lobrdb05.urb
+	bdead:
+		TilesetFilenames:
+			TEMPERATE: lobrdb06.tem
+			SNOW: lobrdb06.sno
+			URBAN: lobrdb06.urb
+	abdead:
+		TilesetFilenames:
+			TEMPERATE: lobrdb07.tem
+			SNOW: lobrdb07.sno
+			URBAN: lobrdb07.urb
 
 lobrdb_b_d:
 	Inherits: ^bridge
-	idle: lobrdb27
-	aramp: lobrdb08
-	bramp: lobrdb09
-	abramp: lobrdb27
-	editor: lobrdb01
+	idle:
+		TilesetFilenames:
+			TEMPERATE: lobrdb27.tem
+			SNOW: lobrdb27.sno
+			URBAN: lobrdb27.urb
+	aramp:
+		TilesetFilenames:
+			TEMPERATE: lobrdb08.tem
+			SNOW: lobrdb08.sno
+			URBAN: lobrdb08.urb
+	bramp:
+		TilesetFilenames:
+			TEMPERATE: lobrdb09.tem
+			SNOW: lobrdb09.sno
+			URBAN: lobrdb09.urb
+	abramp:
+		TilesetFilenames:
+			TEMPERATE: lobrdb27.tem
+			SNOW: lobrdb27.sno
+			URBAN: lobrdb27.urb
+	editor:
+		TilesetFilenames:
+			TEMPERATE: lobrdb01.tem
+			SNOW: lobrdb01.sno
+			URBAN: lobrdb01.urb
 
 lobrdb_r_se:
 	Inherits: ^bridge
-	idle: lobrdb19
-	damaged-idle: lobrdb20
+	idle:
+		TilesetFilenames:
+			TEMPERATE: lobrdb19.tem
+			SNOW: lobrdb19.sno
+			URBAN: lobrdb19.urb
+	damaged-idle:
+		TilesetFilenames:
+			TEMPERATE: lobrdb20.tem
+			SNOW: lobrdb20.sno
+			URBAN: lobrdb20.urb
 
 lobrdb_r_nw:
 	Inherits: ^bridge
-	idle: lobrdb21
-	damaged-idle: lobrdb22
+	idle:
+		TilesetFilenames:
+			TEMPERATE: lobrdb21.tem
+			SNOW: lobrdb21.sno
+			URBAN: lobrdb21.urb
+	damaged-idle:
+		TilesetFilenames:
+			TEMPERATE: lobrdb22.tem
+			SNOW: lobrdb22.sno
+			URBAN: lobrdb22.urb
 
 lobrdb_r_ne:
 	Inherits: ^bridge
-	idle: lobrdb23
-	damaged-idle: lobrdb24
+	idle:
+		TilesetFilenames:
+			TEMPERATE: lobrdb23.tem
+			SNOW: lobrdb23.sno
+			URBAN: lobrdb23.urb
+	damaged-idle:
+		TilesetFilenames:
+			TEMPERATE: lobrdb24.tem
+			SNOW: lobrdb24.sno
+			URBAN: lobrdb24.urb
 
 lobrdb_r_sw:
 	Inherits: ^bridge
-	idle: lobrdb25
-	damaged-idle: lobrdb26
+	idle:
+		TilesetFilenames:
+			TEMPERATE: lobrdb25.tem
+			SNOW: lobrdb25.sno
+			URBAN: lobrdb25.urb
+	damaged-idle:
+		TilesetFilenames:
+			TEMPERATE: lobrdb26.tem
+			SNOW: lobrdb26.sno
+			URBAN: lobrdb26.urb
 
 lobrdg_a:
 	Inherits: ^bridge
-	idle: lobrdg10
-	idle2: lobrdg11
-	idle3: lobrdg12
-	idle4: lobrdg13
-	adead: lobrdg15
-	bdead: lobrdg14
-	abdead: lobrdg16
+	idle:
+		TilesetFilenames:
+			TEMPERATE: lobrdg10.tem
+			SNOW: lobrdg10.sno
+			URBAN: lobrdg10.urb
+	idle2:
+		TilesetFilenames:
+			TEMPERATE: lobrdg11.tem
+			SNOW: lobrdg11.sno
+			URBAN: lobrdg11.urb
+	idle3:
+		TilesetFilenames:
+			TEMPERATE: lobrdg12.tem
+			SNOW: lobrdg12.sno
+			URBAN: lobrdg12.urb
+	idle4:
+		TilesetFilenames:
+			TEMPERATE: lobrdg13.tem
+			SNOW: lobrdg13.sno
+			URBAN: lobrdg13.urb
+	adead:
+		TilesetFilenames:
+			TEMPERATE: lobrdg15.tem
+			SNOW: lobrdg15.sno
+			URBAN: lobrdg15.urb
+	bdead:
+		TilesetFilenames:
+			TEMPERATE: lobrdg14.tem
+			SNOW: lobrdg14.sno
+			URBAN: lobrdg14.urb
+	abdead:
+		TilesetFilenames:
+			TEMPERATE: lobrdg16.tem
+			SNOW: lobrdg16.sno
+			URBAN: lobrdg16.urb
 
 lobrdg_a_d:
 	Inherits: ^bridge
-	idle: lobrdg28
-	aramp: lobrdg17
-	bramp: lobrdg18
-	abramp: lobrdg28
-	editor: lobrdg10
+	idle:
+		TilesetFilenames:
+			TEMPERATE: lobrdg28.tem
+			SNOW: lobrdg28.sno
+			URBAN: lobrdg28.urb
+	aramp:
+		TilesetFilenames:
+			TEMPERATE: lobrdg17.tem
+			SNOW: lobrdg17.sno
+			URBAN: lobrdg17.urb
+	bramp:
+		TilesetFilenames:
+			TEMPERATE: lobrdg18.tem
+			SNOW: lobrdg18.sno
+			URBAN: lobrdg18.urb
+	abramp:
+		TilesetFilenames:
+			TEMPERATE: lobrdg28.tem
+			SNOW: lobrdg28.sno
+			URBAN: lobrdg28.urb
+	editor:
+		TilesetFilenames:
+			TEMPERATE: lobrdg10.tem
+			SNOW: lobrdg10.sno
+			URBAN: lobrdg10.urb
 
 lobrdg_b:
 	Inherits: ^bridge
-	idle: lobrdg01
-	idle2: lobrdg02
-	idle3: lobrdg03
-	idle4: lobrdg04
-	adead: lobrdg05
-	bdead: lobrdg06
-	abdead: lobrdg07
+	idle:
+		TilesetFilenames:
+			TEMPERATE: lobrdg01.tem
+			SNOW: lobrdg01.sno
+			URBAN: lobrdg01.urb
+	idle2:
+		TilesetFilenames:
+			TEMPERATE: lobrdg02.tem
+			SNOW: lobrdg02.sno
+			URBAN: lobrdg02.urb
+	idle3:
+		TilesetFilenames:
+			TEMPERATE: lobrdg03.tem
+			SNOW: lobrdg03.sno
+			URBAN: lobrdg03.urb
+	idle4:
+		TilesetFilenames:
+			TEMPERATE: lobrdg04.tem
+			SNOW: lobrdg04.sno
+			URBAN: lobrdg04.urb
+	adead:
+		TilesetFilenames:
+			TEMPERATE: lobrdg05.tem
+			SNOW: lobrdg05.sno
+			URBAN: lobrdg05.urb
+	bdead:
+		TilesetFilenames:
+			TEMPERATE: lobrdg06.tem
+			SNOW: lobrdg06.sno
+			URBAN: lobrdg06.urb
+	abdead:
+		TilesetFilenames:
+			TEMPERATE: lobrdg07.tem
+			SNOW: lobrdg07.sno
+			URBAN: lobrdg07.urb
 
 lobrdg_b_d:
 	Inherits: ^bridge
-	idle: lobrdg27
-	aramp: lobrdg08
-	bramp: lobrdg09
-	abramp: lobrdg27
-	editor: lobrdg01
+	idle:
+		TilesetFilenames:
+			TEMPERATE: lobrdg27.tem
+			SNOW: lobrdg27.sno
+			URBAN: lobrdg27.urb
+	aramp:
+		TilesetFilenames:
+			TEMPERATE: lobrdg08.tem
+			SNOW: lobrdg08.sno
+			URBAN: lobrdg08.urb
+	bramp:
+		TilesetFilenames:
+			TEMPERATE: lobrdg09.tem
+			SNOW: lobrdg09.sno
+			URBAN: lobrdg09.urb
+	abramp:
+		TilesetFilenames:
+			TEMPERATE: lobrdg27.tem
+			SNOW: lobrdg27.sno
+			URBAN: lobrdg27.urb
+	editor:
+		TilesetFilenames:
+			TEMPERATE: lobrdg01.tem
+			SNOW: lobrdg01.sno
+			URBAN: lobrdg01.urb
 
 lobrdg_r_se:
 	Inherits: ^bridge
-	idle: lobrdg19
-	damaged-idle: lobrdg20
+	idle:
+		TilesetFilenames:
+			TEMPERATE: lobrdg19.tem
+			SNOW: lobrdg19.sno
+			URBAN: lobrdg19.urb
+	damaged-idle:
+		TilesetFilenames:
+			TEMPERATE: lobrdg20.tem
+			SNOW: lobrdg20.sno
+			URBAN: lobrdg20.urb
 
 lobrdg_r_nw:
 	Inherits: ^bridge
-	idle: lobrdg21
-	damaged-idle: lobrdg22
+	idle:
+		TilesetFilenames:
+			TEMPERATE: lobrdg21.tem
+			SNOW: lobrdg21.sno
+			URBAN: lobrdg21.urb
+	damaged-idle:
+		TilesetFilenames:
+			TEMPERATE: lobrdg22.tem
+			SNOW: lobrdg22.sno
+			URBAN: lobrdg22.urb
 
 lobrdg_r_ne:
 	Inherits: ^bridge
-	idle: lobrdg23
-	damaged-idle: lobrdg24
+	idle:
+		TilesetFilenames:
+			TEMPERATE: lobrdg23.tem
+			SNOW: lobrdg23.sno
+			URBAN: lobrdg23.urb
+	damaged-idle:
+		TilesetFilenames:
+			TEMPERATE: lobrdg24.tem
+			SNOW: lobrdg24.sno
+			URBAN: lobrdg24.urb
 
 lobrdg_r_sw:
 	Inherits: ^bridge
-	idle: lobrdg25
-	damaged-idle: lobrdg26
+	idle:
+		TilesetFilenames:
+			TEMPERATE: lobrdg25.tem
+			SNOW: lobrdg25.sno
+			URBAN: lobrdg25.urb
+	damaged-idle:
+		TilesetFilenames:
+			TEMPERATE: lobrdg26.tem
+			SNOW: lobrdg26.sno
+			URBAN: lobrdg26.urb
 
 bridge1:
-	idle: bridge
+	idle:
+		TilesetFilenames:
+			TEMPERATE: bridge.tem
+			SNOW: bridge.sno
+			URBAN: bridge.urb
 		# Disabled to avoid glitches until shadow rendering is fixed
 		# ShadowStart: 18
-		UseTilesetExtension: true
 		ZRamp: 1
 		Offset: 0, -16, 12
 
 bridge2:
-	idle: bridge
+	idle:
+		TilesetFilenames:
+			TEMPERATE: bridge.tem
+			SNOW: bridge.sno
+			URBAN: bridge.urb
 		Start: 9
 		# Disabled to avoid glitches until shadow rendering is fixed
 		# ShadowStart: 27
-		UseTilesetExtension: true
 		ZRamp: 1
 		Offset: 0, -31, 12
 
 bridgb1:
-	idle: bridgb
+	idle:
+		TilesetFilenames:
+			TEMPERATE: bridgb.tem
+			SNOW: bridgb.sno
+			URBAN: bridgb.urb
 		# Disabled to avoid glitches until shadow rendering is fixed
 		# ShadowStart: 18
-		UseTilesetExtension: true
 		ZRamp: 1
 		Offset: 0, -16, 12
 
 bridgb2:
-	idle: bridgb
+	idle:
+		TilesetFilenames:
+			TEMPERATE: bridgb.tem
+			SNOW: bridgb.sno
+			URBAN: bridgb.urb
 		Start: 9
 		# Disabled to avoid glitches until shadow rendering is fixed
 		# ShadowStart: 27
-		UseTilesetExtension: true
 		ZRamp: 1
 		Offset: 0, -31, 12

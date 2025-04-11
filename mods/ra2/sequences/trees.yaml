@@ -1,92 +1,247 @@
 tibtre01:
 	Inherits: ^Drill
+	Defaults:
+		TilesetFilenames:
+			TEMPERATE: tibtre01.tem
+			SNOW: tibtre01.sno
+			URBAN: tibtre01.urb
 
 tibtre02:
 	Inherits: ^Drill
+	Defaults:
+		TilesetFilenames:
+			TEMPERATE: tibtre02.tem
+			SNOW: tibtre02.sno
+			URBAN: tibtre02.urb
 
 tibtre03:
 	Inherits: ^Drill
+	Defaults:
+		TilesetFilenames:
+			TEMPERATE: tibtre03.tem
+			SNOW: tibtre03.sno
+			URBAN: tibtre03.urb
 
 tree01:
 	Inherits: ^Tree
+	idle:
+		TilesetFilenames:
+			TEMPERATE: tree01.tem
+			SNOW: tree01.sno
+			URBAN: tree01.urb
 
 tree02:
 	Inherits: ^Tree
+	idle:
+		TilesetFilenames:
+			TEMPERATE: tree02.tem
+			SNOW: tree02.sno
+			URBAN: tree02.urb
 
 tree03:
 	Inherits: ^Tree
+	idle:
+		TilesetFilenames:
+			TEMPERATE: tree03.tem
+			SNOW: tree03.sno
+			URBAN: tree03.urb
 
 tree04:
 	Inherits: ^Tree
+	idle:
+		TilesetFilenames:
+			TEMPERATE: tree04.tem
+			SNOW: tree04.sno
+			URBAN: tree04.urb
 
 tree05:
 	Inherits: ^Tree
+	idle:
+		TilesetFilenames:
+			TEMPERATE: tree05.tem
+			SNOW: tree05.sno
+			URBAN: tree05.urb
 
 tree06:
 	Inherits: ^Tree
+	idle:
+		TilesetFilenames:
+			TEMPERATE: tree06.tem
+			SNOW: tree06.sno
+			URBAN: tree06.urb
 
 tree07:
 	Inherits: ^Tree
+	idle:
+		TilesetFilenames:
+			TEMPERATE: tree07.tem
+			SNOW: tree07.sno
+			URBAN: tree07.urb
 
 tree08:
 	Inherits: ^Tree
+	idle:
+		TilesetFilenames:
+			TEMPERATE: tree08.tem
+			SNOW: tree08.sno
+			URBAN: tree08.urb
 
 tree09:
 	Inherits: ^Tree
+	idle:
+		TilesetFilenames:
+			TEMPERATE: tree09.tem
+			SNOW: tree09.sno
+			URBAN: tree09.urb
 
 tree10:
 	Inherits: ^Tree
+	idle:
+		TilesetFilenames:
+			TEMPERATE: tree10.tem
+			SNOW: tree10.sno
+			URBAN: tree10.urb
 
 tree11:
 	Inherits: ^Tree
+	idle:
+		TilesetFilenames:
+			TEMPERATE: tree11.tem
+			SNOW: tree11.sno
+			URBAN: tree11.urb
 
 tree12:
 	Inherits: ^Tree
+	idle:
+		TilesetFilenames:
+			TEMPERATE: tree12.tem
+			SNOW: tree12.sno
+			URBAN: tree12.urb
 
 tree13:
 	Inherits: ^Tree
+	idle:
+		TilesetFilenames:
+			TEMPERATE: tree13.tem
+			SNOW: tree13.sno
+			URBAN: tree13.urb
 
 tree14:
 	Inherits: ^Tree
+	idle:
+		TilesetFilenames:
+			TEMPERATE: tree14.tem
+			SNOW: tree14.sno
+			URBAN: tree14.urb
 
 tree15:
 	Inherits: ^Tree
+	idle:
+		TilesetFilenames:
+			TEMPERATE: tree15.tem
+			SNOW: tree15.sno
+			URBAN: tree15.urb
 
 tree16:
 	Inherits: ^Tree
+	idle:
+		TilesetFilenames:
+			TEMPERATE: tree16.tem
+			SNOW: tree16.sno
+			URBAN: tree16.urb
 
 tree17:
 	Inherits: ^Tree
+	idle:
+		TilesetFilenames:
+			TEMPERATE: tree17.tem
+			SNOW: tree17.sno
+			URBAN: tree17.urb
 
 tree18:
 	Inherits: ^Tree
+	idle:
+		TilesetFilenames:
+			TEMPERATE: tree18.tem
+			SNOW: tree18.sno
+			URBAN: tree18.urb
 
 tree19:
 	Inherits: ^Tree
+	idle:
+		TilesetFilenames:
+			TEMPERATE: tree19.tem
+			SNOW: tree19.sno
+			URBAN: tree19.urb
 
 tree20:
 	Inherits: ^Tree
+	idle:
+		TilesetFilenames:
+			TEMPERATE: tree20.tem
+			SNOW: tree20.sno
+			URBAN: tree20.urb
 
 tree21:
 	Inherits: ^Tree
+	idle:
+		TilesetFilenames:
+			TEMPERATE: tree21.tem
+			SNOW: tree21.sno
+			URBAN: tree21.urb
 
 tree22:
 	Inherits: ^Tree
+	idle:
+		TilesetFilenames:
+			TEMPERATE: tree22.tem
+			SNOW: tree22.sno
+			URBAN: tree22.urb
 
 tree23:
 	Inherits: ^Tree
+	idle:
+		TilesetFilenames:
+			TEMPERATE: tree23.tem
+			SNOW: tree23.sno
+			URBAN: tree23.urb
 
 tree24:
 	Inherits: ^Tree
+	idle:
+		TilesetFilenames:
+			TEMPERATE: tree24.tem
+			SNOW: tree24.sno
+			URBAN: tree24.urb
 
 tree25:
 	Inherits: ^Tree
+	idle:
+		TilesetFilenames:
+			TEMPERATE: tree25.tem
+			SNOW: tree25.sno
+			URBAN: tree25.urb
 
 tree26:
 	Inherits: ^Tree
+	idle:
+		TilesetFilenames:
+			TEMPERATE: tree26.tem
+			SNOW: tree26.sno
+			URBAN: tree26.urb
 
 tree27:
 	Inherits: ^Tree
+	idle:
+		TilesetFilenames:
+			TEMPERATE: tree27.tem
+			SNOW: tree27.sno
+			URBAN: tree27.urb
 
 tree28:
 	Inherits: ^Tree
+	idle:
+		TilesetFilenames:
+			TEMPERATE: tree28.tem
+			SNOW: tree28.sno
+			URBAN: tree28.urb

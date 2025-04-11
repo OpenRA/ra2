@@ -1,5 +1,6 @@
 overlay:
-	Defaults: place
+	Defaults:
+		Filename: place.shp
 		Offset: 0, -15, 1
 		ZRamp: 1
 	build-valid-temperate:
@@ -18,7 +19,8 @@ overlay:
 		Start: 2
 
 editor-overlay:
-	Defaults: place
+	Defaults:
+		Filename: place.shp
 		ZRamp: 1
 		Offset: 0, -15, 1
 	copy:
@@ -26,82 +28,111 @@ editor-overlay:
 		Start: 1
 
 poweroff:
-	offline: poweroff
+	offline:
+		Filename: poweroff.shp
 		Length: *
 		Tick: 160
 		Offset: 0,-50
 		ZOffset: 2047
 
 allyrepair:
-	repair: wrench
+	repair:
+		Filename: wrench.shp
 		Length: 7
 		Tick: 160
 		ZOffset: 2047
 
 rallypoint:
-	flag: mouse
+	flag:
+		Filename: mouse.shp
 		Start: 269
 		Length: 10
 		Offset: 2,-12
 		ZOffset: -1023
-	circles: mouse
+	circles:
+		Filename: mouse.shp
 		Start: 249
 		Length: 10
 		ZOffset: -2047
 
 beacon:
-	idle: pbeacon
+	idle:
+		Filename: pbeacon.shp
 		Length: 20
 		Tick: 200
 		ZOffset: 2047
-	arrow: pbeacon
+	arrow:
+		Filename: pbeacon.shp
 		Length: 1
 		ZOffset: 2047
 
 crate-effects:
-	Defaults: null
+	Defaults:
 		Length: *
-	dollar: money
-	reveal-map: reveal
-	hide-map: shroudx
-	fpower: firepowr
-	armor: armor
-	heal: healall
-	nuke: mltimisl
-	levelup: veteran
-	speed: speed
+	dollar:
+		Filename: money.shp
+	reveal-map:
+		Filename: reveal.shp
+	hide-map:
+		Filename: shroudx.shp
+	fpower:
+		Filename: firepowr.shp
+	armor:
+		Filename: armor.shp
+	heal:
+		Filename: healall.shp
+	nuke:
+		Filename: mltimisl.shp
+	levelup:
+		Filename: veteran.shp
+	speed:
+		Filename: speed.shp
 
 crate:
 	Defaults:
+		TilesetFilenames:
+			TEMPERATE: crate.tem
+			SNOW: crate.sno
+			URBAN: crate.urb
 		Offset: 0, -12, 12
 		ShadowStart: 1
-		UseTilesetExtension: true
 	idle:
 	land:
-	water: wcrate
+	water:
+		TilesetFilenames:
+			TEMPERATE: wcrate.tem
+			SNOW: wcrate.sno
+			URBAN: wcrate.urb
 
 rank:
-	veteran: pips
+	veteran:
+		Filename: pips.shp
 		Start: 13
-	elite: pips
+	elite:
+		Filename: pips.shp
 		Start: 14
 
 mpspawn:
 	idle:
+		Filename: mpspawn.shp
 		Length: *
 		ZRamp: 1
 
 waypoint:
 	idle:
+		Filename: waypoint.shp
 		Length: *
 		ZRamp: 1
 
 clock:
 	idle:
+		Filename: clock.shp
 		Length: *
 		BlendMode: Multiply
 
 parach:
+	Defaults:
+		Filename: parach.shp
 	open:
 		Length: 19
 	idle:
@@ -112,28 +143,39 @@ parach:
 		Length: 29
 
 cameo-chevron:
-	idle: cameo-chevron.png
-		AddExtension: false
+	idle:
+		Filename: cameo-chevron.png
 
 pips:
+	Defaults:
+		Filename: pips.shp
 	medic:
 		Start: 6
-	groups: pipsra #TODO: backfall to RA asset
+	groups: #TODO: backfall to RA asset
+		Filename: pipsra.shp
 		Start: 8
 		Length: 10
-	pip-empty: pips2
-	pip-green: pips2
+	pip-empty:
+		Filename: pips2.shp
+	pip-green:
+		Filename: pips2.shp
 		Start: 1
-	pip-yellow: pips2
+	pip-yellow:
+		Filename: pips2.shp
 		Start: 2
-	pip-gray: pips2
+	pip-gray:
+		Filename: pips2.shp
 		Start: 3
-	pip-red: pips2
+	pip-red:
+		Filename: pips2.shp
 		Start: 4
-	pip-blue: pips2
+	pip-blue:
+		Filename: pips2.shp
 		Start: 5
-	pip-ammo: ammopips
-	pip-ammoempty: ammopips
+	pip-ammo:
+		Filename: ammopips.shp
+	pip-ammoempty:
+		Filename: ammopips.shp
 		Start: 1
 	# TODO:
 	pip-empty-building:
@@ -147,7 +189,8 @@ pips:
 		Start: 4
 	pip-blue-building:
 		Start: 5
-	pip-disguise: pip-disguise
+	pip-disguise:
+		Filename: pip-disguise.shp
 		Length: *
 		Tick: 300
 		Offset: 6, -2
@@ -156,152 +199,229 @@ explosion:
 	Defaults:
 		Length: *
 		Offset: 0, 0, 30
-	building: twlt070
+	building:
+		Filename: twlt070.shp
 		Offset: 0, 0, 40
-	ionring: ring1
+	ionring:
+		Filename: ring1.shp
 		Tick: 160
 		ZRamp: 1
-	huge_watersplash: h2o_exp1
+	huge_watersplash:
+		Filename: h2o_exp1.shp
 		Offset: 0, 0, 39
-	large_watersplash: h2o_exp2
-	small_watersplash: h2o_exp3
-	piff: piff
-	piffpiff: piffpiff
-	small_explosion: explosml
-	medium_explosion: explomed
+	large_watersplash:
+		Filename: h2o_exp2.shp
+	small_watersplash:
+		Filename: h2o_exp3.shp
+	piff:
+		Filename: piff.shp
+	piffpiff:
+		Filename: piffpiff.shp
+	small_explosion:
+		Filename: explosml.shp
+	medium_explosion:
+		Filename: explomed.shp
 		Offset: 0, 0, 27
-	large_explosion: explolrg
+	large_explosion:
+		Filename: explolrg.shp
 		Offset: 0, 0, 31
-	tiny_bang: s_bang16
-	small_bang: s_bang24
-	medium_bang: s_bang34
-	large_bang: s_bang48
-	tiny_brnl: s_brnl20
-	small_brnl: s_brnl30
-	medium_brnl: s_brnl40
-	large_brnl: s_brnl58
+	tiny_bang:
+		Filename: s_bang16.shp
+	small_bang:
+		Filename: s_bang24.shp
+	medium_bang:
+		Filename: s_bang34.shp
+	large_bang:
+		Filename: s_bang48.shp
+	tiny_brnl:
+		Filename: s_brnl20.shp
+	small_brnl:
+		Filename: s_brnl30.shp
+	medium_brnl:
+		Filename: s_brnl40.shp
+	large_brnl:
+		Filename: s_brnl58.shp
 		Offset: 0, 0, 30
-	tiny_tumu: s_tumu22
-	small_tumu: s_tumu30
-	medium_tumu: s_tumu42
-	large_tumu: s_tumu60
+	tiny_tumu:
+		Filename: s_tumu22.shp
+	small_tumu:
+		Filename: s_tumu30.shp
+	medium_tumu:
+		Filename: s_tumu42.shp
+	large_tumu:
+		Filename: s_tumu60.shp
 		Offset: 0, 0, 31
-	tiny_clsn: s_clsn16
-	small_clsn: s_clsn22
-	medium_clsn: s_clsn30
-	large_clsn: s_clsn42
-	verylarge_clsn: s_clsn58
+	tiny_clsn:
+		Filename: s_clsn16.shp
+	small_clsn:
+		Filename: s_clsn22.shp
+	medium_clsn:
+		Filename: s_clsn30.shp
+	large_clsn:
+		Filename: s_clsn42.shp
+	verylarge_clsn:
+		Filename: s_clsn58.shp
 		Offset: 0, 0, 30
-	tiny_twlt: twlt026
-	small_twlt: twlt036
-	medium_twlt: twlt050
+	tiny_twlt:
+		Filename: twlt026.shp
+	small_twlt:
+		Filename: twlt036.shp
+	medium_twlt:
+		Filename: twlt050.shp
 		Offset: 0, 0, 26
-	large_twlt: twlt070
+	large_twlt:
+		Filename: twlt070.shp
 		Offset: 0, 0, 36
-	verylarge_twlt: twlt100
+	verylarge_twlt:
+		Filename: twlt100.shp
 		Offset: 0, 0, 51
-	tiny_grey_explosion: xgrysml1
-	small_grey_explosion: xgrysml2
-	medium_grey_explosion: xgrymed1
-	large_grey_explosion: xgrymed2
-	small_barrel_explosion: brrlexp1
-	large_barrel_explosion: brrlexp2
-	nuke_explosion: nukeanim
-	nuke_ball: nukeball
-	demotruck_explosion: demtexp
-	elite_explosion: vtexplod
-	terrorist_explosion: mininuke
-	apoc_explosion: apocexp
-	kirovtesla: ktstlexp
-	flak_puff: htrkpuff
-	flak_puff_AA: smkpuff
-	bombcurs: bombcurs
+	tiny_grey_explosion:
+		Filename: xgrysml1.shp
+	small_grey_explosion:
+		Filename: xgrysml2.shp
+	medium_grey_explosion:
+		Filename: xgrymed1.shp
+	large_grey_explosion:
+		Filename: xgrymed2.shp
+	small_barrel_explosion:
+		Filename: brrlexp1.shp
+	large_barrel_explosion:
+		Filename: brrlexp2.shp
+	nuke_explosion:
+		Filename: nukeanim.shp
+	nuke_ball:
+		Filename: nukeball.shp
+	demotruck_explosion:
+		Filename: demtexp.shp
+	elite_explosion:
+		Filename: vtexplod.shp
+	terrorist_explosion:
+		Filename: mininuke.shp
+	apoc_explosion:
+		Filename: apocexp.shp
+	kirovtesla:
+		Filename: ktstlexp.shp
+	flak_puff:
+		Filename: htrkpuff.shp
+	flak_puff_AA:
+		Filename: smkpuff.shp
+	bombcurs:
+		Filename: bombcurs.shp
 		Tick: 300
-	ivan_explosion: crivexp
-	ivan_explosionE: crivexp2
-	tesla_impact: tstimpct
-	iron_fx: ironfx
-	chronosk: chronosk
-	psi_wave: ring1
-	weathercloud1: wccloud1
+	ivan_explosion:
+		Filename: crivexp.shp
+	ivan_explosionE:
+		Filename: crivexp2.shp
+	tesla_impact:
+		Filename: tstimpct.shp
+	iron_fx:
+		Filename: ironfx.shp
+	chronosk:
+		Filename: chronosk.shp
+	psi_wave:
+		Filename: ring1.shp
+	weathercloud1:
+		Filename: wccloud1.shp
 		Offset: 0, -175
 		Tick: 80
-	weatherbolt1: wclbolt1
+	weatherbolt1:
+		Filename: wclbolt1.shp
 		Tick: 80
-	weathercloud2: wccloud2
+	weathercloud2:
+		Filename: wccloud2.shp
 		Offset: 0, -175
 		Tick: 80
-	weatherbolt2: wclbolt2
+	weatherbolt2:
+		Filename: wclbolt2.shp
 		Tick: 80
-	weathercloud3: wccloud3
+	weathercloud3:
+		Filename: wccloud3.shp
 		Offset: 0, -175
 		Tick: 80
-	weatherbolt3: wclbolt3
+	weatherbolt3:
+		Filename: wclbolt3.shp
 		Tick: 80
-	weatherboltexplosion: explolb
+	weatherboltexplosion:
+		Filename: explolb.shp
 
 chrono:
-	warpin: warpin
+	warpin:
+		Filename: warpin.shp
 		Length: *
 		ZOffset: -2047
-	warpout: warpout
+	warpout:
+		Filename: warpout.shp
 		Length: *
 		ZOffset: -2047
 
 discus:
 	idle:
+		Filename: discus.shp
 		Length: *
 
 dragon:
 	idle:
+		Filename: dragon.shp
 		Facings: 32
 
 smokey2:
 	idle:
+		Filename: smokey2.shp
 		Length: *
 
 120mm:
 	idle:
+		Filename: 120mm.shp
 
 bbblelrg:
 	idle:
+		Filename: bbblelrg.shp
 		Length: *
 
 missile:
 	idle:
+		Filename: missile.shp
 		Facings: 32
 
 zbomb:
 	idle:
+		Filename: zbomb.shp
 		Facings: 32
 
 largesmoke:
-	idle: lgrysmk1
+	idle:
+		Filename: lgrysmk1.shp
 		Length: *
 
 smallsmoke:
-	idle: sgrysmk1
+	idle:
+		Filename: sgrysmk1.shp
 		Length: *
 
 nukesmoke:
-	idle: nukepuff
+	idle:
+		Filename: nukepuff.shp
 		Length: *
 		BlendMode: Additive
 
 largefire:
-	idle: fire01
+	idle:
+		Filename: fire01.shp
 		Length: *
 
 mediumfire:
-	idle: fire02
+	idle:
+		Filename: fire02.shp
 		Length: *
 
 smallfire:
-	idle: fire03
+	idle:
+		Filename: fire03.shp
 		Length: *
 
 moveflsh:
-	idle: ring
+	idle:
+		Filename: ring.shp
 		Length: *
 		Tick: 30
 		ZOffset: 2047
@@ -309,7 +429,8 @@ moveflsh:
 		ZRamp: 1
 
 wake:
-	idle: conquer|wake1
+	idle:
+		Filename: conquer|wake1.shp
 		Length: *
 		Tick: 180
 		ZOffset: -512
@@ -318,168 +439,449 @@ wake:
 
 resources:
 	Defaults:
-		UseTilesetExtension: true
 		Length: 12
 		ShadowStart: 12
 		Offset: 0, -15, 2
 		ZRamp: 1
-	tib01: tib01
-	tib02: tib02
+	tib01:
+		TilesetFilenames:
+			TEMPERATE: tib01.tem
+			SNOW: tib01.sno
+			URBAN: tib01.urb
+	tib02:
+		TilesetFilenames:
+			TEMPERATE: tib02.tem
+			SNOW: tib02.sno
+			URBAN: tib02.urb
 		Frames: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 0
-	tib03: tib03
-	tib04: tib04
-	tib05: tib05
-	tib06: tib06
-	tib07: tib07
-	tib08: tib08
-	tib09: tib09
-	tib10: tib10
-	tib11: tib11
-	tib12: tib12
-	tib13: tib13
-	tib14: tib14
+	tib03:
+		TilesetFilenames:
+			TEMPERATE: tib03.tem
+			SNOW: tib03.sno
+			URBAN: tib03.urb
+	tib04:
+		TilesetFilenames:
+			TEMPERATE: tib04.tem
+			SNOW: tib04.sno
+			URBAN: tib04.urb
+	tib05:
+		TilesetFilenames:
+			TEMPERATE: tib05.tem
+			SNOW: tib05.sno
+			URBAN: tib05.urb
+	tib06:
+		TilesetFilenames:
+			TEMPERATE: tib06.tem
+			SNOW: tib06.sno
+			URBAN: tib06.urb
+	tib07:
+		TilesetFilenames:
+			TEMPERATE: tib07.tem
+			SNOW: tib07.sno
+			URBAN: tib07.urb
+	tib08:
+		TilesetFilenames:
+			TEMPERATE: tib08.tem
+			SNOW: tib08.sno
+			URBAN: tib08.urb
+	tib09:
+		TilesetFilenames:
+			TEMPERATE: tib09.tem
+			SNOW: tib09.sno
+			URBAN: tib09.urb
+	tib10:
+		TilesetFilenames:
+			TEMPERATE: tib10.tem
+			SNOW: tib10.sno
+			URBAN: tib10.urb
+	tib11:
+		TilesetFilenames:
+			TEMPERATE: tib11.tem
+			SNOW: tib11.sno
+			URBAN: tib11.urb
+	tib12:
+		TilesetFilenames:
+			TEMPERATE: tib12.tem
+			SNOW: tib12.sno
+			URBAN: tib12.urb
+	tib13:
+		TilesetFilenames:
+			TEMPERATE: tib13.tem
+			SNOW: tib13.sno
+			URBAN: tib13.urb
+	tib14:
+		TilesetFilenames:
+			TEMPERATE: tib14.tem
+			SNOW: tib14.sno
+			URBAN: tib14.urb
 		Frames: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 0
-	tib15: tib15
-	tib16: tib16
-	tib17: tib17
-	tib18: tib18
-	tib19: tib19
-	tib20: tib20
-	gem01: gem01
-	gem02: gem02
-	gem03: gem03
-	gem04: gem04
-	gem05: gem05
-	gem06: gem06
-	gem07: gem07
-	gem08: gem08
-	gem09: gem09
-	gem10: gem10
-	gem11: gem11
-	gem12: gem12
+	tib15:
+		TilesetFilenames:
+			TEMPERATE: tib15.tem
+			SNOW: tib15.sno
+			URBAN: tib15.urb
+	tib16:
+		TilesetFilenames:
+			TEMPERATE: tib16.tem
+			SNOW: tib16.sno
+			URBAN: tib16.urb
+	tib17:
+		TilesetFilenames:
+			TEMPERATE: tib17.tem
+			SNOW: tib17.sno
+			URBAN: tib17.urb
+	tib18:
+		TilesetFilenames:
+			TEMPERATE: tib18.tem
+			SNOW: tib18.sno
+			URBAN: tib18.urb
+	tib19:
+		TilesetFilenames:
+			TEMPERATE: tib19.tem
+			SNOW: tib19.sno
+			URBAN: tib19.urb
+	tib20:
+		TilesetFilenames:
+			TEMPERATE: tib20.tem
+			SNOW: tib20.sno
+			URBAN: tib20.urb
+	gem01:
+		TilesetFilenames:
+			TEMPERATE: gem01.tem
+			SNOW: gem01.sno
+			URBAN: gem01.urb
+	gem02:
+		TilesetFilenames:
+			TEMPERATE: gem02.tem
+			SNOW: gem02.sno
+			URBAN: gem02.urb
+	gem03:
+		TilesetFilenames:
+			TEMPERATE: gem03.tem
+			SNOW: gem03.sno
+			URBAN: gem03.urb
+	gem04:
+		TilesetFilenames:
+			TEMPERATE: gem04.tem
+			SNOW: gem04.sno
+			URBAN: gem04.urb
+	gem05:
+		TilesetFilenames:
+			TEMPERATE: gem05.tem
+			SNOW: gem05.sno
+			URBAN: gem05.urb
+	gem06:
+		TilesetFilenames:
+			TEMPERATE: gem06.tem
+			SNOW: gem06.sno
+			URBAN: gem06.urb
+	gem07:
+		TilesetFilenames:
+			TEMPERATE: gem07.tem
+			SNOW: gem07.sno
+			URBAN: gem07.urb
+	gem08:
+		TilesetFilenames:
+			TEMPERATE: gem08.tem
+			SNOW: gem08.sno
+			URBAN: gem08.urb
+	gem09:
+		TilesetFilenames:
+			TEMPERATE: gem09.tem
+			SNOW: gem09.sno
+			URBAN: gem09.urb
+	gem10:
+		TilesetFilenames:
+			TEMPERATE: gem10.tem
+			SNOW: gem10.sno
+			URBAN: gem10.urb
+	gem11:
+		TilesetFilenames:
+			TEMPERATE: gem11.tem
+			SNOW: gem11.sno
+			URBAN: gem11.urb
+	gem12:
+		TilesetFilenames:
+			TEMPERATE: gem12.tem
+			SNOW: gem12.sno
+			URBAN: gem12.urb
 
 shroud:
 	Defaults:
+		Filename: shroud.shp
 		ZRamp: 1
 		Length: *
 	shroud:
-	fog: fog
+	fog:
+		Filename: fog.shp
 
 smallscorches:
 	Defaults:
-		UseTilesetExtension: true
 		Offset: 0, -15, 1
 		ZRamp: 1
-	sc1: burnt01
-	sc2: burnt02
-	sc3: burnt03
-	sc4: burnt04
-	sc5: burnt05
-	sc6: burnt06
+	sc1:
+		TilesetFilenames:
+			TEMPERATE: burnt01.tem
+			SNOW: burnt01.sno
+			URBAN: burnt01.urb
+	sc2:
+		TilesetFilenames:
+			TEMPERATE: burnt02.tem
+			SNOW: burnt02.sno
+			URBAN: burnt02.urb
+	sc3:
+		TilesetFilenames:
+			TEMPERATE: burnt03.tem
+			SNOW: burnt03.sno
+			URBAN: burnt03.urb
+	sc4:
+		TilesetFilenames:
+			TEMPERATE: burnt04.tem
+			SNOW: burnt04.sno
+			URBAN: burnt04.urb
+	sc5:
+		TilesetFilenames:
+			TEMPERATE: burnt05.tem
+			SNOW: burnt05.sno
+			URBAN: burnt05.urb
+	sc6:
+		TilesetFilenames:
+			TEMPERATE: burnt06.tem
+			SNOW: burnt06.sno
+			URBAN: burnt06.urb
 
 mediumscorches:
 	Defaults:
-		UseTilesetExtension: true
 		Offset: 0, -20, 1
 		ZRamp: 1
-	sc7: burnt07
-	sc8: burnt08
-	sc9: burnt09
-	sc10: burnt10
+	sc7:
+		TilesetFilenames:
+			TEMPERATE: burnt07.tem
+			SNOW: burnt07.sno
+			URBAN: burnt07.urb
+	sc8:
+		TilesetFilenames:
+			TEMPERATE: burnt08.tem
+			SNOW: burnt08.sno
+			URBAN: burnt08.urb
+	sc9:
+		TilesetFilenames:
+			TEMPERATE: burnt09.tem
+			SNOW: burnt09.sno
+			URBAN: burnt09.urb
+	sc10:
+		TilesetFilenames:
+			TEMPERATE: burnt10.tem
+			SNOW: burnt10.sno
+			URBAN: burnt10.urb
 
 largescorches:
 	Defaults:
-		UseTilesetExtension: true
 		Offset: 0, -30, 1
 		ZRamp: 1
-	sc11: burnt11
-	sc12: burnt12
+	sc11:
+		TilesetFilenames:
+			TEMPERATE: burnt11.tem
+			SNOW: burnt11.sno
+			URBAN: burnt11.urb
+	sc12:
+		TilesetFilenames:
+			TEMPERATE: burnt12.tem
+			SNOW: burnt12.sno
+			URBAN: burnt12.urb
 
 smallcraters:
 	Defaults:
-		UseTilesetExtension: true
 		Offset: 0, -15, 1
 		ZRamp: 1
-	cr1: crater01
-	cr2: crater02
-	cr3: crater03
-	cr4: crater04
-	cr5: crater05
-	cr6: crater06
+	cr1:
+		TilesetFilenames:
+			TEMPERATE: crater01.tem
+			SNOW: crater01.sno
+			URBAN: crater01.urb
+	cr2:
+		TilesetFilenames:
+			TEMPERATE: crater02.tem
+			SNOW: crater02.sno
+			URBAN: crater02.urb
+	cr3:
+		TilesetFilenames:
+			TEMPERATE: crater03.tem
+			SNOW: crater03.sno
+			URBAN: crater03.urb
+	cr4:
+		TilesetFilenames:
+			TEMPERATE: crater04.tem
+			SNOW: crater04.sno
+			URBAN: crater04.urb
+	cr5:
+		TilesetFilenames:
+			TEMPERATE: crater05.tem
+			SNOW: crater05.sno
+			URBAN: crater05.urb
+	cr6:
+		TilesetFilenames:
+			TEMPERATE: crater06.tem
+			SNOW: crater06.sno
+			URBAN: crater06.urb
 
 mediumcraters:
 	Defaults:
-		UseTilesetExtension: true
 		Offset: 0, -15, 1
 		ZRamp: 1
-	cr7: crater07
-	cr8: crater08
-	cr9: crater09
-	cr10: crater10
+	cr7:
+		TilesetFilenames:
+			TEMPERATE: crater07.tem
+			SNOW: crater07.sno
+			URBAN: crater07.urb
+	cr8:
+		TilesetFilenames:
+			TEMPERATE: crater08.tem
+			SNOW: crater08.sno
+			URBAN: crater08.urb
+	cr9:
+		TilesetFilenames:
+			TEMPERATE: crater09.tem
+			SNOW: crater09.sno
+			URBAN: crater09.urb
+	cr10:
+		TilesetFilenames:
+			TEMPERATE: crater10.tem
+			SNOW: crater10.sno
+			URBAN: crater10.urb
 
 largecraters:
 	Defaults:
-		UseTilesetExtension: true
 		Offset: 0, -30, 1
 		ZRamp: 1
-	cr11: crater11
-	cr12: crater12
+	cr11:
+		TilesetFilenames:
+			TEMPERATE: crater11.tem
+			SNOW: crater11.sno
+			URBAN: crater11.urb
+	cr12:
+		TilesetFilenames:
+			TEMPERATE: crater12.tem
+			SNOW: crater12.sno
+			URBAN: crater12.urb
 
 icon:
-	gps: asaticon
-	invuln: ircricon
-	chrono: chroicon
-	abomb: nukeicon
-	paradrop: paraicon
-	airborne: aparicon
-	lightningstorm: bolticon
+	gps:
+		Filename: asaticon.shp
+	invuln:
+		Filename: ircricon.shp
+	chrono:
+		Filename: chroicon.shp
+	abomb:
+		Filename: nukeicon.shp
+	paradrop:
+		Filename: paraicon.shp
+	airborne:
+		Filename: aparicon.shp
+	lightningstorm:
+		Filename: bolticon.shp
 
 atomic:
-	up: nkmslup
-	down: nkmsldn
+	up:
+		Filename: nkmslup.shp
+	down:
+		Filename: nkmsldn.shp
 		Offset: 0, 144
 
 bombcurs:
 	idle:
+		Filename: bombcurs.shp
 		Length: *
 		Tick: 300
 
 trock01:
 	Inherits: ^Rock
+	idle:
+		TilesetFilenames:
+			TEMPERATE: trock01.tem
+			SNOW: trock01.sno
+			URBAN: trock01.urb
 
 trock02:
 	Inherits: ^Rock
+	idle:
+		TilesetFilenames:
+			TEMPERATE: trock02.tem
+			SNOW: trock02.sno
+			URBAN: trock02.urb
 
 trock03:
 	Inherits: ^Rock
+	idle:
+		TilesetFilenames:
+			TEMPERATE: trock03.tem
+			SNOW: trock03.sno
+			URBAN: trock03.urb
 
 trock04:
 	Inherits: ^Rock
+	idle:
+		TilesetFilenames:
+			TEMPERATE: trock04.tem
+			SNOW: trock04.sno
+			URBAN: trock04.urb
 
 trock05:
 	Inherits: ^Rock
+	idle:
+		TilesetFilenames:
+			TEMPERATE: trock05.tem
+			SNOW: trock05.sno
+			URBAN: trock05.urb
 
 srock01:
 	Inherits: ^Rock
+	idle:
+		TilesetFilenames:
+			TEMPERATE: srock01.tem
+			SNOW: srock01.sno
+			URBAN: srock01.urb
 
 srock02:
 	Inherits: ^Rock
+	idle:
+		TilesetFilenames:
+			TEMPERATE: srock02.tem
+			SNOW: srock02.sno
+			URBAN: srock02.urb
 
 srock03:
 	Inherits: ^Rock
+	idle:
+		TilesetFilenames:
+			TEMPERATE: srock03.tem
+			SNOW: srock03.sno
+			URBAN: srock03.urb
 
 srock04:
 	Inherits: ^Rock
+	idle:
+		TilesetFilenames:
+			TEMPERATE: srock04.tem
+			SNOW: srock04.sno
+			URBAN: srock04.urb
 
 srock05:
 	Inherits: ^Rock
+	idle:
+		TilesetFilenames:
+			TEMPERATE: srock05.tem
+			SNOW: srock05.sno
+			URBAN: srock05.urb
 
 camera:
 	idle:
+		Filename: camera.shp
 		Length: *
 
 flameguy:
 	Defaults:
+		Filename: flameguy.shp
 		Facings: 8
 		Tick: 80
 	idle:

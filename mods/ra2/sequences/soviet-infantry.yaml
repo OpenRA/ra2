@@ -1,11 +1,17 @@
 dog:
 	Inherits: adog
-	jump: dogp
+	Defaults:
+		Filename: dog.shp
+	jump:
+		Filename: dogp.shp
 		Length: 1
 		Facings: 64
-	icon: dogicon
+	icon:
+		Filename: dogicon.shp
 
 sqd:
+	Defaults:
+		Filename: sqd.shp
 	stand:
 		Start: 160
 		Facings: -8
@@ -24,22 +30,27 @@ sqd:
 		Length: 14
 		Facings: -8
 		Tick: 120
-	icon: sqdicon
+	icon:
+		Filename: sqdicon.shp
 
 e2:
 	Inherits: ^ArmedInfantry
 	Inherits@MC: ^MindControllable
-	Defaults: cons
+	Defaults:
+		Filename: cons.shp
 	run:
 		Tick: 120
 	paradrop:
 		Start: 292
-	icon: e2icon
+	icon:
+		Filename: e2icon.shp
 
 flakt:
 	Inherits: ^ArmedInfantry
 	Inherits@MC: ^MindControllable
 	Inherits@Muzzle: ^WithFlakMuzzle
+	Defaults:
+		Filename: flakt.shp
 	run:
 		Tick: 120
 	die1:
@@ -58,21 +69,26 @@ flakt:
 		Start: 165
 	prone-shoot:
 		Start: 245
-	icon: flkticon
+	icon:
+		Filename: flkticon.shp
 
 shk:
 	Inherits: ^ArmedInfantry
 	Inherits@MC: ^MindControllable
+	Defaults:
+		Filename: shk.shp
 	run:
 		Tick: 120
 	paradrop:
 		Start: 292
-	icon: shkicon
+	icon:
+		Filename: shkicon.shp
 
 terror:
 	Inherits: ^BasicInfantry
 	Inherits@MC: ^MindControllable
-	Defaults: trst
+	Defaults:
+		Filename: trst.shp
 	run:
 		Tick: 120
 	die1:
@@ -92,11 +108,14 @@ terror:
 		Start: 179
 	cheer:
 		Start: 180
-	icon: trsticon
+	icon:
+		Filename: trsticon.shp
 
 deso:
 	Inherits: ^ArmedInfantry
 	Inherits@MC: ^MindControllable
+	Defaults:
+		Filename: deso.shp
 	run:
 		Tick: 120
 	deploy:
@@ -111,11 +130,14 @@ deso:
 		Tick: 80
 	cheer:
 		Start: 314
-	icon: desoicon
+	icon:
+		Filename: desoicon.shp
 
 ivan:
 	Inherits: ^ArmedInfantry
 	Inherits@MC: ^MindControllable
+	Defaults:
+		Filename: ivan.shp
 	run:
 		Tick: 120
 	liedown:
@@ -129,14 +151,20 @@ ivan:
 		Length: 15
 	cheer:
 		Start: 259
-	icon: ivanicon
+	icon:
+		Filename: ivanicon.shp
 
 civan:
 	Inherits: ivan
-	icon: ivncicon
+	Defaults:
+		Filename: civan.shp
+	icon:
+		Filename: ivncicon.shp
 
 yuri:
 	Inherits: ^ArmedInfantry
+	Defaults:
+		Filename: yuri.shp
 	deploy:
 		Start: 292
 		Length: 7
@@ -148,10 +176,15 @@ yuri:
 		Length: 6
 	cheer:
 		Start: 308
-	muzzle: yuricntl
+	muzzle:
+		Filename: yuricntl.shp
 		Length: *
-	icon: yuriicon
+	icon:
+		Filename: yuriicon.shp
 
 yuripr:
 	Inherits: yuri
-	icon: yurpicon
+	Defaults:
+		Filename: yuripr.shp
+	icon:
+		Filename: yurpicon.shp

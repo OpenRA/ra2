@@ -1,11 +1,17 @@
 civ1:
 	Inherits: ^CivInfantry
+	Defaults:
+		Filename: civ1.shp
 
 civ2:
 	Inherits: ^CivInfantry
+	Defaults:
+		Filename: civ2.shp
 
 civ3:
 	Inherits: ^CivInfantry
+	Defaults:
+		Filename: civ3.shp
 	die1:
 		Length: 13
 	die2:
@@ -23,6 +29,8 @@ civ3:
 
 vladimir:
 	Inherits: ^CivInfantry
+	Defaults:
+		Filename: vladimir.shp
 	prone-stand:
 		Frames: 86, 92, 98, 104, 110, 116, 122, 128
 	prone-run:
@@ -54,6 +62,8 @@ vladimir:
 
 pentgen:
 	Inherits: ^CivInfantry
+	Defaults:
+		Filename: pentgen.shp
 	prone-stand:
 		Frames: 134, 140, 146, 152, 158, 164, 170, 176
 	prone-run:
@@ -76,6 +86,8 @@ pentgen:
 
 pres:
 	Inherits: ^CivInfantry
+	Defaults:
+		Filename: pres.shp
 	prone-stand:
 		Frames: 134, 140, 146, 152, 158, 164, 170, 176
 	prone-run:
@@ -87,6 +99,8 @@ pres:
 
 ssrv:
 	Inherits: ^CivInfantry
+	Defaults:
+		Filename: ssrv.shp
 	prone-stand:
 		Frames: 134, 140, 146, 152, 158, 164, 170, 176
 	prone-run:
@@ -101,18 +115,28 @@ ssrv:
 
 civa:
 	Inherits: ^CivInfantry
+	Defaults:
+		Filename: civa.shp
 
 civb:
 	Inherits: ^CivInfantry
+	Defaults:
+		Filename: civb.shp
 
 civc:
 	Inherits: ^CivInfantry
+	Defaults:
+		Filename: civc.shp
 
 civbbp:
 	Inherits: ^CivInfantry
+	Defaults:
+		Filename: civbbp.shp
 
 civbfm:
 	Inherits: ^CivInfantry
+	Defaults:
+		Filename: civbfm.shp
 	-shoot:
 	prone-stand:
 		Frames: 134, 140, 146, 152, 158, 164, 170, 176
@@ -125,6 +149,8 @@ civbfm:
 
 civbf:
 	Inherits: ^CivInfantry
+	Defaults:
+		Filename: civbf.shp
 	-shoot:
 	prone-stand:
 		Frames: 134, 140, 146, 152, 158, 164, 170, 176
@@ -137,6 +163,8 @@ civbf:
 
 civbtm:
 	Inherits: ^CivInfantry
+	Defaults:
+		Filename: civbtm.shp
 	-shoot:
 	prone-stand:
 		Frames: 134, 140, 146, 152, 158, 164, 170, 176
@@ -149,14 +177,20 @@ civbtm:
 
 civsfm:
 	Inherits: ^CivInfantry
+	Defaults:
+		Filename: civsfm.shp
 	cheer:
 		Start: 231
 
 civsf:
 	Inherits: ^CivInfantry
+	Defaults:
+		Filename: civsf.shp
 
 civstm:
 	Inherits: ^CivInfantry
+	Defaults:
+		Filename: civstm.shp
 	die1:
 		Length: 13
 	die2:

@@ -1,5 +1,7 @@
 cow:
 	Inherits: ^Animal
+	Defaults:
+		Filename: cow.shp
 	stand:
 		ShadowStart: 116
 	run:
@@ -18,6 +20,8 @@ cow:
 
 all:
 	Inherits: ^Animal
+	Defaults:
+		Filename: all.shp
 	stand:
 		ShadowStart: 164
 	run:
@@ -34,6 +38,8 @@ all:
 
 polarb:
 	Inherits: ^Animal
+	Defaults:
+		Filename: polarb.shp
 	run:
 		Tick: 120
 	shoot:
@@ -43,18 +49,23 @@ polarb:
 
 josh:
 	Inherits: ^Animal
+	Defaults:
+		Filename: josh.shp
 	run:
 		Tick: 120
 	shoot:
 		Start: 116
 		Length: 6
 		Facings: 8
-	die4: nukedie
+	die4:
+		Filename: nukedie.shp
 		Length: *
 		Tick: 50
-	die5: yuridie
+	die5:
+		Filename: yuridie.shp
 		Length: *
 		Tick: 80
-	die6: electro
+	die6:
+		Filename: electro.shp
 		Length: *
 		Tick: 80
