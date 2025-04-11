@@ -245,7 +245,7 @@ narefn:
 		Type: Wood
 	RevealsShroud:
 		Range: 6c0
-	TiberianSunRefinery:
+	Refinery:
 		DockOffset: 3, 1
 		ShowTicks: True
 		TickLifetime: 30

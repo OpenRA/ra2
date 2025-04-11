@@ -6,7 +6,7 @@ caoild:
 	Building:
 		Footprint: xx xx
 		Dimensions: 2, 2
-	EngineerRepairable:
+	InstantlyRepairable:
 	CashTrickler:
 		Interval: 100
 		Amount: 20
