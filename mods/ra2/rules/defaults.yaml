@@ -360,7 +360,7 @@
 		Weapon: BuildingExplode
 	RepairableBuilding:
 		RepairingNotification: Repairing
-	EngineerRepairable:
+	InstantlyRepairable:
 	SpawnActorsOnSell@allies:
 		ActorTypes: e1, e1, e1
 		Factions: america, germany, england, france, korea

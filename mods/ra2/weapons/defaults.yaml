@@ -79,7 +79,7 @@
 		Image: DRAGON
 		Palette: ra
 		ContrailLength: 8
-		ContrailWidth: 24
+		ContrailStartWidth: 24
 		CruiseAltitude: 4352
 		VerticalRateOfTurn: 220
 		HorizontalRateOfTurn: 220

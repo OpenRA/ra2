@@ -49,12 +49,12 @@ crate:
 		Sequence: reveal-map
 	LevelUpCrateAction:
 		SelectionShares: 25
-	GiveMcvCrateAction@soviets:
+	GiveBaseBuilderCrateAction@soviets:
 		SelectionShares: 0
 		NoBaseSelectionShares: 150
 		ValidFactions: cuba, libya, iraq, russia
 		Units: smcv
-	GiveMcvCrateAction@allied:
+	GiveBaseBuilderCrateAction@allied:
 		SelectionShares: 0
 		NoBaseSelectionShares: 150
 		ValidFactions: america, germany, england, france, korea
