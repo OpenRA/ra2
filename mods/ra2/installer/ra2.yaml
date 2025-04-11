@@ -1,9 +1,18 @@
 ra2: Red Alert 2 (Allied or Soviet Disc, English)
+	Type: Disc
 	IDFiles:
 		README.txt: e125e2742509d73b20dc4aa65b22497c805cd6f5
 	Install:
-		copy: .
-			^SupportDir|Content/ra2/theme.mix: theme.mix
-		extract-mscab: INSTALL/Game1.CAB
-			^SupportDir|Content/ra2/ra2.mix: ra2.mix
-			^SupportDir|Content/ra2/language.mix: language.mix
+		# Base game files:
+		ContentPackage:
+			Name: base
+			Actions:
+				ExtractMscab: INSTALL/Game1.CAB
+					^SupportDir|Content/ra2/ra2.mix: ra2.mix
+					^SupportDir|Content/ra2/language.mix: language.mix
+		# Game music (optional):
+		ContentPackage:
+			Name: music
+			Actions:
+				Copy: .
+					^SupportDir|Content/ra2/theme.mix: theme.mix
