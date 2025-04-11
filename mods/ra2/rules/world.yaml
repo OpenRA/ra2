@@ -266,13 +266,13 @@ World:
 	CreateMapPlayers:
 	StartingUnits@amcv:
 		Class: none
-		ClassName: MCV Only
+		ClassName: options-starting-units.mcv-only
 		Factions: allies, america, germany, england, france, korea
 		BaseActor: amcv
 		BaseActorFacing: 896
 	StartingUnits@lightallies:
 		Class: light
-		ClassName: Light Support
+		ClassName: options-starting-units.light
 		Factions: allies, america, germany, england, france, korea
 		BaseActor: amcv
 		BaseActorFacing: 896
@@ -282,7 +282,7 @@ World:
 		OuterSupportRadius: 5
 	StartingUnits@mediumallies:
 		Class: medium
-		ClassName: Medium Support
+		ClassName: options-starting-units.medium
 		Factions: allies, america, germany, england, france, korea
 		BaseActor: amcv
 		BaseActorFacing: 896
@@ -292,7 +292,7 @@ World:
 		OuterSupportRadius: 5
 	StartingUnits@heavyallies:
 		Class: heavy
-		ClassName: Heavy Support
+		ClassName: options-starting-units.heavy
 		Factions: allies, america, germany, england, france, korea
 		BaseActor: amcv
 		BaseActorFacing: 896
@@ -302,13 +302,13 @@ World:
 		OuterSupportRadius: 5
 	StartingUnits@smcv:
 		Class: none
-		ClassName: MCV Only
+		ClassName: options-starting-units.mcv-only
 		Factions: soviets, cuba, libya, iraq, russia
 		BaseActor: smcv
 		BaseActorFacing: 896
 	StartingUnits@lightsoviets:
 		Class: light
-		ClassName: Light Support
+		ClassName: options-starting-units.light
 		Factions: soviets, cuba, libya, iraq, russia
 		BaseActor: smcv
 		BaseActorFacing: 896
@@ -318,7 +318,7 @@ World:
 		OuterSupportRadius: 5
 	StartingUnits@mediumsoviets:
 		Class: medium
-		ClassName: Medium Support
+		ClassName: options-starting-units.medium
 		Factions: soviets, cuba, libya, iraq, russia
 		BaseActor: smcv
 		BaseActorFacing: 896
@@ -328,7 +328,7 @@ World:
 		OuterSupportRadius: 5
 	StartingUnits@heavysoviets:
 		Class: heavy
-		ClassName: Heavy Support
+		ClassName: options-starting-units.heavy
 		Factions: soviets, cuba, libya, iraq, russia
 		BaseActor: smcv
 		BaseActorFacing: 896

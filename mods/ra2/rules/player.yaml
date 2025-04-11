@@ -97,8 +97,8 @@ Player:
 		FogCheckboxDisplayOrder: 3
 	LobbyPrerequisiteCheckbox@GLOBALFACTUNDEPLOY:
 		ID: factundeploy
-		Label: Redeployable MCVs
-		Description: Allow undeploying Construction Yard.
+		Label: checkbox-redeployable-mcvs.label
+		Description: checkbox-redeployable-mcvs.description
 		Enabled: True
 		DisplayOrder: 7
 		Prerequisites: global-factundeploy
@@ -115,19 +115,19 @@ Player:
 		ArrowSequence:
 		CircleSequence:
 	ProvidesTechPrerequisite@infonly:
-		Name: Infantry Only
+		Name: options-tech-level.infantry-only
 		Prerequisites: techlevel.infonly
 		Id: infantryonly
 	ProvidesTechPrerequisite@low:
-		Name: Low
+		Name: options-tech-level.low
 		Prerequisites: techlevel.infonly, techlevel.low
 		Id: low
 	ProvidesTechPrerequisite@medium:
-		Name: Medium
+		Name: options-tech-level.medium
 		Prerequisites: techlevel.infonly, techlevel.low, techlevel.medium
 		Id: medium
 	ProvidesTechPrerequisite@unrestricted:
-		Name: Unrestricted
+		Name: options-tech-level.unrestricted
 		Prerequisites: techlevel.infonly, techlevel.low, techlevel.medium, techlevel.unrestricted
 		Id: unrestricted
 	GrantConditionOnPrerequisiteManager:
