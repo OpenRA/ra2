@@ -933,6 +933,7 @@ namisl:
 		PauseOnCondition: lowpower
 		SelectTargetSpeechNotification: SelectTarget
 		MissileImage: atomic
+		CircleRanges: 9c0, 8c0, 7c0, 6c0, 5c0, 4c0, 3c0, 2c0, 1c0
 	WithSupportPowerActivationAnimation:
 	SpawnSurvivors:
 		DeathTypes: ExplosionDeath, BulletDeath
