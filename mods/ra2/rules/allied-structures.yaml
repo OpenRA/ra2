@@ -162,6 +162,7 @@ gapile:
 		Path: 2,3
 		Palette: mouse
 		IsPlayerPalette: false
+		Notification: NewRallyPointEstablished
 	CommandBarBlacklist:
 		DisableStop: false
 	Exit@0_n1:
@@ -413,6 +414,7 @@ gaweap:
 		Path: 5,1
 		Palette: mouse
 		IsPlayerPalette: false
+		Notification: NewRallyPointEstablished
 	CommandBarBlacklist:
 		DisableStop: false
 	Exit@1:
@@ -584,6 +586,7 @@ gayard:
 		Path: 5,1
 		Palette: mouse
 		IsPlayerPalette: false
+		Notification: NewRallyPointEstablished
 	CommandBarBlacklist:
 		DisableStop: false
 	RepairsUnits:
@@ -635,6 +638,7 @@ gadept:
 	RallyPoint:
 		Palette: mouse
 		IsPlayerPalette: false
+		Notification: NewRallyPointEstablished
 	CommandBarBlacklist:
 		DisableStop: false
 	RepairsUnits:

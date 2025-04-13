@@ -121,6 +121,7 @@ cahosp:
 	RepairsUnits:
 		StartRepairingNotification:
 	RallyPoint:
+		Notification: NewRallyPointEstablished
 	CommandBarBlacklist:
 		DisableStop: false
 	WithIdleOverlay:
@@ -164,6 +165,7 @@ caoutp:
 	RallyPoint:
 		Palette: mouse
 		IsPlayerPalette: false
+		Notification: NewRallyPointEstablished
 	CommandBarBlacklist:
 		DisableStop: false
 	RepairsUnits:

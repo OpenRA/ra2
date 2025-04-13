@@ -197,6 +197,7 @@ nahand:
 		Path: 3,3
 		Palette: mouse
 		IsPlayerPalette: false
+		Notification: NewRallyPointEstablished
 	CommandBarBlacklist:
 		DisableStop: false
 	WithTextDecoration@primary:
@@ -361,6 +362,7 @@ naweap:
 		Path: 6,1
 		Palette: mouse
 		IsPlayerPalette: false
+		Notification: NewRallyPointEstablished
 	CommandBarBlacklist:
 		DisableStop: false
 	Exit@1:
@@ -528,6 +530,7 @@ nayard:
 		Path: 5,1
 		Palette: mouse
 		IsPlayerPalette: false
+		Notification: NewRallyPointEstablished
 	CommandBarBlacklist:
 		DisableStop: false
 	RepairsUnits:
@@ -583,6 +586,7 @@ nadept:
 	RallyPoint:
 		Palette: mouse
 		IsPlayerPalette: false
+		Notification: NewRallyPointEstablished
 	CommandBarBlacklist:
 		DisableStop: false
 	RepairsUnits:
@@ -761,6 +765,7 @@ naclon:
 		Path: 3,3
 		Palette: mouse
 		IsPlayerPalette: false
+		Notification: NewRallyPointEstablished
 	CommandBarBlacklist:
 		DisableStop: false
 	ClonesProducedUnits:
