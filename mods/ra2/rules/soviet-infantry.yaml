@@ -7,7 +7,7 @@ e2:
 		Queue: Infantry
 		Prerequisites: ~nahand
 		BuildPaletteOrder: 20
-		Description: Cheap rifle infantry.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
+		Description: actor-e2.description
 	Valued:
 		Cost: 100
 	UpdatesPlayerStatistics:
@@ -17,7 +17,7 @@ e2:
 		PlayerExperience: 5
 		Voice: Move
 	Tooltip:
-		Name: Conscript
+		Name: actor-e2.name
 	Selectable:
 		Bounds: 482, 1448, 0, -530
 	Health:
@@ -53,7 +53,7 @@ flakt:
 		Queue: Infantry
 		Prerequisites: naradr, ~nahand
 		BuildPaletteOrder: 70
-		Description: Anti-Air/Anti-Infantry unit.\n  Strong vs Aircraft, Infantry\n  Weak vs Vehicles
+		Description: actor-flakt.description
 	Valued:
 		Cost: 300
 	UpdatesPlayerStatistics:
@@ -63,7 +63,7 @@ flakt:
 		PlayerExperience: 5
 		Voice: Move
 	Tooltip:
-		Name: Flak Trooper
+		Name: actor-flakt.name
 	Selectable:
 		Bounds: 482, 1448, 0, -530
 	Health:
@@ -115,7 +115,7 @@ shk:
 		BuildAtProductionType: Infantry
 		Prerequisites: ~nahand
 		BuildPaletteOrder: 50
-		Description: Special armored unit using electricity.\n  Strong vs Infantry, Light armor\n  Weak vs Tanks, Aircraft\nSpecial ability: Charge tesla coils
+		Description: actor-shk.description
 	Valued:
 		Cost: 500
 	UpdatesPlayerStatistics:
@@ -125,7 +125,7 @@ shk:
 		PlayerExperience: 25
 		Voice: Move
 	Tooltip:
-		Name: Tesla Trooper
+		Name: actor-shk.name
 	Selectable:
 		Bounds: 482, 1448, 0, -530
 	Health:
@@ -178,7 +178,7 @@ terror:
 		BuildAtProductionType: Infantry
 		BuildPaletteOrder: 90
 		Prerequisites: naradr, ~infantry.cuba
-		Description: Carries C4 charges taped to his body and kamikazes enemies\nblowing them up quickly and efficiently.\n  Strong vs Ground units\n  Weak vs Aircraft
+		Description: actor-terror.description
 	Valued:
 		Cost: 200
 	UpdatesPlayerStatistics:
@@ -188,7 +188,7 @@ terror:
 		PlayerExperience: 10
 		Voice: Move
 	Tooltip:
-		Name: Terrorist
+		Name: actor-terror.name
 	Selectable:
 		Bounds: 482, 1448, 0, -530
 	Health:
@@ -201,7 +201,7 @@ terror:
 		Type: Flak
 	Passenger:
 		CustomPipType: red
-	Explodes:
+	FireWarheadsOnDeath:
 		Weapon: TerrorBomb
 		EmptyWeapon: TerrorBomb
 	AttackFrontal:
@@ -234,7 +234,7 @@ deso:
 		BuildAtProductionType: Infantry
 		BuildPaletteOrder: 120
 		Prerequisites: naradr, ~infantry.iraq
-		Description: Carries a radiation-emitting weapon.\nCan deploy for area-of-effect damage.\n  Strong vs Infantry, Light armor\n  Weak vs Tanks, Aircraft
+		Description: actor-deso.description
 	Valued:
 		Cost: 600
 	UpdatesPlayerStatistics:
@@ -244,7 +244,7 @@ deso:
 		PlayerExperience: 10
 		Voice: Move
 	Tooltip:
-		Name: Desolator
+		Name: actor-deso.name
 	Selectable:
 		Bounds: 482, 1448, 0, -530
 	Health:
@@ -305,7 +305,7 @@ ivan:
 		BuildAtProductionType: Infantry
 		BuildPaletteOrder: 110
 		Prerequisites: naradr, ~nahand
-		Description: Specialist for explosives. Can plant a Bomb on anything, even Cows.
+		Description: actor-ivan.description
 	Valued:
 		Cost: 600
 	UpdatesPlayerStatistics:
@@ -315,7 +315,7 @@ ivan:
 		PlayerExperience: 30
 		Voice: Move
 	Tooltip:
-		Name: Crazy Ivan
+		Name: actor-ivan.name
 	Selectable:
 		Bounds: 482, 1448, 0, -530
 	Voiced:
@@ -328,7 +328,7 @@ ivan:
 		Type: None
 	Passenger:
 		CustomPipType: red
-	Explodes:
+	FireWarheadsOnDeath:
 		Weapon: IvanDeath
 		EmptyWeapon: IvanDeath
 	Armament@primary:
@@ -354,9 +354,9 @@ civan:
 	Buildable:
 		BuildPaletteOrder: 180
 		Prerequisites: ~nahand, ~allies.tech.infiltrated
-		Description: Specialist for explosives. Can plant a Bomb on anything, even Cows. Can teleport on anywhere on the map.
+		Description: actor-civan.description
 	Tooltip:
-		Name: Chrono Ivan
+		Name: actor-civan.name
 	Valued:
 		Cost: 1000
 	UpdatesPlayerStatistics:
@@ -374,7 +374,7 @@ civan:
 		Voice: Move
 		ChargeDelay: 300
 		TargetCursor: chronosphere
-	-Explodes:
+	-FireWarheadsOnDeath:
 
 yuri:
 	Inherits: ^Infantry
@@ -384,7 +384,7 @@ yuri:
 		BuildAtProductionType: Infantry
 		BuildPaletteOrder: 160
 		Prerequisites: natech, ~nahand
-		Description: Psychic infantry. Can mind control enemy units.\nCan be deployed to unleash a powerful psychic wave.\n  Strong vs Infantry, Vehicles\n  Weak vs Terror Drones, Aircraft, Buildings
+		Description: actor-yuri.description
 	Valued:
 		Cost: 1200
 	UpdatesPlayerStatistics:
@@ -394,7 +394,7 @@ yuri:
 		PlayerExperience: 60
 		Voice: Move
 	Tooltip:
-		Name: Yuri
+		Name: actor-yuri.name
 	Selectable:
 		Bounds: 482, 1448, 0, -530
 	Voiced:
@@ -462,9 +462,9 @@ yuripr:
 		BuildLimit: 1
 		BuildPaletteOrder: 290
 		Prerequisites: ~nahand, ~soviets.tech.infiltrated
-		Description: Psychic infantry. Can mind control enemy units from a great range.\nCan be deployed to unleash a powerful psychic wave.\n  Strong vs Infantry, Vehicles\n  Weak vs Terror Drones, Aircraft, Buildings\n\nMaximum 1 can be trained.
+		Description: actor-yuripr.description
 	Tooltip:
-		Name: Yuri Prime
+		Name: actor-yuripr.name
 	Valued:
 		Cost: 2000
 	UpdatesPlayerStatistics:

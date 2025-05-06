@@ -7,7 +7,7 @@ Please note that this repository is specifically for the scripts and infrastruct
 When developing new features, it is important to make sure that they work on all our supported platforms.  Right now, this means Windows >= 7 (with PowerShell >= 3), macOS >= 10.7, and Linux.  We would like to also support *BSD, but do not currently have a means to test this.
 
 Some issues to be aware of include:
-* Use http://www.shellcheck.net/ to confirm POSIX compatibility of *.sh scripts.
+* Use https://www.shellcheck.net/ to confirm POSIX compatibility of *.sh scripts.
 * Avoid non-standard gnu extensions to common Unix tools (e.g. the `-f` flag from GNU `readlink`)
 
 While your pull-request is in review it will be helpful if you join IRC to discuss the changes.

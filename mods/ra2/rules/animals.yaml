@@ -1,7 +1,7 @@
 cow:
 	Inherits: ^Animal
 	Tooltip:
-		Name: Cow
+		Name: actor-cow-name
 	Health:
 		HP: 150
 	RevealsShroud:
@@ -20,7 +20,7 @@ all:
 	Inherits: ^Animal
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Tooltip:
-		Name: Alligator
+		Name: actor-all-name
 	Voiced:
 		VoiceSet: AlligatorVoice
 	Armament:
@@ -30,7 +30,7 @@ polarb:
 	Inherits: ^Animal
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Tooltip:
-		Name: Polar Bear
+		Name: actor-polarb-name
 	Voiced:
 		VoiceSet: BearVoice
 	Armament:
@@ -40,7 +40,7 @@ josh:
 	Inherits: ^Animal
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Tooltip:
-		Name: Monkey
+		Name: actor-josh-name
 	Voiced:
 		VoiceSet: ChimpanzeeVoice
 	Armament:

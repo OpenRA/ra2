@@ -61,7 +61,7 @@ namespace OpenRA.Mods.RA2.Graphics
 
 			var cycleCount = sourceToTarget.Length / wavelength.Length;
 			if (sourceToTarget.Length % wavelength.Length != 0)
-				cycleCount += 1; // I'm emulating Math.Ceil
+				cycleCount++; // I'm emulating Math.Ceil
 
 			var screenWidth = wr.ScreenVector(new WVec(width, WDist.Zero, WDist.Zero))[0];
 

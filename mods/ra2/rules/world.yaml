@@ -4,6 +4,8 @@
 	MusicPlaylist:
 		VictoryMusic: score
 		DefeatMusic: score
+	VoxelCache:
+	ModelRenderer:
 	ActorMap:
 	ScreenMap:
 	TerrainGeometryOverlay:
@@ -13,11 +15,11 @@
 			Ore:
 				Sequences: tib01, tib02, tib03, tib04, tib05, tib06, tib07, tib08, tib09, tib10, tib11, tib12, tib13, tib14, tib15, tib16, tib17, tib18, tib19, tib20
 				Palette: resource
-				Name: Valuable Minerals
+				Name: resource-minerals
 			Gems:
 				Sequences: gem01, gem02, gem03, gem04, gem05, gem06, gem07, gem08, gem09, gem10, gem11, gem12
 				Palette: resource
-				Name: Valuable Minerals
+				Name: resource-minerals
 	TerrainLighting:
 	DebugVisualizations:
 	Locomotor@FOOT:
@@ -122,68 +124,68 @@
 		FogPalette: shroud
 		ShroudPalette: shroud
 	Faction@random:
-		Name: Random
+		Name: meta-baseworld.faction-random-name
 		InternalName: Random
 		RandomFactionMembers: random-allies, random-soviets
 		Side: Randoms
-		Description: Random Country\nA random country will be chosen when the game starts.
+		Description: meta-baseworld.faction-random-description
 	Faction@allies:
-		Name: Allies
+		Name: meta-baseworld.faction-allies-name
 		InternalName: random-allies
 		RandomFactionMembers: america, germany, england, france, korea
 		Side: Randoms
-		Description: Random Allied Country\nA random Allied country will be chosen when the game starts.
+		Description: meta-baseworld.faction-allies-description
 	Faction@soviets:
-		Name: Soviets
+		Name: meta-baseworld.faction-soviets-name
 		InternalName: random-soviets
 		RandomFactionMembers: cuba, libya, iraq, russia
 		Side: Randoms
-		Description: Random Soviet Country\nA random Soviet country will be chosen when the game starts.
+		Description: meta-baseworld.faction-soviets-description
 	Faction@1:
-		Name: America
+		Name: meta-baseworld.faction-1-name
 		InternalName: america
 		Side: Allies
-		Description: America\nSpecial Ability: Paratroopers
+		Description: meta-baseworld.faction-1-description
 	Faction@2:
-		Name: Germany
+		Name: meta-baseworld.faction-2-name
 		InternalName: germany
 		Side: Allies
-		Description: Germany\nSpecial Vehicle: Tank Destroyer
+		Description: meta-baseworld.faction-2-description
 	Faction@3:
-		Name: England
+		Name: meta-baseworld.faction-3-name
 		InternalName: england
 		Side: Allies
-		Description: England\nSpecial Infantry: Sniper
+		Description: meta-baseworld.faction-3-description
 	Faction@4:
-		Name: France
+		Name: meta-baseworld.faction-4-name
 		InternalName: france
 		Side: Allies
-		Description: France\nSpecial Building: Grand Cannon
+		Description: meta-baseworld.faction-4-description
 	Faction@5:
-		Name: Korea
+		Name: meta-baseworld.faction-5-name
 		InternalName: korea
 		Side: Allies
-		Description: Korea\nSpecial Aircraft: Black Eagle
+		Description: meta-baseworld.faction-5-description
 	Faction@6:
-		Name: Cuba
+		Name: meta-baseworld.faction-6-name
 		InternalName: cuba
 		Side: Soviets
-		Description: Cuba\nSpecial Infantry: Terrorist
+		Description: meta-baseworld.faction-6-description
 	Faction@7:
-		Name: Libya
+		Name: meta-baseworld.faction-7-name
 		InternalName: libya
 		Side: Soviets
-		Description: Libya\nSpecial Vehicle: Demolition Truck
+		Description: meta-baseworld.faction-7-description
 	Faction@8:
-		Name: Iraq
+		Name: meta-baseworld.faction-8-name
 		InternalName: iraq
 		Side: Soviets
-		Description: Iraq\nSpecial Infantry: Desolator
+		Description: meta-baseworld.faction-8-description
 	Faction@9:
-		Name: Russia
+		Name: meta-baseworld.faction-9-name
 		InternalName: russia
 		Side: Soviets
-		Description: Russia\nSpecial Vehicle: Tesla Tank
+		Description: meta-baseworld.faction-9-description
 	CliffBackImpassabilityLayer:
 	Selection:
 	ControlGroups:
@@ -393,7 +395,7 @@ EditorWorld:
 				TerrainType: Gems
 				AllowedTerrainTypes: Clear, Rough, Road
 				MaxDensity: 12
-	EditorSelectionLayer:
+	MarkerLayerOverlay:
 	LoadWidgetAtGameStart:
 	EditorActionManager:
 	BuildableTerrainOverlay:

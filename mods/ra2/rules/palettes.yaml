@@ -163,12 +163,12 @@
 	VoxelNormalsPalette@ts-normals:
 		Name: ts-normals
 		Type: TiberianSun
-	MenuPaletteEffect:
+	MenuPostProcessEffect:
 	PaletteFromPaletteWithAlpha@effect75alpha:
 		Name: effect75alpha
 		BasePalette: ra
 		Alpha: 0.75
-	FlashPaletteEffect@NUKE:
+	FlashPostProcessEffect@NUKE:
 		Type: Nuke
 		Length: 90
 	WeatherPaletteEffect@LIGHTNINGSTORM:

@@ -19,7 +19,7 @@ using OpenRA.Traits;
 namespace OpenRA.Mods.RA2.Projectiles
 {
 	[Desc("Not a sprite, but an engine effect.")]
-	public class RadBeamInfo : IProjectileInfo
+	public sealed class RadBeamInfo : IProjectileInfo
 	{
 		[Desc("The thickness of the beam.")]
 		public readonly WDist Thickness = new(16);
@@ -62,7 +62,7 @@ namespace OpenRA.Mods.RA2.Projectiles
 		}
 	}
 
-	public class RadBeam : IProjectile
+	public sealed class RadBeam : IProjectile
 	{
 		readonly ProjectileArgs args;
 		readonly RadBeamInfo info;
@@ -117,7 +117,8 @@ namespace OpenRA.Mods.RA2.Projectiles
 					? info.Amplitude * ticks / info.BeamDuration
 					: info.Amplitude;
 
-				yield return new RadBeamRenderable(args.Source, info.ZOffset, target - args.Source, info.Thickness, info.Color, amp, info.WaveLength, info.QuantizationCount);
+				yield return new RadBeamRenderable(args.Source, info.ZOffset, target - args.Source,
+					info.Thickness, info.Color, amp, info.WaveLength, info.QuantizationCount);
 			}
 
 			if (hitanim != null)

@@ -5,11 +5,11 @@ amcv:
 		Queue: Vehicle
 		BuildPaletteOrder: 80
 		Prerequisites: ~gaweap, gadept
-		Description: Deploys into a Construction Yard.
+		Description: actor-amcv.description
 	Valued:
 		Cost: 3000
 	Tooltip:
-		Name: Mobile Construction Vehicle
+		Name: actor-amcv.name
 	Selectable:
 		Priority: 4
 		Bounds: 1641, 2702, 0, -337
@@ -46,24 +46,22 @@ cmin:
 		Queue: Vehicle
 		BuildPaletteOrder: 10
 		Prerequisites: ~gaweap, refinery
-		Description: Gathers Ore.\n  Unarmed\nSpecial ability: Can teleport to own refineries
+		Description: actor-cmin.description
 	Valued:
 		Cost: 1400
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Tooltip:
-		Name: Chrono Miner
+		Name: actor-cmin.name
 	Selectable:
 		Priority: 7
 		Bounds: 1544, 2509, 0, -289
 	Harvester:
-		Capacity: 20
 		Resources: Ore, Gems
 		BaleUnloadDelay: 1
 		SearchFromProcRadius: 24
 		SearchFromHarvesterRadius: 12
 		HarvestVoice: Move
-		DeliverVoice: Move
 	ChronoResourceDelivery:
 		WarpInSequence: warpout
 		WarpInSound: vchrtele.wav
@@ -91,7 +89,7 @@ cmin:
 	Voiced:
 		VoiceSet: ChronoMinerVoice
 	HitShape:
-	WithHarvesterPipsDecoration:
+	WithStoresResourcesPipsDecoration:
 		Position: BottomLeft
 		RequiresSelection: true
 		PipCount: 7
@@ -99,6 +97,11 @@ cmin:
 		ResourceSequences:
 			Ore: pip-yellow
 			Gems: pip-red
+	StoresResources:
+		Capacity: 20
+		Resources: Ore, Gems
+	DockClientManager:
+		Voice: Move
 
 mtnk:
 	Inherits: ^Vehicle
@@ -109,12 +112,12 @@ mtnk:
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Tooltip:
-		Name: Grizzly Battle Tank
+		Name: actor-mtnk.name
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 20
 		Prerequisites: ~gaweap
-		Description: Allied Main Battle Tank.\n  Strong vs Vehicles, Ships\n  Weak vs Infantry, Aircraft
+		Description: actor-mtnk.description
 	Mobile:
 		Speed: 105
 		TurnSpeed: 20
@@ -161,14 +164,14 @@ tnkd:
 	Valued:
 		Cost: 900
 	Tooltip:
-		Name: Tank Destroyer
+		Name: actor-tnkd.name
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 40
 		Prerequisites: ~vehicles.germany
-		Description: Special anti-armor unit.\n  Strong vs Vehicles, Ships\n  Weak vs Infantry, Aircraft
+		Description: actor-tnkd.description
 	Mobile:
 		Speed: 75
 		TurnSpeed: 20
@@ -215,12 +218,12 @@ fv:
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Tooltip:
-		Name: Infantry Fighting Vehicle
+		Name: actor-fv.name
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 30
 		Prerequisites: ~gaweap
-		Description: Multi-Purpose Vehicle.\nWithout passenger:\n  Strong vs Infantry, Aircraft\n  Weak vs Vehicles, Ships\nSpecial Ability: Armament depends on passenger.
+		Description: actor-fv.description
 	Mobile:
 		Speed: 150
 		TurnSpeed: 20
@@ -324,9 +327,9 @@ fv:
 	RenderSprites:
 	RenderVoxels:
 	WithVoxelBody:
-	Explodes:
+	FireWarheadsOnDeath:
 		RequiresCondition: !ifv-demo
-	Explodes@demo:
+	FireWarheadsOnDeath@demo:
 		Weapon: CRNuke
 		EmptyWeapon: CRNuke
 		RequiresCondition: ifv-demo
@@ -365,13 +368,13 @@ sref:
 		Queue: Vehicle
 		BuildPaletteOrder: 50
 		Prerequisites: gatech, ~gaweap
-		Description: Fires deadly beams of light.\n  Strong vs Infantry, Vehicles\n  Weak vs Aircraft
+		Description: actor-sref.description
 	Valued:
 		Cost: 1200
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Tooltip:
-		Name: Prism Tank
+		Name: actor-sref.name
 	Selectable:
 		Bounds: 1544, 2509, 0, -482
 	Health:
@@ -398,7 +401,7 @@ sref:
 	AttackTurreted:
 		Voice: Attack
 	AutoTarget:
-	Explodes:
+	FireWarheadsOnDeath:
 		Weapon: UnitExplodeSmall
 		EmptyWeapon: UnitExplodeSmall
 	RenderSprites:
@@ -438,17 +441,17 @@ mgtk:
 		Queue: Vehicle
 		BuildPaletteOrder: 70
 		Prerequisites: gatech, ~gaweap
-		Description: As tree disguised tank.\n  Strong vs Infantry, Vehicles\n  Weak vs Aircraft
+		Description: actor-mgtk.description
 	Valued:
 		Cost: 1000
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Tooltip:
-		Name: Mirage Tank
+		Name: actor-mgtk.name
 		RequiresCondition: !tree
 	MirageTooltip@Tree:
-		Name: Mirage Tank
-		GenericName: Tree
+		Name: actor-mgtk.miragetooltip-tree-name
+		GenericName: actor-mgtk.miragetooltip-tree-generic-name
 		GenericVisibility: Enemy, Neutral
 		RequiresCondition: tree
 	Mirage:
@@ -484,7 +487,7 @@ mgtk:
 	WithMuzzleOverlay:
 	AutoTarget:
 		AllowMovement: false
-	Explodes:
+	FireWarheadsOnDeath:
 		Weapon: UnitExplodeSmall
 		EmptyWeapon: UnitExplodeSmall
 	RenderSprites:

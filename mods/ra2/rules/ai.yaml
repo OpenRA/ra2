@@ -1,6 +1,6 @@
 Player:
 	ModularBot@testai:
-		Name: Test AI
+		Name: actor-player-modularbot-testai-name
 		Type: test
 	GrantConditionOnBotOwner@test:
 		Condition: enable-test-ai

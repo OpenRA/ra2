@@ -1748,7 +1748,7 @@ Actors:
 
 Rules:
 	World:
-		GlobalLightingPaletteEffect:
+		TintPostProcessEffect:
 			Ambient: 0.85
 			Green: 0.92
 			Blue: 0.75

@@ -5,7 +5,7 @@ gacnst:
 		Queue: Building
 		BuildPaletteOrder: 1000
 		Prerequisites: ~disabled
-		Description: Builds base structures.
+		Description: actor-gacnst.description
 	Building:
 		Footprint: xxxx xxxx xxxx xxxx
 		Dimensions: 4,4
@@ -22,7 +22,7 @@ gacnst:
 	Production:
 		Produces: Building,Support
 	Tooltip:
-		Name: Construction Yard
+		Name: actor-gacnst.name
 	BaseBuilding:
 	BaseProvider:
 		Range: 0
@@ -89,13 +89,13 @@ gapowr:
 		Queue: Building
 		BuildPaletteOrder: 10
 		Prerequisites: ~structures.allies
-		Description: Provides power for other structures.
+		Description: actor-gapowr.description
 	IsometricSelectable:
 		Height: 60
 	Valued:
 		Cost: 800
 	Tooltip:
-		Name: Power Plant
+		Name: actor-gapowr.name
 	ProvidesPrerequisite:
 		Prerequisite: power
 	Building:
@@ -136,13 +136,13 @@ gapile:
 		Queue: Building
 		BuildPaletteOrder: 20
 		Prerequisites: power, ~structures.allies
-		Description: Trains infantry.
+		Description: actor-gapile.description
 	IsometricSelectable:
 		Height: 60
 	Valued:
 		Cost: 500
 	Tooltip:
-		Name: Barracks
+		Name: actor-gapile.name
 	ProvidesPrerequisite:
 		Prerequisite: barracks
 	ProvidesPrerequisite@england:
@@ -212,13 +212,13 @@ garefn:
 		Queue: Building
 		BuildPaletteOrder: 30
 		Prerequisites: power, ~structures.allies
-		Description: Processes ore into credits.
+		Description: actor-garefn.description
 	IsometricSelectable:
 		Height: 60
 	Valued:
 		Cost: 2000
 	Tooltip:
-		Name: Ore Refinery
+		Name: actor-garefn.name
 	ProvidesPrerequisite:
 		Prerequisite: refinery
 	ProvidesPrerequisite@default:
@@ -232,12 +232,8 @@ garefn:
 	RevealsShroud:
 		Range: 6c0
 	Refinery:
-		DockOffset: 3,1
 		ShowTicks: True
-		TickLifetime: 30
-		TickVelocity: 1
 		TickRate: 10
-		DockAngle: 640
 		UseStorage: false
 	CustomSellValue:
 		Value: 300
@@ -265,6 +261,10 @@ garefn:
 	SpawnSurvivors:
 		DeathTypes: ExplosionDeath, BulletDeath
 		Actors: e1, e1
+	DockHost:
+		Type: Unload
+		DockAngle: 640
+		DockOffset: 1086,1086,0
 
 gaairc:
 	Inherits: ^BaseBuilding
@@ -273,11 +273,11 @@ gaairc:
 		Queue: Building
 		BuildPaletteOrder: 60
 		Prerequisites: garefn, ~structures.allies, ~!structures.america
-		Description: Provides radar\nSupports 4 aircraft.
+		Description: actor-gaairc.description
 	Valued:
 		Cost: 1000
 	Tooltip:
-		Name: Airforce Command Headquarters
+		Name: actor-gaairc.name
 	ProvidesPrerequisite:
 		Prerequisite: radar
 	ProvidesPrerequisite@allies:
@@ -361,7 +361,7 @@ gaairc:
 amradr:
 	Inherits: gaairc
 	Tooltip:
-		Name: American Airforce Command Headquarters
+		Name: actor-amradr.name
 	Buildable:
 		Prerequisites: garefn, ~structures.america
 	WithSpriteBody:
@@ -375,8 +375,8 @@ amradr:
 		OrderName: AmericanParatroopers
 		Icon: airborne
 		ChargeInterval: 9000
-		Name: American Paratroopers
-		Description: A Cargo Plane drops eight GIs\nanywhere on the map.
+		Name: actor-amradr.paratrooperspower-paratroopers-name
+		Description: actor-amradr.paratrooperspower-paratroopers-description
 		DropItems: e1,e1,e1,e1,e1,e1,e1,e1
 		QuantizedFacings: 8
 		UnitType: pdplane
@@ -390,13 +390,13 @@ gaweap:
 		Queue: Building
 		BuildPaletteOrder: 40
 		Prerequisites: garefn, gapile, ~structures.allies
-		Description: Produces vehicles.
+		Description: actor-gaweap.description
 	IsometricSelectable:
 		Height: 60
 	Valued:
 		Cost: 2000
 	Tooltip:
-		Name: War Factory
+		Name: actor-gaweap.name
 	ProvidesPrerequisite@germany:
 		Prerequisite: vehicles.germany
 		Factions: germany
@@ -482,12 +482,12 @@ gayard:
 	Valued:
 		Cost: 1000
 	Tooltip:
-		Name: Naval Yard
+		Name: actor-gayard.name
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 50
 		Prerequisites: power, refinery, ~structures.allies
-		Description: Produces and repairs ships,\nsubmarines, transports, and other naval units.
+		Description: actor-gayard.description
 	Targetable:
 		TargetTypes: Ground, Water, C4
 	ProvidesPrerequisite@default:
@@ -617,13 +617,13 @@ gadept:
 		Queue: Building
 		BuildPaletteOrder: 70
 		Prerequisites: gaweap, ~structures.allies
-		Description: Repairs vehicles and removes Terror Drones (for a price).
+		Description: actor-gadept.description
 	IsometricSelectable:
 		Height: 45
 	Valued:
 		Cost: 800
 	Tooltip:
-		Name: Service Depot
+		Name: actor-gadept.name
 	ProvidesPrerequisite@default:
 	Building:
 		Footprint: x== x== x==
@@ -669,13 +669,13 @@ gatech:
 		Queue: Building
 		BuildPaletteOrder: 80
 		Prerequisites: radar, gaweap, ~structures.allies
-		Description: Allows deployment of advanced units.
+		Description: actor-gatech.description
 	IsometricSelectable:
 		Height: 180
 	Valued:
 		Cost: 2000
 	Tooltip:
-		Name: Battle Lab
+		Name: actor-gatech.name
 	ProvidesPrerequisite@default:
 	Building:
 		Footprint: xx xx xx
@@ -708,9 +708,9 @@ gawall:
 		Queue: Support
 		BuildPaletteOrder: 10
 		Prerequisites: barracks, ~structures.allies
-		Description: Light wall.\nCrushable by vehicles.
+		Description: actor-gawall.description
 	Tooltip:
-		Name: Allied Wall
+		Name: actor-gawall.name
 
 gapill:
 	Inherits: ^SupportBuilding
@@ -719,11 +719,11 @@ gapill:
 		Queue: Support
 		BuildPaletteOrder: 20
 		Prerequisites: barracks, ~structures.allies
-		Description: Automated anti-infantry defense.
+		Description: actor-gapill.description
 	Valued:
 		Cost: 500
 	Tooltip:
-		Name: Pill Box
+		Name: actor-gapill.name
 	Building:
 		Footprint: x
 		Dimensions: 1, 1
@@ -761,11 +761,11 @@ nasam:
 		Queue: Support
 		BuildPaletteOrder: 30
 		Prerequisites: barracks, ~structures.allies
-		Description: Automated anti-aircraft defense.
+		Description: actor-nasam.description
 	Valued:
 		Cost: 1000
 	Tooltip:
-		Name: Patriot Missile System
+		Name: actor-nasam.name
 	Building:
 		Footprint: x
 		Dimensions: 1, 1
@@ -814,11 +814,11 @@ gtgcan:
 		Queue: Support
 		BuildPaletteOrder: 50
 		Prerequisites: radar, ~structures.france
-		Description: Automated, long ranged anti-ground defense.
+		Description: actor-gtgcan.description
 	Valued:
 		Cost: 2000
 	Tooltip:
-		Name: Grand Cannon
+		Name: actor-gtgcan.name
 	Building:
 		Footprint: xx xx
 		Dimensions: 2, 2
@@ -871,13 +871,13 @@ gaorep:
 		BuildPaletteOrder: 100
 		Prerequisites: garefn, gatech, ~structures.allies
 		BuildLimit: 1
-		Description: Refines all forms of income by 25%.
+		Description: actor-gaorep.description
 	IsometricSelectable:
 		Height: 60
 	Valued:
 		Cost: 2500
 	Tooltip:
-		Name: Ore Purifier
+		Name: actor-gaorep.name
 	Building:
 		Footprint: xxx xxx xxx
 		Dimensions: 3,3
@@ -905,13 +905,13 @@ gaspysat:
 		Queue: Support
 		BuildPaletteOrder: 70
 		Prerequisites: gatech, ~structures.allies
-		Description: Reveals the entire battlefield.
+		Description: actor-gaspysat.description
 	IsometricSelectable:
 		Height: 75
 	Valued:
 		Cost: 1500
 	Tooltip:
-		Name: Spy Satellite Uplink
+		Name: actor-gaspysat.name
 	Building:
 		Footprint: xx xx
 		Dimensions: 2,2
@@ -944,12 +944,12 @@ gagap:
 	Valued:
 		Cost: 1000
 	Tooltip:
-		Name: Gap Generator
+		Name: actor-gagap.name
 	Buildable:
 		Queue: Support
 		BuildPaletteOrder: 60
 		Prerequisites: gatech, ~structures.allies
-		Description: Obscures the enemy's view with shroud.\nRequires power to operate.
+		Description: actor-gagap.description
 	IsometricSelectable:
 		Height: 90
 	GrantConditionOnPowerState@LOWPOWER:
@@ -979,13 +979,13 @@ gaweat:
 		BuildPaletteOrder: 90
 		Prerequisites: gatech, ~structures.allies, ~techlevel.unrestricted
 		BuildLimit: 1
-		Description: Play God with deadly weather!
+		Description: actor-gaweat.description
 	IsometricSelectable:
 		Height: 75
 	Valued:
 		Cost: 5000
 	Tooltip:
-		Name: Weather Controller
+		Name: actor-gaweat.name
 	Building:
 		Footprint: xxx xxx xxx
 		Dimensions: 3,3
@@ -1009,8 +1009,8 @@ gaweat:
 		OrderName: WeatherControlDevice
 		ChargeInterval: 15000
 		Icon: lightningstorm
-		Name: Weather Storm
-		Description: Control the weather to destroy enemy forces.
+		Name: actor-gaweat.weathercontrolsupportpower-lightningstorm-name
+		Description: actor-gaweat.weathercontrolsupportpower-lightningstorm-description
 		InsufficientPowerSpeechNotification: WeathercontrolDeviceOffline
 		EndChargeSpeechNotification: LightningStormReady
 		SelectTargetSpeechNotification: SelectTarget
@@ -1035,14 +1035,14 @@ gacsph:
 		Queue: Support
 		BuildPaletteOrder: 80
 		Prerequisites: gatech, ~structures.allies, ~techlevel.unrestricted
-		Description: Allows teleporting units in a 3x3 array.
+		Description: actor-gacsph.description
 		BuildLimit: 1
 	IsometricSelectable:
 		Height: 45
 	Valued:
 		Cost: 2500
 	Tooltip:
-		Name: Chronosphere
+		Name: actor-gacsph.name
 	Building:
 		Footprint: xxx xxx xxx xxx
 		Dimensions: 4,3
@@ -1069,8 +1069,8 @@ gacsph:
 		OrderName: Chronoshift
 		Icon: chrono
 		ChargeInterval: 7500
-		Name: Chronosphere
-		Description: Teleports a group of units across\nthe map.
+		Name: actor-gacsph.chronoshiftpower-chronoshift-name
+		Description: actor-gacsph.chronoshiftpower-chronoshift-description
 		# Those sounds don't work: OpenRA/OpenRA#10540
 		# They also want to be played successive
 		#SelectTargetSound: schrlo1.wav, schrlo2a.wav schrlo2b.wav, schrlo2c.wav, schrlo3.wav
@@ -1096,11 +1096,11 @@ atesla:
 		Queue: Support
 		BuildPaletteOrder: 40
 		Prerequisites: power, radar, ~structures.allies
-		Description: Advanced base defense.\nRequires power to operate.\n  Strong vs Infantry, Vehicles\n  Weak vs Aircraft
+		Description: actor-atesla.description
 	Valued:
 		Cost: 1500
 	Tooltip:
-		Name: Prism Tower
+		Name: actor-atesla.name
 	Building:
 		Footprint: x
 		Dimensions: 1, 1
@@ -1142,28 +1142,28 @@ power:
 	AlwaysVisible:
 	Interactable:
 	Tooltip:
-		Name: Power Plant
+		Name: actor-power-name
 
 refinery:
 	AlwaysVisible:
 	Interactable:
 	Tooltip:
-		Name: Ore Refinery
+		Name: actor-refinery-name
 
 barracks:
 	AlwaysVisible:
 	Interactable:
 	Tooltip:
-		Name: Infantry Production
+		Name: actor-barracks-name
 
 radar:
 	AlwaysVisible:
 	Interactable:
 	Tooltip:
-		Name: Radar
+		Name: actor-radar-name
 
 repairpad:
 	AlwaysVisible:
 	Interactable:
 	Tooltip:
-		Name: Service Depot
+		Name: actor-repairpad-name

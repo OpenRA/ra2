@@ -5,7 +5,7 @@ engineer:
 		Queue: Infantry
 		Prerequisites: ~barracks
 		BuildPaletteOrder: 30
-		Description: Captures enemy structures.\n  Unarmed
+		Description: actor-engineer.description
 	Valued:
 		Cost: 500
 	UpdatesPlayerStatistics:
@@ -15,7 +15,7 @@ engineer:
 		PlayerExperience: 25
 		Voice: Move
 	Tooltip:
-		Name: Engineer
+		Name: actor-engineer.name
 	Selectable:
 		Bounds: 482, 1448, 0, -530
 	Health:
@@ -47,7 +47,7 @@ dog:
 		Queue: Infantry
 		Prerequisites: ~barracks
 		BuildPaletteOrder: 40
-		Description: Anti-infantry unit.\nCan detect cloaked units and spies.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
+		Description: actor-dog.description
 	Valued:
 		Cost: 200
 	UpdatesPlayerStatistics:
@@ -57,7 +57,7 @@ dog:
 		PlayerExperience: 10
 		Voice: Move
 	Tooltip:
-		Name: Attack Dog
+		Name: actor-dog.name
 	Selectable:
 		Bounds: 724, 1158, 0, -241
 	Health:
@@ -130,7 +130,7 @@ e1:
 		Queue: Infantry
 		Prerequisites: ~gapile
 		BuildPaletteOrder: 10
-		Description: General-purpose infantry.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
+		Description: actor-e1.description
 	Valued:
 		Cost: 200
 	UpdatesPlayerStatistics:
@@ -140,7 +140,7 @@ e1:
 		PlayerExperience: 10
 		Voice: Move
 	Tooltip:
-		Name: G.I.
+		Name: actor-e1.name
 	Selectable:
 		Bounds: 482, 1448, 0, -530
 	Health:
@@ -232,12 +232,12 @@ snipe:
 		PlayerExperience: 30
 		Voice: Move
 	Tooltip:
-		Name: Sniper
+		Name: actor-snipe.name
 	Buildable:
 		Queue: Infantry
 		BuildPaletteOrder: 80
 		Prerequisites: radar, ~infantry.england
-		Description: Special anti-infantry unit.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
+		Description: actor-snipe.description
 	Selectable:
 		Bounds: 482, 1448, 0, -530
 	Health:
@@ -271,7 +271,7 @@ spy:
 		BuildAtProductionType: Infantry
 		BuildPaletteOrder: 130
 		Prerequisites: gatech, ~gapile
-		Description: Infiltrates enemy structures for intel or\nsabotage. Exact effect depends on the\nbuilding infiltrated.\n  Unarmed\nSpecial Ability: Disguises
+		Description: actor-spy.description
 	Valued:
 		Cost: 1000
 	UpdatesPlayerStatistics:
@@ -281,8 +281,8 @@ spy:
 		PlayerExperience: 25
 		Voice: Move
 	DisguiseTooltip:
-		Name: Spy
-		GenericName: Soldier
+		Name: actor-spy.disguisetooltip-name
+		GenericName: actor-spy.disguisetooltip-generic-name
 	Selectable:
 		Bounds: 579, 1351, -24, -386
 	Health:
@@ -326,7 +326,7 @@ ghost:
 		BuildAtProductionType: Infantry
 		BuildPaletteOrder: 100
 		Prerequisites: ~disabled
-		Description: Elite commando infantry, armed with\na sub machine gun and C4.\n  Strong vs Infantry, Buildings\n  Weak vs Vehicles, Aircraft\nSpecial Ability: Destroy Building with C4
+		Description: actor-ghost.description
 	Valued:
 		Cost: 1000
 	UpdatesPlayerStatistics:
@@ -336,7 +336,7 @@ ghost:
 		PlayerExperience: 50
 		Voice: Move
 	Tooltip:
-		Name: Navy SEAL
+		Name: actor-ghost.name
 	Selectable:
 		Bounds: 482, 1448, 0, -530
 	Health:
@@ -378,9 +378,9 @@ ccomand:
 	Buildable:
 		BuildPaletteOrder: 170
 		Prerequisites: ~gapile, ~allies.tech.infiltrated
-		Description: Elite commando infantry, armed with\na sub machine gun and C4.\n  Strong vs Infantry, Buildings\n  Weak vs Vehicles, Aircraft\nSpecial Ability: Destroy Building with C4
+		Description: actor-ccomand.description
 	Tooltip:
-		Name: Chrono Commando
+		Name: actor-ccomand.name
 	Valued:
 		Cost: 2000
 	UpdatesPlayerStatistics:
@@ -424,7 +424,7 @@ ptroop:
 	Buildable:
 		BuildPaletteOrder: 180
 		Prerequisites: ~gapile, ~soviets.tech.infiltrated
-		Description: Psychic infantry. Can mind control enemy units.\n  Strong vs Infantry, Vehicles, Buildings\n  Weak vs Dogs, Terror Drones, Aircraft\nSpecial Ability: Destroy Building with C4
+		Description: actor-ptroop.description
 	Valued:
 		Cost: 1000
 	UpdatesPlayerStatistics:
@@ -433,7 +433,7 @@ ptroop:
 		Payload: 500
 		PlayerExperience: 50
 	Tooltip:
-		Name: Psi Commando
+		Name: actor-ptroop.name
 	-PortableChrono:
 	Armament@primary:
 		Weapon: MindControl
@@ -475,7 +475,7 @@ tany:
 		BuildPaletteOrder: 140
 		Prerequisites: gatech, ~gapile
 		BuildLimit: 1
-		Description: Elite commando infantry, armed with \ndual pistols and C4.\n  Strong vs Infantry, Buildings\n  Weak vs Vehicles, Aircraft\nSpecial Ability: Destroy Building with C4\n\nMaximum 1 can be trained.
+		Description: actor-tany.description
 	Valued:
 		Cost: 1000
 	UpdatesPlayerStatistics:
@@ -485,7 +485,7 @@ tany:
 		PlayerExperience: 50
 		Voice: Move
 	Tooltip:
-		Name: Tanya
+		Name: actor-tany.name
 	Selectable:
 		Bounds: 482, 1448, 0, -530
 	Health:
@@ -532,13 +532,13 @@ jumpjet:
 		BuildAtProductionType: Infantry
 		BuildPaletteOrder: 60
 		Prerequisites: ~gapile, radar
-		Description: Airborne soldier.\n  Strong vs Infantry, Aircraft\n  Weak vs Vehicles
+		Description: actor-jumpjet.description
 	Valued:
 		Cost: 600
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Tooltip:
-		Name: Rocketeer
+		Name: actor-jumpjet.name
 	Selectable:
 		Bounds: 482, 1448, 0, -530
 	Health:
@@ -615,7 +615,7 @@ jumpjet.husk:
 	-RenderVoxels:
 	-WithVoxelBody:
 	Tooltip:
-		Name: Rocketeer
+		Name: actor-jumpjet-husk-name
 	Aircraft:
 		TurnSpeed: 40
 		Speed: 140
@@ -632,13 +632,13 @@ cleg:
 	Selectable:
 		Bounds: 482, 1448, 0, -530
 	Tooltip:
-		Name: Chrono Legionnaire
+		Name: actor-cleg.name
 	Buildable:
 		Queue: Infantry
 		BuildAtProductionType: Infantry
 		BuildPaletteOrder: 150
 		Prerequisites: ~gapile, gatech
-		Description: High-tech soldier.\n Strong vs Infantry, Vehicles\n Weak vs Aircraft
+		Description: actor-cleg.description
 	ProducibleWithLevel:
 		Prerequisites: barracks.infiltrated
 	Valued:

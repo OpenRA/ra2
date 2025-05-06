@@ -107,7 +107,9 @@ namespace OpenRA.Mods.RA2.Projectiles
 		{
 			// Beam tracks target
 			if (info.TrackTarget && args.GuidedTarget.IsValidFor(args.SourceActor))
-				target = args.Weapon.TargetActorCenter ? args.GuidedTarget.CenterPosition : args.GuidedTarget.Positions.PositionClosestTo(source);
+				target = args.Weapon.TargetActorCenter
+					? args.GuidedTarget.CenterPosition
+					: args.GuidedTarget.Positions.ClosestToIgnoringPath(source);
 
 			// Check for blocking actors
 			if (info.Blockable && BlocksProjectiles.AnyBlockingActorsBetween(world, args.SourceActor.Owner, source, target,

@@ -1,7 +1,7 @@
 bus:
 	Inherits: ^CivVehicle
 	Tooltip:
-		Name: School Bus
+		Name: actor-bus-name
 	Cargo:
 		Types: Infantry
 		MaxWeight: 20
@@ -20,7 +20,7 @@ bus:
 limo:
 	Inherits: ^CivVehicle
 	Tooltip:
-		Name: Presidential Limousine
+		Name: actor-limo-name
 	Cargo:
 		Types: Infantry
 		MaxWeight: 20
@@ -39,80 +39,80 @@ limo:
 pick:
 	Inherits: ^CivVehicle
 	Tooltip:
-		Name: Pickup Truck
+		Name: actor-pick-name
 
 car:
 	Inherits: ^CivVehicle
 	Tooltip:
-		Name: Automobile
+		Name: actor-car-name
 
 wini:
 	Inherits: ^CivVehicle
 	Tooltip:
-		Name: Recreational Vehicle
+		Name: actor-wini-name
 	RenderVoxels:
 		NormalsPalette: ts-normals
 
 propa:
 	Inherits: ^CivVehicle
 	Tooltip:
-		Name: Propaganda Truck
+		Name: actor-propa-name
 
 cop:
 	Inherits: ^CivVehicle
 	Tooltip:
-		Name: Police Car
+		Name: actor-cop-name
 
 euroc:
 	Inherits: ^CivVehicle
 	Tooltip:
-		Name: European Car
+		Name: actor-euroc-name
 	RenderVoxels:
 		NormalsPalette: ts-normals
 
 cona:
 	Inherits: ^CivVehicle
 	Tooltip:
-		Name: Excavator
+		Name: actor-cona-name
 	RenderVoxels:
 		NormalsPalette: ts-normals
 
 trucka:
 	Inherits: ^CivVehicle
 	Tooltip:
-		Name: Truck
+		Name: actor-trucka-name
 
 truckb:
 	Inherits: ^CivVehicle
 	Tooltip:
-		Name: Truck
+		Name: actor-truckb-name
 
 suvb:
 	Inherits: ^CivVehicle
 	Tooltip:
-		Name: Black SUV
+		Name: actor-suvb-name
 
 suvw:
 	Inherits: ^CivVehicle
 	Tooltip:
-		Name: White SUV
+		Name: actor-suvw-name
 
 stang:
 	Inherits: ^CivVehicle
 	Tooltip:
-		Name: Mustang
-		GenericName: Sports Car
+		Name: actor-stang.name
+		GenericName: actor-stang.generic-name
 	RenderVoxels:
 		NormalsPalette: ts-normals
 
 ptruck:
 	Inherits: ^CivVehicle
 	Tooltip:
-		Name: Pickup Truck
+		Name: actor-ptruck-name
 
 taxi:
 	Inherits: ^CivVehicle
 	Tooltip:
-		Name: Taxi
+		Name: actor-taxi-name
 	RenderVoxels:
 		NormalsPalette: ts-normals

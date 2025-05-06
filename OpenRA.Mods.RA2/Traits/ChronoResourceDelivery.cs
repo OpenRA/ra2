@@ -9,7 +9,6 @@
  */
 #endregion
 
-using OpenRA.Mods.Common.Activities;
 using OpenRA.Mods.Common.Traits;
 using OpenRA.Mods.RA2.Activities;
 using OpenRA.Traits;
@@ -17,7 +16,7 @@ using OpenRA.Traits;
 namespace OpenRA.Mods.RA2.Traits
 {
 	[Desc("When returning to a refinery to deliver resources, this actor will teleport if possible.")]
-	public class ChronoResourceDeliveryInfo : TraitInfo, Requires<HarvesterInfo>
+	public sealed class ChronoResourceDeliveryInfo : TraitInfo, Requires<HarvesterInfo>
 	{
 		[Desc("The number of ticks between each check to see if we can teleport to the refinery.")]
 		public readonly int CheckTeleportDelay = 10;
@@ -46,12 +45,11 @@ namespace OpenRA.Mods.RA2.Traits
 		public override object Create(ActorInitializer init) { return new ChronoResourceDelivery(this); }
 	}
 
-	public class ChronoResourceDelivery : INotifyHarvesterAction, ITick
+	public sealed class ChronoResourceDelivery : INotifyHarvestAction, ITick
 	{
 		readonly ChronoResourceDeliveryInfo info;
 
 		CPos? destination;
-		Actor refinery;
 		int ticksTillCheck;
 
 		// TODO: Rewrite this entire thing, possible to be a subclass of harvester
@@ -76,28 +74,27 @@ namespace OpenRA.Mods.RA2.Traits
 				ticksTillCheck--;
 		}
 
-		void INotifyHarvesterAction.MovingToResources(Actor self, CPos targetCell)
+		void INotifyHarvestAction.Harvested(Actor self, string resourceType) { }
+
+		void INotifyHarvestAction.MovingToResources(Actor self, CPos targetCell)
 		{
 			Reset();
 		}
 
-		void INotifyHarvesterAction.MovingToRefinery(Actor self, Actor refineryActor)
-		{
-			var iao = refineryActor.Trait<IAcceptResources>();
-			var targetCell = self.World.Map.CellContaining(iao.DeliveryPosition);
-			if (destination != null && destination.Value != targetCell)
-				ticksTillCheck = 0;
-
-			refinery = refineryActor;
-			destination = targetCell;
-		}
-
-		public void MovementCancelled(Actor self)
+		void INotifyHarvestAction.MovementCancelled(Actor self)
 		{
 			Reset();
 		}
 
-		public void Harvested(Actor self, string resourceType) { }
+		// void INotifyHarvestAction.MovingToRefinery(Actor self, Actor refineryActor)
+		// {
+		// 	var iao = refineryActor.Trait<IAcceptResources>();
+		// 	var targetCell = self.World.Map.CellContaining(iao.DeliveryPosition);
+		// 	if (destination != null && destination.Value != targetCell)
+		// 		ticksTillCheck = 0;
+		// 	refinery = refineryActor;
+		// 	destination = targetCell;
+		// }
 		public void Docked() { }
 		public void Undocked() { }
 
@@ -119,8 +116,8 @@ namespace OpenRA.Mods.RA2.Traits
 				self.QueueActivity(new ChronoResourceTeleport(dest, info));
 
 				// HACK: Manually queue a delivery and new find since we just cancelled all activities
-				self.QueueActivity(new DeliverResources(self, refinery));
-				self.QueueActivity(new FindAndDeliverResources(self, refinery));
+				// self.QueueActivity(new DeliverResources(self, refinery));
+				// self.QueueActivity(new FindAndDeliverResources(self, refinery));
 				Reset();
 			}
 		}
@@ -129,7 +126,6 @@ namespace OpenRA.Mods.RA2.Traits
 		{
 			ticksTillCheck = 0;
 			destination = null;
-			refinery = null;
 		}
 	}
 }
