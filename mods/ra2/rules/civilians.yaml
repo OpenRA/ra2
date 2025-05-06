@@ -12,33 +12,33 @@ civ3:
 civa:
 	Inherits: ^CivilianInfantry
 	Tooltip:
-		Name: Texan
+		Name: actor-civa-name
 	Voiced:
 		VoiceSet: CivilianTexanVoice
 
 civb:
 	Inherits: ^CivilianInfantry
 	Tooltip:
-		Name: Texan
+		Name: actor-civb-name
 	Voiced:
 		VoiceSet: CivilianTexanVoice
 
 civc:
 	Inherits: ^CivilianInfantry
 	Tooltip:
-		Name: Texan
+		Name: actor-civc-name
 	Voiced:
 		VoiceSet: CivilianTexanVoice
 
 civbbp:
 	Inherits: ^CivilianInfantry
 	Tooltip:
-		Name: Baseball Player
+		Name: actor-civbbp-name
 
 civbfm:
 	Inherits: ^CivilianInfantry
 	Tooltip:
-		Name: Beach Fat Male
+		Name: actor-civbfm-name
 	-WithInfantryBody:
 	WithInfantryBody:
 		IdleSequences: idle1
@@ -49,7 +49,7 @@ civbf:
 	Voiced:
 		VoiceSet: CivilianAlliedFemaleVoice
 	Tooltip:
-		Name: Beach Fat Female
+		Name: actor-civbf-name
 	-WithInfantryBody:
 	WithInfantryBody:
 		IdleSequences: idle1
@@ -58,7 +58,7 @@ civbf:
 civbtm:
 	Inherits: ^CivilianInfantry
 	Tooltip:
-		Name: Beach Thin Male
+		Name: actor-civbtm-name
 	-WithInfantryBody:
 	WithInfantryBody:
 		IdleSequences: idle1
@@ -67,28 +67,28 @@ civbtm:
 civsfm:
 	Inherits: ^CivilianInfantry
 	Tooltip:
-		Name: Snow Fat Male
+		Name: actor-civsfm-name
 	Voiced:
 		VoiceSet: CivilianSovietMaleVoice
 
 civsf:
 	Inherits: ^CivilianInfantry
 	Tooltip:
-		Name: Snow Fat Male
+		Name: actor-civsf-name
 	Voiced:
 		VoiceSet: CivilianSovietFemaleVoice
 
 civstm:
 	Inherits: ^CivilianInfantry
 	Tooltip:
-		Name: Snow Thin Male
+		Name: actor-civstm-name
 	Voiced:
 		VoiceSet: CivilianSovietMaleVoice
 
 vladimir:
 	Inherits: ^CivilianInfantry
 	Tooltip:
-		Name: Vladimir
+		Name: actor-vladimir-name
 		GenericVisibility: None
 	WithInfantryBody:
 		IdleSequences: idle1, idle2
@@ -96,7 +96,7 @@ vladimir:
 pentgen:
 	Inherits: ^CivilianInfantry
 	Tooltip:
-		Name: Pentagon General
+		Name: actor-pentgen-name
 		GenericVisibility: None
 	Voiced:
 		VoiceSet: GIVoice
@@ -104,7 +104,7 @@ pentgen:
 ssrv:
 	Inherits: ^CivilianInfantry
 	Tooltip:
-		Name: Secret Service
+		Name: actor-ssrv-name
 		GenericVisibility: None
 	Voiced:
 		VoiceSet: SecretServiceVoice
@@ -112,7 +112,7 @@ ssrv:
 pres:
 	Inherits: ^CivilianInfantry
 	Tooltip:
-		Name: President
+		Name: actor-pres-name
 		GenericVisibility: None
 	-WithInfantryBody:
 	WithInfantryBody:

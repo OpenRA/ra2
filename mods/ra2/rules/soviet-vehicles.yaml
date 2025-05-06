@@ -5,13 +5,13 @@ smcv:
 		Queue: Vehicle
 		BuildPaletteOrder: 80
 		Prerequisites: ~naweap, repairpad
-		Description: Deploys into a Construction Yard.
+		Description: actor-smcv.description
 	Valued:
 		Cost: 3000
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Tooltip:
-		Name: Mobile Construction Vehicle
+		Name: actor-smcv.name
 	Selectable:
 		Priority: 4
 		Bounds: 1544, 2509, 0, -289
@@ -49,24 +49,22 @@ harv:
 		Queue: Vehicle
 		BuildPaletteOrder: 10
 		Prerequisites: ~naweap, refinery
-		Description: Gathers Ore.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
+		Description: actor-harv.description
 	Valued:
 		Cost: 1400
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Tooltip:
-		Name: War Miner
+		Name: actor-harv.name
 	Selectable:
 		Priority: 7
 		Bounds: 1544, 2509, 0, -289
 	Harvester:
-		Capacity: 40
 		Resources: Ore, Gems
 		BaleUnloadDelay: 1
 		SearchFromProcRadius: 24
 		SearchFromHarvesterRadius: 12
 		HarvestVoice: Move
-		DeliverVoice: Move
 	Health:
 		HP: 1000
 	Armor:
@@ -106,7 +104,7 @@ harv:
 	Voiced:
 		VoiceSet: SovietVehicleVoice
 	HitShape:
-	WithHarvesterPipsDecoration:
+	WithStoresResourcesPipsDecoration:
 		Position: BottomLeft
 		RequiresSelection: true
 		PipCount: 7
@@ -114,6 +112,11 @@ harv:
 		ResourceSequences:
 			Ore: pip-yellow
 			Gems: pip-red
+	StoresResources:
+		Capacity: 40
+		Resources: Ore, Gems
+	DockClientManager:
+		Voice: Move
 
 dron:
 	Inherits: ^Vehicle
@@ -122,12 +125,12 @@ dron:
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Tooltip:
-		Name: Terror Drone
+		Name: actor-dron.name
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 40
 		Prerequisites: ~naweap
-		Description: \n  Strong vs Infantry, Vehicles\n  Weak vs Aircraft
+		Description: actor-dron.description
 	Mobile:
 		Speed: 150
 		TurnSpeed: 60
@@ -171,14 +174,14 @@ htk:
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Tooltip:
-		Name: Flak Track
+		Name: actor-htk.name
 	Selectable:
 		Bounds: 1206, 1930, 0, -289
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 30
 		Prerequisites: ~naweap
-		Description: Infantry Transport and Anti-Air/Anti-Infantry vehicle.\n  Strong vs Aircraft, Infantry\n  Weak vs Vehicles
+		Description: actor-htk.description
 	Mobile:
 		Speed: 120
 		TurnSpeed: 20
@@ -240,12 +243,12 @@ htnk:
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Tooltip:
-		Name: Rhino Heavy Tank
+		Name: actor-htnk.name
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 20
 		Prerequisites: ~naweap
-		Description: Soviet Main Battle Tank.\n  Strong vs Vehicles\n  Weak vs Infantry, Aircraft
+		Description: actor-htnk.description
 	Mobile:
 		Speed: 90
 		TurnSpeed: 20
@@ -295,12 +298,12 @@ apoc:
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Tooltip:
-		Name: Apocalypse Tank
+		Name: actor-apoc.name
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 70
 		Prerequisites: ~naweap, natech
-		Description: Soviet Advanced Battle Tank with Double Barrel\nand Anti-Aircraft Missile Launcher.\n  Strong vs Vehicles, Aircraft\n  Weak vs Infantry
+		Description: actor-apoc.description
 	Mobile:
 		Speed: 60
 		TurnSpeed: 20
@@ -337,7 +340,7 @@ apoc:
 	WithVoxelBody:
 	WithVoxelTurret:
 	WithVoxelBarrel:
-	Explodes:
+	FireWarheadsOnDeath:
 		Weapon: ApocExplode
 		EmptyWeapon: ApocExplode
 	Voiced:
@@ -355,12 +358,12 @@ ttnk:
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Tooltip:
-		Name: Tesla Tank
+		Name: actor-ttnk.name
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 50
 		Prerequisites: ~naweap, naradr, ~vehicles.russia
-		Description: Russian special tank armed with dual small Tesla Coils.\n  Strong vs Vehicles, Infantry\n  Weak vs Aircraft
+		Description: actor-ttnk.description
 	Mobile:
 		Speed: 90
 		Locomotor: heavytracked
@@ -402,13 +405,13 @@ dtruck:
 		Queue: Vehicle
 		BuildPaletteOrder: 60
 		Prerequisites: naradr, ~vehicles.libya
-		Description: Demolition Truck, actively armed with nuclear explosives.
+		Description: actor-dtruck.description
 	Valued:
 		Cost: 1500
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Tooltip:
-		Name: Demolition Truck
+		Name: actor-dtruck.name
 	Selectable:
 		Bounds: 1544, 2509, 0, -289
 	Health:
@@ -421,7 +424,7 @@ dtruck:
 		Locomotor: heavytracked
 	RevealsShroud:
 		Range: 4c0
-	Explodes:
+	FireWarheadsOnDeath:
 		Weapon: demobomb
 		EmptyWeapon: demobomb
 	AttackFrontal:

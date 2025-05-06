@@ -26,8 +26,9 @@ namespace OpenRA.Mods.RA2.UtilityCommands
 {
 	sealed class ImportRA2MapCommand : IUtilityCommand
 	{
-		string IUtilityCommand.Name { get { return "--import-ra2-map"; } }
-		bool IUtilityCommand.ValidateArguments(string[] args) { return args.Length >= 2; }
+		string IUtilityCommand.Name => "--import-ra2-map";
+
+		bool IUtilityCommand.ValidateArguments(string[] args) => args.Length >= 2;
 
 		static readonly Dictionary<byte, string> OverlayToActor = new()
 		{
@@ -443,10 +444,12 @@ namespace OpenRA.Mods.RA2.UtilityCommands
 				var rx = mf.ReadUInt16();
 				var ry = mf.ReadUInt16();
 				var tilenum = mf.ReadUInt16();
-				/*var zero1 = */mf.ReadInt16();
+				/*var zero1 = */
+				mf.ReadInt16();
 				var subtile = mf.ReadUInt8();
 				var z = mf.ReadUInt8();
-				/*var zero2 = */mf.ReadUInt8();
+				/*var zero2 = */
+				mf.ReadUInt8();
 
 				var dx = rx - ry + fullSize.X - 1;
 				var dy = rx + ry - fullSize.X - 1;
@@ -498,6 +501,7 @@ namespace OpenRA.Mods.RA2.UtilityCommands
 				}
 			}
 
+			var nodes = new List<MiniYamlNode>();
 			foreach (var cell in map.AllCells)
 			{
 				var overlayType = overlayPack[overlayIndex[cell]];
@@ -514,14 +518,14 @@ namespace OpenRA.Mods.RA2.UtilityCommands
 					{
 						// Only import the top-left cell of multi-celled overlays
 						var aboveType = overlayPack[overlayIndex[cell - new CVec(1, 0)]];
-						if (shape.Width > 1 && aboveType != 0xFF)
-							if (OverlayToActor.TryGetValue(aboveType, out var a) && a == actorType)
-								continue;
+						if (shape.Width > 1 && aboveType != 0xFF
+							&& OverlayToActor.TryGetValue(aboveType, out var a) && a == actorType)
+							continue;
 
 						var leftType = overlayPack[overlayIndex[cell - new CVec(0, 1)]];
-						if (shape.Height > 1 && leftType != 0xFF)
-							if (OverlayToActor.TryGetValue(leftType, out var a) && a == actorType)
-								continue;
+						if (shape.Height > 1 && leftType != 0xFF
+							&& OverlayToActor.TryGetValue(leftType, out var b) && b == actorType)
+							continue;
 					}
 
 					var ar = new ActorReference(actorType)
@@ -544,7 +548,7 @@ namespace OpenRA.Mods.RA2.UtilityCommands
 							ar.Add(new HealthInit(health));
 					}
 
-					map.ActorDefinitions.Add(new MiniYamlNode("Actor" + map.ActorDefinitions.Count, ar.Save()));
+					nodes.Add(new MiniYamlNode("Actor" + (map.ActorDefinitions.Count + nodes.Count), ar.Save()));
 
 					continue;
 				}
@@ -562,14 +566,17 @@ namespace OpenRA.Mods.RA2.UtilityCommands
 
 				Console.WriteLine($"{cell} unknown overlay {overlayType}");
 			}
+
+			map.ActorDefinitions = map.ActorDefinitions.Concat(nodes).ToArray();
 		}
 
 		static void ReadWaypoints(Map map, IniFile file, int2 fullSize)
 		{
+			var nodes = new List<MiniYamlNode>();
 			var waypointsSection = file.GetSection("Waypoints", true);
 			foreach (var kv in waypointsSection)
 			{
-				var pos = int.Parse(kv.Value);
+				var pos = Exts.ParseInt32Invariant(kv.Value);
 				var ry = pos / 1000;
 				var rx = pos - ry * 1000;
 				var dx = rx - ry + fullSize.X - 1;
@@ -582,16 +589,19 @@ namespace OpenRA.Mods.RA2.UtilityCommands
 					new OwnerInit("Neutral")
 				};
 
-				map.ActorDefinitions.Add(new MiniYamlNode("Actor" + map.ActorDefinitions.Count, ar.Save()));
+				nodes.Add(new MiniYamlNode("Actor" + (map.ActorDefinitions.Count + nodes.Count), ar.Save()));
 			}
+
+			map.ActorDefinitions = map.ActorDefinitions.Concat(nodes).ToArray();
 		}
 
 		static void ReadTerrainActors(Map map, IniFile file, int2 fullSize)
 		{
+			var nodes = new List<MiniYamlNode>();
 			var terrainSection = file.GetSection("Terrain", true);
 			foreach (var kv in terrainSection)
 			{
-				var pos = int.Parse(kv.Key);
+				var pos = Exts.ParseInt32Invariant(kv.Key);
 				var ry = pos / 1000;
 				var rx = pos - ry * 1000;
 				var dx = rx - ry + fullSize.X - 1;
@@ -611,24 +621,28 @@ namespace OpenRA.Mods.RA2.UtilityCommands
 				if (!map.Rules.Actors.ContainsKey(name))
 					Console.WriteLine($"Ignoring unknown actor type: `{name}`");
 				else
-					map.ActorDefinitions.Add(new MiniYamlNode("Actor" + map.ActorDefinitions.Count, ar.Save()));
+					nodes.Add(new MiniYamlNode("Actor" + (map.ActorDefinitions.Count + nodes.Count), ar.Save()));
 			}
+
+			map.ActorDefinitions = map.ActorDefinitions.Concat(nodes).ToArray();
 		}
 
 		static void ReadActors(Map map, IniFile file, string type, int2 fullSize)
 		{
+			var nodes = new List<MiniYamlNode>();
 			var structuresSection = file.GetSection(type, true);
 			foreach (var kv in structuresSection)
 			{
-				var isDeployed = false;
+				// TODO: Add back isDeployed,
+				// or better yet rewrite the whole thing to inherit from ImportGen2MapCommand.
 				var entries = kv.Value.Split(',');
 
 				var name = entries[1].ToLowerInvariant();
 
-				var health = short.Parse(entries[2]);
-				var rx = int.Parse(entries[3]);
-				var ry = int.Parse(entries[4]);
-				var facing = (byte)(224 - byte.Parse(entries[type == "Infantry" ? 7 : 5]));
+				var health = Exts.ParseInt16Invariant(entries[2]);
+				var rx = Exts.ParseInt32Invariant(entries[3]);
+				var ry = Exts.ParseInt32Invariant(entries[4]);
+				var facing = (byte)(224 - Exts.ParseByteInvariant(entries[type == "Infantry" ? 7 : 5]));
 
 				var dx = rx - ry + fullSize.X - 1;
 				var dy = rx + ry - fullSize.X - 1;
@@ -643,7 +657,7 @@ namespace OpenRA.Mods.RA2.UtilityCommands
 				if (type == "Infantry")
 				{
 					var subcell = 0;
-					switch (byte.Parse(entries[5]))
+					switch (Exts.ParseByteInvariant(entries[5]))
 					{
 						case 2: subcell = 3; break;
 						case 3: subcell = 1; break;
@@ -659,14 +673,13 @@ namespace OpenRA.Mods.RA2.UtilityCommands
 
 				ar.Add(new FacingInit(WAngle.FromFacing(facing)));
 
-				if (isDeployed)
-					ar.Add(new DeployStateInit(DeployState.Deployed));
-
 				if (!map.Rules.Actors.ContainsKey(name))
 					Console.WriteLine($"Ignoring unknown actor type: `{name}`");
 				else
-					map.ActorDefinitions.Add(new MiniYamlNode("Actor" + map.ActorDefinitions.Count, ar.Save()));
+					nodes.Add(new MiniYamlNode("Actor" + (map.ActorDefinitions.Count + nodes.Count), ar.Save()));
 			}
+
+			map.ActorDefinitions = map.ActorDefinitions.Concat(nodes).ToArray();
 		}
 
 		static void ReadLighting(Map map, IniFile file)

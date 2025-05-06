@@ -15,14 +15,13 @@ using OpenRA.Graphics;
 using OpenRA.Mods.Cnc.Traits.Render;
 using OpenRA.Mods.Common.Graphics;
 using OpenRA.Mods.Common.Traits;
-using OpenRA.Mods.Common.Traits.Render;
 using OpenRA.Primitives;
 using OpenRA.Traits;
 
 namespace OpenRA.Mods.RA2.Traits
 {
 	[Desc("Render an animated voxel based upon the voxel being inair.")]
-	public class WithVoxelHelicopterBodyInfo : ConditionalTraitInfo, IRenderActorPreviewVoxelsInfo,  Requires<RenderVoxelsInfo>
+	public sealed class WithVoxelHelicopterBodyInfo : ConditionalTraitInfo, IRenderActorPreviewVoxelsInfo, Requires<RenderVoxelsInfo>
 	{
 		public readonly string Sequence = "idle";
 
@@ -34,20 +33,20 @@ namespace OpenRA.Mods.RA2.Traits
 
 		public override object Create(ActorInitializer init) { return new WithVoxelHelicopterBody(init.Self, this); }
 
-		public IEnumerable<ModelAnimation> RenderPreviewVoxels(
+		public IEnumerable<ModelAnimation> RenderPreviewVoxels(IModelCache cache,
 			ActorPreviewInitializer init, RenderVoxelsInfo rv, string image, Func<WRot> orientation, int facings, PaletteReference p)
 		{
-			var voxel = init.World.ModelCache.GetModelSequence(image, Sequence);
+			var model = cache.GetModelSequence(image, Sequence);
 			var body = init.Actor.TraitInfo<BodyOrientationInfo>();
 			var frame = init.GetValue<BodyAnimationFrameInit, uint>(this, 0);
 
-			yield return new ModelAnimation(voxel, () => WVec.Zero,
+			yield return new ModelAnimation(model, () => WVec.Zero,
 				() => body.QuantizeOrientation(orientation(), facings),
 				() => false, () => frame, ShowShadow);
 		}
 	}
 
-	public class WithVoxelHelicopterBody : ConditionalTrait<WithVoxelHelicopterBodyInfo>, IAutoMouseBounds, ITick, IActorPreviewInitModifier
+	public sealed class WithVoxelHelicopterBody : ConditionalTrait<WithVoxelHelicopterBodyInfo>, IAutoMouseBounds, ITick, IActorPreviewInitModifier
 	{
 		readonly WithVoxelHelicopterBodyInfo info;
 		readonly RenderVoxels rv;
@@ -63,7 +62,7 @@ namespace OpenRA.Mods.RA2.Traits
 			var body = self.Trait<BodyOrientation>();
 			rv = self.Trait<RenderVoxels>();
 
-			var voxel = self.World.ModelCache.GetModelSequence(rv.Image, info.Sequence);
+			var voxel = rv.Renderer.ModelCache.GetModelSequence(rv.Image, info.Sequence);
 			frames = voxel.Frames;
 			modelAnimation = new ModelAnimation(voxel, () => WVec.Zero,
 				() => body.QuantizeOrientation(self.Orientation),

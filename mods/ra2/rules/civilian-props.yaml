@@ -1,7 +1,7 @@
 camisc01:
 	Inherits: ^CivBuilding
 	Tooltip:
-		Name: Barrels
+		Name: actor-camisc01-name
 	Health:
 		HP: 5
 	Armor:
@@ -10,13 +10,13 @@ camisc01:
 		DamagedSounds: bmetdama.wav, bmetdamb.wav, bmetdamc.wav
 	MapEditorData:
 		Categories: Decoration
-	Explodes:
+	FireWarheadsOnDeath:
 		Weapon: LargeBarrelExplode
 
 camisc02:
 	Inherits: ^CivBuilding
 	Tooltip:
-		Name: Barrel
+		Name: actor-camisc02-name
 	Health:
 		HP: 5
 	Armor:
@@ -25,13 +25,13 @@ camisc02:
 		DamagedSounds: bmetdama.wav, bmetdamb.wav, bmetdamc.wav
 	MapEditorData:
 		Categories: Decoration
-	Explodes:
+	FireWarheadsOnDeath:
 		Weapon: SmallBarrelExplode
 
 camisc03:
 	Inherits: ^CivBuilding
 	Tooltip:
-		Name: Dumpster
+		Name: actor-camisc03-name
 	Health:
 		HP: 100
 	Armor:
@@ -45,7 +45,7 @@ camisc03:
 camisc04:
 	Inherits: ^CivBuilding
 	Tooltip:
-		Name: Mailbox
+		Name: actor-camisc04-name
 	Health:
 		HP: 10
 	Armor:
@@ -61,7 +61,7 @@ camisc04:
 camisc05:
 	Inherits: ^CivBuilding
 	Tooltip:
-		Name: Pipes
+		Name: actor-camisc05-name
 	Health:
 		HP: 10
 	Armor:
@@ -81,12 +81,12 @@ camisc06:
 		Footprint: xx
 		Dimensions: 2, 1
 	Tooltip:
-		Name: V3 Ammunition
+		Name: actor-camisc06-name
 	Health:
 		HP: 10
 	Armor:
 		Type: Concrete
-	Explodes:
+	FireWarheadsOnDeath:
 		Type: Footprint
 		Weapon: V3AmmunitionExplode
 	SoundOnDamageTransition:
@@ -97,7 +97,7 @@ camisc06:
 camsc11:
 	Inherits: ^CivBuilding
 	Tooltip:
-		Name: Tires
+		Name: actor-camsc11-name
 	Health:
 		HP: 10
 	Armor:
@@ -110,7 +110,7 @@ camsc11:
 camsc12:
 	Inherits: ^CivBuilding
 	Tooltip:
-		Name: Practice Target
+		Name: actor-camsc12-name
 	Health:
 		HP: 10
 	Armor:
@@ -125,7 +125,7 @@ camsc13:
 		Footprint: x x
 		Dimensions: 1, 2
 	Tooltip:
-		Name: Derelict Tank
+		Name: actor-camsc13-name
 	Health:
 		HP: 800
 	Armor:
@@ -136,7 +136,7 @@ camsc13:
 ammocrat:
 	Inherits: ^CivBuilding
 	Tooltip:
-		Name: Ammo Crates
+		Name: actor-ammocrat-name
 	Health:
 		HP: 1
 	RenderSprites:
@@ -147,7 +147,7 @@ ammocrat:
 camsc01:
 	Inherits: ^CivBuilding
 	Tooltip:
-		Name: Hot Dog Stand
+		Name: actor-camsc01-name
 	RevealsShroud:
 		Range: 6c0
 	Health:
@@ -159,7 +159,7 @@ camsc01:
 camsc02:
 	Inherits: ^CivBuilding
 	Tooltip:
-		Name: Beach Umbrellas
+		Name: actor-camsc02-name
 	RevealsShroud:
 		Range: 6c0
 	Health:
@@ -171,7 +171,7 @@ camsc02:
 camsc03:
 	Inherits: ^CivBuilding
 	Tooltip:
-		Name: Beach Umbrellas
+		Name: actor-camsc03-name
 	RevealsShroud:
 		Range: 6c0
 	Health:
@@ -183,7 +183,7 @@ camsc03:
 camsc04:
 	Inherits: ^CivBuilding
 	Tooltip:
-		Name: Beach Towels
+		Name: actor-camsc04-name
 	RevealsShroud:
 		Range: 6c0
 	Health:
@@ -197,7 +197,7 @@ camsc04:
 camsc05:
 	Inherits: ^CivBuilding
 	Tooltip:
-		Name: Beach Towels
+		Name: actor-camsc05-name
 	RevealsShroud:
 		Range: 6c0
 	Health:
@@ -211,7 +211,7 @@ camsc05:
 camsc06:
 	Inherits: ^CivBuilding
 	Tooltip:
-		Name: Camp Fire
+		Name: actor-camsc06-name
 	RevealsShroud:
 		Range: 6c0
 	Health:
@@ -227,7 +227,7 @@ caeuro05:
 	Inherits: ^CivBuilding
 	Inherits@shape: ^2x2Shape
 	Tooltip:
-		Name: Statue
+		Name: actor-caeuro05-name
 	Armor:
 		Type: concrete
 	RevealsShroud:
@@ -245,7 +245,7 @@ caeuro05:
 capark01:
 	Inherits: ^CivBuilding
 	Tooltip:
-		Name: Park Bench
+		Name: actor-capark01-name
 	RevealsShroud:
 		Range: 6c0
 	Health:
@@ -259,7 +259,7 @@ capark02:
 	Inherits: ^CivBuilding
 	Inherits@shape: ^2x1Shape
 	Tooltip:
-		Name: Swing Set
+		Name: actor-capark02-name
 	RevealsShroud:
 		Range: 6c0
 	Health:
@@ -274,7 +274,7 @@ capark03:
 	Inherits: ^CivBuilding
 	Inherits@shape: ^2x2Shape
 	Tooltip:
-		Name: Merry Go Round
+		Name: actor-capark03-name
 	RevealsShroud:
 		Range: 6c0
 	Health:
@@ -288,7 +288,7 @@ capark03:
 castrt01:
 	Inherits: ^CivBuilding
 	Tooltip:
-		Name: Traffic Light
+		Name: actor-castrt01-name
 	Armor:
 		Type: steel
 	RevealsShroud:
@@ -303,7 +303,7 @@ castrt01:
 castrt02:
 	Inherits: ^CivBuilding
 	Tooltip:
-		Name: Traffic Light
+		Name: actor-castrt02-name
 	Armor:
 		Type: steel
 	RevealsShroud:
@@ -318,7 +318,7 @@ castrt02:
 castrt03:
 	Inherits: ^CivBuilding
 	Tooltip:
-		Name: Traffic Light
+		Name: actor-castrt03-name
 	Armor:
 		Type: steel
 	RevealsShroud:
@@ -333,7 +333,7 @@ castrt03:
 castrt04:
 	Inherits: ^CivBuilding
 	Tooltip:
-		Name: Traffic Light
+		Name: actor-castrt04-name
 	Armor:
 		Type: steel
 	RevealsShroud:
@@ -348,7 +348,7 @@ castrt04:
 castrt05:
 	Inherits: ^CivBuilding
 	Tooltip:
-		Name: Bus Stop
+		Name: actor-castrt05-name
 	Armor:
 		Type: steel
 	RevealsShroud:
@@ -362,7 +362,7 @@ camov01:
 	Inherits: ^CivBuilding
 	Inherits@shape: ^1x4Shape
 	Tooltip:
-		Name: Drive In Movie Screen
+		Name: actor-camov01-name
 	Armor:
 		Type: steel
 	RevealsShroud:
@@ -380,7 +380,7 @@ camov02:
 	Inherits: ^CivBuilding
 	Inherits@shape: ^2x2Shape
 	Tooltip:
-		Name: Drive In Movie Concession Stand
+		Name: actor-camov02-name
 	Armor:
 		Type: steel
 	RevealsShroud:
@@ -397,17 +397,17 @@ camov02:
 pole01:
 	Inherits: ^TelephonePole
 	Tooltip:
-		Name: Utility Pole
+		Name: actor-pole01-name
 
 pole02:
 	Inherits: ^TelephonePole
 	Tooltip:
-		Name: Utility Pole
+		Name: actor-pole02-name
 
 hdstn01:
 	Inherits: ^Tree
 	Tooltip:
-		Name: AlringtonStones
+		Name: actor-hdstn01-name
 	MapEditorData:
 		Categories: Decoration
 	-MirageTarget:
@@ -475,7 +475,7 @@ sign06:
 spkr01:
 	Inherits: ^Tree
 	Tooltip:
-		Name: Drive-In Speaker
+		Name: actor-spkr01-name
 	MapEditorData:
 		Categories: Decoration
 	-MirageTarget:
@@ -532,7 +532,7 @@ carus07:
 cakrmw:
 	Inherits: ^Wall
 	Tooltip:
-		Name: Kremlin Walls
+		Name: actor-cakrmw-name
 	Armor:
 		Type: Concrete
 
@@ -552,7 +552,7 @@ gagate_a:
 	-WithSpriteBody:
 	WithGateSpriteBody:
 	Tooltip:
-		Name: Guard Border Crossing
+		Name: actor-gagate-a-name
 	Building:
 		Dimensions: 3,1
 		Footprint: xxx

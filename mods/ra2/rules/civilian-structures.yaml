@@ -1,17 +1,17 @@
 cafncb:
 	Inherits: ^Fence
 	Tooltip:
-		Name: Black Fence
+		Name: actor-cafncb-name
 
 cafncw:
 	Inherits: ^Fence
 	Tooltip:
-		Name: White Fence
+		Name: actor-cafncw-name
 
 gasand:
 	Inherits: ^Fence
 	Tooltip:
-		Name: Sandbags
+		Name: actor-gasand-name
 	SoundOnDamageTransition:
 		DamagedSounds: gsancrua.wav, gsancrub.wav
 		DestroyedSounds: gsancrua.wav, gsancrub.wav
@@ -19,7 +19,7 @@ gasand:
 cafncp:
 	Inherits: ^Fence
 	Tooltip:
-		Name: Prison Camp Fence
+		Name: actor-cafncp-name
 
 cahse01:
 	Inherits: ^CivBuilding
@@ -194,7 +194,7 @@ cahse07.rubble:
 cawt01:
 	Inherits: ^CivBuilding
 	Tooltip:
-		Name: Water Tower
+		Name: actor-cawt01-name
 	Armor:
 		Type: Steel
 	RevealsShroud:
@@ -208,7 +208,7 @@ cats01:
 	Inherits: ^CivBuilding
 	Inherits@shape: ^2x2Shape
 	Tooltip:
-		Name: Twin Silos
+		Name: actor-cats01-name
 	Armor:
 		Type: Steel
 	RevealsShroud:
@@ -225,7 +225,7 @@ cabarn02:
 	Inherits: ^CivBuilding
 	Inherits@shape: ^2x2Shape
 	Tooltip:
-		Name: Barn
+		Name: actor-cabarn02-name
 	RevealsShroud:
 		Range: 6c0
 	Health:
@@ -243,7 +243,7 @@ cawash01:
 		Footprint: xxxx xxxx xxxx xxxx
 		Dimensions: 4, 4
 	Tooltip:
-		Name: White House
+		Name: actor-cawash01-name
 	Health:
 		HP: 1000
 	Armor:
@@ -521,7 +521,7 @@ cawsh12:
 		Footprint: xxx xxx xxx
 		Dimensions: 3, 3
 	Tooltip:
-		Name: Washington Monument
+		Name: actor-cawsh12-name
 	Health:
 		HP: 1000
 	Armor:
@@ -598,7 +598,7 @@ cawash14:
 	Inherits: ^CivBuilding
 	Inherits@shape: ^3x3Shape
 	Tooltip:
-		Name: Jefferson Memorial
+		Name: actor-cawash14-name
 	Armor:
 		Type: Concrete
 	Health:
@@ -626,7 +626,7 @@ cawash15:
 	Inherits: ^CivBuilding
 	Inherits@shape: ^3x4Shape
 	Tooltip:
-		Name: Lincoln Memorial
+		Name: actor-cawash15-name
 	Armor:
 		Type: Concrete
 	Health:
@@ -654,7 +654,7 @@ cawash16:
 	Inherits: ^CivBuilding
 	Inherits@shape: ^5x3Shape
 	Tooltip:
-		Name: Smithsonian Castle
+		Name: actor-cawash16-name
 	Armor:
 		Type: Concrete
 	RevealsShroud:
@@ -684,7 +684,7 @@ cawash17:
 	Inherits: ^CivBuilding
 	Inherits@shape: ^6x4Shape
 	Tooltip:
-		Name: Smithsonian Natural History Museum
+		Name: actor-cawash17-name
 	Armor:
 		Type: Concrete
 	RevealsShroud:
@@ -714,7 +714,7 @@ cawash18:
 	Inherits: ^CivBuilding
 	Inherits@shape: ^2x2Shape
 	Tooltip:
-		Name: White House Fountain
+		Name: actor-cawash18-name
 	Armor:
 		Type: Concrete
 	RevealsShroud:
@@ -735,7 +735,7 @@ cawash19:
 	Inherits: ^CivBuilding
 	Inherits@shape: ^4x4Shape
 	Tooltip:
-		Name: Iwo Jima Memorial
+		Name: actor-cawash19-name
 	Armor:
 		Type: Concrete
 	RevealsShroud:
@@ -795,7 +795,7 @@ canewy04:
 	Inherits: ^CivBuilding
 	Inherits@shape: ^3x3Shape
 	Tooltip:
-		Name: Statue of Liberty
+		Name: actor-canewy04-name
 	Armor:
 		Type: Concrete
 	RevealsShroud:
@@ -827,7 +827,7 @@ canewy05:
 	Inherits: ^CivBuilding
 	Inherits@shape: ^2x2Shape
 	Tooltip:
-		Name: World Trade Center
+		Name: actor-canewy05-name
 	Armor:
 		Type: Concrete
 	RevealsShroud:
@@ -1182,7 +1182,7 @@ canewy20:
 	Inherits: ^CivBuilding
 	Inherits@shape: ^3x5Shape
 	Tooltip:
-		Name: Warehouse
+		Name: actor-canewy20-name
 	Armor:
 		Type: Steel
 	RevealsShroud:
@@ -1210,7 +1210,7 @@ canewy21:
 	Inherits: ^CivBuilding
 	Inherits@shape: ^5x3Shape
 	Tooltip:
-		Name: Warehouse
+		Name: actor-canewy21-name
 	Armor:
 		Type: Steel
 	RevealsShroud:
@@ -1238,7 +1238,7 @@ caswst01:
 	Inherits: ^CivBuilding
 	Inherits@shape: ^2x3Shape
 	Tooltip:
-		Name: Southwest Building
+		Name: actor-caswst01-name
 	Armor:
 		Type: Steel
 	RevealsShroud:
@@ -1271,7 +1271,7 @@ caarmy01:
 		Footprint: xxx xxx
 		Dimensions: 3, 2
 	Tooltip:
-		Name: Army Tent
+		Name: actor-caarmy01-name
 	Health:
 		HP: 200
 	RevealsShroud:
@@ -1280,7 +1280,7 @@ caarmy01:
 caarmy02:
 	Inherits: ^CivBuilding
 	Tooltip:
-		Name: Army Tent
+		Name: actor-caarmy02-name
 	RevealsShroud:
 		Range: 6c0
 	Health:
@@ -1289,7 +1289,7 @@ caarmy02:
 caarmy03:
 	Inherits: ^CivBuilding
 	Tooltip:
-		Name: Army Tent
+		Name: actor-caarmy03-name
 	RevealsShroud:
 		Range: 6c0
 	Health:
@@ -1298,7 +1298,7 @@ caarmy03:
 caarmy04:
 	Inherits: ^CivBuilding
 	Tooltip:
-		Name: Army Tent
+		Name: actor-caarmy04-name
 	RevealsShroud:
 		Range: 6c0
 	Health:
@@ -1423,7 +1423,7 @@ cafarm01:
 		Footprint: xx xx
 		Dimensions: 2, 2
 	Tooltip:
-		Name: Farm
+		Name: actor-cafarm01-name
 	Health:
 		HP: 400
 	RevealsShroud:
@@ -1437,7 +1437,7 @@ cafarm02:
 		Footprint: x
 		Dimensions: 1, 1
 	Tooltip:
-		Name: Farm Silo
+		Name: actor-cafarm02-name
 	Health:
 		HP: 400
 	SpawnActorOnDeath:
@@ -1454,7 +1454,7 @@ cafarm06:
 	Inherits: ^CivBuilding
 	Inherits@shape: ^2x2Shape
 	Tooltip:
-		Name: Lighthouse
+		Name: actor-cafarm06-name
 	Armor:
 		Type: Steel
 	RevealsShroud:
@@ -1481,52 +1481,52 @@ cafarm06.rubble:
 causfgl:
 	Inherits: ^Flag
 	Tooltip:
-		Name: US Flag
+		Name: actor-causfgl-name
 
 carufgl:
 	Inherits: ^Flag
 	Tooltip:
-		Name: Russian Flag
+		Name: actor-carufgl-name
 
 cairfgl:
 	Inherits: ^Flag
 	Tooltip:
-		Name: Iraqi Flag
+		Name: actor-cairfgl-name
 
 capofgl:
 	Inherits: ^Flag
 	Tooltip:
-		Name: Polish Flag
+		Name: actor-capofgl-name
 
 caskfgl:
 	Inherits: ^Flag
 	Tooltip:
-		Name: South Korean Flag
+		Name: actor-caskfgl-name
 
 calbfgl:
 	Inherits: ^Flag
 	Tooltip:
-		Name: Libyan Flag
+		Name: actor-calbfgl-name
 
 cafrfgl:
 	Inherits: ^Flag
 	Tooltip:
-		Name: French Flag
+		Name: actor-cafrfgl-name
 
 cagefgl:
 	Inherits: ^Flag
 	Tooltip:
-		Name: German Flag
+		Name: actor-cagefgl-name
 
 cacufgl:
 	Inherits: ^Flag
 	Tooltip:
-		Name: Cuban Flag
+		Name: actor-cacufgl-name
 
 caukfgl:
 	Inherits: ^Flag
 	Tooltip:
-		Name: British Flag
+		Name: actor-caukfgl-name
 
 cacolo01:
 	Inherits: ^CivBuilding
@@ -1535,7 +1535,7 @@ cacolo01:
 		Footprint: xxxxx xxxxx xxxxx
 		Dimensions: 5, 3
 	Tooltip:
-		Name: Air Force Academy Chapel
+		Name: actor-cacolo01-name
 	Health:
 		HP: 1000
 	Armor:
@@ -1563,7 +1563,7 @@ caind01:
 		Footprint: xxxx xxxx xxxx xxxx
 		Dimensions: 4, 4
 	Tooltip:
-		Name: Factory
+		Name: actor-caind01-name
 	Health:
 		HP: 1000
 	Armor:
@@ -1591,7 +1591,7 @@ calab:
 		Footprint: xxx xxx xxx xxx
 		Dimensions: 3, 4
 	Tooltip:
-		Name: Einstein's Lab
+		Name: actor-calab-name
 	Health:
 		HP: 1000
 	Armor:
@@ -1619,7 +1619,7 @@ cagas01:
 		Footprint: xxx xxx xxx
 		Dimensions: 3, 3
 	Tooltip:
-		Name: Gas Station
+		Name: actor-cagas01-name
 	Health:
 		HP: 1000
 	RevealsShroud:
@@ -1641,7 +1641,7 @@ cagas01.rubble:
 galite:
 	Inherits: ^CivBuilding
 	Tooltip:
-		Name: Light Post
+		Name: actor-galite-name
 	Valued:
 		Cost: 200
 	RevealsShroud:
@@ -1744,7 +1744,7 @@ city05:
 	Inherits: ^CivBuilding
 	Inherits@shape: ^4x4Shape
 	Tooltip:
-		Name: Battersea Power Station
+		Name: actor-city05-name
 	Armor:
 		Type: Steel
 	RevealsShroud:
@@ -1766,7 +1766,7 @@ catech01:
 	Inherits: ^CivBuilding
 	Inherits@shape: ^3x3Shape
 	Tooltip:
-		Name: Communications Center
+		Name: actor-catech01-name
 	Armor:
 		Type: Steel
 	RevealsShroud:
@@ -1824,7 +1824,7 @@ catexs02:
 	Inherits: ^CivBuilding
 	Inherits@shape: ^4x4Shape
 	Tooltip:
-		Name: Alamo
+		Name: actor-catexs02-name
 	Armor:
 		Type: Concrete
 	RevealsShroud:
@@ -2020,7 +2020,7 @@ capars01:
 	Inherits: ^CivBuilding
 	Inherits@shape: ^4x4Shape
 	Tooltip:
-		Name: Eiffel Tower
+		Name: actor-capars01-name
 	Armor:
 		Type: Steel
 	Health:
@@ -2161,7 +2161,7 @@ capars06.rubble:
 capars07:
 	Inherits: ^CivBuilding
 	Tooltip:
-		Name: Phone Booth
+		Name: actor-capars07-name
 	RevealsShroud:
 		Range: 6c0
 	Health:
@@ -2229,7 +2229,7 @@ capars10:
 	Inherits: ^CivBuilding
 	Inherits@shape: ^4x3Shape
 	Tooltip:
-		Name: Bistro
+		Name: actor-capars10-name
 	RevealsShroud:
 		Range: 6c0
 	Health:
@@ -2257,7 +2257,7 @@ capars11:
 	Inherits: ^CivBuilding
 	Inherits@shape: ^3x4Shape
 	Tooltip:
-		Name: Arc de Triumphe
+		Name: actor-capars11-name
 	Armor:
 		Type: Concrete
 	RevealsShroud:
@@ -2287,7 +2287,7 @@ capars12:
 	Inherits: ^CivBuilding
 	Inherits@shape: ^3x5Shape
 	Tooltip:
-		Name: Notre Dame
+		Name: actor-capars12-name
 	Armor:
 		Type: Concrete
 	RevealsShroud:
@@ -2317,7 +2317,7 @@ capars13:
 	Inherits: ^CivBuilding
 	Inherits@shape: ^3x4Shape
 	Tooltip:
-		Name: Bistro
+		Name: actor-capars13-name
 	Armor:
 		Type: Concrete
 	RevealsShroud:
@@ -2347,7 +2347,7 @@ capars14:
 	Inherits: ^CivBuilding
 	Inherits@shape: ^4x3Shape
 	Tooltip:
-		Name: Bistro
+		Name: actor-capars14-name
 	Armor:
 		Type: Concrete
 	RevealsShroud:
@@ -2377,7 +2377,7 @@ cafrma:
 	Inherits: ^CivBuilding
 	Inherits@shape: ^2x2Shape
 	Tooltip:
-		Name: Farmhouse
+		Name: actor-cafrma-name
 	RevealsShroud:
 		Range: 4c0
 	Health:
@@ -2391,7 +2391,7 @@ cafrma:
 cafrmb:
 	Inherits: ^CivBuilding
 	Tooltip:
-		Name: Outhouse
+		Name: actor-cafrmb-name
 	RevealsShroud:
 		Range: 4c0
 	Health:
@@ -2403,7 +2403,7 @@ caprs03:
 	Inherits: ^CivBuilding
 	Inherits@shape: ^6x4Shape
 	Tooltip:
-		Name: Louvre
+		Name: actor-caprs03-name
 	Armor:
 		Type: Concrete
 	RevealsShroud:
@@ -2432,7 +2432,7 @@ caprs03.rubble:
 cagard01:
 	Inherits: ^CivBuilding
 	Tooltip:
-		Name: Guard Shack
+		Name: actor-cagard01-name
 	Armor:
 		Type: Steel
 	RevealsShroud:
@@ -2450,7 +2450,7 @@ carus01:
 	Inherits: ^CivBuilding
 	Inherits@shape: ^4x4Shape
 	Tooltip:
-		Name: St. Basil's Cathedral
+		Name: actor-carus01-name
 	Armor:
 		Type: Concrete
 	RevealsShroud:
@@ -2519,7 +2519,7 @@ carus02b.rubble:
 carus02g:
 	Inherits: ^CivBuilding
 	Tooltip:
-		Name: Kremlin Wall Clock Tower
+		Name: actor-carus02g-name
 	Armor:
 		Type: Concrete
 	RevealsShroud:
@@ -2542,7 +2542,7 @@ carus03:
 	Inherits: ^CivBuilding
 	Inherits@shape: ^2x5Shape
 	Tooltip:
-		Name: Kremlin Palace
+		Name: actor-carus03-name
 	Armor:
 		Type: Concrete
 	RevealsShroud:
@@ -2827,7 +2827,7 @@ camiam03.rubble:
 camiam04:
 	Inherits: ^CivBuilding
 	Tooltip:
-		Name: Lifeguard Hut
+		Name: actor-camiam04-name
 	RevealsShroud:
 		Range: 6c0
 	Health:
@@ -2923,7 +2923,7 @@ camiam08:
 	Inherits: ^CivBuilding
 	Inherits@shape: ^3x1Shape
 	Tooltip:
-		Name: Arizona Memorial
+		Name: actor-camiam08-name
 	Armor:
 		Type: Steel
 	RevealsShroud:
@@ -3147,7 +3147,7 @@ camex01:
 	Inherits: ^CivBuilding
 	Inherits@shape: ^3x2Shape
 	Tooltip:
-		Name: Mayan Pyramid
+		Name: actor-camex01-name
 	Armor:
 		Type: Concrete
 	RevealsShroud:
@@ -3177,7 +3177,7 @@ camex02:
 	Inherits: ^CivBuilding
 	Inherits@shape: ^6x4Shape
 	Tooltip:
-		Name: Mayan Castillo
+		Name: actor-camex02-name
 	Armor:
 		Type: Concrete
 	RevealsShroud:
@@ -3207,7 +3207,7 @@ camex03:
 	Inherits: ^CivBuilding
 	Inherits@shape: ^3x3Shape
 	Tooltip:
-		Name: Mayan Minor Temple
+		Name: actor-camex03-name
 	Armor:
 		Type: Concrete
 	RevealsShroud:
@@ -3237,7 +3237,7 @@ camex04:
 	Inherits: ^CivBuilding
 	Inherits@shape: ^4x4Shape
 	Tooltip:
-		Name: Mayan Large Temple
+		Name: actor-camex04-name
 	Armor:
 		Type: Concrete
 	RevealsShroud:
@@ -3267,7 +3267,7 @@ camex05:
 	Inherits: ^CivBuilding
 	Inherits@shape: ^2x2Shape
 	Tooltip:
-		Name: Mayan Platfrom
+		Name: actor-camex05-name
 	Armor:
 		Type: Concrete
 	RevealsShroud:
@@ -3295,7 +3295,7 @@ caeur1:
 	Inherits: ^CivBuilding
 	Inherits@shape: ^2x2Shape
 	Tooltip:
-		Name: Cottage
+		Name: actor-caeur1-name
 	RevealsShroud:
 		Range: 6c0
 	Health:
@@ -3321,7 +3321,7 @@ caeur2:
 	Inherits: ^CivBuilding
 	Inherits@shape: ^2x2Shape
 	Tooltip:
-		Name: Cottage
+		Name: actor-caeur2-name
 	RevealsShroud:
 		Range: 6c0
 	Health:
@@ -3457,7 +3457,7 @@ cachig04:
 	Inherits: ^CivBuilding
 	Inherits@shape: ^2x2Shape
 	Tooltip:
-		Name: Associates Center
+		Name: actor-cachig04-name
 	Armor:
 		Type: Concrete
 	RevealsShroud:
@@ -3487,7 +3487,7 @@ cachig05:
 	Inherits: ^CivBuilding
 	Inherits@shape: ^4x4Shape
 	Tooltip:
-		Name: Sears Tower
+		Name: actor-cachig05-name
 	Armor:
 		Type: Concrete
 	RevealsShroud:
@@ -3517,7 +3517,7 @@ cachig06:
 	Inherits: ^CivBuilding
 	Inherits@shape: ^2x2Shape
 	Tooltip:
-		Name: Water Tower
+		Name: actor-cachig06-name
 	Armor:
 		Type: Steel
 	Health:
@@ -3657,7 +3657,7 @@ castl05a:
 	Inherits: ^CivBuilding
 	Inherits@shape: ^4x4Shape
 	Tooltip:
-		Name: Stadium
+		Name: actor-castl05a-name
 	Armor:
 		Type: Concrete
 	RevealsShroud:
@@ -3687,7 +3687,7 @@ castl05b:
 	Inherits: ^CivBuilding
 	Inherits@shape: ^4x4Shape
 	Tooltip:
-		Name: Stadium
+		Name: actor-castl05b-name
 	Armor:
 		Type: Concrete
 	RevealsShroud:
@@ -3717,7 +3717,7 @@ castl05c:
 	Inherits: ^CivBuilding
 	Inherits@shape: ^4x4Shape
 	Tooltip:
-		Name: Stadium
+		Name: actor-castl05c-name
 	Armor:
 		Type: Concrete
 	RevealsShroud:
@@ -3747,7 +3747,7 @@ castl05d:
 	Inherits: ^CivBuilding
 	Inherits@shape: ^4x4Shape
 	Tooltip:
-		Name: Stadium
+		Name: actor-castl05d-name
 	Armor:
 		Type: Concrete
 	RevealsShroud:
@@ -3777,7 +3777,7 @@ castl05e:
 	Inherits: ^CivBuilding
 	Inherits@shape: ^4x4Shape
 	Tooltip:
-		Name: Stadium
+		Name: actor-castl05e-name
 	Armor:
 		Type: Concrete
 	RevealsShroud:
@@ -3807,7 +3807,7 @@ castl05f:
 	Inherits: ^CivBuilding
 	Inherits@shape: ^4x4Shape
 	Tooltip:
-		Name: Stadium
+		Name: actor-castl05f-name
 	Armor:
 		Type: Concrete
 	RevealsShroud:
@@ -3837,7 +3837,7 @@ castl05g:
 	Inherits: ^CivBuilding
 	Inherits@shape: ^4x4Shape
 	Tooltip:
-		Name: Stadium
+		Name: actor-castl05g-name
 	Armor:
 		Type: Concrete
 	RevealsShroud:
@@ -3867,7 +3867,7 @@ castl05h:
 	Inherits: ^CivBuilding
 	Inherits@shape: ^4x4Shape
 	Tooltip:
-		Name: Stadium
+		Name: actor-castl05h-name
 	Armor:
 		Type: Concrete
 	RevealsShroud:
@@ -3897,7 +3897,7 @@ camsc07:
 	Inherits: ^CivBuilding
 	Inherits@shape: ^2x2Shape
 	Tooltip:
-		Name: Hut
+		Name: actor-camsc07-name
 	Armor:
 		Type: Concrete
 	RevealsShroud:
@@ -3916,7 +3916,7 @@ camsc08:
 	Inherits: ^CivBuilding
 	Inherits@shape: ^2x2Shape
 	Tooltip:
-		Name: Hut
+		Name: actor-camsc08-name
 	RevealsShroud:
 		Range: 6c0
 	Health:
@@ -3930,7 +3930,7 @@ camsc09:
 	Inherits: ^CivBuilding
 	Inherits@shape: ^2x2Shape
 	Tooltip:
-		Name: Hut
+		Name: actor-camsc09-name
 	RevealsShroud:
 		Range: 6c0
 	Health:
@@ -3944,7 +3944,7 @@ camsc10:
 	Inherits: ^CivBuilding
 	Inherits@shape: ^4x4Shape
 	Tooltip:
-		Name: McBurger Kong
+		Name: actor-camsc10-name
 	RevealsShroud:
 		Range: 6c0
 	Health:
@@ -3970,7 +3970,7 @@ cabunk01:
 	Inherits: ^CivBuilding
 	Inherits@shape: ^2x2Shape
 	Tooltip:
-		Name: Concrete Bunker
+		Name: actor-cabunk01-name
 	Armor:
 		Type: Steel
 	RevealsShroud:
@@ -3998,7 +3998,7 @@ cabunk02:
 	Inherits: ^CivBuilding
 	Inherits@shape: ^2x2Shape
 	Tooltip:
-		Name: Concrete Bunker
+		Name: actor-cabunk02-name
 	Armor:
 		Type: Steel
 	RevealsShroud:

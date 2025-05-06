@@ -5,13 +5,13 @@ sapc:
 		Queue: Ship
 		BuildPaletteOrder: 10
 		Prerequisites: ~nayard
-		Description: General-purpose naval transport.\nCan carry infantry and vehicles.\n  Unarmed
+		Description: actor-sapc.description
 	Valued:
 		Cost: 900
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Tooltip:
-		Name: Amphibious Transport
+		Name: actor-sapc.name
 	Selectable:
 		Bounds: 1448, 3861, 0, -289
 	Health:
@@ -32,7 +32,7 @@ sapc:
 		UnloadTerrainTypes: Clear, Rough, Rail, Road, DirtRoad, Beach, Ore, Gems
 		UnloadVoice: Move
 		LoadingCondition: notmobile
-	Explodes:
+	FireWarheadsOnDeath:
 		Weapon: UnitExplode
 		EmptyWeapon: UnitExplode
 	WithVoxelBody:
@@ -56,13 +56,13 @@ sub:
 		Queue: Ship
 		BuildPaletteOrder: 20
 		Prerequisites: ~nayard
-		Description: Submerged anti-ship unit armed with\ntorpedoes.\nCan detect other submarines and Giant Squids.\n  Strong vs Ships\n  Weak vs Ground units, Aircraft\nSpecial Ability: Submerge
+		Description: actor-sub.description
 	Valued:
 		Cost: 1000
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Tooltip:
-		Name: Typhoon Attack Sub
+		Name: actor-sub.name
 	Health:
 		HP: 600
 	Armor:
@@ -88,6 +88,8 @@ sub:
 		CloakedCondition: underwater
 		UncloakOn: Damage
 		IsPlayerPalette: true
+		CloakedPalette: cloak
+		CloakStyle: Palette
 	Armament:
 		Weapon: SubTorpedo
 		LocalOffset: 768,0,0
@@ -107,7 +109,7 @@ sub:
 		DetectionTypes: Underwater
 		Range: 4c0
 	RenderDetectionCircle:
-	Explodes:
+	FireWarheadsOnDeath:
 		Weapon: UnitExplode
 		EmptyWeapon: UnitExplode
 	-MustBeDestroyed:
@@ -126,13 +128,13 @@ hyd:
 		Queue: Ship
 		BuildPaletteOrder: 30
 		Prerequisites: naradr, ~nayard
-		Description: Anti-Air/Anti-Infantry naval unit.\n  Strong vs Aircraft, Infantry\n  Weak vs Vehicles, Naval Units
+		Description: actor-hyd.description
 	Valued:
 		Cost: 900
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Tooltip:
-		Name: Sea Scorpion
+		Name: actor-hyd.name
 	Selectable:
 		Bounds: 1206, 1448, 0, -289
 	Health:
@@ -156,7 +158,7 @@ hyd:
 		LocalOffset: 256,0,1408
 		MuzzleSequence: muzzle
 	WithMuzzleOverlay:
-	Explodes:
+	FireWarheadsOnDeath:
 		Weapon: UnitExplode
 		EmptyWeapon: UnitExplode
 	WithVoxelBody:
@@ -172,13 +174,13 @@ sqd:
 		Queue: Ship
 		BuildPaletteOrder: 40
 		Prerequisites: natech, ~nayard
-		Description: Ocean creature\npunches enemies in close combat.\n  Strong vs Ships
+		Description: actor-sqd.description
 	Valued:
 		Cost: 1000
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Tooltip:
-		Name: Giant Squid
+		Name: actor-sqd.name
 	Armor:
 		Type: Light
 	Health:
@@ -214,6 +216,8 @@ sqd:
 		CloakedCondition: underwater
 		UncloakOn: Damage, Attack
 		IsPlayerPalette: true
+		CloakedPalette: cloak
+		CloakStyle: Palette
 	Targetable:
 		TargetTypes: Ground, Water, Submergeable
 		RequiresCondition: !underwater

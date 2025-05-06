@@ -5,7 +5,7 @@ nacnst:
 		Queue: Building
 		BuildPaletteOrder: 1000
 		Prerequisites: ~disabled
-		Description: Allows construction of base structures.
+		Description: actor-nacnst.description
 	Building:
 		Footprint: xxxx xxxx xxxx xxxx
 		Dimensions: 4,4
@@ -24,7 +24,7 @@ nacnst:
 	Production:
 		Produces: Building, Support
 	Tooltip:
-		Name: Construction Yard
+		Name: actor-nacnst.name
 	BaseBuilding:
 	BaseProvider:
 		Range: 0
@@ -80,11 +80,11 @@ napowr:
 		Queue: Building
 		BuildPaletteOrder: 10
 		Prerequisites: ~structures.soviets
-		Description: Provides power for other structures.
+		Description: actor-napowr.description
 	Valued:
 		Cost: 600
 	Tooltip:
-		Name: Tesla Reactor
+		Name: actor-napowr.name
 	ProvidesPrerequisite:
 		Prerequisite: power
 	Building:
@@ -127,11 +127,11 @@ nahand:
 		Queue: Building
 		BuildPaletteOrder: 20
 		Prerequisites: power, ~structures.soviets
-		Description: Produces infantry.
+		Description: actor-nahand.description
 	Valued:
 		Cost: 500
 	Tooltip:
-		Name: Barracks
+		Name: actor-nahand.name
 	ProvidesPrerequisite:
 		Prerequisite: barracks
 	ProvidesPrerequisite@cuba:
@@ -227,13 +227,13 @@ narefn:
 		Queue: Building
 		BuildPaletteOrder: 30
 		Prerequisites: power, ~structures.soviets
-		Description: Processes ore into credits.
+		Description: actor-narefn.description
 	IsometricSelectable:
 		Height: 90
 	Valued:
 		Cost: 2000
 	Tooltip:
-		Name: Ore Refinery
+		Name: actor-narefn.name
 	ProvidesPrerequisite:
 		Prerequisite: refinery
 	ProvidesPrerequisite@default:
@@ -247,12 +247,8 @@ narefn:
 	RevealsShroud:
 		Range: 6c0
 	Refinery:
-		DockOffset: 3, 1
 		ShowTicks: True
-		TickLifetime: 30
-		TickVelocity: 1
 		TickRate: 10
-		DockAngle: 640
 		UseStorage: false
 	CustomSellValue:
 		Value: 300
@@ -280,6 +276,10 @@ narefn:
 	SpawnSurvivors:
 		DeathTypes: ExplosionDeath, BulletDeath
 		Actors: e2, e2, e2
+	DockHost:
+		Type: Unload
+		DockAngle: 640
+		DockOffset: 1086,1086,0
 
 naradr:
 	Inherits: ^BaseBuilding
@@ -288,11 +288,11 @@ naradr:
 		Queue: Building
 		BuildPaletteOrder: 60
 		Prerequisites: power, narefn, ~structures.soviets
-		Description: Provides radar.
+		Description: actor-naradr.description
 	Valued:
 		Cost: 1000
 	Tooltip:
-		Name: Radar Tower
+		Name: actor-naradr.name
 	ProvidesPrerequisite:
 		Prerequisite: radar
 	ProvidesPrerequisite@default:
@@ -335,13 +335,13 @@ naweap:
 		Queue: Building
 		BuildPaletteOrder: 40
 		Prerequisites: refinery, nahand, ~structures.soviets
-		Description: Produces vehicles.
+		Description: actor-naweap.description
 	IsometricSelectable:
 		Height: 90
 	Valued:
 		Cost: 2000
 	Tooltip:
-		Name: War Factory
+		Name: actor-naweap.name
 	ProvidesPrerequisite@libya:
 		Prerequisite: vehicles.libya
 		Factions: libya
@@ -426,12 +426,12 @@ nayard:
 	Valued:
 		Cost: 1000
 	Tooltip:
-		Name: Naval Yard
+		Name: actor-nayard.name
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 50
 		Prerequisites: power, refinery, ~structures.soviets
-		Description: Produces and repairs ships,\nsubmarines, transports, and other naval units.
+		Description: actor-nayard.description
 	Targetable:
 		TargetTypes: Ground, Water, C4
 	ProvidesPrerequisite@default:
@@ -564,13 +564,13 @@ nadept:
 		Queue: Building
 		BuildPaletteOrder: 70
 		Prerequisites: naweap, ~structures.soviets
-		Description: Repairs vehicles and removes Terror Drones (for a price).
+		Description: actor-nadept.description
 	IsometricSelectable:
 		Height: 90
 	Valued:
 		Cost: 800
 	Tooltip:
-		Name: Service Depot
+		Name: actor-nadept.name
 	ProvidesPrerequisite:
 		Prerequisite: repairpad
 	Building:
@@ -616,11 +616,11 @@ nanrct:
 		Queue: Building
 		BuildPaletteOrder: 90
 		Prerequisites: natech, ~structures.soviets
-		Description: Provides power for other structures.
+		Description: actor-nanrct.description
 	Valued:
 		Cost: 1000
 	Tooltip:
-		Name: Nuclear Reactor
+		Name: actor-nanrct.name
 	ProvidesPrerequisite:
 		Prerequisite: power
 	Building:
@@ -637,7 +637,7 @@ nanrct:
 	WithIdleOverlay@lights:
 		Sequence: idle-lights
 		RequiresCondition: !build-incomplete
-	Explodes:
+	FireWarheadsOnDeath:
 		Type: CenterPosition
 		Weapon: NukePayload
 		EmptyWeapon: NukePayload
@@ -667,11 +667,11 @@ natech:
 		Queue: Building
 		BuildPaletteOrder: 80
 		Prerequisites: naweap, naradr, ~structures.soviets
-		Description: Allows deployment of advanced units.
+		Description: actor-natech.description
 	Valued:
 		Cost: 2000
 	Tooltip:
-		Name: Battle Lab
+		Name: actor-natech.name
 	ProvidesPrerequisite@default:
 	Building:
 		Footprint: xxx xxx xxx
@@ -705,11 +705,11 @@ naclon:
 		BuildPaletteOrder: 100
 		Prerequisites: natech, ~structures.soviets
 		BuildLimit: 1
-		Description: Clones most trained infantry.
+		Description: actor-naclon.description
 	Valued:
 		Cost: 2500
 	Tooltip:
-		Name: Cloning Vats
+		Name: actor-naclon.name
 	Building:
 		Footprint: xx xx
 		Dimensions: 2, 2
@@ -783,11 +783,11 @@ napsis:
 		Queue: Support
 		BuildPaletteOrder: 60
 		Prerequisites: natech, ~structures.soviets
-		Description: Detects enemy units and strikepoints
+		Description: actor-napsis.description
 	Valued:
 		Cost: 1000
 	Tooltip:
-		Name: Psychic Sensor
+		Name: actor-napsis.name
 	Building:
 		Footprint: xx xx
 		Dimensions: 2,2
@@ -823,11 +823,11 @@ nairon:
 		BuildPaletteOrder: 80
 		Prerequisites: natech, ~structures.soviets, ~techlevel.unrestricted
 		BuildLimit: 1
-		Description: Grants invulnerability to armored units.\nFries fleshy units.
+		Description: actor-nairon.description
 	Valued:
 		Cost: 2500
 	Tooltip:
-		Name: Iron Curtain Device
+		Name: actor-nairon.name
 	Building:
 		Footprint: xxx xxx xxx
 		Dimensions: 3, 3
@@ -844,8 +844,8 @@ nairon:
 	GrantExternalConditionPower@IRONCURTAIN:
 		Icon: invuln
 		ChargeInterval: 7500
-		Name: Iron Curtain
-		Description: Makes a group of units invulnerable\nfor 20 seconds.
+		Name: actor-nairon.grantexternalconditionpower-ironcurtain-name
+		Description: actor-nairon.grantexternalconditionpower-ironcurtain-description
 		Duration: 500
 		# TODO: These are actually no speech notifications
 		EndChargeSound: siroread.wav
@@ -857,6 +857,7 @@ nairon:
 		PauseOnCondition: lowpower
 		Dimensions: 3, 3
 		Footprint: xxx xxx xxx
+		BlockedCursor: move-blocked
 	SupportPowerChargeBar:
 	InfiltrateForSupportPowerReset:
 		Types: SpyInfiltrate
@@ -877,11 +878,11 @@ namisl:
 		BuildPaletteOrder: 90
 		Prerequisites: natech, ~structures.soviets, ~techlevel.unrestricted
 		BuildLimit: 1
-		Description: Provides an atomic bomb.\nRequires power to operate.\n  Special Ability: Atom Bomb\nMaximum 1 can be built.
+		Description: actor-namisl.description
 	Valued:
 		Cost: 5000
 	Tooltip:
-		Name: Nuclear Missile Silo
+		Name: actor-namisl.name
 	Building:
 		Footprint: xxx xxx xxx
 		Dimensions: 3, 3
@@ -907,8 +908,8 @@ namisl:
 		Cursor: nuke
 		Icon: abomb
 		ChargeInterval: 15000
-		Name: Nuclear Missile
-		Description: Launches a devastating atomic bomb\nat a target location.
+		Name: actor-namisl.nukepower-name
+		Description: actor-namisl.nukepower-description
 		EndChargeSound: snukread.wav
 		EndChargeSpeechNotification: AtomBombReady
 		LaunchSound: snuklaun.wav
@@ -945,9 +946,9 @@ nawall:
 		Queue: Support
 		BuildPaletteOrder: 10
 		Prerequisites: barracks, ~structures.soviets
-		Description: Light wall.\nCrushable by vehicles.
+		Description: actor-nawall.description
 	Tooltip:
-		Name: Soviet Wall
+		Name: actor-nawall.name
 
 naflak:
 	Inherits: ^VoxelLighting
@@ -956,11 +957,11 @@ naflak:
 		Queue: Support
 		BuildPaletteOrder: 30
 		Prerequisites: barracks, ~structures.soviets
-		Description: Automated anti-aircraft defense.
+		Description: actor-naflak.description
 	Valued:
 		Cost: 1000
 	Tooltip:
-		Name: Flak Cannon
+		Name: actor-naflak.name
 	Building:
 		Footprint: x
 		Dimensions: 1, 1
@@ -1007,11 +1008,11 @@ tesla:
 		Queue: Support
 		BuildPaletteOrder: 40
 		Prerequisites: naradr, ~structures.soviets
-		Description: Advanced base defense.\nRequires power to operate.\n  Strong vs Infantry, Vehicles\n  Weak vs Aircraft
+		Description: actor-tesla.description
 	Valued:
 		Cost: 1500
 	Tooltip:
-		Name: Tesla Coil
+		Name: actor-tesla.name
 	Building:
 		Footprint: x
 		Dimensions: 1, 1
@@ -1064,11 +1065,11 @@ nalasr:
 		Queue: Support
 		BuildPaletteOrder: 20
 		Prerequisites: barracks, ~structures.soviets
-		Description: Automated anti-infantry defense.
+		Description: actor-nalasr.description
 	Valued:
 		Cost: 500
 	Tooltip:
-		Name: Sentry Gun
+		Name: actor-nalasr.name
 	Building:
 		Footprint: x
 		Dimensions: 1, 1

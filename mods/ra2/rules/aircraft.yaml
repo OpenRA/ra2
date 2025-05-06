@@ -3,7 +3,7 @@ shad:
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Inherits@MC: ^MindControllable
 	Tooltip:
-		Name: Night Hawk
+		Name: actor-shad.name
 	Selectable:
 		Bounds: 1689, 2896, 0, -965
 	Health:
@@ -21,7 +21,7 @@ shad:
 		Queue: Vehicle
 		BuildPaletteOrder: 90
 		Prerequisites: ~gaweap
-		Description: Infantry Transport Helicopter\nUndetectable by radar.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
+		Description: actor-shad.description
 	Valued:
 		Cost: 1000
 	UpdatesPlayerStatistics:
@@ -68,7 +68,7 @@ shad:
 shadhusk:
 	Inherits: ^HelicopterHusk
 	Tooltip:
-		Name: Night Hawk
+		Name: actor-shadhusk-name
 	Aircraft:
 		TurnSpeed: 40
 		Speed: 140
@@ -90,7 +90,7 @@ zep:
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Tooltip:
-		Name: Kirov Airship
+		Name: actor-zep-name
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 90
@@ -130,7 +130,7 @@ zep:
 	WithVoxelBody:
 	Hovers:
 		BobDistance: -10
-	Explodes:
+	FireWarheadsOnDeath:
 		Weapon: UnitExplode
 		Chance: 75
 	VoiceAnnouncement:
@@ -144,7 +144,7 @@ zep:
 zephusk:
 	Inherits: ^HelicopterHusk
 	Tooltip:
-		Name: Kirov Airship
+		Name: actor-zephusk-name
 	Aircraft:
 		TurnSpeed: 20
 		Speed: 25
@@ -166,12 +166,12 @@ orca:
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Tooltip:
-		Name: Harrier
+		Name: actor-orca.name
 	Buildable:
 		Queue: Aircraft
 		BuildPaletteOrder: 10
 		Prerequisites: ~aircraft.harrier
-		Description: Fast assault fighter\n  Strong vs Buildings, Vehicles\n  Weak vs Infantry, Aircraft
+		Description: actor-orca.description
 	Aircraft:
 		TurnSpeed: 12
 		Speed: 210
@@ -215,7 +215,7 @@ orca:
 orcahusk:
 	Inherits: ^PlaneHusk
 	Tooltip:
-		Name: Harrier
+		Name: actor-orcahusk-name
 	Aircraft:
 		TurnSpeed: 20
 		Speed: 210
@@ -225,7 +225,7 @@ orcahusk:
 beag:
 	Inherits: orca
 	Tooltip:
-		Name: Black Eagle
+		Name: actor-beag-name
 	Buildable:
 		BuildPaletteOrder: 20
 		Prerequisites: ~aircraft.korea
@@ -246,7 +246,7 @@ beag:
 beaghusk:
 	Inherits: ^PlaneHusk
 	Tooltip:
-		Name: Black Eagle
+		Name: actor-beaghusk-name
 	Aircraft:
 		TurnSpeed: 20
 		Speed: 210
@@ -262,7 +262,7 @@ pdplane:
 		Bounds: 2413, 3861
 	RejectsOrders:
 	Tooltip:
-		Name: Cargo Plane
+		Name: actor-pdplane-name
 	Aircraft:
 		Repulsable: false
 		CruiseAltitude: 5600
@@ -286,7 +286,7 @@ pdplane:
 pdplanehusk:
 	Inherits: ^PlaneHusk
 	Tooltip:
-		Name: Cargo Plane
+		Name: actor-pdplanehusk-name
 	Aircraft:
 		TurnSpeed: 20
 		Speed: 100
@@ -302,7 +302,7 @@ hornet:
 	GainsExperience:
 		ExperienceModifier: 500
 	Tooltip:
-		Name: Hornet
+		Name: actor-hornet-name
 	Interactable:
 		Bounds: 362, 579
 	Health:
@@ -349,7 +349,7 @@ hornet:
 hornethusk:
 	Inherits: ^PlaneHusk
 	Tooltip:
-		Name: Hornet
+		Name: actor-hornethusk-name
 	Aircraft:
 		TurnSpeed: 20
 		Speed: 180
@@ -368,7 +368,7 @@ asw:
 	GainsExperience:
 		ExperienceModifier: 500
 	Tooltip:
-		Name: Osprey
+		Name: actor-asw-name
 	Health:
 		HP: 135
 	Armor:
@@ -420,9 +420,9 @@ asw:
 aswhusk:
 	Inherits: ^PlaneHusk
 	Tooltip:
-		Name: Osprey
+		Name: actor-aswhusk.name
 	Tooltip@NoRow:
-		Name: Osprey
+		Name: actor-aswhusk.norow--name
 	Aircraft:
 		TurnSpeed: 20
 		Speed: 180

@@ -17,7 +17,7 @@ using OpenRA.Traits;
 namespace OpenRA.Mods.RA2.Traits
 {
 	[Desc("This actor can mind control other actors.")]
-	public class MindControllerInfo : PausableConditionalTraitInfo, Requires<ArmamentInfo>, Requires<HealthInfo>
+	public sealed class MindControllerInfo : PausableConditionalTraitInfo, Requires<ArmamentInfo>, Requires<HealthInfo>
 	{
 		[Desc("Name of the armaments that grant this condition.")]
 		public readonly HashSet<string> ArmamentNames = new() { "primary" };
@@ -30,7 +30,8 @@ namespace OpenRA.Mods.RA2.Traits
 			"If false, controlling new units is forbidden after capacity is reached.")]
 		public readonly bool DiscardOldest = true;
 
-		[Desc("Condition to grant to self when controlling actors. Can stack up by the number of enslaved actors. You can use this to forbid firing of the dummy MC weapon.")]
+		[Desc("Condition to grant to self when controlling actors. Can stack up by the number of enslaved actors. " +
+			"You can use this to forbid firing of the dummy MC weapon.")]
 		[GrantedConditionReference]
 		[FieldLoader.Require]
 		public readonly string ControllingCondition = null;
@@ -41,7 +42,7 @@ namespace OpenRA.Mods.RA2.Traits
 		public override object Create(ActorInitializer init) { return new MindController(this); }
 	}
 
-	public class MindController : PausableConditionalTrait<MindControllerInfo>, INotifyAttack, INotifyKilled, INotifyActorDisposing
+	public sealed class MindController : PausableConditionalTrait<MindControllerInfo>, INotifyAttack, INotifyKilled, INotifyActorDisposing
 	{
 		readonly List<Actor> slaves = new();
 
@@ -70,11 +71,8 @@ namespace OpenRA.Mods.RA2.Traits
 
 		public void UnlinkSlave(Actor self, Actor slave)
 		{
-			if (slaves.Contains(slave))
-			{
-				slaves.Remove(slave);
+			if (slaves.Remove(slave))
 				UnstackControllingCondition(self, Info.ControllingCondition);
-			}
 		}
 
 		void INotifyAttack.PreparingAttack(Actor self, in Target target, Armament a, Barrel barrel) { }

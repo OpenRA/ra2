@@ -1,55 +1,58 @@
 Metadata:
-	Title: Red Alert 2
-	Description: The Soviet Union is back!\nThis time to conquer the United States...
+	Title: mod-title
 	Version: {DEV_VERSION}
-	Author: the RA2 mod team
+	WindowTitle: mod-windowtitle
 
 ModCredits:
 	ModTabTitle: Red Alert 2
-	ModCreditsFile: ra2|CREDITS # TODO rename to AUTHORS as stated in the .cs files when OpenRA#17460 is available
+	ModCreditsFile: ra2|AUTHORS
 
 PackageFormats: Mix, AudioBag
 
-Packages:
-	~^SupportDir|Content/ra2
-	^EngineDir
-	$ra2: ra2
-	^EngineDir|mods/common: common
-	~ra2.mix
-	~language.mix
-	~multi.mix
-	~audio.mix
-	~cache.mix
-	~cameo.mix
-	~conquer.mix: conquer
-	~generic.mix
-	~isogen.mix
-	~isosnow.mix
-	~isotemp.mix
-	~isourb.mix
-	~load.mix
-	~local.mix
-	~neutral.mix
-	~sidec01.mix
-	~sidec02.mix
-	~sno.mix
-	~snow.mix
-	~tem.mix
-	~temperat.mix
-	~theme.mix
-	~urb.mix
-	~urban.mix
-	~audio.bag
-	ra2|bits
-	ra2|bits/cameos
-	ra2|bits/structures
-	ra2|bits/animations
-	ra2|bits/projectiles
-	ra2|uibits
+FileSystem: ContentInstallerFileSystem
+	SystemPackages:
+		^EngineDir
+		$ra2: ra2
+		$ts: ts
+		^EngineDir|mods/common: common
+		~^SupportDir|Content/ra2: content
+	ContentInstallerMod: ra2-content
+	ContentPackages:
+		ra2.mix
+		language.mix
+		audio.mix
+		cache.mix
+		cameo.mix
+		conquer.mix: conquer
+		generic.mix
+		isogen.mix
+		isosnow.mix
+		isotemp.mix
+		isourb.mix
+		load.mix
+		local.mix
+		neutral.mix
+		sidec01.mix
+		sidec02.mix
+		sno.mix
+		snow.mix
+		tem.mix
+		temperat.mix
+		urb.mix
+		urban.mix
+		audio.bag
+		~theme.mix
+		# Below are mod-provided (system) packages that need to be loaded after the content packages so they can override content assets.
+		ra2|bits
+		ra2|bits/cameos
+		ra2|bits/structures
+		ra2|bits/animations
+		ra2|bits/projectiles
+		ra2|uibits
 
 MapFolders:
 	ra2|maps: System
-	~^maps/ra2/{DEV_VERSION}: User
+	~^SupportDir|maps/ra2/{DEV_VERSION}: User
 
 Rules:
 	ra2|rules/proxy-actors.yaml
@@ -104,13 +107,10 @@ Cursors:
 Chrome:
 	ra2|chrome.yaml
 
-Assemblies:
-	^BinDir|OpenRA.Mods.Common.dll
-	^BinDir|OpenRA.Mods.Cnc.dll
-	^BinDir|OpenRA.Mods.RA2.dll
+Assemblies: OpenRA.Mods.Common.dll, OpenRA.Mods.Cnc.dll, OpenRA.Mods.RA2.dll
 
 ChromeLayout:
-	common|chrome/assetbrowser.yaml
+	ts|chrome/assetbrowser.yaml
 	ra2|chrome/ingame-player.yaml
 	common|chrome/mainmenu.yaml
 	common|chrome/mainmenu-prompts.yaml
@@ -197,10 +197,18 @@ MapGrid:
 Music:
 	ra2|audio/music.yaml
 
-Translations:
-	common|languages/en.ftl
-	common|languages/rules/en.ftl
-	ra2|languages/rules/en.ftl
+FluentMessages:
+	common|fluent/common.ftl
+	common|fluent/chrome.ftl
+	common|fluent/hotkeys.ftl
+	common|fluent/rules.ftl
+	ra2|fluent/assetbrowser.ftl
+	ra2|fluent/chrome.ftl
+	ra2|fluent/hotkeys.ftl
+	ra2|fluent/mod.ftl
+	ra2|fluent/rules.ftl
+
+AllowUnusedFluentMessagesInExternalPackages: false
 
 Hotkeys:
 	common|hotkeys/game.yaml
@@ -215,10 +223,10 @@ Hotkeys:
 
 LoadScreen: LogoStripeLoadScreen
 	Image: ra2|uibits/loadscreen.png
-	Text: Carving wooden nickels..., Preparing paratroopers..., Welcoming you to Texas..., Optimizing helium mix..., Receiving thoughts..., Igniting boosters...
 
 ServerTraits:
 	LobbyCommands
+	SkirmishLogic
 	PlayerPinger
 	MasterServerPinger
 	LobbySettingsNotification
@@ -286,8 +294,6 @@ SpriteSequenceFormat: TilesetSpecificSpriteSequence
 	TilesetSuffixes:
 		SNOW: a
 
-ModelSequenceFormat: VoxelModelSequence
-
 AssetBrowser:
 	SpriteExtensions: .shp, .tem, .urb, .sno
 	ModelExtensions: .vxl
@@ -321,23 +327,3 @@ GameSpeeds:
 			Name: options-game-speed.fastest
 			Timestep: 20
 			OrderLatency: 6
-
-ModContent:
-	InstallPromptMessage: Red Alert 2 requires artwork and audio from the original game.
-	HeaderMessage: The original game content must be copied from an original game disc.
-	Packages:
-		ContentPackage@base:
-			Title: Base Game Files
-			Identifier: base
-			TestFiles: ^SupportDir|Content/ra2/ra2.mix, ^SupportDir|Content/ra2/language.mix
-			Sources: ra2, origin, tfd
-			Required: true
-		ContentPackage@music:
-			Title: Game Music
-			Identifier: music
-			TestFiles: ^SupportDir|Content/ra2/theme.mix
-			Sources: ra2, origin, tfd
-	Sources:
-		ra2|installer/ra2.yaml
-		ra2|installer/origin.yaml
-		ra2|installer/firstdecade.yaml

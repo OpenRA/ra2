@@ -232,7 +232,7 @@ atomic:
 		Duration: 20
 		Intensity: 5
 		Multiplier: 1,1
-	Warhead@7FlashEffect: FlashPaletteEffect
+	Warhead@7FlashEffect: FlashEffect
 		Duration: 20
 		FlashType: Nuke
 

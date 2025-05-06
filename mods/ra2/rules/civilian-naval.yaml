@@ -4,7 +4,7 @@ tug:
 	Valued:
 		Cost: 500
 	Tooltip:
-		Name: Tug Boat
+		Name: actor-tug-name
 	Mobile:
 		TurnSpeed: 8
 		Speed: 60
@@ -29,7 +29,7 @@ cruise:
 	Valued:
 		Cost: 500
 	Tooltip:
-		Name: Cruise Ship
+		Name: actor-cruise-name
 	Mobile:
 		TurnSpeed: 4
 		Speed: 60
@@ -50,7 +50,7 @@ cdest:
 	Inherits: dest
 	-Buildable:
 	Tooltip:
-		Name: Coast Guard Boat
+		Name: actor-cdest-name
 	Armor:
 		Type: Light
 	-Voiced:
