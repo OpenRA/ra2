@@ -313,7 +313,7 @@ fv:
 		InvalidTargets: NoAutoTarget
 	AutoTargetPriority@REPAIR:
 		RequiresCondition: ifv-repair
-		ValidTargets: Repair
+		ValidTargets: Repair, Ally
 		InvalidTargets: NoAutoTarget
 	AutoTargetPriority@NOBUILDING:
 		RequiresCondition: ifv-deso
