@@ -17,7 +17,7 @@ jobs:
         run: sudo apt-get remove -y dotnet*
 
       - name: Clone Repository
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
 
       - name: Install .NET 6.0
         uses: actions/setup-dotnet@v5
@@ -46,7 +46,7 @@ jobs:
 
     steps:
       - name: Clone Repository
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
 
       - name: Prepare Environment
         run: |
@@ -70,7 +70,7 @@ jobs:
 
     steps:
       - name: Clone Repository
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
 
       - name: Install .NET 6.0
         uses: actions/setup-dotnet@v5
